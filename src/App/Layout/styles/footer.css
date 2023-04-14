@@ -1,0 +1,29 @@
+footer {
+  grid-area: footer;
+  background-color: #000;
+  display: grid;
+  grid-template-columns: 1fr 270px;
+  position: relative;
+  padding: 18px;
+}
+
+footer > * {
+  color: var(--color-white);
+  text-decoration: none;
+  display: flex;
+}
+
+footer .text-up {
+  align-items: flex-start;
+}
+
+footer .text-down {
+  align-items: flex-end;
+}
+
+footer a{
+ text-align: right;
+ width: 100%;
+ display: block;
+}
+
