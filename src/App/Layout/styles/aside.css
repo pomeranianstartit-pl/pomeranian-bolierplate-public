@@ -37,6 +37,6 @@ aside li a {
 }
 
 aside a.active {
-  background-color: rgb(233, 68, 95);
+  background-color: rgb(245, 104, 127);
   color: var(--color-white);
 }
