@@ -10,16 +10,25 @@ aside {
 aside ul {
   /* Nadpisanie domyślnych styli przeglądarki */
   padding-inline-start: 1rem;
+  list-style: none;
+  padding-left: 0;
 }
 
 aside li {
   line-height: 2rem;
 }
 
+.menu-icon {
+  margin-right: 10px;
+  fill: red;
+}
+
 .aside-row {
   display: flex;
   flex-direction: row;
   align-items: center;
+  text-decoration: none;
+  color: black;
 }
 
 aside li a {
@@ -28,6 +37,6 @@ aside li a {
 }
 
 aside a.active {
-  background-color: var(--color-primary-blue);
-  color: var(--color-white);
+  background-color: lightsalmon;
+  color: var(--color-black);
 }
