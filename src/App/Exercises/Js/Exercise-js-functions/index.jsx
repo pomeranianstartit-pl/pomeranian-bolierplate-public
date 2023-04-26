@@ -1,8 +1,6 @@
 import './styles.css';
 
 export function Exercise() {
-  const value1 = 3;
-  const value2 = 5;
   function multiply(num1, num2) {
     return num1 * num2;
   }
@@ -13,10 +11,6 @@ export function Exercise() {
 
   return (
     <div>
-      <b>Wynik mnożenia: {multiply(value1, value2)}</b>
-
-      <h1>{getWelcomeMessage('Michał', 1)}</h1>
-
       <p>Definiowanie funkcji</p>
       <pre>
         <code>
