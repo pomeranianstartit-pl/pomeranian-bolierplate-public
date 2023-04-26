@@ -2,6 +2,7 @@ import { NavLink } from 'react-router-dom';
 import { HouseIcon } from '../Components/Icons/HouseIcon';
 import { ElementIcon } from '../Components/Icons/ElementIcon';
 import { EditIcon } from '../Components/Icons/EditIcon';
+import { PersonalCardIcon } from '../Components/Icons/PersonalCardIcon';
 
 import './styles/aside.css';
 
@@ -13,6 +14,12 @@ export function AppAside() {
           <li>
             <NavLink className="aside-row" to="dashboard">
               <HouseIcon className="menu-icon" /> Dashboard
+            </NavLink>
+          </li>
+          <li>
+            <NavLink className="aside-row" to="my-cv">
+              <PersonalCardIcon className="menu-icon" />
+              My CV
             </NavLink>
           </li>
           <li>
