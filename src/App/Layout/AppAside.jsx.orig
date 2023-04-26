@@ -1,0 +1,52 @@
+import { NavLink } from 'react-router-dom';
+<<<<<<< Updated upstream
+=======
+import { HouseIcon } from '../Components/Icons/HouseIcon';
+import { ElementIcon } from '../Components/Icons/ElementIcon';
+import { EditIcon } from '../Components/Icons/EditIcon';
+import { PersonalCardIcon } from '../Components/Icons/PersonalCardIcon';
+>>>>>>> Stashed changes
+
+import './styles/aside.css';
+
+export function AppAside() {
+  return (
+    <aside>
+      <nav>
+        <ul>
+          <li>
+<<<<<<< Updated upstream
+            <NavLink to="dashboard">Dashboard</NavLink>
+          </li>
+          <li>
+            <NavLink to="blocks">Bloki</NavLink>
+          </li>
+          <li>
+            <NavLink to="exercises">Ćwiczenia</NavLink>
+=======
+            <NavLink className="aside-row" to="dashboard">
+              <HouseIcon className="menu-icon" /> Dashboard
+            </NavLink>
+          </li>
+          <li>
+            <NavLink className="aside-row" to="my-cv">
+              <PersonalCardIcon className="menu-icon" /> My CV
+            </NavLink>
+          </li>
+          <li>
+            <NavLink className="aside-row" to="bloki">
+              <ElementIcon className="menu-icon" /> Bloki
+            </NavLink>
+          </li>
+          <li>
+            <NavLink className="aside-row" to="exercises">
+              <EditIcon className="menu-icon" /> Ćwiczenia
+            </NavLink>
+>>>>>>> Stashed changes
+          </li>
+        </ul>
+      </nav>
+      <p style={{ padding: '1rem 0' }}>Sidebar items, widgets, etc</p>
+    </aside>
+  );
+}
