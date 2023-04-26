@@ -19,10 +19,10 @@ export function AppAside() {
             </NavLink>
           </li>
           <li>
-            <div>
+            <NavLink className="aside-row" to="my-cv">
               <PersonalCardIcon className="menu-icon" />
               Moje CV
-            </div>
+            </NavLink>
           </li>
           <li>
             <NavLink className="aside-row" to="blocks">
