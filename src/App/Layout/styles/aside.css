@@ -10,6 +10,8 @@ aside {
 aside ul {
   /* Nadpisanie domyślnych styli przeglądarki */
   padding-inline-start: 1rem;
+  list-style: none;
+  padding-left: 0;
 }
 
 aside li {
@@ -20,6 +22,8 @@ aside li {
   display: flex;
   flex-direction: row;
   align-items: center;
+  text-decoration: none;
+  color: black;
 }
 
 aside li a {
@@ -33,4 +37,5 @@ aside a.active {
 }
 
 .menu-icon {
+  margin-right: 10px;
 }
