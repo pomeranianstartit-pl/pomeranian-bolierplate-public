@@ -23,7 +23,7 @@ export function AppAside() {
             </NavLink>
           </li>
           <li>
-            <NavLink className="aside-row" to="Excercises">
+            <NavLink className="aside-row" to="Exercises">
               <EditIcon className="menu-icon" /> Ćwiczenia
             </NavLink>
           </li>
