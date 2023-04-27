@@ -24,8 +24,8 @@
   flex-wrap: wrap;
 }
 
-.input-wrapper {
-  align-self: self-start;
+.welcome-left_div {
+  flex-basis: 40%;
 }
 
 .welcome-left_div p {
