@@ -1,7 +1,23 @@
+import React, { useState } from 'react';
 import './styles.css';
 
 export const WelcomeView = () => {
+  const [count, setCount] = useState(0);
+
+  // function getInputValue(parametr) {
+  //  console.log('funkcja dziala', parametr.target.value);
+  //  setCount(parametr.target.value);
+  /// }
+
   return (
+    // <div className="welcome-view">
+    // <input
+    //  placeholder="text"
+    //  onChange={(e) => console.log(getInputValue(e))}
+    // />
+    //<button onClick={() => buttonClicked()}>Kliknieto we mnie {x}</button>
+    // <div>wartosc inputa: {x}</div>
+    // </div>
     <div>
       <div className="block-1">
         <div className="h1-text">
@@ -17,8 +33,8 @@ export const WelcomeView = () => {
         </div>
 
         <div className="button-box">
-          <button type="button">
-            <p>KLIKNIJ</p>
+          <button onClick={() => setCount(count + 1)}>
+            <p>nacisnieto {count} razy</p>
           </button>
         </div>
       </div>
