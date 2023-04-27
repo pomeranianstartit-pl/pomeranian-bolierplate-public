@@ -1,6 +1,6 @@
 import { WelcomeView } from './WelcomeView';
 
-export const welcomeViewRouterMetaData = {
+export const WelcomeViewRouterMetaData = {
   path: 'welcome-view',
   date: '27-04-2023',
   linkLabel: 'WelcomeView',
