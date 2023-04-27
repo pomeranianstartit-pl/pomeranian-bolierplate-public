@@ -1,0 +1,79 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans&display=swap');
+
+.welcome-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  padding: 80px;
+  padding-left: 15%;
+  font-family: 'Poppins';
+}
+
+.welcome-title {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 40px;
+  line-height: 69px;
+  flex-basis: 100%;
+  align-self: self-start;
+}
+
+.welcome-label {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.input-wrapper {
+  align-self: self-start;
+}
+
+.welcome-left_div p {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 27px;
+  color: #222222;
+}
+
+.welcome-left_div input {
+  border: 1px solid #c8cbd1;
+  border-radius: 5px;
+  box-sizing: border-box;
+  align-items: center;
+  background: #ffffff;
+  padding: 13px 16px;
+  gap: 10px;
+  width: 488px;
+  height: 48px;
+}
+
+.welcome-left_div input::placeholder {
+  font-family: 'Poppins';
+}
+
+.welcome-left_div button {
+  width: 326px;
+  height: 56px;
+  background: #fe3756;
+  border: 1px solid #fe3756;
+  border-radius: 8px;
+  color: #ffffff;
+  margin-top: 10%;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 31px;
+}
+
+.welcome-right_div {
+  font-family: 'DM Sans';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 22px;
+  line-height: 38px;
+  display: flex;
+  align-items: center;
+  text-align: right;
+  color: #000000;
+  margin: 0 10% 8%;
+}
