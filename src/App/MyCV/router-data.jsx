@@ -1,10 +1,10 @@
-import { EmptyComponentWithRouting } from './index';
+import { MyCV } from './MyCV';
 
-export const blockRouterMetaData = {
-  path: 'some-path-that-you-wants',
-  date: '12-12-2023',
-  linkLabel: 'EmptyComponentWithRouting',
+export const MyCVRouterMetaData = {
+  path: 'my-cv',
+  date: '28-04-2023',
+  linkLabel: 'MyCV',
   blockNo: 1,
-  element: <EmptyComponentWithRouting />,
+  element: <MyCV />,
   tags: ['components'],
 };
