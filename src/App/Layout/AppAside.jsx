@@ -35,17 +35,17 @@ export function AppAside() {
             </NavLink>
           </li>
           <li>
-            <div>
+            <NavLink to="calendar">
               <CalendarIcon className="menu-icon" />
               Kalendarz
-            </div>
+            </NavLink>
           </li>
           <hr></hr>
           <li>
-            <div>
+            <NavLink to="settings">
               <SettingIcon className="menu-icon" />
               Ustawienia
-            </div>
+            </NavLink>
           </li>
         </ul>
       </nav>
