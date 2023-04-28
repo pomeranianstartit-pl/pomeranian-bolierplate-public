@@ -1,0 +1,37 @@
+.font-test-family {
+  font-family: Chilanka;
+}
+button {
+  box-sizing: border-box;
+  margin-top: 20px;
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 31px;
+  /* identical to box height, or 172% */
+
+  text-align: center;
+
+  color: #ffffff;
+
+  /* Auto layout */
+
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 20px 36px;
+  gap: 16px;
+
+  width: 250px;
+  height: 50px;
+
+  /* primary/primary */
+
+  background: #fe3756;
+  /* primary/primary */
+
+  border: 1px solid #fe3756;
+  border-radius: 8px;
+}

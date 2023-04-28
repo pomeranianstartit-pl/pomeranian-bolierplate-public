@@ -4,7 +4,7 @@ export const WelcomeViewRouterMetaData = {
   path: 'welcome-view',
   date: '27-04-2023',
   linkLabel: 'WelcomeView',
-  blockNo: 1,
+  blockNo: 2,
   element: <WelcomeView />,
   tags: ['components'],
 };
