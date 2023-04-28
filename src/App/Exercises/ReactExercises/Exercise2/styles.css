@@ -1,0 +1,37 @@
+.exercise-2 {
+  margin: 80px 0 0 250px;
+}
+
+.exercise-2 h2 {
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 40px;
+  line-height: 69px;
+}
+
+.exercise-2 button {
+  width: 326px;
+  height: 56px;
+  background: #fe3756;
+  border: 1px solid #fe3756;
+  border-radius: 8px;
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 31px;
+  color: #ffffff;
+  cursor: pointer;
+}
+
+.exercise-2 p {
+  width: 193px;
+  height: 36px;
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 22px;
+  line-height: 36px;
+  color: #222222;
+}
