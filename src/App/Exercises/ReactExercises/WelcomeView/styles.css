@@ -28,6 +28,7 @@
 }
 button {
   box-sizing: border-box;
+  margin-top: 20px;
   font-family: 'Poppins';
   font-style: normal;
   font-weight: 500;
