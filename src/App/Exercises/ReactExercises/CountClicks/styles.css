@@ -1,0 +1,36 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+.clicks {
+  margin: 80px 0 0 250px;
+}
+
+.clicks h2 {
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 40px;
+  line-height: 69px;
+}
+
+.btn {
+  width: 326px;
+  height: 56px;
+  background: #fe3756;
+  border: 1px solid #fe3756;
+  border-radius: 8px;
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 31px;
+  color: #ffffff;
+  cursor: pointer;
+}
+
+.btn-reset {
+  margin-left: 15px;
+  width: 250px;
+  height: 46px;
+  background: #3791fe;
+  border: 1px solid #3791fe;
+}
