@@ -19,9 +19,9 @@ export function Exercise2() {
       </p>
 
       {isVisible ? (
-        <h2>iVisible jest na True</h2>
+        <h2>isVisible jest na True</h2>
       ) : (
-        <h2>iVisible jest na True</h2>
+        <h2>isVisible jest na False</h2>
       )}
 
       {isVisible && <h2>tajny text</h2>}

@@ -4,7 +4,7 @@ import './style.css';
 import { click } from '@testing-library/user-event/dist/click';
 
 export function Exercise1() {
-  const [clicks, setClicks] = useState(0);
+  const [clicks, setClicks] = useState(1);
   const [text, setText] = useState('start');
 
   const handleClick = () => {
