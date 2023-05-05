@@ -4,27 +4,28 @@
   border: 10px solid yellow;
 }
 
-#main {
+.general #main {
   color: green;
   border: 5px solid brown;
 }
 
-p {
+.general p {
   color: pink;
 }
 
-.unique {
+.general .unique {
   color: darkblue;
+  font-style: italic;
 }
 
-ul {
+.general ul {
   color: blueviolet;
 }
 
-ul:first-of-type li:nth-child(even) {
+.general ul:first-of-type li:nth-child(even) {
   color: chartreuse;
 }
 
-h1 {
+.general h1 {
   color: deeppink;
 }
