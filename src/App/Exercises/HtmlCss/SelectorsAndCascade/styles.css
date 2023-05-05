@@ -1,0 +1,54 @@
+.background1 {
+  background-color: lightgrey;
+  border: 10px double red;
+
+  .lista {
+    background-color: thistle;
+    border: 10px double gray;
+  }
+  #main {
+    background-color: dodgerblue;
+    border: 10px double gray;
+    flex-direction: column;
+    display: flex;
+  }
+  .one {
+    text-align: center;
+    flex-direction: row;
+    display: flex;
+    justify-content: center;
+    border: 5px dotted rebeccapurple;
+    border-radius: 5px;
+    background-color: antiquewhite;
+    padding: 1%;
+  }
+
+  .two {
+    text-align: center;
+    flex-direction: row;
+    justify-content: center;
+    border: 5px dashed blue;
+    background-color: brown;
+    font-style: italic;
+    padding: 1%;
+  }
+  .three {
+    text-align: center;
+    flex-direction: row;
+    justify-content: center;
+    border: 5px dotted blue;
+    width: 300px;
+    padding: 50px;
+  }
+}
+.four {
+  text-align: center;
+  flex-direction: row;
+  border: 5px groove blue;
+}
+.five {
+  text-align: center;
+  flex-direction: row;
+  justify-content: center;
+  border: 5px ridge pink;
+}
