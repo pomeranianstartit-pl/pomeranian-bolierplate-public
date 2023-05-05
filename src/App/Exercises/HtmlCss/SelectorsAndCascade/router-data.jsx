@@ -8,5 +8,5 @@ export const blockRouterMetaData = {
   linkLabel: 'HTML & CSS - kaskadowośc, specyficznośc i dziedziczenie',
   blockNo: 10,
   element: <SelectorsAndCascade />,
-  tags: ['flex', 'grid', 'video'],
+  tags: ['selectors', 'class', 'atribute'],
 };

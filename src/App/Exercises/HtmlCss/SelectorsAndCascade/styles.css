@@ -1,3 +1,42 @@
-.font-test-family {
-  font-family: Chilanka;
+#div-parent {
+  color: rgb(9, 9, 99);
+  font-weight: bolder;
+  margin: 10px;
+}
+
+.div-1 {
+  color: green;
+  padding-left: 500px;
+  font-size: x-large;
+}
+
+.div-2 {
+  font-family: 'Times New Roman', Times, serif;
+  font-size: x-large;
+  font-style: italic;
+  background-color: aquamarine;
+}
+
+.list {
+  color: orange;
+  margin: 80px;
+}
+
+.list :nth-child(2) {
+  color: brown;
+}
+
+#header {
+  color: red;
+}
+
+.par {
+  border: 10px salmon solid;
+  margin: 80px;
+  background-color: yellow;
+  text-align: center;
+}
+
+#div-parent .par {
+  background-color: rgb(100, 100, 163);
 }
