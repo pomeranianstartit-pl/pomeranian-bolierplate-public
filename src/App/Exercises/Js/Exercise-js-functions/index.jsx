@@ -1,29 +1,28 @@
 import './styles.css';
 
 export function Exercise() {
-  const list = [{
-    name: 'Wojtek',
-    surname: 'Abc',
-    age: 48,
-  }, {
-    name: 'Kasia',
-    surname: 'Cbd',
-    age: 28,
-  }];
+  const list = [
+    {
+      name: 'Wojtek',
+      surname: 'Abc',
+      age: 48,
+    },
+    {
+      name: 'Kasia',
+      surname: 'Cbd',
+      age: 28,
+    },
+  ];
 
   function displayList(list) {
     list.map((listElement) => {
-      const test = 'test'
-      return <div>
-        Moje imię to {listElement.name}, nazwisko {listElement.surname}. Mam {listElement.age} lat
-      </div>
-    })
-
-    // list.map((listElement) => (
-    //   <div>
-    //     Moje imię to {listElement.name}, nazwisko {listElement.surname}. Mam {listElement.age} lat
-    //   </div>
-    // ))
+      return (
+        <div>
+          Moje imię to {listElement.name}, nazwisko {listElement.surname}. Mam{' '}
+          {listElement.age} lat
+        </div>
+      );
+    });
   }
 
   function multiply(num1, num2) {
