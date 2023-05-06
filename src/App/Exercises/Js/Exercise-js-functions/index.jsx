@@ -1,6 +1,24 @@
 import './styles.css';
 
 export function Exercise() {
+  const list = [{
+    name: "Karol",
+    surname: "qwe",
+    age: "23"},
+    {name: "Kasia",
+  surname: "asd",
+   age: "44"}]
+
+function displaylist(list){
+   return list.map((listelement) => (
+    <div>
+      moje imie to {listelement.name}, nazwisko {listelement.surname}. Mam {listelement.age} lat.
+    </div>
+  ))
+}
+  
+
+  
   function multiply(num1, num2) {
     return num1 * num2;
   }
@@ -11,7 +29,11 @@ export function Exercise() {
 
   return (
     <div>
-      <p>Definiowanie funkcji</p>
+      <section>
+        <h2>Lista ludzi</h2>
+        {displaylist(list)}
+      </section>
+    
       <pre>
         <code>
           {`
@@ -23,7 +45,6 @@ export function Exercise() {
             `}
         </code>
       </pre>
-
       <section>
         <h2>Wykorzystywanie funkcji - przykłady</h2>
         <pre>
