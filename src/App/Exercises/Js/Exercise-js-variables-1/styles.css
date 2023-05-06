@@ -5,3 +5,8 @@
 .variable-string-placeholder {
   margin-left: 5px;
 }
+
+.numerUzytkownika {
+  color: red;
+  text-decoration: underline;
+}

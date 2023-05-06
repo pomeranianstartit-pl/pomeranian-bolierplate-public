@@ -3,6 +3,9 @@ import './styles.css';
 export function Exercise() {
   let string1 = 'Jon Snow';
 
+  const name = 'Wędrowcze';
+  const counter = 1;
+
   const string3 = 'Ulubiony bohater z serialu "Gra o tron" to ' + string1;
 
   const string2 = `Ulubiony bohater z serialu "Gra o tron" to: ${string1}`;
@@ -18,8 +21,10 @@ export function Exercise() {
         </p>
         <p>{string2}</p>
         <p>{string3}</p>
-        {/* Uzupełnij zanie korzystając ze zmiennych oraz operacji na stringach */}
-        <p>Witaj ____! Jesteś ____ uzytkownikiem odwiedzającym tę stronę!</p>
+        {/* Uzupełnij zdanie korzystając ze zmiennych oraz operacji na stringach */}
+        <p>
+          Witaj <b>{name}</b>! Jesteś <span className="numerUzytkownika">{counter}</span> uzytkownikiem odwiedzającym tę stronę!
+        </p>
       </section>
     </div>
   );
