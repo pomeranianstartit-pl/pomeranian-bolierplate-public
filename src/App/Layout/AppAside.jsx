@@ -11,10 +11,19 @@ export function AppAside() {
             <NavLink to="dashboard">Dashboard</NavLink>
           </li>
           <li>
+            <NavLink to="CV">CV</NavLink>
+          </li>
+          <li>
             <NavLink to="blocks">Bloki</NavLink>
           </li>
           <li>
             <NavLink to="exercises">Ćwiczenia</NavLink>
+          </li>
+          <li>
+            <NavLink to="Kalendarz">Kalendarz</NavLink>
+          </li>
+          <li>
+            <NavLink to="Settings">Ustawienia</NavLink>
           </li>
         </ul>
       </nav>
