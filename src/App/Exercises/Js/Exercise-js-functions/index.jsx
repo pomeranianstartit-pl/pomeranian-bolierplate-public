@@ -1,6 +1,40 @@
 import './styles.css';
 
 export function Exercise() {
+  const list = [
+    {
+      name: 'Władysław',
+      surname: 'Jagiełło',
+      age: 50,
+    },
+    {
+      name: 'Real Slim',
+      surname: 'Shady',
+      age: 45,
+    },
+  ];
+
+  // function displayList(list) {
+  //   list.map((listElement) => {
+  //     const test = 'test'
+  //     return <div>
+  //       Moje imię to {listElement.name}, nazwisko {listElement.surname}. Mam {listElement.age} lat.
+  //     </div>
+  //   })
+  // }
+
+  function displayList(list) {
+    return list.map((listElement) => {
+      const test = 'test';
+      return (
+        <div>
+          Moje imię to {listElement.name}, nazwisko {listElement.surname}. Mam{' '}
+          {listElement.age} lat
+        </div>
+      );
+    });
+  }
+
   function multiply(num1, num2) {
     return num1 * num2;
   }
@@ -23,6 +57,11 @@ export function Exercise() {
             `}
         </code>
       </pre>
+
+      <section>
+        <h2>Lista ludzi w tablicy</h2>
+        {displayList(list)}
+      </section>
 
       <section>
         <h2>Wykorzystywanie funkcji - przykłady</h2>
