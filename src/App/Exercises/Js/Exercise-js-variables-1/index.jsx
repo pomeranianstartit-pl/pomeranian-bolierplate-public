@@ -22,7 +22,8 @@ export function Exercise() {
         <p>{string3}</p>
         {/* Uzupełnij zdanie korzystając ze zmiennych oraz operacji na stringach */}
         <p>
-          Witaj {stringname}! Jesteś {stringnum} uzytkownikiem odwiedzającym tę stronę!
+          Witaj {stringname}! Jesteś {stringnum} uzytkownikiem odwiedzającym tę
+          stronę!
         </p>
       </section>
     </div>
