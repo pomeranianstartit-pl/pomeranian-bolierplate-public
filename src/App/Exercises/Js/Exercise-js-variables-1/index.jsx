@@ -1,11 +1,13 @@
 import './styles.css';
 
 export function Exercise() {
-  let string1 = 'Jon Snow';
+  let string1 = 'John';
 
   const string3 = 'Ulubiony bohater z serialu "Gra o tron" to ' + string1;
 
   const string2 = `Ulubiony bohater z serialu "Gra o tron" to: ${string1}`;
+  const imie = 'Karol';
+  const numer = 1;
 
   return (
     <div className="playing-with-variables">
@@ -19,7 +21,9 @@ export function Exercise() {
         <p>{string2}</p>
         <p>{string3}</p>
         {/* Uzupełnij zanie korzystając ze zmiennych oraz operacji na stringach */}
-        <p>Witaj ____! Jesteś ____ uzytkownikiem odwiedzającym tę stronę!</p>
+        <p>
+          Witaj {imie}! Jesteś {numer} uzytkownikiem odwiedzającym tę stronę!
+        </p>
       </section>
     </div>
   );
