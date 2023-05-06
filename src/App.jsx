@@ -8,7 +8,7 @@ import { Layout } from './App/Layout';
 import { Dashboard } from './App/Dashboard';
 import { Exercises } from './App/Exercises';
 import { CV } from './App/CV';
-import { Kalendarz } from './App/Kalendarz';
+import { Kalendar } from './App/Kalendarz';
 import { Settings } from './App/Settings';
 
 export function App() {
@@ -21,7 +21,7 @@ export function App() {
           <Route path="CV/*" element={<CV />} />
           <Route path="exercises/*" element={<Exercises />} />
           <Route path="blocks/*" element={<Blocks />} />
-          <Route path="Kalendarz/*" element={<Kalendarz />} />
+          <Route path="Kalendarz/*" element={<Kalendar />} />
           <Route path="Settings/*" element={<Settings />} />
           <Route path="*" element={<NotFound />} />
         </Route>
