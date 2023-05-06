@@ -1,6 +1,6 @@
 import './styles.css';
 
-export const Kalendarz = () => {
+export const Kalendar = () => {
   return (
     <div className="dashboard">
       <h1>Kalendarz</h1>
