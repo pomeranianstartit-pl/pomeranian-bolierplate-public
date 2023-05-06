@@ -1,23 +1,29 @@
 import './styles.css';
 
 export function Exercise() {
-  const list = [{
-    name: 'Wojtek',
-    surname: 'Abc',
-    age: '48'
-  }, {
-    name: 'Marta',
-    surname: 'Nowak',
-    age: '28'
-  }]
+  const list = [
+    {
+      name: 'Wojtek',
+      surname: 'Abc',
+      age: '48',
+    },
+    {
+      name: 'Marta',
+      surname: 'Nowak',
+      age: '28',
+    },
+  ];
 
   function displayList(list) {
-  return list.map((listElement) => {
-      return <div>
-          Moje imię to {listElement.name}, nazwisko to {listElement.surname}. Mam {listElement.age} lat
+    return list.map((listElement) => {
+      return (
+        <div>
+          Moje imię to {listElement.name}, nazwisko to {listElement.surname}.
+          Mam {listElement.age} lat
         </div>
-    })}
-
+      );
+    });
+  }
 
   function multiply(num1, num2) {
     return num1 * num2;
@@ -45,8 +51,10 @@ export function Exercise() {
       <section>
         <h2>Wykorzystywanie funkcji - przykłady</h2>
         <pre>
-          <code>9 * 9 = {multiply(9, 9)}</code><br />
-          <code>9 * 8 = {multiply(9, 8)}</code><br />
+          <code>9 * 9 = {multiply(9, 9)}</code>
+          <br />
+          <code>9 * 8 = {multiply(9, 8)}</code>
+          <br />
           <code>9 * 7 = {multiply(9, 7)}</code>
         </pre>
         <pre>
