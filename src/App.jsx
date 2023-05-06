@@ -2,6 +2,7 @@ import React from 'react';
 import { Routes, Route, BrowserRouter, Navigate } from 'react-router-dom';
 
 import { NotFound } from './App/Components/NotFound/NotFound';
+import { logo } from './App/Components/Logo/Logo';
 
 import { Blocks } from './App/Blocks';
 import { Layout } from './App/Layout';
