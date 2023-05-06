@@ -8,6 +8,9 @@ export function AppAside() {
       <nav>
         <ul>
           <li>
+            <NavLink to="cv">Moje CV</NavLink>
+          </li>
+          <li>
             <NavLink to="dashboard">Dashboard</NavLink>
           </li>
           <li>
@@ -15,6 +18,12 @@ export function AppAside() {
           </li>
           <li>
             <NavLink to="exercises">Ćwiczenia</NavLink>
+          </li>
+          <li>
+            <NavLink to="calendar">Kalendarz</NavLink>
+          </li>
+          <li>
+            <NavLink to="settings">Ustawienia</NavLink>
           </li>
         </ul>
       </nav>
