@@ -21,7 +21,7 @@ export function Exercise() {
   // }
 
   function displayList(list) {
-    list.map((listElement) => {
+    return list.map((listElement) => {
       const test = 'test'
       return <div>
         Moje imię to {listElement.name}, nazwisko {listElement.surname}. Mam {listElement.age} lat
@@ -55,7 +55,7 @@ export function Exercise() {
 
       <section>
         <h2>Lista ludzi w tablicy</h2>
-        {displayList()}
+        {displayList(list)}
       </section>
 
       <section>
