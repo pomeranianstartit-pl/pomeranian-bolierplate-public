@@ -2,10 +2,10 @@ import './styles.css';
 
 export function Exercise() {
   const mathResult1 = 2 * 5;
-  const mathResult2 = 3 / 2
-  const mathResult3 = 2 * 2
-  const mathResult4 = Math.sqrt(2,4)
-  const mathResult5 = 3 % 2
+  const mathResult2 = 3 / 2;
+  const mathResult3 = 2 * 2;
+  const mathResult4 = Math.sqrt(2, 4);
+  const mathResult5 = 3 % 2;
   return (
     <div className="playing-with-variables">
       <section>
