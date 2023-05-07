@@ -1,4 +1,5 @@
 import React from 'react';
+import {Logo} from '../Components/Logo/Logo';
 
 import { Logo } from '../Components/Logo/Logo';
 
@@ -9,7 +10,7 @@ export function AppHeader() {
     <header>
       <div>
         <Logo />
-        {/* <Logo></Logo> */}
+
         <div className="header-title">Tytuł nagłówka</div>
       </div>
     </header>
