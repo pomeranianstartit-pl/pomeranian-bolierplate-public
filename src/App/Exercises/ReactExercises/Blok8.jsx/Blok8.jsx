@@ -2,27 +2,48 @@ import React, {useState} from 'react';
 
 
 import './style.css';
-
+const style = { marginLeft: '140px'
+};
 export function Blok8() {
 
   const napis = 5
 
-  const [ilosc, setIlosc] = useState(0);
+ 
+  const[num1, setNum1] = useState('')
+  const[num2, setNum2] = useState('')
+  const[wynik, setWynik] = useState('')
 
-function clickHandler(ev) {
-  // console.log('Kliknieto przycisk', ev)
-  // alert('klikieto przycisk')
-  setIlosc(ilosc+1)
+
+
+function changeNum1(ev){
+  setNum1(ev.target.value)
+}
+function changeNum2(ev) {
+  setNum2(ev.target.value)
 }
 
-  return (
-    <div>
-      {/* <p>Przyklad blok 8</p>
-      <button onClick={clickHandler} >przycisk</button>
-      <p>{napis}</p> */}
-      <h2>Cześć!</h2>
-      <button className='btn' onClick = {clickHandler} type='button'>kliknieto mnie {ilosc} razy</button>
-      {/* <span>NIE KLIKNIĘTO WE MNIE</span> */}
-    </div>
+
+function dodaj() {
+  const z = parseFloat(num1)+parseFloat(num2)
+  setWynik(z)
+}
+
+  
+    return (
+
+       <div>
+      <input value={num1} onChange={changeNum1} />
+      <input value={num2} onChange={changeNum2} />
+      <button onClick={dodaj}>Dodaj</button>
+      
+      <p>
+      
+      {wynik}
+      
+     </p>
+      
+      </div>
+      
+  
   );
 }
