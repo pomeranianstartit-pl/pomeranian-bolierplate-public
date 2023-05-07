@@ -1,0 +1,10 @@
+.font-test-family {
+  font-family: Chilanka;
+}
+
+.button {
+  background-color: #FE3756;
+  color: white;
+  padding: 3px 6px;
+  border-radius: 6px;
+}
