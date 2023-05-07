@@ -1,7 +1,7 @@
 import React from 'react';
 import {Logo} from '../Components/Logo/Logo';
 
-import { Logo } from '../Components/Logo/Logo';
+
 
 import './styles/header.css';
 
