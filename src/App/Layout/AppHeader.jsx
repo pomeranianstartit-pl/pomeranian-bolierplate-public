@@ -1,6 +1,8 @@
 import React from 'react';
 import {Logo} from '../Components/Logo/Logo';
 
+import { Logo } from '../Components/Logo/Logo';
+
 import './styles/header.css';
 
 export function AppHeader() {
@@ -8,6 +10,7 @@ export function AppHeader() {
     <header>
       <div>
         <Logo />
+
         <div className="header-title">Tytuł nagłówka</div>
       </div>
     </header>
