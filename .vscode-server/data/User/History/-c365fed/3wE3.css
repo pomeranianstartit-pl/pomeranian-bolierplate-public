@@ -1,0 +1,31 @@
+.App{
+  margin-left: 100px;
+  font-size: larger;
+  width: 50%;
+}
+.red_font_header{
+  margin-bottom: 10px;
+  font-size: 80px;
+  color: rgb(255, 84, 84);
+}
+.header{
+  font-size: 80px;
+}
+.Name{
+  font-size: 40px; 
+  margin-top: 50px;
+}
+.Beruf{
+  font-size: 40px;
+  color: rgb(255, 84, 84);
+}
+.email{
+  font-size: 40px;
+}
+.phone{
+  font-size: 40px;
+}
+
+
+
+

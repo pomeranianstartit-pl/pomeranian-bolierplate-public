@@ -1,0 +1,20 @@
+2023-05-01 11:50:45.126 [info] Log level: Info
+2023-05-01 11:50:45.126 [info] Validating found git in: "git"
+2023-05-01 11:50:45.126 [info] Using git "2.34.1" from "git"
+2023-05-01 11:50:45.126 [info] > git rev-parse --show-toplevel [23ms]
+2023-05-01 11:50:45.126 [info] > git rev-parse --git-dir --git-common-dir [15ms]
+2023-05-01 11:50:45.126 [info] Open repository: /home/bontzkl/projects/projekcikpykpyk/pomeranian-bolierplate-public
+2023-05-01 11:50:45.126 [info] > git rev-parse --show-toplevel [26ms]
+2023-05-01 11:50:45.126 [info] > git config --get commit.template [27ms]
+2023-05-01 11:50:45.126 [info] > git rev-parse --show-toplevel [18ms]
+2023-05-01 11:50:45.126 [info] > git rev-parse --show-toplevel [1ms]
+2023-05-01 11:50:45.126 [info] > git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track)%00%(upstream:remotename)%00%(upstream:remoteref) refs/heads/feature/exercise3 refs/remotes/feature/exercise3 [411ms]
+2023-05-01 11:50:45.126 [info] > git status -z -uall [463ms]
+2023-05-01 11:50:45.126 [info] > git check-ignore -v -z --stdin [44ms]
+2023-05-01 11:50:45.126 [info] > git show --textconv :src/App/Exercises/ReactExercises/SubRouteExercise4/Exercise4.jsx [31ms]
+2023-05-01 11:50:45.144 [info] > git ls-files --stage -- /home/bontzkl/projects/projekcikpykpyk/pomeranian-bolierplate-public/src/App/Exercises/ReactExercises/SubRouteExercise4/Exercise4.jsx [64ms]
+2023-05-01 11:50:45.154 [info] > git cat-file -s 65bb9a19fa3f46046ee6d09b0694b125c46b2df7 [3ms]
+2023-05-01 11:50:45.162 [info] > git config --get commit.template [25ms]
+2023-05-01 11:50:45.179 [info] > git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track)%00%(upstream:remotename)%00%(upstream:remoteref) refs/heads/feature/exercise3 refs/remotes/feature/exercise3 [2ms]
+2023-05-01 11:50:45.194 [info] > git status -z -uall [4ms]
+2023-05-01 11:52:06.885 [info] > git check-ignore -v -z --stdin [1ms]

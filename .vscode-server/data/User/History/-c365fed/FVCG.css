@@ -1,0 +1,33 @@
+.App{
+  font-family: 'Raleway', sans-serif;
+  margin-top: 100px;
+  margin-left: 100px;
+  font-size: larger;
+}
+.red_font_header{
+  font-size: 70px;
+  color: rgb(255, 84, 84);
+}
+.header{
+  margin-top: -10px;
+  font-size: 70px;
+}
+.Name{
+  font-size: 30px; 
+  margin-top: 60px;
+}
+.Beruf{
+  font-size: 30px;
+  color: rgb(255, 84, 84);
+}
+.email{
+  padding-top: 30px;
+  font-size: 40px;
+}
+.phone{
+  font-size: 30px;
+}
+
+
+
+

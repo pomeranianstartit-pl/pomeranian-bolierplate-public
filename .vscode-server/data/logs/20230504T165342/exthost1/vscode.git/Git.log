@@ -1,0 +1,17 @@
+2023-05-04 16:53:53.006 [info] Log level: Info
+2023-05-04 16:53:53.006 [info] Validating found git in: "git"
+2023-05-04 16:53:53.006 [info] Using git "2.34.1" from "git"
+2023-05-04 16:53:53.006 [info] > git rev-parse --show-toplevel [98ms]
+2023-05-04 16:53:53.008 [info] > git rev-parse --git-dir --git-common-dir [27ms]
+2023-05-04 16:53:53.062 [info] Open repository: /home/bontzkl/projects/projekcikpykpyk/pomeranian-bolierplate-public
+2023-05-04 16:53:53.112 [info] > git rev-parse --show-toplevel [30ms]
+2023-05-04 16:53:53.159 [info] > git rev-parse --show-toplevel [17ms]
+2023-05-04 16:53:53.164 [info] > git config --get commit.template [53ms]
+2023-05-04 16:53:53.193 [info] > git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track)%00%(upstream:remotename)%00%(upstream:remoteref) refs/heads/feature/littlechanges refs/remotes/feature/littlechanges [7ms]
+2023-05-04 16:53:53.214 [info] > git status -z -uall [4ms]
+2023-05-04 16:53:53.981 [info] > git config --get commit.template [720ms]
+2023-05-04 16:53:54.002 [info] > git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track)%00%(upstream:remotename)%00%(upstream:remoteref) refs/heads/feature/littlechanges refs/remotes/feature/littlechanges [3ms]
+2023-05-04 16:53:54.357 [info] > git status -z -uall [336ms]
+2023-05-04 16:53:54.977 [info] > git check-ignore -v -z --stdin [12ms]
+2023-05-04 16:53:56.475 [info] > git check-ignore -v -z --stdin [2ms]
+2023-05-04 16:56:57.583 [info] > git check-ignore -v -z --stdin [2ms]
