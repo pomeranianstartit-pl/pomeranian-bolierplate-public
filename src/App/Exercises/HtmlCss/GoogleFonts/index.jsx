@@ -58,6 +58,8 @@ export function GoogleFonts() {
         facilisis pharetra quis sed nisl. Etiam pharetra lectus id fringilla
         porttitor. Aliquam nec sapien urna. ążśćńół
       </div>
+      <div className="animation">animation</div>
+      <div className="tracking-in-expand">ANIMACJA</div>
     </div>
   );
 }
