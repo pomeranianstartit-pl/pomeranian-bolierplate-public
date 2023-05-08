@@ -4,22 +4,22 @@ export function GoogleFonts() {
   return (
     <div>
       <div className="font1">
-        Courier New - Lorem Ipsum is simply dummy text of the printing and
+        ĄĄĄĄ Courier New - Lorem Ipsum is simply dummy text of the printing and
         typesetting industry.
       </div>
       <br />
       <div className="font2">
-        Franklin Gothic - Lorem Ipsum is simply dummy text of the printing and
-        typesetting industry.
+        ĄĄĄĄ Franklin Gothic - Lorem Ipsum is simply dummy text of the printing
+        and typesetting industry.
       </div>
       <br />
       <div className="font3">
-        Gill Sans - Lorem Ipsum is simply dummy text of the printing and
+        ĄĄĄĄ Gill Sans - Lorem Ipsum is simply dummy text of the printing and
         typesetting industry.
       </div>
       <br />
       <div className="font4">
-        Sigmar - Lorem Ipsum is simply dummy text of the printing and
+        ĄĄĄĄ Sigmar - Lorem Ipsum is simply dummy text of the printing and
         typesetting industry.
       </div>
       <br />
@@ -32,6 +32,19 @@ export function GoogleFonts() {
         Bitter - Lorem Ipsum is simply dummy text of the printing and
         typesetting industry.
       </div>
+      <hr />
+      <div></div>
+      <div className="animation">ANIMACJA</div>
+      <hr />
+      <body>
+        <div>
+          <div className="container">
+            <div className="sun"></div>
+            <div className="earth"></div>
+            <div className="moon"></div>
+          </div>
+        </div>
+      </body>
     </div>
   );
 }
