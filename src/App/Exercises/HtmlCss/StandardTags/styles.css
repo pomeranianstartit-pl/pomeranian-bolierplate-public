@@ -1,0 +1,12 @@
+div1 {
+  font-size: 30px;
+  font-weight: 700;
+}
+div2 {
+  font-size: 17px;
+  font-weight: 700;
+}
+span1 {
+  vertical-align: sub;
+  font-size: smaller;
+}
