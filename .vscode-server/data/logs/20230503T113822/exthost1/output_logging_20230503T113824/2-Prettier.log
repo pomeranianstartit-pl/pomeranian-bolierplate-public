@@ -1,0 +1,416 @@
+["INFO" - 11:38:26 AM] Extension Name: esbenp.prettier-vscode.
+["INFO" - 11:38:26 AM] Extension Version: 9.12.0.
+["INFO" - 11:39:36 AM] Formatting file:///home/bontzkl/projects/projekcikpykpyk/pomeranian-bolierplate-public/src/App/Layout/styles/aside.css
+["INFO" - 11:39:36 AM] Using config file at '/home/bontzkl/projects/projekcikpykpyk/pomeranian-bolierplate-public/.prettierrc.json'
+["INFO" - 11:39:36 AM] Using ignore file (if present) at /home/bontzkl/projects/projekcikpykpyk/pomeranian-bolierplate-public/.prettierignore
+["INFO" - 11:39:36 AM] File Info:
+{
+  "ignored": false,
+  "inferredParser": "css"
+}
+["INFO" - 11:39:36 AM] Detected local configuration (i.e. .prettierrc or .editorconfig), VS Code configuration will not be used
+["INFO" - 11:39:36 AM] Prettier Options:
+{
+  "filepath": "/home/bontzkl/projects/projekcikpykpyk/pomeranian-bolierplate-public/src/App/Layout/styles/aside.css",
+  "parser": "css",
+  "singleQuote": true,
+  "trailingComma": "es5",
+  "endOfLine": "auto"
+}
+["INFO" - 11:39:36 AM] Formatting completed in 98ms.
+["INFO" - 11:39:44 AM] Formatting file:///home/bontzkl/projects/projekcikpykpyk/pomeranian-bolierplate-public/src/App/Layout/styles/aside.css
+["INFO" - 11:39:44 AM] Using config file at '/home/bontzkl/projects/projekcikpykpyk/pomeranian-bolierplate-public/.prettierrc.json'
+["INFO" - 11:39:44 AM] Using ignore file (if present) at /home/bontzkl/projects/projekcikpykpyk/pomeranian-bolierplate-public/.prettierignore
+["INFO" - 11:39:44 AM] File Info:
+{
+  "ignored": false,
+  "inferredParser": "css"
+}
+["INFO" - 11:39:44 AM] Detected local configuration (i.e. .prettierrc or .editorconfig), VS Code configuration will not be used
+["INFO" - 11:39:44 AM] Prettier Options:
+{
+  "filepath": "/home/bontzkl/projects/projekcikpykpyk/pomeranian-bolierplate-public/src/App/Layout/styles/aside.css",
+  "parser": "css",
+  "singleQuote": true,
+  "trailingComma": "es5",
+  "endOfLine": "auto"
+}
+["INFO" - 11:39:44 AM] Formatting completed in 18ms.
+["INFO" - 11:40:04 AM] Formatting file:///home/bontzkl/projects/projekcikpykpyk/pomeranian-bolierplate-public/src/App/Layout/AppAside.jsx
+["INFO" - 11:40:05 AM] Using config file at '/home/bontzkl/projects/projekcikpykpyk/pomeranian-bolierplate-public/.prettierrc.json'
+["INFO" - 11:40:05 AM] Using ignore file (if present) at /home/bontzkl/projects/projekcikpykpyk/pomeranian-bolierplate-public/.prettierignore
+["INFO" - 11:40:05 AM] File Info:
+{
+  "ignored": false,
+  "inferredParser": "babel"
+}
+["INFO" - 11:40:05 AM] Detected local configuration (i.e. .prettierrc or .editorconfig), VS Code configuration will not be used
+["INFO" - 11:40:05 AM] Prettier Options:
+{
+  "filepath": "/home/bontzkl/projects/projekcikpykpyk/pomeranian-bolierplate-public/src/App/Layout/AppAside.jsx",
+  "parser": "babel",
+  "singleQuote": true,
+  "trailingComma": "es5",
+  "endOfLine": "auto"
+}
+["INFO" - 11:40:05 AM] Formatting completed in 72ms.
+["INFO" - 11:40:59 AM] Formatting file:///home/bontzkl/projects/projekcikpykpyk/pomeranian-bolierplate-public/src/App/Layout/styles/aside.css
+["INFO" - 11:40:59 AM] Using config file at '/home/bontzkl/projects/projekcikpykpyk/pomeranian-bolierplate-public/.prettierrc.json'
+["INFO" - 11:40:59 AM] Using ignore file (if present) at /home/bontzkl/projects/projekcikpykpyk/pomeranian-bolierplate-public/.prettierignore
+["INFO" - 11:40:59 AM] File Info:
+{
+  "ignored": false,
+  "inferredParser": "css"
+}
+["INFO" - 11:40:59 AM] Detected local configuration (i.e. .prettierrc or .editorconfig), VS Code configuration will not be used
+["INFO" - 11:40:59 AM] Prettier Options:
+{
+  "filepath": "/home/bontzkl/projects/projekcikpykpyk/pomeranian-bolierplate-public/src/App/Layout/styles/aside.css",
+  "parser": "css",
+  "singleQuote": true,
+  "trailingComma": "es5",
+  "endOfLine": "auto"
+}
+["INFO" - 11:40:59 AM] Formatting completed in 19ms.
+["INFO" - 11:41:06 AM] Formatting file:///home/bontzkl/projects/projekcikpykpyk/pomeranian-bolierplate-public/src/App/Layout/styles/aside.css
+["INFO" - 11:41:06 AM] Using config file at '/home/bontzkl/projects/projekcikpykpyk/pomeranian-bolierplate-public/.prettierrc.json'
+["INFO" - 11:41:06 AM] Using ignore file (if present) at /home/bontzkl/projects/projekcikpykpyk/pomeranian-bolierplate-public/.prettierignore
+["INFO" - 11:41:06 AM] File Info:
+{
+  "ignored": false,
+  "inferredParser": "css"
+}
+["INFO" - 11:41:06 AM] Detected local configuration (i.e. .prettierrc or .editorconfig), VS Code configuration will not be used
+["INFO" - 11:41:06 AM] Prettier Options:
+{
+  "filepath": "/home/bontzkl/projects/projekcikpykpyk/pomeranian-bolierplate-public/src/App/Layout/styles/aside.css",
+  "parser": "css",
+  "singleQuote": true,
+  "trailingComma": "es5",
+  "endOfLine": "auto"
+}
+["INFO" - 11:41:06 AM] Formatting completed in 20ms.
+["INFO" - 11:41:21 AM] Formatting file:///home/bontzkl/projects/projekcikpykpyk/pomeranian-bolierplate-public/src/App/Layout/styles/aside.css
+["INFO" - 11:41:21 AM] Using config file at '/home/bontzkl/projects/projekcikpykpyk/pomeranian-bolierplate-public/.prettierrc.json'
+["INFO" - 11:41:21 AM] Using ignore file (if present) at /home/bontzkl/projects/projekcikpykpyk/pomeranian-bolierplate-public/.prettierignore
+["INFO" - 11:41:21 AM] File Info:
+{
+  "ignored": false,
+  "inferredParser": "css"
+}
+["INFO" - 11:41:21 AM] Detected local configuration (i.e. .prettierrc or .editorconfig), VS Code configuration will not be used
+["INFO" - 11:41:21 AM] Prettier Options:
+{
+  "filepath": "/home/bontzkl/projects/projekcikpykpyk/pomeranian-bolierplate-public/src/App/Layout/styles/aside.css",
+  "parser": "css",
+  "singleQuote": true,
+  "trailingComma": "es5",
+  "endOfLine": "auto"
+}
+["INFO" - 11:41:21 AM] Formatting completed in 16ms.
+["INFO" - 11:41:37 AM] Formatting file:///home/bontzkl/projects/projekcikpykpyk/pomeranian-bolierplate-public/src/App/Layout/styles/aside.css
+["INFO" - 11:41:37 AM] Using config file at '/home/bontzkl/projects/projekcikpykpyk/pomeranian-bolierplate-public/.prettierrc.json'
+["INFO" - 11:41:37 AM] Using ignore file (if present) at /home/bontzkl/projects/projekcikpykpyk/pomeranian-bolierplate-public/.prettierignore
+["INFO" - 11:41:37 AM] File Info:
+{
+  "ignored": false,
+  "inferredParser": "css"
+}
+["INFO" - 11:41:37 AM] Detected local configuration (i.e. .prettierrc or .editorconfig), VS Code configuration will not be used
+["INFO" - 11:41:37 AM] Prettier Options:
+{
+  "filepath": "/home/bontzkl/projects/projekcikpykpyk/pomeranian-bolierplate-public/src/App/Layout/styles/aside.css",
+  "parser": "css",
+  "singleQuote": true,
+  "trailingComma": "es5",
+  "endOfLine": "auto"
+}
+["INFO" - 11:41:37 AM] Formatting completed in 17ms.
+["INFO" - 11:45:06 AM] Formatting file:///home/bontzkl/projects/projekcikpykpyk/pomeranian-bolierplate-public/src/App/Layout/styles/aside.css
+["INFO" - 11:45:06 AM] Using config file at '/home/bontzkl/projects/projekcikpykpyk/pomeranian-bolierplate-public/.prettierrc.json'
+["INFO" - 11:45:06 AM] Using ignore file (if present) at /home/bontzkl/projects/projekcikpykpyk/pomeranian-bolierplate-public/.prettierignore
+["INFO" - 11:45:06 AM] File Info:
+{
+  "ignored": false,
+  "inferredParser": "css"
+}
+["INFO" - 11:45:06 AM] Detected local configuration (i.e. .prettierrc or .editorconfig), VS Code configuration will not be used
+["INFO" - 11:45:06 AM] Prettier Options:
+{
+  "filepath": "/home/bontzkl/projects/projekcikpykpyk/pomeranian-bolierplate-public/src/App/Layout/styles/aside.css",
+  "parser": "css",
+  "singleQuote": true,
+  "trailingComma": "es5",
+  "endOfLine": "auto"
+}
+["INFO" - 11:45:06 AM] Formatting completed in 17ms.
+["INFO" - 11:45:14 AM] Formatting file:///home/bontzkl/projects/projekcikpykpyk/pomeranian-bolierplate-public/src/App/Layout/styles/aside.css
+["INFO" - 11:45:14 AM] Using config file at '/home/bontzkl/projects/projekcikpykpyk/pomeranian-bolierplate-public/.prettierrc.json'
+["INFO" - 11:45:14 AM] Using ignore file (if present) at /home/bontzkl/projects/projekcikpykpyk/pomeranian-bolierplate-public/.prettierignore
+["INFO" - 11:45:14 AM] File Info:
+{
+  "ignored": false,
+  "inferredParser": "css"
+}
+["INFO" - 11:45:14 AM] Detected local configuration (i.e. .prettierrc or .editorconfig), VS Code configuration will not be used
+["INFO" - 11:45:14 AM] Prettier Options:
+{
+  "filepath": "/home/bontzkl/projects/projekcikpykpyk/pomeranian-bolierplate-public/src/App/Layout/styles/aside.css",
+  "parser": "css",
+  "singleQuote": true,
+  "trailingComma": "es5",
+  "endOfLine": "auto"
+}
+["INFO" - 11:45:14 AM] Formatting completed in 15ms.
+["INFO" - 11:46:10 AM] Formatting file:///home/bontzkl/projects/projekcikpykpyk/pomeranian-bolierplate-public/src/App/Layout/styles/aside.css
+["INFO" - 11:46:10 AM] Using config file at '/home/bontzkl/projects/projekcikpykpyk/pomeranian-bolierplate-public/.prettierrc.json'
+["INFO" - 11:46:10 AM] Using ignore file (if present) at /home/bontzkl/projects/projekcikpykpyk/pomeranian-bolierplate-public/.prettierignore
+["INFO" - 11:46:10 AM] File Info:
+{
+  "ignored": false,
+  "inferredParser": "css"
+}
+["INFO" - 11:46:10 AM] Detected local configuration (i.e. .prettierrc or .editorconfig), VS Code configuration will not be used
+["INFO" - 11:46:10 AM] Prettier Options:
+{
+  "filepath": "/home/bontzkl/projects/projekcikpykpyk/pomeranian-bolierplate-public/src/App/Layout/styles/aside.css",
+  "parser": "css",
+  "singleQuote": true,
+  "trailingComma": "es5",
+  "endOfLine": "auto"
+}
+["INFO" - 11:46:10 AM] Formatting completed in 15ms.
+["INFO" - 11:46:32 AM] Formatting file:///home/bontzkl/projects/projekcikpykpyk/pomeranian-bolierplate-public/src/App/Layout/styles/aside.css
+["INFO" - 11:46:32 AM] Using config file at '/home/bontzkl/projects/projekcikpykpyk/pomeranian-bolierplate-public/.prettierrc.json'
+["INFO" - 11:46:32 AM] Using ignore file (if present) at /home/bontzkl/projects/projekcikpykpyk/pomeranian-bolierplate-public/.prettierignore
+["INFO" - 11:46:32 AM] File Info:
+{
+  "ignored": false,
+  "inferredParser": "css"
+}
+["INFO" - 11:46:32 AM] Detected local configuration (i.e. .prettierrc or .editorconfig), VS Code configuration will not be used
+["INFO" - 11:46:32 AM] Prettier Options:
+{
+  "filepath": "/home/bontzkl/projects/projekcikpykpyk/pomeranian-bolierplate-public/src/App/Layout/styles/aside.css",
+  "parser": "css",
+  "singleQuote": true,
+  "trailingComma": "es5",
+  "endOfLine": "auto"
+}
+["INFO" - 11:46:32 AM] Formatting completed in 17ms.
+["INFO" - 11:47:16 AM] Formatting file:///home/bontzkl/projects/projekcikpykpyk/pomeranian-bolierplate-public/src/App/Layout/styles/aside.css
+["INFO" - 11:47:16 AM] Using config file at '/home/bontzkl/projects/projekcikpykpyk/pomeranian-bolierplate-public/.prettierrc.json'
+["INFO" - 11:47:16 AM] Using ignore file (if present) at /home/bontzkl/projects/projekcikpykpyk/pomeranian-bolierplate-public/.prettierignore
+["INFO" - 11:47:16 AM] File Info:
+{
+  "ignored": false,
+  "inferredParser": "css"
+}
+["INFO" - 11:47:16 AM] Detected local configuration (i.e. .prettierrc or .editorconfig), VS Code configuration will not be used
+["INFO" - 11:47:16 AM] Prettier Options:
+{
+  "filepath": "/home/bontzkl/projects/projekcikpykpyk/pomeranian-bolierplate-public/src/App/Layout/styles/aside.css",
+  "parser": "css",
+  "singleQuote": true,
+  "trailingComma": "es5",
+  "endOfLine": "auto"
+}
+["INFO" - 11:47:16 AM] Formatting completed in 16ms.
+["INFO" - 11:48:40 AM] Formatting file:///home/bontzkl/projects/projekcikpykpyk/pomeranian-bolierplate-public/src/App/Layout/styles/aside.css
+["INFO" - 11:48:40 AM] Using config file at '/home/bontzkl/projects/projekcikpykpyk/pomeranian-bolierplate-public/.prettierrc.json'
+["INFO" - 11:48:40 AM] Using ignore file (if present) at /home/bontzkl/projects/projekcikpykpyk/pomeranian-bolierplate-public/.prettierignore
+["INFO" - 11:48:40 AM] File Info:
+{
+  "ignored": false,
+  "inferredParser": "css"
+}
+["INFO" - 11:48:40 AM] Detected local configuration (i.e. .prettierrc or .editorconfig), VS Code configuration will not be used
+["INFO" - 11:48:40 AM] Prettier Options:
+{
+  "filepath": "/home/bontzkl/projects/projekcikpykpyk/pomeranian-bolierplate-public/src/App/Layout/styles/aside.css",
+  "parser": "css",
+  "singleQuote": true,
+  "trailingComma": "es5",
+  "endOfLine": "auto"
+}
+["INFO" - 11:48:40 AM] Formatting completed in 18ms.
+["INFO" - 11:49:21 AM] Formatting file:///home/bontzkl/projects/projekcikpykpyk/pomeranian-bolierplate-public/src/App/Layout/styles/aside.css
+["INFO" - 11:49:21 AM] Using config file at '/home/bontzkl/projects/projekcikpykpyk/pomeranian-bolierplate-public/.prettierrc.json'
+["INFO" - 11:49:21 AM] Using ignore file (if present) at /home/bontzkl/projects/projekcikpykpyk/pomeranian-bolierplate-public/.prettierignore
+["INFO" - 11:49:21 AM] File Info:
+{
+  "ignored": false,
+  "inferredParser": "css"
+}
+["INFO" - 11:49:21 AM] Detected local configuration (i.e. .prettierrc or .editorconfig), VS Code configuration will not be used
+["INFO" - 11:49:21 AM] Prettier Options:
+{
+  "filepath": "/home/bontzkl/projects/projekcikpykpyk/pomeranian-bolierplate-public/src/App/Layout/styles/aside.css",
+  "parser": "css",
+  "singleQuote": true,
+  "trailingComma": "es5",
+  "endOfLine": "auto"
+}
+["INFO" - 11:49:21 AM] Formatting completed in 18ms.
+["INFO" - 11:50:32 AM] Formatting file:///home/bontzkl/projects/projekcikpykpyk/pomeranian-bolierplate-public/src/App/Layout/styles/aside.css
+["INFO" - 11:50:32 AM] Using config file at '/home/bontzkl/projects/projekcikpykpyk/pomeranian-bolierplate-public/.prettierrc.json'
+["INFO" - 11:50:32 AM] Using ignore file (if present) at /home/bontzkl/projects/projekcikpykpyk/pomeranian-bolierplate-public/.prettierignore
+["INFO" - 11:50:32 AM] File Info:
+{
+  "ignored": false,
+  "inferredParser": "css"
+}
+["INFO" - 11:50:32 AM] Detected local configuration (i.e. .prettierrc or .editorconfig), VS Code configuration will not be used
+["INFO" - 11:50:32 AM] Prettier Options:
+{
+  "filepath": "/home/bontzkl/projects/projekcikpykpyk/pomeranian-bolierplate-public/src/App/Layout/styles/aside.css",
+  "parser": "css",
+  "singleQuote": true,
+  "trailingComma": "es5",
+  "endOfLine": "auto"
+}
+["INFO" - 11:50:32 AM] Formatting completed in 15ms.
+["INFO" - 11:50:32 AM] Formatting file:///home/bontzkl/projects/projekcikpykpyk/pomeranian-bolierplate-public/src/App/Layout/styles/aside.css
+["INFO" - 11:50:32 AM] Using config file at '/home/bontzkl/projects/projekcikpykpyk/pomeranian-bolierplate-public/.prettierrc.json'
+["INFO" - 11:50:32 AM] Using ignore file (if present) at /home/bontzkl/projects/projekcikpykpyk/pomeranian-bolierplate-public/.prettierignore
+["INFO" - 11:50:32 AM] File Info:
+{
+  "ignored": false,
+  "inferredParser": "css"
+}
+["INFO" - 11:50:32 AM] Detected local configuration (i.e. .prettierrc or .editorconfig), VS Code configuration will not be used
+["INFO" - 11:50:32 AM] Prettier Options:
+{
+  "filepath": "/home/bontzkl/projects/projekcikpykpyk/pomeranian-bolierplate-public/src/App/Layout/styles/aside.css",
+  "parser": "css",
+  "singleQuote": true,
+  "trailingComma": "es5",
+  "endOfLine": "auto"
+}
+["INFO" - 11:50:32 AM] Formatting completed in 16ms.
+["INFO" - 11:50:46 AM] Formatting file:///home/bontzkl/projects/projekcikpykpyk/pomeranian-bolierplate-public/src/App/Layout/styles/aside.css
+["INFO" - 11:50:46 AM] Using config file at '/home/bontzkl/projects/projekcikpykpyk/pomeranian-bolierplate-public/.prettierrc.json'
+["INFO" - 11:50:46 AM] Using ignore file (if present) at /home/bontzkl/projects/projekcikpykpyk/pomeranian-bolierplate-public/.prettierignore
+["INFO" - 11:50:46 AM] File Info:
+{
+  "ignored": false,
+  "inferredParser": "css"
+}
+["INFO" - 11:50:46 AM] Detected local configuration (i.e. .prettierrc or .editorconfig), VS Code configuration will not be used
+["INFO" - 11:50:46 AM] Prettier Options:
+{
+  "filepath": "/home/bontzkl/projects/projekcikpykpyk/pomeranian-bolierplate-public/src/App/Layout/styles/aside.css",
+  "parser": "css",
+  "singleQuote": true,
+  "trailingComma": "es5",
+  "endOfLine": "auto"
+}
+["INFO" - 11:50:46 AM] Formatting completed in 16ms.
+["INFO" - 11:51:08 AM] Formatting file:///home/bontzkl/projects/projekcikpykpyk/pomeranian-bolierplate-public/src/App/Layout/styles/aside.css
+["INFO" - 11:51:08 AM] Using config file at '/home/bontzkl/projects/projekcikpykpyk/pomeranian-bolierplate-public/.prettierrc.json'
+["INFO" - 11:51:08 AM] Using ignore file (if present) at /home/bontzkl/projects/projekcikpykpyk/pomeranian-bolierplate-public/.prettierignore
+["INFO" - 11:51:08 AM] File Info:
+{
+  "ignored": false,
+  "inferredParser": "css"
+}
+["INFO" - 11:51:08 AM] Detected local configuration (i.e. .prettierrc or .editorconfig), VS Code configuration will not be used
+["INFO" - 11:51:08 AM] Prettier Options:
+{
+  "filepath": "/home/bontzkl/projects/projekcikpykpyk/pomeranian-bolierplate-public/src/App/Layout/styles/aside.css",
+  "parser": "css",
+  "singleQuote": true,
+  "trailingComma": "es5",
+  "endOfLine": "auto"
+}
+["INFO" - 11:51:08 AM] Formatting completed in 19ms.
+["INFO" - 11:51:32 AM] Formatting file:///home/bontzkl/projects/projekcikpykpyk/pomeranian-bolierplate-public/src/App/Layout/styles/aside.css
+["INFO" - 11:51:32 AM] Using config file at '/home/bontzkl/projects/projekcikpykpyk/pomeranian-bolierplate-public/.prettierrc.json'
+["INFO" - 11:51:32 AM] Using ignore file (if present) at /home/bontzkl/projects/projekcikpykpyk/pomeranian-bolierplate-public/.prettierignore
+["INFO" - 11:51:32 AM] File Info:
+{
+  "ignored": false,
+  "inferredParser": "css"
+}
+["INFO" - 11:51:32 AM] Detected local configuration (i.e. .prettierrc or .editorconfig), VS Code configuration will not be used
+["INFO" - 11:51:32 AM] Prettier Options:
+{
+  "filepath": "/home/bontzkl/projects/projekcikpykpyk/pomeranian-bolierplate-public/src/App/Layout/styles/aside.css",
+  "parser": "css",
+  "singleQuote": true,
+  "trailingComma": "es5",
+  "endOfLine": "auto"
+}
+["INFO" - 11:51:32 AM] Formatting completed in 18ms.
+["INFO" - 11:51:39 AM] Formatting file:///home/bontzkl/projects/projekcikpykpyk/pomeranian-bolierplate-public/src/App/Layout/styles/aside.css
+["INFO" - 11:51:39 AM] Using config file at '/home/bontzkl/projects/projekcikpykpyk/pomeranian-bolierplate-public/.prettierrc.json'
+["INFO" - 11:51:39 AM] Using ignore file (if present) at /home/bontzkl/projects/projekcikpykpyk/pomeranian-bolierplate-public/.prettierignore
+["INFO" - 11:51:39 AM] File Info:
+{
+  "ignored": false,
+  "inferredParser": "css"
+}
+["INFO" - 11:51:39 AM] Detected local configuration (i.e. .prettierrc or .editorconfig), VS Code configuration will not be used
+["INFO" - 11:51:39 AM] Prettier Options:
+{
+  "filepath": "/home/bontzkl/projects/projekcikpykpyk/pomeranian-bolierplate-public/src/App/Layout/styles/aside.css",
+  "parser": "css",
+  "singleQuote": true,
+  "trailingComma": "es5",
+  "endOfLine": "auto"
+}
+["INFO" - 11:51:39 AM] Formatting completed in 38ms.
+["INFO" - 11:53:17 AM] Formatting file:///home/bontzkl/projects/projekcikpykpyk/pomeranian-bolierplate-public/src/App/Layout/styles/aside.css
+["INFO" - 11:53:17 AM] Using config file at '/home/bontzkl/projects/projekcikpykpyk/pomeranian-bolierplate-public/.prettierrc.json'
+["INFO" - 11:53:17 AM] Using ignore file (if present) at /home/bontzkl/projects/projekcikpykpyk/pomeranian-bolierplate-public/.prettierignore
+["INFO" - 11:53:17 AM] File Info:
+{
+  "ignored": false,
+  "inferredParser": "css"
+}
+["INFO" - 11:53:17 AM] Detected local configuration (i.e. .prettierrc or .editorconfig), VS Code configuration will not be used
+["INFO" - 11:53:17 AM] Prettier Options:
+{
+  "filepath": "/home/bontzkl/projects/projekcikpykpyk/pomeranian-bolierplate-public/src/App/Layout/styles/aside.css",
+  "parser": "css",
+  "singleQuote": true,
+  "trailingComma": "es5",
+  "endOfLine": "auto"
+}
+["INFO" - 11:53:17 AM] Formatting completed in 14ms.
+["INFO" - 11:53:48 AM] Formatting file:///home/bontzkl/projects/projekcikpykpyk/pomeranian-bolierplate-public/src/App/Layout/styles/aside.css
+["INFO" - 11:53:48 AM] Using config file at '/home/bontzkl/projects/projekcikpykpyk/pomeranian-bolierplate-public/.prettierrc.json'
+["INFO" - 11:53:48 AM] Using ignore file (if present) at /home/bontzkl/projects/projekcikpykpyk/pomeranian-bolierplate-public/.prettierignore
+["INFO" - 11:53:48 AM] File Info:
+{
+  "ignored": false,
+  "inferredParser": "css"
+}
+["INFO" - 11:53:48 AM] Detected local configuration (i.e. .prettierrc or .editorconfig), VS Code configuration will not be used
+["INFO" - 11:53:48 AM] Prettier Options:
+{
+  "filepath": "/home/bontzkl/projects/projekcikpykpyk/pomeranian-bolierplate-public/src/App/Layout/styles/aside.css",
+  "parser": "css",
+  "singleQuote": true,
+  "trailingComma": "es5",
+  "endOfLine": "auto"
+}
+["INFO" - 11:53:48 AM] Formatting completed in 20ms.
+["INFO" - 11:58:01 AM] Formatting file:///home/bontzkl/projects/projekcikpykpyk/pomeranian-bolierplate-public/src/App/Layout/styles/aside.css
+["INFO" - 11:58:01 AM] Using config file at '/home/bontzkl/projects/projekcikpykpyk/pomeranian-bolierplate-public/.prettierrc.json'
+["INFO" - 11:58:01 AM] Using ignore file (if present) at /home/bontzkl/projects/projekcikpykpyk/pomeranian-bolierplate-public/.prettierignore
+["INFO" - 11:58:01 AM] File Info:
+{
+  "ignored": false,
+  "inferredParser": "css"
+}
+["INFO" - 11:58:01 AM] Detected local configuration (i.e. .prettierrc or .editorconfig), VS Code configuration will not be used
+["INFO" - 11:58:01 AM] Prettier Options:
+{
+  "filepath": "/home/bontzkl/projects/projekcikpykpyk/pomeranian-bolierplate-public/src/App/Layout/styles/aside.css",
+  "parser": "css",
+  "singleQuote": true,
+  "trailingComma": "es5",
+  "endOfLine": "auto"
+}
+["INFO" - 11:58:01 AM] Formatting completed in 14ms.
