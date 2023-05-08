@@ -30,22 +30,22 @@ export function AppAside() {
             </NavLink>
           </li>
           <li>
-            <NavLink to="exercises">
+            <NavLink className="aside-row" to="exercises">
               <EditIcon className="menu-icon" /> Ćwiczenia
             </NavLink>
           </li>
           <li>
-            <div>
+            <NavLink className="aside-row" to="calendar">
               <CalendarIcon className="menu-icon" />
               Kalendarz
-            </div>
+            </NavLink>
           </li>
           <hr></hr>
           <li>
-            <div>
+            <NavLink className="aside-row" to="settings">
               <SettingIcon className="menu-icon" />
               Ustawienia
-            </div>
+            </NavLink>
           </li>
         </ul>
       </nav>
