@@ -1,0 +1,14 @@
+.blog-card {
+  border: solid white;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 45px 61px;
+  gap: 10px;
+  background: #f4f5f7;
+  border-radius: 8px;
+}
+.blog-card:hover {
+  background: #23213d;
+  color: white;
+}
