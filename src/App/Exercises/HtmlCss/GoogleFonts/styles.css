@@ -1,1 +1,67 @@
-
+.font-kalam {
+  font-family: 'Kalam';
+}
+.font-roboto {
+  font-family: 'Roboto';
+}
+.font-share-tech-mono {
+  font-family: 'Share+Tech+Mono';
+}
+.font-dela-gothic-one {
+  font-family: 'Dela+Gothic+One';
+}
+.font-great-vibes {
+  font-family: 'Great+Vibes';
+}
+.animation {
+  background-color: red;
+  border: 10px solid black;
+  animation-name: change-background;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+}
+@keyframes change-background {
+  0% {
+    background-color: blue;
+    border: 10px solid black;
+    border-radius: 25% 10%;
+    font-family: 'Dela+Gothic+One';
+    margin-left: 100%;
+    width: 300%;
+  }
+  25% {
+    border-radius: 10% 30% 50% 70%;
+    font-family: 'Roboto';
+  }
+  50% {
+    border-radius: 10% / 50%;
+    background-color: coral;
+    border: 1px dashed red;
+    font-size: 1px;
+  }
+  60% {
+    background-color: white;
+  }
+  75% {
+    border-radius: 10px 100px / 120px;
+  }
+  90% {
+    background-color: black;
+  }
+  100% {
+    background-color: orange;
+    border-radius: 50% 20% / 10% 40%;
+    font-family: 'Kalam';
+    font-size: 60px;
+    background: rgb(2, 0, 36);
+    background: linear-gradient(
+      90deg,
+      rgba(2, 0, 36, 1) 0%,
+      rgba(9, 9, 121, 1) 35%,
+      rgba(0, 212, 255, 1) 100%
+    );
+    margin-left: 0%;
+    width: 100%;
+    color: white;
+  }
+}
