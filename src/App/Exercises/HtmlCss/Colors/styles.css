@@ -1,0 +1,12 @@
+.gta {
+  background-image: url('./gta.jpg');
+  background-position: center center;
+  background-size: auto;
+  background-repeat: no-repeat;
+  width: 800px;
+  height: 40px;
+}
+.filter {
+  filter: hue-rotate(90deg);
+  filter: drop-shadow(16px 16px 20px red) invert(75%);
+}
