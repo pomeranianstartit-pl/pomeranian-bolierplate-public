@@ -1,17 +1,45 @@
 .box1 {
   margin: 20px;
-  width: 100px;
-  height: 100px;
+  width: 100%;
+  height: 100vh;
   padding: 15px;
   border: 5px dotted red;
   background-color: antiquewhite;
+  overflow: auto;
+  font-size: 20px;
+  background-clip: content-box;
+  overflow: scroll;
 }
-.box2 {
-  margin: 20px;
-  width: 100px;
-  height: 100px;
-  padding: 15px;
-  border: 5px solid blue;
-  background-color: gray;
-  box-sizing: content-box;
+.paragraph {
+  font-size: 0.5em;
+  font-style: italic;
+  width: fit-content;
+  border: solid dodgerblue;
+  border-radius: 100%;
+  background-clip: content-box;
+  text-align: center;
+  padding: 10px 15px 20px 15px;
+}
+.paragraph2 {
+  font-size: 0.5em;
+  font-style: italic;
+  width: fit-content;
+  border: solid dodgerblue;
+  border-radius: 15%;
+  background-clip: content-box;
+  text-align: center;
+  padding: 10px 15px;
+}
+.paragraph3 {
+  font-size: 0.5em;
+  font-style: italic;
+  width: fit-content;
+  border: solid dodgerblue;
+  border-radius: 100%;
+  background-clip: content-box;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 100px;
 }
