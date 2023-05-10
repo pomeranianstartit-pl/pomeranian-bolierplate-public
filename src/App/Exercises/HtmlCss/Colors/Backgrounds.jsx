@@ -36,3 +36,4 @@ const Backgrounds = () => {
 };
 
 export default Backgrounds;
+//zrobić zadanie mapa użyć props
