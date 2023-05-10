@@ -25,6 +25,10 @@ export function GoogleFonts() {
         Morbi varius aliquet magna sed vestibulum. Suspendisse at elit pharetra,
         congue elit vel, imperdiet lorem.
       </div>
+
+      <br />
+
+      <div className="animation">Race Car</div>
     </div>
   );
 }
