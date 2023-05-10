@@ -6,6 +6,7 @@
   border-radius: 10px;
 }
 .question {
+  cursor: pointer;
   font-weight: bold;
   padding: 20px 0;
   border-bottom: 1px solid lightgray;
