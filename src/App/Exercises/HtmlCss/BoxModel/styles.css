@@ -1,0 +1,19 @@
+.box {
+  margin: 10px;
+  width: 100px;
+  height: 100px;
+  padding: 15px;
+  border: 1px solid red;
+  background-color: lightblue;
+  box-sizing: border-box;
+}
+
+.box-2 {
+  margin: 10px;
+  width: 100px;
+  height: 100px;
+  padding: 15px;
+  border: 5px solid orange;
+  background-color: grey;
+  box-sizing: content-box;
+}
