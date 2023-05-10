@@ -1,0 +1,15 @@
+2023-05-05 17:58:57.730 [info] Log level: Info
+2023-05-05 17:58:57.730 [info] Validating found git in: "git"
+2023-05-05 17:58:57.730 [info] Using git "2.34.1" from "git"
+2023-05-05 17:58:57.730 [info] > git rev-parse --show-toplevel [11ms]
+2023-05-05 17:58:57.735 [info] > git rev-parse --git-dir --git-common-dir [6ms]
+2023-05-05 17:58:57.744 [info] Open repository: /home/bontzkl/projects/projekcikpykpyk/pomeranian-bolierplate-public
+2023-05-05 17:58:57.756 [info] > git rev-parse --show-toplevel [7ms]
+2023-05-05 17:58:57.762 [info] > git rev-parse --show-toplevel [1ms]
+2023-05-05 17:58:57.766 [info] > git config --get commit.template [12ms]
+2023-05-05 17:58:57.960 [info] > git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track)%00%(upstream:remotename)%00%(upstream:remoteref) refs/heads/selectors-and-cascade refs/remotes/selectors-and-cascade [82ms]
+2023-05-05 17:58:57.968 [info] > git status -z -uall [2ms]
+2023-05-05 17:58:57.989 [info] > git config --get commit.template [2ms]
+2023-05-05 17:58:57.995 [info] > git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track)%00%(upstream:remotename)%00%(upstream:remoteref) refs/heads/selectors-and-cascade refs/remotes/selectors-and-cascade [1ms]
+2023-05-05 17:58:58.004 [info] > git status -z -uall [3ms]
+2023-05-05 17:58:58.261 [info] > git check-ignore -v -z --stdin [2ms]

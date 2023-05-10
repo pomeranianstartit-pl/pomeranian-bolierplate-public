@@ -1,0 +1,13 @@
+2023-05-03 18:02:32.179 [info] 
+
+
+
+
+2023-05-03 18:02:32.207 [info] Extension host agent started.
+2023-05-03 18:02:32.418 [info] Deleted from disk ms-vscode.cmake-tools /home/bontzkl/.vscode-server/extensions/ms-vscode.cmake-tools-1.14.30
+2023-05-03 18:02:32.419 [info] Deleted from disk ms-vscode.cpptools /home/bontzkl/.vscode-server/extensions/ms-vscode.cpptools-1.14.5-linux-x64
+2023-05-03 18:02:32.732 [info] [127.0.0.1][84f5c789][ManagementConnection] New connection established.
+2023-05-03 18:02:33.274 [info] [127.0.0.1][9ee26d6f][ExtensionHostConnection] New connection established.
+2023-05-03 18:02:33.423 [info] [127.0.0.1][9ee26d6f][ExtensionHostConnection] <500> Launched Extension Host Process.
+2023-05-03 18:29:12.665 [info] [127.0.0.1][84f5c789][ManagementConnection] The client has disconnected gracefully, so the connection will be disposed.
+2023-05-03 18:29:12.767 [info] [127.0.0.1][9ee26d6f][ExtensionHostConnection] <500> Extension Host Process exited with code: 0, signal: null.

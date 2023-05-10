@@ -1,0 +1,2598 @@
+["INFO" - 5:59:19 PM] Extension Name: esbenp.prettier-vscode.
+["INFO" - 5:59:19 PM] Extension Version: 9.12.0.
+["INFO" - 6:00:39 PM] Formatting file:///home/bontzkl/projects/projekcikpykpyk/pomeranian-bolierplate-public/src/App/Exercises/ReactExercises/SubRouteExercise1/router-data.jsx
+["INFO" - 6:00:39 PM] Using config file at '/home/bontzkl/projects/projekcikpykpyk/pomeranian-bolierplate-public/.prettierrc.json'
+["INFO" - 6:00:39 PM] Using ignore file (if present) at /home/bontzkl/projects/projekcikpykpyk/pomeranian-bolierplate-public/.prettierignore
+["INFO" - 6:00:39 PM] File Info:
+{
+  "ignored": false,
+  "inferredParser": "babel"
+}
+["INFO" - 6:00:39 PM] Detected local configuration (i.e. .prettierrc or .editorconfig), VS Code configuration will not be used
+["INFO" - 6:00:39 PM] Prettier Options:
+{
+  "filepath": "/home/bontzkl/projects/projekcikpykpyk/pomeranian-bolierplate-public/src/App/Exercises/ReactExercises/SubRouteExercise1/router-data.jsx",
+  "parser": "babel",
+  "singleQuote": true,
+  "trailingComma": "es5",
+  "endOfLine": "auto"
+}
+["INFO" - 6:00:39 PM] Formatting completed in 120ms.
+["INFO" - 6:01:07 PM] Formatting file:///home/bontzkl/projects/projekcikpykpyk/pomeranian-bolierplate-public/src/App/Exercises/ReactExercises/SubRouteExercise1/router-data.jsx
+["INFO" - 6:01:07 PM] Using config file at '/home/bontzkl/projects/projekcikpykpyk/pomeranian-bolierplate-public/.prettierrc.json'
+["INFO" - 6:01:07 PM] Using ignore file (if present) at /home/bontzkl/projects/projekcikpykpyk/pomeranian-bolierplate-public/.prettierignore
+["INFO" - 6:01:07 PM] File Info:
+{
+  "ignored": false,
+  "inferredParser": "babel"
+}
+["INFO" - 6:01:07 PM] Detected local configuration (i.e. .prettierrc or .editorconfig), VS Code configuration will not be used
+["INFO" - 6:01:07 PM] Prettier Options:
+{
+  "filepath": "/home/bontzkl/projects/projekcikpykpyk/pomeranian-bolierplate-public/src/App/Exercises/ReactExercises/SubRouteExercise1/router-data.jsx",
+  "parser": "babel",
+  "singleQuote": true,
+  "trailingComma": "es5",
+  "endOfLine": "auto"
+}
+["INFO" - 6:01:07 PM] Formatting completed in 22ms.
+["INFO" - 6:01:53 PM] Formatting file:///home/bontzkl/projects/projekcikpykpyk/pomeranian-bolierplate-public/src/App/Exercises/ReactExercises/SubRouteExercise2/Exercise2.jsx
+["INFO" - 6:01:53 PM] Using config file at '/home/bontzkl/projects/projekcikpykpyk/pomeranian-bolierplate-public/.prettierrc.json'
+["INFO" - 6:01:53 PM] Using ignore file (if present) at /home/bontzkl/projects/projekcikpykpyk/pomeranian-bolierplate-public/.prettierignore
+["INFO" - 6:01:53 PM] File Info:
+{
+  "ignored": false,
+  "inferredParser": "babel"
+}
+["INFO" - 6:01:53 PM] Detected local configuration (i.e. .prettierrc or .editorconfig), VS Code configuration will not be used
+["INFO" - 6:01:53 PM] Prettier Options:
+{
+  "filepath": "/home/bontzkl/projects/projekcikpykpyk/pomeranian-bolierplate-public/src/App/Exercises/ReactExercises/SubRouteExercise2/Exercise2.jsx",
+  "parser": "babel",
+  "singleQuote": true,
+  "trailingComma": "es5",
+  "endOfLine": "auto"
+}
+["INFO" - 6:01:53 PM] Formatting completed in 44ms.
+["INFO" - 6:02:29 PM] Formatting file:///home/bontzkl/projects/projekcikpykpyk/pomeranian-bolierplate-public/src/App/Exercises/ReactExercises/SubRouteExercise2/router-data.jsx
+["INFO" - 6:02:29 PM] Using config file at '/home/bontzkl/projects/projekcikpykpyk/pomeranian-bolierplate-public/.prettierrc.json'
+["INFO" - 6:02:29 PM] Using ignore file (if present) at /home/bontzkl/projects/projekcikpykpyk/pomeranian-bolierplate-public/.prettierignore
+["INFO" - 6:02:29 PM] File Info:
+{
+  "ignored": false,
+  "inferredParser": "babel"
+}
+["INFO" - 6:02:29 PM] Detected local configuration (i.e. .prettierrc or .editorconfig), VS Code configuration will not be used
+["INFO" - 6:02:29 PM] Prettier Options:
+{
+  "filepath": "/home/bontzkl/projects/projekcikpykpyk/pomeranian-bolierplate-public/src/App/Exercises/ReactExercises/SubRouteExercise2/router-data.jsx",
+  "parser": "babel",
+  "singleQuote": true,
+  "trailingComma": "es5",
+  "endOfLine": "auto"
+}
+["INFO" - 6:02:29 PM] Formatting completed in 42ms.
+["INFO" - 6:02:44 PM] Formatting file:///home/bontzkl/projects/projekcikpykpyk/pomeranian-bolierplate-public/src/App/Exercises/ReactExercises/view-router-data.jsx
+["INFO" - 6:02:44 PM] Using config file at '/home/bontzkl/projects/projekcikpykpyk/pomeranian-bolierplate-public/.prettierrc.json'
+["INFO" - 6:02:44 PM] Using ignore file (if present) at /home/bontzkl/projects/projekcikpykpyk/pomeranian-bolierplate-public/.prettierignore
+["INFO" - 6:02:44 PM] File Info:
+{
+  "ignored": false,
+  "inferredParser": "babel"
+}
+["INFO" - 6:02:44 PM] Detected local configuration (i.e. .prettierrc or .editorconfig), VS Code configuration will not be used
+["INFO" - 6:02:44 PM] Prettier Options:
+{
+  "filepath": "/home/bontzkl/projects/projekcikpykpyk/pomeranian-bolierplate-public/src/App/Exercises/ReactExercises/view-router-data.jsx",
+  "parser": "babel",
+  "singleQuote": true,
+  "trailingComma": "es5",
+  "endOfLine": "auto"
+}
+["INFO" - 6:02:44 PM] Formatting completed in 26ms.
+["INFO" - 6:03:54 PM] Formatting file:///home/bontzkl/projects/projekcikpykpyk/pomeranian-bolierplate-public/src/App/Exercises/ReactExercises/SubRouteExercise2%20copy/router-data.jsx
+["INFO" - 6:03:54 PM] Using config file at '/home/bontzkl/projects/projekcikpykpyk/pomeranian-bolierplate-public/.prettierrc.json'
+["INFO" - 6:03:54 PM] Using ignore file (if present) at /home/bontzkl/projects/projekcikpykpyk/pomeranian-bolierplate-public/.prettierignore
+["INFO" - 6:03:54 PM] File Info:
+{
+  "ignored": false,
+  "inferredParser": "babel"
+}
+["INFO" - 6:03:54 PM] Detected local configuration (i.e. .prettierrc or .editorconfig), VS Code configuration will not be used
+["INFO" - 6:03:54 PM] Prettier Options:
+{
+  "filepath": "/home/bontzkl/projects/projekcikpykpyk/pomeranian-bolierplate-public/src/App/Exercises/ReactExercises/SubRouteExercise2 copy/router-data.jsx",
+  "parser": "babel",
+  "singleQuote": true,
+  "trailingComma": "es5",
+  "endOfLine": "auto"
+}
+["INFO" - 6:03:54 PM] Formatting completed in 33ms.
+["INFO" - 6:03:58 PM] Formatting file:///home/bontzkl/projects/projekcikpykpyk/pomeranian-bolierplate-public/src/App/Exercises/ReactExercises/SubRouteExercise2%20copy/Exercise2.jsx
+["INFO" - 6:03:58 PM] Using config file at '/home/bontzkl/projects/projekcikpykpyk/pomeranian-bolierplate-public/.prettierrc.json'
+["INFO" - 6:03:58 PM] Using ignore file (if present) at /home/bontzkl/projects/projekcikpykpyk/pomeranian-bolierplate-public/.prettierignore
+["INFO" - 6:03:58 PM] File Info:
+{
+  "ignored": false,
+  "inferredParser": "babel"
+}
+["INFO" - 6:03:58 PM] Detected local configuration (i.e. .prettierrc or .editorconfig), VS Code configuration will not be used
+["INFO" - 6:03:58 PM] Prettier Options:
+{
+  "filepath": "/home/bontzkl/projects/projekcikpykpyk/pomeranian-bolierplate-public/src/App/Exercises/ReactExercises/SubRouteExercise2 copy/Exercise2.jsx",
+  "parser": "babel",
+  "singleQuote": true,
+  "trailingComma": "es5",
+  "endOfLine": "auto"
+}
+["INFO" - 6:03:58 PM] Formatting completed in 36ms.
+["INFO" - 6:04:08 PM] Formatting file:///home/bontzkl/projects/projekcikpykpyk/pomeranian-bolierplate-public/src/App/Exercises/ReactExercises/view-router-data.jsx
+["INFO" - 6:04:08 PM] Using config file at '/home/bontzkl/projects/projekcikpykpyk/pomeranian-bolierplate-public/.prettierrc.json'
+["INFO" - 6:04:08 PM] Using ignore file (if present) at /home/bontzkl/projects/projekcikpykpyk/pomeranian-bolierplate-public/.prettierignore
+["INFO" - 6:04:08 PM] File Info:
+{
+  "ignored": false,
+  "inferredParser": "babel"
+}
+["INFO" - 6:04:08 PM] Detected local configuration (i.e. .prettierrc or .editorconfig), VS Code configuration will not be used
+["INFO" - 6:04:08 PM] Prettier Options:
+{
+  "filepath": "/home/bontzkl/projects/projekcikpykpyk/pomeranian-bolierplate-public/src/App/Exercises/ReactExercises/view-router-data.jsx",
+  "parser": "babel",
+  "singleQuote": true,
+  "trailingComma": "es5",
+  "endOfLine": "auto"
+}
+["INFO" - 6:04:08 PM] Formatting completed in 18ms.
+["INFO" - 6:04:27 PM] Formatting file:///home/bontzkl/projects/projekcikpykpyk/pomeranian-bolierplate-public/src/App/Exercises/ReactExercises/view-router-data.jsx
+["INFO" - 6:04:27 PM] Using config file at '/home/bontzkl/projects/projekcikpykpyk/pomeranian-bolierplate-public/.prettierrc.json'
+["INFO" - 6:04:27 PM] Using ignore file (if present) at /home/bontzkl/projects/projekcikpykpyk/pomeranian-bolierplate-public/.prettierignore
+["INFO" - 6:04:27 PM] File Info:
+{
+  "ignored": false,
+  "inferredParser": "babel"
+}
+["INFO" - 6:04:27 PM] Detected local configuration (i.e. .prettierrc or .editorconfig), VS Code configuration will not be used
+["INFO" - 6:04:27 PM] Prettier Options:
+{
+  "filepath": "/home/bontzkl/projects/projekcikpykpyk/pomeranian-bolierplate-public/src/App/Exercises/ReactExercises/view-router-data.jsx",
+  "parser": "babel",
+  "singleQuote": true,
+  "trailingComma": "es5",
+  "endOfLine": "auto"
+}
+["INFO" - 6:04:27 PM] Formatting completed in 19ms.
+["INFO" - 6:04:37 PM] Formatting file:///home/bontzkl/projects/projekcikpykpyk/pomeranian-bolierplate-public/src/App/Exercises/ReactExercises/SubRouteExercise3/Exercise2.jsx
+["INFO" - 6:04:37 PM] Using config file at '/home/bontzkl/projects/projekcikpykpyk/pomeranian-bolierplate-public/.prettierrc.json'
+["INFO" - 6:04:37 PM] Using ignore file (if present) at /home/bontzkl/projects/projekcikpykpyk/pomeranian-bolierplate-public/.prettierignore
+["INFO" - 6:04:37 PM] File Info:
+{
+  "ignored": false,
+  "inferredParser": "babel"
+}
+["INFO" - 6:04:37 PM] Detected local configuration (i.e. .prettierrc or .editorconfig), VS Code configuration will not be used
+["INFO" - 6:04:37 PM] Prettier Options:
+{
+  "filepath": "/home/bontzkl/projects/projekcikpykpyk/pomeranian-bolierplate-public/src/App/Exercises/ReactExercises/SubRouteExercise3/Exercise2.jsx",
+  "parser": "babel",
+  "singleQuote": true,
+  "trailingComma": "es5",
+  "endOfLine": "auto"
+}
+["INFO" - 6:04:37 PM] Formatting completed in 20ms.
+["INFO" - 6:04:39 PM] Formatting file:///home/bontzkl/projects/projekcikpykpyk/pomeranian-bolierplate-public/src/App/Exercises/ReactExercises/view-router-data.jsx
+["INFO" - 6:04:39 PM] Using config file at '/home/bontzkl/projects/projekcikpykpyk/pomeranian-bolierplate-public/.prettierrc.json'
+["INFO" - 6:04:39 PM] Using ignore file (if present) at /home/bontzkl/projects/projekcikpykpyk/pomeranian-bolierplate-public/.prettierignore
+["INFO" - 6:04:39 PM] File Info:
+{
+  "ignored": false,
+  "inferredParser": "babel"
+}
+["INFO" - 6:04:39 PM] Detected local configuration (i.e. .prettierrc or .editorconfig), VS Code configuration will not be used
+["INFO" - 6:04:39 PM] Prettier Options:
+{
+  "filepath": "/home/bontzkl/projects/projekcikpykpyk/pomeranian-bolierplate-public/src/App/Exercises/ReactExercises/view-router-data.jsx",
+  "parser": "babel",
+  "singleQuote": true,
+  "trailingComma": "es5",
+  "endOfLine": "auto"
+}
+["INFO" - 6:04:39 PM] Formatting completed in 27ms.
+["INFO" - 6:06:06 PM] Formatting file:///home/bontzkl/projects/projekcikpykpyk/pomeranian-bolierplate-public/src/App/Exercises/ReactExercises/SubRouteExercise4/Exercise4.jsx
+["INFO" - 6:06:06 PM] Using config file at '/home/bontzkl/projects/projekcikpykpyk/pomeranian-bolierplate-public/.prettierrc.json'
+["INFO" - 6:06:06 PM] Using ignore file (if present) at /home/bontzkl/projects/projekcikpykpyk/pomeranian-bolierplate-public/.prettierignore
+["INFO" - 6:06:06 PM] File Info:
+{
+  "ignored": false,
+  "inferredParser": "babel"
+}
+["INFO" - 6:06:06 PM] Detected local configuration (i.e. .prettierrc or .editorconfig), VS Code configuration will not be used
+["INFO" - 6:06:06 PM] Prettier Options:
+{
+  "filepath": "/home/bontzkl/projects/projekcikpykpyk/pomeranian-bolierplate-public/src/App/Exercises/ReactExercises/SubRouteExercise4/Exercise4.jsx",
+  "parser": "babel",
+  "singleQuote": true,
+  "trailingComma": "es5",
+  "endOfLine": "auto"
+}
+["INFO" - 6:06:06 PM] Formatting completed in 61ms.
+["INFO" - 6:06:19 PM] Formatting file:///home/bontzkl/projects/projekcikpykpyk/pomeranian-bolierplate-public/src/App/Exercises/ReactExercises/SubRouteExercise4/router-data.jsx
+["INFO" - 6:06:19 PM] Using config file at '/home/bontzkl/projects/projekcikpykpyk/pomeranian-bolierplate-public/.prettierrc.json'
+["INFO" - 6:06:19 PM] Using ignore file (if present) at /home/bontzkl/projects/projekcikpykpyk/pomeranian-bolierplate-public/.prettierignore
+["INFO" - 6:06:19 PM] File Info:
+{
+  "ignored": false,
+  "inferredParser": "babel"
+}
+["INFO" - 6:06:19 PM] Detected local configuration (i.e. .prettierrc or .editorconfig), VS Code configuration will not be used
+["INFO" - 6:06:19 PM] Prettier Options:
+{
+  "filepath": "/home/bontzkl/projects/projekcikpykpyk/pomeranian-bolierplate-public/src/App/Exercises/ReactExercises/SubRouteExercise4/router-data.jsx",
+  "parser": "babel",
+  "singleQuote": true,
+  "trailingComma": "es5",
+  "endOfLine": "auto"
+}
+["INFO" - 6:06:19 PM] Formatting completed in 33ms.
+["INFO" - 6:06:24 PM] Formatting file:///home/bontzkl/projects/projekcikpykpyk/pomeranian-bolierplate-public/src/App/Exercises/ReactExercises/view-router-data.jsx
+["INFO" - 6:06:24 PM] Using config file at '/home/bontzkl/projects/projekcikpykpyk/pomeranian-bolierplate-public/.prettierrc.json'
+["INFO" - 6:06:24 PM] Using ignore file (if present) at /home/bontzkl/projects/projekcikpykpyk/pomeranian-bolierplate-public/.prettierignore
+["INFO" - 6:06:24 PM] File Info:
+{
+  "ignored": false,
+  "inferredParser": "babel"
+}
+["INFO" - 6:06:24 PM] Detected local configuration (i.e. .prettierrc or .editorconfig), VS Code configuration will not be used
+["INFO" - 6:06:24 PM] Prettier Options:
+{
+  "filepath": "/home/bontzkl/projects/projekcikpykpyk/pomeranian-bolierplate-public/src/App/Exercises/ReactExercises/view-router-data.jsx",
+  "parser": "babel",
+  "singleQuote": true,
+  "trailingComma": "es5",
+  "endOfLine": "auto"
+}
+["INFO" - 6:06:24 PM] Formatting completed in 15ms.
+["INFO" - 6:07:14 PM] Formatting file:///home/bontzkl/projects/projekcikpykpyk/pomeranian-bolierplate-public/src/App/Exercises/ReactExercises/SubRouteExercise5/Exercise5.jsx
+["INFO" - 6:07:14 PM] Using config file at '/home/bontzkl/projects/projekcikpykpyk/pomeranian-bolierplate-public/.prettierrc.json'
+["INFO" - 6:07:14 PM] Using ignore file (if present) at /home/bontzkl/projects/projekcikpykpyk/pomeranian-bolierplate-public/.prettierignore
+["INFO" - 6:07:14 PM] File Info:
+{
+  "ignored": false,
+  "inferredParser": "babel"
+}
+["INFO" - 6:07:14 PM] Detected local configuration (i.e. .prettierrc or .editorconfig), VS Code configuration will not be used
+["INFO" - 6:07:14 PM] Prettier Options:
+{
+  "filepath": "/home/bontzkl/projects/projekcikpykpyk/pomeranian-bolierplate-public/src/App/Exercises/ReactExercises/SubRouteExercise5/Exercise5.jsx",
+  "parser": "babel",
+  "singleQuote": true,
+  "trailingComma": "es5",
+  "endOfLine": "auto"
+}
+["INFO" - 6:07:14 PM] Formatting completed in 45ms.
+["INFO" - 6:07:25 PM] Formatting file:///home/bontzkl/projects/projekcikpykpyk/pomeranian-bolierplate-public/src/App/Exercises/ReactExercises/SubRouteExercise5/router-data.jsx
+["INFO" - 6:07:25 PM] Using config file at '/home/bontzkl/projects/projekcikpykpyk/pomeranian-bolierplate-public/.prettierrc.json'
+["INFO" - 6:07:25 PM] Using ignore file (if present) at /home/bontzkl/projects/projekcikpykpyk/pomeranian-bolierplate-public/.prettierignore
+["INFO" - 6:07:25 PM] File Info:
+{
+  "ignored": false,
+  "inferredParser": "babel"
+}
+["INFO" - 6:07:25 PM] Detected local configuration (i.e. .prettierrc or .editorconfig), VS Code configuration will not be used
+["INFO" - 6:07:25 PM] Prettier Options:
+{
+  "filepath": "/home/bontzkl/projects/projekcikpykpyk/pomeranian-bolierplate-public/src/App/Exercises/ReactExercises/SubRouteExercise5/router-data.jsx",
+  "parser": "babel",
+  "singleQuote": true,
+  "trailingComma": "es5",
+  "endOfLine": "auto"
+}
+["INFO" - 6:07:25 PM] Formatting completed in 23ms.
+["INFO" - 6:07:29 PM] Formatting file:///home/bontzkl/projects/projekcikpykpyk/pomeranian-bolierplate-public/src/App/Exercises/ReactExercises/SubRouteExercise5/router-data.jsx
+["INFO" - 6:07:29 PM] Using config file at '/home/bontzkl/projects/projekcikpykpyk/pomeranian-bolierplate-public/.prettierrc.json'
+["INFO" - 6:07:29 PM] Using ignore file (if present) at /home/bontzkl/projects/projekcikpykpyk/pomeranian-bolierplate-public/.prettierignore
+["INFO" - 6:07:29 PM] File Info:
+{
+  "ignored": false,
+  "inferredParser": "babel"
+}
+["INFO" - 6:07:29 PM] Detected local configuration (i.e. .prettierrc or .editorconfig), VS Code configuration will not be used
+["INFO" - 6:07:29 PM] Prettier Options:
+{
+  "filepath": "/home/bontzkl/projects/projekcikpykpyk/pomeranian-bolierplate-public/src/App/Exercises/ReactExercises/SubRouteExercise5/router-data.jsx",
+  "parser": "babel",
+  "singleQuote": true,
+  "trailingComma": "es5",
+  "endOfLine": "auto"
+}
+["INFO" - 6:07:29 PM] Formatting completed in 19ms.
+["INFO" - 6:07:41 PM] Formatting file:///home/bontzkl/projects/projekcikpykpyk/pomeranian-bolierplate-public/src/App/Exercises/ReactExercises/view-router-data.jsx
+["INFO" - 6:07:41 PM] Using config file at '/home/bontzkl/projects/projekcikpykpyk/pomeranian-bolierplate-public/.prettierrc.json'
+["INFO" - 6:07:41 PM] Using ignore file (if present) at /home/bontzkl/projects/projekcikpykpyk/pomeranian-bolierplate-public/.prettierignore
+["INFO" - 6:07:41 PM] File Info:
+{
+  "ignored": false,
+  "inferredParser": "babel"
+}
+["INFO" - 6:07:41 PM] Detected local configuration (i.e. .prettierrc or .editorconfig), VS Code configuration will not be used
+["INFO" - 6:07:41 PM] Prettier Options:
+{
+  "filepath": "/home/bontzkl/projects/projekcikpykpyk/pomeranian-bolierplate-public/src/App/Exercises/ReactExercises/view-router-data.jsx",
+  "parser": "babel",
+  "singleQuote": true,
+  "trailingComma": "es5",
+  "endOfLine": "auto"
+}
+["INFO" - 6:07:41 PM] Formatting completed in 16ms.
+["INFO" - 6:13:05 PM] Formatting file:///home/bontzkl/projects/projekcikpykpyk/pomeranian-bolierplate-public/src/App/Exercises/ReactExercises/SubRouteExercise1/Exercise1.jsx
+["INFO" - 6:13:05 PM] Using config file at '/home/bontzkl/projects/projekcikpykpyk/pomeranian-bolierplate-public/.prettierrc.json'
+["INFO" - 6:13:05 PM] Using ignore file (if present) at /home/bontzkl/projects/projekcikpykpyk/pomeranian-bolierplate-public/.prettierignore
+["INFO" - 6:13:05 PM] File Info:
+{
+  "ignored": false,
+  "inferredParser": "babel"
+}
+["INFO" - 6:13:05 PM] Detected local configuration (i.e. .prettierrc or .editorconfig), VS Code configuration will not be used
+["INFO" - 6:13:05 PM] Prettier Options:
+{
+  "filepath": "/home/bontzkl/projects/projekcikpykpyk/pomeranian-bolierplate-public/src/App/Exercises/ReactExercises/SubRouteExercise1/Exercise1.jsx",
+  "parser": "babel",
+  "singleQuote": true,
+  "trailingComma": "es5",
+  "endOfLine": "auto"
+}
+["INFO" - 6:13:05 PM] Formatting completed in 45ms.
+["INFO" - 6:13:56 PM] Formatting file:///home/bontzkl/projects/projekcikpykpyk/pomeranian-bolierplate-public/src/App/Exercises/ReactExercises/SubRouteExercise1/Exercise1.jsx
+["INFO" - 6:13:56 PM] Using config file at '/home/bontzkl/projects/projekcikpykpyk/pomeranian-bolierplate-public/.prettierrc.json'
+["INFO" - 6:13:56 PM] Using ignore file (if present) at /home/bontzkl/projects/projekcikpykpyk/pomeranian-bolierplate-public/.prettierignore
+["INFO" - 6:13:56 PM] File Info:
+{
+  "ignored": false,
+  "inferredParser": "babel"
+}
+["INFO" - 6:13:56 PM] Detected local configuration (i.e. .prettierrc or .editorconfig), VS Code configuration will not be used
+["INFO" - 6:13:56 PM] Prettier Options:
+{
+  "filepath": "/home/bontzkl/projects/projekcikpykpyk/pomeranian-bolierplate-public/src/App/Exercises/ReactExercises/SubRouteExercise1/Exercise1.jsx",
+  "parser": "babel",
+  "singleQuote": true,
+  "trailingComma": "es5",
+  "endOfLine": "auto"
+}
+["INFO" - 6:13:56 PM] Formatting completed in 51ms.
+["INFO" - 6:16:01 PM] Formatting file:///home/bontzkl/projects/projekcikpykpyk/pomeranian-bolierplate-public/src/App/Exercises/ReactExercises/SubRouteExercise1/Exercise1.jsx
+["INFO" - 6:16:01 PM] Using config file at '/home/bontzkl/projects/projekcikpykpyk/pomeranian-bolierplate-public/.prettierrc.json'
+["INFO" - 6:16:01 PM] Using ignore file (if present) at /home/bontzkl/projects/projekcikpykpyk/pomeranian-bolierplate-public/.prettierignore
+["INFO" - 6:16:01 PM] File Info:
+{
+  "ignored": false,
+  "inferredParser": "babel"
+}
+["INFO" - 6:16:01 PM] Detected local configuration (i.e. .prettierrc or .editorconfig), VS Code configuration will not be used
+["INFO" - 6:16:01 PM] Prettier Options:
+{
+  "filepath": "/home/bontzkl/projects/projekcikpykpyk/pomeranian-bolierplate-public/src/App/Exercises/ReactExercises/SubRouteExercise1/Exercise1.jsx",
+  "parser": "babel",
+  "singleQuote": true,
+  "trailingComma": "es5",
+  "endOfLine": "auto"
+}
+["INFO" - 6:16:01 PM] Formatting completed in 20ms.
+["INFO" - 6:20:31 PM] Formatting file:///home/bontzkl/projects/projekcikpykpyk/pomeranian-bolierplate-public/src/App/Exercises/ReactExercises/SubRouteExercise1/Exercise1.jsx
+["INFO" - 6:20:31 PM] Using config file at '/home/bontzkl/projects/projekcikpykpyk/pomeranian-bolierplate-public/.prettierrc.json'
+["INFO" - 6:20:31 PM] Using ignore file (if present) at /home/bontzkl/projects/projekcikpykpyk/pomeranian-bolierplate-public/.prettierignore
+["INFO" - 6:20:31 PM] File Info:
+{
+  "ignored": false,
+  "inferredParser": "babel"
+}
+["INFO" - 6:20:31 PM] Detected local configuration (i.e. .prettierrc or .editorconfig), VS Code configuration will not be used
+["INFO" - 6:20:31 PM] Prettier Options:
+{
+  "filepath": "/home/bontzkl/projects/projekcikpykpyk/pomeranian-bolierplate-public/src/App/Exercises/ReactExercises/SubRouteExercise1/Exercise1.jsx",
+  "parser": "babel",
+  "singleQuote": true,
+  "trailingComma": "es5",
+  "endOfLine": "auto"
+}
+["INFO" - 6:20:31 PM] Formatting completed in 23ms.
+["INFO" - 6:20:44 PM] Formatting file:///home/bontzkl/projects/projekcikpykpyk/pomeranian-bolierplate-public/src/App/Exercises/ReactExercises/SubRouteExercise1/Exercise1.jsx
+["INFO" - 6:20:45 PM] Using config file at '/home/bontzkl/projects/projekcikpykpyk/pomeranian-bolierplate-public/.prettierrc.json'
+["INFO" - 6:20:45 PM] Using ignore file (if present) at /home/bontzkl/projects/projekcikpykpyk/pomeranian-bolierplate-public/.prettierignore
+["INFO" - 6:20:45 PM] File Info:
+{
+  "ignored": false,
+  "inferredParser": "babel"
+}
+["INFO" - 6:20:45 PM] Detected local configuration (i.e. .prettierrc or .editorconfig), VS Code configuration will not be used
+["INFO" - 6:20:45 PM] Prettier Options:
+{
+  "filepath": "/home/bontzkl/projects/projekcikpykpyk/pomeranian-bolierplate-public/src/App/Exercises/ReactExercises/SubRouteExercise1/Exercise1.jsx",
+  "parser": "babel",
+  "singleQuote": true,
+  "trailingComma": "es5",
+  "endOfLine": "auto"
+}
+["INFO" - 6:20:45 PM] Formatting completed in 24ms.
+["INFO" - 6:21:11 PM] Formatting file:///home/bontzkl/projects/projekcikpykpyk/pomeranian-bolierplate-public/src/App/Exercises/ReactExercises/SubRouteExercise1/Exercise1.jsx
+["INFO" - 6:21:11 PM] Using config file at '/home/bontzkl/projects/projekcikpykpyk/pomeranian-bolierplate-public/.prettierrc.json'
+["INFO" - 6:21:11 PM] Using ignore file (if present) at /home/bontzkl/projects/projekcikpykpyk/pomeranian-bolierplate-public/.prettierignore
+["INFO" - 6:21:11 PM] File Info:
+{
+  "ignored": false,
+  "inferredParser": "babel"
+}
+["INFO" - 6:21:11 PM] Detected local configuration (i.e. .prettierrc or .editorconfig), VS Code configuration will not be used
+["INFO" - 6:21:11 PM] Prettier Options:
+{
+  "filepath": "/home/bontzkl/projects/projekcikpykpyk/pomeranian-bolierplate-public/src/App/Exercises/ReactExercises/SubRouteExercise1/Exercise1.jsx",
+  "parser": "babel",
+  "singleQuote": true,
+  "trailingComma": "es5",
+  "endOfLine": "auto"
+}
+["INFO" - 6:21:11 PM] Formatting completed in 28ms.
+["INFO" - 6:21:34 PM] Formatting file:///home/bontzkl/projects/projekcikpykpyk/pomeranian-bolierplate-public/src/App/Exercises/ReactExercises/SubRouteExercise1/Exercise1.jsx
+["INFO" - 6:21:34 PM] Using config file at '/home/bontzkl/projects/projekcikpykpyk/pomeranian-bolierplate-public/.prettierrc.json'
+["INFO" - 6:21:34 PM] Using ignore file (if present) at /home/bontzkl/projects/projekcikpykpyk/pomeranian-bolierplate-public/.prettierignore
+["INFO" - 6:21:34 PM] File Info:
+{
+  "ignored": false,
+  "inferredParser": "babel"
+}
+["INFO" - 6:21:34 PM] Detected local configuration (i.e. .prettierrc or .editorconfig), VS Code configuration will not be used
+["INFO" - 6:21:34 PM] Prettier Options:
+{
+  "filepath": "/home/bontzkl/projects/projekcikpykpyk/pomeranian-bolierplate-public/src/App/Exercises/ReactExercises/SubRouteExercise1/Exercise1.jsx",
+  "parser": "babel",
+  "singleQuote": true,
+  "trailingComma": "es5",
+  "endOfLine": "auto"
+}
+["INFO" - 6:21:34 PM] Formatting completed in 32ms.
+["INFO" - 6:21:41 PM] Formatting file:///home/bontzkl/projects/projekcikpykpyk/pomeranian-bolierplate-public/src/App/Exercises/ReactExercises/SubRouteExercise1/Exercise1.jsx
+["INFO" - 6:21:41 PM] Using config file at '/home/bontzkl/projects/projekcikpykpyk/pomeranian-bolierplate-public/.prettierrc.json'
+["INFO" - 6:21:41 PM] Using ignore file (if present) at /home/bontzkl/projects/projekcikpykpyk/pomeranian-bolierplate-public/.prettierignore
+["INFO" - 6:21:41 PM] File Info:
+{
+  "ignored": false,
+  "inferredParser": "babel"
+}
+["INFO" - 6:21:41 PM] Detected local configuration (i.e. .prettierrc or .editorconfig), VS Code configuration will not be used
+["INFO" - 6:21:41 PM] Prettier Options:
+{
+  "filepath": "/home/bontzkl/projects/projekcikpykpyk/pomeranian-bolierplate-public/src/App/Exercises/ReactExercises/SubRouteExercise1/Exercise1.jsx",
+  "parser": "babel",
+  "singleQuote": true,
+  "trailingComma": "es5",
+  "endOfLine": "auto"
+}
+["INFO" - 6:21:41 PM] Formatting completed in 19ms.
+["INFO" - 6:21:51 PM] Formatting file:///home/bontzkl/projects/projekcikpykpyk/pomeranian-bolierplate-public/src/App/Exercises/ReactExercises/SubRouteExercise1/Exercise1.jsx
+["INFO" - 6:21:51 PM] Using config file at '/home/bontzkl/projects/projekcikpykpyk/pomeranian-bolierplate-public/.prettierrc.json'
+["INFO" - 6:21:51 PM] Using ignore file (if present) at /home/bontzkl/projects/projekcikpykpyk/pomeranian-bolierplate-public/.prettierignore
+["INFO" - 6:21:51 PM] File Info:
+{
+  "ignored": false,
+  "inferredParser": "babel"
+}
+["INFO" - 6:21:51 PM] Detected local configuration (i.e. .prettierrc or .editorconfig), VS Code configuration will not be used
+["INFO" - 6:21:51 PM] Prettier Options:
+{
+  "filepath": "/home/bontzkl/projects/projekcikpykpyk/pomeranian-bolierplate-public/src/App/Exercises/ReactExercises/SubRouteExercise1/Exercise1.jsx",
+  "parser": "babel",
+  "singleQuote": true,
+  "trailingComma": "es5",
+  "endOfLine": "auto"
+}
+["INFO" - 6:21:51 PM] Formatting completed in 20ms.
+["INFO" - 6:22:01 PM] Formatting file:///home/bontzkl/projects/projekcikpykpyk/pomeranian-bolierplate-public/src/App/Exercises/ReactExercises/SubRouteExercise1/Exercise1.jsx
+["INFO" - 6:22:01 PM] Using config file at '/home/bontzkl/projects/projekcikpykpyk/pomeranian-bolierplate-public/.prettierrc.json'
+["INFO" - 6:22:01 PM] Using ignore file (if present) at /home/bontzkl/projects/projekcikpykpyk/pomeranian-bolierplate-public/.prettierignore
+["INFO" - 6:22:01 PM] File Info:
+{
+  "ignored": false,
+  "inferredParser": "babel"
+}
+["INFO" - 6:22:01 PM] Detected local configuration (i.e. .prettierrc or .editorconfig), VS Code configuration will not be used
+["INFO" - 6:22:01 PM] Prettier Options:
+{
+  "filepath": "/home/bontzkl/projects/projekcikpykpyk/pomeranian-bolierplate-public/src/App/Exercises/ReactExercises/SubRouteExercise1/Exercise1.jsx",
+  "parser": "babel",
+  "singleQuote": true,
+  "trailingComma": "es5",
+  "endOfLine": "auto"
+}
+["INFO" - 6:22:01 PM] Formatting completed in 15ms.
+["INFO" - 6:23:10 PM] Formatting file:///home/bontzkl/projects/projekcikpykpyk/pomeranian-bolierplate-public/src/App/Exercises/ReactExercises/SubRouteExercise1/Exercise1.jsx
+["INFO" - 6:23:10 PM] Using config file at '/home/bontzkl/projects/projekcikpykpyk/pomeranian-bolierplate-public/.prettierrc.json'
+["INFO" - 6:23:10 PM] Using ignore file (if present) at /home/bontzkl/projects/projekcikpykpyk/pomeranian-bolierplate-public/.prettierignore
+["INFO" - 6:23:10 PM] File Info:
+{
+  "ignored": false,
+  "inferredParser": "babel"
+}
+["INFO" - 6:23:10 PM] Detected local configuration (i.e. .prettierrc or .editorconfig), VS Code configuration will not be used
+["INFO" - 6:23:10 PM] Prettier Options:
+{
+  "filepath": "/home/bontzkl/projects/projekcikpykpyk/pomeranian-bolierplate-public/src/App/Exercises/ReactExercises/SubRouteExercise1/Exercise1.jsx",
+  "parser": "babel",
+  "singleQuote": true,
+  "trailingComma": "es5",
+  "endOfLine": "auto"
+}
+["INFO" - 6:23:10 PM] Formatting completed in 20ms.
+["INFO" - 6:23:13 PM] Formatting file:///home/bontzkl/projects/projekcikpykpyk/pomeranian-bolierplate-public/src/App/Exercises/ReactExercises/SubRouteExercise1/Exercise1.jsx
+["INFO" - 6:23:13 PM] Using config file at '/home/bontzkl/projects/projekcikpykpyk/pomeranian-bolierplate-public/.prettierrc.json'
+["INFO" - 6:23:13 PM] Using ignore file (if present) at /home/bontzkl/projects/projekcikpykpyk/pomeranian-bolierplate-public/.prettierignore
+["INFO" - 6:23:13 PM] File Info:
+{
+  "ignored": false,
+  "inferredParser": "babel"
+}
+["INFO" - 6:23:13 PM] Detected local configuration (i.e. .prettierrc or .editorconfig), VS Code configuration will not be used
+["INFO" - 6:23:13 PM] Prettier Options:
+{
+  "filepath": "/home/bontzkl/projects/projekcikpykpyk/pomeranian-bolierplate-public/src/App/Exercises/ReactExercises/SubRouteExercise1/Exercise1.jsx",
+  "parser": "babel",
+  "singleQuote": true,
+  "trailingComma": "es5",
+  "endOfLine": "auto"
+}
+["ERROR" - 6:23:13 PM] Error formatting document.
+["ERROR" - 6:23:13 PM] JSX attributes must only be assigned a non-empty expression. (18:23)
+  16 |         Click!
+  17 |       </button>
+> 18 |       <button onClick={}>Reset!</button>
+     |                       ^
+  19 |     </div>
+  20 |   );
+  21 | }
+SyntaxError: JSX attributes must only be assigned a non-empty expression. (18:23)
+  16 |         Click!
+  17 |       </button>
+> 18 |       <button onClick={}>Reset!</button>
+     |                       ^
+  19 |     </div>
+  20 |   );
+  21 | }
+	at f (/home/bontzkl/projects/projekcikpykpyk/pomeranian-bolierplate-public/node_modules/prettier/parser-babel.js:22:1054)
+	at d (/home/bontzkl/projects/projekcikpykpyk/pomeranian-bolierplate-public/node_modules/prettier/parser-babel.js:22:1287)
+	at Object.parse (/home/bontzkl/projects/projekcikpykpyk/pomeranian-bolierplate-public/node_modules/prettier/parser-babel.js:29:54613)
+	at Object.parse (/home/bontzkl/projects/projekcikpykpyk/pomeranian-bolierplate-public/node_modules/prettier/index.js:7515:23)
+	at coreFormat (/home/bontzkl/projects/projekcikpykpyk/pomeranian-bolierplate-public/node_modules/prettier/index.js:8829:18)
+	at formatWithCursor2 (/home/bontzkl/projects/projekcikpykpyk/pomeranian-bolierplate-public/node_modules/prettier/index.js:9021:18)
+	at /home/bontzkl/projects/projekcikpykpyk/pomeranian-bolierplate-public/node_modules/prettier/index.js:38176:12
+	at Object.format (/home/bontzkl/projects/projekcikpykpyk/pomeranian-bolierplate-public/node_modules/prettier/index.js:38190:12)
+	at t.default.format (/home/bontzkl/.vscode-server/extensions/esbenp.prettier-vscode-9.12.0/dist/extension.js:1:14694)
+	at async t.PrettierEditProvider.provideEdits (/home/bontzkl/.vscode-server/extensions/esbenp.prettier-vscode-9.12.0/dist/extension.js:1:11367)
+	at async B.provideDocumentFormattingEdits (/home/bontzkl/.vscode-server/bin/704ed70d4fd1c6bd6342c436f1ede30d1cff4710/out/vs/workbench/api/node/extensionHostProcess.js:101:46615)
+["INFO" - 6:23:13 PM] Formatting completed in 44ms.
+["INFO" - 6:23:24 PM] Formatting file:///home/bontzkl/projects/projekcikpykpyk/pomeranian-bolierplate-public/src/App/Exercises/ReactExercises/SubRouteExercise1/Exercise1.jsx
+["INFO" - 6:23:24 PM] Using config file at '/home/bontzkl/projects/projekcikpykpyk/pomeranian-bolierplate-public/.prettierrc.json'
+["INFO" - 6:23:24 PM] Using ignore file (if present) at /home/bontzkl/projects/projekcikpykpyk/pomeranian-bolierplate-public/.prettierignore
+["INFO" - 6:23:24 PM] File Info:
+{
+  "ignored": false,
+  "inferredParser": "babel"
+}
+["INFO" - 6:23:24 PM] Detected local configuration (i.e. .prettierrc or .editorconfig), VS Code configuration will not be used
+["INFO" - 6:23:24 PM] Prettier Options:
+{
+  "filepath": "/home/bontzkl/projects/projekcikpykpyk/pomeranian-bolierplate-public/src/App/Exercises/ReactExercises/SubRouteExercise1/Exercise1.jsx",
+  "parser": "babel",
+  "singleQuote": true,
+  "trailingComma": "es5",
+  "endOfLine": "auto"
+}
+["INFO" - 6:23:24 PM] Formatting completed in 22ms.
+["INFO" - 6:23:31 PM] Formatting file:///home/bontzkl/projects/projekcikpykpyk/pomeranian-bolierplate-public/src/App/Exercises/ReactExercises/SubRouteExercise1/Exercise1.jsx
+["INFO" - 6:23:31 PM] Using config file at '/home/bontzkl/projects/projekcikpykpyk/pomeranian-bolierplate-public/.prettierrc.json'
+["INFO" - 6:23:31 PM] Using ignore file (if present) at /home/bontzkl/projects/projekcikpykpyk/pomeranian-bolierplate-public/.prettierignore
+["INFO" - 6:23:31 PM] File Info:
+{
+  "ignored": false,
+  "inferredParser": "babel"
+}
+["INFO" - 6:23:31 PM] Detected local configuration (i.e. .prettierrc or .editorconfig), VS Code configuration will not be used
+["INFO" - 6:23:31 PM] Prettier Options:
+{
+  "filepath": "/home/bontzkl/projects/projekcikpykpyk/pomeranian-bolierplate-public/src/App/Exercises/ReactExercises/SubRouteExercise1/Exercise1.jsx",
+  "parser": "babel",
+  "singleQuote": true,
+  "trailingComma": "es5",
+  "endOfLine": "auto"
+}
+["INFO" - 6:23:31 PM] Formatting completed in 16ms.
+["INFO" - 6:25:30 PM] Formatting file:///home/bontzkl/projects/projekcikpykpyk/pomeranian-bolierplate-public/src/App/Exercises/ReactExercises/SubRouteExercise1/Exercise1.jsx
+["INFO" - 6:25:30 PM] Using config file at '/home/bontzkl/projects/projekcikpykpyk/pomeranian-bolierplate-public/.prettierrc.json'
+["INFO" - 6:25:30 PM] Using ignore file (if present) at /home/bontzkl/projects/projekcikpykpyk/pomeranian-bolierplate-public/.prettierignore
+["INFO" - 6:25:30 PM] File Info:
+{
+  "ignored": false,
+  "inferredParser": "babel"
+}
+["INFO" - 6:25:30 PM] Detected local configuration (i.e. .prettierrc or .editorconfig), VS Code configuration will not be used
+["INFO" - 6:25:30 PM] Prettier Options:
+{
+  "filepath": "/home/bontzkl/projects/projekcikpykpyk/pomeranian-bolierplate-public/src/App/Exercises/ReactExercises/SubRouteExercise1/Exercise1.jsx",
+  "parser": "babel",
+  "singleQuote": true,
+  "trailingComma": "es5",
+  "endOfLine": "auto"
+}
+["ERROR" - 6:25:30 PM] Error formatting document.
+["ERROR" - 6:25:30 PM] Unexpected token (18:21)
+  16 |         Click!
+  17 |       </button>
+> 18 |       <buttononClick={() => {
+     |                     ^
+  19 |
+  20 |           setClicks(0);
+  21 |
+SyntaxError: Unexpected token (18:21)
+  16 |         Click!
+  17 |       </button>
+> 18 |       <buttononClick={() => {
+     |                     ^
+  19 |
+  20 |           setClicks(0);
+  21 |
+	at f (/home/bontzkl/projects/projekcikpykpyk/pomeranian-bolierplate-public/node_modules/prettier/parser-babel.js:22:1054)
+	at d (/home/bontzkl/projects/projekcikpykpyk/pomeranian-bolierplate-public/node_modules/prettier/parser-babel.js:22:1287)
+	at Object.parse (/home/bontzkl/projects/projekcikpykpyk/pomeranian-bolierplate-public/node_modules/prettier/parser-babel.js:29:54613)
+	at Object.parse (/home/bontzkl/projects/projekcikpykpyk/pomeranian-bolierplate-public/node_modules/prettier/index.js:7515:23)
+	at coreFormat (/home/bontzkl/projects/projekcikpykpyk/pomeranian-bolierplate-public/node_modules/prettier/index.js:8829:18)
+	at formatWithCursor2 (/home/bontzkl/projects/projekcikpykpyk/pomeranian-bolierplate-public/node_modules/prettier/index.js:9021:18)
+	at /home/bontzkl/projects/projekcikpykpyk/pomeranian-bolierplate-public/node_modules/prettier/index.js:38176:12
+	at Object.format (/home/bontzkl/projects/projekcikpykpyk/pomeranian-bolierplate-public/node_modules/prettier/index.js:38190:12)
+	at t.default.format (/home/bontzkl/.vscode-server/extensions/esbenp.prettier-vscode-9.12.0/dist/extension.js:1:14694)
+	at async t.PrettierEditProvider.provideEdits (/home/bontzkl/.vscode-server/extensions/esbenp.prettier-vscode-9.12.0/dist/extension.js:1:11367)
+	at async B.provideDocumentFormattingEdits (/home/bontzkl/.vscode-server/bin/704ed70d4fd1c6bd6342c436f1ede30d1cff4710/out/vs/workbench/api/node/extensionHostProcess.js:101:46615)
+["INFO" - 6:25:30 PM] Formatting completed in 19ms.
+["INFO" - 6:25:40 PM] Formatting file:///home/bontzkl/projects/projekcikpykpyk/pomeranian-bolierplate-public/src/App/Exercises/ReactExercises/SubRouteExercise1/Exercise1.jsx
+["INFO" - 6:25:40 PM] Using config file at '/home/bontzkl/projects/projekcikpykpyk/pomeranian-bolierplate-public/.prettierrc.json'
+["INFO" - 6:25:40 PM] Using ignore file (if present) at /home/bontzkl/projects/projekcikpykpyk/pomeranian-bolierplate-public/.prettierignore
+["INFO" - 6:25:40 PM] File Info:
+{
+  "ignored": false,
+  "inferredParser": "babel"
+}
+["INFO" - 6:25:40 PM] Detected local configuration (i.e. .prettierrc or .editorconfig), VS Code configuration will not be used
+["INFO" - 6:25:40 PM] Prettier Options:
+{
+  "filepath": "/home/bontzkl/projects/projekcikpykpyk/pomeranian-bolierplate-public/src/App/Exercises/ReactExercises/SubRouteExercise1/Exercise1.jsx",
+  "parser": "babel",
+  "singleQuote": true,
+  "trailingComma": "es5",
+  "endOfLine": "auto"
+}
+["ERROR" - 6:25:40 PM] Error formatting document.
+["ERROR" - 6:25:40 PM] Adjacent JSX elements must be wrapped in an enclosing tag. Did you want a JSX fragment <>...</>? (23:5)
+  21 |
+  22 |         }}Reset!</button>
+> 23 |     </div>
+     |     ^
+  24 |   );
+  25 | }
+  26 |
+SyntaxError: Adjacent JSX elements must be wrapped in an enclosing tag. Did you want a JSX fragment <>...</>? (23:5)
+  21 |
+  22 |         }}Reset!</button>
+> 23 |     </div>
+     |     ^
+  24 |   );
+  25 | }
+  26 |
+	at f (/home/bontzkl/projects/projekcikpykpyk/pomeranian-bolierplate-public/node_modules/prettier/parser-babel.js:22:1054)
+	at d (/home/bontzkl/projects/projekcikpykpyk/pomeranian-bolierplate-public/node_modules/prettier/parser-babel.js:22:1287)
+	at Object.parse (/home/bontzkl/projects/projekcikpykpyk/pomeranian-bolierplate-public/node_modules/prettier/parser-babel.js:29:54613)
+	at Object.parse (/home/bontzkl/projects/projekcikpykpyk/pomeranian-bolierplate-public/node_modules/prettier/index.js:7515:23)
+	at coreFormat (/home/bontzkl/projects/projekcikpykpyk/pomeranian-bolierplate-public/node_modules/prettier/index.js:8829:18)
+	at formatWithCursor2 (/home/bontzkl/projects/projekcikpykpyk/pomeranian-bolierplate-public/node_modules/prettier/index.js:9021:18)
+	at /home/bontzkl/projects/projekcikpykpyk/pomeranian-bolierplate-public/node_modules/prettier/index.js:38176:12
+	at Object.format (/home/bontzkl/projects/projekcikpykpyk/pomeranian-bolierplate-public/node_modules/prettier/index.js:38190:12)
+	at t.default.format (/home/bontzkl/.vscode-server/extensions/esbenp.prettier-vscode-9.12.0/dist/extension.js:1:14694)
+	at async t.PrettierEditProvider.provideEdits (/home/bontzkl/.vscode-server/extensions/esbenp.prettier-vscode-9.12.0/dist/extension.js:1:11367)
+	at async B.provideDocumentFormattingEdits (/home/bontzkl/.vscode-server/bin/704ed70d4fd1c6bd6342c436f1ede30d1cff4710/out/vs/workbench/api/node/extensionHostProcess.js:101:46615)
+["INFO" - 6:25:40 PM] Formatting completed in 27ms.
+["INFO" - 6:25:43 PM] Formatting file:///home/bontzkl/projects/projekcikpykpyk/pomeranian-bolierplate-public/src/App/Exercises/ReactExercises/SubRouteExercise1/Exercise1.jsx
+["INFO" - 6:25:43 PM] Using config file at '/home/bontzkl/projects/projekcikpykpyk/pomeranian-bolierplate-public/.prettierrc.json'
+["INFO" - 6:25:43 PM] Using ignore file (if present) at /home/bontzkl/projects/projekcikpykpyk/pomeranian-bolierplate-public/.prettierignore
+["INFO" - 6:25:43 PM] File Info:
+{
+  "ignored": false,
+  "inferredParser": "babel"
+}
+["INFO" - 6:25:43 PM] Detected local configuration (i.e. .prettierrc or .editorconfig), VS Code configuration will not be used
+["INFO" - 6:25:43 PM] Prettier Options:
+{
+  "filepath": "/home/bontzkl/projects/projekcikpykpyk/pomeranian-bolierplate-public/src/App/Exercises/ReactExercises/SubRouteExercise1/Exercise1.jsx",
+  "parser": "babel",
+  "singleQuote": true,
+  "trailingComma": "es5",
+  "endOfLine": "auto"
+}
+["INFO" - 6:25:43 PM] Formatting completed in 19ms.
+["INFO" - 6:26:32 PM] Formatting file:///home/bontzkl/projects/projekcikpykpyk/pomeranian-bolierplate-public/src/App/Exercises/ReactExercises/SubRouteExercise1/Exercise1.jsx
+["INFO" - 6:26:32 PM] Using config file at '/home/bontzkl/projects/projekcikpykpyk/pomeranian-bolierplate-public/.prettierrc.json'
+["INFO" - 6:26:32 PM] Using ignore file (if present) at /home/bontzkl/projects/projekcikpykpyk/pomeranian-bolierplate-public/.prettierignore
+["INFO" - 6:26:32 PM] File Info:
+{
+  "ignored": false,
+  "inferredParser": "babel"
+}
+["INFO" - 6:26:32 PM] Detected local configuration (i.e. .prettierrc or .editorconfig), VS Code configuration will not be used
+["INFO" - 6:26:32 PM] Prettier Options:
+{
+  "filepath": "/home/bontzkl/projects/projekcikpykpyk/pomeranian-bolierplate-public/src/App/Exercises/ReactExercises/SubRouteExercise1/Exercise1.jsx",
+  "parser": "babel",
+  "singleQuote": true,
+  "trailingComma": "es5",
+  "endOfLine": "auto"
+}
+["ERROR" - 6:26:32 PM] Error formatting document.
+["ERROR" - 6:26:32 PM] Unexpected token (19:22)
+  17 |       </button>
+  18 |       <button onClick={()=>{
+> 19 |         setClicks(0);)
+     |                      ^
+  20 |       }}>Reset!</button>
+  21 |     </div>
+  22 |   );
+SyntaxError: Unexpected token (19:22)
+  17 |       </button>
+  18 |       <button onClick={()=>{
+> 19 |         setClicks(0);)
+     |                      ^
+  20 |       }}>Reset!</button>
+  21 |     </div>
+  22 |   );
+	at f (/home/bontzkl/projects/projekcikpykpyk/pomeranian-bolierplate-public/node_modules/prettier/parser-babel.js:22:1054)
+	at d (/home/bontzkl/projects/projekcikpykpyk/pomeranian-bolierplate-public/node_modules/prettier/parser-babel.js:22:1287)
+	at Object.parse (/home/bontzkl/projects/projekcikpykpyk/pomeranian-bolierplate-public/node_modules/prettier/parser-babel.js:29:54613)
+	at Object.parse (/home/bontzkl/projects/projekcikpykpyk/pomeranian-bolierplate-public/node_modules/prettier/index.js:7515:23)
+	at coreFormat (/home/bontzkl/projects/projekcikpykpyk/pomeranian-bolierplate-public/node_modules/prettier/index.js:8829:18)
+	at formatWithCursor2 (/home/bontzkl/projects/projekcikpykpyk/pomeranian-bolierplate-public/node_modules/prettier/index.js:9021:18)
+	at /home/bontzkl/projects/projekcikpykpyk/pomeranian-bolierplate-public/node_modules/prettier/index.js:38176:12
+	at Object.format (/home/bontzkl/projects/projekcikpykpyk/pomeranian-bolierplate-public/node_modules/prettier/index.js:38190:12)
+	at t.default.format (/home/bontzkl/.vscode-server/extensions/esbenp.prettier-vscode-9.12.0/dist/extension.js:1:14694)
+	at async t.PrettierEditProvider.provideEdits (/home/bontzkl/.vscode-server/extensions/esbenp.prettier-vscode-9.12.0/dist/extension.js:1:11367)
+	at async B.provideDocumentFormattingEdits (/home/bontzkl/.vscode-server/bin/704ed70d4fd1c6bd6342c436f1ede30d1cff4710/out/vs/workbench/api/node/extensionHostProcess.js:101:46615)
+["INFO" - 6:26:32 PM] Formatting completed in 25ms.
+["INFO" - 6:26:46 PM] Formatting file:///home/bontzkl/projects/projekcikpykpyk/pomeranian-bolierplate-public/src/App/Exercises/ReactExercises/SubRouteExercise1/Exercise1.jsx
+["INFO" - 6:26:46 PM] Using config file at '/home/bontzkl/projects/projekcikpykpyk/pomeranian-bolierplate-public/.prettierrc.json'
+["INFO" - 6:26:46 PM] Using ignore file (if present) at /home/bontzkl/projects/projekcikpykpyk/pomeranian-bolierplate-public/.prettierignore
+["INFO" - 6:26:46 PM] File Info:
+{
+  "ignored": false,
+  "inferredParser": "babel"
+}
+["INFO" - 6:26:46 PM] Detected local configuration (i.e. .prettierrc or .editorconfig), VS Code configuration will not be used
+["INFO" - 6:26:46 PM] Prettier Options:
+{
+  "filepath": "/home/bontzkl/projects/projekcikpykpyk/pomeranian-bolierplate-public/src/App/Exercises/ReactExercises/SubRouteExercise1/Exercise1.jsx",
+  "parser": "babel",
+  "singleQuote": true,
+  "trailingComma": "es5",
+  "endOfLine": "auto"
+}
+["INFO" - 6:26:46 PM] Formatting completed in 21ms.
+["INFO" - 6:27:05 PM] Formatting file:///home/bontzkl/projects/projekcikpykpyk/pomeranian-bolierplate-public/src/App/Exercises/ReactExercises/SubRouteExercise1/Exercise1.jsx
+["INFO" - 6:27:05 PM] Using config file at '/home/bontzkl/projects/projekcikpykpyk/pomeranian-bolierplate-public/.prettierrc.json'
+["INFO" - 6:27:05 PM] Using ignore file (if present) at /home/bontzkl/projects/projekcikpykpyk/pomeranian-bolierplate-public/.prettierignore
+["INFO" - 6:27:05 PM] File Info:
+{
+  "ignored": false,
+  "inferredParser": "babel"
+}
+["INFO" - 6:27:05 PM] Detected local configuration (i.e. .prettierrc or .editorconfig), VS Code configuration will not be used
+["INFO" - 6:27:05 PM] Prettier Options:
+{
+  "filepath": "/home/bontzkl/projects/projekcikpykpyk/pomeranian-bolierplate-public/src/App/Exercises/ReactExercises/SubRouteExercise1/Exercise1.jsx",
+  "parser": "babel",
+  "singleQuote": true,
+  "trailingComma": "es5",
+  "endOfLine": "auto"
+}
+["INFO" - 6:27:05 PM] Formatting completed in 45ms.
+["INFO" - 6:27:14 PM] Formatting file:///home/bontzkl/projects/projekcikpykpyk/pomeranian-bolierplate-public/src/App/Exercises/ReactExercises/SubRouteExercise1/Exercise1.jsx
+["INFO" - 6:27:14 PM] Using config file at '/home/bontzkl/projects/projekcikpykpyk/pomeranian-bolierplate-public/.prettierrc.json'
+["INFO" - 6:27:14 PM] Using ignore file (if present) at /home/bontzkl/projects/projekcikpykpyk/pomeranian-bolierplate-public/.prettierignore
+["INFO" - 6:27:14 PM] File Info:
+{
+  "ignored": false,
+  "inferredParser": "babel"
+}
+["INFO" - 6:27:14 PM] Detected local configuration (i.e. .prettierrc or .editorconfig), VS Code configuration will not be used
+["INFO" - 6:27:14 PM] Prettier Options:
+{
+  "filepath": "/home/bontzkl/projects/projekcikpykpyk/pomeranian-bolierplate-public/src/App/Exercises/ReactExercises/SubRouteExercise1/Exercise1.jsx",
+  "parser": "babel",
+  "singleQuote": true,
+  "trailingComma": "es5",
+  "endOfLine": "auto"
+}
+["INFO" - 6:27:14 PM] Formatting completed in 16ms.
+["INFO" - 6:28:05 PM] Formatting file:///home/bontzkl/projects/projekcikpykpyk/pomeranian-bolierplate-public/src/App/Exercises/ReactExercises/SubRouteExercise1/Exercise1.jsx
+["INFO" - 6:28:05 PM] Using config file at '/home/bontzkl/projects/projekcikpykpyk/pomeranian-bolierplate-public/.prettierrc.json'
+["INFO" - 6:28:05 PM] Using ignore file (if present) at /home/bontzkl/projects/projekcikpykpyk/pomeranian-bolierplate-public/.prettierignore
+["INFO" - 6:28:05 PM] File Info:
+{
+  "ignored": false,
+  "inferredParser": "babel"
+}
+["INFO" - 6:28:05 PM] Detected local configuration (i.e. .prettierrc or .editorconfig), VS Code configuration will not be used
+["INFO" - 6:28:05 PM] Prettier Options:
+{
+  "filepath": "/home/bontzkl/projects/projekcikpykpyk/pomeranian-bolierplate-public/src/App/Exercises/ReactExercises/SubRouteExercise1/Exercise1.jsx",
+  "parser": "babel",
+  "singleQuote": true,
+  "trailingComma": "es5",
+  "endOfLine": "auto"
+}
+["INFO" - 6:28:05 PM] Formatting completed in 34ms.
+["INFO" - 6:28:10 PM] Formatting file:///home/bontzkl/projects/projekcikpykpyk/pomeranian-bolierplate-public/src/App/Exercises/ReactExercises/SubRouteExercise1/Exercise1.jsx
+["INFO" - 6:28:10 PM] Using config file at '/home/bontzkl/projects/projekcikpykpyk/pomeranian-bolierplate-public/.prettierrc.json'
+["INFO" - 6:28:10 PM] Using ignore file (if present) at /home/bontzkl/projects/projekcikpykpyk/pomeranian-bolierplate-public/.prettierignore
+["INFO" - 6:28:10 PM] File Info:
+{
+  "ignored": false,
+  "inferredParser": "babel"
+}
+["INFO" - 6:28:10 PM] Detected local configuration (i.e. .prettierrc or .editorconfig), VS Code configuration will not be used
+["INFO" - 6:28:10 PM] Prettier Options:
+{
+  "filepath": "/home/bontzkl/projects/projekcikpykpyk/pomeranian-bolierplate-public/src/App/Exercises/ReactExercises/SubRouteExercise1/Exercise1.jsx",
+  "parser": "babel",
+  "singleQuote": true,
+  "trailingComma": "es5",
+  "endOfLine": "auto"
+}
+["INFO" - 6:28:10 PM] Formatting completed in 61ms.
+["INFO" - 6:28:21 PM] Formatting file:///home/bontzkl/projects/projekcikpykpyk/pomeranian-bolierplate-public/src/App/Exercises/ReactExercises/SubRouteExercise1/Exercise1.jsx
+["INFO" - 6:28:21 PM] Using config file at '/home/bontzkl/projects/projekcikpykpyk/pomeranian-bolierplate-public/.prettierrc.json'
+["INFO" - 6:28:21 PM] Using ignore file (if present) at /home/bontzkl/projects/projekcikpykpyk/pomeranian-bolierplate-public/.prettierignore
+["INFO" - 6:28:21 PM] File Info:
+{
+  "ignored": false,
+  "inferredParser": "babel"
+}
+["INFO" - 6:28:21 PM] Detected local configuration (i.e. .prettierrc or .editorconfig), VS Code configuration will not be used
+["INFO" - 6:28:21 PM] Prettier Options:
+{
+  "filepath": "/home/bontzkl/projects/projekcikpykpyk/pomeranian-bolierplate-public/src/App/Exercises/ReactExercises/SubRouteExercise1/Exercise1.jsx",
+  "parser": "babel",
+  "singleQuote": true,
+  "trailingComma": "es5",
+  "endOfLine": "auto"
+}
+["INFO" - 6:28:21 PM] Formatting completed in 42ms.
+["INFO" - 6:30:38 PM] Formatting file:///home/bontzkl/projects/projekcikpykpyk/pomeranian-bolierplate-public/src/App/Exercises/ReactExercises/SubRouteExercise1/Exercise1.jsx
+["INFO" - 6:30:38 PM] Using config file at '/home/bontzkl/projects/projekcikpykpyk/pomeranian-bolierplate-public/.prettierrc.json'
+["INFO" - 6:30:38 PM] Using ignore file (if present) at /home/bontzkl/projects/projekcikpykpyk/pomeranian-bolierplate-public/.prettierignore
+["INFO" - 6:30:38 PM] File Info:
+{
+  "ignored": false,
+  "inferredParser": "babel"
+}
+["INFO" - 6:30:38 PM] Detected local configuration (i.e. .prettierrc or .editorconfig), VS Code configuration will not be used
+["INFO" - 6:30:38 PM] Prettier Options:
+{
+  "filepath": "/home/bontzkl/projects/projekcikpykpyk/pomeranian-bolierplate-public/src/App/Exercises/ReactExercises/SubRouteExercise1/Exercise1.jsx",
+  "parser": "babel",
+  "singleQuote": true,
+  "trailingComma": "es5",
+  "endOfLine": "auto"
+}
+["INFO" - 6:30:38 PM] Formatting completed in 24ms.
+["INFO" - 6:33:46 PM] Formatting file:///home/bontzkl/projects/projekcikpykpyk/pomeranian-bolierplate-public/src/App/Exercises/ReactExercises/SubRouteExercise1/Exercise1.jsx
+["INFO" - 6:33:46 PM] Using config file at '/home/bontzkl/projects/projekcikpykpyk/pomeranian-bolierplate-public/.prettierrc.json'
+["INFO" - 6:33:46 PM] Using ignore file (if present) at /home/bontzkl/projects/projekcikpykpyk/pomeranian-bolierplate-public/.prettierignore
+["INFO" - 6:33:46 PM] File Info:
+{
+  "ignored": false,
+  "inferredParser": "babel"
+}
+["INFO" - 6:33:46 PM] Detected local configuration (i.e. .prettierrc or .editorconfig), VS Code configuration will not be used
+["INFO" - 6:33:46 PM] Prettier Options:
+{
+  "filepath": "/home/bontzkl/projects/projekcikpykpyk/pomeranian-bolierplate-public/src/App/Exercises/ReactExercises/SubRouteExercise1/Exercise1.jsx",
+  "parser": "babel",
+  "singleQuote": true,
+  "trailingComma": "es5",
+  "endOfLine": "auto"
+}
+["INFO" - 6:33:46 PM] Formatting completed in 25ms.
+["INFO" - 6:34:21 PM] Formatting file:///home/bontzkl/projects/projekcikpykpyk/pomeranian-bolierplate-public/src/App/Exercises/ReactExercises/SubRouteExercise1/Exercise1.jsx
+["INFO" - 6:34:21 PM] Using config file at '/home/bontzkl/projects/projekcikpykpyk/pomeranian-bolierplate-public/.prettierrc.json'
+["INFO" - 6:34:21 PM] Using ignore file (if present) at /home/bontzkl/projects/projekcikpykpyk/pomeranian-bolierplate-public/.prettierignore
+["INFO" - 6:34:21 PM] File Info:
+{
+  "ignored": false,
+  "inferredParser": "babel"
+}
+["INFO" - 6:34:21 PM] Detected local configuration (i.e. .prettierrc or .editorconfig), VS Code configuration will not be used
+["INFO" - 6:34:21 PM] Prettier Options:
+{
+  "filepath": "/home/bontzkl/projects/projekcikpykpyk/pomeranian-bolierplate-public/src/App/Exercises/ReactExercises/SubRouteExercise1/Exercise1.jsx",
+  "parser": "babel",
+  "singleQuote": true,
+  "trailingComma": "es5",
+  "endOfLine": "auto"
+}
+["INFO" - 6:34:21 PM] Formatting completed in 24ms.
+["INFO" - 6:38:02 PM] Formatting file:///home/bontzkl/projects/projekcikpykpyk/pomeranian-bolierplate-public/src/App/Exercises/ReactExercises/SubRouteExercise1/Exercise1.jsx
+["INFO" - 6:38:02 PM] Using config file at '/home/bontzkl/projects/projekcikpykpyk/pomeranian-bolierplate-public/.prettierrc.json'
+["INFO" - 6:38:02 PM] Using ignore file (if present) at /home/bontzkl/projects/projekcikpykpyk/pomeranian-bolierplate-public/.prettierignore
+["INFO" - 6:38:02 PM] File Info:
+{
+  "ignored": false,
+  "inferredParser": "babel"
+}
+["INFO" - 6:38:02 PM] Detected local configuration (i.e. .prettierrc or .editorconfig), VS Code configuration will not be used
+["INFO" - 6:38:02 PM] Prettier Options:
+{
+  "filepath": "/home/bontzkl/projects/projekcikpykpyk/pomeranian-bolierplate-public/src/App/Exercises/ReactExercises/SubRouteExercise1/Exercise1.jsx",
+  "parser": "babel",
+  "singleQuote": true,
+  "trailingComma": "es5",
+  "endOfLine": "auto"
+}
+["ERROR" - 6:38:02 PM] Error formatting document.
+["ERROR" - 6:38:02 PM] Missing initializer in const declaration. (8:18)
+   6 |   const [clicks, setClicks] = useState(0);
+   7 |   const isFiveClicks = clicks === 5;
+>  8 |   const showImage(false);
+     |                  ^
+   9 |   const handleClickAndCheckFive = () => {
+  10 |     if (!isFiveClicks) {
+  11 |       setClicks(clicks + 1);
+SyntaxError: Missing initializer in const declaration. (8:18)
+   6 |   const [clicks, setClicks] = useState(0);
+   7 |   const isFiveClicks = clicks === 5;
+>  8 |   const showImage(false);
+     |                  ^
+   9 |   const handleClickAndCheckFive = () => {
+  10 |     if (!isFiveClicks) {
+  11 |       setClicks(clicks + 1);
+	at f (/home/bontzkl/projects/projekcikpykpyk/pomeranian-bolierplate-public/node_modules/prettier/parser-babel.js:22:1054)
+	at d (/home/bontzkl/projects/projekcikpykpyk/pomeranian-bolierplate-public/node_modules/prettier/parser-babel.js:22:1287)
+	at Object.parse (/home/bontzkl/projects/projekcikpykpyk/pomeranian-bolierplate-public/node_modules/prettier/parser-babel.js:29:54613)
+	at Object.parse (/home/bontzkl/projects/projekcikpykpyk/pomeranian-bolierplate-public/node_modules/prettier/index.js:7515:23)
+	at coreFormat (/home/bontzkl/projects/projekcikpykpyk/pomeranian-bolierplate-public/node_modules/prettier/index.js:8829:18)
+	at formatWithCursor2 (/home/bontzkl/projects/projekcikpykpyk/pomeranian-bolierplate-public/node_modules/prettier/index.js:9021:18)
+	at /home/bontzkl/projects/projekcikpykpyk/pomeranian-bolierplate-public/node_modules/prettier/index.js:38176:12
+	at Object.format (/home/bontzkl/projects/projekcikpykpyk/pomeranian-bolierplate-public/node_modules/prettier/index.js:38190:12)
+	at t.default.format (/home/bontzkl/.vscode-server/extensions/esbenp.prettier-vscode-9.12.0/dist/extension.js:1:14694)
+	at async t.PrettierEditProvider.provideEdits (/home/bontzkl/.vscode-server/extensions/esbenp.prettier-vscode-9.12.0/dist/extension.js:1:11367)
+	at async B.provideDocumentFormattingEdits (/home/bontzkl/.vscode-server/bin/704ed70d4fd1c6bd6342c436f1ede30d1cff4710/out/vs/workbench/api/node/extensionHostProcess.js:101:46615)
+["INFO" - 6:38:02 PM] Formatting completed in 18ms.
+["INFO" - 6:38:22 PM] Formatting file:///home/bontzkl/projects/projekcikpykpyk/pomeranian-bolierplate-public/src/App/Exercises/ReactExercises/SubRouteExercise1/Exercise1.jsx
+["INFO" - 6:38:22 PM] Using config file at '/home/bontzkl/projects/projekcikpykpyk/pomeranian-bolierplate-public/.prettierrc.json'
+["INFO" - 6:38:22 PM] Using ignore file (if present) at /home/bontzkl/projects/projekcikpykpyk/pomeranian-bolierplate-public/.prettierignore
+["INFO" - 6:38:22 PM] File Info:
+{
+  "ignored": false,
+  "inferredParser": "babel"
+}
+["INFO" - 6:38:22 PM] Detected local configuration (i.e. .prettierrc or .editorconfig), VS Code configuration will not be used
+["INFO" - 6:38:22 PM] Prettier Options:
+{
+  "filepath": "/home/bontzkl/projects/projekcikpykpyk/pomeranian-bolierplate-public/src/App/Exercises/ReactExercises/SubRouteExercise1/Exercise1.jsx",
+  "parser": "babel",
+  "singleQuote": true,
+  "trailingComma": "es5",
+  "endOfLine": "auto"
+}
+["ERROR" - 6:38:22 PM] Error formatting document.
+["ERROR" - 6:38:22 PM] Missing semicolon. (8:16)
+   6 |   const [clicks, setClicks] = useState(0);
+   7 |   const isFiveClicks = clicks === 5;
+>  8 |   let showImage(false);
+     |                ^
+   9 |   const handleClickAndCheckFive = () => {
+  10 |     if (!isFiveClicks) {
+  11 |       setClicks(clicks + 1);
+SyntaxError: Missing semicolon. (8:16)
+   6 |   const [clicks, setClicks] = useState(0);
+   7 |   const isFiveClicks = clicks === 5;
+>  8 |   let showImage(false);
+     |                ^
+   9 |   const handleClickAndCheckFive = () => {
+  10 |     if (!isFiveClicks) {
+  11 |       setClicks(clicks + 1);
+	at f (/home/bontzkl/projects/projekcikpykpyk/pomeranian-bolierplate-public/node_modules/prettier/parser-babel.js:22:1054)
+	at d (/home/bontzkl/projects/projekcikpykpyk/pomeranian-bolierplate-public/node_modules/prettier/parser-babel.js:22:1287)
+	at Object.parse (/home/bontzkl/projects/projekcikpykpyk/pomeranian-bolierplate-public/node_modules/prettier/parser-babel.js:29:54613)
+	at Object.parse (/home/bontzkl/projects/projekcikpykpyk/pomeranian-bolierplate-public/node_modules/prettier/index.js:7515:23)
+	at coreFormat (/home/bontzkl/projects/projekcikpykpyk/pomeranian-bolierplate-public/node_modules/prettier/index.js:8829:18)
+	at formatWithCursor2 (/home/bontzkl/projects/projekcikpykpyk/pomeranian-bolierplate-public/node_modules/prettier/index.js:9021:18)
+	at /home/bontzkl/projects/projekcikpykpyk/pomeranian-bolierplate-public/node_modules/prettier/index.js:38176:12
+	at Object.format (/home/bontzkl/projects/projekcikpykpyk/pomeranian-bolierplate-public/node_modules/prettier/index.js:38190:12)
+	at t.default.format (/home/bontzkl/.vscode-server/extensions/esbenp.prettier-vscode-9.12.0/dist/extension.js:1:14694)
+	at async t.PrettierEditProvider.provideEdits (/home/bontzkl/.vscode-server/extensions/esbenp.prettier-vscode-9.12.0/dist/extension.js:1:11367)
+	at async B.provideDocumentFormattingEdits (/home/bontzkl/.vscode-server/bin/704ed70d4fd1c6bd6342c436f1ede30d1cff4710/out/vs/workbench/api/node/extensionHostProcess.js:101:46615)
+["INFO" - 6:38:22 PM] Formatting completed in 16ms.
+["INFO" - 6:38:32 PM] Formatting file:///home/bontzkl/projects/projekcikpykpyk/pomeranian-bolierplate-public/src/App/Exercises/ReactExercises/SubRouteExercise1/Exercise1.jsx
+["INFO" - 6:38:32 PM] Using config file at '/home/bontzkl/projects/projekcikpykpyk/pomeranian-bolierplate-public/.prettierrc.json'
+["INFO" - 6:38:32 PM] Using ignore file (if present) at /home/bontzkl/projects/projekcikpykpyk/pomeranian-bolierplate-public/.prettierignore
+["INFO" - 6:38:32 PM] File Info:
+{
+  "ignored": false,
+  "inferredParser": "babel"
+}
+["INFO" - 6:38:32 PM] Detected local configuration (i.e. .prettierrc or .editorconfig), VS Code configuration will not be used
+["INFO" - 6:38:32 PM] Prettier Options:
+{
+  "filepath": "/home/bontzkl/projects/projekcikpykpyk/pomeranian-bolierplate-public/src/App/Exercises/ReactExercises/SubRouteExercise1/Exercise1.jsx",
+  "parser": "babel",
+  "singleQuote": true,
+  "trailingComma": "es5",
+  "endOfLine": "auto"
+}
+["INFO" - 6:38:32 PM] Formatting completed in 21ms.
+["INFO" - 6:40:47 PM] Formatting file:///home/bontzkl/projects/projekcikpykpyk/pomeranian-bolierplate-public/src/App/Exercises/ReactExercises/SubRouteExercise1/Exercise1.jsx
+["INFO" - 6:40:47 PM] Using config file at '/home/bontzkl/projects/projekcikpykpyk/pomeranian-bolierplate-public/.prettierrc.json'
+["INFO" - 6:40:47 PM] Using ignore file (if present) at /home/bontzkl/projects/projekcikpykpyk/pomeranian-bolierplate-public/.prettierignore
+["INFO" - 6:40:47 PM] File Info:
+{
+  "ignored": false,
+  "inferredParser": "babel"
+}
+["INFO" - 6:40:47 PM] Detected local configuration (i.e. .prettierrc or .editorconfig), VS Code configuration will not be used
+["INFO" - 6:40:47 PM] Prettier Options:
+{
+  "filepath": "/home/bontzkl/projects/projekcikpykpyk/pomeranian-bolierplate-public/src/App/Exercises/ReactExercises/SubRouteExercise1/Exercise1.jsx",
+  "parser": "babel",
+  "singleQuote": true,
+  "trailingComma": "es5",
+  "endOfLine": "auto"
+}
+["INFO" - 6:40:47 PM] Formatting completed in 29ms.
+["INFO" - 6:43:59 PM] Formatting file:///home/bontzkl/projects/projekcikpykpyk/pomeranian-bolierplate-public/src/App/Exercises/ReactExercises/SubRouteExercise1/Exercise1.jsx
+["INFO" - 6:43:59 PM] Using config file at '/home/bontzkl/projects/projekcikpykpyk/pomeranian-bolierplate-public/.prettierrc.json'
+["INFO" - 6:43:59 PM] Using ignore file (if present) at /home/bontzkl/projects/projekcikpykpyk/pomeranian-bolierplate-public/.prettierignore
+["INFO" - 6:43:59 PM] File Info:
+{
+  "ignored": false,
+  "inferredParser": "babel"
+}
+["INFO" - 6:43:59 PM] Detected local configuration (i.e. .prettierrc or .editorconfig), VS Code configuration will not be used
+["INFO" - 6:43:59 PM] Prettier Options:
+{
+  "filepath": "/home/bontzkl/projects/projekcikpykpyk/pomeranian-bolierplate-public/src/App/Exercises/ReactExercises/SubRouteExercise1/Exercise1.jsx",
+  "parser": "babel",
+  "singleQuote": true,
+  "trailingComma": "es5",
+  "endOfLine": "auto"
+}
+["INFO" - 6:43:59 PM] Formatting completed in 22ms.
+["INFO" - 6:44:52 PM] Formatting file:///home/bontzkl/projects/projekcikpykpyk/pomeranian-bolierplate-public/src/App/Exercises/ReactExercises/SubRouteExercise1/Exercise1.jsx
+["INFO" - 6:44:52 PM] Using config file at '/home/bontzkl/projects/projekcikpykpyk/pomeranian-bolierplate-public/.prettierrc.json'
+["INFO" - 6:44:52 PM] Using ignore file (if present) at /home/bontzkl/projects/projekcikpykpyk/pomeranian-bolierplate-public/.prettierignore
+["INFO" - 6:44:52 PM] File Info:
+{
+  "ignored": false,
+  "inferredParser": "babel"
+}
+["INFO" - 6:44:52 PM] Detected local configuration (i.e. .prettierrc or .editorconfig), VS Code configuration will not be used
+["INFO" - 6:44:52 PM] Prettier Options:
+{
+  "filepath": "/home/bontzkl/projects/projekcikpykpyk/pomeranian-bolierplate-public/src/App/Exercises/ReactExercises/SubRouteExercise1/Exercise1.jsx",
+  "parser": "babel",
+  "singleQuote": true,
+  "trailingComma": "es5",
+  "endOfLine": "auto"
+}
+["INFO" - 6:44:52 PM] Formatting completed in 20ms.
+["INFO" - 6:44:57 PM] Formatting file:///home/bontzkl/projects/projekcikpykpyk/pomeranian-bolierplate-public/src/App/Exercises/ReactExercises/SubRouteExercise1/Exercise1.jsx
+["INFO" - 6:44:57 PM] Using config file at '/home/bontzkl/projects/projekcikpykpyk/pomeranian-bolierplate-public/.prettierrc.json'
+["INFO" - 6:44:57 PM] Using ignore file (if present) at /home/bontzkl/projects/projekcikpykpyk/pomeranian-bolierplate-public/.prettierignore
+["INFO" - 6:44:57 PM] File Info:
+{
+  "ignored": false,
+  "inferredParser": "babel"
+}
+["INFO" - 6:44:57 PM] Detected local configuration (i.e. .prettierrc or .editorconfig), VS Code configuration will not be used
+["INFO" - 6:44:57 PM] Prettier Options:
+{
+  "filepath": "/home/bontzkl/projects/projekcikpykpyk/pomeranian-bolierplate-public/src/App/Exercises/ReactExercises/SubRouteExercise1/Exercise1.jsx",
+  "parser": "babel",
+  "singleQuote": true,
+  "trailingComma": "es5",
+  "endOfLine": "auto"
+}
+["INFO" - 6:44:57 PM] Formatting completed in 21ms.
+["INFO" - 6:45:44 PM] Formatting file:///home/bontzkl/projects/projekcikpykpyk/pomeranian-bolierplate-public/src/App/Exercises/ReactExercises/SubRouteExercise1/Exercise1.jsx
+["INFO" - 6:45:44 PM] Using config file at '/home/bontzkl/projects/projekcikpykpyk/pomeranian-bolierplate-public/.prettierrc.json'
+["INFO" - 6:45:44 PM] Using ignore file (if present) at /home/bontzkl/projects/projekcikpykpyk/pomeranian-bolierplate-public/.prettierignore
+["INFO" - 6:45:44 PM] File Info:
+{
+  "ignored": false,
+  "inferredParser": "babel"
+}
+["INFO" - 6:45:44 PM] Detected local configuration (i.e. .prettierrc or .editorconfig), VS Code configuration will not be used
+["INFO" - 6:45:44 PM] Prettier Options:
+{
+  "filepath": "/home/bontzkl/projects/projekcikpykpyk/pomeranian-bolierplate-public/src/App/Exercises/ReactExercises/SubRouteExercise1/Exercise1.jsx",
+  "parser": "babel",
+  "singleQuote": true,
+  "trailingComma": "es5",
+  "endOfLine": "auto"
+}
+["INFO" - 6:45:44 PM] Formatting completed in 21ms.
+["INFO" - 6:46:07 PM] Formatting file:///home/bontzkl/projects/projekcikpykpyk/pomeranian-bolierplate-public/src/App/Exercises/ReactExercises/SubRouteExercise1/Exercise1.jsx
+["INFO" - 6:46:07 PM] Using config file at '/home/bontzkl/projects/projekcikpykpyk/pomeranian-bolierplate-public/.prettierrc.json'
+["INFO" - 6:46:07 PM] Using ignore file (if present) at /home/bontzkl/projects/projekcikpykpyk/pomeranian-bolierplate-public/.prettierignore
+["INFO" - 6:46:07 PM] File Info:
+{
+  "ignored": false,
+  "inferredParser": "babel"
+}
+["INFO" - 6:46:07 PM] Detected local configuration (i.e. .prettierrc or .editorconfig), VS Code configuration will not be used
+["INFO" - 6:46:07 PM] Prettier Options:
+{
+  "filepath": "/home/bontzkl/projects/projekcikpykpyk/pomeranian-bolierplate-public/src/App/Exercises/ReactExercises/SubRouteExercise1/Exercise1.jsx",
+  "parser": "babel",
+  "singleQuote": true,
+  "trailingComma": "es5",
+  "endOfLine": "auto"
+}
+["INFO" - 6:46:07 PM] Formatting completed in 20ms.
+["INFO" - 6:46:53 PM] Formatting file:///home/bontzkl/projects/projekcikpykpyk/pomeranian-bolierplate-public/src/App/Exercises/ReactExercises/SubRouteExercise1/Exercise1.jsx
+["INFO" - 6:46:53 PM] Using config file at '/home/bontzkl/projects/projekcikpykpyk/pomeranian-bolierplate-public/.prettierrc.json'
+["INFO" - 6:46:53 PM] Using ignore file (if present) at /home/bontzkl/projects/projekcikpykpyk/pomeranian-bolierplate-public/.prettierignore
+["INFO" - 6:46:53 PM] File Info:
+{
+  "ignored": false,
+  "inferredParser": "babel"
+}
+["INFO" - 6:46:53 PM] Detected local configuration (i.e. .prettierrc or .editorconfig), VS Code configuration will not be used
+["INFO" - 6:46:53 PM] Prettier Options:
+{
+  "filepath": "/home/bontzkl/projects/projekcikpykpyk/pomeranian-bolierplate-public/src/App/Exercises/ReactExercises/SubRouteExercise1/Exercise1.jsx",
+  "parser": "babel",
+  "singleQuote": true,
+  "trailingComma": "es5",
+  "endOfLine": "auto"
+}
+["INFO" - 6:46:53 PM] Formatting completed in 20ms.
+["INFO" - 6:48:41 PM] Formatting file:///home/bontzkl/projects/projekcikpykpyk/pomeranian-bolierplate-public/src/App/Exercises/ReactExercises/SubRouteExercise1/Exercise1.jsx
+["INFO" - 6:48:41 PM] Using config file at '/home/bontzkl/projects/projekcikpykpyk/pomeranian-bolierplate-public/.prettierrc.json'
+["INFO" - 6:48:41 PM] Using ignore file (if present) at /home/bontzkl/projects/projekcikpykpyk/pomeranian-bolierplate-public/.prettierignore
+["INFO" - 6:48:41 PM] File Info:
+{
+  "ignored": false,
+  "inferredParser": "babel"
+}
+["INFO" - 6:48:41 PM] Detected local configuration (i.e. .prettierrc or .editorconfig), VS Code configuration will not be used
+["INFO" - 6:48:41 PM] Prettier Options:
+{
+  "filepath": "/home/bontzkl/projects/projekcikpykpyk/pomeranian-bolierplate-public/src/App/Exercises/ReactExercises/SubRouteExercise1/Exercise1.jsx",
+  "parser": "babel",
+  "singleQuote": true,
+  "trailingComma": "es5",
+  "endOfLine": "auto"
+}
+["INFO" - 6:48:41 PM] Formatting completed in 23ms.
+["INFO" - 6:49:29 PM] Formatting file:///home/bontzkl/projects/projekcikpykpyk/pomeranian-bolierplate-public/src/App/Exercises/ReactExercises/SubRouteExercise1/Exercise1.jsx
+["INFO" - 6:49:29 PM] Using config file at '/home/bontzkl/projects/projekcikpykpyk/pomeranian-bolierplate-public/.prettierrc.json'
+["INFO" - 6:49:29 PM] Using ignore file (if present) at /home/bontzkl/projects/projekcikpykpyk/pomeranian-bolierplate-public/.prettierignore
+["INFO" - 6:49:29 PM] File Info:
+{
+  "ignored": false,
+  "inferredParser": "babel"
+}
+["INFO" - 6:49:29 PM] Detected local configuration (i.e. .prettierrc or .editorconfig), VS Code configuration will not be used
+["INFO" - 6:49:29 PM] Prettier Options:
+{
+  "filepath": "/home/bontzkl/projects/projekcikpykpyk/pomeranian-bolierplate-public/src/App/Exercises/ReactExercises/SubRouteExercise1/Exercise1.jsx",
+  "parser": "babel",
+  "singleQuote": true,
+  "trailingComma": "es5",
+  "endOfLine": "auto"
+}
+["INFO" - 6:49:29 PM] Formatting completed in 23ms.
+["INFO" - 6:49:42 PM] Formatting file:///home/bontzkl/projects/projekcikpykpyk/pomeranian-bolierplate-public/src/App/Exercises/ReactExercises/SubRouteExercise1/Exercise1.jsx
+["INFO" - 6:49:42 PM] Using config file at '/home/bontzkl/projects/projekcikpykpyk/pomeranian-bolierplate-public/.prettierrc.json'
+["INFO" - 6:49:42 PM] Using ignore file (if present) at /home/bontzkl/projects/projekcikpykpyk/pomeranian-bolierplate-public/.prettierignore
+["INFO" - 6:49:42 PM] File Info:
+{
+  "ignored": false,
+  "inferredParser": "babel"
+}
+["INFO" - 6:49:42 PM] Detected local configuration (i.e. .prettierrc or .editorconfig), VS Code configuration will not be used
+["INFO" - 6:49:42 PM] Prettier Options:
+{
+  "filepath": "/home/bontzkl/projects/projekcikpykpyk/pomeranian-bolierplate-public/src/App/Exercises/ReactExercises/SubRouteExercise1/Exercise1.jsx",
+  "parser": "babel",
+  "singleQuote": true,
+  "trailingComma": "es5",
+  "endOfLine": "auto"
+}
+["INFO" - 6:49:42 PM] Formatting completed in 20ms.
+["INFO" - 6:49:59 PM] Formatting file:///home/bontzkl/projects/projekcikpykpyk/pomeranian-bolierplate-public/src/App/Exercises/ReactExercises/SubRouteExercise1/Exercise1.jsx
+["INFO" - 6:49:59 PM] Using config file at '/home/bontzkl/projects/projekcikpykpyk/pomeranian-bolierplate-public/.prettierrc.json'
+["INFO" - 6:49:59 PM] Using ignore file (if present) at /home/bontzkl/projects/projekcikpykpyk/pomeranian-bolierplate-public/.prettierignore
+["INFO" - 6:49:59 PM] File Info:
+{
+  "ignored": false,
+  "inferredParser": "babel"
+}
+["INFO" - 6:49:59 PM] Detected local configuration (i.e. .prettierrc or .editorconfig), VS Code configuration will not be used
+["INFO" - 6:49:59 PM] Prettier Options:
+{
+  "filepath": "/home/bontzkl/projects/projekcikpykpyk/pomeranian-bolierplate-public/src/App/Exercises/ReactExercises/SubRouteExercise1/Exercise1.jsx",
+  "parser": "babel",
+  "singleQuote": true,
+  "trailingComma": "es5",
+  "endOfLine": "auto"
+}
+["INFO" - 6:49:59 PM] Formatting completed in 22ms.
+["INFO" - 6:51:02 PM] Formatting file:///home/bontzkl/projects/projekcikpykpyk/pomeranian-bolierplate-public/src/App/Exercises/ReactExercises/SubRouteExercise1/Exercise1.jsx
+["INFO" - 6:51:02 PM] Using config file at '/home/bontzkl/projects/projekcikpykpyk/pomeranian-bolierplate-public/.prettierrc.json'
+["INFO" - 6:51:02 PM] Using ignore file (if present) at /home/bontzkl/projects/projekcikpykpyk/pomeranian-bolierplate-public/.prettierignore
+["INFO" - 6:51:02 PM] File Info:
+{
+  "ignored": false,
+  "inferredParser": "babel"
+}
+["INFO" - 6:51:02 PM] Detected local configuration (i.e. .prettierrc or .editorconfig), VS Code configuration will not be used
+["INFO" - 6:51:02 PM] Prettier Options:
+{
+  "filepath": "/home/bontzkl/projects/projekcikpykpyk/pomeranian-bolierplate-public/src/App/Exercises/ReactExercises/SubRouteExercise1/Exercise1.jsx",
+  "parser": "babel",
+  "singleQuote": true,
+  "trailingComma": "es5",
+  "endOfLine": "auto"
+}
+["INFO" - 6:51:02 PM] Formatting completed in 22ms.
+["INFO" - 6:51:27 PM] Formatting file:///home/bontzkl/projects/projekcikpykpyk/pomeranian-bolierplate-public/src/App/Exercises/ReactExercises/SubRouteExercise1/Exercise1.jsx
+["INFO" - 6:51:27 PM] Using config file at '/home/bontzkl/projects/projekcikpykpyk/pomeranian-bolierplate-public/.prettierrc.json'
+["INFO" - 6:51:27 PM] Using ignore file (if present) at /home/bontzkl/projects/projekcikpykpyk/pomeranian-bolierplate-public/.prettierignore
+["INFO" - 6:51:27 PM] File Info:
+{
+  "ignored": false,
+  "inferredParser": "babel"
+}
+["INFO" - 6:51:27 PM] Detected local configuration (i.e. .prettierrc or .editorconfig), VS Code configuration will not be used
+["INFO" - 6:51:27 PM] Prettier Options:
+{
+  "filepath": "/home/bontzkl/projects/projekcikpykpyk/pomeranian-bolierplate-public/src/App/Exercises/ReactExercises/SubRouteExercise1/Exercise1.jsx",
+  "parser": "babel",
+  "singleQuote": true,
+  "trailingComma": "es5",
+  "endOfLine": "auto"
+}
+["INFO" - 6:51:27 PM] Formatting completed in 18ms.
+["INFO" - 6:51:47 PM] Formatting file:///home/bontzkl/projects/projekcikpykpyk/pomeranian-bolierplate-public/src/App/Exercises/ReactExercises/SubRouteExercise1/Exercise1.jsx
+["INFO" - 6:51:47 PM] Using config file at '/home/bontzkl/projects/projekcikpykpyk/pomeranian-bolierplate-public/.prettierrc.json'
+["INFO" - 6:51:47 PM] Using ignore file (if present) at /home/bontzkl/projects/projekcikpykpyk/pomeranian-bolierplate-public/.prettierignore
+["INFO" - 6:51:47 PM] File Info:
+{
+  "ignored": false,
+  "inferredParser": "babel"
+}
+["INFO" - 6:51:47 PM] Detected local configuration (i.e. .prettierrc or .editorconfig), VS Code configuration will not be used
+["INFO" - 6:51:47 PM] Prettier Options:
+{
+  "filepath": "/home/bontzkl/projects/projekcikpykpyk/pomeranian-bolierplate-public/src/App/Exercises/ReactExercises/SubRouteExercise1/Exercise1.jsx",
+  "parser": "babel",
+  "singleQuote": true,
+  "trailingComma": "es5",
+  "endOfLine": "auto"
+}
+["INFO" - 6:51:47 PM] Formatting completed in 24ms.
+["INFO" - 6:52:02 PM] Formatting file:///home/bontzkl/projects/projekcikpykpyk/pomeranian-bolierplate-public/src/App/Exercises/ReactExercises/SubRouteExercise1/Exercise1.jsx
+["INFO" - 6:52:02 PM] Using config file at '/home/bontzkl/projects/projekcikpykpyk/pomeranian-bolierplate-public/.prettierrc.json'
+["INFO" - 6:52:02 PM] Using ignore file (if present) at /home/bontzkl/projects/projekcikpykpyk/pomeranian-bolierplate-public/.prettierignore
+["INFO" - 6:52:02 PM] File Info:
+{
+  "ignored": false,
+  "inferredParser": "babel"
+}
+["INFO" - 6:52:02 PM] Detected local configuration (i.e. .prettierrc or .editorconfig), VS Code configuration will not be used
+["INFO" - 6:52:02 PM] Prettier Options:
+{
+  "filepath": "/home/bontzkl/projects/projekcikpykpyk/pomeranian-bolierplate-public/src/App/Exercises/ReactExercises/SubRouteExercise1/Exercise1.jsx",
+  "parser": "babel",
+  "singleQuote": true,
+  "trailingComma": "es5",
+  "endOfLine": "auto"
+}
+["INFO" - 6:52:02 PM] Formatting completed in 18ms.
+["INFO" - 6:53:37 PM] Formatting file:///home/bontzkl/projects/projekcikpykpyk/pomeranian-bolierplate-public/src/App/Exercises/ReactExercises/SubRouteExercise1/Exercise1.jsx
+["INFO" - 6:53:37 PM] Using config file at '/home/bontzkl/projects/projekcikpykpyk/pomeranian-bolierplate-public/.prettierrc.json'
+["INFO" - 6:53:37 PM] Using ignore file (if present) at /home/bontzkl/projects/projekcikpykpyk/pomeranian-bolierplate-public/.prettierignore
+["INFO" - 6:53:37 PM] File Info:
+{
+  "ignored": false,
+  "inferredParser": "babel"
+}
+["INFO" - 6:53:37 PM] Detected local configuration (i.e. .prettierrc or .editorconfig), VS Code configuration will not be used
+["INFO" - 6:53:37 PM] Prettier Options:
+{
+  "filepath": "/home/bontzkl/projects/projekcikpykpyk/pomeranian-bolierplate-public/src/App/Exercises/ReactExercises/SubRouteExercise1/Exercise1.jsx",
+  "parser": "babel",
+  "singleQuote": true,
+  "trailingComma": "es5",
+  "endOfLine": "auto"
+}
+["INFO" - 6:53:37 PM] Formatting completed in 43ms.
+["INFO" - 7:00:33 PM] Formatting file:///home/bontzkl/projects/projekcikpykpyk/pomeranian-bolierplate-public/src/App/Exercises/ReactExercises/SubRouteExercise1/Exercise1.jsx
+["INFO" - 7:00:33 PM] Using config file at '/home/bontzkl/projects/projekcikpykpyk/pomeranian-bolierplate-public/.prettierrc.json'
+["INFO" - 7:00:33 PM] Using ignore file (if present) at /home/bontzkl/projects/projekcikpykpyk/pomeranian-bolierplate-public/.prettierignore
+["INFO" - 7:00:33 PM] File Info:
+{
+  "ignored": false,
+  "inferredParser": "babel"
+}
+["INFO" - 7:00:33 PM] Detected local configuration (i.e. .prettierrc or .editorconfig), VS Code configuration will not be used
+["INFO" - 7:00:33 PM] Prettier Options:
+{
+  "filepath": "/home/bontzkl/projects/projekcikpykpyk/pomeranian-bolierplate-public/src/App/Exercises/ReactExercises/SubRouteExercise1/Exercise1.jsx",
+  "parser": "babel",
+  "singleQuote": true,
+  "trailingComma": "es5",
+  "endOfLine": "auto"
+}
+["INFO" - 7:00:33 PM] Formatting completed in 22ms.
+["INFO" - 7:22:09 PM] Formatting file:///home/bontzkl/projects/projekcikpykpyk/pomeranian-bolierplate-public/src/App/Exercises/ReactExercises/SubRouteExercise2/router-data.jsx
+["INFO" - 7:22:09 PM] Using config file at '/home/bontzkl/projects/projekcikpykpyk/pomeranian-bolierplate-public/.prettierrc.json'
+["INFO" - 7:22:09 PM] Using ignore file (if present) at /home/bontzkl/projects/projekcikpykpyk/pomeranian-bolierplate-public/.prettierignore
+["INFO" - 7:22:09 PM] File Info:
+{
+  "ignored": false,
+  "inferredParser": "babel"
+}
+["INFO" - 7:22:09 PM] Detected local configuration (i.e. .prettierrc or .editorconfig), VS Code configuration will not be used
+["INFO" - 7:22:09 PM] Prettier Options:
+{
+  "filepath": "/home/bontzkl/projects/projekcikpykpyk/pomeranian-bolierplate-public/src/App/Exercises/ReactExercises/SubRouteExercise2/router-data.jsx",
+  "parser": "babel",
+  "singleQuote": true,
+  "trailingComma": "es5",
+  "endOfLine": "auto"
+}
+["INFO" - 7:22:09 PM] Formatting completed in 20ms.
+["INFO" - 7:22:15 PM] Formatting file:///home/bontzkl/projects/projekcikpykpyk/pomeranian-bolierplate-public/src/App/Exercises/ReactExercises/SubRouteExercise3/router-data.jsx
+["INFO" - 7:22:15 PM] Using config file at '/home/bontzkl/projects/projekcikpykpyk/pomeranian-bolierplate-public/.prettierrc.json'
+["INFO" - 7:22:15 PM] Using ignore file (if present) at /home/bontzkl/projects/projekcikpykpyk/pomeranian-bolierplate-public/.prettierignore
+["INFO" - 7:22:15 PM] File Info:
+{
+  "ignored": false,
+  "inferredParser": "babel"
+}
+["INFO" - 7:22:15 PM] Detected local configuration (i.e. .prettierrc or .editorconfig), VS Code configuration will not be used
+["INFO" - 7:22:15 PM] Prettier Options:
+{
+  "filepath": "/home/bontzkl/projects/projekcikpykpyk/pomeranian-bolierplate-public/src/App/Exercises/ReactExercises/SubRouteExercise3/router-data.jsx",
+  "parser": "babel",
+  "singleQuote": true,
+  "trailingComma": "es5",
+  "endOfLine": "auto"
+}
+["INFO" - 7:22:15 PM] Formatting completed in 30ms.
+["INFO" - 7:22:22 PM] Formatting file:///home/bontzkl/projects/projekcikpykpyk/pomeranian-bolierplate-public/src/App/Exercises/ReactExercises/SubRouteExercise4/router-data.jsx
+["INFO" - 7:22:22 PM] Using config file at '/home/bontzkl/projects/projekcikpykpyk/pomeranian-bolierplate-public/.prettierrc.json'
+["INFO" - 7:22:22 PM] Using ignore file (if present) at /home/bontzkl/projects/projekcikpykpyk/pomeranian-bolierplate-public/.prettierignore
+["INFO" - 7:22:22 PM] File Info:
+{
+  "ignored": false,
+  "inferredParser": "babel"
+}
+["INFO" - 7:22:22 PM] Detected local configuration (i.e. .prettierrc or .editorconfig), VS Code configuration will not be used
+["INFO" - 7:22:22 PM] Prettier Options:
+{
+  "filepath": "/home/bontzkl/projects/projekcikpykpyk/pomeranian-bolierplate-public/src/App/Exercises/ReactExercises/SubRouteExercise4/router-data.jsx",
+  "parser": "babel",
+  "singleQuote": true,
+  "trailingComma": "es5",
+  "endOfLine": "auto"
+}
+["INFO" - 7:22:22 PM] Formatting completed in 17ms.
+["INFO" - 7:22:36 PM] Formatting file:///home/bontzkl/projects/projekcikpykpyk/pomeranian-bolierplate-public/src/App/Exercises/ReactExercises/SubRouteExercise5/router-data.jsx
+["INFO" - 7:22:36 PM] Using config file at '/home/bontzkl/projects/projekcikpykpyk/pomeranian-bolierplate-public/.prettierrc.json'
+["INFO" - 7:22:36 PM] Using ignore file (if present) at /home/bontzkl/projects/projekcikpykpyk/pomeranian-bolierplate-public/.prettierignore
+["INFO" - 7:22:36 PM] File Info:
+{
+  "ignored": false,
+  "inferredParser": "babel"
+}
+["INFO" - 7:22:36 PM] Detected local configuration (i.e. .prettierrc or .editorconfig), VS Code configuration will not be used
+["INFO" - 7:22:36 PM] Prettier Options:
+{
+  "filepath": "/home/bontzkl/projects/projekcikpykpyk/pomeranian-bolierplate-public/src/App/Exercises/ReactExercises/SubRouteExercise5/router-data.jsx",
+  "parser": "babel",
+  "singleQuote": true,
+  "trailingComma": "es5",
+  "endOfLine": "auto"
+}
+["INFO" - 7:22:36 PM] Formatting completed in 28ms.
+["INFO" - 7:23:03 PM] Formatting file:///home/bontzkl/projects/projekcikpykpyk/pomeranian-bolierplate-public/src/App/Exercises/ReactExercises/SubRouteExercise2/router-data.jsx
+["INFO" - 7:23:03 PM] Using config file at '/home/bontzkl/projects/projekcikpykpyk/pomeranian-bolierplate-public/.prettierrc.json'
+["INFO" - 7:23:03 PM] Using ignore file (if present) at /home/bontzkl/projects/projekcikpykpyk/pomeranian-bolierplate-public/.prettierignore
+["INFO" - 7:23:03 PM] File Info:
+{
+  "ignored": false,
+  "inferredParser": "babel"
+}
+["INFO" - 7:23:03 PM] Detected local configuration (i.e. .prettierrc or .editorconfig), VS Code configuration will not be used
+["INFO" - 7:23:03 PM] Prettier Options:
+{
+  "filepath": "/home/bontzkl/projects/projekcikpykpyk/pomeranian-bolierplate-public/src/App/Exercises/ReactExercises/SubRouteExercise2/router-data.jsx",
+  "parser": "babel",
+  "singleQuote": true,
+  "trailingComma": "es5",
+  "endOfLine": "auto"
+}
+["INFO" - 7:23:03 PM] Formatting completed in 16ms.
+["INFO" - 7:23:11 PM] Formatting file:///home/bontzkl/projects/projekcikpykpyk/pomeranian-bolierplate-public/src/App/Exercises/ReactExercises/SubRouteExercise1/router-data.jsx
+["INFO" - 7:23:11 PM] Using config file at '/home/bontzkl/projects/projekcikpykpyk/pomeranian-bolierplate-public/.prettierrc.json'
+["INFO" - 7:23:11 PM] Using ignore file (if present) at /home/bontzkl/projects/projekcikpykpyk/pomeranian-bolierplate-public/.prettierignore
+["INFO" - 7:23:11 PM] File Info:
+{
+  "ignored": false,
+  "inferredParser": "babel"
+}
+["INFO" - 7:23:11 PM] Detected local configuration (i.e. .prettierrc or .editorconfig), VS Code configuration will not be used
+["INFO" - 7:23:11 PM] Prettier Options:
+{
+  "filepath": "/home/bontzkl/projects/projekcikpykpyk/pomeranian-bolierplate-public/src/App/Exercises/ReactExercises/SubRouteExercise1/router-data.jsx",
+  "parser": "babel",
+  "singleQuote": true,
+  "trailingComma": "es5",
+  "endOfLine": "auto"
+}
+["INFO" - 7:23:11 PM] Formatting completed in 19ms.
+["INFO" - 7:23:16 PM] Formatting file:///home/bontzkl/projects/projekcikpykpyk/pomeranian-bolierplate-public/src/App/Exercises/ReactExercises/SubRouteExercise3/router-data.jsx
+["INFO" - 7:23:16 PM] Using config file at '/home/bontzkl/projects/projekcikpykpyk/pomeranian-bolierplate-public/.prettierrc.json'
+["INFO" - 7:23:16 PM] Using ignore file (if present) at /home/bontzkl/projects/projekcikpykpyk/pomeranian-bolierplate-public/.prettierignore
+["INFO" - 7:23:16 PM] File Info:
+{
+  "ignored": false,
+  "inferredParser": "babel"
+}
+["INFO" - 7:23:16 PM] Detected local configuration (i.e. .prettierrc or .editorconfig), VS Code configuration will not be used
+["INFO" - 7:23:16 PM] Prettier Options:
+{
+  "filepath": "/home/bontzkl/projects/projekcikpykpyk/pomeranian-bolierplate-public/src/App/Exercises/ReactExercises/SubRouteExercise3/router-data.jsx",
+  "parser": "babel",
+  "singleQuote": true,
+  "trailingComma": "es5",
+  "endOfLine": "auto"
+}
+["INFO" - 7:23:16 PM] Formatting completed in 17ms.
+["INFO" - 7:23:21 PM] Formatting file:///home/bontzkl/projects/projekcikpykpyk/pomeranian-bolierplate-public/src/App/Exercises/ReactExercises/SubRouteExercise4/router-data.jsx
+["INFO" - 7:23:21 PM] Using config file at '/home/bontzkl/projects/projekcikpykpyk/pomeranian-bolierplate-public/.prettierrc.json'
+["INFO" - 7:23:21 PM] Using ignore file (if present) at /home/bontzkl/projects/projekcikpykpyk/pomeranian-bolierplate-public/.prettierignore
+["INFO" - 7:23:21 PM] File Info:
+{
+  "ignored": false,
+  "inferredParser": "babel"
+}
+["INFO" - 7:23:21 PM] Detected local configuration (i.e. .prettierrc or .editorconfig), VS Code configuration will not be used
+["INFO" - 7:23:21 PM] Prettier Options:
+{
+  "filepath": "/home/bontzkl/projects/projekcikpykpyk/pomeranian-bolierplate-public/src/App/Exercises/ReactExercises/SubRouteExercise4/router-data.jsx",
+  "parser": "babel",
+  "singleQuote": true,
+  "trailingComma": "es5",
+  "endOfLine": "auto"
+}
+["INFO" - 7:23:21 PM] Formatting completed in 16ms.
+["INFO" - 7:23:26 PM] Formatting file:///home/bontzkl/projects/projekcikpykpyk/pomeranian-bolierplate-public/src/App/Exercises/ReactExercises/SubRouteExercise5/router-data.jsx
+["INFO" - 7:23:26 PM] Using config file at '/home/bontzkl/projects/projekcikpykpyk/pomeranian-bolierplate-public/.prettierrc.json'
+["INFO" - 7:23:26 PM] Using ignore file (if present) at /home/bontzkl/projects/projekcikpykpyk/pomeranian-bolierplate-public/.prettierignore
+["INFO" - 7:23:26 PM] File Info:
+{
+  "ignored": false,
+  "inferredParser": "babel"
+}
+["INFO" - 7:23:26 PM] Detected local configuration (i.e. .prettierrc or .editorconfig), VS Code configuration will not be used
+["INFO" - 7:23:26 PM] Prettier Options:
+{
+  "filepath": "/home/bontzkl/projects/projekcikpykpyk/pomeranian-bolierplate-public/src/App/Exercises/ReactExercises/SubRouteExercise5/router-data.jsx",
+  "parser": "babel",
+  "singleQuote": true,
+  "trailingComma": "es5",
+  "endOfLine": "auto"
+}
+["INFO" - 7:23:26 PM] Formatting completed in 29ms.
+["INFO" - 7:42:11 PM] Formatting file:///home/bontzkl/projects/projekcikpykpyk/pomeranian-bolierplate-public/src/App/Exercises/ReactExercises/SubRouteExercise2/Exercise2.jsx
+["INFO" - 7:42:11 PM] Using config file at '/home/bontzkl/projects/projekcikpykpyk/pomeranian-bolierplate-public/.prettierrc.json'
+["INFO" - 7:42:11 PM] Using ignore file (if present) at /home/bontzkl/projects/projekcikpykpyk/pomeranian-bolierplate-public/.prettierignore
+["INFO" - 7:42:11 PM] File Info:
+{
+  "ignored": false,
+  "inferredParser": "babel"
+}
+["INFO" - 7:42:11 PM] Detected local configuration (i.e. .prettierrc or .editorconfig), VS Code configuration will not be used
+["INFO" - 7:42:11 PM] Prettier Options:
+{
+  "filepath": "/home/bontzkl/projects/projekcikpykpyk/pomeranian-bolierplate-public/src/App/Exercises/ReactExercises/SubRouteExercise2/Exercise2.jsx",
+  "parser": "babel",
+  "singleQuote": true,
+  "trailingComma": "es5",
+  "endOfLine": "auto"
+}
+["INFO" - 7:42:11 PM] Formatting completed in 33ms.
+["INFO" - 7:42:20 PM] Formatting file:///home/bontzkl/projects/projekcikpykpyk/pomeranian-bolierplate-public/src/App/Exercises/ReactExercises/SubRouteExercise2/Exercise2.jsx
+["INFO" - 7:42:20 PM] Using config file at '/home/bontzkl/projects/projekcikpykpyk/pomeranian-bolierplate-public/.prettierrc.json'
+["INFO" - 7:42:20 PM] Using ignore file (if present) at /home/bontzkl/projects/projekcikpykpyk/pomeranian-bolierplate-public/.prettierignore
+["INFO" - 7:42:20 PM] File Info:
+{
+  "ignored": false,
+  "inferredParser": "babel"
+}
+["INFO" - 7:42:20 PM] Detected local configuration (i.e. .prettierrc or .editorconfig), VS Code configuration will not be used
+["INFO" - 7:42:20 PM] Prettier Options:
+{
+  "filepath": "/home/bontzkl/projects/projekcikpykpyk/pomeranian-bolierplate-public/src/App/Exercises/ReactExercises/SubRouteExercise2/Exercise2.jsx",
+  "parser": "babel",
+  "singleQuote": true,
+  "trailingComma": "es5",
+  "endOfLine": "auto"
+}
+["INFO" - 7:42:20 PM] Formatting completed in 16ms.
+["INFO" - 7:44:02 PM] Formatting file:///home/bontzkl/projects/projekcikpykpyk/pomeranian-bolierplate-public/src/App/Exercises/ReactExercises/SubRouteExercise2/Exercise2.jsx
+["INFO" - 7:44:02 PM] Using config file at '/home/bontzkl/projects/projekcikpykpyk/pomeranian-bolierplate-public/.prettierrc.json'
+["INFO" - 7:44:02 PM] Using ignore file (if present) at /home/bontzkl/projects/projekcikpykpyk/pomeranian-bolierplate-public/.prettierignore
+["INFO" - 7:44:02 PM] File Info:
+{
+  "ignored": false,
+  "inferredParser": "babel"
+}
+["INFO" - 7:44:02 PM] Detected local configuration (i.e. .prettierrc or .editorconfig), VS Code configuration will not be used
+["INFO" - 7:44:02 PM] Prettier Options:
+{
+  "filepath": "/home/bontzkl/projects/projekcikpykpyk/pomeranian-bolierplate-public/src/App/Exercises/ReactExercises/SubRouteExercise2/Exercise2.jsx",
+  "parser": "babel",
+  "singleQuote": true,
+  "trailingComma": "es5",
+  "endOfLine": "auto"
+}
+["ERROR" - 7:44:02 PM] Error formatting document.
+["ERROR" - 7:44:02 PM] Unexpected token (7:21)
+   5 | export function Exercise2() {
+   6 |   const isVisible = false;
+>  7 |   const UnhideHide () 
+     |                     ^
+   8 |   return <div>{isVisible && <p>Widać mnie!</p>}</div>;
+   9 | }
+  10 |
+SyntaxError: Unexpected token (7:21)
+   5 | export function Exercise2() {
+   6 |   const isVisible = false;
+>  7 |   const UnhideHide () 
+     |                     ^
+   8 |   return <div>{isVisible && <p>Widać mnie!</p>}</div>;
+   9 | }
+  10 |
+	at f (/home/bontzkl/projects/projekcikpykpyk/pomeranian-bolierplate-public/node_modules/prettier/parser-babel.js:22:1054)
+	at d (/home/bontzkl/projects/projekcikpykpyk/pomeranian-bolierplate-public/node_modules/prettier/parser-babel.js:22:1287)
+	at Object.parse (/home/bontzkl/projects/projekcikpykpyk/pomeranian-bolierplate-public/node_modules/prettier/parser-babel.js:29:54613)
+	at Object.parse (/home/bontzkl/projects/projekcikpykpyk/pomeranian-bolierplate-public/node_modules/prettier/index.js:7515:23)
+	at coreFormat (/home/bontzkl/projects/projekcikpykpyk/pomeranian-bolierplate-public/node_modules/prettier/index.js:8829:18)
+	at formatWithCursor2 (/home/bontzkl/projects/projekcikpykpyk/pomeranian-bolierplate-public/node_modules/prettier/index.js:9021:18)
+	at /home/bontzkl/projects/projekcikpykpyk/pomeranian-bolierplate-public/node_modules/prettier/index.js:38176:12
+	at Object.format (/home/bontzkl/projects/projekcikpykpyk/pomeranian-bolierplate-public/node_modules/prettier/index.js:38190:12)
+	at t.default.format (/home/bontzkl/.vscode-server/extensions/esbenp.prettier-vscode-9.12.0/dist/extension.js:1:14694)
+	at async t.PrettierEditProvider.provideEdits (/home/bontzkl/.vscode-server/extensions/esbenp.prettier-vscode-9.12.0/dist/extension.js:1:11367)
+	at async B.provideDocumentFormattingEdits (/home/bontzkl/.vscode-server/bin/704ed70d4fd1c6bd6342c436f1ede30d1cff4710/out/vs/workbench/api/node/extensionHostProcess.js:101:46615)
+["INFO" - 7:44:02 PM] Formatting completed in 28ms.
+["INFO" - 7:44:16 PM] Formatting file:///home/bontzkl/projects/projekcikpykpyk/pomeranian-bolierplate-public/src/App/Exercises/ReactExercises/SubRouteExercise2/Exercise2.jsx
+["INFO" - 7:44:16 PM] Using config file at '/home/bontzkl/projects/projekcikpykpyk/pomeranian-bolierplate-public/.prettierrc.json'
+["INFO" - 7:44:16 PM] Using ignore file (if present) at /home/bontzkl/projects/projekcikpykpyk/pomeranian-bolierplate-public/.prettierignore
+["INFO" - 7:44:16 PM] File Info:
+{
+  "ignored": false,
+  "inferredParser": "babel"
+}
+["INFO" - 7:44:16 PM] Detected local configuration (i.e. .prettierrc or .editorconfig), VS Code configuration will not be used
+["INFO" - 7:44:16 PM] Prettier Options:
+{
+  "filepath": "/home/bontzkl/projects/projekcikpykpyk/pomeranian-bolierplate-public/src/App/Exercises/ReactExercises/SubRouteExercise2/Exercise2.jsx",
+  "parser": "babel",
+  "singleQuote": true,
+  "trailingComma": "es5",
+  "endOfLine": "auto"
+}
+["INFO" - 7:44:16 PM] Formatting completed in 18ms.
+["INFO" - 7:47:19 PM] Formatting file:///home/bontzkl/projects/projekcikpykpyk/pomeranian-bolierplate-public/src/App/Exercises/ReactExercises/SubRouteExercise2/Exercise2.jsx
+["INFO" - 7:47:19 PM] Using config file at '/home/bontzkl/projects/projekcikpykpyk/pomeranian-bolierplate-public/.prettierrc.json'
+["INFO" - 7:47:19 PM] Using ignore file (if present) at /home/bontzkl/projects/projekcikpykpyk/pomeranian-bolierplate-public/.prettierignore
+["INFO" - 7:47:19 PM] File Info:
+{
+  "ignored": false,
+  "inferredParser": "babel"
+}
+["INFO" - 7:47:19 PM] Detected local configuration (i.e. .prettierrc or .editorconfig), VS Code configuration will not be used
+["INFO" - 7:47:19 PM] Prettier Options:
+{
+  "filepath": "/home/bontzkl/projects/projekcikpykpyk/pomeranian-bolierplate-public/src/App/Exercises/ReactExercises/SubRouteExercise2/Exercise2.jsx",
+  "parser": "babel",
+  "singleQuote": true,
+  "trailingComma": "es5",
+  "endOfLine": "auto"
+}
+["INFO" - 7:47:19 PM] Formatting completed in 28ms.
+["INFO" - 7:48:00 PM] Formatting file:///home/bontzkl/projects/projekcikpykpyk/pomeranian-bolierplate-public/src/App/Exercises/ReactExercises/SubRouteExercise2/Exercise2.jsx
+["INFO" - 7:48:00 PM] Using config file at '/home/bontzkl/projects/projekcikpykpyk/pomeranian-bolierplate-public/.prettierrc.json'
+["INFO" - 7:48:00 PM] Using ignore file (if present) at /home/bontzkl/projects/projekcikpykpyk/pomeranian-bolierplate-public/.prettierignore
+["INFO" - 7:48:00 PM] File Info:
+{
+  "ignored": false,
+  "inferredParser": "babel"
+}
+["INFO" - 7:48:00 PM] Detected local configuration (i.e. .prettierrc or .editorconfig), VS Code configuration will not be used
+["INFO" - 7:48:00 PM] Prettier Options:
+{
+  "filepath": "/home/bontzkl/projects/projekcikpykpyk/pomeranian-bolierplate-public/src/App/Exercises/ReactExercises/SubRouteExercise2/Exercise2.jsx",
+  "parser": "babel",
+  "singleQuote": true,
+  "trailingComma": "es5",
+  "endOfLine": "auto"
+}
+["INFO" - 7:48:00 PM] Formatting completed in 26ms.
+["INFO" - 7:48:08 PM] Formatting file:///home/bontzkl/projects/projekcikpykpyk/pomeranian-bolierplate-public/src/App/Exercises/ReactExercises/SubRouteExercise2/Exercise2.jsx
+["INFO" - 7:48:08 PM] Using config file at '/home/bontzkl/projects/projekcikpykpyk/pomeranian-bolierplate-public/.prettierrc.json'
+["INFO" - 7:48:08 PM] Using ignore file (if present) at /home/bontzkl/projects/projekcikpykpyk/pomeranian-bolierplate-public/.prettierignore
+["INFO" - 7:48:08 PM] File Info:
+{
+  "ignored": false,
+  "inferredParser": "babel"
+}
+["INFO" - 7:48:08 PM] Detected local configuration (i.e. .prettierrc or .editorconfig), VS Code configuration will not be used
+["INFO" - 7:48:08 PM] Prettier Options:
+{
+  "filepath": "/home/bontzkl/projects/projekcikpykpyk/pomeranian-bolierplate-public/src/App/Exercises/ReactExercises/SubRouteExercise2/Exercise2.jsx",
+  "parser": "babel",
+  "singleQuote": true,
+  "trailingComma": "es5",
+  "endOfLine": "auto"
+}
+["INFO" - 7:48:08 PM] Formatting completed in 17ms.
+["INFO" - 7:49:40 PM] Formatting file:///home/bontzkl/projects/projekcikpykpyk/pomeranian-bolierplate-public/src/App/Exercises/ReactExercises/SubRouteExercise2/Exercise2.jsx
+["INFO" - 7:49:40 PM] Using config file at '/home/bontzkl/projects/projekcikpykpyk/pomeranian-bolierplate-public/.prettierrc.json'
+["INFO" - 7:49:40 PM] Using ignore file (if present) at /home/bontzkl/projects/projekcikpykpyk/pomeranian-bolierplate-public/.prettierignore
+["INFO" - 7:49:40 PM] File Info:
+{
+  "ignored": false,
+  "inferredParser": "babel"
+}
+["INFO" - 7:49:40 PM] Detected local configuration (i.e. .prettierrc or .editorconfig), VS Code configuration will not be used
+["INFO" - 7:49:40 PM] Prettier Options:
+{
+  "filepath": "/home/bontzkl/projects/projekcikpykpyk/pomeranian-bolierplate-public/src/App/Exercises/ReactExercises/SubRouteExercise2/Exercise2.jsx",
+  "parser": "babel",
+  "singleQuote": true,
+  "trailingComma": "es5",
+  "endOfLine": "auto"
+}
+["INFO" - 7:49:40 PM] Formatting completed in 23ms.
+["INFO" - 7:49:49 PM] Formatting file:///home/bontzkl/projects/projekcikpykpyk/pomeranian-bolierplate-public/src/App/Exercises/ReactExercises/SubRouteExercise2/Exercise2.jsx
+["INFO" - 7:49:49 PM] Using config file at '/home/bontzkl/projects/projekcikpykpyk/pomeranian-bolierplate-public/.prettierrc.json'
+["INFO" - 7:49:49 PM] Using ignore file (if present) at /home/bontzkl/projects/projekcikpykpyk/pomeranian-bolierplate-public/.prettierignore
+["INFO" - 7:49:49 PM] File Info:
+{
+  "ignored": false,
+  "inferredParser": "babel"
+}
+["INFO" - 7:49:49 PM] Detected local configuration (i.e. .prettierrc or .editorconfig), VS Code configuration will not be used
+["INFO" - 7:49:49 PM] Prettier Options:
+{
+  "filepath": "/home/bontzkl/projects/projekcikpykpyk/pomeranian-bolierplate-public/src/App/Exercises/ReactExercises/SubRouteExercise2/Exercise2.jsx",
+  "parser": "babel",
+  "singleQuote": true,
+  "trailingComma": "es5",
+  "endOfLine": "auto"
+}
+["INFO" - 7:49:49 PM] Formatting completed in 20ms.
+["INFO" - 7:50:20 PM] Formatting file:///home/bontzkl/projects/projekcikpykpyk/pomeranian-bolierplate-public/src/App/Exercises/ReactExercises/SubRouteExercise2/Exercise2.jsx
+["INFO" - 7:50:20 PM] Using config file at '/home/bontzkl/projects/projekcikpykpyk/pomeranian-bolierplate-public/.prettierrc.json'
+["INFO" - 7:50:20 PM] Using ignore file (if present) at /home/bontzkl/projects/projekcikpykpyk/pomeranian-bolierplate-public/.prettierignore
+["INFO" - 7:50:20 PM] File Info:
+{
+  "ignored": false,
+  "inferredParser": "babel"
+}
+["INFO" - 7:50:20 PM] Detected local configuration (i.e. .prettierrc or .editorconfig), VS Code configuration will not be used
+["INFO" - 7:50:20 PM] Prettier Options:
+{
+  "filepath": "/home/bontzkl/projects/projekcikpykpyk/pomeranian-bolierplate-public/src/App/Exercises/ReactExercises/SubRouteExercise2/Exercise2.jsx",
+  "parser": "babel",
+  "singleQuote": true,
+  "trailingComma": "es5",
+  "endOfLine": "auto"
+}
+["INFO" - 7:50:20 PM] Formatting completed in 17ms.
+["INFO" - 7:50:52 PM] Formatting file:///home/bontzkl/projects/projekcikpykpyk/pomeranian-bolierplate-public/src/App/Exercises/ReactExercises/SubRouteExercise2/Exercise2.jsx
+["INFO" - 7:50:52 PM] Using config file at '/home/bontzkl/projects/projekcikpykpyk/pomeranian-bolierplate-public/.prettierrc.json'
+["INFO" - 7:50:52 PM] Using ignore file (if present) at /home/bontzkl/projects/projekcikpykpyk/pomeranian-bolierplate-public/.prettierignore
+["INFO" - 7:50:52 PM] File Info:
+{
+  "ignored": false,
+  "inferredParser": "babel"
+}
+["INFO" - 7:50:52 PM] Detected local configuration (i.e. .prettierrc or .editorconfig), VS Code configuration will not be used
+["INFO" - 7:50:52 PM] Prettier Options:
+{
+  "filepath": "/home/bontzkl/projects/projekcikpykpyk/pomeranian-bolierplate-public/src/App/Exercises/ReactExercises/SubRouteExercise2/Exercise2.jsx",
+  "parser": "babel",
+  "singleQuote": true,
+  "trailingComma": "es5",
+  "endOfLine": "auto"
+}
+["INFO" - 7:50:52 PM] Formatting completed in 20ms.
+["INFO" - 7:51:16 PM] Formatting file:///home/bontzkl/projects/projekcikpykpyk/pomeranian-bolierplate-public/src/App/Exercises/ReactExercises/SubRouteExercise2/Exercise2.jsx
+["INFO" - 7:51:16 PM] Using config file at '/home/bontzkl/projects/projekcikpykpyk/pomeranian-bolierplate-public/.prettierrc.json'
+["INFO" - 7:51:16 PM] Using ignore file (if present) at /home/bontzkl/projects/projekcikpykpyk/pomeranian-bolierplate-public/.prettierignore
+["INFO" - 7:51:16 PM] File Info:
+{
+  "ignored": false,
+  "inferredParser": "babel"
+}
+["INFO" - 7:51:16 PM] Detected local configuration (i.e. .prettierrc or .editorconfig), VS Code configuration will not be used
+["INFO" - 7:51:16 PM] Prettier Options:
+{
+  "filepath": "/home/bontzkl/projects/projekcikpykpyk/pomeranian-bolierplate-public/src/App/Exercises/ReactExercises/SubRouteExercise2/Exercise2.jsx",
+  "parser": "babel",
+  "singleQuote": true,
+  "trailingComma": "es5",
+  "endOfLine": "auto"
+}
+["INFO" - 7:51:16 PM] Formatting completed in 19ms.
+["INFO" - 7:52:43 PM] Formatting file:///home/bontzkl/projects/projekcikpykpyk/pomeranian-bolierplate-public/src/App/Exercises/ReactExercises/SubRouteExercise2/Exercise2.jsx
+["INFO" - 7:52:43 PM] Using config file at '/home/bontzkl/projects/projekcikpykpyk/pomeranian-bolierplate-public/.prettierrc.json'
+["INFO" - 7:52:43 PM] Using ignore file (if present) at /home/bontzkl/projects/projekcikpykpyk/pomeranian-bolierplate-public/.prettierignore
+["INFO" - 7:52:43 PM] File Info:
+{
+  "ignored": false,
+  "inferredParser": "babel"
+}
+["INFO" - 7:52:43 PM] Detected local configuration (i.e. .prettierrc or .editorconfig), VS Code configuration will not be used
+["INFO" - 7:52:43 PM] Prettier Options:
+{
+  "filepath": "/home/bontzkl/projects/projekcikpykpyk/pomeranian-bolierplate-public/src/App/Exercises/ReactExercises/SubRouteExercise2/Exercise2.jsx",
+  "parser": "babel",
+  "singleQuote": true,
+  "trailingComma": "es5",
+  "endOfLine": "auto"
+}
+["ERROR" - 7:52:43 PM] Error formatting document.
+["ERROR" - 7:52:43 PM] Missing initializer in const declaration. (7:17)
+   5 | export function Exercise2() {
+   6 |   const isVisible = false;
+>  7 |   const ShowHide ()=>{if (isVisible == false) {
+     |                 ^
+   8 |     isVisible = true;
+   9 |   } else if (isVisible == true) {
+  10 |     isVisible = false;
+SyntaxError: Missing initializer in const declaration. (7:17)
+   5 | export function Exercise2() {
+   6 |   const isVisible = false;
+>  7 |   const ShowHide ()=>{if (isVisible == false) {
+     |                 ^
+   8 |     isVisible = true;
+   9 |   } else if (isVisible == true) {
+  10 |     isVisible = false;
+	at f (/home/bontzkl/projects/projekcikpykpyk/pomeranian-bolierplate-public/node_modules/prettier/parser-babel.js:22:1054)
+	at d (/home/bontzkl/projects/projekcikpykpyk/pomeranian-bolierplate-public/node_modules/prettier/parser-babel.js:22:1287)
+	at Object.parse (/home/bontzkl/projects/projekcikpykpyk/pomeranian-bolierplate-public/node_modules/prettier/parser-babel.js:29:54613)
+	at Object.parse (/home/bontzkl/projects/projekcikpykpyk/pomeranian-bolierplate-public/node_modules/prettier/index.js:7515:23)
+	at coreFormat (/home/bontzkl/projects/projekcikpykpyk/pomeranian-bolierplate-public/node_modules/prettier/index.js:8829:18)
+	at formatWithCursor2 (/home/bontzkl/projects/projekcikpykpyk/pomeranian-bolierplate-public/node_modules/prettier/index.js:9021:18)
+	at /home/bontzkl/projects/projekcikpykpyk/pomeranian-bolierplate-public/node_modules/prettier/index.js:38176:12
+	at Object.format (/home/bontzkl/projects/projekcikpykpyk/pomeranian-bolierplate-public/node_modules/prettier/index.js:38190:12)
+	at t.default.format (/home/bontzkl/.vscode-server/extensions/esbenp.prettier-vscode-9.12.0/dist/extension.js:1:14694)
+	at async t.PrettierEditProvider.provideEdits (/home/bontzkl/.vscode-server/extensions/esbenp.prettier-vscode-9.12.0/dist/extension.js:1:11367)
+	at async B.provideDocumentFormattingEdits (/home/bontzkl/.vscode-server/bin/704ed70d4fd1c6bd6342c436f1ede30d1cff4710/out/vs/workbench/api/node/extensionHostProcess.js:101:46615)
+["INFO" - 7:52:43 PM] Formatting completed in 20ms.
+["INFO" - 7:52:55 PM] Formatting file:///home/bontzkl/projects/projekcikpykpyk/pomeranian-bolierplate-public/src/App/Exercises/ReactExercises/SubRouteExercise2/Exercise2.jsx
+["INFO" - 7:52:55 PM] Using config file at '/home/bontzkl/projects/projekcikpykpyk/pomeranian-bolierplate-public/.prettierrc.json'
+["INFO" - 7:52:55 PM] Using ignore file (if present) at /home/bontzkl/projects/projekcikpykpyk/pomeranian-bolierplate-public/.prettierignore
+["INFO" - 7:52:55 PM] File Info:
+{
+  "ignored": false,
+  "inferredParser": "babel"
+}
+["INFO" - 7:52:55 PM] Detected local configuration (i.e. .prettierrc or .editorconfig), VS Code configuration will not be used
+["INFO" - 7:52:55 PM] Prettier Options:
+{
+  "filepath": "/home/bontzkl/projects/projekcikpykpyk/pomeranian-bolierplate-public/src/App/Exercises/ReactExercises/SubRouteExercise2/Exercise2.jsx",
+  "parser": "babel",
+  "singleQuote": true,
+  "trailingComma": "es5",
+  "endOfLine": "auto"
+}
+["INFO" - 7:52:55 PM] Formatting completed in 29ms.
+["INFO" - 7:53:24 PM] Formatting file:///home/bontzkl/projects/projekcikpykpyk/pomeranian-bolierplate-public/src/App/Exercises/ReactExercises/SubRouteExercise2/Exercise2.jsx
+["INFO" - 7:53:24 PM] Using config file at '/home/bontzkl/projects/projekcikpykpyk/pomeranian-bolierplate-public/.prettierrc.json'
+["INFO" - 7:53:24 PM] Using ignore file (if present) at /home/bontzkl/projects/projekcikpykpyk/pomeranian-bolierplate-public/.prettierignore
+["INFO" - 7:53:24 PM] File Info:
+{
+  "ignored": false,
+  "inferredParser": "babel"
+}
+["INFO" - 7:53:24 PM] Detected local configuration (i.e. .prettierrc or .editorconfig), VS Code configuration will not be used
+["INFO" - 7:53:24 PM] Prettier Options:
+{
+  "filepath": "/home/bontzkl/projects/projekcikpykpyk/pomeranian-bolierplate-public/src/App/Exercises/ReactExercises/SubRouteExercise2/Exercise2.jsx",
+  "parser": "babel",
+  "singleQuote": true,
+  "trailingComma": "es5",
+  "endOfLine": "auto"
+}
+["INFO" - 7:53:24 PM] Formatting completed in 20ms.
+["INFO" - 7:57:21 PM] Formatting file:///home/bontzkl/projects/projekcikpykpyk/pomeranian-bolierplate-public/src/App/Exercises/ReactExercises/SubRouteExercise2/Exercise2.jsx
+["INFO" - 7:57:21 PM] Using config file at '/home/bontzkl/projects/projekcikpykpyk/pomeranian-bolierplate-public/.prettierrc.json'
+["INFO" - 7:57:21 PM] Using ignore file (if present) at /home/bontzkl/projects/projekcikpykpyk/pomeranian-bolierplate-public/.prettierignore
+["INFO" - 7:57:21 PM] File Info:
+{
+  "ignored": false,
+  "inferredParser": "babel"
+}
+["INFO" - 7:57:21 PM] Detected local configuration (i.e. .prettierrc or .editorconfig), VS Code configuration will not be used
+["INFO" - 7:57:21 PM] Prettier Options:
+{
+  "filepath": "/home/bontzkl/projects/projekcikpykpyk/pomeranian-bolierplate-public/src/App/Exercises/ReactExercises/SubRouteExercise2/Exercise2.jsx",
+  "parser": "babel",
+  "singleQuote": true,
+  "trailingComma": "es5",
+  "endOfLine": "auto"
+}
+["ERROR" - 7:57:21 PM] Error formatting document.
+["ERROR" - 7:57:21 PM] Missing semicolon. (9:8)
+   7 |
+   8 |   const text = isVisible ? 'Ukryj' : 'Pokaż';
+>  9 |   cosnt handleClick = ()=>{
+     |        ^
+  10 |     if(isVisible){
+  11 |       setVisibility(false);
+  12 |     }else{
+SyntaxError: Missing semicolon. (9:8)
+   7 |
+   8 |   const text = isVisible ? 'Ukryj' : 'Pokaż';
+>  9 |   cosnt handleClick = ()=>{
+     |        ^
+  10 |     if(isVisible){
+  11 |       setVisibility(false);
+  12 |     }else{
+	at f (/home/bontzkl/projects/projekcikpykpyk/pomeranian-bolierplate-public/node_modules/prettier/parser-babel.js:22:1054)
+	at d (/home/bontzkl/projects/projekcikpykpyk/pomeranian-bolierplate-public/node_modules/prettier/parser-babel.js:22:1287)
+	at Object.parse (/home/bontzkl/projects/projekcikpykpyk/pomeranian-bolierplate-public/node_modules/prettier/parser-babel.js:29:54613)
+	at Object.parse (/home/bontzkl/projects/projekcikpykpyk/pomeranian-bolierplate-public/node_modules/prettier/index.js:7515:23)
+	at coreFormat (/home/bontzkl/projects/projekcikpykpyk/pomeranian-bolierplate-public/node_modules/prettier/index.js:8829:18)
+	at formatWithCursor2 (/home/bontzkl/projects/projekcikpykpyk/pomeranian-bolierplate-public/node_modules/prettier/index.js:9021:18)
+	at /home/bontzkl/projects/projekcikpykpyk/pomeranian-bolierplate-public/node_modules/prettier/index.js:38176:12
+	at Object.format (/home/bontzkl/projects/projekcikpykpyk/pomeranian-bolierplate-public/node_modules/prettier/index.js:38190:12)
+	at t.default.format (/home/bontzkl/.vscode-server/extensions/esbenp.prettier-vscode-9.12.0/dist/extension.js:1:14694)
+	at async t.PrettierEditProvider.provideEdits (/home/bontzkl/.vscode-server/extensions/esbenp.prettier-vscode-9.12.0/dist/extension.js:1:11367)
+	at async B.provideDocumentFormattingEdits (/home/bontzkl/.vscode-server/bin/704ed70d4fd1c6bd6342c436f1ede30d1cff4710/out/vs/workbench/api/node/extensionHostProcess.js:101:46615)
+["INFO" - 7:57:21 PM] Formatting completed in 26ms.
+["INFO" - 7:58:02 PM] Formatting file:///home/bontzkl/projects/projekcikpykpyk/pomeranian-bolierplate-public/src/App/Exercises/ReactExercises/SubRouteExercise2/Exercise2.jsx
+["INFO" - 7:58:02 PM] Using config file at '/home/bontzkl/projects/projekcikpykpyk/pomeranian-bolierplate-public/.prettierrc.json'
+["INFO" - 7:58:02 PM] Using ignore file (if present) at /home/bontzkl/projects/projekcikpykpyk/pomeranian-bolierplate-public/.prettierignore
+["INFO" - 7:58:02 PM] File Info:
+{
+  "ignored": false,
+  "inferredParser": "babel"
+}
+["INFO" - 7:58:02 PM] Detected local configuration (i.e. .prettierrc or .editorconfig), VS Code configuration will not be used
+["INFO" - 7:58:02 PM] Prettier Options:
+{
+  "filepath": "/home/bontzkl/projects/projekcikpykpyk/pomeranian-bolierplate-public/src/App/Exercises/ReactExercises/SubRouteExercise2/Exercise2.jsx",
+  "parser": "babel",
+  "singleQuote": true,
+  "trailingComma": "es5",
+  "endOfLine": "auto"
+}
+["INFO" - 7:58:02 PM] Formatting completed in 29ms.
+["INFO" - 7:58:12 PM] Formatting file:///home/bontzkl/projects/projekcikpykpyk/pomeranian-bolierplate-public/src/App/Exercises/ReactExercises/SubRouteExercise2/Exercise2.jsx
+["INFO" - 7:58:12 PM] Using config file at '/home/bontzkl/projects/projekcikpykpyk/pomeranian-bolierplate-public/.prettierrc.json'
+["INFO" - 7:58:12 PM] Using ignore file (if present) at /home/bontzkl/projects/projekcikpykpyk/pomeranian-bolierplate-public/.prettierignore
+["INFO" - 7:58:12 PM] File Info:
+{
+  "ignored": false,
+  "inferredParser": "babel"
+}
+["INFO" - 7:58:12 PM] Detected local configuration (i.e. .prettierrc or .editorconfig), VS Code configuration will not be used
+["INFO" - 7:58:12 PM] Prettier Options:
+{
+  "filepath": "/home/bontzkl/projects/projekcikpykpyk/pomeranian-bolierplate-public/src/App/Exercises/ReactExercises/SubRouteExercise2/Exercise2.jsx",
+  "parser": "babel",
+  "singleQuote": true,
+  "trailingComma": "es5",
+  "endOfLine": "auto"
+}
+["INFO" - 7:58:12 PM] Formatting completed in 15ms.
+["INFO" - 7:59:42 PM] Formatting file:///home/bontzkl/projects/projekcikpykpyk/pomeranian-bolierplate-public/src/App/Exercises/ReactExercises/SubRouteExercise2/Exercise2.jsx
+["INFO" - 7:59:42 PM] Using config file at '/home/bontzkl/projects/projekcikpykpyk/pomeranian-bolierplate-public/.prettierrc.json'
+["INFO" - 7:59:42 PM] Using ignore file (if present) at /home/bontzkl/projects/projekcikpykpyk/pomeranian-bolierplate-public/.prettierignore
+["INFO" - 7:59:42 PM] File Info:
+{
+  "ignored": false,
+  "inferredParser": "babel"
+}
+["INFO" - 7:59:42 PM] Detected local configuration (i.e. .prettierrc or .editorconfig), VS Code configuration will not be used
+["INFO" - 7:59:42 PM] Prettier Options:
+{
+  "filepath": "/home/bontzkl/projects/projekcikpykpyk/pomeranian-bolierplate-public/src/App/Exercises/ReactExercises/SubRouteExercise2/Exercise2.jsx",
+  "parser": "babel",
+  "singleQuote": true,
+  "trailingComma": "es5",
+  "endOfLine": "auto"
+}
+["INFO" - 7:59:42 PM] Formatting completed in 14ms.
+["INFO" - 8:01:39 PM] Formatting file:///home/bontzkl/projects/projekcikpykpyk/pomeranian-bolierplate-public/src/App/Exercises/ReactExercises/SubRouteExercise2/Exercise2.jsx
+["INFO" - 8:01:39 PM] Using config file at '/home/bontzkl/projects/projekcikpykpyk/pomeranian-bolierplate-public/.prettierrc.json'
+["INFO" - 8:01:39 PM] Using ignore file (if present) at /home/bontzkl/projects/projekcikpykpyk/pomeranian-bolierplate-public/.prettierignore
+["INFO" - 8:01:39 PM] File Info:
+{
+  "ignored": false,
+  "inferredParser": "babel"
+}
+["INFO" - 8:01:39 PM] Detected local configuration (i.e. .prettierrc or .editorconfig), VS Code configuration will not be used
+["INFO" - 8:01:39 PM] Prettier Options:
+{
+  "filepath": "/home/bontzkl/projects/projekcikpykpyk/pomeranian-bolierplate-public/src/App/Exercises/ReactExercises/SubRouteExercise2/Exercise2.jsx",
+  "parser": "babel",
+  "singleQuote": true,
+  "trailingComma": "es5",
+  "endOfLine": "auto"
+}
+["INFO" - 8:01:39 PM] Formatting completed in 22ms.
+["INFO" - 8:07:51 PM] Formatting file:///home/bontzkl/projects/projekcikpykpyk/pomeranian-bolierplate-public/src/App/Exercises/ReactExercises/SubRouteExercise2/Exercise2.jsx
+["INFO" - 8:07:51 PM] Using config file at '/home/bontzkl/projects/projekcikpykpyk/pomeranian-bolierplate-public/.prettierrc.json'
+["INFO" - 8:07:51 PM] Using ignore file (if present) at /home/bontzkl/projects/projekcikpykpyk/pomeranian-bolierplate-public/.prettierignore
+["INFO" - 8:07:51 PM] File Info:
+{
+  "ignored": false,
+  "inferredParser": "babel"
+}
+["INFO" - 8:07:51 PM] Detected local configuration (i.e. .prettierrc or .editorconfig), VS Code configuration will not be used
+["INFO" - 8:07:51 PM] Prettier Options:
+{
+  "filepath": "/home/bontzkl/projects/projekcikpykpyk/pomeranian-bolierplate-public/src/App/Exercises/ReactExercises/SubRouteExercise2/Exercise2.jsx",
+  "parser": "babel",
+  "singleQuote": true,
+  "trailingComma": "es5",
+  "endOfLine": "auto"
+}
+["INFO" - 8:07:51 PM] Formatting completed in 25ms.
+["INFO" - 8:07:56 PM] Formatting file:///home/bontzkl/projects/projekcikpykpyk/pomeranian-bolierplate-public/src/App/Exercises/ReactExercises/SubRouteExercise2/Exercise2.jsx
+["INFO" - 8:07:56 PM] Using config file at '/home/bontzkl/projects/projekcikpykpyk/pomeranian-bolierplate-public/.prettierrc.json'
+["INFO" - 8:07:56 PM] Using ignore file (if present) at /home/bontzkl/projects/projekcikpykpyk/pomeranian-bolierplate-public/.prettierignore
+["INFO" - 8:07:56 PM] File Info:
+{
+  "ignored": false,
+  "inferredParser": "babel"
+}
+["INFO" - 8:07:56 PM] Detected local configuration (i.e. .prettierrc or .editorconfig), VS Code configuration will not be used
+["INFO" - 8:07:56 PM] Prettier Options:
+{
+  "filepath": "/home/bontzkl/projects/projekcikpykpyk/pomeranian-bolierplate-public/src/App/Exercises/ReactExercises/SubRouteExercise2/Exercise2.jsx",
+  "parser": "babel",
+  "singleQuote": true,
+  "trailingComma": "es5",
+  "endOfLine": "auto"
+}
+["INFO" - 8:07:56 PM] Formatting completed in 19ms.
+["INFO" - 8:12:29 PM] Formatting file:///home/bontzkl/projects/projekcikpykpyk/pomeranian-bolierplate-public/src/App/Exercises/ReactExercises/SubRouteExercise3/Exercise3.jsx
+["INFO" - 8:12:29 PM] Using config file at '/home/bontzkl/projects/projekcikpykpyk/pomeranian-bolierplate-public/.prettierrc.json'
+["INFO" - 8:12:29 PM] Using ignore file (if present) at /home/bontzkl/projects/projekcikpykpyk/pomeranian-bolierplate-public/.prettierignore
+["INFO" - 8:12:29 PM] File Info:
+{
+  "ignored": false,
+  "inferredParser": "babel"
+}
+["INFO" - 8:12:29 PM] Detected local configuration (i.e. .prettierrc or .editorconfig), VS Code configuration will not be used
+["INFO" - 8:12:29 PM] Prettier Options:
+{
+  "filepath": "/home/bontzkl/projects/projekcikpykpyk/pomeranian-bolierplate-public/src/App/Exercises/ReactExercises/SubRouteExercise3/Exercise3.jsx",
+  "parser": "babel",
+  "singleQuote": true,
+  "trailingComma": "es5",
+  "endOfLine": "auto"
+}
+["INFO" - 8:12:29 PM] Formatting completed in 49ms.
+["INFO" - 8:15:36 PM] Formatting file:///home/bontzkl/projects/projekcikpykpyk/pomeranian-bolierplate-public/src/App/Exercises/ReactExercises/SubRouteExercise3/Exercise3.jsx
+["INFO" - 8:15:36 PM] Using config file at '/home/bontzkl/projects/projekcikpykpyk/pomeranian-bolierplate-public/.prettierrc.json'
+["INFO" - 8:15:36 PM] Using ignore file (if present) at /home/bontzkl/projects/projekcikpykpyk/pomeranian-bolierplate-public/.prettierignore
+["INFO" - 8:15:36 PM] File Info:
+{
+  "ignored": false,
+  "inferredParser": "babel"
+}
+["INFO" - 8:15:36 PM] Detected local configuration (i.e. .prettierrc or .editorconfig), VS Code configuration will not be used
+["INFO" - 8:15:36 PM] Prettier Options:
+{
+  "filepath": "/home/bontzkl/projects/projekcikpykpyk/pomeranian-bolierplate-public/src/App/Exercises/ReactExercises/SubRouteExercise3/Exercise3.jsx",
+  "parser": "babel",
+  "singleQuote": true,
+  "trailingComma": "es5",
+  "endOfLine": "auto"
+}
+["INFO" - 8:15:36 PM] Formatting completed in 34ms.
+["INFO" - 8:19:29 PM] Formatting file:///home/bontzkl/projects/projekcikpykpyk/pomeranian-bolierplate-public/src/App/Exercises/ReactExercises/SubRouteExercise3/Exercise3.jsx
+["INFO" - 8:19:29 PM] Using config file at '/home/bontzkl/projects/projekcikpykpyk/pomeranian-bolierplate-public/.prettierrc.json'
+["INFO" - 8:19:29 PM] Using ignore file (if present) at /home/bontzkl/projects/projekcikpykpyk/pomeranian-bolierplate-public/.prettierignore
+["INFO" - 8:19:29 PM] File Info:
+{
+  "ignored": false,
+  "inferredParser": "babel"
+}
+["INFO" - 8:19:29 PM] Detected local configuration (i.e. .prettierrc or .editorconfig), VS Code configuration will not be used
+["INFO" - 8:19:29 PM] Prettier Options:
+{
+  "filepath": "/home/bontzkl/projects/projekcikpykpyk/pomeranian-bolierplate-public/src/App/Exercises/ReactExercises/SubRouteExercise3/Exercise3.jsx",
+  "parser": "babel",
+  "singleQuote": true,
+  "trailingComma": "es5",
+  "endOfLine": "auto"
+}
+["INFO" - 8:19:29 PM] Formatting completed in 21ms.
+["INFO" - 8:20:17 PM] Formatting file:///home/bontzkl/projects/projekcikpykpyk/pomeranian-bolierplate-public/src/App/Exercises/ReactExercises/SubRouteExercise3/Exercise3.jsx
+["INFO" - 8:20:17 PM] Using config file at '/home/bontzkl/projects/projekcikpykpyk/pomeranian-bolierplate-public/.prettierrc.json'
+["INFO" - 8:20:17 PM] Using ignore file (if present) at /home/bontzkl/projects/projekcikpykpyk/pomeranian-bolierplate-public/.prettierignore
+["INFO" - 8:20:17 PM] File Info:
+{
+  "ignored": false,
+  "inferredParser": "babel"
+}
+["INFO" - 8:20:17 PM] Detected local configuration (i.e. .prettierrc or .editorconfig), VS Code configuration will not be used
+["INFO" - 8:20:17 PM] Prettier Options:
+{
+  "filepath": "/home/bontzkl/projects/projekcikpykpyk/pomeranian-bolierplate-public/src/App/Exercises/ReactExercises/SubRouteExercise3/Exercise3.jsx",
+  "parser": "babel",
+  "singleQuote": true,
+  "trailingComma": "es5",
+  "endOfLine": "auto"
+}
+["INFO" - 8:20:17 PM] Formatting completed in 25ms.
+["INFO" - 8:20:30 PM] Formatting file:///home/bontzkl/projects/projekcikpykpyk/pomeranian-bolierplate-public/src/App/Exercises/ReactExercises/SubRouteExercise3/Exercise3.jsx
+["INFO" - 8:20:30 PM] Using config file at '/home/bontzkl/projects/projekcikpykpyk/pomeranian-bolierplate-public/.prettierrc.json'
+["INFO" - 8:20:30 PM] Using ignore file (if present) at /home/bontzkl/projects/projekcikpykpyk/pomeranian-bolierplate-public/.prettierignore
+["INFO" - 8:20:30 PM] File Info:
+{
+  "ignored": false,
+  "inferredParser": "babel"
+}
+["INFO" - 8:20:30 PM] Detected local configuration (i.e. .prettierrc or .editorconfig), VS Code configuration will not be used
+["INFO" - 8:20:30 PM] Prettier Options:
+{
+  "filepath": "/home/bontzkl/projects/projekcikpykpyk/pomeranian-bolierplate-public/src/App/Exercises/ReactExercises/SubRouteExercise3/Exercise3.jsx",
+  "parser": "babel",
+  "singleQuote": true,
+  "trailingComma": "es5",
+  "endOfLine": "auto"
+}
+["INFO" - 8:20:30 PM] Formatting completed in 32ms.
+["INFO" - 8:22:45 PM] Formatting file:///home/bontzkl/projects/projekcikpykpyk/pomeranian-bolierplate-public/src/App/Exercises/ReactExercises/SubRouteExercise3/Exercise3.jsx
+["INFO" - 8:22:45 PM] Using config file at '/home/bontzkl/projects/projekcikpykpyk/pomeranian-bolierplate-public/.prettierrc.json'
+["INFO" - 8:22:45 PM] Using ignore file (if present) at /home/bontzkl/projects/projekcikpykpyk/pomeranian-bolierplate-public/.prettierignore
+["INFO" - 8:22:46 PM] File Info:
+{
+  "ignored": false,
+  "inferredParser": "babel"
+}
+["INFO" - 8:22:46 PM] Detected local configuration (i.e. .prettierrc or .editorconfig), VS Code configuration will not be used
+["INFO" - 8:22:46 PM] Prettier Options:
+{
+  "filepath": "/home/bontzkl/projects/projekcikpykpyk/pomeranian-bolierplate-public/src/App/Exercises/ReactExercises/SubRouteExercise3/Exercise3.jsx",
+  "parser": "babel",
+  "singleQuote": true,
+  "trailingComma": "es5",
+  "endOfLine": "auto"
+}
+["INFO" - 8:22:46 PM] Formatting completed in 32ms.
+["INFO" - 8:25:03 PM] Formatting file:///home/bontzkl/projects/projekcikpykpyk/pomeranian-bolierplate-public/src/App/Exercises/ReactExercises/SubRouteExercise3/Exercise3.jsx
+["INFO" - 8:25:03 PM] Using config file at '/home/bontzkl/projects/projekcikpykpyk/pomeranian-bolierplate-public/.prettierrc.json'
+["INFO" - 8:25:03 PM] Using ignore file (if present) at /home/bontzkl/projects/projekcikpykpyk/pomeranian-bolierplate-public/.prettierignore
+["INFO" - 8:25:03 PM] File Info:
+{
+  "ignored": false,
+  "inferredParser": "babel"
+}
+["INFO" - 8:25:03 PM] Detected local configuration (i.e. .prettierrc or .editorconfig), VS Code configuration will not be used
+["INFO" - 8:25:03 PM] Prettier Options:
+{
+  "filepath": "/home/bontzkl/projects/projekcikpykpyk/pomeranian-bolierplate-public/src/App/Exercises/ReactExercises/SubRouteExercise3/Exercise3.jsx",
+  "parser": "babel",
+  "singleQuote": true,
+  "trailingComma": "es5",
+  "endOfLine": "auto"
+}
+["INFO" - 8:25:03 PM] Formatting completed in 33ms.
+["INFO" - 8:25:51 PM] Formatting file:///home/bontzkl/projects/projekcikpykpyk/pomeranian-bolierplate-public/src/App/Exercises/ReactExercises/SubRouteExercise3/Exercise3.jsx
+["INFO" - 8:25:51 PM] Using config file at '/home/bontzkl/projects/projekcikpykpyk/pomeranian-bolierplate-public/.prettierrc.json'
+["INFO" - 8:25:51 PM] Using ignore file (if present) at /home/bontzkl/projects/projekcikpykpyk/pomeranian-bolierplate-public/.prettierignore
+["INFO" - 8:25:51 PM] File Info:
+{
+  "ignored": false,
+  "inferredParser": "babel"
+}
+["INFO" - 8:25:51 PM] Detected local configuration (i.e. .prettierrc or .editorconfig), VS Code configuration will not be used
+["INFO" - 8:25:51 PM] Prettier Options:
+{
+  "filepath": "/home/bontzkl/projects/projekcikpykpyk/pomeranian-bolierplate-public/src/App/Exercises/ReactExercises/SubRouteExercise3/Exercise3.jsx",
+  "parser": "babel",
+  "singleQuote": true,
+  "trailingComma": "es5",
+  "endOfLine": "auto"
+}
+["INFO" - 8:25:51 PM] Formatting completed in 23ms.
+["INFO" - 8:26:27 PM] Formatting file:///home/bontzkl/projects/projekcikpykpyk/pomeranian-bolierplate-public/src/App/Exercises/ReactExercises/SubRouteExercise3/Exercise3.jsx
+["INFO" - 8:26:27 PM] Using config file at '/home/bontzkl/projects/projekcikpykpyk/pomeranian-bolierplate-public/.prettierrc.json'
+["INFO" - 8:26:27 PM] Using ignore file (if present) at /home/bontzkl/projects/projekcikpykpyk/pomeranian-bolierplate-public/.prettierignore
+["INFO" - 8:26:27 PM] File Info:
+{
+  "ignored": false,
+  "inferredParser": "babel"
+}
+["INFO" - 8:26:27 PM] Detected local configuration (i.e. .prettierrc or .editorconfig), VS Code configuration will not be used
+["INFO" - 8:26:27 PM] Prettier Options:
+{
+  "filepath": "/home/bontzkl/projects/projekcikpykpyk/pomeranian-bolierplate-public/src/App/Exercises/ReactExercises/SubRouteExercise3/Exercise3.jsx",
+  "parser": "babel",
+  "singleQuote": true,
+  "trailingComma": "es5",
+  "endOfLine": "auto"
+}
+["INFO" - 8:26:27 PM] Formatting completed in 20ms.
+["INFO" - 8:28:46 PM] Formatting file:///home/bontzkl/projects/projekcikpykpyk/pomeranian-bolierplate-public/src/App/Exercises/ReactExercises/SubRouteExercise3/Exercise3.jsx
+["INFO" - 8:28:46 PM] Using config file at '/home/bontzkl/projects/projekcikpykpyk/pomeranian-bolierplate-public/.prettierrc.json'
+["INFO" - 8:28:46 PM] Using ignore file (if present) at /home/bontzkl/projects/projekcikpykpyk/pomeranian-bolierplate-public/.prettierignore
+["INFO" - 8:28:46 PM] File Info:
+{
+  "ignored": false,
+  "inferredParser": "babel"
+}
+["INFO" - 8:28:46 PM] Detected local configuration (i.e. .prettierrc or .editorconfig), VS Code configuration will not be used
+["INFO" - 8:28:46 PM] Prettier Options:
+{
+  "filepath": "/home/bontzkl/projects/projekcikpykpyk/pomeranian-bolierplate-public/src/App/Exercises/ReactExercises/SubRouteExercise3/Exercise3.jsx",
+  "parser": "babel",
+  "singleQuote": true,
+  "trailingComma": "es5",
+  "endOfLine": "auto"
+}
+["INFO" - 8:28:46 PM] Formatting completed in 22ms.
+["INFO" - 8:29:55 PM] Formatting file:///home/bontzkl/projects/projekcikpykpyk/pomeranian-bolierplate-public/src/App/Exercises/ReactExercises/SubRouteExercise3/Exercise3.jsx
+["INFO" - 8:29:55 PM] Using config file at '/home/bontzkl/projects/projekcikpykpyk/pomeranian-bolierplate-public/.prettierrc.json'
+["INFO" - 8:29:55 PM] Using ignore file (if present) at /home/bontzkl/projects/projekcikpykpyk/pomeranian-bolierplate-public/.prettierignore
+["INFO" - 8:29:55 PM] File Info:
+{
+  "ignored": false,
+  "inferredParser": "babel"
+}
+["INFO" - 8:29:55 PM] Detected local configuration (i.e. .prettierrc or .editorconfig), VS Code configuration will not be used
+["INFO" - 8:29:55 PM] Prettier Options:
+{
+  "filepath": "/home/bontzkl/projects/projekcikpykpyk/pomeranian-bolierplate-public/src/App/Exercises/ReactExercises/SubRouteExercise3/Exercise3.jsx",
+  "parser": "babel",
+  "singleQuote": true,
+  "trailingComma": "es5",
+  "endOfLine": "auto"
+}
+["ERROR" - 8:29:55 PM] Error formatting document.
+["ERROR" - 8:29:55 PM] Unexpected token (15:7)
+  13 |       checkingIsBigger(false);
+  14 |       checkingIsInput(true);
+> 15 |     } else if(event.target.value ===null){
+     |       ^
+  16 |       checkingIsInput(false);
+  17 |     }
+  18 |     
+SyntaxError: Unexpected token (15:7)
+  13 |       checkingIsBigger(false);
+  14 |       checkingIsInput(true);
+> 15 |     } else if(event.target.value ===null){
+     |       ^
+  16 |       checkingIsInput(false);
+  17 |     }
+  18 |     
+	at f (/home/bontzkl/projects/projekcikpykpyk/pomeranian-bolierplate-public/node_modules/prettier/parser-babel.js:22:1054)
+	at d (/home/bontzkl/projects/projekcikpykpyk/pomeranian-bolierplate-public/node_modules/prettier/parser-babel.js:22:1287)
+	at Object.parse (/home/bontzkl/projects/projekcikpykpyk/pomeranian-bolierplate-public/node_modules/prettier/parser-babel.js:29:54613)
+	at Object.parse (/home/bontzkl/projects/projekcikpykpyk/pomeranian-bolierplate-public/node_modules/prettier/index.js:7515:23)
+	at coreFormat (/home/bontzkl/projects/projekcikpykpyk/pomeranian-bolierplate-public/node_modules/prettier/index.js:8829:18)
+	at formatWithCursor2 (/home/bontzkl/projects/projekcikpykpyk/pomeranian-bolierplate-public/node_modules/prettier/index.js:9021:18)
+	at /home/bontzkl/projects/projekcikpykpyk/pomeranian-bolierplate-public/node_modules/prettier/index.js:38176:12
+	at Object.format (/home/bontzkl/projects/projekcikpykpyk/pomeranian-bolierplate-public/node_modules/prettier/index.js:38190:12)
+	at t.default.format (/home/bontzkl/.vscode-server/extensions/esbenp.prettier-vscode-9.12.0/dist/extension.js:1:14694)
+	at async t.PrettierEditProvider.provideEdits (/home/bontzkl/.vscode-server/extensions/esbenp.prettier-vscode-9.12.0/dist/extension.js:1:11367)
+	at async B.provideDocumentFormattingEdits (/home/bontzkl/.vscode-server/bin/704ed70d4fd1c6bd6342c436f1ede30d1cff4710/out/vs/workbench/api/node/extensionHostProcess.js:101:46615)
+["INFO" - 8:29:55 PM] Formatting completed in 18ms.
+["INFO" - 8:30:11 PM] Formatting file:///home/bontzkl/projects/projekcikpykpyk/pomeranian-bolierplate-public/src/App/Exercises/ReactExercises/SubRouteExercise3/Exercise3.jsx
+["INFO" - 8:30:11 PM] Using config file at '/home/bontzkl/projects/projekcikpykpyk/pomeranian-bolierplate-public/.prettierrc.json'
+["INFO" - 8:30:11 PM] Using ignore file (if present) at /home/bontzkl/projects/projekcikpykpyk/pomeranian-bolierplate-public/.prettierignore
+["INFO" - 8:30:11 PM] File Info:
+{
+  "ignored": false,
+  "inferredParser": "babel"
+}
+["INFO" - 8:30:11 PM] Detected local configuration (i.e. .prettierrc or .editorconfig), VS Code configuration will not be used
+["INFO" - 8:30:11 PM] Prettier Options:
+{
+  "filepath": "/home/bontzkl/projects/projekcikpykpyk/pomeranian-bolierplate-public/src/App/Exercises/ReactExercises/SubRouteExercise3/Exercise3.jsx",
+  "parser": "babel",
+  "singleQuote": true,
+  "trailingComma": "es5",
+  "endOfLine": "auto"
+}
+["INFO" - 8:30:11 PM] Formatting completed in 36ms.
+["INFO" - 8:30:28 PM] Formatting file:///home/bontzkl/projects/projekcikpykpyk/pomeranian-bolierplate-public/src/App/Exercises/ReactExercises/SubRouteExercise3/Exercise3.jsx
+["INFO" - 8:30:28 PM] Using config file at '/home/bontzkl/projects/projekcikpykpyk/pomeranian-bolierplate-public/.prettierrc.json'
+["INFO" - 8:30:28 PM] Using ignore file (if present) at /home/bontzkl/projects/projekcikpykpyk/pomeranian-bolierplate-public/.prettierignore
+["INFO" - 8:30:28 PM] File Info:
+{
+  "ignored": false,
+  "inferredParser": "babel"
+}
+["INFO" - 8:30:28 PM] Detected local configuration (i.e. .prettierrc or .editorconfig), VS Code configuration will not be used
+["INFO" - 8:30:28 PM] Prettier Options:
+{
+  "filepath": "/home/bontzkl/projects/projekcikpykpyk/pomeranian-bolierplate-public/src/App/Exercises/ReactExercises/SubRouteExercise3/Exercise3.jsx",
+  "parser": "babel",
+  "singleQuote": true,
+  "trailingComma": "es5",
+  "endOfLine": "auto"
+}
+["INFO" - 8:30:28 PM] Formatting completed in 30ms.
+["INFO" - 8:31:53 PM] Formatting file:///home/bontzkl/projects/projekcikpykpyk/pomeranian-bolierplate-public/src/App/Exercises/ReactExercises/SubRouteExercise3/Exercise3.jsx
+["INFO" - 8:31:53 PM] Using config file at '/home/bontzkl/projects/projekcikpykpyk/pomeranian-bolierplate-public/.prettierrc.json'
+["INFO" - 8:31:53 PM] Using ignore file (if present) at /home/bontzkl/projects/projekcikpykpyk/pomeranian-bolierplate-public/.prettierignore
+["INFO" - 8:31:53 PM] File Info:
+{
+  "ignored": false,
+  "inferredParser": "babel"
+}
+["INFO" - 8:31:53 PM] Detected local configuration (i.e. .prettierrc or .editorconfig), VS Code configuration will not be used
+["INFO" - 8:31:53 PM] Prettier Options:
+{
+  "filepath": "/home/bontzkl/projects/projekcikpykpyk/pomeranian-bolierplate-public/src/App/Exercises/ReactExercises/SubRouteExercise3/Exercise3.jsx",
+  "parser": "babel",
+  "singleQuote": true,
+  "trailingComma": "es5",
+  "endOfLine": "auto"
+}
+["INFO" - 8:31:53 PM] Formatting completed in 21ms.
+["INFO" - 8:34:25 PM] Formatting file:///home/bontzkl/projects/projekcikpykpyk/pomeranian-bolierplate-public/src/App/Exercises/ReactExercises/SubRouteExercise3/Exercise3.jsx
+["INFO" - 8:34:25 PM] Using config file at '/home/bontzkl/projects/projekcikpykpyk/pomeranian-bolierplate-public/.prettierrc.json'
+["INFO" - 8:34:25 PM] Using ignore file (if present) at /home/bontzkl/projects/projekcikpykpyk/pomeranian-bolierplate-public/.prettierignore
+["INFO" - 8:34:25 PM] File Info:
+{
+  "ignored": false,
+  "inferredParser": "babel"
+}
+["INFO" - 8:34:25 PM] Detected local configuration (i.e. .prettierrc or .editorconfig), VS Code configuration will not be used
+["INFO" - 8:34:25 PM] Prettier Options:
+{
+  "filepath": "/home/bontzkl/projects/projekcikpykpyk/pomeranian-bolierplate-public/src/App/Exercises/ReactExercises/SubRouteExercise3/Exercise3.jsx",
+  "parser": "babel",
+  "singleQuote": true,
+  "trailingComma": "es5",
+  "endOfLine": "auto"
+}
+["INFO" - 8:34:25 PM] Formatting completed in 19ms.
+["INFO" - 8:37:18 PM] Formatting file:///home/bontzkl/projects/projekcikpykpyk/pomeranian-bolierplate-public/src/App/Exercises/ReactExercises/SubRouteExercise3/Exercise3.jsx
+["INFO" - 8:37:18 PM] Using config file at '/home/bontzkl/projects/projekcikpykpyk/pomeranian-bolierplate-public/.prettierrc.json'
+["INFO" - 8:37:18 PM] Using ignore file (if present) at /home/bontzkl/projects/projekcikpykpyk/pomeranian-bolierplate-public/.prettierignore
+["INFO" - 8:37:18 PM] File Info:
+{
+  "ignored": false,
+  "inferredParser": "babel"
+}
+["INFO" - 8:37:18 PM] Detected local configuration (i.e. .prettierrc or .editorconfig), VS Code configuration will not be used
+["INFO" - 8:37:18 PM] Prettier Options:
+{
+  "filepath": "/home/bontzkl/projects/projekcikpykpyk/pomeranian-bolierplate-public/src/App/Exercises/ReactExercises/SubRouteExercise3/Exercise3.jsx",
+  "parser": "babel",
+  "singleQuote": true,
+  "trailingComma": "es5",
+  "endOfLine": "auto"
+}
+["INFO" - 8:37:18 PM] Formatting completed in 17ms.
+["INFO" - 8:49:11 PM] Formatting file:///home/bontzkl/projects/projekcikpykpyk/pomeranian-bolierplate-public/src/App/Exercises/ReactExercises/SubRouteExercise3/Exercise3.jsx
+["INFO" - 8:49:11 PM] Using config file at '/home/bontzkl/projects/projekcikpykpyk/pomeranian-bolierplate-public/.prettierrc.json'
+["INFO" - 8:49:11 PM] Using ignore file (if present) at /home/bontzkl/projects/projekcikpykpyk/pomeranian-bolierplate-public/.prettierignore
+["INFO" - 8:49:11 PM] File Info:
+{
+  "ignored": false,
+  "inferredParser": "babel"
+}
+["INFO" - 8:49:11 PM] Detected local configuration (i.e. .prettierrc or .editorconfig), VS Code configuration will not be used
+["INFO" - 8:49:11 PM] Prettier Options:
+{
+  "filepath": "/home/bontzkl/projects/projekcikpykpyk/pomeranian-bolierplate-public/src/App/Exercises/ReactExercises/SubRouteExercise3/Exercise3.jsx",
+  "parser": "babel",
+  "singleQuote": true,
+  "trailingComma": "es5",
+  "endOfLine": "auto"
+}
+["INFO" - 8:49:11 PM] Formatting completed in 35ms.
+["INFO" - 8:52:42 PM] Formatting file:///home/bontzkl/projects/projekcikpykpyk/pomeranian-bolierplate-public/src/App/Exercises/ReactExercises/SubRouteExercise3/Exercise3.jsx
+["INFO" - 8:52:42 PM] Using config file at '/home/bontzkl/projects/projekcikpykpyk/pomeranian-bolierplate-public/.prettierrc.json'
+["INFO" - 8:52:42 PM] Using ignore file (if present) at /home/bontzkl/projects/projekcikpykpyk/pomeranian-bolierplate-public/.prettierignore
+["INFO" - 8:52:42 PM] File Info:
+{
+  "ignored": false,
+  "inferredParser": "babel"
+}
+["INFO" - 8:52:42 PM] Detected local configuration (i.e. .prettierrc or .editorconfig), VS Code configuration will not be used
+["INFO" - 8:52:42 PM] Prettier Options:
+{
+  "filepath": "/home/bontzkl/projects/projekcikpykpyk/pomeranian-bolierplate-public/src/App/Exercises/ReactExercises/SubRouteExercise3/Exercise3.jsx",
+  "parser": "babel",
+  "singleQuote": true,
+  "trailingComma": "es5",
+  "endOfLine": "auto"
+}
+["INFO" - 8:52:42 PM] Formatting completed in 33ms.
+["INFO" - 8:54:24 PM] Formatting file:///home/bontzkl/projects/projekcikpykpyk/pomeranian-bolierplate-public/src/App/Exercises/ReactExercises/SubRouteExercise3/Exercise3.jsx
+["INFO" - 8:54:24 PM] Using config file at '/home/bontzkl/projects/projekcikpykpyk/pomeranian-bolierplate-public/.prettierrc.json'
+["INFO" - 8:54:24 PM] Using ignore file (if present) at /home/bontzkl/projects/projekcikpykpyk/pomeranian-bolierplate-public/.prettierignore
+["INFO" - 8:54:24 PM] File Info:
+{
+  "ignored": false,
+  "inferredParser": "babel"
+}
+["INFO" - 8:54:24 PM] Detected local configuration (i.e. .prettierrc or .editorconfig), VS Code configuration will not be used
+["INFO" - 8:54:24 PM] Prettier Options:
+{
+  "filepath": "/home/bontzkl/projects/projekcikpykpyk/pomeranian-bolierplate-public/src/App/Exercises/ReactExercises/SubRouteExercise3/Exercise3.jsx",
+  "parser": "babel",
+  "singleQuote": true,
+  "trailingComma": "es5",
+  "endOfLine": "auto"
+}
+["ERROR" - 8:54:24 PM] Error formatting document.
+["ERROR" - 8:54:24 PM] Missing initializer in const declaration. (11:22)
+   9 |   cosnt [newValue, setNewValue] = useState();
+  10 |   const handleChange = (event) => {
+> 11 |     const setNewValue(event.target.value);
+     |                      ^
+  12 |     if (NewValue > 10) {
+  13 |       setIsBigger(true);
+  14 |       setIsEmpty(true);
+SyntaxError: Missing initializer in const declaration. (11:22)
+   9 |   cosnt [newValue, setNewValue] = useState();
+  10 |   const handleChange = (event) => {
+> 11 |     const setNewValue(event.target.value);
+     |                      ^
+  12 |     if (NewValue > 10) {
+  13 |       setIsBigger(true);
+  14 |       setIsEmpty(true);
+	at f (/home/bontzkl/projects/projekcikpykpyk/pomeranian-bolierplate-public/node_modules/prettier/parser-babel.js:22:1054)
+	at d (/home/bontzkl/projects/projekcikpykpyk/pomeranian-bolierplate-public/node_modules/prettier/parser-babel.js:22:1287)
+	at Object.parse (/home/bontzkl/projects/projekcikpykpyk/pomeranian-bolierplate-public/node_modules/prettier/parser-babel.js:29:54613)
+	at Object.parse (/home/bontzkl/projects/projekcikpykpyk/pomeranian-bolierplate-public/node_modules/prettier/index.js:7515:23)
+	at coreFormat (/home/bontzkl/projects/projekcikpykpyk/pomeranian-bolierplate-public/node_modules/prettier/index.js:8829:18)
+	at formatWithCursor2 (/home/bontzkl/projects/projekcikpykpyk/pomeranian-bolierplate-public/node_modules/prettier/index.js:9021:18)
+	at /home/bontzkl/projects/projekcikpykpyk/pomeranian-bolierplate-public/node_modules/prettier/index.js:38176:12
+	at Object.format (/home/bontzkl/projects/projekcikpykpyk/pomeranian-bolierplate-public/node_modules/prettier/index.js:38190:12)
+	at t.default.format (/home/bontzkl/.vscode-server/extensions/esbenp.prettier-vscode-9.12.0/dist/extension.js:1:14694)
+	at async t.PrettierEditProvider.provideEdits (/home/bontzkl/.vscode-server/extensions/esbenp.prettier-vscode-9.12.0/dist/extension.js:1:11367)
+	at async B.provideDocumentFormattingEdits (/home/bontzkl/.vscode-server/bin/704ed70d4fd1c6bd6342c436f1ede30d1cff4710/out/vs/workbench/api/node/extensionHostProcess.js:101:46615)
+["INFO" - 8:54:24 PM] Formatting completed in 17ms.
+["INFO" - 8:54:36 PM] Formatting file:///home/bontzkl/projects/projekcikpykpyk/pomeranian-bolierplate-public/src/App/Exercises/ReactExercises/SubRouteExercise3/Exercise3.jsx
+["INFO" - 8:54:36 PM] Using config file at '/home/bontzkl/projects/projekcikpykpyk/pomeranian-bolierplate-public/.prettierrc.json'
+["INFO" - 8:54:36 PM] Using ignore file (if present) at /home/bontzkl/projects/projekcikpykpyk/pomeranian-bolierplate-public/.prettierignore
+["INFO" - 8:54:36 PM] File Info:
+{
+  "ignored": false,
+  "inferredParser": "babel"
+}
+["INFO" - 8:54:36 PM] Detected local configuration (i.e. .prettierrc or .editorconfig), VS Code configuration will not be used
+["INFO" - 8:54:36 PM] Prettier Options:
+{
+  "filepath": "/home/bontzkl/projects/projekcikpykpyk/pomeranian-bolierplate-public/src/App/Exercises/ReactExercises/SubRouteExercise3/Exercise3.jsx",
+  "parser": "babel",
+  "singleQuote": true,
+  "trailingComma": "es5",
+  "endOfLine": "auto"
+}
+["ERROR" - 8:54:36 PM] Error formatting document.
+["ERROR" - 8:54:36 PM] Missing initializer in const declaration. (11:22)
+   9 |   cosnt [newValue, setNewValue] = useState(0);
+  10 |   const handleChange = (event) => {
+> 11 |     const setNewValue(event.target.value);
+     |                      ^
+  12 |     if (NewValue > 10) {
+  13 |       setIsBigger(true);
+  14 |       setIsEmpty(true);
+SyntaxError: Missing initializer in const declaration. (11:22)
+   9 |   cosnt [newValue, setNewValue] = useState(0);
+  10 |   const handleChange = (event) => {
+> 11 |     const setNewValue(event.target.value);
+     |                      ^
+  12 |     if (NewValue > 10) {
+  13 |       setIsBigger(true);
+  14 |       setIsEmpty(true);
+	at f (/home/bontzkl/projects/projekcikpykpyk/pomeranian-bolierplate-public/node_modules/prettier/parser-babel.js:22:1054)
+	at d (/home/bontzkl/projects/projekcikpykpyk/pomeranian-bolierplate-public/node_modules/prettier/parser-babel.js:22:1287)
+	at Object.parse (/home/bontzkl/projects/projekcikpykpyk/pomeranian-bolierplate-public/node_modules/prettier/parser-babel.js:29:54613)
+	at Object.parse (/home/bontzkl/projects/projekcikpykpyk/pomeranian-bolierplate-public/node_modules/prettier/index.js:7515:23)
+	at coreFormat (/home/bontzkl/projects/projekcikpykpyk/pomeranian-bolierplate-public/node_modules/prettier/index.js:8829:18)
+	at formatWithCursor2 (/home/bontzkl/projects/projekcikpykpyk/pomeranian-bolierplate-public/node_modules/prettier/index.js:9021:18)
+	at /home/bontzkl/projects/projekcikpykpyk/pomeranian-bolierplate-public/node_modules/prettier/index.js:38176:12
+	at Object.format (/home/bontzkl/projects/projekcikpykpyk/pomeranian-bolierplate-public/node_modules/prettier/index.js:38190:12)
+	at t.default.format (/home/bontzkl/.vscode-server/extensions/esbenp.prettier-vscode-9.12.0/dist/extension.js:1:14694)
+	at async t.PrettierEditProvider.provideEdits (/home/bontzkl/.vscode-server/extensions/esbenp.prettier-vscode-9.12.0/dist/extension.js:1:11367)
+	at async B.provideDocumentFormattingEdits (/home/bontzkl/.vscode-server/bin/704ed70d4fd1c6bd6342c436f1ede30d1cff4710/out/vs/workbench/api/node/extensionHostProcess.js:101:46615)
+["INFO" - 8:54:36 PM] Formatting completed in 19ms.
+["INFO" - 8:55:09 PM] Formatting file:///home/bontzkl/projects/projekcikpykpyk/pomeranian-bolierplate-public/src/App/Exercises/ReactExercises/SubRouteExercise3/Exercise3.jsx
+["INFO" - 8:55:09 PM] Using config file at '/home/bontzkl/projects/projekcikpykpyk/pomeranian-bolierplate-public/.prettierrc.json'
+["INFO" - 8:55:09 PM] Using ignore file (if present) at /home/bontzkl/projects/projekcikpykpyk/pomeranian-bolierplate-public/.prettierignore
+["INFO" - 8:55:09 PM] File Info:
+{
+  "ignored": false,
+  "inferredParser": "babel"
+}
+["INFO" - 8:55:09 PM] Detected local configuration (i.e. .prettierrc or .editorconfig), VS Code configuration will not be used
+["INFO" - 8:55:09 PM] Prettier Options:
+{
+  "filepath": "/home/bontzkl/projects/projekcikpykpyk/pomeranian-bolierplate-public/src/App/Exercises/ReactExercises/SubRouteExercise3/Exercise3.jsx",
+  "parser": "babel",
+  "singleQuote": true,
+  "trailingComma": "es5",
+  "endOfLine": "auto"
+}
+["INFO" - 8:55:09 PM] Formatting completed in 27ms.
+["INFO" - 8:55:20 PM] Formatting file:///home/bontzkl/projects/projekcikpykpyk/pomeranian-bolierplate-public/src/App/Exercises/ReactExercises/SubRouteExercise3/Exercise3.jsx
+["INFO" - 8:55:20 PM] Using config file at '/home/bontzkl/projects/projekcikpykpyk/pomeranian-bolierplate-public/.prettierrc.json'
+["INFO" - 8:55:20 PM] Using ignore file (if present) at /home/bontzkl/projects/projekcikpykpyk/pomeranian-bolierplate-public/.prettierignore
+["INFO" - 8:55:20 PM] File Info:
+{
+  "ignored": false,
+  "inferredParser": "babel"
+}
+["INFO" - 8:55:20 PM] Detected local configuration (i.e. .prettierrc or .editorconfig), VS Code configuration will not be used
+["INFO" - 8:55:20 PM] Prettier Options:
+{
+  "filepath": "/home/bontzkl/projects/projekcikpykpyk/pomeranian-bolierplate-public/src/App/Exercises/ReactExercises/SubRouteExercise3/Exercise3.jsx",
+  "parser": "babel",
+  "singleQuote": true,
+  "trailingComma": "es5",
+  "endOfLine": "auto"
+}
+["ERROR" - 8:55:20 PM] Error formatting document.
+["ERROR" - 8:55:20 PM] Unexpected token (9:9)
+   7 |   const [isBigger, setIsBigger] = useState(false);
+   8 |   const [isEmpty, setIsEmpty] = useState(false);
+>  9 |   const[(newValue, setNewValue)] = useState(0);
+     |         ^
+  10 |   const handleChange = (event) => {
+  11 |     setNewValue(event.target.value);
+  12 |     if (NewValue > 10) {
+SyntaxError: Unexpected token (9:9)
+   7 |   const [isBigger, setIsBigger] = useState(false);
+   8 |   const [isEmpty, setIsEmpty] = useState(false);
+>  9 |   const[(newValue, setNewValue)] = useState(0);
+     |         ^
+  10 |   const handleChange = (event) => {
+  11 |     setNewValue(event.target.value);
+  12 |     if (NewValue > 10) {
+	at f (/home/bontzkl/projects/projekcikpykpyk/pomeranian-bolierplate-public/node_modules/prettier/parser-babel.js:22:1054)
+	at d (/home/bontzkl/projects/projekcikpykpyk/pomeranian-bolierplate-public/node_modules/prettier/parser-babel.js:22:1287)
+	at Object.parse (/home/bontzkl/projects/projekcikpykpyk/pomeranian-bolierplate-public/node_modules/prettier/parser-babel.js:29:54613)
+	at Object.parse (/home/bontzkl/projects/projekcikpykpyk/pomeranian-bolierplate-public/node_modules/prettier/index.js:7515:23)
+	at coreFormat (/home/bontzkl/projects/projekcikpykpyk/pomeranian-bolierplate-public/node_modules/prettier/index.js:8829:18)
+	at formatWithCursor2 (/home/bontzkl/projects/projekcikpykpyk/pomeranian-bolierplate-public/node_modules/prettier/index.js:9021:18)
+	at /home/bontzkl/projects/projekcikpykpyk/pomeranian-bolierplate-public/node_modules/prettier/index.js:38176:12
+	at Object.format (/home/bontzkl/projects/projekcikpykpyk/pomeranian-bolierplate-public/node_modules/prettier/index.js:38190:12)
+	at t.default.format (/home/bontzkl/.vscode-server/extensions/esbenp.prettier-vscode-9.12.0/dist/extension.js:1:14694)
+	at async t.PrettierEditProvider.provideEdits (/home/bontzkl/.vscode-server/extensions/esbenp.prettier-vscode-9.12.0/dist/extension.js:1:11367)
+	at async B.provideDocumentFormattingEdits (/home/bontzkl/.vscode-server/bin/704ed70d4fd1c6bd6342c436f1ede30d1cff4710/out/vs/workbench/api/node/extensionHostProcess.js:101:46615)
+["INFO" - 8:55:20 PM] Formatting completed in 15ms.
+["INFO" - 8:55:31 PM] Formatting file:///home/bontzkl/projects/projekcikpykpyk/pomeranian-bolierplate-public/src/App/Exercises/ReactExercises/SubRouteExercise3/Exercise3.jsx
+["INFO" - 8:55:31 PM] Using config file at '/home/bontzkl/projects/projekcikpykpyk/pomeranian-bolierplate-public/.prettierrc.json'
+["INFO" - 8:55:31 PM] Using ignore file (if present) at /home/bontzkl/projects/projekcikpykpyk/pomeranian-bolierplate-public/.prettierignore
+["INFO" - 8:55:31 PM] File Info:
+{
+  "ignored": false,
+  "inferredParser": "babel"
+}
+["INFO" - 8:55:31 PM] Detected local configuration (i.e. .prettierrc or .editorconfig), VS Code configuration will not be used
+["INFO" - 8:55:31 PM] Prettier Options:
+{
+  "filepath": "/home/bontzkl/projects/projekcikpykpyk/pomeranian-bolierplate-public/src/App/Exercises/ReactExercises/SubRouteExercise3/Exercise3.jsx",
+  "parser": "babel",
+  "singleQuote": true,
+  "trailingComma": "es5",
+  "endOfLine": "auto"
+}
+["INFO" - 8:55:31 PM] Formatting completed in 31ms.
+["INFO" - 8:56:04 PM] Formatting file:///home/bontzkl/projects/projekcikpykpyk/pomeranian-bolierplate-public/src/App/Exercises/ReactExercises/SubRouteExercise3/Exercise3.jsx
+["INFO" - 8:56:04 PM] Using config file at '/home/bontzkl/projects/projekcikpykpyk/pomeranian-bolierplate-public/.prettierrc.json'
+["INFO" - 8:56:04 PM] Using ignore file (if present) at /home/bontzkl/projects/projekcikpykpyk/pomeranian-bolierplate-public/.prettierignore
+["INFO" - 8:56:04 PM] File Info:
+{
+  "ignored": false,
+  "inferredParser": "babel"
+}
+["INFO" - 8:56:04 PM] Detected local configuration (i.e. .prettierrc or .editorconfig), VS Code configuration will not be used
+["INFO" - 8:56:04 PM] Prettier Options:
+{
+  "filepath": "/home/bontzkl/projects/projekcikpykpyk/pomeranian-bolierplate-public/src/App/Exercises/ReactExercises/SubRouteExercise3/Exercise3.jsx",
+  "parser": "babel",
+  "singleQuote": true,
+  "trailingComma": "es5",
+  "endOfLine": "auto"
+}
+["INFO" - 8:56:04 PM] Formatting completed in 22ms.
+["INFO" - 8:56:27 PM] Formatting file:///home/bontzkl/projects/projekcikpykpyk/pomeranian-bolierplate-public/src/App/Exercises/ReactExercises/SubRouteExercise3/Exercise3.jsx
+["INFO" - 8:56:27 PM] Using config file at '/home/bontzkl/projects/projekcikpykpyk/pomeranian-bolierplate-public/.prettierrc.json'
+["INFO" - 8:56:27 PM] Using ignore file (if present) at /home/bontzkl/projects/projekcikpykpyk/pomeranian-bolierplate-public/.prettierignore
+["INFO" - 8:56:27 PM] File Info:
+{
+  "ignored": false,
+  "inferredParser": "babel"
+}
+["INFO" - 8:56:27 PM] Detected local configuration (i.e. .prettierrc or .editorconfig), VS Code configuration will not be used
+["INFO" - 8:56:27 PM] Prettier Options:
+{
+  "filepath": "/home/bontzkl/projects/projekcikpykpyk/pomeranian-bolierplate-public/src/App/Exercises/ReactExercises/SubRouteExercise3/Exercise3.jsx",
+  "parser": "babel",
+  "singleQuote": true,
+  "trailingComma": "es5",
+  "endOfLine": "auto"
+}
+["INFO" - 8:56:27 PM] Formatting completed in 19ms.
+["INFO" - 8:57:46 PM] Formatting file:///home/bontzkl/projects/projekcikpykpyk/pomeranian-bolierplate-public/src/App/Exercises/ReactExercises/SubRouteExercise3/Exercise3.jsx
+["INFO" - 8:57:46 PM] Using config file at '/home/bontzkl/projects/projekcikpykpyk/pomeranian-bolierplate-public/.prettierrc.json'
+["INFO" - 8:57:46 PM] Using ignore file (if present) at /home/bontzkl/projects/projekcikpykpyk/pomeranian-bolierplate-public/.prettierignore
+["INFO" - 8:57:46 PM] File Info:
+{
+  "ignored": false,
+  "inferredParser": "babel"
+}
+["INFO" - 8:57:46 PM] Detected local configuration (i.e. .prettierrc or .editorconfig), VS Code configuration will not be used
+["INFO" - 8:57:46 PM] Prettier Options:
+{
+  "filepath": "/home/bontzkl/projects/projekcikpykpyk/pomeranian-bolierplate-public/src/App/Exercises/ReactExercises/SubRouteExercise3/Exercise3.jsx",
+  "parser": "babel",
+  "singleQuote": true,
+  "trailingComma": "es5",
+  "endOfLine": "auto"
+}
+["INFO" - 8:57:46 PM] Formatting completed in 20ms.
+["INFO" - 8:58:59 PM] Formatting file:///home/bontzkl/projects/projekcikpykpyk/pomeranian-bolierplate-public/src/App/Exercises/ReactExercises/SubRouteExercise3/Exercise3.jsx
+["INFO" - 8:58:59 PM] Using config file at '/home/bontzkl/projects/projekcikpykpyk/pomeranian-bolierplate-public/.prettierrc.json'
+["INFO" - 8:58:59 PM] Using ignore file (if present) at /home/bontzkl/projects/projekcikpykpyk/pomeranian-bolierplate-public/.prettierignore
+["INFO" - 8:58:59 PM] File Info:
+{
+  "ignored": false,
+  "inferredParser": "babel"
+}
+["INFO" - 8:58:59 PM] Detected local configuration (i.e. .prettierrc or .editorconfig), VS Code configuration will not be used
+["INFO" - 8:58:59 PM] Prettier Options:
+{
+  "filepath": "/home/bontzkl/projects/projekcikpykpyk/pomeranian-bolierplate-public/src/App/Exercises/ReactExercises/SubRouteExercise3/Exercise3.jsx",
+  "parser": "babel",
+  "singleQuote": true,
+  "trailingComma": "es5",
+  "endOfLine": "auto"
+}
+["INFO" - 8:58:59 PM] Formatting completed in 25ms.
+["INFO" - 9:01:59 PM] Formatting file:///home/bontzkl/projects/projekcikpykpyk/pomeranian-bolierplate-public/src/App/Exercises/ReactExercises/SubRouteExercise3/Exercise3.jsx
+["INFO" - 9:01:59 PM] Using config file at '/home/bontzkl/projects/projekcikpykpyk/pomeranian-bolierplate-public/.prettierrc.json'
+["INFO" - 9:01:59 PM] Using ignore file (if present) at /home/bontzkl/projects/projekcikpykpyk/pomeranian-bolierplate-public/.prettierignore
+["INFO" - 9:01:59 PM] File Info:
+{
+  "ignored": false,
+  "inferredParser": "babel"
+}
+["INFO" - 9:01:59 PM] Detected local configuration (i.e. .prettierrc or .editorconfig), VS Code configuration will not be used
+["INFO" - 9:01:59 PM] Prettier Options:
+{
+  "filepath": "/home/bontzkl/projects/projekcikpykpyk/pomeranian-bolierplate-public/src/App/Exercises/ReactExercises/SubRouteExercise3/Exercise3.jsx",
+  "parser": "babel",
+  "singleQuote": true,
+  "trailingComma": "es5",
+  "endOfLine": "auto"
+}
+["INFO" - 9:01:59 PM] Formatting completed in 16ms.

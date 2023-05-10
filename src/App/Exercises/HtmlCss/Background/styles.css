@@ -1,0 +1,11 @@
+.filter-image-3 {
+  /* filter: contrast(200%);
+  filter: brightness(150%); */
+  /* filter: grayscale(100%);
+  filter: contrast(150%); */
+  filter: grayscale(40%) sepia(100%) brightness(66%) saturate(147%)
+    contrast(163%) invert(16%);
+}
+.blured {
+  filter: blur(7px);
+}
