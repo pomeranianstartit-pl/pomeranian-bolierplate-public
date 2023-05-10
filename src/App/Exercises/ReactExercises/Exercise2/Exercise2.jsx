@@ -13,6 +13,7 @@ export function Exercise2() {
       <button onClick={handleClick}>Click</button>
 
       <button
+        className="buttonex1"
         onClick={() => {
           setClicks(0);
         }}

@@ -37,5 +37,7 @@ aside a.active {
 }
 
 .menu-icon {
-  margin-right: 10px;
+  margin-right: 9px;
+  width: 23px;
+  fill: lightgrey;
 }

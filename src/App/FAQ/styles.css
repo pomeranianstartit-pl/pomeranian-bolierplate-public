@@ -1,0 +1,17 @@
+.faq-section {
+  border: 1px solid gray;
+  border-left-width: 5px;
+  padding: 10px;
+  border-radius: 10px;
+  margin: 20px;
+}
+
+.question {
+  font-weight: bold;
+  padding: 20px, 0;
+  border-bottom: 1px, solid, gray;
+}
+
+.answer {
+  padding-top: 10px;
+}
