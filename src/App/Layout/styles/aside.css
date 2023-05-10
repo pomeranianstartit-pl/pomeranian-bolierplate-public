@@ -14,6 +14,7 @@ aside ul {
 
 aside li {
   line-height: 2rem;
+  list-style-type: none;
 }
 
 .aside-row {
@@ -30,4 +31,7 @@ aside li a {
 aside a.active {
   background-color: var(--color-primary-blue);
   color: var(--color-white);
+}
+
+.faq-icon {
 }

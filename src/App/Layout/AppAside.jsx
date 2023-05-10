@@ -1,6 +1,7 @@
 import { NavLink } from 'react-router-dom';
 
 import './styles/aside.css';
+import { FAQIcon } from '../Components/Icons/FAQIcon';
 
 export function AppAside() {
   return (
@@ -18,6 +19,10 @@ export function AppAside() {
           </li>
           <li>
             <NavLink to="blog">Blog</NavLink>
+          </li>
+          <li>
+            <FAQIcon className="faq-icon"></FAQIcon>
+            <NavLink to="faq">FAQ</NavLink>
           </li>
         </ul>
       </nav>

@@ -1,0 +1,26 @@
+.faq {
+  font-family: sans-serif;
+}
+
+.box {
+  border-left: 1px solid #c8cbd1;
+  border-left-width: 5px;
+  border-radius: 8px;
+  box-shadow: 1px 1px 10px 1px #c8cbd1;
+  padding: 18px 24px;
+  margin: 20px 0;
+  box-sizing: border-box;
+  background-color: white;
+}
+
+.box-title {
+  color: #23213d;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 34px;
+}
+
+.box-content {
+  padding-top: 15px;
+  border-top: 1px solid #c8cbd1;
+}
