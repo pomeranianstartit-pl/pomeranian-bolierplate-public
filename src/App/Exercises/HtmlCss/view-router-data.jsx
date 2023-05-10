@@ -5,6 +5,7 @@ import { blockRouterMetaData as blockRouterMetaData05052023 } from './SelectorsA
 import { blockRouterMetaData as blockRouterMetaData08052023 } from './StandardTags/router-data';
 import { blockRouterMetaData as blockRouterMetaData080520231 } from './GoogleFonts/router-data';
 import { blockRouterMetaData as blockRouterMetaData09052023 } from './Colors/router-data';
+import { blockRouterMetaData as blockRouterMetaData13052023 } from './BoxModel/router-data';
 
 export const blockRouterMetaData = [
   blockRouterMetaData121220231,
@@ -12,5 +13,6 @@ export const blockRouterMetaData = [
   blockRouterMetaData08052023,
   blockRouterMetaData080520231,
   ...blockRouterMetaData09052023,
+  blockRouterMetaData13052023,
 ];
 export const blockRouterData = getParsedRouterDataList(blockRouterMetaData);
