@@ -1,0 +1,23 @@
+table {
+  border-collapse: collapse;
+  width: 100%;
+}
+
+td,
+th {
+  border: 1px solid grey;
+  text-align: left;
+  padding: 8px;
+}
+
+th {
+  background-color: rgb(70, 117, 119);
+}
+
+tr:nth-child(even) {
+  background-image: linear-gradient(to right, cadetblue, rgb(203, 217, 218));
+}
+
+td:hover {
+  background-color: cadetblue;
+}
