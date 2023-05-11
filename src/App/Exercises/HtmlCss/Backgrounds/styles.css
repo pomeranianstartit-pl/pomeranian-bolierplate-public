@@ -1,0 +1,8 @@
+.lighter {
+  filter: contrast(120%);
+  filter: brightness(1.2);
+  filter: grayscale(80%);
+}
+
+.blured {
+}

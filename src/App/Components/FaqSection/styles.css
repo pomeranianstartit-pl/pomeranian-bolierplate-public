@@ -1,0 +1,9 @@
+.question {
+  font-weight: bold;
+  padding: 5px 0 10px;
+  border-bottom: 1px;
+}
+
+.answer {
+  padding-top: 10px;
+}

@@ -1,0 +1,31 @@
+.general {
+  color: red;
+  background-color: bisque;
+  border: 10px solid yellow;
+}
+
+.general #main {
+  color: green;
+  border: 5px solid brown;
+}
+
+.general p {
+  color: pink;
+}
+
+.general .unique {
+  color: darkblue;
+  font-style: italic;
+}
+
+.general ul {
+  color: blueviolet;
+}
+
+.general ul:first-of-type li:nth-child(even) {
+  color: chartreuse;
+}
+
+.general h1 {
+  color: deeppink;
+}

@@ -1,8 +1,10 @@
+
 import { NavLink } from 'react-router-dom';
 import { HouseIcon } from '../Components/Icons/HouseIcon';
 import { ElementIcon } from '../Components/Icons/ElementIcon';
 import { EditIcon } from '../Components/Icons/EditIcon';
 import { PersonalCardIcon } from '../Components/Icons/PersonalCardIcon';
+import { Faq } from '../Components/Icons/Faq';
 
 import './styles/aside.css';
 
@@ -31,9 +33,15 @@ export function AppAside() {
               <EditIcon className="menu-icon" /> Ćwiczenia
             </NavLink>
           </li>
+          <li>
+            <NavLink className="aside-row" to="faq">
+              <Faq className="menu-icon" /> FAQ
+            </NavLink>
+          </li>
         </ul>
       </nav>
       <p style={{ padding: '1rem 0' }}>Sidebar items, widgets, etc</p>
     </aside>
   );
 }
+

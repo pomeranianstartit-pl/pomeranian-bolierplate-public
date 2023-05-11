@@ -1,0 +1,35 @@
+.box-1 {
+  margin: 10px;
+  width: 100%;
+  height: 50vh;
+  padding: 15px;
+  border: 5px dotted red;
+  background-color: lightblue;
+  overflow: auto;
+  font-size: 20px;
+}
+.header {
+  font-size: 2em;
+}
+
+.paragraph {
+  font-size: 0.8em;
+  font-style: italic;
+  border: 1em solid orange;
+}
+
+.paragraph-1 {
+  padding: 15px 20px;
+}
+
+.paragraph-2 {
+  padding: 10px 5px 20px;
+  border-radius: 15px;
+}
+
+.paragraph-3 {
+  padding: 5px 10px 15px 20px;
+  width: 50px;
+  height: 50px;
+  border-radius: 100%;
+}
