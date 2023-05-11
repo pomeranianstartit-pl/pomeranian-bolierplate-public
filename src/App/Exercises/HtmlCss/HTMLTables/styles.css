@@ -1,0 +1,39 @@
+table {
+  box-shadow: 2px 2px 10px 3px #dddddd;
+  border: none;
+  border-collapse: collapse;
+}
+
+th {
+  height: 57px;
+  width: 716px;
+  left: 0px;
+  top: 0px;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+  padding: 0px 28px 0px 28px;
+
+  background-color: #f5f5f5;
+}
+
+td {
+  height: 84px;
+  width: 716px;
+  left: 0px;
+  top: 57px;
+  padding: 0px 28px 0px 46px;
+}
+
+tr:nth-child(even) {
+  background-color: #ffd5db;
+}
+
+.last-row {
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+}
+
+.last-column {
+  text-align: right;
+  padding: 20px;
+}
