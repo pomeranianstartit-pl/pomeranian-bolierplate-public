@@ -1,3 +1,5 @@
+import React, { useState } from 'react';
+//import { ExpandIcon } from '../Icons/ExpandIcon';
 import './styles.css';
 
 export const FAQSection = (props) => {
