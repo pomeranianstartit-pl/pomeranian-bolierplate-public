@@ -1,0 +1,33 @@
+.font-test-family {
+  font-family: Chilanka;
+}
+
+.button1 {
+  box-sizing: border-box;
+
+  /* Auto layout */
+
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 20px 36px;
+  gap: 16px;
+
+  width: 326px;
+  height: 56px;
+
+  /* primary/primary */
+
+  background: #fe3756;
+  /* primary/primary */
+
+  border: 1px solid #fe3756;
+  border-radius: 8px;
+
+  /* Inside auto layout */
+
+  flex: none;
+  order: 0;
+  flex-grow: 1;
+}
