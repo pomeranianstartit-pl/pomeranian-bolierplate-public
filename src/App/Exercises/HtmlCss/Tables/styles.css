@@ -1,0 +1,42 @@
+.table-exc {
+  border-collapse: collapse;
+}
+.table-exc td,
+.table-exc th {
+  border: 1px solid black;
+  border-spacing: 0px;
+  text-align: left;
+  padding: 3px;
+  width: 150px;
+}
+.table-exc th {
+  font-weight: 700;
+  text-align: center;
+}
+.table-exc th:hover {
+  background-color: lightsalmon;
+}
+.table-exc td:hover {
+  background-color: lightgrey;
+}
+.table-two {
+  border-collapse: collapse;
+}
+.table-two td,
+.table-twp th {
+  border: 1px solid black;
+  border-spacing: 0px;
+  text-align: left;
+  padding: 3px;
+  width: 150px;
+}
+.table-two th {
+  font-weight: 700;
+  text-align: center;
+}
+.table-two th:hover {
+  background-color: lightsalmon;
+}
+.table-two td:hover {
+  background-color: lightgrey;
+}

@@ -6,7 +6,7 @@ import { blockRouterMetaData as blockRouterMetaData08052023 } from './StandardTa
 import { blockRouterMetaData as blockRouterMetaData080520231 } from './GoogleFonts/router-data';
 import { blockRouterMetaData as blockRouterMetaData09052023 } from './Colors/router-data';
 import { blockRouterMetaData as blockRouterMetaData13052023 } from './BoxModel/router-data';
-import { blockRouterMetaData as blockRouterMetaData11052023 } from './BoxModel/router-data';
+import { blockRouterMetaData as blockRouterMetaData11052023 } from './Tables/router-data';
 
 export const blockRouterMetaData = [
   blockRouterMetaData121220231,
