@@ -1,5 +1,6 @@
 import './styles.css';
-//import { StarIcon } from '../Components/Icons/StarIcon';
+import React from 'react';
+import { StarIcon } from './StarIcon';
 
 export function Tables() {
   return (
@@ -69,28 +70,47 @@ export function Tables() {
           <td>Cape Verde Islands</td>
           <td>#100120</td>
           <td>
-            <img src="http://www.w3.org/2000/svg"></img>
+            <StarIcon />
+            <StarIcon />
           </td>
         </tr>
         <tr>
           <td>Cape Verde Islands </td>
           <td>#100122</td>
-          <td>No change</td>
+          <td>
+            <StarIcon />
+            <StarIcon />
+            <StarIcon />
+          </td>
         </tr>
         <tr>
           <td>Cape Verde Islands </td>
           <td>#100124</td>
-          <td>Red color</td>
+          <td>
+            <StarIcon />
+            <StarIcon />
+            <StarIcon />
+            <StarIcon />
+            <StarIcon />
+          </td>
         </tr>
         <tr>
           <td>United States of America</td>
           <td>#100126</td>
-          <td>Green color</td>
+          <td>
+            <StarIcon />
+          </td>
         </tr>
         <tr>
           <td>United States of America</td>
           <td>#100128</td>
-          <td>Green color</td>
+          <td>
+            <StarIcon />
+            <StarIcon />
+            <StarIcon />
+            <StarIcon />
+            <StarIcon />
+          </td>
         </tr>
       </table>
     </div>

@@ -19,20 +19,37 @@
 .table-exc td:hover {
   background-color: lightgrey;
 }
+
 .table-two {
-  border-collapse: collapse;
+  background: #ffffff;
+  box-shadow: 0px 63.6618px 158.447px rgba(0, 0, 0, 0.06),
+    0px 32.2288px 69.073px rgba(0, 0, 0, 0.0405),
+    0px 12.7324px 25.7476px rgba(0, 0, 0, 0.03),
+    0px 2.7852px 9.16022px rgba(0, 0, 0, 0.0195);
+  border-radius: 14.1471px;
+  width: 659.41px;
+  height: 57px;
 }
 .table-two td,
-.table-twp th {
-  border: 1px solid black;
+.table-two th {
   border-spacing: 0px;
   text-align: left;
   padding: 3px;
   width: 150px;
 }
 .table-two th {
-  font-weight: 700;
-  text-align: center;
+  flex: none;
+  order: 0;
+  align-self: stretch;
+  flex-grow: 1;
+  background-color: #f5f5f5;
+  font-weight: 600;
+}
+.table-two tr:nth-child(even) {
+  background-color: #ffd5db;
+}
+.table-two td:nth-last-child(1) {
+  text-align: right;
 }
 .table-two th:hover {
   background-color: lightsalmon;
