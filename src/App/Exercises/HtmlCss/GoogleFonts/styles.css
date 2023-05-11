@@ -1,0 +1,83 @@
+.google-fonts {
+  font-family: roboto;
+}
+
+.mayor {
+  font-family: Major Mono Display;
+}
+
+.homemade-apple {
+  font-family: Homemade Apple;
+}
+
+.vina-sans {
+  font-size: Vina Sans;
+}
+
+.instrument-serif {
+  font-size: Instrument Serif;
+}
+
+.animation {
+  font-weight: lighter;
+  font-size: 50px;
+  text-align: center;
+  background-color: white;
+  border: 10px dashed red;
+  animation-name: change-background;
+  animation-duration: 3s;
+
+  animation-fill-mode: forwards;
+}
+
+@keyframes change-background {
+  0% {
+    border: 10px dashed red;
+    font-weight: lighter;
+    text-shadow: 9px -3px 8px rgba(66, 68, 90, 1);
+  }
+
+  50% {
+    border: 10px dashed orange;
+  }
+  100% {
+    border: 10px dashed red;
+    font-weight: bolder;
+    text-shadow: 53px -26px 4px rgba(66, 68, 90, 1);
+  }
+}
+
+.tracking-in-expand {
+  font-size: 100px;
+  font-weight: bold;
+  color: red;
+  text-align: center;
+  -webkit-animation: tracking-in-expand 0.7s cubic-bezier(0.215, 0.61, 0.355, 1)
+    both;
+  animation: tracking-in-expand 0.7s cubic-bezier(0.215, 0.61, 0.355, 1) both;
+}
+
+@-webkit-keyframes tracking-in-expand {
+  0% {
+    letter-spacing: -0.5em;
+    opacity: 0;
+  }
+  40% {
+    opacity: 0.6;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes tracking-in-expand {
+  0% {
+    letter-spacing: -0.5em;
+    opacity: 0;
+  }
+  40% {
+    opacity: 0.6;
+  }
+  100% {
+    opacity: 1;
+  }
+}

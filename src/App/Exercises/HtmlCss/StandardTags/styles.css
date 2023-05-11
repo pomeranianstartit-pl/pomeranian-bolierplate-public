@@ -1,0 +1,46 @@
+.title {
+  display: block;
+  font-size: 2em;
+  margin-block-start: 0.67em;
+  margin-block-end: 0.67em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+  font-weight: bold;
+  color: var(--color-grey);
+}
+
+.date {
+  font-size: smaller;
+}
+
+.section {
+  display: block;
+  font-size: 1.17em;
+  margin-block-start: 1em;
+  margin-block-end: 1em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+  font-weight: bold;
+}
+
+.sub {
+  vertical-align: sub;
+  font-size: smaller;
+}
+
+.top {
+  vertical-align: super;
+  font-size: smaller;
+}
+
+.bold {
+  font-weight: bold;
+}
+
+.italics {
+  font-style: italic;
+}
+
+.cross {
+  text-decoration: line-through;
+}

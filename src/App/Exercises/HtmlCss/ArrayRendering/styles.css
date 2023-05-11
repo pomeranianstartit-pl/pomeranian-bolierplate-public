@@ -1,0 +1,24 @@
+.table1 {
+  border-collapse: collapse;
+  border: 5px solid purple;
+}
+
+.first_row {
+  background-color: rgb(143, 32, 143);
+  border: 5px solid purple;
+
+  height: 57px;
+  width: 716px;
+}
+
+td {
+  border: none;
+}
+
+tr:nth-child(even) {
+  background-color: #ffd5db;
+}
+
+tr:nth-child(odd) {
+  background-color: rgb(240, 10, 221);
+}
