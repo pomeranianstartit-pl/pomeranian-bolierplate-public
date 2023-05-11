@@ -7,6 +7,7 @@ import { blockRouterMetaData as blockRouterMetaData080520231 } from './GoogleFon
 import { blockRouterMetaData as blockRouterMetaData09052023 } from './Colors/router-data';
 import { blockRouterMetaData as blockRouterMetaData13052023 } from './BoxModel/router-data';
 import { blockRouterMetaData as blockRouterMetaData11052023 } from './Tables/router-data';
+import { blockRouterMetaData as blockRouterMetaData110520231 } from './ArrayRendering/router-data';
 
 export const blockRouterMetaData = [
   blockRouterMetaData121220231,
@@ -16,5 +17,6 @@ export const blockRouterMetaData = [
   ...blockRouterMetaData09052023,
   blockRouterMetaData13052023,
   blockRouterMetaData11052023,
+  blockRouterMetaData110520231,
 ];
 export const blockRouterData = getParsedRouterDataList(blockRouterMetaData);
