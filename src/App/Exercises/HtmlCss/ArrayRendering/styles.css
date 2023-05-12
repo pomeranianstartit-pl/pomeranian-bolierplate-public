@@ -1,0 +1,16 @@
+.bands,
+th {
+  background: #c013a3;
+  color: #0c0107;
+  text-align: center;
+  width: 1000px;
+}
+tr:nth-child(odd) {
+  background: #df80e2;
+}
+tr:nth-child(even) {
+  background: #efefef;
+}
+.total-album-cell {
+  text-align: left;
+}

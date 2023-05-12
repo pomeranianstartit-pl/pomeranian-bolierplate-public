@@ -7,9 +7,44 @@ export const ArrayRendering = () => {
     { id: 3, make: 'Audi', model: 'A3', year: 2019, owner: 'Michael' },
     { id: 4, make: 'Tesla', model: 'Model S', year: 2022, owner: 'Sarah' },
   ];
-  // export const ArrayRendering = () => {
-  // const music = [{ id: 1, Band: 'Buzzcocks', Year formed: '1976',NO. of Albums: '9', Most Famous Song: 'Ever fallen in love'}];
-  //};
+  const bands = [
+    {
+      band: 'The Clash',
+      yearFormed: 1976,
+      albums: 6,
+      mostFamousSong: 'London Calling',
+    },
+    {
+      band: 'Sex Pistols',
+      yearFormed: 1975,
+      albums: 1,
+      mostFamousSong: 'Anarchy in the UK',
+    },
+    {
+      band: 'Ramones',
+      yearFormed: 1974,
+      albums: 14,
+      mostFamousSong: 'Blitzkrieg Bop',
+    },
+    {
+      band: 'The Cure',
+      yearFormed: 1976,
+      albums: 13,
+      mostFamousSong: 'Just Like Heaven',
+    },
+    {
+      band: 'Joy Division',
+      yearFormed: 1976,
+      albums: 2,
+      mostFamousSong: 'Love Will Tear Us Apart',
+    },
+    {
+      band: 'Siouxsie and the Banshees',
+      yearFormed: 1976,
+      albums: 11,
+      mostFamousSong: 'Hong Kong Garden',
+    },
+  ];
 
   return (
     <div>
@@ -24,60 +59,26 @@ export const ArrayRendering = () => {
         })}
       </ul>
       <hr />
-      <table className="table-exc">
+      <table className="bands">
         <tr>
-          <th>BAND</th>
-          <th>YEAR FORMED</th>
-          <th>NO. OF ALBUMS</th>
-          <th>MOST FAMOUS SONG</th>
+          <th>Band</th>
+          <th>Year formed</th>
+          <th>No. of Albums</th>
+          <th>Most famous song</th>
         </tr>
+        {bands.map(({ band, yearFormed, albums, mostFamousSong }) => (
+          <tr key={band}>
+            <td>{band}</td>
+            <td>{yearFormed}</td>
+            <td>{albums}</td>
+            <td>{mostFamousSong}</td>
+          </tr>
+        ))}
         <tr>
-          <td></td>
-          <td>x</td>
-          <td>x</td>
-          <td>x</td>
-        </tr>
-        <tr>
-          <td>x</td>
-          <td>x</td>
-          <td>x</td>
-          <td>x</td>
-        </tr>
-        <tr>
-          <td>x</td>
-          <td>x</td>
-          <td>x</td>
-          <td>x</td>
-        </tr>{' '}
-        <tr>
-          <td>x</td>
-          <td>x</td>
-          <td>x</td>
-          <td>x</td>
-        </tr>{' '}
-        <tr>
-          <td>x</td>
-          <td>x</td>
-          <td>x</td>
-          <td>x</td>
-        </tr>{' '}
-        <tr>
-          <td>x</td>
-          <td>x</td>
-          <td>x</td>
-          <td>x</td>
-        </tr>{' '}
-        <tr>
-          <td>x</td>
-          <td>x</td>
-          <td>x</td>
-          <td>x</td>
-        </tr>{' '}
-        <tr>
-          <td>x</td>
-          <td>x</td>
-          <td>x</td>
-          <td>x</td>
+          <td colspan="2">Total albums</td>
+          <td colspan="2" className="total-album-cell">
+            77
+          </td>
         </tr>
       </table>
     </div>
