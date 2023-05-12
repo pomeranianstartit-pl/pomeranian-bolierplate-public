@@ -7,12 +7,15 @@ export const ArrayRendering = () => {
     { id: 3, make: 'Audi', model: 'A3', year: 2019, owner: 'Michael' },
     { id: 4, make: 'Tesla', model: 'Model S', year: 2022, owner: 'Sarah' },
   ];
+  // export const ArrayRendering = () => {
+  // const music = [{ id: 1, Band: 'Buzzcocks', Year formed: '1976',NO. of Albums: '9', Most Famous Song: 'Ever fallen in love'}];
+  //};
 
   return (
     <div>
       Auta:
       <ul>
-        {cars.map((car) => {
+        {cars.map(({ id, make, model, owner, year }) => {
           return (
             <li key={id}>
               {make} {model} ({year}) - <b>{owner}</b>
@@ -20,6 +23,63 @@ export const ArrayRendering = () => {
           );
         })}
       </ul>
+      <hr />
+      <table className="table-exc">
+        <tr>
+          <th>BAND</th>
+          <th>YEAR FORMED</th>
+          <th>NO. OF ALBUMS</th>
+          <th>MOST FAMOUS SONG</th>
+        </tr>
+        <tr>
+          <td></td>
+          <td>x</td>
+          <td>x</td>
+          <td>x</td>
+        </tr>
+        <tr>
+          <td>x</td>
+          <td>x</td>
+          <td>x</td>
+          <td>x</td>
+        </tr>
+        <tr>
+          <td>x</td>
+          <td>x</td>
+          <td>x</td>
+          <td>x</td>
+        </tr>{' '}
+        <tr>
+          <td>x</td>
+          <td>x</td>
+          <td>x</td>
+          <td>x</td>
+        </tr>{' '}
+        <tr>
+          <td>x</td>
+          <td>x</td>
+          <td>x</td>
+          <td>x</td>
+        </tr>{' '}
+        <tr>
+          <td>x</td>
+          <td>x</td>
+          <td>x</td>
+          <td>x</td>
+        </tr>{' '}
+        <tr>
+          <td>x</td>
+          <td>x</td>
+          <td>x</td>
+          <td>x</td>
+        </tr>{' '}
+        <tr>
+          <td>x</td>
+          <td>x</td>
+          <td>x</td>
+          <td>x</td>
+        </tr>
+      </table>
     </div>
   );
 };

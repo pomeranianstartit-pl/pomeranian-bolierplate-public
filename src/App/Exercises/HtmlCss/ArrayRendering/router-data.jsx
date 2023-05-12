@@ -8,5 +8,5 @@ export const blockRouterMetaData = {
   linkLabel: 'HTML & CSS - Array rendering',
   blockNo: 14,
   element: <ArrayRendering />,
-  tags: ['flex', 'grid', 'video'],
+  tags: ['Array'],
 };
