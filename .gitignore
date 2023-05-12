@@ -29,8 +29,6 @@ yarn-error.log*
 *.ipr
 *.xml
 
-.vscode
-
 # eslint
 .eslintcache
 
