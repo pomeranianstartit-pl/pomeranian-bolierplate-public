@@ -11,13 +11,20 @@
 }
 
 .rgb {
-  color: rgb(256,0,0);
+  color: rgb(256, 0, 0);
 }
 
 .rgba {
-  color: rgba(256,0,0, .5);
+  color: rgba(256, 0, 0, .5);
 }
 
-.hsl {
+.hls {
   color: hsl(169, 69%, 69%);
+}
+
+.opacity {
+  opacity: 75%;
+  color: black;
+  padding: 12px 0px;
+  background-color: blueviolet;
 }
