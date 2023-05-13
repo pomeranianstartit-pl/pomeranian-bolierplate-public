@@ -1,0 +1,78 @@
+.faked-tags {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  color: #3c4043;
+}
+
+.headline1 {
+  display: block;
+  margin: 21.44px 0px;
+  font-size: 32px;
+  font-weight: bold;
+}
+
+.date {
+  font-size: smaller;
+}
+
+.headline3 {
+  display: block;
+  font-size: 18.72px;
+  margin: 18.72px 0px;
+  font-weight: bold;
+}
+
+.sub-text {
+  vertical-align: sub;
+  font-size: smaller;
+}
+
+.sup-text {
+  vertical-align: super;
+  font-size: smaller;
+}
+
+.bold-text {
+  font-weight: bold;
+}
+
+.q-text {
+  display: inline;
+}
+.q-text::before {
+  content: open-quote;
+}
+.q-text::after {
+  content: close-quote;
+}
+
+.i-text {
+  font-style: italic;
+}
+
+.deleted-text {
+  text-decoration: line-through;
+}
+
+.underline {
+  text-decoration: underline;
+}
+
+.headline5 {
+  display: block;
+  margin: 22.1776px 0px;
+  font-weight: bold;
+  font-size: 13.28px;
+}
+
+.ul {
+  display: block;
+  list-style-type: disc;
+  margin: 16px 0px;
+  padding: 0px 0px 0px 40px;
+}
+
+.li {
+  display: list-item;
+}

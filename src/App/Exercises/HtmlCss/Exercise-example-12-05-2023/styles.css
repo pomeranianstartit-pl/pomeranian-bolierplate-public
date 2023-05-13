@@ -1,0 +1,62 @@
+/* div.selectors {
+  font-size: 20px;
+  text-align: center;
+}
+
+div.selectors p.lorem {
+  font-size: 50px;
+  text-align: center;
+}
+
+div p:last-child {
+  font-size: 25px;
+  color: rgb(22, 175, 91);
+}
+
+div p:last-child::after {
+  content: "Przeczytaj więcej >";
+  display: block;
+  cursor: pointer;
+  color: blue;
+}
+
+p.my-custom-arrow.arrow-button {
+  font-size: 24px;
+  color: brown;
+}
+
+
+a[href*="#"] {
+  border: red 1px solid;
+}
+
+div[data-position]:after {
+  content: "." attr(data-position) ".";
+}
+
+div[data-nickname]:after {
+  content: attr(data-nickname) ;
+  vertical-align: super ;
+  font-size: 14px;
+}
+
+div.hoverable {
+  transition: all 0.2s ease-in-out;
+  border: 1px red solid;
+}
+
+div.hoverable:hover {
+  transform: scale(1.2);
+  transform: translate(10px, 10px);
+  border: 3px red solid;
+}
+
+a:focus {
+  color:red;
+  outline: none;
+}
+
+a:visited {
+  color:rgb(173, 220, 53);
+  outline: none;
+} */
