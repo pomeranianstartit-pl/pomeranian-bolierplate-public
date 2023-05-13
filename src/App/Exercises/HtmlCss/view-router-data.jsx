@@ -9,6 +9,7 @@ import { blockRouterMetaData as blockRouterMetaData13052023 } from './StandardTa
 import { blockRouterMetaData as CssAnimations } from './CssAnimations/router-data';
 import { blockRouterMetaData as Animation } from './CssAnimation-cw1/router-data';
 import { blockRouterMetaData as blockRouterMetaDataExerciseMultimedia } from './Exercise-multimedia/router-data';
+import { blockRouterMetaData as Images} from './Exercise-images/router-data';
 
-export const blockRouterMetaData = [blockRouterMetaData121220231, blockRouterMetaData12052023, blockRouterMetaData13052023, CssAnimations, Animation, blockRouterMetaDataExerciseMultimedia];
+export const blockRouterMetaData = [blockRouterMetaData121220231, blockRouterMetaData12052023, blockRouterMetaData13052023, CssAnimations, Animation, blockRouterMetaDataExerciseMultimedia, Images];
 export const blockRouterData = getParsedRouterDataList(blockRouterMetaData);
