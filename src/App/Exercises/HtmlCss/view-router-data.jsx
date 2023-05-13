@@ -10,6 +10,9 @@ import { blockRouterMetaData as blockRouterMetaData13052023CssAnimations} from "
 
 import { blockRouterMetaData as blockRouterMetaData13052023CssAnimationsFreestyle} from "./CssAnimationsFreestyle/router-data";
 
+import { blockRouterMetaData as blockRouterMetaData13052023Multimedia} from "./Exercise-multimedia/router-data";
 
-export const blockRouterMetaData = [blockRouterMetaData121220231, blockRouterMetaData12052023, blockRouterMetaData13052023, blockRouterMetaData13052023CssAnimations, blockRouterMetaData13052023CssAnimationsFreestyle];
+import { blockRouterMetaData as blockRouterMetaData1305202Images} from "./Exercise-images/router-data";
+
+export const blockRouterMetaData = [blockRouterMetaData121220231, blockRouterMetaData12052023, blockRouterMetaData13052023, blockRouterMetaData13052023CssAnimations, blockRouterMetaData13052023CssAnimationsFreestyle, blockRouterMetaData13052023Multimedia, blockRouterMetaData1305202Images];
 export const blockRouterData = getParsedRouterDataList(blockRouterMetaData);

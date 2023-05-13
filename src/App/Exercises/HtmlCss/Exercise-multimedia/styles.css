@@ -1,0 +1,30 @@
+.colors .colorName {
+  color: aqua;
+}
+
+.colors .shortenHex {
+  color: #f70;
+}
+
+.colors .normalHex {
+  color: #f22205;
+}
+
+.colors .rgb {
+  color: rgb(200, 150, 100);
+}
+
+.colors .rgba {
+  color: rgba(250, 200, 120, 0.5);
+}
+
+.colors .hsl {
+  color: hsl(200, 30%, 60%);
+}
+
+.opacity {
+  opacity: 100%;
+  color: black;
+  padding: 50px 0px;
+  /* background-color: rgba(250, 200, 120, 0.5); */
+}
