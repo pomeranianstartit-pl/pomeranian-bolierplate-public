@@ -1,0 +1,24 @@
+.colorName {
+  color: aqua;
+}
+
+.shortenHex {
+  color: #f70;
+}
+
+.normalHex {
+  color: #f22205;
+}
+
+.rgb {
+  color: rgb(200, 150, 100);
+}
+
+.rgba {
+  color: rgba(250, 200, 120, 0.5);
+}
+
+.hsl {
+  color: hsl(200, 30%, 60%);
+}
+
