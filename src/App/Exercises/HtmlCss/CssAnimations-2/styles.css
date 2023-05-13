@@ -76,8 +76,7 @@ flex-grow: 0;
 
 }
 
-@keyframes blinking-square
-{
+@keyframes blinking-square {
   0% {
     width:150px;
     height:150px;
@@ -90,5 +89,6 @@ flex-grow: 0;
 
 100% {
   width:150px;
-    height:150px;
+    height:150px
+}
 }
