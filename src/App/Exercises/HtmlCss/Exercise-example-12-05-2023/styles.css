@@ -1,0 +1,39 @@
+div.selectors {
+  font-size: 20px;
+  text-align: left;
+}
+
+/* div p:last-child {
+  font-size: 15px;
+  color: grey;
+}
+
+div p:nth-child(2n+1) {
+  font-size: 40px;
+  color: red;
+}
+
+a[href*="#"] {
+  border: red 1px solid;
+}
+
+div[data-nickname]:after
+{
+  vertical-align: super;
+  content: "inne" attr(data-position) ".";
+} */
+
+div.hoverable {
+  transition: all .2s ease-in-out;
+}
+
+div.hoverable:hover {
+  transform: scale(1.1);
+  border: solid 3px red;
+}
+
+div.blogposts ol li a {
+  margin-bottom: 10px;
+  text-decoration: none;
+  color: black;
+}

@@ -1,0 +1,61 @@
+.font-test-family {
+  font-family: Chilanka;
+}
+
+.H1 {
+  font-weight: bold;
+  font-size: 2em;
+}
+
+.H3 {
+  font-size: 1.17em;
+  font-weight: bold;
+}
+
+.H5 {
+  font-size: 0.83em;
+  font-weight: bold;
+}
+
+span.power {
+  vertical-align: super;
+  font-size: smaller;
+}
+
+span.bottom {
+  vertical-align: sub;
+  font-size: smaller;
+}
+
+span.bold {
+  font-weight: bold;
+}
+
+span.italic {
+  font-style: italic;
+}
+
+span.underline {
+  text-decoration: underline;
+}
+
+span.quote::before {
+  content: '"';
+}
+
+span.quote::after {
+  content: '"';
+}
+
+span.cross {
+  text-decoration: line-through;
+}
+
+span.list::before {
+    content: '\2022';
+}
+
+span.list::after {
+  content: "\a";
+  white-space: pre;
+}

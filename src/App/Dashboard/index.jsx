@@ -8,6 +8,7 @@ export const Dashboard = () => {
         Strona główna kursanta (o sobie, zdjęcie, opis narzędzi wykorzystywanych
         na kursie oraz umejętności zdobytych na kursie)
       </p>
+      <div>Test styling</div>
     </div>
   );
 };
