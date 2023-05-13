@@ -1,20 +1,26 @@
-.animation{
- width:200px;
- height:200px;
- background-color: green; 
- animation-name: blinking-square;
-
-animation-duration: 2s;
-animation-iteration-count: infinite;
+.colorName {
+  color:red;
+}
+.shortenHex{
+  color:#f60;
+}
+.normalHex{
+  color: #21a243;
+}
+  
+.rgb{
+  color: rgb(256,0,0);
+}
+.rgba{
+  color: rgba(0,256,256, 0.5)
+}
+.hsl{
+  color: hsl(160, 40%, 30%)
 }
 
-@keyframes blinking-square {
- 0% {
-  width:200px;
-  height:200px;
-}
-
-100% {
-  width:500px;
-  height:500px;}
+.opacity{
+  opacity: 100%;
+  background-color: rgba(40, 100, 240, 0.4);
+  color: mintcream;
+  padding: 50px 0px;
 }
