@@ -1,0 +1,46 @@
+div.selectors p.lorem {
+  font-size: 50px;
+  text-align: center;
+  }
+  div.selectors p {
+    font-size: 16px;
+    text-align: left;
+    }
+
+  div p:last-child{
+    font-size:25px;
+    color: grey;
+  }
+
+  div p:last-child:after {
+    content: "Przeczytaj więcej >";
+    display: block;
+    cursor: pointer;
+    color: blue;
+  }
+
+  p.my-custom-arrow.arrow-button {
+    color: red;
+  }
+
+a[href*="#"] {
+  border: red 1px solid;
+}
+
+div[data-position]:after {
+  content: '.' attr(data-position) '.';
+}
+
+
+div.hoverable {
+  transition: all .2s ease-in-out;
+}
+
+div.hoverable:hover {
+  transform: scale(1.1);
+}
+
+:focus {
+  color: rgb(0, 0, 238);
+  outline: none
+}

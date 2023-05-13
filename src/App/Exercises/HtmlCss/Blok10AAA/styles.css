@@ -1,0 +1,65 @@
+.blogposts { 
+
+}
+
+.blogposts .date {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 10.5px;
+  line-height: 24px;
+}
+
+.blogposts h1 {
+  font-style: normal;
+  font-weight: 800;
+  font-size: 42px;
+  line-height: 56px;
+  color: #222222;
+}
+
+.blogposts p {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 27px;
+  color: #222222;
+}
+
+.blogposts .author {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 32px;
+  color: rgba(34, 34, 34, 0.8);
+}
+
+
+
+.blogposts .blogpost {
+  padding: 45px 61px;
+  margin-bottom: 34px;
+}
+
+.blogposts .blogpost:last-child {
+  margin-bottom: 0;
+}
+
+.blogposts .blogpost ul li {
+  margin-bottom: 29px;
+}
+
+.blogposts .blogpost h1 {
+
+}
+
+.blogposts .blogpost span.date {
+
+}
+
+.blogposts .blogpost span.person {
+
+}
+
+.blogposts .blogpost p.job {
+
+}
