@@ -10,6 +10,9 @@ export function ExerciseImages() {
       <img src={png} alt="Pikachu" />
       <img src={jpg} alt="tygrys" />
       <img src={gif} alt="panda" />
+
+      {/* background */}
+      <div className='imageBackground'>TEST</div>
     </div>
   )
 }
