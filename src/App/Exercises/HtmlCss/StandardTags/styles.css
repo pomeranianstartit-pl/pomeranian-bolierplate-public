@@ -1,0 +1,63 @@
+.font-test-family {
+  font-family: Chilanka;
+}
+.Tytuł {
+  font-weight: 800;
+  font-size: 30px;
+  margin-bottom: 30px;
+}
+
+div.podtytul {
+  font-size: 20px;
+  font-weight: 600;
+  margin-bottom: 30px;
+}
+div.pogrubienie {
+  font-weight: 30px;
+  color: red;
+}
+.hydrated{
+  font-weight: bold;
+}
+div.podtytul2{
+
+  font-size: 12px;
+  font-weight: 500;
+  margin-bottom: 30px;
+}
+.kreska{
+  text-decoration: line-through;
+}
+.podkreslenie{
+  text-decoration:underline ;
+}
+
+.Staying {
+  margin-bottom: 30px;
+}
+
+.Make {
+  margin-bottom: 30px;
+}
+.data{
+  margin-bottom: 30px;
+}
+div.unordered-list {
+  margin: 5px 0;
+  padding-left: 10px;
+}
+div.unordered-list > div::before {
+  content: "\2022";
+  position: absolute;
+  left: o
+}
+.quote::before {
+  content: open-quote;
+}
+.quote::after {
+  content: close-quote;
+}
+
+.kropka::before {
+  content: "\2022";
+}
