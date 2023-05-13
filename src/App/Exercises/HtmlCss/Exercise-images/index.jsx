@@ -11,6 +11,11 @@ export function ExerciseImages() {
       <img src={png} alt="nyan cat" />
       <img src={jpg} alt="koty chmurki" />
       <img src={gif} alt="tańczący szkieletor" />
+
+      {/* background url */}
+      <div className='imageBackground'>
+        
+      </div>
     </div>
   )
 }

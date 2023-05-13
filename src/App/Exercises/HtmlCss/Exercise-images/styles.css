@@ -1,3 +1,6 @@
-.font-test-family {
-  font-family: Chilanka;
+.imageBackground {
+  background-image: url('../../../Images/skeleton-dancing-image.gif');
+  width: 500px;
+  height: 500px;
+  opacity: 50%;
 }
