@@ -1,0 +1,9 @@
+.imageBackground {
+  background-image: url('../../../Images/obrazek_JPG.jpg');
+  width: 500px;
+  height: 200px;
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 100%;
+}
