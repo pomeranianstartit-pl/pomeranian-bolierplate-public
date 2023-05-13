@@ -1,3 +1,8 @@
-.font-test-family {
-  font-family: Chilanka;
+.imageBackground {
+  background-image: url('../../../Images/example-png.png');
+  height: 200px;
+  width: 200px;
+  background-size: contain;
+  background-image: no-repeat;
+  background-size: 100%;
 }

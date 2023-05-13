@@ -8,5 +8,8 @@ export function ExerciseImages() {
     <img src={png} alt=""/>
     <img src={gif} alt=""/>
     <img src={jpg} alt=""/>
+
+    {/* backgrounf url */}
+    <div className='imageBackground'></div>
   </div>;
 }
