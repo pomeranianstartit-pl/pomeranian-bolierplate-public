@@ -1,0 +1,26 @@
+.animation {
+  width: 200px;
+  height: 200px;
+  background-color: blueviolet;
+  animation-name: blinking-square;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+}
+
+@keyframes blinking-square {
+  /* Od czego się zaczyna animacja? */
+  0% {
+    width: 200px;
+    height: 200px;
+  }
+
+  33% {
+    background-color: red;
+  }
+
+  /* Na czym się kończy animacja? */
+  100% {
+    width: 300px;
+    height: 300px;
+  }
+}
