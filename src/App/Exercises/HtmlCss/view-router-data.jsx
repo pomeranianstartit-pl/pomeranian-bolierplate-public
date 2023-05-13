@@ -14,5 +14,8 @@ import { blockRouterMetaData as blockRouterMetaData13052023Multimedia} from "./E
 
 import { blockRouterMetaData as blockRouterMetaData1305202Images} from "./Exercise-images/router-data";
 
-export const blockRouterMetaData = [blockRouterMetaData121220231, blockRouterMetaData12052023, blockRouterMetaData13052023, blockRouterMetaData13052023CssAnimations, blockRouterMetaData13052023CssAnimationsFreestyle, blockRouterMetaData13052023Multimedia, blockRouterMetaData1305202Images];
+import { blockRouterMetaData as blockRouterMetaData1305202Props} from "./Exercise-props/router-data";
+
+
+export const blockRouterMetaData = [blockRouterMetaData121220231, blockRouterMetaData12052023, blockRouterMetaData13052023, blockRouterMetaData13052023CssAnimations, blockRouterMetaData13052023CssAnimationsFreestyle, blockRouterMetaData13052023Multimedia, blockRouterMetaData1305202Images, blockRouterMetaData1305202Props];
 export const blockRouterData = getParsedRouterDataList(blockRouterMetaData);
