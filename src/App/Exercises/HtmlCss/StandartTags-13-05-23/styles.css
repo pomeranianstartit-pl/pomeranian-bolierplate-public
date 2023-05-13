@@ -1,0 +1,19 @@
+.font-test-family {
+  font-family: Chilanka;
+}
+.title{
+  font-size: 2em;
+  font-weight: bold;
+}
+
+.date{
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
+/* .quote::before {
+  content:open-quote;
+}
+
+.quote::after {
+  content:open-close;
+} */
