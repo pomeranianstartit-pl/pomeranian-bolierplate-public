@@ -7,7 +7,7 @@ export function ExerciseMultimedia() {
     <h1 className='normalHex'>normalHex</h1>
     <h1 className='rgb'>rgb</h1>
     <h1 className='rgba'>rgba</h1>
-    <h1 className='hs1'>hs1</h1>
+    <h1 className='hsl'>hsl</h1>
    
   </div>
 }

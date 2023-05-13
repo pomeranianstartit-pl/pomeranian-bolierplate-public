@@ -8,10 +8,10 @@ color: aqua;
 color: aqua;
 }
 .rgb{
-color: aqua;
+color: rgb(red, green, blue);
 }
 .rgba{
-color: aqua;
+color: rgba(red, green, blue, alpha);
 }
 .hsl{
 color: hsl(2, 3, 5);
