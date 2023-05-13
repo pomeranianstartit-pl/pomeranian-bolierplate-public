@@ -121,16 +121,6 @@ function dodaj() {
     <input value={argB} onChange={handlerB} placeholder = 'B' />  <br />  
     {odpowiedz} 
 
-
-  
-  
-
-
-  
-
-
-
-
     
       </div>
 
