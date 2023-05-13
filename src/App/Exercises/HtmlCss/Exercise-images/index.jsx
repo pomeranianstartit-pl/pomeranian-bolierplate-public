@@ -9,5 +9,8 @@ export function ExerciseImages() {
     <img src={jpg} alt="Example UFO" />
     <img src={png} alt="Example" />
     <img src={gif} alt="Example" />
+
+    {/* {background url} */}
+    <div className="imageBackground"></div>
   </div>;
 }
