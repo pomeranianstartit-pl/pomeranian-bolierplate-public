@@ -16,6 +16,16 @@ export function ExerciseImages() {
       <div>
         <img src={gif} alt="animacja ognia" />
       </div>
-   </div>
+     
+      {/* // background source url */}
+
+      {/*0 cośwyszło zle i tyle - dlatego to poniżej wykomentowałem */}
+      
+      <div className="imageBackground">test</div>
+      </div>
+  
+  
+    
+
   );
 }
