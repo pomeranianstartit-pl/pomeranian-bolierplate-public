@@ -6,5 +6,7 @@ import { blockRouterMetaData as blockRouterMetaData12052023 } from './Exercise-e
 
 import { blockRouterMetaData as blockRouterMetaData13052023 } from "./Exercise-example-13-05-2023/router-data";
 
-export const blockRouterMetaData = [blockRouterMetaData121220231, blockRouterMetaData12052023, blockRouterMetaData13052023];
+import { blockRouterMetaData as blockRouterMetaData13052023CssAnimations} from "./CssAnimations/router-data";
+
+export const blockRouterMetaData = [blockRouterMetaData121220231, blockRouterMetaData12052023, blockRouterMetaData13052023, blockRouterMetaData13052023CssAnimations];
 export const blockRouterData = getParsedRouterDataList(blockRouterMetaData);
