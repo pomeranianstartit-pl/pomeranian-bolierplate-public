@@ -1,0 +1,28 @@
+.animation {
+  width: 150px;
+  height: 150px;
+  background-color: blue;
+  animation-name: blinking-square;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+  
+
+}
+
+@keyframes blinking-square {
+  0% {
+    width: 150px;
+    height: 150px;
+    opacity: 1;
+  }  
+
+  33% {
+    background-color: red;
+    opacity: 0.5;
+  }
+
+  100% {
+    width: 250px;
+    height: 250px;
+  }
+}
