@@ -1,0 +1,44 @@
+
+
+.title{
+    font-size: xx-large;
+    font-weight: bold;
+    margin-bottom: 10 px;
+    }
+
+.data {
+    font-size:xx-small;
+    font-weight: 300 px;
+    margin-bottom: 10 px;
+}
+.paragraf{
+    margin-top:1 px;
+    font-size: large;  
+}
+.pogrubione{
+    font-weight:bolder;
+}
+.index_dolny{
+    vertical-align: sub;
+    font-size: smaller;
+}
+.index_gorny{
+    vertical-align: super;
+    font-size: smaller;
+}
+.cytat{
+    font-style: italic;
+}
+.przekreslone {
+    text-decoration: line-through;
+}
+.ul {
+    display: block;
+    list-style-type: disc;
+    margin: 16px 0px;
+    padding: 0px 0px 0px 40px;
+}
+  
+.li {
+    display: list-item;
+}
