@@ -50,7 +50,9 @@ export function Blok11_part1() {
       <div className='H1'>
         Tytuł
       </div>
-        <small>05.2023</small>
+        <div className='date'>
+          05.2023
+        </div>
           <div className='H3'>
             H<span className='bottom'>2</span>O is good for you
           </div>
