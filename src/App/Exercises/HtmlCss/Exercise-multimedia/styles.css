@@ -1,0 +1,23 @@
+.colorName {
+  color:red;
+}
+
+.shorteHex {
+  color:#f60;
+}
+
+.normalHex {
+  color:#f10000;
+}
+
+.rgb {
+  color: rgb(256,0,0);
+}
+
+.rgba {
+  color: rgb(256,0,0,0.5);
+}
+
+.hsl {
+  color:hsl(170,50%,50%)
+}
