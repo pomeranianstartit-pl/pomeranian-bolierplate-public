@@ -1,0 +1,79 @@
+.animation1 {
+  width: 300px;
+  height: 300px;
+  animation-name: blinking-image;
+  animation-duration: 3s;
+  animation-iteration-count: infinite;
+}
+
+.animation2 {
+  width: 50px;
+  height: 50px;
+  animation-name: shaking;
+  animation-duration: 3s;
+  animation-iteration-count: infinite;
+}
+
+@keyframes blinking-image {
+  /* Od czego się zaczyna animacja? */
+  0% {
+    width: 300px;
+    height: 300px;
+    transform: scale3d(1, 1, 1);
+  }
+
+  30% {
+		transform: scale3d(1.25, 0.75, 1);
+    transform: translate(50px, 50px);
+	}
+
+	40% {
+		transform: scale3d(0.75, 1.25, 1);
+    transform: translate(75px, -50px);
+	}
+
+	50% {
+		transform: scale3d(1.15, 0.85, 1);
+	}
+
+	65% {
+		transform: scale3d(0.95, 1.05, 1);
+    transform: skew(30deg, 30deg);
+	}
+
+	75% {
+		transform: scale3d(1.05, 0.95, 1);
+    transform: rotate(60deg);
+	}
+
+  /* Na czym się kończy animacja? */
+  100% {
+    width: 300px;
+    height: 300px;
+    transform: scale3d(1, 1, 1);
+  }
+}
+
+@keyframes shaking {
+	0%,
+	100% {
+		transform: translateX(0);
+	}
+
+	70% {
+		transform: translateX(-10px);
+	}
+
+	60% {
+		transform: translateX(10px);
+    color: red;
+	}
+
+	80% {
+		transform: translateX(8px);
+	}
+
+	90% {
+		transform: translateX(-8px);
+	}
+}
