@@ -5,5 +5,6 @@ import { blockRouterMetaData as CssAnimations } from './CssAnimations/router-dat
 import { blockRouterMetaData as CssAnimations2 } from './CssAnimations-2/router-data';
 import { blockRouterMetaData as ExerciseMultimedia} from './Exercise-multimedia/router-data';
 import { blockRouterMetaData as ExerciseImages} from './Exercise-images/router-data';
-export const blockRouterMetaData = [blockRouterMetaData121220231, CssAnimations2, ExerciseMultimedia, ExerciseImages];
+import { blockRouterMetaData as Roundimage} from './Roundimage/router-data';
+export const blockRouterMetaData = [blockRouterMetaData121220231, CssAnimations2, ExerciseMultimedia, ExerciseImages, Roundimage];
 export const blockRouterData = getParsedRouterDataList(blockRouterMetaData);
