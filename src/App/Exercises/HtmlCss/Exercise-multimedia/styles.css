@@ -1,0 +1,25 @@
+.colorName{
+color: aqua;
+}
+.shortenHex{
+color: aqua;
+}
+.normalHex{
+color: aqua;
+}
+.rgb{
+color: rgb(red, green, blue);
+}
+.rgba{
+color: rgba(red, green, blue, alpha);
+}
+.hsl{
+color: hsl(2, 3, 5);
+}
+.opacity{
+  opacity: 50%;
+  color: #000;
+  padding: 50px 0px;
+  background-color: rgba(145, 123, 200)
+  /* zamiast opacity mozna dodać kanał alfa do rgba */
+}
