@@ -1,20 +1,19 @@
-.colorName {
+.colours .colorName {
   color:red;
 }
-.shortenHex{
+.colours .shortenHex{
   color:#f60;
 }
-.normalHex{
+.colours .normalHex{
   color: #21a243;
 }
-  
-.rgb{
+.colours .rgb{
   color: rgb(256,0,0);
 }
-.rgba{
+.colours .rgba{
   color: rgba(0,256,256, 0.5)
 }
-.hsl{
+.colours .hsl{
   color: hsl(160, 40%, 30%)
 }
 

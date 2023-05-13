@@ -2,7 +2,7 @@ import './styles.css';
 
 export function ExerciseMultimedia() {
   return( 
-  <div>
+  <div className="colours">
     <h1 className="colorName">colorName</h1>
     <h1 className="shortenHex">shortenHex</h1>
     <h1 className="normalHex">normalHex</h1>
