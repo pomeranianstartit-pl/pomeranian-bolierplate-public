@@ -12,6 +12,7 @@ export function CssAnimations2() {
     <p className='Occupation'>Specjalista ds.finansowania</p>
    <address><a href='mailto:efrackiewiczowna@rtc.pl'>efranckiewiczowna@rtc.pl</a></address>
    </div>
+   
   )
    
   
