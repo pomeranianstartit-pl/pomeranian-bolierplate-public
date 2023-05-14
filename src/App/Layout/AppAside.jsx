@@ -1,6 +1,8 @@
 import { NavLink } from 'react-router-dom';
 
 import './styles/aside.css';
+import { CalendarIcon } from '../Components/Icons/CalendarIcon';
+import { ReactComponent as Messages } from '../Components/Icons/Messages.svg';
 
 export function AppAside() {
   return (
@@ -20,10 +22,15 @@ export function AppAside() {
             <NavLink to="exercises">Ćwiczenia</NavLink>
           </li>
           <li>
+            <CalendarIcon />
             <NavLink to="kalendarz">Kalendarz</NavLink>
           </li>
           <li>
             <NavLink to="settings">Ustawienia</NavLink>
+          </li>
+          <li>
+            <Messages />
+            <NavLink to="FAQ">FAQ</NavLink>
           </li>
         </ul>
       </nav>
