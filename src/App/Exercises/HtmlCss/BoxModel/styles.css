@@ -6,8 +6,13 @@ padding: 25px 50px;
 /* padding: 5px 25px 5px 25px*/ 
 margin: 25px 50px; 
 /* margin: 5px 25px 5px 25px; */ 
+width: 450px
 }
 
 .inline-span {
   background: bisque
+}
+
+.content-box {
+  box-sizing: content-box;
 }
