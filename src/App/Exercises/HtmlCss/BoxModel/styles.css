@@ -5,9 +5,14 @@
   border-radius: 10px;
   margin: 25px;
   padding: 25px 50px;
+  width: 400px;
 }
 
 .inline-span {
   background-color: bisque;
   display: block;
+}
+
+.content-box {
+  box-sizing: content-box;
 }
