@@ -1,0 +1,27 @@
+.font-test-family {
+  font-family: Chilanka;
+}
+table {
+
+  border-collapse: collapse ;
+}
+
+th {
+  border: 1px solid #dddddd;
+  text-align: left;
+  padding: 10px;
+}
+
+
+
+td {
+  border: 1px solid #dddddd;
+  text-align: left;
+  padding: 10px;
+ 
+}
+
+tr:nth-child(even) {
+  background-color: aliceblue;
+
+}
