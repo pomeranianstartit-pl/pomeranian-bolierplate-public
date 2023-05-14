@@ -1,0 +1,24 @@
+.box-model-base .para { 
+background: rgb(33, 177, 74);
+border: 2px solid black;
+padding: 25px 50px; 
+/* padding: 5px 25px 5px 25px*/ 
+margin: 25px 50px; 
+/* margin: 5px 25px 5px 25px; */ 
+width: 450px
+}
+
+.inline-span {
+  background: bisque
+}
+
+.content-box {
+  box-sizing: content-box;
+
+  max-height: 200px;
+  overflow: auto;
+  max-width:200px;
+}
+.relative-box {
+  
+}
