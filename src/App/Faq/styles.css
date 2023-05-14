@@ -52,3 +52,18 @@
 border: 1px solid #EBEBEB;
 
 }
+
+.arrowButtom {
+
+border: none;
+  
+}
+
+@keyframes arrowButton {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(90deg);
+  }
+}

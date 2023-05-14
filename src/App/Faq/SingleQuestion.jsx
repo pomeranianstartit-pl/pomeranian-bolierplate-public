@@ -1,6 +1,7 @@
 
 import { useState } from 'react';
 import './styles.css';
+import togglearrow from '../Images/chevron-down.svg';
 
 export const SingleQuestion = (props) => {
 
@@ -18,7 +19,13 @@ export const SingleQuestion = (props) => {
   return (
     <div>
    <div className="block">
-        <h2 onClick={clickHandler}>{question} </h2>
+  
+   <button className='arrowButton'>
+    <img  className="arrow"src={togglearrow} alt=""/>
+    </button>
+
+        <h2 onClick={clickHandler}>
+          {question} </h2>
         <hr className='line'></hr>
         {isTrue && 
         <p className="answear-text">
