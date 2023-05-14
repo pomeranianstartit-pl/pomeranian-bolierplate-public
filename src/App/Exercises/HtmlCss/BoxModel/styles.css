@@ -1,0 +1,28 @@
+.box-model-base .paragraph {
+  background-color: green;
+  border: 5px solid black;
+  margin:25px;
+  padding: 5px 25px;
+  margin: 5px 25px;
+  border-radius: 10px;
+  width: 400px;
+}
+
+.inline-span{
+  background-color: bisque;
+}
+
+.content-box {
+  box-sizing: content-box;
+  max-height: 200px;
+  overflow: auto;
+  max-width: 200px;
+}
+
+.relative-box {
+  width: 1rem
+}
+
+.part2 {
+  width: 0,5rem
+}
