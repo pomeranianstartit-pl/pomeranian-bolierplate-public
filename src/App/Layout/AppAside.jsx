@@ -1,4 +1,5 @@
 import { NavLink } from 'react-router-dom';
+import  {CalendarIcon}  from '../Components/Icons/CalendarIcon.jsx';
 
 import './styles/aside.css';
 
@@ -15,7 +16,10 @@ export function AppAside() {
             <NavLink to="blocks">Bloki</NavLink>
           </li>
           <li>
-          <NavLink to="calendar">Calendar</NavLink>
+            <NavLink to="FAQ">FAQ</NavLink>
+          </li>
+          <li>
+          <CalendarIcon to="calendar">Calendar</CalendarIcon>
           </li>
           <li>
           <NavLink to="settings">Settings</NavLink>

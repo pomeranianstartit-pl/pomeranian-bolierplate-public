@@ -9,6 +9,7 @@ import { Blocks } from './App/Blocks';
 import { Layout } from './App/Layout';
 import { Dashboard } from './App/Dashboard';
 import { Exercises } from './App/Exercises';
+import { FAQ } from './App/FAQ';
 
 export function App() {
   return (
@@ -18,6 +19,7 @@ export function App() {
           <Route index element={<Navigate to="dashboard" />} />
           <Route path="dashboard/*" element={<Dashboard />} />
           <Route path ="cv/*" element={<CV />} />
+          <Route path ="FAQ/*" element={<FAQ />} />
           <Route path ="settings/*" element={<Settings />} />
           <Route path ="calendar/*" element={<Calendar />} />
           <Route path="exercises/*" element={<Exercises />} />
