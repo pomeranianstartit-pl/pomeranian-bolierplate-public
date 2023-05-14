@@ -12,7 +12,7 @@ export function BoxModel() {
 
 
   return (
-    <div>
+    <div className='box-model-base'>
       <p className="paragraph" onClick={clickHandler}>
         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc non turpis
         ut arcu porttitor porta. Maecenas vestibulum ex sed ante auctor, sed

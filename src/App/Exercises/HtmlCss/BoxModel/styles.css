@@ -1,4 +1,4 @@
-.paragraph {
+.box-model-base .paragraph {
   background: green;
   padding: 10px;
   margin: 20px;
@@ -7,14 +7,18 @@
   width: 400px;
 }
 
-.content-box{
+.box-model-base  .content-box{
 box-sizing: content-box;
+/* content-box - sposób liczenia szerokości dla zawartości w środku */
+max-height: 200px;
+max-height: 200px;
+overflow: auto
 }
 
 
-.inline-span {
+.box-model-base  .inline-span {
   display: inline;
-  /* możliwość wyświetlania jako blok */
+ 
   background: yellow;
 }
 
