@@ -3,6 +3,7 @@
   /* padding: 50px; */
   border: 2px solid black;
   margin: 25px;
+  width: 400px;
 
   padding: 25px 5px;
   /* padding: 25px 5px 25px 5px; */
@@ -10,4 +11,8 @@
 
 .inline-span {
   background: bisque;
+}
+
+.content-box {
+  box-sizing: content-box;
 }
