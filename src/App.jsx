@@ -10,6 +10,7 @@ import { CV } from './App/CV';
 import { Kalendarz } from './App/Kalendarz';
 import { Exercises } from './App/Exercises';
 import { Settings } from './App/Settings';
+import { FAQ } from './App/FAQ';
 
 export function App() {
   return (
@@ -22,6 +23,7 @@ export function App() {
           <Route path="cv/*" element={<CV />} />
           <Route path="Kalendarz/*" element={<Kalendarz />} />
           <Route path="Settings/*" element={<Settings />} />
+          <Route path="FAQ/*" element={<FAQ />} />
 
           <Route path="exercises/*" element={<Exercises />} />
           <Route path="blocks/*" element={<Blocks />} />
