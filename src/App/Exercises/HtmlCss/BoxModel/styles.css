@@ -1,0 +1,38 @@
+.box-model-base {
+  max-width: 90%;
+}
+
+.box-model-base .paragraph {
+  background-color: green;
+  padding: 50px;
+  border: 5px solid black;
+  border-radius: 10px;
+  margin: 25px;
+  padding: 25px 50px;
+  width: 400px;
+}
+
+.box-model-base .inline-span {
+  background-color: bisque;
+  display: block;
+}
+
+.box-model-base .content-box {
+  box-sizing: content-box;
+  background-color: aqua;
+  max-height: 200px;
+  overflow: scroll;
+  /* overflow: hidden; */
+  max-width: 200px;
+}
+
+.box-model-base .relative-box {
+  background-color: pink;
+  width: 100%;
+  padding: 10em;
+}
+
+.box-model-base .relative-box2 {
+  background-color: rgb(103, 177, 152);
+  width: 50em;
+}
