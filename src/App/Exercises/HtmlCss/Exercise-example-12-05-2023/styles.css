@@ -1,0 +1,47 @@
+div.selectors p.lorem {
+font-size: 30px;
+}
+
+div.selectors section div p.lorem {
+ color:blanchedalmond; 
+}
+
+
+div p:last-child:after {
+ /* content:"Przeczytaj więcej>" ; */
+  display: block;
+  cursor: pointer;
+  color: blue;
+  text-align: center;
+}
+div p:last-child {
+  font-size: 25px;
+  color:rgb(72, 72, 167);
+}
+p.my-custom-arrow.arrow-button {
+  color: red;
+}
+
+a[href*="#"] {
+  border: red 1px solid;
+}
+
+div [name-nickname=""]:after {
+  content: '.' attr(name-nickname)'.';
+}
+
+div.hoverable {
+  transition: all 2.s ease-in-out;
+}
+
+div.hoverable:hover {
+  transform: scale (1.1);
+}
+
+a:focus {
+  color: red;
+
+}
+
+
+
