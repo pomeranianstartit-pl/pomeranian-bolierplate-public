@@ -1,0 +1,17 @@
+.paragraph {
+  background: green;
+  padding: 10px;
+  margin: 20px;
+  border: 10px solid black;
+  border-radius: 50px;
+}
+
+.inline-span {
+  display: block;
+  /* możliwość wyświetlania jako blok */
+  background: yellow;
+}
+
+/* display: non - element chowany przez style ale jest renderowany na stronie */
+/* display: inline - element wyswietlany jako inline*/
+/* display: block- element wyswietlany jako block*/
