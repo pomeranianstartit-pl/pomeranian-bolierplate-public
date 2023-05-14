@@ -9,7 +9,7 @@ export function BoxModel() {
   };
 
   return (
-    <div>
+    <div className="box-model-base">
       <p className="paragraph" onClick={clickHandler}>
         Lorem Ipsum is simply dummy text of the printing and typesetting
         industry. Lorem Ipsum has been the industry's standard dummy text ever
