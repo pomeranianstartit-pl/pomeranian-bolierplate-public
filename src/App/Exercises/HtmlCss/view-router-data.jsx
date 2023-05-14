@@ -6,7 +6,8 @@ import { blockRouterMetaData as standardTags } from './StandardTags/router-data'
 import { blockRouterMetaData as CSSAnimation } from './CSSAnimation/router-data';
 import { blockRouterMetaData as ExerciseMultimedia } from './Exercise-multimedia/router-data';
 import { blockRouterMetaData as ExerciseImages } from './Exercise-images/router-data';
+import {blockRouterMetaData as ExerciseTabele } from '../HtmlCss/HTMLTables/router-data'
 import { blockRouterMetaData as ExerciseProps } from '../../Components/RoundImage/router-data';
 import {blockRouterMetaData as BoxModel} from '../../Exercises/HtmlCss/BoxModel/router-data'
-export const blockRouterMetaData = [blockRouterMetaData121220231,blockRouterMetaData12052023, standardTags, CSSAnimation, ExerciseMultimedia, ExerciseImages, ExerciseProps, BoxModel];
+export const blockRouterMetaData = [blockRouterMetaData121220231,blockRouterMetaData12052023, standardTags, CSSAnimation, ExerciseMultimedia, ExerciseImages, ExerciseProps, BoxModel, ExerciseTabele];
 export const blockRouterData = getParsedRouterDataList(blockRouterMetaData);
