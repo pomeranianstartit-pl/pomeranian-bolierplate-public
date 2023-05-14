@@ -6,6 +6,7 @@ import { blockRouterMetaData as blockRouterMetaDataStandardTags } from './Standa
 import { blockRouterMetaData as blockRouterMetaCssAnimations } from './CssAnimations/router-data';
 import { blockRouterMetaData as blockRouterMetaMultimedia } from './ExerciseMultimedia/router-data';
 import { blockRouterMetaData as blockRouterMetaImages } from './ExercisesImages/router-data';
+import { blockRouterMetaData as blockRouterMetaBoxModel } from './BoxModel/router-data';
 
 export const blockRouterMetaData = [
   blockRouterMetaData121220231,
@@ -14,5 +15,6 @@ export const blockRouterMetaData = [
   blockRouterMetaCssAnimations,
   blockRouterMetaMultimedia,
   blockRouterMetaImages,
+  blockRouterMetaBoxModel,
 ];
 export const blockRouterData = getParsedRouterDataList(blockRouterMetaData);
