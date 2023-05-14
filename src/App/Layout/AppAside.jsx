@@ -1,6 +1,9 @@
 import { NavLink } from 'react-router-dom';
 
 import './styles/aside.css';
+// import Faq from 'src/App/Components/Icons/FaqIcon.jsx';
+
+
 
 export function AppAside() {
   return (
@@ -15,6 +18,10 @@ export function AppAside() {
           </li>
           <li>
             <NavLink to="exercises">Ćwiczenia</NavLink>
+          </li>
+          <li>
+       
+            <NavLink to="Faq">FAQ</NavLink>
           </li>
         </ul>
       </nav>
