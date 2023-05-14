@@ -12,6 +12,8 @@ import { blockRouterMetaData as blockRouterMetaDataExerciseMultimedia } from './
 import { blockRouterMetaData as Images } from './Exercise-images/router-data';
 import { blockRouterMetaData as blockRouterMetaDataBoxModel } from './BoxModel/router-data';
 
+import { blockRouterMetaData as blockRouterMetaDataArrayOfObjects } from './ArrayRenderToTable/router-data';
+
 export const blockRouterMetaData = [
   blockRouterMetaData121220231,
   blockRouterMetaData12052023,
@@ -21,5 +23,6 @@ export const blockRouterMetaData = [
   blockRouterMetaDataExerciseMultimedia,
   Images,
   blockRouterMetaDataBoxModel,
+  blockRouterMetaDataArrayOfObjects
 ];
 export const blockRouterData = getParsedRouterDataList(blockRouterMetaData);
