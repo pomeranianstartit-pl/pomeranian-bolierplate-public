@@ -1,4 +1,4 @@
-.paragraph{
+.box-model-base .paragraph{
   background: green;
   border: 2px solid black;
   margin: 50px 25px;
@@ -7,11 +7,11 @@
   width: 300px;
 
 }
-.inline-span{
+.box-model-base .inline-span{
   display: none;
   background: bisque;
 
 }
-.content-box{
+.box-model-base .content-box{
   box-sizing: content-box;
 }
