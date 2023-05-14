@@ -10,7 +10,20 @@ import { blockRouterMetaData as exerciseMultimedia } from './Exercise-multimedia
 import { blockRouterMetaData as exerciseImages } from './Exercise-images/router-data';
 import { blockRouterMetaData as exerciseComponents } from './Exercise-components/router-data';
 import { blockRouterMetaData as boxModel } from './BoxModel/router-data';
+import { blockRouterMetaData as HTMLTables } from './HTMLTables/router-data';
 
-export const blockRouterMetaData = [blockRouterMetaData121220231,blockRouterMetaData12052023, blockRouterMetaData12052023AAA, standardTags, CssAnimations, CssAnimations2, exerciseMultimedia, exerciseImages, exerciseComponents, boxModel];
+export const blockRouterMetaData = [
+  blockRouterMetaData121220231,
+  blockRouterMetaData12052023,
+  blockRouterMetaData12052023AAA,
+  standardTags,
+  CssAnimations,
+  CssAnimations2,
+  exerciseMultimedia,
+  exerciseImages,
+  exerciseComponents,
+  boxModel,
+  HTMLTables,
+];
 
 export const blockRouterData = getParsedRouterDataList(blockRouterMetaData);
