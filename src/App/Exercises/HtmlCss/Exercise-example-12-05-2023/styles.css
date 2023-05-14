@@ -22,12 +22,12 @@ div p:lastchild{
 div p:nth-child(odd){
   font-weight: bold;
 }
-div p:last-child:after{
+/* div p:last-child:after{
   content:"Przeczytaj więcej>";
   color:blue;
   cursor:pointer;
   display:block;
-}
+} */
 
 a [href="#"] {
 border: red 5px solid;
