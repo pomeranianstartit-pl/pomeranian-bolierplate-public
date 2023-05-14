@@ -18,3 +18,11 @@
   overflow: auto;
   max-width: 200px;
 }
+
+.relative-box {
+  width: 1rem
+}
+
+.part2 {
+  width: 0,5rem
+}
