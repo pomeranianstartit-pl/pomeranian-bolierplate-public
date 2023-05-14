@@ -1,0 +1,33 @@
+.box-model-base {
+  font-size: 20px;
+}
+
+.box-model-base .paragraph {
+  background: green;
+  /* padding: 50px; */
+  border: 2px solid black;
+  margin: 25px;
+  width: 400px;
+
+  padding: 10px 25px;
+  /* padding: 10px 25px 10px 25px; */
+}
+
+.box-model-base .inline-span {
+  background: bisque;
+}
+
+.box-model-base .content-box {
+  box-sizing: content-box;
+  overflow: auto;
+  max-width: 200px;
+  font-size: 1.2em;
+  height: 300px;
+}
+
+.box-model-base .relative-box {
+  box-sizing: content-box;
+  overflow: auto;
+  max-width: 200px;
+  font-size: 1.2rem;
+}
