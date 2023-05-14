@@ -1,11 +1,12 @@
-.paragraph {
+.box-model-base .paragraph {
   background:green;
   /* padding: 50px; */
   border: 15px solid black;
   /* margin: 25px; */
-  width:400px;
-  
-  padding: 5px 25px;
+  max-width:400px;
+  max-height:350px;
+
+    padding: 5px 25px;
 /* padding: 5px 25px 5px 25px; */
 
   margin: 5px 25px;
@@ -14,11 +15,26 @@
   border-radius: 100px;
 }
 
-.inline-span{
+.box-model-base .inline-span{
   display: block;
   background: bisque;
 }
 
-.content-Box{
+.box-model-base .content-Box{
   box-sizing: content-box;
+  max-width: 200px;
+  max-height: 250px;
+  overflow: auto;
+}
+ .relative-Box{
+  box-sizing: content-box;
+  max-width: 2.5rem;
+  max-height: 28em;
+  overflow: auto;
+}
+.relative-Box1{
+  box-sizing: content-box;
+  max-width: 0.8em;
+  max-height: 2.5rem;
+  overflow: auto;
 }
