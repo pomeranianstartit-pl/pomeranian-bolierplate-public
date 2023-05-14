@@ -12,12 +12,12 @@ div.selectors p.lorem {
     color: grey;
   }
 
-  div p:last-child:after {
+  /* div p:last-child:after {
     content: "Przeczytaj więcej >";
-    display: block;
+    display:block;
     cursor: pointer;
     color: blue;
-  }
+  } */
 
   p.my-custom-arrow.arrow-button {
     color: red;
