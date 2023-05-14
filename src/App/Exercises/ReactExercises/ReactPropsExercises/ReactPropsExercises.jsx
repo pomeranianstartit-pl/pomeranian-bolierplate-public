@@ -1,14 +1,13 @@
 import React from 'react';
 
-import png from '../../../Images/pikachu.png'
-import jpg from '../../../Images/tiger.jpg'
-import gif from '../../../Images/panda.gif'
-import { RoundImage } from '../../../Components/RoundImage/RoungImage'
+import png from '../../../Images/pikachu.png';
+import jpg from '../../../Images/tiger.jpg';
+import gif from '../../../Images/panda.gif';
+import { RoundImage } from '../../../Components/RoundImage/RoungImage';
 
 import './style.css';
 
 export function ExerciseImages() {
-
   const images = [
     {
       title: 'To jest png!',
@@ -16,7 +15,7 @@ export function ExerciseImages() {
       width: 50,
       height: 50,
       color: 'red',
-      margin: '100px'
+      margin: '100px',
     },
     {
       title: 'To jest jpg!',
@@ -33,7 +32,7 @@ export function ExerciseImages() {
       height: 250,
       color: '#4F5',
       margin: '200px',
-    }
+    },
   ];
 
   return (
@@ -46,7 +45,7 @@ export function ExerciseImages() {
           height={el.height}
           color={el.color}
           margin={el.margin}
-          />
+        />
       ))}
     </div>
   );
