@@ -2,12 +2,16 @@
   background: green;
   border: 2px solid black;
   margin: 50px 25px;
-  padding: 50px 50px,;
+  padding: 50px 50px;
   border-radius: 10px;
+  width: 300px;
 
 }
 .inline-span{
   display: none;
   background: bisque;
 
+}
+.content-box{
+  box-sizing: content-box;
 }
