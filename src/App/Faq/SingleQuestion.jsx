@@ -7,10 +7,12 @@ export const SingleQuestion = (props) => {
   const question = props.question
   const answear = props.answear
 
+  // definiujemy propsy
+
   const [isTrue, setIsTrue] = useState(true);
   const clickHandler = () => {
       setIsTrue(!isTrue)}
-
+// przypisujemy funkcje 
 
 
   return (
@@ -22,6 +24,7 @@ export const SingleQuestion = (props) => {
         <p className="answear-text">
            {answear} </p>}
       </div>
-    </div>
+    </div> 
+    // struktura html w której umieszczamy nasze propsy, treść definiujemy w pliku index
   );
 };

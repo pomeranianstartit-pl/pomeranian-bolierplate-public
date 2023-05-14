@@ -25,8 +25,9 @@ export const Faq = () => {
      answear={  "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Eleifend rutrum ipsum, leo et in. Mattis porttitor volutpat placera  suspendisse ante in cursus etiam ullamcorper. Sollicitudin egestas  aliquam, adipiscing adipiscing iaculis habitant. Viverra pretiu tincidunt nisl pellentesque ut adipiscing non.Lorem ipsum dolor sit amet, consectetur adipiscing elitnLorem ipsum dolor sit amet, consectetur adipiscing elit. Eleifen"
      }
      />
+     {/* definiujemy treść komponentu w propsach */}
 
-<SingleQuestion
+    <SingleQuestion
      question={"Jak zapisać się mna kurs?"}
      answear={  "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Eleifend rutrum ipsum, leo et in. Mattis porttitor volutpat placera  suspendisse ante in cursus etiam ullamcorper. Sollicitudin egestas  aliquam, adipiscing adipiscing iaculis habitant. Viverra pretiu tincidunt nisl pellentesque ut adipiscing non.Lorem ipsum dolor sit amet, consectetur adipiscing elitnLorem ipsum dolor sit amet, consectetur adipiscing elit. Eleifen"
      }
