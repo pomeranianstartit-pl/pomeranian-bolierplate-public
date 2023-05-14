@@ -1,9 +1,9 @@
 .faq div {
 margin:5px;
-padding:20px;
-border: 3px black solid;
+padding:1px;
+border: 3px black solid;    
 border-radius: 10px;
-max-width: 600px;
+max-width: 1000px;
 }
 .faq h1 li{
     list-style-type:"<"

@@ -1,13 +1,13 @@
 import { NavLink } from 'react-router-dom';
 
 import './styles/aside.css';
-import {CalendarIcon} from '../Components/Icons/CalendarIcon';
-import {PersonalCardIcon} from '../Components/Icons/PersonalCardIcon';
-import {ElementIcon} from '../Components/Icons/ElementIcon';
-import {HouseIcon} from '../Components/Icons/HouseIcon';
-import {EditIcon} from '../Components/Icons/EditIcon';
-import {SettingIcon} from '../Components/Icons/SettingIcon';
-
+import { CalendarIcon } from '../Components/Icons/CalendarIcon';
+import { PersonalCardIcon } from '../Components/Icons/PersonalCardIcon';
+import { ElementIcon } from '../Components/Icons/ElementIcon';
+import { HouseIcon } from '../Components/Icons/HouseIcon';
+import { EditIcon } from '../Components/Icons/EditIcon';
+import { SettingIcon } from '../Components/Icons/SettingIcon';
+import { ReactComponent as FaqIcon } from '../Components/Icons/messages.svg';
 
 export function AppAside() {
   return (
@@ -15,30 +15,42 @@ export function AppAside() {
       <nav>
         <ul>
           <li>
-            <HouseIcon/>
-            <NavLink to="dashboard">Dashboard</NavLink>
+            <NavLink to="dashboard">
+              <HouseIcon />Dashboard
+            </NavLink>
           </li>
           <li>
-            <PersonalCardIcon/>
-            <NavLink to="CV">CV</NavLink>
+            <NavLink to="CV">
+              <PersonalCardIcon />
+              CV
+            </NavLink>
           </li>
           <li>
-            <ElementIcon/>
-            <NavLink to="blocks">Bloki</NavLink>
+            <NavLink to="blocks">
+              <ElementIcon />
+              Bloki
+            </NavLink>
           </li>
           <li>
-            <EditIcon/>
-            <NavLink to="exercises">Ćwiczenia</NavLink>
-          </li>
-          <li> <CalendarIcon/>
-            <NavLink to="Kalendarz">Kalendarz</NavLink>
+            <NavLink to="exercises">
+              <EditIcon />Ćwiczenia
+            </NavLink>
           </li>
           <li>
-            <SettingIcon/>
-            <NavLink to="Settings">Ustawienia</NavLink>
+            <NavLink to="Kalendarz">
+              <CalendarIcon />Kalendarz
+            </NavLink>
           </li>
           <li>
-            <NavLink to="FAQ">FAQ</NavLink>
+            <NavLink to="Settings">
+              <SettingIcon />Ustawienia
+            </NavLink>
+          </li>
+          <li>
+            <NavLink to="FAQ">
+              <FaqIcon />
+              FAQ
+            </NavLink>
           </li>
         </ul>
       </nav>

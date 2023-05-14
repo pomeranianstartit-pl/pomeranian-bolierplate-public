@@ -7,17 +7,12 @@ export const SingleQuestion = (props) => {
    
   const question = props.question
   const answer = props.answer
-  const [isTrue, setIsTrue] = useState(true);
+  const [isTrue, setIsTrue] = useState(false);
   const clickHandler = () => {
     setIsTrue(!isTrue);
   }
 
   return (
-    // <div>
-    //   <h2>{question}</h2>  
-    //   <p>{answer}</p>
-    // </div>
-
 <div>
 <p>
   <h4>
