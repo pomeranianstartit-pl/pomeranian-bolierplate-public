@@ -1,7 +1,7 @@
 .box-model-base .paragraph {
   background-color: green;
   border: 5px solid black;
-  margin:25px;
+  /* margin:25px; */
   padding: 5px 25px;
   margin: 5px 25px;
   border-radius: 10px;
