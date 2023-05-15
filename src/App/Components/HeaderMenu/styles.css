@@ -1,0 +1,17 @@
+.header-menu {
+  display: flex;
+  gap: 17px;
+  align-items: center;
+}
+.header-user1 {
+  display: flex;
+  justify-content: flex-start;
+  font-size: small;
+}
+.header-user2 {
+  display: flex;
+  justify-content: flex-start;
+  gap: 1px;
+  font-size: 0.6em;
+  color: gray;
+}

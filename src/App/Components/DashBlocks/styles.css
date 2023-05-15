@@ -1,0 +1,16 @@
+.dashblocks {
+  background: #ffffff;
+  border: 0.66px solid #fe3756;
+  border-radius: 8px;
+  background-color: rgb(255, 249, 237);
+  text-align: center;
+  width: 202px;
+  height: 192px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 20px 28px;
+}
+.dblock:hoover {
+  background-color: lightsalmon;
+}
