@@ -1,8 +1,8 @@
 import './styles.css';
 
-export function HTMLTables() {
+export function ArrayRenderToTable() {
   return (
-    <table className="Tabela1">
+    <table className="Tabela2">
       <tr>
         <th>Plastic</th>
         <th>Acetone</th>
