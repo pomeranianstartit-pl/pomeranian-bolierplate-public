@@ -1,0 +1,22 @@
+.container {
+  background-color: rgb(49, 6, 100);
+  color: white;
+  padding: 5% 10%;
+  position: absolute;
+  z-index: 1;
+  left: 0px;
+  bottom: 0px;
+  display: flex;
+}
+.header-paragraph {
+  font-weight: bold;
+}
+.cookie-icon {
+  float: left;
+}
+@media (max-width: 600px) {
+  .container {
+    font-size: 70%;
+    height: 40%;
+  }
+}

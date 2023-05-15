@@ -8,5 +8,13 @@ export const blockRouterMetaData = {
   linkLabel: 'HTML & CSS - Cookie banner',
   blockNo: 16,
   element: <CookieBanner />,
-  tags: ['z-index'],
+  tags: [
+    'z-index',
+    'positioning',
+    'css',
+    'float',
+    'absolute',
+    'fixed',
+    'relative',
+  ],
 };
