@@ -10,6 +10,7 @@ import { blockRouterMetaData as blockRouterData090520232 } from './ImageFiles/ro
 import { blockRouterMetaData as blockRouterData090520233 } from './Background/router-data';
 import { blockRouterMetaData as blockRouterMetaData10052023 } from './BoxModel/router-data';
 import { blockRouterMetaData as blockRouterMetaData15052023 } from './CookieBanner/router-data';
+import { blockRouterMetaData as blockRouterMetaData16052023 } from './ArrayRendering/router-data';
 export const blockRouterMetaData = [
   blockRouterMetaData121220231,
   blockRouterMetaData05052023,
@@ -20,5 +21,6 @@ export const blockRouterMetaData = [
   blockRouterData090520233,
   blockRouterMetaData10052023,
   blockRouterMetaData15052023,
+  blockRouterMetaData16052023,
 ];
 export const blockRouterData = getParsedRouterDataList(blockRouterMetaData);
