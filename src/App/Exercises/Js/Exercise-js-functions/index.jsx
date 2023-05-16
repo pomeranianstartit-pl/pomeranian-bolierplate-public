@@ -1,6 +1,36 @@
 import './styles.css';
 
 export function Exercise() {
+  const list = [
+    {
+      name: 'Wojtek',
+      surname: 'Abc',
+      age: 48,
+    },
+    {
+      name: 'Kasia',
+      surname: 'Cbd',
+      age: 28,
+    },
+  ];
+  function displayList(list) {
+    return list.map((listElement) => {
+      const test = 'test';
+      return (
+        <div>
+          Moje imię to {listElement.name}, nazwisko {listElement.surname}. Mam{' '}
+          {listElement.age} lat
+        </div>
+      );
+    });
+    // list.map((listElement) => (
+    //   <div>
+    //     Moje imię to {listElement.name}, nazwisko {listElement.surname}. Mam {listElement.age} lat
+    //   </div>
+    // ))
+  }
+  // w kodzie JXS w return :{displayList(list)}
+
   function multiply(num1, num2) {
     return num1 * num2;
   }
@@ -11,6 +41,11 @@ export function Exercise() {
 
   return (
     <div>
+      <section>
+        <h2>Lista ludzi w tablicy</h2>
+        {displayList(list)}
+      </section>
+
       <p>Definiowanie funkcji</p>
       <pre>
         <code>
