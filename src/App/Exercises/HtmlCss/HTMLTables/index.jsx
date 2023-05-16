@@ -13,7 +13,7 @@ export function ExerciseTabele() {
   <body>
   <a>1. the following data were collected by a group of students as they tested four different typs of plastic</a>
   
-<table>
+<table className='table2'>
   <tr>
     <th>Plastic</th>
     <th>Acetone</th>

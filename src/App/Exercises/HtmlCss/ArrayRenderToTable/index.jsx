@@ -37,45 +37,35 @@ export function ArrayRenderToTable() {
       yearFormed: 1976,
       albums: 11,
       mostFamousSong: 'Hong Kong Garden',
-    },
-  ];
-  return (
+    },]
+
+      return (
     <html>
       <head></head>
       <body>
-        <table>
+        <table> 
           <tr>
             <th>band</th>
             <th>yearFormed</th>
             <th>albums</th>
             <th>mostFamousSong</th>
           </tr>
-          <tr>
-            <td>Alfreds Futterkiste</td>
-            <td>Maria Anders</td>
-            <td>Germany</td>
-            <td>Germany</td>
-          </tr>
-          <tr>
-            <td>Centro comercial Moctezuma</td>
-            <td>Francisco Chang</td>
-            <td>Mexico</td>
-            <td>Mexico</td>
-          </tr>
-          <tr>
-            <td>Ernst Handel</td>
-            <td>Roland Mendel</td>
-            <td>Austria</td>
-            <td>Mexico</td>
-          </tr>
-          <tr>
-            <td>Island Trading</td>
-            <td>Helen Bennett</td>
-            <td>UK</td>
-            <td>Mexico</td>
-          </tr>
         </table>
       </body>
+      <div>{displaylist(bands)}</div>
     </html>
+    
   );
-}
+      }
+  function displaylist(bands) {
+    return bands.map((bandsElement)=> (
+      <table>
+        <tr>
+          <td>{bandsElement.band}</td>
+          <td>{bandsElement.yearFormed}</td>
+          <td>{bandsElement.albums}</td>
+          <td>{bandsElement.mostFamousSong}</td>
+        </tr>
+      </table>
+    ))
+  }
