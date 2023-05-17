@@ -1,16 +1,73 @@
-.dashblocks {
-  background: #ffffff;
-  border: 0.66px solid #fe3756;
-  border-radius: 8px;
-  background-color: rgb(255, 249, 237);
-  text-align: center;
+.dashblockitem {
+  padding: 19px 20px;
+  gap: 10px;
+
   width: 202px;
-  height: 192px;
+  height: 180px;
+  left: 0px;
+  top: 0px;
+
+  background: #ffffff;
+  /* gray/300 */
+
+  border: 0.66px solid #c8cbd1;
+  border-radius: 8px;
+  box-shadow: 1px 1px lightgrey;
+}
+.dashblocks {
   display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  padding: 20px 28px;
+  gap: 10px;
+  align-content: flex-start;
+  flex-wrap: wrap;
 }
 .dblock:hoover {
   background-color: lightsalmon;
+}
+.headerDashBlock {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 34px;
+  /* or 189% */
+
+  text-align: center;
+
+  /* primary/primary */
+
+  color: #fe3756;
+}
+.DashBlockIcon {
+  display: block;
+  margin: auto;
+  text-align: center;
+}
+.DashBlockText {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 20px;
+  /* or 167% */
+
+  text-align: center;
+
+  color: #000000;
+}
+.DashBlockSeeMore {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 24px;
+  /* or 171% */
+
+  text-align: center;
+
+  /* primary/primary-medium */
+
+  color: #ff4d69;
+
+  /* Inside auto layout */
+
+  flex: none;
+  order: 0;
+  flex-grow: 0;
 }

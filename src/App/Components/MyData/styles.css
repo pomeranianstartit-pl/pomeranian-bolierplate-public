@@ -1,1 +1,13 @@
+.personalinfocardright {
+  width: 334px;
+  height: 360px;
+  left: 0%;
+  right: 0%;
+  top: 0%;
+  bottom: 0%;
 
+  /* Colors / White / 100% */
+
+  background: #ffffff;
+  border-radius: 10px;
+}

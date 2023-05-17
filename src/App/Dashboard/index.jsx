@@ -1,5 +1,4 @@
 import { DashBlocks } from '../Components/DashBlocks/DashBlocks';
-import { MyData } from '../Components/MyData/MyData';
 import { HelloIcon } from '../Components/Icons/HelloIcon';
 import './styles.css';
 
@@ -15,9 +14,6 @@ export const Dashboard = () => {
       </p>
       <p>
         <DashBlocks />
-      </p>
-      <p>
-        <MyData />
       </p>
     </div>
   );

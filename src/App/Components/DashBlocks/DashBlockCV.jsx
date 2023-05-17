@@ -4,13 +4,13 @@ import { PersonalCardIcon } from '../Icons/PersonalCardIcon';
 export const DashBlockCV = () => {
   return (
     <div>
-      <div className="dashblocks">
-        <div>Moje CV</div>
-        <div>
+      <div className="dashblockitem">
+        <div className="headerDashBlock">Moje CV</div>
+        <div className="DashBlockIcon">
           <PersonalCardIcon />
         </div>
-        <div>podgląd cv wraz z doświadczeniem</div>
-        <div>zobacz więcej ❱</div>
+        <div className="DashBlockText">podgląd cv wraz z doświadczeniem</div>
+        <div className="DashBlockSeeMore">zobacz więcej ❱</div>
       </div>
     </div>
   );

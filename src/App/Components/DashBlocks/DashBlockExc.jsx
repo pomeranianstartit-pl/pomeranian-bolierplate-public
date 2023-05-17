@@ -4,13 +4,13 @@ import { EditIcon } from '../Icons/EditIcon';
 export const DashBlockExc = () => {
   return (
     <div>
-      <div className="dashblocks">
-        <div>Ćwiczenia</div>
-        <div>
+      <div className="dashblockitem">
+        <div className="headerDashBlock">Ćwiczenia</div>
+        <div className="DashBlockIcon">
           <EditIcon />
         </div>
-        <div>wszystkie wykonane ćwiczenia</div>
-        <div>zobacz więcej ❱</div>
+        <div className="DashBlockText">wszystkie wykonane ćwiczenia</div>
+        <div className="DashBlockSeeMore">zobacz więcej ❱</div>
       </div>
     </div>
   );
