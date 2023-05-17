@@ -9,6 +9,7 @@ import { CV } from './App/CV';
 import { Exercises } from './App/Exercises';
 import { Kalendarz } from './App/Kalendarz';
 import { Ustawienia } from './App/Ustawienia';
+import { Faq } from './App/Faq';
 
 export function App() {
   return (
@@ -23,6 +24,7 @@ export function App() {
           <Route path="kalendarz/*" element={<Kalendarz />} /> 
           <Route path="ustawienia/*" element={<Ustawienia />} />
           <Route path="*" element={<NotFound />} />
+          <Route path="faq/*" element={<Faq />} />
         </Route>
       </Routes>
     </BrowserRouter>
