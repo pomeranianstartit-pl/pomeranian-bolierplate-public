@@ -33,12 +33,12 @@ export const Logo = () => {
       <path
         d="M37 11.642L18.5093 28.5918C18.2355 28.8428 18.2355 29.2745 18.5093 29.5255L37 46.4753"
         stroke="white"
-        stroke-width="9.5"
+        strokeWidth="9.5"
       ></path>
       <path
         d="M37 11.642L18.5093 28.5918C18.2355 28.8428 18.2355 29.2745 18.5093 29.5255L37 46.4753"
         stroke="#FE3756"
-        stroke-width="9.5"
+        strokeWidth="9.5"
       ></path>
     </svg>
   );

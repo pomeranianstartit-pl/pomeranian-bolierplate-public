@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import './styles.css';
 import { CookieIcon } from './CookieIcon';
 
@@ -13,13 +13,18 @@ export function CookiesBanner() {
   function checkCookieData() {
     return localStorage.getItem('CookieState');
   }
-  if (checkCookieData()) {
-    setCookieBannerHidden(true);
-  }
+  useEffect(() => {
+    if (checkCookieData()) {
+      setCookieBannerHidden(true);
+    }
+  }, []);
+
   return (
     <div
       className={
-        CookieBannerHidden ? 'cookie-banner cookie-hidden' : 'cookie-banner'
+        CookieBannerHidden
+          ? 'cookie-banner cookie-hidden'
+          : 'cookie-banner cookie-visible'
       }
     >
       <div className="cookie-banner-content">

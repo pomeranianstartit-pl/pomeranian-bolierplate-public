@@ -8,8 +8,8 @@ export const HeaderMenu = () => {
       <SettingIcon />
       <GitHubIcon />
       <div>
-        <h className="header-user1">Michał</h>
-        <h className="header-user2">kursant</h>
+        <h1 className="header-user1">Michał</h1>
+        <h1 className="header-user2">kursant</h1>
       </div>
       <ToggleArrow />
     </div>
