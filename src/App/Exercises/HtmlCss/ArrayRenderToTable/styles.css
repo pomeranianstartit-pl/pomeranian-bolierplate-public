@@ -2,9 +2,20 @@
     font-family: Arial, Helvetica, sans-serif;
     border-collapse: collapse;
     width: auto;
-    border: 2px solid black;
-    text-align: center;
-    padding: 1rem;
+    border: 1.41471px solid #FFD5DB;
+    align-items: center;
     margin-left: auto;
     margin-right: auto;
     }
+
+    tr:nth-child(2n) {
+        background-color:#FFFFFF;
+      }
+
+      tr:nth-child(2n+1) {
+        background-color: #FFD5DB;
+      }
+
+      .tableHeader {
+        background-color:#F5F5F5 !important;
+      }
