@@ -1,9 +1,10 @@
 import { NavLink } from 'react-router-dom';
 
 import './styles/aside.css';
-// import Faq from 'src/App/Components/Icons/FaqIcon.jsx';
 
 
+// import { ReactComponent as HouseIcon } from '../Components/Icons/HouseIcon.jsx';
+// import { ReactComponent as FaqIconSVG } from '../Components/Icons/FaqIcon.jsx';
 
 export function AppAside() {
   return (
@@ -12,6 +13,7 @@ export function AppAside() {
         <ul>
           <li>
             <NavLink to="dashboard">Dashboard</NavLink>
+            {/* <HouseIcon /> */}
           </li>
           <li>
             <NavLink to="blocks">Bloki</NavLink>
@@ -25,7 +27,9 @@ export function AppAside() {
           </li>
         </ul>
       </nav>
+      {/* <FaqIconSVG /> */}
       <p style={{ padding: '1rem 0' }}>Sidebar items, widgets, etc</p>
     </aside>
+    
   );
 }
