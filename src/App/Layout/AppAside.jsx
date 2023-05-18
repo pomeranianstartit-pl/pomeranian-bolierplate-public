@@ -2,6 +2,7 @@ import { NavLink } from 'react-router-dom';
 
 import './styles/aside.css';
 import { CalendarIcon } from '../Components/Icons/CalendarIcon';
+import { SettingIcon } from '../Components/Icons/SettingIcon';
 import { ReactComponent as Messages } from '../Components/Icons/Messages.svg';
 
 export function AppAside() {
@@ -26,6 +27,7 @@ export function AppAside() {
             <NavLink to="kalendarz">Kalendarz</NavLink>
           </li>
           <li>
+            <SettingIcon />
             <NavLink to="settings">Ustawienia</NavLink>
           </li>
           <li>
