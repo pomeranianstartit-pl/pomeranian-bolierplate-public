@@ -61,6 +61,8 @@ function displaylist(bands) {
 
 return (
   <div>
+    <h1>  &lt; RATING</h1>
+    <h5>Ćwiczenie z tworzenia tabeli</h5>
     <div className="box">
     <table className="headerTable">
       <tr>
