@@ -2,11 +2,6 @@ import './styles.css';
 import { SingleQuestion } from './SingleQuestion';
 
 export const FAQ = () => {
-  // const [isTrue, setIsTrue] = useState(true);
-
-  // const clickHandler = () => {
-  //   setIsTrue(!isTrue);
-
   return (
     <div>
       <h1 className="FAQ">FAQ</h1>
