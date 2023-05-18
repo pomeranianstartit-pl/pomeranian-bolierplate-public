@@ -15,3 +15,10 @@
   font-size: 0.6em;
   color: gray;
 }
+.profilepicheader {
+  width: 49px;
+  height: 49px;
+  top: 31px;
+  left: 1205px;
+  border-radius: 50%;
+}

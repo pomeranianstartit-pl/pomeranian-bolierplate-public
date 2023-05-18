@@ -1,13 +1,35 @@
 .personalinfocardright {
   width: 334px;
   height: 360px;
-  left: 0%;
-  right: 0%;
-  top: 0%;
-  bottom: 0%;
-
   /* Colors / White / 100% */
 
   background: #ffffff;
   border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 3px;
+}
+.profilepicmydata {
+  width: 90px;
+  height: 90px;
+  border-radius: 50%;
+}
+.MyNameDashright {
+  font-weight: 500;
+  size: 22px;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 22px;
+  line-height: 33px;
+  color: #23213d;
+}
+.MyInfoDashright {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+
+  color: #000000;
+  mix-blend-mode: normal;
+  opacity: 0.4;
 }

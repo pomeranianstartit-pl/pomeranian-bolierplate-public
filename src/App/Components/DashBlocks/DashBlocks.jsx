@@ -9,27 +9,25 @@ import { MyData } from '../MyData/MyData';
 export const DashBlocks = () => {
   return (
     <div>
-      <div className="dashblocks">
-        <p>
-          <DashBlockCV />
-        </p>
-        <p>
-          <DashBlockExc />
-        </p>
-        <p>
-          <DashBlockBlog />
-        </p>
-        <p>
-          <DashBlockTechStack />
-        </p>
-        <p>
-          <DashBlockFAQ />
-        </p>
-      </div>
       <div>
-        <p>
-          <MyData />
-        </p>
+        <MyData className="MyDataPosition" />
+      </div>
+      <div className="dashblocks">
+        <div>
+          <DashBlockCV />
+        </div>
+        <div>
+          <DashBlockExc />
+        </div>
+        <div>
+          <DashBlockBlog />
+        </div>
+        <div>
+          <DashBlockTechStack />
+        </div>
+        <div>
+          <DashBlockFAQ />
+        </div>
       </div>
     </div>
   );
