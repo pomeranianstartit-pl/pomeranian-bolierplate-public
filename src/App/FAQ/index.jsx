@@ -37,3 +37,4 @@ export const FAQ = () => {
     </div>
   );
 };
+// komentarz
