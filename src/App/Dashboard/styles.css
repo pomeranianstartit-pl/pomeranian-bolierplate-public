@@ -12,6 +12,15 @@
   line-height: 38px;
   color: #fe3756;
 }
+.MyDataPosition {
+  position: absolute;
+  right: 0;
+  top: 10;
+}
+.DashBlocksPosition {
+  position: absolute;
+  width: 1000px;
+}
 .dashboard {
-  background-color: #ebe1e2;
+  width: 700px;
 }

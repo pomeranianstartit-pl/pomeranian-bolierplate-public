@@ -71,7 +71,3 @@
   order: 0;
   flex-grow: 0;
 }
-.MyDataPosition {
-  position: fixed;
-  right: 0;
-}

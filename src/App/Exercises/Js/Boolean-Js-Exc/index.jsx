@@ -62,6 +62,7 @@ export function BooleanExc1() {
   };
 
   ///------------------------------------------------------------------------------
+
   return (
     <div>
       <div>Operatory logiczne</div> <hr />
