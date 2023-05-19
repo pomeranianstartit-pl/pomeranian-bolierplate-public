@@ -8,5 +8,5 @@ export const blockRouterMetaData = {
   linkLabel: 'BoxModel',
   blockNo: 14,
   element: <BoxModel />,
-tags: ['box-model', 'display', 'overflow'],
+  tags: ['box-model', 'display', 'overflow'],
 };

@@ -11,6 +11,8 @@ import { CV } from './App/CV';
 import { Kalendar } from './App/Kalendarz';
 import { Settings } from './App/Settings';
 import { FAQ } from './App/FAQ';
+import { TechStack } from './App/Components/TechStack/TechStack';
+
 
 export function App() {
   return (
@@ -19,6 +21,7 @@ export function App() {
         <Route path="" element={<Layout withSidebar />}>
           <Route index element={<Navigate to="dashboard" />} />
           <Route path="dashboard/*" element={<Dashboard />} />
+          <Route path="dashboard/tech-stack*" element={<TechStack />} />
           <Route path="CV/*" element={<CV />} />
           <Route path="exercises/*" element={<Exercises />} />
           <Route path="blocks/*" element={<Blocks />} />

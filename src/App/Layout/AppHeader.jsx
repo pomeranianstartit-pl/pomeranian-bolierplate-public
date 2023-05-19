@@ -1,14 +1,13 @@
 import React from 'react';
-import {Logo} from '../Components/Logo/Logo';
+import { Logo } from '../Components/Logo/Logo';
 import './styles/header.css';
+import { HeaderMenu } from '../Components/HeaderMenu/HeaderMenu';
 
 export function AppHeader() {
   return (
     <header>
-      <div>
-        <Logo/>
-        <div className="header-title">Tytuł nagłówka</div>
-      </div>
+      <Logo />
+      <HeaderMenu />
     </header>
   );
 }

@@ -1,0 +1,10 @@
+.dashboard .dashboard-about-me {
+  padding-top: 5rem;
+}
+.dashboard .dashboard-about-me .person {
+  background: url(http://placekitten.com/500/500) no-repeat center center;
+  background-size: 11rem;
+  border-radius: 50%;
+  height: 7rem;
+  width: 7rem;
+}
