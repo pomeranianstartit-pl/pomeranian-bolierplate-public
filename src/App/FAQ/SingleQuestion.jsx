@@ -5,20 +5,22 @@ export const SingleQuestion = (props) => {
   const answear = props.answear;
 
   const [IsOpen, setIsOpen] = useState(true);
+
   const clickHandler = () => {
     setIsOpen(!IsOpen);
-    
   };
+  function chevron_change() {
+    Chevron_down.style.transformOrigin = 'center';
+    Chevron_down.style.transform = 'rotate(-90deg)';
+  }
 
   return (
     <div>
       <div>
         <button onClick={clickHandler}>
-          {' '}
-          <Chevron_down />{' '}
+          <Chevron_down />
         </button>
       </div>
-
       <div className="box">
         <h1 className="header">{question}</h1>
 
