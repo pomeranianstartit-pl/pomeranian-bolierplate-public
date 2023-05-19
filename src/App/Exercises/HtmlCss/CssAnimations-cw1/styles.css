@@ -1,0 +1,66 @@
+@import './styles.css';
+
+.position1 {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 100px;
+  height: 100px;
+  background-color: red;
+  animation: moveX 2s infinite alternate;
+}
+
+.position2 {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 100px;
+  height: 100px;
+  background-color: blue;
+  animation: moveY 2s infinite alternate;
+}
+
+.position3 {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 100px;
+  height: 100px;
+  background-color: green;
+  animation: rotate 2s infinite linear;
+}
+
+.circle {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  background-color: orange;
+  animation: scale 2s infinite alternate;
+}
+
+@keyframes moveX {
+  0% { transform: translateX(-50%); }
+  100% { transform: translateX(50%); }
+}
+
+@keyframes moveY {
+  0% { transform: translateY(-50%); }
+  100% { transform: translateY(50%); }
+}
+
+@keyframes rotate {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+@keyframes scale {
+  0% { transform: scale(1); }
+  100% { transform: scale(1.5); }
+}
