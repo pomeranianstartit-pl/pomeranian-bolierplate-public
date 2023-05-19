@@ -1,17 +1,15 @@
 import React from 'react';
-
-import { Logo } from '../Components/Logo/Logo';
+import { HeaderMenu } from '../Components/HeaderMenu/HeaderMenu';
 
 import './styles/header.css';
+import { Logo } from '../Components/Logo/Logo';
+
 
 export function AppHeader() {
   return (
     <header>
-      <div>
-        <Logo />
-        {/* <Logo></Logo> */}
-        <div className="header-title">Tytuł nagłówka</div>
-      </div>
+      <Logo />
+      <HeaderMenu />
     </header>
   );
 }
