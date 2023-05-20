@@ -8,7 +8,7 @@ export function HeaderMenu (){
     
     <div class="images-container">
       <div class="name">
-      <h4>Juan Pablo Wassermiller </h4>
+      <h4>Juan Pablo Wassermüller </h4>
       <h5>Mściciel</h5>
       </div>
       <SettingIcon />

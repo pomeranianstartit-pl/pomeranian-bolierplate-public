@@ -18,7 +18,7 @@
   padding-right: 5rem;
 }
 
-.dashboard .dashboard-tiles > div {
+.dashboard .dashboard-tiles > div .Navlink {
   margin: 2rem;
 
   padding: 2rem;

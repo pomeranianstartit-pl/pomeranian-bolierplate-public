@@ -1,6 +1,6 @@
-import './styles/dashboard-about-me.css';
-import './styles/dashboard-tech-stack.css';
-import './styles/dashboard-tiles.css';
+// import './styles/dashboard-about-me.css';
+// import './styles/dashboard-tech-stack.css';
+// import './styles/dashboard-tiles.css';
 // import { MyData } from './MyData/MyData';
 // import { Blocks } from './Blocks/Blocks';
 
@@ -26,8 +26,9 @@ import { Blocks } from './Blocks/Blocks';
 export const Dashboard = () => {
   return (
     <div className="dashboard">
-       <Blocks />
-       <MyData />{' '}
+      <Blocks />
+      <MyData />
+      {''}
     </div>
   );
 };
