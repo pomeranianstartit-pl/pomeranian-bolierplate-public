@@ -20,9 +20,9 @@ header.header-title {
     font-weight: normal;
   }
   
-header .logo {
+/* header .logo {
 
-  }
+  } */
 
 header .images-container {
     display: flex;
