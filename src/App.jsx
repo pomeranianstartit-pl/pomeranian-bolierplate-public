@@ -10,6 +10,7 @@ import { Exercises } from './App/Exercises';
 import { Kalendarz } from './App/Kalendarz';
 import { Ustawienia } from './App/Ustawienia';
 import { Faq } from './App/Faq';
+/* import TechStack from './App/Components/TechStack'; */
 
 export function App() {
   return (
