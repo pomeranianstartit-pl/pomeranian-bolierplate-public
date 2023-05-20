@@ -7,6 +7,7 @@ export function ExerciseImages() {
     <div>
       <img src={jpg} alt="labadz" />
       <img src={gif} alt="example" />
+      <div className="imageBackground"> </div>
     </div>
   )
 }

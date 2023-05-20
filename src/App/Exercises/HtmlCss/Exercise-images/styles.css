@@ -1,0 +1,12 @@
+.imageBackground {
+    background-image: url('../../../Images/exercise-images-1.jpg');
+    width: 500px;
+    height: 500px;
+    background-size:30%;
+    background-position-x: 100px;
+    background-repeat: no-repeat;
+    animation-name: flying;
+    animation-iteration-count: infinite;
+    animation-duration: 5s;
+    animation-timing-function: linear;
+}
