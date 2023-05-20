@@ -9,13 +9,21 @@
 }
 .dashboard .dashboard-tech-stack-grid {
   display: grid;
-  grid-template-columns: repeat(6, 1fr);
-  gap: 2rem;
+  grid-template-columns: repeat(7, 1fr);
+  gap: 1rem;
+  align-items: center;
+
+.dashboard-tech-stack-element {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
 }
 .dashboard .dashboard-tech-stack-flex {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  padding-right: 5rem;
+  padding-right: 2rem;
   gap: 2rem;
 }
