@@ -1,6 +1,7 @@
 import './styles.css';
 import { SettingIcon } from '../Icons/SettingIcon';
-import { MenuArrow } from '../Icons/MenuArrow';
+// import { MenuArrow } from '../Icons/MenuArrow';
+import { RightCornerMenuPopup  } from '../RightCornerMenuPopup/RightCornerMenuPopup'
 
 export function HeaderMenu() {
   return (
@@ -15,7 +16,8 @@ export function HeaderMenu() {
         <h4>Jakub Kruk</h4>
         <h5>kurasnt</h5>
       </div>
-      <MenuArrow className="menu-arrow" />{' '}
+      < RightCornerMenuPopup />
+      {/* <MenuArrow className="menu-arrow" />{' '} */}
     </div>
   );
 }

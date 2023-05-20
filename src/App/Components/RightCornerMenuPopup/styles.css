@@ -1,0 +1,89 @@
+.arrow {
+    border: none;
+    margin: 0;
+    padding: 0;
+    width: auto;
+    overflow: visible;
+    background: transparent;
+    color: inherit;
+    font: inherit;
+    line-height: normal;
+    -webkit-font-smoothing: inherit;
+    -moz-osx-font-smoothing: inherit;
+    -webkit-appearance: none;
+    position: relative;
+}
+
+&::-moz-focus-inner {
+    border: 0;
+    padding: 0;
+}
+.arrow {
+    position: relative;
+    z-index: 1;
+
+
+}
+
+.loginContainer {
+
+position: absolute;
+ height: 211px;
+top: 10px;
+right: 30px;
+border-radius: 4px;
+padding: 67px 35px 35px 35px;
+background-color: #FFFFFF ;
+
+width: 396px;
+height: 211px;
+
+filter: drop-shadow(0px 4px 10px rgba(0, 0, 0, 0.07))
+drop-shadow(0px 3px 46px rgba(0, 0, 0, 0.06));
+
+
+
+}
+
+.Login {
+    
+    height: 56px;
+    width: 326px;
+    border-radius: 8px;
+    background-color: #FE3756;
+    border-color: #FE3756;
+   font-family: 'Poppins' ;
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 31px;
+    letter-spacing: 0em;
+    text-align: center;
+    color: #FFFFFF;
+
+
+   
+   
+
+
+
+    
+}
+
+.loginContainer .ButtonContainer
+
+{
+  display: flex;
+}
+
+.p {
+
+font-family: 'Poppins';
+font-style: Medium ;
+font-size: 15px;
+Line-height: 21px;
+text-align: center;
+
+
+
+}
+

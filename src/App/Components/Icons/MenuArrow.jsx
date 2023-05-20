@@ -16,6 +16,6 @@ export function MenuArrow({ className = '' }) {
         />{' '}
       </svg>
     );
-  }
+  
 }
 
