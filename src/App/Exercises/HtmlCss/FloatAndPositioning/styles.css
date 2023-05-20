@@ -1,0 +1,90 @@
+.div2 {
+  /* Ważne - zachowanie względem tego elementu a nie całego drzewa DOM. Rozumiem to tak, że nadanie relatywnej pozycji w tym miejscu ustala "lokalny układ współrzędnych" w miejscu położenia rodzica, a co za tym idzie, atrybuty zmiany położenia każdego dziecka odnoszą się do tego układu zamiast globalnego */
+  position: relative;
+  margin: 50px 0px;
+  padding: 17px 21px;
+  background: #ebebeb;
+}
+
+.div2_div1 {
+  padding: 12.375px 19.9375px;
+  width: 242.88px;
+  background: #ffd5db;
+  border: 2px solid grey;
+
+  /* Ustawienie absolutne względem rodzica */
+  position: absolute;
+  right: -154px;
+  top: -74px;
+}
+
+.div3 {
+  background: #ffd5db;
+  width: 984px;
+  height: 279px;
+  padding: 25px 25px;
+}
+
+.div3 img {
+  float: left;
+  width: 230px;
+  height: 230px;
+  border-radius: 8px;
+}
+
+.div3 img:after {
+  content: '.';
+  visibility: hidden;
+  display: block;
+  height: 0;
+  clear: both;
+}
+
+.div4 {
+  position: relative;
+  color: #ffffff;
+  margin: 50px 0px;
+  padding: 17px 21px;
+  background: #4b5563;
+}
+
+.div4_div1 {
+  color: #4b5563;
+  position: fixed;
+  border: 2px solid grey;
+  background: #ffd5db;
+  right: 150px;
+  top: 250px;
+}
+
+.div6 {
+  padding: 25px 0px;
+  border: 2px solid black;
+}
+
+.div6_div {
+  margin-top: 30px;
+  width: 50px;
+  height: 50px;
+  background-color: #c8cbd1;
+  border: 2px solid #ebebeb;
+  border-radius: 8px;
+}
+
+.div_relative {
+  position: relative;
+}
+
+.div_absolute {
+  position: absolute;
+  left: 20px;
+  bottom: 20px;
+  background: #999999;
+}
+
+.div_absolute:nth-of-type(2) {
+  left: 40px;
+  bottom: 40px;
+  background: #6b7280;
+  border-color: #c8cbd1;
+}
