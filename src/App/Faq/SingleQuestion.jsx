@@ -20,11 +20,12 @@ export const SingleQuestion = (props) => {
     <div>
    <div className="block">
   
-   <button className='arrowButton'>
+  
+
+        <h2 > 
+        <button className='arrowButton' onClick={clickHandler}>
     <img  className="arrow"src={togglearrow} alt=""/>
     </button>
-
-        <h2 onClick={clickHandler}>
           {question} </h2>
         <hr className='line'></hr>
         {isTrue && 
