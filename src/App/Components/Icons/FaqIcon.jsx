@@ -1,3 +1,6 @@
+export function FaqIcon ({ className = '' }) {
+    return (
+
 <svg 
 width="18" 
 height="19"
@@ -11,3 +14,6 @@ height="19"
  stroke-linecap="round" 
  stroke-linejoin="round"/>
 </svg>
+  );
+}
+
