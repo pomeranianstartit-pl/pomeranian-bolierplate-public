@@ -10,7 +10,7 @@
 .dashboard .dashboard-tech-stack-grid {
   display: grid;
   grid-template-columns: repeat(7, 1fr);
-  gap: 1rem;
+  gap: 3rem;
   align-items: center;
 
 .dashboard-tech-stack-element {

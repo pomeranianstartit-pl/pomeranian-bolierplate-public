@@ -43,11 +43,11 @@ export const TechStack = () => {
             </div>
             <div className='dashboard-tech-stack-element'>
               <img src={tsSvg} alt="typescript" />{' '}
-              <p>Type Script</p>
+              <p>TypeScript</p>
             </div>
             <div className='dashboard-tech-stack-element'>
               <img src={jsSvg} alt="javascript" />{' '}
-              <p>Java Script</p>
+              <p>JavaScript</p>
             </div>
             <div className='dashboard-tech-stack-element'>
               <img src={reactSvg} alt="react" />{' '}
