@@ -2,6 +2,7 @@ import React from 'react';
 
 import './styles/header.css';
 import { HeaderMenu } from '../Components/HeaderMenu/HeaderMenu';
+
 // import { SettingIcon } from '../Icons/SettingIcon';
 
 const Logo = () => (
