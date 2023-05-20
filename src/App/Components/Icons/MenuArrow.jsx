@@ -1,4 +1,5 @@
 export function MenuArrow({ className = '' }) {
+
     return (
       <svg
         width="20"
@@ -16,3 +17,5 @@ export function MenuArrow({ className = '' }) {
       </svg>
     );
   }
+}
+

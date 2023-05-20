@@ -1,4 +1,5 @@
 header {
+
     grid-area: header;
     position: relative;
     z-index: 1;
@@ -71,3 +72,4 @@ header {
   
     color: #999999;
   }
+
