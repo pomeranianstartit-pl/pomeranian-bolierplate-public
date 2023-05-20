@@ -23,24 +23,81 @@ export const TechStack = () => {
           {'< Tech stack'}
         </Link>
         <p>
-          Poniżej znajdziesz tech stack oraz nadzędzia, jakich nauczylem się podczas kursu
+          Poniżej znajdziesz tech stack oraz nadzędzia, jakich nauczylem się
+          podczas kursu
         </p>
         <div className="dashboard-tech-stack-flex">
-          <img src={vector} alt="css" />
-          <img src={html} alt="html" />
-          <img src={ts} alt="type_script" />
-          <img src={jsSvg} alt="javascript" />
-          <img src={react} alt="react" />
-          <img src={github} alt="github" />
-          <img src={firebase} alt="firebase" />
-          <img src={jira} alt="jira" />
-          <img src={bitbucket} alt="bitbucket" />
-          <img src={redux} alt="redux" />
-          <img src={discord} alt="discord" />
-          <img src={vscode} alt="vscode" />
-          <img src={redmine} alt="redmine" />
-          <img src={git} alt="git" />
+          <div>
+            <img src={vector} alt="css" />
+            <br />
+            <p>css</p>
           </div>
+          <div>
+            <img src={html} alt="html" />
+            <br />
+            <p>html</p>
+          </div>
+          <div>
+            <img src={ts} alt="type_script" />
+            <br />
+            <p>type script</p>
+          </div>
+          <div>
+            <img src={jsSvg} alt="javascript" />
+            <br />
+            <p>java script</p>
+          </div>
+          <div>
+            <img src={react} alt="react" />
+            <br />
+            <p>react</p>
+          </div>
+          <div>
+            <img src={github} alt="github" />
+            <br />
+            <p>github</p>
+          </div>
+          <div>
+            <img src={firebase} alt="firebase" />
+            <br />
+            <p>firebase</p>
+          </div>
+          <div>
+            <img src={jira} alt="jira" />
+            <br />
+            <p>jira</p>
+          </div>
+          <div>
+            <img src={bitbucket} alt="bitbucket" />
+            <br />
+            <p>bitbucket</p>
+          </div>
+          <div>
+            <img src={redux} alt="redux" />
+            <br />
+            <p>redux</p>
+          </div>
+          <div>
+            <img src={discord} alt="discord" />
+            <br />
+            <p>discord</p>
+          </div>
+          <div>
+            <img src={vscode} alt="vscode" />
+            <br />
+            <p>v studio</p>
+          </div>
+          <div>
+            <img src={redmine} alt="redmine" />
+            <br />
+            <p>redmine</p>
+          </div>
+          <div>
+            <img src={git} alt="git" />
+            <br />
+            <p>GIT</p>
+          </div>
+        </div>
       </div>
     </div>
   );

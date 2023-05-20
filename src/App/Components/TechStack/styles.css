@@ -7,15 +7,14 @@
 .dashboard .dashboard-tech-stack-container p {
   margin-bottom: 3rem;
 }
-.dashboard .dashboard-tech-stack-grid {
-  display: grid;
-  grid-template-columns: repeat(6, 1fr);
-  gap: 2rem;
-}
 .dashboard .dashboard-tech-stack-flex {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  padding-right: 5rem;
-  gap: 2rem;
+  display: grid;
+  grid-gap: 1rem;
+  grid-template-columns: repeat(7, 10rem);
+}
+.dashboard .dashboard-tech-stack-flex img {
+  align-items: center;
+}
+.dashboard .dashboard-tech-stack-flex p {
+  color: black;
 }
