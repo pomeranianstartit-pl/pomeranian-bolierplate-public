@@ -12,7 +12,7 @@ export function FloatsAndPositioning() {
         {' '}
         <p>
           {' '}
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+          Lorem ipsum dolor ssadsdit amet, consectetur adipiscing elit, sed do
           eiusmod tempor incididunt ut labore et dolore magna aliqua. Nibh
           mauris cursus mattis molestiea iaculis at. Dictum varius duis at
           consectetur lorem donec.{' '}
