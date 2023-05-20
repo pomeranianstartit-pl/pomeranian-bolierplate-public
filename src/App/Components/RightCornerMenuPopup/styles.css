@@ -1,0 +1,22 @@
+.container {
+  position: relative;
+}
+
+.menu-arrow {
+  display: inline-block;
+  cursor: pointer;
+}
+
+.popup {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 8px 0px;
+  gap: 6px;
+  isolation: isolate;
+  position: absolute;
+  width: 396px;
+  height: 211px;
+  left: 0px;
+  top: 0px;
+}
