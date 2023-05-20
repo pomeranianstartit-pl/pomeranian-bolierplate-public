@@ -1,6 +1,6 @@
 import React from 'react';
 
-import { Exercise, ExerciseMultimedia } from './index';
+import { /*Exercise, */ExerciseMultimedia } from './index';
 
 export const blockRouterMetaData = {
   path: '12-12-2023-multimedia',
