@@ -14,6 +14,8 @@ export function Exercise() {
   // Math.min()
   // Math.max()
   // Math.ceil()
+  // parseInt() - zmienia string na liczbę całkowitą
+  // parseFloat() - zamienia string na liczbę zmienno-przecinkową
 
   return <div></div>;
 }
