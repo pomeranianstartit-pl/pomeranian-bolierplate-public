@@ -1,3 +1,60 @@
-.cookie_wrapper {
-    padding: 88px 120 px 86px 120px;
+.cookie_wrapper { 
+    width: 100%; 
+    padding: 80px 120px 86px 120px; 
+    grid-area: footer; 
+    background: #23213D; 
+    display: flex; 
+    justify-content: space-between; 
+    position: fixed; 
+    bottom: 0; 
+    color: #FFFFFF; 
 }
+ .cookie_wrapper h4 { 
+    font-weight: 600; 
+    font-size: 18px; 
+    line-height: 32px; 
+} 
+.cookie_wrapper { 
+    line-height: 26px; 
+}
+ .cookie_content .content_icon { 
+    float: left; 
+    width: 76px; 
+    height: 76px; 
+    margin-top: 40px; 
+    margin-right: 30px; 
+} 
+.cookie_permisions button { 
+    border-radius: 8px; 
+    font-weight: 600; 
+    font-size: 13px; 
+} 
+.permisions_accept { 
+    margin-right: 40px; 
+    background: #FE3756; 
+    padding: 20px 36px; 
+    color: #F6F6F6; 
+    border: 2px solid #FE3756; 
+} 
+.permisions_reject { 
+    background: #FFFFFF; 
+    padding: 20px 36px; 
+    color: #FE3756; 
+    border: 2px solid #FFFFFF; 
+} 
+@media screen and (max-width: 1196px) { 
+    .cookie_wrapper { 
+        flex-direction: column; 
+    } } 
+    @media screen and (max-width: 1440px) { 
+        .cookie_content { max-width: 579px; } } 
+        @media screen and (min-width: 1440px) { 
+            .cookie_content { max-width: 850px; } } 
+            @media screen and (min-width: 1196px)
+            { 
+.cookie_permisions { 
+display: flex; 
+align-items: center; 
+} 
+.permisions_accept { 
+    margin-right: 16px; } }
