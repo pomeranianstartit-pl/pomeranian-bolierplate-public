@@ -1,25 +1,25 @@
 import './styles.css';
 
 export function Exercise() {
-  let x = 10;
-  x = x + 5;
+  // let x = 10;
+  // x = x + 5;
   // x += 5 to samo
-  const isValid = true;
+  // const isValid = true;
 
-  //negacja
-  const notValid = !isValid;
+  // negacja
+  // const notValid = !isValid;
 
-  if (x == 5) {
-    //console.log(magia)
-  } else {
-    //console.log(brak magii)
-  }
+  // if (x == 5) {
+  //   console.log('magia')
+  // } else {
+  //   console.log('brak magii')
+  // }
 
-  if (x > 5) {
-    //console.log(magia)
-  } else {
-    //console.log(brak magii)
-  }
+  // if (x > 5) {
+  //console.log(magia)
+  // } else {
+  //console.log(brak magii)
+  // }
   //CONDITIONAL (TERNERY) OPERATOR
   // (x > 5) ? console.log('większe od 5');
 
