@@ -14,10 +14,10 @@ div p:last-child:after {
   color: blue;
   text-align: center;
 }
-div p:last-child {
+/* div p:last-child {
   font-size: 25px;
-  color:rgb(72, 72, 167);
-}
+  color:rgb(72, 72, 167); }*/
+
 p.my-custom-arrow.arrow-button {
   color: red;
 }
