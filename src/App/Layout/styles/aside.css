@@ -23,7 +23,8 @@ aside li {
   flex-direction: row;
   align-items: center;
   text-decoration: none;
-  color: black;
+  font-weight: 500;
+  color: var(--color-english-violet);
 }
 
 aside li a {
@@ -32,11 +33,12 @@ aside li a {
 }
 
 aside a.active {
-  background-color: var(--color-pink);
+  background-color: var(--color-sky-magenta-light);
   color: var(--color-white);
 }
 
 .menu-icon {
   margin-right: 10px;
-  fill: var(--color-magenta);
+  stroke: var(--color-english-violet);
+  fill: var(--color-sky-magenta-light);
 }
