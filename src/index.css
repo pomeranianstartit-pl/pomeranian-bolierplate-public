@@ -6,6 +6,12 @@
   --color-black: #000000;
   --color-grey: rgb(60, 64, 67);
   --color-white: rgb(255, 255, 255);
+  /* my palette */
+  --color-champagne-pink: #fee1cf;
+  --color-tiffany-blue: #66d7d1;
+  --color-english-violet: #403d58;
+  --color-sky-magenta: #c45baa;
+  --color-sky-magenta-light: #c585b3;
 }
 
 body {
