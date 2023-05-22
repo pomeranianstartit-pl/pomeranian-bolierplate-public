@@ -5,7 +5,6 @@ export function Exercise() {
   // let age = 18;
   // let hasDriverLicense = true;
   // let hasCar = true;
-
   // function canDrive(age, hasDriverLicense, hasCar) {
   //   if (age >= 18) {
   //     if (hasDriverLicense) {
@@ -21,7 +20,6 @@ export function Exercise() {
   //     return 'You are too young to drive';
   //   }
   // }
-
   // Funkcja uproszczona (odgnieżdżona?) przez dodanie operatorów logicznych, bez użycia odwracania warunku
   // function canDrive(age, hasDriverLicense, hasCar) {
   //   if (age >= 18 && hasDriverLicense == true && hasCar == true) {
@@ -34,13 +32,11 @@ export function Exercise() {
   //     return 'You are too young to drive';
   //   }
   // }
-
   // Funkcja także uproszczona, jednak z zastosowaniem odwracania warunku
   //   function canDrive(age, hasDriverLicense, hasCar) {
   //     if (age < 18) {
   //       return 'You are too young to drive';
   //     }
-
   //     if (!(hasDriverLicense && hasCar)) {
   //       if (!hasDriverLicense) {
   //         return "You can't drive without a driver's license";
@@ -50,7 +46,6 @@ export function Exercise() {
   //     }
   //     return 'You can drive your car';
   //   }
-
   //   function hasEnough(hasEnough) {
   //     if (hasEnough) {
   //       return true;
@@ -58,42 +53,31 @@ export function Exercise() {
   //       return false;
   //     }
   //   }
-
   //   console.log(canDrive(age, hasDriverLicense, hasCar));
-
   //   return <div>{canDrive(age, hasDriverLicense, hasCar)}</div>;
   // }
-
   // canDrive(18, true, true) => 'You can drive your car';
   // hasEnough(true) => true
-
   // Zadanie 2
   //   let string = 'doomslayer1234';
-
   //   function isStringShort(string) {
   //     if (string.length < 10) {
   //       return 'true - podany string jest krótszy niż 10';
   //     }
-
   //     return 'false - podany string jest dłuższy lub równy 10';
   //   }
   //   return <div>{isStringShort(string)}</div>;
   // }
-
   // Zadanie 3 - obliczanie pola koła przy podanym promieniu
   //   const radius = 5;
-
   //   function radiusIs(radius) {
   //     const area = Math.PI * Math.pow(radius, 2);
   //     return area;
   //   }
-
   //   return <div>Pole koła wynosi: {radiusIs(radius)}</div>;
   // }
-
   // Zadanie 4
   //   const ocena = 6;
-
   //   function gradeIs(ocena) {
   //     if (ocena == 1) {
   //       return 'jedynka';
@@ -113,11 +97,9 @@ export function Exercise() {
   //   }
   //   return <div>Twoja ocena to: {gradeIs(ocena)}</div>;
   // }
-
   // Zadanie 5.1 - uwzględniam tu jedynie zbiór dwóch liczb
   //   const N1 = 5;
   //   const N2 = 3;
-
   //   function greaterNumberIs(N1, N2) {
   //     if (N1 > N2) {
   //       return N1;
@@ -129,10 +111,8 @@ export function Exercise() {
   //     <div>Najwyższa liczba z podanego zbioru to: {greaterNumberIs(N1, N2)}</div>
   //   );
   // }
-
   // Zadanie 5.2 - uwzględniłem już nieograniczony zbiór liczb
   //   const numbers = [1, 5, 9, 2, 100, 50];
-
   //   function compareNr(a, b) {
   //     return a - b;
   //   }
@@ -140,10 +120,8 @@ export function Exercise() {
   //   console.log(sorted);
   //   const greatestNum = sorted.pop();
   //   console.log(greatestNum);
-
   //   return <div>Najwyższa liczba z podanego zbioru to: {greatestNum}</div>;
   // }
-
   // Zadanie 6 - mnożymy wynik razy 10000, przez co czwarta liczba po przecinku wyniku jest teraz przed przecinkiem. Math.floor ucina miejsca po przecinku i pozostaje najniższa liczba całkowita. Gdy podzielimy ten rezultat także przez 10000 to otrzymamy pożądany wynik.
   //   function sumFloat(num1, num2) {
   //     let sum = num1 + num2;
@@ -152,7 +130,6 @@ export function Exercise() {
   //   }
   //   let result = sumFloat(3.14159, 2.71828);
   //   console.log(result);
-
   //   return (
   //     <div>
   //       Suma podanych liczb do 4. miejsca po przecinku bez zaokrąglania to:{' '}
@@ -160,25 +137,55 @@ export function Exercise() {
   //     </div>
   //   );
   // }
+  // Zadanie 7 - równanie kwadratowe
+  //   const a = 1;
+  //   const b = 4;
+  //   const c = 3;
+  //   function równanieKwadratowe() {
+  //     const delta = b * b - 4 * a * c;
+  //     console.log(delta);
+  //     if (delta > 0) {
+  //       const x1 = (-b + Math.sqrt(delta)) / (2 * a);
+  //       const x2 = (-b - Math.sqrt(delta)) / (2 * a);
+  //       console.log('pierwiastki:', x1, x2);
+  //       return `W tym równaniu pierwiastki to: ${x1} i ${x2}`;
+  //     } else if (delta === 0) {
+  //       const x3 = -b / (2 * a);
+  //       console.log('pierwiastek:', x3);
+  //       return `W tym równaniu pierwiastek to: ${x3}`;
+  //     } else {
+  //       console.log('brak rozwiązań rzeczywistych');
+  //       return 'W tym równaniu nie ma pierwiastków rzeczywistych';
+  //     }
+  //   }
+  //   return <div>{równanieKwadratowe()}</div>;
+  // }
 
-  // Zadanie 7
-  const a = 3;
-  const b = 4;
-  const c = -5;
-  let delta = b * b - 4 * a * c;
-  let sqrtDelta = Math.sqrt(delta);
-  let x1 = (-b + sqrtDelta) / (2 * a);
-  let x2 = (-b - sqrtDelta) / (2 * a);
-  let x3 = -b / (2 * a);
+  //Zadanie 8 - funkcja zwracająca losową liczbę z zakresu (1, 5).
 
-  function równanieKwadratowe(x, y, delta, x1, x2, x3) {
-    if (delta > 0) {
-      return 'W tym równaniu pierwiastki to:'(x1, x2);
-    } else if (delta == 0) {
-      return 'W tym równaniu pierwiastek to:'(x3);
-    } else {
-      return 'W tym równaniu nie ma pierwiastków rzeczywistych';
-    }
-  }
-  return <div>{równanieKwadratowe()}</div>;
+  //   function getRandom() {
+  //     const randomNumber = Math.random() * 5 + 1;
+  //     if (randomNumber > 5) {
+  //       const randomNumber = Math.random() * 5 + 1;
+  //     } else {
+  //       return randomNumber;
+  //       console.log(randomNumber);
+  //     }
+  //   }
+  //   return <div>{getRandom()}</div>;
+  // }
+
+  // Zadanie 8.A - funkcja zwracająca losową liczbę całkowitą z zakresu (1, 5).
+
+//   function getRandomInteger() {
+//     const randomInteger = Math.floor(Math.random() * 5) + 1;
+//     return randomInteger;
+//     console.log(randomInteger);
+//   }
+//   return <div>{getRandomInteger()}</div>;
+// }
+
+// Zadanie 8.B - funkcja zwracająca losową liczbę całkowitą z zakresu (x, y)
+function randomIntRange() {
+  
 }
