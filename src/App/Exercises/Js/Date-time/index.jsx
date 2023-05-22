@@ -1,25 +1,19 @@
+import { useState, useEffect } from 'react';
+
 import './styles.css';
-import React, { useEffect, useState } from 'react';
 
 export function DateTime() {
-  // const [myDate, setMyDate] = useState(null);
-  // const [myYear, setYear] = useState(null);
+  const [myDate, setMyDate] = useState(new Date());
 
-  // useEffect(() => {
-  //   setMyDate(new Date().getDay());
-  // }, []);
-  // useEffect(() => {
-  //   setYear(new Date().getFullYear());
-  // }, []);
+  //Można też 2x useEffect
 
-  // console.log(myDate);
-
-  const [myDate, SetMyDate] = useState(new Date());
+  useEffect(() => {
+    setMyDate(new Date());
+  }, []);
 
   return (
     <div>
-      {/* {myDate} - {myYear} */}
-      {myDate.getDay()} - {myDate.getFullYear()}
+      {myDate.getDay()}-{myDate.getFullYear()}
     </div>
   );
 }

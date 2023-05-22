@@ -45,7 +45,7 @@ export function BooleanExc1() {
   const handleChange = (event) => {
     setNumber(event.target.value);
   };
-  console.log(number);
+  //console.log(number);
 
   const circleArea = (number, pi) => {
     if (number < 1) {

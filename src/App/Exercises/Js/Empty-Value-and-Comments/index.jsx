@@ -39,17 +39,17 @@ const pxCalc = (x, y) => {
 
 //-------------------------------------------------
 
-console.log(typeof 7);
+//console.log(typeof 7);
 
-console.log(typeof 'Ala ma kota');
+// console.log(typeof 'Ala ma kota');
 
-console.log(typeof true);
-console.log(typeof false);
+// console.log(typeof true);
+// console.log(typeof false);
 
-console.log(typeof undeclaredVariable);
+// console.log(typeof undeclaredVariable);
 
 let liczba = null;
-console.log(liczba);
+//console.log(liczba);
 
 //----hindus ze stack overflow
 
