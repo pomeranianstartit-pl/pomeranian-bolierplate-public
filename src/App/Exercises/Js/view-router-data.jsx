@@ -8,6 +8,8 @@ import { blockRouterMetaData as blockRouterMetaDataEmptyValues } from './Empty-V
 import { blockRouterMetaData as blockRouterMetaDataDateTime } from './Date-time/router-data';
 import { blockRouterMetaData as blockRouterMetaDataArray } from './Array/router-data';
 import { blockRouterMetaData as blockRouterMetaDataJsFunctions } from './js-functions/router-data';
+import { blockRouterMetaData as blockRouterMetaDataWarmup } from './Blok22Warmup/router-data';
+import { blockRouterMetaData as blockRouterMetaDataTimeout } from './Blok22/router-data';
 
 export const blockRouterMetaData = [
   blockRouterMetaDataJsVariables1,
@@ -18,5 +20,7 @@ export const blockRouterMetaData = [
   blockRouterMetaDataDateTime,
   blockRouterMetaDataArray,
   blockRouterMetaDataJsFunctions,
+  blockRouterMetaDataWarmup,
+  blockRouterMetaDataTimeout,
 ];
 export const blockRouterData = getParsedRouterDataList(blockRouterMetaData);
