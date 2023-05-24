@@ -160,9 +160,7 @@ export function Exercise() {
   //   }
   //   return <div>{równanieKwadratowe()}</div>;
   // }
-
   //Zadanie 8 - funkcja zwracająca losową liczbę z zakresu (1, 5).
-
   //   function getRandom() {
   //     const randomNumber = Math.random() * 5 + 1;
   //     if (randomNumber > 5) {
@@ -174,18 +172,38 @@ export function Exercise() {
   //   }
   //   return <div>{getRandom()}</div>;
   // }
-
   // Zadanie 8.A - funkcja zwracająca losową liczbę całkowitą z zakresu (1, 5).
-
-//   function getRandomInteger() {
-//     const randomInteger = Math.floor(Math.random() * 5) + 1;
-//     return randomInteger;
-//     console.log(randomInteger);
-//   }
-//   return <div>{getRandomInteger()}</div>;
-// }
-
-// Zadanie 8.B - funkcja zwracająca losową liczbę całkowitą z zakresu (x, y)
-function randomIntRange() {
-  
+  //   function getRandomInteger() {
+  //     const randomInteger = Math.floor(Math.random() * 5) + 1;
+  //     return randomInteger;
+  //     console.log(randomInteger);
+  //   }
+  //   return <div>{getRandomInteger()}</div>;
+  // }
+  // Zadanie 8.B - funkcja zwracająca losową liczbę całkowitą z zakresu (x, y)
+  //   const x = 5; //dolna granica przedziału
+  //   const y = 20; //górna granica przedziału
+  //   const c = y - x + 1;
+  //   function getRandomIntRange() {
+  //     const randomIntRange = Math.floor(Math.random() * c) + x;
+  //     return randomIntRange;
+  //     console.log(randomIntRange);
+  //   }
+  //   return <div>{getRandomIntRange()}</div>;
+  // }
+  // Zadanie 9 - funkcja zwracająca średnią arytmetyczną dwóch liczb. Jeśli przekazane argumenty nie są liczbami, funkcja powinna zwrócić "Błędne dane".
+  //   const a = 4;
+  //   const b = 5;
+  //   function getArithAverage() {
+  //     const result = (a + b) / 2;
+  //     if (isNaN(result)) {
+  //       console.log(result);
+  //       return 'Błędne dane wejściowe';
+  //     } else {
+  //       return `Średnia arytmetyczna podanych liczb to: ${result}`;
+  //     }
+  //   }
+  //   return <div>{getArithAverage()}</div>;
+  // }
+  // Zadanie 10 - funkcja zwracająca wartość bezwzględną liczby za pomocą instrukcji warunkowej
 }
