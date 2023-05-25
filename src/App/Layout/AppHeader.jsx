@@ -6,11 +6,8 @@ import './styles/header.css';
 export function AppHeader() {
   return (
     <header>
-      <div>
-        <Logo />
-        <HeaderMenu />
-        <div className="header-title">Treść nagłówka</div>
-      </div>
+      <Logo />
+      <HeaderMenu />
     </header>
   );
 }

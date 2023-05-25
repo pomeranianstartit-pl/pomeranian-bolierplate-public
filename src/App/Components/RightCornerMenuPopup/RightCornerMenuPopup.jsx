@@ -1,13 +1,13 @@
 import './styles.css';
-import chevron from '../../Images/chevron_down.svg';
 
-export const RightCornerMenuPopup = () => {
+export const RightCornerMenuPop = () => {
   return (
-    <div className="container">
-      <div className="center-content">
-        <button>ZALOGUJ SIĘ</button>
-        <div className="bottom-paragraph">Nie masz konta? Zarejestruj się.</div>
-      </div>
+    <div className="header-hiding-div">
+      <button className="header-button-log-in">Zaloguj się</button>
+      <p className="header-question">
+        Nie masz konta?{' '}
+        <span className="header-button-register">Zarejestruj się</span>
+      </p>
     </div>
   );
 };
