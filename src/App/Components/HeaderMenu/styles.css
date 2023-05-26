@@ -1,0 +1,113 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+header {
+  grid-area: header;
+  position: relative;
+  z-index: 1;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  padding-left: 1.5rem;
+  padding-right: 3rem;
+  box-shadow: 0px 1px 9px 0px var(--color-grey);
+}
+header > a:first-of-type {
+  text-decoration: none;
+}
+header.header-title {
+  color: var(--color-grey);
+  font-weight: normal;
+}
+
+/* header .logo {
+
+  } */
+
+header .images-container {
+  display: flex;
+  align-items: center;
+}
+
+header .images-container .person-container {
+  display: flex;
+  align-items: left;
+  flex-direction: column;
+  /* margin-left: 0.5rem; */
+  margin-right: 1.5rem;
+  margin-left: -0.3rem;
+}
+
+header .images-container .person-container h4 {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 500;
+  color: #000;
+  margin: 0 0 -0.3rem 0;
+}
+
+header .images-container .person-container h5 {
+  font-size: 14px;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 400;
+  color: #999;
+  margin: 0;
+}
+
+header .circular_image {
+  width: 49px;
+  height: 49px;
+  border-radius: 50%;
+  overflow: hidden;
+  background-color: blue;
+  display: inline-block;
+  vertical-align: middle;
+  margin-left: 1.5rem;
+  margin-right: 1.5rem;
+}
+
+header .circular_image img {
+  width: 100%;
+}
+
+.header-button-arrow {
+  background-color: inherit;
+  border: none;
+}
+
+.header-hiding-div {
+  position: absolute;
+  top: 75px;
+  right: 50px;
+  width: 18vw;
+  height: 13vh;
+  border-radius: 10px;
+  background-color: rgb(255, 255, 255);
+  border: 1px solid rgb(169, 169, 169);
+}
+
+.header-hiding-div .header-button-log-in {
+  margin: 3vh 3vw 0;
+  width: 12vw;
+  height: 5vh;
+  font-family: 'Poppins', sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  text-align: center;
+  text-transform: uppercase;
+  border-radius: 5px;
+  border: none;
+  background-color: rgb(254, 55, 86);
+  color: white;
+}
+
+.header-hiding-div .header-question {
+  font-family: 'Poppins', sans-serif;
+  font-size: 13px;
+  font-weight: 400;
+  text-align: center;
+}
+
+.header-hiding-div .header-question .header-button-register {
+  color: rgb(254, 55, 86);
+  font-weight: bold;
+}
