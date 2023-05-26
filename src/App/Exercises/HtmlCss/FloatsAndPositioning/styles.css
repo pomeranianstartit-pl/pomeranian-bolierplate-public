@@ -1,0 +1,88 @@
+.div2 {
+  /* Ważne - zachowanie względem tego elementu a nie całego drzewa */
+  position: relative;
+  padding: 17px 21px;
+  background-color: #ebebeb;
+  margin: 50px 0px;
+}
+
+.div2_div {
+  padding: 12px 20px;
+  width: 242px;
+  background: #ffd5ff;
+  border: 1px solid #999999;
+
+  /*  Ustawienie względem rodzica */
+  position: absolute;
+  top: -70px;
+  right: 60px;
+  /* left: xxx;
+  bottom: xxx; */
+}
+
+.div4 {
+  width: 200px;
+  height: 50px;
+  text-align: center;
+  justify-content: center;
+  position: fixed;
+  background-color: aqua;
+  top: 450px;
+  right: 50px;
+}
+
+.div3 {
+  background-color: #ffd5db;
+}
+
+.div3 img {
+  width: 250px;
+  height: 250px;
+  float: left;
+}
+
+.div3 img:after {
+  content: '.';
+  visibility: hidden;
+  display: block;
+  height: 0;
+  clear: both;
+}
+
+.div6-container {
+  position: relative;
+  border: 1px solid black;
+  border-radius: 10px;
+  padding: 100px;
+}
+
+.div6-relative {
+  position: relative;
+  width: 100px;
+  height: 100px;
+  background: #c8cbd1;
+  border: 2px solid #c8cbd1;
+  border-radius: 8px;
+}
+
+.div6-absolute {
+  position: absolute;
+  left: 20px;
+  bottom: 20px;
+  width: 100px;
+  height: 100px;
+  background: #999999;
+  border: 2px solid #c8cbd1;
+  border-radius: 8px;
+}
+
+.div6-absolute:nth-child(2) {
+  position: absolute;
+  left: 40px;
+  bottom: 40px;
+  width: 100px;
+  height: 100px;
+  background: #6b7280;
+  border: 2px solid #c8cbd1;
+  border-radius: 8px;
+}

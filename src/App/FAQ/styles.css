@@ -1,0 +1,81 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+
+.dashboard .page-title {
+    font-family: 'Poppins', sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 34px;
+}
+
+.dashboard .introduction {
+    font-family: 'Poppins', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 27px;
+}
+
+/* .dashboard .question::before {
+    margin-right: 0.7em;
+    content: url('../Images/strzalka.svg');
+    transform: rotate(45deg);
+} */
+
+.inactiveArrow {
+    transform: rotate(-90deg);
+    border: none;
+    background-color: inherit;
+}
+
+.activeArrow {
+    border: none;
+    background-color: inherit;
+}
+
+
+.dashboard .question {
+    font-family: 'Poppins', sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 34px;
+    border: none;
+    background-color: inherit;
+}
+
+.dashboard .answer {
+    font-family: 'Poppins', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 32px;
+}
+
+.dashboard .border-open {
+    width: 40vw;
+    margin: 2em 0em;
+    box-sizing: border-box;
+    padding: 18px 24px;
+    background-color: #FFFFFF;
+    border-left: 5px solid #C8CBD1;
+    border-radius: 8px;
+    filter: drop-shadow(0px 4px 10px rgba(0, 0, 0, 0.07)) drop-shadow(0px 3px 46px rgba(0, 0, 0, 0.06));
+}
+
+.dashboard .border-close {
+    width: 40vw;
+    margin: 2em 0em;
+    box-sizing: border-box;
+    padding: 18px 24px;
+    background-color: #FFFFFF;
+    border-left: 5px solid #C8CBD1;
+    border-radius: 8px;
+    filter: drop-shadow(0px 4px 10px rgba(0, 0, 0, 0.07)) drop-shadow(0px 3px 46px rgba(0, 0, 0, 0.06));
+}
+
+.dashboard .line {
+    width: 36vw;
+    border: 1px solid #EBEBEB;
+}
