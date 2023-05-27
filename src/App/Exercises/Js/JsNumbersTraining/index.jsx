@@ -108,12 +108,24 @@ export function Js_Booleans_Numbers() {
     }
   }
 
-  function isTheFirstNumber(x) {
-    if (Number.isInteger(x) == true) {
-      return `Liczba jest całkowita`;
-    } else {
-      return `Podana wartość nie jest liczbą całkowitą!`;
+  // function isTheFirstNumber(x) {
+  //   if (Number.isInteger(x) == true) {
+  //     return `Liczba jest całkowita`;
+  //   } else {
+  //     return `Podana wartość nie jest liczbą całkowitą!`;
+  //   }
+  // }
+
+  function isPrime(num) {
+    if (num <= 1) {
+      return `Liczba nie jest liczbą pierwszą`;
     }
+    for (let i = 2; i <= Math.sqrt(num); i++) {
+      if (num % i === 0) {
+        return `Liczba nie jest liczbą pierwszą`;
+      }
+    }
+    return `Liczba jest liczba pierwszą`;
   }
 
   return (
@@ -360,7 +372,7 @@ export function Js_Booleans_Numbers() {
         12. Napisz funkcję, która sprawdzi, czy x jest liczbą pierwszą. Jeśli
         podamy nie-intiger, funkcja powinna zwrócić "Zła wartość".
       </h4>
-      <p>
+      {/* <p>
         Czy 0 jest liczbą pierwszą? <b>{isTheFirstNumber(0)}</b>
       </p>
       <p>
@@ -377,7 +389,7 @@ export function Js_Booleans_Numbers() {
       </p>
       <p>
         Czy 71 jest liczbą pierwszą? <b>{isTheFirstNumber(71)}</b>
-      </p>
+      </p> */}
     </div>
   );
 }
