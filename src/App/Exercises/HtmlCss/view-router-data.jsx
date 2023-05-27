@@ -15,7 +15,6 @@ import { blockRouterMetaData as blockRouterMetaDataTable } from './HTMLTables/ro
 import { blockRouterMetaData as blockRouterMetaDataFloatsAndPositioning } from '../HtmlCss/FloatsAndPositioning/router-data';
 import { blockRouterMetaData as blockRouterMetaDataArrayOfObjects } from './ArrayRenderToTable/router-data';
 
-
 export const blockRouterMetaData = [
   blockRouterMetaData121220231,
   blockRouterMetaData12052023,
@@ -25,10 +24,8 @@ export const blockRouterMetaData = [
   blockRouterMetaDataExerciseMultimedia,
   Images,
   blockRouterMetaDataBoxModel,
-  blockRouterMetaDataTable
-  blockRouterMetaDataArrayOfObjects
+  blockRouterMetaDataTable,
+  blockRouterMetaDataArrayOfObjects,
   blockRouterMetaDataFloatsAndPositioning,
-
-
 ];
 export const blockRouterData = getParsedRouterDataList(blockRouterMetaData);
