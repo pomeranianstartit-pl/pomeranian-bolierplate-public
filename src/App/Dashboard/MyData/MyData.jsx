@@ -3,7 +3,7 @@ export const MyData = () => {
     <div className="dashboard-about-me">
       <div className="person"></div>{' '}
       <p>
-        <b>Katarzyna Nowak</b> <p>Gdańsk</p>
+        <b>Karol Kuligowski</b> <p>Gdańsk</p>
       </p>{' '}
     </div>
   );

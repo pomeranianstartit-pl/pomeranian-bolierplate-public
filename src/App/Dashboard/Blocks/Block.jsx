@@ -3,7 +3,7 @@ export const Blocks = () => {
   return (
     <div className="dashboard-tiles-container">
       {' '}
-      <h2>Hej Maciej!</h2>{' '}
+      <h2>Hej Karol!</h2>{' '}
       <div className="dashboard-tiles">
         {' '}
         <div>Moje CV</div> <div>Projekty</div> <div>Ćwiczenia</div>{' '}
