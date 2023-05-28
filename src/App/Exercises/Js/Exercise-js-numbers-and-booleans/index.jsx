@@ -205,5 +205,64 @@ export function Exercise() {
   //   }
   //   return <div>{getArithAverage()}</div>;
   // }
+
   // Zadanie 10 - funkcja zwracająca wartość bezwzględną liczby za pomocą instrukcji warunkowej
+
+  //   function absoluteNumber(a) {
+  //     if (a >= 0) {
+  //       console.log(a);
+  //       return `Wartość bezwzględna podanej liczby to: ${a}`;
+  //     } else {
+  //       return `Wartość bezwzględna podanej liczby to: ${Math.abs(a)}`;
+  //     }
+  //   }
+
+  //   return (
+  //     <div>
+  //       Ok gitara <br />
+  //       {absoluteNumber(-10)}
+  //     </div>
+  //   );
+  // }
+
+  // Zadanie 11 - funkcja, która przyjmuje liczbę całkowitą i zwraca true jeśli jest ona podzielna przez 3 lub 5 a false w przeciwnym razie
+
+  //   function divisibleNumber(a) {
+  //     if (a % 3 == 0 || a % 5 == 0) {
+  //       return `true`;
+  //     } else {
+  //       return `false`;
+  //     }
+  //   }
+  //   return (
+  //     <div>
+  //       Ok gitara <br />
+  //       {divisibleNumber(7)}
+  //     </div>
+  //   );
+  // }
+
+  // Zadanie 12 - funkcja, która sprawdzi czy x jest liczbą pierwszą. Jeśli podamy nie integer funkcja powinna zwrócić "zła wartość"
+
+  function isPrime(a) {
+    if (!Number.isInteger(a)) {
+      return `Podana liczba nie jest liczbą całkowitą - zła wartość`;
+    }
+    if (a <= 1) {
+      return `Podana liczba nie jest liczbą pierwszą`;
+    }
+    for (let i = 2; i <= Math.sqrt(a); i++) {
+      if (a % i === 0) {
+        return `Podana liczba nie jest liczbą pierwszą`;
+      }
+    }
+    return `${a} jest liczbą pierwszą!`;
+  }
+
+  return (
+    <div>
+      Czy podana jest liczbą pierwszą? <br />
+      {isPrime(89)}
+    </div>
+  );
 }
