@@ -95,12 +95,12 @@ export const Memo = () => {
 
     if (!secondElementClicked) {
       setSecondElementClicked(el.id);
+      setPlayAmounts(playAmounts + 1);
       return;
     }
 
     setSecondElementClicked(null);
     setFirstElementClicked(el.id);
-    setPlayAmounts(playAmounts + 1);
   }
 
   function clickOnElement(id) {
