@@ -1,0 +1,46 @@
+.stage {
+    display: grid;
+    grid-template-columns: 60px 60px 60px 60px 60px;
+    grid-template-rows: 60px 60px 60px 60px 60px;
+    gap: 10px;
+}
+
+.cell {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    border: 1px solid #ccc;
+    background-color: #EBEBEB;
+    cursor: pointer;
+}
+
+
+.cell:hover {
+    box-shadow: 0 0 - 4px 26px rgba(0, 0, 0, 0.08); 
+}
+
+.mole {
+    background-color: purple;
+}
+
+.menu {
+    display: grid;
+    grid-template-columns: 200px 100px;
+    gap: 20px;
+    margin-bottom: 20px;
+}
+
+.menu-text {
+    display: flex;
+    align-items: center;
+}
+
+.menu-greyed {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #EBEBEB;
+    padding: 10px 20px;
+    border-radius: 5px;;
+}
