@@ -15,10 +15,10 @@
     cursor: pointer;
 }
 
-
 .cell:hover {
     box-shadow: 0 0 - 4px 26px rgba(0, 0, 0, 0.08); 
 }
+
 
 .mole {
     background-color: purple;
@@ -26,9 +26,13 @@
 
 .menu {
     display: grid;
-    grid-template-columns: 200px 100px;
+    grid-template-columns: 150px 390px;
     gap: 20px;
     margin-bottom: 20px;
+}
+
+.menu-short {
+    grid-template-columns: 150px 130px;
 }
 
 .menu-text {
@@ -36,11 +40,42 @@
     align-items: center;
 }
 
-.menu-greyed {
+.menu-greyed, .menu-button {
     display: flex;
     align-items: center;
     justify-content: center;
     background-color: #EBEBEB;
     padding: 10px 20px;
-    border-radius: 5px;;
+    border-radius: 5px;
+    border: none;
+}
+.menu-button {
+    cursor: pointer;
+}
+
+.menu-buttons-options {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.red-button {
+    background-color: #E12B1B;
+    color: white;
+}
+
+.dark-blue-button {
+    background-color: #23213D;
+    color: white;
+}
+
+.active-button {
+    background-color: #FE3756;
+    color: white;
+}
+
+.score {
+    grid-column: 1/3;
+    padding: 40px 20px;
+    font-size: 20px;
 }
