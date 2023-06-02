@@ -1,0 +1,20 @@
+.hit-the-mole .button {
+  margin: 10px;
+  padding: 10px 20px;
+  background-color: #2199da;
+  color: #fff;
+  border-radius: 8px;
+  border: none;
+  box-shadow: 0 0 5px #0a5279;
+  font-weight: 500;
+  font-size: 18px;
+}
+
+.hit-the-mole .button:hover {
+  background-color: #106a9a;
+  cursor: pointer;
+}
+
+.hit-the-mole .button-active {
+  background-color: #16a53a;
+}
