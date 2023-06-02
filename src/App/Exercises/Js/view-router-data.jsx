@@ -7,6 +7,7 @@ import { blockRouterMetaData as blockRouterMetaDataJsBooleansNumbers } from './J
 import { blockRouterMetaData as blockRouterMetaDataJsArraysBasics } from './Exercise-js-arrays-basics/router-data';
 import { blockRouterMetaData as blockRouterMetaDataMethodsOnArraysJavaScript } from './Exercise-js-arrays-methods/router-data';
 import { blockRouterMetaData as JsFunctionsBasics } from './Exercise-js-function-basics/router-data';
+import { blockRouterMetaData as JsFunctionsCwiczeniaZFigmy } from './Exercise-js-functions-cwiczenia-figma/router-data';
 
 export const blockRouterMetaData = [
   blockRouterMetaDataJsVariables1,
@@ -16,5 +17,6 @@ export const blockRouterMetaData = [
   blockRouterMetaDataJsArraysBasics,
   blockRouterMetaDataMethodsOnArraysJavaScript,
   JsFunctionsBasics,
+  JsFunctionsCwiczeniaZFigmy,
 ];
 export const blockRouterData = getParsedRouterDataList(blockRouterMetaData);
