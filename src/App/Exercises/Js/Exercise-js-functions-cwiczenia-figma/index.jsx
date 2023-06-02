@@ -84,6 +84,14 @@ export function Exercise() {
 
   console.log(tablicaPierwotna, tablicaWynikowa);
 
+  const arrAll = [
+    ['Cecilie', 'Lone'],
+    ['Emil', 'Tobias', 'Linus', ['Robin', 'Morgan']],
+  ];
+  const newArr1 = arrAll.flat();
+  const newArr2 = arrAll.flat(Infinity);
+  console.log(newArr1);
+  console.log(newArr2);
   // ---- Zadanie 4 -------
 
   // function fibonacci(number) {
