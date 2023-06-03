@@ -5,6 +5,7 @@ import { useState } from 'react';
 import { Playground } from './Playground/Playground';
 // import { MenuView } from './MenuView/MenuView';
 import { GameView } from './GameView/GameView';
+//
 
 export function HitTheMole() {
   const [isGameStarted, setGameStarted] = useState(false);
