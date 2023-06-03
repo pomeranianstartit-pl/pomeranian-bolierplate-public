@@ -8,6 +8,7 @@ import { blockRouterMetaDataNumbers as blockRouterMetaDataNumbers } from './Exer
 import { blockRouterMetaData as blockRouterMetaDataJsArraysBasics } from '../../Exercises/Js/Exercise-js-arrays-basics/router-data';
 import { blockRouterMetaData as blockRouterMetaDataJsArraysMethods } from '../../Exercises/Js/Exercise-js-arrays-methods/router-data';
 import { blockRouterMetaData as blockRouterMetaDataJsArraysMethodsJSBasics } from '../Js/Exercise-js-function-basics/router-data';
+import { blockRouterMetaData as blockRouterMetaDataJSHitTheMole } from '../../Exercises/Js/HitTheMoleGame/router-data';
 export const blockRouterMetaData = [
   blockRouterMetaDataJsVariables1,
   blockRouterMetaDataJsVariables2,
@@ -17,5 +18,6 @@ export const blockRouterMetaData = [
   blockRouterMetaDataJsArraysBasics,
   blockRouterMetaDataJsArraysMethods,
   blockRouterMetaDataJsArraysMethodsJSBasics,
+  blockRouterMetaDataJSHitTheMole,
 ];
 export const blockRouterData = getParsedRouterDataList(blockRouterMetaData);
