@@ -5,6 +5,7 @@ import { useState } from 'react';
 import { Playground } from './Playground/Playground';
 // import { MenuView } from './MenuView/MenuView';
 import { GameView } from './GameView/GameView';
+import { MenuView } from './MenuView/MenuView';
 //
 
 export function HitTheMole() {
@@ -26,23 +27,7 @@ export function HitTheMole() {
           setScore={setScore}
         />
       ) : (
-        <>
-          <Menu label="CZAS GRY">
-            <Button isMaciejActive={true}>1 minuta</Button>
-            <Button>2 minuty</Button>
-            <Button>3 minuty</Button>
-          </Menu>
-
-          <Menu label="LICZBA KRETÓW">
-            <Button>1 kret</Button>
-            <Button>2 krety</Button>
-            <Button isActive={true}>3 krety</Button>
-          </Menu>
-
-          <Menu label="PRZYCISKI STERUJĄCE">
-            <Button onClick={() => setGameStarted(true)}>Start</Button>
-          </Menu>
-        </>
+        <MenuView setGameStarted={setGameStarted} />
       )}
 
       {/* <ResultView result={result} /> */}
