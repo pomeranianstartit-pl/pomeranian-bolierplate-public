@@ -1,9 +1,8 @@
 import './styles.css';
-import { Menu } from './Menu/Menu';
-import { Button } from './Button/Button';
 import { GameView } from './GameView/GameView';
 import { Playground } from './Playground/Playground';
 import { useState } from 'react';
+import { MenuView } from './MenuView/Menu';
 
 export function HitTheMole() {
   const [isGameStarted, setGameStarted] = useState(false);
@@ -25,19 +24,7 @@ export function HitTheMole() {
         />
       ) : (
         <>
-          <Menu label="Czas gry">
-            <Button isActive>1 minuta</Button>
-            <Button>2 minuty</Button>
-            <Button>3 minuty</Button>
-          </Menu>
-          <Menu label="Liczba kretów">
-            <Button>1 minuta</Button>
-            <Button>2 minuty</Button>
-            <Button>3 minuty</Button>
-          </Menu>
-          <Menu label="Przyciski sterujące">
-            <Button onClick={() => setGameStarted(true)}>Start</Button>
-          </Menu>
+          <MenuView setGameStarted={setGameStarted} />
         </>
       )}
 
