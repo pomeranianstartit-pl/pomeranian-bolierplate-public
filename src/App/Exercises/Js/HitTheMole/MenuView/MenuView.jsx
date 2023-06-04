@@ -3,12 +3,12 @@ import { Menu } from '../Menu/Menu';
 import { SelectButton } from '../SelectButton/SelectButton';
 import './MenuView.css';
 
-export const MenuView = ({ setGameStarted, setSettings }) => {
+export const MenuView = ({ setGameStarted, setOptionsChosen}) => {
   return (
     <>
       <Menu label="Czas gry">
         <SelectButton
-        setSettings ={setSettings}
+        setOptionsChosen ={setOptionsChosen}
           options={[
             {
               label: '1 minuta',
@@ -30,6 +30,7 @@ export const MenuView = ({ setGameStarted, setSettings }) => {
       </Menu>
 
       <Menu label="Liczba kretów">
+  
         <Button>1 kret</Button>
         <Button>2 krety</Button>
         <Button isActive={true}>3 krety</Button>

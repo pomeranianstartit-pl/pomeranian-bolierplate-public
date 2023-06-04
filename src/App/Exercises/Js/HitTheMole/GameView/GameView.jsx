@@ -3,11 +3,16 @@ import './GameView.css';
 import { Menu } from '../Menu/Menu';
 import { Button } from '../Button/Button';
 
-export const GameView = ({ setGameStarted, score, setScore }) => {
+export const GameView = ({ setGameStarted, score, setScore, setTime, time}) => {
   const [counter, setCounter] = useState(60);
-// useEffect do odmierzania czasu - useState na minute
-// TODO:
-//  - gdy timer = 0 => koniec gry
+// useEffect odpowiedzialny za koniec gry
+  useEffect(() => {
+    if (counter === 0) {
+      setGameStarted(false);
+    }
+  }, [counter]);
+
+//  useEffect odpowiedzialny za czas
   useEffect(() => {
     const timeoutId = setTimeout(() => {
       if (counter > 0) {
@@ -18,6 +23,7 @@ export const GameView = ({ setGameStarted, score, setScore }) => {
     return () => clearTimeout(timeoutId);
   }, [counter]);
 
+ 
   return (
     <>
       <Menu label="Czas do końca">
@@ -30,6 +36,7 @@ export const GameView = ({ setGameStarted, score, setScore }) => {
         <Button
           onClick={() => {
             setGameStarted(false);
+            setCounter (0);
             setScore(0);
           }}
         >
