@@ -1,8 +1,8 @@
 import { Button } from '../Button/Button';
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 
 export const SelectButtons = (props) => {
-  const { options } = props;
+  const { options, setOptionChosen, setInitialTime } = props;
   const [newOptions, setNewOptions] = useState(options);
 
   const handleClick = (value) => {
@@ -14,6 +14,11 @@ export const SelectButtons = (props) => {
         };
       })
     );
+
+    const chosenOption = newOptions.find((option) => option.value === value);
+
+    setOptionChosen(chosenOption.value * 60);
+    setInitialTime(chosenOption.value * 60);
   };
 
   return (
