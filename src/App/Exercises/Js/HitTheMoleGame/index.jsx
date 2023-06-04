@@ -8,6 +8,7 @@ import { MenuView } from './MenuView/MenuView';
 export function HitTheMole() {
   const [isGameStarted, setGameStarted] = useState(false);
   const [score, setScore] = useState(0);
+  const [time, setTime] = useState(60);
 
   return (
     <div className="hit-the-mole">
@@ -22,6 +23,7 @@ export function HitTheMole() {
             setGameStarted={setGameStarted}
             score={score}
             setScore={setScore}
+            time={setTime}
           />
         ) : (
           <>
@@ -31,9 +33,9 @@ export function HitTheMole() {
               <Button>3 minuty</Button>
             </Menu>
             <Menu label="Liczba kretów">
-              <Button>1 minuta</Button>
-              <Button>2 minuty</Button>
-              <Button>3 minuty</Button>
+              <Button>1 kret</Button>
+              <Button isActive>2 krety</Button>
+              <Button>3 krety</Button>
             </Menu>
             <Menu label="Przyciski sterujące">
               <Button onClick={() => setGameStarted(true)}>Start</Button>
