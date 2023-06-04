@@ -10,6 +10,8 @@ export const GameView = ({
   setScore,
   setTime,
   time,
+  setGameStopped,
+  isGameStopped,
 }) => {
   useEffect(() => {
     const timeoutId = setTimeout(() => {
@@ -33,8 +35,8 @@ export const GameView = ({
       <Menu label="Przyciski sterujące">
         <Button
           onClick={() => {
-            setScore(0);
             setGameStarted(false);
+            setGameStopped(true);
           }}
         >
           STOP

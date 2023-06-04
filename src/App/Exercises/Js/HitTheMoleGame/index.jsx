@@ -8,7 +8,8 @@ export function HitTheMole() {
   const [isGameStarted, setGameStarted] = useState(false);
   const [score, setScore] = useState(0);
   const [time, setTime] = useState(60);
-  const [initialTime, setinitialTime] = useState();
+  const [initialTime, setInitialTime] = useState(10);
+  const [isGameStopped, setGameStopped] = useState(false);
 
   useEffect(() => {
     time === 0 && setGameStarted(false);
@@ -29,6 +30,8 @@ export function HitTheMole() {
           setScore={setScore}
           time={time}
           setTime={setTime}
+          isGameStopped={isGameStopped}
+          setGameStopped={setGameStopped}
         />
       ) : (
         <>
@@ -39,7 +42,8 @@ export function HitTheMole() {
             setScore={setScore}
             score={score}
             initialTime={initialTime}
-            setinitialTime={setinitialTime}
+            setInitialTime={setInitialTime}
+            isGameStopped={isGameStopped}
           />
         </>
       )}

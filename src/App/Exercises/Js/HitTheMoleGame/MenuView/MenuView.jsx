@@ -2,11 +2,9 @@ import './Menu.css';
 import { Menu } from '../Menu/Menu';
 import { Button } from '../Button/Button';
 import { SelectButtons } from '../SelectButtons/SelectButtons';
-import { useState } from 'react';
 import { Result } from '../Result/Result';
 
 export const MenuView = ({
-  isGameStarted,
   setGameStarted,
   setTime,
   setScore,
@@ -14,17 +12,20 @@ export const MenuView = ({
   initialTime,
   time,
   setInitialTime,
+  isGameStopped,
 }) => {
   return (
     <>
-      {time === 0 && <Result score={score} initialTime={initialTime} />}
+      {(time === 0 || isGameStopped) && (
+        <Result score={score} resultTime={initialTime - time} />
+      )}
       <Menu label="Czas gry">
         <SelectButtons
           setOptionChosen={setTime}
           setInitialTime={setInitialTime}
           options={[
             {
-              label: 'Debugowanie',
+              label: 'Debugowanie - 6s',
               isActive: false,
               value: 0.1,
             },
@@ -69,7 +70,14 @@ export const MenuView = ({
         />
       </Menu>
       <Menu label="Przyciski sterujące">
-        <Button onClick={() => setGameStarted(true)}>Start</Button>
+        <Button
+          onClick={() => {
+            setGameStarted(true);
+            setScore(0);
+          }}
+        >
+          Start
+        </Button>
       </Menu>
       {/* {!isGameStarted ? (
         <Result
