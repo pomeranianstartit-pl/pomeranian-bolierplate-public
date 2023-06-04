@@ -1,13 +1,19 @@
 import './styles.css';
-import { Menu } from './Menu/Menu';
-import { Button } from './Button/Button';
 import { GameView } from './GameView/GameView';
 import { Playground } from './Playground/Playground';
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
+import { MenuView } from './MenuView/MenuView';
 
 export function HitTheMole() {
   const [isGameStarted, setGameStarted] = useState(false);
   const [score, setScore] = useState(0);
+  const [time, setTime] = useState(60);
+  const [initialTime, setInitialTime] = useState(10);
+  const [isGameStopped, setGameStopped] = useState(false);
+
+  useEffect(() => {
+    time === 0 && setGameStarted(false);
+  }, [time]);
 
   return (
     <div>
@@ -22,22 +28,23 @@ export function HitTheMole() {
           setGameStarted={setGameStarted}
           score={score}
           setScore={setScore}
+          time={time}
+          setTime={setTime}
+          isGameStopped={isGameStopped}
+          setGameStopped={setGameStopped}
         />
       ) : (
         <>
-          <Menu label="Czas gry">
-            <Button isActive>1 minuta</Button>
-            <Button>2 minuty</Button>
-            <Button>3 minuty</Button>
-          </Menu>
-          <Menu label="Liczba kretów">
-            <Button>1 minuta</Button>
-            <Button>2 minuty</Button>
-            <Button>3 minuty</Button>
-          </Menu>
-          <Menu label="Przyciski sterujące">
-            <Button onClick={() => setGameStarted(true)}>Start</Button>
-          </Menu>
+          <MenuView
+            time={time}
+            setTime={setTime}
+            setGameStarted={setGameStarted}
+            setScore={setScore}
+            score={score}
+            initialTime={initialTime}
+            setInitialTime={setInitialTime}
+            isGameStopped={isGameStopped}
+          />
         </>
       )}
 
