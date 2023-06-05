@@ -3,25 +3,24 @@ import './WelcomeView.css';
 
 export const WelcomeView = () => {
   const [count, setCount] = useState(0);
+  const [inputValue, setInputValue] = useState('');
 
-  // function getInputValue(parametr) {
-  //  console.log('funkcja dziala', parametr.target.value);
-  //  setCount(parametr.target.value);
-  /// }
+  function getInputValue(inputText) {
+    setInputValue(inputText.target.value);
+  }
+
+  //Zliczanie liter wpisanych do inputa (bez spacji)--------
+
+  const [charactersInput, setCharactersInput] = useState(0);
+
+  function countChar() {
+    setCharactersInput(inputValue.replaceAll(' ', '').length);
+  }
+
+  //.trim() obcina spacje i zwraca string bez przerwy miedzy wyrazami/liczbami
+  //.length zwraca liczbe znakow
 
   return (
-    // <div className="welcome-view">
-    // <input
-    //  placeholder="text"
-    //  onChange={(e) => console.log(getInputValue(e))}
-    // />
-    //<button onClick={() => buttonClicked()}>Kliknieto we mnie {x}</button>
-    // <div>wartosc inputa: {x}</div>
-    // </div>
-
-    /* <button onClick={() => setCount(count + 1)}>
-            <p>nacisnieto {count} razy</p> */
-
     <div className="welcomeview">
       <div className="welcomeview-inline-block">
         <div className="welcomeview-text">
@@ -37,18 +36,24 @@ export const WelcomeView = () => {
             type="text"
             name="welcomeview"
             placeholder="tekst do wpisania"
+            onChange={(event) => getInputValue(event)}
           />
         </div>
 
         <div className="welcomeview-button">
-          <button type="button">
+          <button type="button" onClick={() => setCount(count + 1)}>
             <p>KLIKNIJ</p>
+          </button>
+          <button type="button" onClick={() => countChar()}>
+            <p>OBLICZ</p>
           </button>
         </div>
       </div>
       <div className="welcomeview-inline-block">
         <div className="welcomeview-placeholder-box">
-          <p>Placeholder</p>
+          <p>Naciśnięto przycisk {count} razy</p>
+          <p>Wpisałeś tekst: {inputValue}</p>
+          <p>Długość tekstu: {charactersInput}</p>
         </div>
       </div>
     </div>
