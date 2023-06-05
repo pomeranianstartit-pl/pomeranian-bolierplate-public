@@ -19,6 +19,16 @@
 }
 
 .button:disabled {
-  background-color: gray;
+  background-color: #ababab;
   cursor: initial;
+}
+
+.button-control {
+  background-color: red;
+  color: white;
+}
+
+.button-control:hover {
+  background-color: rgb(171, 8, 8);
+  color: white;
 }

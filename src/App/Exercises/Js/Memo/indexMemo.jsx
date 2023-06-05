@@ -2,6 +2,7 @@ import { MenuView } from './MenuView/MenuView';
 import { GameView } from './GameView/GameView';
 import './styles.css';
 import { useState } from 'react';
+import { Board } from './Board/Board';
 
 export function Memory() {
   const [isGameStarted, setGameStarted] = useState(false);
@@ -11,9 +12,11 @@ export function Memory() {
       <p>
         Gra polegająca na zapamiętywaniu odkrytych kafli i łączeniu ich w pary
       </p>
-      <GameView />
 
       {isGameStarted ? <GameView /> : <MenuView />}
+
+      <GameView />
+      <Board />
     </div>
   );
 }

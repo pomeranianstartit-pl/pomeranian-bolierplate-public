@@ -11,7 +11,7 @@ export const MenuView = () => {
         <Button>20 elementów</Button>
       </Menu>
       <Menu label="Przyciski sterujące">
-        <Button>START</Button>
+        <Button isControl={true}>START</Button>
       </Menu>
     </>
   );
