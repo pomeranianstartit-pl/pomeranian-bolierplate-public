@@ -1,3 +1,4 @@
+import { MyCVRouterMetaData } from '../../MyCV/router-data';
 import { getParsedRouterDataList } from '../../router-data/parseRouterData';
 import { Exercise1kRouterMetaData } from './Exercise1/router-data';
 import { Exercise2RouterMetaData } from './Exercise2/router-data';
