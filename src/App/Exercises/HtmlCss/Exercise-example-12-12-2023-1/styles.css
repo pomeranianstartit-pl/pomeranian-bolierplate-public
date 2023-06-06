@@ -1,3 +1,50 @@
-.font-test-family {
-  font-family: Chilanka;
+:root {
+  --main-font-color: #FE5407;
+  --primary: #FE3756;
+}
+
+.my-2 {
+  margin: 8px 0px;
+}
+
+.my-1 {
+  margin: 4px 0px;
+}
+
+.font-color {
+  color: var(--main-font-color);
+}
+
+.bold {
+  font-weight: bold;
+}
+
+.content-wrapper {
+  max-width: 571px;
+  margin: 0 auto 80px;
+}
+
+.content-wrapper:last-child {
+  margin: 0 auto;
+}
+
+.content-wrapper a {
+  color: var(--primary);
+  font-weight: bold;
+}
+
+.content-wrapper.first ul {
+  list-style: inside;
+}
+
+.content-wrapper.first li {
+  list-style-type: square;
+}
+
+.content-wrapper ol, .content-wrapper ul {
+  padding-left: 10px;
+}
+
+.content-wrapper  li {
+  margin-bottom: 24px;
 }
