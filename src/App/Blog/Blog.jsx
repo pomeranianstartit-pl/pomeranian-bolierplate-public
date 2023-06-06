@@ -1,4 +1,4 @@
-import './styles.css';
+import './blog.css';
 
 export const Blog = () => {
   return (
