@@ -6,7 +6,8 @@ export function Exercise() {
   const string3 = 'Ulubiony bohater z serialu "Gra o tron" to ' + string1;
 
   const string2 = `Ulubiony bohater z serialu "Gra o tron" to: ${string1}`;
-
+  const name = 'Michał';
+  const number = 666;
   return (
     <div className="playing-with-variables">
       <section>
@@ -18,8 +19,11 @@ export function Exercise() {
         </p>
         <p>{string2}</p>
         <p>{string3}</p>
-        {/* Uzupełnij zanie korzystając ze zmiennych oraz operacji na stringach */}
-        <p>Witaj ____! Jesteś ____ uzytkownikiem odwiedzającym tę stronę!</p>
+        {/* Uzupełnij zdanie korzystając ze zmiennych oraz operacji na stringach */}
+
+        <p>
+          Witaj {name}! Jesteś {number} uzytkownikiem odwiedzającym tę stronę!
+        </p>
       </section>
     </div>
   );
