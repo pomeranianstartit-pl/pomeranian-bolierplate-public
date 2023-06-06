@@ -1,0 +1,75 @@
+.welcomeview {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+}
+.welcomeview-inline-block {
+  display: inline-block;
+  height: 100%;
+  width: 50%;
+}
+
+.welcomeview-text h1 {
+  font-weight: 500;
+  width: auto;
+  height: auto;
+  color: #000000;
+  margin-bottom: 40px;
+}
+
+.welcomeview-input label {
+  font-weight: 700;
+  line-height: 27px;
+  color: #222222;
+  font-size: 14px;
+}
+
+.welcomeview-input-box input {
+  padding: 13px 13px;
+  width: 448px;
+  height: 32px;
+  background: #ffffff;
+  border: 1px solid #c8cbd1;
+  border-radius: 5px;
+  margin-bottom: 45px;
+}
+
+.welcomeview-input-box input:placeholder-shown {
+  font-style: normal;
+  font-size: 16px;
+  color: #c8cbd1;
+}
+
+.welcomeview-button button {
+  display: block;
+  width: 326px;
+  height: 56px;
+  background: #fe3756;
+  border: none;
+  border-radius: 8px;
+  margin-bottom: 20px;
+}
+
+.welcomeview-button p {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  color: #ffffff;
+}
+
+.welcomeview-placeholder-box {
+  width: 100%;
+  height: 100%;
+}
+
+.welcomeview-placeholder-box p {
+  text-align: center;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 22px;
+  color: #000000;
+}
+
+#text-to-left p {
+  text-align: left;
+}
