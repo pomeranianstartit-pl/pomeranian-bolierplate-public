@@ -1,4 +1,4 @@
-import './styles.css';
+import '../WelcomeView/WelcomeView.css';
 import React, { useState } from 'react';
 
 export const Exercise3 = () => {
@@ -23,22 +23,30 @@ export const Exercise3 = () => {
   const ifGreaterThan10 = givenNumber > 10; //flaga
 
   return (
-    <div>
-      <h1>Czy wpisana liczba jest większa od 10?</h1>
+    <div className="welcomeview">
+      <div className="welcomeview-inline-block">
+        <div className="welcomeview-text">
+          <h1>Czy wpisana liczba jest większa od 10?</h1>
+        </div>
 
-      <input
-        type="number"
-        placeholder="wpisz liczbę"
-        onChange={handleChange}
-        // value={givenNumber} ustawia poczatkowa liczbe
-      />
+        <div className="welcomeview-input-box">
+          <input
+            type="number"
+            placeholder="wpisz liczbę"
+            onChange={handleChange}
+            // value={givenNumber} ustawia poczatkowa liczbe
+          />
+        </div>
+      </div>
 
-      {ifGreaterThan10 ? (
-        <p>Tak, liczba: {givenNumber} jest większa od 10</p>
-      ) : (
-        <p>Nie, liczba: {givenNumber} jest mniejsza od 10</p>
-      )}
-      <p>{text}</p>
+      <div id="text-to-left" className="welcomeview-placeholder-box">
+        {ifGreaterThan10 ? (
+          <p>Tak, liczba: {givenNumber} jest większa od 10</p>
+        ) : (
+          <p>Nie, liczba: {givenNumber} jest mniejsza od 10</p>
+        )}
+        <p>{text}</p>
+      </div>
     </div>
   );
 };

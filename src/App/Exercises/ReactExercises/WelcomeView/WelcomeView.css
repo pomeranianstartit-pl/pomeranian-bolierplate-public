@@ -69,3 +69,7 @@
   font-size: 22px;
   color: #000000;
 }
+
+#text-to-left p {
+  text-align: left;
+}

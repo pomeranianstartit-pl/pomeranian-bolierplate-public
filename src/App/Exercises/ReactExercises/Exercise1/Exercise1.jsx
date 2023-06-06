@@ -1,4 +1,4 @@
-import './styles.css';
+import '../WelcomeView/WelcomeView.css';
 import React, { useState } from 'react';
 
 export const Exercise1 = () => {
@@ -20,20 +20,33 @@ export const Exercise1 = () => {
   };
 
   return (
-    <div>
-      <h1>Kliknij przycisk 5 razy</h1>
+    <div className="welcomeview">
+      <div className="welcomeview-inline-block">
+        <div className="welcomeview-text">
+          <h1>Kliknij przycisk 5 razy</h1>
+        </div>
 
-      <button onClick={handleClick}>START</button>
-      <div>{showText}</div>
+        <div className="welcomeview-button">
+          <button type="button" onClick={handleClick}>
+            <p>START</p>
+          </button>
 
-      <button
-        onClick={() => {
-          setClicks(1);
-          setShowText('Ilość kliknięć: 0');
-        }}
-      >
-        RESET
-      </button>
+          <button
+            type="button"
+            onClick={() => {
+              setClicks(1);
+              setShowText('Ilość kliknięć: 0');
+            }}
+          >
+            <p>RESET</p>
+          </button>
+        </div>
+      </div>
+      <div className="welcomeview-inline-block">
+        <div className="welcomeview-placeholder-box">
+          <p>{showText}</p>
+        </div>
+      </div>
     </div>
 
     //inny zapis wywolania html przez warunek if

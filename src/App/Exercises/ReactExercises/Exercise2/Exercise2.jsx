@@ -1,4 +1,4 @@
-import './styles.css';
+import '../WelcomeView/WelcomeView.css';
 import React, { useState } from 'react';
 
 export const Exercise2 = () => {
@@ -12,10 +12,20 @@ export const Exercise2 = () => {
   };
 
   return (
-    <div>
-      <h1>See or not</h1>
-      <button onClick={handleClick}>{buttonLabel}</button>
-      {isVisible && <h3>Hello there!</h3>} {/*&& dziala jak if */}
+    <div className="welcomeview">
+      <div className="welcomeview-inline-block">
+        <div className="welcomeview-text">
+          <h1>See or not</h1>
+        </div>
+        <div className="welcomeview-button">
+          <button type="button" onClick={handleClick}>
+            <p>{buttonLabel}</p>
+          </button>
+        </div>
+        <div id="text-to-left" className="welcomeview-placeholder-box">
+          {isVisible && <h3>Hello there!</h3>} {/*&& dziala jak if */}
+        </div>
+      </div>
     </div>
   );
 };
