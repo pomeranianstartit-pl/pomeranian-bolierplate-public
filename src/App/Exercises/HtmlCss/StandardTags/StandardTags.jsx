@@ -80,8 +80,8 @@ export function StandardTags() {
           someone else’s, you can rely on our list of
           <span className="italic-text"> happy birthday </span>
           <q>quotes</q> to help put a smile on someone’s face. From
-          inspirational to funny to cute sayings, browse our list of{' '}
-          <span>quotes</span> to find one that resonates with you.
+          inspirational to funny to cute sayings, browse our list of
+          <q>quotes</q> to find one that resonates with you.
           <span className="crossed-text"> Nothing </span>
           can stop you!
         </p>
@@ -97,9 +97,9 @@ export function StandardTags() {
           </div>
 
           <div className="list">
-            <div className="underline-text margin-bottom dot">Todo 1</div>
-            <div className="underline-text margin-bottom dot">Todo 2</div>
-            <div className="underline-text margin-bottom dot">Todo 3</div>
+            <div className="dot">Todo 1</div>
+            <div className="dot">Todo 2</div>
+            <div className="dot">Todo 3</div>
           </div>
         </p>
       </div>
