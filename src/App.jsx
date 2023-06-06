@@ -6,7 +6,7 @@ import { Layout } from './App/Layout';
 import { Dashboard } from './App/Dashboard';
 import { Exercises } from './App/Exercises';
 import { MyCV } from './App/MyCV/MyCV';
-import { Blog } from './App/Blog';
+import { Blog } from './App/Blog/Blog';
 
 export function App() {
   return (
