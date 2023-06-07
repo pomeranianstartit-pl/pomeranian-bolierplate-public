@@ -6,7 +6,9 @@ import { Logo } from '../Components/Logo/Logo';
 export function AppHeader() {
   return (
     <header>
-      <Logo />     
+      <a href="/">
+      <Logo />  
+      </a>
       <div>
         <div className="header-title">Tytuł nagłówka</div>
       </div>
