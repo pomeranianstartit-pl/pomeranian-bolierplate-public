@@ -16,16 +16,16 @@ export function AppAside() {
             </NavLink>
           </li>
           <li>
-            <NavLink className="aside-row" to="myCV">Moje cv</NavLink>
+            <NavLink className="aside-row" to="CV">Moje cv</NavLink>
           </li>
           <li>
-            <NavLink className="aside-row" to="blocks">Bloki
-              <ElementIcon />Ćwiczenia
+            <NavLink className="aside-row" to="blocks">
+              <ElementIcon className="menu-icon" />Bloki
             </NavLink>
           </li>
           <li>
             <NavLink className="aside-row" to="exercises">
-              <EditIcon />
+              <EditIcon className="menu-icon" />Ćwiczenia
             </NavLink>
           </li>
           <li>
