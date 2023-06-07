@@ -10,10 +10,14 @@ aside {
 aside ul {
   /* Nadpisanie domyślnych styli przeglądarki */
   padding-inline-start: 1rem;
+  list-style-type: none;
+  padding-left: 0;
 }
 
 aside li {
   line-height: 2rem;
+  list-style-image: none;
+  padding: o, 5rem;
 }
 
 .aside-row {
@@ -31,3 +35,12 @@ aside a.active {
   background-color: var(--color-primary-blue);
   color: var(--color-white);
 }
+
+aside br {
+  display: block;
+  height: 10px;
+  width: 100px;
+  border-bottom: 1px solid var(--color-grey);
+}
+
+.menu-icon {}
