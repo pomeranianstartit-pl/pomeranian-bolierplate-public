@@ -1,13 +1,15 @@
 import React from 'react';
 
 import './styles/header.css';
+import { Link } from 'react-router-dom';
+import { Logo } from '../Components/Logo/Logo';
 
 export function AppHeader() {
   return (
     <header>
-      <div>
-        <div className="header-title">Tytuł nagłówka</div>
-      </div>
+      <Link to="/">
+        <Logo />
+      </Link>
     </header>
   );
 }

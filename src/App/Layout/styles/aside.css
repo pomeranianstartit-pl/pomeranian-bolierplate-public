@@ -10,6 +10,8 @@ aside {
 aside ul {
   /* Nadpisanie domyślnych styli przeglądarki */
   padding-inline-start: 1rem;
+  list-style-type: none;
+  padding-left: 0;
 }
 
 aside li {
@@ -30,4 +32,8 @@ aside li a {
 aside a.active {
   background-color: var(--color-primary-blue);
   color: var(--color-white);
+}
+
+.menu-icon {
+  margin-right: 10px;
 }
