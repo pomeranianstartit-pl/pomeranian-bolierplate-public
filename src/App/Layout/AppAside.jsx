@@ -28,6 +28,11 @@ export function AppAside() {
               Ćwiczenia
             </NavLink>
           </li>
+          <li>
+            <NavLink className="aside-row" to="cv">
+              <EditIcon className="menu-icon" />
+            </NavLink>
+          </li>
         </ul>
       </nav>
       <p style={{ padding: '1rem 0' }}>Sidebar items, widgets, etc</p>
