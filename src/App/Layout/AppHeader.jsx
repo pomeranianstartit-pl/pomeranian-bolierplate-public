@@ -6,7 +6,7 @@ export function AppHeader() {
   return (
     <header>
       <div>
-        <div className="header-title">Tytuł nagłówka</div>
+        <div className="header-title">...</div>
       </div>
     </header>
   );
