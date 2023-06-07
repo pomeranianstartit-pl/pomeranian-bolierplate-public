@@ -3,7 +3,7 @@ import './styles.css';
 export function Exercise() {
   const variableForTemplateString = 'is awesome!';
 
-  const templateString = 'Template string ${variableForTemplateString}';
+  const templateString = `Template string ${variableForTemplateString}`;
  
   function multiply(num1, num2) {
     return (num1 * num2) +12;

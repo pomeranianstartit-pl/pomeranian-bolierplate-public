@@ -5,7 +5,7 @@ export function Exercise() {
   const mathResult2 = 3 / 2;
   const mathResult3 = Math.pow(3, 2);
   const mathResult4 = Math.sqrt(3);
-  const mathResult5 = 3**2;
+  const mathResult5 = 3 % 2;
 
 
   
@@ -21,10 +21,8 @@ export function Exercise() {
           <code>3 : 2 = {mathResult2}</code>
         </pre>
         <pre>
-          <code>
-          {/* kwadrat liczby */}
-          3<sup>2</sup> = {mathResult3}
-          </code>
+        {/* kwadrat liczby */}
+          <code>3<sup>2</sup> = {mathResult3}</code>
         </pre>
         <pre>
           {/* pierwiastek z liczby */}
