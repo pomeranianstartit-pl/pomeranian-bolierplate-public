@@ -4,6 +4,7 @@ import './styles/aside.css';
 import { HouseIcon } from '../Components/Icons/HouseIcon';
 import { ElementIcon } from '../Components/Icons/ElementIcon';
 import {EditIcon} from '../Components/Icons/EditIcon';
+import {PersonalCardIcon} from '../Components/Icons/PersonalCardIcon';
 export function AppAside() {
   return (
     <aside>
@@ -17,6 +18,9 @@ export function AppAside() {
           </li>
           <li className='aside-row'>
             <NavLink to="exercises"><EditIcon className='icon'/>Ćwiczenia</NavLink>
+          </li>
+          <li className='aside-row'>
+            <NavLink to="cv"><PersonalCardIcon className='icon'/>CV</NavLink>
           </li>
         </ul>
       </nav>
