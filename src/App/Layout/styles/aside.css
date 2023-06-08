@@ -34,6 +34,8 @@ aside a.active {
   color: var(--color-white);
 }
 
-.menu.icon {
+.menu-icon {
   margin-right: 10px;
 }
+
+

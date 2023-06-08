@@ -2,11 +2,11 @@ import { NavLink } from 'react-router-dom';
 
 import './styles/aside.css';
 import { HouseIcon } from './../Components/Icons/HouseIcon';
-import { FaqIcon } from './../Components/Icons/HouseIcon';
-
+import { PersonalCardIcon } from './../Components/Icons/PersonalCardIcon';
 import { ElementIcon } from './../Components/Icons/ElementIcon';
 import { EditIcon } from './../Components/Icons/EditIcon';
-import { SettingIcon } from './../Components/Icons/EditIcon';
+import { CalendarIcon } from './../Components/Icons/CalendarIcon';
+import { SettingIcon } from './../Components/Icons/SettingIcon';
 
 export function AppAside() {
   return (
@@ -21,6 +21,7 @@ export function AppAside() {
           </li>
           <li>
             <NavLink className="aside-row" to="my cv">
+              <PersonalCardIcon className="menu-icon" />
               Moje cv
             </NavLink>
           </li>
@@ -38,11 +39,14 @@ export function AppAside() {
           </li>
           <li>
             <NavLink className="aside-row" to="calendar">
+              <CalendarIcon className="menu-icon" />
               Kalendarz
             </NavLink>
           </li>
+          <br />
           <li>
             <NavLink className="aside-row" to="settings">
+              <SettingIcon className="menu-icon" />
               Ustawienia
             </NavLink>
           </li>
