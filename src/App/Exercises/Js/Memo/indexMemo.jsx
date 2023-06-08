@@ -5,7 +5,8 @@ import { useState } from 'react';
 import { Board } from './Board/Board';
 
 export function Memory() {
-  const [isGameStarted, setGameStarted] = useState(false);
+  const [isGameStartedMemo, setGameStartedMemo] = useState(false);
+
   return (
     <div>
       <h4>Memory Game</h4>
@@ -13,10 +14,13 @@ export function Memory() {
         Gra polegająca na zapamiętywaniu odkrytych kafli i łączeniu ich w pary
       </p>
 
-      {isGameStarted ? <GameView /> : <MenuView />}
+      {isGameStartedMemo ? (
+        <GameView setGameStartedMemo={setGameStartedMemo} />
+      ) : (
+        <MenuView setGameStartedMemo={setGameStartedMemo} />
+      )}
 
-      <GameView />
-      <Board />
+      {isGameStartedMemo && <Board />}
     </div>
   );
 }
