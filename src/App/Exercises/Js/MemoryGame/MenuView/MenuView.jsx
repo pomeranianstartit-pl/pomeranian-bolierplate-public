@@ -2,7 +2,7 @@ import { Button } from '../Button/Button';
 import { Menu } from '../Menu/Menu';
 // import { SelectButtons } from '../SelectButtons/SelectButtons';
 
-export const MenuView = () => {
+export const MenuView = ({ onClick, setGameStarted }) => {
   return (
     <>
       <Menu label="liczba elementów">
@@ -11,7 +11,7 @@ export const MenuView = () => {
         <Button>20 elementów</Button>
       </Menu>
       <Menu label="przyciski sterujące">
-        <Button>START</Button>
+        <Button onClick={() => setGameStarted(true)}>START</Button>
       </Menu>
     </>
   );
