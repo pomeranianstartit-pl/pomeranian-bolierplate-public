@@ -2,6 +2,7 @@ import { Button } from '../Button/Button';
 import { Menu } from '../Menu/Menu';
 import './MenuView.css';
 import { SelectButtons } from '../SelectButtons/SelectButtons';
+import { Playground } from '../Playground/Playground';
 
 export const MenuView = ({ setGameStarted }) => {
   return (
