@@ -30,6 +30,12 @@ aside li a {
 }
 
 aside a.active {
-  background-color: var(--color-primary-blue);
+  background-color: var(--color-green);
   color: var(--color-white);
 }
+
+
+.menu-icon {
+    margin: 4px;
+  }
+

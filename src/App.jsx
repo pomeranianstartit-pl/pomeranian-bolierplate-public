@@ -8,8 +8,8 @@ import { Dashboard } from './App/Dashboard';
 import { CV } from './App/CV/CV';
 import { Blocks } from './App/Blocks';
 import { Exercises } from './App/Exercises';
-import { Calendar } from './App/Calendar';
-import { Settings } from './App/Settings';
+import { Calendar } from './App/Calendar/Calendar';
+import { Settings } from './App/Settings/Setttings';
 
 
 export function App() {
