@@ -15,7 +15,7 @@
 }
 
 .button-active {
-  background-color: #16a53a;
+  background-color: #fe3756;
 }
 
 .button:disabled {
@@ -24,7 +24,7 @@
 }
 
 .button-control {
-  background-color: red;
+  background-color: #fe3756;
   color: white;
 }
 

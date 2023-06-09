@@ -7,13 +7,14 @@ export const Button = ({
   isActive,
   isControl,
 }) => {
-  const activeClass = isActive ? 'button-active' : '';
   return (
     <div>
       <button
         onClick={onClick}
         disabled={isDisabled}
-        className={`button ${activeClass} ${isControl ? `button-control` : ''}`}
+        className={`button ${isActive ? 'button-active' : ''} ${
+          isControl ? `button-control` : ''
+        }`}
         isActive={isActive}
         isControl={isControl}
       >
