@@ -21,9 +21,26 @@ aside li {
   display: flex;
   flex-direction: row;
   align-items: center;
+  text-emphasis-color: black;  
 }
-
-aside li a {
+/*zachowanie linku po najechaniu myszką (:hover)*/
+aside li a:hover {
+  text-decoration: none;
+  color: rgb(47, 47, 47);
+  display: block;
+  padding: 0.5rem;
+}
+/*zachowanie linku trzymaneg przez myszką (:active)*/
+aside li a:active {
+  text-decoration: none;
+  color: rgb(47, 47, 47);
+  display: block;
+  padding: 0.5rem;
+}
+/*zachowanie linku klikniętego (:visited)*/
+aside li a:visited {
+  text-decoration: none;
+  color: rgb(47, 47, 47);
   display: block;
   padding: 0.5rem;
 }
@@ -33,5 +50,11 @@ aside a.active {
   color: var(--color-white);
 }
 .icon {
+  margin-top:10px;
   margin-right: 10px;
+/*tranform obiża ikonę do poziomu tekstu*/
+  transform: translateY(25%); 
+}
+.black{
+  color:black;
 }
