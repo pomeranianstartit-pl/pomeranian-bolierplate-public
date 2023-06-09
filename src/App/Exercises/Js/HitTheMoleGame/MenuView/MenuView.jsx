@@ -3,11 +3,13 @@ import { Menu } from '../Menu/Menu';
 import { SelectButtons } from '../SelectButtons/SelectButtons';
 import './MenuView.css';
 
-export const MenuView = ({ setGameStarted }) => {
+export const MenuView = ({ setGameStarted, setSettings }) => {
   return (
     <>
+      {/* warunkowo */}
       <Menu label="CZAS GRY">
         <SelectButtons
+          setSettings={setSettings}
           options={[
             {
               label: '1 minuta',
@@ -30,6 +32,7 @@ export const MenuView = ({ setGameStarted }) => {
 
       <Menu label="LICZBA KRETÓW">
         <SelectButtons
+          setSettings={setSettings}
           options={[
             {
               label: '1 kret',

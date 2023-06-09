@@ -3,7 +3,7 @@ import { useState } from 'react';
 
 export const SelectButtons = (props) => {
   // props.options
-  const { options } = props;
+  const { options, setSettings } = props;
   const [newOptions, setNewOptions] = useState(options);
 
   const handleClick = (value) => {
@@ -22,6 +22,9 @@ export const SelectButtons = (props) => {
         };
       })
     );
+    setSettings({
+      counter: value * 60,
+    });
   };
 
   return (

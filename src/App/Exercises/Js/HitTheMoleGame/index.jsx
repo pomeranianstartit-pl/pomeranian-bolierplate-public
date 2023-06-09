@@ -1,7 +1,7 @@
 import { Button } from './Button/Button';
 import { Menu } from './Menu/Menu';
 import './styles.css';
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import { Playground } from './Playground/Playground';
 // import { MenuView } from './MenuView/MenuView';
 import { GameView } from './GameView/GameView';
@@ -27,7 +27,7 @@ export function HitTheMole() {
           setScore={setScore}
         />
       ) : (
-        <MenuView setGameStarted={setGameStarted} />
+        <MenuView score={score} setGameStarted={setGameStarted} />
       )}
 
       {/* <ResultView result={result} /> */}
