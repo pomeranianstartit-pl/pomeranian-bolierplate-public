@@ -15,30 +15,29 @@ export function AppAside() {
       <nav>
         <ul>
           <li>
-            <HouseIcon className="menu-icon"/>{' '}
-            <NavLink className="aside-row" to="dashboard">Dashboard</NavLink>
+            <NavLink className="aside-row" to="dashboard"><HouseIcon className="menu-icon"/>Dashboard</NavLink>
           </li>
           <li>
-            <PersonalCardIcon className="menu-icon"/>{' '}
-            <NavLink className="aside-row" to="CV">Moje CV</NavLink>
+            
+            <NavLink className="aside-row" to="CV"><PersonalCardIcon className="menu-icon"/>Moje CV</NavLink>
           </li>
           <li>
-            <ElementIcon className="menu-icon"/>{' '}
-            <NavLink className="aside-row" to="blocks">Bloki</NavLink>
+            
+            <NavLink className="aside-row" to="blocks"><ElementIcon className="menu-icon"/>Bloki</NavLink>
           </li>
           <li>
-            <EditIcon className="menu-icon"/>{' '}
-            <NavLink className="aside-row" to="exercises">Ćwiczenia</NavLink>
+            
+            <NavLink className="aside-row" to="exercises"><EditIcon className="menu-icon"/>Ćwiczenia</NavLink>
           </li>
           <li>
-            <CalendarIcon className="menu-icon"/>{' '}
-            <NavLink className="aside-row" to="calendar">Kalendarz</NavLink>
+            
+            <NavLink className="aside-row" to="calendar"><CalendarIcon className="menu-icon"/>Kalendarz</NavLink>
           </li>
           <li>
-            <SettingIcon className="menu-icon"/>{' '}
-            <NavLink className="aside-row" to="settings">Ustawienia</NavLink>
+            
+            <NavLink className="aside-row" to="settings"><SettingIcon className="menu-icon"/>Ustawienia</NavLink>
           </li>
-        </ul>
+          </ul>
       </nav>
       <p style={{ padding: '1rem 0' }}>Sidebar items, widgets, etc</p>
     </aside>
