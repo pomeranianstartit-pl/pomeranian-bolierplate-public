@@ -1,17 +1,15 @@
 import { Menu } from '../Menu/Menu';
 import { Button } from '../Button/Button';
 
-import { useEffect, useState } from 'react';
+import { useEffect } from 'react';
 import './GameView.css';
 
 export const GameView = ({
   score,
   setGameStarted,
-  setScore,
   setTime,
   time,
   setGameStopped,
-  isGameStopped,
 }) => {
   useEffect(() => {
     const timeoutId = setTimeout(() => {
@@ -19,10 +17,6 @@ export const GameView = ({
     }, 1000);
     return () => clearTimeout(timeoutId);
   }, [time]);
-
-  // if (time == 0) {
-  //   setGameStarted(false);
-  // }
 
   return (
     <>
