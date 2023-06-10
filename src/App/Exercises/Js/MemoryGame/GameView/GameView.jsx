@@ -1,18 +1,26 @@
+import { useEffect, useState } from 'react';
 import { Button } from '../Button/Button';
 import { Menu } from '../Menu/Menu';
 import './GameView.css';
 
-export const GameView = ({ setGameStarted }) => {
+export const GameView = ({ setGameStarted, time, amount, setAmount }) => {
   return (
     <>
-      <Menu label="czas gry">
-        <Button isDisabled={true}>1:35</Button>
+      <Menu label="CZAS GRY">
+        <Button isDisabled={true}>{time}</Button>
       </Menu>
-      <Menu label="liczba ruchów">
-        <Button isDisabled={true}>2</Button>
+      <Menu label="LICZBA RUCHÓW">
+        <Button isDisabled={true}>{amount}</Button>
       </Menu>
-      <Menu label="przyciski sterujące">
-        <Button onClick={() => setGameStarted(false)}>PASS</Button>
+      <Menu label="PRZYCISKI STERUJĄCE">
+        <Button
+          onClick={() => {
+            setGameStarted(false);
+            setAmount(0);
+          }}
+        >
+          PASS
+        </Button>
       </Menu>
     </>
   );
