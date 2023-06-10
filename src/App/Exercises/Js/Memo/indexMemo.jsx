@@ -37,12 +37,13 @@ export function Memory() {
       {isGameStartedMemo ? (
         <GameView setGameStartedMemo={setGameStartedMemo} time={time} amount={amount} setAmount={setAmount}/>
       ) : (
-        <MenuView setGameStartedMemo={setGameStartedMemo} setBoardSize={setBoardSize} />
+        <MenuView setGameStartedMemo={setGameStartedMemo} setBoardSize={setBoardSize} myTime={myTime} setAmount={setAmount} amount={amount} gameEnded={gameEnded} boardSize={boardSize}/>
       )}
 
       {isGameStartedMemo && 
       <Board 
         boardSize={boardSize} 
+        setGameStartedMemo={setGameStartedMemo}
         amount={amount} 
         setAmount={setAmount} 
         time={time} 

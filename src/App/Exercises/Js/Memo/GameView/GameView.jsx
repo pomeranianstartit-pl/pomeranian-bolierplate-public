@@ -1,19 +1,10 @@
 import { Menu } from '../Menu/Menu';
 import './GameView';
 import { Button } from '../Button/Button';
-import { useEffect, useState } from 'react';
+
 
 export const GameView = ({ setGameStartedMemo, time, amount, setAmount}) => {
- 
-
-  // useEffect(() => {
-  //   const setTheTime = setTimeout(() => {
-  //     memoTime >= 0 && setMemoTime(memoTime + 1);
-  //   }, 1000);
-  //   return () => clearTimeout(setTheTime);
-  // }, [memoTime]);
-
-  return (
+    return (
     <div>
       <Menu label="Czas gry">
         <Button isDisabled={true}>{time}</Button>
@@ -26,7 +17,7 @@ export const GameView = ({ setGameStartedMemo, time, amount, setAmount}) => {
           isControl={true}
           onClick={() => {
             setGameStartedMemo(false);
-            setAmount(0)
+            setAmount(0);
           }}
           
         >

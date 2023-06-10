@@ -34,12 +34,11 @@ const generateBoard = (size) => {
   });
 };
 
-export const Board = ({ boardSize, amount, setAmount, setGameEnded, gameEnded, myTime, setMyTime, time}) => {
-  // const [cards, setCards] = useState(boardCards);
+export const Board = ({ boardSize, amount, setAmount, setGameEnded, gameEnded, myTime, setGameStartedMemo, setMyTime, time}) => {
+
   const [board, setBoard] = useState(generateBoard(boardSize));
   const [firstClickedFieldId, setFirstClickedFieldId] = useState();
   const [secondClickedFieldId, setSecondClickedFieldId] = useState();
-  console.log(board, 'board');
 
   const handleClickBoard = (object) => {
     const isFirstClickedSetAndIsDifferentThanPrev =
@@ -56,13 +55,13 @@ export const Board = ({ boardSize, amount, setAmount, setGameEnded, gameEnded, m
   const resetFirstFieldClickedId = () => {
     setTimeout(() => {
       setFirstClickedFieldId(undefined);
-    }, 5000);
+    }, 3000);
   };
 
   const resetSecondFieldClickedId = () => {
     setTimeout(() => {
       setSecondClickedFieldId(undefined);
-    }, 5000);
+    }, 3000);
   };
 
   useEffect(() => {
@@ -79,13 +78,12 @@ export const Board = ({ boardSize, amount, setAmount, setGameEnded, gameEnded, m
       if (firstClickedFieldValue === secondClickedFieldValue) {
         setBoard(
           board.map((field) => {
-            // const isClickedFieldPaired =
-            //   field.id === firstClickedFieldId ||
-            //   field.id === secondClickedFieldId;
+            const isClickedFieldPaired =
+              field.id === firstClickedFieldId ||
+              field.id === secondClickedFieldId;
             return {
               ...field,
-              // isPaired: field.isPaired ? true : isClickedFieldPaired,
-              isPaired: field.isPaired ? true : field.id === firstClickedFieldId || field.id === secondClickedFieldId,
+              isPaired: field.isPaired ? true : isClickedFieldPaired,
             };
           })
         );
@@ -97,16 +95,12 @@ export const Board = ({ boardSize, amount, setAmount, setGameEnded, gameEnded, m
   useEffect(()=>{
     if (board.find((element) => element.isPaired === false)) {
       setGameEnded(false)
-      
     } else {
+      setGameStartedMemo(false)
       setGameEnded(true)
       setMyTime(time)
     }
-
   }, [board])
-
-  console.log(gameEnded, 'gameEnded')
-  
 
   return (
     <div className="board">
