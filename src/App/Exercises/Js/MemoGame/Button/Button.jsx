@@ -3,9 +3,10 @@ export const Button = ({ onClick, children, isDisabled, isActive, id }) => {
   const activeClass = isActive ? 'active' : '';
   return (
     <button
-      className={`button ${activeClass}`}
+      className={`button-memo ${activeClass}`}
       onClick={onClick}
       disabled={isDisabled}
+      isActive={isActive}
     >
       {children}
     </button>

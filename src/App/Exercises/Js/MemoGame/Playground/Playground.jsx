@@ -1,128 +1,113 @@
-import { ReactComponent as Mole } from '../../../../Images/Mole.svg';
 import { useEffect, useState } from 'react';
 import './Playground.css';
 
-const fields = [
-  {
-    id: 1,
-    hasClicked: false,
-  },
-  {
-    id: 2,
-    hasClicked: false,
-  },
-  {
-    id: 3,
-    hasClicked: false,
-  },
-  {
-    id: 4,
-    hasClicked: false,
-  },
-  {
-    id: 5,
-    hasClicked: false,
-  },
-  {
-    id: 6,
-    hasClicked: false,
-  },
-  {
-    id: 7,
-    hasClicked: false,
-  },
-  {
-    id: 8,
-    hasClicked: false,
-  },
-  {
-    id: 9,
-    hasClicked: false,
-  },
-  {
-    id: 10,
-    hasClicked: false,
-  },
-];
+function shuffleArray(s) {
+  for (let i = s.length - 1; i > 0; i--) {
+    const j = Math.floor(Math.random() * (i + 1));
+    [s[i], s[j]] = [s[j], s[i]];
+  }
+  return s;
+}
 
-const getRandomInt = (max) => Math.floor(Math.random() * max) + 1;
+const alpha = Array.from(Array(26)).map((e, i) => i + 65);
+const alphabet = alpha.map((x) => String.fromCharCode(x));
 
-export const Playground = ({ score, setScore }) => {
-  const [modifiedFields, setModifiedFields] = useState(fields);
-  const [fieldWithMoleId, setFieldWithMoleId] = useState(getRandomInt(10));
+const getRandomLetters = (amount) => {
+  // DOPYTAĆ SZYMONA DLACZEGO MATH.RANDOM()
+  const shuffled = [...alphabet].sort(() => 0.5 - Math.random());
+  return shuffled.slice(0, amount);
+};
 
-  const resetClickFlags = () => {
+function generateBoard(size) {
+  const randomLetters = getRandomLetters(size / 2);
+
+  const letters = randomLetters.map((letter) => {
+    return {
+      id: null,
+      value: letter,
+      isPaired: false,
+    };
+  });
+
+  const mergedLetters = [...letters, ...letters];
+
+  return shuffleArray(mergedLetters).map((obj, index) => {
+    return { ...obj, id: index + 1 };
+  });
+}
+
+export const Playground = ({ boardSize }) => {
+  const [firstClickedFieldId, setFirstClickedFieldId] = useState();
+  const [secondClickedFieldId, setSecondClickedFieldId] = useState();
+  const [board, setBoard] = useState(generateBoard(16));
+  console.log(board, 'board');
+  const handleClick = (object) => {
+    const isFirstClickedSetAndIsDifferentThanPrev =
+      firstClickedFieldId && firstClickedFieldId != object.id;
+    if (isFirstClickedSetAndIsDifferentThanPrev) {
+      setSecondClickedFieldId(object.id);
+      resetSecondClickedFieldId();
+    } else {
+      setFirstClickedFieldId(object.id);
+      resetFirstClickedFieldId();
+    }
+  };
+
+  const resetFirstClickedFieldId = () => {
     setTimeout(() => {
-      setModifiedFields(
-        modifiedFields.map((field) => {
-          return {
-            ...field,
-            hasClicked: false,
-          };
-        })
-      );
-    }, 300);
+      setFirstClickedFieldId(undefined);
+    }, 5000);
   };
 
-  const handleScoreUpdate = (isMolePresent) => {
-    isMolePresent ? setScore(score + 1) : setScore(score - 1);
-  };
-
-  const handleClick = (clickedField, isMolePresent) => {
-    setModifiedFields(
-      modifiedFields.map((field) => {
-        return {
-          ...field,
-          hasClicked: field.id === clickedField.id,
-        };
-      })
-    );
-
-    resetClickFlags();
-    handleScoreUpdate(isMolePresent);
+  const resetSecondClickedFieldId = () => {
+    setTimeout(() => {
+      setSecondClickedFieldId(undefined);
+    }, 5000);
   };
 
   useEffect(() => {
-    setInterval(() => {
-      setFieldWithMoleId(getRandomInt(10));
-    }, 1000);
-  }, []);
+    if (firstClickedFieldId && secondClickedFieldId) {
+      const firstClickedFieldValue = board.find(
+        (item) => item.id === firstClickedFieldId
+      ).value;
+      const secondClickedFieldValue = board.find(
+        (item) => item.id === secondClickedFieldId
+      ).value;
+
+      if (firstClickedFieldValue === secondClickedFieldValue) {
+        setBoard(
+          board.map((field) => {
+            const isClickedFieldPaired =
+              field.id === firstClickedFieldId ||
+              field.id === secondClickedFieldId;
+            return {
+              ...field,
+              isPaired: field.isPaired ? true : isClickedFieldPaired,
+            };
+          })
+        );
+      }
+    }
+  }, [firstClickedFieldId, secondClickedFieldId]);
 
   return (
-    <div className="playground">
-      {modifiedFields.map((field) => {
-        const isMolePresent = field.id === fieldWithMoleId;
-        const isClickedFieldWithMole =
-          isMolePresent && field.hasClicked ? 'field-green' : '';
-        const isClickedFieldWithoutMole =
-          !isMolePresent && field.hasClicked ? 'field-red' : '';
+    <div className="board">
+      {board.map((element) => {
+        const isClicked =
+          firstClickedFieldId === element.id ||
+          secondClickedFieldId === element.id;
+        const canShowValue = isClicked || element.isPaired;
+        const clickedFieldClassName = isClicked ? 'field-clicked' : '';
+        const pairedFieldClassName = element.isPaired ? 'field-paired' : '';
         return (
           <div
-            className={`field ${isClickedFieldWithMole} ${isClickedFieldWithoutMole}`}
-            key={field.id}
-            onClick={() => handleClick(field, isMolePresent)}
+            className={`board-field ${clickedFieldClassName} ${pairedFieldClassName}`}
+            onClick={() => handleClick(element)}
           >
-            {isMolePresent && <Mole />}
+            {canShowValue && element.value}
           </div>
         );
       })}
     </div>
   );
-
-  // return (
-  //   <div className="playground">
-  //     <div className="field">
-  //       <Mole className="svg"></Mole>
-  //     </div>
-  //     <div className="field"></div>
-  //     <div className="field"></div>
-  //     <div className="field"></div>
-  //     <div className="field"></div>
-  //     <div className="field"></div>
-  //     <div className="field"></div>
-  //     <div className="field"></div>
-  //     <div className="field"></div>
-  //     <div className="field"></div>
-  //   </div>
-  // );
 };

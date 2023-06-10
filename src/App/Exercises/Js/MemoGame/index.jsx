@@ -2,6 +2,7 @@ import './styles.css';
 import { useState, useEffect } from 'react';
 import { GameView } from './GameView/GameView';
 import { MenuView } from './MenuView/MenuView';
+import { Playground } from './Playground/Playground';
 
 export function Memo() {
   const [isGameStarted, setGameStarted] = useState(false);
@@ -13,9 +14,15 @@ export function Memo() {
         Gra polegająca na zapamiętywaniu odkrytych kafli i łączeniu ich w pary
       </p>
 
-      {/* {isGameStarted ? <GameView /> : <MenuView />} */}
-      <MenuView></MenuView>
+      {isGameStarted ? (
+        <GameView setGameStarted={setGameStarted} />
+      ) : (
+        <MenuView setGameStarted={setGameStarted} />
+      )}
+      {isGameStarted && <Playground />}
+      {/* <MenuView></MenuView>
       <GameView></GameView>
+      <Playground></Playground> */}
     </div>
   );
 }

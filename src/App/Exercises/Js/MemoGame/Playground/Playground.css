@@ -1,28 +1,27 @@
-.playground {
+.board {
+  margin: 20px auto;
   display: flex;
   gap: 10px;
   flex-wrap: wrap;
-  width: 600px;
-  margin: 50px;
+  width: 280px;
 }
 
-.field {
+.board-field {
+  width: 50px;
+  height: 50px;
   background-color: #ccc;
   border-radius: 5px;
-  padding: 5px;
-  width: 100px;
-  height: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   cursor: pointer;
+  font-weight: bold;
 }
 
-.field svg {
-  margin-bottom: -60px;
+.field-clicked {
+  background-color: #e8e8e8;
 }
 
-.field-green {
-  background-color: greenyellow;
-}
-
-.field-red {
-  background-color: red;
+.field-paired {
+  background-color: #1097eb;
 }

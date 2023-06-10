@@ -1,4 +1,4 @@
-.button {
+.button-memo {
   margin: 10px;
   padding: 10px 20px;
   background-color: #2199da;
@@ -9,16 +9,16 @@
   font-weight: bold;
 }
 
-.button:hover {
+.button-memo:hover {
   background-color: #106a9a;
   cursor: pointer;
 }
 
-.button-active {
+.button-memo-active {
   background-color: #16a53a;
 }
 
-.button:disabled {
+.button-memo:disabled {
   background-color: gray;
   cursor: initial;
 }

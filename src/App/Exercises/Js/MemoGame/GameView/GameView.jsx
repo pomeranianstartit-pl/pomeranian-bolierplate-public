@@ -2,7 +2,7 @@ import { Button } from '../Button/Button';
 import { Menu } from '../Menu/Menu';
 import './GameView.css';
 
-export const GameView = () => {
+export const GameView = ({ setGameStarted }) => {
   return (
     <>
       <Menu label="CZAS GRY">
@@ -12,7 +12,7 @@ export const GameView = () => {
         <Button isDisabled={true}>LICZBA</Button>
       </Menu>
       <Menu label="PRZYCISKI STERUJĄCE">
-        <Button>PASS</Button>
+        <Button onClick={() => setGameStarted(false)}>PASS</Button>
       </Menu>
     </>
   );
