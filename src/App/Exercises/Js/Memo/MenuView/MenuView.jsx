@@ -3,22 +3,30 @@ import { Menu } from '../Menu/Menu';
 import { Button } from '../Button/Button';
 import { SelectButtonsMemo } from '../SelectButtons/SelectButtonsMemo';
 
-export const MenuView = ({ setGameStartedMemo }) => {
+export const MenuView = ({ setGameStartedMemo, setBoardSize }) => {
   return (
     <>
       <Menu label="Liczba elementów">
         <SelectButtonsMemo
-          buttonOptions={[
+          setValue={setBoardSize}
+          options={[
             {
               value: 8,
               content: '8 elementów',
               isActive: false,
             },
+            {
+              value: 16,
+              content: '16 elementów',
+              isActive: false,
+            },
+            {
+              value: 20,
+              content: '20 elementów',
+              isActive: false,
+            },
           ]}
         />
-        <Button isActive={true}>8 elementów</Button>
-        <Button>16 elementów</Button>
-        <Button>20 elementów</Button>
       </Menu>
       <Menu label="Przyciski sterujące">
         <Button

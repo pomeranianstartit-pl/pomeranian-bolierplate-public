@@ -1,11 +1,31 @@
 import { MenuView } from './MenuView/MenuView';
 import { GameView } from './GameView/GameView';
 import './styles.css';
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 import { Board } from './Board/Board';
 
 export function Memory() {
   const [isGameStartedMemo, setGameStartedMemo] = useState(false);
+  const [boardSize, setBoardSize] = useState();
+  const [time, setTime] = useState(0);
+  const [timeInterval, setTimeInterval ] = useState();
+  const [amount, setAmount] = useState(0);
+  const [gameEnded, setGameEnded] = useState(false)
+  const [myTime, setMyTime] = useState(0)
+
+  console.log(boardSize)
+
+  useEffect(()=>{
+    if (isGameStartedMemo) {
+        const gameInterval = setInterval(()=>{
+          return setTime((prev) => prev + 1)
+       }, 1000)
+       setTimeInterval(gameInterval);
+    } else {
+       clearInterval(timeInterval)
+       setTime(0)
+    }
+  }, [isGameStartedMemo])
 
   return (
     <div>
@@ -15,12 +35,20 @@ export function Memory() {
       </p>
 
       {isGameStartedMemo ? (
-        <GameView setGameStartedMemo={setGameStartedMemo} />
+        <GameView setGameStartedMemo={setGameStartedMemo} time={time} amount={amount} setAmount={setAmount}/>
       ) : (
-        <MenuView setGameStartedMemo={setGameStartedMemo} />
+        <MenuView setGameStartedMemo={setGameStartedMemo} setBoardSize={setBoardSize} />
       )}
 
-      {isGameStartedMemo && <Board />}
+      {isGameStartedMemo && 
+      <Board 
+        boardSize={boardSize} 
+        amount={amount} 
+        setAmount={setAmount} 
+        time={time} 
+        setMyTime={setMyTime}
+        gameEnded={gameEnded} 
+        setGameEnded={setGameEnded}/>}
     </div>
   );
 }

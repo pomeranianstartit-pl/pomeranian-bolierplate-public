@@ -34,16 +34,16 @@ const generateBoard = (size) => {
   });
 };
 
-export const Board = ({ boardSize }) => {
+export const Board = ({ boardSize, amount, setAmount, setGameEnded, gameEnded, myTime, setMyTime, time}) => {
   // const [cards, setCards] = useState(boardCards);
-  const [board, setBoard] = useState(generateBoard(16));
+  const [board, setBoard] = useState(generateBoard(boardSize));
   const [firstClickedFieldId, setFirstClickedFieldId] = useState();
   const [secondClickedFieldId, setSecondClickedFieldId] = useState();
   console.log(board, 'board');
 
   const handleClickBoard = (object) => {
     const isFirstClickedSetAndIsDifferentThanPrev =
-      firstClickedFieldId && firstClickedFieldId != object.id;
+      firstClickedFieldId && firstClickedFieldId !== object.id;
     if (isFirstClickedSetAndIsDifferentThanPrev) {
       setSecondClickedFieldId(object.id);
       resetSecondFieldClickedId();
@@ -67,6 +67,8 @@ export const Board = ({ boardSize }) => {
 
   useEffect(() => {
     if (firstClickedFieldId && secondClickedFieldId) {
+
+      setAmount(amount+1)
       const firstClickedFieldValue = board.find(
         (item) => item.id === firstClickedFieldId
       ).value;
@@ -83,7 +85,7 @@ export const Board = ({ boardSize }) => {
             return {
               ...field,
               // isPaired: field.isPaired ? true : isClickedFieldPaired,
-              isPaired: field.isPaired || true,
+              isPaired: field.isPaired ? true : field.id === firstClickedFieldId || field.id === secondClickedFieldId,
             };
           })
         );
@@ -91,7 +93,20 @@ export const Board = ({ boardSize }) => {
     }
   }, [firstClickedFieldId, secondClickedFieldId]);
 
-  console.log(board);
+
+  useEffect(()=>{
+    if (board.find((element) => element.isPaired === false)) {
+      setGameEnded(false)
+      
+    } else {
+      setGameEnded(true)
+      setMyTime(time)
+    }
+
+  }, [board])
+
+  console.log(gameEnded, 'gameEnded')
+  
 
   return (
     <div className="board">

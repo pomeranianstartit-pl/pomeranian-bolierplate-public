@@ -35,3 +35,8 @@
 .board-field-clicked-red {
   background-color: #f3aea8;
 }
+
+.paired-field {
+    background-color: #e2fbd7;
+
+}
