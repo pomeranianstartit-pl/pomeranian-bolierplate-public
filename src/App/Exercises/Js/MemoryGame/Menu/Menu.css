@@ -1,0 +1,21 @@
+.font-test-family {
+    font-family: "Poppins";
+  }
+  
+  menu {
+    display: flex;
+    align-items: center;
+  
+   
+  }
+  
+  .menu-label {
+    margin-right: 20px;
+    width: 200px;
+    font-size: 18px;
+  font-weight: 400;
+  line-height: 34px;
+  letter-spacing: 0px;
+  text-align: left;
+  
+  }
