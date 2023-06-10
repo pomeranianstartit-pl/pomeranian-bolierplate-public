@@ -56,13 +56,13 @@ export const Playground = ({ boardSize }) => {
   const resetFirstClickedFieldId = () => {
     setTimeout(() => {
       setFirstClickedFieldId(undefined);
-    }, 4000);
+    }, 5000);
   };
 
   const resetSecondClickedFieldId = () => {
     setTimeout(() => {
       setSecondClickedFieldId(undefined);
-    }, 4000);
+    }, 5000);
   };
 
   useEffect(() => {
