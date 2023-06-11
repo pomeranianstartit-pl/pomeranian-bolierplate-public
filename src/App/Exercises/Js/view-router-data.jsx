@@ -9,7 +9,7 @@ import { blockRouterMetaData as blockRouterMetaDataJsNumbersBoolean } from './Js
 import { blockRouterMetaData as blockRouterMetaDataHitTheMole} from './HitTheMole/router-data';
 import { blockRouterMetaData as blockRouterMetaDataMemoryGame} from './MemoryGame/router-data';
 import { blockRouterMetaData as blockRouterMetaDataSavedInput} from './SavedInput/router-data'
-
+import { blockRouterMetaData as blockRouterMetaDataOpp} from './Exercise-opp/router-data';
 
 
 export const blockRouterMetaData = [
@@ -21,6 +21,7 @@ export const blockRouterMetaData = [
   blockRouterMetaDataJsNumbersBoolean,
   blockRouterMetaDataHitTheMole,
   blockRouterMetaDataMemoryGame,
-  blockRouterMetaDataSavedInput
+  blockRouterMetaDataSavedInput,
+  blockRouterMetaDataOpp
 ];
 export const blockRouterData = getParsedRouterDataList(blockRouterMetaData);
