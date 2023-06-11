@@ -10,6 +10,7 @@ import { blockRouterMetaData as JsFunctionsBasics } from './Exercise-js-function
 import { blockRouterMetaData as JsFunctionsCwiczeniaZFigmy } from './Exercise-js-functions-cwiczenia-figma/router-data';
 import { blockRouterMetaData as HitTheMoleGameData } from './HitTheMoleGame/router-data';
 import { blockRouterMetaData as MemoGameData } from './Memo/router-data';
+import { blockRouterMetaData as OopData } from './exercise-oop/router-data';
 
 export const blockRouterMetaData = [
   blockRouterMetaDataJsVariables1,
@@ -22,5 +23,6 @@ export const blockRouterMetaData = [
   JsFunctionsCwiczeniaZFigmy,
   HitTheMoleGameData,
   MemoGameData,
+  OopData,
 ];
 export const blockRouterData = getParsedRouterDataList(blockRouterMetaData);
