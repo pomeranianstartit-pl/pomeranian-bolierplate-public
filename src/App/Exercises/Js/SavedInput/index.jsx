@@ -18,7 +18,9 @@ const nicks = [
 export function SavedInput() {
   const [idCounter, setIdCounter] = useState(nicks.length)
 
-  
+  const lista =JSON.parse(localStorage.getItem("list-nicki"))
+  console.log("getitem", lista )
+
   
   function addPerson(e) {
       const inputNickValue = e.target.value
@@ -27,13 +29,15 @@ export function SavedInput() {
       
       function sendToLocalStorage() {
         const stringifyNickList = JSON.stringify(nicks)
-        const idCounterList = []
-        for (let i=0;nicks.length===i;i++) {
-          idCounter[i]=i+1
+        let idCounterList = []
+        for (let i=0;nicks.length>i;i++) {
+          idCounterList.push(i)
         }
+
+        console.log(idCounterList)
         
         localStorage.setItem("list-nicki", stringifyNickList)
-        localStorage.setItem("list-nicki-index", idCounter)
+        localStorage.setItem("list-nicki-index", idCounterList)
       }
 
       sendToLocalStorage()
