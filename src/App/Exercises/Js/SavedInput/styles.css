@@ -8,7 +8,7 @@
   margin-top: 100px;
   margin-left: 50px;
   align-items: baseline;
-
+  min-height: 60vh;
 }
 
 .left-part {
@@ -64,9 +64,15 @@
   flex-direction: row;
   align-items: center;
   justify-content: space-around;
+  margin-bottom: 20px;
+}
+
+.name-on-list {
+  text-transform: uppercase;
 }
 
 .x-button {
+  line-height: 1.45;
   height: 26px;
   width: 26px;
   font-weight: 500;
