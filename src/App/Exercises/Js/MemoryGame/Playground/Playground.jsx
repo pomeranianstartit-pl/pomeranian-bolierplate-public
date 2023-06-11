@@ -71,7 +71,7 @@ export const Playground = ({ boardSize, amount, SetAmount, setGameEnded, setMyTi
 // funkcja odpowiedzialna za parowanie elementów 
   useEffect(() => {
     if (firstClickedFieldId && secondClickedFieldId) {
-      SetAmount (amount+1)
+      SetAmount(amount+1)
       const firstClickedFieldValue = board.find(
         (item) => item.id === firstClickedFieldId
       ).value;
