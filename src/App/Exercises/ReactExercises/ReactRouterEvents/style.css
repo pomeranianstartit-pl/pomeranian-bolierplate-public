@@ -1,0 +1,76 @@
+.font-test-family {
+  font-family: Chilanka;
+}
+
+.form--container h1 {
+  margin-top: 4rem;
+  margin-left: 2rem;
+}
+
+.form--container label {
+  margin-left: 2rem;
+
+  /* body/bold-16 */
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 27px;
+
+  /* identical to box height, or 169% */
+
+  /* TEXT/text.primary */
+  color: #222222;
+
+}
+
+.form--container {}
+
+.form--container input[type=text] {
+
+  width: 456px;
+  height: 32px;
+  margin-left: 2rem;
+  margin-top: 0, 3rem;
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 32px;
+  color: #999999;
+}
+
+.form--container input[type=button] {
+
+  box-sizing: border-box;
+  cursor: pointer;
+  margin-left: 2rem;
+  margin-top: 3rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 20px 36px;
+  gap: 16px;
+
+  width: 326px;
+  height: 56px;
+
+  /* primary/primary */
+  background: #FE3756;
+
+  /* primary/primary */
+  border: 1px solid #FE3756;
+  border-radius: 8px;
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 31px;
+
+  /* identical to box height, or 172% */
+  text-align: center;
+
+  color: #FFFFFF;
+
+}

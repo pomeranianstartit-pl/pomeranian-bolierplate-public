@@ -29,7 +29,7 @@ export function AppAside() {
             </NavLink>
           </li>
           <li>
-            <NavLink className="aside-row" to="callendar">Kalendarz</NavLink>
+            <NavLink className="aside-row" to="Callendar">Kalendarz</NavLink>
           </li>
           <br />
           <li>
