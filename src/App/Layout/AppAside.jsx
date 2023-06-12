@@ -12,24 +12,45 @@ export function AppAside() {
     <aside>
       <nav>
         <ul>
-          <li className='aside-row'>
-            <NavLink to="dashboard"> <HouseIcon className='icon' /><b>Dashboard</b></NavLink>
+          <li className="aside-row">
+            <NavLink to="dashboard">
+              <HouseIcon className="icon" />
+              <b>Dashboard</b>
+            </NavLink>
           </li>
-          <li className='aside-row'>
-            <NavLink to="cv"><PersonalCardIcon className='icon'/><b>Moje CV</b></NavLink>
+          <li className="aside-row">
+            <NavLink to="cv">
+              <PersonalCardIcon className="icon" />
+              <b>Moje CV</b>
+            </NavLink>
           </li>
-          <li className='aside-row'>
-            <NavLink to="blocks"> <ElementIcon className='icon' /><b>Bloki</b></NavLink>
+          <li className="aside-row">
+            <NavLink to="blocks">
+              {' '}
+              <ElementIcon className="icon" />
+              <b>Bloki</b>
+            </NavLink>
           </li>
-          <li className= 'aside-row'>
-            <NavLink to="exercises"><EditIcon className='icon'/><b>Ćwiczenia</b></NavLink>
+          <li className="aside-row">
+            <NavLink to="exercises">
+              <EditIcon className="icon" />
+              <b>Ćwiczenia</b>
+            </NavLink>
           </li>
-          <li className='aside-row'>
-            <NavLink to="Calendar"><CalendarIcon className='icon'/><b>Kalendarz</b></NavLink>
-          </li><br />
-          <hr color='grey' /><br />
-          <li className='aside-row'>
-            <NavLink to="Settings" className='black'><SettingIcon className='icon'/><b>Ustawienia</b></NavLink>
+          <li className="aside-row">
+            <NavLink to="Calendar">
+              <CalendarIcon className="icon" />
+              <b>Kalendarz</b>
+            </NavLink>
+          </li>
+          <br />
+          <hr color="grey" />
+          <br />
+          <li className="aside-row">
+            <NavLink to="Settings" className="black">
+              <SettingIcon className="icon" />
+              <b>Ustawienia</b>
+            </NavLink>
           </li>
         </ul>
       </nav>
