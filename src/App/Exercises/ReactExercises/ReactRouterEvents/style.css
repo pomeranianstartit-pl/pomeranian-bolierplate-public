@@ -45,6 +45,7 @@
   width: 326px;
   height: 56px;
 
+  color: white;
   background: #FE3756;
 
   border: 1px solid #FE3756;
@@ -55,4 +56,5 @@
 
 .form--container input[type=button]:hover{
   background: #d57b89;
+  
 }
