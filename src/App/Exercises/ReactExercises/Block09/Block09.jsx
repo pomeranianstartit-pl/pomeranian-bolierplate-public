@@ -4,6 +4,7 @@ import './style.css';
 import { Click5 } from '../Click5/Click5';
 import { SeeOrNot } from '../SeeOrNot/SeeOrNot';
 import { MoreOrLess } from '../MoreOrLess/MoreOrLess';
+import { MoreOrLess2 } from '../MoreOrLess2/MoreOrLess2';
 
 export function Block09() {
   return (
@@ -16,6 +17,8 @@ export function Block09() {
         <SeeOrNot />
         <hr />
         <MoreOrLess />
+        <hr />
+        <MoreOrLess2 />
       </div>
     </div>
   );
