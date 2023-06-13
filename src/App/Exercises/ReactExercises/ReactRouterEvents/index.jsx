@@ -10,7 +10,7 @@ export function ReactRouterEvents() {
   }
 
   function handleOnChangeInput(event) {
-    const inputValue = event.target.value;
+    //const inputValue = event.target.value;
     //console.log('event.target.value', event);
     return; //console.log('wprowadzona wartość input:', inputValue);
   }
