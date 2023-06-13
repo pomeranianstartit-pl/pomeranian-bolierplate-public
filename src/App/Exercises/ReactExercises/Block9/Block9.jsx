@@ -4,6 +4,7 @@ import './style.css';
 import { Click5 } from './Click5/Click5';
 import { SeeOrNot } from '../SeeOrNot/SeeOrNot';
 import { MoreOrLess } from '../MoreOrLess/MoreOrLess';
+import { ABiggerThanB } from '../ABiggerThanB/ABiggerThanB';
 
 export function Block9() {
   return (
@@ -15,6 +16,8 @@ export function Block9() {
         <SeeOrNot />
         <hr />
         <MoreOrLess />
+        <hr />
+        <ABiggerThanB />
       </div>
     </div>
   );
