@@ -10,9 +10,13 @@ export function Block09() {
     <div>
       <h1>Blok 9 - 13.06.2023</h1>
       <div>
+        <br />
         <Click5 />
+        <hr />
         <SeeOrNot />
+        <hr />
         <MoreOrLess />
+        <hr />
       </div>
     </div>
   );
