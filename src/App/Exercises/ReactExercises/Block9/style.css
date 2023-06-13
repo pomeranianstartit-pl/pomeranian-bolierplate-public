@@ -1,0 +1,24 @@
+.font-test-family {
+  font-family: Chilanka;
+}
+.button {
+  margin-top: 3rem;
+  margin-left: 2rem;
+  box-sizing: border-box;
+  cursor: pointer;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 16px;
+  width: 326px;
+  height: 56px;
+  background: #fe3756;
+  border: 1px solid #fe3756;
+  border-radius: 8px;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  text-align: center;
+  color: #ffffff;
+}

@@ -23,7 +23,7 @@ export function App() {
           <Route path="blocks/*" element={<Blocks />} />
           <Route path="*" element={<NotFound />} />
           <Route path="Calendar/*" element={<Calendar />} />
-          <Route path="Setting/*" element={<SettingIcon />} />
+          <Route path="Settings/*" element={<SettingIcon />} />
         </Route>
       </Routes>
     </BrowserRouter>
