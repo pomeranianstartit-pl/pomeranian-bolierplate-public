@@ -2,6 +2,8 @@ import { MoreOrLess } from '../MoreOrLess/MoreOrLess';
 import { Click5 } from '../Click5/Click5';
 import { SeeOrNot } from '../SeeOrNot/SeeOrNot';
 import './style.css';
+import { MoreOrLessBetween } from '../MoreOrLessBetween/MoreOrLessBetween';
+import { Random } from '../Random/Random';
 
 export function Block09() {
   return (
@@ -14,6 +16,10 @@ export function Block09() {
         <SeeOrNot />
         <hr />
         <MoreOrLess />
+        <hr />
+        <MoreOrLessBetween />
+        <hr />
+        <Random />
       </div>
     </div>
   );
