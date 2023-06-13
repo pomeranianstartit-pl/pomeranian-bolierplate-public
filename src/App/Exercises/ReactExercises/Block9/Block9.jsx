@@ -5,23 +5,21 @@ import './style.css';
 import { Click5 } from './Click5/Click5';
 import { SeeOrNot } from './Seeornot/Seeornot';
 import { MoreOrLess } from './Moreorless/MoreOrLess';
-
+import { AorB } from './AorB/AorB';
 export function Block9() {
 
   return (
     <div>
       <h1>Blok 9</h1>
-     <div>
-      <Click5></Click5>
-     </div>
+      <Click5 />
      <hr />
-     <div>
-      <SeeOrNot></SeeOrNot>
-     </div>
+      <SeeOrNot />
      <hr />
-     <div>
-      <MoreOrLess></MoreOrLess>
-     </div>
+      <MoreOrLess />
+      <hr />
+      <AorB />
+     
+
       
     </div>
   );

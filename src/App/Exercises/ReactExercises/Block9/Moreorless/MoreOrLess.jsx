@@ -3,7 +3,7 @@ import { useState } from 'react';
 
 export const MoreOrLess =() => {
 const [message, setMessage] = useState ('')
-  function AnswerHandler (ev) {
+  function answerHandler (ev) {
     let currentAnswer = ev.target.value;
 
     
@@ -20,7 +20,7 @@ const [message, setMessage] = useState ('')
   return (
     <div>
       <h2>Czy A jest większe od 10?</h2>
-      <input placeholder='A' type='number' onChange={AnswerHandler}></input>
+      <input placeholder='A' type='number' onChange={answerHandler}></input>
       <h4>Odpowiedź: {message}</h4>
     </div>);
 
