@@ -11,3 +11,18 @@
   width: 326px;
   height: 56px;
 }
+input{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 13px 16px;
+  gap: 10px;
+
+  width: 160px;
+  height: 48px;
+
+  background: #FFFFFF;
+
+  border: 1px solid #FE3756;
+  border-radius: 5px;
+}
