@@ -9,6 +9,7 @@ import { Dashboard } from './App/Dashboard';
 import { Exercises } from './App/Exercises';
 import { CV } from './App/Components/CV/CV';
 import { Calendar } from './App/Components/Calendar/calendar';
+import { SettingIcon } from './App/Components/Icons/SettingIcon.jsx';
 
 export function App() {
   return (
@@ -22,6 +23,7 @@ export function App() {
           <Route path="blocks/*" element={<Blocks />} />
           <Route path="*" element={<NotFound />} />
           <Route path="Calendar/*" element={<Calendar />} />
+          <Route path="Settings/*" element={<SettingIcon />} />
         </Route>
       </Routes>
     </BrowserRouter>
