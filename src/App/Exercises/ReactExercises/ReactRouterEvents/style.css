@@ -11,7 +11,7 @@
   margin-left: 2rem;
 
   /* body/bold-16 */
-  font-family: 'Poppins';
+  font-family: sans-serif;
   font-style: normal;
   font-weight: 700;
   font-size: 16px;
@@ -24,7 +24,7 @@
 
 }
 
-.form--container {}
+
 
 .form--container input[type=text] {
 
@@ -62,7 +62,8 @@
   /* primary/primary */
   border: 1px solid #FE3756;
   border-radius: 8px;
-  font-family: 'Poppins';
+  font-family: sans-serif;
+
   font-style: normal;
   font-weight: 500;
   font-size: 18px;
@@ -72,5 +73,26 @@
   text-align: center;
 
   color: #FFFFFF;
+
+}
+
+.counter--container input[type=button] {
+  width: 326px;
+  height: 56px;
+  padding: 0px;
+  margin: 10px;
+  background: #13274d;
+
+  /* primary/primary */
+  border: 6px solid #e1f6ff;
+  border-radius: 24px;
+  font-family: sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 31px;
+  text-align: center;
+  color: #FFFFFF;
+  letter-spacing: 2px;
 
 }
