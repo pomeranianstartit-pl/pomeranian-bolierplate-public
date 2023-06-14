@@ -38,3 +38,7 @@ aside ul {
 
   padding-left: 0;
 }
+aside li a:hover {
+  background-color: var(--color-primary-blue);
+  color: var(--color-white);
+}
