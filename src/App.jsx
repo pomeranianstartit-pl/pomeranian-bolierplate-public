@@ -8,8 +8,9 @@ import { Layout } from './App/Layout';
 import { Dashboard } from './App/Dashboard';
 import { Exercises } from './App/Exercises';
 import { CV } from './App/Components/CV/CV.jsx';
-import { Calendar } from './App/Components/Kalendarz/Calendar'
-import { Settings} from './App/Components/Ustawienia/Settings'
+import { Calendar } from './App/Components/Kalendarz/Calendar';
+import { Settings } from './App/Components/Ustawienia/Settings';
+import { Blog } from './App/Blog/Blog';
 export function App() {
   return (
     <BrowserRouter>
@@ -22,6 +23,7 @@ export function App() {
           <Route path="cv/*" element={<CV />} />
           <Route path="Calendar/*" element={<Calendar />} />
           <Route path="Settings/*" element={<Settings />} />
+          <Route path="Blog/*" element={<Blog />} />
           <Route path="*" element={<NotFound />} />
         </Route>
       </Routes>

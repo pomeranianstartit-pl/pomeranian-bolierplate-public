@@ -26,8 +26,6 @@ export const MoreOrLessBetween = () => {
       console.log('B jest większe');
       setAnswer('B jest większe');
     }
-  
-  
   }
   return (
     <div>
