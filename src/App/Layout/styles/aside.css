@@ -26,8 +26,12 @@ aside li {
 /*zachowanie linku po najechaniu myszką (:hover)*/
 aside li a:hover {
   text-decoration: none;
-  color: rgb(178, 19, 19);
+  color: rgb(0, 0, 0);
   display: block;
+  background-color: brown;
+  border-radius: 0.5rem;
+  width: 9rem;
+  height:3rem;
 }
 /*zachowanie linku trzymaneg przez myszką (:active)*/
 aside li a:active {
@@ -35,6 +39,7 @@ aside li a:active {
   color: rgb(179, 24, 24);
   display: block;
   padding: 0.5rem;
+  width: 9rem;
 }
 /*zachowanie linku klikniętego (:visited)*/
 aside li a:visited {
@@ -46,6 +51,9 @@ aside li a:visited {
 aside a.active {
   background-color: var(--color-primary-blue);
   color: var(--color-white);
+  border-radius: 0.5rem;
+  width: 9rem;
+
 }
 .icon {
   margin-top:10px;
