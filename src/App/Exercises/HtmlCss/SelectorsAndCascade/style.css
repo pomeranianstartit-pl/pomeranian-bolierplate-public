@@ -1,0 +1,26 @@
+.font-test-family {
+  font-family: Chilanka;
+}
+
+div.mydiv-1, 
+div.mydiv-2, 
+div.mydiv-1 p {
+  background-color: gold;
+  padding: 20px;
+}
+
+div.mydiv-3 span {
+  color: red;
+}
+
+div.mydiv-3 > span {
+  color: blue;
+}
+
+.sib {
+  background-color: aquamarine;
+}
+
+.sib ~ p.sib {
+  color: red;
+}

@@ -38,4 +38,9 @@ aside a.active {
   margin-right: 10px;
 }
 
+aside li a:hover {
+  background-color: var(--color-primary-blue);
+  color: var(--color-white);
+}
+
 
