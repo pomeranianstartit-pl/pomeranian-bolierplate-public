@@ -50,12 +50,6 @@ export function AppAside() {
               Ustawienia
             </NavLink>
           </li>
-          <li>
-            <NavLink className="aside-row" to="blog">
-              <EditIcon className="menu-icon" />
-              Blog
-            </NavLink>
-          </li>
         </ul>
       </nav>
       <p style={{ padding: '1rem 0' }}>Sidebar items, widgets, etc</p>
