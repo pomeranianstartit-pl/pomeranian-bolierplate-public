@@ -6,7 +6,7 @@ export function AppHeader() {
   return (
     <header>
       <div>
-        <div className="header-title">Zmień to logo w końcu</div>
+        <div className="header-title">Title</div>
       </div>
     </header>
   );
