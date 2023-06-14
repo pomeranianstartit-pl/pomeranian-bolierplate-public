@@ -5,6 +5,7 @@ aside {
   flex-direction: column;
   justify-content: space-between;
   overflow-y: auto;
+
 }
 
 aside ul {
@@ -36,4 +37,9 @@ aside a.active {
 
 .menu-icon {
   margin-right: 10px;
+}
+
+aside li a:hover {
+  background-color: var(--color-primary-blue);
+  color: var(--color-white);
 }

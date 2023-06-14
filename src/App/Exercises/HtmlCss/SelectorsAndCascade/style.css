@@ -1,0 +1,21 @@
+.font-test-family {
+  font-family: Chilanka;
+}
+
+div.mydiv-1 + p
+div.mydiv-1,
+div.mydiv-2,
+div.mydiv-1 p {
+  background-color: gold;
+  padding: 20px;
+}
+
+div.mydiv-3 span {
+  color: red;
+}
+
+.test ~ span.span-1 {
+  text-align: center;
+}
+
+
