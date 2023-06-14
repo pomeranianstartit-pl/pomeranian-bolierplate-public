@@ -5,7 +5,7 @@ import './style.css';
 import { Click5 } from './Click5/Click5';
 import { SeeOrNot } from './Seeornot/Seeornot';
 import { MoreOrLess } from './Moreorless/MoreOrLess';
-import { AorB } from './AorB/AorB';
+import { Compare } from './Compare/Compare';
 export function Block9() {
 
   return (
@@ -17,10 +17,7 @@ export function Block9() {
      <hr />
       <MoreOrLess />
       <hr />
-      <AorB />
-     
-
-      
+      <Compare />
     </div>
   );
 }
