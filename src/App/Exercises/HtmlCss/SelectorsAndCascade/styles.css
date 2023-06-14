@@ -1,0 +1,42 @@
+.font-test-family {
+  font-family: Chilanka;
+}
+
+div::first-letter {
+  font-weight: bold;
+}
+
+.element1 {
+  background-color: aquamarine;
+}
+
+.element2 {
+  background-color: rgb(25, 74, 74);
+}
+
+.element3 {
+  background-color: rgb(113, 31, 102);
+}
+
+.element3 span {
+  font-weight: bolder;
+
+  color: white;
+}
+
+.element4 {
+  background-color: rgb(75, 165, 20);
+}
+.element4 + div {
+  text-align: center;
+}
+.element5 {
+  background-color: rgb(198, 226, 17);
+}
+.element6 {
+  background-color: rgb(236, 78, 15);
+}
+
+.element7 {
+  background-color: azure;
+}

@@ -5,24 +5,21 @@ import './style.css';
 import { Click5 } from './Click5/Click5';
 import { SeeOrNot } from './Seeornot/Seeornot';
 import { MoreOrLess } from './Moreorless/MoreOrLess';
-
+import { Compare } from './Compare/Compare';
+import { FindNumber } from './Findnumber/Findnumber';
 export function Block9() {
-
   return (
     <div>
       <h1>Blok 9</h1>
-     <div>
-      <Click5></Click5>
-     </div>
-     <hr />
-     <div>
-      <SeeOrNot></SeeOrNot>
-     </div>
-     <hr />
-     <div>
-      <MoreOrLess></MoreOrLess>
-     </div>
-      
+      <Click5 />
+      <hr />
+      <SeeOrNot />
+      <hr />
+      <MoreOrLess />
+      <hr />
+      <Compare />
+      <hr />
+      <FindNumber />
     </div>
   );
 }
