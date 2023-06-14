@@ -6,18 +6,20 @@ import { Click5 } from './Click5/Click5';
 import { SeeOrNot } from './Seeornot/Seeornot';
 import { MoreOrLess } from './Moreorless/MoreOrLess';
 import { Compare } from './Compare/Compare';
+import { FindNumber } from './Findnumber/Findnumber';
 export function Block9() {
-
   return (
     <div>
       <h1>Blok 9</h1>
       <Click5 />
-     <hr />
+      <hr />
       <SeeOrNot />
-     <hr />
+      <hr />
       <MoreOrLess />
       <hr />
       <Compare />
+      <hr />
+      <FindNumber />
     </div>
   );
 }
