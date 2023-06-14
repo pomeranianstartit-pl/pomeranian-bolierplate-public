@@ -1,0 +1,101 @@
+a {
+  width: 787px;
+  height: 22px;
+  font-family: 'MADE TOMMY';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 22px;
+  text-decoration-line: underline;
+}
+.blog-post {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 45px 61px;
+  gap: 10px;
+  width: 1034px;
+  height: 484px;
+  left: 268px;
+  top: 220px;
+}
+.author {
+  width: 377px;
+  height: 32px;
+  font-family: 'MADE TOMMY';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 32px;
+}
+.date {
+  width: 70px;
+  height: 24px;
+  font-family: 'MADE TOMMY';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 10.5px;
+  line-height: 24px;
+}
+.header {
+  width: 791px;
+  height: 56px;
+  font-family: 'MADE TOMMY';
+  font-style: normal;
+  font-weight: 800;
+  font-size: 42px;
+  line-height: 56px;
+}
+.occupation {
+  width: 796px;
+  height: 24px;
+  font-family: 'MADE TOMMY';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+}
+.quote {
+  width: 912px;
+  height: 54px;
+  font-family: 'Poppins';
+  font-style: italic;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 27px;
+}
+.content {
+  width: 912px;
+  height: 189px;
+
+  font-family: 'MADE TOMMY';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 27px;
+}
+.header3 {
+  width: 912px;
+  height: 112px;
+  font-family: 'MADE TOMMY';
+  font-style: normal;
+  font-weight: 800;
+  font-size: 42px;
+  line-height: 56px;
+  flex: none;
+  order: 0;
+  align-self: stretch;
+  flex-grow: 0;
+}
+.quote-author {
+  width: 912px;
+  height: 22px;
+  font-family: 'MADE TOMMY';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 22px;
+  order: 2;
+  align-self: stretch;
+  text-align: right;
+}
