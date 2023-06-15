@@ -26,5 +26,5 @@
   filter: brightness(1.5);
   filter: contrast(1.2);
   filter: saturate(30%);
-  filter: blur(50%);
+  filter:blur(5px);
 }
