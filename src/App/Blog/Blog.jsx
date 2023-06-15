@@ -50,15 +50,25 @@ export const Blog = () => {
         </div>
         <ul>
           <li>
-            <a href="https://wiadomosci.wp.pl/to-zacieranie-sladow-chodzi-o-pakiety-wyborcze-sasina-6879848507329312a">
+            <a
+              className="post-link"
+              href="https://wiadomosci.wp.pl/to-zacieranie-sladow-chodzi-o-pakiety-wyborcze-sasina-6879848507329312a"
+              target="blank"
+            >
               WP.PL 1
             </a>
           </li>
           <li>
-            <a href="https://www.wp.pl/">WP.PL 2</a>
+            <a className="post-link" href="https://www.wp.pl/" target="blank">
+              WP.PL 2
+            </a>
           </li>
           <li>
-            <a href="https://www.onet.pl/film/onetfilm/tvn-wbil-szpile-tvp-pokazano-alternatywna-rzeczywistosc-telewizji-rzadowej/2ksezfp,681c1dfa">
+            <a
+              className="post-link"
+              href="https://www.onet.pl/film/onetfilm/tvn-wbil-szpile-tvp-pokazano-alternatywna-rzeczywistosc-telewizji-rzadowej/2ksezfp,681c1dfa"
+              target="blank"
+            >
               ONET.PL
             </a>
           </li>
