@@ -15,3 +15,13 @@ p:not(:first-child) {
 .blog-post:nth-child(3) {
   cursor: progress;
 }
+.blog-post:hover {
+  padding: 40px;
+  border: 1px solid;
+  -webkit-box-shadow: 0px 0px 26px 28px rgba(66, 68, 90, 1);
+  -moz-box-shadow: 0px 0px 26px 28px rgba(66, 68, 90, 1);
+  box-shadow: 0px 0px 26px 28px rgba(66, 68, 90, 1);
+}
+.blog-post:nth-child(1) {
+  background-color: aquamarine;
+}
