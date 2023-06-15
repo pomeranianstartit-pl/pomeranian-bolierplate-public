@@ -1,10 +1,13 @@
 import './styles.css';
-
+import { ElementIcon } from '../Components/Icons/ElementIcon';
 export const Blog = () => {
   return (
     <div>
+      <h2 className="napisBlog">Blog</h2>
       <div className="div-blog-rev">
-        <p>30-11-2022</p>
+        <p>
+          <span>30-11-2022</span>
+        </p>
         <h1 className="div-h1">Why are we so nostalgic for the 1990s?</h1>
         <p>
           Pop culture used to define a generation, but it seems the cultural,
@@ -27,7 +30,7 @@ export const Blog = () => {
         <p>
           “I’m selfish, impatient and a little insecure. I make mistakes, I am
           out of control and at times hard to handle. But if you can’t handle me
-          at my worst, then you sure as hell don’t deserve me at my best.
+          at my worst, then you sure as hell don’t deserve me at my best."
         </p>
         <h5>Merlin Monroe</h5>
         <h3 className="podpis">Radosław Majdan</h3>
@@ -49,16 +52,30 @@ export const Blog = () => {
         <ul className="classli">
           <li>
             <b>
-              <a href="https://wiadomosci.wp.pl/to-zacieranie-sladow-chodzi-o-pakiety-wyborcze-sasina-6879848507329312a" target="_blank">WP.PL 1</a>
+              <a
+                href="https://wiadomosci.wp.pl/to-zacieranie-sladow-chodzi-o-pakiety-wyborcze-sasina-6879848507329312a"
+                target="_blank"
+                rel="noreferrer"
+              >
+                WP.PL 1
+              </a>
             </b>
           </li>
           <li>
             <b>
-              <a href="https://www.wp.pl/" target="_blank">WP.PL 2</a>
+              <a href="https://www.wp.pl/" target="_blank" rel="noreferrer">
+                WP.PL 2
+              </a>
             </b>
           </li>
           <li>
-            <a href="https://www.onet.pl/film/onetfilm/tvn-wbil-szpile-tvp-pokazano-alternatywna-rzeczywistosc-telewizji-rzadowej/2ksezfp,681c1dfa" target="_blank">ONET.PL</a>
+            <a
+              href="https://www.onet.pl/film/onetfilm/tvn-wbil-szpile-tvp-pokazano-alternatywna-rzeczywistosc-telewizji-rzadowej/2ksezfp,681c1dfa"
+              target="_blank"
+              rel="noreferrer"
+            >
+              ONET.PL
+            </a>
           </li>
         </ul>
         <h3 className="podpis">Radosław Majdan</h3>
