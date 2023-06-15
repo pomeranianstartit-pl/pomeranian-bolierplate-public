@@ -1,3 +1,5 @@
+import { Title } from './Title/Title';
+import { Author } from './Author/Author';
 import './styles.css';
 
 export const Blog = () => {
@@ -5,7 +7,7 @@ export const Blog = () => {
     <div class="blog">
       <div class="blog-post">
         <span class="blog-post-date">30-11.2022</span>
-        <h2 class="blog-spot-title">Why are we so nostalgic?</h2>
+        <Title text="I make mistakes!" />
         <p>
           Pop culture used to define a generation, but it seems the cultural,
           music and fashion trends of the 1990s have been recycled, and what
@@ -34,27 +36,29 @@ export const Blog = () => {
             </a>
           </li>
         </ul>
-        <div className="blog-post-author">Radosław Majdan</div>
+        <Author name="Zenek Martyniuk" />
         <br />
         Senior Product Manager
       </div>
+      <br />
+      <br />
       <div class="blog-post">
         <span class="blog-post-date">30-11.2022</span>
-        <h2 class="blog-spot-title">I make mistakes</h2>
+        <Title text="I make mistakes!" />
         <p>
           “I’m selfish, impatient and a little insecure. I make mistakes, I am
           out of control and at times hard to handle. But if you can’t handle me
           at my worst, then you sure as hell don’t deserve me at my best.”
         </p>
-        <p class="blog-post-author">Radosław Majdan</p>
+        <Author name="Radosław Majdan" />
         <br />
         Senior Product Manager
       </div>
+      <br />
+      <br />
       <div class="blog-post">
         <span class="blog-post-date">30-11.2022</span>
-        <h2 class="blog-spot-title">
-          18 Record-Breaking, Controversial, and Weird Facts
-        </h2>
+        <Title text="18 Record-Breaking, Controversial, and Weird Facts" />
         <p>
           The death of Queen Elizabeth II on September 8 at the age of 96
           represents a monumental shift for the British monarchy and the people
@@ -64,7 +68,7 @@ export const Blog = () => {
           slowly grew more visibly anachronistic and battered by endless
           scandals.
         </p>
-        <p class="blog-post-author">Radosław Majdan</p>
+        <Author name="Doda Elektroda" />
         <br />
         Senior Product Manager
       </div>
