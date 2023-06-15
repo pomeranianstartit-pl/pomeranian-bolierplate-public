@@ -10,6 +10,7 @@ import { Exercises } from './App/Exercises';
 import { CV } from './App/Components/CV/CV';
 import { Calendar } from './App/Components/Calendar/calendar';
 import { SettingIcon } from './App/Components/Icons/SettingIcon.jsx';
+import { Blog } from './App/Blog/Blog';
 
 export function App() {
   return (
@@ -24,6 +25,7 @@ export function App() {
           <Route path="*" element={<NotFound />} />
           <Route path="Calendar/*" element={<Calendar />} />
           <Route path="Settings/*" element={<SettingIcon />} />
+          <Route path="blog/*" element={<Blog />} />
         </Route>
       </Routes>
     </BrowserRouter>
