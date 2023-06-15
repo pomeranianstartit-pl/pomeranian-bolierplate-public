@@ -99,3 +99,26 @@ a {
   align-self: stretch;
   text-align: right;
 }
+a[href*='wp.pl'] {
+  font-weight: bolder;
+}
+
+.post-link a:visited {
+  color: green;
+}
+.blog-post :not(:first-child) {
+  color: red;
+}
+.blog-post :nth-child(2) {
+  color: blueviolet;
+}
+
+.blog-post:first-child {
+  cursor: help;
+}
+.blog-post:nth-child(2) {
+  cursor: grabbing;
+}
+.blog-post:nth-child(3) {
+  cursor: all-scroll;
+}
