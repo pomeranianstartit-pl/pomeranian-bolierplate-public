@@ -157,3 +157,30 @@ flex-grow: 0;
     flex-grow: 0;
 }
 
+a[href*="wp.pl"] {
+    color: red;
+}
+a {
+    font-weight: bold;
+}
+
+a.blog-link:visited {
+    color: green;
+}
+
+/* p:not(:first-child) {
+    color: purple;
+} */
+
+p:nth-child(n + 2) {
+    color: orange;
+}
+
+
+p {
+    cursor: grab;
+}
+
+h2, h5, h6 {
+    cursor: cell;
+}
