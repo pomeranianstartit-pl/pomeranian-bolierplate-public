@@ -6,6 +6,10 @@
   --color-black: #000000;
   --color-grey: rgb(60, 64, 67);
   --color-white: rgb(255, 255, 255);
+  /*definig colors*/
+  --color-link-hover: #be2d43;
+  --color-block-10-bg: rgba(0, 0, 0, 0.05);
+  --color-block-10-body: #E5E5E5;
 }
 
 body {

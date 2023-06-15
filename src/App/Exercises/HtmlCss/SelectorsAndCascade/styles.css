@@ -1,0 +1,27 @@
+/*div.second-uniqe-div {
+    background-color: gold;
+}
+
+#first-uniqe-div {
+    font-weight: lighter;
+}
+
+div>p {
+    font-style: italic;
+    margin: 0px;
+}
+
+p span {
+    font-weight: bold;
+}
+
+p+p {
+    background-color: bisque;
+}
+p:hover::first-letter{
+    color: brown;
+    font-size: larger ;
+    font-weight: bolder;
+}
+commented casue affects global layout
+*/

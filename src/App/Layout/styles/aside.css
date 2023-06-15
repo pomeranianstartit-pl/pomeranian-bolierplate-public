@@ -17,30 +17,40 @@ aside ul {
 aside li {
   line-height: 2rem;
   list-style-image: none;
-  padding: o, 5rem;
+  margin: 20px, 10px;
 }
 
 .aside-row {
   display: flex;
   flex-direction: row;
   align-items: center;
+  margin-top: 10px;
 }
 
-aside li a {
+aside li a.aside-row {
   display: block;
-  padding: 0.5rem;
+  padding: 0;
+  font-family: 'Poppins', sans-serif;
+  font-style: normal;
+  font-weight: lighter;
+  font-size: 16px;
+  line-height: 27px;
+  color: #23213D;
+  text-decoration-line: none;
 }
 
 aside a.active {
   background-color: var(--color-primary-blue);
   color: var(--color-white);
 }
-
-aside br {
-  display: block;
-  height: 10px;
-  width: 100px;
-  border-bottom: 1px solid var(--color-grey);
+aside li a:hover{
+  /*font-variant: small-caps; for fun*/
+  color: var(--color-link-hover);
+}
+aside hr{
+  border-top: 1px solid var(--color-blue-gray);
 }
 
-.menu-icon {}
+.menu-icon {
+  margin-right: 5px;
+}
