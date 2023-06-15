@@ -1,14 +1,16 @@
 import './styles.css';
 import { ElementIcon } from '../Components/Icons/ElementIcon';
+import { Title } from './Title/Title';
+import { Author } from './Author/Author';
 export const Blog = () => {
   return (
     <div>
       <h2 className="napisBlog">Blog</h2>
       <div className="div-blog-rev">
-        <p>
-          <span>30-11-2022</span>
+        <p className='data'>
+          <span >30-11-2022</span>
         </p>
-        <h1 className="div-h1">Why are we so nostalgic for the 1990s?</h1>
+        <Title text="Tytuł A"/>
         <p>
           Pop culture used to define a generation, but it seems the cultural,
           music and fashion trends of the 1990s have been recycled, and what
@@ -20,12 +22,12 @@ export const Blog = () => {
           from which to enjoy the dulcet tones of everyone from Salt-N-Pepa to
           Rick Astley.
         </p>
-        <h3 className="podpis">Radosław Majdan</h3>
-        <p>Senior Marketing Specjalist</p>
+        <Author autor="Adam Nowak" podpis="Senior It Specjalist" />
       </div>
 
       <div className="div-blog">
-        <p>30-11-2022</p>
+        <p><span>30-11-2022</span></p>
+        <Title text="I make mistakes!" />
         <h1>I make mistakes!</h1>
         <p>
           “I’m selfish, impatient and a little insecure. I make mistakes, I am
@@ -33,12 +35,17 @@ export const Blog = () => {
           at my worst, then you sure as hell don’t deserve me at my best."
         </p>
         <h5>Merlin Monroe</h5>
+        {/*dodajemy autora z komponentu a w nim przekazaną zmienną po kropce dodajemy użytą a stylke w tym wypadku zaimportują się w css z tego pliku a nie z komponentu,
+        tak samo zachowuje się tytuł bo jest zrobiony w innym komponencie */}
+        <Author autor="Adam Nowak" podpis="Senior It Specjalist" />
+
         <h3 className="podpis">Radosław Majdan</h3>
         <p>Senior Marketing Specjalist</p>
+
       </div>
 
       <div className="div-blog">
-        <p>30-11-2022</p>
+        <p> <span> 30-11-2022 </span> </p>
         <h1>18 Record-Breaking, Controversial, and Weird Facts </h1>
         <p>
           The death of Queen Elizabeth II on September 8 at the age of 96
