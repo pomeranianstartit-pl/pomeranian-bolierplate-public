@@ -1,3 +1,6 @@
+import { PostContent } from './PostContent/PostContent';
+import { Signature } from './Signature/Signature';
+import { Title } from './Title/Title';
 import './styles.css';
 
 export const Blog = () => {
@@ -5,9 +8,9 @@ export const Blog = () => {
     <div className="blog">
       <div className="blog-post">
         <p className="date">30-11-2022</p>
-        <h1 className="header">Why are we so nostalgic for the 1990s?</h1>
-        <div className="content">
-          Pop culture used to define a generation, but it seems the cultural,
+        <Title titleText="tytuł1" />
+        <PostContent
+          content=" Pop culture used to define a generation, but it seems the cultural,
           music and fashion trends of the 1990s have been recycled, and what
           Generation X considered its rite of passage into adulthood, is being
           discovered and claimed by fledgling grown-ups as their own. There's
@@ -15,39 +18,45 @@ export const Blog = () => {
           consumption rather than the ease of a digital download, and now the
           hipsters have discovered the nostalgic sound of a whirring cassette
           from which to enjoy the dulcet tones of everyone from Salt-N-Pepa to
-          Rick Astley.
-        </div>
-        <p className="author">Radosława Majdan</p>
-        <p className="occupation">Senior Marketing Specialist</p>
+          Rick Astley."
+        />
+        <Signature
+          author="Radosława Majdan"
+          occupation="Senior Marketing Specialist"
+        />
       </div>
 
       <div className="blog-post">
         <p className="date">30-11-2022</p>
-        <h1 className="header">I make mistakes!</h1>
+        <Title titleText="I make mistakes!" />
         <div className="quote">
+          <PostContent
+            content="
           “I’m selfish, impatient and a little insecure. I make mistakes, I am
           out of control and at times hard to handle. But if you can’t handle me
-          at my worst, then you sure as hell don’t deserve me at my best.”
+          at my worst, then you sure as hell don’t deserve me at my best.”"
+          />
         </div>
+
         <p className="quote-author">Marilyn Monroe</p>
-        <p className="author">Radosława Majdan</p>
-        <p className="occupation">Senior Marketing Specialist</p>
+        <Signature
+          author="Radosława Majdan"
+          occupation="Senior Marketing Specialist"
+        />
       </div>
 
       <div className="blog-post">
         <p className="date">30-11-2022</p>
-        <h1 className="header3">
-          18 Record-Breaking, Controversial, and Weird Facts{' '}
-        </h1>
-        <div className="content">
-          The death of Queen Elizabeth II on September 8 at the age of 96
+        <Title titleText="18 Record-Breaking, Controversial, and Weird Facts" />
+        <PostContent
+          content="The death of Queen Elizabeth II on September 8 at the age of 96
           represents a monumental shift for the British monarchy and the people
           of England. Royals have died before, of course, but the Queen ruled
           for more than 70 years, and represented a certain stability and
           decorum that held the institution of the Royal Family together as it
           slowly grew more visibly anachronistic and battered by endless
-          scandals.
-        </div>
+          scandals."
+        />
         <ul>
           <li>
             <a
@@ -73,8 +82,10 @@ export const Blog = () => {
             </a>
           </li>
         </ul>
-        <p className="author">Radosława Majdan</p>
-        <p className="occupation">Senior Marketing Specialist</p>
+        <Signature
+          author="Radosława Majdan"
+          occupation="Senior Marketing Specialist"
+        />
       </div>
     </div>
   );

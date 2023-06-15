@@ -8,6 +8,15 @@ a {
   line-height: 22px;
   text-decoration-line: underline;
 }
+.date {
+  width: 70px;
+  height: 24px;
+  font-family: 'MADE TOMMY';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 10.5px;
+  line-height: 24px;
+}
 .blog-post {
   display: flex;
   flex-direction: column;
@@ -19,57 +28,12 @@ a {
   left: 268px;
   top: 220px;
 }
-.author {
-  width: 377px;
-  height: 32px;
-  font-family: 'MADE TOMMY';
-  font-style: normal;
-  font-weight: 700;
-  font-size: 18px;
-  line-height: 32px;
-}
-.date {
-  width: 70px;
-  height: 24px;
-  font-family: 'MADE TOMMY';
-  font-style: normal;
-  font-weight: 400;
-  font-size: 10.5px;
-  line-height: 24px;
-}
-.header {
-  width: 791px;
-  height: 56px;
-  font-family: 'MADE TOMMY';
-  font-style: normal;
-  font-weight: 800;
-  font-size: 42px;
-  line-height: 56px;
-}
-.occupation {
-  width: 796px;
-  height: 24px;
-  font-family: 'MADE TOMMY';
-  font-style: normal;
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 24px;
-}
+
 .quote {
   width: 912px;
   height: 54px;
   font-family: 'Poppins';
   font-style: italic;
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 27px;
-}
-.content {
-  width: 912px;
-  height: 189px;
-
-  font-family: 'MADE TOMMY';
-  font-style: normal;
   font-weight: 400;
   font-size: 16px;
   line-height: 27px;
@@ -99,26 +63,21 @@ a {
   align-self: stretch;
   text-align: right;
 }
-a[href*='wp.pl'] {
-  font-weight: bolder;
-}
-
-.post-link a:visited {
-  color: green;
-}
-.blog-post :not(:first-child) {
-  color: red;
-}
-.blog-post :nth-child(2) {
-  color: blueviolet;
-}
-
-.blog-post:first-child {
-  cursor: help;
+.blog-post:first-child:hover {
+  -webkit-box-shadow: 8px 8px 24px 0px rgba(66, 68, 90, 1);
+  -moz-box-shadow: 8px 8px 24px 0px rgba(66, 68, 90, 1);
+  box-shadow: 8px 8px 24px 0px rgba(66, 68, 90, 1);
 }
 .blog-post:nth-child(2) {
-  cursor: grabbing;
+  background-color: rgba(89, 131, 252, 1);
+  background-image: linear-gradient(
+    90deg,
+    rgba(89, 131, 252, 1) 0%,
+    rgba(41, 53, 86, 1) 100%
+  );
 }
-.blog-post:nth-child(3) {
-  cursor: all-scroll;
+.blog-post:nth-child(3):hover {
+  -webkit-box-shadow: 8px 8px 24px 0px rgba(66, 68, 90, 1);
+  -moz-box-shadow: 8px 8px 24px 0px rgba(66, 68, 90, 1);
+  box-shadow: 8px 8px 24px 0px rgba(66, 68, 90, 1);
 }
