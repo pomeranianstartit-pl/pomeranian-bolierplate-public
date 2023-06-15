@@ -15,7 +15,7 @@ background: #FFFFFF;
 border-radius: 8px;   
 }
 
-.date {
+.blog-date {
     width: 70px;
 height: 24px;
 
@@ -43,7 +43,7 @@ order: 0;
 flex-grow: 0;
 }
 
-.blog-post-title {
+.blog-title {
     
 width: 791px;
 height: 56px;
@@ -92,21 +92,14 @@ order: 0;
 flex-grow: 0;
 }
 
-.signature {
-    width: 377px;
-height: 32px;
+.blog-author-signature {
+    display: flex;
+flex-direction: column;
+align-items: flex-start;
+padding: 0px;
 
-font-family: 'MADE TOMMY';
-font-style: normal;
-font-weight: 700;
-font-size: 18px;
-line-height: 32px;
-/* identical to box height, or 178% */
-
-
-/* text/text.secondary */
-
-color: rgba(34, 34, 34, 0.8);
+width: 796px;
+height: 56px;
 
 
 /* Inside auto layout */
@@ -116,27 +109,51 @@ order: 0;
 flex-grow: 0;
 }
 
-.signature1 {
+.blog-author {
+    width: 377px;
+    height: 32px;
+    
+    font-family: 'MADE TOMMY';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 32px;
+    /* identical to box height, or 178% */
+    
+    
+    /* text/text.secondary */
+    
+    color: rgba(34, 34, 34, 0.8);
+    
+    
+    /* Inside auto layout */
+    
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+}
+
+.blog-author-position {
     width: 796px;
-height: 24px;
-
-font-family: 'MADE TOMMY';
-font-style: normal;
-font-weight: 400;
-font-size: 16px;
-line-height: 24px;
-/* identical to box height, or 150% */
-
-
-/* text/text.secondary */
-
-color: rgba(34, 34, 34, 0.8);
-
-
-/* Inside auto layout */
-
-flex: none;
-order: 1;
-flex-grow: 0;
+    height: 24px;
+    
+    font-family: 'MADE TOMMY';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    /* identical to box height, or 150% */
+    
+    
+    /* text/text.secondary */
+    
+    color: rgba(34, 34, 34, 0.8);
+    
+    
+    /* Inside auto layout */
+    
+    flex: none;
+    order: 1;
+    flex-grow: 0;
 }
 

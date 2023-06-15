@@ -4,9 +4,8 @@ export const Blog = () => {
   return (
     <div className="blog">
       <h3>BLOG</h3>
-      <p className="date">30-11-2022</p>
-      <h2 class="blog-post-title">Why are we so nostalgic for the 1990s?</h2>
-      <br />
+      <span class="blog-date">30-11-2022</span>
+      <h2 class="blog-title">Why are we so nostalgic for the 1990s?</h2>
       <div className="div1">
         <p>
           Pop culture used to define a generation, but it seems the cultural,
@@ -22,8 +21,10 @@ export const Blog = () => {
           Salt-N-Pepa to Rick Astley.
         </p>
         <br></br>
-        <h4 className="signature">Radosława Majdan</h4>
-        <h6 className="signature1">Senior Marketing Specialist/</h6>
+        <div className="blog-author-signature">
+          <p className="blog-author">Radosława Majdan</p>
+          <p className="blog-author-position">Senior Marketing Specialist/</p>
+        </div>
       </div>
     </div>
   );
