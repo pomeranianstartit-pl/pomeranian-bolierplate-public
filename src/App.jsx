@@ -8,6 +8,8 @@ import { Layout } from './App/Layout';
 import { Dashboard } from './App/Dashboard';
 import { Exercises } from './App/Exercises';
 import { Blog } from './App/Blog/Blog';
+import { MyCV } from './App/MyCV/MyCV';
+import { Settings } from './App/Settings/Settings';
 
 export function App() {
   return (
@@ -20,6 +22,8 @@ export function App() {
           <Route path="blocks/*" element={<Blocks />} />
           <Route path="*" element={<NotFound />} />
           <Route path="Blog" element={<Blog />} />
+          <Route path="MyCV" element={<MyCV />} />
+          <Route path="Settings" element={<Settings />} />
         </Route>
       </Routes>
     </BrowserRouter>

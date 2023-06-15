@@ -2,10 +2,6 @@
   font-family: Chilanka;
 }
 
-div::first-letter {
-  font-weight: bold;
-}
-
 .element1 {
   background-color: aquamarine;
 }
