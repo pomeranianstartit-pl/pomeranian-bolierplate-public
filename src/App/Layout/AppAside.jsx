@@ -51,7 +51,7 @@ export function AppAside() {
               Blog
             </NavLink>
           </li>
-
+          <hr />
           <li>
             <NavLink className="aside-row" to="settings">
               <SettingIcon className="menu-icon" />

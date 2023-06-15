@@ -1,0 +1,17 @@
+a.blog-link[href^='https://www.wp.pl/']:hover
+{
+  font-weight: bold;
+  color: red;
+}
+a.blog-link:visited {
+  color: green;
+}
+p:not(:first-child) {
+  color: purple;
+}
+.blog-post {
+  cursor: pointer;
+}
+.blog-post:nth-child(3) {
+  cursor: progress;
+}
