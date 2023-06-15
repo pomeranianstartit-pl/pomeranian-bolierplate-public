@@ -1,4 +1,4 @@
-import './styles.css';
+import './googlefonts.css';
 
 export function GoogleFonts() {
   return (

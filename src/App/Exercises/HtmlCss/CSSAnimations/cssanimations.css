@@ -1,0 +1,27 @@
+.animation {
+  background-color: red;
+  animation-name: change-background;
+  animation-duration: 6s;
+  animation-delay: 3s;
+  animation-fill-mode: forwards;
+  animation-iteration-count: infinite;
+}
+
+@keyframes change-background {
+  0% {
+    background-color: blue;
+  }
+  1% {
+    background-color: orange;
+  }
+  40% {
+    background-color: blue;
+  }
+  50% {
+    background-color: green;
+    border: 3px solid black;
+  }
+  100% {
+    background-color: orange;
+  }
+}
