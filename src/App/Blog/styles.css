@@ -43,6 +43,7 @@ top: 51px;
     font-size: 16px;
     line-height: 27px;
 }
+
 .blog-post{
     display: flex;
     flex-direction: column;
@@ -60,6 +61,9 @@ top: 51px;
     background: #FFFFFF;
     border-radius: 8px; 
 }
+/*.blog-post:hover :nth-child(n + 3){
+    cursor: crosshair;
+} excersise with pseudoclasses*/
 .blog-post h1 {
     font-weight: 800;
     font-size: 42px;
@@ -72,13 +76,22 @@ top: 51px;
     /* identical to box height, or 157% */
     text-decoration-line: underline;
 }
+.blog-post ul li a{
+color:#222222;
+}
+.blog-post ul li a[href*="wp.pl"]:hover {
+    font-weight: bold;
+  }
+  .blog-post ul li a:visited{
+    color: darkolivegreen;
+  }
 .blog-post-date{
     width: 70px;
     height: 24px;
     font-size: 10.5px;
     line-height: 24px;
 /* identical to box height, or 229% */
-    letter-spacing: 0.16em;
+    letter-spacing: 0.15em;
     text-transform: uppercase;
     /*overwrite font differences*/
 }

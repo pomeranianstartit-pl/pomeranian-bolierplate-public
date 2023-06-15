@@ -37,11 +37,12 @@ Senior Marketing Specialist</div>
 
 <p>The death of Queen Elizabeth II on September 8 at the age of 96 represents a monumental shift for the British monarchy and the people of England. Royals have died before, of course, but the Queen ruled for more than 70 years, and represented a certain stability and decorum that held the institution of the Royal Family together as it slowly grew more visibly anachronistic and battered by endless scandals.</p>
 <ul>
-<li><a>WP.PL 1</a></li>
+<li><a href="https://wiadomosci.wp.pl/to-zacieranie-sladow-chodzi-o-pakiety-wyborcze-sasina-6879848507329312a">WP.PL 1</a></li>
 
-<li><a>WP.PL 2</a></li>
+<li><a href='https://www.wp.pl/'>WP.PL 2</a></li>
 
-<li><a>ONET.PL</a></li>
+<li><a href='https://www.onet.pl/film/onetfilm/tvn-wbil-szpile-tvp-pokazano-alternatywna-rzeczywistosc-telewizji-rzadowej/2ksezfp,681c1dfa'>ONET.PL</a></li>
+<li><a href='123'>nie odwiedzaj</a></li>
 </ul>
 <div className='blog-post-signature'>Radosława Majdan <br /> 
 Senior Marketing Specialist</div>
