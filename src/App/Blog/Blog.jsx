@@ -1,11 +1,12 @@
 import './styles.css';
-
+import { Title } from './Title/Title';
+import { Author } from './Author/Author';
 export const Blog = () => {
   return (
     <div className="blog">
       <h3>BLOG</h3>
       <span class="blog-date">30-11-2022</span>
-      <h2 class="blog-title">Why are we so nostalgic for the 1990s?</h2>
+      <Title text="Tytuł A" />
       <div className="div1">
         <p>
           Pop culture used to define a generation, but it seems the cultural,
@@ -29,8 +30,8 @@ export const Blog = () => {
         </p>
         <br></br>
         <div className="blog-author-signature">
-          <h5 className="blog-author">Radosława Majdan</h5>
-          <h6 className="blog-author-position">Senior Marketing Specialist</h6>
+          <Author author="Radosława Majdan" />
+          <Author authorposition="Senior Marketing Specialist" />
         </div>
       </div>
 
