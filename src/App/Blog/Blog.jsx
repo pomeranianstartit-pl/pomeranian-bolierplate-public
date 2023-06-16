@@ -19,11 +19,8 @@ export const Blog = () => {
           cassette from which to enjoy the dulcet tones of everyone from
           Salt-N-Pepa to Rick Astley.
         </p>
-        <div class="blog-post-author">
-          <b>Radosława Majdan</b>
-          <br />
-          Senior Marketing Specialist
-        </div>
+        <div className="signature-name">Radosława Majdan</div>
+        <div className="signature-title">Senior Marketing Specialist</div>
       </div>
       <br />
       <br />
@@ -31,19 +28,18 @@ export const Blog = () => {
       <div class="blog-post">
         <span class="blog-post-date">30-11-2022</span>
         <h2 class="blog-post-title">I make mistakes!</h2>
-        <p>
+        <p className="quote">
           “I’m selfish, impatient and a little insecure. I make mistakes, I am
           out of control and at times hard to handle. But if you can’t handle me
           at my worst, then you sure as hell don’t deserve me at my best.”
         </p>
-        <div class="blog-post-author">
-          <b>Radosława Majdan</b>
-          <br />
-          Senior Marketing Specialist
-        </div>
+        <div className="author">Marilyn Monroe</div>
+        <div className="signature-name">Radosława Majdan</div>
+        <div className="signature-title">Senior Marketing Specialist</div>
       </div>
       <br />
       <br />
+
       <div class="blog-post">
         <span class="blog-post-date">30-11-2022</span>
         <h2 class="blog-post-title">
@@ -58,11 +54,34 @@ export const Blog = () => {
           slowly grew more visibly anachronistic and battered by endless
           scandals.
         </p>
-        <div class="blog-post-author">
-          <b>Radosława Majdan</b>
-          <br />
-          Senior Marketing Specialist
-        </div>
+        <p>
+          My links
+          <ul>
+            <li>
+              <a class="blog-link" href="http://wp.pl">
+                wp.pl 1
+              </a>
+            </li>
+            <li>
+              <a class="blog-link" href="http://wp.pl">
+                wp.pl 2
+              </a>
+            </li>
+            <li>
+              <a class="blog-link" href="http://onet.pl">
+                onet.pl
+              </a>
+            </li>
+            <li>
+              <a class="blog-link" href="http://onet123.pl">
+                onet123.pl
+              </a>
+            </li>
+          </ul>
+        </p>
+
+        <div className="signature-name">Radosława Majdan</div>
+        <div className="signature-title">Senior Marketing Specialist</div>
       </div>
     </div>
   );
