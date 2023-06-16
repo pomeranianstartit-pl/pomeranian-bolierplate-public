@@ -3,14 +3,19 @@ import './styles.css';
 
 export function GoogleFonts() {
   const [font, setFont] = useState('font-lato');
+  const [shouldAnimate, setShouldAnimate] = useState(false);
 
   function handleFontChange(newFont) {
     setFont(newFont);
+    setShouldAnimate(true);
+    setTimeout(() => {
+      setShouldAnimate(false);
+    }, 2 * 1000);
   }
   return (
     <div>
       {' '}
-      <p className={font}>
+      <p className={`${font} ${shouldAnimate ? 'animation' : ''}`}>
         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus sed
         scelerisque mauris. Quisque accumsan lacinia tincidunt. Praesent
         malesuada orci odio, a tempus nisl semper vel. Suspendisse sollicitudin
@@ -27,6 +32,16 @@ export function GoogleFonts() {
       <button onClick={() => handleFontChange('font-lato')}>
         Change the font to Lato
       </button>
+      <div className="exercise">
+        <div>
+          <h2>My pets</h2>
+          <ol start="2">
+            <li className="exercise-list">Dogo</li>
+            <li className="exercise-list">Kotecek</li>
+            <li className="exercise-list">Sair</li>
+          </ol>
+        </div>
+      </div>
     </div>
   );
 }

@@ -1,3 +1,57 @@
-.font-test-family {
-  font-family: Chilanka;
+.business-card {
+  display: flex;
+  flex-direction: column;
+  gap: 0.2em;
+}
+.business-card * {
+  margin: 0;
+}
+
+.business-card a {
+  text-decoration: none;
+  color: black;
+}
+.business-card section {
+  margin-bottom: 0.2em;
+}
+
+.business-card section :nth-child(2) {
+  color: #fe3756;
+}
+.business-card-animation {
+  background-color: red;
+  animation-name: example;
+  animation-duration: 4s;
+}
+@keyframes example {
+  0% {
+    background-color: rgb(255, 47, 0);
+  }
+  10% {
+    background-color: rgb(223, 255, 61);
+  }
+  20% {
+    background-color: rgb(47, 0, 255);
+  }
+  30% {
+    background-color: rgb(0, 255, 94);
+  }
+  40% {
+    background-color: rgb(255, 0, 225);
+  }
+  60% {
+    background-color: coral;
+  }
+  70% {
+    background-color: cyan;
+  }
+  80% {
+    background-color: black;
+  }
+  90% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
 }
