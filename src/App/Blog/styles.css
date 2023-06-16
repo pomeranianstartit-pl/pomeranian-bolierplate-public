@@ -1,0 +1,132 @@
+.blog {
+    font-family: 'MADE TOMMY';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 27px;
+  }
+  
+  .blog-post-date {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 10.5px;
+    line-height: 24px;
+    /* identical to box height, or 229% */
+  
+    letter-spacing: 0.16em;
+    text-transform: uppercase;
+  
+    /* text/text-primary */
+  
+    color: #222222;
+  }
+  
+  .blog-post {
+    font-weight: normal;
+  }
+  
+  .blog-post-title {
+    font-style: normal;
+    font-weight: 800;
+    font-size: 42px;
+    line-height: 56px;
+    /* identical to box height, or 133% */
+  
+    /* text/text-primary */
+  
+    color: #222222;
+  }
+
+
+  
+.signature-name {
+    width: 377px;
+    height: 32px;
+
+    font-family: 'MADE TOMMY';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 32px;
+    color: rgba(34, 34, 34, 0.8);
+}
+
+.signature-title {
+    width: 796px;
+height: 24px;
+
+font-family: 'MADE TOMMY';
+font-style: normal;
+font-weight: 400;
+font-size: 16px;
+line-height: 24px;
+/* identical to box height, or 150% */
+
+
+/* text/text.secondary */
+
+color: rgba(34, 34, 34, 0.8);
+}
+
+.quote {
+    width: 912px;
+height: 54px;
+
+font-family: 'Poppins';
+font-style: italic;
+font-weight: 400;
+font-size: 16px;
+line-height: 27px;
+}
+
+.author {
+    width: 912px;
+height: 22px;
+
+font-family: 'MADE TOMMY';
+font-style: normal;
+font-weight: 700;
+font-size: 14px;
+line-height: 22px;
+/* identical to box height, or 157% */
+
+text-align: right;
+
+/* text/text-primary */
+
+color: #222222;
+}
+
+a.blog-link {
+    color: blueviolet;
+  }
+  
+  a.blog-link[href^='http://wp.']
+  {
+    font-weight: bold;
+    color: palevioletred;
+  }
+  
+  a.blog-link:visited {
+    color: green;
+  }
+  
+  .blog-post:nth-child(n + 2) p:nth-child(n + 3) {
+    font-size: 24px;
+  }
+  
+  .blog-post:nth-child(1) {
+    background-color: aquamarine;
+  }
+  
+  div.blog-post p:hover {
+    -webkit-box-shadow: 8px 8px 49px 0px rgba(66, 68, 90, 1);
+    -moz-box-shadow: 8px 8px 49px 0px rgba(66, 68, 90, 1);
+    box-shadow: 8px 8px 49px 0px rgba(66, 68, 90, 1);
+    padding: 10px;
+  }
+  
+  div.blog-post:first-child p:hover {
+    font-size: 40px;
+  }
+  
