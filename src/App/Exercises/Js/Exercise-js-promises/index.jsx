@@ -1,6 +1,7 @@
 import { useEffect, useState } from 'react';
 import './styles.css';
 import { resolveConfig } from 'prettier';
+import { ApiSymulationSuccess } from './ApiSymulationSuccess/ApiSymulationSuccess';
 
 export function JsPromisesExercise(parameterToEffect) {
   // const [getState, setGetState] = useState(null);
@@ -49,5 +50,9 @@ export function JsPromisesExercise(parameterToEffect) {
   });
 
   logPromiseState(myPromise);
-  return <div></div>;
+  return (
+    <div>
+      <ApiSymulationSuccess />
+    </div>
+  );
 }
