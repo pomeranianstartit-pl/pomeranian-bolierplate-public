@@ -1,0 +1,17 @@
+.font-test-family {
+  font-family: Chilanka;
+}
+.my-style {
+  color: darkorange;
+  font-size: 20px;
+  font-weight: 700;
+  font-style: italic;
+  text-transform: uppercase;
+  text-decoration: overline;
+  text-shadow: 3px;
+  letter-spacing: 5px;
+  line-height: 1.6;
+  word-spacing: 30px;
+  text-align: right;
+  vertical-align: sub;
+}
