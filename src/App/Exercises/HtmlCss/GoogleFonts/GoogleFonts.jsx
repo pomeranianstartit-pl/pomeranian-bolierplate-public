@@ -3,14 +3,19 @@ import './styles.css';
 
 export function GoogleFonts() {
   const [font, setFont] = useState('font-lato');
+  const [shouldAnimate, setShouldAnimate] = useState(false);
 
   function handleFontChange(newFont) {
     setFont(newFont);
+    setShouldAnimate(true);
+    setTimeout(() => {
+      setShouldAnimate(false);
+    }, 2 * 1000);
   }
   return (
     <div>
       {' '}
-      <p className={font}>
+      <p className={`${font} ${shouldAnimate ? 'animation' : ''}`}>
         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus sed
         scelerisque mauris. Quisque accumsan lacinia tincidunt. Praesent
         malesuada orci odio, a tempus nisl semper vel. Suspendisse sollicitudin
