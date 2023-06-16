@@ -4,14 +4,57 @@
 .font-poppins {
   font-family: 'Poppins', sans-serif;
 }
-.light-theme {
-  color: black;
-  background: white;
-}
-.dark-theme {
-  color: white;
-  background: black;
-}
 .wrapper {
   transition: all 2s;
+}
+.animation {
+  animation-name: slide-in;
+  animation-duration: 2s;
+}
+
+@keyframes slide-in {
+  0% {
+    position: absolute;
+    left: -10000px;
+  }
+  100% {
+    position: absolute;
+    left: 0px;
+  }
+}
+div.animatedSquare {
+  width: 100px;
+  height: 100px;
+  background-color: red;
+  position: relative;
+  animation-name: square;
+  animation-duration: 4s;
+}
+
+@keyframes square {
+  0% {
+    background-color: red;
+    left: 0px;
+    top: 0px;
+  }
+  25% {
+    background-color: yellow;
+    left: 200px;
+    top: 0px;
+  }
+  50% {
+    background-color: blue;
+    left: 200px;
+    top: 200px;
+  }
+  75% {
+    background-color: green;
+    left: 0px;
+    top: 200px;
+  }
+  100% {
+    background-color: red;
+    left: 0px;
+    top: 0px;
+  }
 }
