@@ -1,0 +1,39 @@
+.blog {
+    font-family: 'MADE TOMMY';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 27px;
+  }
+  
+  .blog-post-date {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 10.5px;
+    line-height: 24px;
+    /* identical to box height, or 229% */
+  
+    letter-spacing: 0.16em;
+    text-transform: uppercase;
+  
+    /* text/text-primary */
+  
+    color: #222222;
+  }
+  
+  .blog-post {
+    font-weight: normal;
+  }
+  
+  .blog-post-title {
+    font-style: normal;
+    font-weight: 800;
+    font-size: 42px;
+    line-height: 56px;
+    /* identical to box height, or 133% */
+  
+    /* text/text-primary */
+  
+    color: #222222;
+  }
+  
