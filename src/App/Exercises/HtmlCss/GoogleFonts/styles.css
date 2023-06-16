@@ -1,0 +1,26 @@
+.font-test-family {
+  font-family: Chilanka;
+}
+
+.font-lato {
+  font-family: 'Lato', sans-serif;
+}
+
+.font-poppins {
+font-family: 'Poppins', sans-serif;
+}
+
+.dark-theme {
+  color: lightgrey;
+  background-color: grey
+}
+
+.light-theme {
+color: grey;
+background-color: white;
+
+}
+
+.wrapper{
+  transition: all 3s;
+}
