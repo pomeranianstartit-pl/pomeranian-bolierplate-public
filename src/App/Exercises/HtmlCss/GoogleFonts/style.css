@@ -1,0 +1,21 @@
+.font-lato {
+  font-family: 'Lato', sans-serif;
+}
+
+.font-poppins {
+  font-family: 'Poppins', sans-serif;
+}
+
+.dark-theme {
+  color: white;
+  background: black;
+}
+
+.light-theme {
+  background: white;
+  color: black;
+}
+
+.wrapper {
+  transition: 500ms;
+}
