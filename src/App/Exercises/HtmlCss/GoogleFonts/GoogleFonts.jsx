@@ -32,6 +32,16 @@ export function GoogleFonts() {
       <button onClick={() => handleFontChange('font-lato')}>
         Change the font to Lato
       </button>
+      <div className="exercise">
+        <div>
+          <h2>My pets</h2>
+          <ol start="2">
+            <li className="exercise-list">Dogo</li>
+            <li className="exercise-list">Kotecek</li>
+            <li className="exercise-list">Sair</li>
+          </ol>
+        </div>
+      </div>
     </div>
   );
 }

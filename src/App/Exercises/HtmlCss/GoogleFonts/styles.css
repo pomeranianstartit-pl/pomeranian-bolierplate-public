@@ -16,3 +16,20 @@
     opacity: 1;
   }
 }
+.exercise-list:hover {
+  animation-name: bolding;
+  animation-duration: 5s;
+}
+@keyframes bolding {
+  0% {
+    font-weight: normal;
+  }
+  50% {
+    font-weight: bold;
+    letter-spacing: 1cm;
+  }
+  100% {
+    font-weight: bolder;
+    letter-spacing: 2cm;
+  }
+}
