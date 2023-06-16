@@ -36,7 +36,7 @@ export const Blog = () => {
         </p>
         <h5>Merlin Monroe</h5>
         {/*dodajemy autora z komponentu a w nim przekazaną zmienną po kropce dodajemy użytą a stylke w tym wypadku zaimportują się w css z tego pliku a nie z komponentu,
-        tak samo zachowuje się tytuł bo jest zrobiony w innym komponencie */}
+        tak samo zachowuje się tytuł bo jest zrobiony w innym komponencie*/}
         <Author autor="Adam Nowak" podpis="Senior It Specjalist" />
 
         <h3 className="podpis">Radosław Majdan</h3>

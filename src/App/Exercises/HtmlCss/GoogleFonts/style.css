@@ -1,0 +1,16 @@
+.font-lato {
+  font-family:"Lato", sans-serif;
+}
+.font-poppins{
+  font-family: "Poppins", sans-serif;
+}
+.light-theme{
+  background-color: white;
+  color: black;
+  transition: all 2s;
+}
+.dark-theme{
+  color: white;
+  background-color: black;
+  transition: all 2s;
+}

@@ -34,12 +34,14 @@ div h1 {
     cursor: pointer;
     transform: scale(1.05);
     box-shadow: 0 0 30px rgba(22, 22, 22, 0.3);
+    transition: all 0.3s;
 }
 .div-blog:active{
     -webkit-box-shadow: inset 0px 0px 24px 0px rgba(66, 68, 90, 1);
     -moz-box-shadow: inset 0px 0px 24px 0px rgba(66, 68, 90, 1);
     box-shadow: inset 0px 0px 24px 0px rgba(66, 68, 90, 1);
     transform: scale(1.00);
+    transition: all 0.05s;
 }
 
 .div-blog ul {
