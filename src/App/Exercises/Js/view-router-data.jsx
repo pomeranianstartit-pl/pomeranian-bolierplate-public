@@ -13,6 +13,7 @@ import { blockRouterMetaData as blockRouterMetaDataMemoryGame } from '../../Exer
 import { blockRouterMetaData as blockRouterMetaDataSaveInput } from '../../Exercises/Js/SavedInput/router-data';
 import { blockRouterMetaData as blockRouterMetaDataOOP } from '../../Exercises/Js/exercise-oop/router-data';
 import { blockRouterMetaData as blockRouterMetaDataPromises } from '../../Exercises/Js/Exercise-js-promises/router-data';
+import { blockRouterMetaData as blockRouterMetadataUseEffectAndPromisses } from '../../Exercises/Js/Exercise-js-promise-use-effect/router-data';
 export const blockRouterMetaData = [
   blockRouterMetaDataJsVariables1,
   blockRouterMetaDataJsVariables2,
@@ -27,5 +28,6 @@ export const blockRouterMetaData = [
   blockRouterMetaDataSaveInput,
   blockRouterMetaDataOOP,
   blockRouterMetaDataPromises,
+  blockRouterMetadataUseEffectAndPromisses,
 ];
 export const blockRouterData = getParsedRouterDataList(blockRouterMetaData);
