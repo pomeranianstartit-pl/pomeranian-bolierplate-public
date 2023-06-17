@@ -1,5 +1,5 @@
 import './styles.css';
 
-export const EmptyComponentWithRouting = () => {
+export const Exercise = () => {
   return <div>Change me X</div>;
 };
