@@ -10,6 +10,9 @@ import { blockRouterMetaData as blockRouterMetaDataHitTheMole} from './HitTheMol
 import { blockRouterMetaData as blockRouterMetaDataMemoryGame} from './MemoryGame/router-data';
 import { blockRouterMetaData as blockRouterMetaDataSavedInput} from './SavedInput/router-data'
 import { blockRouterMetaData as blockRouterMetaDataOpp} from './Exercise-opp/router-data';
+import { blockRouterMetaData as blockRouterMetaDataTryCatchError} from './tryCatchExercise/router-data';
+import { blockRouterMetaData as blockRouterMetaDataPromises} from './Promises/router-data';
+import { blockRouterMetaData as blockRouterMetaDataPromisesUseEffect} from './PromiseUseEffect/router-data';
 
 
 export const blockRouterMetaData = [
@@ -22,6 +25,9 @@ export const blockRouterMetaData = [
   blockRouterMetaDataHitTheMole,
   blockRouterMetaDataMemoryGame,
   blockRouterMetaDataSavedInput,
-  blockRouterMetaDataOpp
+  blockRouterMetaDataOpp,
+  blockRouterMetaDataTryCatchError,
+  blockRouterMetaDataPromises,
+  blockRouterMetaDataPromisesUseEffect
 ];
 export const blockRouterData = getParsedRouterDataList(blockRouterMetaData);
