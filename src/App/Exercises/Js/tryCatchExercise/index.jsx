@@ -1,8 +1,9 @@
 import React, { useState } from 'react';
 
-export function tryCatchExercise() {
+export function TryCatchExercise() {
   const [value, setValue] = useState('');
   const [error, setError] = useState();
+  
 
   const checkIsNumber = (value) => {
     const parsedValue = Number.parseInt(value);
