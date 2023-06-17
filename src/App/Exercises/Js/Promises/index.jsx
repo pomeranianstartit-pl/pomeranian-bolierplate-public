@@ -1,6 +1,6 @@
 import { useEffect, useState } from 'react';
 import './styles.css';
-
+import { ApiSymulationSuccess } from './ApiSymulationSuccess/ApiSymulationSuccess';
 export function JsPromisesExercise(parameterToEffect) {
 
   const [getState, setState] =useState(null);
@@ -16,10 +16,10 @@ export function JsPromisesExercise(parameterToEffect) {
       console.log('Zatrzymaj operacje cykliczna ... Wykonuje cleanup')
     }
     // possible options in useEffect array to kick useEffect and cause
-  }, [personalData, getState]);
+  }, [ getState]);
   // służy do optymalizacji działania aplikacji
  function logPromiseState(promise) {
-  promis
+  promise
   .them(()=>{
     // sucess
     console.log('Stan: fullfilled');
@@ -42,13 +42,13 @@ export function JsPromisesExercise(parameterToEffect) {
         resolve ()
       }
       else { rejected()}
-    }, 2000)
+    })
   })
 
  }
   return (
     <div className='playing-with-js-promises'>
-  
+  <ApiSymulationSuccess/>
     </div>
   );
 }
