@@ -1,43 +1,42 @@
-import React, { useState } from 'react';
-
 import './style.css';
 
-export function GoogleFonts() {
-  const [font, setFont] = useState('font-lato');
-  const [shouldAnimate, setShouldAnimate] = useState(false);
-  const [shouldAnimate2, setShouldAnimate2] = useState(false);
-
-  function handleFontChange(newFont) {
-    setFont(newFont);
-    setShouldAnimate(false);
-    setShouldAnimate2(false);
-
-    setTimeout(() => {
-      setShouldAnimate(false);
-    }, 2 * 1000);
-  }
-
+export const GoogleFonts = () => {
   return (
-    <div>
-      <p className={`${font} ${shouldAnimate ? 'animation' : ''} wrapper`}>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe animi
-        laboriosam autem distinctio iste in, doloribus corporis accusamus
-        voluptatum, ex cumque temporibus reiciendis atque! Dolorum laboriosam
-        sequi ex vitae cum.
-      </p>
-      <button onClick={() => handleFontChange('font-poppins')}>
-        Change the font to: Poppins
-      </button>
-      <button onClick={() => handleFontChange('font-lato')}>
-        Change the font to: Lato
-      </button>
-      <button onClick={() => setShouldAnimate(true)}>Animuj</button>
-      <button onClick={() => setShouldAnimate(false)}>Stop animacji</button>
-
-      <h1>CSS Animation</h1>
-      <div className={`${shouldAnimate2 ? 'animatedSquare' : ''}`}></div>
-      <button onClick={() => setShouldAnimate2(true)}>Włącz</button>
-      <button onClick={() => setShouldAnimate2(false)}>Wyłącz</button>
+    <div className="business-card">
+      <section>
+        <h2 id="header1">Masz pytania?</h2>
+        <h2 id="header2">Nasz specjalista chętnie Ci pomoe</h2>
+      </section>
+      <section>
+        <p id="paragraph1">Eleonora Frąckiewiczówna</p>
+        <p id="paragraph2">Specjalista ds. finansowania</p>
+      </section>
+      <section>
+        <a
+          id="mail"
+          href="linkto:https://allegro.pl/oferta/spinki-do-mankietow-jaroslaw-kaczynski-prezes-pis-12482621227"
+        >
+          efrackiewiczowna@rtc.pl
+        </a>
+        <a id="phoneNumber" href="tel:500677345">
+          500 677 345
+        </a>
+      </section>
     </div>
   );
-}
+};
+
+export const Lists = () => {
+  return (
+    <div className="lists">
+      <ol start="2">
+        <h2>My Pets</h2>
+        <li style>Rengar</li>
+        <li>Kha'Zix</li>
+        <li>Nunu</li>
+        <li>Teemo</li>
+        <li>Darius</li>
+      </ol>
+    </div>
+  );
+};
