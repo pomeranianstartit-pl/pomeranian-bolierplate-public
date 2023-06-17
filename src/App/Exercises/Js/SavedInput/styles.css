@@ -17,14 +17,14 @@
   display: flex;
   flex-direction: column;
 }
-button {
+/* button {
   height: 26px;
   width: 26px;
-}
-.button-dodaj {
+} */
+/* .button-dodaj {
   height: 56px;
   width: 163px;
-}
+} */
 
 /* .nick {
   flex: none;
