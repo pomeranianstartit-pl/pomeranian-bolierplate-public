@@ -1,0 +1,149 @@
+.font-lato {
+
+  font-family: 'Lato', sans-serif;
+
+}
+
+
+
+
+.font-poppins {
+
+  font-family: 'Poppins', sans-serif;
+
+}
+
+
+
+
+.dark-theme {
+
+  color: #EEE;
+
+  background: #333;
+
+}
+
+.light-theme {
+
+  background: #EEE;
+
+  color: #333;
+
+}
+
+
+
+
+.wrapper {
+
+  transition: all 2s;
+
+}
+
+.animation {
+  animation-name:slide-in;
+  animation-duration: 2s;
+}
+
+@keyframes fade {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.business-card {
+  display: flex;
+  flex-direction: column;
+  gap: .2em;
+}
+.business-card * {
+  margin: 0;
+}
+
+.business-card a {
+  text-decoration: none;
+  color:black;
+}
+.business-card section {
+  margin-bottom: .2em;
+}
+
+.business-card section:hover{
+  animation-name: push;
+  margin-bottom: .4em 0;
+  transition: all .2s;
+}
+
+.business-card section :nth-child(2) {
+  color: #FE3756;
+  animation-name: fade;
+  animation-duration: 2s;
+}
+
+
+@keyframes example {
+  from {background-color: red;}
+  to {background-color: yellow;}
+}
+
+/*div {
+  width: 100px;
+  height: 100px;
+  background-color: red;
+  animation-name: example;
+  animation-duration: 4s;
+}*/
+
+h2 {
+  animation: example 5s linear 2s infinite alternate;
+}
+
+#myDIV {
+  margin: auto;
+  border: 1px solid black;
+  width: 200px;
+  height: 100px;
+  background-color: coral;
+  color: white;
+  animation: mymove 5s infinite;
+}
+
+@keyframes mymove {
+  50% {transform: rotate(180deg);}
+}
+
+@keyframes fade {
+  from {opacity: 0;
+}to {opacity: 1;
+}
+}
+
+.lists ul {
+  list-style-position: outside;
+  padding: 0;
+}
+
+.lists li:hover {
+  margin-left: 2em;
+  transition: margin .2s;
+}
+
+
+li {
+  font-weight: lighter;
+}
+
+.lists dd:after {
+  content: "";
+  display: block;
+  width: 2px;
+  height: 2px;
+  background-color: black;
+  position: relative;
+  top: 50%;
+  left: 0;
+}

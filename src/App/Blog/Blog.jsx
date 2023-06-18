@@ -1,3 +1,5 @@
+import { Author } from './Author/Author';
+import { Title } from './Title/Title';
 import './styles.css';
 
 export const Blog = () => {
@@ -5,7 +7,7 @@ export const Blog = () => {
     <div class="blog">
       <div class="blog-post">
         <span class="blog-post-date">30-11-2022</span>
-        <h2 class="blog-post-title">Why are we so nostalgic for the 1990s?</h2>
+        <Title text="Tytuł A" />
         <p>
           Pop culture used to define a generation, but it seems the cultural,
           music and fashion trends of the 1990s have been recycled, and what
@@ -19,32 +21,32 @@ export const Blog = () => {
           cassette from which to enjoy the dulcet tones of everyone from
           Salt-N-Pepa to Rick Astley.
         </p>
-        <div className="signature-name">Radosława Majdan</div>
-        <div className="signature-title">Senior Marketing Specialist</div>
+        <Author name="Radosław Majdan" title="Senior Marketing Specialist" />
       </div>
       <br />
       <br />
 
       <div class="blog-post">
         <span class="blog-post-date">30-11-2022</span>
-        <h2 class="blog-post-title">I make mistakes!</h2>
+        <Title text="Tytuł B" />
+        {/* <h2 class="blog-post-title">I make mistakes!</h2> */}
         <p className="quote">
           “I’m selfish, impatient and a little insecure. I make mistakes, I am
           out of control and at times hard to handle. But if you can’t handle me
           at my worst, then you sure as hell don’t deserve me at my best.”
         </p>
         <div className="author">Marilyn Monroe</div>
-        <div className="signature-name">Radosława Majdan</div>
-        <div className="signature-title">Senior Marketing Specialist</div>
+        <Author name="Radosław Majdan" title="Senior Marketing Specialist" />
       </div>
       <br />
       <br />
 
       <div class="blog-post">
         <span class="blog-post-date">30-11-2022</span>
-        <h2 class="blog-post-title">
+        <Title text="Tytuł C" />
+        {/* <h2 class="blog-post-title">
           18 Record-Breaking, Controversial, and Weird Facts{' '}
-        </h2>
+        </h2> */}
         <p>
           The death of Queen Elizabeth II on September 8 at the age of 96
           represents a monumental shift for the British monarchy and the people
@@ -80,8 +82,7 @@ export const Blog = () => {
           </ul>
         </p>
 
-        <div className="signature-name">Radosława Majdan</div>
-        <div className="signature-title">Senior Marketing Specialist</div>
+        <Author name="Radosław Majdan" title="Senior Marketing Specialist" />
       </div>
     </div>
   );

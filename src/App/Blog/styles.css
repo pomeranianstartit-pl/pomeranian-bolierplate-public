@@ -16,6 +16,7 @@
     letter-spacing: 0.16em;
     text-transform: uppercase;
   
+  
     /* text/text-primary */
   
     color: #222222;
@@ -39,7 +40,7 @@
 
 
   
-.signature-name {
+.signature name {
     width: 377px;
     height: 32px;
 
@@ -51,7 +52,7 @@
     color: rgba(34, 34, 34, 0.8);
 }
 
-.signature-title {
+.signature title {
     width: 796px;
 height: 24px;
 
@@ -118,6 +119,7 @@ a.blog-link {
   .blog-post:nth-child(1) {
     background-color: aquamarine;
   }
+   
   
   div.blog-post p:hover {
     -webkit-box-shadow: 8px 8px 49px 0px rgba(66, 68, 90, 1);
