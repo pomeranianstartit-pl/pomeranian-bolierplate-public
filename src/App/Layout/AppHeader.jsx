@@ -10,7 +10,7 @@ export function AppHeader() {
       <Logo />  
       </a>
       <div>
-        <div className="header-title">Tytuł nagłówka</div>
+        <div className="header-title">Materiał ze szkolenia</div>
       </div>
     </header>
   );
