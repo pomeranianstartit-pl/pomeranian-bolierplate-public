@@ -1,4 +1,5 @@
 import { getParsedRouterDataList } from '../../router-data/parseRouterData';
+import { ExerciseBoxModelMetaData } from './Exercise-Box-model/router-data';
 
 import { blockRouterMetaData as blockRouterMetaData121220231 } from './Exercise-example-12-12-2023-1/router-data';
 import { GoogleFontsMetaData } from './GoogleFonts/router-data';
@@ -9,6 +10,7 @@ export const blockRouterMetaData =
     [blockRouterMetaData121220231, 
     SelectorsAndCascadeMetaData, 
     TextFundamentsMetaData,
-    GoogleFontsMetaData];
+    GoogleFontsMetaData,
+    ExerciseBoxModelMetaData];
 export const blockRouterData = getParsedRouterDataList(blockRouterMetaData);
 
