@@ -6,6 +6,7 @@ import { PersonalCardIcon } from './../Components/Icons/PersonalCardIcon.jsx';
 import { SettingIcon } from './../Components/Icons/SettingIcon.jsx';
 
 import './styles/aside.css';
+import { FAQIcon } from '../Components/Icons/FAQIcon.jsx';
 
 export function AppAside() {
   return (
@@ -46,6 +47,12 @@ export function AppAside() {
             <NavLink className="aside-row" to="Settings">
               <SettingIcon className="menu-icon" />
               Ustawienia
+            </NavLink>
+          </li>
+          <li>
+            <NavLink className="aside-row" to="FAQ">
+              <FAQIcon className="menu-icon" />
+              FAQ
             </NavLink>
           </li>
         </ul>
