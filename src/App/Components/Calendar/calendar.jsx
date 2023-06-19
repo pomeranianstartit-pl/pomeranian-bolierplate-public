@@ -1,5 +1,9 @@
 import './style.css';
 
 export const Calendar = () => {
-    return <div>Kalendarz</div>
-}
+  return (
+    <div>
+      <h1>Kalendarz</h1>
+    </div>
+  );
+};
