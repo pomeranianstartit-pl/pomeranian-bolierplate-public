@@ -1,60 +1,64 @@
-.font-lato {
-  font-family: 'Lato', sans-serif;
+.business-card {
+  display: flex;
+  flex-direction: column;
+  gap: 0.2em;
 }
-.font-poppins {
-  font-family: 'Poppins', sans-serif;
-}
-.wrapper {
-  transition: all 2s;
-}
-.animation {
-  animation-name: slide-in;
-  animation-duration: 2s;
+.business-card * {
+  margin: 0;
 }
 
-@keyframes slide-in {
-  0% {
-    position: absolute;
-    left: -10000px;
-  }
-  100% {
-    position: absolute;
-    left: 0px;
-  }
-}
-div.animatedSquare {
-  width: 100px;
-  height: 100px;
-  background-color: red;
+.business-card a {
+  text-decoration: none;
+  color: black;
+  width: fit-content;
+  height: fit-content;
+  background-color: lime;
+  font-weight: bold;
   position: relative;
-  animation-name: square;
-  animation-duration: 4s;
+  animation: mymove 5s infinite;
+}
+.business-card section {
+  margin-bottom: 0.2em;
+  width: fit-content;
+  height: fit-content;
+  background-color: pink;
+  font-weight: bold;
+  position: relative;
+  animation: mymove 5s infinite;
 }
 
-@keyframes square {
-  0% {
-    background-color: red;
+.business-card section :nth-child(2) {
+  color: #fe3756;
+  width: fit-content;
+  height: fit-content;
+  background-color: yellow;
+  font-weight: bold;
+  position: relative;
+  animation: mymove 5s infinite;
+}
+#header1 {
+  animation-timing-function: linear;
+}
+#header2 {
+  animation-timing-function: ease;
+}
+#paragraph1 {
+  animation-timing-function: ease-in;
+}
+#paragraph2 {
+  animation-timing-function: ease-out;
+}
+#mail {
+  animation-timing-function: ease-in-out;
+}
+#phoneNumber {
+  animation-timing-function: ease-in;
+}
+@keyframes mymove {
+  from {
     left: 0px;
-    top: 0px;
   }
-  25% {
-    background-color: yellow;
+  to {
     left: 200px;
-    top: 0px;
-  }
-  50% {
-    background-color: blue;
-    left: 200px;
-    top: 200px;
-  }
-  75% {
-    background-color: green;
-    left: 0px;
-    top: 200px;
-  }
-  100% {
-    background-color: red;
-    left: 0px;
-    top: 0px;
   }
 }
