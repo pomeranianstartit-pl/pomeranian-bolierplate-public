@@ -1,0 +1,83 @@
+@keyframes flicker {
+  0% { color: red; }
+  50% { color: yellow; }
+  100% { color: green; }
+}
+
+@keyframes slide-in {
+  0% { transform: translateX(-100%); }
+  100% { transform: translateX(0); }
+}
+
+@keyframes rotate {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(180deg); }
+}
+
+@keyframes blur {
+  0% { filter: blur(0px); }
+  50% { filter: blur(5px); }
+  100% { filter: blur(0px); }
+}
+
+@keyframes background-color {
+  0% { background-color: white; }
+  50% { background-color: white; }
+  100% { background-color: green; }
+}
+
+@keyframes expand {
+  0% { width: 0; }
+  100% { width: 100%; }
+}
+
+.business-card {
+  animation: expand 10s ease-in-out infinite;
+}
+
+.business-card h2 {
+  animation: flicker 10s infinite;
+}
+
+.business-card p {
+  animation: rotate 10s linear infinite;
+}
+
+.business-card a {
+  animation: background-color 10s linear infinite;
+}
+
+
+.lists ul {
+list-style-position: outside;
+padding: 0;
+}
+
+.lists li:hover {
+margin-left: 2em;
+transition: margin .2s;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

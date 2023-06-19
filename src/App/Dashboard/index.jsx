@@ -6,7 +6,7 @@ export const Dashboard = () => {
       <h1>Dashboard</h1>
       <p>
         Strona główna kursanta (o sobie, zdjęcie, opis narzędzi wykorzystywanych
-        na kursie oraz umejętności zdobytych na kursie)
+        na kursie oraz umiejętności zdobytych na kursie)
       </p>
     </div>
   );

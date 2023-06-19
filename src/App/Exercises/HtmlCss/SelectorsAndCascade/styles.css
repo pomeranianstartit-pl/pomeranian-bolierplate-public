@@ -1,0 +1,62 @@
+@keyframes flicker {
+  0% { color: red; }
+  50% { color: yellow; }
+  100% { color: green; }
+}
+
+@keyframes slide-in {
+  0% { transform: translateX(-100%); }
+  100% { transform: translateX(0); }
+}
+
+@keyframes rotate {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+@keyframes blur {
+  0% { filter: blur(0px); }
+  50% { filter: blur(5px); }
+  100% { filter: blur(0px); }
+}
+
+@keyframes background-color {
+  0% { background-color: red; }
+  50% { background-color: blue; }
+  100% { background-color: green; }
+}
+
+@keyframes expand {
+  0% { width: 0; }
+  100% { width: 100%; }
+}
+
+
+.font-test-family {
+  font-family: Chilanka;
+}
+
+div.mydiv-1 {
+  color: red;
+}
+
+#mydiv-2 {
+  animation: expand 3s ease-in-out infinite;
+}
+
+#mydiv-4 {
+  animation: flicker 1s infinite;
+}
+
+#mydiv-5 {
+  animation: background-color 4s linear infinite;
+}
+
+#mydiv-6 {
+  animation: rotate 4s linear infinite;
+}
+
+#mydiv-7 {
+  animation: blur 3s infinite;
+}
+
