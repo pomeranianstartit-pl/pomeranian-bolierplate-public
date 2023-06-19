@@ -1,20 +1,5 @@
 import './styles.css';
-//import './styles2.css'
 
-/*export function Exercise() {
-
-  return (<div>
-  <div className='exercise'>
-    <p className="font-test-family red-font">Hello Dominik</p>
-    <p className="font-test-family green-font">Hello Dominik</p>
-  </div>
-  <div>
-  <p className="font-test-family red-font">Hello Dominik</p>
-    </div></div>
-  );
-}
-
-export const Exercise2 = () => <p className="font-test-family red-font">Hello Dominik</p>*/
 export const ExerciseBoxModel = () => {
   return (
     <>
