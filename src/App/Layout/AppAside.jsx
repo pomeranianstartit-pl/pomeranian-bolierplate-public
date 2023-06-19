@@ -8,6 +8,7 @@ import { ElementIcon } from '../Components/Icons/ElementIcon';
 import { EditIcon } from '../Components/Icons/EditIcon';
 import { CalendarIcon } from '../Components/Icons/CalendarIcon';
 import { SettingIcon } from '../Components/Icons/SettingIcon';
+import { FAQIcon } from '../Components/Icons/FAQIcon';
 
 export function AppAside() {
   return (
@@ -37,6 +38,11 @@ export function AppAside() {
           <li>
             
             <NavLink className="aside-row" to="blog"><SettingIcon className="menu-icon"/>Blog</NavLink>
+          </li>
+
+          <li>
+            
+            <NavLink className="aside-row" to="faq"><FAQIcon className="menu-icon"/>FAQ</NavLink>
           </li>
 
           <li>
