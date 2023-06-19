@@ -31,7 +31,7 @@ aside li a {
 
 aside a.active {
   background-color: var(--color-blue);
-  color: var(--color-gray);
+  color: var(--color-black);
 }
 
 

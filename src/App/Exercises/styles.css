@@ -6,6 +6,6 @@
 }
 
 .exercises-categories a.active {
-  background-color: var(--color-green);
-  color: var(--color-green);
+  background-color: var(--color-white);
+  color: var(--color-black);
 }
