@@ -1,3 +1,35 @@
-.font-test-family {
-  font-family: Chilanka;
+.faked-tags {
+  font-family: 'Times New Roman', Times, serif;
+}
+.article-date {
+  font-size: small;
+}
+.article-title {
+  font-size: xx-large;
+  font-weight: bold;
+}
+.subtitle {
+  font-weight: bold;
+  font-size: larger;
+}
+
+.list-element {
+  list-style-type: circle;
+  list-style-position: outside;
+}
+.list-title {
+  font-size: small;
+  font-weight: bold;
+}
+.underline-text {
+  text-decoration-line: underline;
+}
+.crossed-out-text {
+  text-decoration-line: line-through;
+}
+.lean-font {
+  font-style: italic;
+}
+.bolder-text {
+  font-weight: bold;
 }
