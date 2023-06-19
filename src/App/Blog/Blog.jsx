@@ -60,17 +60,17 @@ export const Blog = () => {
         </p>
         <ul>
           <li>
-            <a class="blog-link" href="https://www.wp.pl/" target="_blank">
+            <a class="blog-link" href="https://www.wp.pl/">
               WP
             </a>
           </li>
           <li>
-            <a class="blog-link" href="https://www.wp.pl/" target="_blank">
+            <a class="blog-link" href="https://www.wp.pl/">
               WP 2
             </a>
           </li>
           <li>
-            <a class="blog-link" href="www.onet.pl" target="_blank">
+            <a class="blog-link" href="www.onet.pl">
               ONET
             </a>
           </li>
