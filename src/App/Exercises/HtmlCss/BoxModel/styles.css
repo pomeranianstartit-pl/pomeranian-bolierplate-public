@@ -1,0 +1,62 @@
+.parent-box-model p {
+  margin: 20px;
+  padding: 20px;
+  border: 3px solid red;
+  display: block;
+}
+
+#unique-id-box-model {
+  background-color: coral;
+}
+.display-css-test {
+  background-color: darkkhaki;
+  width: 300px;
+  height: 300px;
+  display: block;
+  text-align: center;
+}
+.content-box-example {
+  width: 300px;
+  height: 150px;
+  border: 3px solid red;
+  padding: 20px;
+  box-sizing: content-box;
+  margin-top: 20px;
+}
+.border-box-example {
+  width: 300px;
+  height: 150px;
+  border: 3px solid red;
+  padding: 20px;
+  box-sizing: border-box;
+  margin-top: 20px;
+}
+.box-sizing-container {
+  margin: 50px;
+}
+/* //////////////CSS PROPERTY OVERFLOW///////////// */
+.overflow-container {
+  width: 200px;
+  height: 100px;
+  border: 1px solid black;
+  margin-bottom: 100px;
+  margin: 2rem;
+}
+.overflow-content {
+  width: 300px;
+  height: 150px;
+  background-color: brown;
+  padding: 10px;
+}
+.units-container {
+  margin: 2rem;
+  margin-top: 5rem;
+  width: 600px;
+  height: 80px;
+  border: 2px solid black;
+}
+
+.units-content {
+  width: 80%;
+  height: 40%;
+}
