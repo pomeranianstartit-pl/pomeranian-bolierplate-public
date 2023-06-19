@@ -10,6 +10,7 @@ import { Blocks } from './App/Blocks';
 import { Exercises } from './App/Exercises';
 import { Calendar } from './App/Calendar/Calendar';
 import { Blog } from './App/Blog/Blog';
+import { FAQ } from './App/FAQ/FAQ';
 import { Settings } from './App/Settings/Setttings';
 
 
@@ -25,6 +26,7 @@ export function App() {
           <Route path="exercises/*" element={<Exercises />} />
           <Route path="calendar/*" element={<Calendar />} />
           <Route path="blog/*" element={<Blog />} />
+          <Route path="FAQ/*" element={<FAQ />} />
           <Route path="settings/*" element={<Settings />} />
           <Route path="*" element={<NotFound />} />
         </Route>
