@@ -1,0 +1,95 @@
+.font-test-family {
+  font-family: Chilanka;
+}
+
+#uniqe-id-box-model3 {
+  animation-name: rotate-rgb;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+  font-family: 'Lato', sans-serif;
+  font-weight: 300;
+  font-size: larger;
+}
+.parent-box-model p {
+  margin: 20px;
+  padding: 20px;
+  border: 3px solid red;
+  display: block;
+  width: 300px;
+  height: 300px;
+}
+.display-css-test {
+  width: 300px;
+  height: 300px;
+  margin: 30px;
+  background-color: yellowgreen;
+  display: ;
+}
+
+.box-sizing-container .content-box-example {
+  width: 200px;
+  padding: 20px;
+  border: 2px solid slategray;
+  box-sizing: content-box;
+}
+.box-sizing-container .border-box-example {
+  margin-top: 20px;
+  width: 200px;
+  padding: 20px;
+  border: 2px solid rgb(16, 135, 255);
+  box-sizing: border-box;
+}
+/*//////////////////////////////CSS property overflow////////////////////////////*/
+overflow-container{
+  width: 200px;
+  height:100px;
+  border: 1px dotted darkgrey;
+  
+
+}
+
+/* html {
+  font-size: 32px;
+} */
+.overflow-content {
+  width: 300px;
+  height: 150px;
+  background-color: bisque;
+  padding: 10px;
+  margin: 2rem;
+  overflow: hidden;
+}
+/*//////////////////////////////CSS units////////////////////////////*/
+.units-container{
+  width: 600px;
+  height: 80px;
+  border: 1px dotted darkmagenta;
+}
+.units-content{
+width: 50%;
+height: 20%;
+background-color: cadetblue;
+}
+@keyframes rotate-rgb {
+  0% {
+    color: lime;
+  }
+  25% {
+    color: red;
+  }
+  50% {
+    color: blue;
+  }
+  75% {
+    color: green;
+  }
+  100% {
+    color: yellow;
+  }
+}
+/* #uniqe-id-box-model{
+
+}
+.class-box-model{
+
+} */

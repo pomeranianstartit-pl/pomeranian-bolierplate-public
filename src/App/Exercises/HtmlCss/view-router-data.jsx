@@ -4,7 +4,10 @@ import { getParsedRouterDataList } from '../../router-data/parseRouterData';
 import { SelectorsAndCascadeMetaData } from './SelectorsAndCascade/router-data';
 import { TextFundamentsMetaData } from './TextFundaments/router-data';
 import { GoogleFontsMetaData } from './GoogleFonts/router-data';
+import { ExerciseBoxModelMetaData } from './Exercise-box-model/router-data';
 export const blockRouterMetaData = [/*blockRouterMetaData121220231*/
-     SelectorsAndCascadeMetaData,
-      TextFundamentsMetaData,GoogleFontsMetaData,];
+      SelectorsAndCascadeMetaData,
+      TextFundamentsMetaData,
+      GoogleFontsMetaData,
+      ExerciseBoxModelMetaData];
 export const blockRouterData = getParsedRouterDataList(blockRouterMetaData);

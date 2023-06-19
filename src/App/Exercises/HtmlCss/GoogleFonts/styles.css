@@ -19,3 +19,82 @@
 .wrapper {
   transition: all 3s;
 }
+.animation {
+  animation-name: slide-in;
+  animation-duration: 2s;
+}
+
+@keyframes slide-in {
+  0% {
+    position: absolute;
+    left: -10000px;
+  }
+  100% {
+    position: absolute;
+    left: 0px;
+  }
+}
+.business-card {
+  display: flex;
+  flex-direction: column;
+  gap: 0.2em;
+}
+.business-card * {
+  margin: 0;
+}
+.business-card a {
+  text-decoration: none;
+  color: black;
+}
+.business-card section {
+  margin-bottom: 0.2em;
+}
+.business-card section :nth-child(2) {
+  color: #fe3756;
+}
+
+.business-card section *:hover {
+  animation-name: rotate-rgb, rotate;
+  animation-duration: 3s;
+  position: relative;
+  display: block;
+}
+
+@keyframes rotate-rgb {
+  0% {
+    color: inherit;
+  }
+  25% {
+    color: red;
+  }
+  50% {
+    color: blue;
+  }
+  75% {
+    color: green;
+  }
+  100% {
+    color: inherit;
+  }
+}
+@keyframes rotate {
+  from {
+    transform: rotate(360deg);
+  }
+  to {
+    transform: rotate(0deg);
+  }
+}
+.list ol {
+  list-style-position: outside;
+  list-style-type: upper-roman;
+  padding: 0;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande',
+    'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+.list ol li:hover {
+  margin-left: 2em;
+  transition: margin 2s;
+  animation-name: rotate-rgb;
+  animation-duration: 2s;
+}

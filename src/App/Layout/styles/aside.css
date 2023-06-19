@@ -35,7 +35,7 @@ aside li a.aside-row {
   font-weight: lighter;
   font-size: 16px;
   line-height: 27px;
-  color: #23213D;
+  color: #23213d;
   text-decoration-line: none;
 }
 
@@ -43,11 +43,11 @@ aside a.active {
   background-color: var(--color-primary-blue);
   color: var(--color-white);
 }
-aside li a:hover{
+aside li a:hover {
   /*font-variant: small-caps; for fun*/
   color: var(--color-link-hover);
 }
-aside hr{
+aside hr {
   border-top: 1px solid var(--color-blue-gray);
 }
 
