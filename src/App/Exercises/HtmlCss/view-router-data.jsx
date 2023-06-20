@@ -5,9 +5,13 @@ import { SelectorsAndCascadeMetaData } from './SelectorsAndCascade/router-data';
 import { TextFundamentsMetaData } from './TextFundaments/router-data';
 import { GoogleFontsMetaData } from './GoogleFonts/router-data';
 import { ExerciseBoxModelMetaData } from './Exercise-box-model/router-data';
-export const blockRouterMetaData = [/*blockRouterMetaData121220231*/
-      SelectorsAndCascadeMetaData,
-      TextFundamentsMetaData,
-      GoogleFontsMetaData,
-      ExerciseBoxModelMetaData];
+import { TablesMetaData } from './Tables/router-data';
+export const blockRouterMetaData = [
+  /*blockRouterMetaData121220231*/
+  SelectorsAndCascadeMetaData,
+  TextFundamentsMetaData,
+  GoogleFontsMetaData,
+  ExerciseBoxModelMetaData,
+  TablesMetaData,
+];
 export const blockRouterData = getParsedRouterDataList(blockRouterMetaData);

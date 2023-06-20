@@ -23,7 +23,7 @@
   height: 300px;
   margin: 30px;
   background-color: yellowgreen;
-  display: ;
+  display: inherit;
 }
 
 .box-sizing-container .content-box-example {

@@ -1,0 +1,60 @@
+.font-test-family {
+  font-family: Chilanka;
+}
+.dog-table {
+  width: 100%;
+}
+.dog-table,
+.dog-table tr,
+.dog-table td {
+  border: 2px solid lightslategray;
+}
+.dog-table tr:nth-child(2n) {
+  background-color: lightskyblue;
+}
+.dog-table tbody tr:hover {
+  background-color: darksalmon;
+  /* border: 2px solid lightslategray; */
+}
+.table-players {
+  /* display: flex; */
+  /* flex-direction: row; */
+  align-items: center;
+  padding: 0px;
+  gap: 1.75rem;
+  margin: 20px auto;
+  width: 716px;
+  height: 84px;
+  background: #ffffff;
+
+  /* primary/primary-light */
+  border: 0.1rem solid #ffd5db;
+  border-radius: 0.9rem;
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 27px;
+}
+.table-players tr {
+  height: 5.25rem;
+  border-width: 0;
+  padding: 0px;
+}
+.table-players thead tr:first-child {
+  height: 3.5rem;
+  background-color: #f5f5f5;
+  margin: 0;
+}
+.table-players thead tr th::first-letter {
+  text-transform: uppercase;
+}
+.table-players thead tr th:nth-child(2n) {
+  text-transform: uppercase;
+}
+.table-players tbody tr:nth-child(2n) {
+  background-color: #ffd5db;
+}
+.table-players tr td {
+  text-align: center;
+}
