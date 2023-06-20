@@ -4,6 +4,7 @@ import { SelectorsAndCascadeMetaData } from './SelectorsAndCascade/router-data';
 import { TextFundamentsMetaData } from './TextFundaments/router-data';
 import { GoogleFontsMetaData } from './GoogleFonts/router-data';
 import { BoxModelMetaData } from './BoxModel/router-data';
+import { TablesMetaData } from './Tables/router-data';
 
 export const blockRouterMetaData = [
   blockRouterMetaData121220231,
@@ -11,5 +12,6 @@ export const blockRouterMetaData = [
   TextFundamentsMetaData,
   GoogleFontsMetaData,
   BoxModelMetaData,
+  TablesMetaData,
 ];
 export const blockRouterData = getParsedRouterDataList(blockRouterMetaData);

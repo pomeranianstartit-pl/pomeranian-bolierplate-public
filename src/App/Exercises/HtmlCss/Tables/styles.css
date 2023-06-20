@@ -1,0 +1,7 @@
+.table-dog tr:nth-child(2n) {
+  background-color: yellow;
+}
+.table-dog tr:hover {
+  background-color: rgb(232, 9, 9);
+  color: rgb(236, 239, 242);
+}
