@@ -1,0 +1,48 @@
+.first-table thead {
+  font-weight: bold;
+  background-color: crimson;
+}
+.first-table tr:nth-child(even) {
+  background-color: blanchedalmond;
+}
+.first-table table {
+  text-align: center;
+}
+.first-table tr:hover {
+  font-weight: bold;
+}
+.second-table {
+  height: 477px;
+  width: 716px;
+  left: 268px;
+  top: 270px;
+  border-radius: 14.147058486938477px;
+  box-shadow: 0px 63.6618px 158.447px rgba(0, 0, 0, 0.06),
+    0px 32.2288px 69.073px rgba(0, 0, 0, 0.0405),
+    0px 12.7324px 25.7476px rgba(0, 0, 0, 0.03),
+    0px 2.7852px 9.16022px rgba(0, 0, 0, 0.0195);
+  margin: 3rem;
+  border: 0px;
+  font-size: 18px;
+}
+.second-table thead {
+  width: 716px;
+  left: 0px;
+  top: 0px;
+  border-radius: 0px;
+  padding: 0px 28px 0px 28px;
+  background-color: #f5f5f5;
+  height: 57px;
+}
+.second-table .row {
+  width: 716px;
+  height: 84px;
+  left: 0px;
+  top: 141px;
+  border-radius: 0px;
+  padding: 0px 28px 0px 46px;
+  border: 0px;
+}
+.second-table tr:nth-child(even) {
+  background-color: #ffd5db;
+}
