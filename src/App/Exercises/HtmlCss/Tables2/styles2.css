@@ -1,24 +1,8 @@
-.font-test-family {
-  font-family: Arial, Helvetica, sans-serif;
-}
-
-.rating-table2 {
-
-}
-
-.rating-td2 {
-text-align: center;
-}
-
-.rating-th2 {
-text-align: left;
-}
-
-.rating-tr2 {
-text-align: left;
-}
-
-.rating-tr2:nth-child(2n) {
-  background-color:#FFD5DB;
-}
-
+table {  border: 1px solid black;}
+td {  border: 1px solid black;}
+table.table2 {  border-radius: 14px;  overflow: hidden;  border: 0;  width: 85%;  margin: 0 auto;  box-shadow: 0px 63.6618px 158.447px rgba(0, 0, 0, 0.06), 0px 32.2288px 69.073px rgba(0, 0, 0, 0.0405), 0px 12.7324px 25.7476px rgba(0, 0, 0, 0.03), 0px 2.7852px 9.16022px rgba(0, 0, 0, 0.0195);}
+table.table2 tr {  padding: 1em;}
+table.table2 td {  border: 0;  padding: 1em;}
+table.table2 thead th {  background: #F5F5F5;  text-transform: capitalize;  font-weight: bold;}
+table.table2 thead th {  padding: 1em;}
+table.table2 tbody tr:nth-child(even) {  background-color: #FFD5DB;}
