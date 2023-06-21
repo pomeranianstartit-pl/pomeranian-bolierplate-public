@@ -10,9 +10,11 @@ header {
   padding-right: 3rem;
   box-shadow: 0px 1px 9px 0px var(--color-grey);
 }
-header > a:first-of-type {
+
+header>a:first-of-type {
   text-decoration: none;
 }
+
 header.header-title {
   color: var(--color-grey);
   font-weight: normal;
@@ -22,3 +24,67 @@ header .logo {
   height: 40vmin;
   pointer-events: none;
 }
+
+.profilowe {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  background-color: rgba(200, 203, 209, 1);
+}
+
+.menu {
+  display: flex;
+  align-items: center;
+  gap: 53px;
+}
+
+.menu .settings-btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: transparent;
+  border: 1px solid transparent;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.menu .settings-btn:hover {
+ border:  5px dotted lightgray;
+ transition: 0.2s linear;
+}
+
+.menu .user-profile {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.user p {
+  margin: 0px;
+}
+
+.menu .user-name {
+  font-size: 17px;
+  font-weight: 600;
+  line-height: 14px;
+  }
+
+.user-name .user-position {
+  font-size: 14px;
+  font-weight: 100;
+ }
+.arrow-btn {
+  border: none;
+  background-color: transparent;
+}
+
+ .arrow {
+  rotate: 90deg;
+ }
+
+ .arrow:hover {
+  rotate: 0deg;
+  transition: 0.1s linear;
+ }
