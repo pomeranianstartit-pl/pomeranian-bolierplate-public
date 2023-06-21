@@ -31,3 +31,14 @@ aside a.active {
   background-color: var(--color-primary-blue);
   color: var(--color-white);
 }
+aside ul {
+  padding-inline-start: 1rem;
+
+  list-style-type: none;
+
+  padding-left: 0;
+}
+aside li a:hover {
+  background-color: var(--color-primary-blue);
+  color: var(--color-white);
+}
