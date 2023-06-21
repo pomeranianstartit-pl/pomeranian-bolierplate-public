@@ -1,2 +1,10 @@
 .dashboard {
 }
+.windows{
+    display: flex;
+    flex-flow: row wrap;
+    
+}
+.window-main{
+    margin: 2%;
+}
