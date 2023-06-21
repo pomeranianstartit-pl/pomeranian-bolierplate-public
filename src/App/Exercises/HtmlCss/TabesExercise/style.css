@@ -22,6 +22,7 @@ td{
 thead{
   /*zaokrągla nagłówek mimo iż się nadpisuje z title*/
   padding: 20px;
+  margin-left: 20px;
   overflow: hidden;
   border-top-left-radius: 14.4px;
   border-top-right-radius: 14.4px;
@@ -33,4 +34,5 @@ thead{
   border-top-right-radius: 14.4px;
   overflow: hidden;
 }
+
 
