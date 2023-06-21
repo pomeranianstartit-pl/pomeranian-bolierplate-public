@@ -57,7 +57,7 @@ const foster_player = [
 export function Tables2() {
   return (
 
-<table className='rating-table2'>
+<table className='table2'>
 
 <thead>
 
@@ -71,20 +71,16 @@ export function Tables2() {
 <tbody>
 
 {foster_player.map((player) => (
-<tr className='rating-tr2'> {player.id}
-<td className='rating-td2'> {player.Location}</td>
-<td className='rating-td2'> {player.PLAYER_ID}</td>
-<td className='rating-td2'> {player.Rating}</td>
+<tr> {player.id}
+<td> {player.Location}</td>
+<td> {player.PLAYER_ID}</td>
+<td> {player.Rating}</td>
 
 </tr>
 
 ))}
 </tbody>
-
 </table>
-
-
-
 )
 }
 
