@@ -1,5 +1,6 @@
 import { useState } from 'react';
 import star from './star.svg';
+import './styles.css';
 
 const Star = ({ numOfStars }) => {
   const stars = new Array(numOfStars).fill();
