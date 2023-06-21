@@ -55,7 +55,7 @@ export const Table2 = () => {
             <tr key={row.player_id}>
               <td>{row.location}</td>
               <td>{row.player_id}</td>
-              <td style={{ display: 'flex', justifyContent: 'space-between' }}>
+              <td style={{ display: 'flex', justifyContent: 'left' }}>
                 <Star numOfStars={row.rating} />
               </td>
             </tr>
