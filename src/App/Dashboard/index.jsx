@@ -51,8 +51,8 @@ export const Dashboard = () => {
   return (
     <div className="dashboard">
       <div className="dashboard-head">
-        <img className="hand-icon" src={hand} />
-        <h3 style={{ marginLeft: '10px' }}>Hej, tutaj Adrian!</h3>
+        <img className="hand-icon" src={hand} alt="zdjecie reki" />
+        <h3 style={{ marginLeft: '10px' }}>Hej, tu Adrian!</h3>
       </div>
       <p>
         Strona główna kursanta (o sobie, zdjęcie, opis narzędzi wykorzystywanych
