@@ -2,6 +2,8 @@ import { useState } from 'react';
 import { DashboardCard } from '../Components/DashboardCard/DashboardCard';
 import './styles.css';
 import personalCard from '../Images/tiles/personalcard.svg';
+import edit from '../Images/tiles/edit.svg';
+import faq from '../Images/faq.svg';
 
 export const Dashboard = () => {
   const [availableCards, setAvailableCards] = useState([
@@ -13,7 +15,7 @@ export const Dashboard = () => {
     },
     {
       sectionTitle: ' Ćwiczenia',
-      icon: <img src={personalCard} alt="business card resume" />,
+      icon: <img src={edit} alt="edit icon" />,
       description: 'wszystkie wykonane ćwiczenia',
       link: '/excercise',
     },
@@ -31,18 +33,17 @@ export const Dashboard = () => {
     },
     {
       sectionTitle: 'FAQ',
-      icon: <img src={personalCard} alt="business card resume" />,
+      icon: <img src={faq} alt="faq icon" />,
       description: 'odpowiedzi na najczęstsze pytania',
       link: '/faq',
     },
   ]);
   return (
     <div className="dashboard">
-      <h1>Dashboard</h1>
-      <p>
-        Strona główna kursanta (o sobie, zdjęcie, opis narzędzi wykorzystywanych
-        na kursie oraz umejętności zdobytych na kursie)
-        <div className="dashboard-card-wrapper">
+      <div className='header'>
+        <h3 className='greeting'>Hej, tu Karolina!</h3>
+       <p> znajdziesz najważniejsze informacje na temat mojej działalności</p> Poniżej</div>
+        <div className="links">
           {availableCards.map((card) => {
             return (
               <DashboardCard
@@ -54,7 +55,8 @@ export const Dashboard = () => {
             );
           })}
         </div>
-      </p>
+        <div className='aside'>O kursancie</div>
+      
     </div>
   );
 };

@@ -1,6 +1,39 @@
-.dashboard-card-wrapper {
+
+.dashboard{
+  display: grid; 
+  grid-template-columns: 3.1fr 0.1fr 1fr; 
+  grid-template-rows: 0.5fr 1.5fr 1fr; 
+  gap: 20px 20px; 
+  grid-template-areas: 
+    "header . aside"
+    "links . aside"
+    "links . aside"; 
+}
+
+.dashboard .header { 
+  grid-area: header; 
   display: flex;
+  flex-direction: column;
+  align-self: baseline
+}
+
+.dashboard .aside { 
+  grid-area: aside; 
+  padding: 20px;
+  width: 334px;
+  height: 360px
+
+}
+
+.dashboard .links { 
+  grid-area: links; 
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: flex-start;
+}
+.dashboard .greeting {
+  font-weight: 400;
+  color: #FE3756;
 }
