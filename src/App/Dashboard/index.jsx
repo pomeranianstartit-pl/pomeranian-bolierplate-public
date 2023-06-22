@@ -2,22 +2,22 @@ import './styles.css';
 import hand from '../Images/emogiHand.svg';
 import { useState } from 'react';
 import { DashboardCard } from '../Components/DashboardCard/DashboardCard';
-import { EditIcon } from '../Components/Icons/EditIcon';
+import exerciseIcone from '../Images/exerciseIcone.svg';
 import BlogIcone from '../Images/blogIcon.svg';
 import CodeIcone from '../Images/codeIcon.svg';
-import { FAQIcon } from '../Components/Icons/FaqIcon.jsx';
-
+import FaqIcon from '../Images/FaqIcone.svg';
+import personalcard from '../Images/personalcard.svg';
 export const Dashboard = () => {
-  const [availableCards, setAvailableCards] = useState([
+  const [availableCards] = useState([
     {
       sectionTitle: 'Moje CV',
-      icon: <img src={DashboardCard} alt="business card resume" />,
+      icon: <img src={personalcard} alt="business card resume" />,
       description: 'podgląd cv wraz z doświadczeniem',
       link: '/cv',
     },
     {
       sectionTitle: ' Ćwiczenia',
-      icon: <img src={EditIcon} alt="business card resume" />,
+      icon: <img src={exerciseIcone} alt="business card resume" />,
       description: 'wszystkie wykonane ćwiczenia',
       link: '/excercise',
     },
@@ -35,16 +35,17 @@ export const Dashboard = () => {
     },
     {
       sectionTitle: 'FAQ',
-      icon: <FAQIcon/>,
+      icon: <img src={FaqIcon} alt="business card resume" />,
       description: 'odpowiedzi na najczęstsze pytania',
       link: '/faq',
     },
   ]);
   return (
     <div className="dashboard">
-      <h3>
-        <img src={hand} /> Hej, tutaj Dominik!
-      </h3>
+      <div className="dasboard-head">
+        <img src={hand} />
+        <h3 style={{ marginLeft: '10px' }}>Hej, tutaj Dominik!</h3>
+      </div>
       <p>
         Poniżej znajdziesz najważniejsze informacje na temat mojej działalności
       </p>
