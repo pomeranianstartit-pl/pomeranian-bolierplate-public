@@ -10,6 +10,7 @@
     -webkit-box-shadow: 0px 0px 20px 5px rgba(209, 209, 209, 1);
     -moz-box-shadow: 0px 0px 20px 5px rgba(209, 209, 209, 1);
     box-shadow: 0px 0px 20px 5px rgba(209, 209, 209, 1);
+    font-family: 'poppins';
 }
 .window a{
     text-decoration: none;
@@ -25,4 +26,17 @@
 }
 .icona{
     filter: hue-rotate(40deg);
+    margin-bottom: -10px;
+    fill: red;
+}
+.window p{
+    font-size: 12px;
+    font-weight: bolder;
+    margin-left: 28px;
+    margin-right: 28px;
+    line-height: 20px;
+}
+.window h3{
+    font-weight: bolder;
+    
 }

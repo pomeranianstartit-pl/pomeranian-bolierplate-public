@@ -1,5 +1,9 @@
-.dashboard {
+.dasboard-head {
+    color: #FE3756;
+    display: flex;
+    flex-direction: row;
 }
+
 .windows{
     display: flex;
     flex-flow: row wrap;
