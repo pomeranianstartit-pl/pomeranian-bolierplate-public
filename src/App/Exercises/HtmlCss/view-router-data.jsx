@@ -7,7 +7,9 @@ import { TextFundamentsMetaData } from './TextFundaments/router-data';
 import { ExerciseBoxModelMetaData } from './ExerciseBoxModel/router-data';
 import { TablesMetaData } from './Tables/router-data';
 import { Tables2MetaData } from './Tables2/router-data';
+import { FloatsMetaData } from './Floats/router-data';
+import { FloatsFigmaDesignMetaData } from './FloatsFigmaDesign/router-data';
 
-export const blockRouterMetaData = [Exercise_exampleMetaData, SelectorsAndCascadeMetaData, TextFundamentsMetaData, GoogleFontsMetaData, GoogleFonts2MetaData, ExerciseBoxModelMetaData, TablesMetaData, Tables2MetaData];
+export const blockRouterMetaData = [Exercise_exampleMetaData, SelectorsAndCascadeMetaData, TextFundamentsMetaData, GoogleFontsMetaData, GoogleFonts2MetaData, ExerciseBoxModelMetaData, TablesMetaData, Tables2MetaData, FloatsMetaData, FloatsFigmaDesignMetaData];
 
 export const blockRouterData = getParsedRouterDataList(blockRouterMetaData);

@@ -38,8 +38,9 @@ export const Dashboard = () => {
       link: '/faq',
     },
   ]);
-
+  
   return (
+
     <div className="dashboard">
       <div className="dashboard-hello">
         <h1 className="dashboard-title">Cześć!</h1>
@@ -62,6 +63,3 @@ export const Dashboard = () => {
     </div>
   );
 };
-          
-      
-      
