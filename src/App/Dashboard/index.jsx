@@ -1,59 +1,45 @@
+import DashboardCard from '../Components/DashboardCard/DashboardCard';
+import { useState } from 'react';
+
 import './styles.css';
+import personalCard from '../Images/personalCard.svg';
+import exercise from '../Images/exercise.svg';
+import bookSaved from '../Images/bookSaved.svg';
+import code from '../Images/code.svg';
+import faq from '../Images/faq.svg';
+import hand from '../Images/hand.svg';
+import Cookies from '../Components/CookiesAgreement/Cookies';
 
 export const Dashboard = () => {
-  return (
-    <div className="dashboard">
-<<<<<<< master
-      <h1>Dashboard</h1>
-      <p>
-        Strona główna kursanta (o sobie, zdjęcie, opis narzędzi wykorzystywanych
-        na kursie oraz umejętności zdobytych na kursie)
-      </p>
-=======
-      <header>
-      <h1>Hej, tu Klaudia!</h1>
-      <p>
-      Poniżej znajdziesz najważniejsze informacje na temat mojej działalności
-      </p>
-      </header>
-      <div className="links"></div>
-      {availableCards.map((card) => {
-        return (
-          <DashboardCard
-          sectionTitle={card.sectionTitle}
-          description={card.description}
-          link={card.link}
-          icon={card.icon}
-          />
-        );
-      })}
-    
-     <DashboardCard
-    sectionTitle="Ćwiczenia"
-    description="wszystkie wykonane ćwiczenia"
-    link="/cv"
-    icon={<img src={personalCard} alt="business card resume" />}
-    />
-    <DashboardCard
-    sectionTitle="Blog"
-    description="wpisy blogowe o technologii front-end"
-    link="/cv"
-    icon={<img src={personalCard} alt="business card resume" />}
-    />
-     <DashboardCard
-    sectionTitle="Tech stack"
-    description="stack technologiczny realizowany na kursie"
-    link="/cv"
-    icon={<img src={personalCard} alt="business card resume" />}
-    />
-    <DashboardCard
-    sectionTitle="FAQ"
-    description="odpowiedzi na najczęstsze pytania"
-    link="/cv"
-    icon={<img src={personalCard} alt="business card resume" />}
-    />
-
->>>>>>> local
+    const [availableCards, setAvailableCards] = useState([{ sectionTitle: 'Moje CV', icon: <img src={personalCard} alt="business card resume" />, description: 'podgląd cv wraz z doświadczeniem', link: '/cv', }, { sectionTitle: ' Ćwiczenia', icon: <img src={exercise} alt="business card resume" />, description: 'wszystkie wykonane ćwiczenia', link: '/excercise', }, { sectionTitle: 'Blog', icon: <img src={bookSaved} alt="business card resume" />, description: 'wpisy blogowe o technologii front-end', link: '/blog', }, { sectionTitle: 'Tech stack', icon: <img src={code} alt="business card resume" />, description: 'stack technologiczny realizowany na kursie', link: '/tech', }, { sectionTitle: 'FAQ', icon: <img src={faq} alt="business card resume" />, description: 'odpowiedzi na najczęstsze pytania', link: '/faq', },]);
+    return (
+        <div className="dashboard">
+          <header>
+            <div className="dashboard-head">
+                <img src={hand} />
+            <h2 style={{marginLeft: '24px' }}>Hej, tu Klaudia!</h2>
+            </div>
+            <p>
+              Poniżej znajdziesz najważniejsze informacje na temat mojej działalności
+            </p>
+          </header>
+          <div className="windows">
+            {availableCards.map((card) => {
+              return (
+                <div className="windows-main">
+                <DashboardCard
+                  sectionTitle={card.sectionTitle}
+                  description={card.description}
+                  link={card.link}
+                  icon={card.icon}
+                  myDumbProp="whatever"
+                />
+                </div>
+              );
+            })}
+        </div>
+        <aside className="about-me">
+        </aside>
     </div>
   );
 };

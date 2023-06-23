@@ -1,2 +1,43 @@
-.dashboard {
+.dashboard{
+    display: grid;
+    grid-template-columns: 1fr 1.2fr 0.9fr;
+    grid-template-rows: 0.3fr 1.3ft 1fr;
+    gap: 20px 20px;
+    grid-template-areas: 
+      'Header Header Aside'
+      'Links Links Aside'
+      'Links Links Aside';
+}
+
+.dashboard-head {
+    color: ##FE3756;
+    display: flex;
+    flex-direction: row;
+}
+
+.windows{
+    display: flex;
+    flex-flow: row wrap;
+}
+
+.windows-main{
+    margin: 2%;
+}
+
+.dashboard header {
+    grid-area: Header;
+    display: flex;
+    flex-direction: column;
+    align-self: baseline;
+}
+
+.dashboard aside {
+    grid-area: Aside;
+}
+
+.dashboard .windows {
+    grid-area: Links;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 16px;
 }
