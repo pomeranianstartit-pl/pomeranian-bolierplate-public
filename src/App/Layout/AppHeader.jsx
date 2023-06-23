@@ -5,7 +5,7 @@ import { Logo } from '../Components/Logo/Logo';
 import { Link } from 'react-router-dom';
 import strzalka from '../Images/strzalka.svg';
 import cogwheel from '../Images/setting.svg';
-
+import DominikProfile50 from '../Images/DominikProfile50.jpg';
 export function AppHeader() {
   return (
     <header>
@@ -25,7 +25,7 @@ export function AppHeader() {
         </button>
 
         <div className="profile-picture">
-          <div className="placeholder" />
+          <img className="img-placeholder" src={DominikProfile50} alt="" />
         </div>
         <div className="user">
           <h3>Dominik</h3>
