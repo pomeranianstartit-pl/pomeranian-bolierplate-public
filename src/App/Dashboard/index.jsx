@@ -42,7 +42,7 @@ export const Dashboard = () => {
     <div className="dashboard">
       <div className='header'>
         <h3 className='greeting'>Hej, tu Karolina!</h3>
-       <p> znajdziesz najważniejsze informacje na temat mojej działalności</p> Poniżej</div>
+       <p> Poniżej znajdziesz najważniejsze informacje na temat mojej działalności</p> </div>
         <div className="links">
           {availableCards.map((card) => {
             return (
