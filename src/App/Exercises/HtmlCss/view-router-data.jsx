@@ -8,20 +8,15 @@ import { TextFundamentsMetaData } from './TextFundaments/router-data';
 
 import { GoogleFontsMetaData } from './GoogleFonts/router-data';
 
-import { GoogleFonts } from './GoogleFonts/GoogleFonts';
-
 import { BoxModelMetaData } from './Exercise-Box model/router-data';
-
-import { CssBoxModel } from './Exercise-Box model/CssBoxModel';
+import { TablesMetaData } from './Tables/router-data';
 
 export const blockRouterMetaData = [
   blockRouterMetaData121220231,
   SelectorsAndCascadeMetaData,
   TextFundamentsMetaData,
   GoogleFontsMetaData,
-  GoogleFonts,
-  CssBoxModel,
   BoxModelMetaData,
-  CssBoxModel,
+  TablesMetaData,
 ];
 export const blockRouterData = getParsedRouterDataList(blockRouterMetaData);

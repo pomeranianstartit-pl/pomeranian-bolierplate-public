@@ -1,2 +1,28 @@
 .dashboard {
+  display: grid;
+  grid-template-columns: 1fr 1.1fr 0.9lfr;
+  grid-template-rows: auto 1.2fr 1fr;
+  gap: 20px 20px;
+  grid-template-areas:
+    'Header Header Aside'
+    'Links Links Aside'
+    'Links Links Aside';
+}
+
+.dashboard-header {
+  grid-area: Header;
+  display: flex;
+  flex-direction: column;
+  align-self: baseline;
+}
+
+.dashboard aside {
+  grid-area: Aside;
+}
+
+.dashboard .links {
+  grid-area: Links;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 16px;
 }

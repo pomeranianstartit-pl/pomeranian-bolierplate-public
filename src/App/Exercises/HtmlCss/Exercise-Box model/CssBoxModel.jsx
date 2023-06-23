@@ -13,7 +13,6 @@ export const CssBoxModel = () => {
       <input type="text" />
       <img src="" alt="" />
       <h1></h1>
-      <button></button>
 
       <div className="display-css-test">
         Lorem ipsum dolor sit, amet consectetur adipisicing elit.

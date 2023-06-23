@@ -1,5 +1,7 @@
-import './styles.css';
+import React from 'react';
 
-export const EmptyComponent = () => {
-  return <div>Change me</div>;
+const EmptyComponent = () => {
+  return <div>EmptyComponent</div>;
 };
+
+export default EmptyComponent;

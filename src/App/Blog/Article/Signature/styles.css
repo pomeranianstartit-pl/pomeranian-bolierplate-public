@@ -1,0 +1,37 @@
+.blog-author-signature {
+  color: var(--text-text-secondary, rgba(34, 34, 34, 0.8));
+  font-size: 18px;
+  font-family: 'MADE TOMMY';
+  font-weight: 700;
+}
+
+.blog-author-position {
+  color: var(--text-text-secondary, rgba(34, 34, 34, 0.8));
+  font-size: 15px;
+  font-weight: 300;
+  font-family: 'MADE TOMMY';
+  padding-top: 0.5rem;
+}
+
+.article-content-two .blog-author-position {
+  padding-top: 0rem;
+}
+
+.article-content-three .blog-author-position {
+  padding-bottom: 5rem;
+}
+
+.article-content {
+  border-radius: 8px;
+  background: var(--secondary-secondary, #23213d);
+}
+
+.article-content p,
+.article-content .blog-author-position,
+.article-content .blog-author-signature {
+  color: rgba(255, 255, 255, 0.8);
+}
+
+.post-container :first {
+  background-color: rgba(35, 33, 61, 1);
+}
