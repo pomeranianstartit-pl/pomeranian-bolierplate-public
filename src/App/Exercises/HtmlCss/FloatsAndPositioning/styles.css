@@ -27,6 +27,7 @@
   border-top-left-radius: 2rem;
   border-bottom-right-radius: 2rem;
 }
+
 #no3 {
   background-color: #4b5563;
   padding: 17px 21px 17px 21px;
@@ -72,17 +73,7 @@
   transform: rotate(-2deg);
   border: 3px solid black;
 }
-@keyframes fox-hover {
-  0% {
-    transform: rotate(-2deg);
-  }
-  50% {
-    transform: rotate(2deg);
-  }
-  100% {
-    transform: rotate(-2deg);
-  }
-}
+
 .float-links {
   color: #23213d;
   text-decoration: none;

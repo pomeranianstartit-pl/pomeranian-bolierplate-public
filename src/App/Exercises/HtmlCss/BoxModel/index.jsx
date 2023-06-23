@@ -48,17 +48,15 @@ export const BoxModel = () => {
         </div>
       </div>
 
-       {/* /////////////////CSS units//////////////// */}
+      {/* /////////////////CSS units//////////////// */}
 
-       <div className="units-container">
+      <div className="units-container">
         <div className="units-content">
           Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur
           ultrices est sed interdum ultrices. Pellentesque efficitur tellus et
           est varius efficitur.
         </div>
       </div>
-
-      
     </>
   );
 };
