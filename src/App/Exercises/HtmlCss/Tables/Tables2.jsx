@@ -20,6 +20,16 @@ export function Tables2() {
       </>
     );
   };
+  const GrayStar = ({ numOfGrayStars }) => {
+    const stars = new Array(numOfGrayStars).fill();
+    return (
+      <>
+        {stars.map((_) => (
+          <img className="gray" src={star} alt="gray rating star" />
+        ))}
+      </>
+    );
+  };
   return (
     <>
       <h5>&lt; RATING</h5>
@@ -39,6 +49,7 @@ export function Tables2() {
               <td>{player.player_id}</td>
               <td>
                 <Star numOfStars={player.rating} />
+                <GrayStar numOfGrayStars={5 - player.rating} />
               </td>
             </tr>
           ))}

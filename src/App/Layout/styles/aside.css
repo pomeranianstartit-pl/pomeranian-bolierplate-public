@@ -40,12 +40,17 @@ aside li a.aside-row {
 }
 
 aside a.active {
-  background-color: var(--color-primary-blue);
+  /*background-color: var(--color-primary-blue); // remove if it will be ordered*/
   color: var(--color-white);
 }
 aside li a:hover {
   /*font-variant: small-caps; for fun*/
   color: var(--color-link-hover);
+}
+aside a.active svg,
+aside li a:hover svg {
+  filter: invert(9%) sepia(99%) saturate(5630%) hue-rotate(340deg)
+    brightness(121%) contrast(148%);
 }
 aside hr {
   border-top: 1px solid var(--color-blue-gray);

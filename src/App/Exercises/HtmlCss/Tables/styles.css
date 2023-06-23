@@ -26,8 +26,6 @@
   width: 716px;
   height: 84px;
   background: #ffffff;
-
-  /* primary/primary-light */
   border: 0.1rem solid #ffd5db;
   border-radius: 0.9rem;
   font-family: 'Poppins';
@@ -35,6 +33,9 @@
   font-weight: 400;
   font-size: 18px;
   line-height: 27px;
+  -webkit-box-shadow: 0px 34px 54px 9px rgba(0, 0, 0, 0.5);
+  -moz-box-shadow: 0px 34px 54px 9px rgba(0, 0, 0, 0.5);
+  box-shadow: 0px 34px 54px 9px rgba(0, 0, 0, 0.5);
 }
 .table-players tr {
   height: 5.25rem;
@@ -45,6 +46,7 @@
   height: 3.5rem;
   background-color: #f5f5f5;
   margin: 0;
+  border-radius: 0.9rem 0.9rem 0 0;
 }
 .table-players thead tr th::first-letter {
   text-transform: uppercase;
@@ -57,4 +59,7 @@
 }
 .table-players tr td {
   text-align: center;
+}
+.gray {
+  filter: grayscale(1);
 }
