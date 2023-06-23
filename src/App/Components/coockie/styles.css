@@ -7,7 +7,7 @@
     position: fixed;  
     bottom: 0;  
     background: var(--dark-blue);  
-    padding: 7em;  
+    padding:2em 7em;  
     z-index: 2;  
     display: flex;
     flex-flow: row wrap;
@@ -63,7 +63,7 @@
     margin-right: 30px;
 }
 .text-cookie{
-    display: flex;
+    display: inline-block;
     max-width: 70%;
     color: var(--white);
     padding: 1em;  
@@ -72,7 +72,9 @@
 .text-cookie img {  
     float: left;  
     padding: 20px;
+    padding-bottom: 0px;
     height: 130px;
+    vertical-align: top;
 }
 .text-cookie div {  
     flex-grow:1;
