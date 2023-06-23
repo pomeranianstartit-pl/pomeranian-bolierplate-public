@@ -5,6 +5,7 @@ aside {
   flex-direction: column;
   justify-content: space-between;
   overflow-y: auto;
+  border: 0.8px solid #EBEBEB
 }
 
 aside ul {

@@ -1,0 +1,94 @@
+.every-div {
+    font-size: 22px;
+    text-align: justify;
+}
+
+.second-div {
+    border: 1px solid #999999;
+    background-color: #FFD5DB;
+    width: 242.88px;
+    height: 144.75px;
+    padding: 12.375px 19.9375px 12.375px 19.9375px;
+    border-radius: 5.5px;
+    gap: 6.875px
+
+}
+.third-div {
+    width: 984px;
+    height: 62px;
+    padding: 12.375px 19.9375px 12.375px 19.9375px;  
+    gap: 10px;
+    background-color: #EBEBEB;
+}
+.fourth-div{
+    background: #FFD5DB;
+    text-align: justify;
+    width: 984px;
+    height: 279px;
+    gap: 10px;
+    padding: 12.375px 19.9375px 12.375px 19.9375px
+}
+.fifth-div {
+    border: 1px solid #999999;
+    background-color: #FFD5DB;
+    width: 103.88px;
+    height: 66.75px;
+    top: 903px;
+    left: 1284px;
+    padding: 12.375px 19.9375px 12.375px 19.9375px;
+    border-radius: 5.5px;
+    gap: 6.875px
+}
+.sixth-div {
+    background-color: #4B5563;
+    width: 984px;
+    height: 162px;
+    padding: 17px 21px 17px 21px;
+    gap: 10px;
+    color: white;
+
+}
+.seventh-div {
+    width: 984px;
+    padding: 12.375px 19.9375px 12.375px 19.9375px;
+
+}
+.button {
+    width: 423px;
+    height: 94px ;
+    border: 1px solid #FE3756;
+    padding: 10px 127px 10px 127px;
+    border-radius: 19.643802642822266px;
+    gap: 10px;
+    background-color: #FFD5DB;
+}
+.snow-wolf-foto {
+    width:402px;
+    height:350px;
+    top: 27px;
+    left: 33px;
+    padding: 0px 24px 0px 24px;
+    border-radius: 8px;
+    gap: 8px
+}
+.first-rectangle {
+    border: 2px solid #C8CBD1;
+    width: 120px;
+    height: 120px;
+    border-radius: 8px;
+    background-color: #6B7280;
+}
+.second-rectangle {
+    border: 2px solid #C8CBD1;
+    width: 120px;
+    height: 120px;
+    border-radius: 8px;
+    background-color: #999999;
+}
+.third-rectangle {
+    border: 2px solid #C8CBD1;
+    width: 120px;
+    height: 120px;
+    border-radius: 8px;
+    background-color: #C8CBD1;
+}
