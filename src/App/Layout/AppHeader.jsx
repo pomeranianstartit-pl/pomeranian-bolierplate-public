@@ -8,7 +8,7 @@ import cogwheel from '../Images/setting.svg';
 
 export function AppHeader() {
   return (
-    <header>
+    <header className="navigation">
       <div>
         <Link to="/">
           <Logo />
