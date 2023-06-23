@@ -1,7 +1,19 @@
 import { getParsedRouterDataList } from '../../router-data/parseRouterData';
 
-import { blockRouterMetaData as blockRouterMetaData121220231 } from './Exercise-example-12-12-2023-1/router-data';
+/*import { blockRouterMetaData as blockRouterMetaData121220231 } from './Exercise-example-12-12-2023-1/router-data';*/
 import { SelectorsAndCascadeMetaData } from './SelectorsAndCascade/router-data';
-
-export const blockRouterMetaData = [blockRouterMetaData121220231, SelectorsAndCascadeMetaData];
+import { TextFundamentsMetaData } from './TextFundaments/router-data';
+import { GoogleFontsMetaData } from './GoogleFonts/router-data';
+import { ExerciseBoxModelMetaData } from './Exercise-box-model/router-data';
+import { TablesMetaData } from './Tables/router-data';
+import { FloatsMetaData } from './FloatsAndPositioning/router-data';
+export const blockRouterMetaData = [
+  /*blockRouterMetaData121220231*/
+  SelectorsAndCascadeMetaData,
+  TextFundamentsMetaData,
+  GoogleFontsMetaData,
+  ExerciseBoxModelMetaData,
+  TablesMetaData,
+  FloatsMetaData,
+];
 export const blockRouterData = getParsedRouterDataList(blockRouterMetaData);

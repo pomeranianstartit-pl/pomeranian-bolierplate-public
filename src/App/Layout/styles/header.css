@@ -19,6 +19,45 @@ header.header-title {
 }
 
 header .logo {
-  height: 40vmin;
+  height: 2rem;
   pointer-events: none;
+}
+.profile-picture .placeholder {
+  border-radius: 50%;
+  background-color: lightgray;
+  width: 50px;
+  height: 50px;
+}
+.menu {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 20px;
+  padding: 0;
+  margin: 0;
+}
+
+button.settings {
+  background: none;
+  border: none;
+  padding-top: 10px;
+  cursor: pointer;
+}
+div.user {
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+  color: lightgray;
+}
+div.user::first-line {
+  font-size: larger;
+  color: var(--color-black);
+}
+button.dropdown {
+  background: none;
+  border: none;
+  cursor: pointer;
 }

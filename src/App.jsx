@@ -9,6 +9,7 @@ import { Dashboard } from './App/Dashboard';
 import { Exercises } from './App/Exercises';
 import { CV } from './App/Components/CV/CV';
 import { Blog } from './App/Blog/Blog';
+import { FAQ } from './App/FAQ';
 export function App() {
   return (
     <BrowserRouter>
@@ -20,6 +21,7 @@ export function App() {
           <Route path="exercises/*" element={<Exercises />} />
           <Route path="blocks/*" element={<Blocks />} />
           <Route path="blog/*" element={<Blog />} />
+          <Route path="faq/*" element={<FAQ />} />
           <Route path="*" element={<NotFound />} />
         </Route>
       </Routes>

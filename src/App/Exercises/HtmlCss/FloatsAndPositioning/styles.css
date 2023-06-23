@@ -1,0 +1,120 @@
+.floatcontainer {
+  position: relative;
+  font-size: 1.375rem;
+  font-family: Poppins;
+  line-height: 2.25rem;
+  width: 62rem;
+}
+.floatcontainer p {
+  padding: 1rem;
+  text-align: justify;
+}
+.floatcontainer p:first-child {
+  line-height: 1rem;
+}
+.floatcontainer p:nth-child(2) {
+  margin-left: 2rem;
+  line-height: 1rem;
+}
+.adnotation1 {
+  position: absolute;
+  float: right;
+  width: 15rem;
+  height: 9rem;
+  padding: 0.75rem 1.25rem;
+  background-color: #ffd5db;
+  border-radius: 5.5px;
+  border: 1px solid #999;
+  font-size: 1rem;
+  line-height: 1.875rem;
+  right: -10rem;
+  top: 5rem;
+  z-index: 1;
+}
+
+.floatcontainer p:nth-child(4) {
+  background-color: lightgray;
+}
+.floatcontainer p:nth-child(5) {
+  background-color: #ffd5db;
+}
+.floatcontainer img {
+  float: left;
+}
+.floatcontainer div {
+  text-align: center;
+}
+.adnotation2 {
+  position: absolute;
+  float: right;
+  width: 6.5rem;
+  height: 4.2rem;
+  padding: 0.75rem 1.25rem;
+  background-color: #ffd5db;
+  border-radius: 5.5px;
+  border: 1px solid var(--gray-500, #999);
+
+  font-size: 0.75rem;
+  line-height: 1.3rem;
+  right: -10rem;
+  top: 35rem;
+  z-index: 1;
+}
+.floatcontainer p:nth-child(7) {
+  clear: both;
+  background-color: var(--color-grey);
+  color: white;
+  margin-top: 10rem;
+}
+.floatcontainer p:nth-child(n + 9) {
+  padding: 0;
+}
+.floatcontainer button {
+  padding: 1rem 8rem;
+  background-color: #ffd5db;
+  border-radius: 0.5rem;
+  border: 0;
+  margin: 3.75rem auto;
+  display: flex;
+  font-size: 1.25rem;
+  line-height: 5rem;
+  justify-content: center;
+  align-items: center;
+}
+.floatcontainer button:hover {
+  cursor: pointer;
+}
+.floatcontainer div:nth-child(11) {
+  width: 100%;
+  height: 15rem;
+  border-radius: 8px;
+  border: 2px solid #6b7280;
+}
+.floatcontainer div div {
+  position: relative;
+  width: 7.5rem;
+  height: 7.5rem;
+  border-radius: 0.5rem;
+  border: 2px solid #ebebeb;
+}
+.floatcontainer div div:first-child {
+  left: 3rem;
+  top: 5rem;
+  background: #c8cbd1;
+}
+.floatcontainer div div:nth-child(2) {
+  left: 5rem;
+  top: -4rem;
+  background: #999;
+}
+.floatcontainer div div:nth-child(3) {
+  left: 7rem;
+  top: -13.5rem;
+  background: #6b7280;
+}
+.exercise-item-content h1 {
+  font-size: 1.125rem;
+  font-family: Poppins;
+  font-weight: 700;
+  line-height: 2.125rem;
+}

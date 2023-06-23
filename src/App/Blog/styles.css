@@ -21,12 +21,9 @@ div.layout.with-sidebar {
   font-weight: 700;
   font-size: 18px;
   line-height: 34px;
-
   display: flex;
   align-items: center;
-
   color: #23213d;
-
   position: relative;
   width: 63px;
   height: 34px;
@@ -48,14 +45,12 @@ div.layout.with-sidebar {
   padding: 45px 61px;
   margin: 60px 0;
   gap: 10px;
-
   /*position: absolute; commented to display all posts*/
   position: relative;
   width: 1034px;
   height: auto;
   left: 31px;
   top: 109px;
-
   background: #ffffff;
   border-radius: 8px;
 }
@@ -80,7 +75,6 @@ div.layout.with-sidebar {
   font-size: 14px;
   line-height: 22px;
   padding: 15px 0;
-  /* identical to box height, or 157% */
   text-decoration-line: underline;
 }
 .blog-post ul li a {
@@ -97,7 +91,6 @@ div.layout.with-sidebar {
   height: 24px;
   font-size: 10.5px;
   line-height: 24px;
-  /* identical to box height, or 229% */
   letter-spacing: 0.15em;
   text-transform: uppercase;
   /*task to center
@@ -135,8 +128,6 @@ p.blog-post-quote {
   font-weight: 700;
   font-size: 14px;
   line-height: 22px;
-
-  /* identical to box height, or 157% */
   text-align: right;
   flex: none;
   order: 2;
