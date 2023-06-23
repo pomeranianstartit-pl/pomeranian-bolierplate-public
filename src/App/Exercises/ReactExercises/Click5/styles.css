@@ -1,0 +1,12 @@
+.font-test-family {
+    font-family: Chilanka;
+
+}
+
+.btn {
+    width: 326px;
+    height: 56px;
+    background: #FE3756;
+    border-radius: 8px;
+    border: 1 px solid #FE3756;
+}
