@@ -26,11 +26,10 @@ header .logo {
   height: auto;
   pointer-events: none;
 }
-.profile-picture .placeholder{
+.profile-picture .img-placeholder{
   border-radius: 50%;
-  background-color: #e5e5e5;
-  width: 50px;
-  height: 50px;
+  border: 3px solid #FF4D69;
+
 }
 .settings{
   border-radius: 50%;

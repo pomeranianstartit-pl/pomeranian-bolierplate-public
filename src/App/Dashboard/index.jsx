@@ -7,6 +7,7 @@ import BlogIcone from '../Images/blogIcon.svg';
 import CodeIcone from '../Images/codeIcon.svg';
 import FaqIcon from '../Images/FaqIcone.svg';
 import personalcard from '../Images/personalcard.svg';
+import DominikProfile from '../Images/DominikProfile.jpg';
 export const Dashboard = () => {
   const [availableCards] = useState([
     {
@@ -42,13 +43,16 @@ export const Dashboard = () => {
   ]);
   return (
     <div className="dashboard">
-      <div className="dasboard-head">
-        <img src={hand} />
-        <h3 style={{ marginLeft: '10px' }}>Hej, tutaj Dominik!</h3>
-      </div>
-      <p>
-        Poniżej znajdziesz najważniejsze informacje na temat mojej działalności
-      </p>
+      <header>
+        <div className="dasboard-head">
+          <img src={hand} />
+          <h3 style={{ marginLeft: '10px' }}>Hej, tutaj Dominik!</h3>
+        </div>
+        <p>
+          Poniżej znajdziesz najważniejsze informacje na temat mojej
+          działalności
+        </p>
+      </header>
       <div className="windows">
         {availableCards.map((card) => {
           return (
@@ -63,6 +67,20 @@ export const Dashboard = () => {
           );
         })}
       </div>
+      <aside>
+        
+        <div className="profile-img">
+            <img classNamie="img-placeholder" src={DominikProfile} alt="" />
+          <h2>Dominik Reszczyński</h2>
+          <p>Brzeg</p>
+        </div>
+        <div className='info'>
+          <p>e-mail:</p>
+          <p style={{marginBottom: '30px'}}><a href='mailto:dominikreszczynski10@gmail.com'>dominikreszczynski10@gmail.com</a></p>
+          <p>telefon:</p>
+          <p><a href="tel:+48516802283">+48 516 802 283</a></p>
+        </div>
+      </aside>
     </div>
   );
 };
