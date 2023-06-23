@@ -1,0 +1,49 @@
+.parent-box-model p { margin: 20px; padding: 20px; border: 3px solid red; display: block; width: 300px; }
+
+
+.box-sizing-container {
+  margin: 50px
+}
+
+.box-sizing-container content-box-example {
+  width: 200px;
+  padding: 20px;
+  border: 2px solid yellow;
+  box-sizing: content-box;
+}
+
+.box-sizing-container .border-box-example {
+  margin-top: 20px;
+  width: 200px;
+  padding: 20px;
+  border: 2px solid pink;
+  box-sizing: border-box;
+}
+
+
+.overflow-container {
+  width: 200px;
+  height: 100px;
+  border: 1px solid black;
+  overflow: auto;
+}
+
+.overflow-content {
+width: 300px;
+height: 150px;
+background-color: brown;
+padding: 10px;
+}
+
+.units-container {
+  width: 600px;
+  height: 80px;
+  border: 1px solid black;
+}
+
+.units-content {
+  background-color: red;
+  width: 50%;
+  height: 20%;
+
+}

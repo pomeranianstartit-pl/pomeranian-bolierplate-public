@@ -4,6 +4,7 @@ import './styles/aside.css';
 import { HouseIcon } from './../Components/Icons/HouseIcon';
 import { ElementIcon } from './../Components/Icons/ElementIcon';
 import { EditIcon } from './../Components/Icons/EditIcon';
+import { FAQIcon } from '../Components/Icons/FaqIcon';
 
 export function AppAside() {
   return (
@@ -37,6 +38,12 @@ export function AppAside() {
           <li>
             <NavLink className="aside-row" to="cv">
               <EditIcon className="menu-icon" />
+            </NavLink>
+          </li>
+          <li>
+            <NavLink className="aside-row" to="faq">
+              <FAQIcon className="menu-icon" />
+              FAQ
             </NavLink>
           </li>
         </ul>

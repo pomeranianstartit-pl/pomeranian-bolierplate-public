@@ -1,0 +1,85 @@
+.font-lato {
+  font-family: 'Lato', sans-serif;
+}
+
+.font-poppins {
+  font-family: 'Poppins', sans-serif;
+}
+
+.dark-theme {
+  color: white;
+  background: black;
+}
+
+.light-theme {
+  background: white;
+  color: black;
+}
+
+.wrapper {
+  transition: 500ms;
+}
+
+@keyframes slide-in {
+  0% {
+    position: absolute;
+    left: -100000px;
+  }
+  100% {
+    position: absolute;
+    left: 0px;
+  }
+
+}
+.animation {
+  animation-name: slide-in;
+  animation-duration: 2s;
+}
+
+.business-card {
+  display: flex;
+  flex-direction: column;
+  gap: .2em;
+}
+.business-card * {
+  margin: 0;
+}
+
+.business-card a {
+  text-decoration: none;
+  color:black;
+}
+.business-card section {
+  margin-bottom: .2em;
+}
+
+.business-card section:nth-child(2) {
+  color: #FE3756;
+  animation-name: fade;
+  animation-duration: 2s;
+}
+
+@keyframes fade {
+  from { opacity: 0;
+  } to { opacity: 1;
+  }
+}
+
+.lists ul {
+  list-style-position: outside;
+  padding: 0;
+}
+
+.lists li:hover {
+  margin-left: 2rem;
+}
+
+.lists li:hover {
+  animation: fade;
+  animation-duration: 1s;
+  color: green;
+}
+
+.lists li::marker {
+  color: red;
+}

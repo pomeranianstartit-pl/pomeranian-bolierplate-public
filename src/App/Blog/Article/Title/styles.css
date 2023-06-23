@@ -1,0 +1,18 @@
+.blog-title {
+  color: var(--text-text-primary, #222);
+  font-size: 42px;
+  font-weight: 800;
+  line-height: 3px;
+  font-family: 'MADE TOMMY', sans-serif;
+}
+
+.blog-date {
+  color: var(--text-text-primary, #222);
+  /* OVERLINE/Overline */
+  font-size: 10.5px;
+  font-family: 'MADE TOMMY', sans-serif;
+  line-height: 24px;
+  letter-spacing: 1.68px;
+  text-transform: uppercase;
+  margin-top: 5rem;
+}

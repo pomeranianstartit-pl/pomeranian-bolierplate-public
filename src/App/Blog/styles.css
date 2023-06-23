@@ -1,165 +1,51 @@
-body {
-    display: flex;
-flex-direction: column;
-align-items: flex-start;
-padding: 45px 61px;
-gap: 10px;
+@import url('https://fonts.cdnfonts.com/css/made-tommy-outline');
 
-position: absolute;
-width: 1034px;
-height: 484px;
-left: 268px;
-top: 220px;
-
-background: #FFFFFF;
-border-radius: 8px;   
+.post-container {
+  display: inline-flex;
+  padding: 45px 61px;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 10px;
 }
 
-.blog-date {
-    display: flex;
-    justify-content: center;
+.blog p {
+  display: flex;
+  width: 912px;
+  flex-direction: column;
+  font-family: 'MADE TOMMY', sans-serif;
+  font-weight: 400;
+  line-height: 24px;
 }
 
-.blog-title {
-    
-width: 791px;
-height: 56px;
-
-font-family: 'MADE TOMMY';
-font-style: normal;
-font-weight: 800;
-font-size: 42px;
-line-height: 56px;
-/* identical to box height, or 133% */
-
-
-/* text/text-primary */
-
-color: #222222;
-
-
-/* Inside auto layout */
-
-flex: none;
-order: 0;
-flex-grow: 0;
+.blog {
+  display: inline-flex;
+  padding: 45px 61px;
+  padding-left: 250px;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 10px;
 }
 
-.div1 {
-    width: 912px;
-height: 189px;
+.blog h3 {
+  color: var(--secondary-secondary, #23213d);
 
-font-family: 'MADE TOMMY';
-font-style: normal;
-font-weight: 400;
-font-size: 16px;
-line-height: 27px;
-/* or 169% */
-
-
-/* text/text-primary */
-
-color: #222222;
-
-
-/* Inside auto layout */
-
-flex: none;
-order: 0;
-flex-grow: 0;
+  /* body/bold-18 */
+  font-size: 18px;
+  font-family: 'MADE TOMMY', sans-serif;
+  font-weight: bold;
+  line-height: 34px;
 }
 
-.blog-author-signature {
-    line-height: 0%;
-
-
-
-
-/* Inside auto layout */
-
-flex: none;
-order: 0;
-flex-grow: 0;
+.blog-span {
+  color: var(--secondary-secondary, #23213d);
+  /* body/bold-18 */
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 34px;
 }
 
-.blog-author {
-    width: 377px;
-    height: 32px;
-    
-    font-family: 'MADE TOMMY';
-    font-style: normal;
-    font-weight: 700;
-    font-size: 18px;
-    line-height: 32px;
-    /* identical to box height, or 178% */
-    
-    
-    /* text/text.secondary */
-    
-    color: rgba(34, 34, 34, 0.8);
-    
-    
-    /* Inside auto layout */
-    
-    flex: none;
-    order: 0;
-    flex-grow: 0;
-}
-
-.blog-author-position {
-    width: 796px;
-    height: 24px;
-    
-    font-family: 'MADE TOMMY';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 24px;
-    /* identical to box height, or 150% */
-    
-    
-    /* text/text.secondary */
-    
-    color: rgba(34, 34, 34, 0.8);
-    
-    
-    /* Inside auto layout */
-    
-    flex: none;
-    order: 1;
-    flex-grow: 0;
-}
-
-a[href*="wp.pl"] {
-    color: red;
-}
-a {
-    font-weight: bold;
-}
-
-a.blog-link:visited {
-    color: green;
-}
-
-/* p:not(:first-child) {
-    color: purple;
-} */
-
-p:nth-child(n + 2) {
-    color: orange;
-}
-
-
-p {
-    cursor: grab;
-}
-
-h2, h5, h6 {
-    cursor: cell;
-}
-
-.blog p:hover {
-    -webkit-box-shadow: 8px 8px 24px 0px rgba(66, 68, 90, 1);
--moz-box-shadow: 8px 8px 24px 0px rgba(66, 68, 90, 1);
-box-shadow: 8px 8px 24px 0px rgba(66, 68, 90, 1);
+.first-post-blog p {
+  color: rgba(255, 255, 255, 0.80!important);
+  font-size: 14px;
+  line-height: 27px;
 }
