@@ -8,15 +8,19 @@ export function FloatsFigmaDesign() {
 <div>
 &lt; BLOG &lt; ĆWICZENIE
 
-<p className='first'>
-<br></br>
-Lorem Ipsum is simply dummy text of the printing and typesetting industry.
-<br></br>
-<br></br>
+<div className='frame35200'>
+<p >
 Lorem Ipsum is simply dummy text of the printing and typesetting industry.
 </p>
+<p>
+Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+</p>
+</div>
 
-<p className='second'>
+
+
+
+<p className='third'>
 Lorem Ipsum is simply dummy text of the printing and typesetting industry.
 <br></br>
 <br></br>
