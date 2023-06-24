@@ -13,8 +13,10 @@
   line-height: 1rem;
 }
 .floatcontainer p:nth-child(2) {
+  position: absolute;
   margin-left: 2rem;
   line-height: 1rem;
+  top: 0.25rem;
 }
 .adnotation1 {
   position: absolute;
@@ -28,7 +30,7 @@
   font-size: 1rem;
   line-height: 1.875rem;
   right: -10rem;
-  top: 5rem;
+  top: 0rem;
   z-index: 1;
 }
 
@@ -53,11 +55,10 @@
   background-color: #ffd5db;
   border-radius: 5.5px;
   border: 1px solid var(--gray-500, #999);
-
   font-size: 0.75rem;
   line-height: 1.3rem;
   right: -10rem;
-  top: 35rem;
+  top: 30rem;
   z-index: 1;
 }
 .floatcontainer p:nth-child(7) {
