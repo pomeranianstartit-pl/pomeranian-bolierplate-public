@@ -1,36 +1,67 @@
-import { useEffect } from 'react';
 import './SingleTask.css';
-import { useState } from 'react';
-// import { TickIcon } from '../../../Components/Icons/TickIcon';
+import { useEffect, useState } from 'react';
+// import trashcan from '../../../Images/kosz.svg';
+// import tickmark from '../../../Images/ptaszek.svg';
+import { parseDate } from '../helpers.js';
 
-export const SingleTask = ({
-  title,
-  note,
-  author,
-  deleteToDo,
-  id,
-  isError,
-}) => {
+export function SingleTask(props) {
+  const {
+    name,
+    author,
+    note,
+    title,
+    deleteToDo,
+    id,
+    isError,
+    handleEditTask,
+    markAsDone,
+    isDone,
+    doneDate,
+  } = props;
+
+  // 15.04.2023, 15.30
+
+  // const parsedDate = new Date(doneDate);
+  // const finalDate = `${parsedDate.getDate()}.${parsedDate.getMonth()}.${parsedDate.getFullYear()}, ${parsedDate.getHours()}:${parsedDate.getMinutes()}`;
+
   return (
-    <div className="proba">
-      <div>
-        <div className="todo-containers">
-          <div>
-            <button onClick={() => deleteToDo(id)}>usuń element</button>
-            <p className="boxpar">{title}</p>
-            <p className="name_date">{author}</p>
-            <p className="parinfo">{note}</p>
-            {isError && <p>Nie da się usunąć</p>}
-
-            {/* <div className="lastdiv_div">
-              <div>
-                <TickIcon />
-              </div>{' '}
-              <div className="name_date">20.04.2024, 18:06</div>
-            </div> */}
+    <div className="task-index-page">
+      <div className="task-list">
+        <div className="task-single">
+          <div className="task-row-title">
+            <h3>{title}</h3>
           </div>
+          <p>{author}</p>
+          <p>{name}</p>
+          <p>{note}</p>
+          {isError && <p>Nie da się usunąć elementu</p>}
+          <button
+            onClick={() => {
+              deleteToDo(id);
+            }}
+            className="button-delete"
+          >
+            USUŃ
+          </button>
+          <button
+            onClick={() => {
+              handleEditTask(id);
+            }}
+          >
+            EDYTUJ
+          </button>
+          {!isDone && (
+            <button
+              onClick={() => {
+                markAsDone(id);
+              }}
+            >
+              ZAKOŃCZ
+            </button>
+          )}
+          {isDone && <p>Zakończone {parseDate(doneDate)}</p>}
         </div>
       </div>
     </div>
   );
-};
+}
