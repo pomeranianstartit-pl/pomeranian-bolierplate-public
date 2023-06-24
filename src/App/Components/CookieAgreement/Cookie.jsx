@@ -1,6 +1,8 @@
+import React from 'react';
+
 import './styles.css';
 
-import cookies from '../../Images/cookie.svg'
+import cookies from '../../Images/cookie.svg';
 
 const Cookies = () => {
   const handleAgreement = () => {};
