@@ -6,9 +6,12 @@ import { SelectorsAndCascadeMetaData } from './SelectorsAndCascade/router-data';
 
 import { GoogleFontsMetaData } from './GoogleFonts/router-data';
 
+import { FigmaFloatDesignMetaData } from './FloatsAndPositioning/router-data';
+
 export const blockRouterMetaData = [
   blockRouterMetaData121220231,
   SelectorsAndCascadeMetaData,
   GoogleFontsMetaData,
+  FigmaFloatDesignMetaData,
 ];
 export const blockRouterData = getParsedRouterDataList(blockRouterMetaData);
