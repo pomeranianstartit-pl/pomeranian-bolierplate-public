@@ -1,7 +1,7 @@
 import './styles.css';
 import DashboardCard from '../Components/DashboardCard/DashboardCard';
 import { useState } from 'react';
-
+import Cookies from '../Components/Cookies/Cookies';
 import personalCard from '../Images/tiles/personalcard.svg';
 
 export const Dashboard = () => {

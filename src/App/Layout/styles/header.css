@@ -1,4 +1,4 @@
-header {
+header.navigation {
   grid-area: header;
   position: relative;
   z-index: 1;
@@ -9,19 +9,19 @@ header {
   padding-right: 3rem;
   box-shadow: 0px 1px 9px 0px var(--color-grey);
 }
-header > a:first-of-type {
+header.navigation > a:first-of-type {
   text-decoration: none;
 }
-header.header-title {
+header.navigation.header-title {
   color: var(--color-grey);
   font-weight: normal;
 }
-header .logo {
+header.navigation .logo {
   height: auto;
   width: 200px;
   pointer-events: none;
 }
-header button.settings {
+header.navigation button.settings {
   width: 50px;
   height: auto;
   background-color: transparent;
@@ -29,11 +29,11 @@ header button.settings {
   cursor: pointer;
   border: solid 1px transparent;
 }
-header button.settings:hover{
+header.navigation button.settings:hover {
   border: dotted 1px lightgray;
   border-radius: 50%;
 }
-header button.dropdown-menu {
+header.navigation button.dropdown-menu {
   align-self: center;
   width: 32px;
   height: 32px;
@@ -42,22 +42,22 @@ header button.dropdown-menu {
   cursor: pointer;
   border: solid 1px transparent;
 }
-header button.dropdown-menu:hover{
+header.navigation button.dropdown-menu:hover {
   border: dotted 1px lightgray;
   border-radius: 50%;
 }
 .profile-picture .placeholder {
   border-radius: 50%;
-  background-color: #E5E5E5;
+  background-color: #e5e5e5;
   width: 50px;
   height: 50px;
 }
-header .menu {
-  display:flex;
+header.navigation .menu {
+  display: flex;
   gap: 20px;
 }
 
-header .user-details {
+header.navigation .user-details {
   align-self: flex-end;
 }
 

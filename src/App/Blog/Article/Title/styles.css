@@ -4,6 +4,7 @@
   font-weight: 800;
   line-height: 3px;
   font-family: 'MADE TOMMY', sans-serif;
+  text-wrap: wrap;
 }
 
 .blog-date {

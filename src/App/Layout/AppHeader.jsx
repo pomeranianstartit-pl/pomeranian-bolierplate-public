@@ -10,7 +10,7 @@ import './styles/header.css';
 
 export function AppHeader() {
   return (
-    <header>
+    <header className="navigation">
       <div>
         <Link to="/">
           <img src={startItLogo} className="logo" alt="" srcset="" />
