@@ -17,7 +17,7 @@ function getLayoutClassName(withSidebar) {
 export const Layout = ({ withSidebar }) => {
   return (
     <ErrorBoundary>
-      {/* <Cookies /> */}
+      <Cookies />
       {/*<Avatar /> */}
       <div className={getLayoutClassName(withSidebar)}>
         <AppHeader />
