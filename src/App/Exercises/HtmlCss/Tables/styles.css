@@ -1,0 +1,11 @@
+.table2 {
+  border-radius: 20px;
+  position: center;
+  width: 716px;
+  height: 477px;
+  left: calc(50% - 716px / 2 - 94px);
+  top: calc(50% - 477px / 2 + 56px);
+}
+.table2:nth-child(even) {
+  background-color: #ffd5db;
+}
