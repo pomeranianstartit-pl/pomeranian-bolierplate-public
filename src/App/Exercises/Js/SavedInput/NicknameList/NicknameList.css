@@ -1,0 +1,38 @@
+.nickname-list {
+    width: 53px;
+    height: 27px;
+    
+    /* body/bold-16 */
+    
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 27px;
+    /* identical to box height, or 169% */
+    
+    
+    /* TEXT/text.primary */
+    
+    color: #222222;
+    
+    
+    /* Inside auto layout */
+    
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+    
+
+  };
+
+  .list-container {
+ 
+width: 235px;
+height: 280px;
+
+/* gray/300 */
+
+border: 1px solid #C8CBD1;
+border-radius: 8px;
+  }

@@ -1,0 +1,64 @@
+.dashboard-tiles-container h2 {
+  /* background: url(../images/waving-hand-sign.svg) no-repeat;
+  padding-left: 2rem; */
+  margin-left: 2rem;
+  color: #fe3756;
+}
+.dashboard .dashboard-tiles {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  padding-right: 5rem;
+}
+.dashboard .dashboard-tiles > div {
+  margin: 2rem;
+  padding: 2rem;
+  width: 15rem;
+  height: 15rem;
+  border-radius: 8px;
+  border: 1px solid #c8cbd1;
+  box-shadow: 0 3px 9px rgba(0, 0, 0, 0.15);
+}
+.dashboard .dashboard-tiles > div:hover {
+  border: 1px solid #fe3756;
+  box-shadow: 0 3px 9px rgba(254, 55, 86, 0.54);
+}
+.dashboard .dashboard-tiles > div {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+.dashboard-tiles > div p,
+.dashboard-tiles > div a {
+  text-align: center;
+  margin: 0;
+}
+.dashboard-tiles > div p.dashboard-tile-description {
+  font-size: 0.8rem;
+}
+.dashboard-tiles > div a {
+  font-size: 0.9rem;
+  font-weight: bold;
+  color: #fe3756;
+  text-decoration: none;
+}
+.dashboard-tiles > div a:after {
+  content: '>';
+  margin-left: 0.5rem;
+}
+.dashboard-tiles > div img {
+  width: 3rem;
+  height: 3rem;
+}
+.dashboard-tiles > div .dashboard-tile-title {
+  font-size: 1.5rem;
+}
+.dashboard-tiles > div:hover .dashboard-tile-title {
+  color: #fe3756;
+}
+.dashboard-tiles > div:hover img {
+  /* in case of csv files we need filter to change color*/
+  filter: invert(35%) sepia(57%) saturate(4589%) hue-rotate(331deg)
+    brightness(101%) contrast(99%);
+}

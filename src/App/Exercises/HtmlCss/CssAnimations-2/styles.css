@@ -1,0 +1,94 @@
+
+.Question
+{
+width: 1141.8px;
+height: 176px;
+font-family: 'Poppins';
+font-style: normal;
+font-weight: 800;
+font-size: 57.2px;
+line-height: 88px;
+letter-spacing: 0.006em;
+flex: none;
+order: 0;
+align-self: stretch;
+flex-grow: 0;
+}
+
+.Answear
+{
+width: 1141.8px;
+height: 176px;
+font-family: 'Poppins';
+font-style: normal;
+font-weight: 800;
+font-size: 57.2px;
+line-height: 88px;
+letter-spacing: 0.006em;
+flex: none;
+order: 0;
+align-self: stretch;
+flex-grow: 0;
+}
+
+.Name
+{
+  width: 580.8px;
+height: 62px;
+font-family: 'Poppins';
+font-style: normal;
+font-weight: 400;
+font-size: 35.2px;
+line-height: 62px;
+color:#FE3756;
+flex: none;
+order: 0;
+align-self: stretch;
+flex-grow: 0;
+
+}
+
+.Occupation
+{
+width: 580.8px;
+height: 62px;
+font-family: 'Poppins';
+font-style: normal;
+font-weight: 600;
+font-size: 35.2px;
+line-height: 62px;
+color: #FE3756;
+flex: none;
+order: 1;
+align-self: stretch;
+flex-grow: 0;
+
+}
+
+.animation
+{
+  width:150px;
+  height:150px;
+  background-color: blue;
+  animation-name: blinking-square ;
+  animation: duration 2s; 
+  animation-iteration-count: infinite;
+
+}
+
+@keyframes blinking-square {
+  0% {
+    width:150px;
+    height:150px;
+  }
+  33% {
+    background-color: red;
+    opacity: 50%;
+  }
+
+
+100% {
+  width:150px;
+    height:150px
+}
+}

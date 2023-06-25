@@ -1,0 +1,45 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+.add-task-page {
+  font-family: 'Poppins', sans-serif;
+}
+.add-task-label {
+  font-weight: 600;
+}
+
+.add-task-input {
+  font-size: 16px;
+  width: 500px;
+  height: 50px;
+  margin-top: 10px;
+  margin-bottom: 30px;
+  border-radius: 8px;
+  border: 1px solid rgb(176, 176, 176);
+  padding: 5px;
+}
+
+.text-area {
+  height: 100px;
+}
+
+.button-delete-addtask {
+  width: 163px;
+  height: 56px;
+  background-color: #000000;
+  color: white;
+  border-radius: 8px;
+  border: none;
+  cursor: pointer;
+  margin-left: 120px;
+}
+
+.button-add-addtask {
+  width: 163px;
+  height: 56px;
+  background-color: #fe3756;
+  color: white;
+  border-radius: 8px;
+  border: none;
+  cursor: pointer;
+  margin-left: 53px;
+}
