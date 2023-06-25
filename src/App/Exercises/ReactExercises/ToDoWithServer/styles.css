@@ -1,0 +1,10 @@
+.button-add{
+    width: 163px;
+    height: 56px;
+    background-color: #fe3756;
+    color: white;
+    border-radius: 8px;
+    border: none;
+    cursor: pointer;
+  
+  }
