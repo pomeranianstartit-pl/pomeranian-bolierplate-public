@@ -33,7 +33,7 @@ const Cookies = () => {
           </div>
           <div className="button-wrapper">
             <button className="agree" onClick={handleAgreement}>
-              w porządku
+            ⭐w porządku⭐
             </button>
             <button
               className="customize"
