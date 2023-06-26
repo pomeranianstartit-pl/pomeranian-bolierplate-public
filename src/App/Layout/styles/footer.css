@@ -22,8 +22,10 @@ footer .text-down {
 }
 
 footer a{
- text-align: right;
- width: 100%;
- display: block;
+  text-align: right;
+  width: 100%;
+  display: block;
+  white-space: nowrap;
+  color: #FE3756;
 }
 
