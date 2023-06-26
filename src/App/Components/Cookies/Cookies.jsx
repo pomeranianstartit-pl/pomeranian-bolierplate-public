@@ -26,7 +26,7 @@ const Cookies = () => {
 
   return (
     <div className="cookies-agreement">
-      <div className="text-wrapper">
+      {/* <div className="text-wrapper">
         <img className="cookies-icon" src={cookie} alt="cookies icon" />
         <p>
           Pozwól na pliki cookies Nasza strona korzysta z ciasteczek, które
@@ -45,7 +45,7 @@ const Cookies = () => {
         <button className="customize" onClick={handleAgreementCustomization}>
           Dopasuj zgody
         </button>
-      </div>
+      </div> */}
     </div>
   );
 };
