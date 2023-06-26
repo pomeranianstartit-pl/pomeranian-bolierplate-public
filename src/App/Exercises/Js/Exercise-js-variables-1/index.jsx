@@ -22,8 +22,11 @@ export function Exercise() {
         </p>
         <p>{string2}</p>
         <p>{string3}</p>
-        {/* Uzupełnij zanie korzystając ze zmiennych oraz operacji na stringach */}
-        <p>Witaj {string4}! Jesteś {string5} uzytkownikiem odwiedzającym tę stronę!</p>
+        {/* Uzupełnij zadanie korzystając ze zmiennych oraz operacji na stringach */}
+        <p>
+          Witaj {string4}! Jesteś {string5} uzytkownikiem odwiedzającym tę
+          stronę!
+        </p>
       </section>
     </div>
   );
