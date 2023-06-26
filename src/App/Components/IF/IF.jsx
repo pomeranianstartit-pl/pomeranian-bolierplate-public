@@ -1,6 +1,6 @@
 import './styles.css';
 
-export const KomponentTestowy = () => {
+export const IF = () => {
   const message = "Hallo World!";
   const message2 = "Hallo World2!";
 
