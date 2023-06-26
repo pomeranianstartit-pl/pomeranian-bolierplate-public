@@ -1,4 +1,4 @@
-import {MaterialUIBasicElement} from './MaterialUIBasicElement';
+import { MaterialUIBasicElement } from './MaterialUIBasicElement';
 
 export const MaterialUIBasicElementMetaData = {
   path: 'material-ui-basic-elements',
