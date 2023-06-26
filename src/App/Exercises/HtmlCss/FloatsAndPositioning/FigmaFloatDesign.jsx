@@ -5,8 +5,8 @@ const FigmaFloatDesign = () => {
   return (
     <>
       <h1>
-        <a src="">&lt; BLOG </a>
-        <a>&lt; ĆWICZENIE</a>
+        <a href="./">&lt; BLOG </a>
+        <a href="./">&lt; ĆWICZENIE</a>
       </h1>
       <div className="floatcontainer">
         <p>
@@ -29,7 +29,7 @@ const FigmaFloatDesign = () => {
           consectetur lorem donec.
         </p>
         <p>
-          <img src={pic}></img>
+          <img src={pic} alt="doggy"></img>
           Lorem Ipsum is simply dummy text of the printing and typesetting
           industry. Lorem Ipsum has been the industry's standard dummy text ever
           since the 1500s, when an unknown printer took a galley of type and
