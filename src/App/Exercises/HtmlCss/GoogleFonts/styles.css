@@ -1,0 +1,40 @@
+.font-test-family {
+  font-family: Chilanka;
+}
+
+.font-lato {
+  font-family: 'Lato', sans-serif;
+}
+
+.font-poppins {
+font-family: 'Poppins', sans-serif;
+}
+
+.dark-theme {
+  color: lightgrey;
+  background-color: grey
+}
+
+.light-theme {
+color: grey;
+background-color: white;
+
+}
+
+.wrapper{
+  transition: all 3s;
+}
+
+.animation {
+  animation-name: slide-in;
+  animation-duration: 2s;
+}
+
+@keyframes slide-in {
+0% {
+font-size: 0;
+}
+100% {
+font-size: initial;
+}
+}

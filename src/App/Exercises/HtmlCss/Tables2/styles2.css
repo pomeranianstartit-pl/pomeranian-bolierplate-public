@@ -1,0 +1,57 @@
+.rating-table {
+    font-family: 'poppins';
+    font-size: 18px;
+    line-height: 27px;
+    width: 716px;
+    border-radius: 18px;
+    box-shadow: 0px 63.6618px 158.447px rgba(0, 0, 0, 0.06),
+      0px 32.2288px 69.073px rgba(0, 0, 0, 0.0405),
+      0px 12.7324px 25.7476px rgba(0, 0, 0, 0.03),
+      0px 2.7852px 9.16022px rgba(0, 0, 0, 0.0195);
+  }
+  
+  .rating-table tr {
+  
+  
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 46px;
+    padding-right: 92px;
+  }
+  
+  .rating-table .table-head {
+    font-weight: 600;
+  
+    width: 716PX;
+    height: 57px;
+  border-top-left-radius: 18px;
+  border-top-right-radius: 18px;
+  
+    border-bottom: 2px solid rgba(255, 213, 219, 1);
+  
+    background-color: rgba(245, 245, 245, 1);
+  }
+  
+  .table-body tr {
+    font-weight: 400;
+    height: 84px;
+  }
+  
+  .table-body .location {
+    width: 223px;
+  }
+  
+  .table-body .player_id {
+    width: 180px;
+  }
+  
+  .table-body .rating {
+    text-align: right;
+    width: 100px;
+  }
+  
+  .table-body tr:nth-child(2n) {
+    background-color: rgba(255, 213, 219, 1);
+  }

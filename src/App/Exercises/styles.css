@@ -1,11 +1,97 @@
-.exercise-main-container {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  /* 5rem header, 5rem footer 1.5rem padding (both sides) */
-  grid-template-rows: calc(100vh - 5rem - 5rem - 1.5rem - 1.5rem);
+.blog-div{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 985px;
+  height: 1,893px;
+  font-family: 'poppins';
+  
 }
-
-.exercises-categories a.active {
-  background-color: var(--color-primary-blue);
-  color: var(--color-white);
+.blog-div  p{
+  font-size: 22px;
+  line-height: 40px;
+  text-align: justify;
+}
+#first{
+  background-color: #EBEBEB;
+  padding: 17px 21px 17px 21px;
+  margin-top: 30px;
+  border-top-left-radius: 2rem;
+  border-bottom-right-radius: 2rem;
+}
+#second{
+  background-color: #FFD5DB;
+  padding: 17px 21px 17px 21px;
+  margin-top: 40px;
+  height: 300px;
+  border-top-left-radius: 2rem;
+  border-bottom-right-radius: 2rem;
+}
+#third{
+  background-color: #4B5563;
+  padding: 17px 21px 17px 21px;
+  margin-top: 130px;
+  border-top-left-radius: 2rem;
+  border-bottom-right-radius: 2rem;
+}
+#third p{
+  color: white;
+}
+#button-zapisz-mnie{
+  width: 423px;
+  height: 94px;
+  padding: 10px 127px 10px 127px;
+  border-radius: 19.643802642822266px;
+  border: 1px;
+  gap: 10px;
+  margin-top: 70px;
+  margin-bottom: 50px;
+  background-color: #FFD5DB;
+  border: 1px solid #FE3756;
+  font-size: 20px;
+  font-family: 'poppins';
+  white-space: nowrap;
+  transform: scale(1,1);
+}
+#button-zapisz-mnie:hover{
+  cursor: pointer;
+}
+#button-zapisz-mnie:active{
+  transform: translateY(5px) scale(0.9);
+  transition: 0.1s;
+  cursor: pointer;
+  -webkit-box-shadow: 0px 0px 25px 14px rgba(183, 183, 183, 1);
+  -moz-box-shadow: 0px 0px 25px 14px rgba(183, 183, 183, 1);
+  box-shadow: 0px 0px 25px 14px rgba(183, 183, 183, 1);
+}
+.blog-div #second img{
+  display: flex;
+  float: left;
+  border-radius: 4%;
+  margin-right: 20px;
+  transform: rotate(-2deg);
+  border: 3px solid black;
+}
+@keyframes fox-hover {
+  0% {
+      transform: rotate(-2deg);
+  }
+  50%{
+      transform: rotate(2deg);
+  }
+  100% {
+      transform: rotate(-2deg);
+  }
+}
+.blog-div #second img:hover{
+  animation: fox-hover 1s infinite;
+}
+.float-links{
+  color: #23213D;
+  text-decoration: none;
+  font-weight: bolder;
+}
+.float-links::before{
+content: "⯇";
 }
