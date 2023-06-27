@@ -2,7 +2,7 @@ import React from 'react';
 
 import './style.css';
 import { IfStatements } from './IfStatements';
-import { IfExercise } from './IfExercise';
+import { IfExercise } from './IfExercise.jsx';
 
 export function ExerciseNumbersIf () {
   let a = 5;
