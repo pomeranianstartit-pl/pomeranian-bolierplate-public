@@ -13,6 +13,9 @@ import { IF_LiczbyMetaData } from './IF_Liczby/router-data';
 import { IF_ZadaniaMetaData } from './IF_Zadania/router-data';
 import { IF_Zadania2MetaData } from './IF_Zadania2/router-data';
 
+
+
+
 export const blockRouterMetaData = [Exercise_exampleMetaData, SelectorsAndCascadeMetaData, TextFundamentsMetaData, GoogleFontsMetaData, GoogleFonts2MetaData, ExerciseBoxModelMetaData, TablesMetaData, Tables2MetaData, FloatsMetaData, FloatsFigmaDesignMetaData, IF_LiczbyMetaData, IF_ZadaniaMetaData, IF_Zadania2MetaData];
 
 export const blockRouterData = getParsedRouterDataList(blockRouterMetaData);
