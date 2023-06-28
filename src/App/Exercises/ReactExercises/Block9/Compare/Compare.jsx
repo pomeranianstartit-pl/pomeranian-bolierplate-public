@@ -1,6 +1,8 @@
 import './styles.css';
 import { useState } from 'react';
 
+//TODO: Change function to compare whole number - function compare input digits
+
 export const Compare = () => {
   const [numberA, setNumberA] = useState();
   const [numberB, setNumberB] = useState();

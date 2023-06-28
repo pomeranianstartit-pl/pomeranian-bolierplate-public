@@ -4,6 +4,8 @@ import './styles.css';
 
 import cookies from '../../Images/cookie.svg';
 
+//TODO: Functionality to close cookie agreement
+
 const Cookies = () => {
   const handleAgreement = () => {};
   const handleAgreementCustomization = () => {};

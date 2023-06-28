@@ -1,6 +1,9 @@
 import './styles.css';
 import { useState } from 'react';
 
+// TODO: set function to get a random number, than compare it to some established number,
+// change name, message and answerhandler never used - search for cause
+
 export const FindNumber = () => {
   const [message, setMessage] = useState('');
 
