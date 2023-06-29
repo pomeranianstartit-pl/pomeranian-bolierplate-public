@@ -1,4 +1,4 @@
-import './styles.css';
+import './html-tables.css';
 import { StarIcon } from './StarIcon';
 
 export function HTMLTables() {
