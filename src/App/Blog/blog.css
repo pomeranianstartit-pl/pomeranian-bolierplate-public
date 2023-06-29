@@ -41,11 +41,10 @@
   color: white;
 }
 
-ul {
+.capitalize-list {
   text-transform: capitalize;
 }
-
-ul li {
+.capitalize-list li {
   text-decoration: underline;
   margin: 35px 0;
 }

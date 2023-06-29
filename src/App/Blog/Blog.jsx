@@ -1,4 +1,4 @@
-import './styles.css';
+import './blog.css';
 
 export const Blog = () => {
   return (
@@ -60,7 +60,7 @@ export const Blog = () => {
             scandals.
           </p>
 
-          <ul>
+          <ul className="capitalize-list">
             <li>WP.PL 1</li>
             <li>WP.PL 2</li>
             <li>ONET.PL</li>
