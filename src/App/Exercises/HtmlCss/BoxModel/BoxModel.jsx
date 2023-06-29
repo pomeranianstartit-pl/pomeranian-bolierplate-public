@@ -13,7 +13,9 @@ export const BoxModel = () => {
         velit porta, pulvinar nibh vitae, facilisis justo. Lorem ipsum dolor sit
         amet, consectetur adipiscing elit. In hac habitasse platea dictumst.
         Morbi in luctus ante. Donec iaculis, lorem at luctus dignissim, augue
-        risus suscipit arcu, nec tincidunt neque eros vitae lacus.{' '}
+        risus suscipit arcu, nec tincidunt neque eros vitae lacus.
+        <p className="paragraph-em">Lorem Ipsum</p>
+        <p className="paragraph-rem">Lorem Ipsum</p>
       </div>
       <div className="p1">lorem ipsum</div>
 

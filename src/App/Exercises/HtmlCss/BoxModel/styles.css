@@ -9,6 +9,14 @@
   overflow: auto;
 }
 
+.paragraph-em {
+  font-size: 2em; /*wielkość czcionki parenta x wartość em (2) */
+}
+
+.paragraph-rem {
+  font-size: 1.5em; /*wielkość czcionki root element (np. tag <html> x wartość rem (1.5) */
+}
+
 .box-2 {
   margin: 10px;
   width: 100px;
