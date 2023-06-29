@@ -13,7 +13,7 @@ export const Section = ({ title, content }) => {
   const isArrowRotated = !isVisible;
 
   return (
-    <div className="box">
+    <div className="section">
       <div onClick={handleClick}>
         <SectionTitle title={title} rotatedArrow={isArrowRotated} />
       </div>

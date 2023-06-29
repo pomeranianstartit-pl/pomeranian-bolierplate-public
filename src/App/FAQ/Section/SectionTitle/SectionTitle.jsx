@@ -1,4 +1,4 @@
-import './sectiontitle.css';
+import './section-title.css';
 import { SectionIcon } from '../SectionIcon';
 
 export const SectionTitle = ({ title, rotatedArrow }) => {

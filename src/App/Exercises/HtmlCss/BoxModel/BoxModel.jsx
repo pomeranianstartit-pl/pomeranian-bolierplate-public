@@ -1,4 +1,4 @@
-import './styles.css';
+import './box-model.css';
 
 export const BoxModel = () => {
   return (

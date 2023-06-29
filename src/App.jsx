@@ -5,7 +5,6 @@ import { Blocks } from './App/Blocks';
 import { Layout } from './App/Layout';
 import { Dashboard } from './App/Dashboard';
 import { Exercises } from './App/Exercises';
-import { Blog } from './App/Blog';
 import { MyCV } from './App/MyCV/MyCV';
 import { Blog } from './App/Blog/Blog';
 import { FAQ } from './App/FAQ';
