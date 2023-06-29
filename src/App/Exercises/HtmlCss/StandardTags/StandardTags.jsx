@@ -1,4 +1,4 @@
-import './styles.css';
+import './standardtags.css';
 
 export function StandardTags() {
   return (
@@ -52,7 +52,7 @@ export function StandardTags() {
       =========
       <div class="faked-tags">
         <div className="title bold-text">Tytuł</div>
-        <span className="small-text">05.2023</span>
+        <div className="small-text margin-bottom">05.2023</div>
 
         <div className="post-title bold-text">
           H<span className="sub">2</span>O is good for you
@@ -60,7 +60,7 @@ export function StandardTags() {
 
         <p>
           Staying <span className="bold-text">hydrated</span> is one of the best
-          things you can do for your overall health. Staying{' '}
+          things you can do for your overall health. Staying
           <span className="bold-text">hydrated</span> can help support physical
           performance, prevent headaches and constipation, and more.
         </p>
@@ -79,9 +79,9 @@ export function StandardTags() {
           someone’s day a great day. Whether you’re celebrating your birthday or
           someone else’s, you can rely on our list of
           <span className="italic-text"> happy birthday </span>
-          <span className="quote-text">quotes</span> to help put a smile on
-          someone’s face. From inspirational to funny to cute sayings, browse
-          our list of <span>quotes</span> to find one that resonates with you.
+          <q>quotes</q> to help put a smile on someone’s face. From
+          inspirational to funny to cute sayings, browse our list of
+          <q>quotes</q> to find one that resonates with you.
           <span className="crossed-text"> Nothing </span>
           can stop you!
         </p>
@@ -91,15 +91,15 @@ export function StandardTags() {
         </div>
 
         <p>
-          <div className="small-text bold-text">
+          <div className="small-text bold-text margin-bottom">
             A lot of things to do
             <span className="italic-text">#todo</span>
           </div>
 
-          <div>
-            <div className="underline-text">Todo 1</div>
-            <div className="underline-text">Todo 2</div>
-            <div className="underline-text">Todo 3</div>
+          <div className="list">
+            <div className="dot">Todo 1</div>
+            <div className="dot">Todo 2</div>
+            <div className="dot">Todo 3</div>
           </div>
         </p>
       </div>
