@@ -27,8 +27,8 @@
   text-decoration: line-through;
 }
 
-.quote-text {
-  quotes: '"' '"';
+q {
+  quotes: initial;
 }
 
 .sup {
@@ -41,4 +41,23 @@
   position: relative;
   top: 0.3em;
   font-size: 0.8em;
+}
+
+.margin-bottom {
+  margin-bottom: 20px;
+}
+
+.list {
+  margin: 0 30px;
+}
+
+.dot::before {
+  display: inline-block;
+  content: '';
+  -webkit-border-radius: 0.375rem;
+  border-radius: 0.375rem;
+  height: 0.3rem;
+  width: 0.3rem;
+  margin-right: 0.6rem;
+  background-color: var(--color-grey);
 }

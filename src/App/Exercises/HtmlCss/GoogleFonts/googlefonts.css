@@ -1,0 +1,45 @@
+.font1 {
+  font-family: 'Roboto', sans-serif;
+}
+
+.font2 {
+  font-family: 'Foldit', cursive;
+}
+
+.font3 {
+  font-family: 'Libre Franklin', sans-serif;
+}
+
+.font4 {
+  font-family: 'Noto Serif', serif;
+}
+
+.font5 {
+  font-family: 'Oswald', sans-serif;
+}
+
+.animation {
+  background-color: pink;
+  font-size: large;
+  font-weight: bold;
+  font-family: 'Roboto', sans-serif;
+  border: 3px solid black;
+  animation-name: car-movement;
+  animation-duration: 8s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate-reverse;
+}
+
+@keyframes car-movement {
+  0% {
+    color: red;
+    text-align: left;
+  }
+  50% {
+    text-align: center;
+  }
+  100% {
+    color: black;
+    text-align: right;
+  }
+}
