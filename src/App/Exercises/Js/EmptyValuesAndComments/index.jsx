@@ -80,3 +80,8 @@ return (
 );};
 
 export default Exercise;
+
+
+
+// const totalPixels = (width, height) => parseInt(width, 10) * parseInt(height, 10)
+// console.log(totalPixels){1110}
