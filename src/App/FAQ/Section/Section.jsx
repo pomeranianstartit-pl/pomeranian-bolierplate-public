@@ -1,7 +1,7 @@
 import { SectionContent } from './SectionContent/SectionContent';
 import { SectionTitle } from './SectionTitle/SectionTitle';
 import React, { useState } from 'react';
-import './styles.css';
+import './section.css';
 
 export const Section = ({ title, content }) => {
   const [isVisible, setIsVisible] = useState(false);

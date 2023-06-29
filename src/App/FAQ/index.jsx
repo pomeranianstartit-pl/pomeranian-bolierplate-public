@@ -1,11 +1,11 @@
 import { Section } from './Section/Section';
-import './styles.css';
+import './faq.css';
 
 export const FAQ = () => {
   return (
     <div className="faq">
       <h1>FAQ</h1>
-      <p>tutaj znajdź odpowiedzi na najczęściej zadawane pytania</p>
+      <p>tutaj znajdziesz odpowiedzi na najczęściej zadawane pytania</p>
 
       <Section
         title="Jak mogę zapisać się na szkolenie?"
