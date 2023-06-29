@@ -1,0 +1,43 @@
+.box {
+  margin: 10px;
+  max-width: 200px;
+  max-height: 200px;
+  padding: 15px;
+  border: 1px solid red;
+  background-color: lightblue;
+  box-sizing: border-box;
+  overflow: auto;
+}
+
+.paragraph-em {
+  font-size: 2em; /*wielkość czcionki parenta x wartość em (2) */
+}
+
+.paragraph-rem {
+  font-size: 1.5em; /*wielkość czcionki root element (np. tag <html> x wartość rem (1.5) */
+}
+
+.box-2 {
+  margin: 10px;
+  width: 100px;
+  height: 100px;
+  padding: 15px;
+  border: 5px solid orange;
+  background-color: grey;
+  box-sizing: content-box;
+}
+
+.p1 {
+  padding: 15px 20px;
+  border: 5px solid orange;
+}
+
+.p2 {
+  padding: 15px 5px 20px;
+  border: 5px solid orange;
+}
+
+.p3 {
+  padding: 5px 10px 15px 20px;
+  border: 5px solid orange;
+}
