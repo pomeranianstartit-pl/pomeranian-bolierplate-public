@@ -1,0 +1,44 @@
+.title {
+  font-size: xx-large;
+  margin-bottom: 20px;
+}
+
+.small-text {
+  font-size: 0.83em;
+}
+
+.post-title {
+  font-size: larger;
+}
+
+.bold-text {
+  font-weight: bold;
+}
+
+.italic-text {
+  font-style: italic;
+}
+
+.underline-text {
+  text-decoration: underline;
+}
+
+.crossed-text {
+  text-decoration: line-through;
+}
+
+.quote-text {
+  quotes: '"' '"';
+}
+
+.sup {
+  position: relative;
+  bottom: 0.5em;
+  font-size: 0.8em;
+}
+
+.sub {
+  position: relative;
+  top: 0.3em;
+  font-size: 0.8em;
+}
