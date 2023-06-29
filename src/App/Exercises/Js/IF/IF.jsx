@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import './styles.css';
 
-export function IF_Zadania2() {
+export function IF() {
   const [age, setAge] = useState(18);
   const [hasDriverLicense, setHasDriverLicense] = useState(true);
   const [hasCar, setHasCar] = useState(true);

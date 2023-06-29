@@ -5,7 +5,7 @@ import { Exercise_example } from './Exercise_example';
 export const Exercise_exampleMetaData = {
   path: 'Exercise_example',
   date: '01.06.2023',
-  linkLabel: 'Testowe',
+  linkLabel: 'Example',
   blockNo: 1,
   element: <Exercise_example />,
   tags: ['flex', 'grid', 'video'],
