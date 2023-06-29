@@ -16,6 +16,7 @@ aside ul {
 
 aside li {
   line-height: 2rem;
+  list-style-type: none;
 }
 
 .aside-row {
