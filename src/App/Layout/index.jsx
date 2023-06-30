@@ -7,7 +7,7 @@ import { ErrorBoundary } from './ErrorBoundary';
 
 import './styles/layout.css';
 import { AppAside } from './AppAside';
-import Cookies from '../Components/Cookies/Cookies';
+// import Cookies from '../Components/Cookies/Cookies';
 
 function getLayoutClassName(withSidebar) {
   return withSidebar ? 'layout with-sidebar' : 'layout';
@@ -16,7 +16,7 @@ function getLayoutClassName(withSidebar) {
 export const Layout = ({ withSidebar }) => {
   return (
     <ErrorBoundary>
-      <Cookies />
+      {/* <Cookies /> */}
       <div className={getLayoutClassName(withSidebar)}>
         <AppHeader />
         {withSidebar && <AppAside />}

@@ -6,7 +6,7 @@ import { GoogleFontsMetaData } from './GoogleFonts/router-data';
 import { BoxModelMetaData } from './Exercise-Box model/router-data';
 import { TablesMetaData } from './Tables/router-data';
 import { FloatsMetaData } from './FloatsAndPositioning/router-data';
-import { FigmaFloatDesignMetaData } from './FigmaFloatDesign/router-data';
+// import { FigmaFloatDesignMetaData } from './FigmaFloatDesign/router-data';
 
 export const blockRouterMetaData = [
   blockRouterMetaData121220231,
@@ -16,6 +16,6 @@ export const blockRouterMetaData = [
   BoxModelMetaData,
   TablesMetaData,
   FloatsMetaData,
-  FigmaFloatDesignMetaData,
+  // FigmaFloatDesignMetaData,
 ];
 export const blockRouterData = getParsedRouterDataList(blockRouterMetaData);
