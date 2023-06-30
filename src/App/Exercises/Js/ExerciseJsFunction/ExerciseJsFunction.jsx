@@ -11,8 +11,9 @@ export function ExerciseJsFunction() {
   };
   return (
     <div>
-      <p>oryginalna tablica: {originalArr.join(', ')}</p>
       <p>posortowana tablica: {sortImmute(originalArr).join(', ')}</p>
+      <p>oryginalna tablica: {originalArr.join(', ')}</p>
+      
     </div>
   );
 }
