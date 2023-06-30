@@ -1,0 +1,46 @@
+.flex {
+    display: flex;
+    flex-direction: column;
+}
+/* wszystkie dzieci w flexie *> */
+.flex>*:not(label) {
+max-width: 300px;
+border: 2px solid  grey;
+margin-top: 10px;
+margin-bottom: 20px;
+font-family: 'poppins';
+}
+
+.flex>*:not(label):hover{
+    max-width: 300px;
+    border: 2px solid  green;
+    
+    margin-top: 10px;
+    margin-bottom: 20px;
+    font-family: 'poppins';
+   
+    }
+
+
+    .flex>*:not(label):focus{
+        max-width: 300px;
+        border: 2px solid  blue;
+        border-radius: 5px;
+        margin-top: 10px;
+        margin-bottom: 20px;
+        font-family: 'poppins';
+        transition: 1s;
+        outline: none !important;
+        }
+
+        
+    .flex>*:not(label):invalid{
+        max-width: 300px;
+        border: 2px solid  red;
+        border-radius: 5px;
+        margin-top: 10px;
+        margin-bottom: 20px;
+        font-family: 'poppins';
+        transition: 1s;
+        outline: none !important;
+        }
