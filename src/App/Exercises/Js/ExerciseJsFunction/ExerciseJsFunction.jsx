@@ -3,7 +3,7 @@ import React from 'react';
 import './style.css';
 
 export function ExerciseJsFunction() {
-  const originalArr = [1, 3, 2, 100, 99];
+  const originalArr = [1, 3, 2, 100, 99, -1];
   const sortImmute = (originalArr) => {
     const sortedArr = [...originalArr];
     //sortowanie za pomocą a oraz b ponieważ przy wartości 100 londowała na 2 mijscu jako js traktuje cyfry w tym momencie jako str
