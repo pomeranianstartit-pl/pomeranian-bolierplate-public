@@ -19,19 +19,20 @@ export function AppAside() {
           </li>
           <li>
             
-            <NavLink className="aside-row" to="CV"><PersonalCardIcon className="menu-icon"/>Moje CV</NavLink>
+            <NavLink className="aside-row" to="CV"><PersonalCardIcon className="menu-icon"/>My CV</NavLink>
+          </li>
+          
+         {/* <li>
+            <NavLink className="aside-row" to="blocks"><ElementIcon className="menu-icon"/>Blocks</NavLink>
+          </li> */}
+          
+          <li>
+
+            <NavLink className="aside-row" to="exercises"><EditIcon className="menu-icon"/>Exercises</NavLink>
           </li>
           <li>
             
-            <NavLink className="aside-row" to="blocks"><ElementIcon className="menu-icon"/>Bloki</NavLink>
-          </li>
-          <li>
-            
-            <NavLink className="aside-row" to="exercises"><EditIcon className="menu-icon"/>Ćwiczenia</NavLink>
-          </li>
-          <li>
-            
-            <NavLink className="aside-row" to="calendar"><CalendarIcon className="menu-icon"/>Kalendarz</NavLink>
+            <NavLink className="aside-row" to="calendar"><CalendarIcon className="menu-icon"/>Calendar</NavLink>
           </li>
 
           <li>
@@ -46,7 +47,7 @@ export function AppAside() {
 
           <li>
             
-            <NavLink className="aside-row" to="settings"><SettingIcon className="menu-icon"/>Ustawienia</NavLink>
+            <NavLink className="aside-row" to="settings"><SettingIcon className="menu-icon"/>Settings</NavLink>
           </li>
           </ul>
       </nav>
