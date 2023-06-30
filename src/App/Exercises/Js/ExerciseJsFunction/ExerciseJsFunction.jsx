@@ -13,6 +13,10 @@ export function ExerciseJsFunction() {
     <div>
       <p>oryginalna tablica: {originalArr.join(', ')}</p>
       <p>posortowana tablica: {sortImmute(originalArr).join(', ')}</p>
+      <p>
+        oryginalna tablica po wywołaniu sortowania tablica:{' '}
+        {originalArr.join(', ')}
+      </p>
     </div>
   );
 }
