@@ -14,9 +14,9 @@ export function Exercise3() {
   return (
     <div>
       {result !== null ? (
-        <h1>Wynik: {result}</h1>
+        <p>Wynik: {result}</p>
       ) : (
-        <h1>Złe wejście</h1>
+        <p>Złe wejście</p>
       )}
     </div>
   );
