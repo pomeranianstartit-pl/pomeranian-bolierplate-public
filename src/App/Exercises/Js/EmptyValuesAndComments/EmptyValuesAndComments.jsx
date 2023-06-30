@@ -5,7 +5,7 @@ import { EmptyValuesAndCommentsComponent } from './EmptyValuesAndComments_compon
 export function EmptyValuesAndComments() {
   return (
 <div>
-      <h1>Funkcja testowa</h1>
+      <h1>Empty Values And Comments</h1>
       <EmptyValuesAndCommentsComponent />
     </div>
   );

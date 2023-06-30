@@ -1,13 +1,12 @@
 import './styles.css';
 
 export const EmptyValuesAndCommentsComponent = () => {
-  const message = "Hallo World!";
-  const message2 = "Hallo World2!";
+  
+  const array1 = [{name: "Łukasz"}, {name: "Adam"}];const sumWithInitial = array1.reduce(  (accumulator, currentValue) => [...accumulator, currentValue.name],  []);console.log(sumWithInitial);
 
   return (
     <div>
-      <h1>{message}</h1>
-      <h1>{message2}</h1>
+
     </div>
   );
 }
