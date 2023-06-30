@@ -1,0 +1,76 @@
+#unique-box-model {
+  margin: 20px;
+  padding: 20px;
+  display: block;
+  border: 3px solid yellow;
+  width: 200px;
+  height: 200px;
+}
+.parent-box-model p {
+  margin: 20px;
+  padding: 20px;
+  border: 3px solid red;
+  display: block;
+  width: 300px;
+  height: 300px;
+}
+.display-css-test {
+  background-color: gold;
+  width: 200px;
+  height: 200px;
+  text-align: center;
+  display: block;
+  margin-top: 30px;
+}
+
+/* ///////////////Box Sizing vs Border Box//////////////// */
+
+.box-sizing-container {
+  margin: 50px;
+}
+
+.box-sizing-container .content-box-example {
+  width: 200px;
+  padding: 20px;
+  border: 2px solid green;
+  box-sizing: content-box;
+}
+
+.box-sizing-container .border-box-example {
+  width: 200px;
+  padding: 20px;
+  border: 2px solid blue;
+  box-sizing: border-box;
+  margin-top: 20px;
+}
+
+/* //////////////CSS property overflow END//////////////// */
+
+.overflow-container {
+  width: 200px;
+  height: 100px;
+  border: 1px solid black;
+  overflow: auto;
+  margin-bottom: 2rem;
+  margin: 2rem;
+}
+
+.overflow-content {
+  width: 300px;
+  height: 150px;
+  background-color: brown;
+  padding: 10px;
+}
+
+/* /////////////////CSS units/////////////// */
+
+.units-container {
+  width: 600px;
+  height: 80px;
+  border: 1px solid black;
+}
+.units-content {
+  background-color: red;
+  width: 50%;
+  height: 20%;
+}
