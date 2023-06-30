@@ -1,3 +1,4 @@
 .exercises-categories > * {
-  display: list-item;
+  display: block;
+  border: 20px;
 }

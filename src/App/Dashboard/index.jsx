@@ -8,33 +8,33 @@ import { EditIcon } from '../Components/Icons/EditIcon';
 export const Dashboard = () => {
   const [availableCards, setAvailableCards] = useState([
     {
-      sectionTitle: 'Moje CV',
+      sectionTitle: 'My CV',
       icon: <PersonalCardIcon alt="business card resume" />,
-      description: 'moje curriculum vitae',
+      description: 'curriculum vitae',
       link: '/cv',
     },
     {
-      sectionTitle: ' Ćwiczenia',
+      sectionTitle: ' Exercises',
       icon: <EditIcon alt="business card resume" />,
-      description: 'wykonane ćwiczenia',
+      description: 'exercises',
       link: '/exercises',
     },
     {
       sectionTitle: 'Blog',
       icon: <img src={setting} alt="business card resume" />,
-      description: 'blog o technologii front-end',
+      description: 'blog about front-end technology',
       link: '/blog',
     },
     {
       sectionTitle: 'Tech stack',
       icon: <img src={setting} alt="business card resume" />,
-      description: 'stack technologiczny realizowany na kursie',
+      description: 'technological stack implemented on the course',
       link: '/tech',
     },
     {
       sectionTitle: 'FAQ',
       icon: <img src={setting} alt="business card resume" />,
-      description: 'odpowiedzi na najczęściej zadawane pytania',
+      description: 'answers to the most frequently asked questions',
       link: '/faq',
     },
   ]);
@@ -43,10 +43,10 @@ export const Dashboard = () => {
 
     <div className="dashboard">
       <div className="dashboard-hello">
-        <h1 className="dashboard-title">Cześć!</h1>
+        <h1 className="dashboard-title">Hi!</h1>
       </div>
       <p className="dashboard-description">
-      Znajdziesz tu informacje o przebiegu mojego kursu
+      Here you will find information about my knowledge and skills
       </p>
       <div className="dashboard-content">
         {availableCards.map((card) => {

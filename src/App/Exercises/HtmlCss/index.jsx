@@ -17,8 +17,8 @@ export function HtmlCssExercises() {
 
   return (
     <div>
-      <p>HTML & CSS - lista ćwiczeń</p>
-      <GoBackLink label="Zamknij" />
+      <p>HTML & CSS</p>
+      <GoBackLink label="Close" />
 
       <hr />
 

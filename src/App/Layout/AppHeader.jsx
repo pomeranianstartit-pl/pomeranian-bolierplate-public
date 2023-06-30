@@ -7,6 +7,11 @@ import arrowDown from '../Images/toggle-arrow.svg';
 import settingsIcon from '../Images/setting.svg';
 import profilowe from '../Images/profilowe_prywatne_kolo.png';
 
+const handleSettingsClick = () => {
+  console.log('Settings Clicked');
+  window.location.href = '/settings';
+};
+
 export function AppHeader() {
   return (
     <header>
@@ -14,14 +19,14 @@ export function AppHeader() {
         <Logo />
       </Link>
       <div className="menu">
-        <button
-          className="settings-btn"
-          onClick={() => {
-            console.log('Settings Clicked');
-          }}
-        >
-          <img src={settingsIcon} className="settins-logo" alt="" />
-        </button>
+      <button className="settings-btn">
+  <img
+    src={settingsIcon}
+    className="settings-logo"
+    alt=""
+    onClick={handleSettingsClick}
+  />
+</button>
 
         <div className="user-profile">
         <img src={profilowe} className="profilowe" alt="" />
@@ -44,6 +49,8 @@ export function AppHeader() {
       </div>
     </header>
   );
+
+  
 }
 
 
