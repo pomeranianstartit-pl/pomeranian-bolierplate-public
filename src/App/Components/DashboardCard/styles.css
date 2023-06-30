@@ -2,7 +2,8 @@
     border: 1px solid #000;
     border-radius: 5px;
     padding: 10px;
-    background-color: #e4e8ec;
+    background-color: #000000;
+    background-image: linear-gradient(white, #d0ced8);
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     animation: cardHover 1.3s ease forwards;
     transition: transform 0.3s ease;
