@@ -4,7 +4,6 @@ import { useEffect } from 'react';
 
 export function Exercise() {
   const [data, setData] = useState();
-  const [category, setCategory] =useState();
   const getJokes = async () => {
     try {
       const response = await fetch(`https://api.chucknorris.io/jokes/random`);
@@ -18,22 +17,14 @@ export function Exercise() {
       console.log(err, 'err');
     }
   };
-   
-  useEffect(() => {
-  console.log('category to fetch', category);
-  getJokes(category);
-  }, [category]);
 
-  const handleChange= (e) => {
-    e.preventDefault();
-    console.log(e, 'e from handleClick')
-  }
+  useEffect(() => {
+    getJokes();
+  }, []);
 
   return (
     <div>
       <p>{data?.value}</p>
- 
-      <input type='text'value={category} onChange={handleChange}></input>
     </div>
   );
 }
