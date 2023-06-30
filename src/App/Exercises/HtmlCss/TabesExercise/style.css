@@ -1,0 +1,38 @@
+.font-test-family {
+  font-family: Chilanka;
+}
+.h3{
+  margin-top: 2rem;
+}
+table{
+  width: 98%;
+  border-radius: 14.4px;
+  border: 1px solid rgb(237, 237, 237);
+  -webkit-box-shadow: 0px 10px 19px 0px rgba(151, 151, 151, 0.55);
+  -moz-box-shadow: 0px 10px 19px 0px rgba(151, 151, 151, 0.55);
+  box-shadow: 0px 10px 19px 0px rgba(151, 151, 151, 0.55);
+}
+td{
+  padding:3rem;
+  text-align: center;
+}
+.dane:nth-child(2n){
+  background-color: #FFD5DB;
+}
+thead{
+  /*zaokrągla nagłówek mimo iż się nadpisuje z title*/
+  padding: 20px;
+  margin-left: 20px;
+  overflow: hidden;
+  border-top-left-radius: 14.4px;
+  border-top-right-radius: 14.4px;
+}
+.titles{
+  padding-top: 20rem;
+  background-color: rgb(226, 226, 226);
+  border-top-left-radius: 14.4px;
+  border-top-right-radius: 14.4px;
+  overflow: hidden;
+}
+
+
