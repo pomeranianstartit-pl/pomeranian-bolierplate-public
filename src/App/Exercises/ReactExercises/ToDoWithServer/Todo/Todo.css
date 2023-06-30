@@ -1,0 +1,89 @@
+.todoBox {
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  align-items: left;
+  padding: 18px 24px;
+  gap: 12px;
+  width: 629px;
+
+  background: #ffffff;
+  border-left: 5px solid #c8cbd1;
+  box-shadow: 0px 2px 28px rgba(0, 0, 0, 0.12), 0px 3px 9px rgba(0, 0, 0, 0.15);
+  border-radius: 8px;
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+  margin-top: 26;
+  margin-bottom: 26px;
+}
+
+.blockTitle {
+
+
+  /* body/bold-18 */
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 34px;
+  /* identical to box height, or 189% */
+
+  display: flex;
+
+
+
+  /* secondary/secondary */
+
+  color: #23213d;
+}
+.date {
+  left: 0px;
+  top: 0px;
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 18px;
+  padding: 0%;
+margin-top: 0;
+margin-bottom: 0;
+  /* gray/700 */
+
+  color: #6b7280;
+}
+
+.name {
+  position: flex;
+  left: 0px;
+  top: 0px;
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 18px;
+  margin-top: 0;
+margin-bottom: 0;
+padding: 0%;
+  /* gray/700 */
+
+  color: #6b7280;
+}
+.annotate {
+  position: flex;
+
+  left: 0px;
+  top: 0px;
+
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 21px;
+  margin-top: 0;
+  margin-bottom: 0;
+
+  /* gray/700 */
+
+  color: #6b7280;
+}

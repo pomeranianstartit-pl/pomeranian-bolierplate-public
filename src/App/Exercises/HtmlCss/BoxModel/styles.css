@@ -1,0 +1,44 @@
+.box-model-base .paragraph {
+  background: green;
+  padding: 10px;
+  margin: 0.7rem;
+  border: 10px solid black;
+  border-radius: 50px;
+  width: 400px;
+
+}
+
+.box-model-base  .content-box{
+box-sizing: content-box;
+/* content-box - sposób liczenia szerokości dla zawartości w środku */
+max-height: 200px;
+max-height: 200px;
+overflow: auto;
+font-size: 10px;
+border-radius: 10px;
+}
+
+
+.relative-box-1
+{
+  font-size: 0.7em;
+  border-radius: 0.2em;
+}
+
+.relative-box-2
+{
+  font-size: 0.7rem;
+}
+
+
+.box-model-base  .inline-span {
+  display: inline;
+ 
+  background: yellow;
+}
+
+/* display: non - element chowany przez style ale jest renderowany na stronie */
+/* display: inline - element wyswietlany jako inline*/
+/* display: block- element wyswietlany jako block*/
+
+
