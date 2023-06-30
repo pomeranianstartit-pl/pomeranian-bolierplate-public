@@ -1,6 +1,7 @@
 import React from 'react';
 import './style.css';
 import cookie from '../../Images/cookie.svg';
+import { useEffect } from 'react';
 
 const Cookies = () => {
   let isCookie;
@@ -34,6 +35,10 @@ const Cookies = () => {
   const handleAgreementCustomization = () => {
     console.log('WTF? he cliked');
   };
+
+  useEffect(() => {
+    console.log(document.cookie);
+  }, [document.cookie]);
 
   return (
     <div>
