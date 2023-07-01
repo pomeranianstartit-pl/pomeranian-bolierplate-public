@@ -1,0 +1,33 @@
+.flex {
+  display: flex;
+  flex-direction: column;
+}
+
+.flex>*:not(label) {
+  max-width: 300px;
+  margin-top: 10px;
+  margin-bottom: 20px;
+}
+
+.flex>*:not(label):hover {
+  border: 2px solid green;
+  border-radius: 5px;
+  transition: 1s;
+}
+
+.flex>*:not(label):focus {
+  border: 2px solid hotpink;
+  border-radius: 5px;
+  transition: 1s;
+  outline: none;
+}
+
+.flex>*:not(label):invalid {
+  border: 2px solid red;
+  border-radius: 5px;
+  transition: 1s;
+  background-color: rgba(256, 0, 0);
+
+
+  outline: none;
+}
