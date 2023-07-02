@@ -12,6 +12,23 @@ const arrayToPoP = ['Marta', 'Kasia', 'Bartek', 'Łukasz'];
 const arrayOfNumbersOne = [1, 2, 3];
 const arrayOfNumbersTwo = [4, 5, 6];
 
+// FUNKCJE NA POTRZEBY TESTÓW
+export function spreadTwoArrays() {
+  const a = [1, 2, 3];
+  const b = [4, 5, 6];
+
+  return [...a, ...b];
+}
+
+export function whileLoop() {
+  let liczba = 0;
+
+  while (liczba <= 5) {
+    console.log(liczba);
+    liczba++;
+  }
+}
+
 export function Exercise() {
   // let tablicaLiczb = [1, 2, 3, 4, 5];
   // let usunietyElement = tablicaLiczb.shift();
