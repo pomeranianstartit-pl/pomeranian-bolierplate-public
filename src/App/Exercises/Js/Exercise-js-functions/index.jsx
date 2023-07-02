@@ -1,5 +1,3 @@
-import './styles.css';
-
 export function Exercise() {
   const variableForTemplateString = 'is awesome';
   const templateString = `Template string ${variableForTemplateString}`;
@@ -37,12 +35,17 @@ export function Exercise() {
         </pre>
       </section>
 
-      <p><h1>Drugie wywołanie funkcji getWelcomeMessage: {getWelcomeMessage('Janek', 2023)}</h1></p>
+      <p>
+        <h1>
+          Drugie wywołanie funkcji getWelcomeMessage:{' '}
+          {getWelcomeMessage('Janek', 2023)}
+        </h1>
+      </p>
       <br></br>
-      <p><h5>Drugie wywołanie funkcji multiply: {multiply(10, 30)}</h5></p>
-      <p id='unique-id'>{templateString}</p>
-
- 
+      <p>
+        <h5>Drugie wywołanie funkcji multiply: {multiply(10, 30)}</h5>
+      </p>
+      <p id="unique-id">{templateString}</p>
     </div>
   );
 }

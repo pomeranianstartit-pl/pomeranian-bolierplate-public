@@ -1,5 +1,3 @@
-import React from 'react';
-
 const Exercise = () => {
   const data = new Array();
   // const uniqueData = new Set();
