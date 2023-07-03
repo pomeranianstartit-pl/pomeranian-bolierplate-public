@@ -1,0 +1,7 @@
+.banner {
+  box-sizing: border-box;
+  border: 15px solid black;
+  background-color: yellow;
+  width: 200px;
+  text-align: center;
+}
