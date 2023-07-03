@@ -8,6 +8,9 @@ import { EmptyValuesAndCommentsMetaData } from './EmptyValuesAndComments/router-
 import { JsArraysBasicsMetaData } from './JsArraysBasics/router-data'
 import { SortFunctionsMetaData } from './SortFunctions/router-data';
 import { ArgsMetaData } from './Args/router-data';
+import { TimeMetaData } from './Time/router-data';
+import { Time2MetaData } from './Time2/router-data';
+import { Banner6MetaData } from './Banner/router-data';
 
 export const blockRouterMetaData = [
   blockRouterMetaDataJsFunction1,
@@ -17,7 +20,10 @@ export const blockRouterMetaData = [
   EmptyValuesAndCommentsMetaData,
   JsArraysBasicsMetaData,
   SortFunctionsMetaData,
-  ArgsMetaData
+  ArgsMetaData,
+  TimeMetaData,
+  Time2MetaData,
+  Banner6MetaData
 ];
 
 export const blockRouterData = getParsedRouterDataList(blockRouterMetaData);
