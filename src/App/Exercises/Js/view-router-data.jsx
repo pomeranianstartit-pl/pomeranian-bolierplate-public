@@ -11,6 +11,7 @@ import { ArgsMetaData } from './Args/router-data';
 import { TimeMetaData } from './Time/router-data';
 import { Time2MetaData } from './Time2/router-data';
 import { Banner6MetaData } from './Banner/router-data';
+import { Time3MetaData } from './Time3/router-data';
 
 export const blockRouterMetaData = [
   blockRouterMetaDataJsFunction1,
@@ -23,6 +24,7 @@ export const blockRouterMetaData = [
   ArgsMetaData,
   TimeMetaData,
   Time2MetaData,
+  Time3MetaData,
   Banner6MetaData
 ];
 

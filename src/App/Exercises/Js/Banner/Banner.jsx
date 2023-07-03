@@ -2,64 +2,46 @@ import React, { useState, useEffect } from 'react';
 import './styles.css';
 
 export const Exercise6 = () => {
-  const [leftText, setLeftText] = useState('Sprzedam Opla!');
-  const [rightText, setRightText] = useState('Kupię Toyotę!');
-  const [leftPosition, setLeftPosition] = useState(0);
-  const [rightPosition, setRightPosition] = useState(0);
+  const [text, setText] = useState('Sprzedam Opla!');
+  const [position, setPosition] = useState(0);
+  const [isRunning, setIsRunning] = useState(true);
 
   useEffect(() => {
-    const leftIntervalId = setInterval(() => {
-      setLeftPosition((prevPosition) => prevPosition - 1);
+    const intervalId = setInterval(() => {
+      if (isRunning) {
+        setPosition((prevPosition) => prevPosition - 1);
+      }
     }, 200);
 
-    const rightIntervalId = setInterval(() => {
-      setRightPosition((prevPosition) => prevPosition + 1);
-    }, 200);
-
-    return () => {
-      clearInterval(leftIntervalId);
-      clearInterval(rightIntervalId);
-    };
-  }, []);
+    return () => clearInterval(intervalId);
+  }, [isRunning]);
 
   useEffect(() => {
-    if (leftPosition <= -leftText.length * 15) {
-      setLeftPosition(0);
+    if (position <= -text.length * 15) {
+      setPosition(0);
     }
-  }, [leftPosition, leftText]);
+  }, [position, text]);
 
-  useEffect(() => {
-    if (rightPosition >= rightText.length * 15) {
-      setRightPosition(0);
-    }
-  }, [rightPosition, rightText]);
+  const toggleAnimation = () => {
+    setIsRunning((prevIsRunning) => !prevIsRunning);
+  };
 
   return (
+    <div className="banner-container">
+    <div className="banner-text" style={{ transform: `translateX(${position}px)` }}>
+      {text}
+    </div>
     <div>
-      <div className="banner-container">
-        <div className="banner-text" style={{ transform: `translateX(${leftPosition}px)` }}>
-          {leftText}
-        </div>
-      </div>
-
-      <div className="spacer"></div>
-
-      <div className="banner-container">
-        <div className="banner-text" style={{ transform: `translateX(${rightPosition}px)` }}>
-          {rightText}
-        </div>
+      <div>
+        <br></br>
+        <button className="animation-button" onClick={toggleAnimation}>
+          {isRunning ? 'Zatrzymaj' : 'Wznów'}
+        </button>
       </div>
     </div>
+  </div>
+
   );
 };
 
 export default Exercise6;
-
-
-
-
-
-
-
-
-
