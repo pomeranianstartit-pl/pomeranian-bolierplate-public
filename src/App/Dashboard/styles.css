@@ -35,7 +35,10 @@
   font-size: 14px;
   align-items: flex-end;
 }
-
+.dashboard-card h3 {
+  margin: 0;
+  font-size: 1.125rem;
+}
 .icon-wrapper img {
   width: 36px;
   heigh: 36px;
