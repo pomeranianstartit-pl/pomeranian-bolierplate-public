@@ -7,6 +7,8 @@ import { ExerciseNumbersIfMetaData } from './Exercise-numbers-if/router-data';
 import { EmptyValueAndComentsMetaData } from './EmptyValueAndComents/router-data';
 import { JsArraysBasicsMetaData } from './JsArraysBasics/router-data';
 import { ExerciseJsFunctionMetaData } from './ExerciseJsFunction/router-data';
+import { TimeExerciseMetaData } from './TimeExercise/router-data';
+import { BanerMetaData } from './Baner/router-data';
 
 export const blockRouterMetaData = [
   blockRouterMetaDataJsVariables1,
@@ -16,5 +18,7 @@ export const blockRouterMetaData = [
   EmptyValueAndComentsMetaData,
   JsArraysBasicsMetaData,
   ExerciseJsFunctionMetaData,
+  TimeExerciseMetaData,
+  BanerMetaData,
 ];
 export const blockRouterData = getParsedRouterDataList(blockRouterMetaData);
