@@ -23,17 +23,16 @@ export function ExerciseJsFunction() {
   };
   const averageGrade = (tablicaPierwotna) => {
     let grade = 0;
-    let zmienionaTablica = tablicaPierwotna.map((element) => ({...element}));
+    let zmienionaTablica = tablicaPierwotna.map((element) => ({ ...element }));
     for (let j = 0; j < zmienionaTablica.length; j++) {
       let gradesuser = zmienionaTablica[j].grades;
       for (let i = 0; i < gradesuser.length; i++) grade += gradesuser[i];
       grade = Math.round((grade / gradesuser.length) * 100) / 100;
-      zmienionaTablica[j].grades = [grade]; // Zmieniamy wartość ocen na nową tablicę zawierającą tylko średnią ocen
+      zmienionaTablica[j].grades = [grade];
       grade = 0;
     }
     return zmienionaTablica;
   };
-  
   const nowaTablicaOcen = averageGrade(tablicaPierwotna);
   return (
     <div>
