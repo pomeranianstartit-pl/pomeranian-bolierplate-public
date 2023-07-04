@@ -1,4 +1,4 @@
-export function CalendarIcon({className = ''}) {
+export function CalendarIcon({ className = '' }) {
   return (
     <svg
       width="22"
@@ -13,7 +13,7 @@ export function CalendarIcon({className = ''}) {
         stroke="#000"
         strokeWidth="1.4375"
         strokeMiterlimit="10"
-        stroke-linecap="round"
+        strokeLinecap="round"
         strokeLinejoin="round"
       />
       <path
@@ -21,7 +21,7 @@ export function CalendarIcon({className = ''}) {
         stroke="#000"
         strokeWidth="1.4375"
         strokeMiterlimit="10"
-        stroke-linecap="round"
+        strokeLinecap="round"
         strokeLinejoin="round"
       />
       <path
@@ -29,7 +29,7 @@ export function CalendarIcon({className = ''}) {
         stroke="#000"
         strokeWidth="1.4375"
         strokeMiterlimit="10"
-        stroke-linecap="round"
+        strokeLinecap="round"
         strokeLinejoin="round"
       />
       <path
@@ -37,49 +37,49 @@ export function CalendarIcon({className = ''}) {
         stroke="#000"
         strokeWidth="1.4375"
         strokeMiterlimit="10"
-        stroke-linecap="round"
+        strokeLinecap="round"
         strokeLinejoin="round"
       />
       <path
         d="M14.3868 13.0582H14.395"
         stroke="#000"
         strokeWidth="1.91667"
-        stroke-linecap="round"
+        strokeLinecap="round"
         strokeLinejoin="round"
       />
       <path
         d="M14.3868 15.8087H14.395"
         stroke="#000"
         strokeWidth="1.91667"
-        stroke-linecap="round"
+        strokeLinecap="round"
         strokeLinejoin="round"
       />
       <path
         d="M10.9959 13.0582H11.0041"
         stroke="#000"
         strokeWidth="1.91667"
-        stroke-linecap="round"
+        strokeLinecap="round"
         strokeLinejoin="round"
       />
       <path
         d="M10.9959 15.8087H11.0041"
         stroke="#000"
         strokeWidth="1.91667"
-        stroke-linecap="round"
+        strokeLinecap="round"
         strokeLinejoin="round"
       />
       <path
         d="M7.60314 13.0582H7.61137"
         stroke="#000"
         strokeWidth="1.91667"
-        stroke-linecap="round"
+        strokeLinecap="round"
         strokeLinejoin="round"
       />
       <path
         d="M7.60314 15.8087H7.61137"
         stroke="#000"
         strokeWidth="1.91667"
-        stroke-linecap="round"
+        strokeLinecap="round"
         strokeLinejoin="round"
       />
     </svg>
