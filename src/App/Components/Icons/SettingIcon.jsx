@@ -14,7 +14,7 @@ export function SettingIcon({ className = '' }) {
         stroke="#000"
         strokeWidth="1.375"
         strokeMiterlimit="10"
-        stroke-linecap="round"
+        strokeLinecap="round"
         strokeLinejoin="round"
       />
       <path
@@ -22,7 +22,7 @@ export function SettingIcon({ className = '' }) {
         stroke="#000"
         strokeWidth="1.375"
         strokeMiterlimit="10"
-        stroke-linecap="round"
+        strokeLinecap="round"
         strokeLinejoin="round"
       />
     </svg>

@@ -12,7 +12,7 @@ export function EditIcon({ className = '' }) {
         d="M10.2064 2.35547H8.35064C3.71136 2.35547 1.85565 4.21118 1.85565 8.85046V14.4176C1.85565 19.0569 3.71136 20.9126 8.35064 20.9126H13.9178C18.5571 20.9126 20.4128 19.0569 20.4128 14.4176V12.5619"
         stroke="#000"
         strokeWidth="1.56159"
-        stroke-linecap="round"
+        strokeLinecap="round"
         strokeLinejoin="round"
       />
       <path
@@ -20,7 +20,7 @@ export function EditIcon({ className = '' }) {
         stroke="#000"
         strokeWidth="1.56159"
         strokeMiterlimit="10"
-        stroke-linecap="round"
+        strokeLinecap="round"
         strokeLinejoin="round"
       />
       <path
@@ -28,7 +28,7 @@ export function EditIcon({ className = '' }) {
         stroke="#000"
         strokeWidth="1.56159"
         strokeMiterlimit="10"
-        stroke-linecap="round"
+        strokeLinecap="round"
         strokeLinejoin="round"
       />
     </svg>
