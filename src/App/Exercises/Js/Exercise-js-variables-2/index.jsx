@@ -6,7 +6,6 @@ export function Exercise() {
   const mathResult3 = 3 ** 2;
   const mathResult4 = Math.sqrt(3);
   const mathResult5 = 3 % 2;
-
    
   return (
     <div className="playing-with-variables">
