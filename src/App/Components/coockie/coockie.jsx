@@ -37,7 +37,7 @@ const Cookies = () => {
             </button>
             <button
               className="customize"
-              classonClick={handleAgreementCustomization}
+              onClick={handleAgreementCustomization}
             >
               Dopasuj zgody
             </button>
