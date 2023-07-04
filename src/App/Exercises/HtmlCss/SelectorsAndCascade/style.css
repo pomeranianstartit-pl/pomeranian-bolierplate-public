@@ -1,0 +1,24 @@
+div.mydiv-1 {
+  background-color: yellowgreen;
+  color: aqua;
+  font-weight: bold;
+  padding: 10px;
+}
+#mydiv-2 {
+  background-color: red;
+  color: darkgreen;
+  padding: 20px;
+}
+.mydiv-3 {
+  background-color: pink;
+  color: black;
+  padding: 15px;
+}
+
+.span1 ~ .span2 {
+  color: red;
+}
+
+.mydiv-5 + p {
+  background-color: black;
+}

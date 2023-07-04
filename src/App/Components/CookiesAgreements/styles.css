@@ -1,0 +1,82 @@
+:root {
+  --primary: #fe3756;
+  --white: white;
+  --dark-blue: #23213d;
+}
+.cookies-agreements {
+  position: fixed;
+  bottom: 0;
+  background: var(--dark-blue);
+  padding: 1em;
+  z-index: 2;
+  display: flex;
+  flex-flow: row wrap;
+  gap: 5%;
+  font-family: 'poppins';
+  transition: transform 1s ease;
+}
+.cookies-agreements.hidden {
+  transform: translateY(100%);
+}
+.button-wrapper {
+  display: flex;
+  align-items: center;
+}
+.button-wrapper button {
+  padding: 1em 1.5em;
+  border-radius: 8px;
+  text-transform: uppercase;
+}
+
+.cookies-agreement .text-wrapper {
+  margin: 1em;
+  display: flex;
+  flex: 1;
+}
+.cookies-agreement .button-wrapper {
+  display: flex;
+  align-items: center;
+  gap: 2em;
+}
+.cookies-agreements p {
+  color: var(--white);
+}
+.button-wrapper .customize {
+  background-color: var(--white);
+  color: var(--primary);
+  width: Hug (164px);
+  height: Fixed (50px);
+  padding: 20px 36px 20px 36px;
+  border-radius: 8px;
+  font-family: 'poppins';
+}
+.button-wrapper .agree {
+  background-color: var(--primary);
+  color: var(--white);
+  width: Hug (164px);
+  height: Fixed (50px);
+  padding: 20px 36px 20px 36px;
+  border-radius: 8px;
+  font-family: 'poppins';
+  margin-right: 30px;
+}
+.text-wrapper {
+  display: flex;
+  max-width: 70%;
+  color: var(--white);
+  padding: 1em;
+  z-index: 2;
+}
+.text-wrapper img {
+  float: left;
+  padding: 20px;
+  height: 130px;
+}
+.text-wrapper div {
+  flex-grow: 1;
+  font-size: 1rem;
+  line-height: 26px;
+}
+.text-wrapper div h3 {
+  margin-bottom: 1px;
+}

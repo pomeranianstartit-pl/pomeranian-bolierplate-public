@@ -1,6 +1,7 @@
 import React from 'react';
 import { Outlet } from 'react-router-dom';
-
+import Cookies from '../Components/CookiesAgreements/Cookies';
+import Avatar from '../Components/Avatar/Avatar';
 import { AppHeader } from './AppHeader';
 import { AppFooter } from './AppFooter';
 import { ErrorBoundary } from './ErrorBoundary';
@@ -15,6 +16,8 @@ function getLayoutClassName(withSidebar) {
 export const Layout = ({ withSidebar }) => {
   return (
     <ErrorBoundary>
+      <Cookies />
+      <Avatar />
       <div className={getLayoutClassName(withSidebar)}>
         <AppHeader />
         {withSidebar && <AppAside />}

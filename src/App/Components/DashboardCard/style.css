@@ -1,0 +1,44 @@
+.dashboard-card {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  width: 222px;
+  height: 212px;
+  align-items: center;
+  border-radius: 8px;
+  -webkit-box-shadow: 0px 0px 20px 5px rgba(209, 209, 209, 1);
+  -moz-box-shadow: 0px 0px 20px 5px rgba(209, 209, 209, 1);
+  box-shadow: 0px 0px 20px 5px rgba(209, 209, 209, 1);
+  font-family: 'poppins';
+}
+.dashboard-card a {
+  text-decoration: none;
+  color: #ff4d69;
+  font-weight: bold;
+}
+.dashboard-card:hover {
+  color: #ff4d69;
+  -webkit-box-shadow: 0px 0px 47px -2px rgba(254, 55, 86, 0.38);
+  -moz-box-shadow: 0px 0px 47px -2px rgba(254, 55, 86, 0.38);
+  box-shadow: 0px 0px 47px -2px rgba(254, 55, 86, 0.38);
+  border: 1px solid #ff4d69;
+}
+.dashboard-card:hover .icon-wrapper {
+  filter: invert(9%) sepia(99%) saturate(5630%) hue-rotate(340deg)
+    brightness(121%) contrast(148%);
+}
+.dashboard-card.icon-wrapper:first-child {
+  transform: scale(2.1);
+  padding-top: 15px;
+}
+.dashboard-card p {
+  font-size: 12px;
+  font-weight: bolder;
+  margin-left: 28px;
+  margin-right: 28px;
+  line-height: 20px;
+}
+.dashboard-card h3 {
+  font-weight: bolder;
+}

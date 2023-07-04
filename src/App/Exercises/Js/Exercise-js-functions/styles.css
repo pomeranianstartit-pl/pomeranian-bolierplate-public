@@ -5,3 +5,9 @@
 .variable-string-placeholder {
   margin-left: 5px;
 }
+
+#unique-id {
+  font-size: 25px;
+  margin: 30px;
+  font-style: italic;
+}
