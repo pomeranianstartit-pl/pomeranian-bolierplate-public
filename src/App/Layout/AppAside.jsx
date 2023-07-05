@@ -7,6 +7,7 @@ import { PersonalCardIcon } from '../Components/Icons/PersonalCardIcon';
 import { SettingIcon } from '../Components/Icons/SettingIcon';
 import { EditIcon } from '../Components//Icons/EditIcon';
 import { ElementIcon } from '../Components/Icons/ElementIcon';
+import { BookIcon } from '../Components/Icons/BookIcon';
 
 export function AppAside() {
   return (
@@ -22,16 +23,28 @@ export function AppAside() {
             </NavLink>
           </li>
           <li>
-            <NavLink to="CV">Moje CV</NavLink>
+            <NavLink to="CV">
+              <PersonalCardIcon />
+              Moje CV
+            </NavLink>
           </li>
           <li>
-            <NavLink to="exercises">Ćwiczenia</NavLink>
+            <NavLink to="exercises">
+              <EditIcon />
+              Ćwiczenia
+            </NavLink>
           </li>
           <li>
-            <NavLink to="Calendar">Kalendarz</NavLink>
+            <NavLink to="Calendar">
+              <CalendarIcon />
+              Kalendarz
+            </NavLink>
           </li>
           <li>
-            <NavLink to="Blog">Blog</NavLink>
+            <NavLink to="Blog">
+              <BookIcon />
+              Blog
+            </NavLink>
           </li>
         </ul>
       </nav>
