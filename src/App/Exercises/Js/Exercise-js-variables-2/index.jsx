@@ -2,6 +2,10 @@ import './styles.css';
 
 export function Exercise() {
   const mathResult1 = 2 * 5;
+  const divideResult1 = 3 / 2;
+  const powerResult = Math.pow(3,2) ;
+  const pierwiastek = Math.sqrt(3) ;
+  const modulo = 3 % 2;
 
   return (
     <div className="playing-with-variables">
@@ -12,19 +16,19 @@ export function Exercise() {
         </pre>
         {/* Uzupełnij wykorzystując zmienne*/}
         <pre>
-          <code>3 : 2 = ___</code>
+          <code>3 : 2 = {divideResult1}</code>
         </pre>
         <pre>
           {/* kwadrat liczby */}
-          <code>3&#178; = &#9998;</code>
+          <code>3&#178; = {powerResult}</code>
         </pre>
         <pre>
           {/* pierwiastek z liczby */}
-          <code>&#8730;3 = &#9998;</code>
+          <code>&#8730;3 = {pierwiastek}</code>
         </pre>
         <pre>
           {/* modulo */}
-          <code>3%2 = &#9998;</code>
+          <code>3%2 = {modulo};</code>
         </pre>
       </section>
     </div>
