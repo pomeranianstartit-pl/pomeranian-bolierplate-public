@@ -9,11 +9,15 @@
   text-align: left;
 }
 
+.strings1 {
+margin-bottom: 15px;
+}
+
 .settings-row {
   display: grid;
   grid-template-columns: auto 1fr;
   align-items: center;
-  margin-bottom: 20px;
+  margin-bottom: 10px;
 }
 
 .settings-label {
@@ -29,8 +33,8 @@
   gap: 16px;
   width: 100%;
   height: 56px;
-  justify-items: center; /* Równomierne wyrównanie elementów wzdłuż osi poziomej */
-  align-items: center; /* Równomierne wyrównanie elementów wzdłuż osi pionowej */
+  justify-items: center;
+  align-items: center;
 }
 
 .settings-buttons button {
@@ -42,7 +46,6 @@
   background-color: #430565;
 }
 
-
 .settings-buttons button.clicked {
   background-color: #e02d7d;
 }
@@ -53,4 +56,10 @@
 }
 
 .start-button {
+  padding: 10px 20px;
+  font-size: 16px;
+  width: 100%;
+  height: 56px;
+  flex-shrink: 0;
+  background-color: #430565;
 }
