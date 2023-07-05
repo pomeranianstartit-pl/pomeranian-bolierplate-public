@@ -47,7 +47,7 @@ margin-bottom: 15px;
 }
 
 .settings-buttons button.clicked {
-  background-color: #e02d7d;
+  background-color: #FE3756;
 }
 
 .settings-value {
@@ -61,5 +61,5 @@ margin-bottom: 15px;
   width: 100%;
   height: 56px;
   flex-shrink: 0;
-  background-color: #430565;
+  background-color: #23213D;
 }
