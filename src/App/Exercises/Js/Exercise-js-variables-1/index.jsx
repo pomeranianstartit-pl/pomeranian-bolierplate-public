@@ -6,10 +6,10 @@ export function Exercise() {
   const string3 = 'Ulubiony bohater z serialu "Gra o tron" to ' + string1;
 
   const string2 = `Ulubiony bohater z serialu "Gra o tron" to: ${string1}`;
-  
+
   let string4 = 'Magda';
   let string5 = '102';
-
+  
   return (
     <div className="playing-with-variables">
       <section>
