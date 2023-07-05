@@ -28,6 +28,15 @@ aside li a {
 }
 
 aside a.active {
-  background-color: var(--color-primary-blue);
-  color: var(--color-white);
+  /*background-color: var(--color-primary-blue);*/
+  color: #FE3756;
 }
+aside a.active svg path {
+  stroke: #FE3756;
+}
+
+/* propozycja 
+.aside-row span {
+  padding-left: 10px;
+}
+*/
