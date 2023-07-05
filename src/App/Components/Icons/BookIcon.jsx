@@ -1,3 +1,1 @@
-export const BookIcon = () => {
-  return <BookIcon />;
-};
+export const BookIcon = () => {};
