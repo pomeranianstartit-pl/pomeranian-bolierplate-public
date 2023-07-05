@@ -28,9 +28,8 @@ aside li a {
 }
 
 aside a.active {
-  background-color: var(--color-primary-blue);
   color: #fe3756;
 }
-aside a.active {
+aside a.active svg path {
   stroke: #fe3756;
 }
