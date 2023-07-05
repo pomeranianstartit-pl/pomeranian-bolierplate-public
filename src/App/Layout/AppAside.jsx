@@ -47,7 +47,7 @@ export function AppAside() {
 
           <li>
             
-            <NavLink className="aside-row" to="settings"><SettingIcon className="menu-icon"/>Settings</NavLink>
+            <NavLink style={{ marginTop: '40px' }} className="aside-row" to="settings"><SettingIcon className="menu-icon"/>Settings</NavLink>
           </li>
           </ul>
       </nav>
