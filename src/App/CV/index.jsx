@@ -1,3 +1,3 @@
 export const CV = () => {
-    return <div>CV</div>;
-  };
+  return <div>CV</div>;
+};
