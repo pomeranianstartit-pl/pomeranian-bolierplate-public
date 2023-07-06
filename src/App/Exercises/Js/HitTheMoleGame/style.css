@@ -55,3 +55,14 @@
 .gameButtonsRows button.activeButton {
   background: #fe3756;
 }
+.moleGame {
+  display: flex;
+  justify-content: center;}
+  #spangbob{
+    background-color: aqua;
+    height: 100px;
+    width: 100px;
+    padding-top: 20px;
+    padding-left: 5px;
+    border: 1px solid black;
+  }
