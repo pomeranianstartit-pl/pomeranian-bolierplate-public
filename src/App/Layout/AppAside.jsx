@@ -1,13 +1,17 @@
 import { NavLink } from 'react-router-dom';
 
 import './styles/aside.css';
+import {CalendarIcon} from '../Components/Icons/CalendarIcon'
+import { HouseIcon } from '../Components/Icons/HouseIcon'
+
 
 export function AppAside() {
   return (
     <aside>
       <nav>
         <ul>
-          <li>
+          <li className="aside-row">
+            <HouseIcon/>
             <NavLink to="dashboard">Dashboard</NavLink>
           </li>
           <li>
@@ -15,6 +19,13 @@ export function AppAside() {
           </li>
           <li>
             <NavLink to="exercises">Ćwiczenia</NavLink>
+          </li>
+          <li>
+            <NavLink to="cv">CV</NavLink>
+          </li>
+          <li  className="aside-row">
+            <CalendarIcon/>
+            <NavLink to='calendar'>Calendar</NavLink>
           </li>
         </ul>
       </nav>
