@@ -3,12 +3,19 @@ import React from 'react';
 import './style.css';
 
 export function Cwiczenie1() {
+  const [tekst, setTekst] = React.useState('TEkst domyślny');
   function handleOnSubmit(event) {
     event.preventDefault();
 
     console.log('Kliknięto przycisk');
 
     console.log(event);
+
+    const trescInputa = event.target[0].value;
+
+    console.log('tresc inputa: ', trescInputa);
+
+    setTekst(trescInputa);
   }
 
   return (
@@ -27,7 +34,7 @@ export function Cwiczenie1() {
         </div>
 
         <div>
-          <p>Placeholder</p>
+          <p>{tekst}</p>
         </div>
       </div>
     </div>
