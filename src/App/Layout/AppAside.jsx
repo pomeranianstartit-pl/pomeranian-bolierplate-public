@@ -1,18 +1,21 @@
 import { NavLink } from 'react-router-dom';
 
 import './styles/aside.css';
-import {CalendarIcon} from '../Components/Icons/CalendarIcon'
-import { HouseIcon } from '../Components/Icons/HouseIcon'
-
+import { CalendarIcon } from '../Components/Icons/CalendarIcon';
+import { HouseIcon } from '../Components/Icons/HouseIcon';
 
 export function AppAside() {
   return (
     <aside>
       <nav>
         <ul>
-          <li className="aside-row">
-            <HouseIcon/>
-            <NavLink to="dashboard">Dashboard</NavLink>
+          <li>
+            <div className="aside-row">
+              <NavLink to="dashboard">
+                <HouseIcon />
+                Dashboard
+              </NavLink>
+            </div>
           </li>
           <li>
             <NavLink to="blocks">Bloki</NavLink>
@@ -23,9 +26,9 @@ export function AppAside() {
           <li>
             <NavLink to="cv">CV</NavLink>
           </li>
-          <li  className="aside-row">
-            <CalendarIcon/>
-            <NavLink to='calendar'>Calendar</NavLink>
+          <li className="aside-row">
+            <CalendarIcon />
+            <NavLink to="calendar">Calendar</NavLink>
           </li>
         </ul>
       </nav>
