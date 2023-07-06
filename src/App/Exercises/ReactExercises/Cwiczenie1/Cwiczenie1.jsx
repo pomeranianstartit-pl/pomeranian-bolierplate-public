@@ -2,10 +2,11 @@ import React from 'react';
 
 import './style.css';
 
-export function Ćwiczenie1() {
+export function Cwiczenie1() {
   return (
     <div>
       <p>Ćwiczenie 1</p>
+      <input type="text" />{' '}
     </div>
   );
 }
