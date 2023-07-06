@@ -28,3 +28,22 @@ font-family: Chilanka;
   display: flex;
   gap: 5rem;
 }
+.font-test-family {
+
+  font-family: Chilanka;
+
+}
+
+
+
+
+.blok-8__cwiczenie-2 button {
+  background-color: #FE3756;
+  color: #fff;
+  padding: 20px 36px;
+  border: 0;
+  border-radius: 8px;
+  cursor: pointer;
+  text-transform: uppercase;
+  font-weight: bold;
+}

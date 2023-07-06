@@ -1,33 +1,19 @@
 import React from 'react';
-
 import './style.css';
 
 export function Cwiczenie2() {
-  const [tekst, setTekst] = React.useState('Placeholder');
-
-  function handleOnSubmit(event) {
+  const [klikniec, setKlikniec] = React.useState(0);
+  function handleOnClick(event) {
     event.preventDefault();
-    console.log(event);
-
-    const trescInputa = event.target[0].value;
-    setTekst(trescInputa);
-    /*console.log('Treść inputa: ', trescInputa);*/
+    setKlikniec(klikniec + 1);
   }
 
   return (
-    <div className="blok-8__cwiczenie-1">
+    <div className="blok-8__cwiczenie-2">
       <h1>Cześć!</h1>
-      <div>
-        <div>
-          <form onSubmit={handleOnSubmit}>
-            <button type="submit">KLIKNIJ</button>
-          </form>
-        </div>
-
-        <div>
-          <p>{tekst}</p>
-        </div>
-      </div>
+      <button type="button" onClick={handleOnClick}>
+        Kliknięto mnie {klikniec} razy
+      </button>
     </div>
   );
 }

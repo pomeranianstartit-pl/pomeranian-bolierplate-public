@@ -21,7 +21,7 @@ export function Cwiczenie1() {
         <div>
           <p>Wpisz tekst</p>
           <form onSubmit={handleOnSubmit}>
-            <input type="text" placeholder="tekst do wpisania" />
+            <input type="text" />
             <button type="submit">KLIKNIJ</button>
           </form>
         </div>
