@@ -22,4 +22,5 @@ export const ExerciseJsFunctions2 = () => {
   }
 
   return <div>Change me X</div>;
+  sumArguments();
 };

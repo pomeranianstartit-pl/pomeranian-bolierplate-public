@@ -10,6 +10,8 @@ import { blockRouterMetaData as blockRouterMetaDataJsArraysBasics } from './JsAr
 //import { blockRouterMetaData as blockRouterMetaDataExerciseJsFunctions } from './ExerciseJsFunctions/router-data'; TODO:what did I messed?
 import { blockRouterMetaData as blockRouterMetaDataExerciseJsFunctions2 } from './Exercise-js-functions/ExerciseJsFunctions2/router-data';
 import { blockRouterMetaData as blockRouterMetaDataTime } from './Time/router-data';
+import { blockRouterMetaData as blockRouterMetaDatahitTheMoleGame } from './hitTheMoleGame/router-data';
+
 export const blockRouterMetaData = [
   blockRouterMetaDataJsVariables1,
   blockRouterMetaDataJsVariables2,
@@ -21,5 +23,6 @@ export const blockRouterMetaData = [
   //blockRouterMetaDataExerciseJsFunctions,
   blockRouterMetaDataExerciseJsFunctions2,
   blockRouterMetaDataTime,
+  blockRouterMetaDatahitTheMoleGame,
 ];
 export const blockRouterData = getParsedRouterDataList(blockRouterMetaData);

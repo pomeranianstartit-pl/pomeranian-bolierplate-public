@@ -44,9 +44,9 @@ export const Dashboard = () => {
   ]);
 
   return (
-    <div class="container">
-      <div class="Card"></div>
-      <div class="Head">
+    <div className="container">
+      <div className="Card"></div>
+      <div className="Head">
         <h1>Dashboard</h1>
 
         <p>
@@ -54,7 +54,7 @@ export const Dashboard = () => {
           wykorzystywanych na kursie oraz umejętności zdobytych na kursie)
         </p>
       </div>
-      <div class="Boxes">
+      <div className="Boxes">
         <div className="dashboard-wrapper">
           {availableCards.map((card) => {
             return (
