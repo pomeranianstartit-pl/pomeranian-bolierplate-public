@@ -32,6 +32,7 @@ aside a.active {
 }
 aside a.active svg path {
   stroke: #fe3756;
+  width: 22px;
 }
 ul {
   list-style-type: none;
