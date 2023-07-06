@@ -11,8 +11,8 @@ export function ElementIcon({ className = '' }) {
       <path
         d="M20.1667 8.30992V4.14825C20.1667 2.85575 19.58 2.33325 18.1225 2.33325H14.4192C12.9617 2.33325 12.375 2.85575 12.375 4.14825V8.30075C12.375 9.60242 12.9617 10.1158 14.4192 10.1158H18.1225C19.58 10.1249 20.1667 9.60242 20.1667 8.30992Z"
         stroke="#000"
-        stroke-width="1.375"
-        stroke-linecap="round"
+        strokeWidth="1.375"
+        strokeLinecap="round"
         stroke-linejoin="round"
       />
       <path
