@@ -10,7 +10,7 @@ export const MoleGameSettings = ({ moleArray, onStartGame }) => {
 
   const [clickedGameTimeIndex, setClickedGameTimeIndex] = useState(null);
   const [clickedMoleCountIndex, setClickedMoleCountIndex] = useState(null);
-  
+
   function hitTheMole(index) {
     if (!moleArray[index].isVisible) return;
     moleArray[index].isWhacked = !moleArray[index].isWhacked;
@@ -38,7 +38,7 @@ export const MoleGameSettings = ({ moleArray, onStartGame }) => {
     setSelectedMoleCount(count);
     setClickedMoleCountIndex(index);
   };
-  
+
   useEffect(() => {
     if (selectedGameTime === 0) {
       console.log('Czas gry minął!');
@@ -87,7 +87,7 @@ export const MoleGameSettings = ({ moleArray, onStartGame }) => {
         </div>
 
         <div className="settings-row">
-          <div className="settings-label">PRZYCISKI STERUJĄCE</div>
+         <div className="settings-label">PRZYCISKI STERUJĄCE</div>
           <div className="settings-buttons">
             <button className="start-button" onClick={() => onStartGame(selectedGameTime, selectedMoleCount)}>
               START
@@ -99,55 +99,99 @@ export const MoleGameSettings = ({ moleArray, onStartGame }) => {
   );
 };
 
-export const MoleGameBoard = ({ moleArray }) => {
-  function hitTheMole(index) {
-    if (!moleArray[index].isVisible) return;
-    moleArray[index].isWhacked = !moleArray[index].isWhacked;
-    console.log(moleArray[index].isWhacked);
+export const MoleGameBoard = ({ moleArray, onMoleClick }) => {
+  const moleRowCount = 2;
+  const molesPerRow = moleArray.length / moleRowCount; // Liczba krety na jeden wiersz
+  const moleRows = [];
+
+  for (let i = 0; i < moleRowCount; i++) {
+    const startIndex = i * molesPerRow;
+    const endIndex = startIndex + molesPerRow;
+    const rowMoles = moleArray.slice(startIndex, endIndex);
+
+    const row = (
+      <div key={i} className="mole-row">
+        {rowMoles.map((mole, index) => (
+          <div key={index} className="mole-cell">
+            {mole.isVisible && (
+              <img src={KrecikIMG} onClick={() => onMoleClick(index + startIndex)} />
+            )}
+          </div>
+        ))}
+      </div>
+    );
+
+    moleRows.push(row);
   }
 
   return (
     <div className="container">
       <div className="mole-game-board">
-        {moleArray.map((mole, index) => (
-          <div key={index}>
-            <p>
-              <span>
-                {mole.isVisible && (
-                  <img src={KrecikIMG} onClick={() => hitTheMole(index)} />
-                )}
-              </span>
-            </p>
-          </div>
-        ))}
+        {moleRows}
       </div>
     </div>
   );
 };
 
+function getRandom(min, max) {
+  return Math.floor(Math.random() * (max - min + 1)) + min;
+}
+
+
 export function Mole() {
-  const [moleArray, setMoleArray] = useState([{ isVisible: true, isWhacked: false }]);
+  const [moleArray, setMoleArray] = useState(Array(2 * 8).fill({ isVisible: false, isWhacked: false }));
   const [isGameStarted, setIsGameStarted] = useState(false);
   const defaultGameTime = 2 * 60 * 1000;
+  const [score, setScore] = useState(0);
+
+  const showRandomMole = () => {
+  const random = getRandom(0, moleArray.length - 1);
+
+  setMoleArray((previousMoleArray) =>
+    previousMoleArray.map((mole, index) => {
+      const newMole = { ...mole };
+      newMole.isVisible = index === random;
+      return newMole;
+    })
+  );
+};
 
   const startGame = (gameTime, moleCount) => {
-
-    console.log("Starting game with gameTime:", gameTime, "and moleCount:", moleCount);
-   
     setIsGameStarted(true);
+    setScore(0);
+
+    const moleInterval = setInterval(() => {
+      showRandomMole();
+    }, 1000);
 
     let remainingTime = gameTime;
     const countdownInterval = setInterval(() => {
-      console.log("Remaining time:", remainingTime / 1000, "seconds");
       remainingTime -= 1000;
       if (remainingTime <= 0) {
-        console.log('Czas gry minął!');
         clearInterval(countdownInterval);
+        clearInterval(moleInterval);
+        setIsGameStarted(false);
       }
     }, 1000);
   };
 
-  const [selectedGameTime, setSelectedGameTime] = useState(defaultGameTime); // Dodano definicję setSelectedGameTime
+  const handleMoleClick = (index) => {
+    if (!moleArray[index].isVisible || moleArray[index].isWhacked) return;
+
+    const updatedMoleArray = [...moleArray];
+    updatedMoleArray[index].isWhacked = true;
+    setMoleArray(updatedMoleArray);
+
+    setScore((prevScore) => prevScore + 1);
+
+    setTimeout(() => {
+      const newMoleArray = [...moleArray];
+      newMoleArray[index].isWhacked = false;
+      setMoleArray(newMoleArray);
+    }, 1000);
+  };
+
+  const [selectedGameTime, setSelectedGameTime] = useState(defaultGameTime);
 
   useEffect(() => {
     if (isGameStarted) {
@@ -162,16 +206,12 @@ export function Mole() {
   return (
     <>
       <MoleGameSettings moleArray={moleArray} onStartGame={startGame} />
-      {isGameStarted && <MoleGameBoard moleArray={moleArray} />}
+      {isGameStarted && (
+<>
+          <p>WYNIK: {score}</p>
+          <MoleGameBoard moleArray={moleArray} onMoleClick={handleMoleClick} />
+        </>
+      )}
     </>
   );
 }
-
-
-
-
-
-
-
-
-
