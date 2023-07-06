@@ -13,46 +13,45 @@ export function AppAside() {
       <nav>
         <ul>
           <li>
-          <NavLink to="dashboard">
-         <div>
-            <HouseIcon />
-            Dashboard
-            </div> 
+            <NavLink to="dashboard">
+              <div>
+                <HouseIcon />
+                Dashboard
+              </div>
             </NavLink>
           </li>
           <li>
             <NavLink to="cv">
               <div>
                 <PersonalCardIcon />
-              Moje CV
+                Moje CV
               </div>
-              </NavLink>
+            </NavLink>
           </li>
           <li>
             <NavLink to="exercises">
               <div>
                 <EditIcon />
-              Ćwiczenia
+                Ćwiczenia
               </div>
-              </NavLink>
+            </NavLink>
           </li>
           <li>
             <NavLink to="calendar">
               <div>
                 <CalendarIcon />
-              Kalendarz
+                Kalendarz
               </div>
-              </NavLink>
+            </NavLink>
           </li>
           <li>
             <NavLink to="blocks">
               <div>
                 <SettingIcon />
-              Blog
+                Blog
               </div>
-              </NavLink>
+            </NavLink>
           </li>
-          
         </ul>
       </nav>
       <p style={{ padding: '1rem 0' }}>Sidebar items, widgets, etc</p>
