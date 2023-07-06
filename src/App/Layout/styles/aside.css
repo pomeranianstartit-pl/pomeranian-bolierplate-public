@@ -19,12 +19,12 @@ aside li {
 .aside-row {
   display: flex;
   flex-direction: row;
-  align-items: center;
 }
 
 aside li a {
   display: block;
   padding: 0.5rem;
+  text-decoration: none;
 }
 
 aside a.active {
