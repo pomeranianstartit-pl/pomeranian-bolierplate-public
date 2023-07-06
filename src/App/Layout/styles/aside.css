@@ -33,3 +33,6 @@ aside a.active {
 aside a.active svg path {
   stroke: #fe3756;
 }
+ul {
+  list-style-type: none;
+}
