@@ -29,6 +29,8 @@ export function Exercise() {
         <pre>
           <code>9 * 9 = {multiply(9, 9)}</code>
         </pre>
+        {/*<div>Wynik mnożenia to: {multiply(9, 9)}</div>*/}
+        {/*<div>{'Wynik mnożenia to: ${multiply(9, 9)}'}</div>*/}
         <pre>
           <code>{getWelcomeMessage('Jon', 129384)}</code>
         </pre>
