@@ -12,6 +12,7 @@ export function Cwiczenie1() {
   }
 
   return (
+    //ćwiczenie 1
     <div className="blok-8__cwiczenie-1">
       <h1>Cześć!</h1>
 
