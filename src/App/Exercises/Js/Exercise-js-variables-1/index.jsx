@@ -1,7 +1,10 @@
 import './styles.css';
 
 export function Exercise() {
-  let string1 = 'Jon Snow';
+  let string1 = 'John Snow';
+  let gosc = 'przybyszu'
+  const amount = 1
+  
 
   const string3 = 'Ulubiony bohater z serialu "Gra o tron" to ' + string1;
 
@@ -19,7 +22,7 @@ export function Exercise() {
         <p>{string2}</p>
         <p>{string3}</p>
         {/* Uzupełnij zanie korzystając ze zmiennych oraz operacji na stringach */}
-        <p>Witaj ____! Jesteś ____ uzytkownikiem odwiedzającym tę stronę!</p>
+        <p>Witaj{gosc}! Jesteś {amount} uzytkownikiem odwiedzającym tę stronę!</p>
       </section>
     </div>
   );

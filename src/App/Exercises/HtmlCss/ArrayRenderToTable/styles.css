@@ -1,0 +1,20 @@
+table{
+  width: 100%;
+  border-collapse: collapse;
+}
+
+tr {
+  display: table-row;
+}
+
+
+th {
+  width: 150px;
+  padding: 8px;
+  border: 1px solid #ccc;
+}
+
+td {
+  width: 150px;
+  padding: 8px;
+  border: 1px solid #ccc;}

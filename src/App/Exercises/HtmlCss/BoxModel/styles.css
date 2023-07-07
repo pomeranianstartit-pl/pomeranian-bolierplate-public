@@ -1,0 +1,31 @@
+.box-model-base .paragraph{
+  background: green;
+  border: 2px solid black;
+  margin: 50px 25px;
+  padding: 50px 50px;
+  border-radius: 10px;
+  width: 300px;
+  font-size: 0.5em;
+
+}
+.box-model-base .inline-span{
+  display: none;
+  background: bisque;
+
+}
+.box-model-base .content-box{
+  box-sizing: content-box;
+  overflow: scroll;
+  width: 300px;
+}
+
+.relative-box{
+
+}
+.paragraph .relative-box .klasa-a{
+  font-size: 1rem;
+}
+.klasa-b{
+  font-size: 0.5rem;
+  color: red;
+}

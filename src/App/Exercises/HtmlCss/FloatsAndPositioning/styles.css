@@ -1,0 +1,61 @@
+.div2 {
+  /* Ważne - zachowanie wzgledem tego elementu a nie całego drzewa dom */
+  position: relative;
+  margin: 50px 0px;
+  padding: 17px 21px;
+  background: #ebebeb;
+}
+.div2_div1 {
+  padding: 12.375px 19.9375px;
+  width: 242.88px;
+  background: #ffd5db;
+  border: 1px solid #999999; /* Ustawienie absolutne względem rodzica */
+  position: absolute;
+  right: -154px;
+  top: -74px; /* left: xxx; bottom: xxx */
+}
+.div3 {
+  padding: 25px 25px;
+  background: #ffd5db;
+}
+.div3 img {
+  width: 250px;
+  height: 250px;
+  float: left;
+} /* WAŻNE PRZY FLOATACH */
+.div3 img:after {
+  content: '.';
+  visibility: hidden;
+  display: block;
+  height: 0;
+  clear: both;
+}
+.div4 {
+  margin-top: 150px;
+}
+.div7 {
+  border: 2px solid black;
+  padding: 25px 0px;
+}
+.div7 .div7_div {
+  margin-top: 5px;
+  width: 125px;
+  height: 125px;
+  background: #c8cbd1;
+  border: 2px solid #ebebeb;
+  border-radius: 8px;
+}
+.div_relative {
+  position: relative;
+}
+.div_relative .div_absolute {
+  position: absolute;
+  left: 20px;
+  bottom: 20px;
+  background: #999999;
+}
+.div_absolute:nth-of-type(2) {
+  left: 40px;
+  bottom: 40px;
+  background: #6b7280;
+}

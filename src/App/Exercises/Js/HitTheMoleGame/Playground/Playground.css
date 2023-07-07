@@ -1,0 +1,37 @@
+.playground {
+  display: flex;
+
+  gap: 10px;
+
+  flex-wrap: wrap;
+
+  width: 600px;
+
+  margin: 50px;
+}
+
+.field {
+  background-color: #ccc;
+
+  border-radius: 5px;
+
+  padding: 5px;
+
+  width: 100px;
+
+  height: 100px;
+
+  cursor: pointer;
+}
+
+.field svg {
+  margin-bottom: -68px;
+}
+
+.field-green {
+  background-color: greenyellow;
+}
+
+.field-red {
+  background-color: red;
+}

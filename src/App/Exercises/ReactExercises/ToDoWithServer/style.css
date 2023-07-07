@@ -1,0 +1,83 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+.task-index-page {
+  font-family: 'Poppins', sans-serif;
+}
+
+.task-list {
+  display: flex;
+  flex-direction: column;
+}
+
+.task-list {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.task-single {
+  display: flex;
+  flex-direction: column;
+  width: 629px;
+  height: 166px;
+  border: 2px solid #c8cbd1;
+  box-sizing: content-box;
+  padding: 15px;
+  border-radius: 8px;
+  box-shadow: -2px 2px 5px 2px #6b7280;
+  margin-bottom: 15px;
+}
+
+.task-single-done {
+  display: flex;
+  flex-direction: column;
+  width: 629px;
+  height: 166px;
+  border: 2px solid #c8cbd1;
+  box-sizing: content-box;
+  padding: 15px;
+  border-radius: 8px;
+  box-shadow: -2px 2px 5px 2px #6b7280;
+  margin-bottom: 15px;
+  background-color: #c8cbd1;
+}
+
+.task-single p {
+  margin: 0px;
+  line-height: 2;
+}
+
+.task-single h3 {
+  margin: 0px;
+}
+
+.task-row-title {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.task-row-title .task-images {
+  display: flex;
+  flex-direction: row;
+}
+
+.task-tick {
+  width: 30px;
+  margin-left: 10px;
+}
+
+.task-bin {
+  width: 30px;
+}
+
+.button-add {
+  width: 163px;
+  height: 56px;
+  background-color: #fe3756;
+  color: white;
+  border-radius: 8px;
+  border: none;
+  cursor: pointer;
+  margin-left: 500px;
+}

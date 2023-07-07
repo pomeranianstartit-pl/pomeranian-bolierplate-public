@@ -1,0 +1,36 @@
+.box {
+  border: 5px;
+  border-color: gray;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.07);
+  padding: 18px 24px;
+  gap: 18px;
+  width: 780px;
+  height: 266px;
+  border-radius: 16px;
+}
+.header {
+  width: 700px;
+  height: 34px;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 34px;
+  margin-left: 30px;
+}
+
+.input {
+  width: 732px;
+  height: 160px;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 32px;
+}
+a::before {
+  content: '';
+  display: block;
+  height: 1px;
+  width: 100%;
+  margin: 10px auto;
+  background-color: #000;
+}
