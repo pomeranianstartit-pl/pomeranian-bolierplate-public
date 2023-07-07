@@ -4,7 +4,7 @@ import './style.css';
 
 export function Cwiczenie1() {
   const [tekst, setTekst] = React.useState(
-    'PlaceholderTutaj trafi tekst z inputa'
+    'Placeholder Tutaj trafi tekst z inputa'
   );
   function handleOnSubmit(event) {
     event.preventDefault();
