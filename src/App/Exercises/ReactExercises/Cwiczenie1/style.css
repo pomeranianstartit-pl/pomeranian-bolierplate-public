@@ -4,9 +4,6 @@
 
 }
 
-
-
-
 .blok-8__cwiczenie-1 form {
 
   display: flex;
@@ -18,10 +15,6 @@
   gap: 0.5rem;
 
 }
-
-
-
-
 .blok-8__cwiczenie-1 form input {
 
   padding: 13px 16px;
@@ -31,9 +24,6 @@
   border-radius: 4px;
 
 }
-
-
-
 
 .blok-8__cwiczenie-1 form button {
 
@@ -50,9 +40,6 @@
   cursor: pointer;
 
 }
-
-
-
 
 .blok-8__cwiczenie-1>div {
 
