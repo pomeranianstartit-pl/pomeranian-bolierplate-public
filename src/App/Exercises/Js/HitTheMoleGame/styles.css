@@ -1,7 +1,9 @@
 .container {
   display: flex;
+  font-family: Poppins;
   justify-content: center;
   align-items: center;
+  font-size: 16px;
 }
 
 .mole-game-board {
@@ -46,6 +48,8 @@
 
 .strings1 {
   margin-bottom: 15px;
+  font-family: Poppins;
+  font-size: 18px;
 }
 
 .settings-row {
@@ -53,6 +57,8 @@
   grid-template-columns: auto 1fr;
   align-items: center;
   margin-bottom: 10px;
+  font-family: Poppins;
+  font-size: 18px;
 }
 
 .settings-label {
@@ -60,6 +66,8 @@
   flex-shrink: 0;
   width: 220px;
   text-align: left;
+  font-family: Poppins;
+  font-size: 18px;
 }
 
 .settings-buttons {
@@ -86,8 +94,10 @@
 }
 
 .settings-value {
-  margin-left: auto;
-  color: white;
+  margin-left: left;
+  font-size: 14px;
+  scroll-padding-top: 5px;
+  font-family: Poppins;
 }
 
 .start-button {
@@ -99,3 +109,23 @@
   background-color: #23213d;
 }
 
+.restart-button {
+  padding: 10px 20px;
+  font-size: 16px;
+  width: 405px;
+  height: 56px;
+  flex-shrink: 0;
+  background-color: #ed3b17;
+  margin-left: 130px;
+}
+
+.score {
+  padding: 0px 80px;
+}
+
+.rotating {
+  animation-name: rotate;
+  animation-duration: 1s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+}
