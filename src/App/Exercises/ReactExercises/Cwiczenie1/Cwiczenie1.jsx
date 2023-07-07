@@ -27,7 +27,7 @@ export function Cwiczenie1() {
         </div>
 
         <div>
-          <p>Placeholdeer</p>
+          <p>Placeholdxxeer</p>
         </div>
       </div>
     </div>
