@@ -55,3 +55,21 @@
 .gameButtonsRows button.activeButton {
   background: #fe3756;
 }
+.moleGame {
+    display: grid;
+    grid-template-columns: repeat(5, minmax(0, 1fr));
+    gap: 5px;
+    max-width: 600px;
+    max-height: 250px;
+    margin: 0 auto; /* Dodane centrowanie poziome */
+    justify-content: center;
+    align-items: center; 
+}
+#spangbob{
+  background-color: aqua;
+  height: 100px;
+  width: 100px;
+  padding-top: 20px;
+  padding-left: 5px;
+  border: 1px solid black;
+}
