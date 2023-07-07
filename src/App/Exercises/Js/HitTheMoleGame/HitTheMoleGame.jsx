@@ -5,6 +5,7 @@ import MoleGameBoard from './Board';
 
 export const HitTheMoleGame = () => {
   const defaultGameTime = 2 * 60 * 1000;
+  const moleSpeed = 1000;
   const [moleCount, setMoleCount] = useState(1);
   const [gameTime, setGameTime] = useState(defaultGameTime / 1000);
   const [seconds, setSeconds] = useState(gameTime / 1000);
@@ -20,13 +21,35 @@ export const HitTheMoleGame = () => {
       intervalId = setInterval(() => {
         setSeconds(seconds - 1);
       }, 1000);
+
+      return () => clearInterval(intervalId);
+    }
+  }, [gameTime]);
+
+  useEffect(() => {
+    let intervalId;
+
+    if (!intervalId) {
+      intervalId = setInterval(() => {
+        showRandomMole();
+      }, moleSpeed);
+
       return () => clearInterval(intervalId);
     }
   }, [gameTime]);
 
   function hitTheMole(index) {
-    if (!moleArray[index].isVisible) return;
-    moleArray[index].isWhacked = !moleArray[index].isWhacked;
+    if (moleArray[index].isVisible) {
+      setScoreCount(scoreCount + 1);
+
+      setMoleArray((prevVal) => {
+        const newArray = [...prevVal];
+
+        newArray[index].isVisible = false;
+
+        return newArray;
+      });
+    }
   }
 
   function showRandomMole() {
@@ -62,7 +85,6 @@ export const HitTheMoleGame = () => {
         hitTheMole={hitTheMole}
         scoreCount={scoreCount}
       />
-      <button onClick={() => showRandomMole()}>click</button>
     </>
   );
 };
