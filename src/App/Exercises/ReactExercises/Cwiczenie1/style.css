@@ -1,50 +1,28 @@
-/* .font-test-family {
-  font-family: Poppins;
+.font-test-family {
+  font-family: Chilanka;
 }
 
-.welcoming div {
+.blok-8__cwiczenie-1 {
   color: black;
 }
 
-.welcoming h1 {
+.blok-8__cwiczenie-1 > div {
+  display: flex;
+  gap: 5rem;
+}
+
+.blok-8__cwiczenie-1 h1 {
   font-size: 40px;
   font-style: normal;
   font-weight: 500;
   line-height: 69px;
 }
 
-.welcoming p {
+.blok-8__cwiczenie-1 p {
   font-size: 16px;
   font-style: normal;
   font-weight: 700;
   line-height: 27px;
-}
-
-.welcoming link {
-  /* display: flex; */
-/* height: 48px; */
-/* padding: 13px 16px; */
-/* align-items: center; */
-/* gap: 10px; */
-/* align-self: stretch; */
-/* border-radius: 5px;
-  border: 1px solid var(--grey-300, #c8cbd1);
-  background: #fff; */
-
-.welcoming button {
-  padding: 20px 36px;
-  margin-top: 45px;
-  display: flex;
-  width: 326px;
-  /* align-items: flex-start; */
-  /* gap: 16px;
-  flex-shrink: 0; */
-  background-color: #fe3756;
-  color: #ffffff;
-  border-radius: 8px;
-}
-*/ .font-test-family {
-  font-family: Chilanka;
 }
 
 .blok-8__cwiczenie-1 form {
@@ -54,22 +32,18 @@
   gap: 0.5rem;
 }
 
+.blok-8__cwiczenie-1 form button {
+  padding: 20px 36px;
+  gap: 16px;
+  background-color: #fe3756;
+  color: #ffffff;
+  border: 0;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
 .blok-8__cwiczenie-1 form input {
   padding: 13px 16px;
   border: 1px solid #ccc;
   border-radius: 4px;
-}
-
-.blok-8__cwiczenie-1 form button {
-  background-color: #fe3756;
-  color: #fff;
-  padding: 20px 36px;
-  border: 0;
-  border-radius: 4px;
-  cursor: pointer;
-}
-
-.blok-8__cwiczenie-1 > div {
-  display: flex;
-  gap: 5rem;
 }

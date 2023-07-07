@@ -1,4 +1,4 @@
-import { Cwiczenie1 } from './cwiczenie1';
+import { Cwiczenie1 } from './Cwiczenie1';
 
 export const Cwiczenie1MetaData = {
   path: 'cwiczenie-1',

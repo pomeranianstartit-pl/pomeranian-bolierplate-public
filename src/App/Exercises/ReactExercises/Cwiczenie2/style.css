@@ -1,0 +1,18 @@
+.font-test-family {
+  font-family: Chilanka;
+}
+
+.blok-8__cwiczenie-1 button {
+  background-color: #fe3756;
+  color: #fff;
+  padding: 20px 36px;
+  margin-top: 45px;
+  width: 400px;
+  border: 0;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 31px;
+}
