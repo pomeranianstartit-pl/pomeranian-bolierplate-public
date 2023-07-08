@@ -18,7 +18,7 @@ export function AppAside() {
           </li>
           <li>
             <PersonalCardIcon />
-            <NavLink to="myCv">Moje CV</NavLink>
+            <NavLink to="CV">Moje CV</NavLink>
           </li>
           <li>
             <ElementIcon />
