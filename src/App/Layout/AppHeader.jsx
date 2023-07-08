@@ -1,5 +1,5 @@
 import React from 'react';
-import { Logo } from '../Components/Logo/logo';
+import { Logo } from '../Components/Logo';
 import { Link } from 'react-router-dom';
 
 import './styles/header.css';
