@@ -26,7 +26,7 @@ export function AppAside() {
             <NavLink to="exercises">Ćwiczenia</NavLink>
           </li>
           <li>     <CalendarIcon></CalendarIcon>
-            <NavLink to="calendar">Kalendarz</NavLink>
+            <NavLink to="Kalendar">Kalendarz</NavLink>
           </li>
         </ul>
       </nav>
