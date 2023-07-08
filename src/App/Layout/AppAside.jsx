@@ -27,11 +27,11 @@ export function AppAside() {
           </li>
           <li>
             <PersonalCardIcon />
-            <NavLink to="dashboard">Moje CV</NavLink>
+            <NavLink to="CV">Moje CV</NavLink>
           </li>
           <li>
             <CalendarIcon />
-            <NavLink to="dashboard">Kalendarz</NavLink>
+            <NavLink to="Calendar">Kalendarz</NavLink>
           </li>
         </ul>
       </nav>
