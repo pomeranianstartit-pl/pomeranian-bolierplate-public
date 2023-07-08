@@ -5,14 +5,18 @@ aside {
   flex-direction: column;
   justify-content: space-between;
   overflow-y: auto;
+  background: #fff;
 }
 
 aside ul {
   /* Nadpisanie domyślnych styli przeglądarki */
   padding-inline-start: 1rem;
+  list-style: none;
 }
 
 aside li {
+  display: flex;
+  align-items: center;
   line-height: 2rem;
 }
 
@@ -26,8 +30,10 @@ aside li a {
   display: block;
   padding: 0.5rem;
 }
-
+aside a {
+  text-decoration: none;
+  color: var(--secondary-secondary, #23213d);
+}
 aside a.active {
-  background-color: var(--color-primary-blue);
-  color: var(--color-white);
+  color: var(--primary-primary, #fe3756);
 }
