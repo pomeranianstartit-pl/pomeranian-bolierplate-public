@@ -29,7 +29,7 @@ export function AppAside() {
           </li>
           <li>
             <ElementIcon />
-            <NavLink to="blog">Blog</NavLink>
+            <NavLink to="blocks">Bloki</NavLink>
           </li>
         </ul>
       </nav>
