@@ -1,5 +1,5 @@
-import { codeSvg } from "../../Images/tiles/code"; 
-
+import { codeSvg } from '../../Images/tiles/code';
+import { Link } from 'react-router-dom';
 export const Blocks = () => {
   return (
     <div className="dashboard-tiles-container">
@@ -17,6 +17,7 @@ export const Blocks = () => {
             {' '}
             Stack technologiczny realizowany na kursie{' '}
           </p>{' '}
+          <Link to="/dashboard/tech-stack">Zobacz więcej</Link>
           {/* <SeeMoreLink to="tech-stack" /> */}{' '}
         </div>{' '}
         <div>Doświadczenie</div>{' '}

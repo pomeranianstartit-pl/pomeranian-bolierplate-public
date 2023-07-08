@@ -16,6 +16,7 @@ import { blockRouterMetaData as TryCatchData } from './Try-catch/router-data';
 import { blockRouterMetaData as PromisesData } from './Exercise-js-promises/router-data';
 import { blockRouterMetaData as PromisesWithUseEffectData } from './Exercise-js-promise-use-effect/router-data';
 import { blockRouterMetaData as UseRefData } from './UseRef/router-data';
+import { blockRouterMetaData as ToDoListVer2 } from './ToDoWithServerVer2/router-data';
 
 export const blockRouterMetaData = [
   blockRouterMetaDataJsVariables1,
@@ -34,5 +35,6 @@ export const blockRouterMetaData = [
   PromisesData,
   PromisesWithUseEffectData,
   UseRefData,
+  ToDoListVer2,
 ];
 export const blockRouterData = getParsedRouterDataList(blockRouterMetaData);
