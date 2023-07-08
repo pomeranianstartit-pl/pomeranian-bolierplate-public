@@ -1,20 +1,32 @@
 import { NavLink } from 'react-router-dom';
 
 import './styles/aside.css';
+import {EditIcon} from '../Components/Icons/EditIcon';
+import {HouseIcon} from '../Components/Icons/HouseIcon';
+import {ElementIcon} from '../Components/Icons/ElementIcon';
+import {PersonalCardIcon} from '../Components/Icons/PersonalCardIcon';
+import {CalendarIcon} from '../Components/Icons/CalendarIcon';
 
 export function AppAside() {
   return (
     <aside>
       <nav>
         <ul>
-          <li>
+          <li> <HouseIcon></HouseIcon>
             <NavLink to="dashboard">Dashboard</NavLink>
           </li>
-          <li>
+          <li>     <PersonalCardIcon></PersonalCardIcon>
+            <NavLink to="cv">Moje cv</NavLink>
+          </li>
+
+          <li><ElementIcon></ElementIcon>
             <NavLink to="blocks">Bloki</NavLink>
           </li>
-          <li>
+          <li>     <EditIcon></EditIcon>
             <NavLink to="exercises">Ćwiczenia</NavLink>
+          </li>
+          <li>     <CalendarIcon></CalendarIcon>
+            <NavLink to="calendar">Kalendarz</NavLink>
           </li>
         </ul>
       </nav>
