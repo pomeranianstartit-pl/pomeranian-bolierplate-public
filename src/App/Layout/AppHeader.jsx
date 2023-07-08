@@ -8,7 +8,7 @@ export function AppHeader() {
   return (
     <header>
       <div>
-        <Link to="/Exercises">
+        <Link to="/">
           <Logo />
         </Link>
       </div>
