@@ -3,6 +3,9 @@ import './styles.css';
 export function Exercise() {
   const mathResult1 = 2 * 5;
 
+  let x=3
+  let y=2
+
   return (
     <div className="playing-with-variables">
       <section>
