@@ -9,13 +9,19 @@ export function Cwiczenie2() {
     setCounter(counter + 1);
   }
 
+  let postfix = 'razy';
+
+  if (counter === 1) {
+    postfix = 'raz';
+  }
+
   return (
     <div>
       <h2>Cześć!</h2>
 
       <div className="blok-8__cwiczenie-2">
         <button onClick={handleOnClick}>
-          kliknięto we mnie {counter} razy
+          kliknięto we mnie {counter} {postfix}
         </button>
       </div>
     </div>
