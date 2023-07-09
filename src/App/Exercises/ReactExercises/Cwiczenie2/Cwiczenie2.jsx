@@ -7,12 +7,17 @@ export function Cwiczenie2() {
     // bierze poprzedni stan (counter) i zwieksza go o 1
     setCounter(counter + 1);
   }
-
+  let postfix;
+  if (counter === 1) {
+    postfix = 'raz';
+  } else {
+    postfix = 'razy';
+  }
   return (
     <div className="cwiczenie2">
       <h2>Cześć!</h2>
       <button onClick={handleClick}>
-        Kliknięto we mnie {counter} {counter === 1 ? 'raz' : 'razy'}
+        Kliknięto we mnie {counter} {postfix}
       </button>
     </div>
   );
