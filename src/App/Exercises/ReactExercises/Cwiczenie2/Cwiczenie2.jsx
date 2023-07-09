@@ -9,13 +9,13 @@ export function Cwiczenie2() {
     setCounter(counter + 1);
   }
 
-  let postfix = 'razy';
+  const postfix =
+    counter === 1 // if (counter === 1)
+      ? // then
+      'raz'
+      : // else
+      'razy';
 
-  if (counter === 1) {
-    postfix = 'raz';
-  } else if (counter === 0 || counter > 1) {
-    postfix = 'razy';
-  }
   // && - konciunkcja(and) => i to i to musi byc prawdą
   // || - alternatywa (OR) => albo to albo to musi być prawdą
 
