@@ -6,7 +6,11 @@ export function Cwiczenie3() {
   const [display, setDisplay] = React.useState(true);
 
   function handleOnClick() {
-    setDisplay(!display);
+    const odwroconaWartosc = !display; // jeśli display to true, to odwroconaWartosc to false, jeśli display to false, to odwroconaWartosc to true
+
+    // bo !true to false, a !false to true
+
+    setDisplay(odwroconaWartosc);
   }
 
   return (
