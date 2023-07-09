@@ -9,11 +9,8 @@ export function Cwiczenie2() {
     setCounter(counter + 1);
   }
 
-  let postfix = 'razy';
+  const postfix = counter === 1 ? 'raz' : 'razy';
 
-  if (counter === 1) {
-    postfix = 'raz';
-  }
   return (
     <div className="blok-8__cwiczenie-2">
       <h1>Cześć!</h1>
