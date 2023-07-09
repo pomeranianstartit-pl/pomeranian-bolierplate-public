@@ -17,6 +17,14 @@ export function Cwiczenie1() {
     setText(tekst);
   }
 
+  function handleOnChange(event) {
+    console.log('Zmieniono wartość pola tekst');
+    console.log(event);
+
+    const tekst = event.target.value;
+    setText(tekst);
+  }
+
   return (
     <div>
       <h2>Cześć!</h2>
@@ -24,7 +32,12 @@ export function Cwiczenie1() {
       <div className="columns">
         <form onSubmit={handleSubmit}>
           <label htmlFor="">Wpisz tekst</label>
-          <input id="tekst" type="text" placeholder="tekst do wpisania" />
+          <input
+            id="tekst"
+            type="text"
+            placeholder="tekst do wpisania"
+            onChange={handleOnChange}
+          />
           <button type="submit">Kliknij</button>
         </form>
         <p>{text}</p>
