@@ -15,6 +15,10 @@ export function Cwiczenie2() {
   } else if (counter > 1) {
     postfix = 'razy';
   }
+
+  // const postfix = (counter === 1) ? "raz" : "razy"
+  // ? then
+  // : else
   // && - koniunkcja (AND) => i to, i to musi być prawdą
   // || - alternatywa (OR) => albo to, albo to musi być prawdą
   return (
