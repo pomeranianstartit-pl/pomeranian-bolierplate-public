@@ -9,13 +9,22 @@ export function Cwiczenie1() {
     const tekst = event.target[0].value;
     setText(tekst);
   }
+  function handleOnChange(event) {
+    const tekst = event.target.value;
+    setText(tekst);
+  }
   return (
     <div>
       <h2>Cześć!</h2>
       <div className="columns">
         <form onSubmit={handleSubmit}>
           <label>Wpisz tekst</label>
-          <input id="tekst" type="text" placeholder="tekst do wpisania"></input>
+          <input
+            id="tekst"
+            type="text"
+            placeholder="tekst do wpisania"
+            onChange={handleOnChange}
+          ></input>
           <button type="submit">Kliknij</button>
         </form>
 
