@@ -9,11 +9,7 @@ export function Cwiczenie2() {
     setCounter(counter + 1);
   }
 
-  let postfix = 'razy';
-
-  if (counter === 1) {
-    postfix = 'raz';
-  }
+  const postfix = counter === 1 ? 'raz' : 'razy';
 
   return (
     <div>
