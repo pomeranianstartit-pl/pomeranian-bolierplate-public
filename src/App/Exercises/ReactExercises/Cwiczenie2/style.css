@@ -1,0 +1,10 @@
+.cwiczenie2 button {
+  border-radius: 8px;
+  background-color: #fe3756;
+  color: white;
+  padding: 20px 36px;
+  border: 1px solid #fe3756;
+  width: 326px;
+  cursor: pointer;
+  text-transform: uppercase;
+}
