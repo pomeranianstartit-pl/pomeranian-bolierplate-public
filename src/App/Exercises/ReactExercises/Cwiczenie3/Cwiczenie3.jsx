@@ -1,7 +1,6 @@
 import React from 'react';
 
 import './style.css';
-import { toHaveAttribute } from '@testing-library/jest-dom/dist/matchers';
 
 export function Cwiczenie3() {
   const [display, setDisplay] = React.useState(true);
