@@ -5,15 +5,8 @@ export function Cwiczenie2() {
   function handleOnClick() {
     setCounter(counter + 1);
   }
-  let postfix;
+  const postfix = counter === 1 ? 'raz' : 'razy';
 
-  //komentarz
-
-  if (counter === 1) {
-    postfix = 'raz';
-  } else {
-    postfix = 'razy';
-  }
   return (
     <div className="blok-8__cwiczenie-2">
       <h2>Cześć!</h2>
