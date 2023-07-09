@@ -6,23 +6,48 @@ export function Cwiczenie2() {
   function handleClick() {
     // bierze poprzedni stan (counter) i zwieksza go o 1
     setCounter(counter + 1);
-
-    // setCounter przechowuje w sobie poprzedni/aktualny state (counter)
-    // setCounter((prev) => prev + 1);
   }
-
+  let postfix;
+  if (counter === 1) {
+    postfix = 'raz';
+  } else {
+    postfix = 'razy';
+  }
   return (
     <div className="cwiczenie2">
       <h2>Cześć!</h2>
       <button onClick={handleClick}>
-        {/* {`Kliknięto we mnie ${counter} ${counter === 1 ? 'raz' : 'razy'}`} */}
-        Kliknięto we mnie {counter} {counter === 1 ? 'raz' : 'razy'}
+        Kliknięto we mnie {counter} {postfix}
       </button>
     </div>
   );
 }
 
-// najczęściej używane event handlery
+// inaczej możemy zapisac odmiane wyrazu:
+
+// let postfix = "razy";
+// if(counter===1){
+//   postfix="raz";
+// }
+
+// let postfix;
+// if(counter===1){
+//   postfix="raz";
+// }
+// else{
+//   postfix ="razy";
+// }
+
+// Kliknięto we mnie {counter} {postfix}
+// {{`Kliknięto we mnie ${counter} ${counter === 1 ? 'raz' : 'razy'}`}
+
+//inaczej możemy zapisac funkcje:
+
+// setCounter przechowuje w sobie poprzedni/aktualny state (counter)
+// setCounter((prev) => prev + 1);
+
+// najczęściej używane event handlery:
+
 // onClick w buttonach
 // onChange w inputach
 // onSubmit, onReset w formach
@@ -37,4 +62,5 @@ export function Cwiczenie2() {
 // "1" + "1" = 11
 // 1 + "1" = 11
 
-// === sprawdza wartość i element
+// === sprawdza wartość i typ danych
+// == sprawdza tylko wartość
