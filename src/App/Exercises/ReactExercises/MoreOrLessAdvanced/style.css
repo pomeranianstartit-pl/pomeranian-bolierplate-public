@@ -1,0 +1,34 @@
+.columns{
+  display: flex;
+  flex-direction: row;
+  gap: 50px;
+
+}
+
+.columns form{
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  
+}
+
+.columns form label{
+  font-weight: bold;
+}
+
+.columns form input{
+  border-radius: 5px;
+  border: 1px solid #C8CBD1;
+  padding: 13px 16px;
+
+}
+
+.columns form button{
+  border-radius: 8px;
+  background-color: #fe3756;
+  color: white;
+  padding: 20px 36px;
+  border: 1px solid #fe3756;
+  width: 326px;
+  cursor: pointer;
+}
