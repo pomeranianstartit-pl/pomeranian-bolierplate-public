@@ -14,6 +14,8 @@ export function Cwiczenie2() {
     postfix = 'RAZ';
   }
 
+  //  const postfix = (counter === 1) ? "raz" : "razy";
+
   // if (counter === 1){
   //  postfix="RAZ";
   //}
