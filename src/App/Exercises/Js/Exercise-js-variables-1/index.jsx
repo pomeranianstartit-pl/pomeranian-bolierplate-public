@@ -11,7 +11,7 @@ export function Exercise() {
 
   const greetings = `Witaj ${my_name}!`;
 
-  const new_visitor= "nowym";
+  const new_visitor = 'nowym';
 
   return (
     <div className="playing-with-variables">
@@ -25,7 +25,13 @@ export function Exercise() {
         <p>{string2}</p>
         <p>{string3}</p>
         {/* Uzupełnij zanie korzystając ze zmiennych oraz operacji na stringach */}
-        <p>{greetings} Jesteś <u><b>{new_visitor}</b></u> uzytkownikiem odwiedzającym tę stronę!</p>
+        <p>
+          {greetings} Jesteś{' '}
+          <u>
+            <b>{new_visitor}</b>
+          </u>{' '}
+          uzytkownikiem odwiedzającym tę stronę!
+        </p>
       </section>
     </div>
   );
