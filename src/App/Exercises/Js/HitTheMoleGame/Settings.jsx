@@ -1,10 +1,12 @@
-import React, { useState, useEffect } from 'react';
-
 export const MoleGameSettings = ({
   gameTime,
   moleCount,
   setGameTime,
   setMoleCount,
+  gameStarted,
+  restartGame,
+  startStopGame,
+  gameSettingsValid,
 }) => {
   const gameTimeOption = [
     { label: '1 minuta', timeValue: 1 * 60 },
@@ -17,6 +19,7 @@ export const MoleGameSettings = ({
     { label: '2 krety' },
     { label: '3 krety' },
   ];
+
   return (
     <div className="moleGameOptions">
       <p>
@@ -27,7 +30,7 @@ export const MoleGameSettings = ({
       <div className="gameOptionsButtons">
         <div className="gameButtonsRows">
           <div>
-            <h4>CZAS GRY</h4>
+            <h4>CZAS GRY: {Math.max(gameTime, 0)}</h4>
             {gameTimeOption.map(({ label, timeValue }) => (
               <button
                 className={gameTime === timeValue ? 'activeButton' : ''}
@@ -52,7 +55,10 @@ export const MoleGameSettings = ({
           </div>
           <div>
             <h4>PRZYCISKI STERUJĄCE</h4>
-            <button>START</button>
+            <button disabled={!gameSettingsValid} onClick={startStopGame}>
+              {gameStarted ? 'Stop' : 'Start'}
+            </button>
+            <button onClick={restartGame}>Restart</button>
           </div>
         </div>
       </div>
