@@ -7,7 +7,7 @@ export function Exercise() {
 
   const string2 = `Ulubiony bohater z serialu "Gra o tron" to: ${string1}`;
 
-  let my_name = "Marianna";
+  let my_name = 'Marianna';
 
   const greetings = `Witaj ${my_name}!`;
 
