@@ -1,0 +1,12 @@
+.columns {
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+}
+
+.columns input {
+  border-radius: 5px;
+  border: 1px solid #c8cbd1;
+  padding: 13px 16px;
+  width: 100px;
+}
