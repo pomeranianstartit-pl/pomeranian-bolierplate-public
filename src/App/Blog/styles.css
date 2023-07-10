@@ -1,0 +1,11 @@
+.news {
+  display: inline-flex;
+  padding: 45px 61px;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+#date {
+  letter-spacing: 1.68px;
+  font-size: 10.5px;
+}
