@@ -1,15 +1,15 @@
-import React, { useState, useEffect } from "react";
+import React, { useState, useEffect } from 'react';
 
-export const MoleGameSettings = ({ moleArray, onStartGame }) => {
+export const MoleGameSettings = ({ moleArray, onStartGame, onRestart }) => {
   const defaultGameTime = 1 * 60 * 1000;
 
   const [selectedGameTime, setSelectedGameTime] = useState(defaultGameTime);
   const [selectedMoleCount, setSelectedMoleCount] = useState(1);
-  const [remainingTime, setRemainingTime] = useState(defaultGameTime);
-  const [isGameOver, setIsGameOver] = useState(false);
-
+  const [score, setScore] = useState(0);
   const [clickedGameTimeIndex, setClickedGameTimeIndex] = useState(null);
   const [clickedMoleCountIndex, setClickedMoleCountIndex] = useState(null);
+  const [isGameStarted, setIsGameStarted] = useState(false);
+  const [restart, setRestart] = useState(false); // Dodany stan restartu
 
   const gameTimeOption = [
     { label: '1 minuta', timeValue: 1 * 60 * 1000 },
@@ -25,9 +25,7 @@ export const MoleGameSettings = ({ moleArray, onStartGame }) => {
 
   const handleGameTimeSelection = (timeValue, index) => {
     setSelectedGameTime(timeValue);
-    setRemainingTime(timeValue);
     setClickedGameTimeIndex(index);
-    setIsGameOver(false);
   };
 
   const handleMoleCountSelection = (count, index) => {
@@ -36,36 +34,44 @@ export const MoleGameSettings = ({ moleArray, onStartGame }) => {
   };
 
   const handleRestartGame = () => {
-    setRemainingTime(selectedGameTime);
-    setIsGameOver(false);
+    setSelectedGameTime(defaultGameTime);
+    setSelectedMoleCount(1);
+    setScore(0);
+    setIsGameStarted(false);
+    setRestart(true); // Ustawienie restartu na true
+    onRestart(); // Wywołanie funkcji onRestart z komponentu rodzica
+  };
+
+  const formatTime = (time) => {
+    const minutes = Math.floor(time / 60000);
+    const seconds = Math.floor((time % 60000) / 1000);
+    return `${minutes}:${seconds < 10 ? '0' : ''}${seconds}`;
   };
 
   useEffect(() => {
-    if (remainingTime === 0) {
-      setIsGameOver(true);
+    if (selectedGameTime === 0 || score === 5) {
+      setIsGameStarted(false);
     }
-  }, [remainingTime]);
+  }, [selectedGameTime, score]);
 
   useEffect(() => {
     let interval;
 
-    if (remainingTime > 0) {
+    if (isGameStarted) {
       interval = setInterval(() => {
-        setRemainingTime((prevTime) => {
-          if (prevTime === 0) {
+        setSelectedGameTime((prevTime) => {
+          if (prevTime === 0 || score === 5) {
             clearInterval(interval);
-            setIsGameOver(true);
+            setIsGameStarted(false);
             return 0;
           }
           return prevTime - 1000;
         });
       }, 1000);
-    } else {
-      setIsGameOver(true);
     }
 
     return () => clearInterval(interval);
-  }, [remainingTime]);
+  }, [isGameStarted, score]);
 
   return (
     <div className="container">
@@ -88,7 +94,7 @@ export const MoleGameSettings = ({ moleArray, onStartGame }) => {
             ))}
           </div>
           <div className="settings-value">
-            {remainingTime / 1000} sekund
+            {formatTime(selectedGameTime)}
           </div>
         </div>
 
@@ -108,26 +114,41 @@ export const MoleGameSettings = ({ moleArray, onStartGame }) => {
           <div className="settings-value">{selectedMoleCount}</div>
         </div>
 
-        {isGameOver ? (
+        {isGameStarted ? (
           <div className="settings-row">
-            <div className="game-time-up-message">Koniec gry!</div>
-            <button className="restart-button" onClick={handleRestartGame}>
-              Restart
-            </button>
+            <div className="settings-label">PRZYCISKI STERUJĄCE</div>
+            <div className="settings-buttons">
+              <button className="stop-button" onClick={handleRestartGame}>
+                STOP
+              </button>
+            </div>
           </div>
         ) : (
           <div className="settings-row">
             <div className="settings-label">PRZYCISKI STERUJĄCE</div>
             <div className="settings-buttons">
-              <button className="start-button" onClick={() => onStartGame(selectedGameTime, selectedMoleCount)}>
-                START
-              </button>
+              {selectedGameTime !== 0 && (
+                <button className="start-button" onClick={() => {
+                  setIsGameStarted(true);
+                  onStartGame(selectedGameTime, selectedMoleCount);
+                }}>
+                  START
+                </button>
+              )}
             </div>
+          </div>
+        )}
+
+        {(!isGameStarted && selectedGameTime === 0) && (
+          <div className="settings-row">
+            <div className="game-time-up-message">! Gratulacje! Twój wynik to {score} złapane krety</div>
+            <button className="restart-button" onClick={handleRestartGame}>
+              RESTART
+            </button>
           </div>
         )}
       </div>
     </div>
   );
 };
-
 

@@ -3,45 +3,51 @@ import { MoleGameSettings } from './MoleGameSettings';
 import { MoleGameBoard } from './MoleGameBoard';
 import './styles.css';
 
-
-function getRandom(min, max) {
-  return Math.floor(Math.random() * (max - min + 1)) + min;
-}
-
-
 export function Mole({ onClick }) {
-  const [moleArray, setMoleArray] = useState(
-    Array(2 * 8).fill({ isVisible: false, isWhacked: false, isRotating: false })
-  );
+  const [moleArray, setMoleArray] = useState(Array(2 * 8).fill({ isVisible: false, isWhacked: false }));
   const [isGameStarted, setIsGameStarted] = useState(false);
-  const defaultGameTime = 2 * 60 * 1000;
   const [score, setScore] = useState(0);
+  const [selectedGameTime, setSelectedGameTime] = useState(2 * 60 * 1000);
+  const [restart, setRestart] = useState(false);
+  const [moleInterval, setMoleInterval] = useState(null);
+
+  const getRandom = (min, max) => {
+    return Math.floor(Math.random() * (max - min + 1)) + min;
+  };
 
   const showRandomMole = () => {
-  const random = getRandom(0, moleArray.length - 1);
+    const random = getRandom(0, moleArray.length - 1);
 
-  setMoleArray((previousMoleArray) =>
-    previousMoleArray.map((mole, index) => {
-      const newMole = { ...mole };
-      newMole.isVisible = index === random;
-      return newMole;
-    })
-  );
-};
+    setMoleArray((previousMoleArray) =>
+      previousMoleArray.map((mole, index) => ({
+        ...mole,
+        isVisible: index === random,
+      }))
+    );
+  };
 
-function hitTheMole(index) {
-  if (!moleArray[index].isVisible) return;
-  moleArray[index].isWhacked = !moleArray[index].isWhacked;
-  console.log(moleArray[index].isWhacked);
-}
+  const hitTheMole = (index) => {
+    if (!moleArray[index].isVisible) return;
+
+    setMoleArray((previousMoleArray) =>
+      previousMoleArray.map((mole, moleIndex) => ({
+        ...mole,
+        isWhacked: moleIndex === index ? !mole.isWhacked : mole.isWhacked,
+      }))
+    );
+  };
 
   const startGame = (gameTime, moleCount) => {
     setIsGameStarted(true);
     setScore(0);
+    setRestart(false);
 
-    const moleInterval = setInterval(() => {
-      showRandomMole();
-    }, 1000);
+    if (moleInterval) {
+      clearInterval(moleInterval);
+    }
+
+    const interval = setInterval(showRandomMole, 1000);
+    setMoleInterval(interval);
 
     let remainingTime = gameTime;
     const countdownInterval = setInterval(() => {
@@ -54,26 +60,35 @@ function hitTheMole(index) {
     }, 1000);
   };
 
-  function handleMoleClick(index) {
+  const handleMoleClick = (index) => {
     if (!moleArray[index].isVisible || moleArray[index].isWhacked) return;
-  
-    const updatedMoleArray = [...moleArray];
-    updatedMoleArray[index].isWhacked = true;
-    updatedMoleArray[index].isRotating = true; // Ustawienie pola isRotating na true
-    setMoleArray(updatedMoleArray);
-  
-    setScore((prevScore) => prevScore + 1);
-  
-    setTimeout(() => {
-      const newMoleArray = [...moleArray];
-      newMoleArray[index].isWhacked = false;
-      newMoleArray[index].isRotating = false; // Ustawienie pola isRotating na false
-      setMoleArray(newMoleArray);
-    }, 1000);
-    onClick(index);
-  }
 
-  const [selectedGameTime, setSelectedGameTime] = useState(defaultGameTime);
+    setMoleArray((previousMoleArray) =>
+      previousMoleArray.map((mole, moleIndex) => ({
+        ...mole,
+        isWhacked: moleIndex === index ? true : mole.isWhacked,
+      }))
+    );
+
+    setScore((prevScore) => prevScore + 1);
+
+    setTimeout(() => {
+      const random = getRandom(0, moleArray.length - 1);
+
+      setMoleArray((previousMoleArray) =>
+        previousMoleArray.map((mole, index) => ({
+          ...mole,
+          isVisible: index === random,
+        }))
+      );
+    }, 100);
+
+    onClick(index);
+  };
+
+  const handleRestart = () => {
+    setRestart(true);
+  };
 
   useEffect(() => {
     if (isGameStarted) {
@@ -85,20 +100,26 @@ function hitTheMole(index) {
     }
   }, [isGameStarted]);
 
-<div onClick={handleMoleClick}></div>
+  useEffect(() => {
+    if (restart) {
+      clearInterval(moleInterval);
+      setMoleArray(Array(2 * 8).fill({ isVisible: false, isWhacked: false }));
+      setIsGameStarted(false);
+      setSelectedGameTime(2 * 60 * 1000);
+      setRestart(false);
+    }
+  }, [restart]);
 
-return (
-<>
-     
-      <MoleGameSettings moleArray={moleArray} onStartGame={startGame} />
-      <p className='score'>WYNIK: {score}</p>
-      {isGameStarted && (
-
-<>
-
-      <MoleGameBoard moleArray={moleArray} onMoleClick={handleMoleClick} />
-      </>
-      )}
+  return (
+    <>
+      <MoleGameSettings moleArray={moleArray} onStartGame={startGame} onRestart={handleRestart} />
+      <p className="score">WYNIK: {score}</p>
+      {isGameStarted && <MoleGameBoard moleArray={moleArray} onMoleClick={handleMoleClick} />}
     </>
   );
 }
+
+
+
+
+
