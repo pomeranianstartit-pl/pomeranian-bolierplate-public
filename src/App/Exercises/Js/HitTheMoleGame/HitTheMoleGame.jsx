@@ -23,9 +23,9 @@ export const HitTheMoleGame = () => {
   useEffect(() => {
     if (gameTime !== 0 && moleCount !== 0) {
       setGameSettingsValid(true);
-    } else {
-      setGameSettingsValid(false);
+      return;
     }
+    setGameSettingsValid(false);
   }, [gameTime, moleCount]);
 
   useEffect(() => {
@@ -37,7 +37,10 @@ export const HitTheMoleGame = () => {
   useEffect(() => {
     let interval;
 
-    if (gameStarted) {
+    if (!gameStarted) {
+      return;
+    }
+    {
       interval = setInterval(() => {
         setGameTime((prevGameTime) => {
           if (prevGameTime === 0) {
@@ -67,6 +70,7 @@ export const HitTheMoleGame = () => {
 
   useEffect(() => {
     if (gameStarted && scoreCount === 3) {
+      // score value to edit: 20
       setGameStarted(false);
       setGameOver(true);
       setScoreReset(true);
@@ -158,6 +162,8 @@ export const HitTheMoleGame = () => {
         moleArray={moleArray}
         hitTheMole={hitTheMole}
         scoreCount={scoreCount}
+        gameEnded={gameEnded}
+        gameStarted={gameStarted}
       />
     </>
   );
