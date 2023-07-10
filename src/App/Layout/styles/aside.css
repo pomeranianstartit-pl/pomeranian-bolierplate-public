@@ -10,6 +10,8 @@ aside {
 aside ul {
   /* Nadpisanie domyślnych styli przeglądarki */
   padding-inline-start: 1rem;
+  list-style: none;
+  padding: 0;
 }
 
 aside li {
@@ -25,9 +27,22 @@ aside li {
 aside li a {
   display: block;
   padding: 0.5rem;
+  color: rgba(35, 33, 61, 1);
+  text-decoration: none;
 }
 
-aside a.active {
-  background-color: var(--color-primary-blue);
-  color: var(--color-white);
+aside a.active,
+aside a:hover {
+  color: var(--color-red);
+}
+
+aside a:hover > svg *,
+aside a.active > svg * {
+  stroke: var(--color-red);
+}
+
+.navlink {
+  display: flex;
+  align-items: center;
+  gap: 8px;
 }
