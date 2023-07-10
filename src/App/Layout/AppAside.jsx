@@ -11,12 +11,13 @@ import { SettingIcon } from '../Components/Icons/SettingIcon';
 import { BookIcon } from '../Components/Icons/BookIcon';
 
 export function AppAside() {
+
   return (
     <aside>
       <nav>
         <ul>
           <li>
-            <NavLink to="dashboard" className="aside-row">
+            <NavLink to="dashboard" className="aside-row" >
               <div className="svg">
                 <HouseIcon />
               </div>

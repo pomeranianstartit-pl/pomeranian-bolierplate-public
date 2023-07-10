@@ -44,6 +44,7 @@ aside h5 {
 }
 aside li {
   line-height: 2rem;
+  width: 300px;
 }
 
 .aside-row {
@@ -52,20 +53,20 @@ aside li {
   align-items: center;
 }
 
-aside li a {
-  /* display: block;
-  padding: 0.5rem; */
-}
 
-aside a.active {
-  /* background-color: var(--color-primary-blue); */
-  color: red;
-}
-aside a.active svg path {
+
+aside li.active svg path {
   /* background-color: var(--color-primary-blue); */
   stroke: red;
 }
 
 svg {
   margin-right: 16px;
+}
+
+aside a.active,
+aside a:hover svg * {
+  background-color: #444078;
+  color: white;
+  stroke: white;
 }
