@@ -3,14 +3,17 @@ import React from 'react';
 import './style.css';
 
 export function Cwiczenie1() {
-  const [tekst, setTekst] = React.useState('Tutaj trafi tekst z inputa');
+  const [tekst, ustawZmiennaTekst] = React.useState(
+    'Tutaj trafi tekst z inputa'
+  );
 
-  function handleOnSubmit(event) {
-    event.preventDefault();
-    console.log(event);
-    const trescInputa = event.target[0].value;
+  function x(cos) {
+    cos.preventDefault();
+
+    console.log(cos);
+    const trescInputa = cos.target[0].value;
     console.log('Treść inputa: ', trescInputa);
-    setTekst(trescInputa);
+    ustawZmiennaTekst(trescInputa);
   }
 
   return (
@@ -20,7 +23,7 @@ export function Cwiczenie1() {
       <div>
         <div>
           <p>Wpisz tekst</p>
-          <form onSubmit={handleOnSubmit}>
+          <form onSubmit={x}>
             <input type="text" placeholder="tekst do wpisania" />
             <button type="submit">KLIKNIJ</button>
           </form>
