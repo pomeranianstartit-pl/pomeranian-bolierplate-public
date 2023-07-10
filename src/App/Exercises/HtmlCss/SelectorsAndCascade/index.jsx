@@ -1,6 +1,6 @@
 import './styles.css';
 
-export function Exercise() {
+export function SelectorsAndCascade() {
   return (
     <div>
       <div className="cwiczenie-1">
