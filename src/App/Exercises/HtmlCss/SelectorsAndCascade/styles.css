@@ -1,0 +1,63 @@
+.font-test-family {
+  font-family: Chilanka;
+}
+
+.cwiczenie-1 p {
+  color: red;
+}
+
+.cwiczenie-1 .blue {
+  color: blue;
+}
+
+.cwiczenie-1 #p-3 {
+  color: green;
+}
+
+/* --- */
+
+.cwiczenie-2 p:first-child {
+  color: red;
+}
+
+.cwiczenie-2 p:last-child {
+  color: #ddd;
+}
+
+.cwiczenie-2 p:nth-child(2) {
+  color: red;
+}
+
+.cwiczenie-2 p:nth-child(3) {
+  color: blue;
+}
+
+.cwiczenie-2 p:nth-child(4) {
+  color: green;
+}
+
+/* --- */
+
+.cwiczenie-3 h2 ~ p {
+  color: red;
+}
+
+/* --- */
+
+.cwiczenie-4 ul li:first-child {
+  color: red;
+}
+
+.cwiczenie-4 ul li:last-child {
+  color: blue;
+}
+
+/* --- */
+
+.cwiczenie-5 h2 + p {
+  color: red;
+}
+
+.cwiczenie-6 div div > p {
+  color: red;
+}
