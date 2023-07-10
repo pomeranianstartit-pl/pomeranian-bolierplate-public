@@ -15,9 +15,11 @@ font-size:10px;
 figcaption {
 text-align: right;
 font-weight: bold;
+
 }
 
 .blog-lista-linki {
     line-height: 3.0;
+    font-weight: bold;
 
 }
