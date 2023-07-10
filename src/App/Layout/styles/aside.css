@@ -34,3 +34,11 @@ aside a.active {
 aside a.active svg path {
   stroke: #fe3756;
 }
+
+aside a:hover {
+  background-color: #fe3756;
+  color: white;
+}
+aside a:hover svg * {
+  stroke: white;
+}
