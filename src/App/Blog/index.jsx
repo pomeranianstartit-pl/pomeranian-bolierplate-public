@@ -4,7 +4,7 @@ export const Blog = () => {
   return (
     <div className="blog">
       <div className="blog-post-1">
-        <data className="blog-post-data">30-11-2022</data>
+        <p className="blog-post-data">30-11-2022</p>
         <h2 className="blog-post-title">
           Why are we so nostalgic for the 1990s?
         </h2>
@@ -12,20 +12,26 @@ export const Blog = () => {
           Pop culture used to define a generation, but it seems the cultural,
           music and fashion trends of the 1990s have been recycled, and what
           Generation X considered its rite of passage into adulthood, is being
-          discovered and claimed by fledgling grown-ups as their own. There's
-          been the resurgence of vinyl as the trend-setters' choice of music
-          consumption rather than the ease of a digital download, and now the
-          hipsters have discovered the nostalgic sound of a whirring cassette
-          from which to enjoy the dulcet tones of everyone from Salt-N-Pepa to
-          Rick Astley.
+          discovered and claimed by fledgling grown-ups as their own.
+          <p>
+            <br />
+            There's been the resurgence of vinyl as the trend-setters' choice of
+            music consumption rather than the ease of a digital download, and
+            now the hipsters have discovered the nostalgic sound of a whirring
+            cassette from which to enjoy the dulcet tones of everyone from
+            Salt-N-Pepa to Rick Astley.
+          </p>
         </p>
         <br></br>
-        <p>Radosława Majdan</p>
-        <p>Senior Marketing Specialist</p>
+        <p>
+          <strong>Radosława Majdan </strong>
+          <br />
+          Senior Marketing Specialist
+        </p>
       </div>
 
       <div className="blog-post-2">
-        <data className="blog-post-data">30-11-2022</data>
+        <p className="blog-post-data">30-11-2022</p>
         <h2 className="blog-post-title">I make mistakes!</h2>
         <blockquote>
           “I’m selfish, impatient and a little insecure. I make mistakes, I am
@@ -34,12 +40,15 @@ export const Blog = () => {
         </blockquote>
         <figcaption>Marlin Monroe</figcaption>
         <br></br>
-        <p>Radosława Majdan</p>
-        <p>Senior Marketing Specialist</p>
+        <p>
+          <strong>Radosława Majdan </strong>
+          <br />
+          Senior Marketing Specialist
+        </p>
       </div>
 
       <div className="blog-post-3">
-        <data className="blog-post-data">30-11-2022</data>
+        <p className="blog-post-data">30-11-2022</p>
         <h2 className="blog-post-title">
           18 Record-Breaking, Controversial, and Weird Facts{' '}
         </h2>
@@ -53,7 +62,7 @@ export const Blog = () => {
           scandals.
         </p>
         <br></br>
-        <ul>
+        <ul className="blog-lista-linki">
           <li>
             <a href="https://wp.pl/">WP.PL 1</a>
           </li>
@@ -65,8 +74,11 @@ export const Blog = () => {
           </li>
         </ul>
         <br></br>
-        <p>Radosława Majdan</p>
-        <p>Senior Marketing Specialist</p>
+        <p>
+          <strong>Radosława Majdan </strong>
+          <br />
+          Senior Marketing Specialist
+        </p>
       </div>
     </div>
   );
