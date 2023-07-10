@@ -35,7 +35,7 @@
   gap: 1rem;
   background: #23213d;
   font-family: Poppins;
-  font-size: 18px;
+  font-size: 22px;
   font-weight: 500;
   line-height: 31px;
   letter-spacing: 0em;
@@ -44,8 +44,8 @@
 }
 
 .gameButtonsRows button:hover{
-  background: #fe375868;
-  border-color: #fe375868;
+  background: #fe3756;
+  border-color: #fe3756;
 }
 .gameButtonsRows button:active {
   background: #fe3756;
@@ -65,11 +65,62 @@
     justify-content: center;
     align-items: center; 
 }
-#spangbob{
+#mink{
   background-color: aqua;
   height: 100px;
   width: 100px;
   padding-top: 20px;
   padding-left: 5px;
   border: 1px solid black;
+}
+
+.timeAndScore{
+  padding: 1.25rem 2.2rem 1.25rem 2.2rem;
+  margin: 1rem;
+  border-radius: 0.5rem;
+  border-color: #EBEBEB;
+  border: 1px;
+  gap: 1rem;
+  background: #EBEBEB;
+  font-family: Poppins;
+  font-size: 22px;
+  font-weight: 500;
+  line-height: 31px;
+  letter-spacing: 0em;
+  text-align: center;
+  color: rgb(0, 0, 0);
+  width: 15rem;
+}
+.container {
+  display: grid; 
+  grid-auto-columns: 1fr; 
+  grid-auto-rows: 1fr; 
+  grid-template-columns: 1fr 3fr; 
+  grid-template-rows: 1fr 1fr 1fr; 
+  gap: 10px;
+}
+.stopBottom button{
+  padding: 1.25rem 2.2rem 1.25rem 2.2rem;
+  margin: 1rem;
+  border-radius: 0.5rem;
+  border-color: #23213d;
+  border: 1px;
+  gap: 1rem;
+  background: #23213d;
+  font-family: Poppins;
+  font-size: 22px;
+  font-weight: 500;
+  line-height: 31px;
+  letter-spacing: 0em;
+  text-align: center;
+  color: white;
+  width: 15rem;
+  
+}
+.stopBottom button:hover{
+  background: #fe3756;
+  border-color: #fe3756;
+}
+.container .item{
+  padding-top: 1rem;
 }
