@@ -49,9 +49,6 @@
   background: #fe3756;
   border-color: #fe3756;
 }
-/* .gameButtonsRows button.activeButton {
-    background-color: aquamarine;
-  } */
 
 .moleGame .board {
   display: grid;
@@ -63,6 +60,11 @@
   height: 400px;
   margin-top: 100px;
   margin-left: 255px;
+  
+}
+
+.moleGame .board-score {
+  font-weight: bold;
 }
 
 .moleGame .board .square {
@@ -73,6 +75,7 @@
   align-items: center;
 }
 
-.moleGame .board-score {
+
+.moleGameOptions .instructions {
   font-weight: bold;
 }
