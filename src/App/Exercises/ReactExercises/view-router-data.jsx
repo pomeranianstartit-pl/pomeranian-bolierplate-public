@@ -4,6 +4,7 @@ import { SubRouteExampleMetaData } from './SubRouteExample/router-data';
 
 import { routerMetaData as IfStatementsMetaData } from './IfStatements/router-data';
 import { routerMetaData as IfStatementsMoreOrLess } from './IfStatementsMoreOrLess/router-data';
+import { routerMetaData as WhatNumberAmI } from './WhatNumberAmI/router-data';
 
 export const blockRouterMetaData = [
   SubRouteExampleMetaData,
