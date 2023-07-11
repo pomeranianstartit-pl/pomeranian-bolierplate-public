@@ -10,6 +10,7 @@ import { blockRouterMetaData as JsArraysBasics } from './JsArraysBasics/router-d
 import { blockRouterMetaData as ExerciseJsFunctions } from './ExerciseJsFunctions/router-data';
 import { blockRouterMetaData as Time } from './Time/router-data';
 import { HitTheMoleGameMetaData } from './HitTheMoleGame/router-data';
+import { MemoGameMetaData } from './MemoGame/router-data';
 // import { blockRouterMetaData as HitTheMoleGame } from './HitTheMoleGame/router-data';
 
 
@@ -25,5 +26,6 @@ export const blockRouterMetaData = [
   Time,
   // HitTheMoleGame,
   HitTheMoleGameMetaData,
+  MemoGameMetaData
 ];
 export const blockRouterData = getParsedRouterDataList(blockRouterMetaData);
