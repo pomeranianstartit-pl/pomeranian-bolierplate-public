@@ -4,7 +4,7 @@ import { Routes, Route, BrowserRouter, Navigate } from 'react-router-dom';
 import { NotFound } from './App/Components/NotFound/NotFound';
 
 import { Layout } from './App/Layout';
-import { Blog } from './App/Components/Blog';
+import { Blog } from '.App/Components/Blog/Blog';
 import { Dashboard } from './App/Dashboard';
 import { Exercises } from './App/Exercises';
 import { MojeCV } from './App/Components/MojeCV';
