@@ -7,6 +7,7 @@ import { Blocks } from './App/Blocks';
 import { Layout } from './App/Layout';
 import { Dashboard } from './App/Dashboard';
 import { Exercises } from './App/Exercises';
+import { Blog } from '.?App/Blog/Blog';
 
 export function App() {
   return (
