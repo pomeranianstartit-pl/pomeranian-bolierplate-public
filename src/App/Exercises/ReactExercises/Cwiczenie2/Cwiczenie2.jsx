@@ -2,9 +2,9 @@ import React from 'react';
 
 import './style.css';
 
-export function Cwiczenie1() {
+export function Cwiczenie2() {
   const [tekst, setTekst] = React.useState(
-    'Placeholder Tutaj trafi tekst z inputa'
+    'PlaceholderTutaj trafi tekst z inputa'
   );
   function handleOnSubmit(event) {
     event.preventDefault();
@@ -19,22 +19,11 @@ export function Cwiczenie1() {
   }
 
   return (
-    <div className="blok-8__cwiczenie-1">
+    <div className="Czesc">
       <h1>Cześć!</h1>
-
       <div>
-        <div>
-          <p>Wpisz tekst</p>
-
-          <form onSubmit={handleOnSubmit}>
-            <input type="text" placeholder="tekst do wpisania" />
-
-            <button type="submit">KLIKNIJ</button>
-          </form>
-        </div>
-
-        <div>
-          <p>{tekst}</p>
+        <div className="button">
+          <button type="">KLIKNIĘTO MNIE 0 RAZY</button>
         </div>
       </div>
     </div>

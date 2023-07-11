@@ -8,9 +8,8 @@ export function AppHeader() {
   return (
     <header>
       <div>
-        
         <Logo />
-        <div className="header-title">Witaj nagłówku</div>
+        <div className="header-title">Joanna</div>
       </div>
     </header>
   );
