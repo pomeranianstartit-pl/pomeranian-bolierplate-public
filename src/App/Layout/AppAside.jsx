@@ -30,6 +30,9 @@ export function AppAside() {
             <CalendarIcon />
             <NavLink to="Calendar">Calendar</NavLink>
           </li>
+          <li className="aside-row">
+            <NavLink to="Blog">Blog</NavLink>
+          </li>
         </ul>
       </nav>
       <p style={{ padding: '1rem 0' }}>Sidebar items, widgets, etc</p>
