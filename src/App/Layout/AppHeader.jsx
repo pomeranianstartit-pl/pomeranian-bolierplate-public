@@ -9,7 +9,7 @@ export function AppHeader() {
       <div>
         {/* <Logo></Logo> */}
         <Logo/>
-        <div className="header-title">Witaj nagłówku!</div>
+        <div className="header-title"></div>
       </div>
     </header>
   );
