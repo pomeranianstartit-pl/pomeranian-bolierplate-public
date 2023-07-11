@@ -17,16 +17,16 @@ hr {
   border-radius: 8px;
   background: var(--secondary-secondary, #23213d);
   transition: transform .5s ease;
-  /* color: white; */
+  color: white;
 }
 
-.blog-post:nth-of-type(1) > .blog-header,
+/* .blog-post:nth-of-type(1) > .blog-header,
 .blog-post:nth-of-type(1) > .blog-date,
 .blog-post:nth-of-type(1) > .blog-content,
 .blog-post:nth-of-type(1) > .author,
 .blog-post:nth-of-type(1) > .rank {
   color: white;
-}
+} */
 
 
 
@@ -48,7 +48,6 @@ div .blog-post {
 
 .blog-header {
   margin: 10px 0;
-
   font-size: 42px;
   font-style: normal;
   font-weight: 800;
@@ -80,7 +79,7 @@ div .blog-post {
 
 p.author {
   margin-top: 32px;
-  color: var(--text-text-secondary, rgba(34, 34, 34, 0.8));
+
   font-size: 18px;
   font-style: normal;
   font-weight: 700;
@@ -88,7 +87,7 @@ p.author {
 }
 
 p.rank {
-  color: var(--text-text-secondary, rgba(34, 34, 34, 0.8));
+
   font-size: 16px;
   font-style: normal;
   font-weight: 400;
@@ -96,7 +95,7 @@ p.rank {
 }
 
 .blog-content {
-  color: var(--text-text-primary, #222);
+
   font-size: 16px;
   font-style: normal;
   font-weight: 400;
@@ -104,7 +103,6 @@ p.rank {
 }
 
 p.cytat {
-  color: var(--text-text-primary, #222);
   font-family: Poppins;
   font-size: 16px;
   font-style: italic;
@@ -113,7 +111,7 @@ p.cytat {
 }
 
 .quote-author {
-  color: var(--text-text-primary, #222);
+
   text-align: right;
   font-size: 14px;
   font-style: normal;
@@ -122,7 +120,7 @@ p.cytat {
 }
 
 li {
-  color: var(--text-text-primary, #222);
+
   font-size: 14px;
   font-style: normal;
   font-weight: 400;
