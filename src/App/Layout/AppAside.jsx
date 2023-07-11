@@ -15,46 +15,52 @@ export function AppAside() {
           <li>
             <NavLink to="dashboard">
               <div className="aside-row">
-                 <HouseIcon/>
-                 Dashboard
+                <HouseIcon />
+                Dashboard
               </div>
             </NavLink>
           </li>
           <li>
             <NavLink to="CV">
               <div className="aside-row">
-                <PersonalCardIcon/>
+                <PersonalCardIcon />
                 {/* <span>CV</span> Propozycja */}
                 CV
               </div>
-            </NavLink> 
+            </NavLink>
           </li>
           <li>
-          <NavLink to="exercises">
+            <NavLink to="exercises">
               <div className="aside-row">
-                <EditIcon/>
+                <EditIcon />
                 Ćwiczenia
               </div>
-            </NavLink> 
+            </NavLink>
           </li>
           <li>
-          <NavLink to="Calendar">
+            <NavLink to="Calendar">
               <div className="aside-row">
-                <CalendarIcon/>
+                <CalendarIcon />
                 <span>Kalendarz</span>
               </div>
-            </NavLink> 
-            </li>
+            </NavLink>
+          </li>
           <li>
-          <NavLink to="block">
+            <NavLink to="blocks">
               <div className="aside-row">
-                <ElementIcon/>
+                <ElementIcon />
+                Blocks
+              </div>
+            </NavLink>
+          </li>
+          <li>
+            <NavLink to="blog">
+              <div className="aside-row">
+                <ElementIcon />
                 Blog
               </div>
-            </NavLink> 
-            </li>
-         
-          
+            </NavLink>
+          </li>
         </ul>
       </nav>
       <p style={{ padding: '1rem 0' }}>Sidebar items, widgets, etc</p>

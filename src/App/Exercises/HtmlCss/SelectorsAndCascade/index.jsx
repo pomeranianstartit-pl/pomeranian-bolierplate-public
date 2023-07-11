@@ -1,6 +1,7 @@
 import './styles.css';
 
-export function Exercise() {
+
+export function SelectorsAndCascade() {
   return (
     <div>
       <div className="cwiczenie-1">
@@ -53,7 +54,6 @@ export function Exercise() {
         <div>
           <p>div p 1</p>
           <p>div p 2</p>
-
           <div>
             <p>div div p 1</p>
           </div>
