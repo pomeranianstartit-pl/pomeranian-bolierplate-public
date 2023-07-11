@@ -1,9 +1,22 @@
 .blog-post {
   padding: 45px 61px 45px 61px;
-  margin: 10px 0;
+  margin: 10px 0 50px;
   background-color: rgba(244, 245, 247, 1);
   color: rgba(34, 34, 34, 1);
   border-radius: 8px;
+  -webkit-box-shadow: 21px 21px 60px -22px rgba(66, 68, 90, 1);
+  -moz-box-shadow: 21px 21px 60px -22px rgba(66, 68, 90, 1);
+  box-shadow: 21px 21px 60px -22px rgba(66, 68, 90, 1);
+  cursor: pointer;
+}
+
+.blog-post:nth-of-type(1) {
+  background-color: rgba(35, 33, 61, 1);
+  color: #fff;
+}
+
+.blog-post:hover {
+  transform: scale(1.01);
 }
 
 .blog-post-date {
