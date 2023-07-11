@@ -1,5 +1,6 @@
 import './styles.css';
 
+
 export function SelectorsAndCascade() {
   return (
     <div>
@@ -50,7 +51,6 @@ export function SelectorsAndCascade() {
         <p>Paragraf 2</p>
         <p>Paragraf 3</p>
         <p>Paragraf 4</p>
-
         <div>
           <p>div p 1</p>
           <p>div p 2</p>

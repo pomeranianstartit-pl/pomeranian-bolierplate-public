@@ -1,5 +1,4 @@
 import React from 'react';
-
 import { SelectorsAndCascade } from './index';
 
 export const blockRouterMetaData = {
@@ -9,4 +8,5 @@ export const blockRouterMetaData = {
   blockNo: 1,
   element: <SelectorsAndCascade />,
   tags: ['flex', 'grid', 'video'],
+
 };
