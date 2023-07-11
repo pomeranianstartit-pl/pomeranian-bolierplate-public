@@ -8,6 +8,19 @@
   border-radius: 8px;
   background: var(--gray-80, #f4f5f7);
   margin: 34px;
+  -webkit-box-shadow: 1px 3px 20px -3px rgba(66, 68, 90, 0.51);
+  -moz-box-shadow: 1px 3px 20px -3px rgba(66, 68, 90, 0.51);
+  box-shadow: 1px 3px 20px -3px rgba(66, 68, 90, 0.51);
+}
+
+.blog-poste:nth-child(1) {
+  background-color: #23213d;
+  color: white;
+}
+
+.blog-poste:hover {
+  cursor: pointer;
+  transform: scale(1.02);
 }
 
 #blog-poste-date {
