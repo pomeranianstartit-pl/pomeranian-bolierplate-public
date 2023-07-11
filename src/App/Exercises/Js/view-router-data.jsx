@@ -12,6 +12,7 @@ import { TimeMetaData } from './Time/router-data';
 import { Time2MetaData } from './Time2/router-data';
 import { Banner6MetaData } from './Banner/router-data';
 import { Time3MetaData } from './Time3/router-data';
+import { HitTheMoleGameMetaData } from './HitTheMoleGame/router-data';
 
 export const blockRouterMetaData = [
   blockRouterMetaDataJsFunction1,
@@ -25,7 +26,8 @@ export const blockRouterMetaData = [
   TimeMetaData,
   Time2MetaData,
   Time3MetaData,
-  Banner6MetaData
+  Banner6MetaData,
+  HitTheMoleGameMetaData
 ];
 
 export const blockRouterData = getParsedRouterDataList(blockRouterMetaData);
