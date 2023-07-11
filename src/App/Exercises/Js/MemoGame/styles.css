@@ -52,21 +52,36 @@
   background-color:aqua;
 }
 
-.moleGame .board {
+.memoGame .board {
   display: grid;
   grid-template-columns: repeat(5, 1fr);
   grid-template-rows: repeat(2, 1fr);
   border-radius: 5px solid #EBEBEB;
   gap: 9px;
   max-width: 800px;
-  height: 500px;
-
+  height: 500px; 
 }
 
-.moleGame .board .square {
+/* .moleGame .board .square {
   display: flex;
   border-radius: 8px;
   background-color: #EBEBEB;
   justify-content: center;
   align-items: center;
 }
+
+/* .memoOptionsButtons {
+  width: 100%;
+  height: 100%;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(4, 1fr);
+  grid-column-gap: 5px;
+  grid-row-gap: 5px;
+  grid-template-rows: auto 3fr;
+  grid-template-columns: 2fr 4fr;
+}
+
+.memoButtonsRows {
+  grid-area: 1 / 1 / 5 / 5;
+} */

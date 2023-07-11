@@ -1,34 +1,36 @@
-// import React, { useState, useEffect } from 'react';
-// import Mole from '../../../Images/Mole.svg';
-// import './styles.css';
+import React, { useState, useEffect } from 'react';
+import './styles.css';
 
-// export const MoleGameBoard = ({ moleArray, hitTheMole, score }) => {
+export const MemoGameBoard = ({ memoArray, hitTheMole, score }) => {
 
-//     return (
-//        <div className="moleGame">
-//        <div>
-//           <h4> WYNIK: {score}</h4>
-//           </div>
-//           <h4>PRZYCISKI STRUJĄCE</h4>
+  return (
+     <div className="memoGame">
+     <div>
+        <h4> LICZBA RUCHÓW</h4>
+        </div>
+        <h4>PRZYCISKI STRUJĄCE</h4>
 
-//          <div className="board">
-//         {moleArray.map((mole, index) => {
-//           return (
-//             <div className="square">
-//              <span>
-//                         {mole.isVisible ? (
-//                              <img src={Mole} 
-//                              onClick={() => hitTheMole(index)} 
-//                              alt="MOLE"
-//                              />
-//                         ) : null}
-//                     </span>
-//             </div>
-//           );
-//         })}
-//       </div>
-//     </div>
-//   );
-//     };
+       <div className="board">
+      {/* {memoArray.map((memo, index) => {
+        return ( */}
+        <div key ={index}>
+          <span onClick
+        </div>
+          {/* // <div className="square"> */}
+           {/* <span>
+                      {mole.isVisible ? (
+                           <img src={Mole} 
+                           onClick={() => hitTheMole(index)} 
+                           alt="MOLE"
+                           />
+                      ) : null}
+                  </span> */}
+          {/* </div> */}
+      {/* //   );
+      // })} */}
+    </div>
+  </div>
+);
+  };
 
-//     export default MoleGameBoard;
+  export default MemoGameBoard;
