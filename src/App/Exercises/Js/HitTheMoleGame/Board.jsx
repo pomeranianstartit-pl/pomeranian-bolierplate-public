@@ -5,7 +5,7 @@ import './styles.css';
 const MoleGameBoard = ({moleArray, hitTheMole, scoreCount}) => {
     return (
         <div className="moleGame">
-        <h4>czas do końca</h4>
+        <div>CZAS DO KOŃCA</div>
         <div>
             WYNIK 
             <button> {scoreCount}</button>{' '}

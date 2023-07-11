@@ -22,6 +22,9 @@ const Exercise = () => {
     const [scoreCount, setScoreCount] = useState(0);
     const [moleArray, setMoleArray] = useState(Array(10).fill({ isVisible: false, isWhacked: false }));
     const [gameStarted, setGameStarted] = useState(false);
+    const [gameStoped, setGameStoped] = useState(false);
+    const [timer, setTimer] = useState(gameTime / 1000)
+
     const [countdown, setCountdown] = useState(seconds);    
     useEffect(() => {
         setSeconds(gameTime / 1000);
@@ -36,7 +39,8 @@ const Exercise = () => {
                 setCountdown((prevCountdown) => prevCountdown - 1);
                 console.log(countdown);
             }, 1000);
-        }
+            
+        } if (countdown <= 0) clearInterval(interval) 
         return () => {
             clearInterval(interval);
         };
@@ -44,19 +48,6 @@ const Exercise = () => {
         
     }, [seconds, gameStarted]);
     
-    // useEffect(() => {
-
-    //     let intervalId;
-
-    //     if (!intervalId) {
-    //         intervalId = setInterval(() => {
-    //             setSeconds(seconds - 1);
-    //         }, 1000);
-    //     }
-    //     console.log(seconds.toString().padStart(2, 0));
-    //     return () => clearInterval(intervalId);
-    // }, [seconds]);
-
     useEffect(() => {
 
         let intervalId;
@@ -69,6 +60,28 @@ const Exercise = () => {
         console.log(seconds.toString().padStart(2, 0));
         return () => clearInterval(intervalId);
     }, [seconds]);
+
+        // useEffect(() => {
+        //     setScoreCount(scoreCount)
+        //     if (gameStarted) {
+        //       let interval;
+        //       if (!interval) {
+        //           interval = setInterval(() =>
+                  
+        //       } if (scoreCount <= 20) clearInterval(interval) 
+        //       return () => {
+        //           clearInterval(interval);
+        //       };
+        //     }
+              
+        //   }, [scoreCount, gameStarted]);
+
+        // const formatTime = ($) => {
+        //     let mins = Math.floor(s/60);
+        //     let secs = s % 60;
+        //     return `${mins} : ${secs}`
+        // }
+    
 
 
     function hitTheMole(index) {
@@ -83,6 +96,8 @@ const Exercise = () => {
             });
         }
     }
+
+    
 
     function showRandomMole () {
         function getRandomIntInclusive(min, max) {
@@ -119,6 +134,7 @@ const Exercise = () => {
             moleArray={moleArray} 
             hitTheMole={hitTheMole} 
             scoreCount={scoreCount} 
+            timer={timer}
             />
             ) : null}
 

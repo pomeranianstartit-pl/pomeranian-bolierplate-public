@@ -40,6 +40,7 @@ const MoleGameSettings = ({
     return (
       <div className="moleGameOptions">
         {' '}
+        <h4>KRET</h4>
         <p>
           Gra polegająca na podążaniu za krecikiem i trafieniu na kwadrat, w
           którym się pojawił.
