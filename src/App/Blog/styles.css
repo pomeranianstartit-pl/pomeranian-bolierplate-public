@@ -13,7 +13,7 @@
   box-shadow: 1px 3px 20px -3px rgba(66, 68, 90, 0.51);
 }
 
-.blog-poste:nth-child(1) {
+.first {
   background-color: #23213d;
   color: white;
 }

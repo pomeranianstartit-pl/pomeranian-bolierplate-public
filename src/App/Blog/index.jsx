@@ -3,7 +3,7 @@ import './styles.css';
 export const Blog = () => {
   return (
     <div>
-      <div className="blog-poste">
+      <div className="blog-poste first">
         <p id="blog-poste-date">01-07-2023</p>
         <h2>Why are we so nostalgic for the 1990s?</h2>
         <div>
