@@ -4,6 +4,7 @@ font-family: "MADE TOMMY", sans-serif;
 padding:45px 61px;
 width: 800px;
 text-align: justify;
+cursor:pointer;
 
 
 }
@@ -33,5 +34,17 @@ color: green
 div.blog-post-1, div.blog-post-2, div.blog-post-3{
 background-color: #F4F5F7;
 border-radius: 8px;
+padding: 20px;
+margin: 20px;
+-webkit-box-shadow: -19px 10px 49px -1px rgba(66, 68, 90, 1);
+-moz-box-shadow: -19px 10px 49px -1px rgba(66, 68, 90, 1);
+box-shadow: -19px 10px 49px -1px rgba(66, 68, 90, 1);
 }
 
+.blog-post-1:nth-of-type(1){
+    background-color: rgb(35, 33, 61, 1);
+    color:#F4F5F7;
+}
+div.blog-post-1:hover, div.blog-post-2:hover, div.blog-post-3:hover {
+    transform:scale(1.1);
+}
