@@ -3,6 +3,7 @@ import './styles.css';
 export const Blog = () => {
   return (
     <div className="blog">
+      <a href="http://localhost:3000/blog">-Blog </a>
       <div className="blog-post-1">
         <p className="blog-post-data">30-11-2022</p>
         <h2 className="blog-post-title">
@@ -33,18 +34,20 @@ export const Blog = () => {
       <div className="blog-post-2">
         <p className="blog-post-data">30-11-2022</p>
         <h2 className="blog-post-title">I make mistakes!</h2>
-        <blockquote>
-          “I’m selfish, impatient and a little insecure. I make mistakes, I am
-          out of control and at times hard to handle. But if you can’t handle me
-          at my worst, then you sure as hell don’t deserve me at my best.”
-        </blockquote>
-        <figcaption>Marlin Monroe</figcaption>
-        <br></br>
-        <p>
-          <strong>Radosława Majdan </strong>
-          <br />
-          Senior Marketing Specialist
-        </p>
+        <div className="blog-post-cytat">
+          <blockquote>
+            “I’m selfish, impatient and a little insecure. I make mistakes, I am
+            out of control and at times hard to handle. But if you can’t handle
+            me at my worst, then you sure as hell don’t deserve me at my best.”
+          </blockquote>
+          <figcaption>Marlin Monroe</figcaption>
+          <br></br>
+          <p>
+            <strong>Radosława Majdan </strong>
+            <br />
+            Senior Marketing Specialist
+          </p>
+        </div>
       </div>
 
       <div className="blog-post-3">

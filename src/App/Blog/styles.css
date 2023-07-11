@@ -5,6 +5,7 @@ padding:45px 61px;
 width: 800px;
 text-align: justify;
 
+
 }
 .blog-post-data {
 margin-top: 40px;
@@ -24,3 +25,8 @@ line-height: 27px;
     font-weight: bold;
 
 }
+
+div.blog-post-1, div.blog-post-2, div.blog-post-3{
+background-color: #F4F5F7;
+}
+
