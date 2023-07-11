@@ -1,0 +1,10 @@
+.font-poppins {
+    font-family: 'Poppins', sans-serif;
+}
+.font-lato {
+    font-family: 'Lato', sans-serif;
+}
+
+button {
+    margin: 0 20px;
+}
