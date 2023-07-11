@@ -16,6 +16,8 @@ hr {
 .blog-post:nth-of-type(1) {
   border-radius: 8px;
   background: var(--secondary-secondary, #23213d);
+  transition: transform .5s ease;
+  /* color: white; */
 }
 
 .blog-post:nth-of-type(1) > .blog-header,
@@ -24,6 +26,13 @@ hr {
 .blog-post:nth-of-type(1) > .author,
 .blog-post:nth-of-type(1) > .rank {
   color: white;
+}
+
+
+
+.blog-post:hover {
+  cursor: pointer;
+  transform: scale(1.01);
 }
 
 div .blog-post {
@@ -39,14 +48,14 @@ div .blog-post {
 
 .blog-header {
   margin: 10px 0;
-  color: var(--text-text-primary, #222);
+
   font-size: 42px;
   font-style: normal;
   font-weight: 800;
   line-height: 56px;
 }
 .blog-date {
-  color: var(--text-text-primary, #222);
+
   /* OVERLINE/Overline */
   font-size: 10.5px;
   font-style: normal;
@@ -58,6 +67,7 @@ div .blog-post {
 
 .blog-quote {
   margin: 0;
+  padding: 10px 0px;
   quotes: '"' '"';
 }
 
@@ -121,7 +131,7 @@ li {
   margin: 29px 0;
 }
 
-.blog-links a{
+.blog-links a {
   text-decoration: none;
   color: black;
 }
