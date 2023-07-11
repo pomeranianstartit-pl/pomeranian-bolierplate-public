@@ -22,5 +22,10 @@ main {
   flex-direction: column;
   flex: 1;
   padding: 1.5rem;
-  margin-left: 70px;
+  margin-left: 120px;
 }
+
+aside {
+  grid-area: sidebar;
+}
+
