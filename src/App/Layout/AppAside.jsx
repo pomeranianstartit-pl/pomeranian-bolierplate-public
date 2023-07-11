@@ -5,7 +5,7 @@ import { HouseIcon } from '../Components/Icons/HouseIcon';
 import { CalendarIcon } from '../Components/Icons/CalendarIcon';
 import { PersonalCardIcon } from '../Components/Icons/PersonalCardIcon';
 import { EditIcon } from '../Components/Icons/EditIcon';
-git;
+
 export function AppAside() {
   return (
     <aside>
