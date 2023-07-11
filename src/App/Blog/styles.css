@@ -1,0 +1,37 @@
+.blog {
+margin-bottom: 40px;
+font-family: "MADE TOMMY", sans-serif;
+padding:45px 61px;
+width: 800px;
+text-align: justify;
+
+
+}
+.blog-post-data {
+margin-top: 40px;
+margin-bottom: 40px;
+font-size:10px;
+}
+
+figcaption {
+text-align: right;
+font-weight: bold;
+line-height: 27px;
+width:100%
+}
+
+.blog-lista-linki {
+    line-height: 3.0;
+    font-weight: bold;
+}
+.blog-lista-linki > li > a:visited{
+color: green
+}
+
+
+
+div.blog-post-1, div.blog-post-2, div.blog-post-3{
+background-color: #F4F5F7;
+border-radius: 8px;
+}
+
