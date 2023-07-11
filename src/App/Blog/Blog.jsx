@@ -4,7 +4,7 @@ import './styles.css';
 export const Blog = () => {
   
   
-  return <div>\
+  return <div>
 
 <div className='blog-post-1'>
           
