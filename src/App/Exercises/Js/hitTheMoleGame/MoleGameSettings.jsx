@@ -5,6 +5,8 @@ export const MoleGameSettings = ({
   setGameTime,
   moleCount,
   setMoleCount,
+  startStopGame,
+  gameStarted,
 }) => {
   const gameTimeOption = [
     { label: '1 minuta', timeValue: 1 * 60 }, //gameTime podawany w sekundach - licznik robi krok co sekundę
@@ -17,7 +19,7 @@ export const MoleGameSettings = ({
     { label: '2 krety' },
     { label: '3 krety' },
   ];
-  console.log(gameTime);
+
   return (
     <div className="moleGameOptions">
       <p>
@@ -28,7 +30,7 @@ export const MoleGameSettings = ({
       <div className="gameOptionsButtons">
         <div className="gameButtonsRows">
           <div>
-            <h4>CZAS GRY</h4>
+            <h4>CZAS GRY {gameTime}</h4>
             {gameTimeOption.map(({ label, timeValue }) => (
               <button
                 className={gameTime === timeValue ? 'activeButton' : ''}
@@ -53,7 +55,9 @@ export const MoleGameSettings = ({
           </div>
           <div>
             <h4>PRZYCISKI STERUJĄCE</h4>
-            <button>START</button>
+            <button onClick={startStopGame}>
+              {gameStarted ? 'STOP' : 'START'}
+            </button>
           </div>
         </div>
       </div>
