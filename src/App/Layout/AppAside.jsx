@@ -49,7 +49,7 @@ export function AppAside() {
             </NavLink>
           </li>
           <li>
-            <NavLink to="blocks" className="aside-row">
+            <NavLink to="blog" className="aside-row">
               <div className="svg">
                 <BookIcon />
               </div>

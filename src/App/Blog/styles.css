@@ -1,0 +1,135 @@
+.blog-post {
+  font-family: MADE TOMMY;
+}
+
+p {
+  margin: 0;
+  padding: 0;
+}
+
+hr {
+  clear: both;
+  visibility: hidden;
+  margin: 20px 0;
+}
+
+.blog-post:nth-of-type(1) {
+  border-radius: 8px;
+  background: var(--secondary-secondary, #23213d);
+}
+
+.blog-post:nth-of-type(1) > .blog-header,
+.blog-post:nth-of-type(1) > .blog-date,
+.blog-post:nth-of-type(1) > .blog-content,
+.blog-post:nth-of-type(1) > .author,
+.blog-post:nth-of-type(1) > .rank {
+  color: white;
+}
+
+div .blog-post {
+  padding: 45px 61px;
+  margin-bottom: 34px;
+  background-color: #f4f5f7;
+  border-radius: 8px;
+  /* xl */
+  box-shadow: 0px 65px 30px 0px rgba(0, 0, 0, 0.01),
+    0px 8px 20px 0px rgba(0, 0, 0, 0.04), 0px 17px 35px 0px rgba(0, 0, 0, 0.05),
+    0px -4px 26px 0px rgba(0, 0, 0, 0.08);
+}
+
+.blog-header {
+  margin: 10px 0;
+  color: var(--text-text-primary, #222);
+  font-size: 42px;
+  font-style: normal;
+  font-weight: 800;
+  line-height: 56px;
+}
+.blog-date {
+  color: var(--text-text-primary, #222);
+  /* OVERLINE/Overline */
+  font-size: 10.5px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: 1.68px;
+  text-transform: uppercase;
+}
+
+.blog-quote {
+  margin: 0;
+  quotes: '"' '"';
+}
+
+.blog-quote::before {
+  content: open-quote;
+}
+.blog-quote::after {
+  content: close-quote;
+}
+
+p.author {
+  margin-top: 32px;
+  color: var(--text-text-secondary, rgba(34, 34, 34, 0.8));
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 32px;
+}
+
+p.rank {
+  color: var(--text-text-secondary, rgba(34, 34, 34, 0.8));
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px;
+}
+
+.blog-content {
+  color: var(--text-text-primary, #222);
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 27px;
+}
+
+p.cytat {
+  color: var(--text-text-primary, #222);
+  font-family: Poppins;
+  font-size: 16px;
+  font-style: italic;
+  font-weight: 400;
+  line-height: 27px;
+}
+
+.quote-author {
+  color: var(--text-text-primary, #222);
+  text-align: right;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 22px;
+}
+
+li {
+  color: var(--text-text-primary, #222);
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 22px;
+  text-decoration-line: underline;
+  margin: 29px 0;
+}
+
+.blog-links a{
+  text-decoration: none;
+  color: black;
+}
+
+.blog-links a:visited {
+  color: green;
+}
+
+.wp-link a {
+  font-weight: bold;
+}
