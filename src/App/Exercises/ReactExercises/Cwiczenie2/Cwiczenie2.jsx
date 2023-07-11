@@ -15,7 +15,7 @@ export function Cwiczenie2() {
       <h1>Cześć!</h1>
 
       <button type="button" onClick={handleOnClick}>
-        Kliknięto mnie {klikniec} razy
+        Kliknięto mnie {klikniec} razy!!!
       </button>
     </div>
   );
