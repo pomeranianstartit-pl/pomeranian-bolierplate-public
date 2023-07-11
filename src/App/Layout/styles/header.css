@@ -16,6 +16,10 @@ header > a:first-of-type {
 header.header-title {
   color: var(--color-grey);
   font-weight: normal;
+  text-align: left;
+  
+  
+  
 }
 
 header .logo {
