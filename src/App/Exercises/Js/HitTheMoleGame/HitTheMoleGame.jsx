@@ -11,6 +11,7 @@ export function HitTheMoleGame() {
   const [isCountingDown, setIsCountingDown] = useState(false);
   const [score, setScore] = useState(0);
   const [highScore, setHighScore] = useState(0);
+  const [startTime, setStartTime] = useState(gameTime);
   const [moleArray, setMoleArray] = useState(
     Array(10).fill({ isVisible: false, isWhacked: false })
   );
@@ -21,25 +22,35 @@ export function HitTheMoleGame() {
     if (isCountingDown) {
       intervalId = setInterval(() => {
         setSeconds((prevSeconds) => (prevSeconds > 0 ? prevSeconds - 1 : 0));
-
       }, 1000);
     }
 
     if (seconds === 0) {
       clearInterval(intervalId);
       setIsCountingDown(false);
+      setSeconds(startTime / 1000);
     }
     return () => {
       clearInterval(intervalId);
     };
-  }, [isCountingDown, seconds]);
+  }, [isCountingDown, seconds, startTime]);
 
-  const generatMole = () => {
-    const rand = Math.floor(Math.random() * 10);
+  const generatMole = (moleCount) => {
+    let indexMoleRandomArry = [];
+    for (let i = 0; i < moleCount; i++) {
+      const rand = Math.floor(Math.random() * 10);
+      if (indexMoleRandomArry.includes(rand)) {
+        --i;
+        console.log(`${indexMoleRandomArry} oraz i wynosi ${i}`);
+      } else {
+        indexMoleRandomArry.push(rand);
+      }
+    }
+
     setMoleArray((prevMoleArray) =>
       prevMoleArray.map((mole, index) => ({
         ...mole,
-        isVisible: index === rand,
+        isVisible: indexMoleRandomArry.includes(index),
       }))
     );
   };
@@ -49,14 +60,14 @@ export function HitTheMoleGame() {
 
     if (isCountingDown) {
       intervalId = setInterval(() => {
-        generatMole();
+        generatMole(moleCount);
       }, 1000);
     }
 
     return () => {
       clearInterval(intervalId);
     };
-  }, [isCountingDown]);
+  }, [isCountingDown, moleCount]);
 
   const hitTheMole = (index) => {
     if (moleArray[index].isVisible) {
@@ -88,6 +99,7 @@ export function HitTheMoleGame() {
           score={score}
           hightScore={highScore}
           setScore={setScore}
+          setStartTime={setStartTime}
         />
       ) : null}
       {isCountingDown ? (
@@ -99,6 +111,8 @@ export function HitTheMoleGame() {
           setIsCountingDown={setIsCountingDown}
           setSeconds={setSeconds}
           isCountingDown={isCountingDown}
+          gameTime={gameTime}
+          startTime={startTime}
         />
       ) : null}
     </>

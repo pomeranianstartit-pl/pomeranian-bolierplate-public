@@ -11,6 +11,7 @@ export const MoleGameSettings = ({
   score,
   hightScore,
   setScore,
+  setStartTime,
 }) => {
   const gameTimeOption = [
     { label: '1 minuta', timeValue: 1 * 60 * 1000 },
@@ -31,16 +32,10 @@ export const MoleGameSettings = ({
           którym się pojawił.
         </h4>
         <h2 className="scoreStyle">
-          {hightScore >= 0 && seconds === 0
-            ? `Twój NAJWYŻSZY wynik to ${hightScore}`
-            : ''}
+          {hightScore > 0 ? `Twój NAJWYŻSZY wynik to ${hightScore}` : ''}
         </h2>
         <h2 className="scoreStyle">
-          {score >= 0 && seconds === 0
-            ? `Twój wynik w tym podejściu to ${score} w czasie ${
-                gameTime / 1000 / 60
-              } ${gameTime / 1000 / 60 === 1 ? 'minuty' : 'minut'}`
-            : ''}
+          {score > 0 ? `Twój wynik w tym podejściu to ${score}` : ''}
         </h2>
 
         <div className="gameOptionsButtons">
@@ -53,6 +48,7 @@ export const MoleGameSettings = ({
                   onClick={() => {
                     setSeconds(timeValue / 1000);
                     setGameTime(timeValue);
+                    setStartTime(timeValue);
                     if (label === '1 GODZINA') alert('OSTROŻNIE');
                   }}
                   key={label}
