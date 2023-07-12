@@ -3,6 +3,9 @@
 /* font Lato */
 @import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,400;0,700;1,400&display=swap');
 
+/* font Dancing Script oraz Source Code Pro */
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;700&family=Source+Code+Pro:ital,wght@0,400;0,700;1,200&display=swap');
+
 :root {
   --color-primary-blue: #3e63f6;
   --color-dark-blue: #004286;
