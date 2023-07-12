@@ -34,14 +34,16 @@ export const MemoBoard = ({
 
   const VisableFunction = (index, memo) => {
     const updatedMemoArray = [...memoArray];
-    updatedMemoArray[index] = { ...memo, isVisable: !memo.isVisableLetteer};
+    updatedMemoArray[index] = { ...memo, isVisable: !memo.isVisableLetteer };
     const isVisibleLetters = updatedMemoArray.filter((memo) => memo.isVisable);
-    console.log({index})
-  if (isVisibleLetters.length === 2) {
-    setTimeout (() =>{
+    console.log({ index });
+    if (isVisibleLetters.length === 2) {
+      setTimeout(() => {
         updatedMemoArray.forEach((memo) => {
-        memo.isVisable = false; },2000)});
-  }
+          memo.isVisable = false;
+        }, 2000);
+      });
+    }
     return updatedMemoArray;
   };
   return (
@@ -70,7 +72,7 @@ export const MemoBoard = ({
               <span
                 onClick={() => {
                   setScore(++score);
-                  setMemoArray(VisableFunction(index,memo));
+                  setMemoArray(VisableFunction(index, memo));
                 }}
               >
                 <div id="squer">{memo.isVisable && memo.symbol}</div>

@@ -1,4 +1,3 @@
-import React, { useEffect } from 'react';
 import './style.css';
 import Mole from './mole.svg';
 import formatTime from './FormatTime';
@@ -10,16 +9,9 @@ export const MoleGameBoard = ({
   score,
   hitTheMole,
   moleArray,
+  gameTime,
+  startTime,
 }) => {
-  const handleStop = () => {
-    setIsCountingDown(!isCountingDown);
-  };
-  useEffect(() => {
-    if (score === 20) {
-      setIsCountingDown(!isCountingDown);
-      setSeconds(0);
-    }
-  }, [isCountingDown, score, setIsCountingDown, setSeconds]);
   return (
     <>
       <div className="container">
@@ -31,29 +23,36 @@ export const MoleGameBoard = ({
         <div className="stopBottom">
           <button
             onClick={() => {
-              handleStop();
-              setSeconds(0);
+              setIsCountingDown(!isCountingDown);
+              setSeconds(startTime / 1000);
             }}
           >
             STOP
           </button>
         </div>
       </div>
-      <div className="moleGame">
+      <div className="garden">
         {moleArray.map((mole, index) => {
           return (
             <div key={index}>
               <span>
                 {mole.isVisible ? (
-                  <div id="mink">
+                  <div id="gardenSquare" onClick={() => hitTheMole(index)}>
                     <img
                       src={Mole}
                       alt="Mole"
-                      onClick={() => hitTheMole(index)}
+                      style={{
+                        display: 'grid',
+                        justifyContent: 'center',
+                        alignItems: 'center',
+                        width: '100%',
+                      }}
                     />
                   </div>
                 ) : (
-                  <div id="mink">pustka</div>
+                  <div id="gardenSquare">
+                    <div id="hole"></div>
+                  </div>
                 )}
               </span>
             </div>
