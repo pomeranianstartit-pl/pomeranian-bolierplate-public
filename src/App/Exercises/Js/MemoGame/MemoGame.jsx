@@ -22,6 +22,7 @@ export function MemoGame () {
 
     // const [gameArray, setGameArray] = useState(Array(boardSizeOptions.find(optionn=> option.checked).boardSizeValue).fill( "A" ));
 
+
     useEffect(() => {
         let intervalId;
 
@@ -51,24 +52,33 @@ export function MemoGame () {
 
         return (
             <>
+            {!gameStarted ? (
             <MemoGameSettings
             startStopGame={() => setGameStarted((prev) => !prev)}
             gameStarted={gameStarted}
             memoCount={memoCount}
             setMemoCount={setMemoCount}
             />
+            ) : null}
             <Time
             time={time}
             />
             <MemoGameBoard
             handleCellClick={handleCellClick}
             />
+            {gameStarted ? (
+            <MemoGameBoard
+        
+            />
+            ) : null}
+
             </>
     );
   }
 
   const Time = ({ time }) => {
-    return <h4> CZAS GRY: {time} seconds</h4>;
+    const formattedTime = new Date(time * 1000).toISOString().slice(14, 19);
+    return <h4> CZAS GRY: {formattedTime}</h4>;
 };
 
 //   const Timer = ({timer}) => {
