@@ -13,12 +13,3 @@
   text-transform: uppercase;
   font-weight: bold;
 }
-
-.p {
-  color: var(--text-text-primary, #222);
-font-family: Poppins;
-font-size: 40px;
-font-style: normal;
-font-weight: 500;
-line-height: 69px;
-}
