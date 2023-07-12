@@ -1,0 +1,37 @@
+#wpis1 {
+    font-family: 'MADE TOMMY Outline', sans-serif;
+    font-family: 'MADE TOMMY', sans-serif;
+    display: inline-flex;
+    padding: 45px 61px;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+    border-radius: 8px;
+    background: #FFF;
+}
+
+.data {
+    color: var(--text-text-primary, #222);
+
+/* OVERLINE/Overline */
+font-size: 10.5px;
+font-style: normal;
+font-weight: 400;
+line-height: 24px;
+letter-spacing: 1.68px;
+text-transform: uppercase;
+width: 1440px;
+height: 1976px;
+border-radius: 10px;
+background: #FFF;
+}
+
+.body, h2 { 
+
+}
+
+
+
+
+
+

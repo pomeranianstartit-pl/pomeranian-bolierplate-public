@@ -5,7 +5,7 @@ export function Exercise() {
     return num1 * num2;
   }
 
-  function getWelcomeMessage(name, amount) {
+  function getWelcomeMessage(Asia,Bedra) {
     return `Witaj ${name}! Jesteś ${amount} uzytkownikiem odwiedzającym tę stronę!`;
   }
 
