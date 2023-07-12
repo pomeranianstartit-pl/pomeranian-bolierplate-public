@@ -1,3 +1,8 @@
 .font-test-family {
   font-family: Chilanka;
 }
+.blok-8__cwiczenie-1 > div {
+  display: flex;
+
+  gap: 5rem;
+}
