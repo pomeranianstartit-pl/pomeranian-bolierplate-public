@@ -1,0 +1,83 @@
+:root {
+  --main-font-color: #FE5407;
+  --primary: #FE3756;
+}
+.cssboxmodel{
+  margin-top: 6px;
+}
+.parent-box-model p{
+  margin: 20px;
+  padding: 20px;
+  border:3px solid red; 
+  display: block
+}
+#id-p{
+  margin: 30px;
+  padding: 30px;
+  border: #FE3756 inset;
+  border-radius: 5px;
+}
+.dispaly-css-test{
+  background-color: gold;
+  width: 300px;
+  height: 300px;
+  text-align: center;
+  display:none;
+  margin-top: 30px;
+}
+/*///////////////////////////// Box Sizing vs Border Box ///////////////////////////*/
+.box-sizing-conteiner .content-box-example{
+  width: 200px;
+  padding: 20px;
+  border: 2px solid yellow;
+  box-sizing: content-box;
+}
+.box-sizing-conteiner .border-box-example{
+  margin-top: 20px;
+  width: 200px;
+  padding: 20px;
+  border: 2px solid pink;
+  box-sizing: border-box;
+}
+.box-sizing-conteiner{
+  margin: 50px;
+}
+/*///////////////////////////// END Box Sizing vs Border Box ///////////////////////////*/
+
+/*///////////////////////////// Css property overflow ///////////////////////////*/
+.overflow-conteiner{
+  width: 200px;
+  height: 100px;
+  border: 1px solid black;
+  overflow: auto;
+  margin: 2rem;
+}
+.overflow-content{
+  width: 300px;
+  height: 150px;
+  background-color: brown;
+  padding: 10px;
+}
+/*///////////////////////////// END Css property overflow ///////////////////////////*/
+
+/*
+Jednostki długości:
+  px (piksele): najpopularniejsza jednostka, oznacza liczbę pikseli na ekranie.
+  % (procent): odnosi się do procentowej wartości względem wartości rodzica.
+  em: wielkość bazowa jest równa rozmiarowi czcionki elementu rodzica.
+  rem: wielkość bazowa jest równa rozmiarowi czcionki elementu korzenia (czyli <html>).
+  vw (viewport width): 1% szerokości widoku.
+  vh (viewport height): 1% wysokości widoku.
+
+Jednostki czasu:
+  s (sekundy): na przykład 0.5s oznacza pół sekundy.
+  ms (milisekundy): na przykład 500ms oznacza pół sekundy.
+
+Jednostki kątów:
+  deg (stopnie): na przykład 45deg oznacza 45 stopni.
+  rad (radiany): na przykład 0.5rad oznacza około 28,65 stopnia.
+
+Jednostki kolorów:
+  rgb (czerwony, zielony, niebieski): na przykład rgb(255, 0, 0) oznacza czerwony.
+  hex: na przykład #FF0000 oznacza czerwony.
+*/

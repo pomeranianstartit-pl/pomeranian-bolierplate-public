@@ -1,0 +1,60 @@
+.font-test-family {
+  font-family: Chilanka;
+}
+
+.form--container h1{
+  margin-top: 4rem;
+  margin-left: 2rem;
+}
+
+.form--container label{
+  margin-left: 2rem;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 32px;
+}
+
+.form--container input[type=text]{
+  margin-top: 0.3rem;
+  margin-left: 2rem;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 13px 16px;
+  gap: 10px;
+
+  width: 488px;
+  height: 48px;
+
+  background: #FFFFFF;
+
+  border: 1px solid #C8CBD1;
+  border-radius: 5px;
+}
+
+.form--container input[type=button]{
+  cursor: pointer;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 16px;
+  font-size: large;
+  font-weight: bold;
+  width: 326px;
+  height: 56px;
+
+  color: white;
+  background: #FE3756;
+
+  border: 1px solid #FE3756;
+  border-radius: 8px;
+  margin-left: 2rem;
+  margin-top: 3rem;
+}
+
+.form--container input[type=button]:hover{
+  background: #d57b89;
+  
+}

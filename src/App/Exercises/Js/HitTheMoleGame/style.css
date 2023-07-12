@@ -1,0 +1,106 @@
+.gameOptionsButtons {
+  width: 100%;
+  height: 100%;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(4, 1fr);
+  grid-column-gap: 5px;
+  grid-row-gap: 5px;
+  grid-template-rows: auto 3fr;
+  grid-template-columns: 2fr 4fr;
+}
+.gameButtonsRows {
+  grid-area: 1 / 1 / 5 / 5;
+}
+.gameButtonsRows div {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+}
+.gameButtonsRows h4, 
+.gameButtonsRows button {
+  width: 15rem;
+}
+.gameButtonsRows button, 
+.stopBottom button {
+  padding: 1.25rem 2.2rem 1.25rem 2.2rem;
+  margin: 1rem;
+  border-radius: 0.5rem;
+  border-color: #23213d;
+  border: 1px;
+  gap: 1rem;
+  background: #23213d;
+  font-family: Poppins;
+  font-size: 22px;
+  font-weight: 500;
+  line-height: 31px;
+  letter-spacing: 0em;
+  text-align: center;
+  color: white;
+  cursor: pointer;
+}
+.gameButtonsRows button:hover:active, 
+.gameButtonsRows button.activeButton, 
+.stopBottom button:hover{
+  background: #fe3756;
+  border-color: #fe3756;
+}
+.garden {
+  display: grid;
+  grid-template-columns: repeat(5, minmax(0, 1fr));
+  gap: 5px;
+  margin: 0 auto;
+  justify-content: center;
+  align-items: center; 
+  border: 10px solid rgb(78, 37, 12);
+  border-radius: 1rem;
+  width: 900px;
+  height: 400px;
+  justify-items: center;
+  background-color: #29aa1d;
+}
+#gardenSquare{
+  height: 140px;
+  width: 140px;
+  padding-top: 20px;
+  padding-left: 5px;
+  border-radius: 8px;
+  cursor: pointer;
+}
+.timeAndScore{
+  padding: 1.25rem 2.2rem 1.25rem 2.2rem;
+  margin: 1rem;
+  border-radius: 0.5rem;
+  border-color: #EBEBEB;
+  border: 1px;
+  gap: 1rem;
+  background: #EBEBEB;
+  font-family: Poppins;
+  font-size: 22px;
+  font-weight: 500;
+  line-height: 31px;
+  letter-spacing: 0em;
+  text-align: center;
+  color: rgb(0, 0, 0);
+  width: 15rem;
+}
+.container {
+  display: grid; 
+  grid-auto-columns: 1fr; 
+  grid-auto-rows: 1fr; 
+  grid-template-columns: 1fr 3fr; 
+  grid-template-rows: 1fr 1fr 1fr; 
+  gap: 10px;
+}
+.container .item{
+  padding-top: 1rem;
+}
+#gardenSquare #hole{
+  margin-top: 50px;
+  height: 50px;
+  width: 100%;
+  background-color: #2a1d14;
+  border: 15px solid #543927;
+  border-radius: 50%;
+}

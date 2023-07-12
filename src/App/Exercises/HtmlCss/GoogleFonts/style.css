@@ -1,0 +1,124 @@
+.font-lato {
+  font-family:"Lato", sans-serif;
+}
+.font-poppins{
+  font-family: "Poppins", sans-serif;
+}
+.light-theme{
+  background-color: white;
+  color: black;
+  transition: all 2s;
+}
+.dark-theme{
+  color: white;
+  background-color: black;
+  transition: all 2s;
+}
+.animation{
+  animation-name: slide-in;
+  animation-duration: 6s;
+}
+
+@keyframes slide-in {
+  0% {
+    position:absolute;
+    left: -10000000px;
+  }
+  100%{
+    position:absolute;
+    left: 0px;
+  }
+}
+.business-card {
+  display: flex;
+  flex-direction: column;
+  gap: .2em;
+  background-color: rgb(177, 177, 177);
+  position: relative;
+}
+.business-card * {
+  margin: 0;
+}
+
+.business-card a {
+  text-decoration: none;
+  color:black;
+}
+.business-card section {
+  margin-bottom: .2em;
+}
+
+.business-card section :nth-child(2) {
+  color: #FE3756;
+}
+
+@keyframes rotate {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+  @keyframes pulse {
+    0% {
+      background-color: #fff;
+      transform: rotate(0deg);
+    }
+    50% {
+      background-color: #d5aa00;
+    }
+    100% {
+      background-color: #9c2a2a;
+      transform: rotate(360deg);
+    }
+  }
+  
+  .business-card {
+    animation: pulse 2s ease-in-out infinite;
+    
+  }
+
+  
+  .business-card section{
+    animation: rotate 1s linear infinite;
+    
+  }
+
+  .business-card {
+    position: relative;
+    overflow: hidden;
+    animation: pulse 2s linear infinite;
+  }
+  
+  .business-card::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+    background-color: rgb(255, 255, 255); /* Kolor tła do zanikania */
+    opacity: 1;
+    transition: opacity 0.3s ease;
+  }
+  
+  .business-card:hover::before {
+    opacity: 0;
+  }
+  .list ol{
+    list-style-position: outside;
+    padding: 0;
+    color:rebeccapurple;
+    list-style-type: red;
+  }
+  .list li:hover{
+    margin-left: 2em;
+    transition: margin .2s;
+    color: yellow;
+    transition: 1s;
+  }
+  .list li{
+    font-weight: 1rem;
+  }

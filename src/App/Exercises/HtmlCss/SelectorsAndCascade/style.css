@@ -1,0 +1,12 @@
+.font-test-family {
+  font-family: Chilanka;
+}
+div.mydiv-1,
+div.mydiv-1 p,
+div.mydiv-2{
+  background-color:gold;
+  padding: 10px;
+}
+div.mydiv-3 ~ span{
+  color:aqua;
+}

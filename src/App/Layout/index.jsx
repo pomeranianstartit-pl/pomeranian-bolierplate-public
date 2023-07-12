@@ -7,6 +7,7 @@ import { ErrorBoundary } from './ErrorBoundary';
 
 import './styles/layout.css';
 import { AppAside } from './AppAside';
+import Cookies from '../Components/coockie/coockie';
 
 function getLayoutClassName(withSidebar) {
   return withSidebar ? 'layout with-sidebar' : 'layout';
@@ -14,15 +15,18 @@ function getLayoutClassName(withSidebar) {
 
 export const Layout = ({ withSidebar }) => {
   return (
-    <ErrorBoundary>
-      <div className={getLayoutClassName(withSidebar)}>
-        <AppHeader />
-        {withSidebar && <AppAside />}
-        <main>
-          <Outlet />
-        </main>
-        <AppFooter />
-      </div>
-    </ErrorBoundary>
+    <>
+      <Cookies />
+      <ErrorBoundary>
+        <div className={getLayoutClassName(withSidebar)}>
+          <AppHeader />
+          {withSidebar && <AppAside />}
+          <main>
+            <Outlet />
+          </main>
+          <AppFooter />
+        </div>
+      </ErrorBoundary>
+    </>
   );
 };
