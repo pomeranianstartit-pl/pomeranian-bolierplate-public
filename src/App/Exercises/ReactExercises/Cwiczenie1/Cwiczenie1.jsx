@@ -1,9 +1,9 @@
-import React from 'react';
+import React, { useState } from 'react';
 
 import './style.css';
 
 export function Cwiczenie1() {
-  const [tekst, setTekst] = React.useState('Tekst który sie wyswietli');
+  const [tekst, setTekst] = useState('Tekst który sie wyswietli');
   function handleOnSubmit(event) {
     event.preventDefault();
     console.log(event);
