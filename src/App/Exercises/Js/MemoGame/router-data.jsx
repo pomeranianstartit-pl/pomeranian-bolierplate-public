@@ -1,10 +1,10 @@
-import { Memo } from './MemoGame'
+import { MemoGame } from './MemoGame';
 
 export const MemoGameMetaData = {
   path: 'MemoGame',
-  date: '11.07.2023',
+  date: '12.07.2023',
   linkLabel: 'Memo Game',
-  blockNo: 6,
-  element: <Memo />,
-  tags: ['array', 'map', 'filter', 'flex'],
+  blockNo: 27,
+  element: <MemoGame />,
+  tags: ['memo','game'],
 };

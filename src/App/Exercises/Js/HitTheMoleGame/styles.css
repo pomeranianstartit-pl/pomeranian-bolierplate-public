@@ -125,9 +125,3 @@ margin-top: 20px;
 margin-left: 35px;
 }
 
-.rotating {
-  animation-name: rotate;
-  animation-duration: 1s;
-  animation-timing-function: linear;
-  animation-iteration-count: infinite;
-}
