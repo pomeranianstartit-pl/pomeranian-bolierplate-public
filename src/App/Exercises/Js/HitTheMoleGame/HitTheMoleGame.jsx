@@ -21,6 +21,7 @@ export function HitTheMoleGame() {
     if (isCountingDown) {
       intervalId = setInterval(() => {
         setSeconds((prevSeconds) => (prevSeconds > 0 ? prevSeconds - 1 : 0));
+
       }, 1000);
     }
 
