@@ -8,11 +8,14 @@ import { routerMetaData as IfStatementsMetaData } from './IfStatements/router-da
 
 import { routerMetaData as IfStatementsMoreOrLessMetaData } from './IfStatementsMoreOrLess/router-data';
 
+import { routerMetaData as WhatNumberAmIMetaData } from './WhatNumberAmI/router-data';
+
 export const blockRouterMetaData = [
   SubRouteExampleMetaData,
   Cwiczenie1MetaData,
   Cwiczenie2MetaData,
   IfStatementsMetaData,
   IfStatementsMoreOrLessMetaData,
+  WhatNumberAmIMetaData,
 ];
 export const blockRouterData = getParsedRouterDataList(blockRouterMetaData);

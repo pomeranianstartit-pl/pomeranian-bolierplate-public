@@ -19,8 +19,18 @@ export function IfStatementsMoreOrLess() {
   return (
     <div className="cwiczenie-2">
       <h2>Czy A jest większe od B</h2>
-      <input type="number" value={firstValue} onChange={handleFirstValue} />
-      <input type="number" value={secondValue} onChange={handleSecondValue} />
+      <input
+        className="inputText"
+        type="number"
+        value={firstValue}
+        onChange={handleFirstValue}
+      />
+      <input
+        className="inputText"
+        type="number"
+        value={secondValue}
+        onChange={handleSecondValue}
+      />
       <p>
         Odpowiedź:
         {/* {firstValue > secondValue
