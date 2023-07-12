@@ -13,9 +13,9 @@ export const MemoGameBoard = ({ memoArray, hitTheMole, score }) => {
        <div className="board">
       {/* {memoArray.map((memo, index) => {
         return ( */}
-        <div key ={index}>
+        {/* <div key ={index}>
           <span onClick
-        </div>
+        </div> */}
           {/* // <div className="square"> */}
            {/* <span>
                       {mole.isVisible ? (

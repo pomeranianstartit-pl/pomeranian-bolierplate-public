@@ -67,6 +67,7 @@ export function HitTheMoleGame() {
     useEffect(() => {
         if(gameStarted && score === 20) {
             setGameStarted(false);
+            setGameEnded(true);
         }
     }, [score, gameStarted]);
 
@@ -102,31 +103,78 @@ export function HitTheMoleGame() {
         let seconds = seconds % 60;
         return `${minutes} : ${seconds}`
     }
-    return (
-        <>
-            {!gameStarted ? (
-                <MoleGameSettings
-                gameTime={gameTime}
-                moleCount={moleCount}
-                setGameTime={setGameTime}
-                setMoleCount={setMoleCount}
-                startStopGame={() => setGameStarted((prev) => !prev)}
-                gameStarted={gameStarted}
-                formatTime={formatTime}
-            />
-            ) : null}
-            {gameStarted ? <CountdownTimer countdown={countdown} /> : null}
 
-            {gameStarted ? (
-                <MoleGameBoard
-                moleArray={moleArray}
-                hitTheMole={hitTheMole}
-                score={score}
-                />
-                ) : null}
-                {}
+    return (
+      <>
+      <p style={{ fontSize: '18px', font: 'Poppins '}}>
+      Gra polegająca na podążaniu za krecikiem i trafieniu na kwadrat, w
+          którym się pojawił.
+      </p>
+      {!gameStarted ? (
+        <MoleGameSettings
+            gameTime={gameTime}
+            moleCount={moleCount}
+            setGameTime={setGameTime}
+            setMoleCount={setMoleCount}
+            startStopGame={() => setGameStarted((prev) => !prev)}
+            gameStarted={gameStarted}
+            />
+      ) : null}
+
+      {gameStarted ? (
+        <>
+        <MoleGameBoard
+           moleArray={moleArray}
+           hitTheMole={hitTheMole}
+           score={score}
+           />
         </>
+      ) : gameEnded ? (
+        <>
+        <p style={{ fontSize: '18px', font: 'Poppins '}}>
+            Gratulacje! Twój wynik to {score} złapane krety w czasie{' '}
+            {countdown} sekund!
+        </p>
+        <MoleGameSettings
+            gameTime={gameTime}
+            moleCount={moleCount}
+            setGameTime={setGameTime}
+            setMoleCount={setMoleCount}
+            startStopGame={() => setGameStarted((prev) => !prev)}
+            gameStarted={gameStarted}
+            />{' '}
+        </>
+      ) : null}
+      </>
     );
-};
+      }
+
+
+//     return (
+//         <>
+//             {!gameStarted ? (
+//                 <MoleGameSettings
+//                 gameTime={gameTime}
+//                 moleCount={moleCount}
+//                 setGameTime={setGameTime}
+//                 setMoleCount={setMoleCount}
+//                 startStopGame={() => setGameStarted((prev) => !prev)}
+//                 gameStarted={gameStarted}
+//                 formatTime={formatTime}
+//             />
+//             ) : null}
+//             {gameStarted ? <CountdownTimer countdown={countdown} /> : null}
+
+//             {gameStarted ? (
+//                 <MoleGameBoard
+//                 moleArray={moleArray}
+//                 hitTheMole={hitTheMole}
+//                 score={score}
+//                 />
+//                 ) : null}
+//                 {}
+//         </>
+//     );
+// };
 
 
