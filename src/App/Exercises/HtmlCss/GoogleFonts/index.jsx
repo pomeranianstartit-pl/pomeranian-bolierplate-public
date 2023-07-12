@@ -20,11 +20,11 @@ export function GoogleFonts() {
       <p>{font}</p>
 
       <button onClick={() => handleChangeFont('font-poppins')}>
-        Change font poppins
+        Change {font}
       </button>
 
       <button onClick={() => handleChangeFont('font-caprasimo')}>
-        Change font caprasimo
+        Change {font}
       </button>
     </div>
   );
