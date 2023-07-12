@@ -2,17 +2,18 @@ import './styles.css';
 
 export function Exercise() {
   const mathResult1 = 2 * 5;
+  const mathResult2 = 3 / 2; 
 
   return (
     <div className="playing-with-variables">
       <section>
-        <h2>Operacje matematyczne</h2>
+        <h2>Operacje matematematyczne</h2>
         <pre>
           <code>2 * 5 = {mathResult1}</code>
         </pre>
         {/* Uzupełnij wykorzystując zmienne*/}
         <pre>
-          <code>3 : 2 = ___</code>
+          <code>3 : 2 = {mathResult2}</code>
         </pre>
         <pre>
           {/* kwadrat liczby */}
