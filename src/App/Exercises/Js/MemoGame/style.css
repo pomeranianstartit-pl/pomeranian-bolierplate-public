@@ -117,9 +117,20 @@
   justify-content: center;
   align-items: center; 
 }
-#squer{
+#squerFalse{
   display: grid;
   background-color: #EBEBEB;
+  min-height: 160px;
+  min-width: 160px;
+  border-radius: 8%;
+  font-family: Poppins;
+  font-size: 100px;
+  place-items: center;
+  cursor: pointer;
+}
+#squerTrue{
+  display: grid;
+  background-color: #20b915;
   min-height: 160px;
   min-width: 160px;
   border-radius: 8%;

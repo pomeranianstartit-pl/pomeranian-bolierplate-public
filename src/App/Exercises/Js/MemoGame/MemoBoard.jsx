@@ -1,5 +1,6 @@
-import { useState, useEffect } from 'react';
+import React, { useState, useEffect } from 'react';
 import formatTime from '../HitTheMoleGame/FormatTime';
+
 export const MemoBoard = ({
   gameTime,
   setGameStart,
@@ -9,43 +10,89 @@ export const MemoBoard = ({
   setFinalSettings,
 }) => {
   const [memoArray, setMemoArray] = useState([]);
+  const [visibleIndexArray, setVisibleIndexArray] = useState([]);
+  const [playerMove, setPlayerMove] = useState(0);
+
   useEffect(() => {
-    const generateMemoArray = () => {
-      const memoSymbols = 'ABCDEFGHIJKLMNOPRSTUWXYZ'; // Symbole 24, max tablica 48
-      const memoCardsSymbols = [];
-      for (let i = 0; i < boardSize / 2; i++) {
-        const index = Math.floor(Math.random() * (24 - 0) + 0);
-        const letter = memoSymbols.charAt(index);
-        memoCardsSymbols.push({
-          symbol: letter,
-          isVisableLetteer: false,
-          isVisibleBox: true,
-        });
-      }
-      console.log(memoCardsSymbols);
-      const shuffledCards = [...memoCardsSymbols, ...memoCardsSymbols].sort(
-        () => Math.random() - 0.5
-      );
-      console.log(shuffledCards);
-      setMemoArray(shuffledCards);
-    };
     generateMemoArray();
   }, [boardSize]);
 
-  const VisableFunction = (index, memo) => {
-    const updatedMemoArray = [...memoArray];
-    updatedMemoArray[index] = { ...memo, isVisable: !memo.isVisableLetteer };
-    const isVisibleLetters = updatedMemoArray.filter((memo) => memo.isVisable);
-    console.log({ index });
-    if (isVisibleLetters.length === 2) {
-      setTimeout(() => {
-        updatedMemoArray.forEach((memo) => {
-          memo.isVisable = false;
-        }, 2000);
+  const generateMemoArray = () => {
+    const memoSymbols = 'ABCDEFGHIJKLMNOPRSTUWXYZ';
+    const memoCardsSymbols = [];
+    const usedSymbols = [];
+    for (let i = 0; i < boardSize / 2; i++) {
+      let symbol;
+      do {
+        const index = Math.floor(Math.random() * memoSymbols.length);
+        symbol = memoSymbols.charAt(index);
+      } while (usedSymbols.includes(symbol));
+      usedSymbols.push(symbol);
+      memoCardsSymbols.push({
+        symbol: symbol,
+        isVisableLetteer: false,
+        isVisibleBox: true,
+        isMatched: false, // Dodane pole informujące o dopasowaniu kafelka
       });
     }
-    return updatedMemoArray;
+    let shuffledCards = [];
+    for (let i = 0; i < boardSize / 2; i++) {
+      shuffledCards.push(memoCardsSymbols[i]);
+      shuffledCards.push(memoCardsSymbols[i]);
+    }
+    shuffledCards = shuffledCards.sort(() => Math.random() - 0.5);
+    setMemoArray(shuffledCards);
   };
+
+  const onBoxClick = (index) => {
+    if (!visibleIndexArray.includes(index)) {
+      setVisibleIndexArray((prevVisibleIndexArray) => [
+        ...prevVisibleIndexArray,
+        index,
+      ]);
+      setPlayerMove((prevPlayerMove) => prevPlayerMove + 1);
+      setMemoArray((prevMemoArray) => {
+        const updatedMemoArray = [...prevMemoArray];
+        updatedMemoArray[index] = {
+          ...updatedMemoArray[index],
+          isVisableLetteer: true,
+        };
+        return updatedMemoArray;
+      });
+
+      if (playerMove === 1) {
+        const visibleIndexes = visibleIndexArray.concat(index);
+        const firstIndex = visibleIndexes[0];
+        const secondIndex = visibleIndexes[1];
+        if (
+          firstIndex !== undefined &&
+          secondIndex !== undefined &&
+          memoArray[firstIndex].symbol === memoArray[secondIndex].symbol
+        ) {
+          console.log('Dopasowane kafelki:', firstIndex, secondIndex);
+          setMemoArray((prevMemoArray) =>
+            prevMemoArray.map((memo, index) => ({
+              ...memo,
+              isMatched: true,
+            }))
+          );
+        } else {
+          console.log('Nieudane dopasowanie kafelków:', firstIndex, secondIndex);
+          setTimeout(() => {
+            setMemoArray((prevMemoArray) =>
+              prevMemoArray.map((memo, index) => ({
+                ...memo,
+                isVisableLetteer: false,
+              }))
+            );
+          }, 1000);
+        }
+        setPlayerMove(0);
+        setVisibleIndexArray([]);
+      }
+    }
+  };
+
   return (
     <>
       <div className="container">
@@ -65,22 +112,21 @@ export const MemoBoard = ({
           </button>
         </div>
       </div>
+      <p>{visibleIndexArray}</p>
       <div className="memoGame">
-        {memoArray.map((memo, index) => {
-          return (
-            <div key={index}>
-              <span
-                onClick={() => {
-                  setScore(++score);
-                  setMemoArray(VisableFunction(index, memo));
-                }}
-              >
-                <div id="squer">{memo.isVisable && memo.symbol}</div>
-              </span>
-            </div>
-          );
-        })}
+        {memoArray.map((memo, index) => (
+          <div key={index}>
+            <span onClick={() => onBoxClick(index)}>
+              {memo.isVisibleBox && (
+                <div id={memo.isMatched ? "squerTrue ": "squerFalse"}>
+                  {memo.isVisableLetteer && memo.symbol}
+                </div>
+              )}
+            </span>
+          </div>
+        ))}
       </div>
+      <p>{visibleIndexArray}</p>
     </>
   );
 };
