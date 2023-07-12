@@ -3,36 +3,8 @@ import './styles.css';
 import MemoGameSettings from './MemoGameSettings';
 import MemoBoard from './MemoBoard';
 
-const alphabet = [
-
-  'A',
-  'B',
-  'C',
-  'D',
-  'E',
-  'F',
-  'G',
-  'H',
-  'I',
-  'J',
-  'K',
-  'L',
-  'M',
-  'N',
-  'O',
-  'P',
-  'Q',
-  'R',
-  'S',
-  'T',
-  'U',
-  'V',
-  'W',
-  'X',
-  'Y',
-  'Z',
-
-];
+const alphabet = ['A','B','C','D','E','F','G','H','I','J','K','L','M','N','O','P','Q','R','S','T','U','V','W',
+'X','Y','Z',];
 
 const getRandomLetters = (amount) => {
 const shuffled = [...alphabet].sort(() => 0.5 - Math.random());
@@ -40,9 +12,7 @@ return shuffled.slice(0, amount);
 };
 
 function createStageElement(character, index) {
-
-  return { character, id: index, isGuessed: false, isVisible: false };
-
+return { character, id: index, isGuessed: false, isVisible: false };
 }
 
 export function MemoGame() {
@@ -61,7 +31,6 @@ export function MemoGame() {
 
   const [clicks, setClicks] = useState(0);
   const [time, setTime] = useState(0);
-
   const letters = getRandomLetters(gameArray);
   const stage = [...letters, ...letters].map((letter, index) =>
     createStageElement(letter, index)
@@ -108,12 +77,14 @@ export function MemoGame() {
           setClicks(0);
           getRandomLetters();
         }}
+        
         gameStarted={gameStarted}
         gameArray={gameArray}
         setGameArray={setGameArray}
         boardSizeOptions={boardSizeOptions}
         setBoardSizeOptions={setBoardSizeOptions}
       />
+      
       <Timer time={time} />
       <MoveCounter clicks={clicks} />
       <MemoBoard gameArray={gameArray} handleCellClick={handleCellClick} />
