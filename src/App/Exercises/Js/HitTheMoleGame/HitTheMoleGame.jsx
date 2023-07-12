@@ -127,6 +127,40 @@ export function HitTheMoleGame() {
                 {}
         </>
     );
-};
+      }
+
+      const Time = ({ time }) => {
+        const formattedTime = new Date(time * 1000).toISOString().slice(14, 19);
+        return <h4> CZAS GRY: {formattedTime}</h4>;
+    };
+
+
+//     return (
+//         <>
+//             {!gameStarted ? (
+//                 <MoleGameSettings
+//                 gameTime={gameTime}
+//                 moleCount={moleCount}
+//                 setGameTime={setGameTime}
+//                 setMoleCount={setMoleCount}
+//                 startStopGame={() => setGameStarted((prev) => !prev)}
+//                 gameStarted={gameStarted}
+//                 formatTime={formatTime}
+//             />
+//             ) : null}
+//             {gameStarted ? <CountdownTimer countdown={countdown} /> : null}
+
+//             {gameStarted ? (
+//                 <MoleGameBoard
+//                 moleArray={moleArray}
+//                 hitTheMole={hitTheMole}
+//                 score={score}
+//                 />
+//                 ) : null}
+//                 {}
+//         </>
+//     );
+// };
+// };
 
 
