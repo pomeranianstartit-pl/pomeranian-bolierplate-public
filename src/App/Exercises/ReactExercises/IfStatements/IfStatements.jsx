@@ -31,11 +31,15 @@ export function IfStatements() {
   };
 
   return (
-    <div>
+    <div className="cwiczenie-1">
       <p>{clicks}</p>
       <p>{text}</p>
       {/* conditional rendering */}
-      {isVisible && <button onClick={handleButtonClick}>Kliknij mnie</button>}
+      {isVisible && (
+        <button type="button" onClick={handleButtonClick}>
+          Kliknij mnie
+        </button>
+      )}
     </div>
   );
 }
