@@ -5,6 +5,7 @@ import { blockRouterMetaData as SelectorsAndCascade } from './SelectorsAndCascad
 import { blockRouterMetaData as TextFundamentals } from './TextFundamentals/router-data';
 import { blockRouterMetaData as GoogleFonts } from './GoogleFonts/router-data';
 import { blockRouterMetaData as Colors } from './Colors/router-data';
+import { blockRouterMetaData as ImageFiles } from './ImageFiles/router-data';
 
 export const blockRouterMetaData = [
   blockRouterMetaData121220231,
@@ -12,5 +13,6 @@ export const blockRouterMetaData = [
   TextFundamentals,
   GoogleFonts,
   Colors,
+  ImageFiles,
 ];
 export const blockRouterData = getParsedRouterDataList(blockRouterMetaData);

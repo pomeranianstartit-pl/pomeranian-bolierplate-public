@@ -24,3 +24,9 @@
 .hsl {
   color: hsl(263, 49%, 47%);
 }
+
+.opacity {
+  background-color: pink;
+  padding: 24px;
+  opacity: 50%;
+}
