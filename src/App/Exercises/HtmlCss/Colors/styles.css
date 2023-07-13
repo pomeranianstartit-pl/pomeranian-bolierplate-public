@@ -1,0 +1,40 @@
+.font-test-family {
+
+  font-family: Chilanka;
+
+}
+
+
+
+
+.color-name {
+
+  color: #df0cdf;
+
+}
+
+
+
+
+.color-hex {
+
+  color: #135f95;
+
+}
+
+.shorten-hex {
+  color:#28289f;
+}
+
+.rgb {
+color: #add9ad;
+
+}
+
+.rgba {
+  color:#ff000087;
+}
+
+.hsl {
+  color:#c98989;
+}
