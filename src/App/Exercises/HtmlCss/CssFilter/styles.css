@@ -1,0 +1,20 @@
+.background-url-main {
+  background: url('./sea.jpg');
+  background-size: cover;
+  width: 600px;
+  height: 800px;
+  /* filter: opacity(24%);
+  -webkit-filter: opacity(24%);
+  /* -moz-filter: opacity(24%); */ /*filtr targetuje wszystkie divy w środku - znaleźć rozwiazanie */
+}
+
+.filter-div {
+  width: 300px;
+  height: 500px;
+  filter: grayscale(31%) sepia(24%) brightness(101%) hue-rotate(360deg)
+    saturate(105%) contrast(86%) drop-shadow(6px 4px 9px #aea398);
+  -webkit-filter: grayscale(31%) sepia(24%) brightness(101%) hue-rotate(360deg)
+    saturate(105%) contrast(86%) drop-shadow(6px 4px 9px #aea398);
+  -moz-filter: grayscale(31%) sepia(24%) brightness(101%) hue-rotate(360deg)
+    saturate(105%) contrast(86%) drop-shadow(6px 4px 9px #aea398);
+}
