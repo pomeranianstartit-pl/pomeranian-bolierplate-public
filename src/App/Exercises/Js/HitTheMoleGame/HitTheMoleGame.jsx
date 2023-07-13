@@ -55,7 +55,7 @@ export const HitTheMoleGame = () => {
   }, [gameStarted]);
 
   useEffect(() => {
-    if (gameStarted && scoreCount === 3) {
+    if (gameStarted && scoreCount === 20) {
       setTimer(gameTime);
       setGameStarted(false);
       setWinTime(gameTime - timer);

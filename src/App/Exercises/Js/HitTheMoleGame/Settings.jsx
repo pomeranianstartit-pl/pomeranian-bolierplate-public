@@ -1,5 +1,3 @@
-import formatTime from './Time';
-
 export const MoleGameSettings = ({
   gameTime,
   setGameTime,
@@ -33,7 +31,7 @@ export const MoleGameSettings = ({
           {scoreCount > 0 && winTime && (
             <h2>
               <p className="victory">
-                Gratulacje! Twój wynik to {scoreCount} złapane krety{' '}
+                Gratulacje! Twój wynik to {scoreCount} złapane krety w{' '}
                 {winTime >= 60
                   ? `${Math.floor(winTime / 60)} ${
                       winTime >= 120 ? 'minuty' : 'minutę'
