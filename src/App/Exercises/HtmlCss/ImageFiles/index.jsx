@@ -13,6 +13,8 @@ export function ImageFiles() {
 
     <img scr={logoIkea} alt="Ikea logo" />
 
+    
+
 
   </div>
   

@@ -1,0 +1,23 @@
+.background-url {
+
+  background: url(http://localhost:3000/zdjecie.jpg);
+
+  width: 500px;
+
+  height: 300px;
+  background-size: cover;
+
+}
+
+.background-url-2 {
+
+  background: url(http://localhost:3000/zdjecie.jpg);
+
+  width: 500px;
+
+  height: 300px;
+  background-size: 200px;
+  background-repeat: repeat-x;
+  border: 1px solid #545454
+
+}
