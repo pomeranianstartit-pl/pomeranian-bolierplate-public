@@ -10,7 +10,8 @@ export function Exercise() {
       <img src={background} alt="Background"></img>
       <img src={logo} alt="Logo"></img>
       <img src={logoSvg} alt="Logo"></img>
-      <RoundImage src={background} />
+      <RoundImage src={background} size="150px" />
+      <RoundImage src={background} size="300px" />
     </div>
   );
 }
