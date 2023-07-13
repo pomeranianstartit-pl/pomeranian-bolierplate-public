@@ -1,0 +1,23 @@
+.p-1 {
+  color: green;
+  font-size: 22px;
+  font-family: 'Lato', sans-serif;
+  font-weight: 700;
+}
+
+.p-2 {
+  font-family: 'Lato', sans-serif;
+  font-weight: 400;
+}
+
+.p-3 {
+  text-transform: uppercase;
+  text-decoration: underline;
+  text-shadow: -58px -32px 6px rgba(66, 68, 90, 1);
+}
+
+.p-4 {
+  line-height: 22px;
+  letter-spacing: 5px;
+  word-spacing: 10px;
+}

@@ -1,0 +1,49 @@
+
+.font-test-family {
+font-family: Chilanka;
+}
+
+.blok-8__cwiczenie-1 form {
+  display: flex;
+  flex-direction: column;
+  width: 200px;
+  gap: 0.5rem;
+}
+
+.blok-8__cwiczenie-1 form input {
+  padding: 13px 16px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.blok-8__cwiczenie-1 form button {
+  background-color: #FE3756;
+  color: #fff;
+  padding: 20px 36px;
+  border: 0;
+  border-radius: 4px;
+  cursor: pointer;
+}
+.blok-8__cwiczenie-1>div {
+  display: flex;
+  gap: 5rem;
+}
+.font-test-family {
+
+  font-family: Chilanka;
+
+}
+
+
+
+
+.blok-8__cwiczenie-2 button {
+  background-color: #FE3756;
+  color: #fff;
+  padding: 20px 36px;
+  border: 0;
+  border-radius: 8px;
+  cursor: pointer;
+  text-transform: uppercase;
+  font-weight: bold;
+}
