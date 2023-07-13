@@ -1,0 +1,21 @@
+.round-image {
+
+    border-radius: 100%;
+
+    width: 150px;
+
+    height: 150px;
+
+}
+
+.round-image {
+
+    border-radius: 100%;
+
+    width: 150px;
+
+    height: 150px;
+
+    background-size: cover;
+
+}
