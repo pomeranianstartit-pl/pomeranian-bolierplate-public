@@ -6,3 +6,4 @@ import logoIkea from './Ikea-logo.svg'
 export function Exercise() {
   return <p>Obrazki</p>;
 }
+
