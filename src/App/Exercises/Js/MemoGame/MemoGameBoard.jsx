@@ -1,35 +1,19 @@
+import React from 'react';
 import './styles.css';
 
-export const MemoGameBoard = ({ boardArray, seconds }) => {
-
-  let minutesToFinish = Math.floor(seconds / 60)
-  let secondsToFinish = seconds % 60;
+export const MemoGameBoard = ({ gameArray, handleCellClick, stage, renderElement, gameStarted }) => {
   return (
-    <div>
-     <div className="memoBoard">
-      <div>
-        <h4>CZAS GRY</h4>
-        <h4>LICZBA RUCHÓW</h4>
-        <div className="TimeAndSteps">
-          {/* <span>
-            {minutesToFinish.toString().padStart(1, 0)};
-            {secondsToFinish.toString().padStart(1, 0)};
-          </span> */}
-    
-      <div className="board">
-     {/* {boardArray.map((memo, index) => (
-      <span>
-      {memo.isVisible ? (
-        <span className="boardElement"></span>
-      ) : null}
-      </span>
-     ))} */}
-     </div>
-     </div>
-     </div>
-     </div>
-     </div>
-
+     <div className='stage'>{gameStarted && stage.map(renderElement)}</div>
+    //   <div>
+    //     <h4>CZAS GRY</h4>
+    //     <h4>LICZBA RUCHÓW</h4>
+    //   <div className="board">
+    //   {gameArray.map(() => {
+    //     return <div className="square" onClick={handleCellClick}></div>;
+    //   })}
+    //  </div>
+    //  </div>
+    //  </div>
 );
   };
 
