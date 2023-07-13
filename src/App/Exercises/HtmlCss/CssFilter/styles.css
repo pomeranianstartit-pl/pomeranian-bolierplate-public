@@ -1,0 +1,12 @@
+.css-filter {
+    background: url('./miasto.jpg');
+    width:500px;
+    height: 300px;
+    background-size: cover;
+    filter: grayscale(58%) sepia(8%) brightness(111%) hue-rotate(104deg) saturate(114%) contrast(102%);
+    -webkit-filter: grayscale(58%) sepia(8%) brightness(111%) hue-rotate(104deg) saturate(114%) contrast(102%);
+    -moz-filter: grayscale(58%) sepia(8%) brightness(111%) hue-rotate(104deg) saturate(114%) contrast(102%);
+}
+.css-filter h1 {
+  color: rgb(255, 115, 0);
+}
