@@ -1,10 +1,13 @@
+import formatTime from './Time';
+
 export const MoleGameSettings = ({
   gameTime,
-  moleCount,
   setGameTime,
+  winTime,
+  moleCount,
   setMoleCount,
+  scoreCount,
   gameStarted,
-  restartGame,
   startGame,
 }) => {
   const gameTimeOption = [
@@ -19,10 +22,6 @@ export const MoleGameSettings = ({
     { label: '3 krety' },
   ];
 
-  if (gameStarted) {
-    return <button onClick={restartGame}>Restart</button>;
-  }
-
   if (!gameStarted) {
     return (
       <div className="moleGameOptions">
@@ -30,11 +29,28 @@ export const MoleGameSettings = ({
           Gra polegająca na podążaniu za krecikiem i trafieniu na kwadrat, w
           którym się pojawił.
         </p>
+        <div>
+          {scoreCount > 0 && winTime && (
+            <h2>
+              <p className="victory">
+                Gratulacje! Twój wynik to {scoreCount} złapane krety{' '}
+                {winTime >= 60
+                  ? `${Math.floor(winTime / 60)} ${
+                      winTime >= 120 ? 'minuty' : 'minutę'
+                    }`
+                  : winTime < 5
+                  ? `${winTime} sekundy`
+                  : `${winTime} sekund`}
+                !
+              </p>
+            </h2>
+          )}
+        </div>
 
         <div className="gameOptionsButtons">
           <div className="gameButtonsRows">
             <div>
-              <h4 className="game-time">CZAS GRY</h4>
+              <h4 className="game-text">CZAS GRY</h4>
               {gameTimeOption.map(({ label, timeValue }) => (
                 <button
                   className={gameTime === timeValue ? 'activeButton' : ''}
@@ -47,7 +63,7 @@ export const MoleGameSettings = ({
               ))}
             </div>
             <div>
-              <h4>LICZBA KRETÓW</h4>
+              <h4 className="game-text">LICZBA KRETÓW</h4>
               {moleCountOption.map(({ label }) => (
                 <button
                   className={
@@ -60,7 +76,7 @@ export const MoleGameSettings = ({
               ))}
             </div>
             <div>
-              <h4>PRZYCISKI STERUJĄCE</h4>
+              <h4 className="game-text">PRZYCISKI STERUJĄCE</h4>
               <button onClick={startGame}>Start</button>
             </div>
           </div>

@@ -2,6 +2,7 @@ import React, { useState, useEffect } from 'react';
 import MoleGameSettings from './Settings.jsx';
 import './styles.css';
 import MoleGameBoard from './Board';
+import formatTime from './Time.jsx';
 
 export const HitTheMoleGame = () => {
   const defaultGameTime = 1 * 60 * 1000;
@@ -16,6 +17,7 @@ export const HitTheMoleGame = () => {
   const [moleCount, setMoleCount] = useState(1);
   const moleSpeed = 1000;
   const [scoreCount, setScoreCount] = useState(0);
+  const [winTime, setWinTime] = useState(null);
 
   useEffect(() => {
     setMoleArray(defaultArrayState);
@@ -56,8 +58,9 @@ export const HitTheMoleGame = () => {
     if (gameStarted && scoreCount === 3) {
       setTimer(gameTime);
       setGameStarted(false);
+      setWinTime(gameTime - timer);
     }
-  }, [scoreCount, gameStarted, gameTime]);
+  }, [scoreCount, gameStarted, gameTime, timer]);
 
   const hitTheMole = (index) => {
     if (moleArray[index].isVisible) {
@@ -123,6 +126,9 @@ export const HitTheMoleGame = () => {
         gameStarted={gameStarted}
         startGame={startGame}
         restartGame={restartGame}
+        scoreCount={scoreCount}
+        formatTime={formatTime}
+        winTime={winTime}
       />
       <MoleGameBoard
         moleArray={moleArray}
@@ -130,6 +136,7 @@ export const HitTheMoleGame = () => {
         scoreCount={scoreCount}
         gameStarted={gameStarted}
         timer={timer}
+        restartGame={restartGame}
       />
     </>
   );
