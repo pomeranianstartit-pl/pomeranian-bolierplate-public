@@ -22,6 +22,7 @@ export function HitTheMoleGame() {
     const [countdown, setCountdown] = useState(gameTime / 1000);
     const [gameStarted, setGameStarted] = useState(false);
     const [gameEnded, setGameEnded] = useState(false);
+    const [timer, setTimer] = useState(gameTime / 1000);
 
     useEffect(() => {
         let intervalId;
@@ -97,11 +98,22 @@ export function HitTheMoleGame() {
         );
     };
 
-    const formatTime = () => {
-        let minutes =Math.floor(seconds / 60);
-        let seconds = seconds % 60;
-        return `${minutes} : ${seconds}`
+    function formatTime(gameTime) {
+        const minutes = Math.floor(gameTime / 60);
+        const secondsFormatted = gameTime % 60;
+        return`${minutes.toString().padStart(
+            2,
+            '0'
+        )}:${secondsFormatted.toString().padStart(2, '0')}`;
     }
+
+
+
+    // const formatTime = () => {
+    //     let minutes =Math.floor(seconds / 60);
+    //     let seconds = seconds % 60;
+    //     return `${minutes} : ${seconds}`
+    // }
     return (
         <>
             {!gameStarted ? (
@@ -115,14 +127,26 @@ export function HitTheMoleGame() {
                 formatTime={formatTime}
             />
             ) : null}
+            
             {gameStarted ? <CountdownTimer countdown={countdown} /> : null}
 
             {gameStarted ? (
+                <>
+{/* 
+                <MoleGameInfo
+                score={score}
+                gameStarted={gameStarted}
+                startStopGame={() => setGameStarted((prev) => !prev)}
+                gameTime={gameTime}
+                moleCount={moleCount}
+                /> */}
+
                 <MoleGameBoard
                 moleArray={moleArray}
                 hitTheMole={hitTheMole}
                 score={score}
                 />
+                </>
                 ) : null}
                 {}
         </>
@@ -133,34 +157,5 @@ export function HitTheMoleGame() {
         const formattedTime = new Date(time * 1000).toISOString().slice(14, 19);
         return <h4> CZAS GRY: {formattedTime}</h4>;
     };
-
-
-//     return (
-//         <>
-//             {!gameStarted ? (
-//                 <MoleGameSettings
-//                 gameTime={gameTime}
-//                 moleCount={moleCount}
-//                 setGameTime={setGameTime}
-//                 setMoleCount={setMoleCount}
-//                 startStopGame={() => setGameStarted((prev) => !prev)}
-//                 gameStarted={gameStarted}
-//                 formatTime={formatTime}
-//             />
-//             ) : null}
-//             {gameStarted ? <CountdownTimer countdown={countdown} /> : null}
-
-//             {gameStarted ? (
-//                 <MoleGameBoard
-//                 moleArray={moleArray}
-//                 hitTheMole={hitTheMole}
-//                 score={score}
-//                 />
-//                 ) : null}
-//                 {}
-//         </>
-//     );
-// };
-// };
 
 
