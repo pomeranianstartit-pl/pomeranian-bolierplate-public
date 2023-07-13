@@ -1,20 +1,22 @@
 import { getParsedRouterDataList } from '../../router-data/parseRouterData';
 
 import { blockRouterMetaData as blockRouterMetaData121220231 } from './Exercise-example-12-12-2023-1/router-data';
-import { blockRouterMetaData as SelectorsAndCascade } from './SelectorsAndCascade/router-data';
-import { blockRouterMetaData as TextFundamentals } from './TextFundamentals/router-data';
-import { blockRouterMetaData as GoogleFonts } from './GoogleFonts/router-data';
-import { blockRouterMetaData as Colors } from './Colors/router-data';
-import { blockRouterMetaData as ImageFiles } from './ImageFiles/router-data';
-import { blockRouterMetaData as Backgrounds } from './Backgrounds/router-data';
+import { blockRouterMetaData as SelectorsAndCascadeMetaData } from './SelectorsAndCascade/router-data';
+import { blockRouterMetaData as TextFundamentalsMetaData } from './TextFundamentals/router-data';
+import { blockRouterMetaData as GoogleFontsMetaData } from './GoogleFonts/router-data';
+import { blockRouterMetaData as ColorsMetaData } from './Colors/router-data';
+import { blockRouterMetaData as ImageFilesMetaData } from './ImageFiles/router-data';
+import { blockRouterMetaData as BackgroundsMetaData } from './Backgrounds/router-data';
+import { blockRouterMetaData as CssFilterMetaData } from './CssFilter/router-data';
 
 export const blockRouterMetaData = [
   blockRouterMetaData121220231,
-  SelectorsAndCascade,
-  TextFundamentals,
-  GoogleFonts,
-  Colors,
-  ImageFiles,
-  Backgrounds,
+  SelectorsAndCascadeMetaData,
+  TextFundamentalsMetaData,
+  GoogleFontsMetaData,
+  ColorsMetaData,
+  ImageFilesMetaData,
+  BackgroundsMetaData,
+  CssFilterMetaData,
 ];
 export const blockRouterData = getParsedRouterDataList(blockRouterMetaData);
