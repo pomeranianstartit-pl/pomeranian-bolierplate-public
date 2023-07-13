@@ -10,7 +10,8 @@ export function ImageFiles() {
       <img src={logoIkea} alt="Ikea logo" />
       <img src={images} alt="images" />
 
-      <RoundImage src={images} />
+      <RoundImage src={images} size="400px" />
+      <RoundImage src={images} size="600px" />
     </div>
   );
 }
