@@ -31,3 +31,14 @@ aside a.active {
   background-color: var(--color-primary-blue);
   color: var(--color-white);
 }
+
+
+  .aside-row{
+color:#FE3756;
+  }
+
+  aside a.active,
+  aside a:hover {
+    background-color: var(--color-primary-blue);
+    color: var(--color-white);
+  }

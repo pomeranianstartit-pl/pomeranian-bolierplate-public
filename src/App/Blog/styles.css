@@ -1,0 +1,98 @@
+.blog-post-date {
+
+    color: var(--text-text-primary, #222);
+/* OVERLINE/Overline */
+font-family: MADE TOMMY;
+font-size: 10.5px;
+font-style: normal;
+font-weight: 400;
+line-height: 24px;
+letter-spacing: 1.68px;
+text-transform: uppercase;
+}
+
+.blog-post-header {
+
+    color: var(--text-text-primary, #222);
+font-family: MADE TOMMY;
+font-size: 42px;
+font-style: normal;
+font-weight: 800;
+line-height: 56px;
+}
+
+.blog-post-text {
+    color: var(--text-text-primary, #222);
+font-family: MADE TOMMY;
+font-size: 16px;
+font-style: normal;
+font-weight: 400;
+line-height: 27px;
+
+display: flex;
+width: 912px;
+flex-direction: column;
+
+}
+
+.blockquote {
+
+color: var(--text-text-primary, #222);
+font-family: Poppins;
+font-size: 16px;
+font-style: italic;
+font-weight: 400;
+line-height: 27px;
+
+
+}
+
+
+.blog-post-signature {
+    display: flex;
+width: 377px;
+flex-direction: column;
+
+color: var(--text-text-secondary, rgba(34, 34, 34, 0.80));
+font-family: MADE TOMMY;
+font-size: 18px;
+font-style: normal;
+font-weight: 700;
+line-height: 32px;
+}
+
+.blog-post-specialty {
+    display: flex;
+width: 796px;
+flex-direction: column;
+color: var(--text-text-secondary, rgba(34, 34, 34, 0.80));
+font-family: MADE TOMMY;
+font-size: 16px;
+font-style: normal;
+font-weight: 400;
+line-height: 24px;
+}
+
+.ul {
+    display: flex;
+width: 787px;
+flex-direction: column;
+
+color: var(--text-text-primary, #222);
+font-family: MADE TOMMY;
+font-size: 14px;
+font-style: normal;
+font-weight: 400;
+line-height: 22px;
+text-decoration-line: underline;
+}
+
+.blog-post-marilyn {
+    color: var(--text-text-primary, #222);
+    text-align: right;
+    font-family: MADE TOMMY;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 22px;
+}
