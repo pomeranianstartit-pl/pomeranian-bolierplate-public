@@ -14,6 +14,15 @@ export function Exercise() {
       <h2 className="color-rgba">Jestem pomalowany przez color rgba</h2>
       <span></span>
       <h2 className="color-hsl">Jestem pomalowany przez color hsl</h2>
+
+      <div className="Opacity">
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos suscipit
+          quae porro quidem aut tempore earum eligendi ut placeat nulla maxime
+          voluptas, minima repudiandae quisquam omnis cupiditate alias quas
+          dolore!
+        </p>
+      </div>
     </div>
   );
 }
