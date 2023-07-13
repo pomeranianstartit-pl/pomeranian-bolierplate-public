@@ -3,8 +3,8 @@ import { Routes, Route, BrowserRouter, Navigate } from 'react-router-dom';
 
 import { NotFound } from './App/Components/NotFound/NotFound';
 
+import { Colors } from './App/Exercises/HtmlCss/Color';
 import { Layout } from './App/Layout';
-import { Blog } from '.App/Components/Blog';
 import { Dashboard } from './App/Dashboard';
 import { Exercises } from './App/Exercises';
 import { MojeCV } from './App/Components/MojeCV';
@@ -19,8 +19,8 @@ export function App() {
           <Route path="dashboard/*" element={<Dashboard />} />
           <Route path="MojeCV/*" element={<MojeCV />} />
           <Route path="exercises/*" element={<Exercises />} />
+          <Route path="color/*" element={<Colors />} />
           <Route path="Calendar/*" element={<Calendar />} />
-          <Route path="Blog/*" element={<Blog />} />
           <Route path="*" element={<NotFound />} />
         </Route>
       </Routes>

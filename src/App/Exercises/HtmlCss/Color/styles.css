@@ -1,0 +1,20 @@
+.font-test-family {
+  font-family: Chilanka;
+}
+
+.color-name {
+  color: magenta;
+}
+
+.color-hex {
+  color: #369b2d;
+}
+.color-rgb {
+  color: rgb(27, 97, 64);
+}
+.color-rgba {
+  color: rgba(42, 141, 95, 0.5);
+}
+.color-hsl {
+  color: hsl(120, 60%, 50%);
+}

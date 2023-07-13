@@ -21,7 +21,7 @@ export function MakietaPiec() {
       <p>
         {randomNumber > inputNumber && 'Jestem mniejsza'}
         {randomNumber < inputNumber && 'jestem większa'}
-        {randomNumber == inputNumber && 'Gratulacje zgadłeś/aś'}
+        {randomNumber === inputNumber && 'Gratulacje zgadłeś/aś'}
       </p>
       <button>RESET</button>
     </div>
