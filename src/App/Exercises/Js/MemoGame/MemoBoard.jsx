@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect, useCallback } from 'react';
 import formatTime from '../HitTheMoleGame/FormatTime';
 
 export const MemoBoard = ({
@@ -10,9 +10,10 @@ export const MemoBoard = ({
   setFinalSettings,
 }) => {
   const [memoArray, setMemoArray] = useState([]);
-  const [visibleIndexArray, setVisibleIndexArray] = useState([]);
+  const [visibleIndexArray, setVisableIndexArray] = useState([]);
   const [playerMove, setPlayerMove] = useState(0);
-
+  const [numberOfPair, setNumberOfPair] = useState(0);
+  console.log(visibleIndexArray);
   useEffect(() => {
     generateMemoArray();
   }, [boardSize]);
@@ -31,7 +32,6 @@ export const MemoBoard = ({
       memoCardsSymbols.push({
         symbol: symbol,
         isVisableLetteer: false,
-        isVisibleBox: true,
         isMatched: false, // Dodane pole informujące o dopasowaniu kafelka
       });
     }
@@ -44,13 +44,17 @@ export const MemoBoard = ({
     setMemoArray(shuffledCards);
   };
 
-  const onBoxClick = (index) => {
-    if (!visibleIndexArray.includes(index)) {
-      setVisibleIndexArray((prevVisibleIndexArray) => [
+  const onBoxClick = (index, visibleIndexArray) => {
+    const prevVisible = [...visibleIndexArray];
+    if (playerMove === 0 || playerMove === 1) setPlayerMove((move) => move + 1);
+    else return;
+    const elementVisible = visibleIndexArray.includes(index);
+
+    if (!elementVisible) {
+      setVisableIndexArray((prevVisibleIndexArray) => [
         ...prevVisibleIndexArray,
         index,
       ]);
-      setPlayerMove((prevPlayerMove) => prevPlayerMove + 1);
       setMemoArray((prevMemoArray) => {
         const updatedMemoArray = [...prevMemoArray];
         updatedMemoArray[index] = {
@@ -59,42 +63,50 @@ export const MemoBoard = ({
         };
         return updatedMemoArray;
       });
+    }
 
-      if (playerMove === 1) {
-        const visibleIndexes = visibleIndexArray.concat(index);
-        const firstIndex = visibleIndexes[0];
-        const secondIndex = visibleIndexes[1];
-        if (
-          firstIndex !== undefined &&
-          secondIndex !== undefined &&
-          memoArray[firstIndex].symbol === memoArray[secondIndex].symbol
-        ) {
-          console.log('Dopasowane kafelki:', firstIndex, secondIndex);
+    console.log(visibleIndexArray);
+    console.log(memoArray[visibleIndexArray[visibleIndexArray.length - 2]]);
+    console.log(memoArray[visibleIndexArray[visibleIndexArray.length - 1]]);
+    if (playerMove === 2) {
+      if (
+        memoArray[visibleIndexArray[visibleIndexArray.length - 2]].symbol ===
+        memoArray[visibleIndexArray[visibleIndexArray.length - 1]].symbol
+      ) {
+        setMemoArray((prevMemoArray) =>
+          prevMemoArray.map((memo, index) => ({
+            ...memo,
+            isMatched: true,
+          }))
+        );
+        setNumberOfPair(numberOfPair + 1);
+        setPlayerMove(0);
+      } else {
+        debugger;
+        setTimeout(() => {
           setMemoArray((prevMemoArray) =>
             prevMemoArray.map((memo, index) => ({
               ...memo,
-              isMatched: true,
+              isVisableLetteer: false,
             }))
           );
-        } else {
-          console.log('Nieudane dopasowanie kafelków:', firstIndex, secondIndex);
-          setTimeout(() => {
-            setMemoArray((prevMemoArray) =>
-              prevMemoArray.map((memo, index) => ({
-                ...memo,
-                isVisableLetteer: false,
-              }))
-            );
-          }, 1000);
-        }
-        setPlayerMove(0);
-        setVisibleIndexArray([]);
+          setPlayerMove(0);
+          setVisableIndexArray(prevVisible);
+        }, 1000);
       }
     }
   };
+  const memoizedOnBoxClick = useCallback(
+    (id) => onBoxClick(id, visibleIndexArray),
+
+    [visibleIndexArray]
+  );
+  // Sprawdzamy czy wszystkie pary są odkryte jak tak to gameStart ustawiamy na false
+  if (numberOfPair === boardSize / 2) setGameStart(false);
 
   return (
     <>
+      <p>number of pair {numberOfPair}</p>
       <div className="container">
         <h2 className="item">CZAS GRY: </h2>
         <h2 className="timeAndScore">{formatTime(gameTime)}</h2>
@@ -116,12 +128,8 @@ export const MemoBoard = ({
       <div className="memoGame">
         {memoArray.map((memo, index) => (
           <div key={index}>
-            <span onClick={() => onBoxClick(index)}>
-              {memo.isVisibleBox && (
-                <div id={memo.isMatched ? "squerTrue ": "squerFalse"}>
-                  {memo.isVisableLetteer && memo.symbol}
-                </div>
-              )}
+            <span onClick={() => {memoizedOnBoxClick(index); setScore(score + 1)}}>
+              <div id="squerFalse">{memo.isVisableLetteer && memo.symbol}</div>
             </span>
           </div>
         ))}
