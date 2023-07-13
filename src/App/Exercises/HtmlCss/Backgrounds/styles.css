@@ -1,0 +1,26 @@
+.font-test-family {
+  font-family: Chilanka;
+}
+.background-url {
+  background: url('./14-blue-light-leak.jpg');
+  width: 600px;
+  height: 300px;
+  background-size: cover;
+}
+.background-url-2 {
+  background: url('./14-blue-light-leak.jpg');
+  width: 600px;
+  height: 300px;
+  background-size: 5px;
+}
+
+.background-url-3 {
+  background: url('./14-blue-light-leak.jpg');
+  width: 600px;
+  height: 300px;
+  background-size: 200px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-color: black;
+  border: 1px solid #fdf;
+}
