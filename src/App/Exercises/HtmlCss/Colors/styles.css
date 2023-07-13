@@ -26,3 +26,9 @@ color: rgba(19, 230, 72, 0.208)
 .hsl {
   color: hsl(113, 47%, 21%);
 }
+
+.opacity {
+  background-color: #8000ff;
+  padding: 24px;
+  opacity: 0.9;
+}
