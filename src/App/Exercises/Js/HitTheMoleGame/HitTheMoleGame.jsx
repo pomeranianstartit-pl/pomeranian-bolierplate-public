@@ -5,21 +5,25 @@ import MoleGameBoard from './Board';
 
 export const HitTheMoleGame = () => {
   const defaultGameTime = 1 * 60 * 1000;
-  const moleSpeed = 1000;
+  const [gameTime, setGameTime] = useState(defaultGameTime / 1000);
+  const [timer, setTimer] = useState(gameTime);
   const defaultArrayState = Array(10).fill({
     isVisible: false,
     isWhacked: false,
   });
-  const [moleCount, setMoleCount] = useState(1);
-  const [gameTime, setGameTime] = useState(defaultGameTime / 1000);
-  const [scoreCount, setScoreCount] = useState(0);
-  const [moleArray, setMoleArray] = useState(defaultArrayState);
   const [gameStarted, setGameStarted] = useState(false);
-  const [timer, setTimer] = useState(gameTime);
+  const [moleArray, setMoleArray] = useState(defaultArrayState);
+  const [moleCount, setMoleCount] = useState(1);
+  const moleSpeed = 1000;
+  const [scoreCount, setScoreCount] = useState(0);
 
   useEffect(() => {
     setMoleArray(defaultArrayState);
   }, [moleCount]);
+
+  useEffect(() => {
+    setTimer(gameTime);
+  }, [gameTime]);
 
   useEffect(() => {
     let interval;
@@ -36,7 +40,7 @@ export const HitTheMoleGame = () => {
     }
 
     return () => clearInterval(interval);
-  }, [timer]);
+  }, [timer, gameStarted]);
 
   useEffect(() => {
     let intervalId;
@@ -50,10 +54,10 @@ export const HitTheMoleGame = () => {
 
   useEffect(() => {
     if (gameStarted && scoreCount === 3) {
-      // score value to edit: 20
+      setTimer(gameTime);
       setGameStarted(false);
     }
-  }, [scoreCount, gameStarted]);
+  }, [scoreCount, gameStarted, gameTime]);
 
   const hitTheMole = (index) => {
     if (moleArray[index].isVisible) {
@@ -94,18 +98,20 @@ export const HitTheMoleGame = () => {
     );
   };
 
-  const startStopGame = () => {
-    setGameStarted((prevValue) => !prevValue);
+  const startGame = () => {
+    setGameStarted(true);
     setScoreCount(0);
+    setTimer(gameTime);
   };
 
   const restartGame = () => {
-    setTimer(gameTime);
     setGameStarted(false);
+    setTimer(defaultGameTime / 1000);
     setMoleCount(1);
     setScoreCount(0);
     setMoleArray(defaultArrayState);
   };
+
   return (
     <>
       <MoleGameSettings
@@ -115,7 +121,7 @@ export const HitTheMoleGame = () => {
         moleCount={moleCount}
         setMoleCount={setMoleCount}
         gameStarted={gameStarted}
-        startStopGame={startStopGame} //
+        startGame={startGame}
         restartGame={restartGame}
       />
       <MoleGameBoard

@@ -5,8 +5,7 @@ export const MoleGameSettings = ({
   setMoleCount,
   gameStarted,
   restartGame,
-  startStopGame,
-  timer,
+  startGame,
 }) => {
   const gameTimeOption = [
     { label: '1 minuta', timeValue: 1 * 60 },
@@ -62,7 +61,7 @@ export const MoleGameSettings = ({
             </div>
             <div>
               <h4>PRZYCISKI STERUJĄCE</h4>
-              <button onClick={startStopGame}>Start</button>
+              <button onClick={startGame}>Start</button>
             </div>
           </div>
         </div>
