@@ -3,11 +3,9 @@ import React from 'react';
 import './style.css';
 
 export function Cwiczenie1() {
-  const [state, setState] = React.useState('placeholder');
+  const [state, setState] = React.useState('');
   function handleSubmit(e) {
-    e.preventDefault();
-
-    const inputText = e.target[0].value;
+    const inputText = e.target.value;
     console.log(e);
     console.log(inputText);
     setState(inputText)
@@ -18,10 +16,9 @@ export function Cwiczenie1() {
       <h1>cześć</h1>
       <div className='columns'>
 
-        <form onSubmit={handleSubmit}>
+        <form>
           <label>wpisz tekst</label>
-          <input type="text" id='text' placeholder='Tu wpisz tekst' />
-          <button type="submit" >Kliknij mnie</button>
+          <input onChange={handleSubmit} type="text" id='text' placeholder='Tu wpisz tekst' />
         </form>
         <p>{state}</p>
       </div>

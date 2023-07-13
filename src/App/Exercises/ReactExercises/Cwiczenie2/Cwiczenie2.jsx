@@ -8,11 +8,14 @@ export function Cwiczenie2() {
     console.log(event)
     setState(state + 1)
   }
+
+
+
   return (
     <div>
       <h1>cześć</h1>
       <div className='columns'>
-        <button onClick={handleClick}>kliknieto mnie {state} razy</button>
+        <button onClick={handleClick}>kliknieto mnie {state} {(state === 1) ? 'raz' : 'razy'}</button>
       </div>
 
     </div>

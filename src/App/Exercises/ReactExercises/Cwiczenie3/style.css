@@ -1,0 +1,18 @@
+.columns {
+
+  display: flex;
+  flex-direction: row;
+  gap: 50px;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+
+}
+
+button {
+  background-color: rgb(235, 71, 92);
+  border-radius: 5px;
+}
