@@ -1,0 +1,19 @@
+.font-test-family {
+  font-family: Chilanka;
+}
+.css-filter {
+  background: url('./14-blue-light-leak.jpg');
+  width: 800px;
+  height: 400px;
+  background-size: cover;
+  filter: blur(2px) brightness(110%) hue-rotate(175deg) saturate(318%)
+    opacity(86%) contrast(183%);
+  -webkit-filter: blur(2px) brightness(110%) hue-rotate(175deg) saturate(318%)
+    opacity(86%) contrast(183%);
+  -moz-filter: blur(2px) brightness(110%) hue-rotate(175deg) saturate(318%)
+    opacity(86%) contrast(183%);
+}
+.css-filter h1 {
+  color: #fff;
+  font-size: 40px;
+}
