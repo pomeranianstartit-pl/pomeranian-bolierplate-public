@@ -1,0 +1,12 @@
+.font-test-family {
+  font-family: Chilanka;
+}
+.css-filter {
+  background: url('/public/images.jpeg');
+  width: 500px;
+  height: 300px;
+  background-size: cover;
+  filter: brightness(60%);
+  -webkit-filter: brightness(60%);
+  -moz-filter: brightness(60%);
+}

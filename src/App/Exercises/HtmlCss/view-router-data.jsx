@@ -5,6 +5,7 @@ import { TextFundamentalsMetaData as TextFundamentals } from './Text-fundamental
 import { ColorsMetaData } from './Color/router-data';
 import { ImageFilesMetaData } from './ImageFiles/router-data';
 import { backgroundsMetaData } from './Backgrounds/router-data';
+import { CssFilterMetaData } from './CssFilter/router-data';
 
 export const blockRouterMetaData = [
   blockRouterMetaData121220231,
@@ -12,5 +13,6 @@ export const blockRouterMetaData = [
   ColorsMetaData,
   ImageFilesMetaData,
   backgroundsMetaData,
+  CssFilterMetaData,
 ];
 export const blockRouterData = getParsedRouterDataList(blockRouterMetaData);
