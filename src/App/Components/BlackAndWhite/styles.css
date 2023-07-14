@@ -1,0 +1,5 @@
+.black-white {
+  grayscale(100%) saturate(0%) contrast(305%);
+  -webkit-filter: grayscale(100%) saturate(0%) contrast(305%);
+  -moz-filter: grayscale(100%) saturate(0%) contrast(305%);
+}
