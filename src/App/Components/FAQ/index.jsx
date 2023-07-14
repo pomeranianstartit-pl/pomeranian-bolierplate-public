@@ -1,5 +1,5 @@
 import './styles.css';
 
 export function FAQ() {
-  return <div></div>;
+  return <div>Pytania i odpowiedzi</div>;
 }
