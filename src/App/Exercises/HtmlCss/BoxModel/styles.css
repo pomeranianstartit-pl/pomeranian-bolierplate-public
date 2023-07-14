@@ -35,3 +35,28 @@
 .displayNone {
   display: none;
 }
+
+.div_nr2 {
+  background-color: aqua;
+  border: 2px solid gold;
+  max-width: 100px;
+  max-height: 250px;
+}
+
+.css_units_wraper {
+  font-size: 20px;
+}
+
+.ccc_units_1 {
+
+}
+
+.ccc_units_2 {
+  
+}
+.ccc_units_3 {
+  
+}
+.ccc_units_4 {
+  
+}

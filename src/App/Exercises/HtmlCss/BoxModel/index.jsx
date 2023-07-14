@@ -26,6 +26,18 @@ export function Exercise() {
       {!isVisible && (
         <div className="div_nr1">Przykładowy div - !conditional rendering</div>
       )}
+      <div className="div_nr2">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. At voluptatem
+        nihil, repellat dicta consequatur, animi illo mollitia facilis, aperiam
+        sapiente nostrum hic possimus atque! Placeat earum dolore quae nihil
+        aspernatur.
+      </div>
+      <div className="css_units-wraper">
+        <div className="div_nr1 css_units_1">Przykładowy div1</div>
+        <div className="div_nr1 css_units_2">Przykładowy div2</div>
+        <div className="div_nr1 css_units_3">Przykładowy div3</div>
+        <div className="div_nr1 css_units_4">Przykładowy div4</div>
+      </div>
     </div>
   );
 }
