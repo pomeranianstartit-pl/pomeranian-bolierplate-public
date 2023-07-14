@@ -13,7 +13,7 @@ export function Exercises() {
   return (
     <Routes>
       <Route path="" element={<BlockLayout />}>
-        <Route path="" element={<p>Wybierz kategorie</p>} />
+        <Route path="" element={<p>Select categories</p>} />
         <Route path="html-css" element={<HtmlCssExercises />} />
         <Route path="js" element={<JsExercises />} />
         <Route path="react" element={<ReactExercises />} />
@@ -29,7 +29,7 @@ export function Exercises() {
 function BlockLayout() {
   return (
     <>
-      <h1>Ćwiczenia</h1>
+      <h1>Exercises</h1>
       <div className="exercise-main-container">
         <Categories />
         <Outlet />

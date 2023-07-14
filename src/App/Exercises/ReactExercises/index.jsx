@@ -17,8 +17,8 @@ export function ReactExercises() {
 
   return (
     <div>
-      <p>React - lista ćwiczeń</p>
-      <GoBackLink label="Zamknij" />
+      <p>React</p>
+      <GoBackLink label="Close" />
 
       <hr />
 

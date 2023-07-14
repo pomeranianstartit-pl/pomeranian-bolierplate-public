@@ -5,7 +5,7 @@ import './styles.css';
 export const GoBackLink = ({ label }) => {
   return (
     <Link to=".." relative="path">
-      {label || 'Cofnij'}
+      {label || 'Go Back'}
     </Link>
   );
 };
