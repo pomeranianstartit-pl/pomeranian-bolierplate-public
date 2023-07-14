@@ -8,7 +8,7 @@ export function AppHeader() {
     <header>
       <div>
         <Logo />
-        <div className="header-title">Hejka!</div>
+        <div className="header-title"></div>
       </div>
     </header>
   );

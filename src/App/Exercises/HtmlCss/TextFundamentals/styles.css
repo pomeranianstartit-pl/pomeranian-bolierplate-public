@@ -2,7 +2,7 @@
   font-family: Chilanka;
 }
 
-.p-1 {
+.text-fundamentals .p-1 {
   color: green;
   font-size: 22px;
   font-family: 'Lato', sans-serif;
@@ -10,17 +10,16 @@
   font-style: italic;
 }
 
-.p-2 {
+.text-fundamentals .p-2 {
   font-weight: bold;
 }
-
-.p-3 {
+.text-fundamentals .p-3 {
   text-transform: uppercase;
   text-decoration: underline;
   text-shadow: -58px -32px 6px rgba(66, 68, 90, 1);
 }
 
-.p-4 {
+.text-fundamentals .p-4 {
   line-height: 22px;
   letter-spacing: 5px;
   word-spacing: 10px;

@@ -80,6 +80,6 @@
 }
 
 .blog-poste li:nth-child(1),
-li:nth-child(2) {
+.blog-poste li:nth-child(2) {
   font-weight: bold;
 }
