@@ -35,3 +35,38 @@
 .displayNone {
   display: none;
 }
+
+/* OVERFLOW */
+
+.div_nr2 {
+  background-color: aqua;
+  border: 2px solid gold;
+  max-width: 100px;
+  max-height: 250px;
+  /* Blok scrolowalny */
+  overflow: scroll;
+
+  /* Tekst ukryty */
+  /* overflow: hidden; */
+
+  /* Tekst scrollowalny w osi x */
+  /* overflow-x: scroll; */
+
+  /* Tekst scrollowalny w osi y */
+  /* overflow-y: scroll; */
+}
+
+/* CSS UNITS */
+
+.css_units_wrapper {
+  font-size: 20px;
+}
+
+.css_units_1 {
+}
+.css_units_2 {
+}
+.css_units_3 {
+}
+.css_units_4 {
+}
