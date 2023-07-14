@@ -35,5 +35,8 @@ aside a {
   color: var(--secondary-secondary, #23213d);
 }
 aside a.active {
+  color: var(--primary-primary, #379efe);
+}
+aside a:hover {
   color: var(--primary-primary, #fe3756);
 }

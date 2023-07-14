@@ -1,0 +1,76 @@
+* {
+  color: #23213d;
+}
+
+h2 {
+  color: #fe3756;
+}
+
+.class-selector {
+  color: rgba(240, 156, 122, 0.89);
+}
+
+#id-selector {
+  color: rgb(100, 163, 100);
+}
+
+.descendant span {
+  color: rgba(219, 126, 20, 0.911);
+}
+
+.child-selector > span {
+  border: 2px solid #333;
+}
+
+.adjacent-sibling + b {
+  color: rgb(218, 71, 52);
+}
+
+.general-sibling ~ b {
+  color: rgb(40, 190, 183);
+}
+.pseudo li:first-child {
+  color: rgb(170, 43, 187);
+}
+.pseudo li:last-child {
+  color: rgb(187, 48, 43);
+}
+.link-visited:hover {
+  color: rgb(38, 184, 184);
+  text-decoration: none;
+}
+input:focus {
+  background-color: rgb(238, 153, 238);
+}
+.link-visited:visited {
+  color: rgb(38, 223, 69);
+}
+.before::before {
+  content: '-';
+  border: 2px solid rgb(255, 166, 1);
+}
+.after::after {
+  content: '+';
+  border: 1px dotted rgb(255, 0, 0);
+}
+.attribute-selector li[id] {
+  color: rgb(79, 114, 8);
+}
+.attribute-selector a[href] {
+  color: rgb(179, 12, 129);
+  background-color: rgb(245, 231, 213);
+}
+.attribute-selector a[href="http://google.pl"]
+{
+  color: rgb(255, 255, 255);
+  background-color: rgb(27, 83, 27);
+  border-radius: 9px;
+}
+/* .attribute-selector a[href^='http'] {
+  color: rgb(255, 255, 255);
+  background-color: rgb(27, 83, 27);
+} */
+/* .attribute-selector a[href*='google'] {
+  color: rgb(255, 255, 255);
+  background-color: rgb(27, 83, 27);
+} */
