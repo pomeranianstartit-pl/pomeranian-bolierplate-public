@@ -1,0 +1,118 @@
+.blog h1,
+h2 {
+    color: black;
+    font-size: 42px;
+    font-style: normal;
+    font-weight: 800;
+    line-height: 56px;
+}
+
+.blog-name {
+    font-size: 18px;
+}
+
+.date {
+    font-size: 10.5px;
+}
+
+.post {
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 27px;
+    width: 912px;
+    padding: 10px 10px 10px 0px;
+    align-items: flex-start;
+    gap: 10px;
+}
+
+.post-quote {
+    font-size: 16px;
+    font-style: italic;
+    font-weight: 400;
+    line-height: 27px;
+    width: 912px;
+    padding: 10px 10px 10px 0px;
+    align-items: flex-start;
+    gap: 10px;
+}
+
+.blog-post-header {
+    display: flex;
+    padding: 10px 10px 10px 0px;
+    align-items: flex-start;
+    gap: 10px;
+    margin-top: 1px;
+    margin-bottom: 1px;
+}
+
+.signature {
+    color: rgba (34, 34, 34, 0.80);
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 700;
+    margin-top: 1px;
+    margin-bottom: 1px;
+}
+
+.job-title {
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    margin-top: 1px;
+    margin-bottom: 1px;
+}
+
+.quoted {
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 22px;
+    text-align: right;
+}
+
+.border {
+    box-sizing: border-box;
+    margin-top: 45px;
+    margin-left: 61px;
+    margin-right: 61px;
+    margin-bottom: 45px;
+}
+
+.inside-border {
+    display: flex;
+    width: 912px;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 2px;
+}
+
+.inside-border2 {
+    display: flex;
+    width: 912px;
+    height: 235px;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 2px;
+}
+
+.signature-border {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.list {
+    margin-top: 1px;
+}
+
+.signature-border-list {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding-top: 29px;
+}
+
+.linki {
+    margin-bottom: 29px;
+}
