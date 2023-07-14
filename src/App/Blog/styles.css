@@ -1,0 +1,80 @@
+.blog .blog-post {
+    padding: 2.8125rem 3.8125rem;
+    border-radius: 0.5rem;
+    background: var(--gray-80, #F4F5F7);
+    margin: 1.5rem;
+    position: relative;
+    box-shadow: 0px 65px 30px 0px rgba(0, 0, 0, 0.01), 0px 8px 20px 0px rgba(0, 0, 0, 0.04), 0px 17px 35px 0px rgba(0, 0, 0, 0.05), 0px -4px 26px 0px rgba(0, 0, 0, 0.08);
+}
+
+.blog-bell-icon {
+    position: absolute;
+    right: 2.125rem;
+    top: 2.125rem;
+}
+
+.blog h1 {
+    font-size: 1.125rem;
+    font-weight: 700;
+    line-height: 2.125rem;
+}
+
+.blog .blog-post .blog-post-header {
+    font-size: 2.625rem;
+    font-weight: 800;
+    line-height: 3.5rem;
+    margin: 0;
+}
+
+.date {
+    font-size: 0.65625rem;
+    line-height: 1.5rem;
+    letter-spacing: 0.105rem;
+}
+
+.blog .blog-post-quote {
+    font-style: italic;
+}
+
+.blog .author {
+    font-size: 1.125rem;
+    font-weight: 700;
+    line-height: 2rem;
+}
+
+.blog-post-signature {
+    text-align: right;
+    font-size: 0.875rem;
+    font-weight: 700;
+    line-height: 1.375rem;
+}
+
+.blog .blog-post ul {
+    display: flex;
+    flex-direction: column;
+    gap: 1.8125rem;
+}
+
+.blog .blog-post li {
+    text-transform: uppercase;
+}
+
+.blog .blog-post a:link {
+    color: #222;
+}
+
+.blog .blog-post a[href*="wp"] {
+    font-weight: bold;
+}
+
+#featured {
+    color: white;
+    background-color: #23213D;
+}
+
+.blog-post-cursor {
+    position: absolute;
+    right: 9.39338rem;
+    width: 4rem;
+    height: 4.758rem;
+}
