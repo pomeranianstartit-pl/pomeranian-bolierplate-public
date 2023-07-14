@@ -4,7 +4,7 @@ export const Blog = () => {
   return (
     <div className="blog">
       <h1>&lt; BLOG</h1>
-      <section className="blog-post">
+      <section id="blog-post1" className="blog-post">
         <div className="date">30-11-2022</div>
         <h2 className="blog-post-header">
           Why are we so nostalgic for the 1990s?
