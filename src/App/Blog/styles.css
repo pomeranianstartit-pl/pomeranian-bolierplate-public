@@ -1,0 +1,64 @@
+section {
+    padding: 45px 61px;
+}
+.blog h1 {
+    color: var(--secondary-secondary, #23213D);
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 34px;
+}
+.blog .blog-post {
+    margin-bottom: 36px;
+    border-radius: 8px;
+    background: var(--gray-80, #F4F5F7);
+}
+.blog-post .blog-post-header {
+    color: var(--text-text-primary, #222);
+    font-size: 42px;
+    font-weight: 800;
+    line-height: 56px; 
+    margin: 0;
+   
+}
+.blog-post q {
+    font-style: italic;
+   
+}
+.blog .date {
+    color: var(--text-text-primary, #222);
+    font-size: 10.5px;
+    font-weight: 400;
+    line-height: 24px; 
+    letter-spacing: 1.68px;
+    text-transform: uppercase;
+}
+.blog p {
+    color: var(--text-text-primary, #222);
+    font-weight: 400;
+    line-height: 27px; 
+}
+.blog .author {
+    color: var(--text-text-secondary, rgba(34, 34, 34, 0.80));
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 32px; 
+    width: 377px;
+}
+.blog .position {
+    border-radius: 10px;
+    background: #FFF;
+    width: 796px;
+    border-radius: 8px;
+    background: var(--gray-80, #F4F5F7);
+}
+.blog .author-quote {
+    color: var(--text-text-primary, #222);
+    text-align: right;
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 22px; 
+}
+
+
+
+    
