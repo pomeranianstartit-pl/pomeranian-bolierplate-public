@@ -1,7 +1,8 @@
 import React, { useEffect, useState } from 'react';
 import './style.css';
 import { MemoSettings } from './MemoSettings';
-import { MemoBoard } from './MemoBoard';
+//import { MemoBoard } from './MemoBoard';
+import { MemoGameBoard2 } from './MemoGameBoard';
 export function MemoGame() {
   const defaultBoardSize = 16;
   const [boardSize, setBoardSize] = useState(defaultBoardSize);
@@ -23,7 +24,6 @@ export function MemoGame() {
   }, [gameStart, gameTime]);
   return (
     <>
-      <p>{gameTime}</p>
       {!gameStart && (
         <MemoSettings
           boardSize={boardSize}
@@ -37,7 +37,7 @@ export function MemoGame() {
         />
       )}
       {gameStart && (
-        <MemoBoard
+        <MemoGameBoard2 /*MemoBoard*/
           gameTime={gameTime}
           setGameStart={setGameStart}
           boardSize={boardSize}
