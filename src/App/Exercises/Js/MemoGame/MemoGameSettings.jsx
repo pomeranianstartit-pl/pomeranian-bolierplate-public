@@ -35,7 +35,7 @@ const MemoGameSettings = ({
         <div className="memoOptionsButtons">
           <div className="gameButtonsRows">
             <div>
-              <h4>LICZBA ELEMENTÓW:</h4>
+              <h4 className='settings'>LICZBA ELEMENTÓW:</h4>
 
               {boardSizeOptions.map(({ label, checked }, index) => (
                 <button
@@ -56,7 +56,7 @@ const MemoGameSettings = ({
             </div>
 
             <div>
-              <h4>PRZYCISKI STERUJĄCE:</h4>
+              <h4 className='settings'>PRZYCISKI STERUJĄCE</h4>
 
               <button onClick={handleButtonClick}>{buttonText}</button>
             </div>
