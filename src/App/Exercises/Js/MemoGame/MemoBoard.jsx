@@ -1,4 +1,6 @@
-import React, { useState, useEffect, useCallback } from 'react';
+//            KOD MA PROBLEMY Z DZIAŁANIEM DOKŁADNIE W FUNKCJI onBoxClick TABLICA NIE JEST AKTUALIZOWANA NA CZAS PRZEZ CO FUNKCJA MA PROBLEMY Z DZIAŁANIEM POPRAWIONY KOD W WERSJI 3 Z KODU ADAMA ZNAJDUJE SIĘ W MemoGameBoard.jsx a funkcja się nazywa MemoGameBoard2
+
+/*import React, { useState, useEffect, useCallback } from 'react';
 import formatTime from '../HitTheMoleGame/FormatTime';
 
 export const MemoBoard = ({
@@ -16,7 +18,7 @@ export const MemoBoard = ({
   console.log(visibleIndexArray);
   useEffect(() => {
     generateMemoArray();
-  }, [boardSize]);
+  }, [boardSize, generateMemoArray]);
 
   const generateMemoArray = () => {
     const memoSymbols = 'ABCDEFGHIJKLMNOPRSTUWXYZ';
@@ -137,4 +139,4 @@ export const MemoBoard = ({
       <p>{visibleIndexArray}</p>
     </>
   );
-};
+};*/
