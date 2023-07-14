@@ -6,16 +6,21 @@
 }
 .blog .blog-post {
     margin-bottom: 36px;
+    border-radius: 8px;
+    background: var(--gray-80, #F4F5F7);
 }
+
 .blog-post .blog-post-header {
     color: var(--text-text-primary, #222);
     font-size: 42px;
     font-weight: 800;
     line-height: 56px; 
     margin: 0;
+   
 }
 .blog-post q {
     font-style: italic;
+   
 }
 .blog .date {
     color: var(--text-text-primary, #222);
@@ -41,6 +46,8 @@ p {
     border-radius: 10px;
     background: #FFF;
     width: 796px;
+    border-radius: 8px;
+    background: var(--gray-80, #F4F5F7);
 }
 .author-quote {
     color: var(--text-text-primary, #222);
