@@ -1,0 +1,33 @@
+.div_nr1 {
+  /* padding: góra+dół-50px lewo+prawo-20px */
+  /* padding: 50px 20px; ... */
+
+  /* padding: góra-20px prawo-0px dół-15px lewo-30px */
+  padding: 20px 0px 15px 30px;
+  /* 
+    border + padding + content = width
+
+    width(szerokość) niezależna od innych parametrów (padding, border)
+  */
+  /* box-sizing: border-box; */
+
+  /* 
+    border + padding + width = content
+    
+    width(szerokość) zależna od innych parametrów (padding, border)
+  */
+  /* box-sizing: content-box  */
+  width: 200px;
+  /* padding: 20px 20px; */
+  margin: 10px 10px;
+  border: 2px solid magenta;
+  background: rgb(230, 200, 205);
+}
+
+.span_nr1 {
+  background-color: rgb(95, 189, 169);
+}
+
+.displayNone {
+  display: none;
+}
