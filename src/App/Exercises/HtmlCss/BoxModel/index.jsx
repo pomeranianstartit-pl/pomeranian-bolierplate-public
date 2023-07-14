@@ -1,9 +1,10 @@
 import './styles.css';
 
-export function BoxModel() {
+export function Exercise() {
   const isVisible = true;
   return (
     <div>
+      {/* BOXMODEL */}
       BoxModel:
       <div className="div_nr1">Przykładowy div</div>
       <p className="p_nr1">Przykładowy p</p>
@@ -25,6 +26,23 @@ export function BoxModel() {
       {!isVisible && (
         <div className="div_nr1">Przykładowy div - !conditional rendering</div>
       )}
+      {/* OVERFLOW */}
+      <div className="div_nr2">
+        Przykładowy div z overflow: "Lorem ipsum dolor sit amet, consectetur
+        adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
+        magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
+        laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor
+        in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+        pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa
+        qui officia deserunt mollit anim id est laborum."
+      </div>
+      {/* CSS UNITS */}
+      <div className="css_units_wrapper">
+        <div className="div_nr1 css_units_1">Przykładowy div 1</div>
+        <div className="div_nr1 css_units_2">Przykładowy div 2</div>
+        <div className="div_nr1 css_units_3">Przykładowy div 3</div>
+        <div className="div_nr1 css_units_4">Przykładowy div 4</div>
+      </div>
     </div>
   );
 }
