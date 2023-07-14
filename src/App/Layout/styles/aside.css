@@ -35,3 +35,7 @@ aside a.active {
 .accent {
   accent-color: red;
 }
+
+aside li>:hover {
+  color: red;
+}

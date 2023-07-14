@@ -13,9 +13,7 @@ export function AppAside() {
         <ul>
           <li>
             <HouseIcon></HouseIcon>
-            <NavLink to="dashboard">
-              <span classname="accent">Dashboard</span>
-            </NavLink>
+            <NavLink to="dashboard">Dashboard</NavLink>
           </li>
           <li>
             <ElementIcon></ElementIcon>
@@ -32,6 +30,9 @@ export function AppAside() {
           <li>
             <PersonalCardIcon></PersonalCardIcon>
             <NavLink to="CV">Moje CV</NavLink>
+          </li>
+          <li>
+            <NavLink to="Blog">Blog</NavLink>
           </li>
         </ul>
       </nav>
