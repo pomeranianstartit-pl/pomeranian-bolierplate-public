@@ -5,35 +5,38 @@ import React from 'react';
 
 import './style.css';
 
-
-
-
 export function Cwiczenie1() {
-  const [tekst, setTekst] = React.useState('Placeholder');
 
-  function handleOnSubmit(event) {
+  const [tekst, setTekst] = React.useState('Tutaj trafi tekst z inputa');
+
+    function handleOnSubmit(event) {
 
     event.preventDefault();
 
     console.log(event);
 
 
+ const trescInputa = event.target[0].value;
 
 
-    const trescInputa = event.target[0].value;
+ console.log("Treść inputa: ", trescInputa)
 
 
-
-
-    console.log("Treść inputa: ", trescInputa)
-    
-    setTekst(trescInputa)
+ setTekst(trescInputa)
 
   }
 
+    function handleOnChange(event) {
 
+    console.log(event);
 
-  return (
+    const trescInputa = event.target.value;
+
+    setTekst(trescInputa);
+
+  }
+
+ return (
 
     <div className="blok-8__cwiczenie-1">
 
@@ -45,12 +48,9 @@ export function Cwiczenie1() {
 
           <p>Wpisz tekst</p>
 
+            <form onSubmit={handleOnSubmit}>
 
-
-
-          <form onSubmit={handleOnSubmit}>
-
-            <input type="text" placeholder='tekst do wpisania' />
+            <input type="text" placeholder='tekst do wpisania' onChange={handleOnChange} />
 
             <button type="submit">KLIKNIJ</button>
 
@@ -71,3 +71,7 @@ export function Cwiczenie1() {
   );
 
 }
+
+
+
+

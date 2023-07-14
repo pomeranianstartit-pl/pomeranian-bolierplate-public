@@ -37,3 +37,8 @@ aside a.active {
 color:#FE3756;
   }
 
+  aside a.active,
+  aside a:hover {
+    background-color: var(--color-primary-blue);
+    color: var(--color-white);
+  }
