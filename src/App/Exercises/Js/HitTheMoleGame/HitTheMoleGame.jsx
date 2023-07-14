@@ -116,6 +116,10 @@ export function HitTheMoleGame() {
     // }
     return (
         <>
+        <p style={{ fontSize: '18px', font: 'Poppins' }}>
+        Gra polegająca na podążaniu za krecikiem i trafieniu na kwadrat, w
+          którym się pojawił.
+        </p>
             {!gameStarted ? (
                 <MoleGameSettings
                 gameTime={gameTime}
@@ -124,7 +128,7 @@ export function HitTheMoleGame() {
                 setMoleCount={setMoleCount}
                 startStopGame={() => setGameStarted((prev) => !prev)}
                 gameStarted={gameStarted}
-                formatTime={formatTime}
+                // formatTime={formatTime}
             />
             ) : null}
             
@@ -132,8 +136,8 @@ export function HitTheMoleGame() {
 
             {gameStarted ? (
                 <>
-{/* 
-                <MoleGameInfo
+
+                {/* <MoleGameInfo
                 score={score}
                 gameStarted={gameStarted}
                 startStopGame={() => setGameStarted((prev) => !prev)}
@@ -147,8 +151,22 @@ export function HitTheMoleGame() {
                 score={score}
                 />
                 </>
+            ) : !gameEnded ? (
+                <>
+                 <p style={{ fontSize: '18px', font: 'Poppins' }}>
+        Gratulacje! Twój wynik to {score} złapane krety w czasie {' '}
+        {countdown} sekund!
+        </p>
+                <MoleGameSettings
+                gameTime={gameTime}
+                moleCount={moleCount}
+                setGameTime={setGameTime}
+                setMoleCount={setMoleCount}
+                startStopGame={() => setGameStarted((prev) => !prev)}
+                gameStarted={gameStarted}
+                />
+                </>
                 ) : null}
-                {}
         </>
     );
       }
