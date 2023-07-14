@@ -6,7 +6,7 @@ function generateRandomNumber() {
 }
 
 export function MakietaPiec() {
-  const [randomNumber, setRandomNumber] = useState(generateRandomNumber());
+  const [randomNumber] = useState(generateRandomNumber());
   const [inputNumber, setInputNumber] = useState('');
   const handleValue = (e) => {
     let inputValue = e.target.value;
