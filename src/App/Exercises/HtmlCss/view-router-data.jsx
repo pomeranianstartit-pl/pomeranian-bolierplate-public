@@ -7,9 +7,10 @@ import { blockRouterMetaData as imageFilesMetaData } from './ImageFiles/router-d
 import { blockRouterMetaData as backgroundsMetaData } from './Backgrounds/router-data';
 import { blockRouterMetaData as cssFilterMetaData } from './CssFilter/router-data';
 import { blockRouterMetaData as googleFonts } from './Google-fonts/router-data';
+import { blockRouterMetaData as BoxModelExercise } from './BoxModel/router-data';
 
 export const blockRouterMetaData = [blockRouterMetaData121220231, googleFonts, colorsMetaData, imageFilesMetaData,
-     backgroundsMetaData, cssFilterMetaData, selectorsAndCascade];
+     backgroundsMetaData, cssFilterMetaData, selectorsAndCascade, BoxModelExercise];
 
 
 export const blockRouterData = getParsedRouterDataList(blockRouterMetaData);
