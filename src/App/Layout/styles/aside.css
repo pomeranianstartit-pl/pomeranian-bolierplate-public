@@ -7,6 +7,10 @@ aside {
   overflow-y: auto;
 }
 
+li>:hover {
+  color: red;
+}
+
 aside ul {
   /* Nadpisanie domyślnych styli przeglądarki */
   padding-inline-start: 1rem;

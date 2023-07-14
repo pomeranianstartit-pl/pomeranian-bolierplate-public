@@ -1,0 +1,11 @@
+.pseudo li:first-child {
+    color: blue;
+}
+
+.pseudo li:last-child {
+    color: rgb(143, 143, 182);
+}
+
+.hover-over-me:hover {
+    background-color: blanchedalmond;
+}
