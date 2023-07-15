@@ -7,6 +7,9 @@ import { Blocks } from './App/Blocks';
 import { Layout } from './App/Layout';
 import { Dashboard } from './App/Dashboard';
 import { Exercises } from './App/Exercises';
+import { CV } from './App/CV';
+import { Calendar } from './App/Calendar';
+import { StandardTags } from './App/Exercises/HtmlCss/StandardTags';
 
 export function App() {
   return (
@@ -17,6 +20,10 @@ export function App() {
           <Route path="dashboard/*" element={<Dashboard />} />
           <Route path="exercises/*" element={<Exercises />} />
           <Route path="blocks/*" element={<Blocks />} />
+          <Route path="CV/*" element={<CV />} />
+          <Route path="Calendar/*" element={<Calendar />} />
+          <Route path="StandardTags/*" element={<Calendar />} />
+
           <Route path="*" element={<NotFound />} />
         </Route>
       </Routes>
