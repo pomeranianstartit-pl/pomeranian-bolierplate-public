@@ -1,3 +1,7 @@
 .round-image {
     background-color: yellow;
+    background-image: url('../../Images/GettyImages-135630198-5ba7d225c9e77c0050cff91b.jpg');
+    background-size: cover;
+    background-position: -2rem, center;
+    filter: grayscale(100%);
 }
