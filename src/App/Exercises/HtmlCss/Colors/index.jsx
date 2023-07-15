@@ -1,4 +1,7 @@
 import './styles.css';
+function dodaj(input) {
+  console.log('hello', input);
+}
 
 export const Colors = () => {
   return (
