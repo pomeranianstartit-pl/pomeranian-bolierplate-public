@@ -3,7 +3,7 @@ import './styles.css';
 export const Blog = () => {
   return <div className="main">
     <div className="date"> 30-11-2022</div>
-    <h1>Why are we so nostalgic for the 1990s?</h1>
+    <h1 className='hBlog'>Why are we so nostalgic for the 1990s?</h1>
     <section>
       Pop culture used to define a generation, but it seems the cultural,
       music and fashion trends of the 1990s have been recycled, and what
@@ -13,7 +13,8 @@ export const Blog = () => {
       consumption rather than the ease of a digital download, and now the
       hipsters have discovered the nostalgic sound of a whirring cassette from
       which to enjoy the dulcet tones of everyone from Salt-N-Pepa to Rick
-      Astley.</section>
+      Astley.
+    </section>
 
     <p className="name">Radosława Majdan</p>
     <p className='profession'>Senior Marketing Specialist</p>
@@ -21,15 +22,26 @@ export const Blog = () => {
 
 
     <div className="date">30-11-2022</div>
-    <h1>I make mistakes!</h1>
-    <p>“I’m selfish, impatient and a little insecure. I make mistakes, I am out of control and at times hard to handle. But if you can&rsquo;t handle me at my worst, then you sure as hell don’t deserve me at my best.”Marilyn Monroe</p>
+    <h1 className='hBlog'>I make mistakes!</h1>
+    <p>
+      “I’m selfish, impatient and a little insecure. I make mistakes, I am out
+      of control and at times hard to handle. But if you can&rsquo;t handle me
+      at my worst, then you sure as hell don’t deserve me at my best.”Marilyn
+      Monroe
+    </p>
 
 
     <p className="name">Radosława Majdan</p>
-    <p className='profession'>Senior Marketing Specialist</p>
+    <p className="profession">Senior Marketing Specialist</p>
     <div className="date"> 30-11-2022</div>
-    <h1>18 Record-Breaking, Controversial, and Weird Facts </h1>
-    <section>The death of Queen Elizabeth II on September 8 at the age of 96 represents a monumental shift for the British monarchy and the people of England. Royals have died before, of course, but the Queen ruled for more than 70 years, and represented a certain stability and decorum that held the institution of the Royal Family together as it slowly grew more visibly anachronistic and battered by endless scandals.
+    <h1 className='hBlog'>18 Record-Breaking, Controversial, and Weird Facts </h1>
+    <section>
+      The death of Queen Elizabeth II on September 8 at the age of 96
+      represents a monumental shift for the British monarchy and the people of
+      England. Royals have died before, of course, but the Queen ruled for
+      more than 70 years, and represented a certain stability and decorum that
+      held the institution of the Royal Family together as it slowly grew more
+      visibly anachronistic and battered by endless scandals.
       <ul>
         <li>
           <a href="https://www.wp.pl">WP.PL</a>
@@ -41,7 +53,7 @@ export const Blog = () => {
       </ul>
     </section>
     <p className="name">Radosława Majdan</p>
-    <p className='profession'>Senior Marketing Specialist</p>
+    <p className="profession">Senior Marketing Specialist</p>
 
   </div>
 };
