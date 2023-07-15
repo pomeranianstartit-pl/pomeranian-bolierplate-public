@@ -1,0 +1,83 @@
+.faked-tags {
+    .f-header-one {
+        display: block;
+        font-size: 2em;
+        margin-block-start: 0.67em;
+        margin-block-end: 0.67em;
+        margin-inline-start: 0px;
+        margin-inline-end: 0px;
+        font-weight: bold;
+    }
+
+    .f-date {
+        font-size: smaller;
+    }
+
+    .f-header-three {
+        display: block;
+        font-size: 1.17em;
+        margin-block-start: 1em;
+        margin-block-end: 1em;
+        margin-inline-start: 0px;
+        margin-inline-end: 0px;
+        font-weight: bold;
+    }
+
+    .f-sub {
+        vertical-align: sub;
+        font-size: smaller;
+    }
+
+    .f-sup {
+        vertical-align: super;
+        font-size: smaller;
+    }
+
+    .f-paragraph {
+        display: block;
+        margin-block-start: 1em;
+        margin-block-end: 1em;
+        margin-inline-start: 0px;
+        margin-inline-end: 0px;
+    }
+
+    .f-paragraph .f-bold {
+        font-weight: bold;
+    }
+
+    .f-paragraph .f-quote {
+        font-style: italic;
+    }
+
+    .f-paragraph .f-del {
+        text-decoration: line-through;
+    }
+
+    .f-ins {
+        text-decoration: underline;
+    }
+
+    .f-header-five {
+        display: block;
+        font-size: 0.83em;
+        margin-block-start: 1.67em;
+        margin-block-end: 1.67em;
+        margin-inline-start: 0px;
+        margin-inline-end: 0px;
+        font-weight: bold;
+    }
+
+    .f-ul {
+        display: block;
+        list-style-type: disc;
+        margin-block-start: 1em;
+        margin-block-end: 1em;
+        margin-inline-start: 0px;
+        margin-inline-end: 0px;
+        padding-inline-start: 40px;
+    }
+
+    .f-ul .f-li {
+        display: list-item;
+    }
+}
