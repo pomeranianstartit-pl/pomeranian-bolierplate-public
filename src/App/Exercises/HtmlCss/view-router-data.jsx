@@ -6,6 +6,7 @@ import { googleFontsMetaData as GoogleFonts } from './GoogleFonts/router-data';
 import { standardTagsMetaData as StandardTags } from './StandardTags/router-data';
 import { textFundamentsMetaData as TextFundaments } from './TextFundaments/router-data';
 import { CssAnimationsMetaData as CssAnimations } from './CssAnimations/router-data';
+import { ColorsMetaData as Colors } from './Colors/router-data';
 
-export const blockRouterMetaData = [blockRouterMetaData121220231, GoogleFonts, SelectorsAndCascade, StandardTags, TextFundaments, CssAnimations];
+export const blockRouterMetaData = [blockRouterMetaData121220231, GoogleFonts, Colors, SelectorsAndCascade, StandardTags, TextFundaments, CssAnimations];
 export const blockRouterData = getParsedRouterDataList(blockRouterMetaData);
