@@ -1,0 +1,10 @@
+.round-image {
+    background-color: yellow;
+    background-image: url('../../../../public/pictures.jpeg');
+    background-position: 50%;
+    background-size: cover;
+}
+
+.round-image:first-child+.round-image {
+    filter: grayscale(100%);
+}
