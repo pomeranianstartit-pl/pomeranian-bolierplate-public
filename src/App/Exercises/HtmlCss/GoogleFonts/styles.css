@@ -1,0 +1,48 @@
+@font-face {
+    font-family: VT323;
+    src: url(../../../../../public/fonts/VT323-Regular.ttf);
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Oswald&display=swap');
+
+.font-lato {
+    font-family: 'Lato', sans-serif;
+}
+
+.font-VT323 {
+    font-family: VT323;
+}
+
+.font-oswald {
+    font-family: 'Oswald', sans-serif;
+}
+
+#font-height {
+    margin: 1rem;
+    display: block;
+    height: 10rem;
+    overflow-y: scroll;
+}
+
+.font-block {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    gap: 1rem;
+}
+
+.btn-font {
+    color: white;
+    display: flex;
+    height: 3.5rem;
+    width: 5rem;
+    padding: 1.25rem 2.25rem;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    flex: 1 0 0;
+    border-radius: 0.5rem;
+    border: 1px solid var(--primary-primary, #FE3756);
+    background: var(--primary-primary, #FE3756);
+}
