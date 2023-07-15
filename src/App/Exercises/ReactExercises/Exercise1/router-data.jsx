@@ -1,7 +1,7 @@
-import { Exercise1 } from './Exercise1';
+import { Exercise1 } from './exercise1';
 
 export const Exercise1MetaData = {
-  path: 'exercise-1',
+  path: 'exercise1',
   date: '12-12-2023',
   linkLabel: 'Ćwiczenie 1',
   blockNo: 1,
