@@ -103,7 +103,9 @@ export const ImageFiles = () => {
       </section>
 
       <section>
-        <RoundImage />
+        <RoundImage size="150px" />
+        <RoundImage size="250px" />
+        <RoundImage size="350px" />
       </section>
     </div>
   );
