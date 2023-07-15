@@ -10,13 +10,14 @@ aside {
 
 aside ul {
   /* Nadpisanie domyślnych styli przeglądarki */
-  padding-inline-start: 1rem;
+  padding-inline-start: 0.2rem;
   list-style: none;
 }
 
 aside li {
   display: flex;
   align-items: center;
+  justify-content: left;
   line-height: 2rem;
 }
 
@@ -28,14 +29,14 @@ aside li {
 
 aside li a {
   display: block;
-  padding: 0.5rem;
+  padding: 2px;
 }
 aside a {
   text-decoration: none;
   color: var(--secondary-secondary, #23213d);
 }
 aside a.active {
-  color: var(--primary-primary, #379efe);
+  color: var(--primary-primary, #fe3756);
 }
 aside a:hover {
   color: var(--primary-primary, #fe3756);
