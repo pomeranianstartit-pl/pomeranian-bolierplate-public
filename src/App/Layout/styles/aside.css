@@ -10,7 +10,7 @@ aside {
 
 aside ul {
   /* Nadpisanie domyślnych styli przeglądarki */
-  padding-inline-start: 0.2rem;
+  padding-inline-start: 0.5rem;
   list-style: none;
 }
 
@@ -40,4 +40,13 @@ aside a.active {
 }
 aside a:hover {
   color: var(--primary-primary, #fe3756);
+}
+.icon {
+  margin-right: 16px;
+}
+.icon path {
+  stroke: var(--secondary-secondary, #fe3756);
+}
+aside a.active .icon path {
+  stroke: var(--primary-primary, #fe3756);
 }

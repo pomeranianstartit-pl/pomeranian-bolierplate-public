@@ -4,7 +4,8 @@ import { PersonalCardIcon } from '../../App/Components/Icons/PersonalCardIcon';
 import { HouseIcon } from '../../App/Components/Icons/HouseIcon';
 import { EditIcon } from '../../App/Components/Icons/EditIcon';
 import { ElementIcon } from '../../App/Components/Icons/ElementIcon';
-// import {} from '../Components/Icons/ElementIcon';
+import { BookIcon } from '../Components/Icons/BookIcon';
+import { FaqIcon } from '../Components/Icons/FaqIcon';
 import './styles/aside.css';
 
 export function AppAside() {
@@ -13,32 +14,31 @@ export function AppAside() {
       <nav>
         <ul>
           <li>
-            <HouseIcon />
+            <HouseIcon className="icon" />
             <NavLink to="dashboard">Dashboard</NavLink>
           </li>
           <li>
-            <PersonalCardIcon />
+            <PersonalCardIcon className="icon" />
             <NavLink to="cv">Moje CV</NavLink>
           </li>
           <li>
-            <ElementIcon />
+            <ElementIcon className="icon" />
             <NavLink to="blocks">Bloki</NavLink>
           </li>
           <li>
-            <EditIcon />
+            <EditIcon className="icon" />
             <NavLink to="exercises">Ćwiczenia</NavLink>
           </li>
           <li>
-            <CalendarIcon />
+            <CalendarIcon className="icon" />
             <NavLink to="calendar">Kalendarz</NavLink>
           </li>
-
           <li>
-            <ElementIcon />
+            <BookIcon className="icon" />
             <NavLink to="blog">Blog</NavLink>
           </li>
           <li>
-            <ElementIcon />
+            <FaqIcon className="icon" />
             <NavLink to="faq">FAQ</NavLink>
           </li>
         </ul>
