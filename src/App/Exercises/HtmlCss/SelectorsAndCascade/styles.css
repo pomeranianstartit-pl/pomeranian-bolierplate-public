@@ -7,9 +7,7 @@
 
 }
 
-h2 {
-    color: blue;
-}
+
 .class-selector {
     color: pink;
 }
@@ -55,9 +53,6 @@ input:focus {
 .attribute-selector li[id] {
     color: blueviolet;
 }
-.attribute-selector a[href*="google"] , h1 {
+.attribute-selector a[href*="google"] {
     color: rgb(87, 193, 79);
-}
-h1, h2 {
-    font-size: 10px;
 }
