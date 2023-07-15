@@ -1,5 +1,6 @@
 import './styles.css';
 import snowWolf from '../../../Images/snow-wolf.png';
+import { RoundImage } from '../../../Components/RoundImage/RoundImage';
 
 export const ImageFiles = () => {
   return (
@@ -94,6 +95,9 @@ export const ImageFiles = () => {
         <p>
           <a href="https://tinypng.com/">tinyPNG</a>
         </p>
+      </section>
+      <section>
+        <RoundImage />
       </section>
     </div>
   );
