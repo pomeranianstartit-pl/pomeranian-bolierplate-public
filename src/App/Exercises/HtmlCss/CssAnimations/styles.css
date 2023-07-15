@@ -1,0 +1,36 @@
+.font-test-family {
+  font-family: Chilanka;
+}
+
+div.animation {
+  width: 100px;
+  height: 100px;
+  background-color: red;
+  animation-name: blinking-square;
+  animation-duration: 4s;
+  animation-iteration-count: infinite;
+}
+
+@keyframes blinking-square {
+  0% {
+    background-color: red;
+  }
+
+  10% {
+    background-color: yellow;
+  }
+
+  25% {
+    background-color: blue;
+  }
+
+  50% {
+    background-color: green;
+    height: 200px;
+    width: 200px;
+  }
+
+  100% {
+    background-color: red;
+  }
+}
