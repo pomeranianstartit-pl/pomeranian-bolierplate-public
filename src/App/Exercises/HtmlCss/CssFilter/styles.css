@@ -1,0 +1,17 @@
+.css-filter-1 {
+    filter: grayscale(38%) sepia(33%) blur(1px) hue-rotate(163deg);
+    -webkit-filter: grayscale(38%) sepia(33%) blur(1px) hue-rotate(163deg);
+    -moz-filter: grayscale(38%) sepia(33%) blur(1px) hue-rotate(163deg);
+}
+
+.css-filter-2 {
+    filter: grayscale(100%) sepia(70%) brightness(83%) hue-rotate(163deg) saturate(200%) opacity(94%) contrast(252%);
+    -webkit-filter: grayscale(100%) sepia(70%) brightness(83%) hue-rotate(163deg) saturate(200%) opacity(94%) contrast(252%);
+    -moz-filter: grayscale(100%) sepia(70%) brightness(83%) hue-rotate(163deg) saturate(200%) opacity(94%) contrast(252%);
+}
+
+.css-filter-3 {
+    filter: sepia(83%) blur(3px);
+    -webkit-filter: sepia(83%) blur(3px);
+    -moz-filter: sepia(83%) blur(3px);
+}
