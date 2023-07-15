@@ -31,3 +31,11 @@ aside a.active {
   background-color: var(--color-primary-blue);
   color: var(--color-white);
 }
+
+.accent {
+  accent-color: red;
+}
+
+aside li>:hover {
+  color: red;
+}
