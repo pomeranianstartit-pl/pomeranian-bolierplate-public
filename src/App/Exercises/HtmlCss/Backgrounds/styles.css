@@ -1,0 +1,29 @@
+.background-color {
+    background-color: pink
+}
+
+.background-image-url {
+    width: 200px;
+    height: 200px;
+    background-image: url("../../../Images/snow-wolf.png")
+}
+
+.background-image-position {
+    width: 200px;
+    height: 200px;
+    background-image: url("../../../Images/snow-wolf.png");
+    background-position: 25% 60%
+}
+
+.background-image-repeat {
+    width: 200px;
+    height: 200px;
+    background-image: url("../../../Images/star.svg")
+}
+
+.background-image-size {
+    width: 200px;
+    height: 200px;
+    background-image: url("../../../Images/snow-wolf.png");
+    background-size: 100px;
+}
