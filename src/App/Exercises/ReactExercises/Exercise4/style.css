@@ -1,0 +1,40 @@
+.rows {
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+}
+
+.rows form {
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+}
+
+
+.rows form input {
+  border-radius: 5px;
+  border: 1px solid #C8CBD1;
+  padding: 13px 16px;
+  width: 146px;
+  height: 50px;
+  color: var(--gray-900, #4B5563);
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 32px;
+}
+
+.p {
+  color: var(--text-text-primary, #222);
+  font-family: Poppins;
+  font-size: 22px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 36px;
+}
+
+input[type=number].no-spinner::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
