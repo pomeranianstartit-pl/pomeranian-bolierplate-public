@@ -27,27 +27,30 @@ aside li {
   align-items: center;
 }
 
-aside li a {
-  display: block;
-  padding: 2px;
-}
 aside a {
+  display: flex;
+  align-items: center;
+  padding: 2px;
   text-decoration: none;
   color: var(--secondary-secondary, #23213d);
 }
-aside a.active {
-  color: var(--primary-primary, #fe3756);
-}
+
+aside a.active,
 aside a:hover {
-  color: var(--primary-primary, #fe3756);
+  color: #fe3756;
 }
+
 .icon {
   margin-right: 16px;
 }
 .icon path {
-  stroke: var(--secondary-secondary, #ac0f0f);
+  stroke: var(--secondary-secondary, #23213d);
+  /* stroke: blue; */
 }
 
-aside a.active .icon path {
+aside a:hover,
+aside a.active .icon path,
+aside a:hover .icon path {
   stroke: var(--primary-primary, #fe3756);
+  /* stroke: greenyellow; */
 }

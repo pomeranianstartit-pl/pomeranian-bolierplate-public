@@ -14,32 +14,46 @@ export function AppAside() {
       <nav>
         <ul>
           <li>
-            <HouseIcon className="icon" />
-            <NavLink to="dashboard">Dashboard</NavLink>
+            <NavLink to="dashboard">
+              <HouseIcon className="icon" />
+              <span>Dashboard</span>
+            </NavLink>
           </li>
           <li>
-            <PersonalCardIcon className="icon" />
-            <NavLink to="cv">Moje CV</NavLink>
+            <NavLink to="cv">
+              <PersonalCardIcon className="icon" />
+              <span>Moje CV</span>
+            </NavLink>
           </li>
           <li>
-            <ElementIcon className="icon" />
-            <NavLink to="blocks">Bloki</NavLink>
+            <NavLink to="blocks">
+              <ElementIcon className="icon" />
+              <span>Bloki</span>
+            </NavLink>
           </li>
           <li>
-            <EditIcon className="icon" />
-            <NavLink to="exercises">Ćwiczenia</NavLink>
+            <NavLink to="exercises">
+              <EditIcon className="icon" />
+              <span>Ćwiczenia</span>
+            </NavLink>
           </li>
           <li>
-            <CalendarIcon className="icon" />
-            <NavLink to="calendar">Kalendarz</NavLink>
+            <NavLink to="calendar">
+              <CalendarIcon className="icon" />
+              <span>Kalendarz</span>
+            </NavLink>
           </li>
           <li>
-            <BookIcon className="icon" />
-            <NavLink to="blog">Blog</NavLink>
+            <NavLink to="blog">
+              <BookIcon className="icon" />
+              <span>Blog</span>
+            </NavLink>
           </li>
           <li>
-            <FaqIcon className="icon" />
-            <NavLink to="faq">FAQ</NavLink>
+            <NavLink to="faq">
+              <FaqIcon className="icon" />
+              <span>FAQ</span>
+            </NavLink>
           </li>
         </ul>
       </nav>
