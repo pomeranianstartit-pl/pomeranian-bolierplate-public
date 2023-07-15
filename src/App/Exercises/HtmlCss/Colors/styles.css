@@ -1,0 +1,27 @@
+.colors-name {
+    color: red;
+}
+
+.colors-hex {
+    color: #f00;
+}
+
+.colors-short-hex {
+    color: #ff0000;
+}
+
+.colors-rgb {
+    color: rgb(255, 0, 0);
+}
+
+.colors-rgba {
+    color: rgb(255, 0, 0, 0.5)
+}
+
+.colors-hsl {
+    color: hsl(0deg 100% 50%)
+}
+
+.colors-opacity {
+    opacity: 0.5;
+}
