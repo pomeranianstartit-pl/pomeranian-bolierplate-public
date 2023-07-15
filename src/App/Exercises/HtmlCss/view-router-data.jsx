@@ -4,11 +4,13 @@ import { blockRouterMetaData as blockRouterMetaData121220231 } from './Exercise-
 import { blockRouterMetaData as Selectors } from './SelectorsAndCascade/router-data';
 import { blockRouterMetaData as TextFundaments } from './TextFundaments/router-data';
 import { blockRouterMetaData as StandardTags } from './StandardTags/router-data';
+import { blockRouterMetaData as GoogleFonts } from './GoogleFonts/router-data';
 
 export const blockRouterMetaData = [
   blockRouterMetaData121220231,
   Selectors,
   TextFundaments,
   StandardTags,
+  GoogleFonts,
 ];
 export const blockRouterData = getParsedRouterDataList(blockRouterMetaData);
