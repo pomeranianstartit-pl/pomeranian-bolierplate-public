@@ -21,21 +21,14 @@ export const GoogleFonts = () => {
         malesuada nulla auctor euismod. Nulla porta mauris ut nunc ornare, id
         tristique purus accumsan. Donec at ante ipsum.
       </p>
-
       <button onClick={() => {
-
         setDynamicClass('klasa');
       }}
-
-      >Click me</button>
-
+      >Lucida</button>
       <button onClick={() => {
-
         setDynamicClass('klasa2');
       }}
 
-      >Click me</button>   </>
-
+      >Courier</button>   </>
   );
-
 };
