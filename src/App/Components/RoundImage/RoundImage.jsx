@@ -1,10 +1,12 @@
 import './styles.css';
-
-export const RoundImage = () => {
+export const RoundImage = ({ size }) => {
   return (
-    <div
-      className="round-image"
-      style={{ borderRadius: '100%', height: '150px', width: '150px' }}
-    />
+    <div>
+      <div
+        className="round-image"
+        style={{ borderRadius: '100%', height: size, width: size }}
+      />
+      <div>{size}</div>
+    </div>
   );
 };
