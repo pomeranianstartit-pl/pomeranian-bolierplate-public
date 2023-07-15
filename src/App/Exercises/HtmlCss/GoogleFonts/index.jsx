@@ -1,17 +1,66 @@
+import { useState } from 'react';
 import './styles.css';
 
 export const GoogleFonts = () => {
+  const [dynamicClass, setDynamicClass] = useState('f-roboto');
+
   return (
-    <div>
-      Lorem Ipsum is simply dummy text of the printing and typesetting industry.
-      Lorem Ipsum has been the industry's standard dummy text ever since the
-      1500s, when an unknown printer took a galley of type and scrambled it to
-      make a type specimen book. It has survived not only five centuries, but
-      also the leap into electronic typesetting, remaining essentially
-      unchanged. It was popularised in the 1960s with the release of Letraset
-      sheets containing Lorem Ipsum passages, and more recently with desktop
-      publishing software like Aldus PageMaker including versions of Lorem
-      Ipsum.
-    </div>
+    <>
+      <p className={dynamicClass}>
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur non
+        lorem mollis, tempor nisl in, ultricies mauris. Nunc malesuada varius
+        rhoncus. Vestibulum elementum tristique suscipit. Morbi porttitor vel
+        ipsum eu venenatis. Ut ligula erat, mattis ut dapibus eget, malesuada ut
+        odio. Fusce venenatis interdum tellus, non consectetur erat ullamcorper
+        et. Donec dictum cursus elementum. Morbi dolor eros, rutrum sed arcu sit
+        amet, cursus tempus sem. Duis velit nibh, tempus vel ex eu, facilisis
+        viverra nisi. Suspendisse et orci tempus ligula iaculis feugiat. Integer
+        at nisi erat. Suspendisse potenti. Pellentesque laoreet sapien erat, nec
+        malesuada nulla auctor euismod. Nulla porta mauris ut nunc ornare, id
+        tristique purus accumsan. Donec at ante ipsum.
+      </p>
+
+      <button
+        onClick={() => {
+          setDynamicClass('f-roboto');
+        }}
+      >
+        f-roboto
+      </button>
+      <button
+        onClick={() => {
+          setDynamicClass('f-pacifico');
+        }}
+      >
+        f-pacifico
+      </button>
+      <button
+        onClick={() => {
+          setDynamicClass('f-lumansimo');
+        }}
+      >
+        f-lumansimo
+      </button>
+    </>
   );
 };
+
+/*function handleOnChangeRobot(event) {
+
+    setDynamicClass('font-roboto');
+
+  }
+
+ 
+
+ <button onClick={handleOnChangeRobot}>Roboto</button>
+
+      <button
+
+        onClick={() => {
+
+          setDynamicClass('f-pacifico');
+
+        }}
+
+      > */
