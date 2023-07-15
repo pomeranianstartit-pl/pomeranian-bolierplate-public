@@ -1,0 +1,41 @@
+.background-color {
+  background-color: greenyellow;
+}
+
+.background-image-url {
+  width: 200px;
+  height: 200px;
+  background-color: yellow;
+  background-image: url("../../../Images/snow-wolf.png");
+}
+
+.background-image-position {
+  width: 200px;
+  height: 200px;
+  background-color: yellow;
+  background-image: url("../../../Images/snow-wolf.png");
+  background-position: center;
+  background-position: 20% 60%;
+  background-position: -60px -50px;
+}
+
+.background-image-repeat {
+  width: 200px;
+  height: 200px;
+  background-color: aquamarine;
+  background-image: url("../../../Images/star.svg");
+  background-repeat: no-repeat;
+  background-repeat: repeat-x;
+}
+
+.background-image-size {
+  width: 200px;
+  height: 300px;
+  background-color: yellow;
+  background-image: url("../../../Images/snow-wolf.png");
+  background-repeat: no-repeat;
+  background-size: 100px;
+  background-size: 50%;
+  background-size: contain;
+  background-size: cover;
+}
