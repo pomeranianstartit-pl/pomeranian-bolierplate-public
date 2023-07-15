@@ -45,8 +45,9 @@ aside a:hover {
   margin-right: 16px;
 }
 .icon path {
-  stroke: var(--secondary-secondary, #fe3756);
+  stroke: var(--secondary-secondary, #ac0f0f);
 }
+
 aside a.active .icon path {
   stroke: var(--primary-primary, #fe3756);
 }
