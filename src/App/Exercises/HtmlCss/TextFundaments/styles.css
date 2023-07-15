@@ -1,0 +1,9 @@
+.faked-tags{
+    .h1 {
+        color: var(--secondary-secondary, #23213D);
+    }
+
+    .bold {
+        font-weight: bold;
+    }
+}
