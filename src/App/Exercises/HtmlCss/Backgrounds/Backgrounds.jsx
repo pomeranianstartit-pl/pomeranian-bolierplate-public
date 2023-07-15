@@ -1,6 +1,7 @@
 import './styles.css';
 
 import snowWolf from '../../../Images/snow-wolf.png';
+import { RoundImage } from '../../../Components/RoundImage/RoundImage';
 
 export const Backgrounds = () => {
   return (
@@ -46,6 +47,11 @@ export const Backgrounds = () => {
         <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/background">
           CSS - background
         </a>
+      </section>
+      <section>
+        <RoundImage size="100px" />
+        <RoundImage size="150px" />
+        <RoundImage size="200px" />
       </section>
     </article>
   );
