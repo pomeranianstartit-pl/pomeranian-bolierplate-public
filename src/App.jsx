@@ -9,7 +9,7 @@ import { Dashboard } from './App/Dashboard';
 import { Exercises } from './App/Exercises';
 import { CV } from './App/CV';
 import { Calendar } from './App/Calendar';
-import { StandardTags } from './App/Exercises/HtmlCss/StandardTags';
+import { Blog } from './App/Blog/Blog';
 
 export function App() {
   return (
@@ -22,8 +22,7 @@ export function App() {
           <Route path="blocks/*" element={<Blocks />} />
           <Route path="CV/*" element={<CV />} />
           <Route path="Calendar/*" element={<Calendar />} />
-          <Route path="StandardTags/*" element={<Calendar />} />
-
+          <Route path="Blog/*" element={<Blog />} />
           <Route path="*" element={<NotFound />} />
         </Route>
       </Routes>

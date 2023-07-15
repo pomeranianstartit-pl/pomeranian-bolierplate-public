@@ -1,0 +1,68 @@
+h1 {
+    color: var(--secondary-secondary, #23213D);
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 34px;
+}
+
+h2 {
+    color: var(--text-text-primary, #222);
+    font-size: 42px;
+    font-style: normal;
+    font-weight: 800;
+    line-height: 56px;
+    margin: 0px;
+}
+
+.date {
+    color: var(--text-text-primary, #222);
+
+    font-size: 10.5px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px;
+    letter-spacing: 1.68px;
+    text-transform: uppercase;
+}
+
+.blog .blog-post {
+    margin-bottom: 36px;
+}
+
+.blog p {
+    color: var(--text-text-primary, #222);
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 27px;
+}
+
+.blog .blog-post {
+    background: var(--gray-80, #F4F5F7)
+}
+
+.Author {
+    color: var(--text-text-secondary, rgba(34, 34, 34, 0.80));
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 32px;
+}
+
+.Position {
+    color: var(--text-text-secondary, rgba(34, 34, 34, 0.80));
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px;
+}
+
+.quote-author {
+    color: var(--text-text-primary, #222);
+    text-align: right;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 22px;
+}
