@@ -57,13 +57,14 @@ export const StandarTags = () => {
         </div>
         <div>
           Make the next birthday you celebrate a special one with a hand-picked
-          happy birthday <span>quote</span> or wish that will surely make that
+          happy birthday <span>"quote"</span> or wish that will surely make that
           special someone’s day a great day. Whether you’re celebrating your
           birthday or someone else’s, you can rely on our list of{' '}
-          <span>happy birthday</span> <span>quotes</span> to help put a smile on
-          someone’s face. From inspirational to funny to cute sayings, browse
-          our list of <span>quotes</span> to find one that resonates with you.{' '}
-          <span>Nothing</span> can stop you!
+          <span className="italic">happy birthday</span> <span>"quotes"</span>{' '}
+          to help put a smile on someone’s face. From inspirational to funny to
+          cute sayings, browse our list of <span>"quotes"</span> to find one
+          that resonates with you.{' '}
+          <span className="secondary-text">Nothing</span> can stop you!
         </div>
         <div className="primary-title underline">
           Why not to use <span>lists</span> ?

@@ -27,3 +27,9 @@ div {
 .secondary-title span {
   font-style: italic;
 }
+.secondary-text {
+  text-decoration: line-through;
+}
+.italic {
+  font-style: italic;
+}
