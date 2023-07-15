@@ -4,6 +4,7 @@ import { HouseIcon } from '../Components/Icons/HouseIcon';
 import { ElementIcon } from '../Components/Icons/ElementIcon';
 import { PersonalCardIcon } from '../Components/Icons/PersonalCardIcon';
 import { CalendarIcon } from '../Components/Icons/CalendarIcon';
+import { BookIcon } from '../Components/Icons/BookIcon';
 
 import './styles/aside.css';
 
@@ -13,26 +14,27 @@ export function AppAside() {
       <nav>
         <ul>
           <li>
-            <HouseIcon />
+            <HouseIcon className="icon" />
             <NavLink to="dashboard">Dashboard</NavLink>
           </li>
           <li>
-            <PersonalCardIcon />
+            <PersonalCardIcon className="icon" />
             <NavLink to="CV">Moje CV</NavLink>
           </li>
           <li>
-            <ElementIcon />
+            <ElementIcon className="icon" />
             <NavLink to="blocks">Bloki</NavLink>
           </li>
           <li>
-            <EditIcon />
+            <EditIcon className="icon" />
             <NavLink to="exercises">Ćwiczenia</NavLink>
           </li>
           <li>
-            <CalendarIcon />
+            <CalendarIcon className="icon" />
             <NavLink to="calendar">Kalendarz</NavLink>
           </li>
           <li>
+            <BookIcon className="icon" />
             <NavLink to="blog">Blog</NavLink>
           </li>
         </ul>
