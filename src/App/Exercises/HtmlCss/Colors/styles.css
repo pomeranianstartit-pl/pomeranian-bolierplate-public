@@ -1,0 +1,33 @@
+.colors-name {
+    color: blueviolet;
+}
+
+.colors-hex {
+    color: #002be2
+}
+
+.colors-short-hex {
+    color: #f01;
+}
+
+.colors-rgb {
+    color: rgb(165, 179, 41)
+}
+
+.colors-rgba {
+    color: rgba(165, 179, 41, 0.541)
+}
+
+.colors-hsl {
+    color: hsl(66, 100%, 43%)
+}
+
+.colors-opacity {
+    background-color: red;
+    opacity: 0.5;
+}
+
+.colors-rbga {
+    background-color: rgba(255, 0, 17, 0.377);
+
+}
