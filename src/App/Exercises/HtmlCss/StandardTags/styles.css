@@ -1,0 +1,86 @@
+.faked-tags {
+
+    .faketitle {
+        display: block;
+        font-size: 2em;
+        margin-block-start: 0.67em;
+        margin-block-end: 0.67em;
+        margin-inline-start: 0px;
+        margin-inline-end: 0px;
+        font-weight: bold
+    }
+
+    .fakedata {
+
+        font-size: small;
+    }
+
+    .bold {
+        word-spacing: normal;
+        font-weight: bold;
+    }
+
+    .fakeverticalsub {
+        vertical-align: sub;
+    }
+
+    .faketitle2 {
+        display: block;
+        font-size: 1.17em;
+        margin-block-start: 1em;
+        margin-block-end: 1em;
+        margin-inline-start: 0px;
+        margin-inline-end: 0px;
+        font-weight: bold;
+    }
+
+    .fakebirthday {
+        display: block;
+        font-size: 1.17em;
+        margin-block-start: 1em;
+        margin-block-end: 1em;
+        margin-inline-start: 0px;
+        margin-inline-end: 0px;
+        font-weight: bold;
+    }
+
+    .fakeverticalsuper {
+        vertical-align: super;
+        font-size: smaller;
+    }
+
+    .fakequote {
+        display: inline;
+    }
+
+    .fakelinethrough {
+        text-decoration: line-through;
+    }
+
+    .faketitle3 {
+        font-size: 1.17em;
+        margin-block-start: 1em;
+        margin-block-end: 1em;
+        margin-inline-start: 0px;
+        margin-inline-end: 0px;
+        font-weight: bold;
+    }
+
+    .fakeunderline {
+        text-decoration: underline;
+
+    }
+
+    .faketitle4 {
+        display: block;
+        font-size: 0.83em;
+        margin-block-start: 1.67em;
+        margin-block-end: 1.67em;
+        margin-inline-start: 0px;
+        margin-inline-end: 0px;
+        font-weight: bold;
+        font-style: italic;
+    }
+
+
+}
