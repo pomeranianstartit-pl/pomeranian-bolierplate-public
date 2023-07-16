@@ -1,0 +1,10 @@
+.master-header {
+    color: var(--secondary-secondary, #23213D);
+    /* body/bold-18 */
+    font-family: 'Poppins', sans-serif;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 34px;
+    /* 188.889% */
+}
