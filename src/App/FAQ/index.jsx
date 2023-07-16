@@ -15,6 +15,7 @@ export const FAQ = () => {
       <MasterHeader value="Faq" />
       <p>Tutaj znajdź odpowiedzi na najczęściej zadawane pytania</p>
       <SingleQuestion
+        button
         question="Jak mogę zapisać się na szkolenie?"
         answer={uniwersalnaOdpowiedz}
       />
