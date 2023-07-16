@@ -14,7 +14,7 @@ export function FaqIcon({ className = '' }) {
         strokeWidth="1.5"
         strokeMiterlimit="10"
         strokeLinecap="round"
-        strokeLlinejoin="round"
+        strokeLinejoin="round"
       />
       <path
         d="M21.98 7.29001V11.29C21.98 14.23 20.63 15.81 17.94 16.04C17.97 15.8 17.98 15.55 17.98 15.29V11.29C17.98 8.10001 16.38 6.5 13.19 6.5H6.79004C6.53004 6.5 6.28004 6.51001 6.04004 6.54001C6.27004 3.85001 7.86004 2.5 10.79 2.5H17.19C20.38 2.5 21.98 4.10001 21.98 7.29001Z"
