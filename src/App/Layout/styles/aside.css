@@ -5,52 +5,87 @@ aside {
   flex-direction: column;
   justify-content: space-between;
   overflow-y: auto;
-  background: #fff;
+  background: var(--color-white);
+
+  & ul {
+    /* Nadpisanie domyślnych styli przeglądarki */
+    padding-inline-start: 0.5rem;
+    list-style: none;
+
+    & li {
+      display: flex;
+      align-items: center;
+      justify-content: left;
+      line-height: 2rem;
+
+      & a {
+        display: flex;
+        align-items: center;
+        padding: 2px;
+        text-decoration: none;
+        color: var(--color-purple);
+
+        &:hover,
+        &.active {
+          color: var(--color-red);
+
+          & .icon path {
+            stroke: var(--color-red);
+          }
+        }
+
+        & .icon {
+          margin-right: 16px;
+
+          & path {
+            stroke: var(--color-purple);
+          }
+        }
+      }
+    }
+  }
 }
 
-aside ul {
-  /* Nadpisanie domyślnych styli przeglądarki */
+/* aside ul {
+  Nadpisanie domyślnych styli przeglądarki
   padding-inline-start: 0.5rem;
   list-style: none;
-}
+} */
 
-aside li {
+/* aside li {
   display: flex;
   align-items: center;
   justify-content: left;
   line-height: 2rem;
-}
+} */
 
-.aside-row {
+/* .aside-row {
   display: flex;
   flex-direction: row;
   align-items: center;
-}
+} */
 
-aside a {
+/* aside a {
   display: flex;
   align-items: center;
   padding: 2px;
   text-decoration: none;
   color: var(--secondary-secondary, #23213d);
-}
+} */
 
-aside a.active,
+/* aside a.active,
 aside a:hover {
   color: #fe3756;
-}
+} */
 
-.icon {
+/* .icon {
   margin-right: 16px;
-}
-.icon path {
+} */
+/* .icon path {
   stroke: var(--secondary-secondary, #23213d);
-  /* stroke: blue; */
 }
 
-aside a:hover,
 aside a.active .icon path,
 aside a:hover .icon path {
   stroke: var(--primary-primary, #fe3756);
-  /* stroke: greenyellow; */
-}
+} */

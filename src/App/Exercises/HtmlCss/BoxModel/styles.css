@@ -1,0 +1,73 @@
+.testing-box-model {
+  margin: 32px 10px 30px 0;
+  border: 8px dashed black;
+  padding: 8px 16px;
+  background-color: rgba(127, 255, 212, 0.404);
+}
+.display-inline span {
+  /* display: inline; span is an inline element itself*/
+  background-color: yellow;
+  margin: 16px;
+  /* przegladarka ignoruje marginesy góra-dół w inline elementach  */
+}
+.display-block span {
+  background-color: green;
+  display: block;
+  /* w przypadku kliku elementów blokowych pod sobą przeglądarka wybiera marginesy większe */
+}
+
+.display-inline-block span {
+  background-color: plum;
+  display: inline-block;
+  /* elemnty się nie łamią, nie zajmują całej linii */
+  margin: 16px;
+  /* marginesy działają z każdej strony, przeglądarka bierze pod uwagę każdy margines */
+}
+.display-none {
+  display: none;
+  /* chowa zawartość np. pojawia się lub chowa tekst w zależności od tego czy display jest ustawiony na none */
+}
+.box-sizing-border-box {
+  box-sizing: border-box;
+  border: 8px solid black;
+  margin: 16px;
+  padding: 16px;
+  width: 300px;
+  height: 200px;
+}
+.box-sizing-content-box {
+  box-sizing: content-box;
+  border: 8px solid black;
+  margin: 16px;
+  padding: 16px;
+  width: 300px;
+  height: 200px;
+}
+.testing-overflow {
+  border: 10px solid black;
+  max-height: 150px;
+  /* overflow: hidden; */
+  overflow-y: scroll;
+  color: red;
+}
+.section-css-units {
+  font-size: 20px;
+}
+.css-units-em {
+  border: 5px solid black;
+  padding: 1em;
+}
+.css-units-px {
+  border: 5px solid black;
+  padding: 32px;
+}
+.css-units-rem {
+  border: 5px solid black;
+  padding: 2rem;
+  /* zależność między elementami "em", większość przypadków "rem" */
+}
+.css-units-percent {
+  border: 5px solid black;
+  width: 50%;
+  /* procenty nie zawsze są dobre do zastosowania, ponieważ nie można częto przewidzieć jak to finalnie będzie wyglądało */
+}
