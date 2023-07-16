@@ -1,0 +1,73 @@
+.testing-box-model {
+  margin: 32px;
+  border: 8px dashed black;
+  padding: 16px;
+  background-color: aquamarine;
+}
+
+.display-inline span {
+  background-color: yellow;
+  margin: 16px;
+}
+
+.display-block span {
+  display: block;
+  background-color: green;
+  margin: 16px;
+}
+
+.display-inline-block span {
+  display: inline-block;
+  background-color: plum;
+  margin: 16px;
+}
+
+.display-none {
+  display: none;
+}
+
+.box-sizing-border-box {
+  box-sizing: border-box;
+  border: 10px solid black;
+  margin: 16px;
+  padding: 16px;
+  width: 300px;
+  height: 250px;
+}
+
+.box-sizing-content-box {
+  box-sizing: content-box;
+  border: 10px solid black;
+  margin: 16px;
+  padding: 16px;
+  width: 300px;
+  height: 250px;
+}
+
+.section-css-units {}
+
+.css-units-px {
+  border: 5px solid black;
+  padding: 32px;
+}
+
+.css-units-em {
+  font-size: 1em;
+  padding: 2em;
+}
+
+.css-units-rem {
+  border: 5px solid black;
+  padding: 0.5rem;
+}
+
+.css-units-percent {
+  border: 5px solid black;
+  width: 50%;
+}
+
+.testing-overflow {
+  border: 10px solid black;
+  max-height: 150px;
+  overflow-y: scroll;
+}
