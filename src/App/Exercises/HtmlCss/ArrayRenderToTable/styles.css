@@ -1,0 +1,29 @@
+.bands-table {
+  box-shadow: 0px 2.7852022647857666px 9.1602201461792px 0px rgba(0, 0, 0, 0.02), 0px 12.732353210449219px 25.747648239135742px 0px rgba(0, 0, 0, 0.03), 0px 32.22876739501953px 69.07301330566406px 0px rgba(0, 0, 0, 0.04), 0px 63.661766052246094px 158.44705200195312px 0px rgba(0, 0, 0, 0.06);
+  font-size: 18px;
+  text-align: left;
+  border-radius: 0.8rem;
+  overflow: hidden;
+  border-collapse: collapse;
+}
+
+.bands-table th {
+  height: 3.5rem;
+}
+
+.bands-table tr {
+  height: 5.25rem;
+}
+
+.bands-table th,
+.bands-table td {
+  padding: 0 3rem;
+}
+
+.bands-table tr:nth-child(odd) {
+  background-color: #FFD5DB;
+}
+
+.bands-table tr:first-child {
+  background-color: #F5F5F5;
+}
