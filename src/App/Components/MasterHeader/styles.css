@@ -1,0 +1,6 @@
+.master-header {
+  color: var(--secondary-secondary, #23213d);
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 34px;
+}
