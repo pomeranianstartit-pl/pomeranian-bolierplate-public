@@ -1,0 +1,83 @@
+.testing-box-model {
+    margin: 30px;
+    padding: 30px 40px 50px 60px;
+    padding-inline-end: 100px;
+
+    border: 8px dashed black;
+
+
+
+    background-color: aquamarine;
+
+}
+
+.display-inline span {
+    display: inline;
+    background-color: yellow;
+    margin: 16px;
+}
+
+.display-block span {
+    background-color: green;
+    display: block;
+    margin: 16px;
+}
+
+.display-inline-block span {
+    display: inline-block;
+    background-color: plum;
+    margin: 16px;
+
+}
+
+.display-none {
+    display: none;
+}
+
+.box-sizing-border-box {
+    box-sizing: border-box;
+    border: 10px solid black;
+    margin: 16px;
+    padding: 16px;
+    width: 300px;
+    height: 200px;
+}
+
+.box-sizing-content-box {
+    box-sizing: content-box;
+    border: 10px solid black;
+    margin: 16px;
+    padding: 16px;
+    width: 300px;
+    height: 200px;
+}
+
+.section-css-units {
+    font-size: 20px;
+}
+
+.css-units-px {
+
+    border: 5px solid black;
+    padding: 32px;
+}
+
+.css-units-em {
+    font-size: 1em;
+    padding: 2em;
+}
+
+.css-units-rem {}
+
+.css-units-percent {
+    border: 5px solid black;
+    padding: 10%;
+    width: 200px;
+}
+
+.testing-overflow {
+    border: 10px solid black;
+    max-height: 150px;
+    overflow: hidden;
+    overflow-x: scroll;
+}
