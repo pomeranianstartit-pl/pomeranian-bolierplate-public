@@ -1,13 +1,21 @@
+import { useState } from 'react';
+
 export function SingleQuestion({ question, answer }) {
+
+    const [visible, setVisible] = useState();
+    function handlerOnClick() {
+
+        console.log('klikniete');
+        setVisible(!visible)
+    }
+
     return (
-        <section>
-
-
+        <section className='question-section' onClick={handlerOnClick}>
             <h2>{question}</h2>
-            <hr />
-            <p>
-                {answer}
-            </p>
+
+            {visible &&
+                <div className='answer-section'><p> <hr />{answer}</p>
+                </div>}
         </section>
     );
 }

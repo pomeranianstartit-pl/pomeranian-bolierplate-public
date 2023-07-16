@@ -1,0 +1,15 @@
+.table-with-styling td {
+    color: blue;
+    border: 5px dashed black;
+    text-align: left;
+
+}
+
+.table-with-styling {
+    border: 2px, solid, black;
+    border-collapse: collapse;
+}
+
+.table-with-styling td:nth-child(odd) {
+    color: red;
+}

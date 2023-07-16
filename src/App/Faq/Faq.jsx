@@ -1,7 +1,12 @@
 import './styles.css';
 import { MasterHeader } from '../Components/MasterHeader/MasterHeader';
 import { SingleQuestion } from './SingleQuestion';
+import React from 'react';
 export const Faq = () => {
+
+
+
+
   const uniwesalnaOdpowiedz = `                Lorem Ipsum is simply dummy text of the printing and typesetting
                 industry. Lorem Ipsum has been the industry's standard dummy text ever
                 since the 1500s, when an unknown printer took a galley of type and

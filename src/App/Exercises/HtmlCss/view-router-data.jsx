@@ -12,6 +12,8 @@ import { ImagesFilesMetaData as ImagesFiles } from './ImagesFiles/router-data';
 import { CssFilterMetaData as CssFilter } from './CssFilter/router-data';
 import { MediaFilesMetaData as MediaFiles } from './MediaFiles/router-data';
 import { BoxModelMetaData as BoxModel } from './BoxModel/router-data';
+import { HTMLTablesMetaData as HTMLTables } from './HTMLTables/router-data';
+import { TableTennisMetaData as TableTennis } from './TableTennis/router-data';
 
-export const blockRouterMetaData = [blockRouterMetaData121220231, GoogleFonts, Backgrounds, MediaFiles, Colors, CssFilter, SelectorsAndCascade, ImagesFiles, StandardTags, CssAnimations, TextFundaments, BoxModel];
+export const blockRouterMetaData = [blockRouterMetaData121220231, GoogleFonts, Backgrounds, MediaFiles, Colors, CssFilter, SelectorsAndCascade, ImagesFiles, StandardTags, CssAnimations, TextFundaments, BoxModel, HTMLTables, TableTennis];
 export const blockRouterData = getParsedRouterDataList(blockRouterMetaData);
