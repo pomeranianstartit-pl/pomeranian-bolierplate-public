@@ -4,7 +4,6 @@ export function HTMLTables() {
   return (
     <div>
       <h1>Tabele</h1>
-      <p>Ćwiczenia z tworzenia tabel</p>
       <section>
         <h2>Przykład z W3C</h2>
         <a href="https://www.w3schools.com/html/tryit.asp?filename=tryhtml_table_intro">
