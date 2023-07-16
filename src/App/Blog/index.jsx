@@ -1,9 +1,10 @@
 import './styles.css';
+import { MasterHeader } from '../Components/MasterHeader/MasterHeader';
 
 export const Blog = () => {
   return (
     <div className="blog">
-      <h1>&gt; BLOG</h1>
+      <MasterHeader title="Blog" />
       <section className="blog-post" id="featured">
         <div className="blog-bell-icon">
           <svg
