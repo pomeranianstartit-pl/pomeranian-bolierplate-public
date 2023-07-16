@@ -1,6 +1,6 @@
 .table-bands-styling {
   border-collapse: collapse;
-  width: 100%;
+  width: 50%;
   font-size: 18px;
   color: var(--text-text-primary, #222);
   border-radius: 1rem;
@@ -31,5 +31,6 @@
   background: #f5f5f5;
   font-weight: 600;
   height: 3.5rem;
-  font-size: 1.5rem;
+  font-size: 1.2rem;
+  text-align: left;
 }
