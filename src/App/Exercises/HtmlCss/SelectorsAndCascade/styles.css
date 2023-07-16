@@ -90,8 +90,3 @@ input:focus {
 .attribute-selector a[href$="com"] {
     border: 2px solid darkorchid;
 }
-
-h2,
-h3 {
-    font-style: italic;
-}
