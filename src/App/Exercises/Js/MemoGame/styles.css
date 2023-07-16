@@ -1,50 +1,91 @@
-.stage {
+.gameOptionsButtons {
+  width: 100%;
+  height: 100%;
   display: grid;
-  grid-template-columns: 60px 60px 60px 60px;
-  grid-template-rows: 60px 60px 60px 60px;
-  gap: 10px;
+  grid-column-gap: 5px;
+  grid-row-gap: 5px;
+  grid-template-rows: auto 3fr;
+  grid-template-columns: 2fr 4fr;
 }
 
-.cell {
+.gameButtonsRows {
+  grid-area: 1 / 1 / 5 / 5;
+}
+.gameStatus {
+  grid-area: 1 / 1 / 2 / 2;
+}
+
+.gameButtonsRows div,
+.gameStatus div {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.gameButtonsRows h4,
+.gameButtonsRows button,
+.gameStatus h4,
+.gameStatus button {
+  width: 15rem;
+}
+
+.gameButtonsRows button,
+.gameStatus button {
+  padding: 1.25rem 2.2rem 1.25rem 2.2rem;
+  margin: 1rem;
+  border-radius: 0.5rem;
+  border-color: #23213d;
+  border: 1px;
+  gap: 1rem;
+  background: #23213d;
+
+  font-family: Poppins;
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 31px;
+  letter-spacing: 0em;
+  text-align: center;
+  color: white;
+}
+
+.gameButtonsRows button:hover,
+.gameStatus button:hover,
+.gameButtonsRows button.activeButton {
+  background: #fe3756;
+  border-color: #fe3756;
+}
+
+.memoGame {
+  display: grid;
+  gap: 0.5rem 0.5rem;
+}
+.memoGame .cell {
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+
+.memoGame .symbol {
   display: flex;
   justify-content: center;
   align-items: center;
   border-radius: 10px;
   border: 1px solid #ccc;
   background-color: #E2FBD7;
+  width: 66px;
+  height: 66px;
   cursor: pointer;
 }
 
-.closed {
-  background-color: #EBEBEB;
+.memoGame .closed {
+  background-color: #E2FBD7;
 }
 
-.closed:hover {
+.memoGame .symbol:hover {
   box-shadow: 0 0 - 4px 26px rgba(0, 0, 0, 0.08);
 }
 
-.guessed {
-  background-color: #F3AEA8;
-}
-
-.menu {
-  display: grid;
-  grid-template-columns: 200px 100px;
-  gap: 20px;
-  margin-bottom: 20px;
-}
-
-.menu-text {
-  display: flex;
-  align-items: center;
-}
-
-.menu-greyed {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  background-color: #EBEBEB;
-  padding: 10px 20px;
-  border-radius: 5px;
-  ;
+.memoGame .guessed {
+  background-color: #E2FBD7;
 }
