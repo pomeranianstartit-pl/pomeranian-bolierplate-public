@@ -1,0 +1,97 @@
+h3 {
+    color: darkblue;
+}
+
+.class {
+    color: crimson;
+}
+
+#ID {
+    color: darksalmon;
+}
+
+.descendant span {
+    color: mediumvioletred;
+}
+
+.child-selector>span {
+    border: 2px solid magenta;
+}
+
+.adjacent-sibling+b {
+    color: pink;
+}
+
+.general-sibling~b {
+    color: orchid;
+}
+
+.pseudo li:first-child {
+    color: palevioletred;
+}
+
+.pseudo li:last-child {
+    color: tomato;
+}
+
+.link-visited:hover {
+    color: darkblue;
+}
+
+input {
+    margin: 10px 0px;
+    border-radius: 5px;
+    border: 1px solid #C8CBD1;
+    padding: 6px 8px;
+    width: 80px;
+    height: 30px;
+    color: var(--gray-900, #4B5563);
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 32px;
+}
+
+input:focus {
+    background-color: deeppink;
+}
+
+.link-visited:visited {
+    color: firebrick;
+}
+
+.before::before {
+    content: '-> ';
+    color: white;
+    background-color: darkslateblue;
+}
+
+.after::after {
+    content: ' <-';
+    color: darkslateblue;
+}
+
+.attribute-selector li[id] {
+    color: blueviolet;
+}
+
+.attribute-selector a[href="http://google.pl"] {
+    color: white;
+}
+
+.attribute-selector a[href*="yahoo"] {
+    color: darkorchid;
+}
+
+.attribute-selector a[href^="http"] {
+    background-color: darkorchid;
+}
+
+.attribute-selector a[href$="com"] {
+    border: 2px solid darkorchid;
+}
+
+h2,
+h3 {
+    font-style: italic;
+}
