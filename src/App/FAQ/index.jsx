@@ -9,6 +9,7 @@ export const FAQ = () => {
   aliquam, adipiscing adipiscing iaculis habitant. Viverra pretium
   tincidunt nisl pellentesque ut adipiscing non.Lorem ipsum dolor sit
   amet, consectetur adipiscing elit`;
+
   return (
     <div>
       <MasterHeader title="FAQ" />
@@ -18,15 +19,15 @@ export const FAQ = () => {
         answer={uniwersalnaOdpowiedz}
       />
       <SingleQuestion
-        question="Jak mogę zapisać się na szkolenie 2?"
+        question="Jak mogę zapisać się na szkolenie?"
         answer={uniwersalnaOdpowiedz}
       />
       <SingleQuestion
-        question="Jak mogę zapisać się na szkolenie 3?"
+        question="Jak mogę zapisać się na szkolenie?"
         answer={uniwersalnaOdpowiedz}
       />
       <SingleQuestion
-        question="Jak mogę zapisać się na szkolenie 4?"
+        question="Jak mogę zapisać się na szkolenie?"
         answer={uniwersalnaOdpowiedz}
       />
     </div>
