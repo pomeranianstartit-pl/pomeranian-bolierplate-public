@@ -28,6 +28,10 @@ aside li a {
 }
 
 aside a.active {
+  /*
   background-color: var(--color-primary-blue);
-  color: var(--color-white);
+  color: var(--color-white); 
+  */
+  background-color: #00145c;
+  color: #fe3756
 }
