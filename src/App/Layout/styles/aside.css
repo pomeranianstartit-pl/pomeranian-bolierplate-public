@@ -37,3 +37,7 @@ aside a.active svg path,
 a:hover svg * {
   stroke: #fe3756;
 }
+
+/* .aside-row svg {
+  margin-right: 5px;
+} */
