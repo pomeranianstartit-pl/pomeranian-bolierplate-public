@@ -1,0 +1,15 @@
+.faq-block {
+  color: #23213d;
+  font-family: Poppins;
+  font-size: 18px;
+}
+
+.faq-block > p {
+  padding: 20px;
+  font-size: 0.8em;
+}
+
+.faq-list {
+  list-style-type: none;
+  padding: 0;
+}

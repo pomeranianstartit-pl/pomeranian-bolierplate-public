@@ -1,6 +1,6 @@
 import './styles.css';
 
-export function Exercise() {
+export function BoxModel() {
   const isVisible = true;
   return (
     <div>
