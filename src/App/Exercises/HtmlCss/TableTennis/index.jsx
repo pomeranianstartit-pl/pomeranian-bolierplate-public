@@ -1,5 +1,5 @@
 import './styles.css';
-import star from './star.svg';
+import { Star } from '../../../Components/Icons/Star';
 
 export function TableTennis() {
   return (
@@ -14,38 +14,37 @@ export function TableTennis() {
           <td>Cape Verde Islands </td>
           <td>Maria Anders</td>
           <td>
-            <img width="20" src={star} />
-            <img width="20" src={star} />
+            <Star />
           </td>
         </tr>
         <tr>
           <td>Cape Verde Islands</td>
           <td>Francisco Chang</td>
           <td>
-            <img width="20" src={star} />
-            <img width="20" src={star} />
-            <img width="20" src={star} />
+            <Star />
+            <Star />
+            <Star />
           </td>
         </tr>
         <tr>
           <td>Cape Verde Islands</td>
           <td>Roland Mendel</td>
           <td>
-            <img width="20" src={star} />
+            <Star />
           </td>
         </tr>
         <tr>
           <td>Island Trading</td>
           <td>Helen Bennett</td>
           <td>
-            <img width="20" src={star} />
+            <Star />
           </td>
         </tr>
         <tr>
           <td>Laughing Bacchus Winecellars</td>
           <td>Yoshi Tannamuri</td>
           <td>
-            <img width="20" src={star} />
+            <Star />
           </td>
         </tr>
       </table>
