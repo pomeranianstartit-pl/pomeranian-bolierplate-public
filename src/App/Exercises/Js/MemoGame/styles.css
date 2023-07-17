@@ -11,8 +11,8 @@
   justify-content: center;
   display: flex;
   align-items: center;
-  width: 160px;
-  height: 160px;
+  width: 100px;
+  height: 100px;
   margin: 0px;
 }
 
@@ -128,7 +128,7 @@
 .board {
   margin-top: 50px;
   font-family: Poppins;
-  font-size: 100px;
+  font-size: 70px;
   font-weight: 500;
   line-height: 150px;
   letter-spacing: 0em;
