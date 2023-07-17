@@ -1,5 +1,5 @@
 import './styles.css';
-import '/root/projects/pomeranian-bolierplate-public/src/App/Images/star.svg';
+import starlogo from '/root/projects/pomeranian-bolierplate-public/src/App/Images/star.svg';
 
 export function Exercise() {
   return (
@@ -15,22 +15,39 @@ export function Exercise() {
         <tr className="tr">
           <td>Cape Verde Islands</td>
           <td>100120</td>
-          <td>No effect</td>
+          <td>
+            <starlogo />
+            <starlogo />
+          </td>
         </tr>
         <tr className="tr">
           <td>Cape Verde Islands</td>
           <td>100122</td>
-          <td>No effect</td>
+          <td>
+            <starlogo />
+            <starlogo />
+            <starlogo />
+            <starlogo />
+          </td>
         </tr>
         <tr className="tr">
           <td>United States of America</td>
           <td>100123</td>
-          <td>No effect</td>
+          <td>
+            <starlogo />
+            <starlogo />
+          </td>
         </tr>
         <tr className="tr">
           <td>United States of America</td>
           <td>100124</td>
-          <td>No effect</td>
+          <td>
+            <starlogo />
+            <starlogo />
+            <starlogo />
+            <starlogo />
+            <starlogo />
+          </td>
         </tr>
       </table>
     </div>

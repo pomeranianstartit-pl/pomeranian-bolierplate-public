@@ -1,0 +1,9 @@
+.round-image {
+  border-radius: 100%;
+  width: 150px;
+  height: 150px;
+  background-size: cover;
+  filter: grayscale(100%) brightness(58%);
+  -webkit-filter: grayscale(100%) brightness(58%);
+  -moz-filter: grayscale(100%) brightness(58%);
+}
