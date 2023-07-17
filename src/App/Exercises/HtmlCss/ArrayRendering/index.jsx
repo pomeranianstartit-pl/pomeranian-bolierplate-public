@@ -16,8 +16,6 @@ export function Exercise() {
 
 ];
 
-
-
   // Saab => <li>Saab</li>
 
   // Volvo => <li>Volvo</li>
@@ -27,8 +25,6 @@ export function Exercise() {
   // Skoda => <li>Skoda</li>
 
   // Mercedes => <li>Mercedes</li>
-
-
 
   return <div className='array-rendering'>
                 
@@ -53,12 +49,9 @@ return <tr key={car.id}>
 <td>{car.year}</td>
 
 </tr>
+  })}
 
-      })}
-
-
-
-        </table>
+</table>
  </div>;
 
 }
