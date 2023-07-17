@@ -6,6 +6,7 @@ import { ElementIcon } from '../Components/Icons/ElementIcon';
 import { EditIcon } from '../Components/Icons/EditIcon';
 import { PersonalCardIcon } from '../Components/Icons/PersonalCardIcon';
 
+
 export function AppAside() {
   return (
     <aside>
@@ -53,6 +54,11 @@ export function AppAside() {
           <li>
             <NavLink to="Blog">Blog</NavLink>
           </li>
+
+          <li>
+            <NavLink to="Faq">Faq</NavLink>
+          </li>
+          
           
         
         
