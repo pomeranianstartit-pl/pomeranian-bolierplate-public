@@ -1,0 +1,127 @@
+.container {
+  display: flex;
+  font-family: Poppins;
+  justify-content: center;
+  align-items: center;
+  font-size: 16px;
+}
+
+.mole-game-board {
+  display: flex;
+  flex-wrap: wrap;
+  max-width: 600px;
+  margin-top: 40px;
+}
+
+.mole-row {
+  display: flex;
+  flex-basis: 100%;
+}
+
+.mole-cell {
+  width: 70px;
+  height: 70px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(206, 206, 206);
+  margin: 2px;
+}
+
+.mole-cell img {
+  cursor: pointer;
+  width: 100%;
+  height: auto;
+  max-height: 100px; /* Adjust the maximum height of the mole image */
+}
+
+.mole-game-settings {
+  display: grid;
+  flex-direction: column;
+  font-family: Poppins;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 34px;
+  letter-spacing: 0px;
+  text-align: left;
+}
+
+.strings1 {
+  margin-bottom: 15px;
+  font-family: Poppins;
+  font-size: 18px;
+}
+
+.settings-row {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  align-items: center;
+  margin-bottom: 10px;
+  font-family: Poppins;
+  font-size: 18px;
+}
+
+.settings-label {
+  margin-right: 10px;
+  flex-shrink: 0;
+  width: 220px;
+  text-align: left;
+  font-family: Poppins;
+  font-size: 18px;
+}
+
+.settings-buttons {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 16px;
+  width: 100%;
+  height: 56px;
+  justify-items: center;
+  align-items: center;
+}
+
+.settings-buttons button {
+  padding: 10px 20px;
+  font-size: 16px;
+  width: 100%;
+  height: 56px;
+  flex-shrink: 0;
+  background-color: #430565;
+}
+
+.settings-buttons button.clicked {
+  background-color: #fe3756;
+}
+
+.settings-value {
+  margin-left: left;
+  font-size: 14px;
+  scroll-padding-top: 5px;
+  font-family: Poppins;
+}
+
+.start-button {
+  padding: 10px 20px;
+  font-size: 16px;
+  width: 100%;
+  height: 56px;
+  flex-shrink: 0;
+  background-color: #23213d;
+}
+
+.restart-button {
+  padding: 10px 20px;
+  font-size: 16px;
+  width: 125px;
+  height: 56px;
+  flex-shrink: 0;
+  background-color: orange;
+  margin-left: 130px;
+  margin-top: -115px;
+}
+
+.score {
+margin-top: 20px;
+margin-left: 35px;
+}
+

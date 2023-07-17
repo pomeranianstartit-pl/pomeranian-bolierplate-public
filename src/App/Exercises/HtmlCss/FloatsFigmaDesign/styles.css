@@ -1,0 +1,156 @@
+.floats_link{
+color: #23213D;
+text-decoration: none;
+font-weight: bold 30px;
+}
+
+.floatcontainer {
+position: relative;
+font-size: 1.375rem;
+font-family: Poppins;
+line-height: 2.25rem;
+width: 62rem;
+}
+
+.floatcontainer p {
+padding: 1rem;
+text-align: justify;
+}
+
+.floatcontainer p:first-child {
+line-height: 1rem;
+}
+
+.floatcontainer p:nth-child(2) {
+position: absolute;
+margin-left: 2rem;
+line-height: 1rem;
+top: 1rem;
+}
+
+.floatcontainer p:nth-child(4) {
+background-color: lightgray;
+margin-top: 4rem;
+}
+
+.floatcontainer p:nth-child(5) {
+background-color: #ffd5db;
+}
+
+.floatcontainer p:nth-child(7) {
+clear: both;
+background-color: rgb(90, 90, 90);
+color: white;
+margin-top: 15rem;
+}
+
+.floatcontainer p:nth-child(n + 9) {
+padding: 0;
+}
+
+.floatcontainer div:nth-child(11) {
+width: 100%;
+height: 15rem;
+border-radius: 8px;
+border: 2px solid #6b7280;
+}
+
+.floatcontainer div div:first-child {
+left: 3rem;
+top: 5rem;
+background: #c8cbd1;
+}
+  
+.floatcontainer div div:nth-child(2) {
+left: 5rem;
+top: -4rem;
+background: #999;
+}
+  
+.floatcontainer div div:nth-child(3) {
+left: 7rem;
+top: -13.5rem;
+background: #6b7280;
+}
+
+.floatcontainer img {
+float: left;
+margin-right: 30px;
+}
+
+.floatcontainer div {
+text-align: center;
+}
+
+.info1 {
+position: absolute;
+float: right;
+width: 15rem;
+height: 9rem;
+padding: 0.75rem 1.25rem;
+background-color: #ffd5db;
+border-radius: 10px;
+border: 1px solid #999;
+font-size: 1rem;
+line-height: 1.875rem;
+right: -11.25rem;
+top: 0rem;
+z-index: 1;
+margin-top: 4rem;
+}
+
+.info2 {
+position: absolute;
+float: right;
+width: 6.5rem;
+height: 4.2rem;
+padding: 0.75rem 1.25rem;
+background-color: #ffd5db;
+border-radius: 10px;
+border: 1px solid var(--gray-500, #999);
+font-size: 0.75rem;
+line-height: 1.3rem;
+right: -8rem;
+top: 46rem;
+z-index: 1;
+}
+
+.floatcontainer button {
+padding: 1rem 8rem;
+background-color: #ffd5db;
+border-radius: 10px;
+border: 1px solid var(--gray-500, red);
+margin: 3.75rem auto;
+display: flex;
+font-size: 1.25rem;
+line-height: 5rem;
+justify-content: center;
+align-items: center;
+}
+
+.floatcontainer div div {
+position: relative;
+width: 7.5rem;
+height: 7.5rem;
+border-radius: 0.5rem;
+border: 2px solid #ebebeb;
+}
+
+.exercise-item-content h1 {
+font-size: 1.125rem;
+font-family: Poppins;
+font-weight: 700;
+line-height: 2.125rem;
+}
+
+
+
+
+
+
+
+
+
+
+
+

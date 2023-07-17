@@ -1,0 +1,33 @@
+.banner-container {
+  width: 300px;
+  height: 200px;
+  background-color: #f0b8b8;
+  border: 5px solid #0b0b0b;
+  display: flex;
+  align-items: center;
+  justify-content: center; /* Dodana właściwość justify-content: center */
+  overflow: hidden;
+  position: relative;
+  margin-bottom: 100px;
+}
+
+.banner-text {
+  font-size: 24px;
+  color: #333;
+  white-space: nowrap;
+  padding: 0 20px;
+  position: absolute;
+  animation: moveLeft 5s linear infinite;
+  right: 0;
+}
+
+.animation-button {
+  margin-top: 100px; /* Dodany margines górny, aby przycisk był oddzielony od banera */
+}
+
+
+
+
+
+
+

@@ -1,0 +1,76 @@
+.parent-box-model p {
+margin: 10px;
+border: 10px solid red;
+padding: 10px;
+display: block;
+width: 300px;
+height: 200px;
+}
+
+#unique-id-box-model {
+  margin: 10px;
+  border: 10px solid green;
+  padding: 10px;
+  display: block;
+  width: 300px;
+  height: 200px;
+}
+
+.class-box-model {
+  margin: 10px;
+  border: 10px solid blue;
+  padding: 10px;
+  display: block;
+  width: 300px;
+  height: 200px;
+}
+
+.box-sizing-container {
+margin: 50px;
+}
+
+.box-sizing-container .content-box-example {
+width: 200px;
+padding: 20px;
+border: 2px solid yellow;
+box-sizing: content-box;
+}
+
+.box-sizing-container .border-box-example {
+margin-top: 20px;
+width: 200px;
+padding: 20px;
+border: 2px solid pink;
+box-sizing: border-box;
+}
+
+.overflow-container {
+  width: 300px;
+  height: 100px;
+  background-color: black;
+  padding: 10px;
+  overflow: auto;
+  }
+
+.overflow-content {
+width: 300px;
+height: 150px;
+background-color: greenyellow;
+color: black;
+padding: 10px;
+overflow: auto;
+margin-bottom: 300px;
+}
+
+.units-container {
+width: 600px;
+height: 100px;
+border: 1px solid black;
+overflow: auto;
+}
+
+.units-content {
+background-color: red;
+width: 100%;
+height: 100%;
+}

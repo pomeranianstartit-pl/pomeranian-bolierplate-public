@@ -1,7 +1,7 @@
 import './styles/footer.css';
 
-const email = 'twoj-email@pomeranian.it';
-const phone = '+48-999-999-999';
+const email = 'amadeusz.szewczyk@pomeranian.it';
+const phone = '+48 502 667 736';
 
 export function AppFooter() {
   return (
@@ -10,7 +10,7 @@ export function AppFooter() {
         Projekt uzyskał dofinansowanie ze środków Unii Europejskiej z
         Europejskiego Funduszu Rozwoju
       </div>
-      <a href={`mailto:${email}`}>{`Email: ${email}`}</a>
+      <a href={`mailto:${email}`}>{`${email}`}</a>
       <div>
         Regionalnego w ramach projektu grantowego „Invest in Pomerania 2020”.
       </div>
