@@ -67,6 +67,12 @@ export function ArrayRenderingToTable() {
     },
   ];
 
+  /* for (let i = 0; i < bands.length; i++) {
+
+    console.log(bands[i])
+
+  } */
+
   function sortBySortConfig(a, b) {
     if (sortConfig !== null) {
       if (a[sortConfig] < b[sortConfig]) {
