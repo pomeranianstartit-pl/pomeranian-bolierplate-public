@@ -2,8 +2,8 @@ import React from 'react';
 
 import { Exercise } from './index';
 
-export const ArrayRenderingMetaData = {
-  path: 'array-rendering',
+export const ArrayRenderToTableMetaData = {
+  path: 'array-render-to-table',
 
   date: '12-12-2023',
 

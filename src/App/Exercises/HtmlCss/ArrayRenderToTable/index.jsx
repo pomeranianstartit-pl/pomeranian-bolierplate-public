@@ -1,43 +1,109 @@
+import { useState } from 'react';
+
 import './styles.css';
 
-export function Exercise() {
-  const cars = [
-    { id: 1, make: 'Saab', model: '92B', year: 1953, owner: 'Jon' },
-
-    { id: 2, make: 'Volvo', model: 'C40', year: 2021, owner: 'Jenny' },
-
-    { id: 3, make: 'Audi', model: 'A3', year: 2019, owner: 'Michael' },
-
-    { id: 4, make: 'Tesla', model: 'Model S', year: 2022, owner: 'Sarah' },
-  ];
+function camelCaseToNormalText(input) {
+  // zamienia pierwszą literę na wielką oraz dodaje spacje przed każdą dużą literą, które nie są na początku stringu
 
   return (
-    <div className="array-rendering">
-      <ol>
-        {cars.map(function (car) {
-          return (
-            <li key={car.id}>
-              {car.make} {car.model} produced in {car.year}
-            </li>
-          );
-        })}
-      </ol>
+    input
 
+      // Wstawia spację przed wielką literą, która nie jest na początku stringu
+
+      .replace(/([A-Z])/g, ' $1')
+
+      // Zamienia pierwszą literę na wielką
+
+      .replace(/^./, function (str) {
+        return str.toUpperCase();
+      })
+  );
+}
+
+export function Exercise() {
+  const [sortConfig, setSortConfig] = useState(null);
+
+  const bands = [
+    {
+      band: 'The Clash',
+      yearFormed: 1976,
+      albums: 6,
+      mostFamousSong: 'London Calling',
+    },
+
+    {
+      band: 'Sex Pistols',
+      yearFormed: 1975,
+      albums: 1,
+      mostFamousSong: 'Anarchy in the UK',
+    },
+
+    {
+      band: 'Ramones',
+      yearFormed: 1974,
+      albums: 14,
+      mostFamousSong: 'Blitzkrieg Bop',
+    },
+
+    {
+      band: 'The Cure',
+      yearFormed: 1976,
+      albums: 13,
+      mostFamousSong: 'Just Like Heaven',
+    },
+
+    {
+      band: 'Joy Division',
+      yearFormed: 1976,
+      albums: 2,
+      mostFamousSong: 'Love Will Tear Us Apart',
+    },
+
+    {
+      band: 'Siouxsie and the Banshees',
+      yearFormed: 1976,
+      albums: 11,
+      mostFamousSong: 'Hong Kong Garden',
+    },
+  ];
+
+  function sortBySortConfig(a, b) {
+    if (sortConfig !== null) {
+      if (a[sortConfig] < b[sortConfig]) {
+        return -1;
+      }
+
+      if (a[sortConfig] > b[sortConfig]) {
+        return 1;
+      }
+
+      return 0;
+    }
+  }
+
+  return (
+    <div className="array-render-to-table">
       <table>
         <tr>
-          <th>Make</th>
-          <th>Model</th>
-          <th>Year</th>
+          {Object.keys(bands[0]).map(function (key) {
+            return (
+              <th key={key} onClick={() => setSortConfig(key)}>
+                {camelCaseToNormalText(key)}
+              </th>
+            );
+          })}
         </tr>
 
-        {cars.map(function (car) {
+        {bands.sort(sortBySortConfig).map(function (band) {
           return (
-            <tr key={car.id}>
-              <td>{car.make}</td>
+            <tr key={band.band}>
+              <td>{band.band}</td>
 
-              <td>{car.model}</td>
+              <td>{band.yearFormed}</td>
 
-              <td>{car.year}</td>
+              <td>{band.albums}</td>
+
+              <td>{band.mostFamousSong}</td>
             </tr>
           );
         })}
