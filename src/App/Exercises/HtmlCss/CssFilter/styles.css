@@ -1,0 +1,15 @@
+.header {
+    font-size: 1.5rem;
+    color: grey;
+}
+
+.css-filter {
+    background: url("./lion.png");
+    width: 400px;
+    height: 600px;
+    background-size: cover;
+
+    filter: brightness(60%);
+    -webkit-filter: brightness(60%);
+    
+}
