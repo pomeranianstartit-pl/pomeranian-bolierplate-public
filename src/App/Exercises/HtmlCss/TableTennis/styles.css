@@ -1,0 +1,27 @@
+svg {
+  margin: 0;
+}
+
+.table-tennis table {
+  font-family: arial, sans-serif;
+  border-collapse: collapse;
+}
+
+.table-tennis th {
+  background-color: #f5f5f5;
+}
+
+.table-tennis td,
+.table-tennis th {
+  padding: 20px 50px;
+
+  text-align: left;
+}
+
+.table-tennis tr > *:nth-child(3) {
+  text-align: right;
+}
+
+.table-tennis th {
+  height: 57px;
+}
