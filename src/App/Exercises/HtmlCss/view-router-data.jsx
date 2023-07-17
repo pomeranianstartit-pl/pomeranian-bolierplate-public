@@ -6,6 +6,7 @@ import { blockTextFundamentals } from './TextFundamentals/router-data';
 import { blockGoogleFonts } from './GoogleFonts/router-data';
 import { blockRouterMetaData as CssMetaData } from './CssFilter/router-data';
 import { blockRouterMetaData as ImageFilesMetaData } from './ImageFiles/router-data';
+import { blockRouterMetaData as BoxModelMetaData } from './BoxModel/router-data';
 
 export const blockRouterMetaData = [
   blockRouterMetaData121220231,
@@ -14,5 +15,6 @@ export const blockRouterMetaData = [
   blockGoogleFonts,
   CssMetaData,
   ImageFilesMetaData,
+  BoxModelMetaData,
 ];
 export const blockRouterData = getParsedRouterDataList(blockRouterMetaData);
