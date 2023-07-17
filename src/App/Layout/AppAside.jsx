@@ -8,6 +8,7 @@ import { SettingIcon } from '../Components/Icons/SettingIcon';
 import { EditIcon } from '../Components//Icons/EditIcon';
 import { ElementIcon } from '../Components/Icons/ElementIcon';
 import { BookIcon } from '../Components/Icons/BookIcon';
+import { MessageIcon } from '../Components/Icons/MessageIcon';
 
 export function AppAside() {
   return (
@@ -29,6 +30,12 @@ export function AppAside() {
             </NavLink>
           </li>
           <li>
+            <NavLink to="bloki">
+              <ElementIcon />
+              Bloki
+            </NavLink>
+          </li>
+          <li>
             <NavLink to="exercises">
               <EditIcon />
               Ćwiczenia
@@ -44,6 +51,18 @@ export function AppAside() {
             <NavLink to="Blog">
               <BookIcon />
               Blog
+            </NavLink>
+          </li>
+          <li>
+            <NavLink to="FAQ">
+              <MessageIcon />
+              FAQ
+            </NavLink>
+          </li>
+          <li>
+            <NavLink to="ustawienia">
+              <SettingIcon />
+              Ustawienia
             </NavLink>
           </li>
         </ul>

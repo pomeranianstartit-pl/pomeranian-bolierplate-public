@@ -8,8 +8,10 @@ import { Layout } from './App/Layout';
 import { Dashboard } from './App/Dashboard';
 import { Exercises } from './App/Exercises';
 import { MojeCV } from './App/Components/MojeCV';
+import { Bloki } from './App/Components/Bloki/Bloki';
 import { Calendar } from './App/Components/Calendar';
 import { FAQ } from './App/Components/FAQ';
+import { Ustawienia } from './App/Components/Ustawienia/Ustawienia';
 
 export function App() {
   return (
@@ -23,6 +25,8 @@ export function App() {
           <Route path="color/*" element={<Colors />} />
           <Route path="Calendar/*" element={<Calendar />} />
           <Route path="FAQ/*" element={<FAQ />} />
+          <Route path="Bloki/*" element={<Bloki />} />
+          <Route path="Ustawienia/*" element={<Ustawienia />} />
           <Route path="*" element={<NotFound />} />
         </Route>
       </Routes>
