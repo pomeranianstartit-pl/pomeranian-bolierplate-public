@@ -11,7 +11,7 @@ export const QuestionAndAnswear = ({ question, answer }) => {
     <div className="FAQ">
       <div className="pytanie1">
         <h1 onClick={handleClick}>{question}</h1>
-        <hr className="linia"></hr>
+        <hr></hr>
         <p>{isVisible && answer}</p>
       </div>
     </div>
