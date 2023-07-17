@@ -10,9 +10,10 @@ import { blockRouterMetaData as googleFonts } from './Google-fonts/router-data';
 import { blockRouterMetaData as BoxModelExercise } from './BoxModel/router-data';
 import { blockRouterMetaData as HtmlTablesMetaData } from './HtmlTables/router-data';
 import { blockRouterMetaData as TableTennisMetaData } from './TableTennis/router-data';
+import { blockRouterMetaData as ArrayRenderingMetaData } from './ArrayRendering/router-data';
 
 export const blockRouterMetaData = [blockRouterMetaData121220231, googleFonts, colorsMetaData, imageFilesMetaData,
-     backgroundsMetaData, cssFilterMetaData, selectorsAndCascade, BoxModelExercise, HtmlTablesMetaData, TableTennisMetaData];
+     backgroundsMetaData, cssFilterMetaData, selectorsAndCascade, BoxModelExercise, HtmlTablesMetaData, TableTennisMetaData, ArrayRenderingMetaData];
 
 
 export const blockRouterData = getParsedRouterDataList(blockRouterMetaData);
