@@ -1,0 +1,10 @@
+.pytanie1 {
+padding-left: 20px;
+padding-right: 20px;
+padding-top: 5px;
+width: 700px;
+box-shadow: -3px 1px 9px 2px rgba(165,160,160,0.93);
+-webkit-box-shadow: -3px 1px 9px 2px rgba(165,160,160,0.93);
+-moz-box-shadow: -3px 1px 9px 2px rgba(165,160,160,0.93);
+}
+
