@@ -22,7 +22,7 @@ export function ArrayRendering() {
       </ul>
       <table>
         <tr>
-          <tr>Make</tr>
+          <td>Make</td>
           <tr>Model</tr>
           <tr>Year</tr>
         </tr>
