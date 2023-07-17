@@ -1,0 +1,21 @@
+.array-render-tool-table table {
+  border: solid gray;
+  width: 100%;
+}
+
+.array-render-tool-table tr th {
+  padding: 24px 24px 24px 24px;
+  background-color: gray;
+}
+
+.array-render-tool-table th {
+  text-align: left;
+}
+
+.array-render-tool-table tr {
+  background-color: lightgray;
+}
+.array-render-tool-table tr:hover {
+  background-color: black;
+  color: white;
+}
