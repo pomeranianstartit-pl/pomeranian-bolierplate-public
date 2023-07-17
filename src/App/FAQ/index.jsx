@@ -1,6 +1,6 @@
 import './styles.css';
 import { SingleQuestion } from '../Components/SingleQuestion/SingleQuestion';
-
+// dodać iterację//
 export const FAQ = () => {
   return (
     <div>

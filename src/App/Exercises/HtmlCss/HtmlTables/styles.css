@@ -1,0 +1,14 @@
+.table-box table,
+.table-box td,
+.table-box th {
+  border: 1px solid;
+  border-collapse: collapse;
+}
+
+.table-box tr:nth-child(odd) {
+  background-color: rgb(173, 218, 203);
+}
+
+.table-box trs:hover {
+  background-color: rgb(95, 128, 117);
+}
