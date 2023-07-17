@@ -4,11 +4,13 @@ import { blockRouterMetaData as blockRouterMetaData121220231 } from './Exercise-
 import { blockRouterMetaData as cssColorsMetaData } from './Colors/router-data';
 import { blockRouterMetaData as ImageFilesMetaData } from './ImageFiles/router-data';
 import { blockRouterMetaData as BackgroundsMetaData } from './Backgrounds/router-data';
+import { blockRouterMetaData as tableTennisMetaData } from './TableTennis/router-data';
 
 
 
 export const blockRouterMetaData = [blockRouterMetaData121220231,
     cssColorsMetaData,
     ImageFilesMetaData,
-    BackgroundsMetaData,];
+    BackgroundsMetaData,
+    tableTennisMetaData];
 export const blockRouterData = getParsedRouterDataList(blockRouterMetaData);
