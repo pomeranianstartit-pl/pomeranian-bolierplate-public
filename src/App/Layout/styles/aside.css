@@ -25,14 +25,15 @@ aside li {
 aside li a {
   display: block;
   padding: 0.5rem;
+  text-decoration: none;
 }
 
 aside a.active,
 aside a:hover {
-  background-color: var(--color-primary-blue);
+  /* background-color: var(--color-primary-blue); */
   color: #FE3756;
 }
 
-aside a.active svg path {
+aside a.active svg path, aside a:hover svg * {
   stroke: #FE3756;
 }
