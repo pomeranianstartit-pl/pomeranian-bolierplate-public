@@ -1,0 +1,16 @@
+.html-tables {
+    font-family: arial, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+}
+
+.html-tables td,
+.html-tables th {
+    border: 1px solid #dddddd;
+    text-align: left;
+    padding: 16px;
+}
+
+.html-tables tr:nth-child(even) {
+    background-color: #dddddd
+}

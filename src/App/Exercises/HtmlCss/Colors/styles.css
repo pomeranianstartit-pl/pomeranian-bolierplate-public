@@ -1,0 +1,53 @@
+.font-test-family {
+  font-family: Chilanka;
+}
+
+.color-name {
+  color: magenta;
+}
+
+.color-hex {
+  color: green;
+}
+
+.rgb {
+  color: yellow
+}
+
+.rgba {
+  color: rgba(41, 105, 214, 0.547)
+}
+
+.opacity {
+  background-color: rgb(113, 160, 42);
+  padding: 24px;
+  opacity: 0, 5;
+}
+
+.two-squares {
+  display: flex;
+  margin-bottom: 100px;
+  position: relative;
+}
+
+
+
+
+.two-squares .square-1 {
+  background-color: red;
+  width: 100px;
+  height: 100px;
+  position: absolute;
+}
+
+
+
+
+.two-squares .square-2 {
+  background-color: blue;
+  width: 100px;
+  height: 100px;
+  position: absolute;
+  left: 50px;
+  opacity: 0.5;
+}
