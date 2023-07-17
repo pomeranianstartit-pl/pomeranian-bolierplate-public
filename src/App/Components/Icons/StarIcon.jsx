@@ -1,4 +1,4 @@
-export function starIcon({}) {
+export function StarIcon({}) {
   return (
     <svg
       width="19"
