@@ -6,7 +6,8 @@ export function Exercise() {
   return (
     <>
     <img src={beetle} alt="Beetle image" />
-      <RoundImage src={beetle} />
+      <RoundImage src={beetle} size="300px"/>
+      <RoundImage src={beetle} size="150px"/>
     </>
   );
 }
