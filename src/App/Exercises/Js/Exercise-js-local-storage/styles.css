@@ -1,0 +1,13 @@
+.font-test-family {
+  font-family: Chilanka;
+}
+/* .variable-string-placeholder p span */
+.variable-string-placeholder {
+  margin-left: 5px;
+}
+
+#unigue-id {
+  font-size: 25px;
+  font-style: italic;
+  margin: 30px;
+}

@@ -11,7 +11,8 @@ import { blockRouterMetaData as ExerciseJsFunctions } from './ExerciseJsFunction
 import { blockRouterMetaData as Time } from './Time/router-data';
 import { HitTheMoleGameMetaData } from './HitTheMoleGame/router-data';
 import { MemoGameMetaData } from './MemoGame/router-data';
-
+import { blockRouterMetaData as blockRouterMetaDataJsLocalStorage } from './Exercise-js-local-storage/router-data';
+import { blockRouterMetaData as blockRouterMetaDataJSSavedInput } from './Exercise-js-saved-input/router-data';
 
 export const blockRouterMetaData = [
   blockRouterMetaDataJsVariables1,
@@ -19,6 +20,8 @@ export const blockRouterMetaData = [
   blockRouterMetaDataJsFunction1,
   blockRouterMetaDataExercisesNumberIf,
   blockRouterMetaDataJsNumbersTraining,
+  blockRouterMetaDataJsLocalStorage,
+  blockRouterMetaDataJSSavedInput,
   EmptyValuesAndComments,
   JsArraysBasics,
   ExerciseJsFunctions,
