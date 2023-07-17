@@ -14,7 +14,7 @@ export function AppAside() {
       <nav>
         <ul>
           <li>
-          <NavLink to="dashboard">
+            <NavLink to="dashboard">
               <div className="aside-row">
                 <HouseIcon />
                 Dashboard
@@ -22,7 +22,7 @@ export function AppAside() {
             </NavLink>
           </li>
           <li>
-          <NavLink to="cv">
+            <NavLink to="cv">
               <div className="aside-row">
                 <PersonalCardIcon />
                 Moje CV
@@ -30,7 +30,7 @@ export function AppAside() {
             </NavLink>
           </li>
           <li>
-          <NavLink to="exercises">
+            <NavLink to="exercises">
               <div className="aside-row">
                 <EditIcon />
                 Ćwiczenia
@@ -38,7 +38,7 @@ export function AppAside() {
             </NavLink>
           </li>
           <li>
-          <NavLink to="calendar">
+            <NavLink to="calendar">
               <div className="aside-row">
                 <CalendarIcon />
                 Kalendarz
@@ -46,11 +46,16 @@ export function AppAside() {
             </NavLink>
           </li>
           <li>
-          <NavLink to="blocks">
+            <NavLink to="blocks">
               <div className="aside-row">
                 <ElementIcon />
                 Bloki
               </div>
+            </NavLink>
+          </li>
+          <li>
+            <NavLink to="blog">
+              <div className="aside-row">Blog</div>
             </NavLink>
           </li>
         </ul>
