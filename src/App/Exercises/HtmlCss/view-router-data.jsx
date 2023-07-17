@@ -6,8 +6,9 @@ import { blockRouterMetaData as ImageFilesMetaData } from './ImageFiles/router-d
 import { blockRouterMetaData as BackgroundsMetaData } from './Backgrounds/router-data';
 
 
+
 export const blockRouterMetaData = [blockRouterMetaData121220231,
     cssColorsMetaData,
     ImageFilesMetaData,
-    BackgroundsMetaData];
+    BackgroundsMetaData,];
 export const blockRouterData = getParsedRouterDataList(blockRouterMetaData);
