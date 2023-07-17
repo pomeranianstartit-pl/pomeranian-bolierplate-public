@@ -1,0 +1,31 @@
+.rating-table table {
+  border-radius: 8px;
+  border-collapse: collapse;
+  width: 600px;
+  font-family: Poppins;
+  padding: 20px 20px;
+  text-align: left;
+  overflow: hidden;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+}
+
+.rating-table th,
+.rating-table td {
+  padding: 15px 30px;
+}
+
+.rating-table th {
+  background-color: #f5f5f5;
+}
+
+.rating-table td {
+  font-weight: 400;
+}
+
+.rating-table tr > *:nth-child(3) {
+  text-align: right;
+}
+
+.rating-table tr:nth-child(odd) {
+  background-color: hsla(351, 99%, 61%, 0.164);
+}
