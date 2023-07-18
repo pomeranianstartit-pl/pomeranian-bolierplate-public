@@ -1,6 +1,5 @@
 .array-rendering table {
   border-collapse: collapse;
-
   width: 100%;
 }
 
@@ -10,6 +9,5 @@
 
 .array-rendering table tr > * {
   border: 1px solid #ddd;
-
   padding: 8px;
 }
