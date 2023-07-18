@@ -1,0 +1,53 @@
+.see-more-block {
+  width: 202px;
+  height: 192px;
+  box-shadow: 0px 3px 9px 0px rgba(0, 0, 0, 0.15),
+    0px 2px 28px 0px rgba(0, 0, 0, 0.12);
+  border-radius: 10px;
+  padding: 20px 28px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  text-align: center;
+  font-family: Poppins;
+  color: black;
+}
+
+/* Hover section */
+.see-more-block:hover {
+  border: 0.66px solid var(--primary-primary, #fe3756);
+  box-shadow: 0px 2px 26px 0px rgba(254, 55, 86, 0.54);
+}
+
+.see-more-block:hover h3 {
+  color: #ff4d69;
+}
+
+.see-more-block:hover svg * {
+  stroke: #ff4d69;
+}
+
+/* -------------- */
+.see-more-block * {
+  margin: 0;
+}
+.see-more-block svg {
+  transform: scale(200%);
+}
+
+.see-more-block h3 {
+  font-weight: 400;
+  font-size: 18px;
+}
+
+.see-more-block p {
+  font-size: 12px;
+}
+
+.see-more-block a {
+  text-decoration: none;
+  color: #ff4d69;
+  font-weight: 700;
+  font-size: 14px;
+}

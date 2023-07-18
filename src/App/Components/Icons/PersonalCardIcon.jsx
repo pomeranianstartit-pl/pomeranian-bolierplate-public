@@ -1,7 +1,7 @@
 export function PersonalCardIcon({ className = '' }) {
   return (
     <svg
-      width="22"
+      width="23"
       height="23"
       viewBox="0 0 22 23"
       fill="none"

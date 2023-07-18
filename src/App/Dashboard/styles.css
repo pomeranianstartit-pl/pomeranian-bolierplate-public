@@ -1,2 +1,18 @@
-.dashboard {
+.dashboard-cards-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 35px;
+  width: 800px;
+  margin: 40px 25px;
+}
+
+.dashboard-wave-image {
+  width: 30px;
+  padding-right: 10px;
+}
+
+.dashboard h2 {
+  color: #fe3756;
+  font-size: 22px;
+  font-weight: 400;
 }
