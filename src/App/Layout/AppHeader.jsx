@@ -7,6 +7,9 @@ import { SettingIcon } from '../Components/Icons/SettingIcon';
 import { ArrowDown } from '../Components/Icons/ArrowDown';
 
 export function AppHeader() {
+  function handleClickButton(message) {
+    console.log(message);
+  }
   return (
     <header>
       <>
@@ -15,7 +18,9 @@ export function AppHeader() {
         </div>
         <div className="header-right">
           {/* <SettingIcon/> */}
-          <SettingIcon />
+          <button onClick={handleClickButton('I am settings button')}>
+            <SettingIcon />
+          </button>
           <div className="mid_component">
             <div className="circle"></div>
             <div className="name_rank">
@@ -23,7 +28,9 @@ export function AppHeader() {
               <p className="rank_1">kursant</p>
             </div>
           </div>
-          <ArrowDown />
+          <button onClick={handleClickButton("I am drop button")}>
+            <ArrowDown />
+          </button>
         </div>
       </>
     </header>
