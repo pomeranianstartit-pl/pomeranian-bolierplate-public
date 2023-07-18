@@ -1,0 +1,17 @@
+.tableTennis {
+  display: flex;
+  width: 716px;
+  flex-direction: column;
+  align-items: flex-start;
+  font-size: 18px;
+}
+.trTennis {
+  display: flex;
+  width: 716px;
+  height: 57px;
+  padding: 0px 28.294px;
+  align-items: center;
+  gap: 28.294px;
+  flex: 1 0 0;
+  align-self: stretch;
+}

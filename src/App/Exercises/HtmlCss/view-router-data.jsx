@@ -8,6 +8,9 @@ import { backgroundsMetaData } from './Backgrounds/router-data';
 import { CssFilterMetaData } from './CssFilter/router-data';
 import { boxModelMetaData } from './BoxModel/router-data';
 import { HtmlTablesMetaData } from './HtmlTables/router-data';
+import { TableTennisMetaData } from './TableTennis/router-data';
+import { ArrayRenderingMetaData } from './ArrayRendering/router-data';
+import { ArrayRenderingToTableMetaData } from './ArrayRenderingToTable/router-data';
 
 export const blockRouterMetaData = [
   blockRouterMetaData121220231,
@@ -18,5 +21,8 @@ export const blockRouterMetaData = [
   CssFilterMetaData,
   boxModelMetaData,
   HtmlTablesMetaData,
+  TableTennisMetaData,
+  ArrayRenderingMetaData,
+  ArrayRenderingToTableMetaData,
 ];
 export const blockRouterData = getParsedRouterDataList(blockRouterMetaData);
