@@ -1,0 +1,19 @@
+.content {
+  border: 2px solid lightgray;
+  padding: 10px;
+}
+
+.question {
+  color: var(--secondary-secondary, #23213d);
+  /* body/bold-18 */
+  font-family: Poppins;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 34px; /* 188.889% */
+}
+
+hr {
+  visibility: visible;
+  border: 2px solid lightgray;
+}
