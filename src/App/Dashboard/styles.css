@@ -1,5 +1,9 @@
-.boxes {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
+.dashboard-wrapper {
+  display: flex;
+  gap:35px;
+  flex-direction: row;
+  justify-content: flex-start;
+  flex-wrap: wrap;
 }
+
+

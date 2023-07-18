@@ -7,6 +7,7 @@ import { EditIcon } from '../Components/Icons/EditIcon';
 import { ElementIcon } from '../Components/Icons/ElementIcon';
 import { SettingIcon } from '../Components/Icons/SettingIcon';
 import { BookIcon } from '../Components/Icons/BookIcon';
+import { ProfileComponent } from './Components/Profile/ProfileComponent';
 
 export const Dashboard = () => {
   const DashBoardComponents = [
@@ -20,6 +21,21 @@ export const Dashboard = () => {
       logo: <EditIcon />,
       shortdescription: 'Lorem ipsum dolor sit amet.',
     },
+    {
+      title: 'Blog',
+      logo: <BookIcon />,
+      shortdescription: 'Lorem ipsum dolor sit amet.',
+    },
+    {
+      title: 'Tech stack',
+      logo: <EditIcon />,
+      shortdescription: 'Lorem ipsum dolor sit amet.',
+    },
+    {
+      title: 'FAQ',
+      logo: <EditIcon />,
+      shortdescription: 'Lorem ipsum dolor sit amet.',
+    },
   ];
 
   return (
@@ -29,7 +45,7 @@ export const Dashboard = () => {
         Poniżej znajdziesz najważniejsze informacje na temat mojej działalności.
       </p>
       <div>
-        <div className="boxes">
+        <div className="dashboard-wrapper">
           {DashBoardComponents.map((el) => (
             <BoxComponent
               title={el.title}
@@ -38,9 +54,7 @@ export const Dashboard = () => {
             />
           ))}
         </div>
-        <div className="profile-box">
-          
-        </div>
+        <div><ProfileComponent/></div>
       </div>
     </div>
   );
