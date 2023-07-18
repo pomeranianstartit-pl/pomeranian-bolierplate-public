@@ -18,7 +18,49 @@ header.header-title {
   font-weight: normal;
 }
 
-header .logo {
-  height: 40vmin;
+header .header-logo {
+  width: 120px;
   pointer-events: none;
+}
+
+header .header-logo svg {
+  width: 100%;
+}
+
+header .header-menu {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 20px;
+  width: 220px;
+}
+
+header p {
+  font-family: Poppins;
+  font-size: 16px;
+  color: #000000;
+  margin: 0;
+}
+
+header .header-menu p:nth-child(2) {
+  font-size: 13px;
+  color: #999999;
+}
+
+header .header-menu div:nth-child(2) {
+  margin-left: 20px;
+}
+header .header-menu-svg {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+}
+header .header-menu svg * {
+  stroke: #4b5563;
+  width: 100%;
+}
+
+header .toggle-arrow-header {
+  stroke: #4b5563;
+  fill: #4b5563;
 }
