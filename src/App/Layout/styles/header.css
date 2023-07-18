@@ -19,6 +19,10 @@ header.header-title {
 }
 
 header .logo {
-  height: 40vmin;
+  height: 150px;
   pointer-events: none;
+}
+.logo svg {
+  height: 100px;
+  width: 100px;
 }
