@@ -6,7 +6,7 @@ import { Cwiczenie1MetaData } from './Cwiczenie1/router-data';
 import { TextFundamentalsMetaData } from '../HtmlCss/TextFundamentals/router-data';
 import { GoogleFontsMetaData } from '../HtmlCss/Google-fonts/router-data';
 import { ArrayRenderingMetaData } from '../HtmlCss/ArrayRendering/router-data';
-import { ArrayRenderToTableMetaData } from '../HtmlCss/ArrayRenderToTablr/router-data';
+import { ArrayRenderToTableMetaData } from '../HtmlCss/ArrayRenderToTable/router-data';
 
 export const blockRouterMetaData = [
   SubRouteExampleMetaData,
