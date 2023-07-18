@@ -15,6 +15,7 @@ export const Categories = () => {
         <NavLink to="web-api">Web API - lista ćwiczeń</NavLink>
         <NavLink to="async">Asynchroniczność - lista ćwiczeń</NavLink>
         <NavLink to="firebase">Firebase - lista ćwiczeń</NavLink>
+        <NavLink to="trening-wlasny">Trening-wlasny</NavLink>
       </div>
     </>
   );
