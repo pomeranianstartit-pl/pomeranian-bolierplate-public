@@ -70,7 +70,7 @@ export const Dashboard = () => {
       <aside>
         
         <div className="profile-img">
-            <img classNamie="img-placeholder" src={DominikProfile} alt="" />
+            <img className="img-placeholder" src={DominikProfile} alt="" />
           <h2>Dominik Reszczyński</h2>
           <p>Brzeg</p>
         </div>
