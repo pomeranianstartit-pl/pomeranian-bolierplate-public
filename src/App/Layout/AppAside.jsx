@@ -56,6 +56,14 @@ export function AppAside() {
               <h5>Blog</h5>
             </NavLink>
           </li>
+          <li>
+            <NavLink to="faq" className="aside-row">
+              <div className="svg">
+                <BookIcon />
+              </div>
+              <h5>FAQ</h5>
+            </NavLink>
+          </li>
         </ul>
       </nav>
       <p style={{ padding: '1rem 0' }}>Sidebar items, widgets, etc</p>
