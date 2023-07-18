@@ -1,6 +1,11 @@
- import {ReactComponent as LogoSVG } from '../../Images/start-it-logo.svg';
- 
- //deklaracja funkcji anonimowej aka strzałkowej
+import { ReactComponent as LogoSVG } from '../../Images/start-it-logo.svg';
+import './styles.css';
+
+//deklaracja funkcji anonimowej aka strzałkowej
 export const Logo = () => {
-    return <LogoSVG/>;
+  return (
+    <div className="logo">
+      <LogoSVG />
+    </div>
+  );
 };

@@ -19,6 +19,43 @@ header.header-title {
 }
 
 header .logo {
-  height: 40vmin;
+  width: 20%;
   pointer-events: none;
+}
+
+header .header-info {
+  display: flex;
+  align-items: center;
+}
+
+header .setting-icon {
+  margin-left: 40px;
+  margin-right: 40px;
+}
+
+header .person-photo {
+  margin-right: 20px;
+}
+header p {
+  margin: 0;
+}
+header p:nth-child(2) {
+  font-size: 12px;
+  opacity: 50%;
+}
+
+header .personal-info {
+}
+header .logo svg {
+  width: 125px;
+}
+
+.toggle-arrow {
+  margin-left: 10px;
+}
+
+header button {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
 }
