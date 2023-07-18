@@ -8,7 +8,7 @@ export const BoxComponent = (props) => {
         <p className="box-title">{title}</p>
         <div className="box-logo">{logo}</div>
         <p className="box-shortdescription">{shortdescription}</p>
-        <p style={{ color: 'red', fontWeight: 700 }}>zobacz więcej</p>
+        <button style={{ color: 'red', fontWeight: 700 }}>zobacz więcej {'>'}</button>
       </div>
     </div>
   );

@@ -40,7 +40,10 @@ export const Dashboard = () => {
 
   return (
     <div className="dashboard">
-      <h1>Cześć, tu Krzysiek!</h1>
+      <h1 className="greeting">
+        <img src="./" alt="" />
+        Cześć, tu Krzysiek!
+      </h1>
       <p>
         Poniżej znajdziesz najważniejsze informacje na temat mojej działalności.
       </p>
@@ -54,7 +57,6 @@ export const Dashboard = () => {
             />
           ))}
         </div>
-        <div><ProfileComponent/></div>
       </div>
     </div>
   );
