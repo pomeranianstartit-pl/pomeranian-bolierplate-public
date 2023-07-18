@@ -14,7 +14,7 @@ export function SingleQuestion({ question, answer }) {
             <h2>{question}</h2>
 
             {visible &&
-                <div className='answer-section'><p> <hr />{answer}</p>
+                <div className='answer-section'><p> {answer}</p><hr />
                 </div>}
         </section>
     );

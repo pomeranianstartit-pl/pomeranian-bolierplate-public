@@ -3,7 +3,7 @@ import './styles.css';
 export const Blog = () => {
   return (
     <>
-      <div class="original-tags">
+      <div className="original-tags">
         <h1>Tytuł</h1>
 
         <small>05.2023</small>
@@ -37,19 +37,19 @@ export const Blog = () => {
           Why not to use <ins>lists</ins> ?
         </h3>
 
-        <p>
-          <h5>
-            A lot of things to do <i>#todo</i>
-          </h5>
 
-          <ul>
-            <li>Todo 1</li>
+        <h5>
+          A lot of things to do <i>#todo</i>
+        </h5>
 
-            <li>Todo 2</li>
+        <ul>
+          <li>Todo 1</li>
 
-            <li>Todo 3</li>
-          </ul>
-        </p>
+          <li>Todo 2</li>
+
+          <li>Todo 3</li>
+        </ul>
+
       </div>
       <div className="main">
         <div className="date"> 30-11-2022</div>
