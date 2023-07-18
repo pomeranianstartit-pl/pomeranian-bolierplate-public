@@ -7,6 +7,9 @@ aside {
   overflow-y: auto;
 }
 
+aside nav {
+  display: flex;
+}
 aside ul {
   /* Nadpisanie domyślnych styli przeglądarki */
   padding-inline-start: 1rem;
@@ -26,6 +29,7 @@ aside li a {
   display: block;
   padding: 0.5rem;
   text-decoration: none;
+  color: #23213d;
 }
 
 aside a.active,
@@ -38,6 +42,6 @@ a:hover svg * {
   stroke: #fe3756;
 }
 
-/* .aside-row svg {
-  margin-right: 5px;
-} */
+.aside-row svg {
+  margin-right: 10px;
+}
