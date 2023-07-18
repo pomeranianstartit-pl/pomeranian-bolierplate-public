@@ -1,0 +1,31 @@
+.array-render-to-table table {
+
+  border-collapse: collapse;
+  width: 100%;
+
+}
+
+
+
+.array-render-to-table table tr{
+  text-align: center;
+}
+
+
+.array-render-to-table table tr:nth-child(odd) {
+
+
+  background-color: #f2f2f2;
+
+}
+
+
+
+
+.array-render-to-table table tr>* {
+
+  border: 1px solid #ddd;
+
+  padding: 8px;
+
+}
