@@ -1,63 +1,68 @@
-.blog-post-date {
-    color: var(--text-text-primary, #222);
-
-/* OVERLINE/Overline */
-font-family: MADE TOMMY;
-font-size: 10.5px;
-font-style: normal;
-font-weight: 400;
-line-height: 24px; /* 228.571% */
-letter-spacing: 1.68px;
-text-transform: uppercase;
-}
-
-.blog-post-title {
-    color: var(--text-text-primary, #222);
-font-family: MADE TOMMY;
-font-size: 42px;
-font-style: normal;
-font-weight: 800;
-line-height: 56px; /* 133.333% */
-}
-
-.blog-post-content {
-    color: var(--text-text-primary, #222);
-font-family: MADE TOMMY;
-font-size: 16px;
-font-style: normal;
-font-weight: 400;
-line-height: 27px; /* 168.75% */
-width: 912px;
-}
-
-.blog-post-author {
-    color: var(--text-text-secondary, rgba(34, 34, 34, 0.80));
-width: 377px;
-font-size: 18px;
-font-style: normal;
-font-weight: 700;
-line-height: 32px; /* 177.778% */
-}
-
-.blog-post-author-title {
-    color: var(--text-text-secondary, rgba(34, 34, 34, 0.80));
-font-family: MADE TOMMY;
-font-size: 16px;
-font-style: normal;
-font-weight: 400;
-line-height: 24px; /* 150% */
-width: 796px;
-}
-
-.blog-post-content figcaption {
+.blog-post {
+    padding: 45px 61px 45px 61px;
+    margin: 10px 0;
+    background-color: rgba(244, 245, 247, 1);
+    color: rgba(34, 34, 34, 1);
+    border-radius: 8px;
+  }
+  
+  
+  .blog-post-date {
+    font-size: 10.5px;
+    line-height: 24px;
+  }
+  
+  .blog-post-title {
+    font-weight: 800;
+    font-size: 42px;
+    line-height: 56px;
+    margin: 10px 0 30px;
+  }
+  
+  .blog-post-content {
+    font-size: 16px;
+    line-height: 27px;
+    margin: 20px 0 30px;
+  }
+ 
+  .blog-post-author {
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 32px;
+    margin: 30px 0 0;
+  }
+  
+  .blog-post-author-title {
+    font-size: 16px;
+    line-height: 24px;
+    margin: 0;
+  }
+  
+  .blog-post-quote {
+    margin: 20px 0;
+    font-style: italic;
+  }
+  
+  .blog-post-quote-author {
+    font-size: 14px;
+    line-height: 22px;
     font-weight: bold;
     text-align: right;
-}
-
-.blog-post-content a {
-    color: var(--text-text-primary, #222);
-font-size: 16px;
-line-height: 22px;;
-text-decoration-line: underline;
-}
-
+  }
+  
+  .blog-post-link-list > li > a[href="https://wp.pl"]
+  {
+    font-weight: bold;
+  }
+  
+  .blog-post-link-list > li > a:visited {
+    color: green;
+  }
+  
+  .blog-post-link-list-item:not(:last-child) {
+    margin-bottom: 30px;
+  }
+  
+  .blog-post-link-list > li > a {
+    color: rgba(34, 34, 34, 1);
+  }
