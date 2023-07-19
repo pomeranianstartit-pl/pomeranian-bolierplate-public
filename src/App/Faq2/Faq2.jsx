@@ -5,16 +5,17 @@ import React from 'react';
 
 
 export const Faq2 = () => {
-
-
+  let odp = 'jakas odp';
   return (
     <div>
+
       <MasterHeaderFaq2 title='FAQ2haha' />
-      <h2>Tu znajdziesz odpowiedzi na resztę pytań</h2>
-      <hr />
-      <SingleQuestion2 />
+      <h1>Jak się zapisać</h1>
 
-
+      <SingleQuestion2 question2='jakieś pytanie' answer23={odp} />
+      <SingleQuestion2 question2="jakieś pytanie" answer23={odp} />
+      <SingleQuestion2 question2="jakieś pytanie" answer23={odp} />
+      <SingleQuestion2 question2="jakieś pytanie" answer23={odp} />
     </div>
   );
 };
