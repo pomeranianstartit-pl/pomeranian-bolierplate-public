@@ -76,7 +76,7 @@ export const Techstack = () => {
     {
       id: '12',
       title: 'vscode',
-      logo: <GitIcon />,
+      logo: <VscodeIcon/>,
     },
     {
       id: '13',
