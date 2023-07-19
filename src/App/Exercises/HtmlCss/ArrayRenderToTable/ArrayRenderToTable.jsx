@@ -39,10 +39,10 @@ export const ArrayRenderToTable = () => {
       mostFamousSong: 'Hong Kong Garden',
     },
   ];
-  function bandsList({ band, yearFormed, albums, mostFamousSong }) {
+  function bandsList({ id, band, yearFormed, albums, mostFamousSong }) {
     return (
       <>
-        <tr key={band}>
+        <tr key={id}>
           <td>{band}</td>
           <td>{yearFormed}</td>
           <td>{albums}</td>
