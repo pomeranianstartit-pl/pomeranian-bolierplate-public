@@ -37,8 +37,8 @@ export const Dashboard = () => {
 
   return (
     <div className="dashboard">
-      <h2> 👋 Hej Magda!</h2>
-      <p>
+      <h2 className="dashboard-header"> 👋 Hej Magda!</h2>
+      <p className="dashboard-description">
         Poniżej znajdziesz najważniejsze informacje na temat mojej działalności.
       </p>
       <div className="dashboard-cards-wrapper">
@@ -52,6 +52,7 @@ export const Dashboard = () => {
           );
         })}
       </div>
+      <div className="dashboard-personal-info">Personal info</div>
     </div>
   );
 };

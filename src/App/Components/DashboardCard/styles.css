@@ -2,14 +2,20 @@
     display: flex;
     align-items: center;
     flex-direction: column;
-    border: 1px solid rgba(200, 203, 209, 1);
+    border: 1px solid rgba(255, 77, 105, 1);
     border-radius: 8px;
     padding: 20px 28px;
     font-family: 'Poppins', sans-serif;
     font-weight: bold;
+
     
     }
-  
+    div.dashboard-card-wrapper:hover{
+      transform:scale(1.1);
+      -webkit-box-shadow: 2px -1px 11px -3px rgba(255, 77, 105, 1);
+      -moz-box-shadow: 2px -1px 11px -3px rgba(255, 77, 105, 1);
+      box-shadow: 2px -1px 11px -3px rgba(255, 77, 105, 1);
+    }
    
   .dashboard-card-title {
     font-size: 18px;

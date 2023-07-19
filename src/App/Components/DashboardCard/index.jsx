@@ -7,7 +7,7 @@ export const DashboardCard = (cos) => {
       {cos.logo}
       <p className="dashboard-card-opis">{cos.opis}</p>
       <a href="#" className="dashboard-card-navlink">
-        zobacz więcej
+        zobacz więcej &rarr;
       </a>
     </div>
   );
