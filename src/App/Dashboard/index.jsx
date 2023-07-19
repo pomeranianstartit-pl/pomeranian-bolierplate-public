@@ -1,11 +1,7 @@
 import './styles.css';
-import { BoxComponent } from './Components/box';
-import { HouseIcon } from '../Components/Icons/HouseIcon';
+import { BoxComponent } from './Components/Box/BoxComponent';
 import { PersonalCardIcon } from '../Components/Icons/PersonalCardIcon';
-import { CalendarIcon } from '../Components/Icons/CalendarIcon';
 import { EditIcon } from '../Components/Icons/EditIcon';
-import { ElementIcon } from '../Components/Icons/ElementIcon';
-import { SettingIcon } from '../Components/Icons/SettingIcon';
 import { BookIcon } from '../Components/Icons/BookIcon';
 import { ProfileComponent } from './Components/Profile/ProfileComponent';
 
@@ -30,6 +26,7 @@ export const Dashboard = () => {
       title: 'Tech stack',
       logo: <EditIcon />,
       shortdescription: 'Lorem ipsum dolor sit amet.',
+      link: 'techstack/*',
     },
     {
       title: 'FAQ',
@@ -57,6 +54,7 @@ export const Dashboard = () => {
                   title={el.title}
                   logo={el.logo}
                   shortdescription={el.shortdescription}
+                  link={el.link}
                 />
               ))}
             </div>

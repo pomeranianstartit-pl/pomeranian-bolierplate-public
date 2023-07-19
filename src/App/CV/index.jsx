@@ -1,7 +1,9 @@
 import './styles.css';
 
 export const CV = () => {
-    return (
-      <div className="CV"><h1>CV</h1></div>
-    );
-  };
+  return (
+    <div className="CV">
+      <h2>MOJE CV</h2>
+    </div>
+  );
+};

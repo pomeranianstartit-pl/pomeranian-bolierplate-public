@@ -7,12 +7,10 @@ export function GuessMe() {
   const [randomNumber, setRandomNumber] = useState();
 
   const generateRandomNumber = () => {
-    setRandomNumber(Math.floor(Math.random() * 100) + 1)
-    console.log(randomNumber)
-    console.log(`liczba to ${liczba}`)
+    setRandomNumber(Math.floor(Math.random() * 100) + 1);
+    console.log(randomNumber);
+    console.log(`liczba to ${liczba}`);
   };
-
-
 
   const handleOnChange = (event) => {
     let inputValue = event.target.value;
@@ -23,16 +21,25 @@ export function GuessMe() {
     <div>
       <h1>Jaką jestem liczbą?</h1>
       <p> jestem liczbą: {randomNumber}</p>
-      <button className="startButton" onClick={generateRandomNumber}>START</button>
+      <button className="startButton" onClick={generateRandomNumber}>
+        START
+      </button>
       <br></br>
-      <input placeholder="A"type="number" value={Number(liczba)} onChange={handleOnChange}></input>
+      <input
+        placeholder="A"
+        type="number"
+        value={Number(liczba)}
+        onChange={handleOnChange}
+      ></input>
       <p>
         {randomNumber > liczba && 'Jestem większa'}
         {randomNumber < liczba && 'Jestem mniejsza'}
         {liczba == randomNumber && 'Gratulacje!'}
       </p>
       <br></br>
-      <button className="resetButton"onClick={generateRandomNumber}>RESET</button>
+      <button className="resetButton" onClick={generateRandomNumber}>
+        RESET
+      </button>
     </div>
   );
 }

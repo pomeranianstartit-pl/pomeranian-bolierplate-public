@@ -2,7 +2,7 @@ import './styles.css';
 
 export function Exercise() {
   function multiply(num1, num2) {
-    console.log("Mnożonko")
+    console.log('Mnożonko');
     return num1 * num2;
   }
 

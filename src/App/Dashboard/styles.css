@@ -1,7 +1,8 @@
 .dashboard-section {
   display: grid;
   grid-template-areas:
-    'main main profile'
+    'main main profile';
+  grid-column-gap: 100px;
 }
 
 .left-section {
