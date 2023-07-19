@@ -1,50 +1,135 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 import './styles.css';
+import formatTime from './FormatTime';
 
 export const MemoGameBoard = ({
-  startStopGame,
-  gameStarted,
+  time,
+  setGameStarted,
   score,
-  clicks,
-  memoArray,
+  setScore,
   boardSize,
-  classOfElement,
-  revealCard,
+  setFinalSettings,
+
 }) => {
 
-  return (
-    <div>
-      <div className="gameStatus">
-        <h4>CZAS GRY </h4>
-        {score}
-        <h4>LICZBA RUCHÓW </h4>
-        {clicks}
-        <h4>PRZYCISKI STERUJĄCE</h4>
-        <button onClick={startStopGame}>
-          {gameStarted ? 'PASS' : 'START'}
-        </button>
-      </div>
-      <div
-        className="memoGame"
-        style={{
-          gridTemplateColumns: `repeat(${boardSize}, 66px)`,
-        }}
-      >
-         {memoArray.map((card) => (
-          <div className="cell">
-            <div
-              key={card.id}
-              className={classOfElement(card)}
-              onClick={() => revealCard(card)}
-            >
-              <div className="symbol">
-                <h3>{(card.isGuessed || card.isVisible) && card.character}</h3>
-              </div>
-            </div>
+  const [memoArray, setMemoArray] = useState([]);
+  const [firstClickedCard, setFirstClickedCard] = useState(null);
+  const [secondClickedCard, setSecondClickedCard] = useState(null);
+
+
+  useEffect(() => {
+    symbolsArray();
+}, [boardSize]);
+
+const symbolsArray = () => {
+  const memoSymbolsArray = 'abcdefghijk';
+  const memoCardsSymbols = [];
+  const memoUsedSymbols = [];
+  for (let i = 0; i < boardSize / 2; i++) {
+      let symbol;
+      do {
+          const index = Math.floor(Math.random() * memoSymbolsArray.length);
+          symbol = memoSymbolsArray.charAt(index);
+      } while (memoUsedSymbols.includes(symbol));
+      memoUsedSymbols.push(symbol);
+      memoCardsSymbols.push({
+          character: symbol,
+          isGuessed: false,
+          isVisible: false,
+      });
+  }
+  let shuffledCards = [];
+        for (let i = 0; i < boardSize; i++) {
+            shuffledCards.push({
+                ...symbolsArray[i % (boardSize / 2)],
+                id: i + 1,
+            });
+        }
+        shuffledCards = shuffledCards.sort(() => Math.random() - 0.5);
+        setMemoArray(shuffledCards);
+    };
+
+    const revealCard = (card) => {
+      if (card.id === firstClickedCard || card.isGuessed) return;
+      if (firstClickedCard === null) {
+          setFirstClickedCard(card.id);
+          return;
+      }
+
+      if (secondClickedCard === null) {
+          setSecondClickedCard(card.id);
+          setScore(score + 1);
+      }
+  };
+
+  useEffect(() => {
+    const first = memoArray.find((card) => card.id === firstClickedCard);
+    const second = memoArray.find((card) => card.id === secondClickedCard);
+    let timeout;
+
+    setMemoArray((prevMemoArray) =>
+        prevMemoArray.map((card) => {
+            const cardCopy = { ...card };
+            if (cardCopy.id === first?.id || cardCopy.id === second?.id) {
+                cardCopy.isVisible = true;
+                cardCopy.isGuessed =
+                    cardCopy.isGuessed || first?.character === second?.character;
+            } else {
+                cardCopy.isVisible = false;
+            }
+            return cardCopy;
+        })
+    );
+
+    if (firstClickedCard !== null && secondClickedCard !== null) {
+      timeout = setTimeout(() => {
+          setFirstClickedCard(null);
+          setSecondClickedCard(null);
+      }, 1000);
+  }
+
+  return () => clearTimeout(timeout);
+}, [firstClickedCard, secondClickedCard]);
+
+
+useEffect(() => {
+  const matchedCards = memoArray.filter((card) => card.isGuessed);
+  setTimeout(() => {
+      if (matchedCards.length === boardSize) {
+          setGameStarted(false);
+          setFinalSettings(boardSize);
+      }
+  }, 500);
+}, [memoArray, boardSize, setGameStarted, setFinalSettings]);
+
+return (
+  <>
+      <div className="container">
+          <h2 className="item">CZAS GRY: </h2>
+          <h2 className="timeAndScore">{formatTime(time)}</h2>
+          <h2 className="item">LICZBA RUCHÓW:</h2>
+          <h2 className="timeAndScore">{score}</h2>
+          <h2 className="item">PRZYCISKI STERUJĄCE</h2>
+          <div className="stopBottom">
+              <button
+                  onClick={() => {
+                      setGameStarted(false);
+                      setFinalSettings(boardSize);
+                  }}
+              >
+                  STOP
+              </button>
           </div>
-        ))}
       </div>
-    </div>
-  );
+      <div className="memoGame">
+          {memoArray.map((card) => (
+              <div key={card.id} onClick={() => revealCard(card)}>
+                  <div id={card.isGuessed ? 'squerTrue' : 'squerFalse'}>
+                      {(card.isGuessed || card.isVisible) && card.character}
+                      </div>
+                    </div>
+                ))}
+            </div>
+        </>
+    );
 };
-  
