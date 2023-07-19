@@ -17,7 +17,7 @@ const DashboardCard = (props) => {
 
       <a href="#" className="dashboard-card-navlink">
 
-        zobacz więcej
+        zobacz więcej &rarr;
 
       </a>
 

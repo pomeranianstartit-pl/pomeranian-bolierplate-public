@@ -2,6 +2,10 @@ import './styles.css';
 import DashboardCard from '../Components/DashboardCard';
 
 import { CalendarIcon } from '../Components/Icons/CalendarIcon';
+import { PersonalCardIcon } from '../Components/Icons/PersonalCardIcon';
+import { ElementIcon } from '../Components/Icons/ElementIcon';
+
+
 export const Dashboard = () => {
 
   const dashboardData = [
@@ -14,7 +18,7 @@ export const Dashboard = () => {
 
       description: 'podgląd cv wraz z doświadczeniem',
 
-      icon: <CalendarIcon />,
+      icon: <PersonalCardIcon />,
 
     },
 
@@ -26,7 +30,7 @@ export const Dashboard = () => {
 
       description: 'Ćwiczeniowe description',
 
-      icon: <CalendarIcon />,
+      icon: <ElementIcon />,
 
     },
 
@@ -75,9 +79,9 @@ export const Dashboard = () => {
 
     <div className="dashboard">
 
-      <h2>👋 Hej, tu Szczepan!</h2>
+      <h2 className='dashboard-header'>👋 Hej, tu Olga!</h2>
 
-      <p>
+      <p className='dashboard-description'>
 
         Poniżej znajdziesz najważniejsze informacje na temat mojej działalności.
 
@@ -105,6 +109,7 @@ export const Dashboard = () => {
 
       </div>
 
+        <div className='dashboard-personal-info'></div>
     </div>
 
   );
