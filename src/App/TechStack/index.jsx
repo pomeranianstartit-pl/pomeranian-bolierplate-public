@@ -2,6 +2,7 @@ import './styles.css';
 
 const techStackData = [
   {
+    // mozna przeniesc svg do folderu public i wywolac go src '/obrazek.svg'
     src: './App/Images/tech-stack/discord.png',
     text: 'css',
   },
