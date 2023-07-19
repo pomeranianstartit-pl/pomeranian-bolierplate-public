@@ -1,0 +1,54 @@
+.DC-whole {
+  padding: 20px 28px;
+  border: 1px solid #c8cbd1;
+  border-radius: 8px;
+  width: 200px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0px 3px 9px 0px #00000026;
+  box-shadow: 0px 2px 28px 0px #0000001f;
+  font-family: 'Poppins', sans-serif;
+}
+.DC-whole:hover {
+  border: 1px solid #fe37568a;
+  box-shadow: 0px 2px 26px 0px #fe37568a;
+}
+.DC-header {
+  margin-top: 0;
+  text-align: center;
+  font-size: 18px;
+  font-weight: 400;
+  color: #fe3756;
+}
+.DC-description {
+  font-size: 12px;
+  font-weight: 400;
+  text-align: center;
+}
+
+.DC-button {
+  font-weight: 700;
+  font-size: 14px;
+  color: #fe3756;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+}
+
+.DC-whole svg {
+  height: 43px;
+  width: 43px;
+}
+.DC-whole path:hover {
+  stroke: #fe3756;
+}
+
+.DC-whole {
+  margin: 0;
+}
+
+.DC-whole .DCimage {
+  margin: 0;
+}
