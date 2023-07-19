@@ -11,6 +11,7 @@ import { Exercises } from './App/Exercises';
 import { Calendar } from './App/Calendar';
 import { Blog } from './App/Blog';
 import { FAQ } from './App/FAQ';
+import { TechStack } from './App/TechStack';
 
 export function App() {
   return (
@@ -26,6 +27,7 @@ export function App() {
           <Route path="*" element={<NotFound />} />
           <Route path="Blog" element={<Blog />} />
           <Route path="FAQ" element={<FAQ />} />
+          <Route path="TechStack" element={<TechStack />} />
         </Route>
       </Routes>
     </BrowserRouter>
