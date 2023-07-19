@@ -53,6 +53,7 @@ export const Dashboard = () => {
         {dashboardData.map((element) => {
           return (
             <SeeMore
+              key={element.id}
               title={element.title}
               icon={element.icon}
               description={element.description}
