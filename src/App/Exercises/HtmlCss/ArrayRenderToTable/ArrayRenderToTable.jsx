@@ -55,7 +55,7 @@ export const ArrayRenderToTable = () => {
   console.log(bands);
 
   return (
-    <div>
+    <section className="array-table">
       <tr>
         <th>Band</th>
         <th>yearFormed</th>
@@ -63,6 +63,6 @@ export const ArrayRenderToTable = () => {
         <th>mostFamousSong</th>
       </tr>
       {bands.map(bandsList)}
-    </div>
+    </section>
   );
 };
