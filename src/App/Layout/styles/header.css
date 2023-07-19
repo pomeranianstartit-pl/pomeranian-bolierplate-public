@@ -1,3 +1,9 @@
+.rank_1,
+.name {
+  margin: 0;
+  padding: 0;
+}
+
 header {
   grid-area: header;
   position: relative;
@@ -21,4 +27,46 @@ header.header-title {
 header .logo {
   height: 40vmin;
   pointer-events: none;
+}
+
+.name {
+  font-family: Poppins;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.rank_1 {
+  color: var(--gray-500, #999);
+  font-family: Poppins;
+  font-size: 13px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.header-right {
+  width: 25%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.name_rank {
+  display: flex;
+  flex-direction: column;
+}
+
+.circle {
+  width: 50px;
+  height: 50px;
+  background-color: #c8cbd1; /* You can change the color as per your preference */
+  border-radius: 50%;
+  margin-right: 20px;
+}
+
+.mid_component {
+  display: flex;
 }

@@ -1,2 +1,16 @@
-.dashboard {
+.dashboard-wrapper {
+  display: flex;
+  gap: 35px;
+  flex-direction: row;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+}
+
+.dashboard .greeting {
+  font-family: DM Sans;
+  font-size: 22px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 38px;
+  color: #fe3756;
 }
