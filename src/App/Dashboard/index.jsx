@@ -37,7 +37,7 @@ export const Dashboard = () => {
 
   return (
     <div className="dashboard">
-      <h2>Hej Magda!</h2>
+      <h2> 👋 Hej Magda!</h2>
       <p>
         Poniżej znajdziesz najważniejsze informacje na temat mojej działalności.
       </p>
