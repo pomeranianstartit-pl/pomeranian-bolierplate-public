@@ -1,0 +1,8 @@
+.allFloats {
+  position: relative;
+}
+
+.twoFloats {
+  position: absolute;
+  left: 30px;
+}
