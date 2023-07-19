@@ -39,23 +39,33 @@ export const Dashboard = () => {
   ];
 
   return (
-    <div className="dashboard">
-      <h1 className="greeting">
-        <img src="./" alt="" />
-        Cześć, tu Krzysiek!
-      </h1>
-      <p>
-        Poniżej znajdziesz najważniejsze informacje na temat mojej działalności.
-      </p>
-      <div>
-        <div className="dashboard-wrapper">
-          {DashBoardComponents.map((el) => (
-            <BoxComponent
-              title={el.title}
-              logo={el.logo}
-              shortdescription={el.shortdescription}
-            />
-          ))}
+    <div className="dashboard-section">
+      <div className="left-section">
+        <div className="dashboard">
+          <h1 className="greeting">
+            <img src="./" alt="" />
+            Cześć, tu Krzysiek!
+          </h1>
+          <p>
+            Poniżej znajdziesz najważniejsze informacje na temat mojej
+            działalności.
+          </p>
+          <div>
+            <div className="dashboard-wrapper">
+              {DashBoardComponents.map((el) => (
+                <BoxComponent
+                  title={el.title}
+                  logo={el.logo}
+                  shortdescription={el.shortdescription}
+                />
+              ))}
+            </div>
+          </div>
+        </div>
+      </div>
+      <div className="right-section">
+        <div>
+          <ProfileComponent />
         </div>
       </div>
     </div>
