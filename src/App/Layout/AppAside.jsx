@@ -14,24 +14,34 @@ export function AppAside() {
       <nav>
         <ul>
           <li>
-            <HouseIcon className="icon"></HouseIcon>
-            <NavLink to="dashboard">Dashboard</NavLink>
+            <NavLink to="dashboard">
+              <HouseIcon className="icon" />
+              Dashboard
+            </NavLink>
           </li>
           <li>
-            <ElementIcon className="icon"></ElementIcon>
-            <NavLink to="blocks">Bloki</NavLink>
+            <NavLink to="blocks">
+              <ElementIcon className="icon" />
+              Bloki
+            </NavLink>
           </li>
           <li>
-            <EditIcon className="icon"></EditIcon>
-            <NavLink to="exercises">Ćwiczenia</NavLink>
+            <NavLink to="exercises">
+              <EditIcon className="icon" />
+              Ćwiczenia
+            </NavLink>
           </li>
           <li>
-            <NavLink to="Calendar">Kalendarz</NavLink>
-            <CalendarIcon className="icon"></CalendarIcon>
+            <NavLink to="Calendar">
+              <CalendarIcon className="icon" />
+              Kalendarz
+            </NavLink>
           </li>
           <li>
-            <PersonalCardIcon className="icon" />
-            <NavLink to="CV">Moje CV</NavLink>
+            <NavLink to="CV">
+              <PersonalCardIcon className="icon" />
+              Moje CV
+            </NavLink>
           </li>
           <li>
             <NavLink to="Blog">
@@ -40,8 +50,10 @@ export function AppAside() {
             </NavLink>
           </li>
           <li>
-            <FAQIcon className="icon"></FAQIcon>
-            <NavLink to="FAQ">faq</NavLink>
+            <NavLink to="FAQ">
+              <FAQIcon className="icon" />
+              FAQ
+            </NavLink>
           </li>
         </ul>
       </nav>
