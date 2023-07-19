@@ -1,2 +1,4 @@
-.dashboard {
+.dashboard-cards-wrapper {
+    display: flex;
+    gap: 35 px;
 }
