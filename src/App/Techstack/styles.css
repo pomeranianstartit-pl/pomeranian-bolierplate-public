@@ -1,3 +1,20 @@
+.sectionWrapper {
+  display: grid;
+  grid-template-areas: 
+  "section section empty";
+
+}
+
+.techstack-grid-left {
+  grid-area: section;
+}
+
+
+
+.empty {
+  grid-area: empty;
+}
+
 .techstack-section h2 {
   color: var(--secondary-secondary, #23213d);
   /* body/bold-18 */
@@ -9,13 +26,11 @@
   text-transform: uppercase;
 }
 
-
-
 .techstack-wrapper {
   display: grid;
-  grid-template-columns: repeat(6, 1fr); 
-  grid-template-rows: repeat(3, 200px); 
-  gap: 10px; 
+  grid-template-columns: repeat(6, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  gap: 15px;
 }
 
 .techstack-wrapper svg {
