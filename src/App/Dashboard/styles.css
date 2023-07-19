@@ -1,3 +1,18 @@
+.dashboard-section {
+  display: grid;
+  grid-template-areas:
+    'main main profile';
+  grid-column-gap: 100px;
+}
+
+.left-section {
+  grid-area: main;
+}
+
+.right-section {
+  grid-area: profile;
+}
+
 .dashboard-wrapper {
   display: flex;
   gap: 35px;

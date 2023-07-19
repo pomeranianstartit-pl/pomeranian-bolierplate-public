@@ -5,9 +5,9 @@ import { RoundImage } from '../../../Components/RoundImage/RoundImage';
 export function Exercise() {
   return (
     <>
-    <img src={beetle} alt="Beetle image" />
-      <RoundImage src={beetle} size="300px"/>
-      <RoundImage src={beetle} size="150px"/>
+      <img src={beetle} alt="Beetle" />
+      <RoundImage src={beetle} size="300px" />
+      <RoundImage src={beetle} size="150px" />
     </>
   );
 }

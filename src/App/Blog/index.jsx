@@ -24,7 +24,7 @@ export const Blog = () => {
       <div className="blog-post">
         <p className="blog-date">10-07-2023</p>
         <h1 className="blog-header">I make mistakes!</h1>
-        <blockquote className='blog-quote'>
+        <blockquote className="blog-quote">
           I'm selfish, impatient and a little insecure. I make mistakes, I am
           out of control and at times hard to handle. But if you can't handle me
           at my worst, then you sure as hell don't deserve me at my best.
@@ -47,15 +47,15 @@ export const Blog = () => {
           slowly grew more visibly anachronistic and battered by endless
           scandals.
         </p>
-        <ul className='blog-links'>
-          <li className='wp-link'>
-            <a href='https://www.wp.pl'>WP.PL 1</a>
+        <ul className="blog-links">
+          <li className="wp-link">
+            <a href="https://www.wp.pl">WP.PL 1</a>
           </li>
           <li>
-            <a href='https://www.wp.pl'>WP.PL 1</a>
+            <a href="https://www.wp.pl">WP.PL 1</a>
           </li>
           <li>
-            <a href='https://www.onet.pl'>ONET.PL</a>
+            <a href="https://www.onet.pl">ONET.PL</a>
           </li>
         </ul>
         <p className="author">Radosław Majdan</p>

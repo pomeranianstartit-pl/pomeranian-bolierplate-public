@@ -92,7 +92,7 @@ export function SelectorsAndCascade() {
 
         <span className="p-1">Span</span>
 
-        <a href="#">Link</a>
+        <a href="/">Link</a>
       </div>
 
       <div className="cwiczenie-8">

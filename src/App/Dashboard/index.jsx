@@ -1,11 +1,7 @@
 import './styles.css';
-import { BoxComponent } from './Components/box';
-import { HouseIcon } from '../Components/Icons/HouseIcon';
+import { BoxComponent } from './Components/Box/BoxComponent';
 import { PersonalCardIcon } from '../Components/Icons/PersonalCardIcon';
-import { CalendarIcon } from '../Components/Icons/CalendarIcon';
 import { EditIcon } from '../Components/Icons/EditIcon';
-import { ElementIcon } from '../Components/Icons/ElementIcon';
-import { SettingIcon } from '../Components/Icons/SettingIcon';
 import { BookIcon } from '../Components/Icons/BookIcon';
 import { ProfileComponent } from './Components/Profile/ProfileComponent';
 
@@ -30,6 +26,7 @@ export const Dashboard = () => {
       title: 'Tech stack',
       logo: <EditIcon />,
       shortdescription: 'Lorem ipsum dolor sit amet.',
+      link: 'techstack/*',
     },
     {
       title: 'FAQ',
@@ -39,23 +36,34 @@ export const Dashboard = () => {
   ];
 
   return (
-    <div className="dashboard">
-      <h1 className="greeting">
-        <img src="./" alt="" />
-        Cześć, tu Krzysiek!
-      </h1>
-      <p>
-        Poniżej znajdziesz najważniejsze informacje na temat mojej działalności.
-      </p>
-      <div>
-        <div className="dashboard-wrapper">
-          {DashBoardComponents.map((el) => (
-            <BoxComponent
-              title={el.title}
-              logo={el.logo}
-              shortdescription={el.shortdescription}
-            />
-          ))}
+    <div className="dashboard-section">
+      <div className="left-section">
+        <div className="dashboard">
+          <h1 className="greeting">
+            <img src="./" alt="" />
+            Cześć, tu Krzysiek!
+          </h1>
+          <p>
+            Poniżej znajdziesz najważniejsze informacje na temat mojej
+            działalności.
+          </p>
+          <div>
+            <div className="dashboard-wrapper">
+              {DashBoardComponents.map((el) => (
+                <BoxComponent
+                  title={el.title}
+                  logo={el.logo}
+                  shortdescription={el.shortdescription}
+                  link={el.link}
+                />
+              ))}
+            </div>
+          </div>
+        </div>
+      </div>
+      <div className="right-section">
+        <div>
+          <ProfileComponent />
         </div>
       </div>
     </div>

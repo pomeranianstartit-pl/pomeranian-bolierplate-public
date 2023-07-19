@@ -1,0 +1,17 @@
+.techstack-box p {
+  margin: 20px 0;
+  padding: 0;
+}
+
+.techstack-box {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: auto;
+  height: auto;
+}
+
+
+
+
