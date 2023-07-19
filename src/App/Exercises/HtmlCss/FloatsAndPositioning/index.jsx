@@ -45,7 +45,7 @@ export function Exercise() {
           consectetur lorem donec.{' '}
         </p>
 
-        <button>Zapisz na później</button>
+        <button className="button">Zapisz na później</button>
       </div>
 
       <div className="floats-div6">

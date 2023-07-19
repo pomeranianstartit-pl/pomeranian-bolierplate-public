@@ -8,7 +8,6 @@ import { PersonalCardIcon } from '../Components/Icons/PersonalCardIcon';
 import { CalendarIcon } from '../Components/Icons/CalendarIcon';
 import { MessageIcon } from '../Components/Icons/MessageIcon';
 
-
 export function AppAside() {
   return (
     <aside>
@@ -32,7 +31,7 @@ export function AppAside() {
           </li>
 
           <li>
-            <NavLink to="exercises" >
+            <NavLink to="exercises">
               <div className="aside-row">
                 <EditIcon />
                 Ćwiczenia
@@ -41,36 +40,30 @@ export function AppAside() {
           </li>
 
           <li>
-            <NavLink to="cv" >
+            <NavLink to="cv">
               <div className="aside-row">
                 <PersonalCardIcon />
                 CV
               </div>
             </NavLink>
           </li>
-          
+
           <li>
-            <NavLink to="calendar" >
+            <NavLink to="calendar">
               <div className="aside-row">
                 <CalendarIcon />
                 Kalendarz
               </div>
             </NavLink>
           </li>
-          
+
           <li>
             <NavLink to="Blog">Blog</NavLink>
           </li>
 
-
-
           <li>
             <NavLink to="Faq">Faq</NavLink>
           </li>
-          
-          
-        
-        
         </ul>
       </nav>
       <p style={{ padding: '1rem 0' }}>Sidebar items, widgets, etc</p>

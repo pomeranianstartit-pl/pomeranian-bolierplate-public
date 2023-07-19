@@ -73,6 +73,12 @@
   height: 279px;
 
   margin-right: 5px;
+
+  float: left;
+
+  padding: 0px 24px 0px 24px;
+  border-radius: 8px;
+  gap: 8px;
 }
 
 .floats-p5 {
@@ -80,8 +86,49 @@
   font-weight: 400;
   line-height: 36px;
   letter-spacing: 0em;
-  float: right;
+  text-align: justify;
+  position: absolute;
+
+  top: -30px;
+  right: -69px;
 }
 
 .floats-div5 {
+  font-size: 22px;
+  font-weight: 400;
+  line-height: 36px;
+  letter-spacing: 0em;
+  text-decoration-color: #ffffff;
+
+  text-align: justify;
+  width: 984px;
+  height: 162px;
+  padding: 17px 21px 17px 21px;
+  gap: 10px;
+  background: #4b5563;
+}
+
+.floats-div6 {
+  width: 985px;
+  height: 468px;
+  font-size: 22px;
+  font-weight: 400;
+  line-height: 36px;
+  letter-spacing: 0em;
+  text-align: justify;
+  padding: 17px 21px 17px 21px;
+  gap: 10px;
+}
+
+.button {
+  width: 423px;
+  height: 94px;
+  padding: 10px 127px 10px 127px;
+  border-radius: 19.643802642822266px;
+  border: 1px;
+  gap: 10px;
+  background: linear-gradient(0deg, #ffd5db, #ffd5db);
+  border: 1px solid #fe3756;
+  position: relative;
+  left: 250px;
 }
