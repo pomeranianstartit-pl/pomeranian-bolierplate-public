@@ -1,7 +1,7 @@
 import { ArrayRenderToTable } from './ArrayRenderToTable';
 
 export const blockRouterMetaData = {
-  path: 'some-path-that-you-wants',
+  path: 'array-render-to-table',
   date: '12-12-2023',
   linkLabel: 'Zmiana kolekcji obiektów w tabęlke ',
   blockNo: 1,

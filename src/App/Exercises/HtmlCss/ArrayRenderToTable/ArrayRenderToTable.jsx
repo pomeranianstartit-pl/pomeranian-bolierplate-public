@@ -1,8 +1,6 @@
 import './styles.css';
 
 export const ArrayRenderToTable = () => {
-  return;
-
   const bands = [
     {
       band: 'The Clash',
@@ -41,4 +39,30 @@ export const ArrayRenderToTable = () => {
       mostFamousSong: 'Hong Kong Garden',
     },
   ];
+  function bandsList({ band, yearFormed, albums, mostFamousSong }) {
+    return (
+      <>
+        <tr key={band}>
+          <td>{band}</td>
+          <td>{yearFormed}</td>
+          <td>{albums}</td>
+          <td>{mostFamousSong}</td>
+        </tr>
+      </>
+    );
+  }
+
+  console.log(bands);
+
+  return (
+    <div>
+      <tr>
+        <th>Band</th>
+        <th>yearFormed</th>
+        <th>albums</th>
+        <th>mostFamousSong</th>
+      </tr>
+      {bands.map(bandsList)}
+    </div>
+  );
 };
