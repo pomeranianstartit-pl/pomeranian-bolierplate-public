@@ -34,6 +34,7 @@ export function FloatsAndPositioning() {
         donec.
         <p className="maly-kwadrat-wyzej">zapisz na poźniej</p>
       </div>
+
       <p className="buttom-text">zapisz na później</p>
       <div className="grid">
         <p className="sam-text">
