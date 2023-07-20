@@ -6,6 +6,10 @@ import { Logo } from '../Components/Logo/Logo';
 import { SettingIcon } from '../Components/Icons/SettingIcon';
 
 export function AppHeader() {
+  function handleClikButton(message) {
+    console.log(message)
+  }
+
   return (
     <header>
       <Logo />

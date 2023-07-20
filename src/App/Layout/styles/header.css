@@ -24,7 +24,3 @@ header .logo>img {
   height: 40vmin;
   pointer-events: none;
 }
-
-header .header-info {
-  display: flex;
-}
