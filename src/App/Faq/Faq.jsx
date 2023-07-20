@@ -4,24 +4,29 @@ import './styles.css';
 export function Faq() {
   const QUESTIONS = [
     {
-      question: 'Pytanie 1',
-      answer: 'Lorem ipsum ....',
+      question: 'Jak moge się zapisać na szkolenie?',
+      answer:
+        'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Eleifend rutrum ipsum, leo et in. Mattis porttitor volutpat placerat suspendisse ante in cursus etiam ullamcorper. Sollicitudin egestas aliquam, adipiscing adipiscing iaculis habitant. Viverra pretium tincidunt nisl pellentesque ut adipiscing non.Lorem ipsum dolor sit amet, consectetur adipiscing elit',
     },
     {
-      question: 'Pytanie 2',
-      answer: 'Lorem ipsum ....',
+      question: 'Jak moge się zapisać na szkolenie?',
+      answer:
+        'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Eleifend rutrum ipsum, leo et in. Mattis porttitor volutpat placerat suspendisse ante in cursus etiam ullamcorper. Sollicitudin egestas aliquam, adipiscing adipiscing iaculis habitant. Viverra pretium tincidunt nisl pellentesque ut adipiscing non.Lorem ipsum dolor sit amet, consectetur adipiscing elit',
     },
     {
-      question: 'Pytanie 3',
-      answer: 'Lorem ipsum ....',
+      question: 'Jak moge się zapisać na szkolenie?',
+      answer:
+        'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Eleifend rutrum ipsum, leo et in. Mattis porttitor volutpat placerat suspendisse ante in cursus etiam ullamcorper. Sollicitudin egestas aliquam, adipiscing adipiscing iaculis habitant. Viverra pretium tincidunt nisl pellentesque ut adipiscing non.Lorem ipsum dolor sit amet, consectetur adipiscing elit',
     },
     {
-      question: 'Pytanie 4',
-      answer: 'Lorem ipsum ....',
+      question: 'Jak moge się zapisać na szkolenie?',
+      answer:
+        'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Eleifend rutrum ipsum, leo et in. Mattis porttitor volutpat placerat suspendisse ante in cursus etiam ullamcorper. Sollicitudin egestas aliquam, adipiscing adipiscing iaculis habitant. Viverra pretium tincidunt nisl pellentesque ut adipiscing non.Lorem ipsum dolor sit amet, consectetur adipiscing elit',
     },
     {
-      question: 'Pytanie 5',
-      answer: 'Lorem ipsum ....',
+      question: 'Jak moge się zapisać na szkolenie?',
+      answer:
+        'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Eleifend rutrum ipsum, leo et in. Mattis porttitor volutpat placerat suspendisse ante in cursus etiam ullamcorper. Sollicitudin egestas aliquam, adipiscing adipiscing iaculis habitant. Viverra pretium tincidunt nisl pellentesque ut adipiscing non.Lorem ipsum dolor sit amet, consectetur adipiscing elit',
     },
   ];
   return (
@@ -39,12 +44,13 @@ const QuestionComponent = ({ question, answer }) => {
   const handleClick = () => {
     setIsVisible(!isVisible);
   };
+
   return (
     <div className="box">
-      <h1 className="header" onClick={handleClick}>
+      <h1 className="question" onClick={handleClick}>
         {question}
       </h1>
-      <p className="text">{isVisible && answer}</p>
+      <p className="answer">{isVisible && answer}</p>
     </div>
   );
 };
