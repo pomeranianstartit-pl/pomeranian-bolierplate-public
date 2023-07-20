@@ -33,4 +33,27 @@ header .logo>img {
 header .header-info {
   display: flex;
   align-items: center;
+  gap: 15px;
+}
+
+header .header-personal-info>p {
+  margin: 0;
+}
+
+header .header-personal-info>p:nth-child(1) {
+  font-size: 16px;
+  line-height: 24px;
+}
+
+header .header-personal-info>p:nth-child(2) {
+  font-size: 13px;
+  line-height: 20px;
+  color: var(--gray-500, #999);
+  ;
+}
+
+header button {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
 }

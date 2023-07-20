@@ -8,21 +8,25 @@ import { default as toggleArrowSvg } from '../Images/toggle-arrow.svg'
 import { default as ellipseImageSvg } from '../Images/ellipse.svg'
 
 export function AppHeader() {
+  function handleClikButton(message) {
+    console.log(message)
+  }
+
   return (
     <header>
-      <Logo />
+      <div><Logo /></div>
       <div className="header-info">
-        <SettingIcon />
+        <button onClick={() => handleClikButton('I am setting button!')}><SettingIcon /></button>
         <div>
           <img src={ellipseImageSvg} alt="name photo"></img>
         </div>
-        <div>
+        <div className='header-personal-info'>
           <p>Gabriela</p>
           <p>kursantka</p>
         </div>
-        <div>
+        <button onClick={() => handleClikButton('I am dropdown button!')}>
           <img src={toggleArrowSvg} alt="dropdown button"></img>
-        </div>
+        </button>
       </div>
     </header>
   );
