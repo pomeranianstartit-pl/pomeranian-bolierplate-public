@@ -23,9 +23,21 @@
   gap: 30px;
 }
 
+@media (max-width: 800px) {
+  .cookie-box {
+    flex-direction: column;
+  }
+}
+
 .div-with-buttons {
   display: flex;
   flex-direction: row;
+}
+
+@media (min-width: 800px) and (max-width: 900px) {
+  .div-with-buttons {
+    flex-direction: column;
+  }
 }
 
 .cookie-img {
@@ -58,3 +70,9 @@
   background-color: white;
   color: #fe3756;
 }
+
+/* @media print {
+  .cookie-box {
+    display: none;
+  }
+} */

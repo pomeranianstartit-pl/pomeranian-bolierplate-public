@@ -14,6 +14,7 @@ import { blockRouterMetaData as TableTenisMetaData } from './TableTenis/router-d
 import { blockRouterMetaData as ArrayRenderingMetaData } from './ArrayRendering/router-data';
 import { blockRouterMetaData as ArrayRenderToTableMetaData } from './ArrayRenderToTable/router-data';
 import { blockRouterMetaData as FloatsAndPositioningMetaData } from './FloatsAndPositioning/router-data';
+import { blockRouterMetaData as MediaqueriesMetaData } from './Mediaqueries/router-data';
 
 export const blockRouterMetaData = [
   blockRouterMetaData121220231,
@@ -30,5 +31,6 @@ export const blockRouterMetaData = [
   ArrayRenderingMetaData,
   ArrayRenderToTableMetaData,
   FloatsAndPositioningMetaData,
+  MediaqueriesMetaData,
 ];
 export const blockRouterData = getParsedRouterDataList(blockRouterMetaData);
