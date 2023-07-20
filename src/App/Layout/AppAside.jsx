@@ -5,7 +5,8 @@ import { HouseIcon } from '../Components/Icons/HouseIcon';
 import { ElementIcon } from '../Components/Icons/ElementIcon';
 import { EditIcon } from '../Components/Icons/EditIcon';
 import { PersonalCardIcon } from '../Components/Icons/PersonalCardIcon';
-
+import { CalendarIcon } from '../Components/Icons/CalendarIcon';
+import { MessageIcon } from '../Components/Icons/MessageIcon';
 
 export function AppAside() {
   return (
@@ -30,7 +31,7 @@ export function AppAside() {
           </li>
 
           <li>
-            <NavLink to="exercises" >
+            <NavLink to="exercises">
               <div className="aside-row">
                 <EditIcon />
                 Ćwiczenia
@@ -39,7 +40,7 @@ export function AppAside() {
           </li>
 
           <li>
-            <NavLink to="cv" >
+            <NavLink to="cv">
               <div className="aside-row">
                 <PersonalCardIcon />
                 CV
@@ -48,9 +49,14 @@ export function AppAside() {
           </li>
 
           <li>
-            <NavLink to="Calendar">Kalendarz</NavLink>
+            <NavLink to="calendar">
+              <div className="aside-row">
+                <CalendarIcon />
+                Kalendarz
+              </div>
+            </NavLink>
           </li>
-          
+
           <li>
             <NavLink to="Blog">Blog</NavLink>
           </li>
@@ -58,10 +64,6 @@ export function AppAside() {
           <li>
             <NavLink to="Faq">Faq</NavLink>
           </li>
-          
-          
-        
-        
         </ul>
       </nav>
       <p style={{ padding: '1rem 0' }}>Sidebar items, widgets, etc</p>
