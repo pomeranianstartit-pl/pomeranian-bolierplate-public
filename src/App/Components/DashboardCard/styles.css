@@ -1,0 +1,67 @@
+.dashboard-card-wrapper {
+  font-family: 'Poppins', sans-serif;
+  font-size: 22px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 38px;
+}
+.boxIcons {
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  width: 202px;
+  height: 192px;
+  display: inline-flex;
+  padding: 20px 28px;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 10px;
+  border-radius: 8px;
+  border: 0.66px solid var(--gray-300, #c8cbd1);
+  background: #fff;
+  flex-wrap: column wrap;
+  justify-content: space-between;
+
+  /* Path: src/App/Components/DashboardCard/styles.css */
+}
+.first-text {
+  width: 146px;
+  height: 27px;
+  flex-shrink: 0;
+  font-family: 'Poppins', sans-serif;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 34px;
+  text-align: center;
+  justify-content: center;
+}
+.height-icon {
+  width: 43px;
+  height: 43px;
+  flex-shrink: 0;
+  justify-content: flex-start;
+}
+
+.second-text {
+  width: 146px;
+  height: 37px;
+  flex-shrink: 0;
+  color: #000;
+  text-align: center;
+  font-family: 'Poppins', sans-serif;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 20px;
+  justify-content: center;
+}
+
+.button-dashboard-card {
+  font-family: 'Poppins', sans-serif;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 24px;
+  color: var(--primary-primary-medium, #ff4d69);
+  text-align: center;
+  justify-content: flex-end;
+}
