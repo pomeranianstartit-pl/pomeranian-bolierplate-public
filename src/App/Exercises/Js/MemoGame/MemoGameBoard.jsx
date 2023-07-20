@@ -41,7 +41,7 @@ const symbolsArray = () => {
   let shuffledCards = [];
         for (let i = 0; i < boardSize; i++) {
             shuffledCards.push({
-                ...symbolsArray[i % (boardSize / 2)],
+                ...memoCardsSymbols[i % (boardSize / 2)],
                 id: i + 1,
             });
         }
