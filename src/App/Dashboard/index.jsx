@@ -13,30 +13,35 @@ export const Dashboard = () => {
       title: 'Moje CV',
       icon: <PersonalCardIcon />,
       description: 'podgląd cv wraz z doświadczeniem',
+      href: '',
     },
     {
       id: 2,
       title: 'Ćwiczenia',
       icon: <EditIcon />,
       description: 'wszystkie wykonane ćwiczenia',
+      href: '',
     },
     {
       id: 3,
       title: 'Blog',
       icon: <BlogIcon />,
       description: 'wpisy blogowe o technologi front-end',
+      href: '',
     },
     {
       id: 4,
       title: 'Tech Stack',
       icon: <CodeIcon />,
       description: 'stack technologiczny realizowany na kursie',
+      href: '/tech-stack',
     },
     {
       id: 5,
       title: 'FAQ',
       icon: <MessageIcon />,
       description: 'odpowiedzi na najczęstsze pytania',
+      href: '',
     },
   ];
 
@@ -57,6 +62,7 @@ export const Dashboard = () => {
               title={element.title}
               icon={element.icon}
               description={element.description}
+              href={element.href}
             />
           );
         })}

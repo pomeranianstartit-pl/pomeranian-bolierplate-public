@@ -1,46 +1,97 @@
 import './styles.css';
+import Css from '../Images/tech-stack/css.svg';
+import { Html } from '../Components/Icons/Html.jsx';
+import { Ts } from '../Components/Icons/Ts.jsx';
+import { Js } from '../Components/Icons/Js.jsx';
+import { React } from '../Components/Icons/React.jsx';
+import { Github } from '../Components/Icons/Github.jsx';
+import { Bitbucket } from '../Components/Icons/Bitbucket.jsx';
+import { Jest } from '../Components/Icons/Jest.jsx';
+import { Redux } from '../Components/Icons/Redux.jsx';
+import { Firebase } from '../Components/Icons/Firebase.jsx';
+import { Git } from '../Components/Icons/Git.jsx';
+import { Discord } from '../Components/Icons/Discord.jsx';
+import { Readmine } from '../Components/Icons/Readmine.jsx';
+import Vscode from '../Images/tech-stack/vscode.png';
+
+import { NavLink } from 'react-router-dom';
 
 const techStackData = [
   {
-    // mozna przeniesc svg do folderu public i wywolac go src '/obrazek.svg'
-    src: './App/Images/tech-stack/discord.png',
+    src: Css,
     text: 'css',
   },
   {
-    src: 'html.svg',
+    component: <Html />,
     text: 'html',
   },
   {
-    src: 'ts.svg',
+    component: <Ts />,
     text: 'typescript',
   },
   {
-    src: './Images/tech-stack/js.svg',
+    component: <Js />,
     text: 'javascript',
   },
   {
-    src: 'src/App/Images/tech-stack/react.svg',
+    component: <React />,
     text: 'react',
   },
   {
-    src: 'src/App/Images/tech-stack/githuub.svg',
+    component: <Github />,
     text: 'github',
   },
   {
-    src: 'src/App/Images/tech-stack/githuub.svg',
-    text: 'github',
+    component: <Bitbucket />,
+    text: 'bitbucket',
+  },
+  {
+    component: <Jest />,
+    text: 'jest',
+  },
+  {
+    component: <Firebase />,
+    text: 'firebase',
+  },
+  {
+    component: <Redux />,
+    text: 'redux',
+  },
+  {
+    component: <Git />,
+    text: 'git',
+  },
+  {
+    src: Vscode,
+    text: 'vscode',
+  },
+  {
+    component: <Discord />,
+    text: 'discord',
+  },
+  {
+    src: require('../Images/tech-stack/jira.png'),
+    text: 'jira',
+  },
+  {
+    component: <Readmine />,
+    text: 'readmine',
   },
 ];
 export const TechStack = () => {
   return (
-    <div>
-      <h2>Tech Stack</h2>
-      <p></p>
-      <div>
-        {techStackData.map((element) => {
+    <div className="tech-stack-box">
+      <a href="/dashboard"> &#60; TECH STACK</a>
+      <p>
+        Poniżej znajdziesz tech stack oraz nadzędzia, jakich nauczylem się
+        podczas kursu.
+      </p>
+      <div className="tech-stack-grid-div">
+        {techStackData.map((element, i) => {
           return (
-            <div>
-              <img src={element.src} alt="ikonka" />
+            <div key={i}>
+              {element.component && element.component}
+              {element.src && <img src={element.src} alt={element.text} />}
               <p>{element.text}</p>
             </div>
           );

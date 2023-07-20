@@ -6,7 +6,7 @@ export const SeeMore = (props) => {
       <h3>{props.title}</h3>
       {props.icon}
       <p>{props.description}</p>
-      <a href="">zobacz więcej &#62;</a>
+      <a href={props.href}>zobacz więcej &#62;</a>
     </div>
   );
 };
