@@ -4,6 +4,8 @@ import './styles/header.css';
 
 import { Logo } from '../Components/Logo/Logo';
 import { SettingIcon } from '../Components/Icons/SettingIcon';
+import { default as toggleArrovSVG } from '../Images/toggle-arrow.svg'
+
 
 export function AppHeader() {
   function handleClikButton(message) {
@@ -14,18 +16,17 @@ export function AppHeader() {
     <header>
       <Logo />
       <div className="header-info">
-        <div className="setting-icon">
+        <button onClick={() => handleClikButton('I am settings button!')} className="setting-icon">
           <SettingIcon />
+        </button>
+        <div className='header-image-placeholder'></div>
+        <div className='header-personal-info'>
+          <p>Gabriela</p>
+          <p>kursantka</p>
         </div>
-        <div className='person-photo'>
-
-        </div>
+        <button onClick={() => handleClikButton('I am dropdown button!')} className='header-drop-down-bnt'><img src={toggleArrovSVG} alt="dropdown button"></img></button>
+        <div className="header-title"></div>
       </div>
-      <div>
-        <p>Gabriela</p>
-        <p>kursantka</p>
-      </div>
-      <div className="header-title"></div>
     </header>
   );
 }
