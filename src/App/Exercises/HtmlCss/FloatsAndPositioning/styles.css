@@ -74,3 +74,57 @@ margin: 0 auto;
     
 
 }
+.grid {
+    position: relative;
+display: grid;
+grid-template-columns: 1fr;
+grid-template-rows: 15 px repeat(3, 1fr);
+grid-column-gap: 1px;
+grid-row-gap: 1px;
+text-align: justify;
+}
+
+.ostatni-prostokad {
+    position: relative;
+    width: 600px;
+    height: 246px;
+    border: 1px solid black;
+    border-radius: 5px;
+}
+
+.box {
+    position: relative;
+    width: 100px;
+    height: 100px;
+    border: 2px solid;
+    top:-200px;
+    bottom: -60px;
+    right: -30px;
+    border-radius: 5px;
+
+}
+.box1 {
+    background-color: red;
+    width: 100px;
+    height: 100px;
+    border: 2px solid;
+    border-radius: 5px;
+
+
+}
+.box2 {
+    background-color: blue;
+    width: 100px;
+    height: 100px;
+    border: 2px solid;
+    margin: -60px 0 0 40px;
+    border-radius: 5px;
+}
+.box3 {
+    background-color: green;
+    width: 100px;
+    height: 100px;
+    border: 2px solid;
+    margin: -60px 0 0 80px;
+    border-radius: 5px;
+}

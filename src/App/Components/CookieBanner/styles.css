@@ -1,0 +1,65 @@
+.caly-cookies {
+    padding:55px;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right:0;
+    width:100%;
+    z-index: 999;
+    float: left;
+    background-color: #23213D;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-items: center;
+    align-content: flex-start;
+}
+.tresc {
+   display: flex; 
+   flex-flow: row;
+}
+.text {
+    float: left;
+    width: 666px;
+}
+.parent {
+    display: grid;
+    grid-template-columns: 80px 400px 1fr;
+    grid-template-rows: 150px;
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+    }
+
+.guziki {
+display: flex;
+height: 50px;
+padding: 20px 36px;
+align-items: center;
+gap: 16px;
+
+}
+
+.kg {
+    display: flex;
+    flex-direction: column;
+}
+
+.cookie-baner-overlay {
+    position: absolute;
+    top:0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-color: rgba(0,0,0,0.5);
+
+}
+.cookiebanner_overlay {
+    position: absolute;
+    top:0;
+    right:0;
+    bottom: 0;
+    left:0;
+    background-color: rgba(0,0,0,0.5);
+    
+    }
