@@ -1,3 +1,7 @@
+.dashboard {
+  margin: 20px;
+}
+
 .dashboard-cards-wrapper {
   display: flex;
   flex-wrap: wrap;
