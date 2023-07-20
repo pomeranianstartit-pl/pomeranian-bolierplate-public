@@ -10,9 +10,11 @@ header {
   padding-right: 3rem;
   box-shadow: 0px 1px 9px 0px var(--color-grey);
 }
-header > a:first-of-type {
+
+header>a:first-of-type {
   text-decoration: none;
 }
+
 header.header-title {
   color: var(--color-grey);
   font-weight: normal;
@@ -21,4 +23,14 @@ header.header-title {
 header .logo {
   height: 40vmin;
   pointer-events: none;
+}
+
+header .logo>img {
+  width: 100%;
+  height: 100%;
+}
+
+header .header-info {
+  display: flex;
+  align-items: center;
 }
