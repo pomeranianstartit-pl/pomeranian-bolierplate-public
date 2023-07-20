@@ -7,6 +7,7 @@ import { PersonalCardIcon } from '../Components/Icons/PersonalCardIcon';
 import { EditIcon } from '../Components/Icons/EditIcon';
 
 
+
 export function AppAside() {
   return (
     <aside>
@@ -20,6 +21,7 @@ export function AppAside() {
               </div>
             </NavLink>
           </li>
+
           <li>
             <NavLink to="CV">
               <div className="aside-row">
@@ -28,6 +30,7 @@ export function AppAside() {
               </div>
             </NavLink>
           </li>
+
           <li>
             <NavLink to="exercises">
               <div className='aside-row'>
@@ -45,6 +48,15 @@ export function AppAside() {
               </div>
             </NavLink>
           </li>
+          <li>
+            <NavLink to="Blog">
+              <div className="aside-row">
+                <PersonalCardIcon />
+                Blog
+              </div>
+            </NavLink>
+          </li>
+
           <li>
             <NavLink to="blocks">Bloki</NavLink>
           </li>
