@@ -1,0 +1,75 @@
+.overlayCokkieBanner {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.allCookie {
+  border-radius: 0px 0px 8px 8px;
+  border-top: 1px solid var(--grey-300, #c8cbd1);
+  background: var(--secondary-secondary, #23213d);
+  position: fixed;
+  bottom: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.firstCookieText {
+  color: var(--gray-50, #f6f6f6);
+  font-family: 'Poppins';
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 32px;
+}
+.secondCookieText {
+  color: var(--text-alt-primary, #fff);
+  font-family: 'Poppins';
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 26px;
+  padding-left: 20px;
+}
+
+.firstCookieButton {
+  color: var(--gray-50, #f6f6f6);
+  text-align: center;
+  font-family: 'Poppins';
+  font-size: 13px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 24px;
+  text-transform: uppercase;
+  display: flex;
+  height: 50px;
+  padding: 20px 36px 20px 36px;
+  align-items: center;
+  border-radius: 8px;
+  background: var(--primary-primary, #fe3756);
+}
+
+.secondCookieButton {
+  border-radius: 8px;
+  background: #fff;
+  display: flex;
+  height: 50px;
+  padding: 20px 36px 20px 36px;
+  align-items: center;
+  gap: 16px;
+  color: var(--primary-primary, #fe3756);
+  text-align: center;
+  font-family: 'Poppins';
+  font-size: 13px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 24px;
+  letter-spacing: 0.52px;
+}
+.cookieIcon {
+  padding-left: 100px;
+}
