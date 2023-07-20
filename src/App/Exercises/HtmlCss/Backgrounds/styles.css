@@ -1,0 +1,9 @@
+.font-test-family {
+  font-family: Chilanka;
+}
+
+.background-url {
+  background: url('./water.jpg');
+  width: 300px;
+  height: 300px;
+}
