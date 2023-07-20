@@ -3,31 +3,46 @@ import './styles.css';
 
 export const ArrayRendering = () => {
 
-  const carsArray = ['Saab', 'Volvo', 'BMW', 'Skoda', 'Mercedes']
+  const namesArray = ['Kasia', 'Ania', 'Franek', 'Zenek'];
 
-  function mojaFunkcja(element) {
 
-    return <li>{element}</li>
+  function namesList(name) {
+    return (
+      <li key={name}>{name}</li>);
   }
-  // zmienna.map(mojaFunkcja)
 
-  // console.log(array.length);
+  const carData = [
 
-  // const array1 = [1, 2, 3, 4]
-  // const map1 = array1.map(function (e) {
-  //   return e  3
-  // })
-  // console.log(map1);
-  // console.log(zmienna);
+    { id: 1, make: 'Saab', model: '92B', year: 1953, owner: 'Jon' },
 
-  const carsArray2 = carsArray.map(mojaFunkcja)
-  console.log(carsArray2);
+    { id: 2, make: 'Volvo', model: 'C40', year: 2021, owner: 'Jenny' },
+
+    { id: 3, make: 'Audi', model: 'A3', year: 2019, owner: 'Michael' },
+
+    { id: 4, make: 'Tesla', model: 'Model S', year: 2022, owner: 'Sarah' },
+
+  ];
+  function carsList({ id, make, model, year, owner }) {
+
+    return (
+      <li key={id}>{id} {make} {model} {year} {owner}</li>);
+  }
+
+
   return (
-    <div>
-      <h2>Renderowanie z tablicy po map</h2>
-      <ul>
-        {carsArray2}
-      </ul>
-    </div>
+    <>
+      <div>
+        <h2>Renderowanie z tablicy</h2>
+        <ul>
+          <p>{namesArray.map(namesList)}</p>
+        </ul>
+      </div>
+      <div>
+        <h2>Renderowanie z obiektu</h2>
+        <ul>
+          {carData.map(carsList)}
+        </ul>
+      </div>
+    </>
   );
 };
