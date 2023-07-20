@@ -1,5 +1,7 @@
 import './styles.css';
 import { CalendarIcon } from '../Components/Icons/CalendarIcon';
+import { HtmlIcon } from '../Components/Icons/HtmlIcon';
+import { GithuubIcons } from '../Components/Icons/GithuubIcons';
 const techStackData = [
   {
     title: 'HTML',
@@ -21,8 +23,43 @@ const techStackData = [
 
   {
     title: 'React',
-    src: '/images/react.svg',
+    src: '/Images/react.svg',
     alt: 'React logo',
+  },
+  {
+    title: 'HtmlIcon',
+    component: <HtmlIcon />,
+    alt: 'HatemlIcon logo',
+  },
+  {
+    title: 'cos',
+    src: '/Images/sygnet96.png',
+    alt: 'cos',
+  },
+  {
+    title: 'Github',
+    component: <GithuubIcons />,
+    alt: 'Github',
+  },
+  {
+    title: 'vscode',
+    src: require('../Images/tech-stack/vscode-alt1.png'),
+    alt: 'vscode',
+  },
+  {
+    title: 'discord',
+    src: require('../Images/tech-stack/discord-icon-svgrepo-com3.png'),
+    alt: 'discord',
+  },
+  {
+    title: 'jira',
+    src: require('../Images/tech-stack/jira1.png'),
+    alt: 'jira',
+  },
+  {
+    title: 'redmine',
+    src: require('../Images/tech-stack/redmine.png'),
+    alt: 'redmine',
   },
 ];
 
