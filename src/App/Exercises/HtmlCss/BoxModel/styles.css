@@ -1,0 +1,76 @@
+.testing-box-model {
+
+    margin: 45px, 25px, 10px, 5px;
+
+    border: 2px dashed rgba(35, 5, 143, 0.568);
+
+    padding: 16xp, 25px;
+
+    background-color: aquamarine;
+}
+
+.display-inline span {
+    /* display: block; */
+    color: red;
+    background-color: yellowgreen;
+    margin: 16px;
+}
+
+.display-block span {
+    display: block;
+    background-color: green;
+    margin: 10px;
+}
+
+.display-inline-block span {
+    background-color: blueviolet;
+    display: inline-block;
+    margin: 16px;
+}
+
+.display-none {
+    /* display: none; */
+
+}
+
+.box-sizing-border-box {
+    box-sizing: border-box;
+    border: 10px solid black;
+    margin: 16px;
+    padding: 16px;
+    width: 300px;
+    height: 200px;
+}
+
+.box-sizing-content-box {
+    width: 300px;
+    height: 200px;
+    box-sizing: content-box;
+    border: 10px solid black;
+    margin: 16px;
+    padding: 16px;
+}
+
+.css-units-em {
+    font-size: 1.3em;
+    padding: 2em;
+}
+
+.css-units-rem {
+
+    font-size: 1.3rm;
+    padding: 1.5em;
+}
+
+.css-units-percent {
+    border: 10px solid black;
+    width: 50%;
+    padding: 10px;
+}
+
+.testing-overflow {
+    border: 10px solid black;
+    max-height: 150px;
+    /* overflow: hidden; */
+    overflow-y: scroll;
+}
