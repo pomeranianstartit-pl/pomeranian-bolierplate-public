@@ -1,0 +1,130 @@
+.float-box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.float-p-1 {
+  position: relative;
+  left: 30px;
+}
+
+.float-div-1 {
+  position: relative;
+  background-color: #ebebeb;
+  width: 600px;
+  padding: 10px;
+  border-radius: 8px;
+  margin: 20px 0;
+}
+.float-div-1-p-2 {
+  position: absolute;
+  background-color: #ffd5db;
+  width: 220px;
+  right: -180px;
+  top: -50px;
+  border-radius: 8px;
+  padding: 10px;
+  text-align: center;
+}
+
+.float-div-2 {
+  position: relative;
+  background-color: #ffd5db;
+  width: 600px;
+  padding: 15px;
+  border-radius: 8px;
+  margin: 20px 0;
+}
+
+.float-div-2-img-1 {
+  border-radius: 8px;
+  float: left;
+  width: 40%;
+  margin-right: 10px;
+}
+
+.float-div-2-p-1 {
+  text-align: justify;
+}
+
+.float-p-3-fixed {
+  background-color: #ffd5db;
+  border-radius: 8px;
+  height: 60px;
+  width: 100px;
+  position: fixed;
+  top: 40%;
+  right: 5%;
+  display: flex;
+  align-items: center;
+  text-align: center;
+}
+
+.float-p-4-grey {
+  padding: 15px;
+  border-radius: 8px;
+  background-color: #4b5563;
+  color: white;
+  width: 600px;
+  margin: 50px 0;
+}
+
+.float-p-5-small {
+  padding: 15px;
+  background-color: #ffd5db;
+  width: 300px;
+  display: flex;
+  justify-content: center;
+  border-radius: 12px;
+  border: 1px solid #fe3756;
+}
+
+.float-div-3 {
+  width: 600px;
+  text-align: justify;
+  display: flex;
+  flex-direction: column;
+}
+
+.float-div-4 {
+  position: relative;
+  border: 1px solid #6b7280;
+  border-radius: 8px;
+  width: 600px;
+  height: 200px;
+}
+.float-div-4-div1 {
+  width: 100px;
+  height: 100px;
+  background-color: #6b7280;
+  border-radius: 8px;
+  border: 1px solid white;
+  position: absolute;
+  left: 100px;
+  top: 20px;
+  z-index: 2;
+}
+.float-div-4-div2 {
+  width: 100px;
+  height: 100px;
+  background-color: #999999;
+  border-radius: 8px;
+  border: 1px solid white;
+  position: absolute;
+  left: 80px;
+  top: 40px;
+  z-index: 1;
+}
+.float-div-4-div3 {
+  width: 100px;
+  height: 100px;
+  background-color: #c8cbd1;
+  border-radius: 8px;
+  border: 1px solid white;
+  position: absolute;
+  left: 60px;
+  top: 60px;
+  z-index: 0;
+}
