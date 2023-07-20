@@ -1,4 +1,4 @@
-export function HtmlIcons({ className = '' }) {
+export function HtmlIcon({ className = '' }) {
   return (
     <svg
       width="57"
