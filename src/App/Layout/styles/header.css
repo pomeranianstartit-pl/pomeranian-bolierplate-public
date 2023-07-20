@@ -24,3 +24,41 @@ header .logo>img {
   height: 40vmin;
   pointer-events: none;
 }
+
+header .header-info {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+
+header .header-image-placeholder {
+  width: 49px;
+  height: 49px;
+  border-radius: 50%;
+  background-color: rgba(200, 203, 209, 1);
+}
+
+
+header .header-personal-info>p {
+  margin: 0;
+}
+
+
+header .header-personal-info>p:nth-child(1) {
+  font-size: 16px;
+  line-height: 24px;
+}
+
+
+header .header-personal-info>p:nth-child(2) {
+  font-size: 13px;
+  line-height: 20px;
+  color: rgba(153, 153, 153, 1);
+}
+
+header button {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+}
