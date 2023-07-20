@@ -3,6 +3,7 @@ import React from 'react';
 import './styles/header.css';
 
 import { Logo } from '../Components/Logo/Logo';
+import { SettingIcon } from '../Components/Icons/SettingIcon';
 
 export function AppHeader() {
   function handleClikButton(message) {
@@ -11,9 +12,18 @@ export function AppHeader() {
 
   return (
     <header>
+      <Logo />
+      <div className="header-info">
+        <div className="setting-icon">
+          <SettingIcon />
+        </div>
+        <div className='person-photo'>
+
+        </div>
+      </div>
       <div>
-        <Logo />
-        <div className="header-title"></div>
+        <p>Gabriela</p>
+        <p>kursantka</p>
       </div>
       <div className="header-title"></div>
     </header>
