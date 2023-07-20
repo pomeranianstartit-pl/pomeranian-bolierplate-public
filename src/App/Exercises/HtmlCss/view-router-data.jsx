@@ -14,6 +14,7 @@ import { blockRouterMetaData as HtmlTable } from './HtmlTable/router-data';
 import { blockRouterMetaData as ArrayRendering } from './ArrayRendering/router-data';
 import { blockRouterMetaData as ArrayRenderingToTable } from './ArrayRenderingToTable/router-data';
 import { blockRouterMetaData as FloatsAndPositioning } from './FloatsAndPositioning/router-data';
+import { blockRouterMetaData as mediaQueriesMetaData } from './MediaQueries/router-data';
 
 export const blockRouterMetaData = [
   blockRouterMetaData121220231,
@@ -30,5 +31,6 @@ export const blockRouterMetaData = [
   ArrayRendering,
   ArrayRenderingToTable,
   FloatsAndPositioning,
+  mediaQueriesMetaData,
 ];
 export const blockRouterData = getParsedRouterDataList(blockRouterMetaData);
