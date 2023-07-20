@@ -1,6 +1,6 @@
-/* .exercises-categories {
+.exercises-categories {
   display: none;
-} */
+} 
 
 .pageWrapper {
   width: 1000px;
@@ -51,9 +51,7 @@
   width: 100%;
   margin: 0;
 }
-.text1 {
-  /* margin-bottom: 11px; */
-}
+
 .pageWrapper .text2 {
   margin: 11px 0 0px 30px;
 }
@@ -96,9 +94,9 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  position: absolute;
-  right: -120px;
-  top: -120px;
+  position: fixed;
+  right: 5%;
+  top: 40%;
 }
 
 .div5 p {
