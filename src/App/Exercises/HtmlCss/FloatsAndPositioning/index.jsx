@@ -66,9 +66,9 @@ export function FloatsAndPositioning() {
         </p>
       </div>
       <div className="float-div-4">
-        <div className="float-div-4-div1"></div>
-        <div className="float-div-4-div2"></div>
-        <div className="float-div-4-div3"></div>
+        <div className="float-div-4-div1 triple-box"></div>
+        <div className="float-div-4-div2 triple-box"></div>
+        <div className="float-div-4-div3 triple-box"></div>
       </div>
     </div>
   );

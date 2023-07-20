@@ -14,8 +14,6 @@ import { Discord } from '../Components/Icons/Discord.jsx';
 import { Readmine } from '../Components/Icons/Readmine.jsx';
 import Vscode from '../Images/tech-stack/vscode.png';
 
-import { NavLink } from 'react-router-dom';
-
 const techStackData = [
   {
     src: Css,

@@ -1,0 +1,60 @@
+.cookie-overlay {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-color: rgba(128, 128, 128, 0.527);
+}
+
+.cookie-box {
+  display: flex;
+  flex-direction: row;
+  padding: 40px 120px;
+  border-top: 1px solid #c8cbd1;
+  background: #23213d;
+  position: fixed;
+  bottom: 0;
+  z-index: 99;
+  color: white;
+  align-items: center;
+  font-family: Poppins;
+  font-size: 10px;
+  gap: 30px;
+}
+
+.div-with-buttons {
+  display: flex;
+  flex-direction: row;
+}
+
+.cookie-img {
+  float: left;
+  width: 60px;
+  margin: 10px 20px;
+}
+
+.cookie-buttons {
+  border-radius: 8px;
+  border: none;
+  height: 40px;
+  width: 150px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: 600;
+  font-size: 10px;
+  font-family: Poppins;
+  margin-left: 10px;
+  cursor: pointer;
+}
+
+.button-primary {
+  background-color: #fe3756;
+  color: white;
+}
+
+.button-secondary {
+  background-color: white;
+  color: #fe3756;
+}
