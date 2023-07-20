@@ -40,9 +40,11 @@ const QuestionComponent = ({ question, answer }) => {
     setIsVisible(!isVisible);
   };
   return (
-    <div>
-      <h1 onClick={handleClick}>{question}</h1>
-      <p>{isVisible && answer}</p>
+    <div className="box">
+      <h1 className="header" onClick={handleClick}>
+        {question}
+      </h1>
+      <p className="text">{isVisible && answer}</p>
     </div>
   );
 };

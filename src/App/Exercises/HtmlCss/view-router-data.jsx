@@ -13,10 +13,23 @@ import { blockRouterMetaData as TableTennisMetaData } from './TableTennis/router
 import { blockRouterMetaData as ArrayRenderingMetaData } from './ArrayRendering/router-data';
 import { blockRouterMetaData as ArrayRenderToTableMetaData } from './ArrayRenderToTable/router-data';
 import { blockRouterMetaData as FloatsAndPositioningMetaData } from './FloatsAndPositioning/router-data';
+import { blockRouterMetaData as MediaQueriesMetaData } from './MediaQueries/router-data';
 
-export const blockRouterMetaData = [blockRouterMetaData121220231, googleFonts, colorsMetaData, imageFilesMetaData,
-     backgroundsMetaData, cssFilterMetaData, selectorsAndCascade, BoxModelExercise, HtmlTablesMetaData, TableTennisMetaData, ArrayRenderingMetaData,
-      ArrayRenderToTableMetaData, FloatsAndPositioningMetaData];
-
+export const blockRouterMetaData = [
+  blockRouterMetaData121220231,
+  googleFonts,
+  colorsMetaData,
+  imageFilesMetaData,
+  backgroundsMetaData,
+  cssFilterMetaData,
+  selectorsAndCascade,
+  BoxModelExercise,
+  HtmlTablesMetaData,
+  TableTennisMetaData,
+  ArrayRenderingMetaData,
+  ArrayRenderToTableMetaData,
+  FloatsAndPositioningMetaData,
+  MediaQueriesMetaData,
+];
 
 export const blockRouterData = getParsedRouterDataList(blockRouterMetaData);
