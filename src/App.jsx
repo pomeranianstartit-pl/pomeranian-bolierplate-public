@@ -12,6 +12,7 @@ import { Bloki } from './App/Components/Bloki/Bloki';
 import { Calendar } from './App/Components/Calendar';
 import { FAQ } from './App/Components/FAQ';
 import { Ustawienia } from './App/Components/Ustawienia/Ustawienia';
+import { TechStack } from './App/TechStack';
 
 export function App() {
   return (
@@ -26,6 +27,7 @@ export function App() {
           <Route path="Calendar/*" element={<Calendar />} />
           <Route path="FAQ/*" element={<FAQ />} />
           <Route path="Bloki/*" element={<Bloki />} />
+          <Route path="TechStack/*" element={<TechStack />} />
           <Route path="Ustawienia/*" element={<Ustawienia />} />
           <Route path="*" element={<NotFound />} />
         </Route>
