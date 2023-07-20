@@ -9,7 +9,6 @@ export const CookieBanner = () => {
 
   function hideBanner() {
     setShowBanner(0);
-
     localStorage.setItem('cookie-box', 1);
   }
 
