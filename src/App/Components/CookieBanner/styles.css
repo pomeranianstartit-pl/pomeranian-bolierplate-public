@@ -66,3 +66,25 @@
 .buttons {
   display: flex;
 }
+
+@media (min-width: 800px) and (max-width: 900px) {
+  .div-with-buttons {
+    flex-direction: column;
+  }
+
+  .buttons {
+    margin-bottom: 10px;
+  }
+}
+
+@media print {
+  .cookie-box {
+    display: none;
+  }
+}
+
+@media (max-width: 800px) {
+  .cookie-box {
+    flex-direction: column;
+  }
+}
