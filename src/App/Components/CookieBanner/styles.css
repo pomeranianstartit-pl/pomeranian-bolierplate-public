@@ -73,3 +73,13 @@
 .cookieIcon {
   padding-left: 100px;
 }
+@media (min-width: 800px) and (max-width: 900px) {
+  .allCookie {
+    flex-direction: column;
+  }
+}
+@media (max-width: 800px) {
+  .allCookie {
+    flex-direction: column;
+  }
+}
