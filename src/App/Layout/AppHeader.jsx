@@ -4,7 +4,7 @@ import './styles/header.css';
 
 import { Logo } from '../Components/Logo/Logo';
 import { SettingIcon } from '../Components/Icons/SettingIcon';
-import { ArrowDown } from '../Components/Icons/ArrowDown';
+import { ArrowDownIcon } from '../Components/Icons/ArrowDownIcon';
 
 export function AppHeader() {
   function handleClickButton(message) {
@@ -29,7 +29,7 @@ export function AppHeader() {
             </div>
           </div>
           <button onClick={handleClickButton("I am drop button")}>
-            <ArrowDown />
+            <ArrowDownIcon />
           </button>
         </div>
       </>
