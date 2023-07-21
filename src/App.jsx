@@ -10,6 +10,7 @@ import { Exercises } from './App/Exercises';
 import { CV } from './App/CV';
 import { Calendar } from './App/calendar';
 import { Blog } from './App/Blog/Blog';
+import { TechStack } from './App/Components/TechStack/TechStack';
 
 export function App() {
   return (
@@ -18,6 +19,7 @@ export function App() {
         <Route path="" element={<Layout withSidebar />}>
           <Route index element={<Navigate to="dashboard" />} />
           <Route path="dashboard/*" element={<Dashboard />} />
+          <Route path="dashboard/tech-stack/*" element={<TechStack />} />
           <Route path="exercises/*" element={<Exercises />} />
           <Route path="blocks/*" element={<Blocks />} />
           <Route path="*" element={<NotFound />} />

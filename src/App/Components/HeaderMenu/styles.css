@@ -1,0 +1,81 @@
+/* BASIC CODE */
+header {
+    grid-area: header;
+    position: relative;
+    z-index: 1;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding-left: 1.5rem;
+    padding-right: 3rem;
+    box-shadow: 0px 1px 9px 0px var(--color-grey);
+  }
+  
+
+  header > a:first-of-type {
+    text-decoration: none;
+  }
+  header .header-title {
+    color: var(--color-grey);
+    font-weight: normal;
+  }
+  
+  header .logo {
+  }
+/* END BASIC CODE */
+  
+
+  header .images-container {
+    display: flex;
+    align-items: center;
+  }
+
+
+  header .circular_image {
+    width: 49px;
+    height: 49px;
+    border-radius: 50%;
+    overflow: hidden;
+    background-color: blue;
+    display:inline-block;
+    vertical-align:middle;
+    margin-left: 1.5rem;
+    margin-right: 1.5rem;
+  }
+  header .circular_image img{
+    width:100%;
+  }
+
+
+  header .name-surname-container {
+    display: flex;
+    flex-direction: column;
+  }
+
+  header h4 {
+    margin-bottom: 0;
+    color: #000;
+    /* font-family: Poppins; */
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+  }
+
+  header h5 {
+    margin-top: 0;
+    color: var(--gray-500, #999);
+    /* font-family: Poppins; */
+    font-size: 13px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+  }
+
+
+ 
+
+  header svg:nth-of-type(2) {
+    margin-left: 2rem;
+  }
