@@ -12,6 +12,12 @@
     position: fixed;
     bottom: 0;
 }
+@media (max-width: 800px) {
+    .cookie-box {
+        flex-direction: column;
+    }
+}
+
 
 .cookie-icon {
     width: 76.392px;
@@ -32,6 +38,7 @@
 
 .guziki {
         display: flex;
+        
        
 }
 
@@ -43,16 +50,23 @@
     border-radius: 8px;
     background-color: var(--primary-primary, #fe3756);
     align-items: center;
+    
 }
 
 .guzik2 {
     display:flex;
+    border: none;
     height: 50px;
     padding: 20px 36px;
     gap:16px;
     border-radius: 8px;
     background-color: var(--primary-primary, #fe3756);
     align-items: center;
+}
+@media (min-width: 800px) and (max-width:900px) {
+    .guziki {
+        flex-direction: column;
+    }
 }
 
 .cookie-baner-overlay {
@@ -71,5 +85,10 @@
     bottom: 0;
     left:0;
     background-color: rgba(0,0,0,0.5);
-    
+    }
+
+    @media print {
+    .cookie-box {
+        display: none;
+    }
     }
