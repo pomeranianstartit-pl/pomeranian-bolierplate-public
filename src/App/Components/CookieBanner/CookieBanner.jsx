@@ -26,31 +26,27 @@ export const CookieBanner = () => {
   return (
     <div>
       <div className="cookiebanner_overlay">
-        <div className="caly-cookies">
-          <div className="tresc">
-            <src>
+        <div className="cookie-box">
+          <div>
+            <div className="cookie-icon">
               <Cookie />
-            </src>
-            <div>
-              <h2 className="">Pozwól na pliki cookies</h2>
-              <div class="tekst_i_guziki">
-                <p className="text">
-                  Nasza strona korzysta z ciasteczek, które umożliwiają poprawne
-                  działanie strony i pomagają nam świadczyć usługi na najwyższym
-                  poziomie. Możesz zaakceptować wykorzystanie przez nas
-                  wszystkich tych plików i przejść do strony lub dostosować
-                  użycie do swoich preferencji. W tym celu kliknij przycisk po
-                  prawej stronie “dopasuj zgody”, aby następnie wybrać te które
-                  odpowiadają Twoim indywidualnym preferencjom.
-                </p>
-                <div className="guziki">
-                  <button className="guzik1" onClick={hideBanner}>
-                    W porządku
-                  </button>
-                  <button className="guzik2">Dopasuj zgody</button>
-                </div>
-              </div>
             </div>
+            <h2 className="h2">Pozwól na pliki cookies</h2>
+            <p className="text">
+              Nasza strona korzysta z ciasteczek, które umożliwiają poprawne
+              działanie strony i pomagają nam świadczyć usługi na najwyższym
+              poziomie. Możesz zaakceptować wykorzystanie przez nas wszystkich
+              tych plików i przejść do strony lub dostosować użycie do swoich
+              preferencji. W tym celu kliknij przycisk po prawej stronie
+              “dopasuj zgody”, aby następnie wybrać te które odpowiadają Twoim
+              indywidualnym preferencjom.
+            </p>
+          </div>
+          <div className="guziki">
+            <button className="guzik1" onClick={hideBanner}>
+              W porządku
+            </button>
+            <button className="guzik2">Dopasuj zgody</button>
           </div>
         </div>
       </div>
