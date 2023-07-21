@@ -28,7 +28,7 @@ button {
   width: 100vw;
   position: fixed;
   bottom: 0;
-  height: 25vh;
+  height: 30vh;
   background-color: #23213d;
   display: flex;
   flex-direction: row;
@@ -37,6 +37,18 @@ button {
   padding: 80px 120px;
   color: white;
   text-align: justify;
+}
+
+@media (max-width: 1200px) {
+  .cookieBanner {
+    flex-direction: column;
+  }
+}
+
+@media (max-width: 800px) {
+  .cookieBanner {
+    padding: 0px 20px;
+  }
 }
 
 .cookieBanner svg {

@@ -1,24 +1,24 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
 
-nav {
-  display: flex;
-  width: 172px;
-  flex-direction: column;
-  align-items: flex-start;
-  gap: 30px;
+
+aside a {
+  text-decoration: none;
+}
+
+
+aside ul,
+li {
+  margin: 0;
+  padding: 0;
 }
 
 aside {
-  border-right: 1px solid var(--color-grey);
+  border-right: 1px solid #ebebeb;
   padding: 1rem;
-  width: 237px;
-  height: 620px;
   flex-shrink: 0;
 }
 
 aside ul {
-  /* Nadpisanie domyślnych styli przeglądarki
-  */
   width: 100%;
   padding-inline-start: 0;
   list-style-type: none;
@@ -26,7 +26,6 @@ aside ul {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  /* gap: 30px; */
 }
 
 aside h5 {
@@ -35,13 +34,7 @@ aside h5 {
   font-style: normal;
   font-weight: 400;
   margin: 0;
-  margin-bottom: 16px;
-  /* color: #23213D; */
-  /* line-height: 27px; */
-}
-aside li {
-  line-height: 2rem;
-  width: 100%;
+  text-decoration-line: none;
 }
 
 .aside-row {
@@ -50,21 +43,13 @@ aside li {
   align-items: center;
 }
 
-
-
-aside li.active svg path {
-  /* background-color: var(--color-primary-blue); */
-  stroke: red;
-}
-
-svg {
+aside svg {
   margin-right: 16px;
   fill: white;
 }
-
-aside a.active,
-aside a:hover svg * {
-  background-color: #444078;
-  color: white;
-  /* stroke: white; */
+.aside-row.active,
+.aside-row:hover svg,
+.aside-row:hover svg * {
+  color: red;
+  stroke: red;
 }
