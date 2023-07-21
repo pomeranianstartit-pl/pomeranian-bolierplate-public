@@ -26,6 +26,7 @@
 @media (max-width: 800px) {
   .cookie-box {
     flex-direction: column;
+    padding: 5px 20px;
   }
 }
 
@@ -38,12 +39,15 @@
   .div-with-buttons {
     flex-direction: column;
   }
+  .cookie-buttons {
+    margin-bottom: 10px;
+  }
 }
 
 .cookie-img {
   float: left;
   width: 60px;
-  margin: 10px 20px;
+  margin: 10px 10px;
 }
 
 .cookie-buttons {
