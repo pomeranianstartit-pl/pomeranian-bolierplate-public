@@ -1,0 +1,15 @@
+.Buttons {
+  padding: 18px 10px 10px 10px;
+  gap: 18px;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.Button-1 {
+  position: relative;
+}
+
+.Button-2 {
+  position: absolute;
+  float: right;
+}
