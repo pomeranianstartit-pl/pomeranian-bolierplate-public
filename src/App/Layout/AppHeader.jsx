@@ -1,17 +1,28 @@
 import React from 'react';
-import { Logo } from '../Components/Logo/Logo';
-import { Link } from 'react-router-dom';
 
 import './styles/header.css';
+import '../Components/HeaderMenu/styles.css';
+import { Logo } from '../Components/Logo/Logo';
+import { HeaderMenu } from '../Components/HeaderMenu/HeaderMenu';
+
+// const LogoNew = () => (
+//   <a href="/">
+//     {' '}
+//     <img
+//       style={{ width: 50 }}
+//       src={'http://placekitten.com/500/500'}
+//       className="logo"
+//       alt="logo"
+//     />
+//   </a>
+// );
 
 export function AppHeader() {
   return (
     <header>
-      <div>
-        <Link to="/">
-          <Logo />
-        </Link>
-      </div>
+      {/* <LogoNew /> */}
+      <Logo />
+      <HeaderMenu />
     </header>
   );
 }

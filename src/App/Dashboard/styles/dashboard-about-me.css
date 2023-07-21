@@ -1,0 +1,37 @@
+.dashboard .dashboard-about-me {
+    padding-top: 5rem;
+}
+
+.dashboard-about-me .email-container,
+.dashboard-about-me .telephone-container {
+
+    color: var(--colors-black-100, #000);
+    font-feature-settings: 'clig' off, 'liga' off;
+    font-size: 0.8rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 20px;
+    opacity: 0.6;
+}
+
+.dashboard-about-me .email-container:hover,
+.dashboard-about-me .telephone-container:hover {
+    opacity: 1;
+    font-weight: bold;
+}
+
+.dashboard-about-me .email-container p a,
+.dashboard-about-me .telephone-container p a {
+    text-decoration: none;
+    color: #fe3756;
+}
+
+
+.dashboard-about-me .email-container p,
+.dashboard-about-me .telephone-container p {
+    margin: 0;
+}
+
+.dashboard-about-me .telephone-container {
+    margin-top: 20px;
+}
