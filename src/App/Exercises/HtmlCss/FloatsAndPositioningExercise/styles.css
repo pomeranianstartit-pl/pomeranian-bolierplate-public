@@ -1,0 +1,93 @@
+.container {
+    position: relative;
+    max-width: 985px;
+
+}
+
+.container p {
+    font-size: 22px;
+    margin-left: 2em;
+}
+
+.float-right {
+    position: absolute;
+    top: 2em;
+    right: -5em;
+    width: 10em;
+    background-color: #FFD5DB;
+    border: #999 solid 1px;
+    border-radius: 5px;
+    font-size: 16px;
+    text-align: center;
+    padding: 0.3em;
+}
+
+.p-float-save {
+    position: absolute;
+    right: -10em;
+    width: 5em;
+    background-color: #FFD5DB;
+    border: #999 solid 1px;
+    border-radius: 5px;
+    font-size: 16px;
+    text-align: center;
+    padding: 0.3em;
+}
+
+.p-pink {
+    padding: 12px 20px;
+    background-color: #FFD5DB;
+}
+
+.float-container {
+    display: table;
+}
+
+.p-grey {
+    background-color: #EBEBEB;
+    padding: 12px 20px;
+}
+
+.p-grey.dark {
+    padding: 12px 20px;
+    color: white;
+    background-color: #4B5563;
+}
+
+.snow-wolf {
+    float: left;
+    border-radius: 5px;
+    margin-right: 1em;
+}
+
+.save {
+    max-width: 50%;
+    background-color: #FFD5DB;
+    font-size: 22px;
+    margin: 0 auto;
+    padding: 1em;
+    text-align: center;
+    border-radius: 5px;
+}
+
+.squares-container {
+    position: relative;
+}
+
+.squares-container .square {
+    position: absolute;
+    left: 2em;
+    top: 2em;
+    width: 150px;
+    height: 150px;
+    border: 5px solid green;
+    float: left;
+    margin-right: 2em;
+    color: white;
+    font-size: 3em;
+}
+
+.squares-container .square.s-2 {
+    margin-top: 10px;
+    margin-right: 10px;
+}

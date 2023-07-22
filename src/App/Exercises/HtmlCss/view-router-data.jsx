@@ -5,6 +5,8 @@ import { blockRouterMetaData as Selectors } from './SelectorsAndCascade/router-d
 import { blockRouterMetaData as TextFundaments } from './TextFundaments/router-data';
 import { blockRouterMetaData as GoogleFonts } from './GoogleFonts/router-data';
 import { blockRouterMetaData as CssAnimations } from './CssAnimations/router-data';
+import { blockRouterMetaData as FloatsAndPositioning } from './FloatsAndPositioning/router-data';
+import { blockRouterMetaData as FloatsAndPositioningExercise } from './FloatsAndPositioningExercise/router-data';
 
 export const blockRouterMetaData = [
   blockRouterMetaData121220231,
@@ -12,5 +14,7 @@ export const blockRouterMetaData = [
   TextFundaments,
   GoogleFonts,
   CssAnimations,
+  FloatsAndPositioning,
+  FloatsAndPositioningExercise,
 ];
 export const blockRouterData = getParsedRouterDataList(blockRouterMetaData);
