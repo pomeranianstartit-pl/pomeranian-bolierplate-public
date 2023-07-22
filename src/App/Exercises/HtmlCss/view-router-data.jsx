@@ -16,6 +16,8 @@ import { CSSAnimationMetaData } from './CSSAnimations/router-data';
 
 import { ColorsrMetaData } from './Colors/router-data';
 
+import { ImagesFilesMetaData } from './ImagesFiles/router-data';
+
 export const blockRouterMetaData = [
     blockRouterMetaData121220231,
     Selectors,
@@ -25,5 +27,6 @@ export const blockRouterMetaData = [
     PositioningExercise,
     CSSAnimationMetaData,
     ColorsrMetaData,
+    ImagesFilesMetaData,
 ];
 export const blockRouterData = getParsedRouterDataList(blockRouterMetaData);
