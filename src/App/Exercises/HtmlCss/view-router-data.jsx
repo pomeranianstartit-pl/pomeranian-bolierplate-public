@@ -6,9 +6,18 @@ import { blockRouterMetaData as Selectors } from './SelectorsAndCascade/router-d
 
 import { TextFundamentsMetaData } from './TextFundaments/router-data';
 
+import { GoogleFontsMetaData } from './GoogleFonts/router-data';
+
+import { blockRouterMetaData as Positioning } from './FloatsAndPositioning/router-data';
+
+import { blockRouterMetaData as PositioningExercise } from './FloatsAndPositioningExercise/router-data';
+
 export const blockRouterMetaData = [
     blockRouterMetaData121220231,
     Selectors,
     TextFundamentsMetaData,
+    GoogleFontsMetaData,
+    Positioning,
+    PositioningExercise,
 ];
 export const blockRouterData = getParsedRouterDataList(blockRouterMetaData);
