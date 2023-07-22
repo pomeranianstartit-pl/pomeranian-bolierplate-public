@@ -23,7 +23,7 @@ export const FloatsAndPositioningExercise = () => {
             consectetur lorem donec.
           </p>
         </div>
-        <div className="container">
+        <div className="containerexercise">
           <section className="forthFrame">
             <section className="fox-image"></section>
             <p className="fox-text">
