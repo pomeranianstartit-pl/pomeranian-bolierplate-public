@@ -11,6 +11,8 @@ import MenuItem from '@mui/material/MenuItem';
 import FormControl from '@mui/material/FormControl';
 import Select from '@mui/material/Select';
 import { useState } from 'react';
+import BasicList from './BasicList';
+import SwitchListSecondary from './BasicSwitch';
 
 const bull = (
   <Box
@@ -72,6 +74,8 @@ export const MaterialUIBasicElements = () => {
             <MenuItem value={30}>Thirty</MenuItem>
           </Select>
         </FormControl>
+        <BasicList />
+        <SwitchListSecondary />
       </Card>
     </>
   );
