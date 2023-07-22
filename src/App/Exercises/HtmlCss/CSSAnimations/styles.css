@@ -1,0 +1,33 @@
+div.animation {
+    width: 100px;
+    height: 100px;
+    background-color: white;
+    animation-name: blinking-square;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+    border-radius: 8px;
+}
+
+@keyframes blinking-square {
+    0% {
+        background-color: #fe3756;
+    }
+
+    25% {
+        background-color: #00145c;
+    }
+
+    50% {
+        background-color: #9b2365;
+        height: 200px;
+        width: 200px;
+    }
+
+    75% {
+        background-color: #d67153;
+    }
+
+    100% {
+        background-color: #fe3756;
+    }
+}

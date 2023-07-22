@@ -12,6 +12,8 @@ import { blockRouterMetaData as Positioning } from './FloatsAndPositioning/route
 
 import { blockRouterMetaData as PositioningExercise } from './FloatsAndPositioningExercise/router-data';
 
+import { CSSAnimationMetaData } from './CSSAnimations/router-data';
+
 export const blockRouterMetaData = [
     blockRouterMetaData121220231,
     Selectors,
@@ -19,5 +21,6 @@ export const blockRouterMetaData = [
     GoogleFontsMetaData,
     Positioning,
     PositioningExercise,
+    CSSAnimationMetaData,
 ];
 export const blockRouterData = getParsedRouterDataList(blockRouterMetaData);
