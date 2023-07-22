@@ -14,7 +14,6 @@
     display: flex;
     flex-direction: row;
     align-items: center;
-    justify-content: space-evenly;
     gap: 16px;
     bottom: 0;
     width: 100%;
@@ -22,6 +21,13 @@
     border-top: 1px solid var(--grey-300, #C8CBD1);
     background: var(--secondary-secondary, #23213D);
     padding: 40px 60px;
+}
+
+@media (max-width: 768px) {
+    .container-cookie-banner {
+        flex-wrap: wrap;
+        justify-content: flex-start;
+    }
 }
 
 .container-cookie-banner .cookie-text h3 {
