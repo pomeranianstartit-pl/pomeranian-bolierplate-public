@@ -1,0 +1,47 @@
+.colors-name {
+    color: blueviolet;
+    font-weight: bold;
+}
+
+.colors-hex {
+    color: #002be2;
+    font-weight: bold;
+}
+
+.colors-short-hex {
+    color: #e2f;
+    font-weight: bold;
+}
+
+.colors-rgb {
+    color: rgb(140, 41, 92);
+    font-weight: bold;
+}
+
+.colors-rgba {
+    color: rgb(140, 41, 92, 0.8);
+    font-weight: bold;
+}
+
+.colors-hsl {
+    color: hsl(258, 59%, 51%);
+    font-weight: bold;
+}
+
+li {
+    text-decoration-line: none;
+}
+
+p {
+    margin-top: 0px;
+}
+
+.colors-opacity {
+    background-color: #f01;
+    color: #00145c;
+    opacity: 0.6;
+}
+
+.colors-rgba-opacity {
+    background-color: rgba(255, 0, 17, 0.6);
+}
