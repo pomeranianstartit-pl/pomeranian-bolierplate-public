@@ -9,54 +9,54 @@ import WifiIcon from '@mui/icons-material/Wifi';
 import BluetoothIcon from '@mui/icons-material/Bluetooth';
 
 export default function SwitchListSecondary() {
-    const [checked, setChecked] = React.useState(['wifi']);
+  const [checked, setChecked] = React.useState(['wifi']);
 
-    const handleToggle = (value) => () => {
-        const currentIndex = checked.indexOf(value);
-        const newChecked = [...checked];
+  const handleToggle = (value) => () => {
+    const currentIndex = checked.indexOf(value);
+    const newChecked = [...checked];
 
-        if (currentIndex === -1) {
-            newChecked.push(value);
-        } else {
-            newChecked.splice(currentIndex, 1);
-        }
+    if (currentIndex === -1) {
+      newChecked.push(value);
+    } else {
+      newChecked.splice(currentIndex, 1);
+    }
 
-        setChecked(newChecked);
-    };
+    setChecked(newChecked);
+  };
 
-    return (
-        <List
-            sx={{ width: '100%', maxWidth: 360, bgcolor: 'background.paper' }}
-            subheader={<ListSubheader>Settings</ListSubheader>}
-        >
-            <ListItem>
-                <ListItemIcon>
-                    <WifiIcon />
-                </ListItemIcon>
-                <ListItemText id="switch-list-label-wifi" primary="Wi-Fi" />
-                <Switch
-                    edge="end"
-                    onChange={handleToggle('wifi')}
-                    checked={checked.indexOf('wifi') !== -1}
-                    inputProps={{
-                        'aria-labelledby': 'switch-list-label-wifi',
-                    }}
-                />
-            </ListItem>
-            <ListItem>
-                <ListItemIcon>
-                    <BluetoothIcon />
-                </ListItemIcon>
-                <ListItemText id="switch-list-label-bluetooth" primary="Bluetooth" />
-                <Switch
-                    edge="end"
-                    onChange={handleToggle('bluetooth')}
-                    checked={checked.indexOf('bluetooth') !== -1}
-                    inputProps={{
-                        'aria-labelledby': 'switch-list-label-bluetooth',
-                    }}
-                />
-            </ListItem>
-        </List>
-    );
+  return (
+    <List
+      sx={{ width: '100%', maxWidth: 360, bgcolor: 'background.paper' }}
+      subheader={<ListSubheader>Settings</ListSubheader>}
+    >
+      <ListItem>
+        <ListItemIcon>
+          <WifiIcon />
+        </ListItemIcon>
+        <ListItemText id="switch-list-label-wifi" primary="Wi-Fi" />
+        <Switch
+          edge="end"
+          onChange={handleToggle('wifi')}
+          checked={checked.indexOf('wifi') !== -1}
+          inputProps={{
+            'aria-labelledby': 'switch-list-label-wifi',
+          }}
+        />
+      </ListItem>
+      <ListItem>
+        <ListItemIcon>
+          <BluetoothIcon />
+        </ListItemIcon>
+        <ListItemText id="switch-list-label-bluetooth" primary="Bluetooth" />
+        <Switch
+          edge="end"
+          onChange={handleToggle('bluetooth')}
+          checked={checked.indexOf('bluetooth') !== -1}
+          inputProps={{
+            'aria-labelledby': 'switch-list-label-bluetooth',
+          }}
+        />
+      </ListItem>
+    </List>
+  );
 }
