@@ -1,0 +1,38 @@
+p{
+    font-size: 22px;
+    max-width: 985px;
+}
+
+.second{
+    
+    position: relative;
+   
+    left:25px;
+    line-height: 36px;
+}
+
+.third{
+    margin-top: 44px;
+   
+    display: flex;
+    gap: 10px;
+    align-items: flex-start;
+    width: 922px;
+   text-align: justify;
+   background: var(--gray-200, #EBEBEB);
+   padding: 17px 21px;
+}
+
+.fourth{
+    text-align: justify;
+   
+    line-height: 36px;
+    background: var(--primary-primary-light, #FFD5DB);
+}
+
+.snow-wolf{
+    border-radius: 8px;
+    display: flex;
+    top: 20px;
+    float: left;
+}
