@@ -22,9 +22,21 @@
     align-items: center;
 }
 
+@media (max-width: 768px) {
+
+    .cookies-banner {
+
+        flex-direction: column;
+    }
+}
+
 .accept-cookies {
     padding: 0.5em;
     color: white;
     background-color: #FE3756;
     max-height: 3em;
+    width: 100%;
+    max-width: 400px;
+    margin-left: auto;
+    margin-right: auto;
 }

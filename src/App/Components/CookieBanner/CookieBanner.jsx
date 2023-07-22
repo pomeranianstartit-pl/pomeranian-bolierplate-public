@@ -29,9 +29,9 @@ export const CookieBanner = () => {
             tych plików i przejść do strony lub dostosować
           </p>
         </div>
-        <button className="accept-cookies" onClick={updateCookieState}>
+        <div className="accept-cookies" onClick={updateCookieState}>
           W porządku
-        </button>
+        </div>
       </div>
     </div>
   );
