@@ -1,3 +1,41 @@
-.font {
+.buttons {
+  display: flex;
+  gap: 20px;
+}
+
+.fLugarismo {
   font-family: 'Lugrasimo';
+}
+
+.fBebas {
+  font-family: 'Bebas Neue';
+}
+
+.fMynerve {
+  font-family: 'Mynerve';
+}
+
+.fontsHeading {
+  text-shadow: 0px 0px 6px rgba(254, 55, 86, 1);
+  color: white;
+}
+
+#fontChange {
+  color: white;
+  background-color: #00145c;
+  width: 70%;
+  padding: 8px;
+  margin-top: 30px;
+  padding: 10px 20px
+}
+
+.changeButton {
+  border-radius: 8px;
+  background-color: #FE3756;
+  color: white;
+  cursor: pointer;
+  text-transform: uppercase;
+  height: 50px;
+  padding: 0px 25px;
+  line-height: 50px;
 }
