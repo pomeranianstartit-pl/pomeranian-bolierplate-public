@@ -14,23 +14,33 @@ export function AppAside() {
       <nav>
         <ul>
           <li>
-            <HouseIcon />
+            <div className="icon">
+              <HouseIcon />
+            </div>
             <NavLink to="dashboard">Dashboard</NavLink>
           </li>
           <li>
-            <PersonalCardIcon />
+            <div className="icon">
+              <PersonalCardIcon />
+            </div>
             <NavLink to="CV">Moje CV</NavLink>
           </li>
           <li>
-            <ElementIcon />
+            <div className="icon">
+              <ElementIcon />
+            </div>
             <NavLink to="blocks">Bloki</NavLink>
           </li>
           <li>
-            <EditIcon />
+            <div className="icon">
+              <EditIcon />
+            </div>
             <NavLink to="exercises">Ćwiczenia</NavLink>
           </li>
           <li>
-            <CalendarIcon />
+            <div className="icon">
+              <CalendarIcon />
+            </div>
             <NavLink to="calendar">Kalendarz</NavLink>
           </li>
           <li>
