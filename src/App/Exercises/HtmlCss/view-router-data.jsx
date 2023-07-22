@@ -15,6 +15,7 @@ import { blockRouterMetaData as Array } from './ArrayRendering/router-data';
 import { blockRouterMetaData as ArrayRenderTable } from './ArrayRenderToTable/router-data';
 import { blockRouterMetaData as FloatsAndPositioning } from './FloatsAndPositioning/router-data';
 import { blockRouterMetaData as FloatsAndPositioningExercises } from './FloatsAndPositioningExercises/router-data';
+import { blockRouterMetaData as MaterialUIBasicElements } from './ReactExercises/router-data';
 
 export const blockRouterMetaData = [
     blockRouterMetaData121220231,
@@ -32,5 +33,6 @@ export const blockRouterMetaData = [
     ArrayRenderTable,
     FloatsAndPositioning,
     FloatsAndPositioningExercises,
+    MaterialUIBasicElements,
 ];
 export const blockRouterData = getParsedRouterDataList(blockRouterMetaData);

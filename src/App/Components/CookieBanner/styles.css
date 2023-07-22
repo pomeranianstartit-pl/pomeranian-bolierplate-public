@@ -1,0 +1,45 @@
+@media (max-width:768px) {
+    .banner {
+        width: 400%;
+        background-color: #23213D;
+        color: #F6F6F6;
+        position: absolute;
+        top: 70rem;
+    }
+}
+
+.button1 {
+    border: 1px solid #FE3756;
+    background-color: #FE3756;
+    border-radius: 0.5rem;
+    padding: 1.25rem 2.25rem;
+    align-items: center;
+    gap: 1rem;
+    float: right;
+    position: relative;
+    bottom: 5rem;
+    right: 20rem;
+}
+
+.button2 {
+    border: 1px solid #FFFFFF;
+    background-color: #FFFFFF;
+    color: #FE3756;
+    border-radius: 0.5rem;
+    padding: 1.25rem 2.25rem;
+    float: right;
+    position: relative;
+    bottom: 5rem;
+    right: -5rem;
+}
+
+.accept-cookies {
+    padding: 0.5em;
+    color: white;
+    background-color: #FE3756;
+    max-height: 3em;
+}
+
+.cookie {}
+
+.paragraf1 {}
