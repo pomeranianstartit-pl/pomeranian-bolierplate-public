@@ -1,0 +1,22 @@
+.comtainer {
+    border: 1px black;
+    background-color: azure;
+    display: table;
+    position: absolute;
+}
+
+.square {
+    width: 150px;
+    height: 150px;
+    background: blue;
+    border: 5px solid green;
+    float: rileftght;
+    margin-right: 2em;
+    color: white;
+    font-size: 3em;
+}
+
+.x {
+    position: absolute;
+    top: 20px;
+}
