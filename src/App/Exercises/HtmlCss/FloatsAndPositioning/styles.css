@@ -1,0 +1,27 @@
+.container {
+    border: 0.5rem solid black;
+    position: relative;
+    display: table;
+}
+
+.square {
+    width: 150px;
+    height: 150px;
+    color: white;
+    background-color: blue;
+    margin: 2rem;
+    float: left;
+    border: 0.5rem solid red;
+}
+
+.x {
+    position: absolute;
+    width: auto;
+    height: auto;
+    background-color: rgba(220, 20, 60, 0.5);
+    top: 10rem;
+    bottom: 10rem;
+    left: 10rem;
+    right: 10rem;
+    opacity: 0.2;
+}
