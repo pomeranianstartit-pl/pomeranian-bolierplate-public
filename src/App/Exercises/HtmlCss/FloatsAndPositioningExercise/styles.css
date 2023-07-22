@@ -1,0 +1,210 @@
+h5 {
+    color: var(--secondary-secondary, #23213D);
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 34px;
+}
+
+.mainFrame {
+    width: 985px;
+    border-radius: 10px;
+    background: #FFF;
+}
+
+.firstFrame {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 11px;
+    margin-bottom: 44px;
+    margin-left: 0px;
+    width: 905px;
+}
+
+.lorem1 {
+    width: 905px;
+    color: var(--text-text-primary, #222);
+    font-size: 22px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 36px;
+    bottom: 44px;
+    width: 905px;
+}
+
+.lorem2 {
+    width: 833px;
+    color: var(--text-text-primary, #222);
+    font-size: 22px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 36px;
+    position: relative;
+
+}
+
+.secondFrame {
+    display: flex;
+    padding: 17px 21px;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+    background: var(--gray-200, #EBEBEB);
+    margin-bottom: 30px;
+}
+
+.lorem3 {
+    color: var(--text-text-primary, #222);
+    text-align: justify;
+    font-size: 22px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 36px;
+    margin: 0 0;
+}
+
+.container {
+    width: 984px;
+    height: 377px;
+    margin-bottom: 47px;
+}
+
+.forthFrame {
+    display: inline-flex;
+    padding: 32px 29px 0px 456px;
+    justify-content: flex-end;
+    align-items: center;
+    background: var(--primary-primary-light, #FFD5DB);
+    width: 984px;
+    height: 279px;
+
+}
+
+.fox-image {
+    display: flex;
+    position: relative;
+    width: 402px;
+    height: 350px;
+    padding: 0px 24px;
+    flex-direction: column;
+    align-items: flex-end;
+    gap: 8px;
+    flex-shrink: 0;
+    border-radius: 8px;
+    background: url("https://shorturl.at/ciER0"), lightgray -61.344px 0px / 136.905% 102.736% no-repeat;
+    top: 57px;
+    margin-right: 21px;
+    background-size: cover;
+}
+
+.fox-text {
+    width: 515px;
+    height: 216px;
+    flex-shrink: 0;
+    color: var(--text-text-primary, #222);
+    text-align: justify;
+    font-size: 22px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 36px;
+}
+
+.fifthFrame {
+    display: flex;
+    padding: 17px 21px;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+    background: var(--gray-900, #4B5563);
+    margin-bottom: 60px;
+}
+
+.lorem4 {
+    width: 922px;
+    color: var(--text-alt-primary, #FFF);
+    text-align: justify;
+    font-size: 22px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 36px;
+}
+
+.sixthFrame {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 60px;
+    margin-bottom: 112px;
+}
+
+button {
+    display: flex;
+    padding: 10px 127px;
+    align-items: flex-start;
+    gap: 10px;
+    border-radius: 19.644px;
+    border: 1px solid var(--primary-primary, #FE3756);
+    background: var(--primary-primary-light, #FFD5DB);
+    color: #000;
+    text-align: center;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 73.664px;
+}
+
+.lorem5 {
+    width: 985px;
+    color: var(--text-text-primary, #222);
+    text-align: justify;
+    font-size: 22px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 36px;
+    margin: 0px;
+}
+
+.squares {
+    width: 985px;
+    height: 246px;
+    border-radius: 8px;
+    border: 2px solid var(--gray-700, #6B7280);
+    display: flex;
+}
+
+.square1 {
+    position: relative;
+    width: 120px;
+    height: 120px;
+    flex-shrink: 0;
+    border-radius: 8px;
+    border: 2px solid var(--gray-200, #EBEBEB);
+    background: var(--gray-300, #C8CBD1);
+    left: 49px;
+    top: 85px;
+}
+
+.square2 {
+    position: relative;
+    width: 120px;
+    height: 120px;
+    flex-shrink: 0;
+    border-radius: 8px;
+    border: 2px solid var(--gray-200, #EBEBEB);
+    background: var(--gray-500, #999);
+    left: -44px;
+    top: 63px;
+}
+
+.square3 {
+    position: relative;
+    width: 120px;
+    height: 120px;
+    flex-shrink: 0;
+    border-radius: 8px;
+    border: 2px solid var(--gray-200, #EBEBEB);
+    background: var(--gray-700, #6B7280);
+    left: -136px;
+    top: 41px;
+}

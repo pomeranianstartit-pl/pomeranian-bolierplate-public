@@ -3,11 +3,12 @@ import './styles.css';
 export const FloatsAndPositioning = () => {
   return (
     <div className="container">
-      <div className="square">1</div>
-      <div className="square x ">2</div>
-      <div className="square">3</div>
-    </div>
-    /* <p>
+      <div className="figures">
+        <div className="square x">1</div>
+        <div className="square y ">2</div>
+        <div className="square z">3</div>
+      </div>
+      <p className="lorem">
         Lorem ipsum dolor sit amet. Et magnam earum ut quas excepturi non quod
         temporibus sed recusandae aperiam et veritatis sapiente sed incidunt
         fugiat sed doloribus iure. Qui voluptatem ratione eos repellendus
@@ -26,6 +27,7 @@ export const FloatsAndPositioning = () => {
         omnis. Est quod ipsam ea aliquam iste ut autem adipisci sit voluptatem
         dignissimos ad omnis aliquam. Non quae galisum sit omnis dolor et
         laudantium mollitia sed architecto totam.
-      </p> */
+      </p>{' '}
+    </div>
   );
 };
