@@ -1,0 +1,25 @@
+.font-test-family {
+  font-family: Chilanka;
+}
+
+/* .variable-string-placeholder p span */
+.variable-string-placeholder {
+  margin-left: 5px;
+}
+
+li::marker {
+  content: normal;
+}
+
+li {
+  text-decoration-line: none;
+}
+
+.variables {
+  border: 2px solid #fe3756;
+  border-radius: 8px;
+  padding: 5px;
+  width: 200px;
+  text-align: center;
+  background-color: rgba(254, 55, 86, 0.5);
+}
