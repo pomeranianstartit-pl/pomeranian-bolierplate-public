@@ -6,6 +6,7 @@ import { Cwiczenie3MetaData } from './Cwiczenie3/router-data';
 import { MoreOrLessMetaData } from './MoreOrLess/router-data';
 import { MoreOrLessAdvancedMetaData } from './MoreOrLessAdvanced/router-data';
 import { MUIDashboards } from './MUITemplateDashboard/router-data';
+import { ToDoListMetaData } from './ToDoList/router-data';
 
 export const blockRouterMetaData = [
     Cwiczenie1MetaData,
@@ -14,5 +15,6 @@ export const blockRouterMetaData = [
     MoreOrLessMetaData,
     MoreOrLessAdvancedMetaData,
     MUIDashboards,
+    ToDoListMetaData,
 ];
 export const blockRouterData = getParsedRouterDataList(blockRouterMetaData);
