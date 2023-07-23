@@ -1,0 +1,25 @@
+.background-color {
+    background-color: palevioletred;
+}
+
+.background-image-url {
+    background-image: url("../../../Images/snow-wolf.png");
+    background-position: -15px -100px;
+    width: 200px;
+    height: 200px;
+}
+
+.background-image-repeat {
+    width: 115px;
+    height: 115px;
+    background-image: url('../../../Images/star.svg')
+}
+
+.background-image-size {
+    width: 200px;
+    height: 200px;
+    background-image: url("../../../Images/snow-wolf.png");
+    background-repeat: no-repeat;
+    background-color: #4e4586;
+    background-size: contain;
+}
