@@ -16,6 +16,8 @@ import { TryCatchAndFinallyMetaData } from './TryCatchAndFinally/router-data'
 import { blockRouterMetaData as blockRouterMetaDataJsTryCatch } from './Exercise-js-try-catch/router-data';
 import { blockRouterMetaData as blockRouterMetaDataJsPrototypes } from './Exercise-js-prototypes/router-data';
 import { blockRouterMetaData as blockRouterMetaDataJsThisKeyWord } from './Exercise-js-this-key-word/router-data';
+import { blockRouterMetaData as blockRouterMetaDataJsPromises } from './Exercise-js-promises/router-data';
+
 
 
 export const blockRouterMetaData = [
@@ -35,5 +37,7 @@ export const blockRouterMetaData = [
   blockRouterMetaDataJsTryCatch,
   blockRouterMetaDataJsPrototypes,
   blockRouterMetaDataJsThisKeyWord,
+  blockRouterMetaDataJsPromises,
+
 ];
 export const blockRouterData = getParsedRouterDataList(blockRouterMetaData);
