@@ -1,0 +1,32 @@
+.container{
+    border: 1px;
+    background-color: rgb(143, 156, 156);
+    display: table;
+    padding: 1em;
+    position: relative;
+}
+
+.square{
+    width: 150px;
+    height: 150px;
+    background: blue;
+    border: 5px solid green;
+    float:left;
+    margin-right: 2em;
+    color: white;
+    font-size: 3em;
+}
+
+.x{
+    position: absolute;
+    top: 20px;
+    left: 0;
+    z-index: 99999;
+}
+
+.y{
+    position: absolute;
+    top: 20px;
+    left: 0;
+    z-index: 999;
+}
