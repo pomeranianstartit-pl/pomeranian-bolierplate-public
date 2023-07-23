@@ -1,0 +1,21 @@
+li::marker {
+    content: none;
+}
+
+.css-filter-1 {
+    filter: grayscale(100%);
+    -webkit-filter: grayscale(100%);
+    -moz-filter: grayscale(100%);
+}
+
+.css-filter-2 {
+    filter: contrast(600%);
+    -webkit-filter: contrast(600%);
+    -moz-filter: contrast(600%);
+}
+
+.css-filter-3 {
+    filter: invert(100%);
+    -webkit-filter: invert(100%);
+    -moz-filter: invert(100%);
+}
