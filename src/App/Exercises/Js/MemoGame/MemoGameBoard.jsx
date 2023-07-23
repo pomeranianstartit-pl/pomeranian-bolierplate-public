@@ -5,10 +5,10 @@ import formatTime from './FormatTime';
 export const MemoGameBoard = ({
   time,
   setGameStarted,
+  setFinalSettings,
   score,
   setScore,
   boardSize,
-  setFinalSettings,
 
 }) => {
 
@@ -22,7 +22,7 @@ export const MemoGameBoard = ({
 }, [boardSize]);
 
 const symbolsArray = () => {
-  const memoSymbolsArray = 'abcdefghijk';
+  const memoSymbolsArray = '✿✈♬☎☻☯♘☃★⌚✂✉☀🎶♞♛✟♨✎☁☹☛☠☾';
   const memoCardsSymbols = [];
   const memoUsedSymbols = [];
   for (let i = 0; i < boardSize / 2; i++) {
@@ -104,12 +104,12 @@ useEffect(() => {
 
 return (
   <>
-      <div className="container">
-          <h2 className="item">CZAS GRY: </h2>
-          <h2 className="timeAndScore">{formatTime(time)}</h2>
-          <h2 className="item">LICZBA RUCHÓW:</h2>
-          <h2 className="timeAndScore">{score}</h2>
-          <h2 className="item">PRZYCISKI STERUJĄCE</h2>
+      <div className="myDiv">
+          <h3 className="item">CZAS GRY: </h3>
+          <h3 className="timeAndScore">{formatTime(time)}</h3>
+          <h3 className="item">LICZBA RUCHÓW:</h3>
+          <h3 className="timeAndScore">{score}</h3>
+          <h3 className="item">PRZYCISKI STERUJĄCE</h3>
           <div className="stopBottom">
               <button
                   onClick={() => {
@@ -121,7 +121,8 @@ return (
               </button>
           </div>
       </div>
-      <div className="memoGame">
+      <div className="memoGame"
+    >
           {memoArray.map((card) => (
               <div key={card.id} onClick={() => revealCard(card)}>
                   <div id={card.isGuessed ? 'squerTrue' : 'squerFalse'}>

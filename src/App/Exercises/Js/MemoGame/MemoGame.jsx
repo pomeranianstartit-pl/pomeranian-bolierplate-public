@@ -50,29 +50,6 @@ import { MemoGameBoard } from './MemoGameBoard.jsx';
       setTime={setTime}
       />
     )}
-       {/* {!gameStarted && (
-        <MemoGameSettings
-          boardSize={boardSize}
-          setBoardSize={setBoardSize}
-          setGameStarted={setGameStarted}
-          score={score}
-          time={time}
-          finalSettings={finalSettings}
-          setScore={setScore}
-          setTime={setTime}
-        />
-      )}
-  
-      {gameStarted && (
-        <MemoGameBoard
-          time={time}
-          setFinalSettings={setFinalSettings}
-          score={score}
-          setScore={setScore}
-          setgameStarted={setGameStarted}
-          boardSize={boardSize}
-        />      
-      )}  */}
     </>
   );
 };

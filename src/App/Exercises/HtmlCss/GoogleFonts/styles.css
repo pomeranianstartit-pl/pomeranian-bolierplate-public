@@ -97,10 +97,10 @@
   animation-name: example;
   animation-duration: 4s;
 }*/
-
+/* 
 h2 {
   animation: example 5s linear 2s infinite alternate;
-}
+} */
 
 #myDIV {
   margin: auto;
