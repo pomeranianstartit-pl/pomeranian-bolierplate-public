@@ -70,11 +70,11 @@ export function EmptyValuesAndComments() {
   const name = 'John';
   const surname = 'Wick';
   const age = 26;
-  const quoteWithoutTemplateString =
-    name + ' ' + surname + ' ' + 'lat' + ' ' + age;
+  // const quoteWithoutTemplateString =
+  //   name + ' ' + surname + ' ' + 'lat' + ' ' + age;
   const quoteWitTemplateString = `${name} ${surname} lat ${age}`;
 
-  console.log(quoteWithoutTemplateString);
+  // console.log(quoteWithoutTemplateString);
   console.log(quoteWitTemplateString);
 
   // DLACZEGO ' lub "
