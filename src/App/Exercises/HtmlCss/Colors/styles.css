@@ -1,0 +1,95 @@
+.font-test-family {
+
+  font-family: Chilanka;
+
+}
+
+
+
+
+.color-name {
+
+  color: #df0cdf;
+
+}
+
+
+
+
+.color-hex {
+
+  color: #135f95;
+
+}
+
+.shorten-hex {
+  color:#28289f;
+}
+
+.rgb {
+color: #add9ad;
+
+}
+
+.rgba {
+  color:#ff000087;
+}
+
+.hsl {
+  color:#c98989;
+}
+
+.opacity {
+
+  background-color: #00ff00;
+
+  padding: 24px;
+
+  opacity: 0.5;
+
+}
+
+.two-squares {
+
+  display: flex;
+
+  margin-bottom: 100px;
+
+  position: relative;
+
+}
+
+
+
+
+.two-squares .square-1 {
+
+  background-color: red;
+
+  width: 100px;
+
+  height: 100px;
+
+  position: absolute;
+
+}
+
+
+
+
+.two-squares .square-2 {
+
+  background-color: blue;
+
+  width: 100px;
+
+  height: 100px;
+
+  position: absolute;
+
+  left: 50px;
+
+  opacity: 0.5;
+
+}
+
