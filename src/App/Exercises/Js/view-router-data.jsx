@@ -13,6 +13,11 @@ import { HitTheMoleGameMetaData } from './HitTheMoleGame/router-data';
 import { MemoGameMetaData } from './MemoGame/router-data';
 import { LocalStorageMetaData } from './LocalStorage/router-data';
 import { SavedInputMetaData } from './SavedInput/router-data';
+import { TryCatchAndFinallyMetaData } from './TryCatchAndFinally/router-data';
+import { ExercisePrototipeMetaData } from './ExercisePrototipe/router-data';
+import { ThisKeywordMetaData } from './ThisKeyword/router-data';
+import { PromiseMetaData } from './Promise/router-data';
+import { FetchowanieDanychZApiMetaData } from './FetchowanieDanychZApi/router-data';
 
 export const blockRouterMetaData = [
   blockRouterMetaDataJsVariables1,
@@ -28,5 +33,10 @@ export const blockRouterMetaData = [
   MemoGameMetaData,
   LocalStorageMetaData,
   SavedInputMetaData,
+  TryCatchAndFinallyMetaData,
+  ExercisePrototipeMetaData,
+  ThisKeywordMetaData,
+  PromiseMetaData,
+  FetchowanieDanychZApiMetaData,
 ];
 export const blockRouterData = getParsedRouterDataList(blockRouterMetaData);
