@@ -1,0 +1,115 @@
+.container--grid-wrapper {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 8px;
+  padding: 16px;
+}
+
+.container--grid-wrapper .container--grid-tile {
+  text-transform: capitalize;
+  font-weight: bold;
+  border: 1px solid;
+  padding: 8px;
+  border-radius: 8px;
+  flex: 0 0 calc((100% / 3) - calc(8px * 2) / 3);
+  font-family: sans-serif;
+  color: black
+  
+}
+
+.container--grid-wrapper .container--grid-tile img {
+    display: flex;
+    margin: auto;
+    height: 100px;
+    width: 100px;
+}
+
+/* Grass Type */
+.dedicated-background--grass {
+  background-color: #78c850 !important;
+}
+
+/* Fire Type */
+.dedicated-background--fire {
+  background-color: #f08030 !important;
+}
+
+/* Water Type */
+.dedicated-background--water {
+  background-color: #6890f0 !important;
+}
+
+/* Bug Type */
+.dedicated-background--bug {
+  background-color: #a8b820 !important;
+}
+
+/* Psychic Type */
+.dedicated-background--psychic {
+  background-color: #f85888 !important;
+}
+
+/* Ghost Type */
+.dedicated-background--ghost {
+  background-color: #705898 !important;
+}
+
+/* Flying Type */
+.dedicated-background--flying {
+  background-color: #a890f0 !important;
+}
+
+/* Rock Type */
+.dedicated-background--rock {
+  background-color: #b8a038 !important;
+}
+
+/* Electric Type */
+.dedicated-background--electric {
+  background-color: #f8d030 !important;
+}
+
+/* Normal Type */
+.dedicated-background--normal {
+  background-color: #a8a878 !important;
+}
+
+/* Fighting Type */
+.dedicated-background--fighting {
+  background-color: #c03028 !important;
+}
+
+/* Poison Type */
+.dedicated-background--poison {
+  background-color: #a040a0 !important;
+}
+
+/* Ground Type */
+.dedicated-background--ground {
+  background-color: #e0c068 !important;
+}
+
+/* Steel Type */
+.dedicated-background--steel {
+  background-color: #b8b8d0 !important;
+}
+
+/* Ice Type */
+.dedicated-background--ice {
+  background-color: #98d8d8 !important;
+}
+
+/* Dragon Type */
+.dedicated-background--dragon {
+  background-color: #7038f8 !important;
+}
+
+/* Dark Type */
+.dedicated-background--dark {
+  background-color: #705848 !important;
+}
+
+/* Fairy Type */
+.dedicated-background--fairy {
+  background-color: #ee99ac !important;
+}

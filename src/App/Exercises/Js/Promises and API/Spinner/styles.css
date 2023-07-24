@@ -1,0 +1,30 @@
+/* Spinner.css */
+.spinner-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+  }
+  
+  
+  .spinner {
+    border: 5px solid rgba(0, 0, 0, 0.3);
+    border-radius: 50%;
+    border-top: 5px solid #007bff; /* Możesz zmienić kolor spinnera */
+    width: 50px;
+    height: 50px;
+    animation: mySpin 0.5s linear infinite;
+  }
+  
+  @keyframes mySpin {
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
+  }
