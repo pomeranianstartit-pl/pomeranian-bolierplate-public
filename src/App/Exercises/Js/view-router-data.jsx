@@ -12,7 +12,7 @@ export const blockRouterMetaData = [
   blockRouterMetaDataJsVariables2,
   blockRouterMetaDataJsFunction1,
   blockRouterMetaDataJsBoolean,
-  blockRouterMetaDataJsNumbers,
   blockRouterMetaDataJsIfSwitch,
+  blockRouterMetaDataJsNumbers,
 ];
 export const blockRouterData = getParsedRouterDataList(blockRouterMetaData);
