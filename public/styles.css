@@ -1,0 +1,56 @@
+.font-test-family {
+  font-family: Chilanka;
+}
+.css-filter {
+
+  background: url('./tree.jpg');
+
+  width: 500px;
+
+  height: 300px;
+
+  background-size: cover;
+
+
+
+
+  filter: brightness(60%);
+
+  -webkit-filter: brightness(60%);
+
+  -moz-filter: brightness(60%);
+
+}
+
+
+
+
+.css-filter h1 {
+
+  color: #fff;
+
+}
+
+
+
+
+.css-filter-1 {
+
+  background: url('./tree.jpg');
+
+  width: 500px;
+
+  height: 300px;
+
+  background-size: cover;
+
+
+
+
+  filter: brightness(60%) sepia(50%);
+
+  -webkit-filter: brightness(60%) sepia(50%);
+
+  -moz-filter: brightness(60%) sepia(50%);
+
+}

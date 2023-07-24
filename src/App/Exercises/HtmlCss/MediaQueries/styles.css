@@ -1,0 +1,52 @@
+
+.media-queries>div {
+
+  border-bottom: 1px solid #eee;
+
+  margin-bottom: 2rem;
+
+  padding-bottom: 2rem;
+
+}
+
+
+
+
+/* mobile first */
+
+.media-queries .buttons {
+
+  display: flex;
+
+  flex-direction: column;
+
+  justify-content: center;
+
+  align-items: center;
+
+}
+
+
+
+
+/* desktop */
+
+@media (min-width: 768px) {
+
+  .media-queries .buttons {
+
+    flex-direction: row;
+
+  }
+
+}
+
+
+
+
+
+.media-queries .fonts h2 {
+
+  font-size: 3vw;
+
+}
