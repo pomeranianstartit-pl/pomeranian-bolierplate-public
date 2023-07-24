@@ -18,6 +18,8 @@ import { blockRouterMetaData as TableTennisRouterMetaData } from './TableTennis/
 
 import { FloatsAndPositioningRouterMetaData as FloatsAndPositioningRouterMetaData } from './FloatsAndPositioning/router-data';
 
+import { MediaQueriesRouterMetaData as MediaQueriesRouterMetaData } from './MediaQueries/router-data';
+
 export const blockRouterMetaData = [
   blockRouterMetaData121220231,
   ImageFilesMetaData,
@@ -28,6 +30,7 @@ export const blockRouterMetaData = [
   HTMLTablesRouterMetaData,
   TableTennisRouterMetaData,
   FloatsAndPositioningRouterMetaData,
+  MediaQueriesRouterMetaData,
 ];
 
 export const blockRouterData = getParsedRouterDataList(blockRouterMetaData);
