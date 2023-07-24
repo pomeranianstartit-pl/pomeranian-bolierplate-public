@@ -1,0 +1,72 @@
+.font-test-family {
+  font-family: Chilanka;
+}
+
+.div_nr1 {
+  /* padding: góra+dół-50px lewo+prawo-20px */
+  /* padding: 50px 20px; ... */
+
+  /* padding: góra-20px prawo-0px dół-15px lewo-30px */
+  padding: 20px 0px 15px 30px;
+  /* 
+    border + padding + content = width
+
+    width(szerokość) niezależna od innych parametrów (padding, border)
+  */
+  /* box-sizing: border-box; */
+
+  /* 
+    border + padding + width = content
+    
+    width(szerokość) zależna od innych parametrów (padding, border)
+  */
+  /* box-sizing: content-box  */
+  width: 200px;
+  /* padding: 20px 20px; */
+  margin: 10px 10px;
+  border: 2px solid green;
+  background: hotpink;
+}
+
+.span_nr1 {
+  background: red;
+}
+
+.displayNone {
+  display: none;
+}
+
+/* OVERFLOW */
+
+.div_nr2 {
+  background-color: aqua;
+  border: 2px solid gold;
+  max-width: 100px;
+  max-height: 250px;
+  /* Blok scrolowalny */
+  overflow: scroll;
+
+  /* Tekst ukryty */
+  /* overflow: hidden; */
+
+  /* Tekst scrollowalny w osi x */
+  /* overflow-x: scroll; */
+
+  /* Tekst scrollowalny w osi y */
+  /* overflow-y: scroll; */
+}
+
+/* CSS UNITS */
+
+.css_units_wrapper {
+  font-size: 20px;
+}
+
+.css_units_1 {
+}
+.css_units_2 {
+}
+.css_units_3 {
+}
+.css_units_4 {
+}
