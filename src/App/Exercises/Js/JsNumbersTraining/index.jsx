@@ -106,7 +106,9 @@ export function Exercise() {
 
   //Ćwiczenie8
 
-  function losowaLiczbaZakres(min, max) {
+  function losowaLiczbaOd1do5() {
+    const min = 1;
+    const max = 5;
     const losowaLiczba = Math.random();
     const zakres = max - min;
     const przesuniecie = losowaLiczba * zakres;
@@ -114,15 +116,19 @@ export function Exercise() {
 
     return wynik;
   }
+  //Ćwiczenie8a
+  function losowaLiczbaCalkowitaOd1do5() {
+    const min = 1;
+    const max = 5;
+    const losowaLiczba = Math.random();
+    const zakres = max - min;
+    const przesuniecie = losowaLiczba * zakres;
+    const wynik = Math.floor(min + przesuniecie);
 
-  const losowaLiczba = losowaLiczbaZakres(1, 5);
-  console.log(losowaLiczba);
-
-  function wykonajCwiczenie8() {
-    console.log(`Wynik ćwiczenia8: ${losowaLiczbaZakres(1, 5)}`);
+    return wynik;
   }
 
-  //Ćwiczenie 8a
+  //Ćwiczenie 8b
   function losowaLiczbaCalkowitaZakres(min, max) {
     const losowaLiczbaCalkowita = Math.random();
     const zakres = max - min;
@@ -132,11 +138,16 @@ export function Exercise() {
     return wynik;
   }
 
-  const losowaLiczbaCalkowita = losowaLiczbaCalkowitaZakres(1, 5);
-  console.log(losowaLiczbaCalkowita);
+  function wykonajCwiczenie8() {
+    console.log(`Wynik ćwiczenia8: ${losowaLiczbaOd1do5()}`);
+  }
 
   function wykonajCwiczenie8a() {
-    console.log(`Wynik ćwiczenia8a: ${losowaLiczbaCalkowitaZakres(1, 5)}`);
+    console.log(`Wynik ćwiczenia8a: ${losowaLiczbaCalkowitaOd1do5()}`);
+  }
+
+  function wykonajCwiczenie8b() {
+    console.log(`Wynik ćwiczenia8b: ${losowaLiczbaCalkowitaZakres(1, 5)}`);
   }
   //Ćwiczenie9
   function sredniaArytmetyczna(a, b) {
@@ -159,6 +170,69 @@ export function Exercise() {
   function wykonajCwiczenie9() {
     console.log(`Wynik ćwiczenia9: ${sredniaArytmetyczna(4, 7)}`);
   }
+
+  // Ćwiczenie10
+  function wartoscBezwzgledna(x) {
+    if (x >= 0) {
+      return x;
+    } else {
+      return -x;
+    }
+  }
+
+  // Testujemy funkcję
+  console.log(wartoscBezwzgledna(5)); // Wyświetli: 5
+  console.log(wartoscBezwzgledna(-10)); // Wyświetli: 10
+
+  function wykonajCwiczenie10() {
+    console.log(`Wynik ćwiczenia10: ${wartoscBezwzgledna(5)}`);
+    console.log(`Wynik ćwiczenia10: ${wartoscBezwzgledna(-10)}`);
+  }
+
+  //Ćwiczenie 11
+  function czyPodzielnaPrzez3Lub5(liczba) {
+    return liczba % 3 === 0 || liczba % 5 === 0;
+  }
+
+  // Testujemy funkcję
+  console.log(czyPodzielnaPrzez3Lub5(15)); // Wyświetli: true (podzielna przez 3)
+  console.log(czyPodzielnaPrzez3Lub5(10)); // Wyświetli: true (podzielna przez 5)
+  console.log(czyPodzielnaPrzez3Lub5(8)); // Wyświetli: false (niepodzielna przez 3 ani 5)
+
+  function wykonajCwiczenie11() {
+    console.log(`Wynik ćwiczenia11: ${czyPodzielnaPrzez3Lub5(15)}`);
+    console.log(`Wynik ćwiczenia11: ${czyPodzielnaPrzez3Lub5(10)}`);
+    console.log(`Wynik ćwiczenia11: ${czyPodzielnaPrzez3Lub5(8)}`);
+  }
+
+  // Ćwiczenie12
+
+  function czyLiczbaPierwsza(x) {
+    if (!Number.isInteger(x)) {
+      return 'zła wartość';
+    }
+
+    let licznikPodzielnosci = 0;
+
+    for (let i = 1; i <= x; i++) {
+      if (x % i === 0) {
+        licznikPodzielnosci++;
+      }
+    }
+
+    return licznikPodzielnosci === 2;
+  }
+
+  // Testujemy funkcję
+  console.log(czyLiczbaPierwsza(7)); // Wyświetli: true (7 jest liczbą pierwszą)
+  console.log(czyLiczbaPierwsza(4)); // Wyświetli: false (4 nie jest liczbą pierwszą)
+  console.log(czyLiczbaPierwsza(7.1)); // Wyświetli: "zła wartość" (nie jest liczbą całkowitą)
+
+  function wykonajCwiczenie12() {
+    console.log(`Wynik ćwiczenia12: ${czyLiczbaPierwsza(7)}`);
+    console.log(`Wynik ćwiczenia12: ${czyLiczbaPierwsza(4)}`);
+    console.log(`Wynik ćwiczenia12: ${czyLiczbaPierwsza(7.1)}`);
+  }
   //
   return (
     <div>
@@ -178,8 +252,16 @@ export function Exercise() {
       <button onClick={wykonajCwiczenie8}>Ćwiczenie8</button>
       <h1>Cwiczenie 8a</h1>
       <button onClick={wykonajCwiczenie8a}>Ćwiczenie8a</button>
+      <h1>Cwiczenie 8b</h1>
+      <button onClick={wykonajCwiczenie8b}>Ćwiczenie8a</button>
       <h1>Cwiczenie 9</h1>
       <button onClick={wykonajCwiczenie9}>Ćwiczenie9</button>
+      <h1>Cwiczenie 10</h1>
+      <button onClick={wykonajCwiczenie10}>Ćwiczenie10 </button>
+      <h1>Cwiczenie 11</h1>
+      <button onClick={wykonajCwiczenie11}>Ćwiczenie11 </button>
+      <h1>Cwiczenie 12</h1>
+      <button onClick={wykonajCwiczenie12}>Ćwiczenie12 </button>
     </div>
   );
 }
