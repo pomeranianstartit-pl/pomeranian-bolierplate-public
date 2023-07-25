@@ -6,6 +6,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;400;700;900&display=swap');
 /* font Dancing Script oraz Source Code Pro */
 @import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;700&family=Source+Code+Pro:ital,wght@0,400;0,700;1,200&display=swap');
+/* Roboto fonts z biblioteki Material UI */
+@import '@fontsource/roboto/300.css';
+@import '@fontsource/roboto/400.css';
+@import '@fontsource/roboto/500.css';
+@import '@fontsource/roboto/700.css';
 
 :root {
   --color-primary-blue: #3e63f6;
