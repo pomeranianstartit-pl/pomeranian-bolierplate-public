@@ -11,6 +11,8 @@
     "@testing-library/jest-dom": "^5.16.5",
     "@testing-library/react": "^13.4.0",
     "@testing-library/user-event": "^13.5.0",
+    "axios": "^1.4.0",
+    "lodash": "^4.17.21",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-router-dom": "^6.8.2",
@@ -44,6 +46,7 @@
   },
   "devDependencies": {
     "eslint-plugin-prettier": "^4.2.1",
+    "json-loader": "^0.5.7",
     "prettier": "^2.8.4"
   }
 }

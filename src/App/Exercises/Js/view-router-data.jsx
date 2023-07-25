@@ -10,6 +10,15 @@ import { blockRouterMetaData as blockRouterMetaDataJsArraysBasics } from './JsAr
 //import { blockRouterMetaData as blockRouterMetaDataExerciseJsFunctions } from './ExerciseJsFunctions/router-data'; TODO:what did I messed?
 import { blockRouterMetaData as blockRouterMetaDataExerciseJsFunctions2 } from './Exercise-js-functions/ExerciseJsFunctions2/router-data';
 import { blockRouterMetaData as blockRouterMetaDataTime } from './Time/router-data';
+import { blockRouterMetaData as blockRouterMetaDatahitTheMoleGame } from './hitTheMoleGame/router-data';
+import { blockRouterMetaData as blockRouterMetaDataMemoGame } from './memoGame/router-data';
+import { blockRouterMetaData as blockRouterMetaDataJsStorage } from './Exercise-js-local-storage/router-data';
+import { blockRouterMetaData as blockRouterMetaDataSavedInput } from './SavedInput/router-data';
+import { blockRouterMetaData as blockRouterMetaDataTryCatchAndFinally } from './TryCatchAndFinally/router-data';
+import { blockRouterMetaData as blockRouterMetaDataJsPrototypes } from './JsPrototypes/router-data';
+import { blockRouterMetaData as blockRouterMetaDataJsThis } from './JsThis/router-data';
+import { blockRouterMetaData as blockRouterMetaDataJsPromises } from './Exercise-js-promises/router-data';
+
 export const blockRouterMetaData = [
   blockRouterMetaDataJsVariables1,
   blockRouterMetaDataJsVariables2,
@@ -21,5 +30,13 @@ export const blockRouterMetaData = [
   //blockRouterMetaDataExerciseJsFunctions,
   blockRouterMetaDataExerciseJsFunctions2,
   blockRouterMetaDataTime,
+  blockRouterMetaDatahitTheMoleGame,
+  blockRouterMetaDataMemoGame,
+  blockRouterMetaDataJsStorage,
+  blockRouterMetaDataSavedInput,
+  blockRouterMetaDataTryCatchAndFinally,
+  blockRouterMetaDataJsPrototypes,
+  blockRouterMetaDataJsThis,
+  blockRouterMetaDataJsPromises,
 ];
 export const blockRouterData = getParsedRouterDataList(blockRouterMetaData);

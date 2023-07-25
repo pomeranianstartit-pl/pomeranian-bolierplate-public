@@ -25,9 +25,9 @@ export const ExerciseNumberIf = () => {
 
   const result = a > b;
   const result2 = a < b;
-  const result4 = (a) => b;
+  // const result4 = (a) => b;
   const result3 = a <= b;
-  const result5 = a === b; //porównywanie liczb
+  // const result5 = a === b; //porównywanie liczb
   console.log('result', result, result2, result3);
 
   // parse ------------------------------------------------------------

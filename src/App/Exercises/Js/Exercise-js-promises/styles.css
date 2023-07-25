@@ -1,0 +1,65 @@
+.continer--api-promises {
+}
+
+.container--grid-wrapper {
+  display: flex;
+  flex-flow: row wrap;
+  gap: 8px;
+  padding: 16px;
+}
+
+.container--grid-wrapper .container--grid-tile {
+  text-transform: capitalize;
+  font-weight: bold;
+  border: 1px solid;
+  padding: 8px;
+  border-radius: 8px;
+  flex: 0 0 calc((100% / 3) - calc(8px * 2) / 3);
+  background-color: #d3d3d3;
+}
+
+.container--grid-wrapper .container--grid-tile img {
+  max-width: 100px;
+  max-height: 100px;
+  display: flex;
+  margin: 0 auto;
+}
+
+.container--grid-wrapper .container--grid-tile ul li img {
+  width: 50px;
+  height: 50px;
+  margin-right: 1rem;
+}
+
+.dedicated-background--fire {
+  background-color: rgb(255, 190, 164) !important;
+}
+
+.dedicated-background--grass {
+  background-color: lightgreen !important;
+}
+
+.dedicated-background--water {
+  background-color: lightblue !important;
+}
+
+.dedicated-background--bug {
+  background-color: greenyellow !important;
+}
+
+.dedicated-background--psyhic {
+  background-color: orangered !important;
+}
+
+.dedicated-background--ghost {
+  background-color: orangered !important;
+}
+.dedicated-background--fly {
+  background-color: orangered !important;
+}
+.dedicated-background--rock {
+  background-color: orangered !important;
+}
+.dedicated-background--electric {
+  background-color: lightyellow !important;
+}
