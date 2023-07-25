@@ -49,6 +49,9 @@ export function Exercise() {
     if (string.length < 10) {
       return true;
     }
+
+    // else return false;
+
     if (string.lenght >= 10) return false;
   }
 
