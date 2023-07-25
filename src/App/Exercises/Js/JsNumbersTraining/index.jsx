@@ -108,11 +108,8 @@ export function Exercise() {
 
   function losowaLiczbaZakres(min, max) {
     const losowaLiczba = Math.random();
-
     const zakres = max - min;
-
     const przesuniecie = losowaLiczba * zakres;
-
     const wynik = min + przesuniecie;
 
     return wynik;
@@ -128,11 +125,8 @@ export function Exercise() {
   //Ćwiczenie 8a
   function losowaLiczbaCalkowitaZakres(min, max) {
     const losowaLiczbaCalkowita = Math.random();
-
     const zakres = max - min;
-
     const przesuniecie = losowaLiczbaCalkowita * zakres;
-
     const wynik = Math.floor(min + przesuniecie);
 
     return wynik;
