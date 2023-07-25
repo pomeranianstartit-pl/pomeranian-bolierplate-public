@@ -144,21 +144,89 @@ export function Exercise() {
   console.log(getRandom()); // Output: A random number between 1 and 5 (e.g., 3, 1, 5, etc.)
 
   // exercise 8A
-  function getRandom() {
+  function getRandomA() {
     const numbers = [1, 2, 3, 4, 5];
     const randomIndex = Math.floor(Math.random() * numbers.length);
     return numbers[randomIndex];
   }
 
   // Example:
-  console.log(getRandom()); // Output: A random number from the group (1, 2, 3, 4, 5)
+  console.log(getRandomA()); // Output: A random number from the group (1, 2, 3, 4, 5)
 
   //exercise 8B
 
-  function getRandom(x, y) {
+  function getRandomB(x, y) {
     return Math.floor(Math.random() * (y - x + 1)) + x;
   }
 
   // Example:
-  console.log(getRandom(1, 5)); // Output: A random whole number between 1 and 5 (e.g., 3, 1, 5, etc.)
+  console.log(getRandomB(1, 5)); // Output: A random whole number between 1 and 5 (e.g., 3, 1, 5, etc.)
+
+  //exercise 9
+
+  function calculateAverage(num1, num2) {
+    if (typeof num1 !== 'number' || typeof num2 !== 'number') {
+      return 'Incorrect data';
+    }
+
+    return (num1 + num2) / 2;
+  }
+
+  // Test cases
+  console.log(calculateAverage(10, 20)); // Output: 15
+  console.log(calculateAverage(5, 7.5)); // Output: 6.25
+  console.log(calculateAverage('hello', 7)); // Output: Incorrect data
+
+  //exercise 10
+
+  function absoluteValue(number) {
+    if (number >= 0) {
+      return number;
+    } else {
+      return -number;
+    }
+  }
+
+  // Test cases
+  console.log(absoluteValue(5)); // Output: 5
+  console.log(absoluteValue(-10)); // Output: 10
+  console.log(absoluteValue(0)); // Output: 0
+
+  //exercise 11
+  function isDivisibleBy3Or5(number) {
+    return number % 3 === 0 || number % 5 === 0;
+  }
+
+  // Test cases
+  console.log(isDivisibleBy3Or5(9)); // Output: true (9 is divisible by 3)
+  console.log(isDivisibleBy3Or5(10)); // Output: true (10 is divisible by 5)
+  console.log(isDivisibleBy3Or5(7)); // Output: false (7 is not divisible by 3 or 5)
+  console.log(isDivisibleBy3Or5(15)); // Output: true (15 is divisible by both 3 and 5)
+
+  //exercise 12
+
+  function isPrime(x) {
+    if (!Number.isInteger(x)) {
+      return 'Incorrect value';
+    }
+
+    if (x <= 1) {
+      return false;
+    }
+
+    for (let i = 2; i <= Math.sqrt(x); i++) {
+      if (x % i === 0) {
+        return false;
+      }
+    }
+
+    return true;
+  }
+
+  // Test cases
+  console.log(isPrime(7)); // Output: true (7 is a prime number)
+  console.log(isPrime(15)); // Output: false (15 is not a prime number)
+  console.log(isPrime(2)); // Output: true (2 is a prime number)
+  console.log(isPrime(0)); // Output: false (0 is not a prime number)
+  console.log(isPrime(3.5)); // Output: Incorrect value (not an integer)
 }
