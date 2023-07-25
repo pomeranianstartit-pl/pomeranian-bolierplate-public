@@ -159,11 +159,9 @@ export const MemoGame = () => {
     if (card.isGuessed) {
       classes.push('guessed');
     }
-
     if (!card.isVisible && !card.isGuessed) {
       classes.push('closed');
     }
-
     return classes.join(' ');
   }
 

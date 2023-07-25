@@ -12,6 +12,12 @@ import { blockRouterMetaData as blockRouterMetaDataExerciseJsFunctions2 } from '
 import { blockRouterMetaData as blockRouterMetaDataTime } from './Time/router-data';
 import { blockRouterMetaData as blockRouterMetaDatahitTheMoleGame } from './hitTheMoleGame/router-data';
 import { blockRouterMetaData as blockRouterMetaDataMemoGame } from './memoGame/router-data';
+import { blockRouterMetaData as blockRouterMetaDataJsStorage } from './Exercise-js-local-storage/router-data';
+import { blockRouterMetaData as blockRouterMetaDataSavedInput } from './SavedInput/router-data';
+import { blockRouterMetaData as blockRouterMetaDataTryCatchAndFinally } from './TryCatchAndFinally/router-data';
+import { blockRouterMetaData as blockRouterMetaDataJsPrototypes } from './JsPrototypes/router-data';
+import { blockRouterMetaData as blockRouterMetaDataJsThis } from './JsThis/router-data';
+
 export const blockRouterMetaData = [
   blockRouterMetaDataJsVariables1,
   blockRouterMetaDataJsVariables2,
@@ -25,5 +31,10 @@ export const blockRouterMetaData = [
   blockRouterMetaDataTime,
   blockRouterMetaDatahitTheMoleGame,
   blockRouterMetaDataMemoGame,
+  blockRouterMetaDataJsStorage,
+  blockRouterMetaDataSavedInput,
+  blockRouterMetaDataTryCatchAndFinally,
+  blockRouterMetaDataJsPrototypes,
+  blockRouterMetaDataJsThis,
 ];
 export const blockRouterData = getParsedRouterDataList(blockRouterMetaData);
