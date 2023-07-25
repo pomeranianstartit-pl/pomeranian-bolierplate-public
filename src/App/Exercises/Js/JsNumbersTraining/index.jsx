@@ -94,7 +94,7 @@ export function Exercise() {
   function wykonajCwiczenie5() {
     console.log(`Wynik ćwiczenia5: ${maxLiczba(4, 7)}`);
   }
-  //Ćwiczenie6- sumFloat(3.141592, 2.141592) -> 42.1014
+  //Ćwiczenie6- sumFloat(3.141592, 2.141592)
 
   const sum = 3.141592 + 2.141592;
   console.log(sum.toFixed(4));
@@ -171,9 +171,9 @@ export function Exercise() {
       <h1>Cwiczenie 4</h1>
       <button onClick={wykonajCwiczenie4}>Ćwiczenie - ocena</button>
       <h1>Cwiczenie 5</h1>
-      <button onClick={wykonajCwiczenie5}>Ćwiczenie5</button>
+      <button onClick={wykonajCwiczenie5}>Math.max</button>
       <h1>Cwiczenie 6</h1>
-      <button onClick={wykonajCwiczenie6}>Ćwiczenie6</button>
+      <button onClick={wykonajCwiczenie6}>Suma</button>
       <h1>Cwiczenie 8</h1>
       <button onClick={wykonajCwiczenie8}>Ćwiczenie8</button>
       <h1>Cwiczenie 8a</h1>
