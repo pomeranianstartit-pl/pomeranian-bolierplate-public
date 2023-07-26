@@ -49,20 +49,16 @@ export function Exercise() {
 
   console.log(regex.test(email));
 
-  ///cw5 inne
+  ///cw5
   function isPalindrome(email1) {
-    // Usuń spacje i przekształć wszystkie litery na małe, aby sprawdzenie było case-insensitive
-    const cleanedEmail1 = email1.toLowerCase().replace(/\s/g, '');
-
-    // Odwróć ciąg znaków
+    const cleanedEmail1 = email1.toLowerCase().replace();
     const reversedEmail1 = cleanedEmail1.split('').reverse().join('');
 
-    // Porównaj odwrócony ciąg z oryginałem
     return cleanedEmail1 === reversedEmail1;
   }
-  console.log(isPalindrome('kajak')); // true
-  console.log(isPalindrome('Able was I ere I saw Elba')); // true
-  console.log(isPalindrome('Hello, world!')); // false
-  console.log(isPalindrome('racecar')); // true
-  console.log(isPalindrome('level')); // true
+  console.log(isPalindrome('kajak'));
+  console.log(isPalindrome('Able was I ere I saw Elba'));
+  console.log(isPalindrome('Hello, world!'));
+  console.log(isPalindrome('racecar'));
+  console.log(isPalindrome('level'));
 }
