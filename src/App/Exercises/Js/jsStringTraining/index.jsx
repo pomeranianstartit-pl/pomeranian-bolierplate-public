@@ -45,15 +45,11 @@ export function Exercise() {
   // Wynik: Słowo "przykładowe" powtarza się 2 razy w zdaniu.
 
   //4
-  function czyPoprawnyAdresEmail(email) {
-    return email.includes('@') && email.includes('.');
-  }
 
-  // Testujemy funkcję
-  console.log(czyPoprawnyAdresEmail('jan.kowalski@example.com')); // Wyświetli: true
-  console.log(czyPoprawnyAdresEmail('user@domain')); // Wyświetli: false
-  console.log(czyPoprawnyAdresEmail('example.com')); // Wyświetli: false
-  console.log(czyPoprawnyAdresEmail('user@domain .com')); // Wyświetli: false
+  const regex = new RegExp('^[a-zA-Z0-9_.-]+@[a-zA-Z0-9.-]+.[a-zA-Z]{2,3}');
+  let email = 'magda@gadomska.pl';
+
+  console.log(regex.test(email));
 
   //5
   function czyPalindrom(ciagZnakow) {
@@ -72,6 +68,6 @@ export function Exercise() {
   // Testujemy funkcję
   console.log(czyPalindrom('kajak')); // Wyświetli: true
   console.log(czyPalindrom('Anna')); // Wyświetli: true
-  console.log(czyPalindrom('Ala ma kota')); // Wyświetli: true
+  console.log(czyPalindrom('Ala ma kota')); // Wyświetli: false
   console.log(czyPalindrom('Java')); // Wyświetli: false
 }
