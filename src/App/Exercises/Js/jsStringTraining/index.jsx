@@ -16,8 +16,8 @@ export function Exercise() {
     return tekst.substr(0, x);
   }
 
-  const tekstDlugi = 'To jest długi tekst';
-  const wynik1 = obcinaTekst(tekstDlugi, 7);
+  const tekstDlugi = 'What I`d like to tell on this topic is';
+  const wynik1 = obcinaTekst(tekstDlugi, 20);
   console.log(wynik1);
 
   //3
@@ -35,14 +35,12 @@ export function Exercise() {
     return licznikPowtorzen;
   }
 
-  const zdanie =
-    'To jest przykładowe zdanie, a to jest drugie przykładowe zdanie.';
-  const slowoSzukane = 'przykładowe';
+  const zdanie = 'hello world, hello people, hello you';
+  const slowoSzukane = 'hello';
   const iloscPowtorzen = liczPowtorzeniaSlowa(zdanie, slowoSzukane);
   console.log(
     `Słowo "${slowoSzukane}" powtarza się ${iloscPowtorzen} razy w zdaniu.`
   );
-  // Wynik: Słowo "przykładowe" powtarza się 2 razy w zdaniu.
 
   //4
 
@@ -51,23 +49,20 @@ export function Exercise() {
 
   console.log(regex.test(email));
 
-  //5
-  function czyPalindrom(ciagZnakow) {
-    const ciagBezSpacji = ciagZnakow.replace(/\s/g, '').toLowerCase();
-    const dlugosc = ciagBezSpacji.length;
+  ///cw5 inne
+  function isPalindrome(email1) {
+    // Usuń spacje i przekształć wszystkie litery na małe, aby sprawdzenie było case-insensitive
+    const cleanedEmail1 = email1.toLowerCase().replace(/\s/g, '');
 
-    for (let i = 0; i < dlugosc / 2; i++) {
-      if (ciagBezSpacji[i] !== ciagBezSpacji[dlugosc - 1 - i]) {
-        return false;
-      }
-    }
+    // Odwróć ciąg znaków
+    const reversedEmail1 = cleanedEmail1.split('').reverse().join('');
 
-    return true;
+    // Porównaj odwrócony ciąg z oryginałem
+    return cleanedEmail1 === reversedEmail1;
   }
-
-  // Testujemy funkcję
-  console.log(czyPalindrom('kajak')); // Wyświetli: true
-  console.log(czyPalindrom('Anna')); // Wyświetli: true
-  console.log(czyPalindrom('Ala ma kota')); // Wyświetli: false
-  console.log(czyPalindrom('Java')); // Wyświetli: false
+  console.log(isPalindrome('kajak')); // true
+  console.log(isPalindrome('Able was I ere I saw Elba')); // true
+  console.log(isPalindrome('Hello, world!')); // false
+  console.log(isPalindrome('racecar')); // true
+  console.log(isPalindrome('level')); // true
 }
