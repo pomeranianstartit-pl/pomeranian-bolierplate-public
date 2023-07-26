@@ -2,7 +2,7 @@ import './styles.css';
 
 export const Blog = () => {
   return (
-    <div className="blog">
+    <div className="blog" id="Blog">
       <div className="date">30-11-2022</div>
       <h1>&gt;Blog</h1>
       <section className="blog-post">

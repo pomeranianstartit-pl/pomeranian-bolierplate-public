@@ -30,6 +30,14 @@ h2 {
     margin-bottom: 36px;
 }
 
+#Blog:hover {
+    color: white;
+    background: var(--secondary-secondary, #23213D);
+
+
+
+}
+
 .blog p {
     color: var(--text-text-primary, #222);
     font-size: 16px;
