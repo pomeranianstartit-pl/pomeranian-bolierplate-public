@@ -11,6 +11,7 @@ import { CV } from './App/CV';
 import { Calendar } from './App/Calendar';
 import { Blog } from './App/Blog/Blog';
 import { FAQ } from './App/FAQ/FAQ';
+import { TechStack } from './App/Components/TechStack/TechStack';
 
 export function App() {
   return (
@@ -19,6 +20,7 @@ export function App() {
         <Route path="" element={<Layout withSidebar />}>
           <Route index element={<Navigate to="dashboard" />} />
           <Route path="dashboard/*" element={<Dashboard />} />
+          <Route path="dashboard/tech-stack/*" element={<TechStack />} />
           <Route path="exercises/*" element={<Exercises />} />
           <Route path="blocks/*" element={<Blocks />} />
           <Route path="CV/*" element={<CV />} />
