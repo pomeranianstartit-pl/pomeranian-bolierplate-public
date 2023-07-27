@@ -57,6 +57,7 @@ export const CookieBanner = () => {
         <button className="accept-cookies" onClick={handleCookies}>
           W porządku
         </button>
+        {/* <button className="accept-cookies">klikaj na lewo</button> */}
       </div>
     </div>
   );
