@@ -8,7 +8,7 @@ export function Exercise() {
     return wspolne;
   }
   const tablica1 = [1, 2, 3, 4, 5];
-  const tablica2 = [3, 4, 5, 6, 7];
+  const tablica2 = [3, 5, 7, 9];
 
   const wynik = wspolneElementy(tablica1, tablica2);
   console.log(wynik);
@@ -23,42 +23,39 @@ export function Exercise() {
     const srednia = suma / tablica.length;
     return srednia;
   }
-  const tablicaLiczb = [10, 20, 30, 40, 50];
+  const tablicaLiczb = [1, 2, 3, 4, 5, 6];
   const wynikSredniej = srednia(tablicaLiczb);
   console.log(wynikSredniej);
   //3-3
-  function utworzTablice2D(x, y) {
-    const tablica2D = [];
+  function averageFromArray(x, y) {
+    // Tworzenie pustej dwuwymiarowej tablicy
+    const twoDimensionalArray = [];
 
+    // Wypełnianie tablicy zerami
     for (let i = 0; i < x; i++) {
-      const wiersz = [];
-      for (let j = 0; j < y; j++) {
-        wiersz.push(0);
-      }
-      tablica2D.push(wiersz);
+      twoDimensionalArray.push(Array(y).fill(0));
     }
 
-    return tablica2D;
-    console.log(tablica2D(3, 4));
-    const wymiarX = 3;
-    const wymiarY = 4;
-    const dwuwymiarowaTablica = utworzTablice2D(wymiarX, wymiarY);
-    console.log(dwuwymiarowaTablica);
-
-    [
-      [0, 0, 0, 0],
-      [0, 0, 0, 0],
-      [0, 0, 0, 0],
-    ];
+    return twoDimensionalArray;
   }
+  console.log(averageFromArray(1, 1));
+  console.log(averageFromArray(1, 2));
+
+  //3-3a inne wyjscie z neta:
+  const averageFromArray1 = (x, y) =>
+    Array.from({ length: x }, () => Array(y).fill(0));
+
+  console.log(averageFromArray1(1, 1));
+  console.log(averageFromArray1(1, 2));
+
   //3-4
-  function odwrocTablice(tablica) {
-    return tablica.reverse();
-
-    const tablicaLiczb = [1, 2, 3, 4, 5];
-    const odwroconaTablica = odwrocTablice(tablicaLiczb);
-    console.log(odwroconaTablica); // Wyświetli: [5, 4, 3, 2, 1]
+  function reverseArray(array) {
+    return array.reverse();
   }
+
+  const TablicaA = [1, 2, 3, 4, 5];
+  const odwroconaTablicaA = reverseArray(TablicaA);
+  console.log(odwroconaTablicaA);
 
   //3-5
   function pobierzImiona(osoby) {
@@ -66,9 +63,9 @@ export function Exercise() {
     return imiona;
   }
   const osoby = [
-    { imie: 'Jan', wiek: 25 },
-    { imie: 'Anna', wiek: 30 },
-    { imie: 'Piotr', wiek: 22 },
+    { imie: 'John', wiek: 25 },
+    { imie: 'Emily', wiek: 30 },
+    { imie: 'Peter', wiek: 22 },
   ];
 
   const imionaOsob = pobierzImiona(osoby);
@@ -88,7 +85,6 @@ export function Exercise() {
     return camelCase;
   }
 
-  // Przykład użycia:
   const inputStr = 'to jest przykładowy string';
   const result = toCamelCase(inputStr);
   console.log(result);
