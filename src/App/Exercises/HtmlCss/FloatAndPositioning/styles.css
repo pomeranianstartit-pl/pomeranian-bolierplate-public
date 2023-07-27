@@ -1,0 +1,85 @@
+main {
+    background-color: rgb(185, 224, 211);
+    display: flex;
+    justify-content: center;
+    position: relative;
+}
+
+.text {
+    background-color: rgb(151, 139, 146);
+    /* display: block; */
+    margin: 1.5rem;
+    padding: 1.2rem;
+    border: 2px solid black;
+}
+
+.text2 {
+    position: relative;
+}
+
+.wolf {
+    width: 150px;
+    height: 150px;
+    float: left;
+    margin-right: 15px;
+}
+
+button {
+    display: flex;
+    padding: 5px 75px;
+    /* align-items: flex-start; */
+    gap: 10px;
+    background-color: black;
+    color: aliceblue;
+    border: 1px solid white;
+    margin: 0 auto;
+}
+
+.box {
+    width: 150px;
+    height: 150px;
+    background: #53cc4385;
+
+}
+
+.box-container {
+    position: relative;
+    /* display: flow-root; */
+    justify-content: space-around;
+    width: 100%;
+    border: 1px dashed blueviolet;
+    padding: 10px;
+    overflow: auto;
+    height: 20vw;
+
+}
+
+.box1 {
+    position: absolute;
+    left: 5px;
+    bottom: 5px;
+    background: #C8CBD1;
+}
+
+.box2 {
+    position: absolute;
+    left: 30px;
+    bottom: 30px;
+    background: #999;
+}
+
+.box3 {
+    position: absolute;
+    left: 55px;
+    bottom: 55px;
+    background: #6B7280;
+}
+
+.pop-up {
+    position: absolute;
+    right: -20px;
+    top: -20px;
+    width: 200px;
+    background: #c3d618;
+    border: 1px solid black;
+}
