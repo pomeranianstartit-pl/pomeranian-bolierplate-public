@@ -1,9 +1,16 @@
 import './styles.css';
 import snowWolf from '../../../Images/snow-wolf.png';
 
+function setCookies() {
+  localStorage.setItem('cookieState', 1);
+}
+function getCookies() {
+  localStorage.getItem('cookieState');
+}
+
 export const FloatAndPositioning = () => {
   return (
-    <div className="main">
+    <div className="main-float" id="main-float">
       <div className="text text1">
         NullLorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent
         ullamcorper ex mattis, convallis turpis eget, tempus sapien. Nunc

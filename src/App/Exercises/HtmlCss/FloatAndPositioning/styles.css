@@ -1,7 +1,8 @@
-main {
-    background-color: rgb(185, 224, 211);
-    display: flex;
-    justify-content: center;
+#main-float {
+    background-color: rgb(205, 231, 223);
+    padding: 20px;
+    /* display: flex;
+    justify-content: center; */
     position: relative;
 }
 
