@@ -38,10 +38,16 @@ export function GoogleFonts() {
         deserunt veniam tenetur saepe exercitationem corporis?
       </p>
       <p>{font}</p>
-      <button onClick={() => handleChangeFont('font-poppins')}>
+      <button
+        className="button-1"
+        onClick={() => handleChangeFont('font-poppins')}
+      >
         Change font poppins
       </button>{' '}
-      <button onClick={() => handleChangeFont('font-petit-formal')}>
+      <button
+        className="button-2"
+        onClick={() => handleChangeFont('font-petit-formal')}
+      >
         Change font petit formal
       </button>
     </div>
