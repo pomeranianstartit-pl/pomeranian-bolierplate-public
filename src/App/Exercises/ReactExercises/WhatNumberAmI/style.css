@@ -1,0 +1,49 @@
+.font-test-family {
+  font-family: Poppins;
+}
+
+.cwiczenie-3 {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+.startButton {
+  background-color: #FE3756;
+  width: 326px;
+  height: 56px;
+  color: #fff;
+  padding: 20px 36px;
+  border: 1px solid var(--primary-primary, #FE3756);
+  border-radius: 8px;
+  cursor: pointer;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+
+
+.inputText {
+  display: flex;
+  width: 144px;
+  height: 48px;
+  padding: 13px 16px;
+  align-items: center;
+  align-self: stretch;
+  border-radius: 5px;
+  border: 1px solid var(--grey-300, #C8CBD1);
+  background: #FFF;
+}
+
+.restButton {
+  color: #fff;
+  width: 326px;
+  height: 56px;
+  padding: 20px 36px;
+  border: 1px solid var(--secondary-secondary, #23213D);
+background: var(--secondary-secondary, #23213D);
+  border-radius: 8px;
+  cursor: pointer;
+  text-transform: uppercase;
+  font-weight: bold;
+}
