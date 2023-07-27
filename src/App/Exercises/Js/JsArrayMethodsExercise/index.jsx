@@ -40,6 +40,15 @@ export function Exercise() {
   const result = commonLetters(word1, word2);
   console.log(result);
 
+  //function commonLetters(str1, str2) {
+  // const letters1 = new Set(str1)
+  // const letters2 = new Set(str2)
+
+  // return Array.from(letters1).filter(letter => letters2.has(letter));
+  //}
+
+  //console.log(commonLetters('hello', 'world'))
+
   //Strings Exercise 3
   function countVowels(word) {
     const vowels = 'aeiouAEIOU';
@@ -61,36 +70,37 @@ export function Exercise() {
   const result1 = wordLengths(wordsArray);
   console.log(result1); // Output: [2, 3, 3]
 
+  // function countVowels(word) {
+  // const vowels = new Set(['a', 'u','i','o','e', 'y'])
+  //  return Array.from(word.toLowerCase()).filter((letter) => vowels.has(letter)).length;
+  //}
+
+  //function wordLengths(words) {
+  // return words.map(word => countVowels(word))
+  //}
+
+  //console.log(wordLengths(['apple', 'banana']))
+
   //Strings Exercise 4
-  function countLetters(word) {
-    const letterCount = {};
-    for (const char of word) {
-      letterCount[char] = (letterCount[char] || 0) + 1;
-    }
-    return letterCount;
+  function isAnagram(firstWord, secondWord) {
+    let firstWordArray = firstWord.split('').sort();
+    let secondWordArray = secondWord.split('').sort();
+
+    return firstWordArray.toString() === secondWordArray.toString()
+      ? true
+      : false;
   }
+  console.log('Ćw. 5.4:  ' + isAnagram('iceman', 'cinema'));
 
-  function isAnagram(word3, word4) {
-    if (word3.length !== word4.length) {
-      return false;
-    }
+  //function isAnagram(str1, str2) {
 
-    const letterCount1 = countLetters(word3.toLowerCase());
-    const letterCount2 = countLetters(word4.toLowerCase());
+  //const sortedStr1 = Array.from(str1.toLowerCase()).sort().join()
+  // const sortedStr2 = Array.from(str2.toLowerCase()).sort().join()
 
-    for (const char in letterCount1) {
-      if (letterCount1[char] !== letterCount2[char]) {
-        return false;
-      }
-    }
+  // return sortedStr1 === sortedStr2
+  //}
 
-    return true;
-  }
-
-  const word3 = 'iceman';
-  const word4 = 'cinema';
-  const result2 = isAnagram(word3, word4);
-  console.log(result2); // Output: true
+  console.log(isAnagram('iceman', 'nameci'));
 
   //Arrays Exercises: 1
 
@@ -103,4 +113,92 @@ export function Exercise() {
   const array2 = [3, 4, 5, 6, 7];
   const result3 = sameNumbers(array1, array2);
   console.log(result3); // Output: [3, 4, 5]
+
+  //Arrays: exercise 2
+  function averageFromArray(arr) {
+    if (!Array.isArray(arr) || arr.length === 0) {
+      throw new Error('Input must be a non-empty array.');
+    }
+
+    const sum = arr.reduce((acc, num) => acc + num, 0);
+    const average = sum / arr.length;
+
+    return average;
+  }
+
+  const numbers4 = [1, 2, 3, 4, 5, 6];
+  const result4 = averageFromArray(numbers4);
+  console.log(result4); // Output: 3.5
+
+  //Arrays: exercise 3
+
+  function twoDimensionalArray(x, y) {
+    if (x <= 0 || y <= 0) {
+      throw new Error('Dimensions x and y must be greater than 0.');
+    }
+
+    const resultArray = [];
+
+    for (let i = 0; i < x; i++) {
+      const row = [];
+      for (let j = 0; j < y; j++) {
+        row.push(0);
+      }
+      resultArray.push(row);
+    }
+
+    return resultArray;
+  }
+
+  //function create2DArray(x, y) {
+  // return Array.from({length: x}, () => Array.from({length: y}, () => 0));
+  //}
+
+  //console.log(create2DArray(3,5))
+
+  //Arrays: exercise 4
+
+  function reverseFun(numbers6) {
+    if (!Array.isArray(numbers6)) {
+      throw new Error('Input must be an array.');
+    }
+
+    return numbers6.reverse();
+  }
+
+  // Example usage:
+  const numbers6 = [1, 2, 3, 4, 5];
+  const reversedNumbers = reverseFun(numbers6);
+  console.log(reversedNumbers); // Output: [5, 4, 3, 2, 1]
+
+  // Example usage:
+  console.log(twoDimensionalArray(1, 1)); // Output: [[0]]
+  console.log(twoDimensionalArray(1, 2)); // Output: [[0, 0]]
+
+  //function reverseFunction(arr) {
+  // return arr.reverse()
+  //}
+
+  //console.log(reverseFunction([1,2,3,4,5,6]))
+
+  //Arrays: exercise 5
+
+  const people = [
+    { name: 'John', age: '14' },
+    { name: 'Emily', age: '20' },
+    { name: 'Peter', age: '28' },
+  ];
+
+  function getNames(people) {
+    return people.map((person) => person.name);
+  }
+
+  const namesOnly = getNames(people);
+  console.log(namesOnly); // Output: ['John', 'Emily', 'Peter']
+
+  //unction getNames(people) {
+  //return people.map(person => person.name)
+  //}
+
+  //console.log(getNames([{name: 'John', age:20 },{name: 'Adam', age:24 }]))
 }
