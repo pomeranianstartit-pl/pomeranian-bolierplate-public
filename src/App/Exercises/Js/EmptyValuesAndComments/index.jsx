@@ -154,7 +154,6 @@ export const EmptyValuesAndComments = () => {
     let arrayText = text.split(' ');
     console.log(arrayText);
     for (const i of arrayText) {
-      console.log(i);
       if (i === word) {
         sum++;
       }
