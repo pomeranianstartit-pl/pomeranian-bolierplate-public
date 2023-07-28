@@ -8,6 +8,11 @@ import { blockRouterMetaData as IfSwitch } from './IfSwitch/router-data';
 import { blockRouterMetaData as Numbers } from './Numbers/router-data';
 import { blockRouterMetaData as JsNumbersTraining } from './JsNumbersTraining/router-data';
 import { blockRouterMetaData as EmptyValuesAndComments } from './EmptyValuesAndComments/router-data';
+import { blockRouterMetaData as JsArraysBasics } from './JsArraysBasics/router-data';
+import { blockRouterMetaData as JsArrayMethodsExercise } from './JsArrayMethodsExercise/router-data';
+import { blockRouterMetaData as JsStringsAsArrays } from './JsStringsAsArrays/router-data';
+import { blockRouterMetaData as JsObjectsBasics } from './JsObjectsBasics/router-data';
+import { blockRouterMetaData as JsDateTime } from './JsDateTime/router-data';
 
 export const blockRouterMetaData = [
   blockRouterMetaDataJsVariables1,
@@ -18,5 +23,10 @@ export const blockRouterMetaData = [
   Numbers,
   JsNumbersTraining,
   EmptyValuesAndComments,
+  JsArraysBasics,
+  JsArrayMethodsExercise,
+  JsStringsAsArrays,
+  JsObjectsBasics,
+  JsDateTime,
 ];
 export const blockRouterData = getParsedRouterDataList(blockRouterMetaData);
