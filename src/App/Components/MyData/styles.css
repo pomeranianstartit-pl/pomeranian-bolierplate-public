@@ -4,10 +4,18 @@
     border: 1px solid white;
     border-radius: 15px;
     margin-left: 0px;
-    display: flex;
-    align-items: flex-start;
+    /* display: flex;
+    align-items: flex-start; */
 
 
+}
+
+figure {
+    display: block;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 10px;
+    margin-inline-end: 10px;
 }
 
 .dashboard-about-me {
@@ -15,26 +23,29 @@
     display: flex;
     flex-wrap: wrap;
     flex-direction: column;
-    align-items: flex-start;
-    margin-left: 70vw;
-    /* justify-content: center; */
+    /* align-items: flex-start; */
+    width: 25em;
+    height: 30em;
+    /* margin-left: 70vw; */
+    justify-content: center;
 
-    /* display: flex;
-width: 334px;
-height: 360px;
-flex-direction: column;
-justify-content: center;
-align-items: center;
-flex-shrink: 0; */
 }
 
-/* .person {
-    border: 1px solid black;
-    display: flex;
+.name {
+    margin-left: 10px;
+    /* margin-inline-end: 10px; */
+}
+
+.person {
+    margin: 0%;
+    /* padding-left: 0%; */
+    /* width: 100em; */
+    /* border: 1px solid black; */
+    /* display: flex;
     flex-direction: column;
-    align-items: flex-start;
-    margin-left: 70vw;
-} */
+    align-items: flex-start; */
+    /* margin-left: 70vw; */
+}
 
 .person {
 
