@@ -12,20 +12,21 @@ export const MyData = () => {
             title="moje foto"
           />
         </figure>
-      </div>
-      <div className="name">
-        {' '}
-        <p>Sick Boy</p>
-        <p>Acid Drinker</p>
-      </div>
-      <div className="email-container">
-        <p>email:</p>
-        <p>maciej.dojlido@gmail.com</p>
-      </div>
 
-      <div className="telephone-container">
-        <p>telefon:</p>
-        <p>111 222 333</p>
+        <div className="name">
+          {' '}
+          <p>Sick Boy</p>
+          <p>Acid Drinker</p>
+        </div>
+        <div className="email-container">
+          <p>email:</p>
+          <p>maciej.dojlido@gmail.com</p>
+        </div>
+
+        <div className="telephone-container">
+          <p>telefon:</p>
+          <p>111 222 333</p>
+        </div>
       </div>
     </div>
   );
