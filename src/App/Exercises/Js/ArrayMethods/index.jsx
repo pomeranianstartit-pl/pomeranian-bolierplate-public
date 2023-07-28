@@ -73,8 +73,8 @@ export function Exercise() {
 
   //CW 5
   //5-1
-  function toCamelCase(inputString) {
-    const words = inputString.split(' ');
+  function toCamelCase(String) {
+    const words = String.split(' ');
     let camelCase = words[0].toLowerCase();
 
     for (let i = 1; i < words.length; i++) {
@@ -85,8 +85,8 @@ export function Exercise() {
     return camelCase;
   }
 
-  const inputStr = 'to jest przykładowy string';
-  const result = toCamelCase(inputStr);
+  const String = 'to jest przykładowy string';
+  const result = toCamelCase(String);
   console.log(result);
 
   //5-2
@@ -102,6 +102,16 @@ export function Exercise() {
   const str2 = 'World';
   const result2 = commonLetters(str1, str2);
   console.log(result2);
+
+  // szymona
+  function commonLetters(str1, str2) {
+    const letters1 = new Set(str1);
+    const letters2 = new Set(str2);
+
+    return Array.from(letters1).filter((letter) => letters2.has(letter));
+  }
+
+  console.log(commonLetters('hello', 'world'));
   //5-3
 
   function countVowels(wordsArray) {
@@ -128,6 +138,19 @@ export function Exercise() {
   const result3 = countVowels(wordsArray);
   console.log(result3);
 
+  //////szymona
+  function countVowels(word) {
+    const vowels = new Set(['a', 'u', 'i', 'o', 'e', 'y']);
+    return Array.from(word.toLowerCase()).filter((letter) => vowels.has(letter))
+      .length;
+  }
+
+  function wordLengths(words) {
+    return words.map((word) => countVowels(word));
+  }
+
+  console.log(wordLengths(['apple', 'banana']));
+
   //5-4
   function areAnagrams(str1, str2) {
     const normalizeString = (str) => {
@@ -153,4 +176,25 @@ export function Exercise() {
   const result5 = areAnagrams(str4, str6);
   console.log(result4);
   console.log(result5);
+
+  //
+  function isAnagram_simple(word1, word2) {
+    if (word1.length !== word2.length) {
+      return false;
+    }
+
+    const sortedWord1 = word1.split('').sort().join('');
+    const sortedWord2 = word2.split('').sort().join('');
+
+    return sortedWord1 === sortedWord2;
+  }
+  // szymona
+  function isAnagram(str1, str2) {
+    const sortedStr1 = Array.from(str1.toLowerCase()).sort().join();
+    const sortedStr2 = Array.from(str2.toLowerCase()).sort().join();
+
+    return sortedStr1 === sortedStr2;
+  }
+
+  console.log(isAnagram('iceman', 'nameci'));
 }
