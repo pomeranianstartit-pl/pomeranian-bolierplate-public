@@ -158,7 +158,10 @@ export function ArrayAndObjects() {
 
   // 17. METODY NA TABLICACH - reduce -  wykonuje funkcję zwrotną na wszystkich elementach tablicy, aby obliczyć jedną wartość wynikową. Przykład obliczenia sumy elementów
   const reduceNumbers = [1, 2, 3, 4, 5];
-  const sum = reduceNumbers.reduce((acc, curr) => acc + curr, 0);
+  const sum = reduceNumbers.reduce(
+    (accumulator, currentValue) => accumulator + currentValue,
+    0
+  );
   console.log(sum);
 
   // https://www.simplilearn.com/tutorials/javascript-tutorial/array-reduce-javascript
