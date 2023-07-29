@@ -7,6 +7,8 @@ import { Cwiczenie3MetaData } from './Cwiczenie3/router-data';
 import { MoreOrLessMetaData } from './MoreOrLess/router-data';
 import { MoreOrLessAdvancedMetaData } from './MoreOrLessAdvanced/router-data';
 import { MaterialUIBasicElementsMetaData } from './MaterialUIBasicElements/router-data';
+import { MUITemplateDashboardMetaData } from './MUITemplateDashboard/router-data';
+import { ToDoListMetaData } from './ToDoList/router-data';
 
 export const blockRouterMetaData = [
   SubRouteExampleMetaData,
@@ -16,5 +18,7 @@ export const blockRouterMetaData = [
   MoreOrLessMetaData,
   MoreOrLessAdvancedMetaData,
   MaterialUIBasicElementsMetaData,
+  MUITemplateDashboardMetaData,
+  ToDoListMetaData,
 ];
 export const blockRouterData = getParsedRouterDataList(blockRouterMetaData);
