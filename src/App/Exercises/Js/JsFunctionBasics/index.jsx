@@ -6,6 +6,7 @@ function newObj(props) {
 
 function f1(number1, number2) {}
 const f2 = () => {};
+const f3 = () => {};
 
 function multiplyBy(factor = 1, ...rest) {
   return rest.map((number) => number * factor).join(',');
@@ -17,10 +18,12 @@ function tags(...tags) {
 
 export function ExampleComponent(obj) {
   const args = [3, 'react', 8, 'js', JSON.stringify({ foo: 'bar' })];
+
   return (
     <>
       <div>{multiplyBy(obj.factor, obj.x, 3, 4, 5, 6, 7, 8)}</div>
       <div>{tags(...args)}</div>
+      <div>{`${f2 === f3}`}</div>
     </>
   );
 }
