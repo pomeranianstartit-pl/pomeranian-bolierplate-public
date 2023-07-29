@@ -12,6 +12,11 @@ import { blockRouterMetaDataJsStringsAsArrays } from './JsStringsAsArrays/router
 import { blockRouterMetaDataJsObjectsBasics } from './JsObjectsBasics/router-data';
 import { blockRouterMetaDataJsDateTime } from './JsDateTime/router-data';
 import { blockRouterMetaDataNumbersTraining } from './NumbersTraining/router-data';
+import { blockRouterMetaDataJsFunctionBasics } from './JsFunctionBasics/router-data';
+import { blockRouterMetaDataHoisting } from './Hoisting/router-data';
+import { blockRouterMetaDataExerciseJsFunctions } from './ExerciseJsFunctions/router-data';
+import { blockRouterMetaDataBlok22Warmup } from './Blok22Warmup/router-data';
+import { blockRouterMetaDataSetTimeout } from './SetTimeout/router-data';
 import { blockRouterMetaDataEmptyValuesAndComments } from './EmptyValuesAndComments/router-data';
 
 export const blockRouterMetaData = [
@@ -28,5 +33,10 @@ export const blockRouterMetaData = [
   blockRouterMetaDataJsStringsAsArrays,
   blockRouterMetaDataJsObjectsBasics,
   blockRouterMetaDataJsDateTime,
+  blockRouterMetaDataJsFunctionBasics,
+  blockRouterMetaDataHoisting,
+  blockRouterMetaDataExerciseJsFunctions,
+  blockRouterMetaDataBlok22Warmup,
+  blockRouterMetaDataSetTimeout
 ];
 export const blockRouterData = getParsedRouterDataList(blockRouterMetaData);
