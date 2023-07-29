@@ -3,7 +3,15 @@ import './styles.css';
 export const JsArrayMethodsExercise = () => {
   function excercise1() {
     function sameNumbers(tablica1, tablica2) {
-      //TODO
+      const wynik = [];
+      for (let index = 0; index < tablica1.length; index++) {
+        for (let i = 0; i < tablica2.length; i++) {
+          if (tablica1[index] === tablica2[i]) {
+            wynik.push(tablica2[i]);
+          }
+        }
+      }
+      return wynik;
     }
 
     const result = sameNumbers([1, 2, 3, 4, 5], [3, 5, 7, 9]);
@@ -13,8 +21,7 @@ export const JsArrayMethodsExercise = () => {
 
   function excercise2() {
     function averageFromArray(tablica) {
-      let suma = tablica.reduce((acc, curr) => (acc += curr), 0);
-      return suma / tablica.length;
+      return tablica.reduce((acc, curr) => (acc += curr), 0) / tablica.length;
     }
 
     const result = averageFromArray([1, 2, 3, 4, 5, 6]);
@@ -24,10 +31,18 @@ export const JsArrayMethodsExercise = () => {
 
   function excercise3() {
     function twoDimensionalArray(x, y) {
-      //TODO
+      const tablicaX = [];
+      const tablicaY = [];
+      for (let i = 0; i < x; i++) {
+        for (let n = 0; n < y; n++) {
+          tablicaY[n] = 0;
+        }
+        tablicaX[i] = tablicaY;
+      }
+      return tablicaX;
     }
 
-    const result = twoDimensionalArray([1, 2]);
+    const result = twoDimensionalArray(5, 8);
 
     console.log('Excercise 3 result: ', result);
   }
