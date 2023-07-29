@@ -4,8 +4,13 @@ function newObj(props) {
   return { ...props, nested: props.nested ? newObj(props.nested) : undefined };
 }
 
+const f2 = () => {
+  console.log('f2');
+};
+
+f2();
+
 function f1(number1, number2) {}
-const f2 = () => {};
 const f3 = () => {};
 
 function multiplyBy(factor = 1, ...rest) {
