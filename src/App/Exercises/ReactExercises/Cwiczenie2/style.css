@@ -1,0 +1,14 @@
+.blok-8_Cwiczenie2 button{
+  background-color: #FE3756;
+  gap: 16px;
+  display: flex;
+  color: #FFF;
+  height: 56px;
+  width: 326px;
+  justify-content: center;
+  border-radius: 8px;
+  border: 1px solid #FE3756;
+  padding: 20px 36px;
+  cursor: pointer;
+
+}
