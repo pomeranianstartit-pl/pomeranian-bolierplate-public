@@ -34,10 +34,10 @@ function tags(...tags) {
 
 const l1 = 1;
 const l2 = 1;
-console.log(l1 === l2); // true
+// console.log(l1 === l2); // true
 const o1 = {};
 const o2 = {};
-console.log(o1 === o2); // false
+// console.log(o1 === o2); // false
 
 export function ExampleComponent({ factor, x }) {
   return (
