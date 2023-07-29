@@ -1,22 +1,22 @@
 @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Dancing+Script&family=Pacifico&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
 
-.f-roboto{
+.f-roboto {
     font-family: roboto;
     color: red;
 }
 
-.f-pacifico{
+.f-pacifico {
     font-family: 'Pacifico', cursive;
     color: blue;
 }
 
-.f-dancing-script{
-    font-family: 'Dancing Script', cursive;    
+.f-dancing-script {
+    font-family: 'Dancing Script', cursive;
     color: green;
 }
 
-.f-bebas-neue{
-    font-family: 'Bebas Neue', sans-serif;   
+.f-bebas-neue {
+    font-family: 'Bebas Neue', sans-serif;
     color: grey;
 }
 
@@ -26,9 +26,8 @@ button {
     color: white;
     padding: 20px 36px 20px 36px;
     border: 1px solid #FE3756;
-    width: 326px;
     cursor: pointer;
     text-transform: uppercase;
     margin: 1px;
-    
-  }
+
+}
