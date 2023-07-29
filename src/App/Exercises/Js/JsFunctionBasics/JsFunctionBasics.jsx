@@ -59,7 +59,7 @@
   
   
   
-  export function Exercise() {
+  export function JsFunctionBasics() {
   
     const props = {
   
