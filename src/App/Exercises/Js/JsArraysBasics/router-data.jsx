@@ -1,10 +1,10 @@
-import { JsObjectsBasics } from './index';
+import { JsArraysBasics } from './index';
 
 export const blockRouterMetaData = {
-  path: 'js-objects-basics',
+  path: 'js-arrays-basics',
   date: '28-07-2023',
-  linkLabel: 'Obiekty w JavaScript',
+  linkLabel: 'Tablice w js',
   blockNo: 20,
-  element: <JsObjectsBasics />,
-  tags: ['object', 'javascript'],
+  element: <JsArraysBasics />,
+  tags: ['arrays', 'javascript'],
 };
