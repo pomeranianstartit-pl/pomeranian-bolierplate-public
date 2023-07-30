@@ -1,4 +1,5 @@
-import { useState, useEffect } from 'react';
+import { useState } from 'react';
+// import {  useEffect } from 'react';
 import './styles.css';
 const textContent = 'Teraz mnie widać';
 
@@ -16,8 +17,8 @@ export const VanishString = () => {
     }
   }
 
-  function useEffectCallback() { }
-  useEffect(useEffectCallback, []);
+  // function useEffectCallback() { }
+  // useEffect(useEffectCallback, []);
 
   return (
     <div>
