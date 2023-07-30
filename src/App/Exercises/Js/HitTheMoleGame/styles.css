@@ -1,0 +1,36 @@
+.mole-controls-panel {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  margin: 2rem 0 2rem;
+}
+
+.mole-controls-panel-row {
+  display: flex;
+  flex-direction: row;
+  gap: 1rem;
+}
+
+.mole-controls-panel span {
+  flex-basis: 12rem;
+}
+
+@media screen and (max-width: 900px) {
+  .mole-controls-panel {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 1rem;
+    margin: 1rem;
+  }
+
+  .mole-controls-panel-row {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+  }
+
+  .mole-controls-panel span {
+    flex-basis: 1rem;
+  }
+}

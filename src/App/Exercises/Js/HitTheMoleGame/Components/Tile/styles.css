@@ -1,0 +1,27 @@
+.mole-tile {
+    width: 6.5rem;
+    height: 6.5rem;
+    border-radius: 0.5rem;
+    border: 0;
+    cursor: pointer;
+}
+
+.mole-tile--neutral {
+    background: #EBEBEB;
+}
+
+.mole-tile--correct {
+    background: #E2FBD7;
+    box-shadow: 0px 3px 9px 0px rgba(0, 0, 0, 0.15), 0px 2px 28px 0px rgba(0, 0, 0, 0.12);
+}
+
+.mole-tile--incorrect {
+    background: #F3AEA8;
+    box-shadow: 0px 3px 9px 0px rgba(0, 0, 0, 0.15), 0px 2px 28px 0px rgba(0, 0, 0, 0.12);
+}
+
+.mole-tile--has-mole {
+    background-image: url("./mole.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+}

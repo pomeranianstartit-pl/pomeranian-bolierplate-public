@@ -1,0 +1,40 @@
+.mole-button {
+    display: flex;
+    height: 3.5rem;
+    min-width: 10rem;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    border-radius: 0.5rem;
+    color: #FFF;
+    font-size: 1.125rem;
+    font-weight: 500;
+    cursor: pointer;
+}
+
+.mole-button:hover {
+    opacity: 0.8;
+
+}
+
+.mole-button--primary {
+    border: 1px solid #23213D;
+    background: #23213D;
+}
+
+.mole-button--secondary {
+    background: #FE3756;
+    border: 1px solid #FE3756
+}
+
+.mole-button--tertiary {
+    background: #E12B1B;
+    border: 1px solid #E12B1B
+}
+
+.mole-button--frozen {
+    color: #23213D;
+    background: #bababa;
+    border: 1px solid #bababa;
+    cursor: default;
+}

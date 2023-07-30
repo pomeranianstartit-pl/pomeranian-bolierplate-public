@@ -1,0 +1,18 @@
+.mole-output {
+    border-radius: 0.5rem;
+    border: 1px solid #EBEBEB;
+    background: #EBEBEB;
+    min-width: 10rem;
+    display: flex;
+    height: 3.5rem;
+    padding: 1.25rem 2.25rem;
+    justify-content: center;
+    align-items: center;
+    color: black;
+    align-items: center;
+    font-size: 1.3rem;
+    font-weight: 500;
+    line-height: 2rem;
+    justify-content: center;
+    text-transform: uppercase;
+}
