@@ -2,6 +2,7 @@ import './styles.css';
 import React, { useState, useEffect } from 'react';
 import { MemoGameSettings } from './MemoGameSettings';
 import { MemoGameBoard } from './MemoGameBoard';
+import { MemoGameScore } from './MemoGameScore';
 
 const charArray = [
   '♪',
@@ -45,6 +46,7 @@ export const MemoGame = () => {
   const [boardSize, setBoardSize] = useState(deafaultBoardSize);
   const [score, setScore] = useState(0);
   const [gameStarted, setGameStarted] = useState(false);
+  const [gameEnded, setGameEnded] = useState(false);
   const [counter, setCounter] = useState(0);
   const [moveCount, setMoveCount] = useState(0);
   const [memoArray, setMemoArray] = useState([]);
@@ -54,6 +56,19 @@ export const MemoGame = () => {
   const [getAmountOfChar, setGetAmountOfChar] = useState(
     boardSize * boardSize * 0.5
   );
+
+  useEffect(() => {
+    if (memoArray?.find(({ isGuessed }) => isGuessed === false || gameEnded)) {
+      console.log('sąnieodganiete');
+      return;
+    } else {
+      console.log('sątylkoodganiete');
+      setScore(counter);
+      setGameEnded(true);
+      setGameStarted(false);
+      console.log(gameEnded);
+    }
+  }, [memoArray]);
 
   useEffect(() => {
     let countdownInterval;
@@ -113,6 +128,7 @@ export const MemoGame = () => {
     if (gameStarted) {
       getRandomChar();
       deployMemoBoard();
+      setGameEnded(false);
     }
   }
 
@@ -152,8 +168,6 @@ export const MemoGame = () => {
     setFirstClickedCard(card.id);
   }
 
-  function compareRevealedCards() {}
-
   function classOfElement(card) {
     const classes = ['cell'];
     if (card.isGuessed) {
@@ -162,11 +176,25 @@ export const MemoGame = () => {
     if (!card.isVisible && !card.isGuessed) {
       classes.push('closed');
     }
+    if (card.isVisible && !card.isGuessed && secondClickedCard) {
+      classes.push('wrong');
+    }
+    if (card.isVisible && !card.isGuessed && firstClickedCard) {
+      classes.push('guessed');
+    }
     return classes.join(' ');
   }
 
   return (
     <>
+      {gameEnded && score !== 0 ? (
+        <MemoGameScore
+          moveCount={moveCount}
+          score={score}
+          getAmountOfChar={getAmountOfChar}
+          startStopGame={startStopGame}
+        />
+      ) : null}
       {!gameStarted ? (
         <MemoGameSettings
           boardSize={boardSize}
@@ -176,7 +204,7 @@ export const MemoGame = () => {
         />
       ) : null}
       <p>Czas gry: {counter}</p>
-      {gameStarted ? (
+      {gameStarted || gameEnded ? (
         <MemoGameBoard
           memoArray={memoArray}
           setMemoArray={setMemoArray}

@@ -18,6 +18,7 @@ import { blockRouterMetaData as blockRouterMetaDataTryCatchAndFinally } from './
 import { blockRouterMetaData as blockRouterMetaDataJsPrototypes } from './JsPrototypes/router-data';
 import { blockRouterMetaData as blockRouterMetaDataJsThis } from './JsThis/router-data';
 import { blockRouterMetaData as blockRouterMetaDataJsPromises } from './Exercise-js-promises/router-data';
+import { blockRouterMetaData as blockRouterMetaDataPromisesMethodsTraining } from './PromisesMethodsTraining/router-data';
 
 export const blockRouterMetaData = [
   blockRouterMetaDataJsVariables1,
@@ -38,5 +39,6 @@ export const blockRouterMetaData = [
   blockRouterMetaDataJsPrototypes,
   blockRouterMetaDataJsThis,
   blockRouterMetaDataJsPromises,
+  blockRouterMetaDataPromisesMethodsTraining,
 ];
 export const blockRouterData = getParsedRouterDataList(blockRouterMetaData);

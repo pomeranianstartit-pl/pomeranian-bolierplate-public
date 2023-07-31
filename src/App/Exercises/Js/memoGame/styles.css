@@ -58,34 +58,45 @@
 
 .memoGame {
   display: grid;
-  gap: 0.5rem 0.5rem;
+  gap: 1.5rem;
 }
 .memoGame .cell {
   justify-content: center;
   align-items: center;
   cursor: pointer;
+  border-radius: 10px;
+  background-color: lightgray;
+  width: 5rem;
+  height: 5rem;
 }
 
 .memoGame .symbol {
   display: flex;
   justify-content: center;
   align-items: center;
-  border-radius: 10px;
-  border: 1px solid #ccc;
-  background-color: lightgray;
-  width: 66px;
-  height: 66px;
-  cursor: pointer;
+  font-size: 2rem;
+  line-height: 0%;
 }
 
 .memoGame .closed {
   background-color: #ebebeb;
 }
 
-.memoGame .symbol:hover {
-  box-shadow: 0 0 - 4px 26px rgba(0, 0, 0, 0.08);
+.memoGame div.cell:hover {
+  -webkit-box-shadow: 5px 5px 13px -3px rgba(66, 68, 90, 1);
+  -moz-box-shadow: 5px 5px 13px -3px rgba(66, 68, 90, 1);
+  box-shadow: 5px 5px 13px -3px rgba(66, 68, 90, 1);
 }
 
 .memoGame .guessed {
-  background-color: #484848;
+  background-color: var(--color-succes-light);
+}
+.memoGame .wrong {
+  background-color: var(--color-danger-light);
+}
+.memoGameScore {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem;
 }

@@ -10,6 +10,8 @@
   --color-link-hover: #ff4d69;
   --color-block-10-bg: rgba(0, 0, 0, 0.05);
   --color-block-10-body: #e5e5e5;
+  --color-succes-light: #e2fbd7;
+  --color-danger-light: #f3aea8;
 }
 
 body {

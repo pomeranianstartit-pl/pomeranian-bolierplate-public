@@ -12,7 +12,8 @@ export const MemoGameBoard = ({
     <div>
       <div className="gameStats">
         <h4>CZAS GRY </h4>
-        {counter}
+        {Math.floor(counter / 60) + ':' + ('0' + (counter % 60)).slice(-2)}{' '}
+        {/*TODO: make function */}
         <h4>LICZBA RUCHÓW </h4>
         {moveCount}
         <h4>PRZYCISKI STERUJĄCE</h4>

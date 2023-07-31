@@ -45,6 +45,7 @@
     ]
   },
   "devDependencies": {
+    "@faker-js/faker": "^8.0.2",
     "eslint-plugin-prettier": "^4.2.1",
     "json-loader": "^0.5.7",
     "prettier": "^2.8.4"

@@ -1,44 +1,26 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import './style.css';
 import cookie from '../../Images/cookie.svg';
-import { useEffect } from 'react';
 
 const Cookies = () => {
-  let isCookie;
+  const [isCookie, setIsCookie] = useState(false); //use state to handle re-render
 
   const getCookieState = () => {
     const cookieState = localStorage.getItem('cookieState');
-
-    cookieState === '1' ? (isCookie = true) : (isCookie = false);
-
-    // if (cookieState === '1') {
-    //   console.log('getCookieState()', cookieState);
-    //   isCookie = true;
-    //   console.log('isCookie', isCookie);
-    // } else {
-    //   isCookie = false;
-    //   console.log('isCookie', isCookie);
-    // }
-  };
-
-  getCookieState();
-
-  const setCookieState = () => {
-    localStorage.setItem('cookieState', 1);
-    console.log('Wywolalo CookieState');
+    setIsCookie(cookieState === '1'); //returns boolean, no need for additional logic
   };
 
   const handleAgreement = () => {
-    console.log('Agreement Clicked');
-    setCookieState();
+    localStorage.setItem('cookieState', 1);
+    setIsCookie(true);
   };
   const handleAgreementCustomization = () => {
-    console.log('WTF? he cliked');
+    console.log('WTF he cliked? Who does that'); //to change if exercise will be continued
   };
-
+  //for initial render
   useEffect(() => {
-    console.log(document.cookie);
-  }, [document.cookie]);
+    getCookieState();
+  }, []);
 
   return (
     <div>
