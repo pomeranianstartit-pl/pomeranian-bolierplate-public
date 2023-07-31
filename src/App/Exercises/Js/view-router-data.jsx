@@ -9,6 +9,7 @@ import { blockRouterMetaData as blockRouterMetaDataJsIfSwitch } from './IfSwitch
 import { blockRouterMetaData as blockRouterMetaDataJsTrainingNumbersAndBooleans } from './TrainingNumbersAndBooleans/router-data';
 import { blockRouterMetaData as blockRouterMetaDataJsArrays } from './Arrays/router-data';
 import { blockRouterMetaData as blockRouterMetaDataJsStringsTraining } from './StringsTraining/router-data';
+import { blockRouterMetaData as blockRouterMetaDataJsIntervalsDFata } from './IntervalsData/router-data';
 
 export const blockRouterMetaData = [
   blockRouterMetaDataJsVariables1,
@@ -20,5 +21,6 @@ export const blockRouterMetaData = [
   blockRouterMetaDataJsTrainingNumbersAndBooleans,
   blockRouterMetaDataJsStringsTraining,
   blockRouterMetaDataJsArrays,
+  blockRouterMetaDataJsIntervalsDFata,
 ];
 export const blockRouterData = getParsedRouterDataList(blockRouterMetaData);
