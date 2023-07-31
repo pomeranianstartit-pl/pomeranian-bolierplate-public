@@ -1,5 +1,5 @@
 import { MaterialUIBasicElements } from './MaterialUIBasicElements';
-export const MaterialUIBasicElementsMetaData = {
+export const blockRouterMetaData = {
   path: 'material-ui-basic-elements',
   date: '23-06-2023',
   linkLabel: 'Material design - elementy',

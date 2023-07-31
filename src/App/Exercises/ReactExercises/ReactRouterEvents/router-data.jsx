@@ -1,6 +1,6 @@
 import { ReactRouterEvents } from '.';
 
-export const ReactRouterEventsMetaData = {
+export const blockRouterMetaData = {
   path: 'react-router-events',
   date: '12-06-2023',
   linkLabel: 'React router events',
