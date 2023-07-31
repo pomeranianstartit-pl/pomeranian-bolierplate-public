@@ -20,7 +20,6 @@ export const ExerciseJsFunctions2 = () => {
     }
     return sum;
   }
-
-  return <div>Change me X</div>;
   sumArguments();
+  return <div>Change me X</div>;
 };
