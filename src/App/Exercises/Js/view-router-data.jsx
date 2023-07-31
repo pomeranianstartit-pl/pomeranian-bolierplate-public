@@ -18,6 +18,8 @@ import { ExercisePrototipeMetaData } from './ExercisePrototipe/router-data';
 import { ThisKeywordMetaData } from './ThisKeyword/router-data';
 import { PromiseMetaData } from './Promise/router-data';
 import { FetchowanieDanychZApiMetaData } from './FetchowanieDanychZApi/router-data';
+import { PromiseMethodsTrainingMetaData } from './PromiseMethodsTraining/router-data';
+import { jsonServerMetaData } from './jsonServer/router-data';
 
 export const blockRouterMetaData = [
   blockRouterMetaDataJsVariables1,
@@ -38,5 +40,7 @@ export const blockRouterMetaData = [
   ThisKeywordMetaData,
   PromiseMetaData,
   FetchowanieDanychZApiMetaData,
+  PromiseMethodsTrainingMetaData,
+  jsonServerMetaData,
 ];
 export const blockRouterData = getParsedRouterDataList(blockRouterMetaData);
