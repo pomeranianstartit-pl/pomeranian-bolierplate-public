@@ -58,7 +58,7 @@ export function Exercise() {
 
   console.log({ originalObj, changedObject });
 
-  //3////// Napisz funkcje która jako parametr przyjmuje tablice obiektów natomiast zwraca tablice z wyliczoną wartością średnią zamiast ocen.
+  //3//////////////Napisz funkcje która jako parametr przyjmuje tablice obiektów natomiast zwraca tablice z wyliczoną wartością średnią zamiast ocen.
   //funkcja ma nie zmieniać pierwotnej tablicy
 
   function calcAvr(primaryArray) {
@@ -87,14 +87,13 @@ export function Exercise() {
   const primaryTable = [
     { id: 0, name: 'Eve', grades: [4, 2, 4, 6, 1, 2, 3] },
     { id: 2, name: 'Olivia', grades: [3, 2, 4, 6, 1, 1, 3] },
-    // Add more objects if needed...
   ];
 
   const scoreArray = calcAvr(primaryTable);
 
   console.log({ primaryTable, scoreArray });
 
-  // 2.
+  // 4//////////////////////////////////
   // funkcja zwraca podany w argumencie element ciągu Fibonacciego
   // napisać rekurencyjnie
 
@@ -107,7 +106,45 @@ export function Exercise() {
 
   console.log(fibonacci(4));
 
-  // 3.
+  //5/////////////////////////
+  //stwórz funkcje, która przyjmuje dowolną liczbe argumentów za pomocą "...args" i zwraca ich sumę
+  function sum(...numbers) {
+    for (const num of numbers) {
+      if (typeof num !== 'number') {
+        return 'wrong input';
+      }
+    }
+
+    return numbers.reduce((acc, curr) => acc + curr, 0);
+  }
+
+  console.log(sum(1, 2, 3, 4, 5, 6));
+
+  //6///////////////////////////
+  //stwórz funkcje która zliczy wszystkie wystąpienia pierwotne wywołanej funkcji
+
+  function CheckRepeatingNumbers(target) {
+    if (typeof target !== 'number') {
+      return () => 'wrong entry';
+    }
+
+    return (...numbers) => {
+      let count = 0;
+
+      for (const num of numbers) {
+        if (typeof num === 'number' && num === target) {
+          count++;
+        }
+      }
+
+      return count;
+    };
+  }
+
+  console.log(CheckRepeatingNumbers(1)(1, 1, 2, 1, 3, 4, 5, 6, 4)); // Output: 3
+  console.log(CheckRepeatingNumbers(1)(1, 2, 1, 3, 4, 'whatever', 5, 6, 4, 1)); // Output: 3
+
+  // 6///////////////////////////
   // stwórz funkcję calculateWithChar, która przyjmuje jako argument jeden operator matematyczne
   // '+', '-', '*', '/'
   // funkcja calculateWithChar ma zwracać funkcję, która przyjmuje dwie liczby jako argumenty
@@ -140,6 +177,45 @@ export function Exercise() {
   console.log(calculateWithChar('/')(1, 2));
   console.log(calculateWithChar('---')(1, 2));
   console.log(calculateWithChar('+')('abc', 2));
+
+  //7/////////////////////////
+  //napisz funkcje która
+
+  function calculateNumbers(operator) {
+    return function (num1, num2) {
+      switch (operator) {
+        case '+':
+          return num1 + num2;
+        case '-':
+          return num1 - num2;
+        case '*':
+          return num1 * num2;
+        case '/':
+          if (num2 === 0) {
+            return 'Cannot divide by zero';
+          }
+          return num1 / num2;
+        default:
+          return 'Invalid operator';
+      }
+    };
+  }
+
+  // Example usage:
+  const addNumbers = calculateNumbers('+');
+  console.log(addNumbers(1, 2)); // Output: 3
+
+  const subtractNumbers = calculateNumbers('-');
+  console.log(subtractNumbers(5, 2)); // Output: 3
+
+  const multiplyNumbers = calculateNumbers('*');
+  console.log(multiplyNumbers(3, 4)); // Output: 12
+
+  const divideNumbers = calculateNumbers('/');
+  console.log(divideNumbers(10, 2)); // Output: 5
+
+  console.log(divideNumbers(10, 0)); // Output: 'Cannot divide by zero'
+  console.log(calculateNumbers('%')(10, 5)); // Output: 'Invalid operator'
 
   return <div>Test</div>;
 }
