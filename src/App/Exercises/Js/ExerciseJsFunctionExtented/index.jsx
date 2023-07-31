@@ -96,12 +96,12 @@ export function Exercise() {
       return argu.filter((element) => element === number).length;
     };
   }
-  console.log(zliczWystapienia(1)(1, 1, 2, 3));
+  console.log(zliczWystapienia(1)(1, 1, 2, 3, 5, 7, 8, 1));
   console.log(zliczWystapienia('nie liczba')(1, 2, 3));
-  console.log(zliczWystapienia(1)(1, 2, 3, 'cokolwiek'));
+  console.log(zliczWystapienia(1)(1, 1, 2, 3, 'cokolwiek', {}, 1));
   //
 
-  //
+  //4
 
   const originalObj = { name: 'john', Surname: 'wick', age: '100' };
 
@@ -117,7 +117,7 @@ export function Exercise() {
   console.log({ originalObj });
   console.log(zmienionyObiekt(originalObj));
   //
-  //
+  5; //
 
   function sredniaArytmetyczna(a, b) {
     if (typeof a !== 'number' || typeof b !== 'number') {
@@ -127,7 +127,6 @@ export function Exercise() {
     return (a + b) / 2;
   }
 
-  // Testuję funkcję
   const liczba1 = 5;
   const liczba2 = 7;
   console.log(sredniaArytmetyczna(liczba1, liczba2)); // Wyświetli: 6
@@ -136,11 +135,7 @@ export function Exercise() {
   const nieLiczba2 = 10;
   console.log(sredniaArytmetyczna(nieLiczba1, nieLiczba2)); // Wyświetli: błędne dane
 
-  function wykonajCwiczenie9() {
-    console.log(`Wynik ćwiczenia9: ${sredniaArytmetyczna(4, 7)}`);
-  }
-
-  //
+  //6
   const obliczSrednia = (tablicaOcen) => {
     return tablicaOcen.map((obiekt) => {
       const { imię, oceny } = obiekt;
