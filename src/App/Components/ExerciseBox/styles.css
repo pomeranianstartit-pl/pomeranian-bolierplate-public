@@ -1,0 +1,31 @@
+.toggle-arrow-side svg {
+  transform: rotate(270deg);
+}
+
+.exercise-box {
+  padding: 18px 24px;
+  -webkit-box-shadow: 5px 10px 24px -12px rgba(66, 68, 90, 0.59);
+  -moz-box-shadow: 5px 10px 24px -12px rgba(66, 68, 90, 0.59);
+  box-shadow: 5px 10px 24px -12px rgba(66, 68, 90, 0.59);
+  border-radius: 8px;
+  border-left: 5px solid var(--gray-300, #c8cbd1);
+  background: var(--background-bg-primary, #fff);
+  margin: 18px;
+  font-size: 14px;
+  line-height: 28px;
+}
+.exercise-box h2 {
+  cursor: pointer;
+  font-weight: bold;
+}
+.exercise-box svg * {
+  cursor: pointer;
+  stroke: #fe3756;
+  fill: #fe3756;
+}
+
+.exercise-box hr {
+  height: 1px;
+  background: #ebebeb;
+  border: #ebebeb;
+}
