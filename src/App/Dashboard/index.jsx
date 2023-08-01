@@ -1,5 +1,5 @@
 import './styles.css';
-import { MyData } from './MyData/MyData'
+import { MyData } from './MyData/MyData';
 import { Blocks } from './Blocks/Blocks';
 
 export const Dashboard = () => {

@@ -22,10 +22,10 @@ export function AppAside() {
             <PersonalCardIcon />
             <NavLink to="cv">Moje CV</NavLink>
           </li>
-          <li>
+          {/* <li>
             <ElementIcon />
             <NavLink to="blocks">Bloki</NavLink>
-          </li>
+          </li> */}
           <li>
             <EditIcon />
             <NavLink to="exercises">Ćwiczenia</NavLink>
