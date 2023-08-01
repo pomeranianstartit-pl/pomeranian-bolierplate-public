@@ -21,27 +21,25 @@ export function Swagerr() {
         );
       });
       const response = await Promise.race([fetchDataPromise, timeoutPromise]);
-      if (!response){
-        setError('przekroczono czas oczekiwania na odpwiedź serwera')
+      if (!response) {
+        setError('przekroczono czas oczekiwania na odpwiedź serwera');
       }
       if (response) setTodoList(response.data);
-      
     } catch (error) {
-      setError("wystąpił błąd podczas komunikacji z serwerem" + error.mesage)
+      setError('wystąpił błąd podczas komunikacji z serwerem' + error.mesage);
     }
   };
   return (
     <div>
       <button onClick={handleFetchTodoData}>pobierz todos</button>
       {getError && <p>{getError}</p>}
-      {
-        getTodoList.length > 0 && (
-          <ul>
-            {getTodoList.map((todo) => <li key={todo?.id}>{todo.title}</li>)}
-
-          </ul>
-        )
-      }
+      {getTodoList.length > 0 && (
+        <ul>
+          {getTodoList.map((todo) => (
+            <li key={todo?.id}>{todo.title}</li>
+          ))}
+        </ul>
+      )}
     </div>
   );
 }
