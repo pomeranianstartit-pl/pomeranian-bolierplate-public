@@ -1,0 +1,15 @@
+.moleButton-default {
+  height: 56px;
+  border-radius: 10px;
+  border: 1px solid #23213d;
+  background: #23213d;
+  color: #fff;
+  font-family: inherit;
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 500;
+}
+
+.moleButton-default.active {
+  background-color: #fe3756;
+}

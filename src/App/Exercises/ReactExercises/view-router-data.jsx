@@ -7,6 +7,8 @@ import { Cwiczenie3MetaData } from './Cwiczenie3/router-data';
 import { IfStatementsMetaData } from './IfStatements/router-data';
 import { IfStatementsMoreorLessMetaData } from './IfStatementsMoreorLess/router-data';
 import { MoreOrLessGameMetaData } from './MoreOrLessGame/router-data';
+import { HitTheMoleMetaData } from './HitTheMole/router-data';
+
 export const blockRouterMetaData = [
   SubRouteExampleMetaData,
   Cwiczenie1MetaData,
@@ -15,5 +17,6 @@ export const blockRouterMetaData = [
   IfStatementsMetaData,
   IfStatementsMoreorLessMetaData,
   MoreOrLessGameMetaData,
+  HitTheMoleMetaData,
 ];
 export const blockRouterData = getParsedRouterDataList(blockRouterMetaData);
