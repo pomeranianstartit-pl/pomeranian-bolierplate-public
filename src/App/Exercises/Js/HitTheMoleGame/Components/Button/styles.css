@@ -1,0 +1,45 @@
+.mole-button {
+
+    display: flex;
+    height: 56px;
+    width: 10rem;
+    /* padding: 0 36px; */
+    justify-content: center;
+    align-items: center;
+    gap: 16px;
+    /* flex: 1 0 0; */
+    border-radius: 8px;
+    border: 1px solid var #23213D;
+    background: #23213D;
+    color: #FFF;
+    text-align: center;
+    /* button/button */
+    /* font-family: Poppins; */
+    font-size: 18px;
+    /* font-style: normal; */
+    font-weight: 500;
+    /* line-height: 31px; */
+    /* 172.222% */
+    cursor: pointer;
+
+}
+
+.mole-button:hover {
+
+    opacity: 0.8;
+}
+
+.mole-button--primary {
+    border: 1px solid rgb(197, 159, 159);
+    background: rgb(105, 12, 12);
+}
+
+.mole-button--secondary {
+    border: 1px solid rgb(173, 14, 14);
+    background: rgb(83, 45, 45);
+}
+
+.mole-button--tertiary {
+    border: 1px solid rgb(214, 184, 100);
+    background: rgb(44, 184, 172);
+}
