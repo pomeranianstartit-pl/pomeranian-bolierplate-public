@@ -5,46 +5,52 @@ const BASE_API_URL = 'http://localhost:3333/';
 
 export function Swagger() {
   const [getTodoList, setTodoList] = useState([]);
-  const [getError, setError] = useState(null);
-  const [getNewTodo, setNewTodo] = useState('');
+  const [getError, setError] = useState([]);
+
 
   const handleFetchTodoData = async () => {
-    const timeoutDuration = 5000; // 5s wait time for response
+    const timeOutDuration = 5000; //5sec czekania na odpoiedź serwera
 
     try {
       const fetchDataPromise = axios.get(`${BASE_API_URL}api/todo`);
-      const timeoutPromise = new Promise((_, reject) => {
+      const timeOutPromise = new Promise((_, reject) => {
         setTimeout(
           () => reject(new Error('Response Timeout')),
-          timeoutDuration
+          timeOutDuration
         );
       });
 
-      const response = await Promise.race([fetchDataPromise, timeoutPromise]);
+      const response = await Promise.race([fetchDataPromise, timeOutPromise]);
 
       if (!response) {
         setError('Przekroczono czas oczekiwania na odpowiedź serwera');
       }
-
+      setError('');
       setTodoList(response.data);
     } catch (error) {
-      setError(
-        'Wystąpił błąd podczas komunikacji z serwerem ' + error?.message
-      );
+      setError('Wystpił błąd podczas komunikacji z serwerem ' + error?.message);
     }
   };
-
   return (
-    <div>
-      <button onClick={handleFetchTodoData}>Pobierz todos</button>
+    <div className="container--swagger">
+      <button onClick={handleFetchTodoData}>Pobierz TODO's</button>
       {getError && <p>{getError}</p>}
+
       {getTodoList.length > 0 && (
         <ul>
           {getTodoList.map((todo) => (
-            <li key={todo.id}>{todo.title}</li>
+            <li key={todo.id}>
+              {todo.createdAt}
+              <br />
+              {todo.author}
+              <br />
+              {todo.isDone}
+              <br />
+              {todo.note}
+            </li>
           ))}
         </ul>
       )}
     </div>
   );
-}
+};
