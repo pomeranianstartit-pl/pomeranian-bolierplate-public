@@ -1,0 +1,22 @@
+.user-card {
+    display: grid;
+    grid-template-columns: auto repeat(3, 1fr);
+    margin-bottom: 1em;
+    padding: 1em;
+    border-radius: 2px;
+    box-shadow: 2px 2px 3px 0px gray;
+    align-items: center;
+  }
+  .user-card * {
+    padding: 5px;
+  }
+   
+  .user-card a {
+    text-decoration: none;
+    color: var(--dark-blue);
+  }
+   
+  .user-card a:hover {
+    color: var(--primary);
+    transition: all .2s;
+  }
