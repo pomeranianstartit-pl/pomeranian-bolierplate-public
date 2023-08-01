@@ -1,4 +1,5 @@
 import './styles.css';
+import { ExerciseBox } from '../../../Components/ExerciseBox';
 
 export const JsNumbersTraining = () => {
   // zadanie 1a
@@ -142,14 +143,12 @@ export const JsNumbersTraining = () => {
 
   return (
     <div>
-      {/* <button onClick={canDrive(18, true, true)}>F: CanDrive</button>
-      <button onClick={hasEnough(true)}>F: hasEnough</button>
-      <button onClick={isStringShort('Jenny')}>
-        F: hasEnough mniej niz 10
-      </button>
-      <button onClick={isStringShort('Jenny is funny')}>
-        F: hasEnough więcej niz 10
-      </button> */}
+      <h2>bal ba</h2>
+      <ul>
+        <li>
+          <ExerciseBox task="Napisz funkcję isStringShort, która przyjmuje string jako argument i zwraca wartość true, jeśli długość stringa jest mniejsza niż 10, a false, jeśli długość stringa wynosi 10 lub przekracza 10. Funkcja powinna wykorzystać technikę early return." />
+        </li>
+      </ul>
     </div>
   );
 };

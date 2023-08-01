@@ -11,6 +11,9 @@ import { blockRouterMetaData as EmptyValuesAndCommentsMetaData } from './EmptyVa
 import { blockRouterMetaData as ArrayAndObjectsMetaData } from './ArrayAndObjects/router-data';
 import { blockRouterMetaData as JsArrayMethodExerciseMetaData } from './JsArrayMethodExercise/router-data';
 import { blockRouterMetaData as ObjectsMetaData } from './Objects/router-data';
+import { blockRouterMetaData as JsFunctionBasicsMetaData } from './JsFunctionBasics/router-data';
+import { blockRouterMetaData as ExerciseJSFunctionsMetaData } from './ExerciseJSFunctions/router-data';
+import { blockRouterMetaData as IntervalsDateMetaData } from './IntervalsDate/router-data';
 
 export const blockRouterMetaData = [
   blockRouterMetaDataJsVariables1,
@@ -24,5 +27,8 @@ export const blockRouterMetaData = [
   ArrayAndObjectsMetaData,
   JsArrayMethodExerciseMetaData,
   ObjectsMetaData,
+  JsFunctionBasicsMetaData,
+  ExerciseJSFunctionsMetaData,
+  IntervalsDateMetaData,
 ];
 export const blockRouterData = getParsedRouterDataList(blockRouterMetaData);
