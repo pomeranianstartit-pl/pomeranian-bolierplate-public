@@ -19,6 +19,7 @@ import { blockRouterMetaDataBlok22Warmup } from './Blok22Warmup/router-data';
 import { blockRouterMetaDataSetTimeout } from './SetTimeout/router-data';
 import { blockRouterMetaDataVanishString } from './VanishString/router-data';
 import { blockRouterMetaDataTimer } from './Timer/router-data';
+import { blockRouterMetaDataHitTheMoleGame } from './HitTheMoleGame/router-data';
 import { blockRouterMetaDataJsSlidingBanner } from './JsSlidingBanner/router-data';
 
 import { blockRouterMetaDataEmptyValuesAndComments } from './EmptyValuesAndComments/router-data';
@@ -45,6 +46,6 @@ export const blockRouterMetaData = [
   blockRouterMetaDataVanishString,
   blockRouterMetaDataTimer,
   blockRouterMetaDataJsSlidingBanner,
-
+  blockRouterMetaDataHitTheMoleGame
 ];
 export const blockRouterData = getParsedRouterDataList(blockRouterMetaData);

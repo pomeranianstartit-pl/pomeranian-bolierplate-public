@@ -1,0 +1,17 @@
+.first-buttons {
+  display: flex;
+}
+
+.second-buttons {
+  display: flex;
+}
+
+.third-buttons {
+  display: flex;
+}
+
+.mole-warning {
+
+  color: rgb(57, 24, 204);
+  font-size: 2rem;
+}
