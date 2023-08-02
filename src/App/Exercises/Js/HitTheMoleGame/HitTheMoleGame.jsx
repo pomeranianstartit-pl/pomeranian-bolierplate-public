@@ -30,16 +30,16 @@ export const HitTheMoleGame = () => {
     }
     if (status === 'started') {
       setTimeLeft(duration);
-      setTiles(getinitialFiles(molesNo));
+      setTiles(getInitialTiles(molesNo));
     }
     if (status !== 'finished') {
       setScore(0);
     }
   }, [status, duration]);
 
-  function getinitialFiles(molesNumber) {
+  function getInitialTiles(molesNumber) {
     const tiles = MOLES.find((mole) => mole.molesNo === molesNumber).tiles;
-    return new Array(tiles).fill(0);
+    return Array(tiles).fill(0);
   }
 
   function formatTime(time) {
@@ -86,6 +86,7 @@ export const HitTheMoleGame = () => {
       <p>duration:{duration},</p>
       <p>Status: {status}</p>
       <p>timeLeft:{timeleft}</p>
+      <p>Tiles:{JSON.stringify(tiles)}</p>
 
       <p>ilosc kretow:{molesNo}</p>
       <p>tiles:</p>
