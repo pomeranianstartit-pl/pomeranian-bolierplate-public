@@ -4,12 +4,17 @@ import { ReactComponent as Edit } from '../../Images/tiles/edit.svg';
 import { ReactComponent as Folder } from '../../Images/tiles/folder-2.svg';
 import { ReactComponent as StatusUp } from '../../Images/tiles/status-up.svg';
 import { ReactComponent as Teacher } from '../../Images/tiles/teacher.svg';
+import { ReactComponent as Hand } from '../../Images/waving-hand.svg';
+
 import { Link } from 'react-router-dom';
 
 export const Blocks = () => {
   return (
     <div className="dashboard-tiles-container">
-      <h2>Hej!</h2>
+      <h2>
+        <Hand />
+        &nbsp;&nbsp;Hej, tu Karolina!
+      </h2>
       <p className="dashboard-intro-text">
         Poniżej znajdziesz trochę informacji o mnie i moich umiejętnościach.
       </p>
