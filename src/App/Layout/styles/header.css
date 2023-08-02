@@ -1,63 +1,76 @@
-header {  
-  grid-area: header;  
-  position: relative;  
-  z-index: 1;  
-  display: flex;  
-  align-items: center; 
-  justify-content: space-between;  
-  padding-left: 1.5rem;  
-  padding-right: 3rem;  
+header.navigation {
+  grid-area: header;
+  position: relative;
+  z-index: 1;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-left: 1.5rem;
+  padding-right: 3rem;
   box-shadow: 0px 1px 9px 0px var(--color-grey);
 }
-header > a:first-of-type {  
+
+header.navigation > a:first-of-type {
   text-decoration: none;
 }
-header.header-title {  
-  color: var(--color-grey);  
+
+header.navigation.header-title {
+  color: var(--color-grey);
   font-weight: normal;
 }
-header .logo {  
-  height: auto;  
-  width: 200px;  
-  pointer-events:none;
+
+header.navigation .logo {
+  height: auto;
+  width: 200px;
+  pointer-events: none;
 }
-header button.settings {  
-  width: 50px;  
-  height: auto;  
-  background-color: transparent;  
-  border: 0;  
-  cursor: pointer;  
+
+header.navigation button.settings {
+  width: 50px;
+  height: auto;
+  background-color: transparent;
+  border: 0;
+  cursor: pointer;
   border: solid 1px transparent;
 }
-header button.settings:hover{  
-  border: dotted 1px lightgray;  
+
+header.navigation button.settings:hover{
+  border: dotted 1px lightgray;
   border-radius: 50%;
 }
-header button.dropdown-menu {  
-  align-self: center;  
-  width: 32px; 
-  height: 32px;  
-  background-color: transparent;  
-  border: 0;  
-  cursor: pointer;  
+
+header.navigation button.dropdown-menu {
+  align-self: center;
+  width: 32px;
+  height: 32px;
+  background-color: transparent;
+  border: 0;
+  cursor: pointer;
   border: solid 1px transparent;
 }
-header button.dropdown-menu:hover{  
-  border: dotted 1px lightgray;  
+
+header.navigation button.dropdown-menu:hover{
+  border: dotted 1px lightgray;
   border-radius: 50%;
 }
-.profile-picture .placeholder {  
-  border-radius: 50%;  
-  background-color: #E5E5E5;  
-  width: 50px;  
+
+.profile-picture .placeholder {
+  border-radius: 50%;
+  background-color: #E5E5E5;
+  width: 50px;
   height: 50px;
 }
-header .menu {  
-display:flex;  
-gap: 20px;
+
+header.navigation .menu {
+  display: flex;
+  gap: 20px;
 }
-header .user-details {  
+
+header.navigation .user-details {
   align-self: flex-end;
 }
-header .user-details p {  
-  margin: 0;}
+
+header.navigation .user-details p {
+  margin: 0;
+}
+

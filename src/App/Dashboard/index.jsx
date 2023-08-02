@@ -1,6 +1,6 @@
-import './styles.css';
 import DashboardCard from '../Components/DashboardCard/DashboardCard';
 import { useState } from 'react';
+import './styles.css';
 import PersonalCardIcon from '../Images/tiles/personalcard.svg';
 import EditIcon from '../Images/tiles/edit.svg';
 import FaqIcon from '../Images/faq.svg';

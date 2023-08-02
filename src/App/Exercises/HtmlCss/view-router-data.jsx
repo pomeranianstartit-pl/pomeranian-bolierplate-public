@@ -5,6 +5,7 @@ import { blockRouterMetaData as block } from './Exercise-example-12-12-2023-1 /r
 import { SelectorsAndCascadeMetaData } from './SelectorsAndCascade/router-data';
 
 import { GoogleFontsMetaData } from './GoogleFonts/router-data';
+// import { FloatsMetaData } from './FloatsAndPositioning/router-data';
 
 import { FigmaFloatDesignMetaData } from './FloatsAndPositioning/router-data';
 
@@ -15,6 +16,7 @@ export const blockRouterMetaData = [
   block,
   SelectorsAndCascadeMetaData,
   GoogleFontsMetaData,
+  // FloatsMetaData,
   FigmaFloatDesignMetaData,
   TextFundamentsMetaData,
   blockRouterMetaDataCssBoxModel,
