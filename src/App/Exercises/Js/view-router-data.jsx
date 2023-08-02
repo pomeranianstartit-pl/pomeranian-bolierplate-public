@@ -44,5 +44,7 @@ export const blockRouterMetaData = [
   blockRouterMetaDataPromises,
   PromiseMethodsTrainingMetaData,
 
+  HitTheMoleGameMetaData,
+  MemoGameMetaData,
 ];
 export const blockRouterData = getParsedRouterDataList(blockRouterMetaData);

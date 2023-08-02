@@ -1,6 +1,6 @@
 import React from 'react';
 
-export const MoleGameSettings = ({
+export const MoleGameInfo = ({
   gameTime,
   moleCount,
   setGameTime,
@@ -65,4 +65,4 @@ export const MoleGameSettings = ({
     </>
   );
 };
-export default MoleGameSettings;
+export default MoleGameInfo;
