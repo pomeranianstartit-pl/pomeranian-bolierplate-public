@@ -1,0 +1,55 @@
+.todo-container {
+}
+
+.todo-container__list {
+}
+
+.todo-item {
+  margin: 20px 0;
+  padding: 0 15px;
+  border: 1px solid var(--color-blue-gray);
+  border-left: 3px solid var(--color-dark-gray);
+  border-radius: 5px;
+  box-shadow: 0 0 10px #ccc;
+  display: flex;
+}
+
+.todo-item--darker {
+  background-color: #898989;
+}
+
+.todo-item__wrapper {
+  flex-grow: 1;
+}
+
+.todo-item__wrapper__title {
+  color: var(--color-black);
+}
+
+.todo-item__wrapper__text {
+  color: var(--color-grey);
+}
+
+.todo-item__wrapper__text--smaller {
+  font-size: 0.8em;
+}
+
+.todo-item__actions {
+  padding: 15px 0;
+  width: 20%;
+  text-align: center;
+}
+.todo-item__actions__button {
+  background-color: transparent;
+  border: none;
+}
+
+.todo-item__actions__icon {
+  font-size: 50px;
+  text-align: center;
+}
+
+.todo-item__actions__icon--check-mark {
+  font-size: 50px;
+  color: green;
+}
