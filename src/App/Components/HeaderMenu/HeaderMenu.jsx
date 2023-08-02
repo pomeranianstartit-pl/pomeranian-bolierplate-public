@@ -6,7 +6,7 @@ export function HeaderMenu() {
       <SettingIcon />
       {/* todo let's replace thist with:<RoundImage/>*/}
       <div className="circular_image">
-        <img src="http://placekkitten.com/500/500" />
+        <img src="kursantmikolaj.png" alt="kursant" />
       </div>
       <div className="name-surname-container">
         <h4>YourNameAndSurname</h4>
