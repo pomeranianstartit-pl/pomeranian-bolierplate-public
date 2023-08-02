@@ -8,19 +8,16 @@ import { Layout } from './App/Layout';
 import { Dashboard } from './App/Dashboard';
 import { Exercises } from './App/Exercises';
 import { CV } from './App/Components/CV/CV';
-import { Setting } from './App/Components/Setting/Setting';
 import { Blog } from './App/Blog/Blog';
 import { FAQ } from './App/FAQ';
-
 export function App() {
   return (
     <BrowserRouter>
       <Routes>
         <Route path="" element={<Layout withSidebar />}>
           <Route index element={<Navigate to="dashboard" />} />
+          <Route path="cv/*" element={<CV />} />
           <Route path="dashboard/*" element={<Dashboard />} />
-          <Route path="CV/*" element={<CV />} />
-          <Route path="Setting/*" element={<Setting />} />
           <Route path="exercises/*" element={<Exercises />} />
           <Route path="blocks/*" element={<Blocks />} />
           <Route path="blog/*" element={<Blog />} />

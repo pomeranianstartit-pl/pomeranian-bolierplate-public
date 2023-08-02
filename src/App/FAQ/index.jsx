@@ -3,7 +3,6 @@ import { Route, Routes } from 'react-router-dom';
 
 import { NotFound } from '../Components/NotFound/NotFound';
 
-
 import './styles.css';
 
 export function FAQ() {
