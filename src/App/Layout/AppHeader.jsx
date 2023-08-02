@@ -1,9 +1,10 @@
-import React from 'react';
-
-import './styles/header.css';
+import React from 'react'; 
+import arrowDown from '../Images/toggle-arrow.svg'; 
+import startItLogo from '../Images/start-it-logo.svg'; 
+import cogwheel from '../Images/setting.svg'; 
+import { Link } from 'react-router-dom'; 
+import './styles/header.css'; 
 import { Logo } from '../Components/Logo/logo';
-import { Link } from 'react-router-dom';
-import arrowDown from '../Images/toggle-arrow.svg';
 import cogWheel from '../Images/setting.svg';
 export function AppHeader() {
   return (
