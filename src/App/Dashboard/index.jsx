@@ -40,20 +40,23 @@ export const Dashboard = () => {
       description: 'odpowiedzi na najczęstsze pytania',
       icon: <FAQ />,
     }
+
   ]
   return (
     <div className="dashboard">
-      <h2> Hej, tu Gabriela!</h2>
-      <p>Poniżej znajdziesz najważniejsze informacje na temat mojej działalności.</p>
+      <h2 className='dashboard-header'> Hej, tu Gabriela!</h2>
+      <p className='dashboard-description'>Poniżej znajdziesz najważniejsze informacje na temat mojej działalności.</p>
       <div className='dashboard-cards-wrapper'>
         {dashboardData.map(element => {
           return <DashboardCards
             title={element.title}
             description={element.description}
-            icon={element.icon} />
+            icon={element.icon}
+          />
         })}
-
       </div>
+      <div className='dashboard-personal-info'>Personal info</div>
     </div>
   );
 };
+
