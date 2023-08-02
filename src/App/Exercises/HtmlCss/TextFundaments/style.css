@@ -1,0 +1,116 @@
+.font-test-family {
+  font-family: Chilanka;
+}
+
+/* .my-style {
+  color: red;
+  font-size: 20px;
+  font-weight: bold;
+  font-style: italic;
+  text-transform: uppercase;
+  text-decoration: overline;
+  line-height: 30px;
+  letter-spacing: 5px;
+  word-spacing: 10px;
+  text-align: left;
+  vertical-align: sub;
+} */
+
+.faked-tags {
+  font-family: 'Times New Roman', Times, serif;
+}
+
+.faked-tags-h1 {
+  display: block;
+  font-size: 2em;
+  margin-block-start: 0.67em;
+  margin-block-end: 0.67em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+  font-weight: bold;
+}
+
+.faked-tags-date {
+  font-size: smaller;
+}
+
+.faked-tags-h3 {
+display: block;
+    font-size: 1.17em;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    font-weight: bold;
+}
+sub {
+  vertical-align: sub;
+  font-size: smaller;
+}
+
+.faked-tags-text {
+  display: block;
+  margin-block-start: 1em;
+  margin-block-end: 1em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+}
+
+q {
+  display: inline;
+  content: open-quote;
+  content: close-quote;
+}
+
+sub1 {
+    vertical-align: super;
+    font-size: smaller;
+}
+
+ins {
+  text-decoration: underline;
+}
+
+.faked-tags-text5 {
+  display: block;
+  margin-block-start: 1em;
+  margin-block-end: 1em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+}
+
+
+.faked-tags-h5 {
+  display: block;
+  font-size: 0.83em;
+  margin-block-start: 1.67em;
+  margin-block-end: 1.67em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+  font-weight: bold;
+}
+
+i {
+  font-style: italic;
+}
+ul {
+  display: block;
+  list-style-type: disc;
+  margin-block-start: 1em;
+  margin-block-end: 1em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+  padding-inline-start: 40px;
+  
+}
+
+li {
+  display: list-item;
+  text-align: -webkit-match-parent;
+  font-size: 16px;
+  font-family: 'Times New Roman', Times, serif;
+}
+
+del {
+  text-decoration: line-through;
+}
