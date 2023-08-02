@@ -16,11 +16,11 @@ const MOLES = [
 
 export const HitTheMoleGame = () => {
   const [duration, setDuration] = useState();
-  const [molesNo, setMolesNo] = useState(1);
+  const [molesNo, setMolesNo] = useState();
   const [status, setStatus] = useState('notStarted');
   const [timeleft, setTimeLeft] = useState();
   const [score, setScore] = useState();
-  const [issettingsOk, setSettingsOK] = useState();
+  const [showWarning, setShowWarning] = useState(false);
   const [tiles, setTiles] = useState([]);
 
   useEffect(() => {
@@ -65,9 +65,12 @@ export const HitTheMoleGame = () => {
     const validation = settingsValidation();
     if (validation === false) {
       setStatus('started');
+      setShowWarning(false);
+    } else {
+      setShowWarning(true);
     }
   }
-  console.log('test:', status === 'finished' && true && 1000 + 200);
+  // console.log('test:', status === 'finished' && true && 1000 + 200);
   return (
     <div>
       <MasterHeader value="Kret" />
@@ -75,9 +78,7 @@ export const HitTheMoleGame = () => {
         Gra polegająca na podążaniu za krecikiem i trafieniu na kwadrat, w
         którym się pojawił.
       </p>
-      {settingsValidation() && (
-        <p className="mole-warning">brakuje ustawień gry</p>
-      )}
+      {showWarning && <p className="mole-warning">Brakuje ustawień gry !!!</p>}
       {status === 'finished' && (
         <Result duration={formatTime(duration)} score={score} />
       )}
@@ -117,21 +118,18 @@ export const HitTheMoleGame = () => {
           </div>
           <div className="mole-controls-panel">
             <Label value="Przyciski Sterujące" />
-            <Button
-              value="Start"
-              onClick={(handleStart) => setStatus('started')}
-            />
-          </div>
-
-          <div>
-            <Label value="wynik" />
-            <Output value={score} />
+            <Button value="Start" onClick={handleStart} />
           </div>
         </>
       )}
+
       <div>
         <Label value="Czas do końca" />
         <Output value={formatTime(timeleft)} />
+      </div>
+      <div>
+        <Label value="wynik" />
+        <Output value={score} />
       </div>
       <Button
         value="Stop"
