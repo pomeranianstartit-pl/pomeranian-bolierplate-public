@@ -1,0 +1,87 @@
+.gameOptionsButtons {
+  width: 100%;
+  height: 100%;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(4, 1fr);
+  grid-column-gap: 5px;
+  grid-row-gap: 5px;
+  grid-template-rows: auto 3fr;
+  grid-template-columns: 2fr 4fr;
+}
+
+.gameButtonsRows {
+  grid-area: 1 / 1 / 5 / 5;
+}
+
+.gameButtonsRows div {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.gameButtonsRows h4,
+.gameButtonsRows button {
+  width: 15rem;
+}
+
+.gameButtonsRows button {
+  padding: 1.25rem 2.2rem 1.25rem 2.2rem;
+  margin: 1rem;
+  border-radius: 0.5rem;
+  border-color: #23213d;
+  border: 1px;
+  gap: 1rem;
+  background: #23213d;
+  font-family: Poppins;
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 31px;
+  letter-spacing: 0em;
+  text-align: center;
+  color: white;
+}
+
+.gameButtonsRows button:hover,
+.gameButtonsRows button:active {
+  background: #fe3756;
+  border-color: #fe3756;
+}
+.gameButtonsRows button.activeButton {
+  background-color:aqua;
+}
+
+.memoGame .board {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  border-radius: 5px solid #EBEBEB;
+  gap: 9px;
+  max-width: 800px;
+  height: 500px; 
+}
+
+/* .moleGame .board .square {
+  display: flex;
+  border-radius: 8px;
+  background-color: #EBEBEB;
+  justify-content: center;
+  align-items: center;
+}
+
+/* .memoOptionsButtons {
+  width: 100%;
+  height: 100%;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(4, 1fr);
+  grid-column-gap: 5px;
+  grid-row-gap: 5px;
+  grid-template-rows: auto 3fr;
+  grid-template-columns: 2fr 4fr;
+}
+
+.memoButtonsRows {
+  grid-area: 1 / 1 / 5 / 5;
+} */
