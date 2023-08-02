@@ -1,0 +1,15 @@
+.btn-default {
+    font-family: inherit;
+    background: #23213d;
+    color: #fff;
+    border: none;
+    border-radius: 8px;
+    padding: 16px 36px;
+    font-size: 18px;
+    line-height: 31px;
+    font-weight: 500;
+  }
+  
+  .btn-default.active {
+    background: #fe3756;
+  }
