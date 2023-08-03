@@ -6,7 +6,7 @@ import { blockRouterMetaData as blockRouterMetaDataJsFunction1 } from './Exercis
 import { blockRouterMetaDataBooolean } from './Boolean/router-data';
 import { blockRouterMetaDataIfSwitch } from './IfSwitch/router-data';
 import { blockRouterMetaDataNumbers } from './Numbers/router-data';
-import { blockRouterMetaDataArrays } from './Arrays/router-data';
+import { blockRouterMetaDataJsArraysBasics } from './JsArraysBasics/router-data';
 import { blockRouterMetaDataJsArrayMethodsExercise } from './JsArrayMethodsExercise/router-data';
 import { blockRouterMetaDataJsStringsAsArrays } from './JsStringsAsArrays/router-data';
 import { blockRouterMetaDataJsObjectsBasics } from './JsObjectsBasics/router-data';
@@ -33,7 +33,7 @@ export const blockRouterMetaData = [
   blockRouterMetaDataNumbers,
   blockRouterMetaDataNumbersTraining,
   blockRouterMetaDataEmptyValuesAndComments,
-  blockRouterMetaDataArrays,
+  blockRouterMetaDataJsArraysBasics,
   blockRouterMetaDataJsArrayMethodsExercise,
   blockRouterMetaDataJsStringsAsArrays,
   blockRouterMetaDataJsObjectsBasics,

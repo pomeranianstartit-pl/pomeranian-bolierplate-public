@@ -1,5 +1,19 @@
 import './styles.css';
 
+
+
+a = 100;
+console.log(a);
+var a;
+console.log(a);
+
+b = 1000;
+console.log(a);
+let b;
+console.log(a);
+
+
+
 export function Hoisting() {
 
   function add(a) {

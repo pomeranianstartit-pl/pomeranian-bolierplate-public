@@ -1,9 +1,29 @@
 import './styles.css';
 
 export const JsDateTime = () => {
-  function measurePerformance1() { }
+  function expensiveFunction() {
+    const emptyTable = [];
 
-  function measurePerformance2() { }
+    for (let i = 0; i < 1e7; i++) {
+      emptyTable.push(i);
+    }
+  }
+
+  function measurePerformance1() {
+    const start = performance.now();
+
+    expensiveFunction();
+
+    console.log(`P1: elapsed ${Math.round(performance.now() - start)} ms`);
+  }
+
+  function measurePerformance2() {
+    const start = Date.now();
+
+    expensiveFunction();
+
+    console.log(`P2: elapsed ${Math.round(Date.now() - start)} ms`);
+  }
 
   return (
     <article>
