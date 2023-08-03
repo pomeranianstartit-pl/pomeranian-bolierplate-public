@@ -1,14 +1,13 @@
 import React, { useEffect, useState } from 'react';
 import './style.css';
 import axios from 'axios';
-import { formatDate } from './formatDate';
-import markerDone from './markerDone.svg'
+import { TodoItem } from './TodoItem/TodoItem';
 
 const BASE_API_URL = 'http://localhost:3333/api/';
 
 export function TodoWitchServer() {
-  const [getTodoList, setTodoList] = useState([]);
-  const [getError, setError] = useState([]);
+  const [todoList, setTodoList] = useState([]);
+  const [error, setError] = useState([]);
 
   const handleFetchTodoData = async () => {
     const timeOutDuration = 5000; //5sec czekania na odpoiedź serwera
@@ -35,30 +34,11 @@ export function TodoWitchServer() {
   }, []);
   return (
     <div className="todo-conteiner">
-      {getError && <p>{getError}</p>}
-      {getTodoList.length > 0 &&
-        getTodoList.map((todo) => (
-          <div className={todo.isDone? 'todo-conteiner__list__item--done' :"todo-conteiner__list__item"} key={todo.id}>
-            <div className="todo-conteiner__list__item__wrapper">
-              <h3 className="todo-conteiner__list__item__wrapper__title">
-                {todo.title}
-              </h3>
-              <div className="todo-conteiner__list__item__wrapper__text--smaller">
-                {todo.author}
-              </div>
-              <div className="todo-conteiner__list__item__wrapper__text--smaller">
-                {formatDate(todo.createdAt)}
-              </div>
-              <p className="todo-conteiner__list__item__wrapper__text">{todo.note}</p>
-            </div>
-            <div className="todo-conteiner__list__item__side">
-              {todo.isDone && <>
-              <div><img src={markerDone} alt="Done" /></div>
-              <div>{formatDate(todo?.doneDate)}</div>
-              </>}
-            </div>
-          </div>
-        ))}
+      {error && <p>{error}</p>}
+      {todoList.length > 0 &&
+        todoList.map((todo) => {
+          return <TodoItem todoDetails={todo} key={todo.id} />;
+        })}
     </div>
   );
 }
