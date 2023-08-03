@@ -1,0 +1,44 @@
+.background-url {
+  background: url('./miasto.jpg');
+  width:500px;
+  height: 300px;
+  background-size: cover;
+
+}
+.background-url-2 {
+  background: url('./miasto.jpg');
+  width:500px;
+  height: 300px;
+  background-size: 200px;
+  background-repeat: no-repeat;
+  background-repeat: repeat-y;
+
+}
+.background-url-2 {
+  background: url('./miasto.jpg');
+  width:500px;
+  height: 300px;
+  background-size: 200px;
+  background-repeat: no-repeat;
+ 
+}
+
+  .background-url-3 {
+    background: url('./miasto.jpg');
+    width:500px;
+    height: 300px;
+    background-size: 200px;
+    background-repeat: repeat-y;
+
+}
+.background-url-4 {
+  background: url('./miasto.jpg');
+  background-color: aqua;
+  width:500px;
+  height: 300px;
+  background-size: 200px;
+  background-repeat: repeat-y;
+  background-position: top right;
+  border: 1px solid#f00;
+
+}

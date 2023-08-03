@@ -14,6 +14,7 @@ aside ul {
 
 aside li {
   line-height: 2rem;
+
 }
 
 .aside-row {
@@ -27,7 +28,28 @@ aside li a {
   padding: 0.5rem;
 }
 
-aside a.active {
-  background-color: var(--color-primary-blue);
-  color: var(--color-white);
+
+
+
+aside a:hover {
+  color: blue;
+  background-color: aquamarine;
 }
+
+
+
+
+
+aside a.active {
+  /*background-color: var(--color-primary-blue);*/
+  color: #FE3756;
+}
+aside a.active svg path {
+  stroke: #FE3756;
+}
+
+/* propozycja 
+.aside-row span {
+  padding-left: 10px;
+}
+*/
