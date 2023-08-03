@@ -1,0 +1,30 @@
+.rgba {
+  color: rgba(123, 456, 34, 0.5);
+}
+
+.hex {
+  color: #adadfa;
+}
+
+.name {
+  color: red;
+}
+
+.hsl {
+  color: hsl(134, 60%, 30%, 60%);
+}
+
+.second-image {
+  background-image: url('./neom-mPHOMhm45wk-unsplash.jpg');
+  height: 260px;
+  width: 460px;
+  background-position: center center;
+  background-size: cover;
+}
+
+.blured {
+  filter: brightness(1.5);
+  filter: contrast(1.2);
+  filter: saturate(30%);
+  filter:blur(5px);
+}
