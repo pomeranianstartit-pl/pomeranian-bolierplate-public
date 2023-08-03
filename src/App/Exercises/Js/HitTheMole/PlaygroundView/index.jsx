@@ -46,13 +46,50 @@ const initArrayWithMole = [
 
 const getRandomInt = (max) => Math.floor(Math.random() * max) + 1;
 
-export const PlaygroundView = () => {
+export const PlaygroundView = ({ score, setScore }) => {
   const [arrayWithMole, setArrayWithMole] = useState(initArrayWithMole);
   const [moleFieldId, setMoleFieldId] = useState(getRandomInt(10));
 
+  const handleScore = (isMolePresent) => {
+    // if (isMolePresent) {
+    //   setScore(score + 1);
+    // } else if (!isMolePresent && score > 0) {
+    //   setScore(score - 1);
+    // }
+
+    isMolePresent && setScore(score + 1);
+    !isMolePresent && score > 0 && setScore(score - 1);
+  };
+
+  const handleReset = () => {
+    setTimeout(() => {
+      setArrayWithMole(
+        arrayWithMole.map((field) => {
+          return {
+            ...field,
+            hasClicked: false,
+          };
+        })
+      );
+    }, 300);
+  };
+
+  const handleClick = (clickedElement, isMolePresent) => {
+    setArrayWithMole(
+      arrayWithMole.map((field) => {
+        return {
+          ...field,
+          hasClicked: field.id === clickedElement.id,
+        };
+      })
+    );
+
+    handleReset();
+    handleScore(isMolePresent);
+  };
+
   useEffect(() => {
     const intervalId = setInterval(() => {
-      console.log('test z interval');
       setMoleFieldId(getRandomInt(10));
     }, 1000);
 
@@ -62,9 +99,18 @@ export const PlaygroundView = () => {
   return (
     <div className="htm-stage">
       {arrayWithMole.map((element) => {
+        const isMolePresent = element.id === moleFieldId;
+        const isClickedFieldWithMoleClass =
+          isMolePresent && element.hasClicked ? 'htm-stage-cell--green' : '';
+        const isClickedFieldWithoutMoleClass =
+          !isMolePresent && element.hasClicked ? 'htm-stage-cell--red' : '';
         return (
-          <div className="htm-stage-cell">
-            {element.id === moleFieldId && <MoleIcon />}
+          <div
+            key={element.id}
+            onClick={() => handleClick(element, isMolePresent)}
+            className={`htm-stage-cell ${isClickedFieldWithMoleClass} ${isClickedFieldWithoutMoleClass}`}
+          >
+            {isMolePresent && <MoleIcon />}
           </div>
         );
       })}
