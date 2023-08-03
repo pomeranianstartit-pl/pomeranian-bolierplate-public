@@ -5,3 +5,10 @@
 .variable-string-placeholder {
   margin-left: 5px;
 }
+
+#unique-id {
+font-size: 100x;
+font-style: italic;
+margin: 50px;
+text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5)
+}

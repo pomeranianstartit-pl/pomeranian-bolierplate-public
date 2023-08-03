@@ -1,12 +1,17 @@
 import './styles.css';
 
 export function Exercise() {
+
+const templateString = "Template string"
+
+
+
   function multiply(num1, num2) {
     return num1 * num2;
   }
 
   function getWelcomeMessage(name, amount) {
-    return `Witaj ${name}! Jesteś ${amount} uzytkownikiem odwiedzającym tę stronę!`;
+    return `Witaj ${name}! Jesteś ${amount} gościem na stronie!`;
   }
 
   return (
@@ -30,9 +35,14 @@ export function Exercise() {
           <code>9 * 9 = {multiply(9, 9)}</code>
         </pre>
         <pre>
-          <code>{getWelcomeMessage('Jon', 129384)}</code>
+          <code>{getWelcomeMessage('Amadeusz', 129384)}</code>
         </pre>
       </section>
+
+<p>Nasz template string:</p>
+<p id='unique-id'>{templateString} is awesome!</p>
+
     </div>
   );
 }
+
