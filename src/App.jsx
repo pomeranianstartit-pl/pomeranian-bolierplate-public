@@ -9,7 +9,7 @@ import { Dashboard } from './App/Dashboard';
 import { Exercises } from './App/Exercises';
 import { CV } from './App/CV';
 import { Calendar } from './App/Calendar';
-import { TechStack } from './App/TechStack'
+import { default as TechStack } from './App/TechStack';
 
 export function App() {
   return (
