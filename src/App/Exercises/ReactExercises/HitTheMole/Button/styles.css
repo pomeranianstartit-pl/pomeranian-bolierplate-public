@@ -1,17 +1,17 @@
-.moleButton-default {
-  height: 56px;
-  border-radius: 10px;
-  border: 1px solid #23213d;
+.button_base {
+  padding: 10px 20px;
   background: #23213d;
   color: #fff;
+  border-radius: 10px;
+  border: 1px solid #23213d;
+  cursor: pointer;
   font-family: inherit;
   font-size: 15px;
   font-style: normal;
   font-weight: 500;
-  cursor: pointer;
-  padding: 0 15px;
 }
 
-.moleButton-default.active {
+.button--active {
   background-color: #fe3756;
+  border: 1px solid #fe3756;
 }

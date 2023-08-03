@@ -1,18 +1,18 @@
-.mole-box {
+.htm-wrapper {
   max-width: 850px;
   font-family: Poppins;
   display: flex;
   flex-direction: column;
 }
 
-.mole-header {
+.htm-header {
   font-size: 18px;
   font-style: normal;
   font-weight: 400;
   margin-bottom: 30px;
 }
 
-.mole-panel-div {
+.htm-menu {
   max-width: 750px;
   display: grid;
   grid-template-columns: repeat(4, 1fr);
@@ -21,9 +21,8 @@
   grid-row-gap: 38px;
 }
 
-.mole-stage {
+.htm-stage {
   align-self: center;
-  margin: 100px 0;
   max-width: 450px;
   display: grid;
   grid-template-columns: repeat(5, 1fr);
@@ -31,13 +30,10 @@
   gap: 5px;
 }
 
-.mole-stage-cell {
+.htm-stage-cell {
   width: 100px;
   height: 100px;
   border-radius: 8px;
   background: #ebebeb;
-}
-
-.mole-image {
-  width: 10%;
+  display: flex;
 }
