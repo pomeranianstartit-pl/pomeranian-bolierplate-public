@@ -1,0 +1,13 @@
+.techstack-cards-two {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    width: 98px;
+    height: 120px;
+}
+
+.techstack-icon {
+    width: 65px;
+    height: 55px;
+}
