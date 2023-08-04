@@ -7,12 +7,12 @@ import { TodoForm } from './TodoForm/TodoForm';
 export const BASE_API_URL = 'http://localhost:3333/api';
 
 export function TodoWithServer() {
-  const [isEditingMode, setEditingMode] = useState(false);
-
   const [todoList, setTodoList] = useState([]);
   const [error, setError] = useState([]);
-  const [isAddingMode, setAddingMode] = useState(false);
+  const [isFormVisibility, setFormVisibility] = useState(false);
 
+  const [idForEdit, setIdForEdit] = useState(null);
+  console.log('id' + idForEdit);
   const handleFetchTodoData = async () => {
     const timeOutDuration = 5000; //5sec czekania na odpoiedź serwera
 
@@ -42,15 +42,19 @@ export function TodoWithServer() {
   }, []);
   return (
     <div className="todo-container">
-      <h2 className="todo-container__title">⯇ Todo List</h2>
+      <h2 className="todo-container__title">
+        <a href="http://localhost:3000/exercises/react">⯇ Todo List</a>
+      </h2>
       {error && <p>{error}</p>}
-      {isAddingMode && (
+      {isFormVisibility && (
         <TodoForm
-          setAddingMode={setAddingMode}
+          setFormVisibility={setFormVisibility}
           handleFetchTodoData={handleFetchTodoData}
+          setIdForEdit={setIdForEdit}
+          data={todoList.find((todo) => todo.id === idForEdit)}
         />
       )}
-      {!isAddingMode && (
+      {!isFormVisibility && (
         <>
           <div className="todo-container__list">
             {todoList.length > 0 &&
@@ -60,10 +64,9 @@ export function TodoWithServer() {
                     todo={todo}
                     key={todo.id}
                     handleFetchTodoData={handleFetchTodoData}
-                    isEditingMode={isEditingMode}
-                    setEditingMode={setEditingMode}
+                    setIdForEdit={setIdForEdit}
+                    setFormVisibility={setFormVisibility}
                   />
-
                 );
               })}
           </div>
@@ -71,14 +74,13 @@ export function TodoWithServer() {
           <button
             className="big-button"
             onClick={() => {
-              setAddingMode(true);
+              setFormVisibility(true);
             }}
           >
             DODAJ
           </button>
         </>
       )}
-
     </div>
   );
 }

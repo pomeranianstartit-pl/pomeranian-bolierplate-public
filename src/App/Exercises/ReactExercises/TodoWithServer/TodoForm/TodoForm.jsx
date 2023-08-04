@@ -3,16 +3,34 @@ import './TodoForm.css';
 import { BASE_API_URL } from '../TodoWithServer';
 import axios from 'axios';
 
-export function TodoForm({ setAddingMode, handleFetchTodoData }) {
-  const [title, setTitle] = useState('');
-  const [author, setAuthor] = useState('');
-  const [note, setNote] = useState('');
+export function TodoForm({ setFormVisibility, handleFetchTodoData, data, setIdForEdit }) {
+  const isEditMode = Boolean(data);
+
+  const [title, setTitle] = useState(isEditMode ? data.title : '');
+  const [author, setAuthor] = useState(isEditMode ? data.author : '');
+  const [note, setNote] = useState(isEditMode ? data.note : '');
 
   const [prevTitle, setPrevTitle] = useState('');
 
   const [isError, setError] = useState(false);
   const [isSuccess, setSuccess] = useState(false);
   const [isInProgress, setInProgress] = useState(false);
+
+  async function handleEditTodo() {
+    try {
+      setInProgress(true);
+      await axios.put(BASE_API_URL + '/todo/' + data.id, {
+        title,
+        note,
+        author,
+      });
+      setSuccess(true);
+    } catch (error) {
+      setError(true);
+    } finally {
+      setInProgress(false);
+    }
+  }
 
   async function handleCreateTodo() {
     try {
@@ -33,6 +51,7 @@ export function TodoForm({ setAddingMode, handleFetchTodoData }) {
       setInProgress(false);
     }
   }
+
   const titlePassLength = title.length <= 60;
   const notePassLength = note.length <= 500;
   const authorPassLength = author.length <= 25;
@@ -69,23 +88,24 @@ export function TodoForm({ setAddingMode, handleFetchTodoData }) {
           <p className="todo-form__field__warning">Za duża liczba znaków</p>
         )}
       </div>
-
-      <div className="todo-form__field">
-        <label className="todo-form__field__label">Autor</label>
-        <input
-          type="text"
-          placeholder="Jan Kowalski"
-          className="todo-form__field__input"
-          value={author}
-          onChange={(event) => {
-            setAuthor(event.target.value);
-            resetSuccessMessage();
-          }}
-        />
-        {!authorPassLength && (
-          <p className="todo-form__field__warning">Za duża liczba znaków</p>
-        )}
-      </div>
+      {!isEditMode && (
+        <div className="todo-form__field">
+          <label className="todo-form__field__label">Autor</label>
+          <input
+            type="text"
+            placeholder="Jan Kowalski"
+            className="todo-form__field__input"
+            value={author}
+            onChange={(event) => {
+              setAuthor(event.target.value);
+              resetSuccessMessage();
+            }}
+          />
+          {!authorPassLength && (
+            <p className="todo-form__field__warning">Za duża liczba znaków</p>
+          )}
+        </div>
+      )}
 
       <div className="todo-form__field">
         <label className="todo-form__field__label">Treść</label>
@@ -106,7 +126,7 @@ export function TodoForm({ setAddingMode, handleFetchTodoData }) {
       {isInProgress && <p>Zapisywanie to do...</p>}
       {isSuccess && (
         <p className="todo-form__success-message">
-          Todo "{prevTitle}" dodało się!
+          Todo "{isEditMode ? title : prevTitle}" dodało się!
         </p>
       )}
 
@@ -120,8 +140,9 @@ export function TodoForm({ setAddingMode, handleFetchTodoData }) {
         <button
           className="big-button"
           onClick={() => {
-            setAddingMode(false);
+            setFormVisibility(false);
             handleFetchTodoData();
+            setIdForEdit(null)
           }}
         >
           COFNIJ
@@ -129,11 +150,12 @@ export function TodoForm({ setAddingMode, handleFetchTodoData }) {
         <button
           className="big-button"
           onClick={() => {
-            handleCreateTodo();
+            if (isEditMode) handleEditTodo();
+            else handleCreateTodo();
           }}
           disabled={!isReadyToSend || isInProgress}
         >
-          DODAJ
+          {!isEditMode ? 'DODAJ' : 'Zapisz'}
         </button>
       </div>
     </div>

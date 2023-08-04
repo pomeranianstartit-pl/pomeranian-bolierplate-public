@@ -10,13 +10,13 @@ import { EditIcon } from './EditIcon/EditIcon.jsx';
 export function TodoItem({
   todo,
   handleFetchTodoData,
-  isEditingMode,
-  setEditingMode,
+  setIdForEdit,
+  setFormVisibility,
 }) {
   const { id, title, author, createdAt, isDone, doneDate, note } = todo;
 
   const [isRemoveError, setRemoveError] = useState(false);
-  const [isDoneError, setDoneError] = useState(false);
+  //const [isDoneError, setDoneError] = useState(false);
 
   const itemClasses = `todo-item ${isDone ? 'todo-item--darker' : ''}`;
 
@@ -37,7 +37,7 @@ export function TodoItem({
         handleFetchTodoData();
       })
       .catch(() => {
-        setDoneError(true);
+        //setDoneError(true);
       });
   }
 
@@ -66,7 +66,10 @@ export function TodoItem({
         <button
           className="todo-item__actions__button 
           todo-item__actions__icon"
-          onClick={() => setEditingMode(true)}
+          onClick={() => {
+            setIdForEdit(id);
+            setFormVisibility(true);
+          }}
         >
           <EditIcon />
         </button>
