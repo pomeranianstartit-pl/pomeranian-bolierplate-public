@@ -6,7 +6,9 @@ import { TodoForm } from './TodoForm/TodoForm';
 
 export const BASE_API_URL = 'http://localhost:3333/api';
 
-export function TodoWitchServer() {
+export function TodoWithServer() {
+  const [isEditingMode, setEditingMode] = useState(false);
+
   const [todoList, setTodoList] = useState([]);
   const [error, setError] = useState([]);
   const [isAddingMode, setAddingMode] = useState(false);
@@ -38,22 +40,16 @@ export function TodoWitchServer() {
   useEffect(() => {
     handleFetchTodoData();
   }, []);
-  useEffect(() => {
-    handleFetchTodoData();
-  }, [todoList]);
   return (
     <div className="todo-container">
       <h2 className="todo-container__title">⯇ Todo List</h2>
-
       {error && <p>{error}</p>}
-
       {isAddingMode && (
         <TodoForm
           setAddingMode={setAddingMode}
           handleFetchTodoData={handleFetchTodoData}
         />
       )}
-
       {!isAddingMode && (
         <>
           <div className="todo-container__list">
@@ -64,7 +60,10 @@ export function TodoWitchServer() {
                     todo={todo}
                     key={todo.id}
                     handleFetchTodoData={handleFetchTodoData}
+                    isEditingMode={isEditingMode}
+                    setEditingMode={setEditingMode}
                   />
+
                 );
               })}
           </div>
@@ -79,6 +78,7 @@ export function TodoWitchServer() {
           </button>
         </>
       )}
+
     </div>
   );
 }

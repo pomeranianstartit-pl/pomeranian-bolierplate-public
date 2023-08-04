@@ -1,13 +1,20 @@
 import { formatDate } from '../formatDate';
 import './TodoItem.css';
-import { BASE_API_URL } from '../TodoWitchServer.jsx';
-import { BinIcon } from './BinIcone/BinIcon.jsx';
+import { BASE_API_URL } from '../TodoWithServer.jsx';
+import { BinIcon } from './BinIcon/BinIcon.jsx';
 import axios from 'axios';
 import { useState } from 'react';
-import markerDone from '../markerDone.svg';
+import { MarkDoneIcone } from './MarkDoneIcon/MarkDoneIcon.jsx';
+import { EditIcon } from './EditIcon/EditIcon.jsx';
 
-export function TodoItem({ todo, handleFetchTodoData }) {
+export function TodoItem({
+  todo,
+  handleFetchTodoData,
+  isEditingMode,
+  setEditingMode,
+}) {
   const { id, title, author, createdAt, isDone, doneDate, note } = todo;
+
   const [isRemoveError, setRemoveError] = useState(false);
   const [isDoneError, setDoneError] = useState(false);
 
@@ -47,6 +54,23 @@ export function TodoItem({ todo, handleFetchTodoData }) {
         <p className="todo-item__wrapper__text">{note}</p>
       </div>
       <div className="todo-item__actions">
+        {!todo.isDone && (
+          <button
+            className="todo-item__actions__button 
+          todo-item__actions__icon"
+            onClick={() => handleDoneClick()}
+          >
+            <MarkDoneIcone />
+          </button>
+        )}
+        <button
+          className="todo-item__actions__button 
+          todo-item__actions__icon"
+          onClick={() => setEditingMode(true)}
+        >
+          <EditIcon />
+        </button>
+
         <button
           className="todo-item__actions__button 
           todo-item__actions__icon"
@@ -54,11 +78,6 @@ export function TodoItem({ todo, handleFetchTodoData }) {
         >
           <BinIcon isError={isRemoveError} />
         </button>
-        {!todo.isDone && (
-          <button onClick={() => handleDoneClick()}>
-            <img src={markerDone} alt="markerDone" />
-          </button>
-        )}
         {isRemoveError && (
           <div className="todo-item__actions__error-message">
             nie udało się usunąć
@@ -71,9 +90,11 @@ export function TodoItem({ todo, handleFetchTodoData }) {
               className="todo-item__actions__icon 
               todo-item__actions__icon--check-mark"
             >
-              &#10003;
+              <MarkDoneIcone isDone={isDone} />
             </div>
-            <div>{formatDate(doneDate)}</div>
+            <div className="todo-item__actions__date">
+              {formatDate(doneDate)}
+            </div>
           </>
         )}
       </div>

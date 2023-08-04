@@ -26,29 +26,27 @@ header .logo {
   height: auto;
   pointer-events: none;
 }
-.profile-picture .img-placeholder{
+.profile-picture .img-placeholder {
   border-radius: 50%;
-  border: 3px solid #FF4D69;
-
+  border: 3px solid #ff4d69;
 }
-.settings{
+.settings {
   border-radius: 50%;
   background-color: transparent;
   border-color: transparent;
 }
-header .menu{
+header .menu {
   display: flex;
   justify-content: space-around;
   width: 300px;
 }
-div .menu p{
+div .menu p {
   font-style: normal;
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 0px;
-    color: #222222;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 0px;
+  color: #222222;
 }
-h3{
-  padding-bottom: 20px;
-  padding-top: 20px;
+.header-name {
+  margin: 0;
 }
