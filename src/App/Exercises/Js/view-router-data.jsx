@@ -16,6 +16,7 @@ import { blockRouterMetaData as JsFunctionsBasics } from './JsFunctionsBasics/ro
 import { blockRouterMetaData as ExerciseJsFunctionsExtended } from './ExerciseJsFunctionsExtended/router-data';
 import { dateAndTimeMetaData } from './DateAndTime/router-data';
 import { animationsJSMetaData } from './AnimationsJS/router-data';
+import { hitTheMoleMetaData } from './HitTheMole/router-data';
 
 
 
@@ -36,5 +37,6 @@ export const blockRouterMetaData = [
   ExerciseJsFunctionsExtended,
   dateAndTimeMetaData,
   animationsJSMetaData,
+  hitTheMoleMetaData,
 ];
 export const blockRouterData = getParsedRouterDataList(blockRouterMetaData);

@@ -1,0 +1,42 @@
+.htm-wrapper {
+  font-family: 'Poppins', sans-serif;
+}
+
+.htm-header {
+  font-size: 18px;
+  line-height: 34px;
+  font-weight: 400;
+}
+
+.htm-menu {
+  max-width: 750px;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  gap: 30px;
+}
+
+.htm-stage {
+  display: grid;
+  justify-content: center;
+  grid-template-columns: repeat(5, 100px);
+  grid-template-rows: repeat(2, 100px);
+  gap: 3px;
+  margin-top: 20px;
+}
+
+.htm-stage-cell {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #ebebeb;
+  border-radius: 8px;
+}
+
+.htm-stage-cell--green {
+  background: #e2fbd7;
+}
+
+.htm-stage-cell--red {
+  background: #f3aea8;
+}
