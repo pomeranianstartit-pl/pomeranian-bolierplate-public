@@ -1,35 +1,29 @@
 import './styles.css';
-import { useState, useEffect } from "react";
+import { useState, useEffect } from 'react';
 
 export const SetTimeout = () => {
-
-
-  const [value, setValue] = useState(0)
-  const [progress, setProgress] = useState(10)
-
+  const [progress, setProgress] = useState(10);
+  const [value, setValue] = useState(0);
 
   function handleOnClick() {
-    setValue(value + 1)
-    setProgress(progress + 1)
+    console.log('klikniecie');
+    setValue(value + 1);
   }
 
-  // function callBack() {
-  //   console.log('jestem funkcja efekt callback');
-  //   setValue(value + 1)
-  // }
   useEffect(() => {
-    console.log('jestem funkcja efekt callback');
-    setValue(value + 1)
-  }, [])
+    console.log('Jestem callback');
+    setProgress(value);
+  }, [value]);
 
-
-  console.log('pierwsza wiadomosc', value);
   return (
     <div>
-      <h1> useEffect, setTimeout, setInterval</h1>
-      <p>{value}</p>
-      <button onClick={handleOnClick}>zwieksz wartosc</button>
-      <div style={{ width: progress, backgroundColor: 'blue' }}>.</div>
+      <h1>useEffect, setTimeout, setInterval</h1>
+      <p>
+        Value: {value}, Progress: {progress}
+      </p>
+
+      <button onClick={handleOnClick}>Increment value</button>
+      <div style={{ backgroundColor: 'blue', width: progress }}>.</div>
     </div>
   );
 };

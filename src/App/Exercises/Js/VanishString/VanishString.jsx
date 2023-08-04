@@ -3,19 +3,21 @@ import { useState } from 'react';
 
 export const VanishString = () => {
 
-  const [isVisible, setIsVisible] = useState(false)
+  const [vanish, setVanish] = useState(true)
+
+  function handleVanish() {
 
 
-  function handleShow() {
-
-    setIsVisible(!isVisible)
+    setVanish(!vanish)
 
   }
+
   return (
     <div>
       <h1>znikajacy text</h1>
-      <button onClick={handleShow}>Zniknij</button>
-      <p>{isVisible && 'Jakiś text'}</p>
+      <button onClick={handleVanish}>zniknij</button>
+      {vanish && <p>Znikajacy text</p>}
+
     </div>
   );
 };

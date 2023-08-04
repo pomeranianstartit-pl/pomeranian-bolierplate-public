@@ -1,21 +1,16 @@
 import './styles.css';
 
+// a = 100;
+// console.log(a);
+// var a;
+// console.log(a);
 
-
-a = 100;
-console.log(a);
-var a;
-console.log(a);
-
-b = 1000;
-console.log(a);
-let b;
-console.log(a);
-
-
+// b = 1000;
+// console.log(a);
+// let b;
+// console.log(a);
 
 export function Hoisting() {
-
   function add(a) {
     let score = a;
 
@@ -30,21 +25,20 @@ export function Hoisting() {
     return addMore;
   };
 
-  console.log('result:1', add(2)(4).result()); // 6
-  console.log('result:2', add(2)(4)(6).result()); // 12
-  console.log('result:3', add(2)(4)(6)(9).result()); // 21
+
+
+  function multiplay(factor, ...rest) {
+    const result = [];
+    for (const number of rest) {
+      result.push(number * factor);
+    }
+    return result.join(',');
+  }
   return (
-
     <>
+      <div>{multiplay(10, 2, 3, 4, 5)}</div>
 
-      <div></div>
-
-
-
+      <div>jakis div</div>
     </>
-
   );
-
 }
-
-

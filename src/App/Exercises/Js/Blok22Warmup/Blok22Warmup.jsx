@@ -9,7 +9,24 @@ export const Blok22Warmup = () => {
     { letter: 'U', score: 0 },
   ];
 
+  function getScore(imie, wagi) {
+    let score = 0
+    for (let index = 0; index < imie.lenght; index++) {
+      score = score + 1
+    }
 
+    return 0
+  }
+
+  function imionaWagi(imiona, wagi) {
+    return imiona.map((imie) => {
+      return { name: imie, score: getScore(imie) };
+    });
+  }
+  function handleOnClick() {
+    const wynik = imionaWagi(['Janek', 'Zosia'], wagi)
+    console.log(JSON.stringify(wynik));
+  }
 
   return (
     <div>
@@ -23,7 +40,7 @@ export const Blok22Warmup = () => {
           Zwraca posortowaną tablice imion z dodanym parametrem sumaWag
           niemutujaca oryginalnej
         </p>
-
+        <button onClick={handleOnClick}>Kliknij</button>
       </section>
     </div>
   );
