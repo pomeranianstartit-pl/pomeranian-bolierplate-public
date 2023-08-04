@@ -2,7 +2,10 @@ import './styles.css';
 import { MasterHeader } from '../../../Components/MasterHeader/MasterHeader';
 import { Label, Button, Output, Result, Tile } from './Components';
 import { useState, useEffect } from 'react';
-const MINUTE = 60000; //1 minuta = 60000 mls
+import { formatTime } from './Utilities/index';
+import { getNewMolePosition } from './Utilities/index';
+const MINUTE = 6000; //1 minuta = 60000 mls
+const HIGHLIGHT_TIME = 500; //0.5 sekundy
 const DURATIONS = [
   { label: '1 minuta', duration: MINUTE },
   { label: '2 minuty', duration: MINUTE * 2 },
@@ -15,57 +18,98 @@ const MOLES = [
 ];
 
 export const HitTheMoleGame = () => {
+  const [prevDuration, setPrevDuration] = useState();
   const [duration, setDuration] = useState();
-  const [molesNo, setMolesNo] = useState();
+  const [molesOption, setMolesOption] = useState();
   const [status, setStatus] = useState('notStarted');
   const [timeleft, setTimeLeft] = useState();
   const [score, setScore] = useState();
   const [showWarning, setShowWarning] = useState(false);
   const [tiles, setTiles] = useState([]);
+  const [intervalId, SetIntervalId] = useState();
+  const [molePosition, setMolePosition] = useState();
+  const [correct, setCorrect] = useState();
+  const [incorrect, setIncorrect] = useState();
+
+  function startCountdown() {
+    const id = setInterval(() => setTimeLeft((prev) => prev - 100), 100);
+    SetIntervalId(id);
+  }
+
+  // function handlestop(){
+  //   setStatus('finished');
+  //   clearInterval(intervalId);
+  //   setDuration(undefined);
+  //   setMolesOption(undefined);
+
+  // }
 
   useEffect(() => {
-    console.log('Status sie zmienił', status);
-    if (status === 'notStarted') {
-      setTimeLeft(0);
+    let timeoutId;
+    if (correct !== undefined) {
+      timeoutId = setTimeout(() => setCorrect(undefined), HIGHLIGHT_TIME);
     }
-    if (status === 'started') {
-      setTimeLeft(duration);
-      setTiles(getInitialTiles(molesNo));
+    return () => clearTimeout(timeoutId);
+  }, [correct]);
+
+  useEffect(() => {
+    let timeoutId;
+    if (incorrect !== undefined) {
+      timeoutId = setTimeout(() => setIncorrect(undefined), HIGHLIGHT_TIME);
     }
-    if (status !== 'finished') {
-      setScore(0);
-    }
-  }, [status, duration]);
+    return () => clearTimeout(timeoutId);
+  }, [incorrect]);
 
-  function getInitialTiles(molesNumber) {
-    const tiles = MOLES.find((mole) => mole.molesNo === molesNumber).tiles;
-    return Array(tiles).fill(0);
-  }
-
-  function formatTime(time) {
-    const timeInSeconds = Math.round(time / 1000);
-    const timeInMinutes = Math.round(timeInSeconds / 60)
-      .toString()
-      .padStart(2, '0');
-    const seconds = Math.round(timeInSeconds % 60)
-      .toString()
-      .padStart(2, '0');
-    return `${timeInMinutes}:${seconds}`;
-  }
-
-  function settingsValidation() {
-    if (duration > 0 && molesNo > 0) {
-      return false;
+  function handleTileClick(index) {
+    if (molePosition === index) {
+      setCorrect(index);
+      setScore((prev) => prev + 1);
+      setMolePosition(getNewMolePosition(index, molesOption.tiles));
     } else {
-      return true;
+      setIncorrect(index);
+      setScore((prev) => prev - 1);
     }
   }
+
+  useEffect(() => {
+    if (timeleft <= 0) {
+      clearInterval(intervalId);
+      setStatus('finished');
+      setDuration(undefined);
+      setMolesOption(undefined);
+    }
+  }, [intervalId, timeleft]);
+
+  function getInitialTiles(molesOption) {
+    return Array(molesOption.tiles)
+      .fill(0)
+      .map((tile, index) => ({ index }));
+  }
+  function getTileVariant(index) {
+    if (index === correct) return 'correct';
+    if (index === incorrect) return 'incorrect';
+    return 'neutral';
+  }
+
+  // function settingsValidation() {
+  //   if (duration > 0 && molesOption > 0) {
+  //     return false;
+  //   } else {
+  //     return true;
+  //   }
+  // }
 
   function handleStart() {
-    const validation = settingsValidation();
-    if (validation === false) {
+    // const validation = settingsValidation();
+    if (duration && molesOption) {
       setStatus('started');
       setShowWarning(false);
+      setTimeLeft(duration);
+      setPrevDuration(duration);
+      setTiles(getInitialTiles(molesOption));
+      setScore(0);
+      startCountdown();
+      setMolePosition(getNewMolePosition(molePosition, molesOption.tiles));
     } else {
       setShowWarning(true);
     }
@@ -80,16 +124,15 @@ export const HitTheMoleGame = () => {
       </p>
       {showWarning && <p className="mole-warning">Brakuje ustawień gry !!!</p>}
       {status === 'finished' && (
-        <Result duration={formatTime(duration)} score={score} />
+        <Result duration={formatTime(prevDuration)} score={score} />
       )}
 
-      <p>duration:{duration},</p>
-      <p>Status: {status}</p>
-      <p>timeLeft:{timeleft}</p>
-      <p>Tiles:{JSON.stringify(tiles)}</p>
-
-      <p>ilosc kretow:{molesNo}</p>
-      <p>tiles:</p>
+      <p>
+        duration:{duration} , Status: {status} , timeLeft:{timeleft} , Tiles:
+        {JSON.stringify(tiles)}, ilosc kretow:
+        {molesOption && molesOption.molesNo}
+        tiles:
+      </p>
       {status !== 'started' && (
         <>
           <div className="mole-controls-panel">
@@ -111,9 +154,14 @@ export const HitTheMoleGame = () => {
                 key={item.molesNo}
                 value={item.label}
                 onClick={() => {
-                  setMolesNo(item.molesNo);
+                  setMolesOption(item);
                 }}
-                variant={item.molesNo !== molesNo ? 'primary' : 'secondary'}
+                variant={
+                  molesOption &&
+                  (item.molesNo !== molesOption.molesNo
+                    ? 'primary'
+                    : 'secondary')
+                }
               />
             ))}
           </div>
@@ -123,24 +171,41 @@ export const HitTheMoleGame = () => {
           </div>
         </>
       )}
+      {status === 'started' && (
+        <>
+          <div>
+            <Label value="Czas do końca" />
+            <Output value={formatTime(timeleft)} />
+          </div>
+          <div>
+            <Label value="wynik" />
+            <Output value={score} />
+          </div>
+          <Button
+            value="Stop"
+            onClick={() => setStatus('notStarted')}
+            variant="tertiary"
+          />
+        </>
+      )}
 
-      <div>
-        <Label value="Czas do końca" />
-        <Output value={formatTime(timeleft)} />
-      </div>
-      <div>
-        <Label value="wynik" />
-        <Output value={score} />
-      </div>
-      <Button
-        value="Stop"
-        onClick={() => setStatus('notStarted')}
-        variant="tertiary"
-      />
-      <Tile />
+      {status === 'started' && (
+        <div className="mole-board">
+          {tiles.map(({ index }) => (
+            <Tile
+              key={index}
+              onClick={() => handleTileClick(index)}
+              hasMole={index === molePosition}
+              variant={getTileVariant(index)}
+            />
+          ))}
+        </div>
+      )}
+
+      {/* <Tile />
       <Tile hasMole />
       <Tile variant="correct" />
-      <Tile variant="incorrect" />
+      <Tile variant="incorrect" /> */}
     </div>
   );
 };

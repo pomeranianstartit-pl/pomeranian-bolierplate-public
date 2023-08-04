@@ -1,11 +1,13 @@
+import { tab } from '@testing-library/user-event/dist/tab';
 import './styles.css';
 
 export const JsArrayMethodsExercise = () => {
   function excercise1() {
     function sameNumbers(tablica1, tablica2) {
       // TODO:
+      const wspolne = tablica1.filter((element) => tablica2.includes(element));
+      return wspolne;
     }
-
     const result = sameNumbers([1, 2, 3, 4, 5], [3, 5, 7, 9]);
 
     console.log('Excercise 1 result: ', result);

@@ -2,6 +2,7 @@
     border-radius: 0.5rem;
     width: 6.5rem;
     height: 6.5rem;
+    cursor: pointer;
 }
 
 .mole-tile--neutral {

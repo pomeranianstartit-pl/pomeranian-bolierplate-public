@@ -11,19 +11,24 @@ export const Blok22Warmup = () => {
 
   function getScore(imie, wagi) {
     let score = 0;
-    console.log(imie, score);
-    for (let index; index < imie.lenght; index++) {
-      console.log(index, imie.charAt(index));
-      wagi.find((value) => value);
-      //score = score + imie.charAt(index).toUpperCase;
+    for (let index = 0; index < imie.lenght; index++) {
+      const litera = imie.charAt(index).toUpperCase();
+      const found = wagi.find((value) => value.letter === litera);
+      if (found) {
+        score = score + found.score;
+      }
+      //console.log(index, litera, found);
     }
     return score;
   }
   // [{name:Janek,Score:-}]
   function imionaWagi(imiona, wagi) {
-    return imiona.map((imie) => {
-      return { name: imie, score: getScore(imie) };
-    });
+    console.log(imiona, wagi);
+    return imiona
+      .map((imie) => {
+        return { name: imie, score: getScore(imie, wagi) };
+      })
+      .sort((first, second) => first.score - second.score * -1);
   }
   function handleOnClick() {
     const wynik = imionaWagi(['Janek', 'Zosia'], wagi);
