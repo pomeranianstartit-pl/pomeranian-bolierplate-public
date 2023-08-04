@@ -12,7 +12,7 @@ import { useState } from 'react';
 
 export function AppAside() {
   // const [isTextClicked, setIsTextClicked] = useState(false);
-  const [activeLink, setActiveLink] = useState(null);
+  const [activeLink, setActiveLink] = useState(1);
 
   const links = [
     { id: 1, link: 'dashboard', icon: <HouseIcon /> },

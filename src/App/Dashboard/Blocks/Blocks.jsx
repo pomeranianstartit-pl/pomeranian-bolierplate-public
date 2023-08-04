@@ -25,9 +25,9 @@ export const Blocks = () => {
             <PersonalCard />
           </div>
           <p className="dashboard-tile-description">
-            podgląd cv wraz z doświadczeniem
+            podgląd CV wraz z doświadczeniem
           </p>
-          <Link to="/dashboard/tech-stack">Zobacz więcej</Link>
+          <Link to="/cv">Zobacz więcej</Link>
         </div>
         <div>
           <p className="dashboard-tile-title">Projekty</p>
@@ -47,7 +47,7 @@ export const Blocks = () => {
           <p className="dashboard-tile-description">
             wszystkie wykonane ćwiczenia
           </p>
-          <Link to="/dashboard/tech-stack">Zobacz więcej</Link>
+          <Link to="/exercises">Zobacz więcej</Link>
         </div>
         <div>
           <p className="dashboard-tile-title">Edukacja</p>
@@ -65,7 +65,7 @@ export const Blocks = () => {
           <p className="dashboard-tile-description">
             Stack technologiczny realizowany na kursie
           </p>
-          <Link to="/dashboard/tech-stack">Zobacz więcej</Link>
+          <Link to="/tech-stack">Zobacz więcej</Link>
           {/* <SeeMoreLink to="tech-stack" /> */}
         </div>
         <div>

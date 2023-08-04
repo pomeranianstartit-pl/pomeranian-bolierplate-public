@@ -17,7 +17,7 @@ export function HtmlCssExercises() {
 
   return (
     <div>
-      <p>HTML & CSS - lista ćwiczeń</p>
+      <p style={{ fontWeight: 700 }}>HTML & CSS - lista ćwiczeń</p>
       <GoBackLink label="Zamknij" />
 
       <hr />

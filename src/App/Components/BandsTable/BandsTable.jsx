@@ -5,11 +5,9 @@ export const BandsData = (props) => {
 
   return (
     <div>
-      {'Testowy tekst czy go widać?'}
+      {/* {'Testowy tekst czy go widać?'} */}
       {band}
       {yearFormed} {albums} {mostFamousSong}
     </div>
   );
 };
-
-
