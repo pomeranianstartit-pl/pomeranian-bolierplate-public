@@ -5,13 +5,16 @@
   --color-blue-gray: #525e70;
   --color-black: #000000;
   --color-grey: rgb(60, 64, 67);
+  --gray-700: #6b7280;
   --color-white: rgb(255, 255, 255);
   /*definig colors*/
   --color-link-hover: #ff4d69;
   --color-block-10-bg: rgba(0, 0, 0, 0.05);
   --color-block-10-body: #e5e5e5;
+  --color-succes: #07c23b;
   --color-succes-light: #e2fbd7;
   --color-danger-light: #f3aea8;
+  --colors-actions-danger: #e12b1b;
 }
 
 body {
@@ -32,4 +35,30 @@ code {
 *:before,
 *:after {
   box-sizing: border-box;
+}
+/* Buttony typowe dla całej aplikacji*/
+.app-button {
+  padding: 1rem 2.2rem 1rem 2.2rem;
+  margin: 0.5rem;
+  border-radius: 0.5rem;
+  border-color: #23213d;
+  border: 1px;
+  background: #23213d;
+  font-family: Poppins;
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 1.5rem;
+  letter-spacing: 0em;
+  text-align: center;
+  color: white;
+}
+
+.app-button:hover,
+.app-button.activeButton {
+  background: #fe3756;
+  border-color: #fe3756;
+}
+.app-button:disabled {
+  background-color: var(--gray-700);
+  cursor: crosshair !important;
 }

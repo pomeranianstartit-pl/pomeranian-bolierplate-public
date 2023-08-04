@@ -1,4 +1,4 @@
-import { useState, useEffect } from 'react';
+import { useState } from 'react';
 import './styles.css';
 import axios from 'axios';
 
@@ -6,8 +6,6 @@ const BASE_API_URL = 'http://localhost:3333/';
 export const LocalDevAndFetch = () => {
   const [getTodoList, setTodoList] = useState([]);
   const [getError, setError] = useState([]);
-  const [getFlag, setFlag] = useState(false);
-  const [getNewTodo, setNewTodo] = useState('');
 
   const handleFetchTodoData = async () => {
     const timeOutDuration = 5000; //5sec czekania na odpoiedź serwera

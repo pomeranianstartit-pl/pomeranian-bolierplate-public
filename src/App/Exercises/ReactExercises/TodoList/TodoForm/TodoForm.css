@@ -1,0 +1,13 @@
+.todo-form__field {
+  margin: 20px;
+}
+
+.todo-form__field label {
+  display: block;
+  font-weight: bold;
+  margin-bottom: 0.6rem;
+}
+.todo-form__field textarea {
+  font-family: Poppins;
+  font-size: 1rem;
+}
