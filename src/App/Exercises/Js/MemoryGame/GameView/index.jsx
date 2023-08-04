@@ -4,7 +4,7 @@ import { useEffect } from 'react';
 
 export const GameView = () => {
   return (
-    <div className="htm-menu">
+    <div className="mg-menu">
       <Menu label="CZAS GRY">
         <Button>2:00</Button>
       </Menu>
@@ -13,7 +13,7 @@ export const GameView = () => {
         <Button>2</Button>
       </Menu>
 
-      <Menu label="Przyciski sterujące">
+      <Menu label="PRZYCISKI STERUJĄCE">
         <Button>PASS</Button>
       </Menu>
     </div>

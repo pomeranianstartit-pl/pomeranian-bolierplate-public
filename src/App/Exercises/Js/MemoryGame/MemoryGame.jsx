@@ -23,9 +23,8 @@ export const MemoryGame = () => {
       {isGameStarted && <GameView />}
       {!isGameStarted && <MenuView />}
 
-      <PlaygroundView />
-
       <GameView />
+      <PlaygroundView />
     </div>
   );
 };

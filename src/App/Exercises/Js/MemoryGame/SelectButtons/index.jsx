@@ -3,7 +3,9 @@ import { Button } from '../Button';
 export const SelectButtons = (props) => {
   const { options } = props;
 
-  const handleClick = () => {};
+  const handleClick = () => {
+    console.log('test');
+  };
   return (
     <>
       {options.map((element) => (
