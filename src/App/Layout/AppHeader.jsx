@@ -28,7 +28,7 @@ export function AppHeader() {
           <img className="img-placeholder" src={DominikProfile50} alt="" />
         </div>
         <div className="user">
-          <h3>Dominik</h3>
+          <h3 className='header-name'>Dominik</h3>
           <p>Kursant</p>
         </div>
         <img src={strzalka} alt="" />

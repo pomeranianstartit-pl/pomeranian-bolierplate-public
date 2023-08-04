@@ -1,0 +1,72 @@
+.todo-item {
+  margin: 20px 0;
+  padding: 0 15px;
+  border: 1px solid var(--color-blue-gray);
+  border-left: 3px solid var(--color-dark-gray);
+  border-radius: 5px;
+  box-shadow: 0 0 10px #ccc;
+  display: flex;
+  min-width: 700px;
+  max-width: 800px;
+}
+.todo-item--darker {
+  background-color: #cddde8;
+}
+
+.todo-item__wrapper {
+  flex-grow: 1;
+}
+
+.todo-item__wrapper__title {
+  color: var(--color-black);
+  max-width: 550px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.todo-item__wrapper__text {
+  color: var(--color-grey);
+  max-width: 550px;
+  line-height: 1.1rem;
+}
+
+.todo-item__wrapper__text--smaller {
+  font-size: 0.8em;
+  margin-right: 0;
+}
+
+.todo-item__actions {
+  padding: 15px 0;
+  width: 20%;
+  text-align: center;
+}
+
+.todo-item__actions__button {
+  background-color: transparent;
+  border: none;
+}
+
+.todo-item__actions__button:hover {
+  cursor: pointer;
+}
+
+.todo-item__actions__error-message {
+  font-size: 0.8em;
+  color: var(--color-red);
+}
+
+.todo-item__actions__icon {
+  font-size: 50px;
+  text-align: center;
+}
+.todo-item__actions__date {
+  font-size: 0.8rem;
+}
+.todo-form__field__input {
+  width: 508px;
+}
+.todo-form__field__warning {
+  color: red;
+  margin-top: 0;
+}
