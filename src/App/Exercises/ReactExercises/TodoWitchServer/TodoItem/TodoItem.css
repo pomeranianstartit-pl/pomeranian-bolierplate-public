@@ -1,68 +1,58 @@
-.todo-item{
-    display: flex;
-    border: 1px solid #ccc;
-    border-left: 5px solid #C8CBD1;
+.todo-item {
     margin: 20px 0;
-    padding: 15px;
+    padding: 0 15px;
+    border: 1px solid var(--color-blue-gray);
+    border-left: 3px solid var(--color-dark-gray);
     border-radius: 5px;
-    box-shadow: 0 0 10px rgb(215, 215, 215);
-    justify-content: space-between;
+    box-shadow: 0 0 10px #ccc;
+    display: flex;
   }
   
-  /* .todo-conteiner__list__item__wrapper{
+  .todo-item--darker {
+    background-color: #cddde8;
+  }
   
+  .todo-item__wrapper {
+    flex-grow: 1;
   }
-  .todo-conteiner__list__item__wrapper__title{
   
-  } */
-  .todo-item__wrapper__text{
-    color: #6B7280;
-    line-height: 21px;
-    margin-bottom: 0;
+  .todo-item__wrapper__title {
+    color: var(--color-black);
   }
-  .todo-item__wrapper__text--smaller{
-    color: #6B7280;
-    font-size: 0.8rem;
-    line-height: 18px;
+  
+  .todo-item__wrapper__text {
+    color: var(--color-grey);
   }
-  .todo-item__side{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: end;
-    font-size: 0.8rem;
-    color: #6B7280;
+  
+  .todo-item__wrapper__text--smaller {
+    font-size: 0.8em;
   }
-  .todo-item__side__confirm{
-    height: 80px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: end;
+  
+  .todo-item__actions {
+    padding: 15px 0;
+    width: 20%;
+    text-align: center;
   }
-  .todo-item__side__confirm div img{
-    filter: invert(42%) sepia(93%) saturate(1352%) hue-rotate(87deg) brightness(100%) contrast(119%);
-  }
-  .todo-item__side__bin{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+  
+  .todo-item__actions__button {
     background-color: transparent;
     border: none;
-    filter: brightness(0) saturate(100%) invert(81%) sepia(3%) saturate(9%) hue-rotate(316deg) brightness(80%) contrast(90%);
-  }
-  .todo-item--done{
-    background-color: #C8CBD1;
-    display: flex;
-    border: 1px solid #ccc;
-    border-left: 5px solid #646464;
-    margin: 20px 0;
-    padding: 15px;
-    border-radius: 5px;
-    box-shadow: 0 0 10px rgb(215, 215, 215);
-    justify-content: space-between;
-  }
-  .todo-item--done .todo-item__wrapper__title{
-    color: #6B7280;
   }
   
+  .todo-item__actions__button:hover {
+    cursor: pointer;
+  }
+  
+  .todo-item__actions__error-message {
+    font-size: 0.8em;
+    color: var(--color-red);
+  }
+  
+  .todo-item__actions__icon {
+    font-size: 50px;
+    text-align: center;
+  }
+  
+  .todo-item__actions__icon--check-mark {
+    color: green;
+  }
