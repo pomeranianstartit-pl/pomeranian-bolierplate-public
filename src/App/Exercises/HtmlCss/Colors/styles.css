@@ -1,0 +1,9 @@
+.font-test-family {
+  font-family: Chilanka;
+}
+
+.opacity {
+  background-color: #00ff00;
+  padding: 24 px;
+  opacity: 0.5;
+}
