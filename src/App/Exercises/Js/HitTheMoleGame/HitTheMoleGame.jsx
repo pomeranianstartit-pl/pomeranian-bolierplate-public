@@ -4,7 +4,7 @@ import { Label, Button, Output, Result, Tile } from './Components';
 import { useState, useEffect } from 'react';
 import { formatTime } from './Utilities/index';
 import { getNewMolePosition } from './Utilities/index';
-const MINUTE = 6000; //1 minuta = 60000 mls
+const MINUTE = 60000; //1 minuta = 60000 mls
 const HIGHLIGHT_TIME = 500; //0.5 sekundy
 const DURATIONS = [
   { label: '1 minuta', duration: MINUTE },
@@ -12,7 +12,7 @@ const DURATIONS = [
   { label: '3 minuty', duration: MINUTE * 3 },
 ];
 const MOLES = [
-  { label: '1 kret', molesNo: 1, tiles: 10, timeVisible: 10000 },
+  { label: '1 kret', molesNo: 1, tiles: 10, timeVisible: 1000 },
   { label: '2 krety', molesNo: 2, tiles: 15, timeVisible: 500 },
   { label: '3 krety', molesNo: 3, tiles: 20, timeVisible: 350 },
 ];
@@ -36,13 +36,26 @@ export const HitTheMoleGame = () => {
     SetIntervalId(id);
   }
 
-  // function handlestop(){
-  //   setStatus('finished');
-  //   clearInterval(intervalId);
-  //   setDuration(undefined);
-  //   setMolesOption(undefined);
-
-  // }
+  function handleStop() {
+    setStatus('notStarted');
+    clearInterval(intervalId);
+    setDuration(undefined);
+    setMolesOption(undefined);
+  }
+  useEffect(() => {
+    if (molePosition === undefined) return;
+    let timeoutId;
+    // console.timeEnd('mole-position');
+    // console.time('mole-position');
+    if (molePosition !== undefined) {
+      timeoutId = setTimeout(
+        () =>
+          setMolePosition(getNewMolePosition(molePosition, molesOption.tiles)),
+        molePosition.timeVisible
+      );
+    }
+    return () => clearTimeout(timeoutId);
+  }, [molePosition, molesOption]);
 
   useEffect(() => {
     let timeoutId;
@@ -181,11 +194,7 @@ export const HitTheMoleGame = () => {
             <Label value="wynik" />
             <Output value={score} />
           </div>
-          <Button
-            value="Stop"
-            onClick={() => setStatus('notStarted')}
-            variant="tertiary"
-          />
+          <Button value="Stop" onClick={handleStop} variant="tertiary" />
         </>
       )}
 
