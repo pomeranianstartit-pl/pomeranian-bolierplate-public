@@ -43,15 +43,15 @@ export const HitTheMoleGame = () => {
     setMolesOption(undefined);
   }
   useEffect(() => {
-    if (molePosition === undefined) return;
+    if (molesOption === undefined) return;
     let timeoutId;
-    // console.timeEnd('mole-position');
-    // console.time('mole-position');
+    //console.timeEnd('mole-position');
+    //console.time('mole-position');
     if (molePosition !== undefined) {
       timeoutId = setTimeout(
         () =>
           setMolePosition(getNewMolePosition(molePosition, molesOption.tiles)),
-        molePosition.timeVisible
+        molesOption.timeVisible
       );
     }
     return () => clearTimeout(timeoutId);
@@ -140,12 +140,12 @@ export const HitTheMoleGame = () => {
         <Result duration={formatTime(prevDuration)} score={score} />
       )}
 
-      <p>
+      {/* <p>
         duration:{duration} , Status: {status} , timeLeft:{timeleft} , Tiles:
         {JSON.stringify(tiles)}, ilosc kretow:
         {molesOption && molesOption.molesNo}
         tiles:
-      </p>
+      </p> */}
       {status !== 'started' && (
         <>
           <div className="mole-controls-panel">
