@@ -1,4 +1,5 @@
+import { children } from 'react';
 import './styles.css';
-export const Label = ({ value }) => {
-    return <span className="mole-label"> {value} </span>;
+export const Label = ({ children }) => {
+    return <span className="mole-label"> {children} </span>;
 };
