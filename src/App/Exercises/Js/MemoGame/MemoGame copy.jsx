@@ -7,7 +7,7 @@ import { Tile } from './Features/Tile/Tile';
 import { formatTime, getAlfabet } from './Utilities';
 import { useEffect } from 'react';
 
-const ELEMENTS = [4, 16, 20];
+const ELEMENTS = [2, 16, 20];
 
 // const LETTERS = [...'abcdefghij']
 const charaters = getAlfabet(10);
@@ -21,17 +21,17 @@ export function MemoGame() {
   const [time, setTime] = useState(0);
   const [score, setScore] = useState(0);
   const [found, setFound] = useState(0);
-  const [firstClick, setFirstClick] = useState();
+  const [resultMessage, setResultMessage] = useState();
+  const [fisrtClick, setFirstClick] = useState();
   const [secondClick, setSecondClick] = useState();
 
   function getInitialTiles(size) {
     const charactersSubset = charaters.slice(0, size / 2);
     const allCharacter = [...charactersSubset, ...charactersSubset];
-    const shuffledCharacters = allCharacter.sort(() => Math.random() - 0.5);
-    const characterObject = shuffledCharacters.map((character, index) => {
-      return { index, value: character, isVisible: false, varian: 'neutral' };
+    const characterObject = allCharacter.map((character, index) => {
+      return { index, value: character, isVisible: false, variant: 'neutral' };
     });
-    // console.log(characterObject);
+    console.log(characterObject);
     return characterObject;
   }
 
@@ -54,28 +54,27 @@ export function MemoGame() {
   }
 
   function handleTileOnClick(index) {
-    if (tiles.some((tile) => tile.index === index && tile.isVisible === true))
+    if (tiles.some((tile) => (tile.index = index && tile.isVisible === true)))
       return;
     setTiles((oldTiles) => {
-      const newTiles = oldTiles.map((tile) =>
-        tile.index === index ? { ...tile, isVisible: true } : tile
-      );
-      //Jeden sposób
-      // const newTiles = [...oldTiles];
-      // const toBeUpdated = newTiles[index];
-      // newTiles[index] = { ...toBeUpdated, isVisible: true };
+      const newTiles = [...oldTiles];
+      const toBeUpdated = newTiles[index];
+      newTiles[index] = { ...toBeUpdated, isVisible: true };
+
+      newTiles[index] = { index, isVisible: true };
       // console.log(
-      //   'New Tile;',
+      //   'bew Tiles',
       //   JSON.stringify(newTiles),
       //   'Index',
       //   index,
-      //   'To Be Updated',
+      //   'to be updated',
       //   JSON.stringify(toBeUpdated)
       // );
+
       return newTiles;
     });
 
-    if (firstClick === undefined) {
+    if (fisrtClick === undefined) {
       setFirstClick(index);
     } else {
       setSecondClick(index);
@@ -83,11 +82,11 @@ export function MemoGame() {
   }
 
   useEffect(() => {
-    if (firstClick !== undefined && secondClick !== undefined) {
+    if (fisrtClick !== undefined && secondClick !== undefined) {
       setScore((prev) => prev + 1);
       setTiles((oldTiles) => {
         const newTiles = [...oldTiles];
-        const first = newTiles[firstClick];
+        const first = newTiles[fisrtClick];
         const second = newTiles[secondClick];
         let variant = 'neutral';
         if (first.value === second.value) {
@@ -96,53 +95,13 @@ export function MemoGame() {
           variant = 'incorrect';
         }
 
-        newTiles[firstClick] = { ...first, variant };
+        newTiles[fisrtClick] = { ...first, variant };
         newTiles[secondClick] = { ...second, variant };
-
-        // console.log(JSON.stringify(first), JSON.stringify(second));
-
+        // console.log(JSON.stringify(fisrtClick), JSON.stringify(secondClick));
         return newTiles;
       });
-      setFirstClick(undefined);
-      setSecondClick(undefined);
     }
-  }, [firstClick, secondClick]);
-
-  function handleResetIncorrect(index) {
-    setTiles((oldTiles) => {
-      const newTiles = oldTiles.map((tile) =>
-        tile.index === index
-          ? { ...tile, isVisible: false, variant: 'neutral' }
-          : tile
-      );
-      return newTiles;
-    });
-  }
-
-  useEffect(() => {
-    if (
-      prevNoOfElements ===
-      tiles.filter((tile) => tile.variant === 'correct').length
-    ) {
-      setStatus('finished');
-    }
-
-    // Ustawianie liczby znalezionych par
-    setFound(tiles.filter((tile) => tile.variant === 'correct').length / 2);
-    //Sparwdzanie niepoprawnych kafelków
-
-    let timeoutIdArray = [];
-
-    tiles
-      .filter((tile) => tile.variant === 'incorrect')
-      .forEach((tile) => {
-        const timeoutId = setTimeout(handleResetIncorrect, 1000, tile.index);
-        console.log('set TimoutID=', timeoutId);
-        timeoutIdArray.push(timeoutId);
-      });
-    // console.log('End og useEffect', JSON.stringify(timeoutIdArray));
-    return () => timeoutIdArray.forEach((id) => clearTimeout(id));
-  }, [prevNoOfElements, tiles]);
+  }, [fisrtClick, secondClick]);
 
   useEffect(() => {
     let intervalId;
@@ -154,7 +113,6 @@ export function MemoGame() {
     }
     return () => clearInterval(intervalId);
   }, [status]);
-
   return (
     <div>
       <p>
@@ -214,7 +172,7 @@ export function MemoGame() {
           </div>
         </div>
       )}
-      {(status === 'started' || status === 'finished') && (
+      {status === 'started' && (
         <div className="memo-board">
           {tiles.map(({ index, value, isVisible, variant }) => (
             <Tile
