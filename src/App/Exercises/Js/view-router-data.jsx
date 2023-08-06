@@ -24,7 +24,6 @@ export const blockRouterMetaData = [
   JsArraysBasics,
   ExerciseJsFunctions,
   Time,
-  // HitTheMoleGame,
   HitTheMoleGameMetaData,
   MemoGameMetaData
 ];

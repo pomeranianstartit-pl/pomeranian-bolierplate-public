@@ -10,8 +10,8 @@ export const MoleGameSettings = ({
 }) => {
   const gameTimeOption = [
     { label: '1 minuta', timeValue: 1 * 60 * 1000 },
-    { label: '2 minuta', timeValue: 2 * 60 * 1000 },
-    { label: '3 minuta', timeValue: 3 * 60 * 1000 },
+    { label: '2 minuty', timeValue: 2 * 60 * 1000 },
+    { label: '3 minuty', timeValue: 3 * 60 * 1000 },
   ];
   const moleCountOption = [
     { label: '1 kret' },

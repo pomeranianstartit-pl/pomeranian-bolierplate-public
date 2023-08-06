@@ -1,0 +1,89 @@
+.parent-box-model p {
+margin: 20px;
+padding: 20px;
+border: 3px solid red;
+display: block;
+width: 300px;
+height: 300px;
+
+}
+
+#id {
+  color: red; 
+  background-color: yellow;
+}
+
+/* #unique-id-box-model {
+
+}
+
+.class-box-model {
+
+} */
+
+
+.display-css-test {
+  background-color: gold;
+  width: 300px;
+  height: 300px;
+  text-align: center;
+  display: block;
+  margin-top: 30px;
+}
+
+/* ////////////Box sizing vs Border Box /////////// */
+
+.box-sizing-conteiner {
+  margin: 50px;
+}
+
+.box-sizing-conteiner .content-box-example {
+ width: 200px;
+ padding: 20px;
+ border: 2px solid yellow;
+ box-sizing: content-box;    
+}
+
+.box-sizing-conteiner .border-box-example {
+  margin-top: 20px;
+  width: 200px;
+  padding: 20px;
+  border: 2px solid pink;
+  box-sizing: border-box;    
+ }
+
+ /* ////////////End Box sizing vs Border Box /////////// */
+
+
+ /* ////////////CSS property overflow /////////// */
+ .overflow-container {
+  width: 200px;
+  height: 100px;
+  border: 1px solid black;
+  overflow: auto;
+  margin: 2rem;
+ }
+
+ .overflow-content {
+  width: 300px;
+  height: 150px;
+  background-color: brown;
+  padding: 10px;
+ }
+
+ /* ////////////CSS property overflow END/////////// */
+
+  /* ////////////CSS units/////////// */
+ .units-container {
+  width: 600px;
+  height: 80px;
+  border: 1px solid black;
+ }
+
+ .units-content {
+  background-color: red;
+  width: 50%;
+  height: 20%;
+ }
+
+   /* ////////////CSS units/////////// */
