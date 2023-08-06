@@ -1,6 +1,6 @@
 :root {
     --primary: #FE3756;
-    --white: white;
+    --bg: white;
     --dark-blue: #23213D;
 }
 
@@ -11,21 +11,22 @@
     color: var(--white);
     padding: 1em;
     z-index: 2;
-    display: flex;
 }
 
 .cookies-agreement button {
-    padding: 1em 1.5em;
-    border-radius: 8px;
     text-transform: uppercase;
 }
 
 .cookies-agreement button.agree {
+    padding: 20px 36px 20px 36px;
+    border-radius: 8px;
     background-color: var(--primary);
     color: var(--white);
 }
 
 .cookies-agreement button.customize {
+    padding: 20px 36px 20px 36px;
+    border-radius: 8px;
     background-color: var(--white);
     color: var(--primary);
 }
@@ -36,17 +37,5 @@
 }
 
 .cookies-agreement .text-wrapper {
-    margin: 1em;
-}
-
-.cookies-agreement .button-wrapper {
-    display: flex;
-    align-items: center;
-    gap: 2em;
-}
-
-.cookies-agreement .left {
-    display: flex;
-    flex: 1;
-    gap: 20px;
+    
 }
