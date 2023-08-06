@@ -5,14 +5,14 @@ import { ReactRouterEventsMetaData } from './ReactRouterEvents/router-data';
 import { Block09MetaData } from './Block09/router-data';
 import { LocalDevAndFetchMetaData } from './LocalDevAndFetch/router-data';
 import { TodoListMetaData } from './TodoList/router-data';
-import { MuiMetaData } from './Mui/router-data';
+import { MaterialUIBasicElementsMetaData } from './MaterialUIBasicElements/router-data';
 
 export const blockRouterMetaData = [
   SubRouteExampleMetaData,
   ReactRouterEventsMetaData,
   Block09MetaData,
   LocalDevAndFetchMetaData,
-  TodoListMetaData
-  MuiMetaData,
+  TodoListMetaData,
+  MaterialUIBasicElementsMetaData,
 ];
 export const blockRouterData = getParsedRouterDataList(blockRouterMetaData);
