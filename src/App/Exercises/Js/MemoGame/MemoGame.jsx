@@ -6,7 +6,7 @@ import { formatTime } from './Utilities';
 import './styles.css';
 import { getAlphabet } from './Utilities';
 
-const ELEMENTS = [2, 16, 20];
+const ELEMENTS = [4, 16, 20];
 const LETTERS = [...'ABCDEFGHIJ'];
 const characters = getAlphabet(10);
 
@@ -22,15 +22,15 @@ export const MemoGame = () => {
   const [time, setTime] = useState(0);
   const [score, setScore] = useState(0);
   const [found, setFound] = useState(0);
-  const [resultMessage, setResultMessage] = useState();
-  const [fisrtClick, setFirstClick] = useState();
+  const [firstClick, setFirstClick] = useState();
   const [secondClick, setSecondClick] = useState();
 
   function getInitialTiles(size) {
     const charactersSubset = characters.slice(0, size / 2);
     const allCharacters = [...charactersSubset, ...charactersSubset];
-    const characterObject = allCharacters.map((character, index) => {
-      return { index, value: character };
+    const shuffledCharacters = allCharacters.sort(() => Math.random() - 0.5);
+    const characterObject = shuffledCharacters.map((character, index) => {
+      return { index, value: character, isVisible: false, variant: 'neutral' };
     });
     console.log(characterObject);
     return characterObject;
@@ -43,6 +43,8 @@ export const MemoGame = () => {
       setTiles(getInitialTiles(noOfElements));
       setScore(0);
       setTime(0);
+      setPrevNoOfElements(noOfElements);
+      setFound(0);
     } else {
       setShowWarning(true);
     }
@@ -54,13 +56,102 @@ export const MemoGame = () => {
     }
   }
 
-  function handleTileClicked() {
+  function handleTileClicked(index) {
+    if (tiles.some((tile) => tile.index === index && tile.isVisible === true))
+      return;
+    setTiles((oldTiles) => {
+      const newTiles = oldTiles.map((tile) =>
+        tile.index === index ? { ...tile, isVisible: true } : tile
+      );
+      // const newTiles = [...oldTiles];
+      // const toBeUpdated = newTiles[index];
+      // newTiles[index] = { ...toBeUpdated, isVisible: true };
+      // console.log(
+      //   'newTiles',
+      //   JSON.stringify(newTiles),
+      //   'index',
+      //   index,
+      //   'toBeUpdated',
+      //   JSON.stringify(toBeUpdated)
+      // );
+      return newTiles;
+    });
     setScore((prev) => prev + 1);
+    if (firstClick === undefined) {
+      setFirstClick(index);
+    } else {
+      setSecondClick(index);
+    }
   }
+
+  function handleResetIncorrect(index) {
+    setTiles((oldTiles) => {
+      const newTiles = oldTiles.map((tile) =>
+        tile.index === index
+          ? { ...tile, isVisible: false, variant: 'neutral' }
+          : tile
+      );
+      return newTiles;
+    });
+  }
+
+  useEffect(() => {
+    if (firstClick !== undefined && secondClick !== undefined) {
+      setScore((prev) => prev + 1);
+      setTiles((oldTiles) => {
+        const newTiles = [...oldTiles];
+        const first = newTiles[firstClick];
+        const second = newTiles[secondClick];
+        let variant = 'neutral';
+        if (first.value === second.value) {
+          variant = 'correct';
+          // setFound((prevValue) => prevValue +1 );
+        } else {
+          variant = 'incorrect';
+        }
+        newTiles[firstClick] = { ...first, variant };
+        newTiles[secondClick] = { ...second, variant };
+        return newTiles;
+      });
+      setFirstClick(undefined);
+      setSecondClick(undefined);
+    }
+  }, [firstClick, secondClick]);
+
+  useEffect(() => {
+    if (
+      prevNoOfElements ===
+      tiles.filter((tile) => tile.variant === 'correct').length
+    ) {
+      setStatus('finished');
+    }
+
+    // ustawianie liczby znalezionych elementów
+    setFound(tiles.filter((tile) => tile.variant === 'correct').length / 2);
+
+    // sprawdzanie niepoprawnych kafelkow
+    let timeoutIdArray = [];
+    tiles
+      .filter((tile) => tile.variant === 'incorrect')
+      .forEach((tile) => {
+        const timeoutId = setTimeout(handleResetIncorrect, 1000, tile.index);
+        // console.log('setTimeout ID = ', timeoutId);
+        timeoutIdArray.push(timeoutId);
+      });
+    // console.log('na końcu useEffect', JSON.stringify(timeoutIdArray));
+    return () =>
+      timeoutIdArray.forEach((id) => {
+        clearTimeout(id);
+      });
+  }, [prevNoOfElements, tiles]);
+
   useEffect(() => {
     let intervalId;
     if (status === 'started') {
-      setInterval(() => setTime((prevTime) => prevTime + 1000), 1000);
+      intervalId = setInterval(
+        () => setTime((prevTime) => prevTime + 1000),
+        1000
+      );
     }
     return () => clearInterval(intervalId);
   }, [status]);
@@ -74,8 +165,16 @@ export const MemoGame = () => {
       <p>
         status:{status}, liczba elementów: {noOfElements}
       </p>
-      {(status === 'passed' || status === 'finished') && (
-        <Result>Gratulacje! Twój wynik to 8 par w czasie 0:56!</Result>
+      {((status === 'passed' && (
+        <Result>
+          Gratulacje! Twój wynik to {score} odsłon w czasie {formatTime(time)}
+        </Result>
+      )) ||
+        status === 'finished') && (
+        <Result>
+          Zgadłeś {found} na {prevNoOfElements / 2} par w czasie{' '}
+          {formatTime(time)}, w {score} odsłonach. Powodzenia następnym razem!
+        </Result>
       )}
 
       {showWarning && <p className="memo-warning">Brakuje ustawień gry!!!</p>}
@@ -119,10 +218,17 @@ export const MemoGame = () => {
           </div>{' '}
         </>
       )}
-      {status === 'started' && (
+
+      {(status === 'started' || status === 'finished') && (
         <div className="memo-game-panel">
-          {tiles.map(({ index, value }) => (
-            <Tile key={index} value={value} onClick={handleTileClicked} />
+          {tiles.map(({ index, value, isVisible, variant }) => (
+            <Tile
+              key={index}
+              value={value}
+              onClick={() => handleTileClicked(index)}
+              isVisible={isVisible}
+              variant={variant}
+            />
           ))}
         </div>
       )}
