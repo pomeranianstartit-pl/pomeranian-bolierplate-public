@@ -84,11 +84,13 @@
   animation-duration: 2s;
 }
 
-
-@keyframes example {
-  from {background-color: red;}
-  to {background-color: yellow;}
+.business-card {
+  @keyframes example {
+    from {background-color: red;}
+    to {background-color: yellow;}
+  }
 }
+
 
 /*div {
   width: 100px;
@@ -97,10 +99,10 @@
   animation-name: example;
   animation-duration: 4s;
 }*/
-
+/* 
 h2 {
   animation: example 5s linear 2s infinite alternate;
-}
+} */
 
 #myDIV {
   margin: auto;
@@ -146,4 +148,29 @@ li {
   position: relative;
   top: 50%;
   left: 0;
+}
+
+ol {
+  animation-duration: 3s;
+  animation-name: slidein;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+}
+
+@keyframes slidein {
+  from {
+    margin-left: 100%;
+    width: 300%;
+  }
+
+  75% {
+    font-size: 300%;
+    margin-left: 25%;
+    width: 150%;
+  }
+
+  to {
+    margin-left: 0%;
+    width: 100%;
+  }
 }

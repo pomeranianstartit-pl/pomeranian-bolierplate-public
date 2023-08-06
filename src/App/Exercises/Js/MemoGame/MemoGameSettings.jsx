@@ -27,7 +27,7 @@ export const MemoGameSettings = ({
       <div className="gameOptionsButtons">
         <div className="gameButtonsRows">
           <div>
-            <h4>LICZBA ELEMENTÓW {boardSize}</h4>
+            <h3>LICZBA ELEMENTÓW {boardSize}</h3>
             {gameBoardSizeValue.map(({ label, boardSizeValue }) => (
               <button
                 className={boardSizeValue === boardSize ? 'activeButton' : ''}
@@ -40,7 +40,7 @@ export const MemoGameSettings = ({
             ))}
           </div>
           <div>
-            <h4>PRZYCISKI STERUJĄCE</h4>
+            <h3>PRZYCISKI STERUJĄCE</h3>
             <button
                 onClick={() => {
                   setGameStarted(true);
