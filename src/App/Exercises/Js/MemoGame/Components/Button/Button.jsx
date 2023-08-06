@@ -11,7 +11,7 @@ export const Button = ({ value, variant = 'primary', onClick }) => {
     )
         console.warn('błędny parametr variant', variant);
     return (
-        <button className={`Mole-Button Mole-Button--${variant}`} onClick={onClick}>
+        <button className={`memo-button memo-button--${variant}`} onClick={onClick}>
             {value}
         </button>
     );

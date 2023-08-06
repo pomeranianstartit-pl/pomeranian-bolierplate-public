@@ -1,0 +1,35 @@
+.memo-tile {
+    border-radius: 0.5rem;
+    width: 6.5rem;
+    height: 6.5rem;
+    cursor: pointer;
+    color: black;
+    display: flex;
+    align-items: center;
+
+
+}
+
+.memo-tile--neutral {
+
+    background: #EBEBEB;
+
+}
+
+.memo-tile--correct {
+
+    background: #E2FBD7;
+
+}
+
+.memo-tile--incorrect {
+
+    background: #F3AEA8;
+
+}
+
+.memo-tile--has-mole {
+    /* background-image: url("./Mole.svg");
+    background-repeat: no-repeat;
+    background-position: center; */
+}

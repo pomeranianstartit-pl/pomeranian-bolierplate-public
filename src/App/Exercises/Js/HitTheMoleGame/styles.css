@@ -1,17 +1,11 @@
-.first-buttons {
-  display: flex;
-}
-
-.second-buttons {
-  display: flex;
-}
-
-.third-buttons {
-  display: flex;
-}
-
 .mole-warning {
+    color: red;
+    font-size: 2rem;
+}
 
-  color: rgb(57, 24, 204);
-  font-size: 2rem;
+.mole-board {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 1rem;
+    width: min-content;
 }

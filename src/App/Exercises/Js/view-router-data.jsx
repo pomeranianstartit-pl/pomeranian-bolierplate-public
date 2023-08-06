@@ -21,6 +21,7 @@ import { blockRouterMetaDataVanishString } from './VanishString/router-data';
 import { blockRouterMetaDataTimer } from './Timer/router-data';
 import { blockRouterMetaDataHitTheMoleGame } from './HitTheMoleGame/router-data';
 import { blockRouterMetaDataJsSlidingBanner } from './JsSlidingBanner/router-data';
+import { blockRouterMetaDataMemoGame } from './MemoGame/router-data';
 
 import { blockRouterMetaDataEmptyValuesAndComments } from './EmptyValuesAndComments/router-data';
 
@@ -46,6 +47,7 @@ export const blockRouterMetaData = [
   blockRouterMetaDataVanishString,
   blockRouterMetaDataTimer,
   blockRouterMetaDataJsSlidingBanner,
-  blockRouterMetaDataHitTheMoleGame
+  blockRouterMetaDataHitTheMoleGame,
+  blockRouterMetaDataMemoGame
 ];
 export const blockRouterData = getParsedRouterDataList(blockRouterMetaData);

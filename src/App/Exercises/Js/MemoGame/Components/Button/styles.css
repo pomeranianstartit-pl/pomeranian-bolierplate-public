@@ -1,4 +1,4 @@
-.Mole-Button {
+.memo-button {
     border-radius: 8px;
 
     color: #FFF;
@@ -17,29 +17,29 @@
 
 }
 
-.Mole-Button:hover {
+.memo-button:hover {
     opacity: 0.8;
     /* background-color: red; */
 
 }
 
-.Mole-Button--primary {
+.memo-button--primary {
     border: 1px solid #23213D;
     background: #23213D;
 }
 
-.Mole-Button--secondary {
+.memo-button--secondary {
 
     border: 1px solid #FE3756;
     background: #FE3756;
 }
 
-.Mole-Button--tertiary {
+.memo-button--tertiary {
     border: 1px solid red;
     background-color: red;
 }
 
-.mole-controls-panel {
+.memo-controls-panel {
 
     display: flex;
 

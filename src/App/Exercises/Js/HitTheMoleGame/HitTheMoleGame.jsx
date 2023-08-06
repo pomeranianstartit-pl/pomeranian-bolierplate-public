@@ -1,10 +1,12 @@
 import './styles.css';
 import { MasterHeader } from '../../../Components/MasterHeader/MasterHeader';
 import { Label, Button, Output, Result, Tile } from './Components';
-
 import { useState, useEffect } from 'react';
-
-const MINUTE = 60000; //jedna minuta
+import { formatTime } from './Utilities/index';
+import { getNewMolePosition } from './Utilities/index';
+import { GameBoard } from './Features/GameBoard/GameBoard';
+import { MoleTimer } from './Features/MoleTimer';
+const MINUTE = 6000; //1 minuta = 60000 mls
 
 const DURATIONS = [
   { label: '1 minuta', duration: MINUTE },
@@ -12,89 +14,84 @@ const DURATIONS = [
   { label: '3 minuty', duration: MINUTE * 3 },
 ];
 const MOLES = [
-  { label: '1 kret', molesNo: 1, tiles: 10, timeVisible: 10000 },
-  { label: '2 krety', molesNo: 2, tiles: 15, timeVisible: 500 },
-  { label: '3 krety', molesNo: 3, tiles: 20, timeVisible: 350 },
+  { label: '1 kret', molesNo: 1, tiles: 10, timeVisible: 1000 },
+  { label: '2 krety', molesNo: 2, tiles: 15, timeVisible: 1500 },
+  { label: '3 krety', molesNo: 3, tiles: 20, timeVisible: 2000 },
 ];
 
 export const HitTheMoleGame = () => {
+  // console.log('GameBoard component rendered');
+  const [prevDuration, setPrevDuration] = useState();
   const [duration, setDuration] = useState();
-  const [molesNo, setMolesNo] = useState();
+  const [molesOption, setMolesOption] = useState();
   const [status, setStatus] = useState('notStarted');
-  const [timeLeft, setTimeLeft] = useState();
-  const [score, setScore] = useState(0);
+  const [score, setScore] = useState();
   const [showWarning, setShowWarning] = useState(false);
-  const [tiles, setTiles] = useState([])
+  const [tiles, setTiles] = useState([]);
 
-  function formatTime(time) {
-    const timeInSeconds = Math.round(time / 1000);
-    const timeInMinutes = Math.round(timeInSeconds / 60)
-      .toString()
-      .padStart(2, '0');
-    const seconds = Math.round(timeInSeconds % 60)
-      .toString()
-      .padStart(2, '0');
-    return `${timeInMinutes}:${seconds}`;
+  function handleStop() {
+    setStatus('notStarted');
+    setDuration(undefined);
+    setMolesOption(undefined);
+  }
+  function handleFinish() {
+    setStatus('finished');
+    setDuration(undefined);
+    setMolesOption(undefined);
   }
 
-  useEffect(() => {
-    if (status === 'notStarted') {
-      setTimeLeft(0);
-    }
-    if (status === 'started') {
-      setTimeLeft(duration);
-      setTiles(getInitialTiles(molesNo))
-    }
-    if (status === 'finished') {
-      setScore(0);
-    }
-  }, [status]);
-
-  function getInitialTiles(molesNumber) {
-    const tiles = MOLES.find((mole) => mole.molesNo === molesNumber).tiles;
-    return Array(tiles).fill(0)
+  function getInitialTiles(molesOption) {
+    return Array(molesOption.tiles)
+      .fill(0)
+      .map((tile, index) => ({ index }));
   }
 
-  function settingsValidation() {
-    if (duration > 0 && molesNo > 0) {
-      return false;
-    } else {
-      return true;
-    }
-  }
+  // function settingsValidation() {
+  //   if (duration > 0 && molesOption > 0) {
+  //     return false;
+  //   } else {
+  //     return true;
+  //   }
+  // }
 
   function handleStart() {
-    const validation = settingsValidation();
-    if (validation === false) {
+    // const validation = settingsValidation();
+    if (duration && molesOption) {
       setStatus('started');
       setShowWarning(false);
+      // setTimeLeft(duration);
+      setPrevDuration(duration);
+      setTiles(getInitialTiles(molesOption));
+      setScore(0);
+      // startCountdown();
+      // setMolePosition(getNewMolePosition(molePosition, molesOption.tiles));
     } else {
       setShowWarning(true);
     }
   }
+  // console.log('test:', status === 'finished' && true && 1000 + 200);
   return (
     <div>
       <MasterHeader value="Kret" />
-      <p>Gra polegająca na walnięciu kreta jak się pojawi</p>
-      {showWarning && (
-        <p className="mole-warning">Brakuje ustawien gry</p>
-      )}
       <p>
-        Gratulację! Twój wynik to 32 złapane krety w czasie{' '}
-        {formatTime(duration)} minut!
+        Gra polegająca na podążaniu za krecikiem i trafieniu na kwadrat, w
+        którym się pojawił.
       </p>
-      <hr />
-
+      {showWarning && <p className="mole-warning">Brakuje ustawień gry !!!</p>}
       {status === 'finished' && (
-        <Result duration={formatTime(duration)} score={score} />
+        <Result duration={formatTime(prevDuration)} score={score} />
       )}
-      <p> Duration: {duration}, Moles no: {molesNo}, Time left: {timeLeft}, Status: {status} Tiles: {JSON.stringify(tiles)}</p>
 
-
-      {status != 'started' && (
+      {/* <p>
+        duration:{duration} , Status: {status} , timeLeft:{timeleft} , Tiles:
+        {JSON.stringify(tiles)}, ilosc kretow:
+        {molesOption && molesOption.molesNo}
+        tiles:
+      </p> */}
+      {status !== 'started' && (
         <>
-          <div className="first-buttons">
-            <Label value="Czas gry" />
+          <div className="mole-controls-panel">
+            <Label>Czas Gry</Label>
             {DURATIONS.map((item) => (
               <Button
                 key={item.label}
@@ -105,53 +102,52 @@ export const HitTheMoleGame = () => {
             ))}
           </div>
 
-          <hr />
-          <p>ilość kretów: {molesNo}</p>
-
-          <div className="second-buttons">
-            {' '}
-            <Label value="Ilość kretów" />
+          <div className="mole-controls-panel">
+            <Label>Ilość kretów</Label>
             {MOLES.map((item) => (
               <Button
-                key={item.label}
+                key={item.molesNo}
                 value={item.label}
-                onClick={() => setMolesNo(item.molesNo)}
-                variant={item.molesNo !== molesNo ? 'primary' : 'secondary'}
+                onClick={() => {
+                  setMolesOption(item);
+                }}
+                variant={
+                  molesOption &&
+                  (item.molesNo !== molesOption.molesNo
+                    ? 'primary'
+                    : 'secondary')
+                }
               />
             ))}
           </div>
+          <div className="mole-controls-panel">
+            <Label>Przyciski Sterujące</Label>
+            <Button value="Start" onClick={handleStart} />
+          </div>
         </>
       )}
-      <hr />
-      {status != 'started' && (
+      {status === 'started' && (
         <>
-          <div className="third-buttons">
-            <Label value="Przycisk sterujący" />
-            <Button value={'START'} onClick={handleStart} />
+          <div>
+            <Label>Czas do końca</Label>
+            <Output>
+              <MoleTimer duration={duration} handleFinish={handleFinish} />
+            </Output>
           </div>
-
-          <div className="third-buttons">
-            <Label value="Czas do końca" />
-            <Output value={formatTime(timeLeft)} />
+          <div>
+            <Label>Wynik</Label>
+            <Output>{score} </Output>
           </div>
+          <Button value="Stop" onClick={handleStop} variant="tertiary" />
         </>
       )}
-
-      {status != 'notStarted' && (<>
-        <div className="third-buttons">
-          <Label value="Wynik" />
-          <Output value={score} />
-        </div>
-
-        <div className="third-buttons">
-          <Label value="Przycisk sterujący" />
-          <Button value={'STOP'} onClick={() => setStatus('notStarted')} />
-        </div> </>)}
-      <Tile hasMole />
-      <Tile variant="correct" />
-      <Tile variant="incorrect" />
-      <Tile variant="neutral" />
-
+      {status === 'started' && (
+        <GameBoard
+          tiles={tiles}
+          setScore={setScore}
+          molesOption={molesOption}
+        />
+      )}
     </div>
   );
 };
