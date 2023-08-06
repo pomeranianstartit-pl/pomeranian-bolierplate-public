@@ -13,6 +13,16 @@ import { HitTheMoleGameMetaData } from './HitTheMoleGame/router-data';
 import { MemoGameMetaData } from './MemoGame/router-data';
 import { blockRouterMetaData as blockRouterMetaDataJsLocalStorage } from './Exercise-js-local-storage/router-data';
 import { blockRouterMetaData as blockRouterMetaDataJSSavedInput } from './Exercise-js-saved-input/router-data';
+import { TryCatchAndFinallyMetaData } from './TryCatchAndFinally/router-data'
+// import { blockRouterMetaData as HitTheMoleGame } from './HitTheMoleGame/router-data';
+import { blockRouterMetaData as blockRouterMetaDataJsTryCatch } from './Exercise-js-try-catch/router-data';
+import { blockRouterMetaData as blockRouterMetaDataJsPrototypes } from './Exercise-js-prototypes/router-data';
+import { blockRouterMetaData as blockRouterMetaDataJsThisKeyWord } from './Exercise-js-this-key-word/router-data';
+import { blockRouterMetaData as blockRouterMetaDataJsPromises } from './Exercise-js-promises/router-data';
+import { blockRouterMetaData as blockRouterMetaDataPromises } from './Exercise-js-promises1/router-data';
+
+
+
 
 export const blockRouterMetaData = [
   blockRouterMetaDataJsVariables1,
@@ -26,7 +36,15 @@ export const blockRouterMetaData = [
   JsArraysBasics,
   ExerciseJsFunctions,
   Time,
+  TryCatchAndFinallyMetaData,
+  // HitTheMoleGame,
   HitTheMoleGameMetaData,
   MemoGameMetaData,
+  blockRouterMetaDataJsTryCatch,
+  blockRouterMetaDataJsPrototypes,
+  blockRouterMetaDataJsThisKeyWord,
+  blockRouterMetaDataJsPromises,
+  blockRouterMetaDataPromises,
+
 ];
 export const blockRouterData = getParsedRouterDataList(blockRouterMetaData);

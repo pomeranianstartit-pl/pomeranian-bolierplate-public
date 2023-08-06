@@ -6,8 +6,8 @@ import { ElementIcon } from './../Components/Icons/ElementIcon';
 import { EditIcon } from './../Components/Icons/EditIcon';
 import { CalendarIcon } from './../Components/Icons/CalendarIcon';
 import { PersonalCardIcon } from './../Components/Icons/PersonalCardIcon';
-import { SettingIcon } from './../Components/Icons/SettingIcon';
 import { FaqIcon } from '../Components/Icons/FaqIcon';
+import { SettingIcon } from './../Components/Icons/SettingIcon';
 export function AppAside() {
   return (
     <aside>
@@ -62,6 +62,7 @@ export function AppAside() {
               Ustawienia
             </NavLink>
           </li>
+              
         </ul>
       </nav>
       <p style={{ padding: '1rem 0' }}>Sidebar items, widgets, etc</p>

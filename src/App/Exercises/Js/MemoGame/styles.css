@@ -2,8 +2,6 @@
   width: 100%;
   height: 100%;
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  grid-template-rows: repeat(4, 1fr);
   grid-column-gap: 5px;
   grid-row-gap: 5px;
   grid-template-rows: auto 3fr;
@@ -13,8 +11,12 @@
 .gameButtonsRows {
   grid-area: 1 / 1 / 5 / 5;
 }
+.gameStatus {
+  grid-area: 1 / 1 / 2 / 2;
+}
 
-.gameButtonsRows div {
+.gameButtonsRows div,
+.gameStatus div {
   display: flex;
   flex-direction: row;
   justify-content: flex-start;
@@ -22,11 +24,14 @@
 }
 
 .gameButtonsRows h4,
-.gameButtonsRows button {
+.gameButtonsRows button,
+.gameStatus h4,
+.gameStatus button {
   width: 15rem;
 }
 
-.gameButtonsRows button {
+.gameButtonsRows button,
+.gameStatus button {
   padding: 1.25rem 2.2rem 1.25rem 2.2rem;
   margin: 1rem;
   border-radius: 0.5rem;
@@ -44,44 +49,125 @@
 }
 
 .gameButtonsRows button:hover,
-.gameButtonsRows button:active {
+.gameStatus button:hover,
+.gameButtonsRows button.activeButton {
   background: #fe3756;
   border-color: #fe3756;
 }
-.gameButtonsRows button.activeButton {
-  background-color:aqua;
-}
 
-.memoGame .board {
+.memoGame {
   display: grid;
-  grid-template-columns: repeat(5, 1fr);
-  grid-template-rows: repeat(2, 1fr);
-  border-radius: 5px solid #EBEBEB;
-  gap: 9px;
-  max-width: 800px;
-  height: 500px; 
+  gap: 0.5rem 0.5rem;
 }
-
-/* .moleGame .board .square {
-  display: flex;
-  border-radius: 8px;
-  background-color: #EBEBEB;
+.memoGame .cell {
   justify-content: center;
   align-items: center;
+  cursor: pointer;
 }
 
-/* .memoOptionsButtons {
-  width: 100%;
-  height: 100%;
+.memoGame .symbol {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10px;
+  border: 1px solid #ccc;
+  background-color: #E2FBD7;
+  width: 66px;
+  height: 66px;
+  cursor: pointer;
+}
+
+.memoGame .closed {
+  background-color: #E2FBD7;
+}
+
+.memoGame .symbol:hover {
+  box-shadow: 0 0 - 4px 26px rgba(0, 0, 0, 0.08);
+}
+
+.memoGame .guessed {
+  background-color: #E2FBD7;
+}
+
+.timeAndScore{
+  padding: 1.25rem 2.2rem 1.25rem 2.2rem;
+  margin: 1rem;
+  border-radius: 0.5rem;
+  border-color: #EBEBEB;
+  border: 1px;
+  gap: 1rem;
+  background: #EBEBEB;
+  font-family: Poppins;
+  font-size: 22px;
+  font-weight: 500;
+  line-height: 31px;
+  letter-spacing: 0em;
+  text-align: center;
+  color: rgb(0, 0, 0);
+  width: 15rem;
+}
+.myDiv {
+  display: grid; 
+  grid-auto-columns: 1fr; 
+  grid-auto-rows: 1fr; 
+  grid-template-columns: 1fr 3fr; 
+  grid-template-rows: 1fr 1fr 1fr; 
+  gap: 10px;
+}
+.stopBottom button{
+  padding: 1.25rem 2.2rem 1.25rem 2.2rem;
+  margin: 1rem;
+  border-radius: 0.5rem;
+  border-color: #23213d;
+  border: 1px;
+  gap: 1rem;
+  background: #23213d;
+  font-family: Poppins;
+  font-size: 22px;
+  font-weight: 500;
+  line-height: 31px;
+  letter-spacing: 0em;
+  text-align: center;
+  color: white;
+  width: 15rem;
+  cursor: pointer;
+}
+.stopBottom button:hover{
+  background: #fe3756;
+  border-color: #fe3756;
+}
+.myDiv .item{
+  padding-top: 1rem;
+}
+.memoGame {
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  grid-template-rows: repeat(4, 1fr);
-  grid-column-gap: 5px;
-  grid-row-gap: 5px;
-  grid-template-rows: auto 3fr;
-  grid-template-columns: 2fr 4fr;
+  grid-template-columns: repeat(4, 160px);
+  gap: 10px;
+  max-width: 600px;
+  max-height: 250px;
+  margin: 0 auto;
+  justify-content: center;
+  align-items: center; 
 }
-
-.memoButtonsRows {
-  grid-area: 1 / 1 / 5 / 5;
-} */
+#squerFalse{
+  display: grid;
+  background-color: #E2FBD7;
+  min-height: 160px;
+  min-width: 160px;
+  border-radius: 8%;
+  font-family: Poppins;
+  font-size: 100px;
+  place-items: center;
+  cursor: pointer;
+}
+#squerTrue{
+  display: grid;
+  background-color: #20b915;
+  min-height: 160px;
+  min-width: 160px;
+  border-radius: 8%;
+  font-family: Poppins;
+  font-size: 100px;
+  place-items: center;
+  cursor: pointer;
+}
