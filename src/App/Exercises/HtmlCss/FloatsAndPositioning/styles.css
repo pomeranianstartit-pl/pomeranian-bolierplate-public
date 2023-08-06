@@ -1,0 +1,238 @@
+
+.Null {
+  color: #23213D; 
+  font-size: 18px; 
+  font-family: Poppins; 
+  font-weight: 700; 
+  line-height: 34px; 
+  word-wrap: break-word;
+}
+
+.First {
+  width: 905px; 
+  height: 83px; 
+  flex-direction: column; 
+  justify-content: flex-start; 
+  align-items: center; 
+  gap: 11px; 
+  display: inline-flex;
+}
+
+#my-div { width: 905px; color: #222222; font-size: 22px; font-family: Poppins; font-weight: 400; line-height: 36px; word-wrap: break-word; } 
+
+#my-div1 { width: 833px; color: #222222; font-size: 22px; font-family: Poppins; font-weight: 400; line-height: 36px; word-wrap: break-word; }
+
+.Second {
+  width: 984px; 
+  height: 162px; 
+  padding-left: 21px; 
+  padding-right: 21px; 
+  padding-top: 17px; 
+  padding-bottom: 17px; 
+  background: #EBEBEB; 
+  flex-direction: column; 
+  justify-content: flex-start; 
+  align-items: flex-start; 
+  gap: 10px; 
+  display: inline-flex;
+}
+
+#Second { padding: 10px; justify-content: flex-start; align-items: flex-start; gap: 10px; display: inline-flex; }
+
+.my-div2 {
+  width: 922px; 
+  text-align: justify; 
+  color: #222222; 
+  font-size: 22px; 
+  font-family: Poppins; 
+  font-weight: 400; 
+  line-height: 36px; 
+  word-wrap: break-word;
+}
+
+.Third {
+  width: 984px; 
+  height: 279px; 
+  padding-top: 32px; 
+  padding-left: 456px; 
+  padding-right: 29px; 
+  background: #FFD5DB; 
+  justify-content: flex-end; 
+  align-items: center; 
+  display: inline-flex;
+}
+
+#Third { width: 499px; align-self: stretch; padding-bottom: 31px; justify-content: center; align-items: center; display: inline-flex; }
+
+.my-div3 {
+  width: 499px;
+  text-align: justify;
+  color: #222222; 
+  font-size: 22px;
+  font-family: Poppins;
+  font-weight: 400;
+  line-height: 36px;
+  word-wrap: break-word;
+}
+
+.Fourth {
+  width: 242.88px; 
+  height: 144.75px; 
+  padding-left: 19.94px; 
+  padding-right: 19.94px; 
+  padding-top: 12.38px; 
+  padding-bottom: 12.38px; 
+  background: #FFD5DB; 
+  border-radius: 5.50px; 
+  overflow: hidden; 
+  border-left: 0.50px #999999 solid; 
+  border-top: 0.50px #999999 solid; 
+  border-right: 0.50px #999999 solid; 
+  border-bottom: 0.50px #999999 solid; 
+  flex-direction: column; 
+  justify-content: flex-start; 
+  align-items: flex-start; 
+  gap: 6.88px; 
+  display: inline-flex;
+  position: absolute;
+  top: 0;
+  right: 0;
+  z-index: 1;
+}
+
+#my-div4 { width: 203px; text-align: center; color: #222222; font-size: 16px; font-family: Poppins; font-weight: 400; line-height: 30px; word-wrap: break-word; }
+
+.pic {
+  width: 402px; 
+  height: 350px; 
+  padding-left: 24px; 
+  padding-right: 24px; 
+  border-radius: 8px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1;
+
+}
+
+.Fifth {
+  width: 103.88px; 
+  height: 66.75px; 
+  padding-left: 19.94px; 
+  padding-right: 19.94px; 
+  padding-top: 12.38px; 
+  padding-bottom: 12.38px; 
+  background: #FFD5DB; 
+  border-radius: 5.50px; 
+  overflow: hidden; 
+  border-left: 0.50px #999999 solid; 
+  border-top: 0.50px #999999 solid; 
+  border-right: 0.50px #999999 solid; 
+  border-bottom: 0.50px #999999 solid; 
+  flex-direction: column; 
+  justify-content: flex-start; 
+  align-items: flex-start; 
+  gap: 6.88px; 
+  display: inline-flex;
+  float: right;
+}
+
+.my-div5 {
+  text-align: center; 
+  color: black; 
+  font-size: 12.38px; 
+  font-family: Poppins; 
+  font-weight: 400; 
+  line-height: 20.62px; 
+  word-wrap: break-word;
+}
+
+.Sixth {
+  width: 984px; 
+  height: 162px; 
+  padding-left: 21px; 
+  padding-right: 21px; 
+  padding-top: 17px; 
+  padding-bottom: 17px; 
+  background: #4B5563; 
+  flex-direction: column; 
+  justify-content: flex-start; 
+  align-items: flex-start; 
+  gap: 10px; 
+  display: inline-flex;
+}
+
+#Sixth { padding: 10px; justify-content: flex-start; align-items: flex-start; gap: 10px; display: inline-flex; }
+
+.my-div6 {
+  width: 922px; 
+  text-align: justify; 
+  color: white; 
+  font-size: 22px; 
+  font-family: Poppins; 
+  font-weight: 400; 
+  line-height: 36px; 
+  word-wrap: break-word;
+}
+
+.Seventh {
+  width: 423px; 
+  height: 94px; 
+  padding-left: 127px; 
+  padding-right: 127px; 
+  padding-top: 10px; 
+  padding-bottom: 10px; 
+  background: #FFD5DB; 
+  border-radius: 19.64px; 
+  overflow: hidden; 
+  border-left: 0.50px #FE3756 solid; 
+  border-top: 0.50px #FE3756 solid; 
+  border-right: 0.50px #FE3756 solid; 
+  border-bottom: 0.50px #FE3756 solid; 
+  justify-content: flex-start; 
+  align-items: flex-start; 
+  gap: 10px; 
+  display: inline-flex;
+}
+.my-div7 { 
+  text-align: center; 
+  color: black; 
+  font-size: 20px; 
+  font-family: Poppins; 
+  font-weight: 400; 
+  line-height: 73.66px; 
+  word-wrap: break-word; 
+}
+
+.Eighth {
+  width: 985px; 
+  text-align: justify; 
+  color: #222222; 
+  font-size: 22px; 
+  font-family: Poppins; 
+  font-weight: 400; 
+  line-height: 36px; 
+  word-wrap: break-word;
+}
+
+.Ninth {
+  width: 985px; 
+  height: 246px; 
+  position: relative; 
+  border-radius: 8px; 
+  overflow: hidden; 
+  border-left: 1px #6B7280 solid; 
+  border-top: 1px #6B7280 solid; 
+  border-right: 1px #6B7280 solid; 
+  border-bottom: 1px #6B7280 solid;
+}
+
+.Circle1 {
+  width: 120px; height: 120px; left: 49px; top: 85px; position: absolute; background: #C8CBD1; border-radius: 8px; border-left: 1px #EBEBEB solid; border-top: 1px #EBEBEB solid; border-right: 1px #EBEBEB solid; border-bottom: 1px #EBEBEB solid;
+}
+.Circle2 {
+  width: 120px; height: 120px; left: 76px; top: 63px; position: absolute; background: #999999; border-radius: 8px; border-left: 1px #EBEBEB solid; border-top: 1px #EBEBEB solid; border-right: 1px #EBEBEB solid; border-bottom: 1px #EBEBEB solid;
+}
+.Circle3 {
+  width: 120px; height: 120px; left: 104px; top: 41px; position: absolute; background: #6B7280; border-radius: 8px; border-left: 1px #C8CBD1 solid; border-top: 1px #C8CBD1 solid; border-right: 1px #C8CBD1 solid; border-bottom: 1px #C8CBD1 solid;
+}
