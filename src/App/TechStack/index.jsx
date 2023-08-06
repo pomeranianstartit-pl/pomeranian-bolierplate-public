@@ -32,6 +32,7 @@ export const TechStack = () => {
         {
             image: <img src={reactIcon} alt="react" />,
             text: 'REACT',
+
         },
         {
             image: <img src={htmlIcon} alt="html" />,
