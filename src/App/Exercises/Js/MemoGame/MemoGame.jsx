@@ -1,7 +1,8 @@
 import { useState, useEffect } from 'react';
 import { Button, Label, Output, Result } from './Components';
 import { MasterHeader } from '../../../Components/MasterHeader/MasterHeader';
-import { formatTime, getAlphabet } from './Utilities';
+import { formatTime, getAlphabet, shuffle } from './Utilities';
+import { HighScore } from './Features/HighScore';
 import { Tile } from './Features/Tile/Tile';
 import './styles.css';
 import { isVisible } from '@testing-library/user-event/dist/utils';
@@ -26,7 +27,8 @@ export const MemoGame = () => {
   function getInitialTiles(size) {
     const charactersSubset = characters.slice(0, size / 2);
     const allCharacters = [...charactersSubset, ...charactersSubset];
-    const shuffledCharacters = allCharacters.sort(() => Math.random() - 0.5);
+    // const shuffledCharacters = allCharacters.sort(() => Math.random() - 0.5);
+    const shuffledCharacters = shuffle(allCharacters);
     const characterObject = shuffledCharacters.map((character, index) => {
       return { index, value: character, isVisible: false, variant: 'neutral' };
     });
@@ -170,9 +172,12 @@ export const MemoGame = () => {
         </Result>
       )}
       {status === 'finished' && (
-        <Result>
-          Gratulacje! Twój wynik to {score} odsłon w czasie {formatTime(time)}
-        </Result>
+        <>
+          <Result>
+            Gratulacje! Twój wynik to {score} odsłon w czasie {formatTime(time)}
+          </Result>
+          <HighScore score={score} time={time} />
+        </>
       )}
 
       {showWarning && <p className="memo-warning">Brakuje ustawień Gry !!!</p>}
