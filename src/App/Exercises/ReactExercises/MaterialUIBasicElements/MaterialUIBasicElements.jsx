@@ -1,51 +1,56 @@
-// import React from 'react';
-// import Button from
+import React from 'react';
+import Button from '@mui/material/Button';
+import SendIcon from '@mui/icons-material/Send';
+import InputLabel from '@mui/material/InputLabel';
+import MenuItem from '@mui/material/MenuItem';
+import FormControl from '@mui/material/FormControl';
+import Select, { SelectChangeEvent } from '@mui/material/Select';
+import Box from '@mui/material/Box';
 
-// import './style.css';
-// import ArrowRightAltIcon from '@mui/icons-material/ArrowRightAlt';
-// import { Select } from '@mui/material';
-// import { ArrowForward } from '@mui/icons-material';
+import './style.css';
 
-// export default function BasicSelect({setValue, vaue}) {
-//     const [sex, setSex] = React.useState('');
+export default function BasicSelect({ setValue, value }) {
+  const [age, setAge] = React.useState('');
 
-//     const handleChange = (event) => {
-//         setSex(event.target.value);
-//     };
-//     return (
-//         <Box sx={{ mirWidth: 120 }}>
-//             <FormControl fullWidth>
-//                 <InputLabel id="demo-simple-select-label">Age</InputLabel>
-//                 <Select
-//                 labelId="demo-simple-select-label"
-//                 id="demo-simple-select"
-//                 value={sex}
-//                 label="Age"
-//                 onchange={handleChange}
-//                 >
-//                 <MenuItem value={10}>Male</MenuItem>
-//                 <MenuItem value={20}>Female</MenuItem>
-//                 </Select>
-//             </FormControl>
-//         </Box>
-//     );
-// }
+  const handleChange = (event) => {
+    setAge(event.target.value);
+  };
 
+  return (
+    <Box sx={{ minWidth: 120, maxWidth: 200 }}>
+      <FormControl fullWidth>
+        <InputLabel id="demo-simple-select-label">Age</InputLabel>
+        <Select
+          labelId="demo-simple-select-label"
+          id="demo-simple-select"
+          value={value}
+          label="Age"
+          onChange={setValue}
+        >
+          <MenuItem value={10}>Ten</MenuItem>
+          <MenuItem value={20}>Twenty</MenuItem>
+        </Select>
+      </FormControl>
+    </Box>
+  );
+}
 
-// export function MaterialUIBasicElements() {
-//     const [sex, setSex] = React.useState('');
+export function MaterialUIBasicElements() {
+  const [age, setAge] = React.useState('');
 
-//     const handleChange = (event) => {
-//         setSex(event.target.value);
-//     };
-//     return (
-//         <div>
-//             <Stack direction="row" spacing={2}>
-//                 <Button variant="contained" size="large" endIcon={<ArrowForward />}>
-//                     {sex}
-//                 </Button>
-//             </Stack>
-//             <BasicSelect setValue={handleChange} value={sex}></BasicSelect>
-//         </div>
-//     );
-// };
+  const handleChange = (event) => {
+    setAge(event.target.value);
+  };
+  return (
+    <>
+      <div>
+        <Button variant="contained" endIcon={<SendIcon />}>
+          {age}
+        </Button>
+        <br />
+        <br />
+        <BasicSelect setValue={handleChange} value={age} />
+      </div>
+    </>
+  );
+}

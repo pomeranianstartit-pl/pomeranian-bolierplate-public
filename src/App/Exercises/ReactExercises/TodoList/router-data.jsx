@@ -1,10 +1,10 @@
 import { TodoList } from './TodoList';
 
-export const todoListMetaData = {
-  path: 'todo-list',
+export const TodoListMetaData = {
+  path: 'todo-with-server',
   date: '01-08-2023',
-  linkLabel: 'TodoList',
+  linkLabel: 'todo z serwerem',
   blockNo: 37,
   element: <TodoList />,
-  tags: ['todo list', 'list', 'todo'],
+  tags: ['todo', 'fetch', 'rest', 'api', 'javascript'],
 };

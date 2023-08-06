@@ -1,6 +1,47 @@
 .todo-container {
+
 }
 
 .todo-container__list {
+
 }
 
+.todo-container__list__item {
+  margin: 20px 0;
+  padding: 0 15px;
+  border: 1px solid var(--color-blue-gray);
+  border-left: 3px solid var(--color-dark-gray);
+  border-radius: 5px;
+  box-shadow: 10px 0 0 #ccc;
+  display: flex;
+}
+
+.todo-container__list__item--darker {
+  background-color: #ccc;
+}
+
+.todo-container__list__item__wrapper {
+  color: var(--color-black);
+}
+
+.todo-container__list__item__title {
+  color: var(--color-black);
+}
+
+.todo-container__list__item__text {
+  color: var(--color-grey);
+}
+
+.todo-container__list__item__text--smaller {
+  font-size: 0.8em;
+}
+
+.todo-container__list__item__side {
+  padding: 15px 0;
+}
+
+.todo-container__list__item__side__checkmark {
+  font-size: 50px;
+  color: green;
+  text-align: center;
+}
