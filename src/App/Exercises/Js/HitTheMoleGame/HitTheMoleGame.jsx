@@ -68,6 +68,7 @@ export function HitTheMoleGame() {
     useEffect(() => {
         if(gameStarted && score === 20) {
             setGameStarted(false);
+            setGameEnded(true);
         }
     }, [score, gameStarted]);
 
@@ -107,73 +108,77 @@ export function HitTheMoleGame() {
         )}:${secondsFormatted.toString().padStart(2, '0')}`;
     }
 
-
-
-    // const formatTime = () => {
-    //     let minutes =Math.floor(seconds / 60);
-    //     let seconds = seconds % 60;
-    //     return `${minutes} : ${seconds}`
-    // }
     return (
-        <>
-        <p style={{ fontSize: '18px', font: 'Poppins' }}>
-        Gra polegająca na podążaniu za krecikiem i trafieniu na kwadrat, w
+      <>
+      <p style={{ fontSize: '18px', font: 'Poppins '}}>
+      Gra polegająca na podążaniu za krecikiem i trafieniu na kwadrat, w
           którym się pojawił.
-        </p>
-            {!gameStarted ? (
-                <MoleGameSettings
-                gameTime={gameTime}
-                moleCount={moleCount}
-                setGameTime={setGameTime}
-                setMoleCount={setMoleCount}
-                startStopGame={() => setGameStarted((prev) => !prev)}
-                gameStarted={gameStarted}
-                // formatTime={formatTime}
+      </p>
+      {!gameStarted ? (
+        <MoleGameSettings
+            gameTime={gameTime}
+            moleCount={moleCount}
+            setGameTime={setGameTime}
+            setMoleCount={setMoleCount}
+            startStopGame={() => setGameStarted((prev) => !prev)}
+            gameStarted={gameStarted}
             />
-            ) : null}
-            
-            {gameStarted ? <CountdownTimer countdown={countdown} /> : null}
+      ) : null}
 
-            {gameStarted ? (
-                <>
-
-                {/* <MoleGameInfo
-                score={score}
-                gameStarted={gameStarted}
-                startStopGame={() => setGameStarted((prev) => !prev)}
-                gameTime={gameTime}
-                moleCount={moleCount}
-                /> */}
-
-                <MoleGameBoard
-                moleArray={moleArray}
-                hitTheMole={hitTheMole}
-                score={score}
-                />
-                </>
-            ) : !gameEnded ? (
-                <>
-                 <p style={{ fontSize: '18px', font: 'Poppins' }}>
-        Gratulacje! Twój wynik to {score} złapane krety w czasie {' '}
-        {countdown} sekund!
-        </p>
-                <MoleGameSettings
-                gameTime={gameTime}
-                moleCount={moleCount}
-                setGameTime={setGameTime}
-                setMoleCount={setMoleCount}
-                startStopGame={() => setGameStarted((prev) => !prev)}
-                gameStarted={gameStarted}
-                />
-                </>
-                ) : null}
+      {gameStarted ? (
+        <>
+        <MoleGameBoard
+           moleArray={moleArray}
+           hitTheMole={hitTheMole}
+           score={score}
+           />
         </>
+      ) : gameEnded ? (
+        <>
+        <p style={{ fontSize: '18px', font: 'Poppins '}}>
+            Gratulacje! Twój wynik to {score} złapane krety w czasie{' '}
+            {countdown} sekund!
+        </p>
+        <MoleGameSettings
+            gameTime={gameTime}
+            moleCount={moleCount}
+            setGameTime={setGameTime}
+            setMoleCount={setMoleCount}
+            startStopGame={() => setGameStarted((prev) => !prev)}
+            gameStarted={gameStarted}
+            />{' '}
+        </>
+      ) : null}
+      </>
     );
       }
 
-      const Time = ({ time }) => {
-        const formattedTime = new Date(time * 1000).toISOString().slice(14, 19);
-        return <h4> CZAS GRY: {formattedTime}</h4>;
-    };
+
+//     return (
+//         <>
+//             {!gameStarted ? (
+//                 <MoleGameSettings
+//                 gameTime={gameTime}
+//                 moleCount={moleCount}
+//                 setGameTime={setGameTime}
+//                 setMoleCount={setMoleCount}
+//                 startStopGame={() => setGameStarted((prev) => !prev)}
+//                 gameStarted={gameStarted}
+//                 formatTime={formatTime}
+//             />
+//             ) : null}
+//             {gameStarted ? <CountdownTimer countdown={countdown} /> : null}
+
+//             {gameStarted ? (
+//                 <MoleGameBoard
+//                 moleArray={moleArray}
+//                 hitTheMole={hitTheMole}
+//                 score={score}
+//                 />
+//                 ) : null}
+//                 {}
+//         </>
+//     );
+// };
 
 
