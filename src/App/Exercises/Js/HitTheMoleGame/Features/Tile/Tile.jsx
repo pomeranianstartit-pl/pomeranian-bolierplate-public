@@ -1,5 +1,5 @@
 import './styles.css';
-import { useState } from 'react';
+
 
 export const Tile = ({ hasMole, variant = 'neutral', onClick }) => {
     if (
