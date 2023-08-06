@@ -1,8 +1,10 @@
 .memo-tile {
+
     border-radius: 0.5rem;
     width: 6.5rem;
     height: 6.5rem;
     cursor: pointer;
+    font-display: none;
 }
 
 .memo-tile--neutral {
@@ -23,7 +25,17 @@
 
 }
 
-.memo-tile--has-memo {
+.memo-letter {
+    user-select: none;
+    transform: scaleX(0);
+    font-size: 4rem;
+    text-align: center;
+    line-height: 6.5rem;
+    transition: 300ms;
+}
+
+.memo-letter-is-visible {
+    transform: scaleX(1);
     /* background-image: url("./memo.svg");
     background-repeat: no-repeat;
     background-position: center; */

@@ -1,18 +1,18 @@
 import './styles.css';
 
-export const Tile = ({ hasMemo, variant = 'neutral', onClick, value }) => {
+export const Tile = ({ isVisible, variant = 'neutral', onClick, value }) => {
     if (
         !(variant === 'correct' || variant === 'incorrect' || variant === 'neutral')
     )
         console.warn('błędny parametr variant', variant);
-    let memoClass = '';
-    if (hasMemo) memoClass = 'memo-tile--has-memo';
+    let isVisibleClass = '';
+    if (isVisible) isVisibleClass = 'memo-letter-is-visible';
     return (
-        <button
-            className={`memo-tile memo-tile--${variant} ${memoClass}`}
+        <div
+            className={`memo-tile memo-tile--${variant} ${isVisibleClass}`}
             onClick={onClick}
         >
-            {value}
-        </button>
+            <div className={`memo-letter ${isVisibleClass}`}>{value}</div>
+        </div>
     );
 };

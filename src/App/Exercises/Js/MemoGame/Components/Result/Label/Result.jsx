@@ -1,4 +1,4 @@
 import './styles.css';
 export const Result = ({ children }) => {
-    return <span className="mole-result">{children}</span>;
+    return <span className="memo-result">{children}</span>;
 };
