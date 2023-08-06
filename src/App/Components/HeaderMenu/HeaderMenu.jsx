@@ -13,7 +13,7 @@ export function HeaderMenu() {
       </div>
 
       <div className="name-surname-container">
-        <h4>YourNameAndSurname</h4>
+        <h4>Małgorzata Greszczuk</h4>
         <h5>Test</h5>
       </div>
       <MenuArrow className="menu-arrow" />

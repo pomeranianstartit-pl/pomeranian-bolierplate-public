@@ -1,0 +1,27 @@
+.memo-controls-panel {
+    display: flex;
+    gap: 1rem;
+    margin: 2rem 0rem 2rem;
+    align-items: center;
+}
+.memo-controls-panel span {
+    flex-basis: 12rem;
+}
+.memo-game-panel {
+    display: grid;
+    gap: 1rem;
+    width: min-content;
+    grid-template-columns: repeat(4, 1fr);
+}
+.memo-warning {
+    color: #da1414;
+    font-size: 2rem;
+}
+
+
+.memo-board {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1rem;
+    width: min-content;
+}
