@@ -11,3 +11,12 @@
   font-family: Poppins;
   font-size: 1rem;
 }
+.todo-form_progress-mesage {
+  color: var(--color-primary-blue);
+}
+.todo-form_error-mesage {
+  color: var(--colors-actions-danger);
+}
+.todo-form_sucsess-mesage {
+  color: var(--color-succes);
+}

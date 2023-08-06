@@ -1,4 +1,4 @@
-.item {
+.todo-item {
   border-left: 5px solid var(--color-block-10-body);
   margin: 1rem;
   padding: 1rem;
@@ -9,55 +9,56 @@
   display: flex;
   align-items: stretch;
   font-family: Poppins;
+  color: var(--gray-700);
 }
 
-.item.item--darker {
+.todo-item.todo-item--darker {
   background-color: var(--color-block-10-body);
   border-left: 5px solid var(--gray-700);
 }
 
-.item.item--darker h3,
-.item.item--darker .item__wrapper__text {
+.todo-item.todo-item--darker h3,
+.todo-item.todo-item--darker .todo-item__wrapper__text {
   color: var(--gray-700);
 }
-.item__wrapper {
+.todo-item__wrapper {
   flex-grow: 1;
 }
-.item__wrapper h3 {
+.todo-item__wrapper h3 {
   color: var(--color-black);
   margin: 0 0 0.5rem 0;
   font-weight: 700;
   font-size: 1.125rem;
 }
-.item__wrapper p {
+.todo-item__wrapper p {
   margin: 0.5rem 0 0 0;
 }
 
-.item__wrapper__text {
-  color: var(--gray-700);
+.todo-item__wrapper__text {
 }
-.item__wrapper__text--smaller {
+.todo-item__wrapper__text--smaller {
   font-size: small;
 }
-.item__actions {
-  color: lightgray;
+.todo-item__actions {
   padding: 15px 0;
   width: 20%;
   text-align: center;
   height: 100%;
 }
-.item__actions__button {
+.todo-item__actions__button {
   background-color: transparent;
   border: none;
+  font-size: 2rem;
 }
-.item__actions__button:hover {
+.todo-item__actions__button:hover {
   cursor: pointer;
+  color: var(--color-primary-blue);
 }
-.item__actions__check {
+.todo-item__actions__check {
   font-size: 3rem;
   color: var(--color-succes);
   text-align: center;
 }
-.item__actions__error {
+.todo-item__actions__error {
   color: var(--color-link-hover);
 }
