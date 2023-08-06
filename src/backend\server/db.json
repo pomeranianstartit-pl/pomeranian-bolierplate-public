@@ -1,0 +1,25 @@
+{
+    "posts": [
+      {
+        "id": 1,
+        "title": "Post Title",
+        "content": "Esse consectetur proident minim consequat. Amet laborum proident proident cillum. Nisi sit elit dolor aliquip dolore veniam ipsum ullamco eiusmod adipisicing consectetur nostrud. Anim qui Lorem eiusmod sint consequat et excepteur. Laborum aliqua dolore adipisicing fugiat veniam velit veniam adipisicing.",
+        "author": "Lukortech",
+        "dateOfCreation": "25.07.2023"
+      },
+      {
+        "id": 2,
+        "title": "An interesting title",
+        "content": "Commodo consectetur ullamco aliquip est ipsum sit proident commodo et ex. Nostrud tempor commodo laborum laborum do fugiat dolor commodo fugiat excepteur esse. Incididunt magna aliqua ex laborum adipisicing exercitation qui non proident ullamco veniam adipisicing ut. Irure sit proident nostrud amet elit aute laborum ullamco proident exercitation.",
+        "author": "Lukortech",
+        "dateOfCreation": "25.07.2023"
+      }
+    ],
+    "comments": [
+      {
+        "id": 1,
+        "body": "some comment",
+        "postId": 1
+      }
+    ]
+  }

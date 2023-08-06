@@ -1,24 +1,34 @@
-import { useState, useEffect } from 'react';
+import React, { useEffect, useState } from 'react';
 import axios from 'axios';
 import './style.css';
-import { formatDate } from '../../../helpers/formatDate';
+import { TodoItem } from './TodoItem/TodoItem';
+import { TodoForm } from './TodoForm/TodoForm';
 
-const BASE_API_URL = 'http://localhost:3333/api';
+export const BASE_API_URL = 'http://localhost:3333/api';
+const TIMEOUT_DURATION = 5000; //5sec czekania na odpoiedź serwera
 
 export function TodoList() {
-  const [getTodoList, setTodoList] = useState([]);
-  const [getError, setError] = useState([]);
+  const [todoList, setTodoList] = useState([]);
+  const [error, setError] = useState([]);
+  const [isFormVisible, setFormVisibility] = useState(false);
 
-  const handleFetchTodoData = async () => {
-    const timeOutDuration = 5000; // 5 sekund oczekiwania na odpowiedz w serwera
+  const [idForEdit, setIdForEdit] = useState(null);
+  console.log('idForEdit:', idForEdit);
+
+  const handleFetchTodoData = async (givenId) => {
+    // jezeli nie podamy w wywołaniu funkcji parametru `givenId`, to ta wartość będzie `undefined`
+
+    const isGetSpecificTodoMode = Boolean(givenId);
+
+    const urlSuffix = isGetSpecificTodoMode ? `/${givenId}` : '';
 
     try {
-      const fetchDataPromise = axios.get(`${BASE_API_URL}api/todo`);
+      const fetchDataPromise = axios.get(`${BASE_API_URL}/todo${urlSuffix}`);
       const timeOutPromise = new Promise((_, reject) => {
         setTimeout(
           () => reject(new Error('Response Timeout')),
-          timeOutDuration
-          );
+          TIMEOUT_DURATION
+        );
       });
 
       const response = await Promise.race([fetchDataPromise, timeOutPromise]);
@@ -27,7 +37,21 @@ export function TodoList() {
         setError('Przekroczono czas oczekiwania na odpowiedź serwera');
       }
       setError('');
-      setTodoList(response.data);
+
+      if (isGetSpecificTodoMode) {
+        const updatedTodo = response.data;
+
+        setTodoList(
+          todoList.map((todo) => {
+            if (todo.id === updatedTodo.id) {
+              return updatedTodo;
+            }
+            return todo;
+          })
+        );
+      } else {
+        setTodoList(response.data);
+      }
     } catch (error) {
       setError('Wystpił błąd podczas komunikacji z serwerem ' + error?.message);
     }
@@ -39,48 +63,67 @@ export function TodoList() {
 
   return (
     <div className="todo-container">
-      <h2 className="todo-container__title">Todo List</h2>
+      <h2 className="todo-container__title">Todo List 2</h2>
 
-      {getError && <p>{getError}</p>}
+      {error && <p>{error}</p>}
 
-    <div className="todo-container_list">
-    {getTodoList.length > 0 && 
-      getTodoList.map((todo) => {
-
-        const itemClasses = `todo-container__list__item ${
-          todo.isDone ? 'todo-container__list__item--darker' : ''
-        }`;
-
-        return (
-        <div className={itemClasses} key={todo.id}>
-          <div className="todo-container__list__item__wrapper">
-          <h3 className="todo-container__list__item__wrapper__title">
-            {todo.title}
-          </h3>
-          <div className="todo-container__list__item__text todo-container__list__item__wrapper__text--smaller">
-            {todo.author}
-            </div>
-            <div className="todo-container__list__item__text todo-container__list__item__wrapper__text--smaller">
-            {todo.createdAt}
-            </div>
-            <p className="todo-container__list__item__wrapper__text">
-              {todo.note}
-              </p>
-        </div>
-        <div className="todo-container__list__item__side">
-          {todo.isDone && (
-          <>
-          <div className="todo-container__list__item__side__checkmark">
-            &#10003;
-          </div>
-          <div>{formatDate(todo.doneDate)}</div>
-          </>
+      {isFormVisible && (
+        <TodoForm
+          setFormVisibility={setFormVisibility}
+          handleFetchTodoData={handleFetchTodoData}
+          data={todoList.find((todo) => todo.id === idForEdit)}
+          setIdForEdit={setIdForEdit}
+        />
       )}
-      </div>
+
+      {!isFormVisible && (
+        <>
+          <div className="todo-container__list">
+            {todoList.length > 0 &&
+              todoList.map((todo) => {
+                return (
+                  <TodoItem
+                    todo={todo}
+                    key={todo.id}
+                    handleFetchTodoData={handleFetchTodoData}
+                    setIdForEdit={setIdForEdit}
+                    setFormVisibility={setFormVisibility}
+                  />
+                );
+              })}
           </div>
-      );   
-    })}
-  </div>
-</div>
-);
+
+          <button
+            className="big-button"
+            onClick={() => {
+              setFormVisibility(true);
+            }}
+          >
+            DODAJ
+          </button>
+        </>
+      )}
+    </div>
+  );
 }
+
+/**
+ * DODAWANIE TODOSA:
+ * button "DODAJ"
+ * widok formularza dodawania z dwoma inputami i przyciskiem "ZAPISZ" i "COFNIJ"
+ * obsługa widoku (przełączanie widoku)
+ * request do API dodający nowe todo
+ * jezeli request się powiedzie to:
+ *    informujemy o powodzeniu,
+ *    czyscimy formularz
+ * po kliku "COFNIJ" odswiezamy listę
+ */
+
+/**
+ * EDYCJA TODOSA:
+ * button "Edytuj"
+ * włączenie formularza z danymi i w trybie edycji (brak autora i labelka przycisku zmienia się na ZAPISZ)
+ * wysłanie odpowiedniego requestu (PUT i z identyfikatorem)
+ * po kliku ZAPISZ wracamy do listy i odświezamy
+
+ */
