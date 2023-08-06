@@ -22,6 +22,7 @@ export function HitTheMoleGame() {
     const [countdown, setCountdown] = useState(gameTime / 1000);
     const [gameStarted, setGameStarted] = useState(false);
     const [gameEnded, setGameEnded] = useState(false);
+    const [timer, setTimer] = useState(gameTime / 1000);
 
     useEffect(() => {
         let intervalId;
@@ -98,10 +99,13 @@ export function HitTheMoleGame() {
         );
     };
 
-    const formatTime = () => {
-        let minutes =Math.floor(seconds / 60);
-        let seconds = seconds % 60;
-        return `${minutes} : ${seconds}`
+    function formatTime(gameTime) {
+        const minutes = Math.floor(gameTime / 60);
+        const secondsFormatted = gameTime % 60;
+        return`${minutes.toString().padStart(
+            2,
+            '0'
+        )}:${secondsFormatted.toString().padStart(2, '0')}`;
     }
 
     return (

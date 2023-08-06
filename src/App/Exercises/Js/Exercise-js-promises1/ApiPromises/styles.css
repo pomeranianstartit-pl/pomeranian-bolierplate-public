@@ -28,6 +28,6 @@
 }
 
 .dedicated-background--fire {
-  background-color: orange;
+  background-color: orange !important;
 }
 

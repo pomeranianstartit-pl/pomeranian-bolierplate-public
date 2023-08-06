@@ -29,29 +29,27 @@ import { MemoGameBoard } from './MemoGameBoard.jsx';
 
   return (
     <>
-       {!gameStarted && (
-        <MemoGameSettings
-          boardSize={boardSize}
-          setBoardSize={setBoardSize}
-          setGameStarted={setGameStarted}
-          score={score}
-          time={time}
-          finalSettings={finalSettings}
-          setScore={setScore}
-          setTime={setTime}
-        />
-      )}
-  
-      {gameStarted && (
-        <MemoGameBoard
-          time={time}
-          setFinalSettings={setFinalSettings}
-          score={score}
-          setScore={setScore}
-          setgameStarted={setGameStarted}
-          boardSize={boardSize}
-        />      
-      )} 
+    {gameStarted ? (
+      <MemoGameBoard
+      time={time}
+      setFinalSettings={setFinalSettings}
+      score={score}
+      setScore={setScore}
+      setGameStarted={setGameStarted}
+      boardSize={boardSize}
+      />
+    ) : (
+      <MemoGameSettings
+      boardSize={boardSize}
+      setBoardSize={setBoardSize}
+      setGameStarted={setGameStarted}
+      score={score}
+      time={time}
+      finalSettings={finalSettings}
+      setScore={setScore}
+      setTime={setTime}
+      />
+    )}
     </>
   );
 };
