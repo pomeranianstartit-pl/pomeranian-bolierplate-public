@@ -5,7 +5,7 @@ import { DashboardCard } from '../Components/DashboardCard/DashboardCard';
 import exerciseIcone from '../Images/exerciseIcone.svg';
 import BlogIcone from '../Images/blogIcon.svg';
 import CodeIcone from '../Images/codeIcon.svg';
-import FaqIcon from '../Images/FaqIcone.svg';
+import FaqIcon from '../Images/FaqIcon.svg';
 import personalcard from '../Images/personalcard.svg';
 import DominikProfile from '../Images/DominikProfile.jpg';
 export const Dashboard = () => {
@@ -20,7 +20,7 @@ export const Dashboard = () => {
       sectionTitle: ' Ćwiczenia',
       icon: <img src={exerciseIcone} alt="business card resume" />,
       description: 'wszystkie wykonane ćwiczenia',
-      link: '/excercise',
+      link: '/exercises',
     },
     {
       sectionTitle: 'Blog',
@@ -32,7 +32,7 @@ export const Dashboard = () => {
       sectionTitle: 'Tech stack',
       icon: <img src={CodeIcone} alt="business card resume" />,
       description: 'stack technologiczny realizowany na kursie',
-      link: '/tech',
+      link: '/techstack',
     },
     {
       sectionTitle: 'FAQ',
@@ -45,7 +45,7 @@ export const Dashboard = () => {
     <div className="dashboard">
       <header>
         <div className="dasboard-head">
-          <img src={hand} />
+          <img src={hand} alt="hand" />
           <h3 style={{ marginLeft: '10px' }}>Hej, tutaj Dominik!</h3>
         </div>
         <p>
@@ -68,17 +68,22 @@ export const Dashboard = () => {
         })}
       </div>
       <aside>
-        
         <div className="profile-img">
-            <img className="img-placeholder" src={DominikProfile} alt="" />
+          <img className="img-placeholder" src={DominikProfile} alt="" />
           <h2>Dominik Reszczyński</h2>
           <p>Brzeg</p>
         </div>
-        <div className='info'>
+        <div className="info">
           <p>e-mail:</p>
-          <p style={{marginBottom: '30px'}}><a href='mailto:dominikreszczynski10@gmail.com'>dominikreszczynski10@gmail.com</a></p>
+          <p style={{ marginBottom: '30px' }}>
+            <a href="mailto:dominikreszczynski10@gmail.com">
+              dominikreszczynski10@gmail.com
+            </a>
+          </p>
           <p>telefon:</p>
-          <p><a href="tel:+48516802283">+48 516 802 283</a></p>
+          <p>
+            <a href="tel:+48516802283">+48 516 802 283</a>
+          </p>
         </div>
       </aside>
     </div>

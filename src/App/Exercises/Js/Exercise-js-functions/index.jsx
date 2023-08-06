@@ -1,3 +1,4 @@
+import { Link } from 'react-router-dom';
 import './styles.css';
 
 export function Exercise() {
@@ -12,6 +13,9 @@ export function Exercise() {
 
   return (
     <div>
+      <h2 className="todo-container__title">
+        <Link to="/exercises/js">⯇ JS Function</Link>
+      </h2>
       <p>Definiowanie funkcji</p>
       <pre>
         <code>

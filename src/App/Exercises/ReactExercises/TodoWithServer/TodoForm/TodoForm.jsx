@@ -3,7 +3,12 @@ import './TodoForm.css';
 import { BASE_API_URL } from '../TodoWithServer';
 import axios from 'axios';
 
-export function TodoForm({ setFormVisibility, handleFetchTodoData, data, setIdForEdit }) {
+export function TodoForm({
+  setFormVisibility,
+  handleFetchTodoData,
+  data,
+  setIdForEdit,
+}) {
   const isEditMode = Boolean(data);
 
   const [title, setTitle] = useState(isEditMode ? data.title : '');
@@ -142,7 +147,7 @@ export function TodoForm({ setFormVisibility, handleFetchTodoData, data, setIdFo
           onClick={() => {
             setFormVisibility(false);
             handleFetchTodoData();
-            setIdForEdit(null)
+            setIdForEdit(null);
           }}
         >
           COFNIJ

@@ -1,3 +1,4 @@
+import { Link } from 'react-router-dom';
 import './styles.css';
 
 export const DashboardCard = ({ sectionTitle, icon, description, link }) => {
@@ -7,7 +8,7 @@ export const DashboardCard = ({ sectionTitle, icon, description, link }) => {
       <div className="icona">{icon}</div>
 
       <p>{description}</p>
-      <a href={link}>Zobacz więcej &gt;</a>
+      <Link to={link}>Zobacz więcej &gt;</Link>
     </div>
   );
 };

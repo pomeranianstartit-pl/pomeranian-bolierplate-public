@@ -3,6 +3,7 @@ import axios from 'axios';
 import './style.css';
 import { TodoItem } from './TodoItem/TodoItem';
 import { TodoForm } from './TodoForm/TodoForm';
+import { Link } from 'react-router-dom';
 
 export const BASE_API_URL = 'http://localhost:3333/api';
 
@@ -43,7 +44,7 @@ export function TodoWithServer() {
   return (
     <div className="todo-container">
       <h2 className="todo-container__title">
-        <a href="http://localhost:3000/exercises/react">⯇ Todo List</a>
+        <Link to="/exercises/react">⯇ Todo List</Link>
       </h2>
       {error && <p>{error}</p>}
       {isFormVisibility && (

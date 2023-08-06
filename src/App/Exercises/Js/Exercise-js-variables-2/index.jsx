@@ -1,3 +1,4 @@
+import { Link } from 'react-router-dom';
 import './styles.css';
 
 export function Exercise() {
@@ -5,6 +6,9 @@ export function Exercise() {
 
   return (
     <div className="playing-with-variables">
+      <h2 className="todo-container__title">
+        <Link to="/exercises/js">⯇ JS Math Numbers</Link>
+      </h2>
       <section>
         <h2>Operacje matematyczne</h2>
         <pre>

@@ -1,3 +1,4 @@
+import { Link } from 'react-router-dom';
 import './styles.css';
 
 export function Exercise() {
@@ -12,6 +13,9 @@ export function Exercise() {
 
   return (
     <div className="playing-with-variables">
+      <h2 className="todo-container__title">
+        <Link to="/exercises/js">⯇ JS Strings</Link>
+      </h2>
       <section>
         <h2>Operacje na stringach</h2>
         <p>Ulubiony bohater z serialu "Gra o tron" to {string1}</p>

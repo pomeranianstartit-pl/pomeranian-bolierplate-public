@@ -6,8 +6,9 @@ import Box from '@mui/material/Box';
 import InputLabel from '@mui/material/InputLabel';
 import MenuItem from '@mui/material/MenuItem';
 import FormControl from '@mui/material/FormControl';
-import Select, { SelectChangeEvent } from '@mui/material/Select';
+import Select from '@mui/material/Select';
 import './style.css';
+import { Link } from 'react-router-dom';
 
 export function MaterialUIBasicElement() {
   const [age, setAge] = React.useState('');
@@ -18,12 +19,16 @@ export function MaterialUIBasicElement() {
   };
   const selectChange = (use) => {
     setUse(use);
-  }
+  };
   return (
     <>
+      <h2 className="todo-container__title">
+        <Link to="/exercises/react">⯇ MUI</Link>
+      </h2>
       <Tooltip title="zarejestruj się">
-        <Button style={{marginBottom:'20px'}}variant="contained">
-          {use}<ArrowForwardIcon />
+        <Button style={{ marginBottom: '20px' }} variant="contained">
+          {use}
+          <ArrowForwardIcon />
         </Button>
       </Tooltip>
       <Box sx={{ minWidth: 120 }}>
@@ -36,12 +41,18 @@ export function MaterialUIBasicElement() {
             label="Age"
             onChange={handleChange}
           >
-            <MenuItem onClick={() => selectChange('Ten')} value={10}>Ten</MenuItem>
-            <MenuItem onClick={() => selectChange('Twenty')} value={20}>Twenty</MenuItem>
-            <MenuItem onClick={() => selectChange('Thirty')} value={30}>Thirty</MenuItem>
+            <MenuItem onClick={() => selectChange('Ten')} value={10}>
+              Ten
+            </MenuItem>
+            <MenuItem onClick={() => selectChange('Twenty')} value={20}>
+              Twenty
+            </MenuItem>
+            <MenuItem onClick={() => selectChange('Thirty')} value={30}>
+              Thirty
+            </MenuItem>
           </Select>
         </FormControl>
-        </Box>
+      </Box>
       <UI age={age} /> {/* Przekazanie wartości age jako props */}
     </>
   );

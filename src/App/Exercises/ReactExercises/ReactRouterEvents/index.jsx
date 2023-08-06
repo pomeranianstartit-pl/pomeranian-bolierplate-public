@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 
 import './style.css';
+import { Link } from 'react-router-dom';
 
 export function ReactRouterEvents() {
   const [getCount, setCount] = useState(0);
@@ -25,6 +26,9 @@ export function ReactRouterEvents() {
 
   return (
     <>
+      <h2 className="todo-container__title">
+        <Link to="/exercises/react">⯇ React Router Events</Link>
+      </h2>
       <div className="form--container">
         <h1>Cześć!</h1>
 

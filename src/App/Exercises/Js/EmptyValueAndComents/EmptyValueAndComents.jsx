@@ -1,6 +1,7 @@
 import React from 'react';
 
 import './style.css';
+import { Link } from 'react-router-dom';
 
 export function EmptyValueAndComents() {
   /*
@@ -12,7 +13,7 @@ export function EmptyValueAndComents() {
   console.log(name);
 
   // Function returning undefined by default
-  const myFunction = () => {};
+  const myFunction = () => { };
   const surname = myFunction();
   console.log(surname);
 
@@ -27,35 +28,37 @@ export function EmptyValueAndComents() {
   let b = null;
   console.log(b);
 
-  // napraw to później
-  console.log('Check if renders');
-  console.log('dupa dupa');
-
   // TODO: Function returns string instead of numbers
   // FIXME: Function returns string instead of numbers
   // CHECKME, DOCME, TESTME, PENDING, DISCUSS, REVIEW
 
-  let amount = 24;
   const accBalance = ({ amount, currency }) => {
     const currencySymbols = {
       USD: '🗽',
       PLN: '🧅',
       EUR: '🥨',
-      CUSTOM: <img src={'./index.jpg'} />,
+      CUSTOM: (
+        <img
+          src="../../ReactExercises/TodoWithServer/markerDone.svg"
+          alt="custom img"
+        />
+      ),
     };
-    return (
-      <>
-        {currencySymbols[currency]} {`${amount}`}
-      </>
-    );
+    return <>{currencySymbols[currency] + `${amount}`}</>;
   };
-  window.addEventListener('keyup',(e) =>{
-    console.log(e.key)
-    if (e.key === 'h' || e.key === "ArrowRight") console.log("dzwonię pod 112")
-  })
+  //ciekawe
+  window.addEventListener('keyup', (e) => {
+    console.log(e.key);
+    if (e.key === 'h' || e.key === 'ArrowRight') console.log('dzwonię pod 112');
+  });
   return (
     <div>
-      <p>{accBalance({ currency: 'CUSTOM', amount: 24 })}</p>
+      <h2 className="todo-container__title">
+        <Link to="/exercises/js">⯇ Empty Value And Coments</Link>
+      </h2>
+      <p className="accBalance-paragrpah">
+        {accBalance({ amount: 24, currency: 'USD' })}
+      </p>
     </div>
   );
-};
+}

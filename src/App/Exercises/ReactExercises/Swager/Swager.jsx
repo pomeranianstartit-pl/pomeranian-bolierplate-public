@@ -2,13 +2,13 @@ import React, { useState } from 'react';
 
 import './style.css';
 import axios from 'axios';
+import { Link } from 'react-router-dom';
 
 const BASE_API_URL = 'http://localhost:3333/';
 
 export function Swagerr() {
   const [getTodoList, setTodoList] = useState([]);
   const [getError, setError] = useState('');
-  const [getNewTodo, setNewTodo] = useState('');
 
   const handleFetchTodoData = async () => {
     const timeoutDuration = 5000; //5s na odpwiedź serwera
@@ -31,6 +31,9 @@ export function Swagerr() {
   };
   return (
     <div>
+      <h2 className="todo-container__title">
+        <Link to="/exercises/react">⯇ Swager</Link>
+      </h2>
       <button onClick={handleFetchTodoData}>pobierz todos</button>
       {getError && <p>{getError}</p>}
       {getTodoList.length > 0 && (
