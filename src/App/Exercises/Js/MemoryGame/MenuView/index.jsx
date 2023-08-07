@@ -2,7 +2,12 @@ import { Button } from '../Button';
 import { SelectButtons } from '../SelectButtons';
 import { Menu } from '../Menu';
 
-export const MenuView = () => {
+export const MenuView = ({ setGameStarted, setGameStopped }) => {
+  const handleStartClick = () => {
+    setGameStopped(false);
+    setGameStarted(true);
+  };
+
   return (
     <div>
       <div className="mg-menu">
@@ -17,7 +22,7 @@ export const MenuView = () => {
         </Menu>
 
         <Menu label="PRZYCISKI STERUJĄCE">
-          <Button>Start</Button>
+          <Button onClick={handleStartClick}>Start</Button>
         </Menu>
       </div>
     </div>

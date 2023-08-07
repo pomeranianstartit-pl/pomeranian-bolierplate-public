@@ -2,11 +2,33 @@ import { Button } from '../Button';
 import { Menu } from '../Menu';
 import { useEffect } from 'react';
 
-export const GameView = () => {
+export const GameView = ({
+  setGameStarted,
+  time,
+  setTime,
+  setGameStopped,
+  INITIAL_TIME,
+}) => {
+  const handleStopClick = () => {
+    setTime(INITIAL_TIME);
+    setGameStarted(false);
+    setGameStopped(true);
+  };
+
+  useEffect(() => {
+    const timeoutId = setTimeout(() => {
+      time > 0 && setTime(time - 1);
+    }, 1000);
+
+    time === 0 && setGameStopped(true);
+
+    return () => clearTimeout(timeoutId);
+  }, [time, setTime, setGameStopped]);
+
   return (
-    <div className="mg-menu">
+    <div className="mg-score">
       <Menu label="CZAS GRY">
-        <Button>2:00</Button>
+        <Button>{time}</Button>
       </Menu>
 
       <Menu label="LICZBA RUCHÓW">
@@ -14,7 +36,7 @@ export const GameView = () => {
       </Menu>
 
       <Menu label="PRZYCISKI STERUJĄCE">
-        <Button>PASS</Button>
+        <Button onClick={handleStopClick}>PASS</Button>
       </Menu>
     </div>
   );
