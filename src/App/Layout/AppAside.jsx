@@ -7,67 +7,84 @@ import { EditIcon } from '../Components/Icons/EditIcon';
 import { PersonalCardIcon } from '../Components/Icons/PersonalCardIcon';
 import { CalendarIcon } from '../Components/Icons/CalendarIcon';
 import { SettingIcon } from '../Components/Icons/SettingIcon';
-import { FAQIcon } from '../Components/Icons/FaqIcon';
+import techstackIcon from '../Images/codeIcon.svg';
+import faqIcon from '../Images/faq.svg';
 export function AppAside() {
   return (
     <aside>
       <nav>
         <ul>
-          <li className="aside-row">
-            <NavLink to="dashboard">
-              <HouseIcon className="icon" />
-              <b>Dashboard</b>
-            </NavLink>
-          </li>
-          <li className="aside-row">
-            <NavLink to="cv">
-              <PersonalCardIcon className="icon" />
-              <b>Moje CV</b>
-            </NavLink>
-          </li>
-          <li className="aside-row">
-            <NavLink to="blocks">
-              {' '}
-              <ElementIcon className="icon" />
-              <b>Bloki</b>
-            </NavLink>
-          </li>
-          <li className="aside-row">
-            <NavLink to="exercises">
-              <EditIcon className="icon" />
-              <b>Ćwiczenia</b>
-            </NavLink>
-          </li>
-          <li className="aside-row">
-            <NavLink to="Calendar">
-              <CalendarIcon className="icon" />
-              <b>Kalendarz</b>
-            </NavLink>
-          </li>
-          <li className="aside-row">
-            <NavLink to="Blog">
-              <CalendarIcon className="icon" />
-              <b>Blog</b>
-            </NavLink>
-          </li>
-          <li className="aside-row">
-            <NavLink to="FAQ">
-              <FAQIcon className="icon" />
-              <b>FAQ</b>
-            </NavLink>
-          </li>
+          <div className="aside-row__conteiner">
+
+            <li className="aside-row">
+              <NavLink className='asied_row__link__conteiner' to="dashboard">
+                <HouseIcon className="icon" />
+                <b>Dashboard</b>
+              </NavLink>
+            </li>
+
+            <li className="aside-row">
+              <NavLink className='asied_row__link__conteiner' to="cv">
+                <PersonalCardIcon className="icon" />
+                <b >Moje CV</b>
+              </NavLink>
+            </li>
+
+            <li className="aside-row">
+              <NavLink className='asied_row__link__conteiner' to="techstack">
+                <img src={techstackIcon} className="icon--techstack" />
+                <b>Tech Stack</b>
+              </NavLink>
+            </li>
+            {/* <li className="aside-row">
+              <NavLink className='asied_row__link__conteiner' to="blocks">
+                <ElementIcon className="icon" />
+                <b>Bloki</b>
+              </NavLink>
+            </li> */}
+
+            <li className="aside-row">
+              <NavLink className='asied_row__link__conteiner' to="exercises">
+                <EditIcon className="icon" />
+                <b>Ćwiczenia</b>
+              </NavLink>
+            </li>
+
+            <li className="aside-row">
+              <NavLink className='asied_row__link__conteiner' to="exercises/js/hit-the-mole-game">
+                <CalendarIcon className="icon" />
+                <b>Kalendarz</b>
+              </NavLink>
+            </li>
+
+            <li className="aside-row">
+              <NavLink className='asied_row__link__conteiner' to="Blog">
+                <CalendarIcon className="icon" />
+                <b>Blog</b>
+              </NavLink>
+            </li>
+
+            <li className="aside-row">
+              <NavLink className='asied_row__link__conteiner' to="FAQ">
+                <img src={faqIcon} className="icon" />
+                <b>FAQ</b>
+              </NavLink>
+            </li>
+
+          </div>
           <br />
           <hr color="grey" />
           <br />
+
           <li className="aside-row">
-            <NavLink to="Settings" className="black">
+            <NavLink to="Settings" className='asied_row__link__conteiner' >
               <SettingIcon className="icon" />
               <b>Ustawienia</b>
             </NavLink>
           </li>
+
         </ul>
       </nav>
-      <p style={{ padding: '1rem 0' }}>Sidebar items, widgets, etc</p>
     </aside>
   );
 }
