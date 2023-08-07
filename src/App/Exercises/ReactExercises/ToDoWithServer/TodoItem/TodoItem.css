@@ -1,9 +1,3 @@
-.todo-container {
-}
-
-.todo-container__list {
-}
-
 .todo-item {
   margin: 20px 0;
   padding: 0 15px;
@@ -15,7 +9,7 @@
 }
 
 .todo-item--darker {
-  background-color: #898989;
+  background-color: #cddde8;
 }
 
 .todo-item__wrapper {
@@ -39,9 +33,19 @@
   width: 20%;
   text-align: center;
 }
+
 .todo-item__actions__button {
   background-color: transparent;
   border: none;
+}
+
+.todo-item__actions__button:hover {
+  cursor: pointer;
+}
+
+.todo-item__actions__error-message {
+  font-size: 0.8em;
+  color: var(--color-red);
 }
 
 .todo-item__actions__icon {
@@ -50,6 +54,5 @@
 }
 
 .todo-item__actions__icon--check-mark {
-  font-size: 50px;
   color: green;
 }

@@ -1,0 +1,26 @@
+.todo-form__field {
+  margin: 20px;
+}
+
+.todo-form__field__label {
+  display: block;
+  font-weight: bold;
+  font-size: 1.2em;
+  margin-bottom: 10px;
+}
+
+.todo-form__buttons {
+  display: flex;
+}
+
+.todo-form__error-message {
+  color: red;
+}
+
+.todo-form__success-message {
+  color: green;
+}
+
+.todo-form__info-message {
+  color: blue;
+}
