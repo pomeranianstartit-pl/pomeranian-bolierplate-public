@@ -1,0 +1,9 @@
+.button-base {
+    /* padding: 10px 10px;*/
+background-color: #23213D;
+color: #FFF;
+}
+
+.button-active {
+background-color: #FF0000;
+}

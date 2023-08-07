@@ -1,0 +1,54 @@
+.htm-wrapper-memo {
+font-family: 'Poppins', sans-serif;
+
+}
+.htm-header-memo {
+font-size: 18px;
+line-height: 34px;
+font-weight: 600;
+}
+.htm-menu-memo {
+  max-width: 750px;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  gap: 30px;
+
+/*display: flex;
+flex-wrap: wrap;
+width: 950px;
+gap: 5px;
+border-radius: 8px;*/
+
+}
+
+.htm-stage-memo {
+/*display: flex;
+flex-wrap: wrap;
+justify-content: space-between;
+width: 500px;
+height: 500px;
+margin-top: 20px;
+gap: 5px;*/
+display: grid;
+  justify-content: center;
+  grid-template-columns: repeat(4, 100px);
+  grid-template-rows: repeat(4, 100px);
+  gap: 3px;
+  margin-top: 20px;
+}
+
+.htm-stage-cell-memo {
+  display: flex;
+  justify-content:left;
+  align-items: center;
+  background: #ebebeb;
+  border-radius: 8px;
+}
+.htm-stage-cell-memo--green {
+    background: #E2FBD7;
+  }
+  
+  .htm-stage-cell-memo--red {
+    background: #F3AEA8;
+  }
