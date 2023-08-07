@@ -6,6 +6,7 @@ export const MenuView = ({
   setTime,
   setInitialTime,
   setScore,
+  setNumberOfMemo,
   setGameStarted,
   setGameStopped,
 }) => {
@@ -18,6 +19,10 @@ export const MenuView = ({
     setTime(value);
     setInitialTime(value);
     setGameStopped(false);
+  };
+
+  const handleMemoClick = (value) => {
+    setNumberOfMemo(value);
   };
 
   return (

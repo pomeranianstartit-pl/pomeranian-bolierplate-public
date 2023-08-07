@@ -13,7 +13,9 @@ export const MemoGame = () => {
   const [isGameStopped, setIsGameStopped] = useState(false);
   const [score, setScore] = useState(0);
   const [time, setTime] = useState(INITIAL_TIME);
+  const [numberOfMemo, setNumberOfMemo] = useState(1);
   const [initialTime, setInitialTime] = useState(INITIAL_TIME);
+  const [elements, setElements] = useState(0);
 
   useEffect(() => {
     if (time === 0) {
@@ -32,6 +34,7 @@ export const MemoGame = () => {
       {!isGameStarted && (
         <MenuView
           setTime={setTime}
+          setNumberOfMemo={setNumberOfMemo}
           setInitialTime={setInitialTime}
           setScore={setScore}
           setGameStopped={setIsGameStopped}
@@ -44,11 +47,14 @@ export const MemoGame = () => {
           time={time}
           setTime={setTime}
           score={score}
+          elements={elements}
           setGameStarted={setIsGameStarted}
           setGameStopped={setIsGameStopped}
         />
       )}
-      {isGameStarted && <PlaygroundView score={score} setScore={setScore} />}
+      {isGameStarted && (
+        <PlaygroundView elements={elements} score={score} setScore={setScore} />
+      )}
     </div>
   );
 };

@@ -6,14 +6,16 @@ export const GameView = ({
   initialTime,
   time,
   setTime,
+  setElements,
   score,
   setGameStarted,
   setGameStopped,
 }) => {
   const handleStopClick = () => {
-    setTime(initialTime);
+    setTime(60);
     setGameStarted(false);
     setGameStopped(true);
+    setElements(8);
   };
   useEffect(() => {
     const timeoutId = setTimeout(() => {
