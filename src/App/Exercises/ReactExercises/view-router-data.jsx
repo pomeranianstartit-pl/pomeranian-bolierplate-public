@@ -5,6 +5,7 @@ import { Block09MetaData } from './Block09/router-data';
 import { MuiMetaData } from './Mui/router-data';
 import { LocalDevAndFetchMetaData } from './LocalDevAndFetch/router-data';
 import { TodoListMetaData } from './TodoList/router-data';
+import { ReactUseRefMetaData } from './ReactUseRef/router-data';
 
 export const blockRouterMetaData = [
   SubRouteExampleMetaData,
@@ -13,5 +14,6 @@ export const blockRouterMetaData = [
   MuiMetaData,
   LocalDevAndFetchMetaData,
   TodoListMetaData,
+  ReactUseRefMetaData,
 ];
 export const blockRouterData = getParsedRouterDataList(blockRouterMetaData);
