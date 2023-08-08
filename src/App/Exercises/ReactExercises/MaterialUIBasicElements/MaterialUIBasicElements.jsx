@@ -1,6 +1,6 @@
 import React from 'react';
 import Button from '@mui/material/Button';
-import SendIcon from '@mui/icons-material/Send';
+// import SendIcon from '@mui/icons-material/Send';
 import InputLabel from '@mui/material/InputLabel';
 import MenuItem from '@mui/material/MenuItem';
 import FormControl from '@mui/material/FormControl';
@@ -44,7 +44,7 @@ export function MaterialUIBasicElements() {
   return (
     <>
       <div>
-        <Button variant="contained" endIcon={<SendIcon />}>
+        <Button variant="contained" endIcon>
           {age}
         </Button>
         <br />
