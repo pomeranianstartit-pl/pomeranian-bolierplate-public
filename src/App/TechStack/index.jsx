@@ -19,6 +19,9 @@ import pycharmIcon from './TechStackIcon/PyCharmIcon.svg';
 import msteamsIcon from './TechStackIcon/MsTeamsIcon.svg';
 import { TechStackBlock } from './TechStackBlock/TechStackBlock';
 import { Link } from 'react-router-dom';
+import jestIcon from './TechStackIcon/JestIcon.svg';
+import firebaseIcon from './TechStackIcon/FirebaseIcon.svg';
+import reduxIcon from './TechStackIcon/ReduxIcon.svg';
 export const TechStack = () => {
   const [availableTechStackLanguage] = useState([
     {
@@ -32,6 +35,14 @@ export const TechStack = () => {
     {
       image: <img src={reactIcon} alt="react" />,
       text: 'REACT',
+    },
+    {
+      image: <img src={jestIcon} alt="jest" />,
+      text: 'JEST',
+    },
+    {
+      image: <img src={reduxIcon} alt="react" />,
+      text: 'REDUX',
     },
     {
       image: <img src={htmlIcon} alt="html" />,
@@ -57,6 +68,10 @@ export const TechStack = () => {
       image: <img src={gitIcon} alt="git" />,
       text: 'GIT',
     },
+    {
+      image: <img src={firebaseIcon} alt="firebase"></img>,
+      text: 'FIREBASE',
+    }
   ]);
   const [availableTechStackIDE] = useState([
     {
