@@ -1,0 +1,15 @@
+.point {
+  border: 3px solid red;
+  background-color: pink;
+  border-radius: 100%;
+  width: 70px;
+  height: 70px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  font-size: 40px;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+}
