@@ -6,7 +6,8 @@ import { TodoForm } from './TodoForm/TodoForm';
 import { Link } from 'react-router-dom';
 
 export const BASE_API_URL = 'http://localhost:3333/api';
-
+//http://localhost:3333/api-docs/  -  komendy serwer
+//http://localhost:3333/api/todo   -   dane na serwerze
 export function TodoWithServer() {
   const [todoList, setTodoList] = useState([]);
   const [error, setError] = useState([]);

@@ -9,6 +9,9 @@ import { CalendarIcon } from '../Components/Icons/CalendarIcon';
 import { SettingIcon } from '../Components/Icons/SettingIcon';
 import techstackIcon from '../Images/codeIcon.svg';
 import faqIcon from '../Images/faq.svg';
+import hitthemoleIcon from '../Images/HitTheMoleIcon.svg';
+import memoIcon from '../Images/MemoIcon.svg';
+import formIcon from '../Images/FormIcon.svg';
 export function AppAside() {
   return (
     <aside>
@@ -51,9 +54,21 @@ export function AppAside() {
             </li>
 
             <li className="aside-row">
-              <NavLink className='asied_row__link__conteiner' to="exercises/js/hit-the-mole-game">
-                <CalendarIcon className="icon" />
-                <b>Kalendarz</b>
+              <NavLink className='asied_row__link__conteiner' to="hit-the-mole">
+                <img src={hitthemoleIcon} className="icon" />
+                <b>Gra | Kret</b>
+              </NavLink>
+            </li>
+            <li className="aside-row">
+              <NavLink className='asied_row__link__conteiner' to="memo">
+                <img src={memoIcon} className="icon" />
+                <b>Gra | Memo</b>
+              </NavLink>
+            </li>
+            <li className="aside-row">
+              <NavLink className='asied_row__link__conteiner' to="form">
+                <img src={formIcon} className="icon" />
+                <b>Formularz</b>
               </NavLink>
             </li>
 

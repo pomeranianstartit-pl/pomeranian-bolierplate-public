@@ -13,6 +13,8 @@ import { Settings } from './App/Components/Ustawienia/Settings';
 import { Blog } from './App/Blog/Blog';
 import { FAQ } from './App/FAQ/FAQ';
 import { TechStack } from './App/TechStack';
+import { HitTheMoleGame } from './App/Exercises/Js/HitTheMoleGame/HitTheMoleGame.jsx';
+import { MemoGame } from './App/Exercises/Js/MemoGame/MemoGame.jsx';
 export function App() {
   return (
     <BrowserRouter>
@@ -28,6 +30,9 @@ export function App() {
           <Route path="Blog/*" element={<Blog />} />
           <Route path="FAQ/*" element={<FAQ />} />
           <Route path="techstack/*" element={<TechStack />} />
+          <Route path="hit-the-mole/*" element={<HitTheMoleGame />} />
+          <Route path="memo/*" element={<MemoGame />} />
+          <Route path="form/*" element={''} />
           <Route path="*" element={<NotFound />} />
         </Route>
       </Routes>
