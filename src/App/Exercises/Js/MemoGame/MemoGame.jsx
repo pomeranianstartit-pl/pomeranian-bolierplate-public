@@ -4,8 +4,9 @@ import './styles.css';
 import { MasterHeader } from '../../../Components/MasterHeader/MasterHeader';
 import { Label, Button, Output, Result } from './Components';
 import { Tile } from './Features/Tile/Tile';
-import { formatTime, getAlfabet } from './Utilities';
+import { formatTime, getAlfabet, shuffle } from './Utilities';
 import { useEffect } from 'react';
+import { HighScore } from './Features/HighScore';
 
 const ELEMENTS = [4, 16, 20];
 
@@ -27,9 +28,10 @@ export function MemoGame() {
   function getInitialTiles(size) {
     const charactersSubset = charaters.slice(0, size / 2);
     const allCharacter = [...charactersSubset, ...charactersSubset];
-    const shuffledCharacters = allCharacter.sort(() => Math.random() - 0.5);
+    // const shuffledCharacters = allCharacter.sort(() => Math.random() - 0.5);
+    const shuffledCharacters = shuffle(allCharacter);
     const characterObject = shuffledCharacters.map((character, index) => {
-      return { index, value: character, isVisible: false, varian: 'neutral' };
+      return { index, value: character, isVisible: false, variant: 'neutral' };
     });
     // console.log(characterObject);
     return characterObject;
@@ -176,7 +178,7 @@ export function MemoGame() {
           Gratulacje! Twój wynik to {score} odsłon w czasie {formatTime(time)}
         </Result>
       )}
-
+      <HighScore score={score} time={time}/>
       {status !== 'started' && (
         <div>
           <div className="memo-controls-panel">
