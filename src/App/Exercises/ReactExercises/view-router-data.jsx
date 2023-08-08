@@ -5,8 +5,8 @@ import { Block09MetaData } from './Block09/router-data';
 import { MaterialUIBasicElementMetaData } from './MaterialUIBasicElement/router-data';
 import { SwagerMetaData } from './Swager/router-data';
 import { TodoWithServerMetaData } from './TodoWithServer/router-data';
-import { ReactUseRef } from './ReactUseRef/ReactUseRef';
 import { ReactUseRefMetaData } from './ReactUseRef/router-data';
+import { FormsMetaData } from './Forms/router-data';
 
 export const blockRouterMetaData = [
   ReactRouterEventsMetaData,
@@ -15,5 +15,6 @@ export const blockRouterMetaData = [
   SwagerMetaData,
   TodoWithServerMetaData,
   ReactUseRefMetaData,
+  FormsMetaData,
 ];
 export const blockRouterData = getParsedRouterDataList(blockRouterMetaData);
