@@ -100,12 +100,8 @@ const initialCardsArray = [
 ];
 
 export const PlaygroundView = ({ score, setScore }) => {
-  // tworzymy tablicę kart z tablicy inicjalnej losując kolejność elementów
   const [cardsArray, setCardsArray] = useState(
     initialCardsArray.sort(() => Math.random() - 0.5)
-
-    // poprzednia wersja tworzenia tablicy kart bez losowej koleności:
-    //  const [cardsArray, setCardsArray] = useState(initialCardsArray)
   );
 
   const getClickedCards = () => {
@@ -153,12 +149,9 @@ export const PlaygroundView = ({ score, setScore }) => {
       return;
     }
 
-    // liczymy ile mamy klikniętych kart
     let numberOfClickedCards = getClickedCards().length;
 
     if (numberOfClickedCards >= 2) {
-      // ignorujemy gdy osiągneliśmy limit klikniętych kart (max 2 karty)
-      // do momentu, aż ponownie kliknięte karty zostaną ukryte na planszy
       return;
     } else {
       // oznaczamy kartę jako klikniętą
@@ -166,33 +159,21 @@ export const PlaygroundView = ({ score, setScore }) => {
     }
   };
 
-  // ta funkcja uruchomi się po aktualizacji tablicy kart
   useEffect(() => {
-    // pobieramy kliknięte karty
     const clickedCards = getClickedCards();
 
     if (clickedCards.length < 2) {
-      // Jeżeli nie ma dwóch klikniętych kart to czekamy na kolejne kliknięcie i wychodzimy z funkcji.
-      // Jeżeli nie ma żadnej klikniętej karty to wychodzimy z funkcji.
-      // Taka sytuacja może się tak zdarzyć gdy deaktywujemy karty (po dopasowaniu)
-      // lub odznaczamy ich kliknięcie (po porażce)
       return;
     }
 
     const firstClickedLetter = clickedCards[0].name;
     const secondClickedLetter = clickedCards[1].name;
-    // sprawdzamy czy kliknięte litery są takie same
+
     if (firstClickedLetter === secondClickedLetter) {
-      // sukces! dwie odkryte karty mają tą samą literę!
-      // Trzeba je deaktywować, żeby nie dało się w nie klikać
       deactivateCardsByCardName(firstClickedLetter);
 
-      // No i zwiększamy nasz wynik o jeden punkt :-)
       setScore(score + 1);
     } else {
-      // Porażka! Dwie karty nie są takie same,
-      // więc trzeba je zaznaczyć, że już nie są kliknięte
-      // ale dotyczy to tylko tych aktywnych kart!
       unclickActiveCards();
     }
   }, [cardsArray]);
