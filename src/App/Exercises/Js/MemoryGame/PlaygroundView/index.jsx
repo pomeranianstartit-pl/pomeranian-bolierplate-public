@@ -82,7 +82,7 @@ export const PlaygroundView = () => {
     },
   ];
 
-  const shuffledArray = shuffleArray(arrayWithSymbols);
+  //const shuffledArray = shuffleArray(arrayWithSymbols);
 
   return (
     <div>

@@ -9,12 +9,11 @@
 }
 
 .mg-menu {
-  max-width: 750px;
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  grid-template-rows: repeat(3, 1fr);
-  gap: 30px;
-  margin-bottom: 5px;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-self: auto;
 }
 
 .mg-stage {
@@ -57,10 +56,4 @@
   font-weight: 400;
   gap: 30px;
   margin-bottom: 15px;
-}
-
-.mg-score {
-  max-width: 200px;
-  display: flex;
-  flex-direction: column;
 }

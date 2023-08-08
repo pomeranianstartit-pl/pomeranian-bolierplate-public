@@ -28,11 +28,11 @@ export const GameView = ({
   return (
     <div className="mg-score">
       <Menu label="CZAS GRY">
-        <Button>{time}</Button>
+        <Button isDisabled={true}>{time}</Button>
       </Menu>
 
       <Menu label="LICZBA RUCHÓW">
-        <Button>2</Button>
+        <Button isDisabled={true}>2</Button>
       </Menu>
 
       <Menu label="PRZYCISKI STERUJĄCE">

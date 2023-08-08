@@ -1,10 +1,12 @@
 import './index.css';
 
-export const Button = ({ children, isActive, onClick }) => {
+export const Button = ({ children, isActive, onClick, isDisabled = false }) => {
+  const activeClass = isActive ? 'button--active' : '';
+  const disabledClass = isDisabled ? 'button--disabled' : '';
   return (
     <button
       onClick={onClick}
-      className={`button__base ${isActive ? 'button--active' : ''}`}
+      className={`button__base ${activeClass} ${disabledClass}`}
     >
       {children}
     </button>

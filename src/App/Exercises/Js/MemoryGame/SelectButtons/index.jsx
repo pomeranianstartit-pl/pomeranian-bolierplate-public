@@ -1,4 +1,5 @@
 import { Button } from '../Button';
+import './styles.css';
 
 export const SelectButtons = (props) => {
   const { options } = props;
@@ -9,9 +10,11 @@ export const SelectButtons = (props) => {
   return (
     <>
       {options.map((element) => (
-        <Button onClick={handleClick} isActive={element.isActive}>
-          {element.label}{' '}
-        </Button>
+        <div className="select-button">
+          <Button onClick={handleClick} isActive={element.isActive}>
+            {element.label}{' '}
+          </Button>
+        </div>
       ))}
     </>
   );
