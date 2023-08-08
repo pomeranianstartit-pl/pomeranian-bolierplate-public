@@ -33,6 +33,7 @@ export const MoleGameSettings = ({
             <h4>CZAS GRY {gameTime}</h4>
             {gameTimeOption.map(({ label, timeValue }) => (
               <button
+                key={'time' + timeValue + 'minute'}
                 className={gameTime === timeValue ? 'activeButton' : ''}
                 onClick={() => {
                   setGameTime(timeValue);
@@ -46,6 +47,7 @@ export const MoleGameSettings = ({
             <h4>LICZBA KRETÓW</h4>
             {moleCountOption.map(({ label }) => (
               <button
+                key={label}
                 className={moleCount === Number(label[0]) ? 'activeButton' : ''}
                 onClick={() => setMoleCount(Number(label[0]))}
               >

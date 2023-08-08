@@ -21,7 +21,7 @@ export const HitTheMoleGame = () => {
     if (!countdownInterval) {
       countdownInterval = setInterval(() => {
         setCounter((previousCounter) => previousCounter - 1);
-      }, 1000);
+      }, moleSpeed);
       if (counter === 0) {
         setGameStarted(false);
         clearInterval(countdownInterval);
@@ -37,34 +37,37 @@ export const HitTheMoleGame = () => {
   }, [gameTime]);
 
   useEffect(() => {
-    if (gameTime !== 0) {
-      const countdownInterval = setInterval(() => {
-        showRandomMole();
-      }, moleSpeed);
-
-      return () => clearInterval(countdownInterval);
-    }
-  }, [gameTime]);
+    setMoleCount(() => moleCount);
+  }, [moleCount]);
 
   useEffect(() => {
-    if (!gameStarted || gameStarted) setCounter(gameTime);
+    if (gameStarted && counter > 0) {
+      showRandomMoles();
+    }
+  }, [gameStarted, counter]);
+
+  useEffect(() => {
+    if (gameStarted) setCounter(gameTime);
   }, [gameStarted, gameTime]);
 
-  function showRandomMole() {
-    function getRandom(min, max) {
-      min = Math.ceil(min);
-      max = Math.floor(max);
-      return Math.floor(Math.random() * (max - min + 1) + min);
-    }
-    const random = getRandom(0, moleArray.length - 1);
+  //random 1,2,3 moles
+  function showRandomMoles() {
+    const randomArray = Array(moleArray.length)
+      .fill()
+      .map((_, i) => i + 1)
+      .sort(() => Math.random() - 0.5)
+      .slice(0, moleCount);
+    console.log(moleCount);
+    console.log(randomArray);
     setMoleArray((previousMoleArray) =>
       previousMoleArray.map((mole, index) => {
         const newMole = { ...mole };
-        newMole.isVisible = index === random;
-        // console.log(moleArray);
+        newMole.isVisible = randomArray.includes(index);
+
         return newMole;
       })
     );
+    console.log(moleArray);
   }
 
   function hitTheMole(index) {
@@ -80,6 +83,7 @@ export const HitTheMoleGame = () => {
 
   return (
     <>
+      <button onClick={() => showRandomMoles()}>TEST ARRAYKI</button>
       {!gameStarted ? (
         <MoleGameSettings
           gameTime={gameTime}
