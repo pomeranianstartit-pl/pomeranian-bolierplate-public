@@ -1,0 +1,12 @@
+.bin-icon path {
+  stroke: var(--color-black);
+}
+
+.bin-icon:hover path {
+  stroke: var(--color-primary-blue);
+  cursor: pointer;
+}
+
+.bin-icon--error path {
+  stroke: var(--colors-actions-danger);
+}

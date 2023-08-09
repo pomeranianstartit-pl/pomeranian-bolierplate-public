@@ -1,0 +1,22 @@
+.todo-form__field {
+  margin: 20px;
+}
+
+.todo-form__field label {
+  display: block;
+  font-weight: bold;
+  margin-bottom: 0.6rem;
+}
+.todo-form__field textarea {
+  font-family: Poppins;
+  font-size: 1rem;
+}
+.todo-form_progress-mesage {
+  color: var(--color-primary-blue);
+}
+.todo-form_error-mesage {
+  color: var(--colors-actions-danger);
+}
+.todo-form_sucsess-mesage {
+  color: var(--color-succes);
+}
