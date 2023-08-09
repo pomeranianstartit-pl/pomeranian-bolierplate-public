@@ -1,10 +1,11 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect, useRef } from 'react';
 import './style.css';
 import { MoleGameSettings } from './MoleGameSettings';
 import { MoleGameBoard } from './Board';
 
 export function HitTheMoleGame() {
   const defaultGameTime = 2 * 60 * 1000;
+  const scrollToBoard = useRef(null)
   const [gameTime, setGameTime] = useState(defaultGameTime);
   const [moleCount, setMoleCount] = useState(1);
   const [seconds, setSeconds] = useState(gameTime / 1000);
@@ -84,6 +85,13 @@ export function HitTheMoleGame() {
       setHighScore(score);
     }
   }, [highScore, score]);
+
+  const scrollToTarget = () => {
+    return scrollToBoard?.current.scrollIntoView({ behavior: 'smooth' });
+  };
+  // useEffect(() => {
+  //   return scrollToTarget();
+  // }, [isCountingDown]);
   return (
     <>
       {!isCountingDown ? (
@@ -113,8 +121,9 @@ export function HitTheMoleGame() {
           isCountingDown={isCountingDown}
           gameTime={gameTime}
           startTime={startTime}
+          ref={scrollToBoard}
         />
-      ) : null}
+      ) : (null)}
     </>
   );
 }
