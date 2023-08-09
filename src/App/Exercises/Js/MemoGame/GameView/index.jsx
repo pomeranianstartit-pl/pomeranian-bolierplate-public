@@ -12,7 +12,7 @@ export const GameView = ({
   setGameStopped,
 }) => {
   const handleStopClick = () => {
-    setTime(60);
+    setTime(initialTime);
     setGameStarted(false);
     setGameStopped(true);
     setElements(8);
@@ -31,11 +31,11 @@ export const GameView = ({
   return (
     <div className="htm-menu-memo">
       <Menu label="Czas gry">
-        <Button>{time}</Button>
+        <Button isDisabled={true}>{time}</Button>
       </Menu>
 
       <Menu label="Wynik">
-        <Button>{score}</Button>
+        <Button isDisabled={true}>{score}</Button>
       </Menu>
 
       <Menu label="Przyciski sterujące">

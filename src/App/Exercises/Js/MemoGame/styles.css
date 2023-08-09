@@ -8,17 +8,13 @@ line-height: 34px;
 font-weight: 600;
 }
 .htm-menu-memo {
-  max-width: 750px;
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  grid-template-rows: repeat(2, 1fr);
-  gap: 30px;
 
-/*display: flex;
+display: flex;
+justify-content: space-between;
+flex-direction: column;
 flex-wrap: wrap;
-width: 950px;
 gap: 5px;
-border-radius: 8px;*/
+border-radius: 8px;
 
 }
 
@@ -44,11 +40,14 @@ display: grid;
   align-items: center;
   background: #ebebeb;
   border-radius: 8px;
+  
 }
 .htm-stage-cell-memo--green {
     background: #E2FBD7;
+   
   }
   
   .htm-stage-cell-memo--red {
     background: #F3AEA8;
+    
   }

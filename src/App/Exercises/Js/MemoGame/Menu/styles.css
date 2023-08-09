@@ -1,0 +1,12 @@
+.menu-wrapper {
+  display: flex;
+  
+}
+.menu-label {
+    min-width: 200px;
+    max-width: 200px;
+}
+.menu-content {
+  display:flex;
+  align-items: center;
+}

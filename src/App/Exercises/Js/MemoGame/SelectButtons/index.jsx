@@ -1,4 +1,6 @@
 import { Button } from '../Button';
+import './styles.css';
+
 import { useState } from 'react';
 
 export const SelectButtons = (props) => {
@@ -20,13 +22,15 @@ export const SelectButtons = (props) => {
   return (
     <>
       {modifiedOptions.map(({ value, label, isActive }) => (
-        <Button
-          key={value}
-          onClick={() => handleClick(value)}
-          isActive={isActive}
-        >
-          {label}
-        </Button>
+        <div className="select-button">
+          <Button
+            key={value}
+            onClick={() => handleClick(value)}
+            isActive={isActive}
+          >
+            {label}
+          </Button>
+        </div>
       ))}
     </>
   );
