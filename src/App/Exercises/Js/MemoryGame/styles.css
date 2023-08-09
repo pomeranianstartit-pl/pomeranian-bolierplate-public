@@ -1,0 +1,38 @@
+.mg-wrapper {
+  font-family: 'Poppins', sans-serif;
+}
+
+.mg-header {
+  font-size: 18px;
+  line-height: 34px;
+  font-weight: bold;
+}
+
+.mg-menu {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-self: auto;
+}
+
+.mg-stage-cell--green {
+  background: #e2fbd7;
+}
+
+.mg-stage-cell--red {
+  background: #f3aea8;
+}
+
+.element.char {
+  color: red;
+  font-weight: bold;
+}
+
+.mg-summary {
+  font-size: 18px;
+  line-height: 34px;
+  font-weight: 400;
+  gap: 30px;
+  margin-bottom: 15px;
+}

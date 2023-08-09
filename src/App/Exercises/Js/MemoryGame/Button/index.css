@@ -1,0 +1,21 @@
+.button__base {
+  padding: 10px 20px;
+  background-color: #23213d;
+  color: #fff;
+  display: flex;
+  height: 56px;
+  padding: 20px 36px;
+  justify-content: center;
+  align-items: center;
+  border-radius: 8px;
+  border: 1px solid #ebebeb;
+  min-width: 163px;
+}
+
+.button--active {
+  background-color: #ff0000;
+}
+.button--disabled {
+  background-color: #ebebeb;
+  color: #23213d;
+}
