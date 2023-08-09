@@ -1,0 +1,8 @@
+.field-section__title {
+  color: var(--text-text-primary, #222);
+  font-family: Poppins;
+  font-size: 1rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 1.6875rem; /* 168.75% */
+}
