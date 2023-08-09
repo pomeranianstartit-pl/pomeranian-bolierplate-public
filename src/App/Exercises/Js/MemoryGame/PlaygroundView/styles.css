@@ -1,0 +1,27 @@
+.board {
+  margin: 20px auto;
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+  width: 280px;
+}
+
+.board-field {
+  width: 50px;
+  height: 50px;
+  background-color: #ccc;
+  border-radius: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.field-clicked {
+  background-color: #e8e8e8;
+}
+
+.field-paired {
+  background-color: #1097eb;
+}

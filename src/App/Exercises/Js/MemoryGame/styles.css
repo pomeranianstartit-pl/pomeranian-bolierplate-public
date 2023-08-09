@@ -16,27 +16,6 @@
   align-self: auto;
 }
 
-.mg-stage {
-  display: grid;
-  justify-content: center;
-  grid-template-columns: repeat(4, 100px);
-  grid-template-rows: repeat(4, 100px);
-  gap: 3px;
-  margin-top: 5px;
-  margin-bottom: 20px;
-}
-
-.mg-stage-cell {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background: #ebebeb;
-  border-radius: 8px;
-  color: black;
-  font-family: inherit;
-  font-size: 80px;
-}
-
 .mg-stage-cell--green {
   background: #e2fbd7;
 }

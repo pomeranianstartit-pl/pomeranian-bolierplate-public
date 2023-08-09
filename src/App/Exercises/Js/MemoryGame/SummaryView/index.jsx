@@ -1,5 +1,5 @@
-export const SummaryView = ({ time }) => {
+export const SummaryView = ({ myTime, amount }) => {
   return (
-    <div className="mg-summary">{`Gratulację! Twój wynik to ... pary w czasie ${time} sekund.`}</div>
+    <div className="mg-summary">{`Gratulację! Wszystkie pary zostały odnalezione w ${myTime} sekund, przy użyciu ${amount} ruchów.`}</div>
   );
 };

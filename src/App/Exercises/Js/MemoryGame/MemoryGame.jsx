@@ -6,22 +6,28 @@ import { GameView } from './GameView';
 import { useEffect, useState } from 'react';
 import { SummaryView } from './SummaryView';
 
-const INITIAL_TIME = 60;
-
 export const MemoryGame = () => {
   // game states
 
   const [isGameStarted, setIsGameStarted] = useState(false);
-  const [isGameStopped, setIsGameStopped] = useState(false);
-  const [time, setTime] = useState(INITIAL_TIME);
-  const [initialTime, setInitialTime] = useState(INITIAL_TIME);
+  const [isGameEnded, setIsGameEnded] = useState(false);
+  const [time, setTime] = useState(0);
+  const [timeInterval, setTimeInterval] = useState();
+  const [myTime, setMyTime] = useState(0);
+  const [amount, setAmount] = useState(0);
+  const [boardSize, setBoardSize] = useState(8);
 
   useEffect(() => {
-    if (time === 0) {
-      setIsGameStarted(false);
-      setTime(initialTime);
+    if (isGameStarted) {
+      const gameInterval = setInterval(() => {
+        return setTime((prev) => prev + 1);
+      }, 1000);
+      setTimeInterval(gameInterval);
+    } else {
+      clearInterval(timeInterval);
+      setTime(0);
     }
-  }, [time, initialTime]);
+  }, [isGameStarted]);
 
   return (
     <div>
@@ -29,26 +35,41 @@ export const MemoryGame = () => {
         Gra polegająca na zapamiętywaniu odkrytych kafli i łączeniu ich w pary
       </h4>
 
-      {isGameStopped && <SummaryView />}
+      {isGameEnded && <SummaryView myTime={myTime} amount={amount} />}
+
       {!isGameStarted && (
         <MenuView
           setGameStarted={setIsGameStarted}
-          setGameStopped={setIsGameStopped}
-          setInitialTime={setInitialTime}
+          setGameEnded={setIsGameEnded}
           setTime={setTime}
+          setAmount={amount}
+          time={time}
+          amount={amount}
+          myTime={myTime}
+          setBoardSize={setBoardSize}
         />
       )}
 
       {isGameStarted && (
         <GameView
-          initialTime={initialTime}
           time={time}
           setTime={setTime}
+          amount={amount}
           setGameStarted={setIsGameStarted}
-          setGameStopped={setIsGameStopped}
+          setGameEnded={setIsGameEnded}
         />
       )}
-      {isGameStarted && <PlaygroundView />}
+      {isGameStarted && (
+        <PlaygroundView
+          boardSize={boardSize}
+          setGameEnded={setIsGameEnded}
+          setGameStarted={setIsGameStarted}
+          setMyTime={setMyTime}
+          time={time}
+          setAmount={setAmount}
+          amount={amount}
+        />
+      )}
     </div>
   );
 };

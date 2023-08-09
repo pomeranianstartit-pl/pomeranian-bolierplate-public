@@ -6,24 +6,14 @@ export const GameView = ({
   setGameStarted,
   time,
   setTime,
-  setGameStopped,
-  INITIAL_TIME,
+  setGameEnded,
+  amount,
 }) => {
   const handleStopClick = () => {
-    setTime(INITIAL_TIME);
+    setTime(0);
     setGameStarted(false);
-    setGameStopped(true);
+    setGameEnded(true);
   };
-
-  useEffect(() => {
-    const timeoutId = setTimeout(() => {
-      time > 0 && setTime(time - 1);
-    }, 1000);
-
-    time === 0 && setGameStopped(true);
-
-    return () => clearTimeout(timeoutId);
-  }, [time, setTime, setGameStopped]);
 
   return (
     <div className="mg-score">
@@ -32,7 +22,7 @@ export const GameView = ({
       </Menu>
 
       <Menu label="LICZBA RUCHÓW">
-        <Button isDisabled={true}>2</Button>
+        <Button isDisabled={true}>{amount}</Button>
       </Menu>
 
       <Menu label="PRZYCISKI STERUJĄCE">
