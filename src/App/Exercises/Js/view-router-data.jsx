@@ -19,6 +19,7 @@ import { DateAndTimeMetaData } from './DateAndTime/router-data';
 import { AnimationsJSMetaData } from './AnimationsJS/router-data';
 import { HitTheMoleMetaData } from './HitTheMole/router-data';
 import { MemoGameMetaData } from './MemoGame/router-data';
+import { blockRouterMetaData as OOP } from './OOP/router-data';
 
 export const blockRouterMetaData = [
   blockRouterMetaDataJsVariables1,
@@ -40,5 +41,6 @@ export const blockRouterMetaData = [
   AnimationsJSMetaData,
   HitTheMoleMetaData,
   MemoGameMetaData,
+  OOP,
 ];
 export const blockRouterData = getParsedRouterDataList(blockRouterMetaData);
