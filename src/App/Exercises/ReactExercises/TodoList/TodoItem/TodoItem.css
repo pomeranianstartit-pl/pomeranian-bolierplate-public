@@ -1,0 +1,64 @@
+.todo-item {
+  border-left: 5px solid var(--color-block-10-body);
+  margin: 1rem;
+  padding: 1rem;
+  border-radius: 0.5rem;
+  -webkit-box-shadow: 8px 8px 24px 0px rgba(190, 190, 190, 1);
+  -moz-box-shadow: 8px 8px 24px 0px rgba(190, 190, 190, 1);
+  box-shadow: 8px 8px 24px 0px rgba(190, 190, 190, 1);
+  display: flex;
+  align-items: stretch;
+  font-family: Poppins;
+  color: var(--gray-700);
+}
+
+.todo-item.todo-item--darker {
+  background-color: var(--color-block-10-body);
+  border-left: 5px solid var(--gray-700);
+}
+
+.todo-item.todo-item--darker h3,
+.todo-item.todo-item--darker .todo-item__wrapper__text {
+  color: var(--gray-700);
+}
+.todo-item__wrapper {
+  flex-grow: 1;
+}
+.todo-item__wrapper h3 {
+  color: var(--color-black);
+  margin: 0 0 0.5rem 0;
+  font-weight: 700;
+  font-size: 1.125rem;
+}
+.todo-item__wrapper p {
+  margin: 0.5rem 0 0 0;
+}
+
+.todo-item__wrapper__text {
+}
+.todo-item__wrapper__text--smaller {
+  font-size: small;
+}
+.todo-item__actions {
+  padding: 15px 0;
+  width: 20%;
+  text-align: center;
+  height: 100%;
+}
+.todo-item__actions__button {
+  background-color: transparent;
+  border: none;
+  font-size: 2rem;
+}
+.todo-item__actions__button:hover {
+  cursor: pointer;
+  color: var(--color-primary-blue);
+}
+.todo-item__actions__check {
+  font-size: 3rem;
+  color: var(--color-succes);
+  text-align: center;
+}
+.todo-item__actions__error {
+  color: var(--color-link-hover);
+}

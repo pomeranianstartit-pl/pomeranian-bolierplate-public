@@ -11,16 +11,14 @@ export const MoleGameBoard = ({
   return (
     <div>
       <div className="gameOptionsButtons">
-        <div className="gameButtonsRows">
-          <h4>CZAS DO KOŃCA </h4>
-          {counter}
-          <h4>WYNIK </h4>
-          {scoreCount}
-
-          <h4>PRZYCISKI STERUJĄCE</h4>
-          <button onClick={startStopGame}>
-            {gameStarted ? 'STOP' : 'START'}
-          </button>
+        <h4>CZAS DO KOŃCA </h4>
+        {counter}
+        <h4>WYNIK </h4>
+        {scoreCount}
+        <h4>PRZYCISKI STERUJĄCE</h4>
+        <button onClick={startStopGame}>
+          {gameStarted ? 'STOP' : 'START'}
+        </button>
         </div>
       </div>
       <div className="moleGame">
