@@ -8,7 +8,7 @@ import { blockRouterMetaData as EmptyValuesAndComments } from './EmptyValuesAndC
 import { blockRouterMetaData as JsArrayBasics } from './JsArrayBasics/router-data';
 import { blockRouterMetaData as JsExerciseFunctions } from './JsExerciseFunctions/router-data';
 import { blockRouterMetaData as Czas } from './JSTimeFunctions/router-data';
-import { blockRouterMetaData as HitTheMoleGame } from './HitTheMoleGame/router-data';
+import { blockRouterMetaData as HitTheMoleGame } from './HitTheMole/router-data';
 
 export const blockRouterMetaData = [
   blockRouterMetaDataJsVariables1,
