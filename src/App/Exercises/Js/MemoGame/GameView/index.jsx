@@ -37,7 +37,6 @@ export const GameView = ({
       <Menu label="Wynik">
         <Button isDisabled={true}>{score}</Button>
       </Menu>
-
       <Menu label="Przyciski sterujące">
         <Button onClick={handleStopClick}>Stop</Button>
       </Menu>
