@@ -1,6 +1,7 @@
 import { useState, useEffect } from 'react';
 import { Label, Button, Output, Result } from './Components';
 import { Tile } from '../MemoGame/Features/Tile/Tile';
+import { HighScore } from './Features/HighScore/';
 import { formatTime } from './Utilities';
 
 import './styles.css';
@@ -171,10 +172,13 @@ export const MemoGame = () => {
         </Result>
       )) ||
         status === 'finished') && (
-        <Result>
-          Zgadłeś {found} na {prevNoOfElements / 2} par w czasie{' '}
-          {formatTime(time)}, w {score} odsłonach. Powodzenia następnym razem!
-        </Result>
+        <>
+          <Result>
+            Zgadłeś {found} na {prevNoOfElements / 2} par w czasie{' '}
+            {formatTime(time)}, w {score} odsłonach. Powodzenia następnym razem!
+          </Result>
+          <HighScore score={score} time={time} />
+        </>
       )}
 
       {showWarning && <p className="memo-warning">Brakuje ustawień gry!!!</p>}
