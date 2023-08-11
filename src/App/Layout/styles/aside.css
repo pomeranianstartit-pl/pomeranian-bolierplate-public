@@ -10,6 +10,7 @@ aside {
 aside ul {
   /* Nadpisanie domyślnych styli przeglądarki */
   padding-inline-start: 1rem;
+  list-style-type: none;
 }
 
 aside li {
@@ -20,11 +21,11 @@ aside li {
   display: flex;
   flex-direction: row;
   align-items: center;
+  gap: 5px;
 }
 
 aside li a {
   display: block;
-  padding: 0.5rem;
 }
 
 aside a.active {
@@ -32,13 +33,13 @@ aside a.active {
   color: var(--color-white);
 }
 
+.aside-row {
+  color: #fe3756;
+}
 
-  .aside-row{
-color:#FE3756;
-  }
+aside a.active,
+aside a:hover {
+  background-color: #e6e9ef;
 
-  aside a.active,
-  aside a:hover {
-    background-color: var(--color-primary-blue);
-    color: var(--color-white);
-  }
+  color: var(--color-white);
+}
