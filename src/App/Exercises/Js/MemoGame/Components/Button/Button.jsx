@@ -1,5 +1,4 @@
 import './styles.css';
-import { useState } from 'react';
 
 export const Button = ({ value, variant = 'primary', onClick }) => {
   if (
