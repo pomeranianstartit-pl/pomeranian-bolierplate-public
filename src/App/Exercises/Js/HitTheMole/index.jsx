@@ -1,5 +1,5 @@
 import { useEffect, useState } from 'react';
-import { MoleIcon } from '../../../../Components/Icons/MoleIcon';
+import { MoleIcon } from '../../../Components/Icons/MoleIcon';
 
 const initArrayWithMole = [
   {
