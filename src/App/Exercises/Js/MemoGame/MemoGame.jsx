@@ -1,5 +1,20 @@
 import { useState } from 'react';
 
+// dodajemy w momencie ukończenia gry sprawdzenie czy dla aktualnie skończonego zestawu elementów
+// (8/16/20) pobiliśmy rekord,
+
+// 2. rekord wyliczamy jako ilość ruchów na minutę (60 * ruchy / czasGry W sekundach),
+
+// 3. jeśli pobiliśmy rekord dodajemy informacje do wyniku - gratulacje pobiłeś rekord twoje punkty
+// XX poprzedni rekord YY,
+
+// 4. zapisujemy w zmiennej tylko najlepszy wynik (czas, ruchy oraz rekord) dla danej sekcji,
+
+// 5. dodajemy przycisk highscore a po jego naciśnięciu wyświetlamy wyniki (forma dowolna zbieżna ze
+// stylem aplikacji),
+
+// 6. przycisk znika jeśli gra sie toczy.
+
 import './styles.css';
 import { MasterHeader } from '../../../Components/MasterHeader/MasterHeader';
 import { Label, Button, Output, Result } from './Components';
@@ -178,7 +193,7 @@ export function MemoGame() {
           Gratulacje! Twój wynik to {score} odsłon w czasie {formatTime(time)}
         </Result>
       )}
-      <HighScore score={score} time={time}/>
+      <HighScore score={score} time={time} />
       {status !== 'started' && (
         <div>
           <div className="memo-controls-panel">

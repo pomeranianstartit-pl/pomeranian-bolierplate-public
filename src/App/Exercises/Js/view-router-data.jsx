@@ -22,7 +22,10 @@ import { blockRouterMetaDataTimer } from './Timer/router-data';
 import { blockRouterMetaDataHitTheMoleGame } from './HitTheMoleGame/router-data';
 import { blockRouterMetaDataJsSlidingBanner } from './JsSlidingBanner/router-data';
 import { blockRouterMetaDataMemoGame } from './MemoGame/router-data';
-
+import { blockRouterMetaDataUseEffectTraining } from './UseEffectTraining/router-data';
+import { blockRouterMetaDataCurrying } from './Currying/router-data';
+import { blockRouterMetaDataOop as OOP } from './Oop/router-data';
+import { blockRouterMetaDataTryCatchPrototype as TryCatchPrototype } from './TryCatchPrototype/router-data';
 import { blockRouterMetaDataEmptyValuesAndComments } from './EmptyValuesAndComments/router-data';
 
 export const blockRouterMetaData = [
@@ -48,6 +51,10 @@ export const blockRouterMetaData = [
   blockRouterMetaDataTimer,
   blockRouterMetaDataJsSlidingBanner,
   blockRouterMetaDataHitTheMoleGame,
-  blockRouterMetaDataMemoGame
+  blockRouterMetaDataMemoGame,
+  blockRouterMetaDataUseEffectTraining,
+  blockRouterMetaDataCurrying,
+  OOP,
+  TryCatchPrototype,
 ];
 export const blockRouterData = getParsedRouterDataList(blockRouterMetaData);

@@ -46,4 +46,3 @@ export function shuffle(array) {
 // Used like so
 var arr = [2, 11, 37, 42];
 shuffle(arr);
-console.log(arr);

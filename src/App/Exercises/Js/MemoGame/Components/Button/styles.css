@@ -9,16 +9,19 @@
     padding: 0;
     justify-content: center;
     gap: 16px;
-
     font-size: 18px;
     font-weight: 500;
     cursor: pointer;
+    transition: opacity .3s ease-in, widh 2s, transform 1s ease-out;
 
 
 }
 
 .memo-button:hover {
     opacity: 0.8;
+    width: 11rem;
+    transform: rotate(360deg);
+ 
     /* background-color: red; */
 
 }
@@ -26,6 +29,7 @@
 .memo-button--primary {
     border: 1px solid #23213D;
     background: #23213D;
+ 
 }
 
 .memo-button--secondary {

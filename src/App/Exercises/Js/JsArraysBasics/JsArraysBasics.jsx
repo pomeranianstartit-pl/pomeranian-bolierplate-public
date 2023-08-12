@@ -37,6 +37,7 @@ export const JsArraysBasics = () => {
 
     const tablica1 = tablica.pop();
     const tablica2 = tablica.at(1);
+    console.log(tablica2);
     const [trzy, cztery] = tablica;
     const [head, second, ...rest] = tablica;
     const wynik = {
@@ -62,7 +63,6 @@ export const JsArraysBasics = () => {
     const tablica6 = tablica.slice(-1);
     const tablica7 = tablica2.splice(-2);
     const wynik = {
-
       tablica,
       tablica2,
       tablica3,
@@ -155,8 +155,8 @@ export const JsArraysBasics = () => {
     const wynik = [];
     let index = 0;
     while (index < tablica.length) {
-      wynik[index] = tablica.at(index) + index;
-      index = index + 1
+      wynik[index] = tablica.at(index) + 5;
+      index = index + 1;
     }
 
     return wynik;
@@ -167,8 +167,8 @@ export const JsArraysBasics = () => {
     for (let index = 0; index < tablica.length; index++) {
       if (index === 2) continue;
       if (index === 7) break;
-      if (wynik === 6) return wynik
-      wynik.push(index)
+      if (wynik === 6) return wynik;
+      wynik.push(index);
     }
 
     return wynik;
@@ -178,10 +178,9 @@ export const JsArraysBasics = () => {
     const wynik = [1, 2, 3, 4];
 
     for (const elementTablicy of tablica) {
-      wynik.push(elementTablicy * 2)
+      wynik.push(elementTablicy * 2);
     }
     return { tablica, wynik };
-
   }
   // infinity loop
   // arrays vs objects
@@ -189,7 +188,7 @@ export const JsArraysBasics = () => {
     const tablica = Array(10).fill(2);
     const wynik = [];
     for (const elOfArray of tablica) {
-      wynik.push(elOfArray * 4)
+      wynik.push(elOfArray * 4);
     }
     return wynik;
   }
@@ -205,7 +204,9 @@ export const JsArraysBasics = () => {
   }
   function exampleSort() {
     const tablica = ['Poland', 'Mexico', 'USA', 'Kanada', 'Italy'];
-    const wynik = tablica.sort((pierwszaWartosc, drugaWrtosc) => pierwszaWartosc.localeCompare(drugaWrtosc));
+    const wynik = tablica.sort((pierwszaWartosc, drugaWrtosc) =>
+      pierwszaWartosc.localeCompare(drugaWrtosc)
+    );
     return wynik;
   }
   function exampleJoin() {
@@ -221,13 +222,13 @@ export const JsArraysBasics = () => {
     // }
     // const wynik = tablica.reduce(sumLenght, 0);
 
-    const tablica = [1, 2, 3]
+    const tablica = [1, 2, 3];
 
     function callback(pV, cV) {
-      return cV = cV * pV
+      return (cV = cV * pV);
     }
 
-    const wynik = tablica.reduce(callback, 10)
+    const wynik = tablica.reduce(callback, 10);
     return wynik;
   }
 

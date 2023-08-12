@@ -1,28 +1,25 @@
-/* eslint-disable prettier/prettier */
 import './styles.css';
-import { useState, useEffect } from 'react';
-
-
+import { useEffect, useState } from 'react';
 
 export const Timer = () => {
-  const [time, setTime] = useState();
+  const [number, setNumber] = useState(0);
+  // const [toggle, setToggle] = useState();
 
+  useEffect(() => {
+    let id = setInterval(() => setNumber((prev) => prev + 1), 1000);
+    return () => clearInterval(id);
+  }, []);
 
+  // useEffect(() => {
+  //   console.log('useEffect runs');
+  //   return () => console.log('clean up');
+  // }, [toggle]);
 
-  ;
-      
-
-  function handleStart() {
-
-  }
-          function handleReset() {
-
-  }
   return (
     <div>
       <h1>Timer</h1>
-      <button onClick={handleStart}>start/stop</button>
-      <button onClick={handleReset}>reset</button>
+      <p>{number}</p>
+      {/* <button onClick={() => setToggle(!toggle)}>Toggle</button> */}
     </div>
   );
 };
