@@ -24,12 +24,12 @@ console.log('env:', process.env);
 
 const firebaseConfig = {
   apiKey: process.env.REACT_APP_FIREBASE_API_KEY,
-  authDomain: 'pomeranian-data-adam-db.firebaseapp.com',
-  projectId: 'pomeranian-data-adam-db',
-  storageBucket: 'pomeranian-data-adam-db.appspot.com',
-  messagingSenderId: '934183250497',
-  appId: '1:934183250497:web:e867081aedb23abce734c0',
-  measurementId: 'G-X6C2Y64K04',
+  authDomain: process.env.REACT_APP_AUTH_DOMAIN,
+  projectId: process.env.REACT_APP_PROJECT_ID,
+  storageBucket: process.env.REACT_APP_STORAGE_BUCKET,
+  messagingSenderId: process.env.REACT_APP_MESSAGING_SENDER_ID,
+  appId: process.env.REACT_APP_ID,
+  measurementId: process.env.REACT_APP_MEASUREMENT_id,
 };
 // Initialize Firebase
 const app = initializeApp(firebaseConfig);
@@ -113,7 +113,7 @@ export const Forms = () => {
 
   const isFieldsValid =
     isEmailValid && isNameAndSurnameValid && isAllRequiredFieldsFilled;
-  console.log('Is firlds valid:', isFieldsValid);
+  console.log('Is fields valid:', isFieldsValid);
   function updateAdditionalOptions(optionName, newValue) {
     setFormData({
       ...formData,

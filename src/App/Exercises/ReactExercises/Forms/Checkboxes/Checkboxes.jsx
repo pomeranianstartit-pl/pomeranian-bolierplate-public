@@ -1,8 +1,6 @@
 import './Checkboxes.css';
 
 export function Checkboxes({ list, onChange }) {
-  console.log('checkbox list: ', list);
-
   function handleClick(fieldName, isChecked) {
     onChange(fieldName, !isChecked);
   }
