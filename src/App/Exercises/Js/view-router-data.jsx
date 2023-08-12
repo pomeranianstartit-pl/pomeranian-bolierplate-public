@@ -7,6 +7,7 @@ import { blockRouterMetaData as Boolean } from './Boolean/router-data';
 import { blockRouterMetaData as ifSwitch } from './ifSwitch/router-data';
 import { blockRouterMetaData as HitTheMoleGame } from './HitTheMoleGame/router-data';
 import { blockRouterMetaData as MemoGame } from './MemoGame/router-data';
+import { blockRouterMetaData as OOP } from './OOP/router-data';
 
 export const blockRouterMetaData = [
   blockRouterMetaDataJsVariables1,
@@ -16,5 +17,6 @@ export const blockRouterMetaData = [
   ifSwitch,
   HitTheMoleGame,
   MemoGame,
+  OOP,
 ];
 export const blockRouterData = getParsedRouterDataList(blockRouterMetaData);
