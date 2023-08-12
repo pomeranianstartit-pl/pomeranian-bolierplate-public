@@ -7,6 +7,8 @@ import { Tile } from './Features/Tile/Tile';
 import './styles.css';
 import { isVisible } from '@testing-library/user-event/dist/utils';
 
+const STATUS_OF_THE_GAME_START = 'started';
+
 const ELEMENTS = [4, 16, 20];
 // const LETTERS = [...'ABCDEFGHIJ'];
 const characters = getAlphabet(10);
@@ -24,6 +26,39 @@ export const MemoGame = () => {
   const [firstClick, setFirstClick] = useState();
   const [secondClick, setSecondClick] = useState();
 
+  const [getIsVisibleRecord, setIsVisibleRecord] = useState(null);
+  const [getCalculatedScore, setCalculatedScore] = useState(null);
+  const [getHighScores, setHighScores] = useState({
+    4: { record: 0, moves: 0, time: 0 },
+    16: { record: 0, moves: 0, time: 0 },
+    20: { record: 0, moves: 0, time: 0 },
+  });
+
+  useEffect(() => {
+    if (status === 'finished' && prevNoOfElements === noOfElements) {
+      const currentMoves = score;
+      const currentTime = time;
+      const currentRecord = (60 * currentMoves) / currentTime; // 0.04 * 100 = 4s
+
+      console.log(
+        'condition--->',
+        currentRecord > getHighScores?.[noOfElements]?.record
+      );
+      setIsVisibleRecord(currentRecord > getHighScores?.[noOfElements]?.record);
+      if (currentRecord > getHighScores?.[noOfElements]?.record) {
+        const updatedHighScores = {
+          ...getHighScores,
+          [noOfElements]: {
+            record: currentRecord,
+            moves: currentMoves,
+            time: currentTime,
+          },
+        };
+        setHighScores(updatedHighScores);
+      }
+    }
+  }, [status, prevNoOfElements, noOfElements, getHighScores]);
+
   function getInitialTiles(size) {
     const charactersSubset = characters.slice(0, size / 2);
     const allCharacters = [...charactersSubset, ...charactersSubset];
@@ -38,9 +73,10 @@ export const MemoGame = () => {
 
   function handleStart() {
     if (noOfElements !== undefined) {
-      setStatus('started');
+      setStatus(STATUS_OF_THE_GAME_START);
       setTiles(getInitialTiles(noOfElements));
       setShowWarning(false);
+      setCalculatedScore(null);
       setScore(0);
       setTime(0);
       setFound(0);
@@ -96,6 +132,7 @@ export const MemoGame = () => {
   useEffect(() => {
     if (firstClick !== undefined && secondClick !== undefined) {
       setScore((prev) => prev + 1);
+      setCalculatedScore((60 * score) / time);
       setTiles((oldTiles) => {
         const newTiles = [...oldTiles];
         const first = newTiles[firstClick];
@@ -117,6 +154,9 @@ export const MemoGame = () => {
   }, [firstClick, secondClick]);
 
   useEffect(() => {
+    console.log(prevNoOfElements);
+    console.log(tiles.filter((tile) => tile.variant === 'correct').length);
+
     if (
       prevNoOfElements ===
       tiles.filter((tile) => tile.variant === 'correct').length
@@ -145,7 +185,7 @@ export const MemoGame = () => {
 
   useEffect(() => {
     let intervalId;
-    if (status === 'started') {
+    if (status === STATUS_OF_THE_GAME_START) {
       intervalId = setInterval(
         () => setTime((prevTime) => prevTime + 1000),
         1000
@@ -176,13 +216,36 @@ export const MemoGame = () => {
           <Result>
             Gratulacje! Twój wynik to {score} odsłon w czasie {formatTime(time)}
           </Result>
-          <HighScore score={score} time={time} />
+          {/* Gratulacje! Pobideś rekord! Twoje punksty:{' '}
+          {getCalculatedScore.toFixed(2)}, poprzedni rekord:{' '}
+          {getHighScores?.[noOfElements]?.record?.toFixed(2)} */}
+          <HighScore
+            highScores={getHighScores}
+            calculatedScore={getCalculatedScore}
+            noOfElements={noOfElements}
+            isVisibleRecord={getIsVisibleRecord}
+          />
         </>
       )}
 
+      {/* 1.dodajemy w momencie ukończenia gry sprawdzenie czy dla aktualnie skończonego zestawu elementów
+(8/16/20) pobiliśmy rekord,
+
+2. rekord wyliczamy jako ilość ruchów na minutę (60 * ruchy / czasGry W sekundach),
+
+3. jeśli pobiliśmy rekord dodajemy informacje do wyniku - gratulacje pobiłeś rekord twoje punkty
+XX poprzedni rekord YY,
+
+4. zapisujemy w zmiennej tylko najlepszy wynik (czas, ruchy oraz rekord) dla danej sekcji,
+
+5. dodajemy przycisk highscore a po jego naciśnięciu wyświetlamy wyniki (forma dowolna zbieżna ze
+stylem aplikacji),
+
+6. przycisk znika jeśli gra sie toczy. */}
+
       {showWarning && <p className="memo-warning">Brakuje ustawień Gry !!!</p>}
 
-      {status !== 'started' && (
+      {status !== STATUS_OF_THE_GAME_START && (
         <>
           <div className="memo-controls-panel">
             <Label>LICZBA ELEMENTÓW</Label>
@@ -201,7 +264,7 @@ export const MemoGame = () => {
           </div>
         </>
       )}
-      {status === 'started' && (
+      {status === STATUS_OF_THE_GAME_START && (
         <>
           <div className="memo-controls-panel">
             <Label>Czas gry</Label>
@@ -223,7 +286,7 @@ export const MemoGame = () => {
         </>
       )}
 
-      {(status === 'started' || status === 'finished') && (
+      {(status === STATUS_OF_THE_GAME_START || status === 'finished') && (
         <div className="memo-board">
           {tiles.map(({ index, value, isVisible, variant }) => (
             <Tile
