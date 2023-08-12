@@ -31,3 +31,21 @@ aside a.active {
   background-color: var(--color-primary-blue);
   color: var(--color-white);
 }
+aside li > :hover {
+  color: red;
+}
+.icon {
+  margin-right: 16px;
+}
+
+.icon path {
+  stroke: var(--secondary-secondary, #23213D);
+}
+aside a.active .icon path {
+  stroke: var(--primary-primary, #FE3756);
+}
+aside ul {
+  /* Nadpisanie domyślnych styli przeglądarki */
+  padding-inline-start: 0.5rem;
+  list-style: none;
+}
