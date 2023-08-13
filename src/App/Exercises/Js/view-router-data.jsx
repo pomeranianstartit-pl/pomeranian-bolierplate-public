@@ -19,6 +19,7 @@ import { blockRouterMetaData as JsAnimation } from './JsAnimation/router-data';
 import { blockRouterMetaData as HitTheMoleGame } from './HitTheMoleGame/router-data';
 import { blockRouterMetaData as MemoGame } from './MemoGame/router-data';
 import { blockRouterMetaData as Exercise } from '../Js/OOP/router-data';
+import { blockRouterMetaData as TryCatchPrototype } from '../Js/TryCatchPrototype/router-data';
 export const blockRouterMetaData = [
   blockRouterMetaDataJsVariables1,
   blockRouterMetaDataJsVariables2,
@@ -39,5 +40,6 @@ export const blockRouterMetaData = [
   HitTheMoleGame,
   MemoGame,
   Exercise,
+  TryCatchPrototype,
 ];
 export const blockRouterData = getParsedRouterDataList(blockRouterMetaData);
