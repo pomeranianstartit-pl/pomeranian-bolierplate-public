@@ -11,6 +11,7 @@ import {
   blockRouterMetaData as htmlBlockRouterMetaData,
 } from './view-router-data';
 import { ExerciseLinks } from './ExerciseLinks';
+import './HtmlCss.css';
 
 export function HtmlCssExercises() {
   const element = useRoutes(htmlBlockRouterData);
@@ -21,10 +22,11 @@ export function HtmlCssExercises() {
       <GoBackLink label="Zamknij" />
 
       <hr />
-
-      <Routes>
-        <Route path="" element={<ExerciseLinks />} />
-      </Routes>
+      <div className="exercise-links">
+        <Routes>
+          <Route path="" element={<ExerciseLinks />} />
+        </Routes>
+      </div>
 
       {element}
     </div>

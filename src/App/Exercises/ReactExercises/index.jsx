@@ -21,10 +21,11 @@ export function ReactExercises() {
       <GoBackLink label="Zamknij" />
 
       <hr />
-
-      <Routes>
-        <Route path="" element={<ExerciseLinks />} />
-      </Routes>
+      <div className="exercise-links">
+        <Routes>
+          <Route path="" element={<ExerciseLinks />} />
+        </Routes>
+      </div>
 
       {element}
     </div>

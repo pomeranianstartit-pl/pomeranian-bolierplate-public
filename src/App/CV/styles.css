@@ -1,2 +1,104 @@
-.dashboard {
+.dashboard-cv {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.main-container-cv {
+  display: flex;
+  flex-direction: column;
+}
+
+.mydata-cv {
+  display: flex;
+  flex-direction: row;
+
+  padding-right: 16.87rem;
+}
+.intro-cv {
+  width: 60vw;
+  margin-right: 3vw;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 34px;
+}
+
+.page-path {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  font-size: 1rem;
+  /* color: var(--color-red); */
+  color: rgb(152, 152, 152);
+  font-weight: 600;
+}
+
+.page-path > a {
+  font-size: 1rem;
+  font-weight: 600;
+  color: var(--color-red);
+  /* color: rgb(120, 120, 120); */
+  text-decoration: none;
+}
+
+.page-path > a:hover {
+  text-decoration: underline;
+}
+
+.experience-cv {
+  display: flex;
+  flex-direction: row;
+  align-content: space-between;
+}
+
+.job-info-cv {
+  display: flex;
+  flex-direction: column;
+}
+
+.info-cv {
+  width: 50vw;
+  padding: 10px;
+}
+
+.title-cv {
+  font-size: 20px;
+  line-height: 30px;
+  font-weight: 700;
+  margin-right: 50px;
+}
+
+.job-info-cv {
+  width: 20vw;
+  margin-right: 50px;
+}
+
+.company-cv {
+  font-size: 18px;
+  line-height: 27px;
+  font-weight: 700;
+}
+
+.job-position-cv {
+  font-size: 14px;
+  line-height: 24px;
+  font-weight: 500;
+  margin-top: 10px;
+}
+
+.time-job-cv {
+  font-size: 14px;
+
+  color: var(--color-red);
+  line-height: 18px;
+  font-weight: 500;
+  margin-top: 10px;
+}
+
+.duties-cv > ul > li {
+  list-style-type: circle;
+  font-size: 16px;
+  padding: 0;
+  margin-bottom: 10px;
+  font-weight: 400;
 }
