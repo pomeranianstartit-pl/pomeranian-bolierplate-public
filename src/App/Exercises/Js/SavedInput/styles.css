@@ -1,0 +1,25 @@
+.wrapper {
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  display: flex;
+  flex-direction: row;
+  max-width: 800px;
+}
+.nick {
+  display: flex;
+  flex-direction: row;
+}
+
+.add_button {
+  display: flex;
+  flex-direction: column;
+  width: Fill (163px);
+  height: Fixed (56px);
+  padding: 20px 36px 20px 36px;
+  border-radius: 8px;
+  border: 1px;
+  gap: 16px;
+  margin-top: 16px;
+}
+.input {
+  gap: 16px;
+}
