@@ -18,6 +18,12 @@ import { dateAndTimeMetaData } from './DateAndTime/router-data';
 import { animationsJSMetaData } from './AnimationsJS/router-data';
 import { hitTheMoleMetaData } from './HitTheMole/router-data';
 import { MemoryGameMetaData } from './MemoryGame/router-data';
+import { blockRouterMetaData as oopGameMetaData } from './OOP/router-data';
+import { blockRouterMetaData as tryCatchGameMetaData } from './TryCatchPrototype/router-data';
+import { blockRouterMetaData as tryCatchExerciseMetaData } from './TryCatchExercise/router-data';
+import { blockRouterMetaData as JSONXMLStorageMetaData } from './JSONXML_Storage/router-data';
+import { blockRouterMetaData as SavedInputMetaData } from './SavedInput/router-data';
+import { blockRouterMetaData as PromisesMetaData } from './Promises/router-data';
 
 export const blockRouterMetaData = [
   blockRouterMetaDataJsVariables1,
@@ -38,5 +44,11 @@ export const blockRouterMetaData = [
   animationsJSMetaData,
   hitTheMoleMetaData,
   MemoryGameMetaData,
+  oopGameMetaData,
+  tryCatchGameMetaData,
+  tryCatchExerciseMetaData,
+  JSONXMLStorageMetaData,
+  SavedInputMetaData,
+  PromisesMetaData,
 ];
 export const blockRouterData = getParsedRouterDataList(blockRouterMetaData);

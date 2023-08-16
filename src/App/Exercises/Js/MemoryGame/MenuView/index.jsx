@@ -33,7 +33,7 @@ export const MenuView = ({
             ]}
           />
         </Menu>
-        <Menu label="Przyciski sterujące">
+        <Menu label="PZYCISKI STERUJĄCE">
           <Button
             isControl={true}
             onClick={() => {
