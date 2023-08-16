@@ -1,3 +1,4 @@
+import { Link } from 'react-router-dom';
 import './styles.css';
 
 export function Exercise() {
@@ -7,8 +8,14 @@ export function Exercise() {
 
   const string2 = `Ulubiony bohater z serialu "Gra o tron" to: ${string1}`;
 
+  const imie = 'Dominik Reszczyński';
+  let numer = 123344;
+
   return (
     <div className="playing-with-variables">
+      <h2 className="todo-container__title">
+        <Link to="/exercises/js">⯇ JS Strings</Link>
+      </h2>
       <section>
         <h2>Operacje na stringach</h2>
         <p>Ulubiony bohater z serialu "Gra o tron" to {string1}</p>
@@ -18,8 +25,11 @@ export function Exercise() {
         </p>
         <p>{string2}</p>
         <p>{string3}</p>
-        {/* Uzupełnij zanie korzystając ze zmiennych oraz operacji na stringach */}
-        <p>Witaj ____! Jesteś ____ uzytkownikiem odwiedzającym tę stronę!</p>
+        {/* Uzupełnij zdanie korzystając ze zmiennych oraz operacji na stringach */}
+        <p>
+          {' '}
+          Witaj {imie}! Jesteś {numer} uzytkownikiem odwiedzającym tę stronę!{' '}
+        </p>
       </section>
     </div>
   );

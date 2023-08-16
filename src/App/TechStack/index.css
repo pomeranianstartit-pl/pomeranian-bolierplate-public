@@ -1,0 +1,37 @@
+.TechStack {
+  display: flex;
+  flex-direction: column;
+  max-width: 1520px;
+  align-items: center;
+  margin: 0 auto;
+}
+.TechStack__module:hover {
+  animation-name: transform;
+  animation-duration: 0.1s;
+  animation-fill-mode: forwards;
+}
+.TechStack__module {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  border-top: 4px solid var(--color-primery-dark-blue);
+  border-bottom: 4px solid var(--color-primery-dark-blue);
+  border-radius: 40px;
+  margin-top: -20px;
+}
+.TechStack__title {
+  font-size: 2rem;
+  font-weight: bolder;
+  color: var(--color-primery-dark-blue);
+  margin-top: 50px;
+  display: flex;
+  justify-content: center;
+}
+@keyframes transform {
+  from {
+    transform: scale(100%);
+  }
+  to {
+    transform: scale(103%);
+  }
+}

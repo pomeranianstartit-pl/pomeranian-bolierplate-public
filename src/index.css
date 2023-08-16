@@ -1,4 +1,6 @@
 :root {
+  --color-primary-red: #fe3756;
+  --color-primery-dark-blue: #23213d;
   --color-primary-blue: #3e63f6;
   --color-dark-blue: #004286;
   --color-dark-gray: #3d3d3d;
@@ -26,4 +28,31 @@ code {
 *:before,
 *:after {
   box-sizing: border-box;
+}
+.big-button {
+  padding: 1.05rem 2rem 1.05rem 2rem;
+  margin: 1rem;
+  border-radius: 0.5rem;
+  border-color: #23213d;
+  border: 1px;
+  gap: 1rem;
+  background: #23213d;
+  font-family: Poppins;
+  font-size: 22px;
+  font-weight: 500;
+  line-height: 31px;
+  letter-spacing: 0em;
+  text-align: center;
+  color: white;
+  width: 15rem;
+  cursor: pointer;
+}
+
+.big-button:hover {
+  background-color: red;
+}
+
+.big-button:disabled {
+  background-color: #ccc;
+  cursor: crosshair;
 }

@@ -7,7 +7,14 @@ import { Blocks } from './App/Blocks';
 import { Layout } from './App/Layout';
 import { Dashboard } from './App/Dashboard';
 import { Exercises } from './App/Exercises';
-
+import { CV } from './App/Components/CV/CV.jsx';
+import { Calendar } from './App/Components/Kalendarz/Calendar';
+import { Settings } from './App/Components/Ustawienia/Settings';
+import { Blog } from './App/Blog/Blog';
+import { FAQ } from './App/FAQ/FAQ';
+import { TechStack } from './App/TechStack';
+import { HitTheMoleGame } from './App/Exercises/Js/HitTheMoleGame/HitTheMoleGame.jsx';
+import { MemoGame } from './App/Exercises/Js/MemoGame/MemoGame.jsx';
 export function App() {
   return (
     <BrowserRouter>
@@ -17,6 +24,15 @@ export function App() {
           <Route path="dashboard/*" element={<Dashboard />} />
           <Route path="exercises/*" element={<Exercises />} />
           <Route path="blocks/*" element={<Blocks />} />
+          <Route path="cv/*" element={<CV />} />
+          <Route path="Calendar/*" element={<Calendar />} />
+          <Route path="Settings/*" element={<Settings />} />
+          <Route path="Blog/*" element={<Blog />} />
+          <Route path="FAQ/*" element={<FAQ />} />
+          <Route path="techstack/*" element={<TechStack />} />
+          <Route path="hit-the-mole/*" element={<HitTheMoleGame />} />
+          <Route path="memo/*" element={<MemoGame />} />
+          <Route path="form/*" element={''} />
           <Route path="*" element={<NotFound />} />
         </Route>
       </Routes>

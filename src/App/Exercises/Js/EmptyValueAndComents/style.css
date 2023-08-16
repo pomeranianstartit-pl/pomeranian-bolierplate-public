@@ -1,0 +1,13 @@
+.font-test-family {
+  font-family: Chilanka;
+}
+.accBalance-paragrpah {
+  display: flex;
+  font-size: 5rem;
+  border: 2px dotted red;
+  border-width: 6px;
+  width: 400px;
+  height: 200px;
+  align-items: center;
+  justify-content: center;
+}
