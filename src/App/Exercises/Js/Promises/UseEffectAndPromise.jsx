@@ -5,20 +5,39 @@
 
 import { useEffect, useState } from 'react';
 
-// użyjmy useState do zapisania odpowiedzi z promisa.
 export const UseEffectAndPromise = () => {
-  const [message, setMessage] = useState('');
-
-  const fetchData = () => {
-    return new Promise((resolve) => {
-      setTimeout(() => {
-        resolve("I'm resolved :)");
-      }, 1000);
-    });
-  };
+  const [message, setMessage] = useState(null);
 
   useEffect(() => {
-    fetchData().then((res) => setMessage(res));
+    const getMessage = () => {
+      return new Promise((resolve, reject) => {
+        if (Math.random() > 0.5) {
+          resolve('Promise fullfield ;)');
+        } else {
+          reject('Promise rejected ;c');
+        }
+      });
+    };
+
+    async function resolvePromise() {
+      try {
+        const result = await getMessage();
+        console.log(result);
+        setMessage(result);
+      } catch (error) {
+        console.log(error);
+        setMessage(error);
+      } finally {
+        console.log('Promise resolved');
+      }
+    }
+
+    resolvePromise();
   }, []);
-  return <div>{message}</div>;
+
+  return (
+    <div>
+      Message: <h1> {message}</h1>
+    </div>
+  );
 };
