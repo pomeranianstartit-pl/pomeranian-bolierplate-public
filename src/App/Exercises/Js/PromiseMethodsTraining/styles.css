@@ -1,0 +1,16 @@
+.promise-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.promise-btn {
+  padding: 16px 36px;
+  line-height: 31px;
+  font-family: inherit;
+  font-size: 18px;
+  font-weight: 500;
+  border: none;
+  outline: none;
+  color: #fff;
+  background: #111;
+}

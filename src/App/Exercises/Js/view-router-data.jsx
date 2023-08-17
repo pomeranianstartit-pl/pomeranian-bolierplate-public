@@ -25,6 +25,8 @@ import { blockRouterMetaData as JSONXMLStorageMetaData } from './JSONXML_Storage
 import { blockRouterMetaData as SavedInputMetaData } from './SavedInput/router-data';
 import { blockRouterMetaData as PromisesMetaData } from './Promises/router-data';
 import { blockRouterMetaData as UseEffectAndPromiseMetaData } from './UseEffectAndPromise/router-data';
+import { blockRouterMetaData as PromiseMethodsTrainingMetaData } from './PromiseMethodsTraining/router-data';
+import { blockRouterMetaData as dogAPIMetaData } from './DogAPI/router-data';
 
 export const blockRouterMetaData = [
   blockRouterMetaDataJsVariables1,
@@ -52,5 +54,7 @@ export const blockRouterMetaData = [
   SavedInputMetaData,
   PromisesMetaData,
   UseEffectAndPromiseMetaData,
+  PromiseMethodsTrainingMetaData,
+  dogAPIMetaData,
 ];
 export const blockRouterData = getParsedRouterDataList(blockRouterMetaData);
