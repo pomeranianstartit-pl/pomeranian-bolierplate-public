@@ -24,6 +24,7 @@ import { blockRouterMetaData as tryCatchExerciseMetaData } from './TryCatchExerc
 import { blockRouterMetaData as JSONXMLStorageMetaData } from './JSONXML_Storage/router-data';
 import { blockRouterMetaData as SavedInputMetaData } from './SavedInput/router-data';
 import { blockRouterMetaData as PromisesMetaData } from './Promises/router-data';
+import { blockRouterMetaData as UseEffectAndPromiseMetaData } from './UseEffectAndPromise/router-data';
 
 export const blockRouterMetaData = [
   blockRouterMetaDataJsVariables1,
@@ -50,5 +51,6 @@ export const blockRouterMetaData = [
   JSONXMLStorageMetaData,
   SavedInputMetaData,
   PromisesMetaData,
+  UseEffectAndPromiseMetaData,
 ];
 export const blockRouterData = getParsedRouterDataList(blockRouterMetaData);
