@@ -11,8 +11,7 @@
 
 .mydata-cv {
   display: flex;
-  flex-direction: row;
-
+  flex-direction: column;
   padding-right: 16.87rem;
 }
 .intro-cv {
@@ -45,13 +44,16 @@
   text-decoration: underline;
 }
 
-.experience-cv {
+.experience-cv,
+.education-cv {
   display: flex;
   flex-direction: row;
   align-content: space-between;
+  margin-top: 40px;
 }
 
-.job-info-cv {
+.job-info-cv,
+.school-info-cv {
   display: flex;
   flex-direction: column;
 }
@@ -65,7 +67,7 @@
   font-size: 20px;
   line-height: 30px;
   font-weight: 700;
-  margin-right: 50px;
+  margin: 0 50px 0 0;
 }
 
 .job-info-cv {
@@ -73,32 +75,51 @@
   margin-right: 50px;
 }
 
-.company-cv {
+.company-cv,
+.university-cv {
   font-size: 18px;
   line-height: 27px;
   font-weight: 700;
 }
 
-.job-position-cv {
+.job-position-cv,
+.major-cv {
   font-size: 14px;
   line-height: 24px;
   font-weight: 500;
   margin-top: 10px;
 }
 
-.time-job-cv {
+.time-job-cv,
+.time-study-cv {
   font-size: 14px;
-
-  color: var(--color-red);
+  font-style: italic;
+  /* color: var(--color-red); */
   line-height: 18px;
   font-weight: 500;
   margin-top: 10px;
 }
 
-.duties-cv > ul > li {
+.duties-cv,
+.studies-cv {
+  width: 30vw;
+}
+
+.duties-cv > ul > li,
+.studies-cv > ul > li {
   list-style-type: circle;
   font-size: 16px;
   padding: 0;
   margin-bottom: 10px;
   font-weight: 400;
+}
+
+.duties-cv > ul,
+.studies-cv > ul {
+  margin-block-start: 0em;
+}
+
+.table-parts-cv {
+  display: flex;
+  flex-direction: column;
 }
