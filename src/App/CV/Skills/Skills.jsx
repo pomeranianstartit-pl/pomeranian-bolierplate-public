@@ -12,16 +12,16 @@ export const Skills = () => {
     'Python',
   ];
 
-  const softSkills = [
-    'wysoka kultura osobista',
-    'umiejętność pracy w zespole',
-    'dbałość o dobrą atmosferę w zespole',
-    'komunikatywność',
-    'chęć do nauki i samorozwoju',
-    'sumienność',
-    'dokładność',
-    'umiejętność szybkiego uczenia się',
-  ];
+  // const softSkills = [
+  //   'wysoka kultura osobista',
+  //   'umiejętność pracy w zespole',
+  //   'dbałość o dobrą atmosferę w zespole',
+  //   'komunikatywność',
+  //   'chęć do nauki i samorozwoju',
+  //   'sumienność',
+  //   'dokładność',
+  //   'umiejętność szybkiego uczenia się',
+  // ];
   return (
     <div>
       <h3>Umiejętności twarde</h3>

@@ -1,7 +1,7 @@
 import './styles/footer.css';
 
-const email = 'twoj-email@pomeranian.it';
-const phone = '+48-999-999-999';
+const email = 'duljas.karolina@gmail.com';
+const phone = '+48 517 100 536';
 
 export function AppFooter() {
   return (

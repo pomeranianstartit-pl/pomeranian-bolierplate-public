@@ -37,7 +37,7 @@ export const Blocks = () => {
           <p className="dashboard-tile-description">
             wszystkie zrealizowane projekty
           </p>
-          <Link to="/dashboard/tech-stack">Zobacz więcej</Link>
+          <Link to="/projects">Zobacz więcej</Link>
         </div>
         <div>
           <p className="dashboard-tile-title">Ćwiczenia</p>
