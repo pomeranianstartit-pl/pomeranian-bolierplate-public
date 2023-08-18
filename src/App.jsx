@@ -9,7 +9,7 @@ import { Dashboard } from './App/Dashboard';
 import { CV } from './App/CV';
 import { Exercises } from './App/Exercises';
 import { Projects } from './App/Projects';
-import { Calculator } from './App/Projects/Calculator/Calculator';
+import { Calculator } from './App/Projects/Calculator/index';
 // import { Calendar } from './App/Calendar';
 // import { Settings } from './App/Settings';
 import { FaQ } from './App/FAQ';

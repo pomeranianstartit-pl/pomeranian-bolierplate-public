@@ -1,5 +1,5 @@
 import { Link } from 'react-router-dom';
-
+import { CalculatorApp } from './CalculatorApp';
 export const Calculator = () => {
   return (
     <div>
@@ -10,6 +10,7 @@ export const Calculator = () => {
         <p>&nbsp;&gt;&nbsp;Kalkulator</p>
       </div>
       <h1>Kalkulator</h1>
+      <CalculatorApp />
     </div>
   );
 };
