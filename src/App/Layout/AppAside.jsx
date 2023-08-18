@@ -33,9 +33,9 @@ export function AppAside() {
           {links.map((link) => (
             <li>
               <div
-                className={
-                  activeLink === link.id ? 'svg-icon-clicked' : 'svg-icon'
-                }
+              // className={
+              //   activeLink === link.id ? 'svg-icon-clicked' : 'svg-icon'
+              // }
               >
                 {link.icon}
               </div>
