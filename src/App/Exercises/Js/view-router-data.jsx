@@ -24,6 +24,7 @@ import { blockRouterMetaData as TryCatchPrototype } from './TryCatchPrototype/ro
 import { JSONXMLStorageMetaData } from './JSONXMLStorage/router-data';
 import { blockRouterMetaData as SavedInput } from './SavedInput/router-data';
 import { PromiseMethodsTrainingMetaData } from './PromiseMethodsTraining/router-data';
+import { DogApiMetaData } from './DogApi/router-data';
 
 export const blockRouterMetaData = [
   blockRouterMetaDataJsVariables1,
@@ -50,5 +51,6 @@ export const blockRouterMetaData = [
   JSONXMLStorageMetaData,
   SavedInput,
   PromiseMethodsTrainingMetaData,
+  DogApiMetaData,
 ];
 export const blockRouterData = getParsedRouterDataList(blockRouterMetaData);
