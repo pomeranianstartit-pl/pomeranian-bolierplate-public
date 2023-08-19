@@ -9,6 +9,7 @@ import { MoreOrLessAdvancedMetaData } from './MoreOrLessAdvanced/router-data';
 import { MaterialUIBasicElementsMetaData } from './MaterialUIBasicElements/router-data';
 import { MUITemplateDashboardMetaData } from './MUITemplateDashboard/router-data';
 import { ToDoListMetaData } from './ToDoList/router-data';
+import { LocalDevAndFetchMetaData } from './LocalDevAndFetch/router-data';
 
 export const blockRouterMetaData = [
   SubRouteExampleMetaData,
@@ -20,5 +21,6 @@ export const blockRouterMetaData = [
   MaterialUIBasicElementsMetaData,
   MUITemplateDashboardMetaData,
   ToDoListMetaData,
+  LocalDevAndFetchMetaData,
 ];
 export const blockRouterData = getParsedRouterDataList(blockRouterMetaData);
