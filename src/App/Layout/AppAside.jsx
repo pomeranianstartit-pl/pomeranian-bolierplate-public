@@ -6,7 +6,8 @@ import { CalendarIcon } from '../Components/Icons/CalendarIcon';
 import { HouseIcon } from '../Components/Icons/HouseIcon';
 import { EditIcon } from '../Components/Icons/EditIcon';
 import { PersonalCardIcon } from '../Components/Icons/PersonalCardIcon';
-import {} from '../Components/Icons/PersonalCardIcon';
+import { ElementIcon } from '../Components/Icons/ElementIcon';
+
 export function AppAside() {
   return (
     <aside>
@@ -16,7 +17,8 @@ export function AppAside() {
             <HouseIcon />
             <NavLink to="dashboard">Dashboard</NavLink>
           </li>
-          <li>
+          <li className="aside-row">
+            <ElementIcon />
             <NavLink to="blocks">Bloki</NavLink>
           </li>
           <li className="aside-row">

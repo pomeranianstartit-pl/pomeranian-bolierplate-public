@@ -9,6 +9,7 @@ import { Dashboard } from './App/Dashboard';
 import { Exercises } from './App/Exercises';
 import { Calendar } from './App/Calendar';
 import { CV } from './App/CV';
+
 export function App() {
   return (
     <BrowserRouter>
