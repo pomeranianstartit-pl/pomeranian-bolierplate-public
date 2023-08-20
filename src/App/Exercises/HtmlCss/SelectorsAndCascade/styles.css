@@ -1,0 +1,28 @@
+.css_inheritence {
+  padding: 20px;
+  border: 1px solid red;
+  font-size: 30px;
+  color: darkslategray;
+}
+
+/* CLASS SELECTOR */
+.css_casc .css_cascade {
+  color: red;
+}
+
+/* ID SELECTOR */
+#css_cascade_id {
+  color: blue;
+}
+
+/*                  * {} -> style które są określane dla całego dokumentu (body)                    */
+/* UNIVERSAL SELECTOR */
+* {
+  background: white;
+}
+
+/*                  p lub div lub h2 - (wszystkie elementy htmlowe) {} -> style które są określane dla konkretnego tagu   */
+/* TYPE SELECTOR */
+h4 {
+  color: red;
+}
