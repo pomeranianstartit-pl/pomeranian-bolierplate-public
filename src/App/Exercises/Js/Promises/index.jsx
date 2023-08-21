@@ -255,9 +255,5 @@ export const Exercise = () => {
   //https://javascript.info/microtask-queue
   //https://javascript.info/async-await
   //https://www.developerway.com/posts/fetching-in-react-lost-promises
-  return (
-    <div>
-      <UseEffectAndPromise />
-    </div>
-  );
+  return <div>{/* <UseEffectAndPromise /> */}</div>;
 };
