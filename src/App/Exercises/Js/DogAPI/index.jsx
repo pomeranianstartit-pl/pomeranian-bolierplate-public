@@ -12,12 +12,12 @@ export const DogAPI = () => {
     } catch (error) {
       console.error(error);
     } finally {
-      // whatever I want tu put here
+      // whatever I want to put here
     }
   };
 
   return (
-    <div className="wrapper">
+    <div className="dog-wrapper">
       <h1 className="header">Dog API - fetch a dog image</h1>
       <button className="btn" onClick={handleFetchDogImage}>
         Show me a dog

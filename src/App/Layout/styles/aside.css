@@ -39,7 +39,7 @@ aside a.active {
 
 aside a.active,
 aside a:hover {
-  background-color: #e6e9ef;
+  background-color: #fe37561a;
 
   color: var(--color-white);
 }
