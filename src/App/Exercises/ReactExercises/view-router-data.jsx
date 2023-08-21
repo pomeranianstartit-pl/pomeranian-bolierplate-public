@@ -8,6 +8,7 @@ import { routerMetaData as IfStatementsMetaData } from './IfStatements/router-da
 import { routerMetaData as IfStatementsMoreOrLess } from './IfStatementsMoreOrLess/router-data';
 import { routerMetaData as IfStatementsMoreOrLessGame } from './IfStatementsMoreOrLessGame/router-data';
 import { ToDoWithServerMetaData } from './ToDoWithServer/router-data';
+import { blockRouterMetaData as LocalDevAndFetch } from './LocalDevAndFetch/router-data';
 
 export const blockRouterMetaData = [
   SubRouteExampleMetaData,
@@ -17,5 +18,6 @@ export const blockRouterMetaData = [
   IfStatementsMoreOrLess,
   IfStatementsMoreOrLessGame,
   ToDoWithServerMetaData,
+  LocalDevAndFetch,
 ];
 export const blockRouterData = getParsedRouterDataList(blockRouterMetaData);
