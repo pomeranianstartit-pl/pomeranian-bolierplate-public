@@ -1,8 +1,8 @@
 import React, { useEffect } from 'react';
 
-class LocalDevApiClient {
+const TODO_URL = 'http://localhost:3333/api/todo';
 
-    TODO_URL = 'http://localhost:3333/api/todo';
+class LocalDevApiClient {
 
     async fetchJson(url, options = {}) {
         const response = await fetch(url, options);
@@ -30,3 +30,5 @@ class LocalDevApiClient {
         return this.fetchJson(`${TODO_URL}/${id}`, options);
     }
 }
+
+export default new LocalDevApiClient();

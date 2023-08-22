@@ -4,8 +4,7 @@ import './style.css';
 import { CheckIcon } from '../../../Components/Icons/CheckIcon';
 import { TrashIcon } from '../../../Components/Icons/TrashIcon';
 import { FrameIcon } from '../../../Components/Icons/FrameIcon';
-
-const TODO_URL = 'http://localhost:3333/api/todo';
+import apiClient from '../../../ApiClients/LocalDevApiClient';
 
 export function ToDoWithServer() {
   const [toDoUrl, setToDoUrl] = useState([]);
@@ -15,12 +14,7 @@ export function ToDoWithServer() {
 
   const getToDo = async () => {
     try {
-      const response = await fetch(TODO_URL);
-      if (response.status == 500) {
-        setGeneralErrorMessage('Błąd przy pobieraniu listy zadań');
-        return;
-      }
-      const json = await response.json();
+      const json = await apiClient.getToDoList();
       setToDoUrl(json);
     } catch (error) {
       setGeneralErrorMessage('Błąd przy pobieraniu listy zadań');
@@ -30,15 +24,7 @@ export function ToDoWithServer() {
 
   const handleRemove = async (id) => {
     try {
-      const response = await fetch(`http://localhost:3333/api/todo/${id}`, {
-        method: 'DELETE',
-      });
-
-      if (response.status == 500) {
-        setActionErrorId(id);
-        setActionErrorMessage('Nie udało się usunąć');
-        return;
-      }
+      const json = await apiClient.remove(id);
     } catch (error) {
       setActionErrorId(id);
       setActionErrorMessage('Nie udało się usunąć');
@@ -49,12 +35,7 @@ export function ToDoWithServer() {
 
   const markAsDone = async (id) => {
     try {
-      const response = await fetch(
-        `http://localhost:3333/api/todo/${id}/markAsDone`,
-        {
-          method: 'PUT',
-        }
-      );
+      const json = await apiClient.markAsDone(id);
     } catch (error) {
       setActionErrorId(id);
       setActionErrorMessage('Nie udało się zmienić');
