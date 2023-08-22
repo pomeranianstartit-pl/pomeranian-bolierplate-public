@@ -20,7 +20,7 @@ class LocalDevApiClient {
         const options = {
             method: 'PUT'
           };
-        return this.fetchJson(`${TODO_URL}/${id}/markAsDone`);
+        return this.fetchJson(`${TODO_URL}/${id}/markAsDone`, options);
     }
 
     async remove(id) {
