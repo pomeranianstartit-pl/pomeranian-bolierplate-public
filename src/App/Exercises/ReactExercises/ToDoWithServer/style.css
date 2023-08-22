@@ -2,7 +2,7 @@
   margin-bottom: 40px;
  /*font-family: Poppins, sans-serif;*/
     width: 629px;
-  cursor:pointer;
+  /* cursor:pointer; */
   }
 
 div.list-element {
@@ -13,9 +13,6 @@ div.list-element {
   box-shadow: 0px 3px 9px 0px rgba(0, 0, 0, 0.15), 0px 2px 28px 0px rgba(0, 0, 0, 0.12);
 }
  
-  div.list-element:hover {
-    transform:scale(1.1);
-}
 
 .lists-elements {
   display: grid;
@@ -25,18 +22,62 @@ div.list-element {
 
 .list-element {
   display: grid;
-  grid-template-columns: 1fr auto; /* Pierwsza kolumna dla zawartości, druga dla ikon */
+  grid-template-columns: 3fr 1fr; /* Pierwsza kolumna dla zawartości, druga dla ikon */
   align-items: center;
   border: 1px solid #ccc;
   padding: 10px;
  
 }
 
+.list-element .author {
+  margin-bottom: 0;
+  font-size: 12px;
+}
+
+.list-element .date {
+  margin-top: 0;
+  font-size: 12px;
+}
+
+.list-element .note {
+  
+}
+
+
+
 
 .icons {
   display: flex;
-  justify-content: space-between;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  
   /* Dodatkowe style dla kontenera ikon */
 }
+
+.action-icons {
+  padding-bottom: 15px;
+}
+
+.action-icon {
+  cursor: pointer;
+  padding-right: 10px;
+}
+
+.action-error {
+  color: red;
+  font-size: 12px;
+}
+
+.status-ok {
+  text-align: center;
+}
+
+.status-ok .date {
+  font-size: 12px;
+}
+
 
 

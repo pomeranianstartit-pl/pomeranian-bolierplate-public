@@ -20,20 +20,30 @@ export function ToDoWithServer() {
         <div className="list-element">
           <div className="content">
             <h3>Zamówić catering </h3>
-            <p>
-              Wojtek
-              <br />
-              20.04.2024, 18:03{' '}
-            </p>
-            <p>
+            <p className="author">Wojtek</p>
+            <p className="date">20.04.2024, 18:03</p>
+            <p className="note">
               Dla mnie wege, dla Pauliny ryba + wege. Zrobić zamówienie,
               zapłacić.{' '}
             </p>
           </div>
-          <div className="Icon">
-            <CheckIcon />
-            <TrashIcon />
-            <FrameIcon />
+          <div className="icons">
+            <div className="action-icons">
+              <span className="action-icon">
+                <CheckIcon color="#23213D" width="35" height="25" />
+              </span>
+              <span className="action-icon">
+                <TrashIcon />
+              </span>
+              <span className="action-icon">
+                <FrameIcon />
+              </span>
+              <p className="action-error">Nie udało się ukończyć</p>
+            </div>
+            <div className="status-ok">
+              <CheckIcon color="#07C23B" width="50" height="35" />
+              <p className="date">20.04.2024, 18:06</p>
+            </div>
           </div>
         </div>
         <div className="list-element">
