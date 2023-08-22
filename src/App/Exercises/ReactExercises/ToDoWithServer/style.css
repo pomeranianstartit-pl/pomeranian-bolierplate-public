@@ -5,6 +5,13 @@
   /* cursor:pointer; */
   }
 
+.general-error {
+  font-weight: bold;
+  font-size: 16px;
+  color: red;
+  text-align: center;
+}
+
 div.list-element {
   background-color: #F4F5F7;
   border-radius: 8px;
@@ -27,6 +34,10 @@ div.list-element {
   border: 1px solid #ccc;
   padding: 10px;
  
+}
+
+.list-element.disabled {
+  background-color: #C8CBD1;
 }
 
 .list-element .author {
@@ -69,6 +80,7 @@ div.list-element {
 .action-error {
   color: red;
   font-size: 12px;
+  line-height: 20px;
 }
 
 .status-ok {
