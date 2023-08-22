@@ -1,0 +1,27 @@
+.moon-phases-container {
+  text-align: center;
+  padding: 20px;
+}
+
+.moon-phases {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.moon-phase {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 5px;
+}
+
+.moon-date {
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.moon-emoji {
+  font-size: 10rem;
+}
