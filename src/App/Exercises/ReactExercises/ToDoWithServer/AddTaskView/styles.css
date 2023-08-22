@@ -1,0 +1,58 @@
+.avt-input {
+  width: 500px;
+  height: 48px;
+  padding: 13px 16px 13px 16px;
+  border-radius: 5px;
+  gap: 10px;
+  border: solid 1px grey 300;
+}
+
+.avt-third-input {
+  width: 500px;
+  height: 100px;
+  white-space: normal; /* Allow text to wrap */
+  overflow: auto;
+  padding: 13px 16px 13px 16px;
+  border-radius: 5px;
+  gap: 10px;
+  border: solid 1px grey 300;
+}
+
+.avt-buttons {
+  display: flex;
+  max-width: 400px;
+}
+.avt-button-1 {
+  background: #23213d;
+  width: Fill (163px);
+  height: Fixed (56px);
+  padding: 20px 36px 20px 36px;
+  border-radius: 8px;
+  border: 1px;
+  gap: 16px;
+  color: white;
+  margin-top: 20px;
+  margin-left: 210px;
+  margin-right: 20px;
+  cursor: pointer;
+}
+.avt-button-2 {
+  width: Fill (163px);
+  height: Fill(48px);
+  padding: 20px 36px 20px 36px;
+  border-radius: 8px;
+  border: 1px;
+  gap: 16px;
+  color: white;
+  background: #fe3756;
+  margin-top: 20px;
+  margin-left: 30px;
+  cursor: pointer;
+}
+
+.avt-p {
+  font-weight: bold;
+}
+.avt-header {
+  margin-bottom: 70px;
+}

@@ -44,7 +44,7 @@
 }
 .icon-button {
   border: none;
-  background-color: white;
+  background-color: transparent;
   cursor: pointer;
 }
 .list-title {
@@ -53,6 +53,8 @@
   font-weight: 700;
   line-height: 34px;
   text-align: left;
+  margin-bottom: 1px;
+  margin-top: 0;
 }
 .list-author {
   font-family: Poppins;
@@ -61,6 +63,8 @@
   line-height: 18px;
   letter-spacing: 0em;
   text-align: left;
+  margin-bottom: 0;
+  margin-top: 0;
 }
 .list-date-created {
   font-family: Poppins;
@@ -68,6 +72,7 @@
   font-weight: 400;
   line-height: 18px;
   text-align: left;
+  margin-top: 0px;
 }
 .list-note {
   font-family: Poppins;
@@ -75,4 +80,7 @@
   font-weight: 400;
   line-height: 21px;
   text-align: left;
+}
+.clicked {
+  background-color: #c8cbd1;
 }
