@@ -19,7 +19,7 @@ export function ReactEventsUseState() {
     // e -> obiekt zdarzenia (event)
     // e.target -> element, który wywołał zdarzenie
     // e.target.value -> wartość elementu, który wywołał zdarzenie
-    // console.log(e.target.value);
+    console.log(e.target.value);
     setInputValue(e.target.value);
   };
 
