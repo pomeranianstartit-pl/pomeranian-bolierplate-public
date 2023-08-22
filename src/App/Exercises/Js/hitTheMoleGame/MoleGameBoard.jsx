@@ -10,7 +10,7 @@ export const MoleGameBoard = ({
 }) => {
   return (
     <div>
-      <div>
+      <div className="gameOptionsButtons">
         <h4>CZAS DO KOŃCA </h4>
         {counter}
         <h4>WYNIK </h4>
@@ -19,6 +19,7 @@ export const MoleGameBoard = ({
         <button onClick={startStopGame}>
           {gameStarted ? 'STOP' : 'START'}
         </button>
+        </div>
       </div>
       <div className="moleGame">
         {moleArray.map((mole, index) => (
