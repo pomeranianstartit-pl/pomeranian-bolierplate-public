@@ -13,6 +13,9 @@ export function ToDoWithServer() {
         <b>ToDo</b>
       </a>
       <p>Tutaj znajdziesz listę swoich zadań.</p>
+      <div className="buttonAddNewList">
+        <button>+</button>
+      </div>
       <div className="lists-elements">
         <div className="list-element">
           <div className="content">
