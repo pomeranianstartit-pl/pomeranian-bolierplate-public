@@ -172,31 +172,45 @@ export const ListView = ({ toggleAddTaskView }) => {
             {/* Task details */}
             {editTask && editTask.id === task.id ? (
               // Render input fields for editing when editTaskId matches
-              <div className="edit-form">
-                <input
-                  type="text"
-                  value={editTask.title}
-                  onChange={(e) =>
-                    setEditTask({ ...editTask, title: e.target.value })
-                  }
-                />
-                <input
-                  type="text"
-                  value={editTask.author}
-                  onChange={(e) =>
-                    setEditTask({ ...editTask, author: e.target.value })
-                  }
-                />
-                <input
-                  type="text"
-                  value={editTask.note}
-                  onChange={(e) =>
-                    setEditTask({ ...editTask, note: e.target.value })
-                  }
-                />
-                {/* Save and cancel buttons */}
-                <button onClick={() => handleUpdateTask()}>Save</button>
-                <button onClick={() => cancelEditTask()}>Cancel</button>
+              <div className="edit-wrapper">
+                <div className="edit-text">
+                  <input
+                    type="text"
+                    value={editTask.title}
+                    onChange={(e) =>
+                      setEditTask({ ...editTask, title: e.target.value })
+                    }
+                  />
+                  <input
+                    type="text"
+                    value={editTask.author}
+                    onChange={(e) =>
+                      setEditTask({ ...editTask, author: e.target.value })
+                    }
+                  />
+                  <input
+                    type="text"
+                    value={editTask.note}
+                    onChange={(e) =>
+                      setEditTask({ ...editTask, note: e.target.value })
+                    }
+                  />
+                </div>
+                <div>
+                  {/* Save and cancel buttons */}
+                  <button
+                    className="edit-buttons"
+                    onClick={() => handleUpdateTask()}
+                  >
+                    Save
+                  </button>
+                  <button
+                    className="edit-buttons"
+                    onClick={() => cancelEditTask()}
+                  >
+                    Cancel
+                  </button>
+                </div>
               </div>
             ) : (
               // Display task details if not in edit mode

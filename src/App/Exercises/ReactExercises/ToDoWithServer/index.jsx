@@ -36,7 +36,7 @@ export const ToDoWithServer = () => {
 
   return (
     <div>
-      <h1>TO DO</h1>
+      <h1 className="header">TO DO</h1>
 
       {isAddTaskViewVisible ? (
         <AddTaskView

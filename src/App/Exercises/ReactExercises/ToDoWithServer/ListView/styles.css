@@ -1,3 +1,6 @@
+.to-do-wrapper {
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
 .first-wrapper {
   display: flex;
   justify-content: space-between;
@@ -83,4 +86,22 @@
 }
 .clicked {
   background-color: #c8cbd1;
+}
+
+.edit-text {
+  flex-direction: column;
+  display: flex;
+  gap: 5px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+
+.edit-buttons {
+  margin-right: 5px;
+  background-color: #800000;
+  border-radius: 5px;
+  color: white;
+}
+.edit-wrapper {
+  border: none;
 }
