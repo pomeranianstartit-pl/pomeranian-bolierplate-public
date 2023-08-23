@@ -5,6 +5,7 @@ import { CheckIcon } from '../../../Components/Icons/CheckIcon';
 import { TrashIcon } from '../../../Components/Icons/TrashIcon';
 import { FrameIcon } from '../../../Components/Icons/FrameIcon';
 import apiClient from '../../../ApiClients/LocalDevApiClient';
+import { AddToDoItem } from './AddToDoItem/index';
 
 export function ToDoWithServer() {
   const [toDoUrl, setToDoUrl] = useState([]);
@@ -74,6 +75,7 @@ export function ToDoWithServer() {
       <div className="buttonAddNewList">
         <button>+</button>
       </div>
+      <AddToDoItem />
       <div className="general-error">{generalErrorMessage}</div>
       <div className="lists-elements">
         {Array.isArray(toDoUrl) &&
