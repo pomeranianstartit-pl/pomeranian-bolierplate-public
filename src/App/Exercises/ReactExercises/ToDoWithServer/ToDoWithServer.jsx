@@ -6,6 +6,7 @@ import { TrashIcon } from '../../../Components/Icons/TrashIcon';
 import { FrameIcon } from '../../../Components/Icons/FrameIcon';
 import apiClient from '../../../ApiClients/LocalDevApiClient';
 import { AddToDoItem } from './AddToDoItem/index';
+import { EmptyToDoList } from './EmptyToDoList/index';
 
 export function ToDoWithServer() {
   const [toDoUrl, setToDoUrl] = useState([]);
@@ -73,9 +74,11 @@ export function ToDoWithServer() {
       </a>
       <p>Tutaj znajdziesz listę swoich zadań.</p>
       <div className="buttonAddNewList">
+        <EmptyToDoList />
+        <AddToDoItem />
         <button>+</button>
       </div>
-      <AddToDoItem />
+
       <div className="general-error">{generalErrorMessage}</div>
       <div className="lists-elements">
         {Array.isArray(toDoUrl) &&
