@@ -16,19 +16,41 @@ export const AddTaskView = ({
         title,
         author,
         note,
-        id: Date.now(),
       };
 
-      // Call the addTaskToList function to add the new task
-      addTaskToList(newTask);
+      // Make a POST request to add the new task to the server
+      fetch('http://localhost:3333/api/todo', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify(newTask), // Convert the task object to a JSON string
+      })
+        .then((response) => {
+          if (response.ok) {
+            return response.json(); // Parse the JSON response
+          } else {
+            throw new Error(`HTTP error! Status: ${response.status}`);
+          }
+        })
+        .then((data) => {
+          // The server responded with the new task, add it to the list
+          addTaskToList(data);
 
-      // Clear input fields
-      setTitle('');
-      setAuthor('');
-      setNote('');
+          // Clear input fields
+          setTitle('');
+          setAuthor('');
+          setNote('');
 
-      // After adding the task, fetch the updated list
-      fetchExternalTodo();
+          // After adding the task, fetch the updated list
+        })
+        .catch((error) => {
+          // Handle any errors that occurred during the fetch
+          console.error('POST error:', error);
+          alert(
+            'Failed to add the task to the server. Please check your network connection and try again.'
+          );
+        });
     } else {
       alert('Please fill in all fields.');
     }
