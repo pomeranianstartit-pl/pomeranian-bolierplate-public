@@ -7,6 +7,7 @@ import { FrameIcon } from '../../../Components/Icons/FrameIcon';
 import apiClient from '../../../ApiClients/LocalDevApiClient';
 import { AddToDoItem } from './AddToDoItem/index';
 import { EmptyToDoList } from './EmptyToDoList/index';
+import { EditToDoItem } from './EditToDoItem/index';
 
 export function ToDoWithServer() {
   const [toDoUrl, setToDoUrl] = useState([]);
@@ -76,6 +77,7 @@ export function ToDoWithServer() {
       <div className="buttonAddNewList">
         <EmptyToDoList />
         <AddToDoItem />
+        <EditToDoItem />
         <button>+</button>
       </div>
 
