@@ -1,6 +1,6 @@
 import './style.css';
 
-export const AddToDoItem = () => {
+export function AddToDoItem({ onAddClick, onResetClick }) {
   return (
     <div className="wrapper-add-todo-item">
       <h3>Dodawanie zadania.</h3>
@@ -19,9 +19,13 @@ export const AddToDoItem = () => {
       </div>
       <div className="error">Wystąpił błąd, spróbuj ponownie.</div>
       <div className="action-buttons">
-        <button type="reset">COFNIJ</button>
-        <button type="submit">DODAJ</button>
+        <button type="reset" onClick={onResetClick}>
+          COFNIJ
+        </button>
+        <button type="submit" onClick={onAddClick}>
+          DODAJ
+        </button>
       </div>
     </div>
   );
-};
+}
