@@ -1,0 +1,12 @@
+.todo-form__input {
+    /*color: var(--gray-500, #999);*/
+    font-size: 1.125rem;
+    font-weight: 400;
+    line-height: 2rem;
+    border-radius: 0.3125rem;
+    border: 1px solid var(--grey-300, #C8CBD1);
+    background: #FFF;
+    padding: 0.8125rem;
+    width: 100%;
+    margin-bottom: 1.75rem;
+}
