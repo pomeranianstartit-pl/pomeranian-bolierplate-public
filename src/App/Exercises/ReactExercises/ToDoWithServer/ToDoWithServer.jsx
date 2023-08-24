@@ -13,6 +13,8 @@ import { ToDoList } from './ToDoList/index';
 export function ToDoWithServer() {
   const [currentView, setCurrentView] = useState('ToDoList');
 
+  const [editId, setEditId] = useState(-1);
+
   const handleNewButtonCllick = async () => {
     setCurrentView('AddToDoItem');
   };
@@ -29,10 +31,18 @@ export function ToDoWithServer() {
     setCurrentView('ToDoList');
   };
 
+  const handleEditButtonClick = async (id) => {
+    setEditId(id);
+    setCurrentView('EditToDoItem');
+  };
+
   return (
     <div>
       {currentView == 'ToDoList' && (
-        <ToDoList onNewButtonClick={handleNewButtonCllick} />
+        <ToDoList
+          onNewButtonClick={handleNewButtonCllick}
+          onEditButtonClick={handleEditButtonClick}
+        />
       )}
       {currentView == 'AddToDoItem' && (
         <AddToDoItem
@@ -41,7 +51,11 @@ export function ToDoWithServer() {
         />
       )}
       {currentView == 'EditToDoItem' && (
-        <EditToDoItem onSaveClick={handleSaveButtonClick} />
+        <EditToDoItem
+          id={editId}
+          onSaveClick={handleSaveButtonClick}
+          onResetClick={handleResetButtonClick}
+        />
       )}
     </div>
   );

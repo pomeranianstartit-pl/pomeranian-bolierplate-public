@@ -65,23 +65,19 @@ export function ToDoList({ onNewButtonClick, onEditButtonClick }) {
   }, []);
 
   return (
-    <div>
-      <div className="wrapper-todo">
-        <a href="http://localhost:3000/exercises/react/todo-with-server">
-          {' '}
-          <span>&larr;</span>
-          <b>ToDo</b>
-        </a>
-        <p>Tutaj znajdziesz listę swoich zadań.</p>
-        <div className="buttonAddNewList">
-          {/* <EmptyToDoList />
-              <AddToDoItem />
-              <EditToDoItem />
-              <ToDoList /> */}
-          <button onClick={onNewButtonClick}>+</button>
-        </div>
+    <div className="wrapper-todo">
+      <a href="http://localhost:3000/exercises/react/todo-with-server">
+        {' '}
+        <span>&larr;</span>
+        <b>ToDo</b>
+      </a>
+      <p>Tutaj znajdziesz listę swoich zadań.</p>
+      <div className="buttonAddNewList">
+        <button onClick={onNewButtonClick}>+</button>
       </div>
       <div className="general-error">{generalErrorMessage}</div>
+      {(!Array.isArray(toDoUrl) || toDoUrl.length == 0) && <EmptyToDoList />}
+
       <div className="lists-elements">
         {Array.isArray(toDoUrl) &&
           toDoUrl.map(
