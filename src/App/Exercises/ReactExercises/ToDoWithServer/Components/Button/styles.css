@@ -1,0 +1,26 @@
+.todo-btn {
+    display: flex;
+    height: 3.5rem;
+    padding: 0;
+    width: 10rem;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    border-radius: 0.5rem;
+    color: #fff;
+    font-family: Poppins;
+    font-size: 1.13rem;
+    font-weight: 500;
+    cursor: pointer;
+}
+.todo-btn hover {
+    opacity: 0.8;
+}
+.todo-btn--secondary {
+    border: 1px solid #23213d;
+    background: #23213d;
+}
+.todo-btn--primary {
+    border: 1px solid #fe3756;
+    background: #fe3756;
+}
