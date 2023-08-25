@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div>
+    <button id="myButton" onclick="changeText()">Kliknij we mnie</button>
+    </div>
+    //
+    <div>
+    <button id="hideButton">Ukryj Div</button>
+    <button id="showButton">Pokaż Div</button>
+    <div id="myDiv">To jest jakiś tekst w divie.</div>
+    </div>
+    //
+    <div>
+    <button id="addButton">Dodaj nowy div</button>
+    <div id="containerDiv">To jest główny div.</div>
+    </div>
+    
+    <script>
+    function changeText() {
+        const button = document.getElementById("myButton");
+        button.textContent = "Kliknięto we mnie";
+    }
+    //
+    document.getElementById("hideButton").addEventListener("click", function() {
+    const div = document.getElementById("myDiv");
+    div.style.display = "none";
+    });
+
+    document.getElementById("showButton").addEventListener("click", function() {
+        const div = document.getElementById("myDiv");
+        div.style.display = "block";
+    });
+//
+document.getElementById("addButton").addEventListener("click", function() {
+    const newDiv = document.createElement("div");
+    newDiv.textContent = "Jest nas wiele";
+    document.getElementById("containerDiv").appendChild(newDiv);
+});
+    </script>
+    </body>
+</html>
