@@ -52,13 +52,25 @@ export const HitTheMoleGame = () => {
 
   //random 1,2,3 moles
   function showRandomMoles() {
-    const randomArray = Array(moleArray.length)
-      .fill()
-      .map((_, i) => i + 1)
-      .sort(() => Math.random() - 0.5)
-      .slice(0, moleCount);
+    function getRandom(min, max) {
+      min = Math.ceil(min);
+      max = Math.floor(max);
+      return Math.floor(Math.random() * (max - min + 1) + min);
+    }
+
+    const randomArray = Array(moleCount)
+      .fill(1)
+      .reduce((accumulator, currentValue, index) => {
+        let newNumber = getRandom(0, 9);
+
+        while (accumulator.includes(newNumber)) {
+          newNumber = getRandom(0, 9);
+        }
+        return [...accumulator, newNumber];
+      }, []);
     console.log(moleCount);
     console.log(randomArray);
+
     setMoleArray((previousMoleArray) =>
       previousMoleArray.map((mole, index) => {
         const newMole = { ...mole };
@@ -68,18 +80,6 @@ export const HitTheMoleGame = () => {
       })
     );
     console.log(moleArray);
-  }
-  //random 1,2,3 moles
-  function showRandomMoles() {
-    function getRandom(min, max) {
-      min = Math.ceil(min);
-      max = Math.floor(max);
-      return Math.floor(Math.random() * (max - min + 1) + min);
-    }
-    const randomArray = Array(moleArray.length)
-      .fill()
-      .map((_, i) => i + 1)
-      .sort(() => Math.random() - 0.5);
   }
 
   function hitTheMole(index) {

@@ -1,3 +1,4 @@
+import React, { useState } from 'react';
 import Krecik from './krecik.png';
 
 export const MoleGameBoard = ({
@@ -8,6 +9,25 @@ export const MoleGameBoard = ({
   gameStarted,
   counter,
 }) => {
+  const [fieldColors, setFieldColors] = useState(Array(10).fill(null));
+  const backgroundColorDuration = 300; // in milliseconds
+
+  const handleHitTheMole = (index) => {
+    const updatedColors = [...fieldColors];
+    if (moleArray[index].isVisible) {
+      updatedColors[index] = 'field-green';
+      hitTheMole(index);
+    } else {
+      updatedColors[index] = 'field-red';
+    }
+
+    setFieldColors(updatedColors);
+
+    setTimeout(() => {
+      updatedColors[index] = null;
+      setFieldColors(updatedColors);
+    }, backgroundColorDuration);
+  };
   return (
     <div>
       <div className="gameOptionsButtons">
@@ -19,17 +39,17 @@ export const MoleGameBoard = ({
         <button onClick={startStopGame}>
           {gameStarted ? 'STOP' : 'START'}
         </button>
-        </div>
       </div>
+
       <div className="moleGame">
         {moleArray.map((mole, index) => (
-          <div className="board">
+          <div key={index} className={`board ${fieldColors[index] || ''}`}>
             <div className="hole">
               {mole.isVisible && (
                 <div className="square">
                   <img
                     src={Krecik}
-                    onClick={() => hitTheMole(index)}
+                    onClick={() => handleHitTheMole(index)}
                     alt="MOLE!"
                   />
                 </div>
