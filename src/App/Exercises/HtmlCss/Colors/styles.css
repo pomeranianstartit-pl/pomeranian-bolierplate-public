@@ -1,0 +1,26 @@
+.color-name {
+  color: red;
+}
+
+.short-hex {
+  color: #f00;
+}
+
+.full-hex {
+  color: #ff0000;
+}
+
+.rgb {
+  color: rgb(255, 0, 0);
+}
+
+.rgba {
+  color: rgba(255, 0, 0, 1);
+}
+
+.hsl {
+  color: hsl(0, 100%, 50%);
+}
+
+/* hex: f 15 * 16^0 = 15 
+        f 15 * 16^1 = 255 */
