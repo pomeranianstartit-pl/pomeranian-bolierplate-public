@@ -9,6 +9,7 @@ import { Dashboard } from './App/Dashboard';
 import { Exercises } from './App/Exercises';
 import { Calendar } from './App/Calendar';
 import { CV } from './App/CV';
+import { Blog } from './App/Blog';
 
 export function App() {
   console.log('App.jsx');
@@ -22,6 +23,7 @@ export function App() {
           <Route path="cv/*" element={<CV />} />
           <Route path="exercises/*" element={<Exercises />} />
           <Route path="blocks/*" element={<Blocks />} />
+          <Route path="blog/*" element={<Blog />} />
           <Route path="*" element={<NotFound />} />
         </Route>
       </Routes>

@@ -70,7 +70,8 @@ div {
 /* 
 pseudoelementy:
 :: first-line
-:: last-line
+:: before
+:: after
  */
 
 .first-line::first-line {
