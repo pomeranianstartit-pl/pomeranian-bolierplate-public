@@ -1,0 +1,113 @@
+.h1 {
+  background-attachment: scroll;
+  background-clip: border-box;
+  background-color: rgb(255, 255, 255);
+  background-image: none;
+  background-origin: padding-box;
+  background-position-x: 0%;
+  background-position-y: 0%;
+  background-repeat-x: repeat;
+  background-repeat-y: repeat;
+  background-size: auto;
+  box-sizing: border-box;
+  color: rgb(60, 64, 67);
+  display: block;
+  font-family: -apple-system, 'system-ui', 'Segoe UI', Roboto, Oxygen, Ubuntu,
+    Cantarell, 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
+  font-size: 32px;
+  font-weight: 700;
+  height: 38px;
+  margin-block-end: 21.44px;
+  margin-block-start: 21.44px;
+  margin-inline-end: 0px;
+  margin-inline-start: 0px;
+  width: 965px;
+  -webkit-font-smoothing: antialiased;
+}
+
+.data {
+  background-attachment: scroll;
+  background-clip: border-box;
+  background-color: rgb(255, 255, 255);
+  background-image: none;
+  background-origin: padding-box;
+  background-position-x: 0%;
+  background-position-y: 0%;
+  background-repeat-x: repeat;
+  background-repeat-y: repeat;
+  background-size: auto;
+  box-sizing: border-box;
+  color: rgb(60, 64, 67);
+  display: inline;
+  font-family: -apple-system, 'system-ui', 'Segoe UI', Roboto, Oxygen, Ubuntu,
+    Cantarell, 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
+  font-size: 13.3333px;
+  height: auto;
+  width: auto;
+  -webkit-font-smoothing: antialiased;
+}
+
+.firstTitle {
+  background-attachment: scroll;
+  background-clip: border-box;
+  background-color: rgb(255, 255, 255);
+  background-image: none;
+  background-origin: padding-box;
+  background-position-x: 0%;
+  background-position-y: 0%;
+  background-repeat-x: repeat;
+  background-repeat-y: repeat;
+  background-size: auto;
+  box-sizing: border-box;
+  color: rgb(60, 64, 67);
+  display: block;
+  font-family: -apple-system, 'system-ui', 'Segoe UI', Roboto, Oxygen, Ubuntu,
+    Cantarell, 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
+  font-size: 18.72px;
+  font-weight: 700;
+  height: 25.7344px;
+  margin-block-end: 18.72px;
+  margin-block-start: 18.72px;
+  margin-inline-end: 0px;
+  margin-inline-start: 0px;
+  width: 965px;
+  -webkit-font-smoothing: antialiased;
+}
+
+.firstTitle .two {
+  vertical-align: sub;
+  /* color: red; */
+}
+
+.text {
+  background-attachment: scroll;
+  background-clip: border-box;
+  background-color: rgb(255, 255, 255);
+  background-image: none;
+  background-origin: padding-box;
+  background-position-x: 0%;
+  background-position-y: 0%;
+  background-repeat-x: repeat;
+  background-repeat-y: repeat;
+  background-size: auto;
+  box-sizing: border-box;
+  color: rgb(60, 64, 67);
+  display: block;
+  font-family: -apple-system, 'system-ui', 'Segoe UI', Roboto, Oxygen, Ubuntu,
+    Cantarell, 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
+  height: 72px;
+  margin-block-end: 16px;
+  margin-block-start: 16px;
+  margin-inline-end: 0px;
+  margin-inline-start: 0px;
+  width: 965px;
+  -webkit-font-smoothing: antialiased;
+}
+
+.text .bold {
+  font-weight: bold;
+}
+
+.lista .el {
+  display: list-item;
+}
