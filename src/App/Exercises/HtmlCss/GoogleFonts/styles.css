@@ -1,13 +1,18 @@
 @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Dancing+Script&family=Pacifico&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,400;0,700;1,100;1,400;1,700&display=swap');
+
+.f-lato {
+    font-family: 'Lato', sans-serif;
+}
 
 .f-roboto {
-    font-family: roboto;
+    font-family: 'Roboto', sans-serif;
     color: red;
 }
 
 .f-pacifico {
     font-family: 'Pacifico', cursive;
-    color: blue;
+    /* color: blue; */
 }
 
 .f-dancing-script {
