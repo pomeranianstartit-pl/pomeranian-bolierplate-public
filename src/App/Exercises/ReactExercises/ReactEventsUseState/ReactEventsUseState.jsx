@@ -10,6 +10,7 @@ export function ReactEventsUseState() {
 
   // deklaracja funkcji:
   const handleClick = (event) => {
+    // event to czekanie na iterakcje z uzytkownikiem
     // event -> obiekt zdarzenia, SyntheticBaseEvent wyświetlany w konsoli zawiera duzo inf - np:
     //... target - button, type - click, react name - onClick:
     console.log('coś zostało kliknięte!!', event);
@@ -27,6 +28,7 @@ export function ReactEventsUseState() {
   const handleCountClick = () => {
     // setCount -> funkcja aktualizująca wartość zmiennej count
     setCount(count + 1);
+    console.log('wartość licznika ' + count);
   };
 
   return (
