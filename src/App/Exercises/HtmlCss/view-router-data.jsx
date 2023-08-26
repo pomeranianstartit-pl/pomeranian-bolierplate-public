@@ -8,6 +8,7 @@ import { blockRouterMetaData as CssAnimations } from './CssAnimations/router-dat
 import { blockRouterMetaData as FloatsAndPositioning } from './FloatsAndPositioning/router-data';
 import { blockRouterMetaData as FloatsAndPositioningExercise } from './FloatsAndPositioningExercise/router-data';
 import { blockRouterMetaData as Colors } from './Colors/router-data';
+import { blockRouterMetaData as Images } from './ImageFiles/router-data';
 
 export const blockRouterMetaData = [
   blockRouterMetaData121220231,
@@ -18,5 +19,6 @@ export const blockRouterMetaData = [
   FloatsAndPositioningExercise,
   blockRouterMetaTextFundaments,
   Colors,
+  Images,
 ];
 export const blockRouterData = getParsedRouterDataList(blockRouterMetaData);
