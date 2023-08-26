@@ -1,0 +1,22 @@
+.color-name {
+  color: rgba(255, 0, 0, 0.177);
+}
+
+.short-hex {
+  color: #f00;
+}
+.full-hex {
+  color: #ff0000;
+}
+
+.rgb {
+  color: (255, 0, 0);
+}
+
+.rgba {
+  color: (255, 0, 0, 1);
+}
+
+.hsl {
+  color: hsl(0, 100%, 50%);
+}

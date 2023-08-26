@@ -3,10 +3,10 @@ import React from 'react';
 import { Exercise } from './index';
 
 export const blockRouterMetaData = {
-  path: '12-12-2023-1',
-  date: '12-12-2023',
-  linkLabel: '',
-  blockNo: 1,
+  path: 'backgounds',
+  date: '26-08-2023',
+  linkLabel: 'Tła',
+  blockNo: 11,
   element: <Exercise />,
-  tags: ['attribute', 'text', 'css'],
+  tags: ['css', 'background'],
 };
