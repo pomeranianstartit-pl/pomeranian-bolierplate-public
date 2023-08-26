@@ -5,6 +5,7 @@ import { blockRouterMetaData as CSSCascadesBlockRouterMetaData } from './Selecto
 import { blockRouterMetaData as TextFundamentsMetaData } from './TextFundaments/router-data';
 import { blockRouterMetaData as StandardTagsMetaData } from './StandardTags/router-data';
 import { blockRouterMetaData as GoogleFontsMetaData } from './GoogleFonts/router-data';
+import { blockRouterMetaData as CSSAnimationMetaData } from './CssAnimation/router-data';
 
 export const blockRouterMetaData = [
   blockRouterMetaData121220231,
@@ -12,5 +13,6 @@ export const blockRouterMetaData = [
   TextFundamentsMetaData,
   StandardTagsMetaData,
   GoogleFontsMetaData,
+  CSSAnimationMetaData,
 ];
 export const blockRouterData = getParsedRouterDataList(blockRouterMetaData);

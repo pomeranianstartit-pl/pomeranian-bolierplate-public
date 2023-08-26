@@ -1,0 +1,26 @@
+div.animation {
+  width: 100px;
+  height: 100px;
+  background-color: red;
+  animation-name: blinking-square; /* nazwa animacji z ktorej bd korzystać */
+  animation-duration: 10s; /* czas trwania */
+  animation-iteration-count: infinite; /* ile razy animacja ma się wykonać - cały czas*/
+}
+
+@keyframes blinking-square {
+  /* klatki kluczowe - stant w ktorych nasz element powinien sie znalezc w czasie - podajemy % definiujemy tylko stany które beda sie wydarzać, im więcej pośrednich stanów tym płynniej ale wazne jest 0-50-100 */
+  0% {
+    background-color: red;
+  }
+  /* 25%  {background-color: yellow;}
+ 50%  {background-color: blue;} */
+  50% {
+    background-color: green;
+    height: 200px;
+    width: 200px;
+    margin: 50px;
+  }
+  100% {
+    background-color: red;
+  }
+}
