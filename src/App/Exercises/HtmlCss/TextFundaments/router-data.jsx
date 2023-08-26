@@ -1,10 +1,12 @@
-import { TextFundaments } from './index';
+import React from 'react';
 
-export const blockRouterMetaData = {
+import { Exercise } from './index';
+
+export const blockRouterMetaTextFundaments = {
   path: 'text-fundaments-css',
-  date: '15-07-2023',
-  linkLabel: 'TextFundaments',
-  blockNo: 11,
-  element: <TextFundaments />,
+  date: '12-12-2023',
+  linkLabel: 'Praca z textem',
+  blockNo: 1,
+  element: <Exercise />,
   tags: ['attribute', 'text', 'css'],
 };
