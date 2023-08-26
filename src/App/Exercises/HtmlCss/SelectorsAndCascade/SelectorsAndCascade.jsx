@@ -21,7 +21,6 @@ export const SelectorsAndCascade = () => {
           <li className="descendant">
             descendant selector (spacja) <span>example: child</span>
           </li>
-          [18:55] Artur Jędrzejczak
           <li className="child-selector">
             child selector &gt;
             <span className="son">
@@ -117,6 +116,18 @@ export const SelectorsAndCascade = () => {
           </li>
         </ul>
       </section>
+      <p className="first-line">
+        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nemo fugiat
+        recusandae itaque sed blanditiis facilis qui ab saepe necessitatibus
+        nobis veritatis possimus quia nostrum iusto, cupiditate, voluptates
+        inventore ipsam quod! Lorem ipsum, dolor sit amet consectetur
+        adipisicing elit. Nemo fugiat recusandae itaque sed blanditiis facilis
+        qui ab saepe necessitatibus nobis veritatis possimus quia nostrum iusto,
+        cupiditate, voluptates inventore ipsam quod! Lorem ipsum, dolor sit amet
+        consectetur adipisicing elit. Nemo fugiat recusandae itaque sed
+        blanditiis facilis qui ab saepe necessitatibus nobis veritatis possimus
+        quia nostrum iusto, cupiditate, voluptates inventore ipsam quod!
+      </p>
     </div>
   );
 };

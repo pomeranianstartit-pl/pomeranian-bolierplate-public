@@ -1,0 +1,37 @@
+* {}
+
+div {}
+
+.class {}
+
+#id {}
+
+[src] {}
+
+#id .class {}
+
+#id>div {}
+
+#id~div {}
+
+#id+div>span input {}
+
+#id:first-child,
+#id:last-child {}
+
+/* :hover
+:focus
+:visited
+
+::first-line
+::before 
+::after  */
+
+.first-line::first-line {
+    color: red;
+}
+
+.first-line::before,
+.first-line::after {
+    content: '';
+}
