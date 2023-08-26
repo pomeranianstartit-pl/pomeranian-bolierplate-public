@@ -1,0 +1,32 @@
+.font-test-family {
+  font-family: Chilanka;
+}
+
+.h1 {
+  font-size: 32px;
+  font-weight: 700;
+}
+
+.water {
+  display: block;
+  font-size: 1.17em;
+  margin-block-start: 1em;
+  margin-block-end: 1em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+  font-weight: bold;
+
+  box-sizing: border-box;
+  color: rgb(60, 64, 67) display block;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen,
+    Ubuntu, Cantarell, 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif font-size 18.72px;
+  font-weight: 700;
+  height: 28.625px;
+  margin-block-end: 18.72px;
+  margin-block-start: 18.72px;
+  margin-inline-end: 0px;
+  margin-inline-start: 0px;
+  width: 932.444px;
+  -webkit-font-smoothing: antialiased;
+}
