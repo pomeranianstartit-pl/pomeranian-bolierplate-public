@@ -1,0 +1,7 @@
+.background {
+  width: 400px;
+  height: 200px;
+  background-image: url('https://cdn.pixabay.com/photo/2017/09/01/00/15/png-2702691_960_720.png');
+  background-color: rgb(0, 255, 106);
+  background-size: cover;
+}

@@ -9,6 +9,7 @@ import { blockRouterMetaData as FloatsAndPositioning } from './FloatsAndPosition
 import { blockRouterMetaData as FloatsAndPositioningExercise } from './FloatsAndPositioningExercise/router-data';
 import { blockRouterMetaData as Colors } from './Colors/router-data';
 import { blockRouterMetaData as Images } from './ImageFiles/router-data';
+import { blockRouterMetaData as Backgrounds } from './Backgrounds/router-data';
 
 export const blockRouterMetaData = [
   blockRouterMetaData121220231,
@@ -20,5 +21,6 @@ export const blockRouterMetaData = [
   blockRouterMetaTextFundaments,
   Colors,
   Images,
+  Backgrounds,
 ];
 export const blockRouterData = getParsedRouterDataList(blockRouterMetaData);
