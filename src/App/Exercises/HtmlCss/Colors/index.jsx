@@ -3,12 +3,14 @@ import './styles.css';
 export function Exercise() {
   return (
     <>
-      <div className="color-name">kolory</div>
-      <div className="short-hex">kolory</div>
-      <div className="full-hex">kolory</div>
-      <div className="rgb">kolory</div>
-      <div className="rgba">kolory</div>
-      <div className="hsl">kolory</div>
+      <div className="container">
+        <h2 className="color-name">kolory</h2>
+        <h2 className="short-hex">kolory</h2>
+        <h2 className="full-hex">kolory</h2>
+        <h2 className="rgb">kolory</h2>
+        <h2 className="rgba">kolory</h2>
+        <h2 className="hsl">kolory</h2>
+      </div>
     </>
   );
 }
