@@ -61,7 +61,7 @@ export function Exercise() {
           H<span>2</span>O is good for you
         </div>
 
-        <div>
+        <div className="hydrated">
           Staying <span className="bold">hydrated</span> is one of the best
           things you can do for your overall health. Staying{' '}
           <span className="bold">hydrated</span> can help support physical
