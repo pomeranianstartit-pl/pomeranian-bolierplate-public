@@ -30,3 +30,55 @@ h4 {
 }
 
 /* ale tu wszystkie te tagi w całym dokumencie!!! */
+
+* {
+}
+
+div {
+}
+
+.class {
+}
+
+#id {
+}
+
+[src] {
+}
+
+#id .class {
+}
+
+#id > div {
+}
+
+#id + div {
+}
+
+#id ~ div > span input {
+}
+
+/* pseudoklasy  */
+/* 
+:first-child
+:last-child
+:hover - po najechaniu myszka na www
+:focus - TAB przy przejsciach miedzy elementami na www
+:visited - rozroznienie jak cos juz bylo klikniete
+*/
+
+/* 
+pseudoelementy:
+:: first-line
+:: last-line
+ */
+
+.first-line::first-line {
+  color: red;
+}
+
+.first-line::before,
+.first-line::after {
+  content: '1';
+  /*  */
+}

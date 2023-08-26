@@ -27,7 +27,8 @@ aside li a {
   padding: 0.5rem;
 }
 
-aside a.active {
+aside a.active,
+aside a:hover {
   background-color: var(--color-primary-blue);
   color: var(--color-white);
 }
