@@ -1,9 +1,9 @@
 .round-image {
-  height: 150px;
-  width: 150px;
+  /* height: 150px;
+  width: 150px; */
   border-radius: 100%;
   background-color: rgba(0, 0, 0, 0.1);
-  background-image: url(https://cdn.pixabay.com/photo/2017/09/01/00/15/png-2702691_960_720.png);
+  /* background-image: url(https://cdn.pixabay.com/photo/2017/09/01/00/15/png-2702691_960_720.png); */
   background-size: cover;
   background-position: center;
 }
