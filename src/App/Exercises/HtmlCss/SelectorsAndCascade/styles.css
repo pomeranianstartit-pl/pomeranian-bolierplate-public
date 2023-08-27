@@ -18,10 +18,10 @@
 
 /*                  * {} -> style które są określane dla całego dokumentu (body)                    */
 /* UNIVERSAL SELECTOR */
-* {
-  background: white;
-  /* color: green; */
-}
+/* * {
+  background: white; */
+/* color: green; */
+/* } */
 
 /*                  p lub div lub h2 - (wszystkie elementy htmlowe) {} -> style które są określane dla konkretnego tagu   */
 /* TYPE SELECTOR */
