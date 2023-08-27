@@ -7,13 +7,14 @@ export const HitTheMoleGame = () => {
   const moleSpeed = 1000;
   const defaultGameTime = 2 * 60;
   const [moleArray, setMoleArray] = useState(
-    Array(10).fill({ isVisible: false, isWhacked: false })
+    Array(10).fill({ isVisible: false, isWhacked: false, isMissed: false })
   );
   const [gameTime, setGameTime] = useState(defaultGameTime);
   const [moleCount, setMoleCount] = useState(1);
   const [score, setScore] = useState(0);
   const [gameStarted, setGameStarted] = useState(false);
   const [counter, setCounter] = useState(gameTime);
+  const backgroundColorDuration = 300;
 
   useEffect(() => {
     let countdownInterval;
@@ -87,12 +88,27 @@ export const HitTheMoleGame = () => {
       setScore(score + 1);
       setMoleArray((prevVal) => {
         const newArray = [...prevVal];
-        newArray[index].isVisible = false;
+        newArray[index].isWhacked = true;
+        return newArray;
+      });
+    } else if (!moleArray[index].isVisible) {
+      setMoleArray((prevVal) => {
+        const newArray = [...prevVal];
+        newArray[index].isMissed = true;
         return newArray;
       });
     }
+    // debugger;
+    setTimeout(() => {
+      setMoleArray((prevVal) => {
+        const newArray = [...prevVal];
+        newArray[index].isWhacked = false;
+        newArray[index].isVisible = false;
+        newArray[index].isMissed = false;
+        return newArray;
+      });
+    }, backgroundColorDuration);
   }
-
   return (
     <>
       <button onClick={() => showRandomMoles()}>TEST ARRAYKI</button>
@@ -106,7 +122,6 @@ export const HitTheMoleGame = () => {
           gameStarted={gameStarted}
         />
       ) : null}
-      <p>WYNIK: {score}</p>
 
       {gameStarted ? (
         <MoleGameBoard

@@ -61,7 +61,7 @@
   border: 1px solid gray;
   border-radius: 0.5rem;
 }
-.moleGame .board {
+.board {
   background-color: var(--color-gray-200);
   width: 100px;
   height: 100px;
