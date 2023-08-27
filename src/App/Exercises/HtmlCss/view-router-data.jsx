@@ -8,7 +8,7 @@ import { blockRouterMetaData as blockRouterMetaDataCssAnimations } from './CssAn
 import { blockRouterMetaData as blockRouterMetaDataBoxModel } from './BoxModel/router-data';
 import { blockRouterMetaData as blockRouterMetaDataHTMLTables } from './HTMLTables/router-data';
 import { blockRouterMetaData as blockRouterMetaDataTablesTennis } from './TablesTennis/router-data';
-
+import { blockRouterMetaData as blockRouterMetaDataArrayRenderToTable } from './ArrayRenderToTable/router-data';
 export const blockRouterMetaData = [
   blockRouterMetaData121220231,
   blockRouterMetaDataTextFundaments,
@@ -18,6 +18,7 @@ export const blockRouterMetaData = [
   blockRouterMetaDataBoxModel,
   blockRouterMetaDataHTMLTables,
   blockRouterMetaDataTablesTennis,
+  blockRouterMetaDataArrayRenderToTable,
 ];
 
 export const blockRouterData = getParsedRouterDataList(blockRouterMetaData);
