@@ -1,0 +1,43 @@
+.table-players {
+  width: 716px;
+
+  box-shadow: 0px 63.661766052246094px 158.44705200195312px 0px #0000000f,
+    0px 32.22876739501953px 69.07301330566406px 0px #0000000a,
+    0px 12.732353210449219px 25.747648239135742px 0px #00000008,
+    0px 2.7852022647857666px 9.1602201461792px 0px #00000005;
+
+  border-radius: 15px;
+}
+
+.table-players tr:last-child td:first-child {
+  border-bottom-left-radius: 15px;
+}
+
+.table-players tr:last-child td:last-child {
+  border-bottom-right-radius: 15px;
+}
+
+.table-players tr {
+  background-color: white;
+}
+
+.table-players tr td,
+.table-players tr th {
+  padding: 19px 28px;
+
+  border: none;
+}
+
+.table-players tr:nth-child(odd) {
+  background-color: #ffd5db;
+}
+
+.table-players tr:nth-child(1) {
+  background: #bd707b;
+
+  border-bottom: 1px solid #bd707b;
+}
+
+.table-rating {
+  text-align: right;
+}

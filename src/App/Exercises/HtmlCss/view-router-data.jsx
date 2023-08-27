@@ -24,6 +24,8 @@ import { blockRouterMetaData as blockRouterMetaDataBoxModel } from './BoxModel/r
 
 import { blockRouterMetaData as blockRouterMetaDataHTMLTables } from './HTMLTables/router-data';
 
+import { blockRouterMetaData as blockRouterMetaDataTabletennis } from './TableTennis/router-data';
+
 export const blockRouterMetaData = [
   blockRouterMetaData121220231,
   blockRouterMetaTextFundamentals,
@@ -38,6 +40,7 @@ export const blockRouterMetaData = [
   CSSCascadesblockRouterMetaMediaFiles,
   blockRouterMetaDataBoxModel,
   blockRouterMetaDataHTMLTables,
+  blockRouterMetaDataTabletennis,
 ];
 
 export const blockRouterData = getParsedRouterDataList(blockRouterMetaData);
