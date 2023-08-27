@@ -10,7 +10,7 @@
   filter: sepia(62%) blur(3px) brightness(43%) saturate(218%) contrast(82%);
   -webkit-filter: sepia(62%) blur(3px) brightness(43%) saturate(218%)
     contrast(82%);
-  -moz-filter: sepia(62%) blur(3px) brightness(43%) saturate(218%) contrast(82%);
+  moz-filter: sepia(62%) blur(3px) brightness(43%) saturate(218%) contrast(82%);
 }
 
 .filtr1 {
