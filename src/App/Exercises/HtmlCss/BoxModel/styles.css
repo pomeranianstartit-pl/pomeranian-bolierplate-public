@@ -1,0 +1,23 @@
+.box {
+  margin: 20px;
+  margin-bottom: 10px;
+  border: 5px solid lightblue;
+  padding: 30px;
+  background-color: lightgoldenrodyellow;
+}
+
+span {
+  display: inline-block; /* jeden pod drugim, jeśli "inline" to obok siebie */
+  margin: 10px;
+  padding: 15px;
+  background-color: lightskyblue;
+}
+
+/* 
+--- BLOKOWE: ---
+h1, div, p
+
+--- INLINE: ---
+span, b, strong, i, a 
+
+*/

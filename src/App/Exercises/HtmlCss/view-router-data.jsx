@@ -11,7 +11,7 @@ import { blockRouterMetaData as ImageFilesMetaData } from './ImageFiles/router-d
 import { blockRouterMetaData as BackgroundsMetaData } from './Backgrounds/router-data';
 import { blockRouterMetaData as CssFilterMetaData } from './CssFilter/router-data';
 import { blockRouterMetaData as MediaFilesMetaData } from './MediaFiles/router-data';
-// import { blockRouterMetaData as RoundImageMetaFiles } from './RoundImage/router-data';
+import { blockRouterMetaData as BoxModelMetaFiles } from './BoxModel/router-data';
 
 export const blockRouterMetaData = [
   blockRouterMetaData121220231,
@@ -25,6 +25,6 @@ export const blockRouterMetaData = [
   BackgroundsMetaData,
   CssFilterMetaData,
   MediaFilesMetaData,
-  // RoundImageMetaFiles,
+  BoxModelMetaFiles,
 ];
 export const blockRouterData = getParsedRouterDataList(blockRouterMetaData);
