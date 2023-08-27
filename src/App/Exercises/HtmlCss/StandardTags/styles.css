@@ -1,0 +1,65 @@
+.font-test-family {
+  font-family: Chilanka;
+}
+.h1 {
+  display: block;
+  font-size: 2em;
+  margin-block-start: 0.67em;
+  margin-block-end: 0.67em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+  font-weight: bold;
+}
+
+.data {
+  font-size: smaller;
+  color: var(--color-grey);
+}
+
+.h3 {
+  display: block;
+  font-size: 1.17em;
+  margin-block-start: 1em;
+  margin-block-end: 1em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+  font-weight: bold;
+}
+
+.span_2 {
+  vertical-align: sub;
+  font-size: smaller;
+}
+
+.bold {
+  font-weight: bold;
+}
+
+.th {
+  display: block;
+  font-size: 1.17em;
+  margin-block-start: 1em;
+  margin-block-end: 1em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+  font-weight: bold;
+}
+
+.ulList {
+  display: block;
+  list-style-type: disc;
+  margin-block-start: 1em;
+  margin-block-end: 1em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+  padding-inline-start: 40px;
+}
+
+.liList {
+  display: list-item;
+  text-align: -webkit-match-parent;
+}
+
+.underLine {
+  text-decoration: underline;
+}

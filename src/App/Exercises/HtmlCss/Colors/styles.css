@@ -1,0 +1,29 @@
+.container {
+  background-color: #a9171753;
+  /* background-color: red;
+    opacity: 0.2; */
+}
+
+.color-name {
+  color: red;
+}
+
+.short-hex {
+  color: #f00;
+}
+
+.full-hex {
+  color: #ff0000;
+}
+
+.rgb {
+  color: rgb(255, 0, 0);
+}
+
+.rgba {
+  color: rgb(255, 0, 0, 1);
+}
+
+.hsl {
+  color: hsl(0, 100%, 50%);
+}

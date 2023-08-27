@@ -1,5 +1,5 @@
 import './styles.css';
 
 export function Exercise() {
-  return <p>cwiczenia</p>;
+  return <div className="animation"></div>;
 }
