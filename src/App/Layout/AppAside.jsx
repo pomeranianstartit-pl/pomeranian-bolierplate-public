@@ -2,19 +2,37 @@ import { NavLink } from 'react-router-dom';
 
 import './styles/aside.css';
 
+import { CalendarIcon } from '../Components/Icons/CalendarIcon';
+import { HouseIcon } from '../Components/Icons/HouseIcon';
+import { PersonalCardIcon } from '../Components/Icons/PersonalCardIcon';
+import { EditIcon } from '../Components/Icons/EditIcon';
+import { ElementIcon } from '../Components/Icons/ElementIcon';
+
 export function AppAside() {
   return (
     <aside>
       <nav>
         <ul>
-          <li>
+          <li className="aside-row">
+            <HouseIcon />
             <NavLink to="dashboard">Dashboard</NavLink>
           </li>
-          <li>
-            <NavLink to="blocks">Bloki</NavLink>
+          <li className="aside-row">
+            <PersonalCardIcon />
+            <NavLink to="cv">Moje CV</NavLink>
           </li>
-          <li>
+
+          <li className="aside-row">
+            <EditIcon />
             <NavLink to="exercises">Ćwiczenia</NavLink>
+          </li>
+          <li className="aside-row">
+            <CalendarIcon />
+            <NavLink to="calendar">Kalendarz</NavLink>
+          </li>
+          <li className="aside-row">
+            <ElementIcon />
+            <NavLink to="blog">Blog</NavLink>
           </li>
         </ul>
       </nav>
