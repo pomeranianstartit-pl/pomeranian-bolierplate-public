@@ -14,6 +14,7 @@ import { blockRouterMetaData as blockRouterMetaMediaFiles } from './MediaFiles/r
 import { blockRouterMetaData as blockRouterMetaBoxModel } from './BoxModel/router-data';
 import { blockRouterMetaData as blockRouterMetaHtmlTables } from './HtmlTables/router-data';
 import { blockRouterMetaData as blockRouterMetaTablesTennis } from './TablesTennis/router-data';
+import { blockRouterMetaData as blockRouterMetaArrayRenderToTable } from './ArrayRenderToTable/router-data';
 
 export const blockRouterMetaData = [
   blockRouterMetaData121220231,
@@ -30,6 +31,7 @@ export const blockRouterMetaData = [
   blockRouterMetaBoxModel,
   blockRouterMetaHtmlTables,
   blockRouterMetaTablesTennis,
+  blockRouterMetaArrayRenderToTable,
 ];
 
 export const blockRouterData = getParsedRouterDataList(blockRouterMetaData);
