@@ -1,5 +1,10 @@
 import './styles.css';
 
-export const RoundImage = () => {
-  return <div className="round-image"></div>;
+export const RoundImage = ({ url }) => {
+  return (
+    <div
+      className="round-image"
+      style={{ backgroundImage: `url('${url}')` }}
+    ></div>
+  );
 };
