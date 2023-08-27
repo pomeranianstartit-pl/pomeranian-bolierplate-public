@@ -22,6 +22,21 @@ export function Exercise() {
         similique quisquam cumque commodi totam ipsum? Voluptatibus tempore
         repellendus amet deleniti. Cumque optio ipsam consequatur pariatur
         veniam unde ab reprehenderit debitis. lorem Lorem ipsum dolor sit amet,
+        <p className="box">
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Itaque
+          similique quisquam cumque commodi totam ipsum? Voluptatibus tempore
+          repellendus amet deleniti. Cumque optio ipsam consequatur pariatur
+          veniam unde ab reprehenderit debitis. lorem Lorem ipsum dolor sit
+          amet, consectetur adipisicing elit. Itaque similique quisquam cumque
+          commodi totam ipsum? Voluptatibus tempore repellendus amet deleniti.
+          Cumque optio ipsam consequatur pariatur veniam unde ab reprehenderit
+          debitis. lorem Lorem ipsum dolor sit amet, consectetur adipisicing
+          elit. Itaque similique quisquam cumque commodi totam ipsum?
+          Voluptatibus tempore repellendus amet deleniti. Cumque optio ipsam
+          consequatur pariatur veniam unde ab reprehenderit debitis. lorem Lorem
+          ipsum dolor sit amet, consectetur adipisicing elit. Itaque similique
+          quisquam cumque
+        </p>
         consectetur adipisicing elit. Itaque similique quisquam cumque commodi
         totam ipsum? Voluptatibus tempore repellendus amet deleniti. Cumque
         optio ipsam consequatur pariatur veniam unde ab reprehenderit debitis.
