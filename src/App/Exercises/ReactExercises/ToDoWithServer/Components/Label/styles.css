@@ -1,0 +1,8 @@
+.todo-form__label{
+    color: var(--text-text-primary, #222);
+    font-family: Poppins;
+    font-weight: 700;
+    line-height: 1.6875rem;
+    margin-left: 0.19rem;
+    margin-bottom: 0.38rem;
+}
