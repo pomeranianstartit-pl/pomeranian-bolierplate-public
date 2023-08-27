@@ -2,8 +2,16 @@
   margin: 20px 10px 15px 30px;
   border: 5px solid blue;
   border-bottom: 8px dotted red;
-  padding: 30px;
+  padding: 200px;
   background-color: yellow;
+  width: 100%;
+  overflow-x: auto;
+  max-width: 800px;
+  min-width: 500px;
+  height: 100%;
+  position: static;
+  /* width: 40em; jednostka em oznacza że odnosi się do wielkości czcionki - rozszerza pole razem ze zmianą wysokości tekstu
+  jednostka rem oznacza że odnosi się do wielkości czcionki na elemencie html */
 }
 
 span {
