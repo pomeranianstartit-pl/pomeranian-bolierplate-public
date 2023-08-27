@@ -8,7 +8,8 @@ import { MoreOrLessMetaData } from './MoreOrLess/router-data';
 import { MoreOrLessAdvancedMetaData } from './MoreOrLessAdvanced/router-data';
 import { MaterialUIBasicElementsMetaData } from './MaterialUIBasicElements/router-data';
 import { LocalDevAndFetchMetaData } from './LocalDevAndFetch/router-data';
-import { ToDoWithServerMetaData } from './ToDoWithServer/router-data';
+// import { ToDoWithServerMetaData } from './ToDoWithServer/router-data';
+import { BasicFormsMetaData } from './BasicForms/router-data';
 
 export const blockRouterMetaData = [
   SubRouteExampleMetaData,
@@ -19,6 +20,7 @@ export const blockRouterMetaData = [
   MoreOrLessAdvancedMetaData,
   MaterialUIBasicElementsMetaData,
   LocalDevAndFetchMetaData,
-  ToDoWithServerMetaData,
+  // ToDoWithServerMetaData,
+  BasicFormsMetaData,
 ];
 export const blockRouterData = getParsedRouterDataList(blockRouterMetaData);
