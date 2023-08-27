@@ -5,12 +5,14 @@ import { blockRouterMetaData as blockRouterMetaDataTextFundaments } from './Text
 import { blockRouterMetaData as blockRouterMetaDataStandardTags } from './StandardTags/router-data';
 import { blockRouterMetaData as blockRouterMetaDataGoogleFonts } from './GoogleFonts/router-data';
 import { blockRouterMetaData as blockRouterMetaDataCssAnimations } from './CssAnimations/router-data';
+import { blockRouterMetaData as blockRouterMetaDataBoxModel } from './BoxModel/router-data';
 export const blockRouterMetaData = [
   blockRouterMetaData121220231,
   blockRouterMetaDataTextFundaments,
   blockRouterMetaDataStandardTags,
   blockRouterMetaDataGoogleFonts,
   blockRouterMetaDataCssAnimations,
+  blockRouterMetaDataBoxModel,
 ];
 
 export const blockRouterData = getParsedRouterDataList(blockRouterMetaData);

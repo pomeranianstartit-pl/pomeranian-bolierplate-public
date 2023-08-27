@@ -1,0 +1,15 @@
+.box {
+  margin: 20px 10px 15px 25px;
+  margin-top: 50px;
+  border: 5px solid blue;
+  padding: 30px;
+  background-color: yellow;
+  border-bottom: 2px dotted red;
+}
+
+span {
+  display: inline;
+  margin: 20px;
+  padding: 15px;
+  background-color: green;
+}
