@@ -22,91 +22,82 @@ function CarRow({ id, make = 'unknown', model, year, owner }) {
   );
 }
 
-export function Exercise() {
+const bands = [
+  {
+    band: 'The Clash',
+    yearFormed: 1976,
+    albums: 6,
+    mostFamousSong: 'London Calling',
+  },
+  {
+    band: 'Sex Pistols',
+    yearFormed: 1975,
+    albums: 1,
+    mostFamousSong: 'Anarchy in the UK',
+  },
+  {
+    band: 'Ramones',
+    yearFormed: 1974,
+    albums: 14,
+    mostFamousSong: 'Blitzkrieg Bop',
+  },
+  {
+    band: 'The Cure',
+    yearFormed: 1976,
+    albums: 13,
+    mostFamousSong: 'Just Like Heaven',
+  },
+  {
+    band: 'Joy Division',
+    yearFormed: 1976,
+    albums: 2,
+    mostFamousSong: 'Love Will Tear Us Apart',
+  },
+  {
+    band: 'Siouxsie and the Banshees',
+    yearFormed: 1976,
+    albums: 11,
+    mostFamousSong: 'Hong Kong Garden',
+  },
+];
+
+function Bands({ band, yearFormed, albums, mostFamousSong }) {
   return (
-    <table className="tabela">
-      <tr>
-        <th>ID</th>
-        <th>Make</th>
-        <th>Model</th>
-        <th>Year</th>
-        <th>owner</th>
-      </tr>
-      {cars.map(CarRow)}
-    </table>
+    <tr>
+      <th>{band}</th>
+      <th>{yearFormed}</th>
+      <th>{albums}</th>
+      <th>{mostFamousSong}</th>
+    </tr>
   );
 }
 
-/* // <table className="tab-players">
-//   <tr>
-//     <th className="tab-location">Location</th>
-//     <th className="tab-player">PLAYER_ID</th>
-//     <th className="tab-rating">Rating</th>
-//   </tr>
+export function Exercise() {
+  return (
+    <>
+      <table className="tabela">
+        <tr>
+          <th>ID</th>
+          <th>Make</th>
+          <th>Model</th>
+          <th>Year</th>
+          <th>owner</th>
+        </tr>
+        {cars.map(CarRow)}
+      </table>
 
-//   <tr>
-//     <td className="tab-location">Cape Verde Islands</td>
-//     <td className="tab-player">#100120</td>
-//     <td className="tab-rating">
-//       <StarIcon />
+      <br></br>
+      <br></br>
 
-//       <StarIcon />
-//     </td>
-//   </tr>
-
-//   <tr>
-//     <td className="tab-location">Cape Verde Islands</td>
-//     <td className="tab-player">#100122</td>
-//     <td className="tab-rating">
-//       <StarIcon />
-
-//       <StarIcon />
-
-//       <StarIcon />
-//     </td>
-//   </tr>
-
-//   <tr>
-//     <td className="tab-location">Cape Verde Islands</td>
-//     <td className="tab-player">#100124</td>
-//     <td className="tab-rating">
-//       <StarIcon />
-//       <StarIcon />
-//       <StarIcon />
-//       <StarIcon />
-//       <StarIcon />
-//     </td>
-//   </tr>
-
-//   <tr>
-//     <td className="tab-location">United States of America</td>
-//     <td className="tab-player">#100126</td>
-//     <td className="tab-rating">
-//       <StarIcon />
-//     </td>
-//   </tr>
-
-//   <tr>
-//     <td className="tab-location">United States of America</td>
-//     <td className="tab-player">#100128</td>
-//     <td className="tab-rating">
-//       <StarIcon />
-//       <StarIcon />
-//       <StarIcon />
-//       <StarIcon />
-//       <StarIcon />
-//     </td>
-//   </tr>
-
-//   <tr>
-//     <td className="tab-location">United States of America</td>
-//     <td className="tab-player">#100128</td>
-//     <td className="tab-rating">
-//       <StarIcon />
-//       <StarIcon />
-//       <StarIcon />
-//       <StarIcon />
-//       <StarIcon />
-//     </td>
-//   </tr>
-// </table> */
+      <table className="tabela">
+        <tr>
+          <th>BAND</th>
+          <th>YEAR</th>
+          <th>ALBUMS</th>
+          <th>MOST FAMOUS SONG</th>
+        </tr>
+        {bands.map(Bands)}
+      </table>
+    </>
+  );
+}

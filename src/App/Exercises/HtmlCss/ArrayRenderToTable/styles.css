@@ -2,7 +2,7 @@
   --radius: 15px;
 }
 
-.tab-players {
+.tabela {
   width: 716px;
 
   box-shadow: 0px 63.661766052246094px 158.44705200195312px 0px #0000000f,
@@ -13,29 +13,29 @@
   border-radius: var(--radius);
 }
 
-.tab-players tr:last-child td:first-child {
+.tabela tr:last-child td:first-child {
   border-bottom-left-radius: var(--radius);
 }
 
-.tab-players tr:last-child td:last-child {
+.tabela tr:last-child td:last-child {
   border-bottom-right-radius: var(--radius);
 }
 
-.tab-players tr {
+.tabela tr {
   background-color: white;
 }
 
-.tab-players tr td,
-.tab-players tr th {
+.tabela tr td,
+.tabela tr th {
   padding: 19px 28px;
   border: none;
 }
 
-.tab-players tr:nth-child(odd) {
+.tabela tr:nth-child(odd) {
   background-color: #ffd5db;
 }
 
-.tab-players tr:nth-child(1) {
+.tabela tr:nth-child(1) {
   background: #f5f5f5;
   border-bottom: 1px solid #ffd5db;
 }
