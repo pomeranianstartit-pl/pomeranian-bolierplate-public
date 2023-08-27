@@ -104,7 +104,7 @@ export function Exercise() {
   return (
     <table className="table-bands">
       <tr>
-        <th>band</th>
+        <th>Band</th>
 
         <th>Year Formed</th>
 
