@@ -74,31 +74,9 @@ export function Exercise() {
 
         <td className="table-rating">
           <StarIcon />
-
           <StarIcon />
-
           <StarIcon />
-
           <StarIcon />
-
-          <StarIcon />
-        </td>
-      </tr>
-
-      <tr>
-        <td className="table-location">United States of America</td>
-
-        <td className="table-player">#100128</td>
-
-        <td className="table-rating">
-          <StarIcon />
-
-          <StarIcon />
-
-          <StarIcon />
-
-          <StarIcon />
-
           <StarIcon />
         </td>
       </tr>
