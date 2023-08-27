@@ -1,0 +1,35 @@
+.background {
+  width: 400px;
+
+  height: 200px;
+
+  background-image: url('https://cdn.pixabay.com/photo/2017/09/01/00/15/png-2702691_960_720.png');
+
+  background-color: rgb(0, 255, 106);
+
+  background-size: cover;
+}
+
+.filtr-1 {
+  filter: hue-rotate(74deg) saturate(101%) contrast(108%);
+  -webkit-filter: hue-rotate(74deg) saturate(101%) contrast(108%);
+  -moz-filter: hue-rotate(74deg) saturate(101%) contrast(108%);
+}
+
+.filtr-2 {
+  filter: sepia(100%) saturate(101%) contrast(108%);
+  -webkit-filter: sepia(100%) saturate(101%) contrast(108%);
+  -moz-filter: sepia(100%) saturate(101%) contrast(108%);
+}
+
+.filtr-3 {
+  filter: blur(5px) saturate(101%) contrast(108%);
+  -webkit-filter: blur(5px) saturate(101%) contrast(108%);
+  -moz-filter: blur(5px) saturate(101%) contrast(108%);
+}
+
+.filtr-4 {
+  filter: saturate(88%) contrast(320%) invert(19%);
+  -webkit-filter: saturate(88%) contrast(320%) invert(19%);
+  -moz-filter: saturate(88%) contrast(320%) invert(19%);
+}
