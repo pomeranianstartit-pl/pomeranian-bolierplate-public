@@ -3,6 +3,22 @@
   margin-top: 50px;
   border: 5px solid blue;
   border-bottom: 2px dotted red;
-  padding: 30px;
+  padding: 300px;
   background-color: yellow;
+  overflow: auto;
+  min-height: min-content;
+  font-size: 4em;
+}
+
+.span {
+  display: inline;
+  margin: 20px 10px 15px 25px;
+  margin-top: 50px;
+  background-color: green;
+  border: 5px solid pink;
+  overflow: scroll;
+  max-width: max-content;
+  font-size: 14px;
+  /* width: 15rem; */
+  width: 100vw;
 }
