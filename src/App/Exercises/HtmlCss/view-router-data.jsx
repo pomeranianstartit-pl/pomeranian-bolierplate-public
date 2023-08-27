@@ -22,6 +22,8 @@ import { blockRouterMetaData as CSSCascadesblockRouterMetaMediaFiles } from './M
 
 import { blockRouterMetaData as blockRouterMetaDataBoxModel } from './BoxModel/router-data';
 
+import { blockRouterMetaData as blockRouterMetaDataHTMLTables } from './HTMLTables/router-data';
+
 export const blockRouterMetaData = [
   blockRouterMetaData121220231,
   blockRouterMetaTextFundamentals,
@@ -35,6 +37,7 @@ export const blockRouterMetaData = [
   CSSCascadesblockRouterMetaCssFilter,
   CSSCascadesblockRouterMetaMediaFiles,
   blockRouterMetaDataBoxModel,
+  blockRouterMetaDataHTMLTables,
 ];
 
 export const blockRouterData = getParsedRouterDataList(blockRouterMetaData);
