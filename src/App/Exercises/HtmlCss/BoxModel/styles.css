@@ -5,6 +5,18 @@
   padding: 30px;
   background-color: yellow;
   border-bottom: 2px dotted red;
+  width: 500px;
+  height: 300px;
+  overflow: scroll;
+  max-width: 800px;
+
+  /* JEDNOSTKI:
+  PX
+  %
+  EM - ZALEŻY OD FONT SIZE
+  VW - ODNIESIENIE DO SZEROKOŚCI STRONY
+  VH - ODNIESIENIE DO WYSOKOŚCI STRONY
+  */
 }
 
 span {
