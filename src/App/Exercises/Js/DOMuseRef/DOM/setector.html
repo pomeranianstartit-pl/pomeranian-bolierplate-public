@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- Przekazanie referencji funckji handleClick bez eventu dla danego przycisku -->
+    <!-- <button id="buttonElement" onclick="handleClick('buttonElement')">Kliknij mnie!</button>
+    <script>
+        function handleClick(id) {
+            console.log('test');
+        }
+    </script> -->
+
+    <button id="buttonClickMe">Kliknij mnie!!!</button>
+
+    <div class="exampleClass">Content 1</div>
+    <div class="exampleClass">Content 2</div>
+    <div class="exampleClass">Content 3</div>
+    <div class="exampleClass">Content 4</div>
+    <p class="exampleClass">Content 4</p>
+    <span class="exampleSpan">Content span</span>
+    <span class="exampleSpan">Content span 2</span>
+
+    <div class="button" test="test1"></div>
+
+    <button class="button" test="test"></button>
+    <button class="button" test="test1"></button>
+
+    <input id="inputElement" type="text" placeholder="To jest input"/>
+    <input id="inputElementKeyDown" type="text" placeholder="To jest input z keyDownEvent"/>
+
+    <script>
+        // GETELEMENTBYID - zwraca jeden element
+        const button = document.getElementById('buttonClickMe')
+
+        // GETELEMENTSBYCLASSNAME - zwraca kolekcję elementów
+        const elements = document.getElementsByClassName('exampleClass')
+        console.log('elements', elements)
+
+        for (element of elements) {
+            console.log(element, 'elemenet html')
+            element.textContent = 'zmieniony content'
+        }
+
+        // GETELEMENTSBYTAGNAME - zwraca kolekcję elementów
+        const paragraphs = document.getElementsByTagName('p')
+        console.log(paragraphs, 'paragraphs');
+
+        // QUERYSELECTOR - zwraca jeden element
+        const querySelectorFirstDiv = document.querySelector('div')
+        console.log(querySelectorFirstDiv, 'querySelectorFirstDiv')
+
+        const querySelectorFirstClass = document.querySelector('.exampleSpan')
+        console.log(querySelectorFirstClass, 'querySelectorFirstClass')
+
+        const querySelectorID = document.querySelector('#buttonClickMe')
+        console.log(querySelectorID, 'querySelectorID')
+
+        // QUERYSELECTORALL - zwraca kolekcję elementów
+        const querySelectorAllDiv = document.querySelectorAll('div')
+        console.log(querySelectorAllDiv, 'querySelectorAllDiv')
+
+        const querySelectorAllClass = document.querySelectorAll('.exampleSpan')
+        console.log(querySelectorAllClass, 'querySelectorAllClass')
+
+        // QUERYSELECOT - customowe zapytanie
+        const querySelect = document.querySelector('[test]')
+        const querySelectWithProperty = document.querySelector('[test="test"]')
+        console.log(querySelect, 'querySelect')
+        console.log(querySelect.attributes, 'querySelect.attributes')
+        console.log(querySelectWithProperty, 'querySelectWithProperty')
+
+        const querySelectAll = document.querySelectorAll('[test]')
+        console.log(querySelectAll, 'querySelectAll')
+
+        const querySelectWithCustomSettings = document.querySelector('button.button[test="test1"]')
+        console.log(querySelectWithCustomSettings, 'querySelectWithCustomSettings')
+
+        //
+        // EVENT LISTENERS:
+        //
+
+        //
+        // click event
+        // 
+        function handleClick(e) {
+            console.log('test z event listenera', e)
+        }
+
+        button.addEventListener('click', handleClick)
+
+        // button.removeEventListener('click', handleClick)
+
+        // button.onclick = (e) => {
+        //     console.log('test z event listenera bezpośrednio nadpisanego property dom elementu', e)
+        // }
+
+        //
+        // change event
+        // 
+
+        const input = document.getElementById('inputElement')
+        input.addEventListener('change', (e) => {
+            // ta funkcja wywoła się dopiero po kliknięciu w inny element / zmienimy focus
+            console.log('test z event listenera change', e.target.value)
+            console.log('test z event listenera change', input.value)
+        })
+
+        //
+        // keyDown event
+        // 
+
+        const inputKeyDown = document.getElementById('inputElementKeyDown')
+        inputKeyDown.addEventListener('keydown', (e) => {
+            // ta funkcja wywoła się dopiero po kliknięciu w inny element / zmienimy focus
+            console.log('test z event listenera keydown', e.key, e.keyCode)
+        })
+
+        //
+        // onLoad - wywołuje się po załadowaniu całej strony
+        // 
+
+        window.onLoad = () => {
+            console.log('test z event listenera onLoad - strona została w pełni załadowana')
+        }
+
+        //
+        // domContentLoaded - wywołuje się po załadowaniu całej strony -> nie czeka na załadowanie obrazków itp.
+        // 
+
+        window.DOMContentLoaded = () => {
+            console.log('test z event listenera DOMContentLoaded - strona została w pełni załadowana')
+        }
+
+        // https://javascript.info/onload-ondomcontentloaded
+    </script>
+</body>
+</html>

@@ -1,0 +1,67 @@
+.wrapper-edit-todo-item {
+    width: 488px;
+    
+}
+.wrapper-edit-todo-item .field {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+    align-self: stretch;
+    padding: 10px 0px 10px 0px;
+}
+
+.wrapper-edit-todo-item .field .label {
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 27px;
+}
+
+.wrapper-edit-todo-item .field input {
+    border-radius: 5px;
+    border: 1px solid var(--grey-300, #C8CBD1);
+    background: #FFF;
+    height: 48px;
+    padding: 13px 16px;
+    align-items: center;
+    gap: 10px;
+    align-self: stretch;
+    color: #999;
+    font-size: 18px;
+}
+
+.wrapper-add-todo-item .error {
+    color: #E12B1B;
+    font-feature-settings: 'clig' off, 'liga' off;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 27px; 
+}
+
+.wrapper-edit-todo-item .action-buttons {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+    align-items: flex-start;
+    align-content: flex-start;
+    padding-top: 27px;
+}
+
+.wrapper-edit-todo-item .action-buttons button{
+    width: 163px;
+    gap: 16px;
+    flex-shrink: 0;
+    margin-left: 16px;
+    height: 56px;
+    border-radius: 8px;
+    border: 1px solid #23213D;
+    background: #23213D;
+    color: white;
+}
+.wrapper-edit-todo-item .action-buttons button[type=submit] {
+    background-color: #FE3756;
+    border: 1px solid #FE3756;
+}

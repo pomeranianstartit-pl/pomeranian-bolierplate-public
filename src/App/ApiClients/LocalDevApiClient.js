@@ -16,11 +16,54 @@ class LocalDevApiClient {
         return this.fetchJson(TODO_URL);
     }
 
+    async getToDoItem(id) {
+      return this.fetchJson(`${TODO_URL}/${id}`);
+    }
+
+    async saveToDoItem(id, title, note, author) {
+
+      const data = {
+        title: title, 
+        note: note,
+        author: author
+      };
+
+      const options = {
+        method: 'PUT',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify(data),
+      };
+
+      return this.fetchJson(`${TODO_URL}/${id}`, options);
+    }
+
+
+    async addToDoItem(title, note, author) {
+
+      const data = {
+        title: title, 
+        note: note,
+        author: author
+      };
+
+      const options = {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify(data),
+      };
+
+      return this.fetchJson(TODO_URL, options);
+    }    
+
     async markAsDone(id) {
         const options = {
             method: 'PUT'
           };
-        return this.fetchJson(`${TODO_URL}/${id}/markAsDone`);
+        return this.fetchJson(`${TODO_URL}/${id}/markAsDone`, options);
     }
 
     async remove(id) {

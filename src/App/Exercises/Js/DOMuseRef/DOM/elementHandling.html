@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    To jest element handling .html
+
+    <div id="myDiv_ChangeStyle">To jest testowy div - zmiana styli</div>
+    <div id="myDiv_ChangeTextContent">To jest testowy div - zmiana textContent</div>
+    <div id="myDiv_ChangeClassList" class="firstClass">To jest testowy div - zmiana klasy css</div>
+    <div id="myDiv_addElement" >To jest testowy div - dodaj dziecko</div>
+    <div id="myDiv_removeElement" >To jest testowy div - usuń dziecko
+        <span id="removeElementSpan">Usuń mnie!</span>
+    </div>
+
+    <script>
+        //
+        // zmiana style -> .style
+        //
+
+        const myDiv_ChangeStyle = document.getElementById('myDiv_ChangeStyle')
+
+        console.log('myDiv_ChangeStyle.style', myDiv_ChangeStyle.style.backgroundColor)
+
+        myDiv_ChangeStyle.style.backgroundColor = 'red';
+
+        console.log('myDiv_ChangeStyle.style after change', myDiv_ChangeStyle.style.backgroundColor)
+
+        // import React from 'react';
+
+        // export const StyleChangeComponent = () => {
+        //     const divStyle = {
+        //         backgroundColor: 'red'
+        //     }
+        //     return <div style={divStyle}>Zmiana styli</div>
+        // }
+
+        //
+        // zmiana treści => .textContent / .innerHTML
+        // 
+
+        const myDiv_ChangeTextContent = document.getElementById('myDiv_ChangeTextContent');
+        myDiv_ChangeTextContent.textContent = 'zmieniony textContent';
+
+        // import React from 'react';
+
+        // export const TextChangeComponent = () => {
+        //     const [content, setContent] = useState('jakiś pierowny text');
+
+
+        //     useEffect(() => {
+        //         setContent('zmieniony text!')
+        //     }, [])
+        //     return <div>{content}</div>
+        // }
+
+        //
+        // zmiana naszej klasy => .classList -> .add / .remove
+        // 
+        const myDiv_ChangeClassList = document.getElementById('myDiv_ChangeClassList');
+
+        myDiv_ChangeClassList.classList.add('dynamicClass');
+        myDiv_ChangeClassList.classList.remove('firstClass');
+
+        console.log(myDiv_ChangeClassList.classList, 'myDiv_ChangeClassList.classList')
+
+        //
+        // dodawanie nowych elementów -> .appendChild
+        // 
+
+        const myDiv = document.getElementById('myDiv_addElement')
+        const newDiv = document.createElement('div');
+        newDiv.textContent = 'nowy div';
+
+        myDiv.appendChild(newDiv);
+
+        //
+        // usuwanie elementów -> .removeChild
+        // 
+
+        const myDiv_removeElement = document.getElementById('myDiv_removeElement')
+        const removeElementSpan = document.getElementById('removeElementSpan')
+
+        myDiv_removeElement.removeChild(removeElementSpan);
+
+        //
+        // ukrywanie elementów -> style.display = 'none'
+        // 
+    </script>
+</body>
+</html>
