@@ -18,21 +18,22 @@ export const HitTheMoleGame = () => {
 
   useEffect(() => {
     let countdownInterval;
-
-    if (!countdownInterval) {
-      countdownInterval = setInterval(() => {
-        setCounter((previousCounter) => previousCounter - 1);
-      }, moleSpeed);
-      if (counter === 0) {
-        setGameStarted(false);
-        clearInterval(countdownInterval);
+    if (gameStarted) {
+      if (!countdownInterval) {
+        countdownInterval = setInterval(() => {
+          setCounter((previousCounter) => previousCounter - 1);
+        }, moleSpeed);
+        if (counter === 0) {
+          setGameStarted(false);
+          clearInterval(countdownInterval);
+        }
+        console.log(gameStarted);
+        console.log(counter);
+        return () => clearInterval(countdownInterval);
       }
-      console.log(gameStarted);
-      console.log(counter);
-      return () => clearInterval(countdownInterval);
+      //daj else if wyświetlający podsumowanie
     }
-    //daj else if wyświetlający podsumowanie
-  }, [counter]);
+  }, [gameStarted, counter]);
   useEffect(() => {
     setCounter(() => gameTime);
   }, [gameTime]);
@@ -48,10 +49,12 @@ export const HitTheMoleGame = () => {
   }, [gameStarted, counter]);
 
   useEffect(() => {
-    if (gameStarted) setCounter(gameTime);
+    if (gameStarted) {
+      setCounter(gameTime);
+      setScore(0);
+    }
   }, [gameStarted, gameTime]);
 
-  //random 1,2,3 moles
   function showRandomMoles() {
     function getRandom(min, max) {
       min = Math.ceil(min);
@@ -123,6 +126,13 @@ export const HitTheMoleGame = () => {
         />
       ) : null}
 
+      {!gameStarted && score !== 0 ? (
+        <>
+          <h1>
+            GRATULACJE! Uzyskałeś {score} trafień w ciagu {gameTime} sekund.
+          </h1>
+        </>
+      ) : null}
       {gameStarted ? (
         <MoleGameBoard
           moleArray={moleArray}
