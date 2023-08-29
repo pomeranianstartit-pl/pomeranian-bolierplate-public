@@ -1,0 +1,23 @@
+.forms-wrapper {
+    font-family: Poppins;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    max-width: 600px;
+    margin: 0 auto;
+    background: #f4f5f7;
+    padding: 25px;
+    border-radius: 16px;
+}
+
+.forms-select {
+    padding: 5px 10px;
+    border: 1px solid #c8cbd1;
+    border-radius: 5px;
+    appearance: none;
+    font-family: inherit;
+    background-image: url('./Select-arrow.png');
+    background-repeat: no-repeat;
+    background-position: 95%;
+    outline-color: #fe3756;
+}

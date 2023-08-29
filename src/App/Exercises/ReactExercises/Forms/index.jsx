@@ -51,6 +51,7 @@ export const Forms = () => {
       <form onSubmit={handleOnSubmit} className="forms-wrapper">
         <label htmlFor="course-field">Choose your course:</label>
         <select
+          className="forms-select"
           id="course-filed"
           value={course}
           onChange={(e) => setCourse(e.target.value)}
