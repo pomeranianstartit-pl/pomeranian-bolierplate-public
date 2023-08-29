@@ -1,6 +1,15 @@
 import React, { useState } from 'react';
 import './style.css';
 
+// 2. Jako initialValue uzyc obiektu ze zdefiniowanymi polami
+
+const initialCourseTopics = {
+  css: false,
+  javascript: false,
+  react: false,
+  git: false,
+};
+
 export const Forms = () => {
   const [name, setName] = useState('');
   const [email, setEmail] = useState('');
@@ -10,6 +19,8 @@ export const Forms = () => {
   const [payment, setPayment] = useState('');
   const [optIn, setOptIn] = useState(false);
   const [course, setCourse] = useState('');
+  // 1. Uzyc useState
+  const [courseTopics, setCourseTopics] = useState(initialCourseTopics);
 
   function handleOnSubmit(e) {
     e.preventDefault();
@@ -22,10 +33,16 @@ export const Forms = () => {
       payment,
       optIn,
       course,
+      courseTopics,
     };
     console.log('DATA TO BE SUBMIT', data);
     console.log('FORM SUBMITTED');
   }
+
+  // 3. Stworzyc tablice z initialValue: ['css', 'javascript', 'react', 'git']
+  const courseTopicsList = Object.keys(initialCourseTopics);
+  // 4. Przeiterowac po tej tablicy i stworzyc dla kazdej opcji checkbox (w returnie)
+  // 5. Obsluzyc kazdy checkbox, dodac mu jakies atrybuty (w returnie)
 
   return (
     <>
@@ -41,6 +58,27 @@ export const Forms = () => {
           <option value="backend">Backend course</option>
           <option value="devops">DevOps course</option>
         </select>
+        <fieldset>
+          <legend>Choose topics</legend>
+
+          {courseTopicsList.map((option) => (
+            <div key={option}>
+              <input
+                type="checkbox"
+                id={option}
+                value={option}
+                checked={courseTopics[option]}
+                onChange={(e) =>
+                  setCourseTopics({
+                    ...courseTopics,
+                    [option]: e.target.checked,
+                  })
+                }
+              />
+              <label htmlFor={option}>{option}</label>
+            </div>
+          ))}
+        </fieldset>
         <label htmlFor="name-field">Name:</label>
         <input
           id="name-field"
