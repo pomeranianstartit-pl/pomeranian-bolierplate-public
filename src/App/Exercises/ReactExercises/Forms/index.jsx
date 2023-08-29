@@ -20,6 +20,7 @@ export const Forms = () => {
   const [optIn, setOptIn] = useState(false);
   const [course, setCourse] = useState('');
   const [duration, setDuration] = useState(3);
+  const [changeColor, setChangeColor] = useState('#e66465');
   // 1. Uzyc useState
   const [courseTopics, setCourseTopics] = useState(initialCourseTopics);
 
@@ -162,6 +163,18 @@ export const Forms = () => {
             Yes, I would like to join newsletter
           </label>
         </fieldset>
+        ////////
+        <div>
+          <input
+            type="color"
+            id="change"
+            name="change"
+            value={changeColor}
+            onChange={(e) => setChangeColor(e.target.value)}
+          />
+          <label for="change">Change Colors</label>
+        </div>
+        ////
         <button>Submit</button>
       </form>
     </>
