@@ -1,8 +1,6 @@
 import React, { useState } from 'react';
 import './style.css';
 
-// 2. Jako initialValue uzyc obiektu ze zdefiniowanymi polami
-
 const initialCourseTopics = {
   css: false,
   javascript: false,
@@ -19,10 +17,9 @@ export const Forms = () => {
   const [payment, setPayment] = useState('');
   const [optIn, setOptIn] = useState(false);
   const [course, setCourse] = useState('');
-  const [duration, setDuration] = useState(3);
-  const [changeColor, setChangeColor] = useState('#e66465');
-  // 1. Uzyc useState
   const [courseTopics, setCourseTopics] = useState(initialCourseTopics);
+  const [duration, setDuration] = useState(90);
+  const [theme, setTheme] = useState('#FE3756');
 
   function handleOnSubmit(e) {
     e.preventDefault();
@@ -36,15 +33,13 @@ export const Forms = () => {
       optIn,
       course,
       courseTopics,
+      duration,
+      theme,
     };
     console.log('DATA TO BE SUBMIT', data);
-    console.log('FORM SUBMITTED');
   }
 
-  // 3. Stworzyc tablice z initialValue: ['css', 'javascript', 'react', 'git']
   const courseTopicsList = Object.keys(initialCourseTopics);
-  // 4. Przeiterowac po tej tablicy i stworzyc dla kazdej opcji checkbox (w returnie)
-  // 5. Obsluzyc kazdy checkbox, dodac mu jakies atrybuty (w returnie)
 
   return (
     <>
@@ -61,7 +56,7 @@ export const Forms = () => {
           <option value="backend">Backend course</option>
           <option value="devops">DevOps course</option>
         </select>
-        <fieldset>
+        <fieldset className="forms-multi-checkbox">
           <legend>Choose topics</legend>
 
           {courseTopicsList.map((option) => (
@@ -82,8 +77,9 @@ export const Forms = () => {
             </div>
           ))}
         </fieldset>
-        //////
-        <label htmlFor="duration-range">Curse duration - {duration} days</label>
+        <label htmlFor="duration-range">
+          Course duration - {duration} days
+        </label>
         <input
           type="range"
           id="duration-range"
@@ -92,7 +88,13 @@ export const Forms = () => {
           value={duration}
           onChange={(e) => setDuration(e.target.value)}
         />
-        //////
+        <label htmlFor="theme">Choose your course theme - {theme}</label>
+        <input
+          type="color"
+          id="theme"
+          value={theme}
+          onChange={(e) => setTheme(e.target.value)}
+        />
         <label htmlFor="name-field">Name:</label>
         <input
           id="name-field"
@@ -142,7 +144,9 @@ export const Forms = () => {
             checked={payment === 'blik'}
             onChange={(e) => setPayment(e.target.value)}
           />
-          <label htmlFor="payment-blik">blik</label>
+          <label className="forms-radio-label" htmlFor="payment-blik">
+            blik
+          </label>
           <input
             type="radio"
             value="paypal"
@@ -164,18 +168,7 @@ export const Forms = () => {
             Yes, I would like to join newsletter
           </label>
         </fieldset>
-        ////////
-        <div>
-          <input
-            type="color"
-            id="change"
-            name="change"
-            value={changeColor}
-            onChange={(e) => setChangeColor(e.target.value)}
-          />
-          <label for="change">Change Colors</label>
-        </div>
-        ////
+
         <button>Submit</button>
       </form>
     </>
