@@ -2,6 +2,8 @@ import './styles.css';
 import React, { useState, useEffect } from 'react';
 import { MoleGameBoard } from './MoleGameBoard';
 import { MoleGameSettings } from './MoleGameSettings';
+import hitSoundFile from './sounds/hit.mp3';
+import missedSoundFile from './sounds/missed.mp3';
 
 export const HitTheMoleGame = () => {
   const moleSpeed = 1000;
@@ -15,6 +17,8 @@ export const HitTheMoleGame = () => {
   const [gameStarted, setGameStarted] = useState(false);
   const [counter, setCounter] = useState(gameTime);
   const backgroundColorDuration = 300;
+  const hitSound = new Audio(hitSoundFile);
+  const missedSound = new Audio(missedSoundFile);
 
   useEffect(() => {
     let countdownInterval;
@@ -31,7 +35,6 @@ export const HitTheMoleGame = () => {
         console.log(counter);
         return () => clearInterval(countdownInterval);
       }
-      //daj else if wyświetlający podsumowanie
     }
   }, [gameStarted, counter]);
   useEffect(() => {
@@ -92,12 +95,14 @@ export const HitTheMoleGame = () => {
       setMoleArray((prevVal) => {
         const newArray = [...prevVal];
         newArray[index].isWhacked = true;
+        hitSound.play();
         return newArray;
       });
     } else if (!moleArray[index].isVisible) {
       setMoleArray((prevVal) => {
         const newArray = [...prevVal];
         newArray[index].isMissed = true;
+        missedSound.play();
         return newArray;
       });
     }
