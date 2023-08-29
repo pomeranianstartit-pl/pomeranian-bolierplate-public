@@ -2,10 +2,22 @@ import React, { useState } from 'react';
 import './style.css';
 
 const initialCourseTopics = {
-  css: false,
-  javascript: false,
-  react: false,
-  git: false,
+  css: {
+    title: 'CSS advanced',
+    state: false,
+  },
+  javascript: {
+    title: 'Javascript advanced',
+    state: false,
+  },
+  react: {
+    title: 'React',
+    state: false,
+  },
+  git: {
+    title: 'GIT',
+    state: false,
+  },
 };
 
 export const Forms = () => {
@@ -39,8 +51,6 @@ export const Forms = () => {
     console.log('DATA TO BE SUBMIT', data);
   }
 
-  const courseTopicsList = Object.keys(initialCourseTopics);
-
   return (
     <>
       <form onSubmit={handleOnSubmit} className="forms-wrapper">
@@ -59,21 +69,24 @@ export const Forms = () => {
         <fieldset className="forms-multi-checkbox">
           <legend>Choose topics</legend>
 
-          {courseTopicsList.map((option) => (
-            <div key={option}>
+          {Object.entries(initialCourseTopics).map((option) => (
+            <div key={option[0]}>
               <input
                 type="checkbox"
-                id={option}
-                value={option}
-                checked={courseTopics[option]}
+                id={option[0]}
+                value={option[1].state}
+                checked={courseTopics[option[0]].state}
                 onChange={(e) =>
                   setCourseTopics({
                     ...courseTopics,
-                    [option]: e.target.checked,
+                    [option[0]]: {
+                      title: option[1].title,
+                      state: e.target.checked,
+                    },
                   })
                 }
               />
-              <label htmlFor={option}>{option}</label>
+              <label htmlFor={option}>{option[1].title}</label>
             </div>
           ))}
         </fieldset>

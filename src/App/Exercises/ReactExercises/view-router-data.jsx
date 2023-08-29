@@ -11,6 +11,7 @@ import { ToDoWithServerMetaData } from './ToDoWithServer/router-data';
 import { blockRouterMetaData as LocalDevAndFetch } from './LocalDevAndFetch/router-data';
 import { ReactUseRefMetaData } from './ReactUseRef/router-data';
 import { FormsMetaData } from './Forms/router-data';
+import { BasicFormsMetaData } from './BasicForms/router-data';
 
 export const blockRouterMetaData = [
   SubRouteExampleMetaData,
@@ -23,5 +24,6 @@ export const blockRouterMetaData = [
   LocalDevAndFetch,
   ReactUseRefMetaData,
   FormsMetaData,
+  BasicFormsMetaData,
 ];
 export const blockRouterData = getParsedRouterDataList(blockRouterMetaData);

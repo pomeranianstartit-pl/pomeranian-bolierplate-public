@@ -1,0 +1,12 @@
+.basic-forms-wrapper {
+    font-family: Poppins;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    max-width: 600px;
+    margin: 0 auto;
+    background: #f4f5f7;
+    padding: 25px;
+    border-radius: 16px;
+    accent-color: #fe3756;
+}
