@@ -1,5 +1,5 @@
 import './styles.css';
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect, useCallback } from 'react';
 import { MoleGameBoard } from './MoleGameBoard';
 import { MoleGameSettings } from './MoleGameSettings';
 import hitSoundFile from './sounds/hit.mp3';
@@ -17,6 +17,10 @@ export const HitTheMoleGame = () => {
   const [gameStarted, setGameStarted] = useState(false);
   const [counter, setCounter] = useState(gameTime);
   const backgroundColorDuration = 300;
+  const showRandomMolesMemoized = useCallback(showRandomMoles, [
+    moleArray,
+    moleCount,
+  ]);
   const hitSound = new Audio(hitSoundFile);
   const missedSound = new Audio(missedSoundFile);
 
@@ -47,9 +51,9 @@ export const HitTheMoleGame = () => {
 
   useEffect(() => {
     if (gameStarted && counter > 0) {
-      showRandomMoles();
+      showRandomMolesMemoized();
     }
-  }, [gameStarted, counter]);
+  }, [gameStarted, counter, showRandomMolesMemoized]);
 
   useEffect(() => {
     if (gameStarted) {
