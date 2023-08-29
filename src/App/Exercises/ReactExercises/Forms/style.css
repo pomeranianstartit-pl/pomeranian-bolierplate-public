@@ -8,6 +8,7 @@
     background: #f4f5f7;
     padding: 25px;
     border-radius: 16px;
+    accent-color: #fe3756;
 }
 
 .forms-select {
@@ -20,4 +21,23 @@
     background-repeat: no-repeat;
     background-position: 95%;
     outline-color: #fe3756;
+}
+.forms-multi-chackbox > div {
+    display: flex;
+}
+.forms-multi-checbox > div > input[type='checbox']{
+    margin-right: 7px;
+}
+input[type='text'],
+input[type='password'],
+input[type='email'] {
+  font-family: inherit;
+  padding: 13px 16px;
+  border: 1px solid #c8cbd1;
+  border-radius: 5px;
+}
+
+input[type='text']::placeholder {
+  color: #fe3756;
+  font-weight: bold;
 }
