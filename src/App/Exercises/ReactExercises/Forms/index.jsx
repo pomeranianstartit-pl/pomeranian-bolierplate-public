@@ -19,6 +19,7 @@ export const Forms = () => {
   const [payment, setPayment] = useState('');
   const [optIn, setOptIn] = useState(false);
   const [course, setCourse] = useState('');
+  const [duration, setDuration] = useState(3);
   // 1. Uzyc useState
   const [courseTopics, setCourseTopics] = useState(initialCourseTopics);
 
@@ -79,6 +80,17 @@ export const Forms = () => {
             </div>
           ))}
         </fieldset>
+        //////
+        <label htmlFor="duration-range">Curse duration - {duration} days</label>
+        <input
+          type="range"
+          id="duration-range"
+          min={30}
+          max={360}
+          value={duration}
+          onChange={(e) => setDuration(e.target.value)}
+        />
+        //////
         <label htmlFor="name-field">Name:</label>
         <input
           id="name-field"
@@ -150,7 +162,6 @@ export const Forms = () => {
             Yes, I would like to join newsletter
           </label>
         </fieldset>
-
         <button>Submit</button>
       </form>
     </>
