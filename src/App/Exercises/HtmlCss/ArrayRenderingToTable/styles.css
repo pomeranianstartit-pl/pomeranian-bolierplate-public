@@ -1,0 +1,15 @@
+.array-render-to-table {
+  border-collapse: collapse;
+  width: 100%;
+}
+
+
+.array-render-to-table tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
+
+
+.array-render-to-table tr>* {
+  border: 1px solid #ddd;
+  padding: 8px;
+}
