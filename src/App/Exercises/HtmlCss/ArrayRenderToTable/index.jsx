@@ -1,8 +1,6 @@
-// import { StarIcon } from '../../../Components/StarIcon';
-
 import './styles.css';
 
-const brands = ['Saab', 'Volvo', 'BMW', 'Skoda', 'Mercedes'];
+// const brands = ['Saab', 'Volvo', 'BMW', 'Skoda', 'Mercedes'];
 const cars = [
   { id: 1, make: 'Saab', model: '92B', year: 1953, owner: 'Jon' },
   { id: 2, make: 'Volvo', model: 'C40', year: 2021, owner: 'Jenny' },
@@ -74,7 +72,7 @@ function Bands({ band, yearFormed, albums, mostFamousSong }) {
 
 export function Exercise() {
   return (
-    <>
+    <div>
       <table className="tabela">
         <tr>
           <th>ID</th>
@@ -98,6 +96,6 @@ export function Exercise() {
         </tr>
         {bands.map(Bands)}
       </table>
-    </>
+    </div>
   );
 }

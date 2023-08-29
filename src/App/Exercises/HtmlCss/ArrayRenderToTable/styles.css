@@ -1,6 +1,6 @@
 :root {
   --radius: 15px;
-}
+} /*definicja zmiennej w css*/
 
 .tabela {
   width: 716px;
@@ -10,16 +10,16 @@
     0px 12.732353210449219px 25.747648239135742px 0px #00000008,
     0px 2.7852022647857666px 9.1602201461792px 0px #00000005;
 
-  border-radius: var(--radius);
+  border-radius: var(--radius); /*uzycie zmiennej*/
 }
 
 .tabela tr:last-child td:first-child {
   border-bottom-left-radius: var(--radius);
-}
+} /* zaokrąglenie lewego dolnego rogu*/
 
 .tabela tr:last-child td:last-child {
   border-bottom-right-radius: var(--radius);
-}
+} /* zaokrąglenie prawego dolnego rogu*/
 
 .tabela tr {
   background-color: white;
@@ -38,8 +38,4 @@
 .tabela tr:nth-child(1) {
   background: #f5f5f5;
   border-bottom: 1px solid #ffd5db;
-}
-
-.tab-rating {
-  text-align: right;
-}
+} /*pierwszy wiersz tabeli - naglowek niech ma takie property*/
