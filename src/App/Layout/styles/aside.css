@@ -10,6 +10,7 @@ aside {
 aside ul {
   /* Nadpisanie domyślnych styli przeglądarki */
   padding-inline-start: 1rem;
+  padding-left: 0px;
 }
 
 aside li {
@@ -20,9 +21,29 @@ aside li {
   display: flex;
   flex-direction: row;
   align-items: center;
+  text-emphasis-color: black;  
 }
-
-aside li a {
+/*zachowanie linku po najechaniu myszką (:hover)*/
+aside li a:hover {
+  text-decoration: none;
+  color: rgb(0, 0, 0);
+  display: block;
+  background-color: brown;
+  border-radius: 0.5rem;
+  width: 9rem;
+  height:3rem;
+}
+/*zachowanie linku trzymaneg przez myszką (:active)*/
+aside li a:active {
+  text-decoration: none;
+  color: rgb(179, 24, 24);
+  display: block;
+  padding: 0.5rem;
+  width: 9rem;
+}
+/*zachowanie linku klikniętego (:visited)*/
+aside li a:visited {
+  text-decoration: none;
   display: block;
   padding: 0.5rem;
 }
@@ -30,4 +51,16 @@ aside li a {
 aside a.active {
   background-color: var(--color-primary-blue);
   color: var(--color-white);
+  border-radius: 0.5rem;
+  width: 9rem;
+
+}
+.icon {
+  margin-top:10px;
+  margin-right: 10px;
+/*tranform obiża ikonę do poziomu tekstu*/
+  transform: translateY(25%); 
+}
+.black{
+  color:black;
 }
