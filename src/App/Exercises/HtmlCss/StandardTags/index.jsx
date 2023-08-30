@@ -72,24 +72,25 @@ export function Exercise() {
           25<sup>th</sup> birthday
         </div>
 
-        <div>
+        <div className="text">
           Make the next birthday you celebrate a special one with a hand-picked
-          happy birthday <span>quote</span> or wish that will surely make that
-          special someone’s day a great day. Whether you’re celebrating your
-          birthday or someone else’s, you can rely on our list of{' '}
-          <span>happy birthday</span> <span>quotes</span> to help put a smile on
-          someone’s face. From inspirational to funny to cute sayings, browse
-          our list of <span>quotes</span> to find one that resonates with you.{' '}
-          <span>Nothing</span> can stop you!
+          happy birthday <q className="quote">quote</q> or wish that will surely
+          make that special someone’s day a great day. Whether you’re
+          celebrating your birthday or someone else’s, you can rely on our list
+          of <span className="int">happy birthday</span>{' '}
+          <q className="quote">quotes</q> to help put a smile on someone’s face.
+          From inspirational to funny to cute sayings, browse our list of{' '}
+          <q className="quote">quotes</q> to find one that resonates with you.{' '}
+          <span className="line">Nothing</span> can stop you!
         </div>
 
         <div className="firstTitle">
-          Why not to use <span>lists</span> ?
+          Why not to use <span className="under">lists</span> ?
         </div>
 
         <div>
-          <div>
-            A lot of things to do <span>#todo</span>
+          <div className="lastTitle">
+            A lot of things to do <span className="int">#todo</span>
           </div>
 
           <div className="lista">

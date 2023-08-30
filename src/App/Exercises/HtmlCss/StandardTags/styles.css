@@ -63,11 +63,11 @@
   display: block;
   font-family: -apple-system, 'system-ui', 'Segoe UI', Roboto, Oxygen, Ubuntu,
     Cantarell, 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
-  font-size: 18.72px;
-  font-weight: 700;
+  font-size: 1.17em;
+  font-weight: bold;
   height: 25.7344px;
-  margin-block-end: 18.72px;
-  margin-block-start: 18.72px;
+  margin-block-end: 1em;
+  margin-block-start: 1em;
   margin-inline-end: 0px;
   margin-inline-start: 0px;
   width: 965px;
@@ -95,12 +95,6 @@
   display: block;
   font-family: -apple-system, 'system-ui', 'Segoe UI', Roboto, Oxygen, Ubuntu,
     Cantarell, 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
-  height: 72px;
-  margin-block-end: 16px;
-  margin-block-start: 16px;
-  margin-inline-end: 0px;
-  margin-inline-start: 0px;
-  width: 965px;
   -webkit-font-smoothing: antialiased;
 }
 
@@ -110,4 +104,55 @@
 
 .lista .el {
   display: list-item;
+}
+
+.quote {
+  content: open-quote;
+  content: close-quote;
+}
+
+.under {
+  text-decoration: underline;
+}
+
+.line {
+  text-decoration: line-through;
+}
+
+.int {
+  font-style: italic;
+}
+
+.lastTitle {
+  box-sizing: border-box;
+  color: rgb(60, 64, 67);
+  display: block;
+  font-family: -apple-system, 'system-ui', 'Segoe UI', Roboto, Oxygen, Ubuntu,
+    Cantarell, 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
+  font-size: 13.28px;
+  font-weight: 700;
+  height: 16px;
+  margin-block-end: 22.1776px;
+  margin-block-start: 22.1776px;
+  margin-inline-end: 0px;
+  margin-inline-start: 0px;
+  width: 644px;
+  -webkit-font-smoothing: antialiased;
+}
+
+.lista {
+  box-sizing: border-box;
+  color: rgb(60, 64, 67);
+  display: block;
+  font-family: -apple-system, 'system-ui', 'Segoe UI', Roboto, Oxygen, Ubuntu,
+    Cantarell, 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
+  height: 57px;
+  list-style-type: disc;
+  margin-block-end: 16px;
+  margin-block-start: 16px;
+  margin-inline-end: 0px;
+  margin-inline-start: 0px;
+  padding-inline-start: 40px;
+  width: 644px;
+  -webkit-font-smoothing: antialiased;
 }
