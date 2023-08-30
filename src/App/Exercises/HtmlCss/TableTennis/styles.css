@@ -1,0 +1,64 @@
+.table-tennis table {
+
+  border-radius: 14px;
+
+  overflow: hidden;
+
+  border-collapse: collapse;
+
+  font-size: 18px;
+
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+
+}
+
+
+
+
+.table-tennis tr:nth-child(odd) {
+
+  background: #FFD5DB;
+
+}
+
+
+
+
+.table-tennis tr:nth-child(1) {
+
+  background: #f5f5f5;
+
+  font-weight: bold;
+
+}
+
+
+
+
+.table-tennis td,
+
+.table-tennis th {
+
+  padding: 20px 50px;
+
+  text-align: left;
+
+}
+
+
+
+
+.table-tennis tr>*:nth-child(3) {
+
+  text-align: right;
+
+}
+
+
+
+
+.table-tennis th {
+
+  height: 57px;
+
+}

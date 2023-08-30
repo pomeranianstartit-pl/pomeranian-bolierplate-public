@@ -1,24 +1,130 @@
 header {
+
   grid-area: header;
+
   position: relative;
+
   z-index: 1;
+
   display: flex;
+
   flex-direction: row;
+
   align-items: center;
+
   justify-content: space-between;
+
   padding-left: 1.5rem;
+
   padding-right: 3rem;
+
   box-shadow: 0px 1px 9px 0px var(--color-grey);
-}
-header > a:first-of-type {
-  text-decoration: none;
-}
-header.header-title {
-  color: var(--color-grey);
-  font-weight: normal;
+
 }
 
+header > a:first-of-type {
+
+  text-decoration: none;
+
+}
+
+header.header-title {
+
+  color: var(--color-grey);
+
+  font-weight: normal;
+
+}
+
+
+
+
 header .logo {
-  height: 40vmin;
+
+  width: 150px;
+
   pointer-events: none;
+
+}
+
+
+
+
+header .logo > img {
+
+  width: 100%;
+
+  height: 100%;
+
+}
+
+
+
+
+header .header-info {
+
+  display: flex;
+
+  align-items: center;
+
+  gap: 15px;
+
+}
+
+
+
+
+header .header-image-placeholder {
+
+  width: 49px;
+
+  height: 49px;
+
+  border-radius: 50%;
+
+  background-color: rgba(200, 203, 209, 1);
+
+}
+
+
+
+
+header .header-personal-info > p {
+
+  margin: 0;
+
+}
+
+
+
+
+header .header-personal-info > p:nth-child(1) {
+
+  font-size: 16px;
+
+  line-height: 24px;
+
+}
+
+
+
+
+header .header-personal-info > p:nth-child(2) {
+
+  font-size: 13px;
+
+  line-height: 20px;
+
+  color: rgba(153, 153, 153, 1);
+
+}
+
+header button {
+
+  background-color: transparent;
+
+  border: none;
+
+  cursor: pointer;
+
 }
