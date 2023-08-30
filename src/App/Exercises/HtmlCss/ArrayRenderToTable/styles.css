@@ -1,0 +1,32 @@
+.array-table {
+
+    font-size: 1.1rem;
+    text-align: left;
+    box-shadow: 0px 2.7852022647857666px 9.1602201461792px 0px;
+    border-radius: 0.8rem;
+    overflow: hidden;
+    border-collapse: collapse;
+    height: auto;
+    width: 50rem;
+}
+
+.array-table th {
+    height: 3.5rem;
+}
+
+.array-table tr {
+    height: 5.25rem;
+}
+
+.array-table th,
+.array-table td {
+    padding: 3rem;
+}
+
+.array-table tr:nth-child(odd) {
+    background-color: #FFD5DB;
+}
+
+.array-table tr:first-child {
+    background-color: #F5F5F5;
+}

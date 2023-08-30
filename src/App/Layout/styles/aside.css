@@ -1,5 +1,11 @@
+.icon {
+  margin-left: 0px;
+  padding-left: 0px;
+
+}
+
 aside {
-  border-right: 1px solid var(--color-grey);
+  border-right: 0.25rem solid var(--color-grey);
   padding: 1rem;
   display: flex;
   flex-direction: column;
@@ -10,11 +16,16 @@ aside {
 aside ul {
   /* Nadpisanie domyślnych styli przeglądarki */
   padding-inline-start: 1rem;
+  list-style: none;
+  padding-left: 0px;
 }
 
 aside li {
   line-height: 2rem;
+
 }
+
+
 
 .aside-row {
   display: flex;
@@ -28,6 +39,17 @@ aside li a {
 }
 
 aside a.active {
-  background-color: var(--color-primary-blue);
-  color: var(--color-white);
+  color: var(--secondary-secondary, #ac0f0f);
+}
+
+aside a.active .icon path {
+  stroke: var(--primary-primary, #FE3756);
+}
+
+.accent {
+  accent-color: red;
+}
+
+aside li>:hover {
+  color: red;
 }

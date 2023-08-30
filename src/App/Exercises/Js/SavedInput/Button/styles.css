@@ -1,0 +1,51 @@
+.Mole-Button {
+    border-radius: 8px;
+
+    color: #FFF;
+    display: flex;
+    height: 56px;
+    width: 10rem;
+    align-items: center;
+    padding: 0;
+    justify-content: center;
+    gap: 16px;
+
+    font-size: 18px;
+    font-weight: 500;
+    cursor: pointer;
+
+
+}
+
+.Mole-Button:hover {
+    opacity: 0.8;
+    /* background-color: red; */
+
+}
+
+.Mole-Button--primary {
+    border: 1px solid #23213D;
+    background: #23213D;
+}
+
+.Mole-Button--secondary {
+
+    border: 1px solid #FE3756;
+    background: #FE3756;
+}
+
+.Mole-Button--tertiary {
+    border: 1px solid red;
+    background-color: red;
+}
+
+.mole-controls-panel {
+
+    display: flex;
+
+    flex-direction: row;
+
+    gap: 1rem;
+    padding-bottom: 1rem;
+
+}

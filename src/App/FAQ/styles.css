@@ -1,0 +1,20 @@
+.master-header {
+    color: var(--secondary-secondary, #23213D);
+    font-family: 'Poppins', 'sans-serif';
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 34px;
+}
+
+.question-section {
+    box-shadow: 0px 3px 46px 0px rgba(0, 0, 0, 0.06), 0px 4px 10px 0px rgba(0, 0, 0, 0.07);
+    border-left: 5px solid var(--gray-300, #C8CBD1);
+    border-radius: 8px;
+    padding: 18px 24px;
+    margin-bottom: 18px;
+
+}
+
+.question-header {
+    margin: 18px 0px;
+}

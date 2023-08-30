@@ -1,0 +1,17 @@
+.css-filter-1 {
+    filter: grayscale(100%);
+    -webkit-filter: grayscale(100%);
+    -moz-filter: grayscale(100%);
+}
+
+.css-filter-2 {
+    filter: blur(10px);
+    -webkit-filter: blur(10px);
+    -moz-filter: blur(10px);
+}
+
+.css-filter-3 {
+    filter: hue-rotate(279deg);
+    -webkit-filter: hue-rotate(279deg);
+    -moz-filter: hue-rotate(279deg);
+}

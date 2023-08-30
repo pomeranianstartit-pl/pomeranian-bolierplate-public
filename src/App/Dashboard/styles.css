@@ -1,2 +1,12 @@
+@import './Styles/dashboard-tiles.css';
+@import './Styles/dashboard-about-me.css';
+
 .dashboard {
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    grid-template-rows: calt(100vh - 5rem - 1.5rem - 1.5rem);
+}
+
+.dashboard>div {
+    padding: 1rem;
 }

@@ -1,0 +1,30 @@
+.container {
+    border: 1px solid;
+    background-color: azure;
+    display: table;
+    position: absolute;
+}
+
+.square {
+    width: 150px;
+    height: 150px;
+    background-color: blue;
+    border: 5px solid green;
+    float: left;
+    margin-right: 2rem;
+    color: white;
+    font-size: 3em;
+
+}
+
+.x {
+    position: absolute;
+    top: 20px;
+    left: 0;
+}
+
+.y {
+    position: absolute;
+    top: 20px;
+    left: 0;
+}

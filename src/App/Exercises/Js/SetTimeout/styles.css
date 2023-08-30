@@ -1,0 +1,11 @@
+.memo-warning {
+    color: red;
+    font-size: 2rem;
+}
+
+.memo-board {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1rem;
+    width: min-content;
+}
