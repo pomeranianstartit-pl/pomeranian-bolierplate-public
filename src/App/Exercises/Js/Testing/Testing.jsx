@@ -1,5 +1,6 @@
 import { useState } from 'react';
 import './styles.css';
+import { ToDoList } from './TodoList';
 
 export function sum(a, b) {
   return a + b;
@@ -20,6 +21,7 @@ export const Testing = () => {
         Kliknij
       </button>
       <p>Visible or not {isVisible && <span>Widać</span>}</p>
+      <ToDoList />
     </div>
   );
 };
