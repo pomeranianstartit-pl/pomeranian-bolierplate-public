@@ -7,7 +7,9 @@ export const ExerciseLinks = () => {
     <ul>
       {blockRouterMetaData.map((blockMetaData) => (
         <li key={blockMetaData.path}>
-          <Link to={blockMetaData.path}>{blockMetaData.linkLabel}</Link>
+          <Link to={blockMetaData.path} path>
+            {blockMetaData.linkLabel}
+          </Link>
         </li>
       ))}
     </ul>

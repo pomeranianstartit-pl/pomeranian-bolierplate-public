@@ -3,14 +3,14 @@ import './styles.css';
 export function ExerciseBoxModel() {
   return (
     <>
-      <p id="uniqe-id-box-model3" className=".className-box-model">
+      <p id="uniqe-id-box-model3" className="className-box-model">
         Ćwiczenia z HTML & CSS - CSSBoxModel 3
       </p>
       <div className="parent-box-model">
-        <p id="uniqe-id-box-model" className=".className-box-model">
+        <p id="uniqe-id-box-model" className="className-box-model">
           Ćwiczenia z HTML & CSS - CSSBoxModel
         </p>
-        <p id="uniqe-id-box-model2" className=".className-box-model">
+        <p id="uniqe-id-box-model2" className="className-box-model">
           Ćwiczenia z HTML & CSS - CSSBoxModel 2
         </p>
       </div>

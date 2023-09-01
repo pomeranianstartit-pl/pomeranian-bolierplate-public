@@ -10,6 +10,7 @@ import { Exercises } from './App/Exercises';
 import { CV } from './App/Components/CV/CV';
 import { Blog } from './App/Blog/Blog';
 import { FAQ } from './App/FAQ';
+import { Callendar } from './App/Components/Callendar/Callendar';
 export function App() {
   return (
     <BrowserRouter>
@@ -17,6 +18,7 @@ export function App() {
         <Route path="" element={<Layout withSidebar />}>
           <Route index element={<Navigate to="dashboard" />} />
           <Route path="cv/*" element={<CV />} />
+          <Route path="callendar/*" element={<Callendar />} />
           <Route path="dashboard/*" element={<Dashboard />} />
           <Route path="exercises/*" element={<Exercises />} />
           <Route path="blocks/*" element={<Blocks />} />

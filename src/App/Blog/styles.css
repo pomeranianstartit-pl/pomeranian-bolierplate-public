@@ -63,9 +63,7 @@ div.layout.with-sidebar {
   background-color: var(--color-block-10-body);
   font-size: 40px;
 }
-/*.blog-post:hover :nth-child(n + 3){
-    cursor: crosshair;
-} excersise with pseudoclasses*/
+
 .blog-post h1 {
   font-weight: 800;
   font-size: 42px;
@@ -93,11 +91,6 @@ div.layout.with-sidebar {
   line-height: 24px;
   letter-spacing: 0.15em;
   text-transform: uppercase;
-  /*task to center
-  position: absolute;
-  top: 50%;
-  width: 100%;
-  text-align: center;*/
 }
 .blog-post-signature {
   font-size: 16px;
