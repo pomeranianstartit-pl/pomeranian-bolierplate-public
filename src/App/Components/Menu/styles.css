@@ -6,4 +6,16 @@
 .osoba {
   display: flex;
   flex-direction: column;
+  margin-left: 10px;
+  font-family: Poppins;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: 0em;
+  text-align: left;
+}
+
+.header-menu img {
+  margin-right: 60px;
+  margin-left: 30px;
 }

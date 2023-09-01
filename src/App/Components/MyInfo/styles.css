@@ -1,5 +1,35 @@
 .my-info {
-  width: 450px;
-  height: 600px;
-  /* margin-left:  */
+  width: 500px;
+  height: 500px;
+  margin-left: 100px;
+  margin-right: 100px;
+}
+
+.ramka {
+  width: 295px;
+  height: 387px;
+  top: 45px;
+  left: 23px;
+  gap: 14px;
+  margin-top: 80px;
+}
+
+.imienazwisko {
+  font-family: Poppins;
+  font-size: 22px;
+  font-weight: 500;
+  line-height: 33px;
+  letter-spacing: 0px;
+  text-align: left;
+}
+
+.miasto,
+.tel,
+.mail {
+  font-family: Poppins;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 20px;
+  letter-spacing: 0px;
+  text-align: left;
 }

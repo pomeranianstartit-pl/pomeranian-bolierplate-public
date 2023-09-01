@@ -2,7 +2,7 @@ import './styles.css';
 import { Blok } from '../Blok';
 import cvIconSrc from '../../Images/tiles/personalcard.svg';
 import editIconSrc from '../../Images/tiles/edit.svg';
-// import bookIconSrc from '../../Images/tiles/book.svg';
+import bookIconSrc from '../../Images/tiles/book.svg';
 import codeIconSrc from '../../Images/tiles/code.svg';
 import faqIconSrc from '../../Images/faq.svg';
 
@@ -15,15 +15,15 @@ const blocks = [
   },
   {
     title: 'Ćwiczenia',
-    description: 'Podglad cv wraz z doświadczeniem',
-    link: '/cwiczenia',
+    description: 'wszystkie wykonane ćwiczenia',
+    link: '/exercises',
     iconSrc: editIconSrc,
   },
   {
     title: 'Blog',
     description: 'wpisy blogowe o technologii front-end',
     link: '/blog',
-    iconSrc: '',
+    iconSrc: bookIconSrc,
   },
   {
     title: 'Tech stack',
