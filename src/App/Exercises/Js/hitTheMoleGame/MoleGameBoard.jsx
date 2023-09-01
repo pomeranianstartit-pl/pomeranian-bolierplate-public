@@ -3,39 +3,54 @@ import Krecik from './krecik.png';
 export const MoleGameBoard = ({
   moleArray,
   hitTheMole,
-  scoreCount,
+  score,
   startStopGame,
   gameStarted,
   counter,
 }) => {
   return (
     <div>
-      <div>
-        <h4>CZAS DO KOŃCA </h4>
-        {counter}
-        <h4>WYNIK </h4>
-        {scoreCount}
-        <h4>PRZYCISKI STERUJĄCE</h4>
-        <button onClick={startStopGame}>
-          {gameStarted ? 'STOP' : 'START'}
-        </button>
-      </div>
-      <div className="moleGame">
-        {moleArray.map((mole, index) => (
-          <div className="board">
-            <div className="hole">
-              {mole.isVisible && (
-                <div className="square">
-                  <img
-                    src={Krecik}
-                    onClick={() => hitTheMole(index)}
-                    alt="MOLE!"
-                  />
-                </div>
-              )}
-            </div>
+      <div className="gameOptionsButtons">
+        <div className="gameButtonsRows">
+          <div>
+            <h4>CZAS DO KOŃCA </h4>
+            {counter}
           </div>
-        ))}
+          <div>
+            <h4>WYNIK </h4>
+            {score}
+          </div>
+          <div>
+            <h4>PRZYCISKI STERUJĄCE</h4>
+            <button className="appButton" onClick={startStopGame}>
+              {gameStarted ? 'STOP' : 'START'}
+            </button>
+          </div>
+        </div>
+
+        <div className="moleGame">
+          {moleArray.map((mole, index) => (
+            <div
+              key={index}
+              onClick={() => hitTheMole(index)}
+              className={`board ${
+                mole.isWhacked
+                  ? 'field-green'
+                  : mole.isMissed
+                  ? 'field-red'
+                  : ''
+              }`}
+            >
+              <div className="hole">
+                {mole.isVisible && (
+                  <div className="square">
+                    <img src={Krecik} alt="MOLE!" />
+                  </div>
+                )}
+              </div>
+            </div>
+          ))}
+        </div>
       </div>
     </div>
   );

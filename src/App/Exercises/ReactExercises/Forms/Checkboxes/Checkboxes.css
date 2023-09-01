@@ -1,0 +1,24 @@
+.checkboxes__item {
+  display: flex;
+  margin: 0.5rem 0;
+  cursor: pointer;
+  height: 2.5rem;
+}
+
+.checkboxes__item__check-mark {
+  width: 1.5rem;
+  height: 1.5rem;
+  border-radius: 0.25rem;
+  border: 1px solid #cccccc;
+  margin-right: 0.5rem;
+}
+
+.checkboxes__item__check-mark--checked {
+  background-color: #fe3756;
+  border: 1px solid #fe5407;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+}

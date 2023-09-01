@@ -4,10 +4,15 @@
   --color-dark-gray: #3d3d3d;
   --color-blue-gray: #525e70;
   --color-black: #000000;
+  --text-text-primary: #222;
+  --text-text-secondary: #23213d;
   --color-grey: rgb(60, 64, 67);
+  --gray-80: #f4f5f7;
+  --grey-300: #c8cbd1;
+  --gray-500: #999;
+  --color-gray-200: #ebebeb;
   --gray-700: #6b7280;
   --color-white: rgb(255, 255, 255);
-  /*definig colors*/
   --color-link-hover: #ff4d69;
   --color-block-10-bg: rgba(0, 0, 0, 0.05);
   --color-block-10-body: #e5e5e5;
@@ -65,4 +70,16 @@ code {
 input.input-error,
 textarea.input-error {
   border: 1px solid var(--colors-actions-danger);
+}
+
+.back-link {
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 34px;
+  display: flex;
+  align-items: center;
+  color: var(--text-text-secondary);
+  margin-bottom: 5rem;
 }
