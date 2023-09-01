@@ -3,12 +3,11 @@ import './MoonPhases.css';
 import TextField from '@mui/material/TextField';
 import { AdapterDateFns } from '@mui/x-date-pickers/AdapterDateFns';
 import { LocalizationProvider } from '@mui/x-date-pickers/LocalizationProvider';
-import { DatePicker } from '@mui/x-date-pickers/DatePicker';
 import { StaticDatePicker } from '@mui/x-date-pickers';
 
 export function MoonPhases() {
   const [selectedDate, setSelectedDate] = useState(new Date());
-
+  let moonPhase = 0;
   const handleDateChange = (event) => {
     setSelectedDate(new Date(event.target.value));
   };
@@ -116,13 +115,11 @@ export function MoonPhases() {
       return 100 * phi1;
     }
 
-    const moonPhase = faza(Rok, Miesiac, Dzien, Godzine, Min, Sekunde);
-    const moonPhaseEmojis = ['🌑', '🌒', '🌓', '🌔', '🌕', '🌖', '🌗', '🌘'];
-    let moonPhaseIndex = Math.round((moonPhase + 50) / 12.5);
+    moonPhase = faza(Rok, Miesiac, Dzien, Godzine, Min, Sekunde);
+    const moonPhaseEmojis = ['🌖', '🌗', '🌘', '🌑', '🌒', '🌓', '🌔', '🌕'];
+    let moonPhaseIndex = Math.floor((moonPhase + 100) / 25);
 
     if (moonPhaseIndex >= 8) {
-      moonPhaseIndex = 0;
-    } else if (moonPhaseIndex < 0) {
       moonPhaseIndex = 7;
     }
 
@@ -133,18 +130,19 @@ export function MoonPhases() {
     const moonPhaseEmoji = calculateMoonPhase(selectedDate);
     let moonPhaseText = '';
 
-    // Set moon phase text based on the emoji
-    switch (moonPhaseEmoji) {
-      case '🌑':
-        moonPhaseText = 'New Moon';
-        break;
-      case '🌕':
-        moonPhaseText = 'Full Moon';
-        break;
-      default:
-        moonPhaseText = 'Waxing/Waning Moon';
+    if (moonPhase >= 99 || moonPhase <= -99) {
+      moonPhaseText = 'Full Moon';
     }
-
+    if (moonPhase <= 1 && moonPhase >= -1) {
+      moonPhaseText = 'New Moon';
+    }
+    if (moonPhase >= 40 && moonPhase <= 60) {
+      moonPhaseText = 'First Quarter Moon';
+    }
+    if (moonPhase >= -60 && moonPhase <= -40) {
+      moonPhaseText = 'Third Quarter Moon';
+    }
+    console.log(moonPhaseText);
     return (
       <div className="moon-phase">
         <div className="moon-emoji">{moonPhaseEmoji}</div>
@@ -168,7 +166,7 @@ export function MoonPhases() {
           label="Select a date"
           value={selectedDate}
           onChange={setSelectedDate}
-          renderInput={(params) => <TextField {...params} />}
+          TextField={(params) => <TextField {...params} />}
         />
       </LocalizationProvider>
     </div>
