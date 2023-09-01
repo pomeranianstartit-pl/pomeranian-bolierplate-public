@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="changeStyle">Zmień moje style!</div>
+    <div id="changeTextContent">Zmień mój tekst!</div>
+    <div id="changeClassList" class="classToRemove">Dodaj/Usuń klasy</div>
+
+    <div id="addChild">
+        <p>Dodaj nowy element:</p>
+    </div>
+
+    <div id="removeChild">
+        <p id="removeMe">Usuń mnie!</p>
+        <p>Mnie zostaw</p>
+    </div>
+
+    <script>
+
+        //
+        // Zmiana stylu elementu
+        //
+        const changeStyleElement = document.getElementById('changeStyle');
+        console.log(changeStyleElement.style, 'changeStyleElement.style')
+
+        changeStyleElement.style.color = 'red';
+        changeStyleElement.style.backgroundColor = 'blue';
+        changeStyleElement.style.fontSize = '20px';
+        changeStyleElement.style.width = '10px';
+
+        console.log(changeStyleElement.style.color, 'changeStyleElement.style.color')
+        console.log(changeStyleElement.style.backgroundColor, 'changeStyleElement.style.backgroundColor')
+        console.log(changeStyleElement.style.fontSize, 'changeStyleElement.style.fontSize')
+        console.log(changeStyleElement.style.width, 'changeStyleElement.style.width')
+
+        //
+        // Zmiana tekstu elementu
+        //
+        const changeTextContentElement = document.getElementById('changeTextContent');
+        changeTextContentElement.textContent = 'Zmieniony tekst!'
+
+        // Mniej bezpieczny
+        changeTextContentElement.innerHTML = '<div style="background: red">To jest test tekst!<div>'
+
+
+        //
+        // Zmiana tekstu elementu
+        //
+        const changeClassListElement = document.getElementById('changeClassList');
+        console.log(changeClassListElement.classList, 'Klasy przypisane do elementu')
+        changeClassListElement.classList.remove('classToRemove')
+        console.log(changeClassListElement.classList, 'Klasy przypisane do elementu - po usunięciu')
+        changeClassListElement.classList.add('classToAdd')
+        console.log(changeClassListElement.classList, 'Klasy przypisane do elementu - po dodaniu')
+
+        //
+        // Dodawanie elementu do istniejącego
+        //
+        const addChildElement = document.getElementById('addChild');
+        const newElement = document.createElement('div')
+        newElement.textContent = 'Nowy element!'
+
+        addChildElement.appendChild(newElement)
+
+
+        //
+        // Usuwanie elementu do istniejącego
+        //
+        const removeChildElement = document.getElementById('removeChild');
+        const removeMeElement = document.getElementById('removeMe')
+        removeChildElement.removeChild(removeMeElement)
+
+        //
+        // Dla wszystkich divów zrób display none
+        //
+
+        // const divs = document.getElementsByTagName('div')
+        // for (div of divs) {
+            // div.style.display = 'none'
+        // }
+
+    </script>
+</body>
+</html>
