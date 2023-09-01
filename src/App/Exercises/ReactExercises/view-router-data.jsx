@@ -6,7 +6,9 @@ import { MuiMetaData } from './Mui/router-data';
 import { FormsMetaData } from './Forms/router-data';
 import { LocalDevAndFetchMetaData } from './LocalDevAndFetch/router-data';
 import { TodoListMetaData } from './TodoList/router-data';
+import { ReactUseRefMetaData } from './ReactUseRef/router-data';
 import { ReduxTestMetaData } from './ReduxTest/router-data';
+
 
 export const blockRouterMetaData = [
   SubRouteExampleMetaData,
@@ -16,6 +18,8 @@ export const blockRouterMetaData = [
   FormsMetaData,
   LocalDevAndFetchMetaData,
   TodoListMetaData,
+  ReactUseRefMetaData,
   ReduxTestMetaData,
+
 ];
 export const blockRouterData = getParsedRouterDataList(blockRouterMetaData);
