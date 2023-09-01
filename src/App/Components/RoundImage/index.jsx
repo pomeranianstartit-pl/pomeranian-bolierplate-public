@@ -1,7 +1,7 @@
 import './styles.css';
 
 // export const RoundImage = (props) =>
-export const RoundImage = ({ url, size = '150px' }) => {
+export const RoundImage = ({ url, size = '50px' }) => {
   // const { url } = props;
   return (
     <div

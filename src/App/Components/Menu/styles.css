@@ -1,0 +1,9 @@
+.header-menu {
+  display: flex;
+  align-items: center;
+}
+
+.osoba {
+  display: flex;
+  flex-direction: column;
+}
