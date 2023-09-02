@@ -1,0 +1,195 @@
+.bloczki {
+  position: relative;
+}
+
+.bloczki p {
+  font-family: Poppins;
+  font-size: 22px;
+  font-weight: 400;
+  line-height: 36px;
+  letter-spacing: 0em;
+  /* text-align: justified; */
+}
+
+.blok1 {
+  width: 905px;
+  height: 83px;
+  gap: 11px;
+  margin-bottom: 60px;
+  margin-top: 35px;
+}
+
+.blok1 .p1 {
+  width: 905px;
+  height: 36px;
+  background-color: white;
+  text-align: left;
+}
+
+.blok1 .p2 {
+  width: 833px;
+  height: 36px;
+  background-color: white;
+  margin-left: 20px;
+}
+
+.blok2_szary {
+  width: 984px;
+  height: 162px;
+  padding: 17px 21px 17px 21px;
+  gap: 10px;
+  background: #ebebeb;
+  position: relative;
+}
+
+.blok3_pink {
+  position: absolute;
+  top: -5px;
+  right: -20px;
+  width: 243px;
+  height: 145px;
+  padding: 12px;
+  border-radius: 5.5px;
+  border: 1px;
+  background-color: #ffd5db;
+  text-align: center;
+}
+
+.blok3_pink .p4 {
+  font-family: Poppins;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 30px;
+  letter-spacing: 0em;
+  text-align: center;
+  margin: 1px;
+}
+
+.blok4_pink_img {
+  width: 984px;
+  height: 279px;
+  padding: 32px 29px 0px 456px;
+  gap: 10px;
+  background-color: #ffd5db;
+  /* float: right; */
+}
+
+.bloczki img {
+  width: 402px;
+  height: 350px;
+  top: 27px;
+  left: 33px;
+  padding: 0px 24px 0px 24px;
+  border-radius: 8px;
+  gap: 8px;
+}
+
+.blok5_ciemny {
+  width: 984px;
+  height: 162px;
+  padding: 17px 21px 17px 21px;
+  gap: 10px;
+  background-color: #4b5563;
+}
+
+.blok5_ciemny .p6 {
+  color: white;
+}
+
+.blok6_pink_boczny {
+  position: absolute;
+  top: -6px;
+  right: -12px;
+  width: 100px;
+  height: 50px;
+  background-color: #ffd5db;
+  color: #4b5563;
+  border: 1px solid #999;
+  border-radius: 8px;
+  font-size: 12px;
+  text-align: center;
+}
+
+.blok6_pink_boczny .p7 {
+  font-family: Poppins;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 21px;
+  letter-spacing: 0em;
+  text-align: center;
+  margin: 1px;
+}
+
+.blok7_pink_srodek {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 60px;
+  border-radius: 8px;
+}
+
+.blok7_pink_srodek button {
+  font-family: Poppins;
+  font-size: 17px;
+  font-weight: 400;
+  width: 240px;
+  height: 50px;
+  border-color: red;
+  background-color: #ffd5db;
+  color: black;
+}
+
+.blok8 .p9 {
+  margin-bottom: 50px;
+}
+
+.blok9 {
+  position: relative;
+  margin-top: 60px;
+  width: 100%;
+  height: 400px;
+  border-radius: 8px;
+  border: 2px solid #6b7280;
+}
+
+.kwadraty {
+  position: absolute;
+  bottom: 0;
+  padding: 50px;
+}
+
+.blok9 .kwad1 {
+  position: absolute;
+  bottom: 50px;
+  left: 50px;
+  width: 150px;
+  height: 150px;
+  background-color: #c8cbd1;
+  border-radius: 8px;
+  border: 2px solid #c8cbd1;
+  z-index: 1;
+}
+
+.blok9 .kwad2 {
+  position: absolute;
+  left: 100px;
+  bottom: 100px;
+  width: 150px;
+  height: 150px;
+  background-color: #999;
+  border-radius: 8px;
+  border: 2px solid #c8cbd1;
+  z-index: 2;
+}
+
+.blok9 .kwad3 {
+  position: absolute;
+  left: 150px;
+  bottom: 150px;
+  width: 150px;
+  height: 150px;
+  background-color: #6b7280;
+  border-radius: 8px;
+  border: 2px solid #c8cbd1;
+  z-index: 3;
+}
