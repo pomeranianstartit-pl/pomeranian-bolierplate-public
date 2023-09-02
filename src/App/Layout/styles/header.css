@@ -22,3 +22,11 @@ header .logo {
   height: 40vmin;
   pointer-events: none;
 }
+
+.right-menu {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 53px;
+}
