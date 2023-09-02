@@ -1,5 +1,6 @@
 import React from 'react';
 import { Outlet } from 'react-router-dom';
+import { CookieBanner } from '../Components/CookieBanner';
 
 import { AppHeader } from './AppHeader';
 import { AppFooter } from './AppFooter';
@@ -22,6 +23,7 @@ export const Layout = ({ withSidebar }) => {
           <Outlet />
         </main>
         <AppFooter />
+        <CookieBanner />
       </div>
     </ErrorBoundary>
   );
