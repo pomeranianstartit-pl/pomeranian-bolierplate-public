@@ -1,0 +1,58 @@
+* {
+    /* color: red: */
+}
+
+.universal {
+    color: blue;
+
+}
+
+
+.class-selector {
+    color: pink;
+}
+#id-selector {
+    color: orchid;
+}
+.descendant span {
+    color: yellow;
+}
+.child-selector > span {
+    border: 2px solid black;
+}
+.adjacent-sibling + b {
+    color: red;
+}
+.general-sibling ~ b {
+    color: blue;
+}
+.pseudo li:first-child {
+color: brown;
+}
+.pseudo li:last-child {
+    color: green;
+}
+.link-visited:hover {
+    color: aqua;
+}
+input:focus {
+    background-color: blueviolet;
+}
+.link-visited:visited {
+    color: yellowgreen;
+}
+.before::before {
+    content: '-';
+    border: 2px solid orange;
+}
+.after::after {
+    content: '+';
+    color: red;
+    background-color: blue;
+}
+.attribute-selector li[id] {
+    color: blueviolet;
+}
+.attribute-selector a[href*="google"] {
+    color: rgb(87, 193, 79);
+}

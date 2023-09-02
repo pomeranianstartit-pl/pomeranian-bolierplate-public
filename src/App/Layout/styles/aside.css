@@ -23,11 +23,34 @@ aside li {
 }
 
 aside li a {
-  display: block;
-  padding: 0.5rem;
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  padding: 0.5rem 0;
 }
 
-aside a.active {
-  background-color: var(--color-primary-blue);
-  color: var(--color-white);
+aside a,
+aside a:visited {
+  color: #23213D;
+
+}
+aside a.active,
+aside li a:hover {
+  color: #FE3756;
+}
+.icon {
+  margin-right: 1rem;
+}
+
+.icon path {
+  stroke: #23213D;
+}
+aside a:hover .icon path,
+aside a.active .icon path {
+  stroke: #FE3756;
+}
+aside ul {
+  /* Nadpisanie domyślnych styli przeglądarki */
+  padding-inline-start: 0.5rem;
+  list-style: none;
 }

@@ -1,0 +1,31 @@
+.memo-tile {
+    border-radius: 0.5rem;
+    width: 6.5rem;
+    height: 6.5rem;
+    cursor: pointer;
+    
+    /* transform: scale(0); */
+}
+.memo-tile--neutral {
+    background: #EBEBEB;
+}
+.memo-tile--correct {
+    background: #E2FBD7;
+}
+.memo-tile--incorrect {
+    background: #F3AEA8;
+}
+.memo-letter{
+    transform: scaleX(0);
+    transition: 300ms ;
+    font-size: 4rem;
+    text-align: center;
+    user-select: none;
+    line-height: 6.5rem;
+}
+.memo-letter--is-visible {
+    transform: scaleX(1);
+    /* background-image: url("./memo.svg");
+    background-repeat: no-repeat;
+    background-position: center; */
+}

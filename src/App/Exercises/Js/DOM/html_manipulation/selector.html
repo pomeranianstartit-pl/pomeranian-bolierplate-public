@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button onclick="sayHello()" id="buttonClickMe">Kliknij mnie!</button>
+    <div class="exampleClass">Content 1</div>
+    <div simpleAttr="value" class="exampleClass">Content 2</div>
+    <div simpleAttr="value" class="exampleClass">Content 3</div>
+
+    <!-- ZNAJDŹ ten element -->
+    <p simpleAttr="value" class="exampleClass">Content 2</p>
+    <div class="exampleClass">Content 4</div>
+
+    <p class="exampleClass">Paragraph 3</p>
+
+    <section id="sectionId">
+        <p>Paragraph 1</p>
+        <p>Paragraph 2</p>
+    </section>
+
+    <div test="test"></div>
+    <div test=""></div>
+
+    <input id="inputElement" type="text" placeholder="To jest input">
+    <input id="inputElementKeyDown" type="text" placeholder="To jest input z obsługą key down">
+
+    <script>
+
+        // 1. Sposób na przekazanie event listenera
+        function sayHello() {
+            console.log('say hello!')
+        }
+
+        // 2. Sposób na przekazanie event listenera
+        // const inputElement = document.getElementById('inputElement');
+        // inputElement.onclick = (e) => {
+        //     console.log('say hello from input!', e)
+        // }
+
+        // 3. Sposób na przekazanie event listenera
+        const inputElement = document.getElementById('inputElement');
+
+        const handleClick = (e) => {
+            console.log('say hello from input!', e)
+        }
+
+        // dodawanie event listenera
+        inputElement.addEventListener('click', handleClick)
+
+        // usuwanie event listenera
+        inputElement.removeEventListener('click', handleClick)
+
+        // 4. Obsługa eventu keydown
+        const inputElementKeyDown = document.getElementById('inputElementKeyDown');
+        inputElementKeyDown.addEventListener('keydown', (e) => {
+            console.log('say hello from input key down!', e.key, e.keyCode)
+        })
+
+
+        // 
+        // GETELEMENTBYID -> ZWRACA ELEMENT O PODANYM ID
+        //
+        const buttonClickMe = document.getElementById('buttonClickMe');
+        console.log('To jest wyszukany element button o danym id:', buttonClickMe);
+
+        const sectionWithDiv = document.getElementById('sectionId');
+
+        //
+        // GETELEMENTSBYTAGNAME -> ZWRACA TABLICĘ ELEMENTÓW O PODANYM TAGU
+        //
+        const paragaphs = sectionWithDiv.getElementsByTagName('p')
+        console.log('To są wyszukane paragraphy w section o id = sectionId:', paragaphs)
+
+        for (paragaph of paragaphs) {
+            console.log(paragaph, 'to jest pojedynczy paragraph');
+            console.log(paragaph.textContent, 'to jest tekst w paragraph');
+        }
+
+        //
+        // GETELEMENTSBYCLASSNAME -> ZWRACA TABLICĘ ELEMENTÓW O PODANEJ KLASIE
+        //
+        const exampleClasses = document.getElementsByClassName('exampleClass');
+        console.log('To są wyszukane elementy o klasie exampleClass:', exampleClasses);
+
+        //
+        // QUERYSELECTOR -> ZWRACA PIERWSZY ELEMENT PASUJĄCY DO PODANEGO SELEKTORA
+        //
+        const firstParagraph = document.querySelector('p');
+        console.log('To jest pierwszy wyszukany paragraph:', firstParagraph);
+
+        //
+        // QUERYSELECTORALL -> ZWRACA PIERWSZY ELEMENT PASUJĄCY DO PODANEGO SELEKTORA
+        //
+        const allParagraphs = document.querySelectorAll('p');
+        console.log('To są wszystkie wyszukane paragraphy:', allParagraphs);
+
+        //
+        // QUERYSELECTOR -> MORE
+
+        // Znajdź element o id
+        const section = document.querySelector('#sectionId');
+        console.log('To jest wyszukany element o id = sectionId przy użyciu querySelector:', section);
+
+        // Znajdź element o klasie
+        const exampleClass = document.querySelector('.exampleClass');
+        console.log('To jest wyszukany element o klasie exampleClass przy użyciu querySelector:', exampleClass);
+
+        // Znajdź element o klasie i tagu
+        const exampleClassAndParagraph = document.querySelector('p.exampleClass');
+        console.log('To jest wyszukany element o klasie exampleClass i tagu p przy użyciu querySelector:', exampleClassAndParagraph);
+
+        // <div test="test"></div>
+        // <div test=""></div>
+        // Znajdź element o danym atrybucie
+        const divWithAttribute = document.querySelector('[test]');
+        console.log('To jest wyszukany element o atrybucie test przy użyciu querySelector:', divWithAttribute);
+
+        const divWithAttributeAndValue = document.querySelector('[test="test"]');
+        console.log('To jest wyszukany element o atrybucie test i wartości tego atrybutu = test przy użyciu querySelector:', divWithAttributeAndValue);
+
+        
+    </script>
+</body>
+</html>

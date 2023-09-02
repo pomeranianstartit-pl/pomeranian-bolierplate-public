@@ -1,0 +1,11 @@
+.mole-warning {
+    color: red;
+    font-size: 2rem;
+}
+
+.mole-board {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 1rem;
+    width: min-content;
+}

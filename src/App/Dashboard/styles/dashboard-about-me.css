@@ -1,0 +1,50 @@
+.dashboard-about-me .email-container, 
+.dashboard-about-me .telephone-container {
+color: var(--colors-black-100, #000);
+font-feature-settings: 'clig' off, 'liga' off;
+font-size: 14px;
+font-style: normal;
+font-weight: 400;
+line-height: 20px; /* 142.857% */
+opacity: 0.4;
+}
+
+
+.dashboard-about-me .email-container p, .dashboard-about-me .telephone-container p {
+  margin: 0;
+}
+
+.dashboard-about-me .telephone-container {
+    margin-top: 20px;
+}
+.dashboard .dashboard-about-me {
+    padding-top: 5rem;
+  }
+  
+  .dashboard .dashboard-about-me .person {
+    background: url(http://placekitten.com/500/500) no-repeat center center;
+    background-size: 11rem;
+    border-radius: 50%;
+    height: 7rem;
+    width: 7rem;
+  }
+  
+  .dashboard-about-me .email-container, 
+  .dashboard-about-me .telephone-container {
+  color: var(--colors-black-100, #000);
+  font-feature-settings: 'clig' off, 'liga' off;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 20px; /* 142.857% */
+  opacity: 0.4;
+  }
+  
+  
+  .dashboard-about-me .email-container p, .dashboard-about-me .telephone-container p {
+    margin: 0;
+  }
+  
+  .dashboard-about-me .telephone-container {
+      margin-top: 20px;
+  }
