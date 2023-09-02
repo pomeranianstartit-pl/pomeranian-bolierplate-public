@@ -1,0 +1,35 @@
+.float__image img {
+  float: left;
+}
+
+.clearfix:before,
+.clearfix:after {
+  /* czyszczenie floata - poprzez pseudoklasę ":before" - odtąd sekcja nie jest opływalna */
+  clear: both;
+  content: '';
+  visibility: hidden;
+  display: block;
+  height: 0;
+}
+
+.float-layout-left {
+  height: 200px;
+  width: 22%;
+  border: 1px solid red;
+  float: left;
+}
+
+.float-layout-right {
+  height: 200px;
+  width: 72%;
+  border: 1px solid red;
+  float: right;
+}
+
+.float-layout-footer {
+  /* height: 100%;
+  width: 100px; */
+  clear: both;
+  /* border: 1px solid red; */
+  background: red;
+}
