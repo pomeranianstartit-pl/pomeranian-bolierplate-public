@@ -18,6 +18,7 @@ import { blockRouterMetaData as blockRouterMetaArrayRenderToTable } from './Arra
 import { blockRouterMetaData as BandTables } from './ArrayRenderTableExerc/router-data';
 import { blockRouterMetaData as FloatsAndPositioningExercices } from './FloatsAndPositioningExercices/router-data';
 import { blockRouterMetaData as FloatsAndPositioningSnowWolf } from './FloatsAndPositioningSnowWolf/router-data';
+import { blockRouterMetaData as RWD } from './RWD/router-data';
 
 export const blockRouterMetaData = [
   blockRouterMetaData121220231,
@@ -38,6 +39,7 @@ export const blockRouterMetaData = [
   BandTables,
   FloatsAndPositioningExercices,
   FloatsAndPositioningSnowWolf,
+  RWD,
 ];
 
 export const blockRouterData = getParsedRouterDataList(blockRouterMetaData);
