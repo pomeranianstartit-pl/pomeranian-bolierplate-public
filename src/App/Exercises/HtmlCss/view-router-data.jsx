@@ -19,6 +19,7 @@ import { blockRouterMetaData as OFontsMetaData } from './OFonts/router-data';
 import { blockRouterMetaData as FaqSectionMetaData } from './FaqSection/router-data';
 import { blockRouterMetaData as FloatsAndPositioningExercisesMetaData } from './FloatsAndPositioningExercises/router-data';
 import { blockRouterMetaData as FloatsMetaData } from './Floats/router-data';
+import { blockRouterMetaData as RWDMetaData } from './RWD/router-data';
 
 export const blockRouterMetaData = [
   blockRouterMetaData121220231,
@@ -40,5 +41,6 @@ export const blockRouterMetaData = [
   FaqSectionMetaData,
   FloatsAndPositioningExercisesMetaData,
   FloatsMetaData,
+  RWDMetaData,
 ];
 export const blockRouterData = getParsedRouterDataList(blockRouterMetaData);
