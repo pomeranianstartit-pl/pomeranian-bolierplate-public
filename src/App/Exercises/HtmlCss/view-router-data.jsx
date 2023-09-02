@@ -12,7 +12,7 @@ import { blockRouterMetaData as blockRouterMetaDataArrayRenderToTable } from './
 import { blockRouterMetaData as blockRouterMetaDataArrayRenderToTable2 } from './ArrayRenderToTable2/router-data';
 import { blockRouterMetaData as blockRouterMetaDataFloatsAndPositioningExercises } from './FloatsAndPositioningExercises/router-data';
 import { blockRouterMetaData as blockRouterMetaDataFloatsAndPositioning } from './FloatsAndPositioning/router-data';
-
+import { blockRouterMetaData as blockRouterMetaDataRWD } from './RWD/router-data';
 export const blockRouterMetaData = [
   blockRouterMetaData121220231,
   blockRouterMetaDataTextFundaments,
@@ -26,6 +26,7 @@ export const blockRouterMetaData = [
   blockRouterMetaDataArrayRenderToTable2,
   blockRouterMetaDataFloatsAndPositioningExercises,
   blockRouterMetaDataFloatsAndPositioning,
+  blockRouterMetaDataRWD,
 ];
 
 export const blockRouterData = getParsedRouterDataList(blockRouterMetaData);

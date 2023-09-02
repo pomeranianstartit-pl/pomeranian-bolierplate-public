@@ -1,0 +1,45 @@
+.div1 {
+  height: 100px;
+
+  background: green;
+
+  display: flex;
+
+  align-items: center;
+}
+
+@media (max-width: 600px) {
+  .div1 {
+    background: red;
+
+    flex-direction: column;
+  }
+}
+
+/* Media type: all, print, screen, speech */
+
+@media screen and (min-width: 320px) and (max-width: 480px) {
+  .div1 {
+    background: hotpink;
+  }
+}
+
+/* ------------------------------------------------------------- */
+
+/* Media quries dla ciemnego motywu */
+
+.div2 {
+  margin: 50px 0;
+
+  height: 100px;
+
+  background: blue;
+}
+
+@media (prefers-color-scheme: dark) {
+  .div2 {
+    color: white;
+
+    background: black;
+  }
+}
