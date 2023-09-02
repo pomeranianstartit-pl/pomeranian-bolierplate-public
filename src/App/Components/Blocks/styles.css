@@ -1,0 +1,38 @@
+.blocks {
+  display: flex;
+  flex-flow: row wrap;
+}
+
+.block {
+  width: 366px;
+  height: 380px;
+  box-shadow: 0px 2px 26px 0px #fe37568a;
+  margin: 20px;
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10px;
+}
+
+.block h4 {
+  font-size: 2em;
+  margin: 0;
+}
+
+.block img {
+  height: 60px;
+}
+
+.block p {
+  font-size: 1.5em;
+  text-align: center;
+  margin: 0 2em 0.5em;
+}
+
+.block a {
+  font-size: 1.5em;
+  font-weight: bold;
+  text-decoration: none;
+  color: var(--pink-color);
+}
