@@ -26,15 +26,13 @@
   background-color: lightskyblue;
 }  */
 
-p {
+/* p {
   overflow: auto; /* scroll; */
-}
 
-/* 
---- BLOKOWE: ---
+/* --- BLOKOWE: ---
 h1, div, p
 
 --- INLINE: ---
 span, b, strong, i, a 
 
-*/
+ */

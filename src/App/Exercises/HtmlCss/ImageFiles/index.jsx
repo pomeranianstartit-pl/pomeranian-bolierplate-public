@@ -3,7 +3,7 @@ import star from '../../../Images/star.svg';
 
 export function Exercise() {
   return (
-    <div>
+    <div className="kot">
       <img
         alt="kotek"
         src="https://premium4animals.pl/upload/premium4/blog//Kot-bengalski-brazowy.jpg"

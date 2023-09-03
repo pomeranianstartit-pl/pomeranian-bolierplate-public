@@ -6,16 +6,18 @@
 .block {
   width: 202px;
   height: 192px;
-  box-shadow: 0px 2px 26px 0px #fe37568a;
   margin: 20px;
   display: flex;
   flex-flow: column;
   justify-content: center;
   align-items: center;
   border-radius: 10px;
-  /* padding: 20px 28px 20px 28px;
-  border: 0.6600000262260437px;
-  gap: 10px; */
+  box-shadow: 0px 1px 5px 0px gray;
+  /* padding: 20px 28px 20px 28px;*/
+}
+
+.block:hover {
+  box-shadow: 0px 2px 26px 0px #fe37568a;
 }
 
 .block h4 {
@@ -25,7 +27,8 @@
   line-height: 20px;
   letter-spacing: 0em;
   text-align: center;
-  margin: 10px;
+  margin-top: 15px;
+  margin-bottom: 10px;
 }
 
 .block img {
@@ -52,4 +55,6 @@
   letter-spacing: 0em;
   text-align: center;
   color: #ff4d69;
+  margin-top: 5px;
+  margin-bottom: 20px;
 }

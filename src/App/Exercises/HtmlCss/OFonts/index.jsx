@@ -15,7 +15,7 @@ export function Exercise() {
   };
 
   return (
-    <>
+    <div className="przyciski">
       <button className="Poppins" onClick={handleClick}>
         Poppins
       </button>
@@ -48,6 +48,6 @@ export function Exercise() {
         laboriosam nisi assumenda, amet impedit ab in ipsum // officiis.
         Corrupti, officiis?..
       </p>
-    </>
+    </div>
   );
 }

@@ -10,6 +10,12 @@ import { Exercises } from './App/Exercises';
 import { Calendar } from './App/Calendar';
 import { CV } from './App/CV';
 import { Blog } from './App/Blog';
+import { Material } from './App/Material';
+
+import '@fontsource/roboto/300.css';
+import '@fontsource/roboto/400.css';
+import '@fontsource/roboto/500.css';
+import '@fontsource/roboto/700.css';
 
 export function App() {
   console.log('App.jsx');
@@ -24,6 +30,7 @@ export function App() {
           <Route path="exercises/*" element={<Exercises />} />
           <Route path="blocks/*" element={<Blocks />} />
           <Route path="blog/*" element={<Blog />} />
+          <Route path="material/*" element={<Material />} />
           <Route path="*" element={<NotFound />} />
         </Route>
       </Routes>
