@@ -6,6 +6,7 @@ import { blockRouterMetaData as blockRouterMetaDataJsFunction1 } from './Exercis
 import { blockRouterMetaData as blockRouterMetaDataJsBoolean } from './Boolean/router-data';
 import { blockRouterMetaData as blockRouterMetaDataJsIfSwitch } from './IfSwitch/router-data';
 import { blockRouterMetaData as blockRouterMetaDataJsNumbers } from './Numbers/router-data';
+import { blockRouterMetaData as blockRouterMetaDataJsJsNumbersTraining } from './JsNumbersTraining/router-data';
 export const blockRouterMetaData = [
   blockRouterMetaDataJsVariables1,
   blockRouterMetaDataJsVariables2,
@@ -13,5 +14,6 @@ export const blockRouterMetaData = [
   blockRouterMetaDataJsBoolean,
   blockRouterMetaDataJsIfSwitch,
   blockRouterMetaDataJsNumbers,
+  blockRouterMetaDataJsJsNumbersTraining,
 ];
 export const blockRouterData = getParsedRouterDataList(blockRouterMetaData);
