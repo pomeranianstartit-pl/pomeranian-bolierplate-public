@@ -1,6 +1,13 @@
 .calendar-container {
   display: flex;
-  justify-content: center;
-  align-items: center;
+  justify-content: space-around;
+  align-items: flex-start;
+  padding: 2rem;
   height: 100vh;
+}
+.MuiInputBase-input {
+  color: var(--color-link-hover) !important;
+}
+button .MuiButton-root {
+  display: none;
 }

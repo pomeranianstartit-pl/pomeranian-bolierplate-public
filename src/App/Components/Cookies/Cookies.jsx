@@ -15,7 +15,7 @@ const Cookies = () => {
     setIsCookie(true);
   };
   const handleAgreementCustomization = () => {
-    console.log('WTF he cliked? Who does that'); //to change if exercise will be continued
+    console.log('WTF he cliked? Who does that'); //to change if exercise will be continued(nope, it il not be continued, just leave it here to do sth)
   };
   //for initial render
   useEffect(() => {

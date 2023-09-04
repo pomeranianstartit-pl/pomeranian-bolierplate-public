@@ -44,12 +44,6 @@ export const Callendar = () => {
   const hasExerciseOnDate = (date) => {
     const formattedDate = format(date, 'dd-MM-yyyy');
     return blockRouterData.some((exercise) => {
-      console.log(
-        'Exercise:',
-        exercise.date,
-        exercise.path,
-        exercise.linkLabel
-      );
       return exercise.date === formattedDate;
     });
   };
@@ -66,8 +60,18 @@ export const Callendar = () => {
         <StaticDatePicker
           value={selectedDate}
           onChange={handleDateChange}
-          textField={(params) => <TextField {...params} />}
+          defaultValue={'2023-06-01'}
+          slotProps={{
+            actionBar: {
+              actions: [''],
+            },
+          }}
+          textField={(params) => (
+            <TextField {...params} className="custom-date-picker" />
+          )}
           shouldDisableDate={(date) => !hasExerciseOnDate(date)}
+          okButtonText=""
+          cancelButtonText=""
         />
       </LocalizationProvider>
       <div className="exercise-links">
