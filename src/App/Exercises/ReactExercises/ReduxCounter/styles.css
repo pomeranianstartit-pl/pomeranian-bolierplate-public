@@ -1,0 +1,24 @@
+.redux-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  max-width: 50rem;
+  column-gap: 2rem;
+}
+
+.redux-container > * {
+  border: 1px solid black;
+  width: 100%;
+  padding: 1rem;
+}
+
+.redux-component {
+  display: inline-block;
+}
+.redux-component > * {
+  margin-right: 0.5rem;
+  margin-block: 0.5rem;
+}
+
+.redux-button {
+  padding: 0.5rem;
+}

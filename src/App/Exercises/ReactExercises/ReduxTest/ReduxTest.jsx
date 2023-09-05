@@ -1,26 +1,22 @@
 import { useDispatch, useSelector } from 'react-redux';
-import { toggleProfile } from '../../../Store';
+import { selectProfile, toggleProfile } from '../../../Store/testSlice';
 import './styles.css';
 
 export const CardDetails = () => {
-  const profile = useSelector((state) => {
-    console.log(state);
-    return state.testSlice.profile;
-  });
+  const profile = useSelector(selectProfile);
+
   return (
     <div>
-      CardDetails
+      CardDetails {profile}
       {profile === 'business' && <div>Company Logo</div>}
     </div>
   );
 };
 
 export const Accounts = () => {
-  const profile = useSelector((state) => {
-    console.log(state);
-    return state.testSlice.profile;
-  });
+  const profile = useSelector(selectProfile);
   const dispatch = useDispatch();
+
   return (
     <div>
       Accounts
