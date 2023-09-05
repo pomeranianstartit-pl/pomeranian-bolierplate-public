@@ -1,0 +1,20 @@
+.container--react-use-ref {
+  display: flex;
+  flex-direction: column;
+}
+
+.container--react-use-ref label {
+  font-size: smaller;
+  margin-bottom: -0.4rem;
+}
+.container--react-use-ref input {
+  margin: 0.5rem;
+  width: 15rem;
+}
+
+.container--react-use-ref input:focus {
+  background-color: chocolate;
+}
+.container--react-use-ref-scroll-too {
+  margin-top: 700px;
+}
