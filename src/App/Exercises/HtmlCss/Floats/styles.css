@@ -1,3 +1,9 @@
+.all {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
 .bloczki {
   position: relative;
 }
@@ -6,46 +12,41 @@
   font-family: Poppins;
   font-size: 22px;
   font-weight: 400;
-  line-height: 36px;
-  letter-spacing: 0em;
-  /* text-align: justified; */
 }
 
 .blok1 {
   width: 905px;
   height: 83px;
-  gap: 11px;
   margin-bottom: 60px;
   margin-top: 35px;
 }
 
 .blok1 .p1 {
-  width: 905px;
+  width: 900px;
   height: 36px;
   background-color: white;
   text-align: left;
 }
 
 .blok1 .p2 {
-  width: 833px;
+  width: 900px;
   height: 36px;
   background-color: white;
   margin-left: 20px;
 }
 
 .blok2_szary {
-  width: 984px;
-  height: 162px;
+  width: 980px;
+  height: 160px;
   padding: 17px 21px 17px 21px;
-  gap: 10px;
   background: #ebebeb;
-  position: relative;
+  position: relative; /*rozowy w szarym i szary-relative a rozowy-absolute plus przesuniecia wzgl szarego */
 }
 
 .blok3_pink {
   position: absolute;
-  top: -5px;
-  right: -20px;
+  top: -55px;
+  right: -100px;
   width: 243px;
   height: 145px;
   padding: 12px;
@@ -69,27 +70,28 @@
   width: 984px;
   height: 279px;
   padding: 32px 29px 0px 456px;
-  gap: 10px;
   background-color: #ffd5db;
+  position: relative;
+  margin-bottom: 150px;
   /* float: right; */
 }
 
 .bloczki img {
-  width: 402px;
+  width: 400px;
   height: 350px;
-  top: 27px;
-  left: 33px;
-  padding: 0px 24px 0px 24px;
-  border-radius: 8px;
-  gap: 8px;
+  padding: 10px;
+  border-radius: 3em;
+  position: absolute;
+  top: 40px;
+  left: 40px;
 }
 
 .blok5_ciemny {
   width: 984px;
   height: 162px;
   padding: 17px 21px 17px 21px;
-  gap: 10px;
   background-color: #4b5563;
+  margin-bottom: 100px;
 }
 
 .blok5_ciemny .p6 {
@@ -97,20 +99,14 @@
 }
 
 .blok6_pink_boczny {
-  position: absolute;
-  top: -6px;
-  right: -12px;
+  position: sticky;
+  top: 0px;
+  margin: -150px -150px 0px 1100px;
   width: 100px;
   height: 50px;
-  background-color: #ffd5db;
-  color: #4b5563;
-  border: 1px solid #999;
-  border-radius: 8px;
-  font-size: 12px;
-  text-align: center;
 }
 
-.blok6_pink_boczny .p7 {
+.blok6_pink_boczny button {
   font-family: Poppins;
   font-size: 12px;
   font-weight: 400;
@@ -118,14 +114,17 @@
   letter-spacing: 0em;
   text-align: center;
   margin: 1px;
+  color: #4b5563;
+  background-color: #ffd5db;
+  border: 1px solid #4b5563;
+  border-radius: 10px;
 }
 
 .blok7_pink_srodek {
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-top: 60px;
-  border-radius: 8px;
+  margin: 100px;
 }
 
 .blok7_pink_srodek button {
@@ -135,19 +134,22 @@
   width: 240px;
   height: 50px;
   border-color: red;
+  border-radius: 10px;
   background-color: #ffd5db;
   color: black;
 }
 
-.blok8 .p9 {
+.blok8 {
   margin-bottom: 50px;
+  width: 990px;
+  height: 470px;
 }
 
 .blok9 {
   position: relative;
   margin-top: 60px;
-  width: 100%;
-  height: 400px;
+  width: 985px;
+  height: 246px;
   border-radius: 8px;
   border: 2px solid #6b7280;
 }
@@ -155,15 +157,15 @@
 .kwadraty {
   position: absolute;
   bottom: 0;
-  padding: 50px;
+  padding: 30px;
 }
 
 .blok9 .kwad1 {
   position: absolute;
-  bottom: 50px;
-  left: 50px;
-  width: 150px;
-  height: 150px;
+  bottom: 30px;
+  left: 30px;
+  width: 120px;
+  height: 120px;
   background-color: #c8cbd1;
   border-radius: 8px;
   border: 2px solid #c8cbd1;
@@ -172,10 +174,10 @@
 
 .blok9 .kwad2 {
   position: absolute;
-  left: 100px;
-  bottom: 100px;
-  width: 150px;
-  height: 150px;
+  left: 60px;
+  bottom: 60px;
+  width: 120px;
+  height: 120px;
   background-color: #999;
   border-radius: 8px;
   border: 2px solid #c8cbd1;
@@ -184,10 +186,10 @@
 
 .blok9 .kwad3 {
   position: absolute;
-  left: 150px;
-  bottom: 150px;
-  width: 150px;
-  height: 150px;
+  left: 90px;
+  bottom: 90px;
+  width: 120px;
+  height: 120px;
   background-color: #6b7280;
   border-radius: 8px;
   border: 2px solid #c8cbd1;

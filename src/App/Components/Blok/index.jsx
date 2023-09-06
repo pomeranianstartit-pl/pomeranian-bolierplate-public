@@ -9,7 +9,7 @@ export const Blok = ({ title, description, link, iconSrc }) => {
       <h4>{title}</h4>
       <img src={iconSrc} alt="" />
       <p>{description}</p>
-      <NavLink to={link}>zobacz wiecej {'>'}</NavLink> {/* to jest <a> */}
+      <NavLink to={link}>zobacz więcej {'>'}</NavLink> {/* to jest <a> */}
     </div>
   );
 };

@@ -32,3 +32,8 @@ aside a:hover {
   background-color: var(--color-primary-blue);
   color: var(--color-white);
 }
+
+.aside-row img {
+  width: 20px;
+  height: 20px;
+}
