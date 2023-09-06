@@ -19,3 +19,19 @@
   margin-right: 60px;
   margin-left: 30px;
 }
+
+.arrow button {
+  border: none;
+  background: none;
+  cursor: pointer;
+}
+
+.setting-icon button {
+  border: none;
+  background: none;
+  cursor: pointer;
+}
+
+.header-menu button:hover {
+  opacity: 0.5;
+}
