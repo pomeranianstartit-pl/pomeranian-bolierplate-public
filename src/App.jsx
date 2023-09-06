@@ -11,6 +11,7 @@ import { Calendar } from './App/Calendar';
 import { CV } from './App/CV';
 import { Blog } from './App/Blog';
 import { Material } from './App/Material';
+import { TechStack } from './App/Components/TechStack';
 
 import '@fontsource/roboto/300.css';
 import '@fontsource/roboto/400.css';
@@ -31,6 +32,7 @@ export function App() {
           <Route path="blocks/*" element={<Blocks />} />
           <Route path="blog/*" element={<Blog />} />
           <Route path="material/*" element={<Material />} />
+          <Route path="tech-stack/*" element={<TechStack />} />
           <Route path="*" element={<NotFound />} />
         </Route>
       </Routes>

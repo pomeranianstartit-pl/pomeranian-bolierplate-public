@@ -1,0 +1,8 @@
+.stacks {
+  display: flex;
+  flex-flow: row wrap;
+}
+
+.stacks {
+  margin-right: 500px;
+}

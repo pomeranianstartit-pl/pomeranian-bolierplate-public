@@ -9,8 +9,6 @@ import { PersonalCardIcon } from '../Components/Icons/PersonalCardIcon';
 import { SettingIcon } from '../Components/Icons/SettingIcon';
 import bookIconSrc from '../Images/tiles/book.svg';
 
-// import { book } from '../Images/tiles/book.svg';
-
 export function AppAside() {
   return (
     <aside>

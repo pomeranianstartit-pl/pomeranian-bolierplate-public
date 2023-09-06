@@ -28,7 +28,7 @@ const blocks = [
   {
     title: 'Tech stack',
     description: 'Stack technologiczny realizowany na kursie',
-    link: '/',
+    link: '/tech-stack',
     iconSrc: codeIconSrc,
   },
   {
