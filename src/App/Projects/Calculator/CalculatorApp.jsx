@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import { useState, useRef } from 'react';
 
 export const CalculatorApp = () => {
   const [number, setNumber] = useState(0);
@@ -9,6 +9,7 @@ export const CalculatorApp = () => {
   const handleClick = (e) => {
     setNumber(e.target.value);
   };
+
   return (
     <div>
       <div className="display">{number}</div>
