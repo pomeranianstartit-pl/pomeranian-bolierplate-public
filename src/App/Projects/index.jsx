@@ -19,6 +19,16 @@ export const Projects = () => {
           <p className="project-tile-description">Prosty kalkulator</p>
           <Link to="/projects/calculator">Zobacz projekt</Link>
         </div>
+        <div>
+          <p className="project-tile-title">Kolor tła</p>
+          <div className="project-tile-image">
+            <Math />
+          </div>
+          <p className="project-tile-description">
+            Zmienia kolor zależnie od wpisanej wartości
+          </p>
+          <Link to="/projects/change-background-color">Zobacz projekt</Link>
+        </div>
       </div>
     </div>
   );
