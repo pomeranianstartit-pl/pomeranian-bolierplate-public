@@ -8,6 +8,7 @@ import { LocalDevAndFetchMetaData } from './LocalDevAndFetch/router-data';
 import { TodoListMetaData } from './TodoList/router-data';
 import { ReactUseRefMetaData } from './ReactUseRef/router-data';
 import { ReduxTestMetaData } from './ReduxTest/router-data';
+import { ReduxCounterMetaData } from './ReduxCounter/router-data';
 
 
 export const blockRouterMetaData = [
@@ -20,6 +21,6 @@ export const blockRouterMetaData = [
   TodoListMetaData,
   ReactUseRefMetaData,
   ReduxTestMetaData,
-
+  ReduxCounterMetaData,
 ];
 export const blockRouterData = getParsedRouterDataList(blockRouterMetaData);
