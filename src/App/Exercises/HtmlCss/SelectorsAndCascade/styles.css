@@ -1,0 +1,85 @@
+.css_inheritance {
+  padding: 20px;
+  border: 1px solid red;
+  font-size: 30px;
+  color: darkslategray;
+}
+
+/* kropka przed klasą, # przed id */
+/* CLASS SELECTOR */
+.css_inheritance .css_cascade {
+  color: red;
+}
+
+/* ID SELECTOR */
+#css_cascade_id {
+  color: blue;
+}
+
+/*                  * {} -> style które są określane dla całego dokumentu (body)                    */
+/* UNIVERSAL SELECTOR */
+/* * {
+  background: white; */
+/* color: green; */
+/* } */
+
+/*                  p lub div lub h2 - (wszystkie elementy htmlowe) {} -> style które są określane dla konkretnego tagu   */
+/* TYPE SELECTOR */
+h4 {
+  color: red;
+}
+
+/* ale tu wszystkie te tagi w całym dokumencie!!! */
+
+* {
+}
+
+div {
+}
+
+.class {
+}
+
+#id {
+}
+
+[src] {
+}
+
+#id .class {
+}
+
+#id > div {
+}
+
+#id + div {
+}
+
+#id ~ div > span input {
+}
+
+/* pseudoklasy  */
+/* 
+:first-child
+:last-child
+:hover - po najechaniu myszka na www
+:focus - TAB przy przejsciach miedzy elementami na www
+:visited - rozroznienie jak cos juz bylo klikniete
+*/
+
+/* 
+pseudoelementy:
+:: first-line
+:: before
+:: after
+ */
+
+.first-line::first-line {
+  color: red;
+}
+
+.first-line::before,
+.first-line::after {
+  content: '1';
+  /*  */
+}

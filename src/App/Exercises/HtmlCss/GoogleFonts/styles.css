@@ -1,0 +1,23 @@
+@import url('https://fonts.googleapis.com/css2?family=Black+Ops+One&family=Poppins&family=Qwitcher+Grypen&family=Roboto:ital,wght@0,400;0,500;1,400;1,500&display=swap');
+
+.roboto {
+  font-family: 'Roboto', sans-serif;
+  color: blue;
+}
+
+.poppins {
+  font-family: 'Poppins', sans-serif;
+  color: red;
+}
+
+.black {
+  font-family: 'Black Ops One';
+  color: green;
+}
+
+.qwitcher {
+  font-family: 'Qwitcher Grypen';
+  font-weight: 700;
+  font-size: xx-large;
+  color: black;
+}

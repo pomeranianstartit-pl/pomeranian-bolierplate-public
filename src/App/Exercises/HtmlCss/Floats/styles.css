@@ -1,0 +1,197 @@
+.all {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.bloczki {
+  position: relative;
+}
+
+.bloczki p {
+  font-family: Poppins;
+  font-size: 22px;
+  font-weight: 400;
+}
+
+.blok1 {
+  width: 905px;
+  height: 83px;
+  margin-bottom: 60px;
+  margin-top: 35px;
+}
+
+.blok1 .p1 {
+  width: 900px;
+  height: 36px;
+  background-color: white;
+  text-align: left;
+}
+
+.blok1 .p2 {
+  width: 900px;
+  height: 36px;
+  background-color: white;
+  margin-left: 20px;
+}
+
+.blok2_szary {
+  width: 980px;
+  height: 160px;
+  padding: 17px 21px 17px 21px;
+  background: #ebebeb;
+  position: relative; /*rozowy w szarym i szary-relative a rozowy-absolute plus przesuniecia wzgl szarego */
+}
+
+.blok3_pink {
+  position: absolute;
+  top: -55px;
+  right: -100px;
+  width: 243px;
+  height: 145px;
+  padding: 12px;
+  border-radius: 5.5px;
+  border: 1px;
+  background-color: #ffd5db;
+  text-align: center;
+}
+
+.blok3_pink .p4 {
+  font-family: Poppins;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 30px;
+  letter-spacing: 0em;
+  text-align: center;
+  margin: 1px;
+}
+
+.blok4_pink_img {
+  width: 984px;
+  height: 279px;
+  padding: 32px 29px 0px 456px;
+  background-color: #ffd5db;
+  position: relative;
+  margin-bottom: 150px;
+  /* float: right; */
+}
+
+.bloczki img {
+  width: 400px;
+  height: 350px;
+  padding: 10px;
+  border-radius: 3em;
+  position: absolute;
+  top: 40px;
+  left: 40px;
+}
+
+.blok5_ciemny {
+  width: 984px;
+  height: 162px;
+  padding: 17px 21px 17px 21px;
+  background-color: #4b5563;
+  margin-bottom: 100px;
+}
+
+.blok5_ciemny .p6 {
+  color: white;
+}
+
+.blok6_pink_boczny {
+  position: sticky;
+  top: 0px;
+  margin: -150px -150px 0px 1100px;
+  width: 100px;
+  height: 50px;
+}
+
+.blok6_pink_boczny button {
+  font-family: Poppins;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 21px;
+  letter-spacing: 0em;
+  text-align: center;
+  margin: 1px;
+  color: #4b5563;
+  background-color: #ffd5db;
+  border: 1px solid #4b5563;
+  border-radius: 10px;
+}
+
+.blok7_pink_srodek {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 100px;
+}
+
+.blok7_pink_srodek button {
+  font-family: Poppins;
+  font-size: 17px;
+  font-weight: 400;
+  width: 240px;
+  height: 50px;
+  border-color: red;
+  border-radius: 10px;
+  background-color: #ffd5db;
+  color: black;
+}
+
+.blok8 {
+  margin-bottom: 50px;
+  width: 990px;
+  height: 470px;
+}
+
+.blok9 {
+  position: relative;
+  margin-top: 60px;
+  width: 985px;
+  height: 246px;
+  border-radius: 8px;
+  border: 2px solid #6b7280;
+}
+
+.kwadraty {
+  position: absolute;
+  bottom: 0;
+  padding: 30px;
+}
+
+.blok9 .kwad1 {
+  position: absolute;
+  bottom: 30px;
+  left: 30px;
+  width: 120px;
+  height: 120px;
+  background-color: #c8cbd1;
+  border-radius: 8px;
+  border: 2px solid #c8cbd1;
+  z-index: 1;
+}
+
+.blok9 .kwad2 {
+  position: absolute;
+  left: 60px;
+  bottom: 60px;
+  width: 120px;
+  height: 120px;
+  background-color: #999;
+  border-radius: 8px;
+  border: 2px solid #c8cbd1;
+  z-index: 2;
+}
+
+.blok9 .kwad3 {
+  position: absolute;
+  left: 90px;
+  bottom: 90px;
+  width: 120px;
+  height: 120px;
+  background-color: #6b7280;
+  border-radius: 8px;
+  border: 2px solid #c8cbd1;
+  z-index: 3;
+}

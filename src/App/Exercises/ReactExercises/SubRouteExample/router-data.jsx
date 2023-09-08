@@ -1,10 +1,11 @@
 import { SubRouteExample } from './SubRouteExample';
 
 export const SubRouteExampleMetaData = {
-  path: 'example-sub-route',
+  // eksportujemy meta dane
+  path: 'example-sub-route', // klucz path - na jakim adresie url cwiczenie bedzie sie znajdowac
   date: '12-12-2023',
-  linkLabel: 'Przykładowy sub-route',
-  blockNo: 1,
-  element: <SubRouteExample />,
-  tags: ['components', 'import', 'export'],
+  linkLabel: 'Przykładowy sub-route', // opis widoczny na liscie cwiczen
+  blockNo: 1, // przy jakim bloku bedziemy  pracowac
+  element: <SubRouteExample />, // przekazany komponent importowany który bedzie renderowany
+  tags: ['components', 'import', 'export'], //
 };

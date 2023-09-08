@@ -1,2 +1,35 @@
+@import url('https://fonts.googleapis.com/css2?family=Black+Ops+One&family=DM+Sans:opsz@9..40&family=Poppins&family=Qwitcher+Grypen&family=Roboto:ital,wght@0,400;0,500;1,400;1,500&display=swap');
+
 .dashboard {
+  display: flex;
+}
+
+.hej {
+  font-family: 'DM Sans';
+  font-size: 22px;
+  font-weight: 400;
+  line-height: 38px;
+  letter-spacing: 0px;
+  text-align: left;
+  color: #fe3756;
+  margin-left: 10px;
+  /* display: inline-block; */
+}
+
+.reka {
+  width: 22px;
+  height: 22px;
+}
+
+.info {
+  font-family: Poppins;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 34px;
+  letter-spacing: 0px;
+  text-align: left;
+  width: 645px;
+  height: 34px;
+  top: 196px;
+  left: 266px;
 }

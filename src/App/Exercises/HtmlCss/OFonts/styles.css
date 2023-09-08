@@ -1,0 +1,11 @@
+.przyciski button {
+  background-color: rgba(216, 53, 53, 0.848);
+  color: white;
+  width: auto;
+  height: 30px;
+  font-family: 'Poppins';
+  font-size: large;
+  border-radius: 5px;
+  text-align: center;
+  border: none;
+}

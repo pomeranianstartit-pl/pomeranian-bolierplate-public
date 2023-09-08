@@ -1,0 +1,164 @@
+.h1 {
+  font-family: 'Poppins';
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 27px;
+  letter-spacing: 0px;
+  text-align: left;
+}
+
+.tic {
+  width: 16px;
+  height: 16px;
+  gap: 10px;
+}
+
+.arrow {
+  width: 16px;
+  height: 16px;
+  gap: 10px;
+}
+
+.nazwa {
+  padding: 18px 24px 18px 24px;
+}
+
+.linia {
+  box-sizing: border-box;
+  color: rgb(60, 64, 67);
+  display: block;
+  font-family: -apple-system, 'system-ui', 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  height: 2px;
+  margin-block-end: 8px;
+  margin-block-start: 8px;
+  margin-inline-end: 0px;
+  margin-inline-start: 0px;
+  unicode-bidi: isolate;
+  /* width: 644px; */
+  width: -webkit-fill-available;
+  -webkit-font-smoothing: antialiased;
+  align-items: center;
+}
+
+.lorem {
+  width: 732px;
+  height: 160px;
+  gap: 16px;
+  font-family: 'Poppins';
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 32px;
+  letter-spacing: 0em;
+  text-align: left;
+  color: #222222;
+}
+
+/* .list-element {
+  box-sizing: border-box;
+  display: block;
+  box-shadow: 0px 3px 46px 0px #0000000f;
+  box-shadow: 0px 4px 10px 0px #00000012;
+  border-radius: 8px;
+  font-family: Poppins;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 34px;
+  letter-spacing: 0em;
+  text-align: left;
+  background: linear-gradient(0deg, #ffffff, #ffffff),
+    linear-gradient(0deg, #c8cbd1, #c8cbd1);
+  border-left: 5px solid #c8cbd1;
+} */
+
+.list-element1 {
+  width: 780px;
+  height: 266px;
+  border-radius: 16px;
+  box-sizing: border-box;
+  display: block;
+  box-shadow: 0px 3px 46px 0px #0000000f;
+  box-shadow: 0px 4px 10px 0px #00000012;
+  font-family: Poppins;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 34px;
+  letter-spacing: 0em;
+  text-align: left;
+  background: linear-gradient(0deg, #ffffff, #ffffff),
+    linear-gradient(0deg, #c8cbd1, #c8cbd1);
+  border-left: 5px solid #c8cbd1;
+  color: #23213d;
+  padding: 18px 24px 18px 24px;
+  border: 0px 0px 0px 5px;
+  gap: 18px;
+  margin-bottom: 18px;
+}
+
+.list-element2 {
+  width: 780px;
+  height: 70px;
+  gap: 16px;
+  border-radius: 8px;
+  box-sizing: border-box;
+  display: block;
+  box-shadow: 0px 3px 46px 0px #0000000f;
+  box-shadow: 0px 4px 10px 0px #00000012;
+  font-family: Poppins;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 34px;
+  letter-spacing: 0em;
+  text-align: left;
+  background: linear-gradient(0deg, #ffffff, #ffffff),
+    linear-gradient(0deg, #c8cbd1, #c8cbd1);
+  border: 0px 0px 0px 5px;
+  border-left: 5px solid #c8cbd1;
+  padding: 18px 24px 18px 24px;
+  gap: 16px;
+  color: #23213d;
+  margin-bottom: 18px;
+}
+
+/* :root {
+  --radius: 15px;
+} /*definicja zmiennej w css
+
+.tabela {
+  width: 716px;
+
+  box-shadow: 0px 63.661766052246094px 158.44705200195312px 0px #0000000f,
+    0px 32.22876739501953px 69.07301330566406px 0px #0000000a,
+    0px 12.732353210449219px 25.747648239135742px 0px #00000008,
+    0px 2.7852022647857666px 9.1602201461792px 0px #00000005;
+
+  border-radius: var(--radius); /*uzycie zmiennej
+}
+
+.tabela tr:last-child td:first-child {
+  border-bottom-left-radius: var(--radius);
+} /* zaokrąglenie lewego dolnego rogu
+
+.tabela tr:last-child td:last-child {
+  border-bottom-right-radius: var(--radius);
+} /* zaokrąglenie prawego dolnego rogu
+
+.tabela tr {
+  background-color: white;
+}
+
+.tabela tr td,
+.tabela tr th {
+  padding: 19px 28px;
+  border: none;
+}
+
+.tabela tr:nth-child(odd) {
+  background-color: #ffd5db;
+}
+
+.tabela tr:nth-child(1) {
+  background: #f5f5f5;
+  border-bottom: 1px solid #ffd5db;
+} pierwszy wiersz tabeli - naglowek niech ma takie property */

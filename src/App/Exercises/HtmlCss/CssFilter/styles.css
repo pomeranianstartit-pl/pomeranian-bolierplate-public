@@ -1,0 +1,55 @@
+.filtr1 {
+  color: black;
+  width: 400px;
+  height: 200px;
+  background-image: url(https://cdn.pixabay.com/photo/2017/09/01/00/15/png-2702691_960_720.png);
+  background-color: green;
+  background-size: 100%;
+  background-position: center;
+  background-repeat: round;
+  filter: hue-rotate(241deg);
+  -webkit-filter: hue-rotate(241deg);
+  -moz-filter: hue-rotate(241deg);
+}
+
+.filtr2 {
+  color: black;
+  width: 400px;
+  height: 200px;
+  background-image: url(https://cdn.pixabay.com/photo/2017/09/01/00/15/png-2702691_960_720.png);
+  background-color: green;
+  background-size: 100%;
+  background-position: center;
+  background-repeat: round;
+  filter: sepia(100%);
+  -webkit-filter: sepia(100%);
+  -moz-filter: sepia(100%);
+}
+
+.filtr3 {
+  color: black;
+  width: 400px;
+  height: 200px;
+  background-image: url(https://cdn.pixabay.com/photo/2017/09/01/00/15/png-2702691_960_720.png);
+  background-color: green;
+  background-size: 100%;
+  background-position: center;
+  background-repeat: round;
+  filter: grayscale(49%) sepia(51%) blur(4px) brightness(120%);
+  -webkit-filter: grayscale(49%) sepia(51%) blur(4px) brightness(120%);
+  -moz-filter: grayscale(49%) sepia(51%) blur(4px) brightness(120%);
+}
+
+.filtr4 {
+  color: black;
+  width: 400px;
+  height: 200px;
+  background-image: url(https://cdn.pixabay.com/photo/2017/09/01/00/15/png-2702691_960_720.png);
+  background-color: green;
+  background-size: 100%;
+  background-position: center;
+  background-repeat: round;
+  filter: invert(100%);
+  -webkit-filter: invert(100%);
+  -moz-filter: invert(100%);
+}

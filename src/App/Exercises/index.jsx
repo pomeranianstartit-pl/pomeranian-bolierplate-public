@@ -6,6 +6,7 @@ import { HtmlCssExercises, HtmlCssExerciseItem } from './HtmlCss';
 import { Categories } from './Categories';
 import { ReactExercises, ReactExercisesItem } from './ReactExercises';
 import { NotFound } from '../Components/NotFound/NotFound';
+import { RoundImage } from './HtmlCss/Exercise-example-12-12-2023-1';
 
 import './styles.css';
 
