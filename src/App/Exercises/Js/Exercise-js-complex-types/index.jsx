@@ -1,3 +1,4 @@
+import { ExerciseArraysTraining } from './ArraysTraining';
 import './styles.css';
 
 export function ExerciseJsComplexTypes() {
@@ -79,6 +80,12 @@ export function ExerciseJsComplexTypes() {
   //   console.log(123213);
   //   }
 
+  const tablica = [1, 2, 3, 4, 5];
+
+  for (const element of tablica) {
+    console.log(element); // Wypisuje elementy tablicy po kolei
+  }
+
   return (
     <div className="container--exercise-js-complex-types">
       Tekst: {data[0]} <br />
@@ -105,6 +112,7 @@ export function ExerciseJsComplexTypes() {
       Length: {arrayOfStrings.length} <br />
       {forLoop()}
       {whileLoop()}
+      <ExerciseArraysTraining />
     </div>
   );
 }
