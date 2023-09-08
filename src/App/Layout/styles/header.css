@@ -13,27 +13,8 @@ header {
 header > a:first-of-type {
   text-decoration: none;
 }
-header.header-title {
-  color: var(--color-grey);
-  font-weight: normal;
-}
 
 header .logo {
   height: 40vmin;
   pointer-events: none;
-}
-.background1 {
-  flex-direction: flex-end;
-  height: 200px;
-  width: 200px;
-  background-image: url
-    ('https://cdn.pixabay.com/photo/2017/09/01/00/15/png-2702691_960_720.png');
-  backgound-size: cover;
-  background-color: rgb(0, 255, 106);
-  background-position: center;
-  background-repeat: no-repeat;
-  filter: sepia(62%) blur(3px) brightness(43%) saturate(218%) contrast(82%);
-  -webkit-filter: sepia(62%) blur(3px) brightness(43%) saturate(218%)
-    contrast(82%);
-  moz-filter: sepia(62%) blur(3px) brightness(43%) saturate(218%) contrast(82%);
 }

@@ -18,7 +18,7 @@ export const BlocksBox2 = ({ title, iconSrc, description, link }) => {
       <h4>{title}</h4>
       <img src={iconSrc} alt="" />
       <p>{description}</p>
-      <NavLink to={link}>zobacz więcej</NavLink>
+      <NavLink to={link}>zobacz więcej {'>'}</NavLink>
     </div>
   );
 };

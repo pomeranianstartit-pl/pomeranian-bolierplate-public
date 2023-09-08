@@ -2,7 +2,7 @@ import './styles.css';
 
 import { SettingIcon } from '../Icons/SettingIcon';
 
-import { arrowToggle } from '../../Images/toggle-arrow.svg';
+import { ReactComponent as ArrowToggle } from '../../Images/toggle-arrow.svg';
 
 export const HeaderMenu = () => {
   return (
@@ -15,10 +15,10 @@ export const HeaderMenu = () => {
           alt="woman"
         />
         <div>
-          <b className="header-user-name">Edyta</b>
+          <b className="header-user-name">Edyta</b> <br></br>
           <span className="header-user-position">kursantka</span>
         </div>
-        <arrowToggle />
+        <ArrowToggle />
       </div>
     </>
   );
