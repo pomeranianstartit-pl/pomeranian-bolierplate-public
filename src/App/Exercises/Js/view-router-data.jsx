@@ -12,6 +12,8 @@ import { blockRouterMetaData as blockRouterMetaDataBlok22Warmup } from './Blok22
 
 import { blockRouterMetaData as blockRouterMetaDataSetTimeout } from './SetTimeout/router-data';
 
+import { blockRouterMetaData as blockRouterMetaDataVanishString } from './VanishString/router-data';
+
 export const blockRouterMetaData = [
   blockRouterMetaDataJsVariables1,
   blockRouterMetaDataJsVariables2,
@@ -20,5 +22,6 @@ export const blockRouterMetaData = [
   blockRouterMetaDataJsFunctionBasic,
   blockRouterMetaDataBlok22Warmup,
   blockRouterMetaDataSetTimeout,
+  blockRouterMetaDataVanishString,
 ];
 export const blockRouterData = getParsedRouterDataList(blockRouterMetaData);
