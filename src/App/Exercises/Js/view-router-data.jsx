@@ -8,6 +8,11 @@ import { blockRouterMetaData as ifSwitchBlocksRouterMetaData } from './IfSwitch/
 import { blockRouterMetaData as numbersBlocksRouterMetaData } from './Numbers/router-data';
 import { blockRouterMetaData as excersNumbersBooleanRouterMetaData } from './JsExercises/router-data';
 import { blockRouterMetaData as JsCompleexTypes } from './Exercise-js-complex-types-in-js/router-data';
+import { blockRouterMetaData as JsFunctionBasics } from './JsFunctionBasics/router-data';
+import { blockRouterMetaData as Blok22Warmup } from './Blok22Warmup/router-data';
+import { blockRouterMetaData as SetTimeout } from './SetTimeout/router-data';
+import { blockRouterMetaData as VanishString } from './VanishString/router-data';
+import { blockRouterMetaData as ExerciseTimerCounting } from './ExerciseTimerCounting/router-data';
 
 export const blockRouterMetaData = [
   blockRouterMetaDataJsVariables1,
@@ -18,5 +23,10 @@ export const blockRouterMetaData = [
   numbersBlocksRouterMetaData,
   excersNumbersBooleanRouterMetaData,
   JsCompleexTypes,
+  JsFunctionBasics,
+  Blok22Warmup,
+  SetTimeout,
+  VanishString,
+  ExerciseTimerCounting,
 ];
 export const blockRouterData = getParsedRouterDataList(blockRouterMetaData);
