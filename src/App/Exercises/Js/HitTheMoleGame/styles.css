@@ -11,3 +11,23 @@
     font-size: 1.125rem;
 }
 
+.mole-settings-container{
+    display:flex;
+    column-gap: 1.5rem;
+    justify-content: flex-start;
+    align-items: center;
+    
+}
+
+.mole-label{
+text-transform: uppercase;
+flex-basis: 12rem;
+}
+
+.mole-result{
+    font-family: 'Poppins', sans-serif;
+    line-height: 2.125rem;
+    font-size: 1.125rem;
+    margin-bottom: 1.5rem;
+
+}

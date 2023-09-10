@@ -1,0 +1,31 @@
+.main-button {
+  display: inline-flex;
+  /* height: 3.5rem; */
+  padding: 0rem 2.25rem;
+  justify-content: center;
+  /* align-items: center; */
+  border-radius: 0.5rem;
+  flex-direction: row;
+  min-width: 10.2rem;
+  color: white;
+
+  font-family: 'Poppins', sans-serif;
+  line-height: calc(3.5rem - 2px);
+  font-size: 1.125rem;
+  font-feature-settings: 'clig' off, 'liga' off;
+}
+
+.main-button-primary {
+  border: 1px solid #23213d;
+  background: #23213d;
+}
+
+.main-button-secondary {
+  border: 1px solid #fe3756;
+  background: #fe3756;
+}
+
+.main-button-tertiary {
+  border: 1px solid #e12b1b;
+  background: #e12b1b;
+}

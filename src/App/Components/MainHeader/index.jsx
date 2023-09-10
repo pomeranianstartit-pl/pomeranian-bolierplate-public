@@ -8,4 +8,10 @@ export const MainHeader = (props) => {
   //   console.log('imie:', imie);
   const { value } = props;
   return <h1 className="main-header"> &lt; {value}</h1>;
+
 };
+
+// export const MainHeader = ({children}) => {
+//     <h1 className=></h1>
+
+// }
