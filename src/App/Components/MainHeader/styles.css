@@ -1,0 +1,6 @@
+.main-header {
+  color: #23213d;
+  font-size: 1.125rem;
+  line-height: 2.125rem;
+  font-feature-settings: 'clig' off, 'liga' off;
+}

@@ -13,6 +13,7 @@ import { blockRouterMetaData as Blok22Warmup } from './Blok22Warmup/router-data'
 import { blockRouterMetaData as SetTimeout } from './SetTimeout/router-data';
 import { blockRouterMetaData as VanishString } from './VanishString/router-data';
 import { blockRouterMetaData as ExerciseTimerCounting } from './ExerciseTimerCounting/router-data';
+import { blockRouterMetaData as HitTheMoleGame } from './HitTheMoleGame/router-data';
 
 export const blockRouterMetaData = [
   blockRouterMetaDataJsVariables1,
@@ -28,5 +29,6 @@ export const blockRouterMetaData = [
   SetTimeout,
   VanishString,
   ExerciseTimerCounting,
+  HitTheMoleGame,
 ];
 export const blockRouterData = getParsedRouterDataList(blockRouterMetaData);

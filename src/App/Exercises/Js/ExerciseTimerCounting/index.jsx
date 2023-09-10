@@ -4,12 +4,26 @@ import './styles.css';
 
 export const ExerciseTimerCounting = () => {
   const [counter, setCounter] = useState(0);
+  const [timeoutId, setTimeoutId] = useState();
+  const [intervalId, setIntervalId] = useState();
   const handleOnClick = () => {
-    const id = ExerciseTimerCounting(
+    clearTimeout(timeoutId);
+    const id = setTimeoutId(
       () => setCounter((prevValue) => prevValue + 1),
-      1000
+      2000
     );
+    setTimeoutId(id);
   };
+
+  // const handleCounter = () => {
+  //   // if (intervalId) return;
+  //   clearInterval(intervalId);
+  //   const id = setInterval(() => {
+  //     console.log('ustawiam counter na + 1');
+  //     setCounter((prevValue) => prevValue + 1);
+  //   }, 1000);
+  //   setIntervalId(id);
+  // };
 
   // export const SetTimeout = () => {
   //   const [value, setValue] = useState(0);

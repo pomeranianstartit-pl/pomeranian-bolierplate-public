@@ -1,0 +1,75 @@
+.hit-the-mole-game {
+  font-family: 'Poppins', sans-serif;
+  letter-spacing: 0em;
+  font-size: 1.125rem;
+  line-height: 2.125rem;
+  color: #222;
+  font-feature-settings: 'clig' off, 'liga' off;
+}
+
+.mole-description {
+  color: #222;
+  font-feature-settings: 'clig' off, 'liga' off;
+  line-height: 2.125rem;
+}
+.mole-settings-container {
+  display: flex;
+  margin-bottom: 2rem;
+  column-gap: 1.5rem;
+  /* justify-content: flex-start; */
+  align-items: center;
+}
+.mole-label {
+  text-transform: uppercase;
+  flex-basis: 12rem;
+}
+.mole-output {
+  text-transform: uppercase;
+  min-width: 10.2rem;
+  display: flex;
+  height: 3.5rem;
+  padding: 0 2.25rem;
+  justify-content: center;
+  align-items: center;
+
+  border-radius: 0.5rem;
+  border: 1px solid #ebebeb;
+  background: #ebebeb;
+}
+.mole-result {
+  margin-bottom: 1.5rem;
+  color: #222;
+  text-align: center;
+  font-feature-settings: 'clig' off, 'liga' off;
+
+  font-size: 1.75rem;
+
+  font-weight: 500;
+  line-height: 3rem;
+}
+.mole-tile {
+  border-radius: 0.5rem;
+  background: #ebebeb;
+  width: 6.48588rem;
+  height: 6.48588rem;
+  flex-shrink: 0;
+}
+.mole-tile img {
+  width: 100%;
+  height: 100%;
+}
+
+.mole-tile-correct {
+  background-color: aquamarine;
+}
+
+.mole-tile-incorrect {
+  background-color: rgb(231, 181, 181);
+}
+
+.mole-tile-board {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  row-gap: 1rem;
+  width: min-content;
+}
