@@ -9,6 +9,7 @@
 
 .mole-tile img {
   width: 100%;
+  height: 100%;
 }
 
 .mole-tile-neutral {
@@ -22,4 +23,11 @@
 
 .mole-tile-incorrect {
   background: var(--colors-actions-danger-light, #f3aea8);
+}
+
+.mole-tile-board {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 1rem;
+  width: min-content;
 }
