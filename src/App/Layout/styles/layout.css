@@ -13,7 +13,14 @@
   background: var(--color-white);
   color: var(--color-grey);
 }
-
+@media (width < 800px) {
+  .layout {
+    grid-template-areas:
+      'header header'
+      'main main'
+      'footer footer';
+  }
+}
 main {
   grid-area: main;
   height: calc(100vh - 5rem - 5rem);
@@ -22,5 +29,9 @@ main {
   flex-direction: column;
   flex: 1;
   padding: 1.5rem;
- /* background-color: antiquewhite; excercise effects*/
+}
+.with-sidebar {
+  max-width: 1440px;
+  margin: 0 auto;
+  border-radius: 16px;
 }

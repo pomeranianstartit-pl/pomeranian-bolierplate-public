@@ -8,9 +8,9 @@ import { CalendarIcon } from './../Components/Icons/CalendarIcon';
 import { PersonalCardIcon } from './../Components/Icons/PersonalCardIcon';
 import { SettingIcon } from './../Components/Icons/SettingIcon';
 import { FaqIcon } from '../Components/Icons/FaqIcon';
-export function AppAside() {
+export function AppAside(menuIsVisible) {
   return (
-    <aside>
+    <aside className={menuIsVisible ? 'menu-visible' : ''}>
       <nav>
         <ul>
           <li>

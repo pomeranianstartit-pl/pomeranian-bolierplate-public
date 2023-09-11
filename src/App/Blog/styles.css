@@ -2,14 +2,7 @@
   font-family: MadeTommy;
   src: url(./Fonts/MADETOMMYRegular_PERSONALUSE.otf);
 }
-body {
-  background-color: var(--color-block-10-body);
-}
-div.layout.with-sidebar {
-  width: 1440px;
-  margin: 0 auto;
-  border-radius: 16px;
-}
+
 .blog {
   color: #222222;
   position: relative;

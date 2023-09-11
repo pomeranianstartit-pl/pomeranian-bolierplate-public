@@ -1,32 +1,45 @@
-import React from 'react';
+import React, { useState } from 'react';
 
 import './styles/header.css';
 import { Logo } from '../Components/Logo/logo';
 import { Link } from 'react-router-dom';
 import arrowDown from '../Images/toggle-arrow.svg'; //inne importy
 import cogWheel from '../Images/setting.svg';
-export function AppHeader() {
+import menu from '../Images/menu.svg'; // jesli zmieniać kolor to zapisac jako funkcję
+import user from '../Images/user.svg';
+
+export function AppHeader({ toggleMenuVisibility }) {
+  const [userIsVisible, setUserIsVisible] = useState(false);
+  console.log('userIsVisible:', userIsVisible);
   return (
     <header>
+      <button className="menuButton" onClick={toggleMenuVisibility}>
+        <img src={menu} alt="menu" />
+      </button>
       <Link to="/">
         <Logo />
       </Link>
-
-      <div className="menu">
+      <button
+        className="menuButton"
+        onClick={() => setUserIsVisible(!userIsVisible)}
+      >
+        <img src={user} alt="user" />
+      </button>
+      <div className={`menu ${userIsVisible ? 'showMenu' : ''}`}>
         <button
           className="settings"
           onClick={() => {
             console.log('ClickedSettings');
           }}
         >
-          <img src={cogWheel} alt="" srcSet="" />
+          <img src={cogWheel} alt="ustawienia" srcSet="" />
         </button>
         <div className="profile-picture">
           <div className="placeholder" />
         </div>
         <div className="header-title">
           <div className="user">
-            Adam
+            <h3>Adam</h3>
             <br />
             kursant
           </div>
@@ -37,7 +50,7 @@ export function AppHeader() {
             console.log('ClickedDropdown');
           }}
         >
-          <img src={arrowDown} alt="" srcSet="" />
+          <img src={arrowDown} alt="rozwiń" srcSet="" />
         </button>
       </div>
     </header>

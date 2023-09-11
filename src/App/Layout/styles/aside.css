@@ -7,6 +7,16 @@ aside {
   overflow-y: auto;
 }
 
+@media (width <800px) {
+  aside .menu-visible {
+    position: absolute;
+    background-color: white;
+    top: 5rem;
+    height: calc(100% -5rem);
+    z-index: 1000;
+  }
+}
+
 aside ul {
   /* Nadpisanie domyślnych styli przeglądarki */
   padding-inline-start: 1rem;
