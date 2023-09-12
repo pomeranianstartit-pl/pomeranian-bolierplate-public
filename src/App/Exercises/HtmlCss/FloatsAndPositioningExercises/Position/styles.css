@@ -1,0 +1,93 @@
+.position__wrapper div {
+  width: 150px;
+  height: 150px;
+  border: 1px solid green;
+  margin: 50px;
+}
+
+/* POSITION: ABSOLUTE */
+.div1 {
+  /* Wrapper do którego element absolutny się odnosi */
+  position: relative;
+}
+
+.div1__absolute {
+  width: 150px;
+  height: 150px;
+  background: red;
+  position: absolute;
+
+  right: -50px;
+  top: -50px;
+  /* bottom: 150px; */
+}
+
+
+/* POSITION: STICKY */
+.div2 {
+  position: relative;
+  overflow: scroll;
+}
+
+.div2__sticky {
+  background: green;
+  position: sticky;
+  top: 0;
+}
+
+/* POSITION: FIXED */
+.div3 {
+  /* !!! Przy position fixed ta instrukcja jest ignorowana */
+  position: relative;
+  overflow: scroll;
+}
+
+.div3__fixed {
+  background: magenta;
+  /* Ustawienie względem okna przeglądarki */
+  position: fixed;
+  top: 0;
+}
+
+
+/* Z-INDEX */
+.div4 {
+  /* Wrapper do którego element absolutny się odnosi */
+  position: relative;
+}
+
+.div4__z-index_1 {
+  z-index: 1;
+  width: 150px;
+  height: 150px;
+  background: red;
+  position: absolute;
+
+  right: -50px;
+  top: -50px;
+  /* bottom: 150px; */
+}
+
+.div4__z-index_2 {
+  z-index: 3;
+  width: 150px;
+  height: 150px;
+  background: green;
+  position: absolute;
+
+  left: -50px;
+  bottom: -50px;
+  /* bottom: 150px; */
+}
+
+.div4__z-index_3 {
+  z-index: 2;
+  width: 50px;
+  height: 50px;
+  background: magenta;
+  position: absolute;
+
+  left: -5px;
+  bottom: 75px;
+  /* bottom: 150px; */
+}

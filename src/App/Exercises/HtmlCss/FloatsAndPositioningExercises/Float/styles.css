@@ -1,0 +1,30 @@
+.float_image img {
+  float: left;
+}
+
+.clearfix:before {
+  clear: both;
+  content: '';
+  visibility: hidden;
+  display: block;
+  height: 0;
+}
+
+.float_layout_left {
+  height: 200px;
+  width: 22%;
+  border: 1px solid red;
+  float: left;
+}
+
+.float_layout_right {
+  height: 200px;
+  width: 72%;
+  border: 1px solid red;
+  float: right;
+}
+
+.float_layout_footer {
+  background: red;
+  clear: both;
+}
