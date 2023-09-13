@@ -1,0 +1,39 @@
+.techstack-cards {
+
+    display: grid;
+  
+    grid-template-columns: repeat(6, 1fr);
+  
+    grid-template-rows: repeat(3, 1fr);
+  
+    grid-column-gap: 15px;
+  
+    grid-row-gap: 15px;
+  
+  }
+  
+  
+  
+  
+  .techstack-card {
+  
+    display: flex;
+  
+    flex-direction: column;
+  
+    align-items: center;
+  
+    justify-content: space-between;
+  
+  }
+  
+  
+  
+  
+  .techstack-card-image {
+  
+    width: 65px;
+  
+    height: 55px;
+  
+  }

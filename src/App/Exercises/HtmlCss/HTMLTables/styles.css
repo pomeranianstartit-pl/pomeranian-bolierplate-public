@@ -1,0 +1,20 @@
+.html-tables {
+  font-family: arial, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+}
+
+.html-tables {
+  border: 1px solid #dddddd;
+  text-align: left;
+  padding: 8px;
+}
+
+.html-tables tr:nth-child(even) {
+  background-color: #dddddd;
+}
+
+.html-tables tr:hover {
+  background-color: blueviolet;
+
+}
