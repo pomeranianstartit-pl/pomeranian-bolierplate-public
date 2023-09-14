@@ -1,6 +1,6 @@
 import './styles.css';
 
-import whitefox from './whitefox.png';
+import whitewolf from './whitewolf.png';
 
 export function Exercise() {
   return (
@@ -31,21 +31,18 @@ export function Exercise() {
             mauris cursus mattis molestiea iaculis at. Dictum varius duis at
             consectetur lorem donec.
           </p>
-          <span classname="float-exercise-span-2">
-            Lorem Ipsum is simply dummy text of the printing and typesetting
-            industry.
-          </span>
         </div>
         <div className="float-exercise-3-paragraph">
-          <img src={whitefox} alt="Biały lis na śniegu" />
-          <span className="float-exercise-3-paragraph">
+          <div className="third__box-img">
+            <img src={whitewolf} alt="Biały wilk na śniegu" />
+          </div>
+          <span className="float-exercise-3-paragraph-text">
             Lorem Ipsum is simply dummy text of the printing and typesetting
             industry. Lorem Ipsum has been the industry's standard dummy text
             ever since the 1500s, when an unknown printer took a galley of type
             and scrambled it to make a type specimen book.
           </span>
         </div>
-        <div classname="float-exercise-footer"></div>
         <div>
           <span className="float-exercise-span-3">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
@@ -54,10 +51,10 @@ export function Exercise() {
             consectetur lorem donec.
           </span>
         </div>
-        <div className="float-exercise-div-2">
+        <div className="float-exercise-div-3">
           <span className="float-exercise-span-4">zapisz na później</span>
-
-          <p>
+          <span className="float-exercise-div-2">Zapisz na później</span>
+          <p className="float-exercise-paragraph-2">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
             eiusmod tempor incididunt ut labore et dolore magna aliqua. Nibh
             mauris cursus mattis molestie a iaculis at. Dictum varius duis at
@@ -68,7 +65,7 @@ export function Exercise() {
             hendrerit.
           </p>
           <br />
-          <p>
+          <p className="float-exercise-paragraph-2">
             Leo vel orci porta non pulvinar neque laoreet. In egestas erat
             imperdiet sed euismod nisi porta lorem. Ut porttitor leo a diam
             sollicitudin tempor id. Tortor at auctor urna nunc id. Gravida quis
