@@ -20,6 +20,10 @@ export function Exercise() {
             industry.
           </span>
         </div>
+        <div className="first__special-box">
+          Lorem Ipsum is simply dummy text of the printing and typesetting
+          industry.
+        </div>
         <div>
           <p className="float-exercise-2-paragraph">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
@@ -50,7 +54,7 @@ export function Exercise() {
             consectetur lorem donec.
           </span>
         </div>
-        <div>
+        <div className="float-exercise-div-2">
           <span className="float-exercise-span-4">zapisz na później</span>
 
           <p>
