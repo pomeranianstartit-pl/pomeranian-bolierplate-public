@@ -231,7 +231,7 @@ console.log(wartosc);
 
 export const JsFunctionBasic = () => {
   const [items, setItems] = useState(['hello', 'bey']);
-  const handleOnClick = () => setItems([...items, 'Bey']);
+  const handleonClick = () => setItems([...items, 'Bey']);
   return (
     <div>
       <h1>Funkcje</h1>
@@ -243,7 +243,7 @@ export const JsFunctionBasic = () => {
       <h2>default arguments</h2>
       <h2>referencaj vs value && passing arguments to functions</h2>
       <div>
-        <button onClick={handleOnClick}>Dodaj element do tablicy</button>
+        <button onClick={handleonClick}>Dodaj element do tablicy</button>
       </div>
       <div>
         {items.map((item) => (

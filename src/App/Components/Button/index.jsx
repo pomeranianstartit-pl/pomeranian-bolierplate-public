@@ -13,7 +13,7 @@ export const Button = ({
   return (
     <button
       className={`main-button main-button-${variant}`}
-      onclick={onClick}
+      onClick={onClick}
       {...otherProps}
     >
       {children}

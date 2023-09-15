@@ -7,7 +7,7 @@ export const SetTimeout = () => {
   const [timeoutId, setTimeoutId] = useState();
   const [intervalId, setIntervalId] = useState();
   const [message, setMessage] = useState('');
-  const handleOnClick = () => {
+  const handleonClick = () => {
     clearTimeout(timeoutId);
     const id = setTimeout(() => setValue((prevValue) => prevValue + 1), 2000);
     setTimeoutId(id);
@@ -57,7 +57,7 @@ export const SetTimeout = () => {
       <div>Value = {value}</div>
       <div>Couner = {counter}</div>
       <br />
-      <button style={{ padding: '1rem' }} type="button" onClick={handleOnClick}>
+      <button style={{ padding: '1rem' }} type="button" onClick={handleonClick}>
         +
       </button>
       <button onClick={handleCounter}>Counter</button>
