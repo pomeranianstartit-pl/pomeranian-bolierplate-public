@@ -91,3 +91,14 @@
     width: 100%;
   }
 }
+
+@media screen and (max-width: 796px) {
+  .cookie__wrapper {
+    padding: 80px 60px 70px 120px;
+    flex-direction: column;
+  }
+
+  .cookie__wrapper p {
+    width: 100%;
+  }
+}
