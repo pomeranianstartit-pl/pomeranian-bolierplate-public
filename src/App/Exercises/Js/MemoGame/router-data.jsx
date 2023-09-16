@@ -1,10 +1,10 @@
-import { Exercise } from './index';
+import { Exercise, MemoGame } from './index';
 
 export const blockRouterMetaData = {
   path: 'memo',
   date: '16.09.2023',
   linkLabel: 'Gra Memo',
   blockNo: 6,
-  element: <Exercise />,
+  element: <MemoGame />,
   tags: ['gra', 'game', 'memo'],
 };
