@@ -6,6 +6,10 @@
   color: #222;
   font-feature-settings: 'clig' off, 'liga' off;
 }
+.main-header {
+  line-height: 2.125rem;
+  font-size: 1.125rem;
+}
 
 .mole-description {
   color: #222;
@@ -28,10 +32,9 @@
   min-width: 10.2rem;
   display: flex;
   height: 3.5rem;
-  padding: 0 2.25rem;
+  padding: 1.25rem 2.25rem;
   justify-content: center;
   align-items: center;
-
   border-radius: 0.5rem;
   border: 1px solid #ebebeb;
   background: #ebebeb;
@@ -40,10 +43,7 @@
   margin-bottom: 1.5rem;
   color: #222;
   text-align: center;
-  font-feature-settings: 'clig' off, 'liga' off;
-
   font-size: 1.75rem;
-
   font-weight: 500;
   line-height: 3rem;
 }
@@ -59,17 +59,22 @@
   height: 100%;
 }
 
-.mole-tile-correct {
-  background-color: aquamarine;
+.mole-tile-neutral {
+  background-color: #ebebeb;
 }
 
-.mole-tile-incorrect {
-  background-color: rgb(231, 181, 181);
+.mole-tile:active {
+  background-color: #f3aea8;
+}
+
+.mole-with-mole:active {
+  background-color: #e2fbd7;
 }
 
 .mole-tile-board {
   display: grid;
   grid-template-columns: repeat(5, 1fr);
-  row-gap: 1rem;
+  row-gap: 3rem;
+  column-gap: 1rem;
   width: min-content;
 }
