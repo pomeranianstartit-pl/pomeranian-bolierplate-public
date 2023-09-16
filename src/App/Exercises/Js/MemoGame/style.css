@@ -1,0 +1,34 @@
+.memo-tile {
+  border-radius: 0.5rem;
+  background: #ebebeb;
+  width: 8rem;
+  height: 8rem;
+  flex-shrink: 0;
+  border: none;
+  box-shadow: 2px 2px 5px 2px rgba(0, 0, 0, 0.3);
+  background-color: #ebebeb;
+  font-size: 5rem;
+}
+
+.memo-tile:active {
+  background-color: #5369e6;
+}
+
+.memo-visible {
+  background-color: #ebebeb;
+}
+
+.memo-incorrect {
+  background-color: #d77272;
+}
+.memo-guessed {
+  background-color: #ebebeb;
+}
+
+.mole-tile-board {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  row-gap: 3rem;
+  column-gap: 2rem;
+  width: min-content;
+}

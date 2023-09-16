@@ -7,6 +7,16 @@ import './style.css';
 import { Tile } from './Tile';
 import './style.css';
 
+// Memory Game
+// function shuffleArray(s) {
+//   for (let i = s.length - 1; i > 0; i--) {
+//     const j = getRandomInt(i + 1);
+//     [s[i], s[j]] = [s[j], s[i]];
+//   }
+//   return s;
+// }
+
+// Mole GAME
 function getRandomInt(max) {
   return Math.floor(Math.random() * max);
 }
