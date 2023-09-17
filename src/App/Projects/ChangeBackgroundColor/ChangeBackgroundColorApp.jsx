@@ -1,17 +1,20 @@
 import React from 'react';
 import { useState } from 'react';
 import './ChangeBackgroundColorApp.css';
+import colorNames from 'colornames';
 
 export const ChangeBackgroundColorApp = () => {
   const [actualValue, setActualValue] = useState('');
+  const [actualHexValue, setActualHexValue] = useState('');
 
   return (
-    <div>
+    <section>
       <div
         className="color-component"
         style={{ backgroundColor: `${actualValue ? actualValue : 'white'}` }}
       >
-        {actualValue ? actualValue : 'Empty Value'}
+        <p>{actualValue ? actualValue : 'Empty Value'}</p>
+        <p> {actualHexValue ? actualHexValue : null}</p>
       </div>
       <input
         type="text"
@@ -19,8 +22,11 @@ export const ChangeBackgroundColorApp = () => {
         autoFocus
         className="input-component"
         value={actualValue}
-        onChange={(e) => setActualValue(e.target.value)}
+        onChange={(e) => {
+          setActualValue(e.target.value);
+          setActualHexValue(colorNames(e.target.value));
+        }}
       />
-    </div>
+    </section>
   );
 };
