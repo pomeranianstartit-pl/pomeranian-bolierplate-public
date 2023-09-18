@@ -6,67 +6,62 @@ import EditIcon from '../Images/tiles/edit.svg';
 import FaqIcon from '../Images/faq.svg';
 import CodeIcon from '../Images/tiles/code.svg';
 import BlogIcon from '../Images/book-saved.svg';
+
 export const Dashboard = () => {
   const [availableCards, setAvailableCards] = useState([
     {
-      sectionTitle: 'Moje CV',
+      sectionTitle: 'My CV',
       icon: <img src={PersonalCardIcon} alt="business card resume" />,
-      description: 'podgląd cv wraz z doświadczeniem',
+      description: 'curriculum vitae',
       link: '/cv',
     },
     {
-      sectionTitle: ' Ćwiczenia',
+      sectionTitle: 'Exercises',
       icon: <img src={EditIcon} alt="excercises" />,
-      description: 'wszystkie wykonane ćwiczenia',
-      link: '/excercise',
+      description: 'exercises',
+      link: '/excercises',
     },
     {
       sectionTitle: 'Blog',
       icon: <img src={BlogIcon} alt="business card resume" />,
-      description: 'wpisy blogowe o technologii front-end',
+      description: 'blog about front-end technology',
       link: '/blog',
     },
     {
       sectionTitle: 'Tech stack',
       icon: <img src={CodeIcon} alt="business card resume" />,
-      description: 'stack technologiczny realizowany na kursie',
+      description: 'technological stack implemented during the course',
       link: '/tech',
     },
     {
       sectionTitle: 'FAQ',
       icon: <img src={FaqIcon} alt="business card resume" />,
-      description: 'odpowiedzi na najczęstsze pytania',
+      description: 'questions and answers',
       link: '/faq',
     },
   ]);
 
   return (
-    <div className="container">
-      <div className="Card"></div>
-      <div className="Head">
-        <h1>Hej, tu Klaudia!</h1>
-
-        <p>
-          Strona główna kursanta (o sobie, zdjęcie, opis narzędzi
-          wykorzystywanych na kursie oraz umejętności zdobytych na kursie)
-        </p>
+    <div className="dashboard">
+      <div className="dashboard-hello">
+        <h2 className="dashboard-title">Hey, it's Klaudia!</h2>
       </div>
-      <div className="Boxes">
-        <div className="dashboard-wrapper">
-          {availableCards.map((card) => {
-            return (
-              <DashboardCard
-                className
-                sectionTitle={card.sectionTitle}
-                description={card.description}
-                link={card.link}
-                icon={card.icon}
-              />
-            );
-          })}
-        </div>
+      <p className="dashboard-description">
+        Here you will find information about my knowledge and skills
+      </p>
+      <div className="dashboard-content">
+        {availableCards.map((card) => {
+          return (
+            <DashboardCard
+              className="card-shadow"
+              sectionTitle={card.sectionTitle}
+              description={card.description}
+              link={card.link}
+              icon={card.icon}
+            />
+          );
+        })}
       </div>
     </div>
-
   );
 };

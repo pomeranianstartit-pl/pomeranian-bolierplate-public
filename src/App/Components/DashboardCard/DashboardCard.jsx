@@ -1,13 +1,22 @@
 import './style.css';
+
 import React from 'react';
 
-const DashboardCard = ({ sectionTitle, description, icon, link }) => {
-    return (
-    <div className="dashboard-card">
-        <h3>{sectionTitle}</h3>
-        <div className="icon-wrapper">{icon}</div>
-        <p>{description}</p>
-        <a href={link}>zobacz więcej &gt;</a>
+const DashboardCard = ({
+  className,
+  sectionTitle,
+  description,
+  icon,
+  link,
+}) => {
+  return (
+    <div className={`dashboard-card ${className ? className : ''}`}>
+      <h3 className="card-title">{sectionTitle}</h3>
+      <div className="icon-wrapper">{icon}</div>
+      <p className="card-description">{description}</p>
+      <a className="card-link" href={link}>
+        see more &gt;
+      </a>
     </div>
   );
 };

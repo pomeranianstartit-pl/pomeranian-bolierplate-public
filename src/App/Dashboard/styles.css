@@ -1,69 +1,67 @@
-.dashboard-wrapper {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    gap: 4rem;
-  }
-  .container .dashboard-card {
+  .dashboard {
+    font-family: 'Poppins';
     display: flex;
     flex-direction: column;
+  }
+  
+  .dashboard .dashboard-hello {
+    display: flex;
+    flex-direction: row;
     align-items: center;
-    height: 12rem;
-    width: 12rem;
-    padding: 1rem;
-    text-align: center;
-    -webkit-box-shadow: 0px 0px 24px 0px rgba(66, 68, 90, 1);
-    -moz-box-shadow: 0px 0px 24px 0px rgba(66, 68, 90, 1);
-    box-shadow: 0px 0px 24px 0px rgba(66, 68, 90, 1);
-    border-radius: 14px;
+    padding-top: 0px;
   }
-  .dashboard-card:hover {
-    -webkit-box-shadow: 0px 0px 24px 0px var(--color-link-hover);
-    -moz-box-shadow: 0px 0px 24px 0px var(--color-link-hover);
-    box-shadow: 0px 0px 24px 0px var(--color-link-hover);
+  
+  .dashboard .hand-img {
+    width: 22px;
+    height: 22px;
   }
-  .dashboard-card:hover img {
-    filter: invert(9%) sepia(99%) saturate(5630%) hue-rotate(340deg)
-      brightness(121%) contrast(148%);
-  }
-  .dashboard-card a {
-    text-decoration: none;
-    color: var(--color-link-hover);
-    font-family: 'Poppins';
+  
+  .dashboard .dashboard-title {
     font-style: normal;
-    font-weight: 700;
-    font-size: 14px;
-    align-items: flex-end;
+    font-weight: 500;
+    font-size: 22px;
+    line-height: 38px;
+    padding-left: 0px;
+    padding-top: 5px;
+    margin-bottom: 2px;
+    color: rgb(16, 3, 35);
   }
-  .dashboard-card h3 {
-    margin: 0;
-    font-size: 1.125rem;
+  
+  .dashboard .dashboard-description {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 34px;
+    margin: 0px;
   }
-  .icon-wrapper img {
-    width: 36px;
-    heigh: 36px;
-  }
-  .container {
+  
+  .dashboard-content {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-    grid-template-rows: 0.5fr 1.5fr 1fr 1fr;
-    gap: 20px 20px;
-    grid-auto-flow: row;
-    grid-template-areas:
-      'Head Head Head Card'
-      'Boxes Boxes Boxes Card'
-      'Boxes Boxes Boxes Card'
-      'Boxes Boxes Boxes Card';
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+    padding: 5px 0px;
   }
   
-  .Card {
-    grid-area: Card;
+  .card-shadow {
+    -webkit-box-shadow: 8px 8px 24px 0px rgba(66, 68, 90, 1);
+    -moz-box-shadow: 8px 8px 24px 0px rgba(66, 68, 90, 1);
+    box-shadow: 8px 8px 24px 0px rgba(66, 68, 90, 1);
   }
   
-  .Head {
-    grid-area: Head;
+  .card-shadow:hover {
+    -webkit-box-shadow: 8px 8px 24px 0px rgba(66, 68, 90, 1);
+    -moz-box-shadow: 8px 8px 24px 0px rgba(66, 68, 90, 1);
+    box-shadow: 8px 8px 24px 0px rgba(66, 68, 90, 1);
   }
   
-  .Boxes {
-    grid-area: Boxes;
+  @media (max-width: 768px) {
+    .dashboard-content {
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .dashboard-content {
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    }
   }
