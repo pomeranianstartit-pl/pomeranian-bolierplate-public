@@ -1,13 +1,12 @@
-import React from 'react';
-
 import './styles/header.css';
+
+import { ReactComponent as PomeranianLogo } from '../Images/start-it-logo.svg';
 
 export function AppHeader() {
   return (
     <header>
-      <div>
-        <div className="header-title">Tytuł nagłówka</div>
-      </div>
+      <PomeranianLogo />
+      {/* <HeaderMenu /> */}
     </header>
   );
 }
