@@ -1,4 +1,4 @@
-import { ReactRouterEvents } from ".";
+import { ReactRouterEvents } from '.';
 
 export const ReactRouterEventsMetaData = {
   path: 'react-router-events',

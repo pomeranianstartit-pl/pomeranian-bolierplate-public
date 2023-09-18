@@ -1,13 +1,12 @@
 import './styles.css';
 
 export function Exercise() {
-
   const variableForTemplateString = `is awesome`;
 
-  const templateString = `Template string ${variableForTemplateString}`
+  const templateString = `Template string ${variableForTemplateString}`;
 
   function multiply(num1, num2) {
-    return (num1 * num2);
+    return num1 * num2;
   }
 
   function getWelcomeMessage(name, amount) {
@@ -43,7 +42,7 @@ export function Exercise() {
       <br />
       <p>Trzecie wywołanie funkcji</p>
       <br />
-      <p id='uniqe-id'>{templateString}</p>
+      <p id="uniqe-id">{templateString}</p>
     </div>
   );
 }

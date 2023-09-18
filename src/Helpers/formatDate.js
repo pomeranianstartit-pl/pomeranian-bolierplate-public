@@ -1,21 +1,17 @@
 export const formatDate = (dateString) => {
+  const date = new Date(dateString);
 
-    const date = new Date(dateString);
+  const options = {
+    year: 'numeric',
 
-    const options = {
+    month: 'numeric',
 
-      year: 'numeric',
+    day: 'numeric',
 
-      month: 'numeric',
+    hour: '2-digit',
 
-      day: 'numeric',
-
-      hour: '2-digit',
-
-      minute: '2-digit',
-
-    };
-
-    return date.toLocaleString(undefined, options);
-
+    minute: '2-digit',
   };
+
+  return date.toLocaleString(undefined, options);
+};

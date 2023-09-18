@@ -6,5 +6,5 @@ export const TextFundamentsMetaData = {
   linkLabel: 'TextFundaments',
   blockNo: 1,
   element: <TextFundaments />,
-  tags: ['text','fonts'],
+  tags: ['text', 'fonts'],
 };

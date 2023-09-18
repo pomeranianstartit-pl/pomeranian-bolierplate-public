@@ -7,7 +7,7 @@ export const testSlice = createSlice({
   initialState: {
     userProfile: defaultUserProfile,
     name: 'Adam',
-    role: 'trainee'
+    role: 'trainee',
   },
   reducers: {
     toggleProfile: (sliceState) => {
@@ -24,4 +24,3 @@ export const { toggleProfile } = testSlice.actions;
 export const selectProfile = (state) => {
   return state.testSlice.userProfile || defaultUserProfile;
 };
-

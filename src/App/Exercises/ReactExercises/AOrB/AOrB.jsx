@@ -25,7 +25,6 @@ export const AOrB = () => {
     setValA(a);
     console.log('A = '.concat(a));
 
-
     compareNumbers(a, valB);
   }
 

@@ -10,7 +10,6 @@ import { ReactUseRefMetaData } from './ReactUseRef/router-data';
 import { ReduxTestMetaData } from './ReduxTest/router-data';
 import { ReduxCounterMetaData } from './ReduxCounter/router-data';
 
-
 export const blockRouterMetaData = [
   SubRouteExampleMetaData,
   ReactRouterEventsMetaData,

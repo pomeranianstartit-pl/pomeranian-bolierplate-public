@@ -8,7 +8,7 @@ export const Click5 = () => {
     let currentClick = cklick;
     setClick(currentClick + 1);
     if (currentClick + 1 >= 5) {
-      setMessage("Gratulacje");
+      setMessage('Gratulacje');
     } else {
       setMessage(`Kliknięto ${cklick} razy`);
     }

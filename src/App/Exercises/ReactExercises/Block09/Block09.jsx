@@ -14,5 +14,6 @@ export function Block09() {
       <MoreOrLess />
       <hr />
       <AOrB />
-    </div>)
+    </div>
+  );
 }

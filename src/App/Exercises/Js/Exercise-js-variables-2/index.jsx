@@ -4,7 +4,7 @@ export function Exercise() {
   const mathResult1 = 2 * 5;
   const mathResult2 = 3 / 2;
   const mathResult3 = Math.pow(3, 2);
-  const mathResult4 = Math.sqrt(3 );
+  const mathResult4 = Math.sqrt(3);
   const mathResult5 = 3 % 2;
 
   return (

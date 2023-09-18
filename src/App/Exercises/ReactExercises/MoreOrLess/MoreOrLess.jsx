@@ -1,7 +1,6 @@
 import './styles.css';
 import { useState } from 'react';
 export const MoreOrLess = () => {
-
   const [message, setMessage] = useState('Wprowadź');
 
   function answerHandler(ev) {
@@ -13,9 +12,13 @@ export const MoreOrLess = () => {
       setMessage('NIE');
     }
   }
-  return <div>
-    <h1>Czy A jest większe od 10?</h1>
-    <input placeholder="A" type='number' onChange={answerHandler}></input>
-    <h2>{'Odpowiedź: '} {message}</h2>
-  </div>;
+  return (
+    <div>
+      <h1>Czy A jest większe od 10?</h1>
+      <input placeholder="A" type="number" onChange={answerHandler}></input>
+      <h2>
+        {'Odpowiedź: '} {message}
+      </h2>
+    </div>
+  );
 };
