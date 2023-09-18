@@ -6,8 +6,11 @@ import { ElementIcon } from './../Components/Icons/ElementIcon';
 import { EditIcon } from './../Components/Icons/EditIcon';
 import { CalendarIcon } from './../Components/Icons/CalendarIcon';
 import { PersonalCardIcon } from './../Components/Icons/PersonalCardIcon';
-import { FaqIcon } from '../Components/Icons/FaqIcon';
 import { SettingIcon } from './../Components/Icons/SettingIcon';
+import BlogIcon from '../Components/Icons/BlogIcon.svg';
+import FaqIcon from '../Components/Icons/FaqIcon.svg';
+import CodeIcon from '../Images/tiles/code.svg';
+
 export function AppAside() {
   return (
     <aside>
@@ -22,50 +25,57 @@ export function AppAside() {
           <li>
             <NavLink className="aside-row" to="CV">
               <PersonalCardIcon className="menu-icon" />
-              Moje cv
-            </NavLink>
-          </li>
-          <li>
-            <NavLink className="aside-row" to="blocks">
-              <ElementIcon className="menu-icon" />
-              Bloki
+              My CV
             </NavLink>
           </li>
           <li>
             <NavLink className="aside-row" to="exercises">
               <EditIcon className="menu-icon" />
-              Ćwiczenia
+              Exercises
             </NavLink>
           </li>
           <li>
-            <NavLink className="aside-row" to="Callendar">
+            <NavLink className="aside-row" to="calendar">
               <CalendarIcon className="menu-icon" />
-              Kalendarz
+              Calendar
             </NavLink>
           </li>
           <li>
-            <NavLink className="aside-row" to="Blog">
-              <SettingIcon className="menu-icon" />
+          <NavLink className="aside-row" to="blog">
+              <img
+                src={BlogIcon}
+                className="menu-icon"
+                alt="Blog"
+                style={{ width: '23px', height: '23px' }}
+              />
               Blog
             </NavLink>
           </li>
           <li>
-            <NavLink className="aside-row" to="faq">
-              <FaqIcon className="menu-icon" />
-              FAQ
+          <NavLink className="aside-row" to="tech">
+              <img
+                src={CodeIcon}
+                className="menu-icon"
+                alt="Tech"
+                style={{ width: '23px', height: '23px' }}
+              />
+              Tech stack
             </NavLink>
           </li>
-          <hr />
           <li>
-            <NavLink className="aside-row" to="settings">
-              <SettingIcon className="menu-icon" />
-              Ustawienia
+          <NavLink className="aside-row" to="faq">
+              <img
+                src={FaqIcon}
+                className="menu-icon"
+                alt="FAQ"
+                style={{ width: '23px', height: '23px' }}
+              />
+              FAQ
             </NavLink>
           </li>
               
         </ul>
       </nav>
-      <p style={{ padding: '1rem 0' }}>Sidebar items, widgets, etc</p>
     </aside>
   );
 }

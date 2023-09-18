@@ -3,9 +3,10 @@ import { useState } from 'react';
 import './styles.css';
 import PersonalCardIcon from '../Images/tiles/personalcard.svg';
 import EditIcon from '../Images/tiles/edit.svg';
-import FaqIcon from '../Images/faq.svg';
+import FaqIcon from '../Components/Icons/FaqIcon.svg';
 import CodeIcon from '../Images/tiles/code.svg';
-import BlogIcon from '../Images/book-saved.svg';
+import BlogIcon from '../Components/Icons/BlogIcon.svg';
+import { CalendarIcon } from './../Components/Icons/CalendarIcon';
 
 export const Dashboard = () => {
   const [availableCards, setAvailableCards] = useState([
@@ -20,6 +21,12 @@ export const Dashboard = () => {
       icon: <img src={EditIcon} alt="excercises" />,
       description: 'exercises',
       link: '/excercises',
+    },
+    {
+      sectionTitle: 'Calendar',
+      icon: <CalendarIcon alt="business card resume" />,
+      description: 'calendar',
+      link: '/calendar',
     },
     {
       sectionTitle: 'Blog',
