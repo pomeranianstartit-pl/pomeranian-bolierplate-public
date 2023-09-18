@@ -1,32 +1,52 @@
 import React from 'react';
-import startItLogo from '../Images/start-it-logo.svg';
-import arrowDown from '../Images/arrowDown.svg';
-import cogwheel from '../Images/setting.svg';
-import { Link } from "react-router-dom";
 import './styles/header.css';
+import { Logo } from '../Components/Logo/logo';
+import { Link, useNavigate } from 'react-router-dom';
+import KS_CV from '../Images/KS_CV.jpg';
+import menuIcon from './menu.svg';
+import logoMobile from './logoMobile.svg';
 
 export function AppHeader() {
+  const navigate = useNavigate();
+  const isMobile = window.innerWidth <= 768;
+
+  const handleLogout = () => {
+    navigate('/login');
+  };
+
   return (
-    <header className='navigation'>
-      <div>
-        <Link to="/">
-          <img src={startItLogo} className="logo" alt="" />
+    <header>
+      {isMobile && <div className="mobile-text">Pomeranian start IT</div>}
+      {isMobile && (
+        <Link to="/dashboard" className="menu-icon-link">
+          <img src={menuIcon} alt="Menu" className="menu-icon-img" />
         </Link>
-      </div>
-      <div className='menu'>
-        <button className="settings" onClick={() => { console.log('Clicked cogwheel'); }}>
-          <img src={cogwheel} alt="" />
-        </button>
-        <div className='profile-picture'>
-          <div className='placeholder' />
+      )}
+      <Link to="/dashboard" className="headerlogo">
+        {isMobile ? (
+          <img src={logoMobile} alt="Mobile Logo" className="mobilelogo" />
+        ) : (
+          <Logo />
+        )}
+      </Link>
+      <div className="menu">
+        <div className="user-profile">
+          <Link to="/CV">
+            <img src={KS_CV} className="profilowe" alt="Profile" />
+          </Link>
+          {!isMobile && (
+            <div className="user">
+              <p className="user-name">Klaudia</p>
+              <p className="user-position">Stefaniak</p>
+            </div>
+          )}
         </div>
-        <div className='user-details'> <p>Klaudia Stefaniak</p>
-        <p>Kursantka</p>
-        </div>
-        <button className='dropdown-menu' onClick={() => { console.log('Clicked Arrow');}}>
-          <img src={arrowDown} alt="" />
-        </button>
+        {!isMobile && (
+          <button className="logout" onClick={handleLogout}>
+            Logout
+          </button>
+        )}
       </div>
     </header>
-  )
+  );
 }

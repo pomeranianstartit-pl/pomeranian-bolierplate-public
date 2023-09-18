@@ -1,5 +1,3 @@
-
-
 .layout {
   display: grid;
   width: 100vw;
@@ -24,4 +22,38 @@ main {
   flex-direction: column;
   flex: 1;
   padding: 1.5rem;
+}
+
+@media (max-width: 768px) {
+  /* You can adjust the 768px value to any other breakpoint you prefer */
+  .cookie-banner {
+    display: none;
+  }
+}
+
+@media (max-width: 768px) {
+  .layout {
+    grid-template-columns: 1fr;
+    grid-template-rows: 4rem auto 4rem; /* Adjusting the header and footer height */
+    grid-template-areas:
+      'header'
+      'main'
+      'footer';
+  }
+
+  main {
+    padding: 1rem; /* Reducing padding on mobile */
+  }
+}
+
+@media (max-width: 768px) {
+  footer {
+    padding: 5px; /* Reducing padding to minimize footer size */
+  }
+
+  footer .hide-on-mobile,
+  footer div:not(.hide-on-mobile) {
+    /* Hiding texts, but leaving links */
+    display: none;
+  }
 }
