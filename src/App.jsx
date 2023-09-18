@@ -8,7 +8,7 @@ import { Layout } from './App/Layout';
 import { Dashboard } from './App/Dashboard';
 import { Exercises } from './App/Exercises';
 
-import { Blog } from './App/Blog/Blog';
+import { Blog } from './App/Blog';
 import { Calendar } from './App/Calendar';
 import { CV } from './App/CV';
 

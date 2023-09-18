@@ -1,4 +1,4 @@
-import './style.css';
+import './styles.css';
 
 export const Blog = () => {
   //BEM methodology
