@@ -1,5 +1,6 @@
 :root {
   --color-primary-blue: #3e63f6;
+  --primary-primary: #fe3756;
   --color-dark-blue: #004286;
   --color-dark-gray: #3d3d3d;
   --color-blue-gray: #525e70;
@@ -29,6 +30,7 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background-color: var(--color-block-10-body);
 }
 
 code {

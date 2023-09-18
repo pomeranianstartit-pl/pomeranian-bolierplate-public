@@ -8,7 +8,34 @@ header {
   justify-content: space-between;
   padding-left: 1.5rem;
   padding-right: 3rem;
-  box-shadow: 0px 10px 60px 0px var(--color-block-10-bg); /*changed for block 10*/
+  box-shadow: 0px 10px 60px 0px var(--color-block-10-bg);
+}
+
+.menuButton {
+  display: none;
+}
+
+@media (max-width: 800px) {
+  header div.menu {
+    display: none;
+  }
+  .menuButton {
+    display: inline-block;
+    border: none;
+    background: none;
+    padding: 0.5rem;
+    cursor: pointer;
+  }
+  header .menu.showMenu {
+    display: flex;
+    position: absolute;
+    background-color: white;
+    border-color: var(--color-grey);
+    border-radius: 0.5rem;
+    padding: 0.5rem;
+    top: 6rem;
+    right: 2rem;
+  }
 }
 header > a:first-of-type {
   text-decoration: none;
@@ -55,6 +82,9 @@ div.user {
 div.user::first-line {
   font-size: larger;
   color: var(--color-black);
+}
+div.user h3 {
+  margin: 0;
 }
 button.dropdown {
   background: none;

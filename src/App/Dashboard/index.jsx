@@ -9,6 +9,7 @@ import EditIcon from '../Images/tiles/edit.svg';
 import FaqIcon from '../Images/faq.svg';
 import CodeIcon from '../Images/tiles/code.svg';
 import BlogIcon from '../Images/book-saved.svg';
+import wavingHandSign from '../Components/Icons/waving-hand-sign.png';
 export const Dashboard = () => {
   const [availableCards, setAvailableCards] = useState([
     {
@@ -47,12 +48,15 @@ export const Dashboard = () => {
     <div className="container">
       <div className="Card"></div>
       <div className="Head">
-        <h1>Dashboard</h1>
+        <h3>
+          <img src={wavingHandSign} alt="Hi" />
+          Cześć, tu Adam!
+        </h3>
 
-        <p>
-          Strona główna kursanta (o sobie, zdjęcie, opis narzędzi
-          wykorzystywanych na kursie oraz umejętności zdobytych na kursie)
-        </p>
+        <h4>
+          Poniżej znajdziesz najważniejsze informacje na temat mojej
+          działalności.
+        </h4>
       </div>
       <div className="Boxes">
         <div className="dashboard-wrapper">
