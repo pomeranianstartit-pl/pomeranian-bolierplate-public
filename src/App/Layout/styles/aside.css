@@ -28,6 +28,12 @@ aside li a {
 }
 
 aside a.active {
-  background-color: var(--color-primary-blue);
-  color: var(--color-white);
+ 
+  color: #FE3756 ;
+
+}
+
+aside svg:has(+ a.active) path {
+  stroke: #FE3756 ;
+
 }
