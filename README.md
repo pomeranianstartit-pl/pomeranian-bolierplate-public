@@ -1,3 +1,27 @@
+
+
+# My Pomeranian Start IT Learning App
+
+This project is the result of a 3-month intensive Front-End developer course. It serves as a comprehensive learning resource with a collection of exercises and smaller applications, showcasing various approaches taught by different trainers.  📚
+
+## Key Features:
+# 🎓
+- **Diverse Exercises:** This app includes a wide range of exercises and mini-applications to reinforce your Front-End development skills.
+
+- **Multiple Approaches:** Different trainers provide their unique insights and methodologies, giving me a well-rounded learning experience.
+
+- **Sandbox Environment:** Please keep in mind that this project is considered a sandbox, and perfection is not the primary goal. It's a safe space for experimentation and learning.
+
+- **Deployment:** The app will be deployed once it undergoes partial refinement to ensure a bit better experience ;).
+
+
+## Get in Touch 📬📧
+
+If you are a recruiter or potential employer and would like to learn more about my Front-End development skills or discuss opportunities, please feel free to contact me at [adam.karcz.1984@gmail.com](adam.karcz.1984@gmail.com). 
+
+
+### Oryginal README:
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
