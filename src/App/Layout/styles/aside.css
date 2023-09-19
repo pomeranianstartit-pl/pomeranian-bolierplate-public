@@ -10,6 +10,7 @@ aside {
 aside ul {
   /* Nadpisanie domyślnych styli przeglądarki */
   padding-inline-start: 1rem;
+  list-style: none;
 }
 
 aside li {
@@ -23,11 +24,20 @@ aside li {
 }
 
 aside li a {
+  color: var(--color-black);
   display: block;
   padding: 0.5rem;
+  text-decoration: none;
+  font-size: 16px;
+}
+aside li a:hover {
+  color: #fe3756;
 }
 
 aside a.active {
-  background-color: var(--color-primary-blue);
-  color: var(--color-white);
+  color: #fe3756;
+}
+
+aside svg:has(+ a.active) path {
+  stroke: #fe3756;
 }
