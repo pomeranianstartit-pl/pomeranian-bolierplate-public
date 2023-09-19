@@ -23,7 +23,6 @@ aside li {
 }
 
 aside li a {
-  var(--color-black);
   display: block;
   padding: 0.5rem;
   text-decoration: none;
