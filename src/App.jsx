@@ -1,5 +1,8 @@
 import React from 'react';
 import { Routes, Route, BrowserRouter, Navigate } from 'react-router-dom';
+import { Calendar } from './App/Calendar';
+import { CV } from './App/CV';
+import { Blog } from './App/Blog';
 
 import { NotFound } from './App/Components/NotFound/NotFound';
 
@@ -17,6 +20,11 @@ export function App() {
           <Route path="dashboard/*" element={<Dashboard />} />
           <Route path="exercises/*" element={<Exercises />} />
           <Route path="blocks/*" element={<Blocks />} />
+          <Route path="cv/*" element={<CV />} />
+          <Route path="exercises/*" element={<Exercises />} />
+          <Route path="calendar/*" element={<Calendar />} />
+          <Route path="blocks/*" element={<Blocks />} />
+          <Route path="blog/" element={<Blog />} />
           <Route path="*" element={<NotFound />} />
         </Route>
       </Routes>
