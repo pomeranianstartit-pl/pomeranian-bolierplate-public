@@ -18,7 +18,7 @@ export const Dashboard = () => {
     },
     {
       sectionTitle: 'Exercises',
-      icon: <img src={EditIcon} alt="excercises" />,
+      icon: <img src={EditIcon} alt="business card resume" />,
       description: 'exercises',
       link: '/excercises',
     },
@@ -56,6 +56,7 @@ export const Dashboard = () => {
       <p className="dashboard-description">
         Here you will find information about my knowledge and skills
       </p>
+      <br/>
       <div className="dashboard-content">
         {availableCards.map((card) => {
           return (
