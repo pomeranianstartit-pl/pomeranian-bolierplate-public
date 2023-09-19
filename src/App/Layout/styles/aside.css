@@ -23,11 +23,15 @@ aside li {
 }
 
 aside li a {
+  color: black;
   display: block;
   padding: 0.5rem;
+  text-decoration: none;
 }
 
 aside a.active {
-  background-color: var(--color-primary-blue);
-  color: var(--color-white);
+  color: #fe3756;
+}
+aside svg:has(+ a.active) path {
+  stroke: var(--color-red);
 }
