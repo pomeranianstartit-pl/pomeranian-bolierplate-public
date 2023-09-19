@@ -2,12 +2,17 @@ import React from 'react';
 
 import './styles/header.css';
 
+//utworz mi komponent react o nazie Logo ze sciezki do pliku ktora podalem
+import { ReactComponent as PomeranianLogo } from '../Images/start-it-logo.svg';
+// import { HeaderMenu } from '../Components/HeaderMenu';
+
 export function AppHeader() {
   return (
+    //tag jsx -> html
     <header>
-      <div>
-        <div className="header-title">Tytuł nagłówka</div>
-      </div>
+      {/* // component react  */}
+      <PomeranianLogo />
+      {/* <HeaderMenu /> */}
     </header>
   );
 }
