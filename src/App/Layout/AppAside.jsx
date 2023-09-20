@@ -3,6 +3,7 @@ import { NavLink } from 'react-router-dom';
 import './styles/aside.css';
 import { HouseIcon } from './../Components/Icons/HouseIcon';
 import { ElementIcon } from './../Components/Icons/ElementIcon';
+import { TechStackIcon } from '../Components/Icons/TechStackIcon';
 import { EditIcon } from './../Components/Icons/EditIcon';
 import { CalendarIcon } from './../Components/Icons/CalendarIcon';
 import { PersonalCardIcon } from './../Components/Icons/PersonalCardIcon';
@@ -23,6 +24,18 @@ export function AppAside(menuIsVisible) {
             <NavLink className="aside-row" to="CV">
               <PersonalCardIcon className="menu-icon" />
               Moje cv
+            </NavLink>
+          </li>
+          <li>
+            <NavLink className="aside-row" to="CV">
+              <PersonalCardIcon className="menu-icon" />
+              Moje cv
+            </NavLink>
+          </li>
+          <li>
+            <NavLink className="aside-row" to="TechStack">
+              <TechStackIcon className="menu-icon" />
+              TechStack
             </NavLink>
           </li>
           <li>
