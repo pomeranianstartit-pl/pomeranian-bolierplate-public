@@ -25,6 +25,10 @@ aside li {
 aside li a {
   display: block;
   padding: 0.5rem;
+  text-decoration: none;
+}
+aside li a:hover {
+  color:#FE3756;
 }
 
 aside a.active {
