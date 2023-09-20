@@ -22,7 +22,7 @@ export function App() {
           <Route path="dashboard/*" element={<Dashboard />} />
           <Route path="cv/*" element={<CV />} />
           <Route path="calendar/*" element={<Calendar />} />
-          <Route path="blog/" element={<Blog />} />
+          <Route path="blog/*" element={<Blog />} />
           <Route path="exercises/*" element={<Exercises />} />
           <Route path="blocks/*" element={<Blocks />} />
           <Route path="*" element={<NotFound />} />
