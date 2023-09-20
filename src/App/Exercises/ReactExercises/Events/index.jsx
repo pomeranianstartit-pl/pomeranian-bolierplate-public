@@ -19,7 +19,7 @@ export function Events() {
     <div>
       <h2>Cześć! 👋</h2>
       <button onClick={handleOnClick}>
-        <span>{text}</span> {counter > 0 && <span>{counter} razy</span>}
+        {counter > 0 ? `${text} ${counter} razy` : text}
       </button>
     </div>
   );
