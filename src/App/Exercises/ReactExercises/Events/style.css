@@ -1,3 +1,27 @@
 .font-test-family {
   font-family: Chilanka;
 }
+.events-button {
+  font-family: Poppins;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 500;
+
+  /* button/button */
+  font-family: Poppins;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 31px; /* 172.222% */
+  line-height: 31px;
+  display: flex;
+  height: 56px;
+  padding: 20px 36px;
+  justify-content: center;
+  align-items: center;
+  gap: 16px;
+  flex: 1 0 0;
+  border-radius: 8px;
+  border: 1px solid var(--primary-primary, #fe3756);
+  background: var(--primary-primary, #fe3756);
+}
