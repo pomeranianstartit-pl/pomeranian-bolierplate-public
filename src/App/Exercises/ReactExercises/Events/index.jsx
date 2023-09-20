@@ -9,16 +9,25 @@ import './style.css';
 // 5. Ostylować
 
 export function Events() {
-  const [text, setText] = useState('Nie kliknięto we mnie');
+  const [text, setText] = useState('nie kliknięto we mnie ');
+
+  const [counter, setCounter] = useState(0);
 
   function handleOnClick() {
-    setText('Kliknięto we mnie');
+   setText('Kliknięto we mnie ');
+
+   counter >= 3
+      ? setCounter((counter) => counter + 2)
+      : setCounter((counter) => counter + 1);
+
   }
 
   return (
     <div>
       <h2>Cześć! 👋</h2>
-      <button onClick={handleOnClick}>{text}</button>
+      <button onClick={handleOnClick}>
+       {counter > 0 ? `${text} ${counter} razy` : text}
+      </button>
     </div>
   );
 }
