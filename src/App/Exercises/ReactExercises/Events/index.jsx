@@ -2,23 +2,25 @@ import React, { useState } from 'react';
 
 import './style.css';
 
-// 1. Dodać element <button>Jakiś tekst</button>
-// 2. Import useState z React
-// 3. Zadeklarowanie zmiennej która będzie przetrzymywać stan
-// 4. Zadeklarowanie zmiennej która będzie funkcją zmieniającą stan
-// 5. Ostylować
+// 1. Dodać nowy useState do liczenia kliknięć
+// 2. Inkrementować nową zmienną counter po każdym kliknieciu
+// 3. Wyświetlić ile razy został kliknięty
 
 export function Events() {
   const [text, setText] = useState('Nie kliknięto we mnie');
+  const [counter, setCounter] = useState(0);
 
   function handleOnClick() {
     setText('Kliknięto we mnie');
+    setCounter((counter) => counter + 1);
   }
 
   return (
     <div>
       <h2>Cześć! 👋</h2>
-      <button onClick={handleOnClick}>{text}</button>
+      <button onClick={handleOnClick}>
+        <span>{text}</span> {counter > 0 && <span>{counter} razy</span>}
+      </button>
     </div>
   );
 }
