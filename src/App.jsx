@@ -11,6 +11,7 @@ import { CV } from './App/Components/CV/CV';
 import { Blog } from './App/Blog/Blog';
 import { FAQ } from './App/FAQ';
 import { Callendar } from './App/Components/Callendar/Callendar';
+import { TechStack } from './App/Components/TechStack/TechStack';
 export function App() {
   return (
     <BrowserRouter>
@@ -18,6 +19,7 @@ export function App() {
         <Route path="" element={<Layout withSidebar />}>
           <Route index element={<Navigate to="dashboard" />} />
           <Route path="cv/*" element={<CV />} />
+          <Route path="techstack/*" element={<TechStack />} />
           <Route path="callendar/*" element={<Callendar />} />
           <Route path="dashboard/*" element={<Dashboard />} />
           <Route path="exercises/*" element={<Exercises />} />

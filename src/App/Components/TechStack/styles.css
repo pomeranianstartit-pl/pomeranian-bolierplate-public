@@ -1,0 +1,43 @@
+.tech-stack-box {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  gap: 3rem;
+  max-width: 50rem;
+  padding: 1rem;
+}
+
+.tech-stack-element {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  filter: grayscale(100%);
+  text-decoration: none;
+  font-size: 1rem;
+  color: var(--text-text-primary);
+}
+.tech-stack-element:hover {
+  filter: grayscale(0%);
+}
+
+.tech-stack-icon {
+  width: 6rem;
+  height: 6rem;
+}
+
+.tech-stack-title {
+  margin-top: 0.5rem;
+}
+
+@media (max-width: 800px) {
+  .tech-stack-icon {
+    width: calc(100vw / 8);
+    height: calc(100vw / 8);
+  }
+}
+@media (max-width: 400px) {
+  .tech-stack-element {
+    font-size: 0.8rem;
+  }
+}

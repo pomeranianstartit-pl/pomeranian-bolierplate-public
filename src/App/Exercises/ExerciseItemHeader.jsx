@@ -1,4 +1,4 @@
-import { GoBackLink } from '../Components/GoBack/GoBack';
+import { GoBackButton } from '../Components/GoBack/GoBack';
 
 import './header.css';
 
@@ -7,7 +7,7 @@ export function ExerciseItemHeader({ data }) {
     <div className="exercise-item-header">
       <p>{`Tytuł: ${data?.linkLabel || '-'}`}</p>
       <p>{`Data: ${data?.date || '-'}`}</p>
-      <GoBackLink />
+      <GoBackButton />
     </div>
   );
 }

@@ -2,11 +2,12 @@ import './styles.css';
 import './Fonts/MADETOMMYRegular_PERSONALUSE.otf';
 import { Title } from './Title/Title';
 import { PostSignature } from './PostSignature/PostSignature';
+import { BackLink } from '../Components/GoBack/GoBack';
 export const Blog = () => {
   return (
     <div className="blog">
       <h1>
-        <a>&lt; Blog</a>
+        <BackLink label="&lt; Blog" />
       </h1>
       <div className="blog-post">
         <span className="blog-post-date">30-11-2022</span>
