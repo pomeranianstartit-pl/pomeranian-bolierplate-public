@@ -11,7 +11,7 @@ import './style.css';
 export function Events() {
   const [text, setText] = useState('Nie kliknięto we mnie');
   const [counter, setCounter] = useState(0);
-
+  const [inputText, setInputText] = useState('');
   //let text2 = 'Nie kliknięto we mnie 2';
 
   function handleOnClick() {
@@ -23,28 +23,43 @@ export function Events() {
 
     setCounter((counter) => counter + 1);
   }
+  function handleOnChange(event) {
+    setInputText(event.target.value);
+  }
+
+  function handleGreeting() {
+    alert(`Cześć 👋 ${inputText} 🥳`);
+  }
 
   // Zwykła funkcja
 
-  function name() {
-    console.log('name1');
-  }
+  //function name() {
+  //  console.log('name1');
+  //}
 
-  name();
+  //name();
 
   // Funkcja strzałkowa
 
-  const name2 = () => {
-    console.log('name2');
-  };
+  //const name2 = () => {
+  //  console.log('name2');
+  // };
 
-  name2();
+  //name2();
 
   return (
     <div>
       <h2>Cześć i czołem!</h2>
+      <input
+        className="events-input"
+        type="text"
+        onChange={(event) => handleOnChange(event)}
+      />
+      <button className="events-button" onClick={handleGreeting}>
+        Kliknij
+      </button>
       <button className="events-button" onClick={handleOnClick}>
-        <span>{text}</span> {counter > 0 && <span>{counter} razy</span>}
+        {counter > 0 ? `${text} ${counter} razy` : text}
       </button>
     </div>
   );
