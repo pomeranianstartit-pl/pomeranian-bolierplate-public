@@ -132,6 +132,8 @@ button[id$="ButtonId"] {
 
 */
 
+/*
+
 button[id*="Button"] {
   background-color: green;
   border: 2px solid black;
@@ -147,6 +149,8 @@ button[id*="Button"] {
 
 
 */
+
+/*
 
 .firstDiv a {
   background-color: aqua;
@@ -167,7 +171,7 @@ button[id*="Button"] {
 
 */
 
-
+/*
 #usersList > li {
   background-color: aqua;
   border: 2px solid black;
@@ -189,6 +193,7 @@ button[id*="Button"] {
 
 */
 
+/* 
 div + p {
   background-color: aqua;
   border: 2px solid black;
