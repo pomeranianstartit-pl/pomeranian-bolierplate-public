@@ -18,17 +18,11 @@ export function App() {
         <Route path="" element={<Layout withSidebar />}>
           <Route index element={<Navigate to="dashboard" />} />
           <Route path="dashboard/*" element={<Dashboard />} />
-
           <Route path="cv/*" element={<CV />} />
-
           <Route path="exercises/*" element={<Exercises />} />
-
           <Route path="calendar/*" element={<Calendar />} />
-
           <Route path="blocks/*" element={<Blocks />} />
-
           <Route path="blog/" element={<Blog />} />
-
           <Route path="*" element={<NotFound />} />
         </Route>
       </Routes>
