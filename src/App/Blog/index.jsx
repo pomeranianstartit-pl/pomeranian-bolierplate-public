@@ -9,9 +9,7 @@ export const Blog = () => {
       <h1>Blog</h1>
       <p>Strona zawierająca Blog</p>
       <section>
-        <figure>
-          <NotificationIcon />
-        </figure>
+        <figure></figure>
         <time>30-11-2022</time>
         <h1>Why are we so nostalgic for the 1990s?</h1>
         <article>
@@ -35,9 +33,7 @@ export const Blog = () => {
         </div>
       </section>
       <section>
-        <figure>
-          <NotificationIcon />
-        </figure>
+        <figure></figure>
         <time>30-11-2022</time>
         <h1>I make mistakes!</h1>
         <article>
@@ -54,9 +50,7 @@ export const Blog = () => {
         </div>
       </section>
       <section>
-        <figure>
-          <NotificationIcon />
-        </figure>
+        <figure></figure>
         <time>30-11-2022</time>
         <h1>18 Record-Breaking, Controversial, and Weird Facts </h1>
         <article>
@@ -71,13 +65,15 @@ export const Blog = () => {
           </p>
           <ul>
             <li>
-              <a href="#"> WP.PL 1</a>
+              <a href="https://www.wp.pl/">WP.PL 1</a>
             </li>
             <li>
               <a href="#"> WP.PL 2</a>
             </li>
             <li>
-              <a href="#"> WP.PL 2</a>
+              <a href="https://www.onet.pl/film/onetfilm/tvn-wbil-szpile-tvp-pokazano-alternatywna-rzeczywistosc-telewizji-rzadowej/2ksezfp,681c1dfa">
+                ONET.PL
+              </a>
             </li>
           </ul>
         </article>
