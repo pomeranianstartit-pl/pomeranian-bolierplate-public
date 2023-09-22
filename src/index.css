@@ -48,9 +48,9 @@ code {
   padding: 1rem 2.2rem 1rem 2.2rem;
   margin: 0.5rem;
   border-radius: 0.5rem;
-  border-color: #23213d;
+  border-color: var(--text-text-secondary);
   border: 1px;
-  background: #23213d;
+  background: var(--text-text-secondary);
   font-family: Poppins;
   font-size: 18px;
   font-weight: 500;
@@ -62,8 +62,8 @@ code {
 
 .app-button:hover,
 .app-button.activeButton {
-  background: #fe3756;
-  border-color: #fe3756;
+  background: var(--primary-primary);
+  border-color: var(--primary-primary);
 }
 .app-button:disabled {
   background-color: var(--gray-700);
@@ -72,16 +72,4 @@ code {
 input.input-error,
 textarea.input-error {
   border: 1px solid var(--colors-actions-danger);
-}
-
-.back-link {
-  font-family: 'Poppins';
-  font-style: normal;
-  font-weight: 700;
-  font-size: 18px;
-  line-height: 34px;
-  display: flex;
-  align-items: center;
-  color: var(--text-text-secondary);
-  margin-bottom: 5rem;
 }

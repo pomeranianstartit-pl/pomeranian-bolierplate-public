@@ -9,7 +9,7 @@ import { CalendarIcon } from './../Components/Icons/CalendarIcon';
 import { PersonalCardIcon } from './../Components/Icons/PersonalCardIcon';
 import { SettingIcon } from './../Components/Icons/SettingIcon';
 import { FaqIcon } from '../Components/Icons/FaqIcon';
-export function AppAside(menuIsVisible) {
+export function AppAside({ menuIsVisible }) {
   return (
     <aside className={menuIsVisible ? 'menu-visible' : ''}>
       <nav>
@@ -77,7 +77,6 @@ export function AppAside(menuIsVisible) {
           </li>
         </ul>
       </nav>
-      <p style={{ padding: '1rem 0' }}>Sidebar items, widgets, etc</p>
     </aside>
   );
 }

@@ -19,7 +19,10 @@ export const Layout = ({ withSidebar }) => {
       <Cookies />
       <div className={getLayoutClassName(withSidebar)}>
         <AppHeader
-          toggleMenuVisibility={() => setMenuIsVisible(!menuIsVisible)}
+          toggleMenuVisibility={() => {
+            setMenuIsVisible(!menuIsVisible);
+            console.log('menuIsVisible:', menuIsVisible);
+          }}
         />
         {withSidebar && <AppAside menuIsVisible={menuIsVisible} />}
         <main>

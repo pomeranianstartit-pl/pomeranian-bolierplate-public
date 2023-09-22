@@ -69,6 +69,7 @@
 }
 .Card {
   grid-area: Card;
+  margin-top: 2rem;
 }
 
 .Head {
@@ -90,4 +91,37 @@
 }
 .Boxes {
   grid-area: Boxes;
+}
+.Card .social-media {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.Card .social-media img {
+  width: 2.5rem;
+  height: 2.5rem;
+  margin-right: 0.5rem;
+}
+
+.Card h2 {
+  font-family: Poppins;
+  font-size: 1.75rem;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 3rem;
+}
+.Card .profile-pic {
+  border-radius: 50%;
+  margin: 3rem;
+}
+.Card .contact-item {
+  display: flex;
+  align-items: center;
+  margin-bottom: 0.5rem;
+}
+
+.Card .contact-label {
+  font-weight: bold;
+  margin-right: 1 rem;
+  width: 5rem;
 }

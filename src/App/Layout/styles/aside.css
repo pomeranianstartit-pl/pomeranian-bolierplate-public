@@ -7,13 +7,15 @@ aside {
   overflow-y: auto;
 }
 
-@media (width <800px) {
-  aside .menu-visible {
+@media (max-width: 800px) {
+  aside.menu-visible {
     position: absolute;
+    left: 0;
     background-color: white;
     top: 5rem;
-    height: calc(100% -5rem);
+    height: calc(100vh - 5rem);
     z-index: 1000;
+    justify-content: flex-start;
   }
 }
 
@@ -27,7 +29,6 @@ aside ul {
 aside li {
   line-height: 2rem;
   list-style-image: none;
-  margin: 20px, 10px;
 }
 
 .aside-row {
@@ -35,7 +36,6 @@ aside li {
   flex-direction: row;
   align-items: center;
   margin-top: 10px;
-  vertical-align: middle;
 }
 
 aside li a.aside-row {
@@ -48,12 +48,10 @@ aside li a.aside-row {
   text-decoration-line: none;
 }
 
-aside a.active {
-  /*background-color: var(--color-primary-blue); // remove if it will be ordered*/
-  color: var(--color-white);
+aside ul li a.active {
+  color: var(--color-link-hover);
 }
 aside li a:hover {
-  /*font-variant: small-caps; for fun*/
   color: var(--color-link-hover);
 }
 aside a.active svg,
@@ -67,4 +65,5 @@ aside hr {
 
 .menu-icon {
   margin-right: 0.8rem;
+  width: 1.6rem;
 }

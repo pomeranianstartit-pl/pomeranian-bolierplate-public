@@ -1,4 +1,5 @@
 import './styles.css';
+import { BackLink } from '../GoBack/GoBack';
 
 import html5Icon from '../../Images/TechStack/html5.svg';
 import jestIcon from '../../Images/TechStack/jest.svg';
@@ -64,23 +65,30 @@ const techData = [
 
 export const TechStack = () => {
   return (
-    <div className="tech-stack-box">
-      {techData.map((tech, index) => (
-        <a
-          key={index}
-          href={tech.url}
-          target="_blank"
-          rel="noopener noreferrer"
-          className="tech-stack-element"
-        >
-          <img
-            src={tech.icon}
-            alt={tech.techTitle}
-            className="tech-stack-icon"
-          />
-          <p className="tech-stack-title">{tech.techTitle}</p>
-        </a>
-      ))}
+    <div>
+      <BackLink label="&lt; Tech Stack" />
+      <p>
+        Poniżej znajdziesz tech stack oraz nadzędzia, jakich nauczylem się
+        podczas kursu.
+      </p>
+      <div className="tech-stack-box">
+        {techData.map((tech, index) => (
+          <a
+            key={index}
+            href={tech.url}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="tech-stack-element"
+          >
+            <img
+              src={tech.icon}
+              alt={tech.techTitle}
+              className="tech-stack-icon"
+            />
+            <p className="tech-stack-title">{tech.techTitle}</p>
+          </a>
+        ))}
+      </div>
     </div>
   );
 };

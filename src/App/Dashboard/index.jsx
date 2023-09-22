@@ -2,16 +2,19 @@ import './styles.css';
 
 import DashboardCard from '../DasbordCard/DashboardCard';
 
-import { useState } from 'react';
-
 import PersonalCardIcon from '../Images/tiles/personalcard.svg';
 import EditIcon from '../Images/tiles/edit.svg';
 import FaqIcon from '../Images/faq.svg';
 import CodeIcon from '../Images/tiles/code.svg';
 import BlogIcon from '../Images/book-saved.svg';
 import wavingHandSign from '../Components/Icons/waving-hand-sign.png';
+import InstagramIcon from '../Images/SocialIcons/instagram.svg';
+import LinkedInIcon from '../Images/SocialIcons/linkedin.svg';
+import GitHubIcon from '../Images/SocialIcons/github.svg';
+import CodeWarsIcon from '../Images/SocialIcons/codewars.svg';
+import profile from '../Images/prof1m.jpg';
 export const Dashboard = () => {
-  const [availableCards, setAvailableCards] = useState([
+  const availableCards = [
     {
       sectionTitle: 'Moje CV',
       icon: <img src={PersonalCardIcon} alt="business card resume" />,
@@ -22,7 +25,7 @@ export const Dashboard = () => {
       sectionTitle: ' Ćwiczenia',
       icon: <img src={EditIcon} alt="excercises" />,
       description: 'wszystkie wykonane ćwiczenia',
-      link: '/excercise',
+      link: '/exercises',
     },
     {
       sectionTitle: 'Blog',
@@ -34,7 +37,7 @@ export const Dashboard = () => {
       sectionTitle: 'Tech stack',
       icon: <img src={CodeIcon} alt="business card resume" />,
       description: 'stack technologiczny realizowany na kursie',
-      link: '/tech',
+      link: '/TechStack',
     },
     {
       sectionTitle: 'FAQ',
@@ -42,11 +45,62 @@ export const Dashboard = () => {
       description: 'odpowiedzi na najczęstsze pytania',
       link: '/faq',
     },
-  ]);
+  ];
 
+  const socialProfiles = [
+    {
+      icon: InstagramIcon,
+      url: 'https://www.instagram.com/kmada666/',
+      description: 'Instagram od strony fotografii',
+    },
+    {
+      icon: LinkedInIcon,
+      url: 'https://www.linkedin.com/in/adam-karcz1984/',
+      description: 'LinkedIn - zapraszam do kontaktu!',
+    },
+    {
+      icon: GitHubIcon,
+      url: 'https://github.com/Adam-Karcz',
+      description: 'GitHub - podejrzyj kod!',
+    },
+    {
+      icon: CodeWarsIcon,
+      url: 'https://www.codewars.com/users/Adam-Karcz',
+      description: 'CodeWars - (na razie) proste rozkminy do nauki',
+    },
+  ];
   return (
     <div className="container">
-      <div className="Card"></div>
+      <div className="Card">
+        <div className="social-media">
+          {socialProfiles.map((profile, index) => (
+            <a
+              key={index}
+              href={profile.url}
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <img src={profile.icon} alt={profile.description} />
+            </a>
+          ))}
+        </div>
+        <h2>Adam Karcz</h2>
+        <div className="contact-info">
+          <div className="contact-item">
+            <div className="contact-label">Phone:</div>
+            <div className="contact-value">506088756</div>
+          </div>
+          <div className="contact-item">
+            <div className="contact-label">Email:</div>
+            <div className="contact-value">adam.karcz.1984@gmail.com</div>
+          </div>
+          <img
+            className="profile-pic"
+            src={profile}
+            alt="Zdjęcie profilowe"
+          ></img>
+        </div>
+      </div>
       <div className="Head">
         <h3>
           <img src={wavingHandSign} alt="Hi" />
