@@ -1,6 +1,7 @@
 import { useEffect, useState } from 'react';
 
 import { Button } from '../../../Components/Button';
+import { TimeTracker } from '../../../Components/TimeTracker';
 import { MainHeader } from '../../../Components/MainHeader';
 
 import './style.css';
@@ -14,6 +15,10 @@ function formatTime(duration) {
   return `${minutes}:${seconds < 10 ? `0${seconds}` : seconds}`;
 }
 
+function formatMoves(moves) {
+  return Math.ceil(moves / 2);
+}
+
 function shuffleArray(s) {
   for (let i = s.length - 1; i > 0; i--) {
     const j = Math.floor(Math.random() * (i + 1));
@@ -24,8 +29,12 @@ function shuffleArray(s) {
   return s;
 }
 
+const ELEMENT_OPTIONS = [8, 16, 20, 24];
+
 export const MemoGame = () => {
   const [status, setStatus] = useState('notStarted');
+
+  const [elementsNumber, setElementsNumber] = useState(8);
 
   const [moves, setMoves] = useState(0);
 
@@ -35,14 +44,16 @@ export const MemoGame = () => {
 
   const [selectedTiles, setSelectedTiles] = useState([]);
 
-  const [IsActiveTimer, setIsActiveTimer] = useState(false); // Flaga aktywności licznika
+  const [isActiveTimer, setIsActiveTimer] = useState(false); // Flaga aktywności licznika
+
+  const [selectedTilesTimeout, setSelectedTilesTimeout] = useState();
 
   //react lifecycle hook
 
   useEffect(() => {
     let timerInterval;
 
-    if (IsActiveTimer) {
+    if (isActiveTimer) {
       timerInterval = setInterval(() => {
         setDuration((duration) => duration + 1);
       }, 1000);
@@ -51,20 +62,47 @@ export const MemoGame = () => {
     return () => {
       clearInterval(timerInterval);
     };
-  }, [IsActiveTimer]);
+  }, [isActiveTimer]);
 
   // refresh after tile select
 
   useEffect(() => {
+    const areMatch = areSelectedTilesMatch();
+
+    if (selectedTilesTimeout) {
+      clearTimeout(selectedTilesTimeout);
+    }
+
     setTiles((tiles) => {
-      return tiles.map((tile) => ({
-        ...tile,
-        isVisible: selectedTiles.find(
-          (selectedTile) => selectedTile.id === tile.id
-        ),
-      }));
+      return tiles.map((tile) => {
+        const isSelected = isTileSelected(tile.id);
+
+        return {
+          ...tile,
+
+          isVisible: isSelected,
+
+          isGuessed: tile.isGuessed || (isSelected && areMatch),
+        };
+      });
     });
+
+    if (selectedTiles.length === 2 && !areMatch) {
+      const timeout = setTimeout(() => {
+        setSelectedTiles([]);
+      }, 3000);
+
+      setSelectedTilesTimeout(timeout);
+    }
   }, [selectedTiles]);
+
+  useEffect(() => {
+    if (isGameFinished()) {
+      setStatus('finished');
+
+      setIsActiveTimer(false);
+    }
+  }, [tiles]);
 
   const handleStart = () => {
     setStatus('started');
@@ -84,6 +122,8 @@ export const MemoGame = () => {
     setStatus('finished');
 
     setIsActiveTimer(false);
+
+    setTiles([]);
   };
 
   const handleTileClick = (id) => () => {
@@ -107,9 +147,95 @@ export const MemoGame = () => {
       }
     });
   };
+  const isTileSelected = (id) => {
+    return selectedTiles.some((selectedTile) => selectedTile.id === id);
+  };
+
+  const isGameFinished = () => {
+    // let isFinished = true;
+
+    // // old for
+
+    // for (let index = 0; index < tiles.length; index++) {
+
+    //   isFinished = isFinished && tiles[index].isGuessed;
+
+    // }
+
+    // // newer
+
+    // for (const tile of tiles) {
+
+    //   isFinished = isFinished && tile.isGuessed;
+
+    // }
+
+    // // forEach
+
+    // tiles.forEach((tile) => {
+
+    //   isFinished = isFinished && tile.isGuessed;
+
+    // });
+
+    // // reduce
+
+    // isFinished = tiles.reduce(
+
+    //   (prevValue, currentValue) => prevValue && currentValue.isGuessed,
+
+    //   true
+
+    // );
+
+    // every
+
+    const isEveryGameFinished = tiles.every((tile) => tile.isGuessed);
+
+    return isEveryGameFinished && tiles.length !== 0;
+  };
+
+  const areSelectedTilesMatch = () => {
+    const [tile1, tile2] = selectedTiles;
+
+    const areMatch =
+      !!tile1 && !!tile2 && tile1.char === tile2.char && tile1.id !== tile2.id;
+
+    return areMatch;
+  };
 
   const getInitialTiles = () => {
-    const characters = ['☀', '☁', '☯', '★', '♠', '♣', '♥', '♦'];
+    const charsNumber = elementsNumber / 2;
+
+    debugger;
+
+    const characters = shuffleArray([
+      '☀',
+
+      '☁',
+
+      '☯',
+
+      '★',
+
+      '♠',
+
+      '♣',
+
+      '♥',
+
+      '♦',
+
+      '♫',
+
+      '♪',
+
+      '⚬',
+
+      '⚑',
+    ]);
+
+    characters.length = charsNumber;
 
     const arrayOfTilesObjects = [];
 
@@ -148,110 +274,26 @@ export const MemoGame = () => {
 
       {status === 'finished' && (
         <div className="mole-result">
-          Gratulację! Twój wynik to {moves} ruchów w czasie{' '}
+          Gratulację! Twój wynik to {formatMoves(moves)} ruchów w czasie{' '}
           {formatTime(duration)}!
         </div>
       )}
 
       {status !== 'started' && (
         <>
-          {/* <div className="mole-settings-container">
-
-            <span className="mole-label">czas gry</span>
-
-            <Button
-
-              id="1"
-
-              variant={duration !== MINUTE ? 'primary' : 'secondary'}
-
-              onClick={() => {
-
-                setDuration(MINUTE);
-
-                setMinutes(MINUTE);
-
-              }}
-
-            >
-
-              1 minuta
-
-            </Button>
-
-            <Button
-
-              variant={duration !== 2 * MINUTE ? 'primary' : 'secondary'}
-
-              onClick={() => {
-
-                setDuration(2 * MINUTE);
-
-                setMinutes(2 * MINUTE);
-
-              }}
-
-            >
-
-              2 minuty
-
-            </Button>
-
-            <Button
-
-              variant={duration !== 3 * MINUTE ? 'primary' : 'secondary'}
-
-              onClick={() => setDuration(3 * MINUTE)}
-
-            >
-
-              3 minuty
-
-            </Button>
-
-          </div>
-
           <div className="mole-settings-container">
+            <span className="mole-label">LICZBA ELEMENTÓW</span>
 
-            <span className="mole-label">liczba kretów</span>
-
-            <Button
-
-              variant={molesNo !== 1 ? 'primary' : 'secondary'}
-
-              onClick={() => setMolesNo(1)}
-
-            >
-
-              1 kret
-
-            </Button>
-
-            <Button
-
-              variant={molesNo !== 2 ? 'primary' : 'secondary'}
-
-              onClick={() => setMolesNo(2)}
-
-            >
-
-              2 krety
-
-            </Button>
-
-            <Button
-
-              variant={molesNo !== 3 ? 'primary' : 'secondary'}
-
-              onClick={() => setMolesNo(3)}
-
-            >
-
-              3 krety
-
-            </Button>
-
-          </div> */}
+            {ELEMENT_OPTIONS.map((option) => (
+              <Button
+                variant={elementsNumber !== option ? 'primary' : 'secondary'}
+                onClick={() => setElementsNumber(option)}
+                key={option}
+              >
+                {option} elementów
+              </Button>
+            ))}
+          </div>
 
           <div className="mole-settings-container">
             <span className="mole-label">przyciski sterujące</span>
@@ -274,7 +316,7 @@ export const MemoGame = () => {
           <div className="mole-settings-container">
             <span className="mole-label">LICZBA RUCHÓW</span>
 
-            <span className="mole-output">{moves}</span>
+            <span className="mole-output">{formatMoves(moves)}</span>
           </div>
 
           <div className="mole-settings-container">
@@ -284,21 +326,21 @@ export const MemoGame = () => {
               Stop
             </Button>
           </div>
-
-          <div className="mole-tile-board">
-            {tiles.map(({ id, char, isVisible, isGuessed }) => (
-              <Tile
-                key={id}
-                onClick={handleTileClick(id)}
-                char={char}
-                isVisible={isVisible}
-                isGuessed={isGuessed}
-                isCorrect={true}
-              />
-            ))}
-          </div>
         </>
       )}
+
+      <div className="mole-tile-board">
+        {tiles.map(({ id, char, isVisible, isGuessed }) => (
+          <Tile
+            key={id}
+            onClick={handleTileClick(id)}
+            char={char}
+            isVisible={isVisible}
+            isGuessed={isGuessed}
+            isCorrect={selectedTiles.length < 2 || areSelectedTilesMatch()}
+          />
+        ))}
+      </div>
     </div>
   );
 };

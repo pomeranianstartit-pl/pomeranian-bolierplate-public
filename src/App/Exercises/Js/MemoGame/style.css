@@ -8,21 +8,19 @@
   box-shadow: 2px 2px 5px 2px rgba(0, 0, 0, 0.3);
   background-color: #ebebeb;
   font-size: 5rem;
+  color: currentColor;
 }
 
-.memo-tile:active {
-  background-color: #5369e6;
-}
-
+.memo-tile:active,
 .memo-visible {
-  background-color: #ebebeb;
+  background-color: #f7fd56;
 }
 
 .memo-incorrect {
-  background-color: #d77272;
+  background-color: #f3aea8;
 }
 .memo-guessed {
-  background-color: #ebebeb;
+  background-color: #e2fbd7;
 }
 
 .mole-tile-board {
