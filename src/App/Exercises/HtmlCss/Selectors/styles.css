@@ -118,7 +118,7 @@ h1 {}
 
 */
 
-button[id$='ButtonId'] {
+/*button[id$='ButtonId'] {
   background-color: aqua;
   border: 2px solid black;
 }
@@ -131,7 +131,7 @@ button[id$='ButtonId'] {
 
 */
 
-button[id*='Button'] {
+/*button[id*='Button'] {
   background-color: green;
   border: 2px solid black;
 }
@@ -146,7 +146,7 @@ button[id*='Button'] {
 
 */
 
-.firstDiv a {
+/*.firstDiv a {
   background-color: aqua;
   border: 2px solid black;
 }
@@ -166,7 +166,7 @@ button[id*='Button'] {
 
 */
 
-#usersList > li {
+/*#usersList > li {
   background-color: aqua;
   border: 2px solid black;
 }
@@ -187,7 +187,7 @@ button[id*='Button'] {
 
 */
 
-div + p {
+/*div + p {
   background-color: aqua;
   border: 2px solid black;
 }
