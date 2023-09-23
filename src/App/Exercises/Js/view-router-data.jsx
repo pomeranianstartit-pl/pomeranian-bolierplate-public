@@ -15,6 +15,10 @@ import { blockRouterMetaData as VanishString } from './VanishString/router-data'
 import { blockRouterMetaData as ExerciseTimerCounting } from './ExerciseTimerCounting/router-data';
 import { blockRouterMetaData as HitTheMoleGame } from './HitTheMoleGame/router-data';
 import { blockRouterMetaData as MemoGame } from './MemoGame/router-data';
+import { blockRouterMetaData as ErrorsPrototypesThis } from './TryCatchAndFinally/router-data';
+import { blockRouterMetaData as JsPrototypes } from './JsPrototypes/router-data';
+import { blockRouterMetaData as OOP } from './OOP/router-data';
+import { blockRouterMetaData as OOPzadania } from './OOP-Zadania/router-data';
 
 export const blockRouterMetaData = [
   blockRouterMetaDataJsVariables1,
@@ -32,5 +36,9 @@ export const blockRouterMetaData = [
   ExerciseTimerCounting,
   HitTheMoleGame,
   MemoGame,
+  ErrorsPrototypesThis,
+  JsPrototypes,
+  OOP,
+  OOPzadania,
 ];
 export const blockRouterData = getParsedRouterDataList(blockRouterMetaData);
