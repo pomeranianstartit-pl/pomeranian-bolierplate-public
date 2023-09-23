@@ -13,7 +13,13 @@ aside ul {
 }
 
 aside li {
-  line-height: 2rem;
+  /* line-height: 2rem; */
+  /* 23/09 15:55 modified */
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 27px;
+  list-style: none;
 }
 
 .aside-row {
@@ -30,4 +36,8 @@ aside li a {
 aside a.active {
   background-color: var(--color-primary-blue);
   color: var(--color-white);
+}
+
+#idDashboard {
+  color:#FE3756;
 }
