@@ -1,0 +1,9 @@
+.container--errors-prototypes-this {
+  font-family: 'Poppins', sans-serif;
+}
+.container--number-input-validator p {
+  background-color: red;
+  margin: 40px 0 0 0;
+  display: flow-root;
+  grid-row: span;
+}
