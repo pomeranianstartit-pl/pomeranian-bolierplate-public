@@ -15,6 +15,7 @@ import { blockRouterMetaData as VanishString } from './VanishString/router-data'
 import { blockRouterMetaData as ExerciseTimerCounting } from './ExerciseTimerCounting/router-data';
 import { blockRouterMetaData as HitTheMoleGame } from './HitTheMoleGame/router-data';
 import { blockRouterMetaData as MemoGame } from './MemoGame/router-data';
+import { blockRouterMetaData as JsonXMLStorage } from './JsonXMLStorage/router-data';
 
 export const blockRouterMetaData = [
   blockRouterMetaDataJsVariables1,
@@ -32,5 +33,6 @@ export const blockRouterMetaData = [
   ExerciseTimerCounting,
   HitTheMoleGame,
   MemoGame,
+  JsonXMLStorage,
 ];
 export const blockRouterData = getParsedRouterDataList(blockRouterMetaData);
