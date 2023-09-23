@@ -1,6 +1,6 @@
 import './styles.css';
 
-export const Dashboard = () => {
+export function Dashboard() {
   return (
     <div className="dashboard">
       <h1>Dashboard</h1>
@@ -10,4 +10,4 @@ export const Dashboard = () => {
       </p>
     </div>
   );
-};
+}
