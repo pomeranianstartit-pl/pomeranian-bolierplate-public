@@ -2,6 +2,8 @@ import './styles.css';
 
 export function Exercise() {
   const mathResult1 = 2 * 5;
+  const divide = 3 / 2;
+  
 
   return (
     <div className="playing-with-variables">
@@ -12,7 +14,7 @@ export function Exercise() {
         </pre>
         {/* Uzupełnij wykorzystując zmienne*/}
         <pre>
-          <code>3 : 2 = ___</code>
+          <code>3 : 2 = {divide}</code>
         </pre>
         <pre>
           {/* kwadrat liczby */}
