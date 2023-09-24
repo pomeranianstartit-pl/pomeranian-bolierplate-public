@@ -3,17 +3,6 @@ import React from 'react';
 export const ApiRequestButton = ({ handleClick }) => {
   return (
     <>
-      {/* <button value={'posts'} onClick={handleClick} type="submit">
-        posts
-      </button>
-      <button value={'comments'} onClick={handleClick} type="submit">
-        comments
-      </button>
-      <button value={'users'} onClick={handleClick} type="submit">
-        users
-      </button> */}
-
-      {/* ARRAY */}
       <button value={1} onClick={handleClick} type="submit">
         posts
       </button>
@@ -26,3 +15,15 @@ export const ApiRequestButton = ({ handleClick }) => {
     </>
   );
 };
+
+// WERSJA ZE SŁOWNIKIEM
+
+// <button value={'posts'} onClick={handleClick} type="submit">
+//       posts
+//     </button>
+//     <button value={'comments'} onClick={handleClick} type="submit">
+//       comments
+//     </button>
+//     <button value={'users'} onClick={handleClick} type="submit">
+//       users
+//     </button>
