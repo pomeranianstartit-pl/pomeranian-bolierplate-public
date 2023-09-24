@@ -7,7 +7,7 @@ export const ApiRequestDataApp = ({ API_URL, endOfUrl }) => {
     const getPosts = async () => {
       try {
         const response = await fetch(API_URL);
-        if (!response.ok) throw Error('Something went wrong :(');
+        if (!response.ok) throw Error('Something went wrong');
         const dataFromServer = await response.json();
 
         setData(dataFromServer);
