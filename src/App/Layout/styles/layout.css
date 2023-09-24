@@ -5,6 +5,7 @@
 
   grid-template-columns: 10rem 1fr;
   grid-template-rows: 5rem 4fr 5rem;
+
   grid-template-areas:
     'header header'
     'sidebar main'

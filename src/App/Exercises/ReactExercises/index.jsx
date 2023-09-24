@@ -17,14 +17,15 @@ export function ReactExercises() {
 
   return (
     <div>
-      <p>React - lista ćwiczeń</p>
+      <p style={{ fontWeight: 700 }}>React - lista ćwiczeń</p>
       <GoBackLink label="Zamknij" />
 
       <hr />
-
-      <Routes>
-        <Route path="" element={<ExerciseLinks />} />
-      </Routes>
+      <div className="exercise-links">
+        <Routes>
+          <Route path="" element={<ExerciseLinks />} />
+        </Routes>
+      </div>
 
       {element}
     </div>

@@ -1,0 +1,26 @@
+.dashboard .dashboard-about-me,
+.dashboard-cv .dashboard-about-me {
+  padding-top: 5rem;
+}
+.dashboard .dashboard-about-me .person,
+.dashboard-cv .dashboard-about-me .person {
+  background: url('../../Images/Zdj1.jpg') no-repeat center 10%;
+  background-size: 10rem;
+  /* border: 1px solid red; */
+  border-radius: 50%;
+  height: 10rem;
+  width: 10rem;
+}
+
+.dashboard .dashboard-about-me .name,
+.dashboard-cv .dashboard-about-me .name {
+  font-size: 22px;
+  font-weight: 700;
+}
+.dashboard .dashboard-about-me .description,
+.dashboard-cv .dashboard-about-me .description {
+  font-size: 16px;
+  line-height: 25px;
+  font-weight: 500;
+  opacity: 60%;
+}

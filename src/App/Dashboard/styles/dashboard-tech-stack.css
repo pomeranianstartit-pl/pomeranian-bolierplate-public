@@ -1,0 +1,21 @@
+.dashboard .dashboard-tech-stack-container {
+  padding: 2rem;
+}
+.dashboard .dashboard-tech-stack-container a {
+  text-decoration: none;
+}
+.dashboard .dashboard-tech-stack-container p {
+  margin-bottom: 3rem;
+}
+.dashboard .dashboard-tech-stack-grid {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  gap: 2rem;
+}
+.dashboard .dashboard-tech-stack-flex {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  padding-right: 5rem;
+  gap: 2rem;
+}

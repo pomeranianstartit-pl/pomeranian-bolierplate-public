@@ -17,14 +17,15 @@ export function JsExercises() {
 
   return (
     <div>
-      <p>JS - lista ćwiczeń</p>
+      <p style={{ fontWeight: 700 }}>JS - lista ćwiczeń</p>
       <GoBackLink label="Zamknij" />
 
       <hr />
-
-      <Routes>
-        <Route path="" element={<ExerciseLinks />} />
-      </Routes>
+      <div className="exercise-links">
+        <Routes>
+          <Route path="" element={<ExerciseLinks />} />
+        </Routes>
+      </div>
 
       {element}
     </div>

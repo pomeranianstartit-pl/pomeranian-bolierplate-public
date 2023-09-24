@@ -1,0 +1,101 @@
+.position1 {
+  width: 50px;
+  height: 50px;
+  background-color: rgb(230, 237, 149);
+  animation-name: yellow-box;
+  animation-duration: 1s;
+  animation-direction: alternate;
+  animation-iteration-count: 5;
+  animation-fill-mode: forwards;
+}
+
+.position2 {
+  width: 50px;
+  height: 50px;
+  background-color: rgb(230, 237, 149);
+  animation-name: yellow-box;
+  animation-duration: 1.5s;
+  animation-direction: alternate;
+  animation-iteration-count: 7;
+  animation-fill-mode: forwards;
+}
+
+.position3 {
+  width: 50px;
+  height: 50px;
+  background-color: rgb(230, 237, 149);
+  animation-name: yellow-box;
+  animation-duration: 2s;
+  animation-direction: alternate;
+  animation-iteration-count: 9;
+  animation-fill-mode: forwards;
+}
+
+
+@keyframes yellow-box {
+  0% {
+    transform: translateX(0px);
+  }  
+
+  50% {
+    transform: translateX(250px);
+    background-color: aqua;
+  }
+
+  100% {
+    transform: translateX(500px);
+  }
+}
+
+.circle {
+  width: 150px;
+  height: 150px;
+  background-color: brown;
+  animation-name: implosion;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+}
+
+@keyframes implosion {
+  0% {
+    background-color: brown;
+    width: 150px;
+    height: 150px;
+  }
+
+  20% {
+    border-radius: 20%;
+    background-color: rgb(190, 158, 53);
+    width: 120px;
+    height: 120px;
+  }
+
+  40% {
+    border-radius: 40%;
+    background-color: rgb(176, 62, 40);
+    width: 80px;
+    height: 80px;
+  }
+
+  60% {
+    border-radius: 60%;
+    background-color: rgb(56, 174, 115);
+    width: 60px;
+    height: 60px;
+  }
+
+  80% {
+    border-radius: 80%;
+    background-color: rgb(174, 56, 123);
+    width: 30px;
+    height: 30px;
+  }
+
+  100% {
+    border-radius: 100%;
+    background-color: rgb(203, 237, 66);
+    width: 10px;
+    height: 10px;
+  }
+  
+}

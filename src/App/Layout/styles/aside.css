@@ -1,6 +1,6 @@
 aside {
   border-right: 1px solid var(--color-grey);
-  padding: 1rem;
+  padding: 2rem 0.7rem 0.7rem 0.7rem;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -10,24 +10,35 @@ aside {
 aside ul {
   /* Nadpisanie domyślnych styli przeglądarki */
   padding-inline-start: 1rem;
+  list-style-type: none;
 }
 
 aside li {
-  line-height: 2rem;
-}
-
-.aside-row {
   display: flex;
-  flex-direction: row;
-  align-items: center;
+  align-items: end;
+  line-height: 2rem;
+  margin-bottom: 0.7rem;
 }
 
 aside li a {
   display: block;
-  padding: 0.5rem;
+  padding: 0.2rem 0.2rem 0.35rem 0.2rem;
+  margin-left: 3px;
+  text-decoration: none;
 }
 
 aside a.active {
-  background-color: var(--color-primary-blue);
-  color: var(--color-white);
+  /* background-color: var(--color-primary-blue); */
+  color: #fe3756;
+  font-weight: 500;
+}
+
+.svg-icon {
+  filter: invert(0%) sepia(91%) saturate(7463%) hue-rotate(109deg)
+    brightness(87%) contrast(100%);
+}
+
+.svg-icon-clicked {
+  filter: invert(45%) sepia(69%) saturate(5301%) hue-rotate(329deg)
+    brightness(100%) contrast(106%);
 }
