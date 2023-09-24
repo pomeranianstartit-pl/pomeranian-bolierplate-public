@@ -1,9 +1,5 @@
 import { useState } from "react";
 
-
-
-
-
 export function ReactOnClick () {
     const [text, setText] = useState('Który przycisk naciśnięto?');
     const [number, setNumber] = useState(0);
@@ -13,7 +9,7 @@ export function ReactOnClick () {
     }
 
     function handleClickNumber(event) {
-        setNumber(event.target.innerHTML);        
+        setNumber(number + 1);        
     }
     
     return (
@@ -26,7 +22,7 @@ export function ReactOnClick () {
             <button onClick={handleClickNumber}>10</button>
 
             <p>Kliknęliśmy to: {text}</p>
-            <p>Kliknęliśmy to: {number}</p>
+            <p>Kliknęliśmy {number} razy</p>
         </div>
     );
 }
