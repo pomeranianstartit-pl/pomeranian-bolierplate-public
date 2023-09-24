@@ -1,0 +1,17 @@
+.font-test-family {
+  font-family: Chilanka;
+}
+.buttonFormat {
+  padding: 15px;
+}
+
+.borderVisible{
+  border: solid red;
+  padding: 5px 30px 5px 30px;
+}
+
+#idWarning{
+  color: red;
+  font-weight: 800;
+  font-size: larger;
+}
