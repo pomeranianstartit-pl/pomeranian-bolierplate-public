@@ -24,8 +24,12 @@ export const UseEffectAndPromiseExercise = () => {
 
   useEffect(() => {
     loadUser()
-      .then((result) => loadUserDetails(result.id))
-      .then((userDetails) => setData(userDetails))
+      .then((result) => [result, loadUserDetails(result.id)])
+      .then(([result, userDetailsPromise]) =>
+        userDetailsPromise.then((userDetails) =>
+          setData({ ...result, ...userDetails })
+        )
+      )
       .catch((err) => console.log(`Przechwycony błąd: ${err}`));
   }, []);
 
