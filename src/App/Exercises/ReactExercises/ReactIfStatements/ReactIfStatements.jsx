@@ -37,9 +37,14 @@ export function ReactIfStatements() {
 
       <p>{text}</p>
 
-      <p>Ilosc klikniec: {clickedCount}</p>
+      {/* <p>Ilosc klikniec: {clickedCount}</p> */}
 
-      <p id="idWarning">{info}</p>
+      <p>{info}</p>
+
+      {/* conditional rendering */}
+      {clickedCount > 10 && (
+        <p id="idWarning">Ilosc klikniec: {clickedCount}</p>
+      )}
     </div>
   );
 }
