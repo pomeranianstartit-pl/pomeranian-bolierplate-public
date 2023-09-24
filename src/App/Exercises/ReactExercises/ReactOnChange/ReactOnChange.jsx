@@ -4,8 +4,8 @@ import './style.css';
 
 // eksportuje sie funkcje zeby byla ona dostepna w innych miejsach
 export function ReactOnChange() {
-  const [text, setText] = useState('Twoje imie');
-  const [number, setNumber] = useState(0);
+  const [name, setText] = useState('');
+  const [number, setNumber] = useState(null);
 
   function handleChangeText(event) {
     setText(event.target.value);
@@ -25,6 +25,7 @@ export function ReactOnChange() {
         <input
           type="text"
           placeholder="tekst przed wpisaniem"
+          value={name}
           onChange={handleChangeText}
         />
       </button>
@@ -33,13 +34,14 @@ export function ReactOnChange() {
         Liczba
         <input
           type="number"
-          placeholder="imie przed wpisaniem"
+          placeholder="0"
+          value={number}
           onChange={handleChangeNumber}
         />
       </button>
 
       <p>tutaj dodamy info ktory element zostal klikniety</p>
-      <p>{text}</p>
+      <p>{name}</p>
       <p>{number}</p>
     </div>
   );
