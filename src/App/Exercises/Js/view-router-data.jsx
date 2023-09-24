@@ -21,6 +21,7 @@ import { blockRouterMetaData as OOP } from './OOP/router-data';
 import { blockRouterMetaData as OOPzadania } from './OOP-Zadania/router-data';
 import { blockRouterMetaData as SavedInput } from './SavedInput/router-data';
 import { blockRouterMetaData as JsonXMLStorage } from './JsonXMLStorage/router-data';
+import { blockRouterMetaData as PromisesAndMe } from './PromisesAndMe/router-data';
 
 export const blockRouterMetaData = [
   blockRouterMetaDataJsVariables1,
@@ -44,5 +45,6 @@ export const blockRouterMetaData = [
   OOPzadania,
   SavedInput,
   JsonXMLStorage,
+  PromisesAndMe,
 ];
 export const blockRouterData = getParsedRouterDataList(blockRouterMetaData);
