@@ -4,7 +4,7 @@ import './style.css';
 
 // eksportuje sie funkcje zeby byla ona dostepna w innych miejsach
 export function ReactOnChange() {
-  const [name, setText] = useState('');
+  const [name, setText] = useState(null);
   const [number, setNumber] = useState(null);
 
   function handleChangeText(event) {
@@ -20,7 +20,7 @@ export function ReactOnChange() {
       <h3>React - obsluga zdarzenia onChange ZAWARTOSC STRONY</h3>
 
       {/* funkcja ponizej handleChange jest bez nawiasow bo przekazuejmy referencje do niej */}
-      <button>
+      <button className="buttonFormat">
         Tekst
         <input
           type="text"
@@ -30,7 +30,7 @@ export function ReactOnChange() {
         />
       </button>
 
-      <button>
+      <button className="buttonFormat">
         Liczba
         <input
           type="number"
