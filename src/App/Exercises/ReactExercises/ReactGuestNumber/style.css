@@ -1,3 +1,52 @@
 .font-test-family {
-  font-family: Chilanka;
+  font-family: Poppins;
+}
+
+.button-exercise5{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 326px;
+  height: 56px;
+  padding:20px 36px 20px 36px;
+  text-transform: uppercase;
+  margin-top: 28px;
+  margin-bottom: 28px;
+  border-radius: 8px;
+  border: none;
+  font-size: 18px;
+  font-weight: 500;
+  color: white;
+  cursor: pointer;
+  line-height: 31px;
+}
+
+input {
+  width: 144px;
+  height: 48px;
+  padding: 13px 16px 13px 16px;
+  border:1px solid lightgray;
+  border-radius: 8px;
+  font-size: 18px;
+}
+
+p {
+  margin-top: 28px;
+  margin-bottom: 0px;
+  font-size: 22px;
+}
+#start {
+  background-color: #FE3756;
+}
+
+#reset {
+  background-color: #23213D;
+}
+
+#start:hover {
+  background-color: #DB1534;
+}
+
+#reset:hover {
+  background-color: #12112C;
 }
