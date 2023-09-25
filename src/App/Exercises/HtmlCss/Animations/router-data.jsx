@@ -7,7 +7,7 @@ export const blockRouterMetaData = {
   date: '22-09-2023',
   linkLabel: 'HTML & CSS - ćwiczenie dotyczące animacji',
   blockNo: 11,
-  element: <Exercise />,
+  element: < Exercise />,
   tags: [
     'css',
     'animation',
