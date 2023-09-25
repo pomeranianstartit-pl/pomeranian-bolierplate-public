@@ -1,0 +1,36 @@
+.divAnimation {
+  width: 100px;
+  height: 100px;
+  background: red;
+  /* Nazwa naszej animacji przekazana jako wartość */
+  animation-name: blinking-square;
+  /* Czas trwania animacji */
+  animation-duration: 5s;
+  /* jak animacja ma się wykonywać */
+  animation-iteration-count: infinite;
+}
+
+/* Definicja naszej animacji */
+@keyframes blinking-square {
+  /* co ma się zadziać na początku */
+  0% {
+    background: red;
+  }
+  
+  25% {
+    background: hotpink;
+  }
+
+  /* co ma się zadziać na w 50% z jednostki czasu */
+  50% {
+    background: green;
+  }
+
+  75% {
+    background: gold;
+  }
+
+  100% {
+    background: blue;
+  }
+}
