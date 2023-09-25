@@ -34,6 +34,10 @@ export function AppAside() {
             <NavLink to="calendar">Kalendarz</NavLink>
           </li>
           <li className="aside-row">
+            <PersonalCardIcon />
+            <NavLink to="blog">Blog</NavLink>
+          </li>
+          <li className="aside-row">
             <SettingIcon />
             <NavLink to="setting">Ustawienia</NavLink>
           </li>
