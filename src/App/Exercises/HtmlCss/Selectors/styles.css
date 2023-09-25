@@ -1,0 +1,277 @@
+/* 1. Universal selector */
+
+/*
+
+ 
+
+* {
+
+}
+
+ 
+
+*/
+
+ 
+
+/* ---------------------------------------- */
+
+ 
+
+/* * {
+
+  background-color: aqua;
+
+  font-size: 15px;
+
+} */
+
+ 
+
+/* ---------------------------------------- */
+
+ 
+
+/* 2. Type selector */
+
+/*
+
+ 
+
+div {}
+
+input {}
+
+body {}
+
+p {}
+
+header {}
+
+h1 {}
+
+ 
+
+*/
+
+/* p {
+
+  background-color: aqua;
+
+  border: 2px solid black;
+
+} */
+
+ 
+
+/* ---------------------------------------- */
+
+/* 3. Class selector */
+
+ 
+
+/*
+
+ 
+
+.[className] {}
+
+ 
+
+*/
+
+ 
+
+/* .secondParagraph {
+
+  border: 5px solid gold;
+
+} */
+
+/* ---------------------------------------- */
+
+ 
+
+/* ---------------------------------------- */
+
+/* 4. Id selector */
+
+ 
+
+/*
+
+ 
+
+#[idName] {}
+
+ 
+
+*/
+
+ 
+
+/* #sellOpelButtonId {
+
+  padding: 10px;
+
+  background: black;
+
+  color: white;
+
+  border: 2px solid gold;
+
+} */
+
+ 
+
+/* ---------------------------------------- */
+
+/* 4. Attribute selector */
+
+ 
+
+/* 4a. Attribute selector with attribute name */
+
+/*
+
+ 
+
+[attributeName] {}
+
+ 
+
+*/
+
+ 
+
+/* 1 przykład */
+
+ 
+
+/* [href] {
+
+  background-color: aqua;
+
+  border: 2px solid black;
+
+} */
+
+ 
+
+/* ---------------------------------------- */
+
+/* 2 przykład */
+
+ 
+
+/* [id] {
+
+  background-color: aqua;
+
+  border: 2px solid black;
+
+} */
+
+ 
+
+ 
+
+/* ---------------------------------------- */
+
+/* 4b. Attribute selector with value */
+
+/*
+
+ 
+
+[attributeName=value] {}
+
+ 
+
+*/
+
+/* [href="http://wp.pl"] {
+
+  background-color: aqua;
+
+  border: 2px solid black;
+
+} */
+
+ 
+
+/* ---------------------------------------- */
+
+/* 4c. Attribute selector with value beginning with */
+
+/*
+
+ 
+
+[attributeName^=value] {}
+
+ 
+
+*/
+
+/* button[id^="buy"] {
+
+  background-color: aqua;
+
+  border: 2px solid black;
+
+} */
+
+ 
+
+/* ---------------------------------------- */
+
+/* 4d. Attribute selector with value ending with */
+
+/*
+
+ 
+
+[attributeName$=value] {}
+
+ 
+
+*/
+
+ 
+
+button[id$="ButtonId"] {
+
+  background-color: aqua;
+
+  border: 2px solid black;
+
+}
+
+ 
+
+/* ---------------------------------------- */
+
+/* 4e. Attribute selector with value containing */
+
+/*
+
+ 
+
+[attributeName*=value] {}
+
+ 
+
+*/
+
+ 
+
+button[id*="Button"] {
+
+  background-color: green;
+
+  border: 2px solid black;
+
+}
+
+ 
