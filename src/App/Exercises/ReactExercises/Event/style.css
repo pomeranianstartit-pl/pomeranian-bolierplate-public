@@ -1,0 +1,51 @@
+.font-test-family {
+  font-family: Chilanka;
+}
+
+.events-btn {
+  border-radius: 8px;
+  border: 1px solid var(--primary-primary, #FE3756);
+  background: var(--primary-primary, #FE3756);
+  display: flex;
+  height: 56px;
+  padding: 20px 36px;
+  justify-content: center;
+  align-items: center;
+  gap: 16px;
+  flex: 1 0 0;
+  color: #FFF;
+  text-align: center;
+  font-family: Poppins;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 31px; /* 172.222% */
+  margin-bottom: 10px;
+  }
+  
+  .events-btn:hover {
+    cursor: pointer;
+    border-radius: 8px;
+    border: 1px solid var(--primary-primary, #FE3756);
+    background: var(--primary-primary, #ec556c);
+    display: flex;
+    height: 56px;
+    padding: 20px 36px;
+    justify-content: center;
+    align-items: center;
+    gap: 16px;
+    flex: 1 0 0;
+    color: #FFF;
+    text-align: center;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 31px; /* 172.222% */
+    }
+
+    .events-input {
+display: block;
+padding: 7px 10px;
+border-radius: 8px;
+margin-bottom: 10px;
+}
