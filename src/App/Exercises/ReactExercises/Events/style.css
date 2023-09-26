@@ -1,3 +1,25 @@
 .font-test-family {
   font-family: Chilanka;
 }
+.events-btn {
+  background-color: #FE3756;
+  border: 1px;
+  color: white;
+  padding-left: 36px;
+  padding-right: 36px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 18px;
+  font-style: normal;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.events-input {
+padding: 13px 16px;
+border-radius: 8px;
+
+}
