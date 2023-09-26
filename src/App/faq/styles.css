@@ -1,1 +1,28 @@
-.container--faq {};
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.faq {
+  margin: 80px 120px 50px 50px;
+}
+div.title {
+  padding: 18px 10px;
+  border-radius: 8px;
+  border-left: 5px solid #c8cbd1;
+  -webkit-box-shadow: 0px 0px 44px -13px rgba(200, 203, 209, 1);
+  -moz-box-shadow: 0px 0px 44px -13px rgba(200, 203, 209, 1);
+  box-shadow: 0px 0px 44px -13px rgba(200, 203, 209, 1);
+  background: white;
+}
+h2 {
+  color: #23213d;
+  font-family: Poppins;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 700;
+  /* line-height: 34px; 188.889% */
+}
