@@ -119,10 +119,17 @@ h1 {}
 
 */
 
+feat/selectors-blog
+button[id$="ButtonId"] {
+  background-color: aqua;
+  border: 2px solid black;
+}
+=======
 /* button[id$="ButtonId"] {
   background-color: aqua;
   border: 2px solid black;
 } */
+
 
 /* ---------------------------------------- */
 /* 4e. Attribute selector with value containing */
@@ -131,11 +138,19 @@ h1 {}
 [attributeName*=value] {}
 
 */
+feat/selectors-blog
+
+button[id*="Button"] {
+  background-color: green;
+  border: 2px solid black;
+}
+=======
 /* 
 button[id*="Button"] {
   background-color: green;
   border: 2px solid black;
 } */
+
 
 
 /* ---------------------------------------- */
@@ -147,8 +162,11 @@ button[id*="Button"] {
 
 
 */
-
+feat/selectors-blog
+.firstDiv a {
+=======
 /* .firstDiv a {
+
   background-color: aqua;
   border: 2px solid black;
 }
@@ -156,7 +174,11 @@ button[id*="Button"] {
 .secondDiv [href="http://onet.pl"] {
   background-color: red;
   border: 5px solid yellow;
+feat/selectors-blog
+}
+=======
 } */
+
 
 /* ---------------------------------------- */
 /* 6. Combinators - Child Combinator (>) */
@@ -167,11 +189,17 @@ button[id*="Button"] {
 
 */
 
-
+feat/selectors-blog
+#usersList > li {
+  background-color: aqua;
+  border: 2px solid black;
+}
+=======
 /* #usersList > li {
   background-color: aqua;
   border: 2px solid black;
 } */
+
 
 /* TO NIE ZADZIAŁA */
 /* #usersList > a {
@@ -189,7 +217,10 @@ button[id*="Button"] {
 
 */
 
+div + p {
+=======
 /* div + p {
+
   background-color: aqua;
   border: 2px solid black;
 }
@@ -197,7 +228,11 @@ button[id*="Button"] {
 p + p {
   background-color: red;
   border: 2px solid yellow;
+feat/selectors-blog
+}
+=======
 } */
+
 
 /* ---------------------------------------- */
 /* 8. Pseudo classes - first-child */
