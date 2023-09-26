@@ -1,3 +1,56 @@
-.font-test-family {
-  font-family: Chilanka;
+.divAnimation {
+  width: 100px;
+  height: 100px;
+  background: red;
+  animation-name: blinking-square;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+}
+@keyframes blinking-square {
+  0% {
+    background: red;
+  }
+  25% {
+    background: hotpink;
+    width: 250px;
+  }
+  50% {
+    background: green;
+  }
+  75% {
+    background: gold;
+    height: 250px;
+  }
+  100% {
+    background: blue;
+  }
+}
+.waves-wrapper {
+  font-size: 25px;
+  margin-top: 150px;
+}
+.waves {
+  margin: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+.waves span {
+  position: relative;
+  color: rebeccapurple;
+  animation: wave 4s ease-in-out infinite;
+  animation-delay: calc(0.1s * var(--i));
+}
+@keyframes wave {
+  0% {
+    transform: translateY(0px);
+  }
+  20% {
+    transform: translateY(-24px);
+  }
+  40%,
+  100% {
+    transform: translateY(0px);
+  }
 }
