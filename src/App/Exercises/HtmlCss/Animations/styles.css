@@ -1,78 +1,19 @@
-.divAnimation {
-  width: 100px;
-  height: 100px;
-  background: red;
-  /* Nazwa naszej animacji przekazana jako wartość */
-  animation-name: blinking-square;
-  /* Czas trwania animacji */
-  animation-duration: 5s;
-  /* jak animacja ma się wykonywać */
-  animation-iteration-count: infinite;
-}
 
-/* Definicja naszej animacji */
-@keyframes blinking-square {
-  /* co ma się zadziać na początku */
-  0% {
-    background: red;
-  }
-  
-  25% {
-    background: hotpink;
-    /* width: 250px; */
-  }
-
-  /* co ma się zadziać na w 50% z jednostki czasu */
-  50% {
-    background: green;
-  }
-
-  75% {
-    /* height: 250px; */
-    background: gold;
-  }
-
-  100% {
-    background: blue;
-  }
+.colors-wrapper div {
+  padding: 15px;
+  border: 1px solid black;
+  margin-bottom: 15px;
 }
 
 
-/* --------------------------------- */
-/* Waves */
+.colors-wrapper .colorName {
 
-
-.waves-wrapper {
-  font-size: 25px;
-  margin-top: 150px;
 }
 
-.waves {
-  margin: auto;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  position: relative;
+.color-wrapper .shortenHex {
+  background-color: #000;
 }
 
-.waves span {
-  position: relative;
-  color: red;
-  animation: wave 4s ease-in-out infinite;
-  animation-delay: calc(.1s*var(--i));
-}
-
-@keyframes wave {
-  0% {
-      transform: translateY(0px);
-  }
-
-  20% {
-      transform: translateY(-24px);
-  }
-
-  40%,
-  100% {
-      transform: translateY(0);
-  }
+.color-wrapper .normalHex {
+  background-color: #5bc86b;
 }
