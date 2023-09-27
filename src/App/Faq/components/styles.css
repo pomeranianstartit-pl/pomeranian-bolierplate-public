@@ -1,0 +1,11 @@
+.faq-note-wrapper {
+    border: 5px solid red;
+}
+
+.faq-note-wrapper img {
+    margin-right: 50px;
+}
+.faq-note-wrapper .rotate {
+transform:rotate(-98deg);
+transition: 0,5s;
+}
