@@ -1,6 +1,7 @@
 import { useState } from 'react';
 
 import toggleArrow from '../../../Images/toggle-arrow.svg';
+import ArrowIcon from '../../../Components/Icons/ArrowIcon';
 
 import './styles.css';
 
