@@ -1,0 +1,34 @@
+.faq-note-wrapper {
+    
+align-items: flex-start;
+
+align-self: stretch;
+border-radius: 8px;
+border-left: 5px solid var(--gray-300, #C8CBD1);
+background: var(--background-bg-primary, #FFF);
+} 
+.faq-note-wrapper .arrowRotate {
+    padding-left: 24px;
+}
+
+.faq-note-wrapper .title-style{
+    padding-left: 16px;
+    color: var(--secondary-secondary, #23213D);
+
+/* body/bold-18 */
+font-family: Poppins;
+font-size: 18px;
+font-style: normal;
+font-weight: 700;
+line-height: 34px; /* 188.889% */
+}
+.description-style{
+    padding-left: 24px;
+    
+    color: var(--text-text-primary, #222);
+font-family: Poppins;
+font-size: 18px;
+font-style: normal;
+font-weight: 400;
+line-height: 32px; /* 177.778% */
+}

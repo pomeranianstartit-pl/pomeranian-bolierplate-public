@@ -1,4 +1,6 @@
 import { useState } from 'react';
+import { ShowMoreIcon } from './ShowMoreIcon';
+import './styles.css';
 
 export function FAQNote(props) {
   const [display, setDisplay] = useState(false);
@@ -7,14 +9,16 @@ export function FAQNote(props) {
     setDisplay(!display);
   }
 
+  const arrowRotate = display ? '' : 'rotate';
+
   return (
     <div className="faq-note-wrapper">
-      <h2>{props.title}</h2>
-      <p>{props.desciption}</p>
+      <h4 onClick={handleButton}>
+        <ShowMoreIcon className={arrowRotate} />
+        <span className="title-style">{props.title}</span>
+      </h4>
 
-      {display && <div>Wyświetl mnie!</div>}
-
-      <button onClick={handleButton}>Kliknij</button>
+      {display && <p className="description-style">{props.desciption}</p>}
     </div>
   );
 }
