@@ -1,3 +1,26 @@
 .font-test-family {
   font-family: Chilanka;
 }
+
+#container_biggerAandB {
+  display: flex;
+  flex-direction: column;
+  
+}
+.input_biggerAB {
+  margin-bottom: 10px;
+}
+
+.button_AB {
+  padding:20px;
+  background-color: lightgrey;
+  border: none;
+  border-radius: 6px;
+  font-size: 18px;
+  text-transform: uppercase;
+  margin-bottom: 10px;
+  cursor: pointer;
+}
+.button_AB:hover {
+  background-color: grey;
+}
