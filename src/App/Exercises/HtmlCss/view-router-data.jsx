@@ -7,6 +7,7 @@ import { blockRouterMetaData as BlockRouterMetaDataColors } from './Colors/route
 import { blockRouterMetaData as BlockRouterMetaDataOpacity } from './Opacity/router-data';
 import { blockRouterMetaData as BlockRouterMetaDataBackgrounds } from './Backgrounds/router-data';
 import { blockRouterMetaData as BlockRouterMetaDataVideoAudioiFrame } from './VideoAudioiFrame/router-data';
+import { blockRouterMetaData as BlockRouterMetaDataBoxModel } from './BoxModel/router-data';
 
 export const blockRouterMetaData = [
   BlockRouterMetaDataText,
@@ -16,5 +17,6 @@ export const blockRouterMetaData = [
   BlockRouterMetaDataOpacity,
   BlockRouterMetaDataBackgrounds,
   BlockRouterMetaDataVideoAudioiFrame,
+  BlockRouterMetaDataBoxModel,
 ];
 export const blockRouterData = getParsedRouterDataList(blockRouterMetaData);

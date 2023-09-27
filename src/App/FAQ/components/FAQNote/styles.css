@@ -1,0 +1,16 @@
+
+.faq-note-wrapper {
+    margin: 20px;
+    width: 732px;
+    padding: 18px 24px;
+    gap: 18px;
+    align-self: stretch;
+    border-radius: 8px;
+    border-left: 5px solid var(--gray-300, #C8CBD1);
+    box-shadow: 1px 3px 10px grey;
+}
+
+
+.faq-note-wrapper .rotate {
+    transform: rotate(90deg)
+}
