@@ -1,5 +1,6 @@
 import { useState } from 'react';
-import { ShowMoreIcon } from './ShowMoreIcon';
+import ArrowIcon from './chevron.right.svg';
+
 import './styles.css';
 
 export function FAQNote(props) {
@@ -8,13 +9,19 @@ export function FAQNote(props) {
   function handleButton() {
     setDisplay(!display);
   }
+  //const arrowRotate = display ? ' ' : 'rotate';
+  let arrowRotate;
 
-  const arrowRotate = display ? '' : 'rotate';
+  if (display) {
+    arrowRotate = '';
+  } else {
+    arrowRotate = 'rotate';
+  }
 
   return (
     <div className="faq-note-wrapper">
       <h4 onClick={handleButton}>
-        <ShowMoreIcon className={arrowRotate} />
+        <img className={arrowRotate} src={ArrowIcon} alt="arrow" />
         <span className="title-style">{props.title}</span>
       </h4>
 
