@@ -1,0 +1,35 @@
+.colors-wrapper 
+  div {
+    padding: 15px;
+    border: 1px solid black;
+    margin-bottom: 15px;
+
+  }
+
+.colors-wrapper .colorName { 
+color: red;
+}
+
+.colors-wrapper .shortenHex {
+background: #000;
+}
+
+.colors-wrapper .normalHex {
+  background: #315B6B;
+}
+
+.colors-wrapper .rgb {
+  background: rgb(119,108,109);
+}
+
+.colors-wrapper .rgba {
+  background: rgba(119,108,109, 0.5);
+}
+
+.colors-wrapper .hsl {
+  background: hsl(150deg, 50%, 25%);
+}
+
+.colors-wrapper .hsla {
+  background: hsla(150deg, 50%, 25%, 0.7);
+  }
