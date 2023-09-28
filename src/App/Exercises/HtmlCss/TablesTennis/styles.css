@@ -33,6 +33,8 @@ h2{
 
 .table-tennis td {
   padding: 24px 80px;
+  text-align: center;
+
 }
 
 .table-tennis tr:nth-of-type(even) {
