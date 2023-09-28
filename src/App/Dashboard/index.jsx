@@ -1,6 +1,6 @@
 import './styles.css';
 
-import DashboardCard from '../DasbordCard/DashboardCard';
+import DashboardCard from './DasbordCard/DashboardCard';
 
 import PersonalCardIcon from '../Images/tiles/personalcard.svg';
 import EditIcon from '../Images/tiles/edit.svg';
