@@ -1,0 +1,32 @@
+.faq-note-wrapper {
+    
+    align-items: flex-start;
+    
+    align-self: stretch;
+    border-radius: 8px;
+    border-left: 5px solid var(--gray-300, #C8CBD1);
+    background: var(--background-bg-primary, #FFF);
+    } 
+    .arrowRotate {
+        transform: rotate(-90deg);
+      
+    }
+    
+    .faq-note-wrapper .title-style{
+        padding-left: 16px;
+        color: var(--secondary-secondary, #23213D);
+    
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 34px;
+    }
+    .description-style{
+        padding-left: 24px;
+        
+        color: var(--text-text-primary, #222);
+    font-family: Poppins;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 32px; /* 177.778% */
+    }
