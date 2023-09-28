@@ -1,3 +1,55 @@
-.font-test-family {
-  font-family: Chilanka;
+.tables-tennis-wrapper {
+  border-radius: 10px;
+  background: #FFF;
 }
+
+.tables-tennis-head {
+  display: flex;
+  width: 716px;
+  height: 57px;
+  align-items: center;
+  gap: 28.294px;
+  background: #F5F5F5;
+}
+.tables-tennis-head th {
+  text-align: left;
+  
+  display: flex;
+flex-direction: column;
+justify-content: center;
+flex: 1 0 0;
+align-self: stretch;
+
+}
+.tables-tennis-head tr {
+  display: flex;
+width: 716px;
+height: 57px;
+padding: 46px
+}
+
+.tables-tennis-body {
+  border: 1.415px solid var(--primary-primary-light, #FFD5DB);
+background: #FFF;
+
+
+}
+.tables-tennis-body tr {
+  display: flex;
+width: 716px;
+height: 84px;
+padding: 46px;
+align-items: center;
+gap: 28.294px;
+
+}
+.tables-tennis-body tr:nth-child(odd) {
+  background-color: #FFD5DB;
+}
+.tables-tennis-body td {
+  display: flex;
+  text-align: left;
+  
+  flex: 1 0 0;
+}
+
