@@ -4,11 +4,18 @@ import { blockRouterMetaData as blockRouterMetaData121220231 } from './Exercise-
 import { blockRouterMetaData as blockRouterMetaDataSelectors } from './Selectors/router-data';
 import { blockRouterMetaData as blockRouterMetaDateText } from './Text/router-data';
 import { blockRouterMetaData as blockRouterMetaDateAnimations } from './Animations/router-data';
+import { blockRouterMetaData as blockRouterMetaDateColors } from './Colors/router-data';
+import { blockRouterMetaData as blockRouterMateDateOpacity } from './Opacity/router-data';
+import { blockRouterMetaData as blockRouterMateDateacBackground } from './Background/router-data';
 
 export const blockRouterMetaData = [
     blockRouterMetaData121220231, 
     blockRouterMetaDataSelectors, 
     blockRouterMetaDateText, 
-    blockRouterMetaDateAnimations
+    blockRouterMetaDateAnimations, 
+    blockRouterMetaDateColors, 
+    blockRouterMateDateOpacity,
+    blockRouterMateDateacBackground,
+
 ];
 export const blockRouterData = getParsedRouterDataList(blockRouterMetaData);
