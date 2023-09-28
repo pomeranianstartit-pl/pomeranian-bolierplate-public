@@ -1,0 +1,27 @@
+.first-table {
+  border-collapse: collapse;
+}
+
+.first-table td,
+.first-table th  {
+  border: 5px solid #023047;
+  padding: 10px;
+}
+
+.first-table tr:nth-child(even) {
+  background-color: #fb8500;
+}
+
+.second-table {
+  border-collapse: collapse;
+}
+
+.second-table td,
+.second-table th  {
+  border: 5px solid #023047;
+  padding: 10px;
+}
+
+.second-table tr:nth-child(even) {
+  background-color: #fb8500;
+}

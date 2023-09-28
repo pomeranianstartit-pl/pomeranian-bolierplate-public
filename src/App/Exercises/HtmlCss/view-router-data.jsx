@@ -8,6 +8,8 @@ import { blockRouterMetaData as BlockRouterMetaDataOpacity } from './Opacity/rou
 import { blockRouterMetaData as BlockRouterMetaDataBackgrounds } from './Backgrounds/router-data';
 import { blockRouterMetaData as BlockRouterMetaDataVideoAudioiFrame } from './VideoAudioiFrame/router-data';
 import { blockRouterMetaData as BlockRouterMetaDataBoxModel } from './BoxModel/router-data';
+import { blockRouterMetaData as BlockRouterMetaDataTables } from './Tables/router-data';
+import { blockRouterMetaData as BlockRouterMetaDataTablesTennis } from './TablesTennis/router-data';
 
 export const blockRouterMetaData = [
   BlockRouterMetaDataText,
@@ -18,5 +20,7 @@ export const blockRouterMetaData = [
   BlockRouterMetaDataBackgrounds,
   BlockRouterMetaDataVideoAudioiFrame,
   BlockRouterMetaDataBoxModel,
+  BlockRouterMetaDataTables,
+  BlockRouterMetaDataTablesTennis,
 ];
 export const blockRouterData = getParsedRouterDataList(blockRouterMetaData);
