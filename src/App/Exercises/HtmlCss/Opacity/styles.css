@@ -1,0 +1,42 @@
+
+.opacity-wrapper {
+
+  padding: 50px;
+
+  background-color: aliceblue;
+
+}
+
+
+
+.opacity-wrapper div {
+
+  padding: 25px;
+
+  margin-bottom: 25px;
+
+}
+
+
+
+/* opacity - to jest przezroczystość dla całego contentu elementu na którym ten styl został zaimplementowany */
+
+/* rgba(x,y,z, c) - jeżeli chcemy nadać przezroczytość nie ingerująć w inne elementy  */
+
+
+
+.opacity-wrapper .div1 {
+
+  opacity: 0.05;
+
+  background: rgb(15,151,123);
+
+}
+
+
+
+.opacity-wrapper .div2 {
+
+  background: rgba(15,151,123, 0.05);
+
+}

@@ -1,0 +1,173 @@
+
+.boxmodel-wrapper {
+  background: red;
+
+}
+
+ 
+.boxmodel-wrapper .firstDiv {
+
+  /* padding: 200px 150px 10px 5px; */
+
+  /* padding-top: ; */
+
+  /* padding-right: ; */
+
+  /* padding-bottom: ; */
+
+  /* padding-left: ; */
+
+  
+
+  /* padding: 10px 5px; */
+
+  /* padding top i bottom: 10px */
+
+  /* padding left i right: 5px */
+
+ 
+
+  padding: 10px;
+
+  /* padding top bottom right left: 10px */
+
+ 
+
+  /* margin: 10px; */
+
+  /* margin: 10px 20px; */
+
+  /* margin: 10px 20px 30px 40px; */
+
+ 
+
+  border: 5px solid green;
+
+  border-left-color: hotpink;
+
+  border-right-width: 15px;
+
+ 
+
+  background: yellow;
+
+ 
+
+  /* Element który zachowuje się jak elemnt blokowy (jest w stanie wyrwać się z tekstu) */
+
+  /* display: block */
+
+  
+
+  /* Element który zachowuje się tak jakby był elementem tekstu */
+
+  /* display: inline */
+
+}
+
+ 
+
+.firstP .paragraphDiv {
+
+  background: green;
+
+}
+
+ 
+
+.firstP .paragraphSpan {
+
+  background: green;
+
+}
+
+ 
+
+.boxmodel-wrapper .displayNoneDiv {
+
+  display: none;
+
+}
+
+ 
+
+.boxmodel-wrapper .boxSizing .generalDiv {
+
+  margin: 15px;
+
+  height: 100px;
+
+  width: 100px;
+
+  border: 5px solid green;
+
+  padding: 15px;
+
+  background: yellow;
+
+}
+
+ 
+
+/* width: 100px; */
+
+      .boxmodel-wrapper .boxSizing .div1 {
+
+        /* padding + border + width = padding + border + 100px ) */
+
+        box-sizing: content-box;
+
+      }
+
+ 
+
+      .boxmodel-wrapper .boxSizing .div2 {
+
+        /* border + padding + width(100px - padding - border) = 100px jako total */
+
+        box-sizing: border-box;
+
+      }
+
+ 
+
+/* OVERFLOW */
+
+ 
+
+.boxmodel-wrapper .overflow .overflowDiv {
+
+  height: 75px;
+
+  margin-bottom: 15px;
+
+  background: yellow;
+
+  border: 5px solid green;
+
+}
+
+ 
+
+.boxmodel-wrapper .overflow .firstOverflow {
+
+  /* Domyślne ustawienie */
+
+  overflow: visible;
+
+  width: 50px;
+
+ 
+
+  /* Schowaj to co wychodzi po za dostępny widok */
+
+  /* overflow: hidden; */
+
+ 
+
+  /* Daj mi możliwość scrollowania/przesuwania */
+
+  overflow-x: hidden;
+
+}
+
