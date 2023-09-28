@@ -1,0 +1,26 @@
+.first-table {
+  border-collapse: collapse;
+  width: 716px;
+  padding-right: 92px;
+}
+
+.first-table tr:nth-child(even) {
+  background-color: #ffd5db;
+}
+.first-table th {
+  height: 57px;
+  text-align: left;
+  padding-left: 46px;
+}
+.first-table td {
+  height: 84px;
+  padding-left: 46px;
+}
+
+.third-column {
+  text-align: right;
+}
+.first-table tr td:last-child,
+.first-table tr th:last-child {
+  padding-right: 46px;
+}
