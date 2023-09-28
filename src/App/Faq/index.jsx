@@ -10,7 +10,8 @@ export function Faq() {
   }
   return (
     <div className="faq">
-      <h1>Faq</h1>
+      <h1>FAQ</h1>
+      <h2>Tutaj znajdź odpowiedzi na najczęściej zadawane pytania</h2>
       {mockData.map(renderNote)}
     </div>
   );

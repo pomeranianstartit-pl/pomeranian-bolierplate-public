@@ -12,7 +12,7 @@ export const mockData = [
     description: '',
   },
   {
-    title: 'Jak mogę zapisać się na szkoleniee',
+    title: 'Jak mogę zapisać się na szkolenie',
     description: '',
   },
 ];

@@ -1,3 +1,13 @@
+.faq h2 {
+    color: var(--text-text-primary,#222);
+    font-family: Poppins;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 27px;
+
+
+}
 .faq-note-wrapper {
     margin-bottom: 18px;
     padding: 18px 24px;
@@ -19,7 +29,10 @@ border-top: 1px solid #EBEBEB;
     margin-right: 16px;
     transition: 0,5s;
 }
-.faq-note-wrapper rotate{
+.img {
+    color: red
+}
+.return div h2 {
     transform: (-90deg);
     transition: 0,5s;
 }

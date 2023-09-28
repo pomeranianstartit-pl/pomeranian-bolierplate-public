@@ -29,7 +29,6 @@ export function FaqNote(props) {
           amet, consectetur adipiscing elit Wyświetl mnie
         </div>
       )}
-      <button onClick={handleButton}></button>
     </div>
   );
 }

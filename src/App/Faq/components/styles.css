@@ -5,7 +5,7 @@
 .faq-note-wrapper img {
     margin-right: 50px;
 }
-.faq-note-wrapper .rotate {
+.return div h2 .rotate {
 transform:rotate(-98deg);
 transition: 0,5s;
 }
