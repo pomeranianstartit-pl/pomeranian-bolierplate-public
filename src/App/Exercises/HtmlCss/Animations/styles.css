@@ -12,7 +12,7 @@
   
   /* Definicja naszej animacji */
   @keyframes blinking-square {
-    /* co ma się zadziać na początku */
+    /* co ma się zadziać na początku  */
     0% {
       background: red;
     }
