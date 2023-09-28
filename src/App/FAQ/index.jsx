@@ -1,4 +1,4 @@
-import { FAQNote } from '.';
+import { FAQNote } from './components/FAQNote';
 
 import { mockData } from './data';
 
