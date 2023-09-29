@@ -14,7 +14,8 @@ export function ReactIfAisBiggerThan10() {
     }
     if (inputNumber < 10) {
       setText('Twoja liczba jest mniejsza niż 10');
-    } else {
+    }
+    if (inputNumber == 10) {
       setText('Twoja liczba jest równa 10.');
     }
   }
