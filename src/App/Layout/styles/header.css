@@ -22,3 +22,17 @@ header .logo {
   height: 40vmin;
   pointer-events: none;
 }
+
+.container {
+  display: flex;
+  align-items: center;
+  min-width: 200px;
+  gap: 20px;
+}
+
+.user > p:last-child {
+  color: gray;
+}
+.user p {
+  margin: 0px;
+}
