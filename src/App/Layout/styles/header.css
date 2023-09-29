@@ -22,15 +22,3 @@ header .logo {
   height: 40vmin;
   pointer-events: none;
 }
-
-.header--menu {
-  display: flex;
-  align-items: center;
-  gap: 20px;
-}
-.header-menu-user p {
-  margin: 0;
-}
-.header-menu-user p:nth-child(2) {
-  color: gray;
-}
