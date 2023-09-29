@@ -7,6 +7,7 @@ import { Blocks } from './App/Blocks';
 import { Layout } from './App/Layout';
 import { Dashboard } from './App/Dashboard';
 import { Exercises } from './App/Exercises';
+import {CV} from './App/CV';
 
 export function App() {
   return (
@@ -14,6 +15,7 @@ export function App() {
       <Routes>
         <Route path="" element={<Layout withSidebar />}>
           <Route index element={<Navigate to="dashboard" />} />
+          <Route path='cv/*' element={<CV/>}/>
           <Route path="dashboard/*" element={<Dashboard />} />
           <Route path="exercises/*" element={<Exercises />} />
           <Route path="blocks/*" element={<Blocks />} />
