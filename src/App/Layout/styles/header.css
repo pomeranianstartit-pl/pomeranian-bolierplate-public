@@ -22,3 +22,10 @@ header .logo {
   height: 40vmin;
   pointer-events: none;
 }
+.settingIcon {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+
+  
+}
