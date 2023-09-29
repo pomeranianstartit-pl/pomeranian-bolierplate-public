@@ -7,6 +7,7 @@ import { blockRouterMetaData as blockRouterMetaDateAnimations } from './Animatio
 import { blockRouterMetaData as blockRouterMetaDateColors } from './Colors/router-data';
 import { blockRouterMetaData as blockRouterMateDateOpacity } from './Opacity/router-data';
 import { blockRouterMetaData as blockRouterMateDateacBackground } from './Background/router-data';
+import { blockRouterMetaData as blockRouterMateDateacVideoAudioIframe } from './VideoAudioIframe/router-data';
 
 export const blockRouterMetaData = [
     blockRouterMetaData121220231, 
@@ -16,6 +17,7 @@ export const blockRouterMetaData = [
     blockRouterMetaDateColors, 
     blockRouterMateDateOpacity,
     blockRouterMateDateacBackground,
+    blockRouterMateDateacVideoAudioIframe,
 
 ];
 export const blockRouterData = getParsedRouterDataList(blockRouterMetaData);
