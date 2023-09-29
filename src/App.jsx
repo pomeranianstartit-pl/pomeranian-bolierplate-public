@@ -10,7 +10,7 @@ import { Exercises } from './App/Exercises';
 import { CV } from './App/CV';
 import { Calendar } from './App/Calendar';
 import { Settings } from './App/Settings';
-import { Blog } from './App/Blog/';
+import { Blog } from './App/Blog/blog';
 
 export function App() {
   return (
