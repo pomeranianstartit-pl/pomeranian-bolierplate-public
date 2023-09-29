@@ -28,6 +28,10 @@ export function AppAside() {
             <NavLink to="blocks">Bloki</NavLink>
           </li>
           <li className="aside-row">
+            <ElementIcon />
+            <NavLink to="blog">Blog</NavLink>
+          </li>
+          <li className="aside-row">
             <EditIcon />
             <NavLink to="exercises">Ćwiczenia</NavLink>
           </li>
