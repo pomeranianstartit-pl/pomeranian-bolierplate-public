@@ -1,0 +1,49 @@
+.selectorsAndCascade > div {
+    margin: 0 0 20px;
+}
+
+
+.selectorsAndCascade > div {
+    padding: 5px;
+    border: 1px solid black;
+    margin: 0 0 20px;
+}
+
+span ~ span {
+    color: red;
+}
+/* span musi byc poprzedzony spanem */
+span + span {
+    background-color: blue;
+}
+
+/* type / tag selector */
+input {
+    background-color: red;
+}
+/* class selector */
+.unikalna-klasa1 {
+    color: blue;
+
+}
+
+/* id selector */
+#drugi-div {
+    color: purple;
+
+}
+[class*="klasa"] {
+    color: green;
+}
+/* wartosc class konczy sie na "unikalna" */
+[class^="unikalna"] {
+    background-color: yellow;
+}
+/* wartosc class konczy sie na "klasa3" */
+[class$="klasa3"] {
+    background-color: orange;
+}
+
+[class^="unikalna"]:hover {
+    background-color: purple;
+}
