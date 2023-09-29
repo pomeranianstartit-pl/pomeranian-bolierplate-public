@@ -4,8 +4,11 @@ import { blockRouterMetaData as blockRouterMetaData121220231 } from './Exercise-
 
 import { blockRouterMetaData as blockRouterMetaDataEx2 } from './ExampleTest/router-data';
 
+import { SelectorsAndCascadeRouterMetaData } from './SelectorsAndCascade/router-data';
+
 export const blockRouterMetaData = [
-    blockRouterMetaData121220231,
-    blockRouterMetaDataEx2,
+  blockRouterMetaData121220231,
+  blockRouterMetaDataEx2,
+  SelectorsAndCascadeRouterMetaData,
 ];
 export const blockRouterData = getParsedRouterDataList(blockRouterMetaData);
