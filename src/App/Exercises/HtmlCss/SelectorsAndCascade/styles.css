@@ -1,0 +1,81 @@
+.selectorsAndCascade > div {
+  padding: 5px;
+  border: 1px solid black;
+  margin: 0 0 20px;
+}
+
+.selectorsAndCascade > div:first-child {
+  background-color: lightyellow;
+}
+
+.selectorsAndCascade > div > div:last-child {
+  background-color: lightcoral;
+}
+
+/* tak bylo wczesniej */
+/* .selectorsAndCascade > div {
+  padding: 5px;
+  border: 1px solid black;
+  margin: 0 0 20px;
+} */
+
+/* span musi byc poprzedony spanem jakkolwiek */
+span ~ span {
+  color: red;
+}
+
+/* span MUSI byc poprzedzony bezposrednio spanem */
+span + span {
+  color: blue;
+}
+
+input {
+  background-color: red;
+}
+
+/* grupowanie oraz lapanie focusu */
+input:focus, 
+a:focus {
+  background-color: green;
+}
+
+.unikalna-klasa1 {
+  color: blue;
+}
+
+#drugi-div {
+  color: purple;
+}
+
+/* wartosc zawiera dana fraze - gdziekolwiek */
+[class*="klasa"] {
+  color: green;
+}
+
+/* wartosc musi zaczynac sie od */
+[class^="unikalna"] {
+  background-color: yellow;
+}
+
+/* pseudoklasa */
+[class^="unikalna"]:hover {
+  background-color: pink;
+}
+
+
+/* wartosc musi konczyc sie na */
+[class$="klasa3"] {
+  background-color: orange;
+}
+
+a:visited {
+  color: black;
+}
+
+span::before {
+  content: "😊";
+}
+
+span::after {
+  content: "❤";
+}
