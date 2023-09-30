@@ -1,0 +1,35 @@
+.blog-post-title {
+    color: var(--text-text-primary, #222);
+    font-family: MADE TOMMY;
+    font-size: 42px;
+    font-style: normal;
+    font-weight: 800;
+    line-height: 56px;
+}
+
+.blog-post-text {
+    color: var(--text-text-primary, #222);
+    font-family: MADE TOMMY;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 27px;
+}
+
+.blog-post-author {
+    color: var(--text-text-secondary, rgba(34, 34, 34, 0.80));
+    font-family: MADE TOMMY;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 32px;
+}
+
+.blog-post-autor-footer {
+    color: var(--text-text-secondary, rgba(34, 34, 34, 0.80));
+    font-family: MADE TOMMY;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px;
+}
