@@ -1,0 +1,10 @@
+.images-files {
+  /* background-color: gray; */
+  background-image: url('https://static.prsa.pl/images/90f30d6e-915a-46a2-b860-6fb270ede5b6.jpg');
+  background-position: center;
+  background-size: 100px;
+  background-repeat: repeat;
+}
+.images-files img {
+  max-width: 200px;
+}
