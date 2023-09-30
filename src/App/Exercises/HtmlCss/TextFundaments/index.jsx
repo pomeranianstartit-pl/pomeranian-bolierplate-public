@@ -1,5 +1,4 @@
-import './style.css';
-
+import './styles.css';
 export function TextFundaments() {
   return (
     <div className="blok11_z1">
