@@ -1,0 +1,11 @@
+.image-files{
+    /* background-color: grey; */
+    background-image: url("https://i.pinimg.com/originals/bd/ac/32/bdac327b05ddaa05216dfa08c9e734c3.jpg");
+    background-position: center;
+    /* background-size: contain;
+    background-repeat: no-repeat; */
+}
+
+.image-files img{
+    width: 300px;
+}
