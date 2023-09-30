@@ -1,0 +1,90 @@
+
+.blog-post {
+max-width: 1034px;
+}
+
+
+
+.blog-post-title {
+font-family: MADE TOMMY;
+font-size: 42px;
+font-style: normal;
+font-weight: 800;
+line-height: 56px;
+display: flex;
+padding: 10px 10px 10px 0px;
+align-items: flex-start;
+gap: 10px;
+margin: 0px;
+}
+
+.blog-post-text {
+    color: var(--text-text-primary, #222);
+    font-family: MADE TOMMY;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    display: flex;
+padding: 10px 10px 10px 0px;
+align-items: flex-start;
+gap: 10px;
+}
+
+.blog-post-text-italic {
+    color: var(--text-text-primary, #222);
+    font-family: MADE TOMMY;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    display: flex;
+padding: 10px 10px 10px 0px;
+align-items: flex-start;
+gap: 10px;
+font-style: italic;
+}
+
+.blog-post-author {
+color: var(--text-text-secondary, rgba(34, 34, 34, 0.80));
+font-family: MADE TOMMY;
+font-size: 18px;
+font-style: normal;
+font-weight: 700;
+line-height: 32px; 
+margin: 0px;
+}
+
+.blog-post-author-describe {
+color: var(--text-text-secondary, rgba(34, 34, 34, 0.80));
+font-family: MADE TOMMY;
+font-size: 16px;
+font-style: normal;
+font-weight: 400;
+line-height: 24px;
+}
+
+.blog-Merlin {
+color: var(--text-text-primary, #222);
+text-align: right;
+font-family: MADE TOMMY;
+font-size: 14px;
+font-style: normal;
+font-weight: 700;
+line-height: 22px; 
+text-align: right;
+}
+
+.data {
+    font-family: MADE TOMMY;
+    font-size: 10.5px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px; /* 228.571% */
+    letter-spacing: 1.68px;
+    text-transform: uppercase;  
+    width: 70px;
+    height: 24px;
+}
+
+.list li {
+    padding-bottom: 29px;
+}
