@@ -1,0 +1,13 @@
+.images-files {
+  background-color: gray;
+  background-image: url('https://img.freepik.com/darmowe-zdjecie/strzal-zblizenie-piekny-kotek-krajowych-imbir-siedzi-na-bialej-powierzchni_181624-35913.jpg');
+  background-position: center;
+  background-size: 50px;
+  background-repeat: no-repeat;
+
+  /* background-repeat: repeat-x; */
+}
+
+.images-files img {
+  max-width: 200px;
+}
