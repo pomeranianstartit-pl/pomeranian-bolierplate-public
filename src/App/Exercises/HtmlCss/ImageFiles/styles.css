@@ -1,0 +1,9 @@
+.images-files {
+  background-image: url('https://www.svgrepo.com/show/85124/cat.svg');
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.images-files img {
+  max-width: 400px;
+}
