@@ -9,18 +9,20 @@
 
 /* span musi być poprzedzany spanem jak kolwiek */
 /* <span/> <cos /> <span /> */
+/*
 span ~ span {
   color: red;
 }
-
+*/
 /*span musi byc przeprzedzany bespośrednio spanem */
 
+/*
 span + span {
   background-color: blue;
 }
-
+*/
 /* type / tag selector */
-input {
+*/ input {
   background-color: red;
 }
 
@@ -66,14 +68,16 @@ a:focus {
   background-color: lightyellow;
 }
 
-div::first-line {
+/* div::first-line {
   font-size: 32px;
 }
+*/
 
 a:visited {
   color: rebeccapurple;
 }
 
+/*
 span::before {
   content: '🌼';
 }
@@ -81,3 +85,4 @@ span::before {
 span::after {
   content: '🌷';
 }
+*/

@@ -7,9 +7,9 @@ export function Blog() {
   return (
     <div className="blog-whole-web">
       <div className="blog-whole-article">
-        <div className="blog-data">30-11-2022</div>
-        <Title title="Why are we so nostalgic for the 1990s?" />
         <article className="blog-post">
+          <div className="blog-data">30-11-2022</div>
+          <Title title="Why are we so nostalgic for the 1990s?" />
           <p className="blog-post-text">
             Pop culture used to define a generation, but it seems the cultural,
             music and fashion trends of the 1990s have been recycled, and what
@@ -28,6 +28,51 @@ export function Blog() {
           author="Radosława Majdan"
           position="Senior Marketing Specialist"
         />
+      </div>
+      <div className="blog-whole-web">
+        <div className="blog-whole-article">
+          <article className="blog-post">
+            <div className="blog-data">30-11-2022</div>
+            <Title title="I make mistakes!" />
+            <p className="blog-post-text">
+              “I’m selfish, impatient and a little insecure. I make mistakes, I
+              am out of control and at times hard to handle. But if you can’t
+              handle me at my worst, then you sure as hell don’t deserve me at
+              my best.”
+            </p>
+            <p className="blog-post-text">Marilyn Monroe</p>
+          </article>
+          <Signature
+            author="Radosława Majdan"
+            position="Senior Marketing Specialist"
+          />
+        </div>
+        <div className="blog-whole-web">
+          <div className="blog-whole-article">
+            <article className="blog-post">
+              <div className="blog-data">30-11-2022</div>
+              <Title title="18 Record-Breaking, Controversial, and Weird Facts " />
+              <p className="blog-post-text">
+                The death of Queen Elizabeth II on September 8 at the age of 96
+                represents a monumental shift for the British monarchy and the
+                people of England. Royals have died before, of course, but the
+                Queen ruled for more than 70 years, and represented a certain
+                stability and decorum that held the institution of the Royal
+                Family together as it slowly grew more visibly anachronistic and
+                battered by endless scandals.
+              </p>
+              <al>
+                <li>WP.PL1</li>
+                <li>WP.PL2</li>
+                <li>ONET.PL</li>
+              </al>
+            </article>
+            <Signature
+              author="Radosława Majdan"
+              position="Senior Marketing Specialist"
+            />
+          </div>
+        </div>
       </div>
     </div>
   );
