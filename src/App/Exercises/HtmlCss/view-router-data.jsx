@@ -1,8 +1,10 @@
 import { getParsedRouterDataList } from '../../router-data/parseRouterData';
 import { blockRouterMetaData as blockRouterMetaData121220231 } from './Exercise-example-12-12-2023-1/router-data';
+import { TextFundamentsMetaData } from './TextFundaments/router-data';
 // import { SelectorsAndCascadesMetaData } from './SelectorsAndCascades/router-data';
 
 export const blockRouterMetaData = [
+  TextFundamentsMetaData,
   blockRouterMetaData121220231,
   // SelectorsAndCascadesMetaData,
 ];
