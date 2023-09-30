@@ -1,0 +1,28 @@
+.cssColors .color-1{
+    color: red;
+}
+
+.cssColors .color-2{
+    color: rgb(0,0,0);
+}
+
+.cssColors .color-3{
+    color: rgb(255,255,255);
+    background-color: black;
+}
+
+/* zapis szesnastkowy kolorow */
+/* zapis skrotowy #ff0 => #ffff00 */
+.cssColors .color-4{
+    color: #fff000;
+}
+
+/* rgba => ostatnia okreslana jest przezroczystosc */
+.cssColors .color-5{
+    color: rgba(255, 240, 0, 0.5);
+}
+
+/* hsl */
+.cssColors .color-6{
+    color: hsl(71deg, 82%, 50%);
+}
