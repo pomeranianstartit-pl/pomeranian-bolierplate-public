@@ -1,0 +1,23 @@
+.cssColors .color-1 {
+  color: red;
+}
+
+.cssColors .color-2 {
+  color: rgb(255, 240, 0);
+}
+
+.cssColors .color-3 {
+  color: #fff000;
+}
+
+.cssColors .color-4 {
+  color: rgba(255, 240, 0, 0.5);
+}
+
+.cssColors .color-5 {
+  color: hsl(61deg 82% 53%);
+}
+
+.cssColors .color-6 {
+  opacity: 0.5;
+}
