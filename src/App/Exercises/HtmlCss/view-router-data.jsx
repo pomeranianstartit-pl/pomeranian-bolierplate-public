@@ -6,6 +6,7 @@ import { GoogleFontsRouterMetaData } from './GoogleFonts/router-data';
 import { CssAnimationsRouterMetaData } from './CssAnimations/router-data';
 import { ColorsRouterMetaData } from './Colors/router-data';
 import { ImageFilesRouterMetaData } from './ImageFiles/router-data';
+import { CssFilterRouterMetaData } from './CssFilter/router-data';
 
 export const blockRouterMetaData = [
   blockRouterMetaData121220231,
@@ -15,5 +16,6 @@ export const blockRouterMetaData = [
   CssAnimationsRouterMetaData,
   ColorsRouterMetaData,
   ImageFilesRouterMetaData,
+  CssFilterRouterMetaData,
 ];
 export const blockRouterData = getParsedRouterDataList(blockRouterMetaData);
