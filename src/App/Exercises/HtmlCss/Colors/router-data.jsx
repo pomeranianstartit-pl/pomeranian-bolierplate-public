@@ -1,12 +1,11 @@
 import React from 'react';
+import { Colors } from '.';
 
-import { GoogleFonts } from './';
-
-export const GoogleFontsRouterMetaData = {
-  path: '30-09-2023-1',
+export const ColorsRouterMetaData = {
+  path: 'css-colors',
   date: '30-09-2023',
-  linkLabel: 'Google fonts',
-  blockNo: 11,
-  element: <GoogleFonts />,
-  tags: ['attribute', 'text', 'css', 'fonts'],
+  linkLabel: 'Kolory CSS',
+  blockNo: 12,
+  element: <Colors />,
+  tags: ['css', 'colors'],
 };

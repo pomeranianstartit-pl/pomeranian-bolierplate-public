@@ -1,10 +1,14 @@
 import './style.css';
 
-export function GoogleFonts() {
+export function Colors() {
   return (
-    <div className="">
-      <div className="font-roboto">Roboto font</div>
-      <div className="font-roboto-italic">Roboto font italic</div>
+    <div className="cssColors">
+      <h2 className="color-1">'tekst 1'</h2>
+      <h2 className="color-2">'tekst 2'</h2>
+      <h2 className="color-3">'tekst 3'</h2>
+      <h2 className="color-4">'tekst 4'</h2>
+      <h2 className="color-5">'tekst 5'</h2>
+      <h2 className="color-6">'tekst 6'</h2>
     </div>
   );
 }
