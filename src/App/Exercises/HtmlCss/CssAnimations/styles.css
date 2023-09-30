@@ -1,0 +1,35 @@
+.animation {
+  width: 100px;
+  height: 100px;
+  background-color: red;
+
+  animation-name: example-animation;
+  animation-duration: 4s;
+  animation-iteration-count: infinite;
+}
+
+@keyframes example-animation {
+  0% {
+    background-color: red;
+  }
+
+  25% {
+    background-color: yellow;
+    width: 200px;
+  }
+
+  50% {
+    background-color: blue;
+    width: 100px;
+  }
+
+  75% {
+    background-color: orange;
+    width: 200px;
+  }
+
+  100% {
+    background-color: red;
+    width: 100px;
+  }
+}
