@@ -6,8 +6,10 @@ import { blockRouterMetaData as blockRouterMetaDateText } from './Text/router-da
 import { blockRouterMetaData as blockRouterMetaDateAnimations } from './Animations/router-data';
 import { blockRouterMetaData as blockRouterMetaDateColors } from './Colors/router-data';
 import { blockRouterMetaData as blockRouterMateDateOpacity } from './Opacity/router-data';
-import { blockRouterMetaData as blockRouterMateDateacBackground } from './Background/router-data';
-import { blockRouterMetaData as blockRouterMateDateacVideoAudioIframe } from './VideoAudioIframe/router-data';
+import { blockRouterMetaData as blockRouterMateDateBackground } from './Background/router-data';
+import { blockRouterMetaData as blockRouterMateDateVideoAudioIframe } from './VideoAudioIframe/router-data';
+import { blockRouterMetaData as blockRouterMateDateBoxModel } from './BoxModel/router-data';
+
 
 export const blockRouterMetaData = [
     blockRouterMetaData121220231, 
@@ -16,8 +18,10 @@ export const blockRouterMetaData = [
     blockRouterMetaDateAnimations, 
     blockRouterMetaDateColors, 
     blockRouterMateDateOpacity,
-    blockRouterMateDateacBackground,
-    blockRouterMateDateacVideoAudioIframe,
+    blockRouterMateDateBackground,
+    blockRouterMateDateVideoAudioIframe,
+    blockRouterMateDateBoxModel,
+
 
 ];
 export const blockRouterData = getParsedRouterDataList(blockRouterMetaData);
