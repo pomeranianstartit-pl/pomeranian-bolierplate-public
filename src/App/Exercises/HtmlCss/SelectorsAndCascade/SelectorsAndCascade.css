@@ -22,7 +22,7 @@ span + span {
 }
 */
 /* type / tag selector */
-*/ input {
+/* input {
   background-color: red;
 }
 
@@ -30,7 +30,7 @@ input:focus,
 a:focus {
   background-color: green;
 }
-
+*/
 /* class selector */
 .unikalna-klasa1 {
   color: blue;
@@ -72,12 +72,11 @@ a:focus {
   font-size: 32px;
 }
 */
-
+/*
 a:visited {
   color: rebeccapurple;
 }
 
-/*
 span::before {
   content: '🌼';
 }
