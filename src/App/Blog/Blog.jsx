@@ -23,11 +23,12 @@ export function Blog() {
             cassette from which to enjoy the dulcet tones of everyone from
             Salt-N-Pepa to Rick Astley.
           </p>
+
+          <Signature
+            author="Radosława Majdan"
+            position="Senior Marketing Specialist"
+          />
         </article>
-        <Signature
-          author="Radosława Majdan"
-          position="Senior Marketing Specialist"
-        />
       </div>
       <div className="blog-whole-web">
         <div className="blog-whole-article">
@@ -41,11 +42,12 @@ export function Blog() {
               my best.”
             </p>
             <p className="blog-post-text">Marilyn Monroe</p>
+
+            <Signature
+              author="Radosława Majdan"
+              position="Senior Marketing Specialist"
+            />
           </article>
-          <Signature
-            author="Radosława Majdan"
-            position="Senior Marketing Specialist"
-          />
         </div>
         <div className="blog-whole-web">
           <div className="blog-whole-article">
@@ -66,11 +68,12 @@ export function Blog() {
                 <li>WP.PL2</li>
                 <li>ONET.PL</li>
               </al>
+
+              <Signature
+                author="Radosława Majdan"
+                position="Senior Marketing Specialist"
+              />
             </article>
-            <Signature
-              author="Radosława Majdan"
-              position="Senior Marketing Specialist"
-            />
           </div>
         </div>
       </div>
