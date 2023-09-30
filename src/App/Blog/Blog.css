@@ -1,0 +1,41 @@
+.blog-post {
+    width: 100%;
+    padding: 45px 61px;
+}
+
+.blog-post-header {
+    font-size: 42px;
+    font-weight: 800;
+    line-height: 56px;
+    color: #222222;
+}
+
+.blog-post-text {
+    font-size: 16px;
+    font-weight: 400;
+    margin-bottom: 36px;
+}
+
+.blog-post-text blockquote {
+    margin: 0;
+    font-style: italic;
+}
+
+.blog-post-text blockquote > footer {
+    text-align: right;
+}
+
+.blog-post-text ul li {
+    margin-bottom: 30px;
+}
+
+.blog-post-author {
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 32px;
+    margin: 0 0 8px;
+}
+
+.blog-post-author-description {
+    margin: 0;
+}
