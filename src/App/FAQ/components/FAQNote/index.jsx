@@ -1,5 +1,9 @@
 import { useState } from 'react';
 
+import toogleArrow from '../../../Images/toggle-arrow.svg'
+
+import './styles.css'
+
 export function FAQNote(props) {
   const [display, setDisplay] = useState(false);
 
@@ -8,13 +12,14 @@ export function FAQNote(props) {
   }
 
   return (
-    <div className="faq-note-wrapper">
-      <h2>{props.title}</h2>
+    <div className="faq-note-wrapper" onClick={handleButton}>
+      <h2>
+        <img src={toogleArrow} alt="toogle arrow" />
+        {props.title}</h2>
       <p>{props.desciption}</p>
 
-      {display && <div>Wyświetl mnie!</div>}
+      {display && <div>...</div>}
+      </div>
 
-      <button onClick={handleButton}>Kliknij</button>
-    </div>
   );
 }
