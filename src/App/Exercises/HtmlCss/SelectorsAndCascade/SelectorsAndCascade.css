@@ -9,18 +9,20 @@
 
 /* span musi być poprzedzany spanem jak kolwiek */
 /* <span/> <cos /> <span /> */
+/*
 span ~ span {
   color: red;
 }
-
+*/
 /*span musi byc przeprzedzany bespośrednio spanem */
 
+/*
 span + span {
   background-color: blue;
 }
-
+*/
 /* type / tag selector */
-input {
+/* input {
   background-color: red;
 }
 
@@ -28,7 +30,7 @@ input:focus,
 a:focus {
   background-color: green;
 }
-
+*/
 /* class selector */
 .unikalna-klasa1 {
   color: blue;
@@ -66,10 +68,11 @@ a:focus {
   background-color: lightyellow;
 }
 
-div::first-line {
+/* div::first-line {
   font-size: 32px;
 }
-
+*/
+/*
 a:visited {
   color: rebeccapurple;
 }
@@ -81,3 +84,4 @@ span::before {
 span::after {
   content: '🌷';
 }
+*/
