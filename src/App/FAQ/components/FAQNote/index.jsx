@@ -1,8 +1,8 @@
 import { useState } from 'react';
 
-import toogleArrow from '../../../Images/toggle-arrow.svg'
+import toggleArrow from '../../../Images/toggle-arrow.svg';
 
-import './styles.css'
+import './styles.css';
 
 export function FAQNote(props) {
   const [display, setDisplay] = useState(false);
@@ -11,15 +11,15 @@ export function FAQNote(props) {
     setDisplay(!display);
   }
 
+  const arrowRotate = display ? '' : 'rotate';
+
   return (
     <div className="faq-note-wrapper" onClick={handleButton}>
       <h2>
-        <img src={toogleArrow} alt="toogle arrow" />
-        {props.title}</h2>
-      <p>{props.desciption}</p>
-
-      {display && <div>...</div>}
-      </div>
-
+        <img className={arrowRotate} src={toggleArrow} alt="toggle arrow" />
+        {props.title}
+      </h2>
+      {display && <p>{props.desciption}</p>}
+    </div>
   );
 }
