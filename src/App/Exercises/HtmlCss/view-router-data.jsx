@@ -4,6 +4,6 @@ import { SelectorsAndCascadeRouterMetaData } from './SelectorsAndCascade/router-
 
 export const blockRouterMetaData = [
   blockRouterMetaData121220231,
-  SelectorsAndCascadeRouterMetaData,
+  // SelectorsAndCascadeRouterMetaData,
 ];
 export const blockRouterData = getParsedRouterDataList(blockRouterMetaData);
