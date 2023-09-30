@@ -33,7 +33,10 @@ export function TextFundaments() {
       <ul className="list-ul">
         <li>ul 1</li>
         <li>ul 2</li>
-        <li>ul 3</li>
+        <li>
+          ul 3 Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis
+          magnam fugit ullam quis ducimus odit iure iste, libero nisi nam.
+        </li>
       </ul>
     </div>
   );
