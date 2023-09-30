@@ -6,6 +6,7 @@
     animation-name: example-animation;
     animation-duration: 4s;
     animation-iteration-count: infinite;
+
     /* animation-timing-function: step-end; */
 }
 
