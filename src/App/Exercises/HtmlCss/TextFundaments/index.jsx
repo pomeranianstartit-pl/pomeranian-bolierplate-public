@@ -9,7 +9,7 @@ export function TextFundaments() {
       <div className="text-decoration">Podkreślenie</div>;
       <div className="text-transform">Transformacja</div>;
       <div className="text-shadow">Tekst z cieniem</div>;
-      <div className="box-shadow">DIv z cieniem</div>;
+      <div className="box-shadow">Div z cieniem</div>;
       <div className="special-text">
         Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem
         nobis ipsa error repellendus optio veniam odio maiores excepturi
