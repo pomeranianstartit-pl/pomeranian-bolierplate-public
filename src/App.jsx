@@ -11,7 +11,7 @@ import { CV } from './App/CV';
 import { Settings } from './App/Settings';
 import { Calendar } from './App/Calendar';
 import { Blog } from './App/Blog/Blog';
-
+import { Faq } from './App/Faq';
 export function App() {
   return (
     <BrowserRouter>
@@ -27,6 +27,7 @@ export function App() {
           <Route path="settings/*" element={<Settings />} />
           <Route path="blocks/*" element={<Blocks />} />
           <Route path="Blog/*" element={<Blog />} />
+          <Route path="Faq/*" element={<Faq />} />
 
           <Route path="*" element={<NotFound />} />
         </Route>

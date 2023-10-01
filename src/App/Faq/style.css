@@ -1,0 +1,11 @@
+.faq-item {
+  padding: 18px 24px;
+  max-width: 780px;
+  width: 100%;
+
+  border-left: 5px solid #c9cbd1;
+  border-radius: 8px;
+}
+.faq-image-rotate {
+  rotate: -90deg;
+}

@@ -40,6 +40,10 @@ export function AppAside() {
           <li className="aside-row">
             <NavLink to="Blog">Blog</NavLink>
           </li>
+
+          <li className="aside-row">
+            <NavLink to="Faq">Faq</NavLink>
+          </li>
         </ul>
       </nav>
       <p style={{ padding: '1rem 0' }}>Sidebar items, widgets, etc</p>
