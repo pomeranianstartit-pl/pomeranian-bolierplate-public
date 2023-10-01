@@ -1,0 +1,81 @@
+.boxModel .div1{
+    width: 100%;
+    padding: 5px;
+    margin: 20px;
+    border: 5px solid black;
+
+    display: block;
+
+    box-sizing: border-box;
+    /* szerokosc div = width */
+    /* width zawiera w sobie padding i border */
+}
+
+.boxModel .div2{
+    width: 100%;
+    padding: 5px;
+    margin: 20px;
+    border: 5px solid black;
+
+    display: block;
+
+    box-sizing: content-box;
+        /* szerokosc div = width + padding + border*/
+
+}
+
+.boxModel .p1{
+    max-height: 100px;
+
+    overflow: hidden;
+    overflow: scroll;
+    overflow: auto;
+    /* overflow AUTO ma ta przewage ze suwaki pokazuja sie gdy na prawde */
+    /* sa one potrzebne */
+
+    /* overflow-x => gdy uzyjesz tylko tego to overflow na Y bedzie na AUTO */
+    
+}
+
+/* 
+display: block;
+bazowo przyjmuja tagi:
+div, h1-h6, article, p
+
+
+
+display: inline;
+bazowo przyjmuja tagi:
+span, a, img, input, button
+*/
+
+.boxModel > span{
+    background: linear-gradient(90deg, rgba(2, 0, 36, 1) 0%, rgba(0, 212, 255, 1) 100%);
+    /* display: block; */
+
+}
+
+
+/* ------------------------------------------------------------------- */
+
+/* jednostki css */
+
+.boxModel{
+    font-size: 15px;
+}
+
+.boxModel .p2{
+    /* font-size: 2em; */
+    /* 2em => 2 * font size rodzica */
+
+    font-size: 2rem;
+    /* 2rem => 2 * font size html */
+    /* domnyslny font size html = 16 */
+}
+
+.boxModel .p3{
+    /* vw => wartosc procentowa szeroosci ekranu */
+    width: 100vw;
+    height: 100vh;
+    max-height: 100vh;
+}
