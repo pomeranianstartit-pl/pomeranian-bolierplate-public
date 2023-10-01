@@ -18,6 +18,7 @@ RoundedImage({ src }) {
 export function RoundedImage({ src, size }) {
   // size.width
   // size.height
+
   return (
     <div
       className="roundedImage"
