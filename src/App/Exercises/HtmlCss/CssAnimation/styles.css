@@ -1,0 +1,83 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@700;800&display=swap');
+
+.first_header {
+  font-family: Poppins;
+  font-size: 57px;
+  font-weight: 800;
+  line-height: 88px;
+  letter-spacing: 0.006em;
+  text-align: left;
+}
+
+.first_header p {
+  margin: 0px;
+  padding-bottom: 4px;
+}
+
+.first_header span {
+  color: red;
+}
+
+.first_header span {
+  animation-name: text-animation;
+  animation-duration: 20s;
+  animation-iteration-count: infinite;
+}
+
+.contact {
+  
+}
+
+address span {
+  color: red
+}
+
+.animation {
+  width: 100px;
+  height: 100px;
+  background-color: red;
+  animation-name: example-animation;
+  animation-duration: 20s;
+  animation-iteration-count: infinite;
+  border: 5px solid;
+}
+
+@keyframes example-animation {
+  0% {
+    background-color: red;
+  }
+  25% {
+    background-color: yellow;
+    width: 200px;
+  }
+  50% {
+    background-color: yellowgreen;
+    width: 100px;
+  }
+  75% {
+    background-color: blueviolet;
+    width: 200px;
+  }
+  100% {
+    background-color: red;
+    width: 100px;
+  }
+}
+
+@keyframes text-animation {
+  0% {
+    color: red;
+  }
+  25% {
+    color: yellow;
+  }
+  50% {
+    color: yellowgreen;
+  }
+  75% {
+    color: blueviolet;
+  }
+  100% {
+    color: red;
+  }
+}
