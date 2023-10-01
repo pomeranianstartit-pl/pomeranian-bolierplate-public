@@ -1,0 +1,36 @@
+.toDoListWrapper .heading {
+  display: flex;
+  font-family: Poppins;
+  text-align: center;
+  /* position: relative; */
+}
+
+.toDoListWrapper .addButton {
+  width: 1.875rem;
+  height: 1.875rem;
+  color: #fff;
+  font-size: 1.61831rem;
+  font-weight: 500;
+  line-height: 1.00338rem;
+  border-radius: 0.25894rem;
+  border: 0.518px solid #fe3756;
+  background: #fe3756;
+}
+
+.toDoListWrapper .addButton2 {
+  width: 10.1875rem;
+  height: 3.5rem;
+  padding: 1.25rem 2.25rem;
+  justify-content: center;
+  color: #fff;
+  font-size: 1.61831rem;
+  font-weight: 500;
+  line-height: 1.00338rem;
+  border-radius: 0.25894rem;
+  border: 0.518px solid #fe3756;
+  background: #fe3756;
+  align-items: right;
+  /* position: absolute;
+  left: 650px;
+  top: 570px; */
+}
