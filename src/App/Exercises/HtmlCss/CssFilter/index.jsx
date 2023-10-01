@@ -1,3 +1,4 @@
+import './styles.css';
 export function CssFilter() {
   return (
     <div className="cssFilters">
