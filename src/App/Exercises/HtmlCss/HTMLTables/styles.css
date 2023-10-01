@@ -1,0 +1,71 @@
+.html-table {
+  width: 100%;
+  margin-bottom: 50px;
+  border-collapse: collapse;
+  background-color: rgb(246, 207, 241);
+  background: linear-gradient(
+    90deg,
+    rgba(136, 133, 194, 0.021598272138228958) 24%,
+    rgba(177, 109, 236, 1) 56%,
+    rgba(255, 0, 245, 1) 100%
+  );
+}
+
+.html-table th,
+.html-table td {
+  padding: 0.5rem;
+  text-align: center;
+  border: 3px solid black;
+}
+
+/* 2n = even */
+.html-table tr:nth-child(2n) {
+  background-color: rgb(209, 180, 236);
+}
+
+.html-table tr:hover {
+  background-color: blueviolet;
+}
+
+.html-table th:hover,
+.html-table td:hover {
+  background-color: rgb(232, 43, 160);
+}
+
+/* ********* Druga tabela ****** */
+.html-table2 {
+  width: 716px;
+  height: 477px;
+  box-shadow: 0px 2.7852px 9.16022px 0px rgba(0, 0, 0, 0.02),
+    0px 12.73235px 25.74765px 0px rgba(0, 0, 0, 0.03),
+    0px 32.22877px 69.07301px 0px rgba(0, 0, 0, 0.04),
+    0px 63.66177px 158.44705px 0px rgba(0, 0, 0, 0.06);
+  border-radius: 14px;
+  border-collapse: collapse;
+  background-color: #ffffff;
+}
+
+.html-table2 th,
+.html-table2 td {
+  padding: 28.29px 46px;
+  text-align: left;
+  color: var(--text-text-primary, #222);
+  text-overflow: ellipsis;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 26.879px;
+}
+
+.html-table2 tr:nth-child(2n-1) {
+  background-color: #ffd5db;
+}
+
+.html-table2 th {
+  background-color: #f5f5f5;
+  color: var(--text-text-primary, #222);
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 26.879px;
+}
