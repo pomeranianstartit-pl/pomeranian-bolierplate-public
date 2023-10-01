@@ -50,7 +50,6 @@ export const Callendar = () => {
 
   const filteredExercises = blockRouterData.filter((exercise) => {
     const formattedDate = format(selectedDate, 'dd-MM-yyyy');
-    console.log('Filtered exercise:', exercise);
     return exercise.date === formattedDate;
   });
 

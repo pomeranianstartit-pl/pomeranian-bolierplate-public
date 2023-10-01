@@ -4,8 +4,18 @@
   /* 5rem header, 5rem footer 1.5rem padding (both sides) */
   grid-template-rows: calc(100vh - 5rem - 5rem - 1.5rem - 1.5rem);
 }
+.exercise-main-container ul {
+  padding-left: 0;
+}
 
 .exercises-categories a.active {
-  background-color: var(--color-primary-blue);
-  color: var(--color-white);
+  background-color: var(--color-gray-200);
+  color: var(--primary-primary);
+}
+
+@media (max-width: 800px) {
+  .exercise-main-container {
+    display: flex;
+    flex-direction: column;
+  }
 }

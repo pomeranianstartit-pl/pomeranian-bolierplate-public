@@ -1,0 +1,75 @@
+.cv-container dd {
+  display: none;
+  transition: all 0.3s ease-in-out;
+}
+.cv-container .show {
+  display: block;
+}
+
+.cv-container dt {
+  cursor: pointer;
+  margin: 0;
+  padding: 1rem;
+  color: var(--gray-80);
+  background-color: var(--color-blue-gray);
+  border: 1px solid #ccc;
+  border-radius: 1rem 1rem 0 0;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.cv-container dd {
+  padding: 10px;
+  margin: 0 0 20px 0;
+  font-family: Poppins;
+  letter-spacing: 0.05rem;
+  border: 1px solid #ccc;
+  border-top: none;
+}
+.cv-info h3 {
+  margin: 0;
+  font-family: Poppins;
+  letter-spacing: 0.25rem;
+  font-weight: 300;
+  position: relative;
+}
+.arrow-dropdown {
+  font-size: 1.5rem;
+}
+.cv-container dd span {
+  font-weight: 700;
+}
+.cv-container .jobs dt {
+  background-color: var(--gray-500);
+}
+.jobs h3 {
+  font-size: medium;
+}
+.jobs .arrow-dropdown {
+  font-size: smaller;
+}
+.cv-container .personal-info-content {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.personal-info-data {
+  flex-grow: 2;
+}
+.personal-info-picture {
+  align-self: flex-end;
+}
+.personal-info-picture .profile-pic {
+  border-radius: 50%;
+}
+@media (min-width: 800px) {
+  .cv-container .content ul,
+  .cv-container .content p {
+    width: 80%;
+    margin: 0.5rem auto;
+  }
+  .cv-container .personal-info-content {
+    padding: 0 10%;
+  }
+}

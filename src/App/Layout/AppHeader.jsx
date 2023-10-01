@@ -7,6 +7,7 @@ import arrowDown from '../Images/toggle-arrow.svg'; //inne importy
 import cogWheel from '../Images/setting.svg';
 import menu from '../Images/menu.svg'; // jesli zmieniać kolor to zapisac jako funkcję
 import user from '../Images/user.svg';
+import smallProfile from '../Images/prof2m.jpg';
 
 export function AppHeader({ toggleMenuVisibility }) {
   const [userIsVisible, setUserIsVisible] = useState(false);
@@ -35,7 +36,11 @@ export function AppHeader({ toggleMenuVisibility }) {
           <img src={cogWheel} alt="ustawienia" srcSet="" />
         </button>
         <div className="profile-picture">
-          <div className="placeholder" />
+          <img
+            className="profile-picture-img"
+            src={smallProfile}
+            alt="miniatura zdjęcia Profilowego"
+          />
         </div>
         <div className="header-title">
           <div className="user">

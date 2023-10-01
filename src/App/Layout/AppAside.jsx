@@ -9,7 +9,7 @@ import { CalendarIcon } from './../Components/Icons/CalendarIcon';
 import { PersonalCardIcon } from './../Components/Icons/PersonalCardIcon';
 import { SettingIcon } from './../Components/Icons/SettingIcon';
 import { FaqIcon } from '../Components/Icons/FaqIcon';
-export function AppAside(menuIsVisible) {
+export function AppAside({ menuIsVisible }) {
   return (
     <aside className={menuIsVisible ? 'menu-visible' : ''}>
       <nav>
@@ -26,12 +26,7 @@ export function AppAside(menuIsVisible) {
               Moje cv
             </NavLink>
           </li>
-          <li>
-            <NavLink className="aside-row" to="CV">
-              <PersonalCardIcon className="menu-icon" />
-              Moje cv
-            </NavLink>
-          </li>
+
           <li>
             <NavLink className="aside-row" to="TechStack">
               <TechStackIcon className="menu-icon" />
@@ -39,9 +34,9 @@ export function AppAside(menuIsVisible) {
             </NavLink>
           </li>
           <li>
-            <NavLink className="aside-row" to="blocks">
+            <NavLink className="aside-row" to="Apps">
               <ElementIcon className="menu-icon" />
-              Bloki
+              Aplikacje
             </NavLink>
           </li>
           <li>
@@ -77,7 +72,6 @@ export function AppAside(menuIsVisible) {
           </li>
         </ul>
       </nav>
-      <p style={{ padding: '1rem 0' }}>Sidebar items, widgets, etc</p>
     </aside>
   );
 }
