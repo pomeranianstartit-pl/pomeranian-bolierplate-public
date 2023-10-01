@@ -8,4 +8,5 @@
   background-size: contain;
 
   background-color: gray;
+  filter: grayscale(100%);
 }
