@@ -116,8 +116,7 @@ export const Dashboard = () => {
         <div className="dashboard-wrapper">
           {availableCards.map((card) => {
             return (
-              <DashboardCard
-                className
+              <DashboardCard //passing lot of props, to show idea at beggining of the course
                 sectionTitle={card.sectionTitle}
                 description={card.description}
                 link={card.link}

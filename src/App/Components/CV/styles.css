@@ -40,3 +40,36 @@
 .cv-container dd span {
   font-weight: 700;
 }
+.cv-container .jobs dt {
+  background-color: var(--gray-500);
+}
+.jobs h3 {
+  font-size: medium;
+}
+.jobs .arrow-dropdown {
+  font-size: smaller;
+}
+.cv-container .personal-info-content {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.personal-info-data {
+  flex-grow: 2;
+}
+.personal-info-picture {
+  align-self: flex-end;
+}
+.personal-info-picture .profile-pic {
+  border-radius: 50%;
+}
+@media (min-width: 800px) {
+  .cv-container .content ul,
+  .cv-container .content p {
+    width: 80%;
+    margin: 0.5rem auto;
+  }
+  .cv-container .personal-info-content {
+    padding: 0 10%;
+  }
+}

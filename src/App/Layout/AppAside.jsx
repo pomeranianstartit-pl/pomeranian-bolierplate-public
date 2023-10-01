@@ -26,12 +26,7 @@ export function AppAside({ menuIsVisible }) {
               Moje cv
             </NavLink>
           </li>
-          <li>
-            <NavLink className="aside-row" to="CV">
-              <PersonalCardIcon className="menu-icon" />
-              Moje cv
-            </NavLink>
-          </li>
+
           <li>
             <NavLink className="aside-row" to="TechStack">
               <TechStackIcon className="menu-icon" />
@@ -39,9 +34,9 @@ export function AppAside({ menuIsVisible }) {
             </NavLink>
           </li>
           <li>
-            <NavLink className="aside-row" to="blocks">
+            <NavLink className="aside-row" to="Apps">
               <ElementIcon className="menu-icon" />
-              Bloki
+              Aplikacje
             </NavLink>
           </li>
           <li>

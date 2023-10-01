@@ -35,17 +35,25 @@ export const CV = () => {
       <dl>
         <CvSection title="Personal Info" defaultExpanded={true}>
           <div className="personal-info-data">
-            <p>E-mail: adam.karcz.1984@gmail.com</p>
-            <p>Mobile: +48 506 088 756</p>
-            <p>LinkedIn: Adam Karcz</p>
-            <p>GitHub: Adam Karcz</p>
-            <p>Portfolio: Adam Karcz</p>
+            <p>
+              <span>E-mail:</span> adam.karcz.1984@gmail.com
+            </p>
+            <p>
+              <span>Mobile:</span> +48 506 088 756
+            </p>
+            <p>
+              <span>LinkedIn:</span> Adam Karcz
+            </p>
+            <p>
+              <span>GitHub:</span> Adam Karcz
+            </p>
+            <p>
+              <span>Portfolio:</span> Adam Karcz
+            </p>
           </div>
-          <img
-            className="personal-info-picture profile-pic"
-            src={profile}
-            alt="moje oblicze"
-          />
+          <div className="personal-info-picture">
+            <img className=" profile-pic" src={profile} alt="moje oblicze" />
+          </div>
         </CvSection>
 
         <CvSection title="Tech Stack">
@@ -73,29 +81,36 @@ export const CV = () => {
         </CvSection>
 
         <CvSection title="Languages">
-          <p>English: B2+</p>
+          <p>
+            <span>English:</span> B2+
+          </p>
         </CvSection>
 
-        <CvSection title="Summary">
+        <CvSection title="Summary" defaultExpanded={true}>
           <p>
             A highly motivated professional currently undergoing a career
-            transition into the IT industry, equipped with a solid programming
-            foundation gained from completing the specialized Pomeranian
-            START.IT course, which prepares for a Junior Frontend Developer
+            transition into the <strong>IT industry</strong>, equipped with a
+            solid programming foundation gained from completing the specialized{' '}
+            <strong>Pomeranian START.IT</strong> course, which prepares for a{' '}
+            <strong>Junior Frontend Developer</strong>
             role.
           </p>
           <p>
-            With a background as a team leader, I have honed my skills in team
-            management. Moreover, I have extensive experience in various
-            photography domains, including product, outdoor, portrait, fashion,
-            and more. This experience has rapidly enhanced my attention to
-            detail, creativity and ability to consistently deliver high-quality
-            results.
+            With a background as a <strong>team leader</strong>, I have honed my
+            skills in team management. Moreover, I have extensive experience in
+            various
+            <strong>photography</strong> domains, including product, outdoor,
+            portrait, fashion, and more. This experience has rapidly enhanced my
+            attention to
+            <strong>
+              detail, creativity and ability to consistently deliver
+              high-quality results.
+            </strong>
           </p>
           <p>
             I am enthusiastic about leveraging my current skill set to excel in
-            the IT industry and make effective contributions to frontend
-            development projects.
+            the <strong>IT industry</strong> and make effective contributions to
+            frontend development projects.
           </p>
         </CvSection>
 
@@ -345,21 +360,27 @@ export const CV = () => {
 
         <CvSection title="Courses and Certificates">
           <p>
-            06/2021: Studio Photography Course: Fashion, Portrait,
+            06/2021: <span>Studio Photography Course:</span> Fashion, Portrait,
             Post-Production (by todobrykurs.pl)
           </p>
-          <p>05/2021: Management and Leadership - Modern Leaders Training</p>
+          <p>
+            05/2021: <span>Management and Leadership</span> - Modern Leaders
+            Training
+          </p>
           <p>04/2018: Gliding Winch Operators Instructor</p>
           <p>
             05/2017: Radio Operator in Aviation Service (General Certificate)
           </p>
-          <p>10/2015: Sailplane Pilot License (SPL)</p>
+          <p>
+            10/2015: <span>Sailplane Pilot License</span> (SPL)
+          </p>
         </CvSection>
 
         <CvSection title="Organizations & Volunteering">
           <p>
-            01/2018 - present: Member @ Szczecin Gliding Association - Pilot,
-            glider winch operator, car hauler operator
+            01/2018 - present: Member @ <span>Szybowcowy Szczecin</span>{' '}
+            Szczecin Gliding Association - Pilot, glider winch operator, car
+            hauler operator
           </p>
           <p>
             10/2004 – 06/2007: Member @ Environmental Protection Science Club -
@@ -369,7 +390,9 @@ export const CV = () => {
         </CvSection>
 
         <CvSection title="Awards and Achievements">
-          <p>07/2023: Silver Glider Badge</p>
+          <p>
+            07/2023: <span>Silver Glider Badge</span>
+          </p>
           <p>
             06/2005: Academic scholarship for outstanding academic achievements
           </p>
