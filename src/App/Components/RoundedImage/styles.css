@@ -7,4 +7,5 @@
   background-size: contain;
   background-repeat: no-repeat;
   background-color: pink;
+  filter: grayscale(100%);
 }
