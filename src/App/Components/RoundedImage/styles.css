@@ -5,4 +5,9 @@
     background-position: center;
     background-size: contain;
     background-color: lightgrey;
+
+    filter: grayscale(100%);
+-webkit-filter: grayscale(100%);
+-moz-filter: grayscale(100%);
 }
+
