@@ -41,6 +41,9 @@ export function AppAside() {
             <SettingIcon />
             <NavLink to="settings">Ustawienia</NavLink>
           </li>
+          <li>
+            <NavLink to="faq">Faq</NavLink>
+          </li>
         </ul>
       </nav>
       <p style={{ padding: '1rem 0' }}>Sidebar items, widgets, etc</p>
