@@ -25,3 +25,7 @@
     transform: rotate(-90deg);
     transition: 0.5s;
 }
+
+.faq-note-wrapper .fag {
+    background: red;
+}
