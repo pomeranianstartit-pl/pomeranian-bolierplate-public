@@ -25,3 +25,8 @@
     transform: rotate(-90deg);
     transition: 0.5s;
 }
+
+.fagimg path {
+    fill: red;
+    stroke: red;
+}

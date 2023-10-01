@@ -1,7 +1,7 @@
 import { useState } from 'react';
 
-import toggleArrow from '../../../Images/toggle-arrow.svg';
-
+// import toggleArrow from '../../../Images/toggle-arrow.svg';
+import { ArrowIcon } from '../../../Components/Icons/ArrowIcon';
 import './styles.css';
 
 export function FAQNote(props) {
@@ -16,7 +16,8 @@ export function FAQNote(props) {
   return (
     <div className="faq-note-wrapper" onClick={handleButton}>
       <h2>
-        <img className={arrowRotate} src={toggleArrow} alt="toggle arrow" />
+        {/* <img className={arrowRotate} src={toggleArrow} alt="toggle arrow" /> */}
+        <ArrowIcon className="fagimg"/>
         {props.title}
       </h2>
       {display && <p>{props.desciption}</p>}
