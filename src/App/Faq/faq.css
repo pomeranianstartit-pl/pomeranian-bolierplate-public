@@ -1,0 +1,88 @@
+.faq-style {
+    margin-bottom: 16px;
+    padding-top: 18px;
+    padding-bottom: 18px;
+    padding-left: 24px;
+    padding-right: 24px;
+    width: 780px;
+height: 905px;
+
+}
+
+
+.div {
+    color: var(--secondary-secondary, #23213D);
+font-family: Poppins;
+font-size: 18px;
+font-style: normal;
+font-weight: 700;
+line-height: 34px; 
+}
+
+.wstep {
+    font-family: Poppins;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 27px;;
+margin-bottom: 37px;
+}
+
+.div1 {
+    color: var(--secondary-secondary, #23213D);
+    font-family: Poppins;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 34px; 
+border-radius: 8px;
+border-left: 5px solid var(--gray-300, #C8CBD1);
+background: var(--background-bg-primary, #FFF);
+}
+
+
+.lorem {
+    color: var(--text-text-primary, #222);
+font-family: Poppins;
+font-size: 18px;
+font-style: normal;
+font-weight: 400;
+line-height: 32px;
+display: flex;
+
+flex-direction: column;
+align-items: flex-start;
+gap: 18px;
+align-self: stretch;
+padding-left: 24px;
+
+}
+
+.button {
+    color: var(--secondary-secondary, #23213D);
+    font-family: Poppins;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 34px; 
+
+border-radius: 8px;
+border-left: 5px solid var(--gray-300, #C8CBD1);
+background: var(--background-bg-primary, #FFF);
+margin-top: 18px;
+margin-bottom: 18px;
+height: 70px;
+padding-left: 16px;
+}
+
+.button-text 
+{
+    padding-left: 16px;
+    display: inline;
+    text-align: center;
+}
+
+.button-text-up {
+    padding-left: 24px;
+  
+}
