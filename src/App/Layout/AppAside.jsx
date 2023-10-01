@@ -38,6 +38,10 @@ export function AppAside() {
             <NavLink to="blog">Blog</NavLink>
           </li>
           <li className="aside-row">
+            <CalendarIcon />
+            <NavLink to="faq">Faq</NavLink>
+          </li>
+          <li className="aside-row">
             <SettingIcon />
             <NavLink to="settings">Ustawienia</NavLink>
           </li>
