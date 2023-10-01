@@ -1,8 +1,10 @@
-.toDoListWrapper .heading {
-  display: flex;
+.toDoListWrapper {
   font-family: Poppins;
   text-align: center;
-  /* position: relative; */
+}
+
+.toDoListWrapper .heading {
+  display: flex;
 }
 
 .toDoListWrapper .addButton {
@@ -29,8 +31,7 @@
   border-radius: 0.25894rem;
   border: 0.518px solid #fe3756;
   background: #fe3756;
-  align-items: right;
-  /* position: absolute;
-  left: 650px;
-  top: 570px; */
+  align-items: flex-start;
+  margin-left: -180px;
 }
+

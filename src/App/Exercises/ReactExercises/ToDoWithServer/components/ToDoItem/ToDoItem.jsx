@@ -1,7 +1,6 @@
 import { useState } from 'react';
 import './styles.css';
 import { RequestHandler } from '../../helpers';
-
 export const ToDoItem = ({ item, setEditObject, setShowForm, getData }) => {
   const [error, setError] = useState();
 
@@ -39,10 +38,13 @@ export const ToDoItem = ({ item, setEditObject, setShowForm, getData }) => {
         <p>{item.note}</p>
       </div>
       <div>
-        {!item.isDone && <button onClick={handleMarkAsDone}>mark</button>}
+        {!item.isDone && (
+          <button onClick={handleMarkAsDone} className="markButton">
+          </button>
+        )}
         {item.isDone && <span>{item.doneDate}</span>}
-        <button onClick={handleEdit}>edit</button>
-        <button onClick={handleDelete}>del</button>
+        <button onClick={handleEdit} className='editButton'></button>
+        <button onClick={handleDelete} className='deleteButton'></button>
       </div>
     </div>
   );
