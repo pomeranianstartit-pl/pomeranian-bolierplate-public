@@ -6,5 +6,6 @@
     background-color: blueviolet;
     background-position: center;
     background-size: contain;
+    filter: grayscale(100%);
    
 }
