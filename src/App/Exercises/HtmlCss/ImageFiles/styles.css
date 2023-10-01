@@ -3,6 +3,7 @@
   background-size: contain;
   background-position: center;
   background-repeat: no-repeat;
+  background-size: 100px;
 }
 .images-files img {
   max-width: 400px;
