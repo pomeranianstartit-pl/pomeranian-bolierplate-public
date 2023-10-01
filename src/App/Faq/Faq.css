@@ -23,3 +23,29 @@
   line-height: 1, 7;
   font-weight: 400;
 }
+/* ============================================ */
+:root {
+  --coolor-text: rgb(82, 82, 200);
+  --m: 123, 13;
+}
+
+.Faq {
+  --color-text: red;
+}
+.button {
+  color: var(--color-text);
+  font-size: 14px;
+  font-weight: 700;
+  padding: 20px 10px;
+  border-radius: 5px;
+  border: 1px solid black;
+}
+.button-red {
+  border-color: red;
+}
+.button-green {
+  border-color: green;
+}
+.button-alert {
+  border-color: #ff9800;
+}
