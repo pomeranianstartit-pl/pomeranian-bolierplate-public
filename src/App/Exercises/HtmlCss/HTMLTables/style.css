@@ -1,0 +1,66 @@
+/* .html-table {
+    width: 100%;
+    background-color: rgb(252, 252, 252);
+     background: linear-gradient(90deg, rgb(199, 198, 220) 0%, rgb(222, 14, 222) 44%, rgba(0, 212, 255, 1) 100%);
+}
+
+.html-table th,
+.html-table td {
+    padding: 0.5rem;
+    text-align: left;
+    border: 3px solid black;
+}
+
+.html-table tr:nth-child(2n) {
+    background-color: lightgreen;
+}
+
+.html-table tr:hover {
+    background-color: lightblue;
+}
+
+.html-table th:hover, .html-table td:hover {
+    background-color: lightsalmon;
+} */
+
+.html-table {
+    width: 750px;
+    height: 84px;
+    background-color: rgb(252, 252, 252); 
+    font-family: Poppins;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 26.879px;
+    
+}
+
+
+
+.html-table tr:nth-child(2n) {
+    background-color: #FFD5DB ;
+}
+
+
+.html-table td {
+text-overflow: ellipsis;
+font-family: Poppins;
+font-size: 18px;
+font-style: normal;
+font-weight: 400;
+line-height: 26.879px;
+padding: 20px 26px;
+
+}
+
+.html-table th {
+    height: 57px; 
+}
+
+.html-table tr:hover {
+    background-color: rgb(223, 236, 134);
+}
+
+.html-table th:hover, .html-table td:hover {
+    background-color: rgb(103, 178, 205);
+}
