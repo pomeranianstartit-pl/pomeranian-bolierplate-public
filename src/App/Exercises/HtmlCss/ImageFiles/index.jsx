@@ -1,4 +1,5 @@
 import './styles.css';
+import { RoundedImage } from '../../../Components/RoundedImage/RoundedImage';
 
 export function ImageFiles() {
   return (
@@ -12,6 +13,14 @@ export function ImageFiles() {
         alt="image 2"
       />
       <img src="https://www.svgrepo.com/show/85124/cat.svg" alt="image 3" />
+
+      <RoundedImage
+        src="/sygnet96.png"
+        size={{
+          width: '100px',
+          height: 200,
+        }}
+      />
     </div>
   );
 }
