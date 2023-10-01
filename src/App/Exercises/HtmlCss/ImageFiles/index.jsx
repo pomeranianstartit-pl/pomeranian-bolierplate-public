@@ -1,3 +1,4 @@
+import { RoundedImage } from '../../../Components/RoundedImage/RoundedImage';
 import './style.css';
 
 export function ImageFiles() {
@@ -16,6 +17,15 @@ export function ImageFiles() {
         src="https://cdn.pixabay.com/animation/2022/07/30/22/01/22-01-29-66_512.gif"
         alt=""
       />
+      <img src="/sygnet96.png" alt="" />
+      <RoundedImage
+        src="/sygnet96.png"
+        size={{
+          width: '100px',
+          height: 100,
+        }}
+      />
+      {/* <RoundedImage src="https://cdn.pixabay.com/photo/2017/09/01/00/15/png-2702691_960_720.png" /> */}
     </div>
   );
 }
