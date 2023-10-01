@@ -3,6 +3,8 @@
 /.pnp
 .pnp.js
 
+pomeranian.code-workspace
+
 # testing
 /coverage
 
