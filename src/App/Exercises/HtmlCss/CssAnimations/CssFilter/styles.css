@@ -1,0 +1,6 @@
+.cssFilters img{
+    filter: grayscale(3%) sepia(100%) brightness(115%) saturate(0%) contrast(108%) invert(90%);
+    -webkit-filter: grayscale(3%) sepia(100%) brightness(115%) saturate(0%) contrast(108%) invert(90%);
+    -moz-filter: grayscale(3%) sepia(100%) brightness(115%) saturate(0%) contrast(108%) invert(90%);
+}
+
