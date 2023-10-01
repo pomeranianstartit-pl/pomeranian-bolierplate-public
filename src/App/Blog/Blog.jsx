@@ -7,7 +7,10 @@ export function Blog() {
     <div>
       <h1>BLOG</h1>
       <article className="article">
-        <Title data="30-11-2022" title="Why are we so nostalgic for the 1990s?" />
+        <Title
+          data="30-11-2022"
+          title="Why are we so nostalgic for the 1990s?"
+        />
         <div className="artText">
           <p>
             Pop culture used to define a generation, but it seems the cultural,
@@ -38,7 +41,10 @@ export function Blog() {
         <Author name="Radosłw Majdan" position="Senior Marketing Specialist" />
       </article>
       <article className="article">
-        <Title data="30-11-2022" title="18 Record-Breaking, Controversial, and Weird Facts " />
+        <Title
+          data="30-11-2022"
+          title="18 Record-Breaking, Controversial, and Weird Facts "
+        />
         <div className="artText">
           The death of Queen Elizabeth II on September 8 at the age of 96
           represents a monumental shift for the British monarchy and the people
