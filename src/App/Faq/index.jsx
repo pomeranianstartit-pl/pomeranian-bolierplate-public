@@ -1,4 +1,7 @@
 import { SingleQuestion } from './SingleQuestion';
+// import { BusinessCard } from './BusinessCard';
+
+// import './style.css';
 import './faq.css';
 export function Faq() {
   return (
@@ -24,6 +27,12 @@ export function Faq() {
       <SingleQuestion question="Jak mogę zapisać się na szkolenie?" answer="" />
 
       <SingleQuestion question="Jak mogę zapisać się na szkolenie?" answer="" />
+      {/* <BusinessCard
+        firstname="Artur Szwemiński"
+        position="Programista"
+        mail="szweminskiartur@gmail.com"
+        phone="+48 511 867 387"
+      /> */}
     </div>
   );
 }
