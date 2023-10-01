@@ -1,0 +1,99 @@
+.rating{
+    color:  #23213D;
+    font-size: 1.2rem;
+    font-weight: 700;
+    line-height: 34px;
+}
+
+.rating > p{
+    color:  #222;
+    font-feature-settings: 'clig' off, 'liga' off;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 27px;
+    padding-bottom: 19px;
+}
+
+.html-tables{
+    width: 100%;
+    border-collapse: collapse;
+    background-color: lightsteelblue;
+}
+
+.html-tables tr:nth-child(1){
+    background-color: antiquewhite;
+}
+
+.html-tables tr:nth-child(2n){
+    background-color: lightgrey;
+}
+
+.html-tables tr:hover{
+    background-color: lightblue;
+}
+
+.html-tables th:hover,
+.html-tables td:hover{
+    background-color: lightcoral;
+}
+
+.html-tables th,
+.html-tables td{
+    padding: 0.5rem;
+    text-align: left;
+    border: 2px solid black;
+}
+
+
+
+
+.html-table2 tr:nth-child(1){
+    background-color: #F5F5F5;
+}
+
+.html-table2 tr:nth-child(3){
+    background-color: #FFD5DB;
+}
+
+.html-table2 tr:nth-child(5){
+    background-color: #FFD5DB;
+}
+
+.html-table2{
+    color: #222;
+    width: 100%;
+    border-collapse: collapse;
+    border: 1px solid lightgrey ;
+    border-radius: 15px;
+ 
+    /*overflow hidden spowoduje ze wszystko co chcialoby wystawac
+    poza tabelke bedzie schowane np. rogi od tr (table rows) */
+    overflow: hidden;
+    
+}
+
+.html-table2 th,
+.html-table2 td{
+    padding: 20px 46px;
+    text-align: left;
+    /* border: 2px solid black; */
+}
+
+.html-table2 td{
+    padding: 20px 46px;
+    text-align: left;
+    text-overflow: ellipsis;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 26.879px; 
+
+}
+
+.html-table2 th{
+    padding: 20px 46px;
+    text-align: left;
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 26.879px; 
+
+}
