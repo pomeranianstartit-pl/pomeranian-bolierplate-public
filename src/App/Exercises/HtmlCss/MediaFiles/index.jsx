@@ -17,7 +17,7 @@ export function MediaFiles() {
       <audio
         src="https://cdn.pixabay.com/download/audio/2022/12/22/audio_fb4198257e.mp3"
         controls
-        autoPlay
+        // autoPlay
       ></audio>
       {/* lin ze stronki  */}
       <iframe
