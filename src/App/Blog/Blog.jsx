@@ -1,5 +1,6 @@
 import './Blog.css';
 
+
 import { Title } from './Title';
 import { Author } from './Author';
 
@@ -79,4 +80,6 @@ export function Blog() {
       </article>
     </div>
   );
+
+
 }
