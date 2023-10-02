@@ -7,6 +7,10 @@ import { Blocks } from './App/Blocks';
 import { Layout } from './App/Layout';
 import { Dashboard } from './App/Dashboard';
 import { Exercises } from './App/Exercises';
+import { Calendar } from './App/Calendar';
+import { CV } from './App/CV';
+import { Blog } from './App/Blog';
+import { FAQ } from './App/faq';
 
 export function App() {
   return (
@@ -18,6 +22,10 @@ export function App() {
           <Route path="exercises/*" element={<Exercises />} />
           <Route path="blocks/*" element={<Blocks />} />
           <Route path="*" element={<NotFound />} />
+          <Route path="cv/*" element={<CV />} />
+          <Route path="calendar/*" element={<Calendar />} />
+          <Route path="blog/*" element={<Blog />} />
+          <Route path="faq/*" element={<FAQ />} />
         </Route>
       </Routes>
     </BrowserRouter>

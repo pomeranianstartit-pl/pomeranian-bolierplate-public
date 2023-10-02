@@ -8,7 +8,7 @@ header {
   justify-content: space-between;
   padding-left: 1.5rem;
   padding-right: 3rem;
-  box-shadow: 0px 1px 9px 0px var(--color-grey);
+  box-shadow: 0px 1px 20px 0px #c8cbd1;
 }
 header > a:first-of-type {
   text-decoration: none;

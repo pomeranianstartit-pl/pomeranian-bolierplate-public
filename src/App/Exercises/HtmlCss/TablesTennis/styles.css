@@ -1,0 +1,44 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
+
+.wrapper h2 {
+  font-family: Poppins, sans-serif;
+  font-size: 16px;
+  color: #222;
+}
+.table-tennis {
+  margin: 50px;
+  border-collapse: collapse;
+  font-family: Poppins, sans-serif;
+  color: #222;
+  border-radius: 20px;
+  -webkit-box-shadow: 10px 10px 44px 10px rgba(204, 204, 204, 1);
+  -moz-box-shadow: 10px 10px 44px 10px rgba(204, 204, 204, 1);
+  box-shadow: 10px 10px 44px 10px rgba(204, 204, 204, 1);
+}
+
+.table-tennis th {
+  background-color: #f5f5f5;
+  font-size: 18px;
+  font-weight: 600;
+  padding: 16px 80px;
+  border-bottom: 1px solid #ffd5db;
+}
+.table-tennis th:nth-child(1) {
+  border-radius: 20px 0 0 0;
+}
+.table-tennis th:nth-child(3) {
+  border-radius: 0 20px 0 0;
+}
+
+.table-tennis td {
+  padding: 24px 80px;
+  text-align: center;
+}
+
+.table-tennis tr:nth-of-type(even) {
+  background-color: #ffd5db;
+}
+
+.table-tennis tr td:nth-of-type(3) {
+  text-align: end;
+}

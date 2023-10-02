@@ -1,2 +1,68 @@
 .dashboard {
+  margin: 10px;
+  display: grid;
+  grid-template-columns: 1fr 300px;
+  grid-template-rows: auto auto 1fr;
+  grid-column-gap: 15px;
+  grid-row-gap: 0px;
+  align-items: start;
+}
+.dashboard h2 {
+  grid-area: 1 / 1 / 2 / 2;
+  font-size: 22px;
+  font-weight: 400;
+  color: #fe3756;
+  line-height: 40px;
+}
+.dashboard p {
+  grid-area: 2 / 1 / 3 / 2;
+  font-size: 18px;
+  color: #23213d;
+  font-weight: 400;
+  margin-bottom: 20px;
+}
+section.cards {
+  grid-area: 3 / 1 / 4 / 2;
+  display: flex;
+  flex-wrap: wrap;
+  background-color: none;
+  padding: 20px;
+  justify-content: flex-start;
+  gap: 35px;
+}
+section.cards:hover {
+  background: none;
+}
+section.aside {
+  grid-area: 1 / 2 / 4 / 3;
+  padding: 40px 20px;
+  background-color: white;
+  border-radius: 10px;
+}
+section.aside:hover {
+  background: none;
+}
+
+div.photo {
+  background-color: #c8cbd1;
+  width: 90px;
+  height: 90px;
+  border-radius: 50%;
+}
+
+section.aside p {
+  font-family: Poppins;
+  font-size: 14px;
+  font-weight: 400;
+  color: #c8cbd1;
+}
+section.aside p.name {
+  font-size: 22px;
+  font-weight: 500;
+  color: #23213d;
+  margin-top: 10px;
+}
+section.aside div.mail {
+  margin-top: 10px;
+  padding-bottom: 5px;
 }
