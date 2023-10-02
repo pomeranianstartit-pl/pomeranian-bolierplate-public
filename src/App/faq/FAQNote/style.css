@@ -34,7 +34,7 @@ h2.title {
   font-size: 16px;
   font-style: normal;
   font-weight: 700;
-  line-height: none;
+  line-height: 60px;
 }
 
 button.chevron {

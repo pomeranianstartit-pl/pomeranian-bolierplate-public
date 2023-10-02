@@ -9,8 +9,8 @@ export const HeaderMenu = () => {
       <SettingIcon />
       <div className="profilepic"></div>
       <div className="profiledata">
-        <p>Wojciech</p>
-        <p>Kursant</p>
+        <p>Irmina</p>
+        <p>Kursantka</p>
       </div>
       <ChevronIcon />
     </div>
