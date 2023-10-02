@@ -17,7 +17,7 @@ export function AppHeader() {
         <Elipse2 />
 
         <div className="user">
-          <p>Wojciech </p>
+          <p>Katarzyna </p>
           <p>kursant </p>
         </div>
         <RightArrow />
