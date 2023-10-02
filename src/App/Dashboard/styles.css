@@ -19,6 +19,7 @@
             display: flex;
             flex-wrap: wrap;
             gap: 20px;
+            
           }
 .dashboard-card {
             grid-area: 3 / 1 / 4 / 2;
@@ -37,7 +38,7 @@
             line-height: 34px;
             margin: 10px 0;
           }
-          dashboard-card > svg {
+.dashboard-card > svg {
             height: 40px;
             width: 40px;
           }
@@ -69,4 +70,8 @@
             grid-area: 1 / 2 / 4 / 3;
             min-height: 800px;
             background: gray;
+          }
+          .asie {
+            display: flex;
+
           }

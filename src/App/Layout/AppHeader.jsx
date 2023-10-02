@@ -18,8 +18,7 @@ export function AppHeader() {
         <PomeranianLogo />
       </div>
 
-        <ArrowIcon />
-      </div>
+      <ArrowIcon />
     </header>
   );
 }
