@@ -1,6 +1,6 @@
 import { PersonalCardIcon } from '../Components/Icons/PersonalCardIcon';
 import { EditIcon } from '../Components/Icons/EditIcon';
-import { ElementIcon } from '../Components/Icons/ElementIcon';
+import { CodeIcon } from '../Components/Icons/CodeIcon';
 import { BookIcon } from '../Components/Icons/BookIcon';
 import { MessagesIcon } from '../Components/Icons/MessagesIcon';
 
@@ -9,30 +9,30 @@ export const mockData = [
     title: 'MojeCV',
     img: <PersonalCardIcon />,
     description: 'podgląd CV wraz z doświadczeniem',
-    more: 'zobacz więcej',
+    more: '/cv',
   },
   {
     title: 'Ćwiczenia',
     img: <EditIcon />,
     description: 'wszystkie wykonane ćwiczenia',
-    more: 'zobacz więcej',
+    more: '/exercises',
   },
   {
     title: 'Blog',
     img: <BookIcon />,
     description: 'wpisy blogowe o technologii front-end',
-    more: 'zobacz więcej',
+    more: '/blog',
   },
   {
     title: 'Tech stack',
-    img: <ElementIcon />,
+    img: <CodeIcon />,
     description: 'stack technologiczny realizowany na kursie',
-    more: 'zobacz więcej',
+    more: '/blocks',
   },
   {
     title: 'FAQ',
     img: <MessagesIcon />,
     description: 'odpowiedzi na najczęstsze pytania',
-    more: 'zobacz więcej',
+    more: '/faq',
   },
 ];

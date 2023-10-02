@@ -38,6 +38,6 @@ aside a.active {
   color: #fe3756;
 }
 
-aside svg:has(+ a.active) path {
+aside svg:has(a.active) path {
   stroke: #fe3756;
 }

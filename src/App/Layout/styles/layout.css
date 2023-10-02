@@ -18,8 +18,8 @@ main {
   grid-area: main;
   height: calc(100vh - 5rem - 5rem);
   overflow-y: auto;
-  display: flex;
+  /* display: flex;
   flex-direction: column;
-  flex: 1;
+  flex: 1; */
   padding: 1.5rem;
 }

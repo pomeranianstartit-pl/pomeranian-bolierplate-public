@@ -18,7 +18,7 @@ figure {
   right: 30px;
 }
 
-section {
+.container--blog section {
   cursor: pointer;
   position: relative;
   border-radius: 8px;
@@ -30,13 +30,13 @@ section {
   color: #222;
   transition: 0.3s;
 }
-section:hover{
-    background: #23213d;
+section:hover {
+  background: #23213d;
 }
-section:hover *{
+section:hover * {
   color: #fff;
 }
-section:hover .autor p{
+section:hover .autor p {
   color: #fff;
 }
 section:hover figure {
