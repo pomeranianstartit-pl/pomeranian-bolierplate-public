@@ -17,12 +17,7 @@ export function AppHeader() {
         {/* // component react  */}
         <PomeranianLogo />
       </div>
-      <div className="settingIcon">
-        {/* <HeaderMenu /> */}
-        <SettingIcon />
-        <ElipseIcon />
-        <p>Wojciech</p>
-        <p>kursant</p>
+
         <ArrowIcon />
       </div>
     </header>
