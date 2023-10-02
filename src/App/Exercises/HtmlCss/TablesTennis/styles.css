@@ -1,0 +1,33 @@
+.table-wrapper table {
+  margin-bottom: 50px;
+}
+
+.first-table {
+  border-collapse: collapse ;
+  background-color: grey;
+  border-radius: 20px;
+  font-size: 18px;
+  font-weight: 400;
+  border-radius: px;
+background: #FFF;
+box-shadow: 0px 2.7852px 9.16022px 0px rgba(0, 0, 0, 0.02), 0px 12.73235px 25.74765px 0px rgba(0, 0, 0, 0.03), 0px 32.22877px 69.07301px 0px rgba(0, 0, 0, 0.04), 0px 63.66177px 158.44705px 0px rgba(0, 0, 0, 0.06);
+}
+
+.first-table th {
+  background: orange;
+ 
+  
+}
+.first-table td,
+.first-table th {
+
+  text-align: left;
+  border: 5px;
+  padding: 10px;
+}
+
+.first-table tr:nth-child(even) {
+  background-color: yellow
+}
+
+
