@@ -1,2 +1,30 @@
 .dashboard {
+  margin: 5px;
+}
+.dashboardwrapper {
+  display: flex;
+}
+section.components {
+  display: flex;
+  width: 70%;
+}
+section.profile {
+  width: 300px;
+}
+
+div.photo {
+  background-color: #c8cbd1;
+  width: 90px;
+  height: 90px;
+  border-radius: 50%;
+}
+
+section.profile p {
+  font-family: Poppins;
+  font-size: 14px;
+  font-weight: 400;
+}
+section.profile p.name {
+  font-size: 22px;
+  font-weight: 500;
 }
