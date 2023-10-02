@@ -17,12 +17,18 @@ export function AppHeader() {
         {/* // component react  */}
         <PomeranianLogo />
       </div>
-      <div className="settingIcon">
-        {/* <HeaderMenu /> */}
+
+      <div className="header-menu">
         <SettingIcon />
+
         <ElipseIcon />
-        <p>Wojciech</p>
-        <p>kursant</p>
+
+        {/* <HeaderMenu /> */}
+        <div className="header-menu-user">
+          <p>Katarzyna</p>
+          <p>kursantka</p>
+        </div>
+
         <ArrowIcon />
       </div>
     </header>
