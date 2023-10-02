@@ -4,16 +4,16 @@
 .container--grid-wrapper {
   display: flex;
   flex-flow: row wrap;
-  gap: 8px;
-  padding: 16px;
+  gap: 0.5rem;
+  padding: 1rem;
 }
 
 .container--grid-wrapper .container--grid-tile {
   text-transform: capitalize;
   font-weight: bold;
   border: 1px solid;
-  padding: 8px;
-  border-radius: 8px;
+  padding: 0.5rem;
+  border-radius: 0.5rem;
   flex: 0 0 calc((100% / 3) - calc(8px * 2) / 3);
   background-color: #d3d3d3;
 }
@@ -24,42 +24,62 @@
   display: flex;
   margin: 0 auto;
 }
-
+.container--grid-wrapper .container--grid-tile ul li {
+  list-style-type: none;
+}
 .container--grid-wrapper .container--grid-tile ul li img {
   width: 50px;
   height: 50px;
   margin-right: 1rem;
 }
 
-.dedicated-background--fire {
-  background-color: rgb(255, 190, 164) !important;
+.container--grid-wrapper .dedicated-background--fire {
+  background-color: #ee8130;
 }
 
-.dedicated-background--grass {
-  background-color: lightgreen !important;
+.container--grid-wrapper .dedicated-background--grass {
+  background-color: #7ac74c;
 }
 
-.dedicated-background--water {
-  background-color: lightblue !important;
+.container--grid-wrapper .dedicated-background--water {
+  background-color: #6390f0;
 }
 
-.dedicated-background--bug {
-  background-color: greenyellow !important;
+.container--grid-wrapper .dedicated-background--bug {
+  background-color: #a6b91a;
 }
 
-.dedicated-background--psyhic {
-  background-color: orangered !important;
+.container--grid-wrapper .dedicated-background--psyhic {
+  background-color: orangered;
 }
 
-.dedicated-background--ghost {
-  background-color: orangered !important;
+.container--grid-wrapper .dedicated-background--ghost {
+  background-color: orangered;
 }
-.dedicated-background--fly {
-  background-color: orangered !important;
+.container--grid-wrapper .dedicated-background--fly {
+  background-color: #a98ff3;
 }
-.dedicated-background--rock {
-  background-color: orangered !important;
+.container--grid-wrapper .dedicated-background--rock {
+  background-color: #b6a136;
 }
-.dedicated-background--electric {
-  background-color: lightyellow !important;
+.container--grid-wrapper .dedicated-background--electric {
+  background-color: #f7d02c;
+}
+.container--grid-wrapper .dedicated-background--ground {
+  background-color: #e2bf65;
+}
+.container--grid-wrapper .dedicated-background--normal {
+  background-color: #a8a77a;
+}
+.container--grid-wrapper .dedicated-background--poison {
+  background-color: #a33ea1;
+}
+.container--grid-wrapper .dedicated-background--fairy {
+  background-color: #d685ad;
+}
+.container--grid-wrapper .dedicated-background--fighting {
+  background-color: #c22e28;
+}
+.container--grid-wrapper .dedicated-background--psychic {
+  background-color: #f95587;
 }

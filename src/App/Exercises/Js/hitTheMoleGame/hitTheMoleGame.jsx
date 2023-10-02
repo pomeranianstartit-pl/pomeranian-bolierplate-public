@@ -106,7 +106,6 @@ export const HitTheMoleGame = () => {
         return newArray;
       });
     }
-    // debugger;
     setTimeout(() => {
       setMoleArray((prevVal) => {
         const newArray = [...prevVal];
@@ -119,7 +118,6 @@ export const HitTheMoleGame = () => {
   }
   return (
     <>
-      <button onClick={() => showRandomMoles()}>TEST ARRAYKI</button>
       {!gameStarted ? (
         <MoleGameSettings
           gameTime={gameTime}

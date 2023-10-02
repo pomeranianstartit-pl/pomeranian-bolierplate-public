@@ -4,6 +4,7 @@ import moleIcon from './AppsIcons/moleicon.png';
 import memoIcon from './AppsIcons/memogame.png';
 import moonIcon from './AppsIcons/moonicon.png';
 import todoIcon from './AppsIcons/todo.png';
+import pokemonIcon from './AppsIcons/pokeball.png';
 import './styles.css';
 
 const appsShowcase = [
@@ -32,6 +33,12 @@ const appsShowcase = [
     icon: <img src={todoIcon} alt="todo" />,
     description: 'Apka TODO korzystająca z dostarczonego serwera',
     link: '/exercises/react/todo-with-server',
+  },
+  {
+    sectionTitle: 'Pokemony',
+    icon: <img src={pokemonIcon} alt="pokemon" />,
+    description: '100 pokemonów z pokeapi!',
+    link: '/exercises/js/Exercise-js-promises',
   },
 ];
 

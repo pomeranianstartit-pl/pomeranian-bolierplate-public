@@ -30,19 +30,19 @@ export const JsThis = () => {
   person.arrowJsFunction(); //zwróci undefined
 
   //Bind function example()
-  const module = {
-    x: 42,
-    getX: function () {
-      return this.x;
-    },
-  };
+  // const module = {
+  //   x: 42,
+  //   getX: function () {
+  //     return this.x;
+  //   },
+  // };
 
-  const unboundGetX = module.getX;
-  console.log(unboundGetX()); // The function gets invoked at the global scope
+  // const unboundGetX = module.getX;
+  // console.log(unboundGetX()); // The function gets invoked at the global scope
   // Expected output: undefined
 
-  const boundGetX = unboundGetX.bind(module);
-  console.log(boundGetX());
+  // const boundGetX = unboundGetX.bind(module);
+  // console.log(boundGetX());
   // Expected output: 42
 
   //Aplly()
@@ -62,5 +62,5 @@ export const JsThis = () => {
 
   myCar.getMake();
 
-  return <div className=""> </div>;
+  return <div className="">Check console... </div>;
 };
