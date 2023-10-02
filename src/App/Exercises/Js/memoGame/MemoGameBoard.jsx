@@ -11,20 +11,27 @@ export const MemoGameBoard = ({
   return (
     <div>
       <div className="gameStats">
-        <h4>CZAS GRY </h4>
-        {Math.floor(counter / 60) + ':' + ('0' + (counter % 60)).slice(-2)}{' '}
+        <div>
+          <h4>CZAS GRY </h4>
+
+          {Math.floor(counter / 60) + ':' + ('0' + (counter % 60)).slice(-2)}
+        </div>
         {/*TODO: make function */}
-        <h4>LICZBA RUCHÓW </h4>
-        {moveCount}
-        <h4>PRZYCISKI STERUJĄCE</h4>
-        <button onClick={startStopGame}>
-          {gameStarted ? 'PASS' : 'START'}
-        </button>
+        <div>
+          <h4>LICZBA RUCHÓW </h4>
+          {moveCount}
+        </div>
+        <div>
+          <h4>PRZYCISKI STERUJĄCE</h4>
+          <button onClick={startStopGame}>
+            {gameStarted ? 'PASS' : 'START'}
+          </button>
+        </div>
       </div>
       <div
         className="memoGame"
         style={{
-          gridTemplateColumns: `repeat(${boardSize}, 66px)`,
+          gridTemplateColumns: `repeat(${boardSize}, 1fr)`,
         }}
       >
         {memoArray.map((card) => (

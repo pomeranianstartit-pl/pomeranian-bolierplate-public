@@ -9,7 +9,7 @@ export const ExerciseJsPromises = () => {
   const [getIsLoading, setIsLoading] = useState(true);
   const [getError, setError] = useState(null);
 
-  const BASE_POKEMON_API_URL = 'https://pokeapi.co/api/v2/pokemon?limit=50';
+  const BASE_POKEMON_API_URL = 'https://pokeapi.co/api/v2/pokemon?limit=100';
 
   const getTypeofPokemon = (typeOfPokemon = []) =>
     typesIcon[typeOfPokemon[0].type.name];
@@ -71,6 +71,7 @@ export const ExerciseJsPromises = () => {
       <div className="container--grid-wrapper">
         {getPokemons.map((pokemon) => (
           <div
+            key={`"${pokemon.name}"`}
             className={`container--grid-tile dedicated-background--${getKeyTypeofPokemon(
               pokemon?.types
             )}`}
@@ -79,7 +80,6 @@ export const ExerciseJsPromises = () => {
             <img src={pokemon.sprites.front_default} alt={pokemon.name} />
             <ul>
               <li>Height: {pokemon.height}</li>
-
               <li>Weight: {pokemon.weight}</li>
               <li>{getTypeofPokemon(pokemon?.types)}</li>
             </ul>

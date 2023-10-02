@@ -203,7 +203,7 @@ export const MemoGame = () => {
           gameStarted={gameStarted}
         />
       ) : null}
-      <p>Czas gry: {counter}</p>
+
       {gameStarted || gameEnded ? (
         <MemoGameBoard
           memoArray={memoArray}
