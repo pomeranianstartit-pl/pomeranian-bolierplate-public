@@ -18,17 +18,6 @@ export function AppHeader() {
         <PomeranianLogo />
       </div>
 
-      <div className="header-menu">
-        <SettingIcon />
-
-        <ElipseIcon />
-
-        {/* <HeaderMenu /> */}
-        <div className="header-menu-user">
-          <p>Katarzyna</p>
-          <p>kursantka</p>
-        </div>
-
         <ArrowIcon />
       </div>
     </header>

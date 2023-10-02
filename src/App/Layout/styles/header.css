@@ -31,3 +31,10 @@ header.header-title {
   line-height: normal;
 
 }
+.settingIcon {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+
+  
+}
