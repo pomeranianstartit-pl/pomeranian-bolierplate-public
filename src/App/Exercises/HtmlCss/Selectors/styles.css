@@ -148,10 +148,10 @@ button[id*="Button"] {
 
 */
 
-.firstDiv a {
+/* .firstDiv a {
   background-color: aqua;
   border: 2px solid black;
-}
+} */
 
 .secondDiv [href="http://onet.pl"] {
   background-color: red;
@@ -167,11 +167,11 @@ button[id*="Button"] {
 
 */
 
-
+/* 
 #usersList > li {
   background-color: aqua;
   border: 2px solid black;
-}
+} */
 
 /* TO NIE ZADZIAŁA */
 /* #usersList > a {
@@ -189,10 +189,10 @@ button[id*="Button"] {
 
 */
 
-div + p {
+/* div + p {
   background-color: aqua;
   border: 2px solid black;
-}
+} */
 
 /* p + p { */
   /* background-color: red; */
