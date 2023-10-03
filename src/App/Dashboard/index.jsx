@@ -1,10 +1,11 @@
 import './styles.css';
 import { Link } from 'react-router-dom';
+import avatar from '../Images/avatar.jpg';
 
 export const Dashboard = () => {
   return (
     <div className="dashboard">
-      <h1 className="dashboard-greeting">Hej, tu Patryk</h1>
+      <h1 className="dashboard-greeting">Hej, tu Patryk 👋</h1>
       <p className="dashboard-description">
         Poniżej znajdziesz najważniejsze informacje na temat mojej działalności.
       </p>
@@ -177,7 +178,7 @@ export const Dashboard = () => {
             />
           </svg>
           <p>stack technologiczny realizowany na kursie</p>
-          <a href="x">Zobacz Więcej</a>
+          <Link to="/techstack">Zobacz Więcej &rarr;</Link>
         </div>
 
         <div className="dashboard-card5">
@@ -215,23 +216,41 @@ export const Dashboard = () => {
           <a href="x">Zobacz Więcej</a>
         </div>
       </div>
-      <aside className="dashboard-aside"></aside>
+      <aside className="dashboard-aside">
+        <div>
+          <img
+            className="Avatar"
+            src={avatar}
+            alt="avatar"
+            width="90px"
+            height="90px"
+          />
+          <h2>Patryk Idzikowski</h2>
+          <p>Warszawa</p>
+          <p>
+            Email:<br></br> patryk.idzikowski@interia.pl
+          </p>
+          <p>
+            Telefon:<br></br> 66316407*
+          </p>
+        </div>
+      </aside>
     </div>
   );
 };
 
-import { Link } from 'react-router-dom';
-import './styles.css';
-import { PersonalCardIcon } from '../Components/Icons/PersonalCardIcon';
+// import { Link } from 'react-router-dom';
+// import './styles.css';
+// import { PersonalCardIcon } from '../Components/Icons/PersonalCardIcon';
 
-const dashboardCards = [
-  {
-    title: 'Moje CV',
-    icon: <PersonalCardIcon />,
-    description: 'Podgląd CV wraz z doświadczeniem',
-    link: '/cv',
-  },
-];
+// const dashboardCards = [
+//   {
+//     title: 'Moje CV',
+//     icon: <PersonalCardIcon />,
+//     description: 'Podgląd CV wraz z doświadczeniem',
+//     link: '/cv',
+//   },
+// ];
 
 // export const Dashboard = () => {
 //   return (
