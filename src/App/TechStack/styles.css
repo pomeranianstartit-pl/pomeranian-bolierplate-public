@@ -1,0 +1,13 @@
+.techstack-content {
+    margin-top: 40px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 70px;
+  }
+  
+  .techstack-item {
+    min-height: 120px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }

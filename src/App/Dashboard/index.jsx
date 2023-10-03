@@ -2,6 +2,7 @@ import './styles.css';
 import { PersonalCardIcon } from '../Components/Icons/PersonalCardIcon';
 import { EditIcon } from '../Components/Icons/EditIcon';
 import { DashboardCard } from './DashboardCard';
+import { ProfileCard } from './ProfileCard';
 
 const cards = [
   {
@@ -39,7 +40,7 @@ const cards = [
 export const Dashboard = () => {
   return (
     <div className="dashboard">
-      <h1 className="dashboard-greeting">Hej, tu Władeczek</h1>
+      <h1 className="dashboard-greeting">Hej, tu Władeczek 👋</h1>
       <p className="dashboard-description">
         Poniżej znajdziesz informacje na temat mojej działalności.
       </p>
@@ -53,7 +54,16 @@ export const Dashboard = () => {
           />
         ))}
       </div>
-      <aside className="dashboard-aside"></aside>
+      <div className="dashboard-aside">
+        <ProfileCard
+          name="Władysław"
+          surname="Żorow"
+          email="vlad.zhorov@gmail.com"
+          imgSrc="https://www.istockphoto.com/pl/wektor/t%C5%82um-ludzi-wektor-bez-szwu-wz%C3%B3r-monochromatyczne-t%C5%82o-z-r%C3%B3%C5%BCnorodnymi-gm1278584455-377476711"
+          phoneNumber="0123456789"
+          city="Kraków"
+        />
+      </div>
     </div>
   );
 };
