@@ -70,8 +70,9 @@
 
     .dashboard-aside { 
         grid-area: 1 / 2 / 4 / 3; 
-        min-height: 800px;;
-        background: grey;
+        min-height: 800px; /* sprawdz potem czy to nie wywala czegos */
+        background: white;
+
     }
 
     .dashboard-card:hover > h3 {
@@ -88,3 +89,48 @@
 /* pink-shadow */
 box-shadow: 0px 2px 26px 0px rgba(254, 55, 86, 0.54);
     } 
+
+
+    .aside {
+        grid-area: 1 / 2 / 4 / 3;
+        padding: 40px 20px;
+        border-radius: 10px;
+        text-align: left;
+
+    }
+
+      aside:hover {
+        background: none;
+      }
+
+
+      .avatarimg {
+        border-radius: 50%; /* robi koło */
+      }
+
+
+      div.aside-name { 
+        color: black;
+        font-size: 22px;
+        font-weight: 500;
+        text-align: left;
+        margin-top: 10px;
+     }
+
+
+      .aside p { 
+        font-family: Poppins;
+        color: black;
+        opacity: 0.4;
+        font-size: 14px;
+        line-height: 20px;
+        font-weight: 400;
+        margin-top: 10px;
+     }
+
+
+     div.aside-mail {
+        margin-top: 10px;
+        padding-bottom: 5px;
+      }
+      

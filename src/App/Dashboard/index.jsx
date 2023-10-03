@@ -7,6 +7,8 @@ import { EditIcon } from '../Components/Icons/EditIcon';
 import { BookIcon } from '../Components/Icons/BookIcon';
 import { MessagesIcon } from '../Components/Icons/MessagesIcon';
 import { CalendarIcon } from '../Components/Icons/CalendarIcon';
+import AvatarPhoto from '../Images/AvatarPhoto.svg';
+
 
 const cards = [
   {
@@ -63,7 +65,28 @@ export const Dashboard = () => {
           />
         ))}
       </div>
-      <aside className="dashboard-aside"></aside>
+
+      <div className="aside">
+        <div className="avatar">
+          <img
+            className="avatarimg"
+            src={AvatarPhoto}
+            alt="Zdjęcie profilowe"
+            width={90}
+            height={90}
+          ></img>
+        </div>
+        <div className="aside-name">Kamila Wyroślak</div>
+        <p className="aside-city">Gdynia</p>
+        <div className="aside-mail">
+          <p>e-mail:</p>
+          <p>kamila.wyroslak@gmai.com</p>
+        </div>
+        <div className="aside-phone">
+          <p>telefon:</p>
+          <p>666 666 666</p>
+        </div>
+      </div>
     </div>
   );
 };
