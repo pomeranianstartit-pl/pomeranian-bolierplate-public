@@ -1,9 +1,8 @@
 import './styles/footer.css';
-
-const email = 'twoj-email@pomeranian.it';
-const phone = '+48-999-999-999';
+import useContactInfo from '../../Helpers/useContactInfo';
 
 export function AppFooter() {
+  const { email, phone } = useContactInfo();
   return (
     <footer>
       <div>

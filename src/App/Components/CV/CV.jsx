@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import profile from '../../Images/prof1m.jpg';
+import useContactInfo from '../../../Helpers/useContactInfo';
 
 import './styles.css';
 
@@ -30,16 +31,17 @@ const CvSection = ({ title, children, defaultExpanded = false }) => {
 };
 
 export const CV = () => {
+  const { email, phone } = useContactInfo();
   return (
     <div className="cv-container">
       <dl>
         <CvSection title="Personal Info" defaultExpanded={true}>
           <div className="personal-info-data">
             <p>
-              <span>E-mail:</span> adam.karcz.1984@gmail.com
+              <span>E-mail:</span> {email}
             </p>
             <p>
-              <span>Mobile:</span> +48 506 088 756
+              <span>Mobile:</span> {phone}
             </p>
             <p>
               <span>LinkedIn:</span> Adam Karcz
