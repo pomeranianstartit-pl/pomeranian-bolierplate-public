@@ -11,6 +11,7 @@ import { Layout } from './App/Layout';
 import { Dashboard } from './App/Dashboard';
 import { Exercises } from './App/Exercises';
 import { FAQ } from './App/FAQ';
+import { Techstack } from './App/Techstack';
 
 export function App() {
   return (
@@ -25,7 +26,7 @@ export function App() {
           <Route path="blocks/*" element={<Blocks />} />
           <Route path="blog/*" element={<Blog />} />
           <Route path="faq/*" element={<FAQ />} />
-          <Route path="*" element={<NotFound />} />
+          <Route path="Techstack/*" element={<Techstack />} />
         </Route>
       </Routes>
     </BrowserRouter>
