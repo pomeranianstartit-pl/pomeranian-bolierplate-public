@@ -1,2 +1,37 @@
-.dashboard {
+.dashboard-cards {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.dashboard-card {
+    grid-area: 3 / 1 / 4 / 2;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: fit-content;
+    padding: 20px 28px;
+    border: 1px solid rgb(237, 223, 225);
+    border-radius: 8px;
+    text-align:center;
+    gap: 15px;
+}
+
+.dashboard-card > h3 {
+    font-size: 18px;
+    line-height: 34px;
+}
+
+.dashboard-card > svg {
+    transform: scale(2);
+}
+
+.dashboard-card > p {
+    font-size: 12px;
+    line-height: 20px;
+    margin: 20px 0;
+}
+
+.dashboard-card > a {
+    font-size: 14px;
+    line-height: 24px;
 }
