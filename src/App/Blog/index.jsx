@@ -2,5 +2,5 @@ import './styles.css';
 
 export const Blog = () => {
   //BEM methodology
-  return <div className="container--blog">Blog</div>;
+  return <div className="container--blog">Blog bla bla</div>;
 };
