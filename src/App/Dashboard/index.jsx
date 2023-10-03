@@ -37,7 +37,6 @@ const dashboardCards = [
     description: 'Podgląd CV wraz z doświadczeniem',
     link: '/cv',
   },
-
 ];
 
 export const Dashboard = () => {
