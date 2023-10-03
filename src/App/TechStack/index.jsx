@@ -10,7 +10,7 @@ export const TechStack = () => {
   return (
     <div className="techStack">
       <NavLink to=".././dashboard" className="backBtn">
-        {'<'} Dashboard
+        {'<'} Tech Stack
       </NavLink>
       <p className="techdecscription">
         Ponizej znajdziesz tech stack oraz narzędzia, jakich nauczyłam się

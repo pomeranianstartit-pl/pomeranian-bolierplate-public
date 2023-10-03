@@ -8,7 +8,14 @@
 }
 
 .container--blog {
-  margin: 80px 80px 50px 50px;
+  margin: 50px 80px 50px 50px;
+}
+a.exe {
+  display: inline-block;
+  width: 100%;
+  /* background-color: aqua; */
+  text-align: end;
+  margin-bottom: 20px;
 }
 
 figure {

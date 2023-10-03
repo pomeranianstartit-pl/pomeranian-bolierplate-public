@@ -1,9 +1,16 @@
 import { NotificationIcon } from '../Components/Icons/blog/NotificationIcon';
 import './styles.css';
+import { NavLink } from 'react-router-dom';
 
 export const Blog = () => {
   return (
     <div className="container--blog">
+      <NavLink to="/dashboard" className="backBtn">
+        {'<'}Blog
+      </NavLink>
+      <NavLink to="/blog-exercises" className="backBtn exe">
+        Ćwiczenie {'>'}
+      </NavLink>
       <section>
         <figure>
           <NotificationIcon />
