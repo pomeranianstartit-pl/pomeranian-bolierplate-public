@@ -4,6 +4,7 @@ import { CwIcon } from '../Components/Icons/CwIcon';
 import { BookIcon } from '../Components/Icons/BookIcon';
 import { TechIcon } from '../Components/Icons/TechIcon';
 import { FAQIcon } from '../Components/Icons/FAQIcon';
+import myphoto from '../Images/myphoto.jpg';
 import { DashboardCard } from './DashboardCard';
 
 const dashboardCards = [
@@ -22,19 +23,19 @@ const dashboardCards = [
   {
     title: 'Blog',
     icon: <BookIcon />,
-    description: 'Podgląd CV wraz z doświadczeniem',
+    description: 'wpisy blogowe o technologii front-end',
     link: '/blog',
   },
   {
     title: 'Tech stack',
     icon: <TechIcon />,
-    description: 'Podgląd CV wraz z doświadczeniem',
+    description: 'stack technologiczny realizowany na kursie',
     link: '/techstack',
   },
   {
     title: 'FAQ',
     icon: <FAQIcon />,
-    description: 'Podgląd CV wraz z doświadczeniem',
+    description: 'odpowiedzi na najczęstsze pytania',
     link: '/FAQ',
   },
 ];
@@ -57,7 +58,27 @@ export const Dashboard = () => {
         ))}
         ;
       </div>
-      <aside className="dashboard-aside"></aside>
+      <div className="dashboard-aside">
+        <img src={myphoto} />
+
+        <div className="imienazwisko">
+          <h2>Katarzyna Olkowska</h2>
+        </div>
+
+        <div className="miasto">
+          <p>Gdańsk</p>
+        </div>
+
+        <div className="email">
+          <p>e-mail:</p>
+          <p> olkowskakatarzyna2@gmail.com</p>
+        </div>
+
+        <div className="telefon">
+          <p>telefon:</p>
+          <p> 000 000 000</p>
+        </div>
+      </div>
     </div>
   );
 };
