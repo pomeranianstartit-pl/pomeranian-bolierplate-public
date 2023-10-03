@@ -1,6 +1,7 @@
 import './styles.css';
 
 import DashboardCard from './DasbordCard/DashboardCard';
+import useContactInfo from '../../Helpers/useContactInfo';
 
 import PersonalCardIcon from '../Images/tiles/personalcard.svg';
 import EditIcon from '../Images/tiles/edit.svg';
@@ -14,6 +15,7 @@ import GitHubIcon from '../Images/SocialIcons/github.svg';
 import CodeWarsIcon from '../Images/SocialIcons/codewars.svg';
 import profile from '../Images/prof1m.jpg';
 export const Dashboard = () => {
+  const { email, phone } = useContactInfo();
   const availableCards = [
     {
       sectionTitle: 'Moje CV',
@@ -91,8 +93,8 @@ export const Dashboard = () => {
             <div className="contact-value">506088756</div>
           </div>
           <div className="contact-item">
-            <div className="contact-label">Email:</div>
-            <div className="contact-value">adam.karcz.1984@gmail.com</div>
+            <div className="contact-label">{phone}</div>
+            <div className="contact-value">{email}</div>
           </div>
           <img
             className="profile-pic"
