@@ -1,0 +1,8 @@
+div.techcard {
+  /* background-color: aqua; */
+  text-align: center;
+  margin: none;
+}
+.techcard .img {
+  padding-bottom: 20px;
+}

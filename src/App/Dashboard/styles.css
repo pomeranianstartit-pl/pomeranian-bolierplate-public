@@ -36,7 +36,6 @@ section.cards:hover {
 section.aside {
   grid-area: 1 / 2 / 4 / 3;
   padding: 40px 20px;
-  background-color: white;
   border-radius: 10px;
 }
 section.aside:hover {

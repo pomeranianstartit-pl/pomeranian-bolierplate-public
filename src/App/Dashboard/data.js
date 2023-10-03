@@ -27,7 +27,7 @@ export const mockData = [
     title: 'Tech stack',
     img: <CodeIcon />,
     description: 'stack technologiczny realizowany na kursie',
-    more: '/blocks',
+    more: '/techstack',
   },
   {
     title: 'FAQ',
