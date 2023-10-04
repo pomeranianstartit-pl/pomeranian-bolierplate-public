@@ -1,0 +1,80 @@
+.SelectorsAndCascades div {
+  margin: 0 0 20px;
+}
+
+.SelectorsAndCascades > div {
+  border: 1px solid black;
+  padding: 10px;
+}
+
+/* type / tag selector */
+input {
+  background-color: red;
+}
+
+/* class selector */
+.unikalna-klasa1 {
+  color: blue;
+}
+
+#drugi-div {
+  color: purple;
+}
+
+/* wartość class zawiera "klasa" */
+[class*='unikalna-klasa'] {
+  color: green;
+}
+
+/* wartość class zaczyna się od tego co przed ^*/
+[class^='unikalna'] {
+  background-color: yellowgreen;
+}
+
+/* wartość class kończy się na to co przed $*/
+[class$='klasa3'] {
+  background-color: orange;
+}
+
+/* elemen poprzedzony jakimś elementem jakkolwiek */
+span ~ span {
+  color: red;
+}
+
+/* elemen poprzedzony jakimś elementem bezpośrednio */
+span + span {
+  background-color: rgb(132, 0, 255);
+}
+
+[class^="unikalna"]:hover {
+  background-color: purple;
+}
+
+input:focus,
+a:focus{
+  background-color: greenyellow;
+}
+
+.SelectorsAndCascades > div:first-child {
+  background-color: lightcyan;
+}
+
+.SelectorsAndCascades > div > div:last-child {
+  background-color: lightcyan;
+}
+
+a:visited {
+  color: red;
+}
+
+span::before {
+  content: "❤"  
+}
+
+span::after {
+  content: "🤍🤍"  
+}
+
+div::first-line {
+  font-size: 30px;
+}
