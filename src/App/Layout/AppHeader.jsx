@@ -1,3 +1,4 @@
+import { useState } from 'react';
 import React from 'react';
 
 import './styles/header.css';
@@ -17,7 +18,6 @@ export function AppHeader() {
         {/* // component react */}
         <PomeranianLogo />
       </div>
-
 
     </header>
   );
