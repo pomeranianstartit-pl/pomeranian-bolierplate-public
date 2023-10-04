@@ -14,11 +14,11 @@ export function AppHeader() {
     //tag jsx -> html
     <header>
       <div className="PomeranianLogo">
-        {/* // component react  */}
+        {/* // component react */}
         <PomeranianLogo />
       </div>
 
-      <ArrowIcon />
+
     </header>
   );
 }

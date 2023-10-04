@@ -6,6 +6,7 @@ import { BlogIcon } from '../Components/Icons/BlogIcon';
 import { LinearIcon } from '../Components/Icons/LinearIcon';
 import { FaqIcon } from '../Components/Icons/FaqIcon';
 
+
 const dashboardCards = [
   {
     title: 'Moje CV',
@@ -58,7 +59,7 @@ export const Dashboard = () => {
           );
         })}
       </div>
-      <aside className="dashboard-aside"></aside>
+
     </div>
   );
 };
