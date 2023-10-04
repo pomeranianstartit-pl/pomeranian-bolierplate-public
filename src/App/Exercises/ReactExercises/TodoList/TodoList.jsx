@@ -1,4 +1,4 @@
-import { useEffect, useState } from 'react';
+import { useEffect, useState, useCallback } from 'react';
 import axios from 'axios';
 import './styles.css';
 import { TodoItem } from './TodoItem/TodoItem';
@@ -14,54 +14,61 @@ export const TodoList = () => {
 
   const [idForEdit, setIdForEdit] = useState(null);
 
-  function updateTodoList(updatedTodo) {
-    //wydobyty fragment funkcji do reużycia w komponencie
-    setTodoList(
-      todoList.map((todo) => {
-        if (todo.id === updatedTodo.id) {
-          return updatedTodo;
-        }
-        return todo;
-      })
-    );
-  }
-
-  const handleFetchTodoData = async (givenId) => {
-    //givenId jeśli nie podane jest undefined
-    const isGetSpecificTodoMode = Boolean(givenId);
-    const urlSuffix = isGetSpecificTodoMode ? `/${givenId}` : '';
-
-    try {
-      const fetchDataPromise = axios.get(
-        `${BASE_API_URL}/api/todo${urlSuffix}`
+  const updateTodoList = useCallback(
+    (updatedTodo) => {
+      //wydobyty fragment funkcji do reużycia w komponencie
+      setTodoList(
+        todoList.map((todo) => {
+          if (todo.id === updatedTodo.id) {
+            return updatedTodo;
+          }
+          return todo;
+        })
       );
-      const timeOutPromise = new Promise((_, reject) => {
-        setTimeout(
-          () => reject(new Error('Response Timeout')),
-          TIMEOUT_DURATION
+    },
+    [todoList]
+  );
+
+  const handleFetchTodoData = useCallback(
+    async (givenId) => {
+      //givenId jeśli nie podane jest undefined
+      const isGetSpecificTodoMode = Boolean(givenId);
+      const urlSuffix = isGetSpecificTodoMode ? `/${givenId}` : '';
+
+      try {
+        const fetchDataPromise = axios.get(
+          `${BASE_API_URL}/api/todo${urlSuffix}`
         );
-      });
+        const timeOutPromise = new Promise((_, reject) => {
+          setTimeout(
+            () => reject(new Error('Response Timeout')),
+            TIMEOUT_DURATION
+          );
+        });
 
-      const response = await Promise.race([fetchDataPromise, timeOutPromise]);
+        const response = await Promise.race([fetchDataPromise, timeOutPromise]);
 
-      if (!response) {
-        setError('Przekroczono czas oczekiwania na odpowiedź serwera');
+        if (!response) {
+          setError('Przekroczono czas oczekiwania na odpowiedź serwera');
+        }
+        setError('');
+        if (isGetSpecificTodoMode) {
+          updateTodoList(response.data);
+        } else {
+          setTodoList(response.data);
+        }
+      } catch (error) {
+        setError(
+          'Wystpił błąd podczas komunikacji z serwerem ' + error?.message
+        );
       }
-      setError('');
-
-      if (isGetSpecificTodoMode) {
-        updateTodoList(response.data);
-      } else {
-        setTodoList(response.data);
-      }
-    } catch (error) {
-      setError('Wystpił błąd podczas komunikacji z serwerem ' + error?.message);
-    }
-  };
+    },
+    [updateTodoList]
+  );
 
   useEffect(() => {
     handleFetchTodoData();
-  }, []);
+  }, [handleFetchTodoData]);
 
   return (
     <div className="todo-container">
