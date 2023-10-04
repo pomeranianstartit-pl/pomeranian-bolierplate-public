@@ -25,6 +25,7 @@ export function FAQ() {
     tincidunt nisl pellentesque ut adipiscing non.Lorem ipsum dolor sit
     amet, consectetur adipiscing elit"
       />
+      <button className="button button-red">button</button>
     </div>
   );
 }
