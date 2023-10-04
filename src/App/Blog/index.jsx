@@ -2,33 +2,28 @@ import { useState } from 'react';
 import { RingIcon } from '../Components/Icons/RingIcon';
 import { Signature } from './Signature';
 import './styles.css';
-import { redirect } from 'react-router-dom';
 
 export function Blog() {
   const [ring, setRing] = useState(false);
-  const articleStyle = {
-    backgroundColor: ring ? 'red' : ' ',
-  };
+
   function handleOnClick() {
     setRing(!ring);
-    if (ring == false) {
-    }
   }
+  const selectedRing = ring ? '' : 'article-active';
 
   return (
     <div>
-      <article>
+      <article className={selectedRing}>
         <div className="article">
           {' '}
           <time className="time" datetime="2022-11-30T12:00:00">
             30-11-2022
           </time>
-          <div className="ringIcon">
+          <div className="ringIcon" onClick={handleOnClick}>
             {' '}
-            <RingIcon onClick={handleOnClick}></RingIcon>
+            <RingIcon></RingIcon>
           </div>
         </div>
-
         <h2>Why are we so nostalgic for the 1990s?</h2>
         <p>
           Pop culture used to define a generation, but it seems the cultural,
@@ -45,10 +40,14 @@ export function Blog() {
         </p>
         <Signature />
       </article>
-      <article>
+      <article className={selectedRing}>
         <time className="time" datetime="2022-11-30T12:00:00">
           30-11-2022
         </time>
+        <div className="ringIcon" onClick={handleOnClick}>
+          {' '}
+          <RingIcon className={selectedRing}></RingIcon>
+        </div>
         <h2>I make mistakes!</h2>
         <q>
           <i>
@@ -61,10 +60,14 @@ export function Blog() {
 
         <Signature />
       </article>
-      <article>
+      <article className={selectedRing}>
         <time className="time" datetime="2022-11-30T12:00:00">
           30-11-2022
         </time>
+        <div className="ringIcon" onClick={handleOnClick}>
+          {' '}
+          <RingIcon className={selectedRing}></RingIcon>
+        </div>
         <h2>18 Record-Breaking, Controversial, and Weird Facts </h2>
         <p>
           The death of Queen Elizabeth II on September 8 at the age of 96

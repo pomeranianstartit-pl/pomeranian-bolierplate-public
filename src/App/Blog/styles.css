@@ -1,5 +1,6 @@
 article {
-  background-color: #f4f5f7;
+  background-color: #23213d;
+  color: #ffffffcc;
   padding: 45px 61px;
   border-radius: 8px;
   margin: 34px;
@@ -44,6 +45,10 @@ p {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+}
+.article-active {
+  background-color: #f4f5f7;
+  color: #222222;
 }
 
 @keyframes shakes {
