@@ -1,0 +1,25 @@
+.header-account {
+   display: flex;
+   flex-direction: inline;
+    align-items: center;
+    gap: 20px;
+}
+
+.header-account-name > h4 {
+   margin: 1px;
+    color: #000;
+
+font-size: 16px;
+font-style: normal;
+font-weight: 400;
+line-height: normal;
+}
+.header-account-name > p {
+    margin: 1px ;
+    color:  #999;
+
+font-size: 13px;
+font-style: normal;
+font-weight: 400;
+line-height: normal;
+}
