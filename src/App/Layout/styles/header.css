@@ -3,7 +3,6 @@ header {
   position: relative;
   z-index: 1;
   display: flex;
-  flex-direction: row;
   align-items: center;
   justify-content: space-between;
   padding-left: 1.5rem;
@@ -13,13 +12,13 @@ header {
 header > a:first-of-type {
   text-decoration: none;
 }
+.PomeranianLogo {
+  flex-basis: 1500px;
+}
+
 header.header-title {
   color: var(--color-grey);
   font-weight: normal;
-}
-
-.header-menu-user >p{
- margin: 0;
 }
 
 .header-menu-user > p:last-child{
@@ -29,5 +28,7 @@ header.header-title {
   font-style: normal;
   font-weight: 400; 
   line-height: normal;
-
+  }
+.ArrowIcon {
+  color: #4B5563;
 }
