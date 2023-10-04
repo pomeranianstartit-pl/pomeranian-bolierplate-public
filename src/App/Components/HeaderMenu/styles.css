@@ -1,0 +1,20 @@
+.header-menu {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+  }
+  
+  .header-menu-placeholder {
+    height: 49px;
+    width: 49px;
+    border-radius: 50%;
+    background: var(--color-lightgrey);
+  }
+  
+  .header-menu-user > p {
+    margin: 0;
+  }
+  
+  .header-menu-user > p:last-child {
+    color: var(--color-lightgrey);
+  }
