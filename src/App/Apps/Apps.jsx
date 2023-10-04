@@ -3,7 +3,7 @@ import AppCard from './AppCard/AppCard';
 import moleIcon from './AppsIcons/moleicon.png';
 import memoIcon from './AppsIcons/memogame.png';
 import moonIcon from './AppsIcons/moonicon.png';
-import todoIcon from './AppsIcons/todo.png';
+// import todoIcon from './AppsIcons/todo.png';
 import pokemonIcon from './AppsIcons/pokeball.png';
 import './styles.css';
 
@@ -28,12 +28,13 @@ const appsShowcase = [
       'Aplikacja pokazująca aktualną fazę księzyca, stworzona z AI, używa algorytmu astronomicznego oraz MUI',
     link: '/exercises/js/moon-phases',
   },
-  {
-    sectionTitle: 'ToDo',
-    icon: <img src={todoIcon} alt="todo" />,
-    description: 'Apka TODO korzystająca z dostarczonego serwera',
-    link: '/exercises/react/todo-with-server',
-  },
+  //////////////////////////TODO: solve backend to make it work as done while course///////////////////////////////
+  // {
+  //   sectionTitle: 'ToDo',
+  //   icon: <img src={todoIcon} alt="todo" />,
+  //   description: 'Apka TODO korzystająca z dostarczonego serwera',
+  //   link: '/exercises/react/todo-with-server',
+  // },
   {
     sectionTitle: 'Pokemony',
     icon: <img src={pokemonIcon} alt="pokemon" />,

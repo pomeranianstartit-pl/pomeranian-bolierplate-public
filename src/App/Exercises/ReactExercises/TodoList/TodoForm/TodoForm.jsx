@@ -21,45 +21,35 @@ export function TodoForm({
   const [isSucces, setSucces] = useState(false);
   const [isInProgress, setInProgress] = useState(false);
 
-  //Zadanie: obsłuż errory i znikanie, komunikaty. etc
+  function resetSuccesMessage() {
+    setSucces(false);
+  }
 
-  async function handleCreateTodo() {
+  async function handleSubmitTodo() {
+    //refined to one function that handles adding and editing todo item
     try {
       setInProgress(true);
-      await axios.post(BASE_API_URL + '/api/todo', {
-        title: title,
-        note: note,
-        author, // === author: author
+
+      const url = data?.id
+        ? `${BASE_API_URL}/api/todo/${data.id}`
+        : `${BASE_API_URL}/api/todo/`;
+      const method = data?.id ? 'put' : 'post';
+
+      await axios[method](url, {
+        title,
+        author,
+        note,
       });
 
       setPrevTitle(title);
 
-      setTitle('');
-      setAuthor('');
-      setNote('');
+      if (!data?.id || data?.id) {
+        setPrevTitle(title);
+        setTitle('');
+        setAuthor('');
+        setNote('');
+      }
 
-      setSucces(true);
-      setError(false);
-      setTimeout(() => {
-        resetSuccesMessage();
-      }, 5000);
-    } catch (error) {
-      console.log('error', error);
-      setError(true);
-    } finally {
-      setInProgress(false);
-    }
-  }
-
-  async function handleEditTodo() {
-    console.log(title, author, note);
-    try {
-      setInProgress(true);
-      await axios.put(BASE_API_URL + '/api/todo/' + data.id, {
-        title, // skrócony zapis w funkcji
-        note,
-        author,
-      });
       setSucces(true);
       setError(false);
       setTimeout(() => {
@@ -70,10 +60,6 @@ export function TodoForm({
     } finally {
       setInProgress(false);
     }
-  }
-
-  function resetSuccesMessage() {
-    setSucces(false);
   }
 
   //-------------------------prosta walidacj pól formularza-------------------------
@@ -167,11 +153,7 @@ export function TodoForm({
         <button
           className="app-button"
           onClick={() => {
-            if (isEditMode) {
-              handleEditTodo();
-            } else {
-              handleCreateTodo();
-            }
+            handleSubmitTodo();
           }}
           disabled={!isReadyToSend || isInProgress}
         >
