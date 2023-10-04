@@ -39,6 +39,10 @@ export function TodoForm({
       setNote('');
 
       setSucces(true);
+      setError(false);
+      setTimeout(() => {
+        resetSuccesMessage();
+      }, 5000);
     } catch (error) {
       console.log('error', error);
       setError(true);
@@ -57,6 +61,10 @@ export function TodoForm({
         author,
       });
       setSucces(true);
+      setError(false);
+      setTimeout(() => {
+        resetSuccesMessage();
+      }, 5000);
     } catch (error) {
       setError(true);
     } finally {
@@ -72,7 +80,7 @@ export function TodoForm({
 
   const isTitleToLong = title.length > 15;
   const isAuthorToLong = author.length > 15;
-  const isNoteToLong = note.length > 50;
+  const isNoteToLong = note.length > 150;
 
   const isFormValid = !isTitleToLong && !isAuthorToLong && !isNoteToLong;
 
@@ -138,7 +146,6 @@ export function TodoForm({
       )}
       {isSucces && (
         <p className="todo-form_sucsess-mesage">
-          {' '}
           {isEditMode ? (
             <>Todo "{title}" zostało zapisane pomyślnie!</>
           ) : (
