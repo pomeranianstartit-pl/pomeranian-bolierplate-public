@@ -1,8 +1,6 @@
 import React from 'react';
 import { Routes, Route, BrowserRouter, Navigate } from 'react-router-dom';
 
-import { NotFound } from './App/Components/NotFound/NotFound';
-
 import { Calendar } from './App/Calendar';
 import { CV } from './App/CV';
 import { Blog } from './App/Blog';
