@@ -1,0 +1,24 @@
+.firstParagraph {
+  color: red;
+  font-size: 36px;
+  font-style: italic;
+  font-weight: bold;
+  text-transform: lowercase;
+  text-decoration: solid underline purple 10px;
+  letter-spacing: 15px;
+  text-align: center;
+}
+
+.text-aligment {
+  line-height: 100px;
+}
+.text-aligment .top {
+  vertical-align: text-top;
+}
+.text-aligment .bottom {
+  vertical-align: text-bottom;
+}
+
+.text-wrapper {
+  /*  list-style-image: url('https://openseauserdata.com/files/44fc2ae23e2aa64dedff3bcd9fbec1aa.png'); */
+}

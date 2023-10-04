@@ -8,10 +8,10 @@ import { Layout } from './App/Layout';
 import { Dashboard } from './App/Dashboard';
 import { Exercises } from './App/Exercises';
 import { Calendar } from './App/Calendar';
-
+import { FAQ } from './App/FAQ';
 import { CV } from './App/Cv';
-
 import { Blog } from './App/Blog';
+import { TechStack } from './App/TechStack';
 
 export function App() {
   return (
@@ -26,6 +26,8 @@ export function App() {
           <Route path="exercises/*" element={<Exercises />} />
           <Route path="blocks/*" element={<Blocks />} />
           <Route path="*" element={<NotFound />} />
+          <Route path="FAQ/*" element={<FAQ />} />
+          <Route path="TechStack/*" element={<TechStack />} />
         </Route>
       </Routes>
     </BrowserRouter>
