@@ -13,8 +13,6 @@ import { MediaFilesMetaData } from './MediaFiles/router-data';
 import { BoxModelMetaData } from './BoxModel/router-data';
 import { HTMLTablesMetaData } from './HTMLTables/router-data';
 
-// import { SelectorsAndCascadesMetaData } from './SelectorsAndCascades/router-data';
-
 export const blockRouterMetaData = [
   blockRouterMetaData121220231,
   // SelectorsAndCascadesMetaData,
@@ -23,11 +21,10 @@ export const blockRouterMetaData = [
   CssAnimationMetaData,
   ColorsMetaData,
   ImageFileMetaData,
-  CssFilterMetaData, 
+  CssFilterMetaData,
   MediaFilesMetaData,
   BoxModelMetaData,
   HTMLTablesMetaData,
-  ]
-
+];
 
 export const blockRouterData = getParsedRouterDataList(blockRouterMetaData);
