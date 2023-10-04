@@ -4,6 +4,7 @@ import { FieldSection } from './FieldSection/FieldSection';
 import React, { useState } from 'react';
 import { RadioButtons } from './RadioButtons/RadioButtons';
 import { Checkboxes } from './Checkboxes/Checkboxes';
+import { validatePhoneNumber } from './Validators/phoneValidator';
 import Select from 'react-select';
 import { initializeApp } from 'firebase/app';
 import {
@@ -94,6 +95,8 @@ export const Forms = () => {
   const [isEmailValid, setIsEmailValid] = useState();
   const [isSentWithId, setSentWithId] = useState();
 
+  const [isPhoneValid, setIsPhoneValid] = useState(false);
+
   useEffect(() => {
     if (isSentWithId) {
       getDoc(doc(db, 'orders', isSentWithId)).then((response) => {
@@ -109,11 +112,10 @@ export const Forms = () => {
 
   const isNickValid = formData.nick.length > 0; // add API logic to check if nick was used in database before
 
-  const isPhoneValid = formData.phone.length === 9;
-
   const isFieldsValid =
     isEmailValid && isNameAndSurnameValid && isAllRequiredFieldsFilled;
   console.log('Is fields valid:', isFieldsValid);
+
   function updateAdditionalOptions(optionName, newValue) {
     setFormData({
       ...formData,
@@ -164,20 +166,6 @@ export const Forms = () => {
         <div className="form-container">
           <MainSection title="ZAMÓWIENIE PRODUKTU">
             <FieldSection title="Wybierz produkt*">
-              {/* <select
-                name="product"
-                value={formData.product}
-                onChange={(event) => {
-                  updateFormData(event);
-                }}
-              >
-                {productOptions.map((option) => (
-                  <option key={option.value} value={option.value}>
-                    {option.label}
-                  </option>
-                ))}
-              </select> */}
-
               <Select
                 className="bottom-margin-Select"
                 value={productOptions.find(
@@ -266,8 +254,13 @@ export const Forms = () => {
                 name="phone"
                 value={formData.phone}
                 onChange={updateFormData}
+                onBlur={() => {
+                  setIsPhoneValid(validatePhoneNumber(formData.phone));
+                  // FieldSection.onBlur(formattedPhoneNumber);
+                }}
                 className={!isPhoneValid ? 'input-field-error' : ''}
               />
+              {!isPhoneValid && <p>Podany numer telefonu jest niepoprawny.</p>}
             </FieldSection>
             <FieldSection title="Dodatkowe uwagi do zamówienia">
               <textarea
