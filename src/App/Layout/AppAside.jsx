@@ -9,6 +9,7 @@ import { CalendarIcon } from '../Components/Icons/CalendarIcon';
 import { ElementIcon } from '../Components/Icons/ElementIcon';
 import { BlogIcon } from '../Components/Icons/BlogIcon';
 import { FAQIcon } from '../Components/Icons/FAQIcon';
+import { TechStackIcon } from '../Components/Icons/TechStackIcon';
 
 export function AppAside() {
   const location = useLocation();
@@ -48,6 +49,10 @@ export function AppAside() {
           <li className="aside-row">
             <FAQIcon />
             <NavLink to="faq">FAQ</NavLink>
+          </li>
+          <li className="aside-row">
+            <TechStackIcon />
+            <NavLink to="techstack">Tech Stack</NavLink>
           </li>
           <hr />
         </ul>
