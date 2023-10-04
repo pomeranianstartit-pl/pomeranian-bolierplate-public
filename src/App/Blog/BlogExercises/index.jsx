@@ -11,6 +11,7 @@ export const BlogExercises = () => {
       <NavLink to="/blog-exercises" className="backBtn">
         {'<'}Ćwiczenie
       </NavLink>
+      <button className="save">Zapisz na później</button>
       <p>
         Lorem Ipsum is simply dummy text of the printing and typesetting
         industry.
@@ -20,6 +21,10 @@ export const BlogExercises = () => {
         industry.
       </p>
       <div className="gray-area">
+        <div className="small-red-area">
+          Lorem Ipsum is simply dummy text of the printing and typesetting
+          industry.
+        </div>
         <p>
           Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
           eiusmod tempor incididunt ut labore et dolore magna aliqua. Nibh
@@ -28,7 +33,7 @@ export const BlogExercises = () => {
         </p>
       </div>
       <div className="red-area">
-        <img src={snowWolfImg} />
+        <img src={snowWolfImg} alt="snow wolf" />
         <p>
           Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
           eiusmod tempor incididunt ut labore et dolore magna aliqua. Nibh
@@ -40,7 +45,7 @@ export const BlogExercises = () => {
         <p>
           Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
           eiusmod tempor incididunt ut labore et dolore magna aliqua. Nibh
-          mauris cursus mattis molestie a iaculis at. Dictum varius duis at
+          mauris cursus mattis molestiea iaculis at. Dictum varius duis at
           consectetur lorem donec.
         </p>
       </div>
@@ -65,9 +70,9 @@ export const BlogExercises = () => {
         elit sed vulputate mi.
       </p>
       <div className="frame">
-        <div className="sqr1"></div>
-        <div className="sqr2"></div>
-        <div className="sqr3"></div>
+        <div className="sqr no1"></div>
+        <div className="sqr no2"></div>
+        <div className="sqr no3"></div>
       </div>
     </div>
   );

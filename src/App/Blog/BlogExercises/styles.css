@@ -19,44 +19,78 @@ a.backBtn:nth-of-type(2) {
   font-weight: 400;
   line-height: 36px;
 }
-p:nth-of-type(1) {
+.wrap-blogexe p:nth-of-type(1) {
   margin-bottom: 10px;
 }
-p:nth-of-type(2) {
+.wrap-blogexe p:nth-of-type(2) {
   margin-left: 40px;
   margin-bottom: 40px;
 }
 
 div.gray-area {
+  position: relative;
   background-color: #ebebeb;
   padding: 27px 31px;
   margin-bottom: 30px;
+  transition: 0.3s;
+  cursor: pointer;
+}
+div.small-red-area {
+  display: none;
+  position: absolute;
+  top: -80px;
+  right: -80px;
+  background-color: #ffd5db;
+  color: #222;
+  width: 220px;
+  font-size: 16px;
+  text-align: center;
+  line-height: 30px;
+  padding: 10px;
+  border: 1px solid #999999;
+  border-radius: 5px;
+  font-family: Poppins, sans-serif;
+  text-align: justify;
+}
+div.gray-area:hover > .small-red-area {
+  display: block;
 }
 
 div.red-area {
-  position: relative;
+  /* position: relative; */
   background-color: #ffd5db;
-  padding: 32px 29px 0px 456px;
-  margin-bottom: 145px;
+  padding: 27px 31px;
+  margin-bottom: 170px;
+  text-align: justify;
 }
 
 div.red-area img {
-  position: relative;
-  top: 0;
-  left: 0;
+  float: left;
+  text-align: justify;
+  margin-right: 30px;
 }
 
 div.dark-area {
   background-color: #4b5563;
   margin-bottom: 60px;
+  padding: 17px 21px;
 }
 div.dark-area p {
   color: white;
   padding: 17px 21px;
 }
+button.save:nth-of-type(1) {
+  position: fixed;
+  right: 2px;
+  bottom: 50px;
+  font-size: 12px;
+  border: 1px solid #999999;
+  border-radius: 5px;
+  padding: 12px 20px;
+  width: 120px;
+}
 
 button.save {
-  display: block;
   padding: 40px 100px;
   color: black;
   background-color: #ffd5db;
@@ -64,5 +98,40 @@ button.save {
   text-transform: lowercase;
   border: 1px solid #fe3756;
   border-radius: 20px;
-  margin-bottom: 60px;
+  margin: 0 auto 60px;
+}
+
+.wrap-blogexe p:nth-last-of-type(1),
+.wrap-blogexe p:nth-last-of-type(2) {
+  text-align: justify;
+  margin-bottom: 30px;
+}
+
+.wrap-blogexe .frame {
+  position: relative;
+  border: 2px solid #6b7280;
+  border-radius: 10px;
+  height: 250px;
+}
+
+.frame .sqr {
+  position: absolute;
+  width: 120px;
+  height: 120px;
+  border: 2px solid #ebebeb;
+}
+.no1 {
+  background-color: #c8cbd1;
+  bottom: 30px;
+  left: 30px;
+}
+.no2 {
+  background-color: #999;
+  bottom: 60px;
+  left: 60px;
+}
+.no3 {
+  background-color: #6b7280;
+  bottom: 90px;
+  left: 90px;
 }
