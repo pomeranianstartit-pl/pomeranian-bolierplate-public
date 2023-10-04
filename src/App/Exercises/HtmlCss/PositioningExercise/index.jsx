@@ -9,7 +9,6 @@ export function Exercise() {
         Lorem Ipsum is simply dummy text of the printing and typesetting
         industry.
       </div>
-
       <div>
         Lorem Ipsum is simply dummy text of the printing and typesetting
         industry.
@@ -30,7 +29,6 @@ export function Exercise() {
 
       <div className="positioning-exercise-float">
         <img src={wolf} width={400} height={305} alt="Piesio" />
-
         <span>
           Lorem Ipsum is simply dummy text of the printing and typesetting
           industry. Lorem Ipsum has been the industry's standard dummy text ever
@@ -39,7 +37,6 @@ export function Exercise() {
         </span>
 
         {/* <span className="float-test"> */}
-
         <div className="clearfix">
           ŻEBY NIE BYŁ OPŁYWANY Lorem Ipsum is simply dummy text of the printing
           and typesetting industry. Lorem Ipsum has been the industry's standard
@@ -63,6 +60,13 @@ export function Exercise() {
         Vestibulum mattis ullamcorper velit sed ullamcorper morbi. Amet massa
         vitae tortor condimentum lacinia quis. Quis enim lobortis scelerisque
         fermentum dui faucibus in ornare. Auctor elit sed vulputate mi
+      </div>
+
+      <div className="positioning-exercise-z-index">
+        <div className="square square-base">
+          <div className="square square-1"></div>
+          <div className="square square-2"></div>
+        </div>
       </div>
     </div>
   );

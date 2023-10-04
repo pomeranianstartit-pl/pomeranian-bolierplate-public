@@ -1,18 +1,17 @@
+import React from 'react';
+
+import HeaderIcons from '../HeaderIcons';
+import HeaderRight from '../HeaderRight';
+
 import './styles.css';
 
-import { SettingIcon } from '../Icons/SettingIcon';
-import { ArrowDownIcon } from '../Icons/ArrowDown';
-
-export function HeaderMenu() {
+const HeaderMenu = ({ icons = [], name, position }) => {
   return (
     <div className="header-menu">
-      <SettingIcon />
-      <div className="header-menu-placeholder"></div>
-      <div className="header-menu-user">
-        <p>Natalia</p>
-        <p>kursant</p>
-      </div>
-      <ArrowDownIcon />
+      <HeaderIcons icons={icons} />
+      <HeaderRight name={name} position={position} />
     </div>
   );
-}
+};
+
+export default HeaderMenu;
