@@ -1,6 +1,9 @@
 import './styles.css';
 
-export const Blog = () => {
-  //BEM methodology
-  return <div className="container--blog">Blog</div>;
-};
+export function Exercise() {
+  return (
+    <div className="positioning-exercise">
+      To jest cwiczenie dotyczące pozycjonowania elementów
+    </div>
+  );
+}
