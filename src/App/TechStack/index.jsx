@@ -7,34 +7,24 @@ import { React } from '../Components/Icons/ReactIcon';
 
 const TechCards = [
   {
-    icon: 'GithuubIcon',
+    icon: <GitHuubIcon/>,
     description: 'GitHuub',
   },
 
   {
-    icon: 'HtmIcon',
-    description: 'GitHuub',
+    icon: <HtmlIcon/>,
+    description: 'HTML',
   },
 
   {
-    icon: 'JsIcon',
-    description: 'J',
+    icon: <JsIcon/>,
+    description: 'Js',
   },
 
-  {
-    icon: 'GithuubIcon',
-    description: 'GitHuub',
-  },
-
-  {
-    icon: 'HtmIcon',
-    description: 'GitHuub',
-  },
-
-  {
-    icon: 'JsIcon',
-    description: 'J',
-  },
+  // {
+  //   icon: <ReactIcon/>,
+  //   description: 'React',
+  // },
 ]
 
 export const TechStack = () => {
@@ -44,7 +34,6 @@ export const TechStack = () => {
       <p className="tech-description">
         Poniżej znajdziesz najważniejsze informacje na temat mojej działalności.
       </p>
-
 
     <div className="tech-card">
       {TechCards.map((card) => {

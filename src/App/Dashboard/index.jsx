@@ -2,8 +2,10 @@ import { Link } from 'react-router-dom';
 import './styles.css';
 import { PersonalCardIcon } from '../Components/Icons/PersonalCardIcon';
 import { BookIcon } from '../Components/Icons/BookIcon';
-import {FaqIcon} from '../Components/Icons/FaqIcons';
+import {FaqIcon} from '../Components/Icons/FaqIcon';
+// import { TechStack } from '../Components/Icons/TechStack';
 import { DashboardCard } from './DashboardCard';
+
 // import { Avatar} from './Avatar';
 
 
@@ -27,15 +29,15 @@ const dashboardCards = [
     description: 'Podgląd CV wraz z doświadczeniem',
     link: '/cv',
   },
-  {
-    title: 'Tech stack',
-    icon: <PersonalCardIcon />,
-    description: 'Podgląd CV wraz z doświadczeniem',
-    link: '/cv',
-  },
+  // {
+  //   title: 'Tech stack',
+  //   icon: <TechStackIcon />,
+  //   description: 'Podgląd CV wraz z doświadczeniem',
+  //   link: '/cv',
+  // },
   {
     title: 'FAQ',
-    icon: <PersonalCardIcon />,
+    icon: <FaqIcon />,
     description: 'Podgląd CV wraz z doświadczeniem',
     link: '/cv',
   },
