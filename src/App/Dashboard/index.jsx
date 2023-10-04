@@ -1,6 +1,6 @@
 import './styles.css';
 
-import { DashboardCard } from './DashboardCard';
+import { DashboardCard } from './Dashboardcard'; /* poprawka jest na masterze */
 
 import { PersonalCardIcon } from '../Components/Icons/PersonalCardIcon';
 import { EditIcon } from '../Components/Icons/EditIcon';
@@ -8,7 +8,6 @@ import { BookIcon } from '../Components/Icons/BookIcon';
 import { MessagesIcon } from '../Components/Icons/MessagesIcon';
 import { CalendarIcon } from '../Components/Icons/CalendarIcon';
 import AvatarPhoto from '../Images/AvatarPhoto.svg';
-
 
 const cards = [
   {

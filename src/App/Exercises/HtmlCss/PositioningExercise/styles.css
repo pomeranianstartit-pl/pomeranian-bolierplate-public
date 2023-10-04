@@ -1,0 +1,189 @@
+.positioning-exercise-absolute {
+
+    max-width: 800px;
+
+    position: relative;
+
+    background: #EBEBEB;
+
+    padding: 27px 31px;
+
+    color: #222;
+
+    text-align: justify;
+
+    font-size: 22px;
+
+    font-style: normal;
+
+    font-weight: 400;
+
+    line-height: 36px;
+
+}
+
+ 
+
+.positioning-exercise-absolute-tooltip {
+
+    /* top */
+
+    /* right */
+
+    /* left */
+
+    /* bottom */
+
+    right: -100px;
+
+    top: -100px;
+
+    max-width: 200px;
+
+    position: absolute;
+
+    padding: 12px 20px;
+
+    color: #222;
+
+    text-align: center;
+
+    font-size: 16px;
+
+    font-style: normal;
+
+    font-weight: 400;
+
+    line-height: 30px;
+
+    border-radius: 5.5px;
+
+    border: 1px solid #999;
+
+    background: #FFD5DB;
+
+}
+
+ 
+
+.positioning-exercise-float {
+
+    background: #FFD5DB;
+
+    padding: 27px 31px;
+
+}
+
+ 
+
+.positioning-exercise-float > img {
+
+    float: right;
+
+}
+
+ 
+
+.clearfix {
+
+    clear: right;
+
+}
+
+ 
+
+.positioning-exercise-sticky {
+
+    margin-top: 15px;
+
+    background: #FFD5DB;
+
+    font-size: 20px;
+
+    padding: 50px;
+
+}
+
+ 
+
+.save-for {
+
+    border: 5px solid black;
+
+    background: #FFD5DB;
+
+    padding: 27px 31px;
+
+ 
+
+    right: 50px;
+
+    z-index: 3;
+
+    position: fixed;
+
+}
+
+.positioning-exercise-z-index {
+
+    margin-top: 50px;
+
+    border-radius: 8px;
+
+    padding: 100px;
+
+    border: 2px solid #6B7280;
+
+}
+
+ 
+
+.square {
+
+    width: 100px;
+
+    height: 100px;
+
+}
+
+ 
+
+.square-base {
+
+    position: relative;
+
+    background-color: #6B7280;
+
+}
+
+ 
+
+.square-1 {
+
+    background-color: #FFD5DB;
+
+    border: 1px solid green;
+
+    position: absolute;
+
+    top: -25px;
+
+    right: -25px;
+
+}
+
+ 
+
+.square-2 {
+
+    background-color: green;
+
+    border: 1px solid hotpink;
+
+    position: absolute;
+
+    top: -50px;
+
+    right: -50px;
+
+}

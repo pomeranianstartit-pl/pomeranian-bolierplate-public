@@ -1,0 +1,111 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+.userpanel {
+position: relative;
+display: flex;
+justify-content: space-around;
+align-items: center;
+width: 20%;
+height: 100%;
+}
+
+
+.setting-icon {
+  width: 26px;
+  height: 26px;
+  margin-left: 20px;
+  color: grey;
+}
+
+/* Uwaga! Zmien kolor strzalki na szaro */
+
+
+div.userphoto {
+  border-radius: 50px;
+  margin-left: 30px;
+  height: 50px;
+  width: 50px;
+  background-color: #c8cbd1;
+}
+
+
+div.userdata {
+  font-family: Poppins, sans-serif;
+  text-align: left;
+  height: 100%;
+  padding: 15px 8px;
+}
+
+.useredata p:nth-of-type(1) {
+  color: black;
+  font-size: 16px;
+  font-weight: 400;
+}
+.userdata p:nth-of-type(2) {
+  font-size: 14px;
+  color: #999;
+  font-weight: 400;
+}
+
+
+.userpanel svg:nth-last-of-type(1) {
+  transform: scale(1.5);
+  cursor: pointer;
+}
+
+div.loginPanelHidden {
+  display: none;
+}
+
+div.loginPanel {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 400px;
+  top: 15px;
+  right: -20px;
+  text-align: center;
+  background-color: white;
+  border-radius: 4px;
+  box-shadow: 0px 65px 30px 0px rgba(0, 0, 0, 0.01), 0px 8px 20px 0px rgba(0, 0, 0, 0.04), 0px 17px 35px 0px rgba(0, 0, 0, 0.05), 0px -4px 26px 0px rgba(0, 0, 0, 0.08);
+}
+
+div.loginPanel div.chevronIcon  {
+  align-self: flex-end;
+}
+
+div.loginPanel svg {
+  margin-top: 20px;
+  margin-right: 20px;
+  transform: scale(1.5);
+}
+
+
+button.login {
+  margin-top: 20px;
+  display: inline-block;
+  height: 56px;
+  width: 326px;
+  background-color: #FE3756;
+  color: white;
+  border-radius: 8px;
+  border: 1px solid #FE3756;
+}
+
+
+div.loginPanel p {
+  font-family: Poppins;
+  font-size: 15px;
+  font-weight: 500;
+  color: #222;
+  margin-bottom: 20px;
+  letter-spacing: -0.45px;
+  padding-top: 25px;
+}
+div.loginPanel p > a {
+  display: inline-block;
+  padding-left: 10px;
+  text-decoration: none;
+  color: #fe3756;
+}

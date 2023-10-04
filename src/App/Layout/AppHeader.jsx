@@ -1,8 +1,14 @@
+import React from 'react';
+
 import './styles/header.css';
 
-//utwurz mi komponent react o nazie Logo ze sciezki do pliku ktora podalem
+//utwórz mi komponent react o nazwie Logo ze sciezki do pliku ktora podalem
+
 import { ReactComponent as PomeranianLogo } from '../Images/start-it-logo.svg';
-// import { HeaderMenu } from '../Components/HeaderMenu';
+
+//utwórz mi komponent react o nazwie HeaderMenu ze sciezki do pliku ktora podalem
+
+import { HeaderMenu } from '../Components/HeaderMenu/HeaderMenu';
 
 export function AppHeader() {
   return (
@@ -10,7 +16,7 @@ export function AppHeader() {
     <header>
       {/* // component react  */}
       <PomeranianLogo />
-      {/* <HeaderMenu /> */}
+      <HeaderMenu />
     </header>
   );
 }
