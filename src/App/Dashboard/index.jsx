@@ -4,7 +4,7 @@ import { PersonalCardIcon } from '../Components/Icons/PersonalCardIcon';
 import { EditIcon } from '../Components/Icons/EditIcon';
 import { BlogIcon } from '../Components/Icons/BlogIcon';
 import { FAQIcon } from '../Components/Icons/FAQIcon';
-import { ElementIcon } from '../Components/Icons/ElementIcon';
+import { TechStackIcon } from '../Components/Icons/TechStackIcon';
 
 const dashboardCards = [
   {
@@ -27,7 +27,7 @@ const dashboardCards = [
   },
   {
     title: 'Tech stack',
-    icon: <ElementIcon />,
+    icon: <TechStackIcon />,
     description: 'stack technologiczny realizowany na kursie',
     link: '/cv',
   },
@@ -58,7 +58,14 @@ export const Dashboard = () => {
           );
         })}
       </div>
-      <aside className="dashboard-aside"></aside>
+      <aside className="dashboard-aside">
+        <div className="dashboard-idcard">
+          <h3>Mateusz Tywczyński</h3>
+          <p>Gdańsk</p>
+          <p>e-mail: mateusz.tywczynski@gmail.com</p>
+          <p>telefon: 000 000 000</p>
+        </div>
+      </aside>
     </div>
   );
 };

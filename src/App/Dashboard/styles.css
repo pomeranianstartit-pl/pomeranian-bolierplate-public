@@ -54,7 +54,9 @@
         grid-area: 1 / 2 / 4 / 3;
         width: 334px;
         height: 360px;
-        flex-shrink: 0;
+        border-radius: 10px;
+        background: var(--colors-white-100, #FFF);
+        
     }
     
       .dashboard-cards {
@@ -69,6 +71,35 @@
 
       .dashboard-card:hover > svg > path {
         stroke: var(--primary-primary, #FE3756)
+      }
+
+      .dashboard-idcard {
+        
+
+padding: 45px 116px 28px 23px;
+      }
+
+      .dashboard-idcard > h3 {
+        color: var(--secondary-secondary, #23213D);
+font-size: 22px;
+font-style: normal;
+font-weight: 500;
+line-height: normal;
+display: flex;
+margin-bottom: 0px;
+
+
+
+      }
+
+      .dashboard-idcard > p {
+        color: var(--colors-black-100, #000);
+        opacity: 0.4;
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 20px;
+
       }
 
    
