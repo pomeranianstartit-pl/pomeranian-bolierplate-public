@@ -1,0 +1,30 @@
+.table-wrapper table {
+  background: #fff;
+  border-radius: 10px;
+}
+.tabelkapanstwa {
+  width: 1440px;
+  height: 905px;
+}
+
+.tabelkapanstwa th {
+  padding-left: 46px;
+  padding-right: 46px;
+}
+.tabelkapanstwa td {
+  padding-left: 50px;
+  padding-right: 50px;
+}
+
+.table-wrapper table thead {
+  height: 57px;
+  background-color: #f5f5f5;
+}
+
+.tabelkapanstwa caption {
+  caption-side: bottom;
+}
+
+.tabelkapanstwa tr:nth-child(even) {
+  background-color: #ffd5db;
+}
