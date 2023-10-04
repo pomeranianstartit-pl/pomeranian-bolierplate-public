@@ -10,6 +10,10 @@ import { blockRouterMetaData as blockRouterMetaDataAudioVideoIfrem } from './Aud
 import { blockRouterMetaData as blockRouterMetaDataTables } from './Tables/router-data';
 import { blockRouterMetaData as blockRouterMetaDataTablesTennis } from './TablesTennis/router-data';
 import { blockRouterMetaData as blockRouterMetaDataBoxModel } from './BoxModel/router-data';
+import { blockRouterMetaData as blockRouterMetaDataSelectors } from './Selectors/router-data';
+
+
+    
 
 
 export const blockRouterMetaData = [
@@ -23,6 +27,6 @@ export const blockRouterMetaData = [
   blockRouterMetaDataTables,
   blockRouterMetaDataTablesTennis,
   blockRouterMetaDataBoxModel,
-
+  blockRouterMetaDataSelectors,
 ];
 export const blockRouterData = getParsedRouterDataList(blockRouterMetaData);
