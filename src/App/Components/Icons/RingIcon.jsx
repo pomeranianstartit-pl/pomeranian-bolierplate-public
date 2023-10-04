@@ -1,4 +1,4 @@
-export function RingIcon() {
+export function RingIcon({ className = '' }) {
   return (
     <svg
       xmlns="http://www.w3.org/2000/svg"
@@ -6,6 +6,7 @@ export function RingIcon() {
       height="35"
       viewBox="0 0 35 35"
       fill="none"
+      className={className}
     >
       <path
         d="M21.9043 27.7959C21.9043 30.2021 19.9355 32.1709 17.5293 32.1709C16.3335 32.1709 15.2251 31.6751 14.4376 30.8876C13.6501 30.1001 13.1543 28.9917 13.1543 27.7959"
