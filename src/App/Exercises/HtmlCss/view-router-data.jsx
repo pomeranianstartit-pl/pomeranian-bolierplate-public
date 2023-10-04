@@ -8,6 +8,7 @@ import { blockRouterMetaData as blockRouterMetaDataVideoAudioIframe } from './Vi
 import { blockRouterMetaData as blockRouterMetaDataText } from './Text/router-data';
 import { blockRouterMetaData as blockRouterMetaDataAnimations } from './Animations/router-data';
 import { blockRouterMetaData as blockRouterMetaDataSelectors } from './Selectors/router-data';
+import { blockRouterMetaData as blockRouterMetaDataPositionigExercise } from './PositioningExercise/router-data';
 
 export const blockRouterMetaData = [
   blockRouterMetaData121220231,
@@ -18,5 +19,6 @@ export const blockRouterMetaData = [
   blockRouterMetaDataText,
   blockRouterMetaDataAnimations,
   blockRouterMetaDataSelectors,
+  blockRouterMetaDataPositionigExercise,
 ];
 export const blockRouterData = getParsedRouterDataList(blockRouterMetaData);
