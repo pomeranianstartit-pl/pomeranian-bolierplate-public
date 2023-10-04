@@ -27,8 +27,8 @@ export function App() {
           <Route path="faq/*" element={<FAQ />} />
           <Route path="blocks/*" element={<Blocks />} />
           <Route path="blog/" element={<Blog />} />
-          <Route path="*" element={<NotFound />} />
           <Route path="techstack/*" element={<TechStack />} />
+          <Route path="*" element={<NotFound />} />
         </Route>
       </Routes>
     </BrowserRouter>
