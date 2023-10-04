@@ -1,0 +1,52 @@
+.header--menu {
+    position: relative;
+
+    display: flex;
+  
+    align-items: center;
+  
+    gap: 20px;
+  
+  }
+
+  .header-search {
+    padding: 5px;
+    right: 100px;
+    border: 1px solid black;
+    border-radius: 30px;
+    width: 500px;
+  }
+
+  .header-search-text {
+    text-align: center;
+    margin-left: 30px;
+    padding-bottom: 5px;
+  }
+
+  .login-popup {
+    right: 0px;
+    top: 80px;
+    position: absolute;
+    height: 100px;
+    width: 300px;
+    border: 2px solid black;
+  }
+
+  .login-Button {
+    display: flex;
+    background: red;
+  }
+  
+  .header-menu-user p {
+  
+    margin: 0;
+  
+  }
+  
+  .header-menu-user p:nth-child(2) {
+  
+    color: gray;
+  
+  }
+  
+   
