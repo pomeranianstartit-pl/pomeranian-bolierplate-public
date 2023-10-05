@@ -24,16 +24,13 @@ header.header-title {
 
 .header-menu-user > p:last-child{
 
-
-
   color: var(--color-lightgrey);
   font-family: Poppins;
   font-size: 16px;
   font-style: normal;
 
-
   font-weight: 400;
   line-height: normal;
-
 }
+
 
