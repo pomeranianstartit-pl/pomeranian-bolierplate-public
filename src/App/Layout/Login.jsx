@@ -1,5 +1,4 @@
 import './styles/header.css';
-import { RightArrow } from '../Components/Icons/RightArrow';
 
 function LoginNote(props) {
   console.log(props, 'props');
