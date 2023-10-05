@@ -21,6 +21,7 @@ export function Faq() {
               tincidunt nisl pellentesque ut adipiscing non.Lorem ipsum dolor
               sit amet, consectetur adipiscing elit
             </span>
+            <button className="button1 button-red">button</button>
           </div>
         </div>
       </div>
