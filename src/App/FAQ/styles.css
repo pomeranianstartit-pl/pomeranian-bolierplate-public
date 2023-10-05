@@ -1,2 +1,12 @@
-.container--FAQ {
+.faq-note-wrapper {
+  border-left: 5px solid #c8cbd1;
+  border-radius: 8px;
+  background-color: #fff;
+  padding: 18px 24px;
+  box-shadow: 0px 3px 46px 0px rgba(0, 0, 0, 0.06),
+    0px 4px 10px 0px rgba(0, 0, 0, 0.07);
+}
+.faqimg path {
+  fill: #fe3756;
+  stroke: #fe3756;
 }
