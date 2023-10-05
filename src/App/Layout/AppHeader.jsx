@@ -1,7 +1,7 @@
 import React from 'react';
 import { SettingIcon } from '../Components/Icons/SettingIcon';
-import { Elipse2 } from '../Components/Icons/Elipse2';
 import { RightArrow } from '../Components/Icons/RightArrow';
+import myphoto from '../Images/myphoto.jpg';
 
 import './styles/header.css';
 
@@ -14,13 +14,15 @@ export function AppHeader() {
       <PomeranianLogo />
       <div class="container">
         <SettingIcon />
-        <Elipse2 />
+        <img src={myphoto} />
 
         <div className="user">
           <p>Katarzyna </p>
           <p>kursant </p>
         </div>
-        <RightArrow />
+        <button>
+          <RightArrow />
+        </button>
       </div>
     </header>
   );
