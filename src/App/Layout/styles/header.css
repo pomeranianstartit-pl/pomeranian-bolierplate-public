@@ -36,3 +36,8 @@ header .logo {
 .user p {
   margin: 0px;
 }
+.container img {
+  border-radius: 50%;
+  height: 52px;
+  width: 49px;
+}
