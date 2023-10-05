@@ -1,3 +1,4 @@
+import { useState } from 'react';
 import React from 'react';
 
 import './styles/header.css';
@@ -14,9 +15,10 @@ export function AppHeader() {
     //tag jsx -> html
     <header>
       <div className="PomeranianLogo">
-        {/* // component react  */}
+        {/* // component react */}
         <PomeranianLogo />
       </div>
+
 
       <div className="header-menu">
         <SettingIcon />
@@ -31,6 +33,7 @@ export function AppHeader() {
       <div>
         <ArrowIcon />
       </div>
+
     </header>
   );
 }
