@@ -17,8 +17,13 @@ header.header-title {
   color: var(--color-grey);
   font-weight: normal;
 }
-
 header .logo {
   height: 40vmin;
   pointer-events: none;
+}
+
+.header-content {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
 }
