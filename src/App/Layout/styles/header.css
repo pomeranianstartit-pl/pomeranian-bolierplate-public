@@ -32,3 +32,11 @@ header.header-title {
 .ArrowIcon {
   color: #4B5563;
 }
+
+.settingIcon {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+
+  
+}
