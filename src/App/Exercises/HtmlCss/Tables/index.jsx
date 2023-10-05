@@ -1,4 +1,4 @@
-import './styles.css';
+import '../../../Exercises/HtmlCss/Tables/styles.css';
 
 export function Exercise() {
   return (

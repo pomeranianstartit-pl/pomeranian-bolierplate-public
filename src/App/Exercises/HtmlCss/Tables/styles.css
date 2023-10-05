@@ -1,10 +1,10 @@
-/* .table-wrapper table {
+.table-wrapper table {
   margin-bottom: 50px;
-} */
+}
 
 /* 1 table */
 
-/* .first-table {
+.first-table {
   border-collapse: collapse;
 }
 
@@ -17,11 +17,11 @@
 
 .first-table tr:nth-child(even) {
   background-color: #fb8500;
-} */
+}
 
 /* 2 table */
 
-/* .second-table {
+.second-table {
   border-collapse: collapse;
 }
 
@@ -38,4 +38,4 @@
 
 .second-table caption {
   caption-side: bottom;
-} */
+}
