@@ -56,7 +56,6 @@ export const Dashboard = () => {
             link={link}
           />
         ))}
-        ;
       </div>
       <div className="dashboard-aside">
         <img src={myphoto} />
