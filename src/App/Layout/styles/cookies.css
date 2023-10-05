@@ -1,0 +1,67 @@
+.cookies {
+
+    display: flex;
+
+    flex-direction: column;
+
+    color: #F6F6F6;
+
+    width: 100%;
+
+    position: absolute;
+
+    bottom: 0;
+
+    left: 0;
+
+    background:  #23213D;
+
+    justify-content: space-between;
+
+    padding: 80px 120px;
+
+}
+
+ 
+
+.cookies svg {
+
+    width: 76px;
+
+    height: 76px;
+
+    float: left;
+
+}
+
+ 
+
+@media (min-width: 905px) {
+
+    .cookies {
+
+        flex-direction: row;
+
+    }
+
+ 
+
+    .cookies p {
+
+        max-width: 666px;
+
+    }
+
+ 
+
+    .cookies .cookies-right {
+
+        display: flex;
+
+        align-items: center;
+
+        justify-content: center;
+
+    }
+
+}
