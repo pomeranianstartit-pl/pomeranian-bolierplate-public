@@ -8,9 +8,10 @@ header {
   padding-left: 1.5rem;
   padding-right: 3rem;
   box-shadow: 0px 1px 9px 0px var(--color-grey);
-}
-header > a:first-of-type {
+  }
+  header > a:first-of-type {
   text-decoration: none;
+
 }
 .PomeranianLogo {
   flex-basis: 1500px;
@@ -22,21 +23,17 @@ header.header-title {
 }
 
 .header-menu-user > p:last-child{
+
+
+
   color: var(--color-lightgrey);
   font-family: Poppins;
   font-size: 16px;
   font-style: normal;
-  font-weight: 400; 
+
+
+  font-weight: 400;
   line-height: normal;
-  }
-.ArrowIcon {
-  color: #4B5563;
+
 }
 
-.settingIcon {
-  display: flex;
-  justify-content: space-between;
-  flex-direction: row;
-
-  
-}
