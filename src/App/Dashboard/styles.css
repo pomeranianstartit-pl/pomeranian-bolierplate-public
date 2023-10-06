@@ -73,4 +73,5 @@
   grid-area: 1 / 2 / 4 / 3;
   min-height: 800px;
   background: gray;
+  visibility: hidden;
 }
