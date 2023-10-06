@@ -52,16 +52,16 @@ export const Forms = () => {
         </form>
         <form onSubmit={handleSubmit(onSubmit)}>
           <label htmlFor="name">Wybierz formę płatności*</label>
-
+          <br />
           <input
             {...register('radio')}
             type="radio"
             value="blik"
           />
-          <label for="blik">blik</label>
+          <label for="blik">blik</label> <br />
 
           <input {...register('radio')} type="radio" value="paypal" />
-          <label for="paypal">paypal</label>
+          <label for="paypal">paypal</label><br />
 
           <input
             {...register('radio')}
