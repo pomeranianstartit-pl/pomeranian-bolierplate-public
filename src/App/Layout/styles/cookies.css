@@ -1,0 +1,56 @@
+.cookies {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    background: #23213D;
+    width: 100%;
+    padding: 80px 120px;
+    justify-content: space-between;
+}
+
+/* BASIC media queries
+
+@media (max-width: 832px) {
+    .cookies {
+        background: green;
+        display: none;;
+    }
+}
+
+@media (min-width: 400px) and (max-width: 832px) {
+    .cookies {
+        background: yellow;
+        display: block;
+    }
+}
+
+*/
+
+.cookies svg {
+    width: 76px;
+    height: 76px;
+    float: left;
+}
+
+.cookies svg {
+    float: left;
+}
+
+@media (min-width: 905px) {
+    .cookies {
+        flex-direction: row;
+    }
+}
+
+
+.cookies p {
+    max-width: 666px;
+}
+
+.cookies .cookies-right {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
