@@ -10,7 +10,7 @@ export function MaterialUI() {
     <div>
       {' '}
       <Button variant="contained">Material UI...</Button>
-      <Stack direction="column" spacing={2}>
+      <Stack direction="row" spacing={2}>
         <Avatar alt="Wolf" src={Wolf} />
         <Avatar alt="Wolf" src={Wolf} />
         <Avatar alt="Wolf" src={Wolf} />
