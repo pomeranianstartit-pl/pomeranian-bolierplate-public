@@ -21,9 +21,9 @@
   background-color: grey;
 }
 .dashboard-card {
-  text-align: center;
   width: 202px;
   height: 192px;
+  text-align: center;
   font-size: 12px;
   border-radius: 8px;
   border: 0.66px solid var(--gray-300, #c8cbd1);
