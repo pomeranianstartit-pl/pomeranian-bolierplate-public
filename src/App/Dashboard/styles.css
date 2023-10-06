@@ -1,2 +1,21 @@
 .dashboard {
+  display: flex;
+  justify-content: space-between;
+  gap: 1rem;
+}
+
+.mydata-dashboard {
+  font-size: 0.875rem;
+}
+
+.mydata-section {
+  padding: 0.625rem 0.625rem 0rem;
+}
+
+.mydata-dashboard h3 {
+  margin: 0;
+}
+
+.mydata-dashboard p {
+  margin: 0;
 }

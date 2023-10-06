@@ -49,3 +49,15 @@
 .button-alert {
   border-color: #ff9800;
 }
+
+.dropdown {
+  position: relative;
+  display: block;
+}
+
+.dropdown text {
+  display: none;
+}
+.dropdown a:focus + text {
+  display: block;
+}
