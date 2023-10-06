@@ -1,17 +1,18 @@
 .faq-style {
-    margin-bottom: 16px;
-    padding-top: 18px;
+    /* margin-bottom: 16px; */
+    /* padding-top: 18px;
     padding-bottom: 18px;
     padding-left: 24px;
-    padding-right: 24px;
-    width: 780px;
+    padding-right: 24px; */
+width: 780px;
 height: 905px;
+margin: 0;
 
 }
 
 
 .div {
-    color: var(--secondary-secondary, #23213D);
+color: var(--secondary-secondary, #23213D);
 font-family: Poppins;
 font-size: 18px;
 font-style: normal;
@@ -38,6 +39,19 @@ margin-bottom: 37px;
 border-radius: 8px;
 border-left: 5px solid var(--gray-300, #C8CBD1);
 background: var(--background-bg-primary, #FFF);
+
+}
+
+.button-text 
+{
+    padding-left: 16px;
+    display: inline;
+    text-align: center;
+}
+
+.button-text-up {
+    padding-left: 24px;
+  
 }
 
 
@@ -76,17 +90,7 @@ height: 70px;
 padding-left: 16px;
 }
 
-.button-text 
-{
-    padding-left: 16px;
-    display: inline;
-    text-align: center;
-}
 
-.button-text-up {
-    padding-left: 24px;
-  
-}
 
 :root {
     --color-text: rgb(82, 82,200);
