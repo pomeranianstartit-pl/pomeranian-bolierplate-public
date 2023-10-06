@@ -10,12 +10,15 @@ import { ReactIfStatementsMoreOrLessMetaData } from './ReactIfStatementsMoreOrLe
 
 import { ToDoWithServerMetaData } from './ToDoWithServer/router-data';
 
+import { FormsMetaData } from './Forms/router-data';
+
 export const blockRouterMetaData = [
   SubRouteExampleMetaData,
   ReactEventsUseStateMetaData,
   ReactIfStatementsMetaData,
   ReactIfStatementsMoreOrLessMetaData,
   ToDoWithServerMetaData,
+  FormsMetaData,
 ];
 
 export const blockRouterData = getParsedRouterDataList(blockRouterMetaData);

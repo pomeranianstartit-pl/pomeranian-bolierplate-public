@@ -13,15 +13,15 @@ export const Blok22Warmup = () => {
     // Sprawdź, czy wszystkie argumenty są tablicami
     for (const arg of args) {
       if (!Array.isArray(arg)) {
-        return "zły parametr";
+        return 'zły parametr';
       }
     }
-  
+
     // Łącz wszystkie tablice i zwróć wynik
     const concatenatedArray = [].concat(...args);
     return concatenatedArray;
   }
-  
+
   function imionaWagi(imiona, wagi) {
     // Skonstruuj nową tablicę z imionami i sumą wag
     const imionaZWagami = imiona.map((imie) => {
@@ -29,26 +29,26 @@ export const Blok22Warmup = () => {
       const score = wagi[lowerCaseImie] || 0;
       return { name: imie, score };
     });
-  
+
     // Posortuj tablicę względem sumy wag w kolejności malejącej
     imionaZWagami.sort((a, b) => b.score - a.score);
-  
+
     return imionaZWagami;
   }
-  
+
   // Przykłady użycia
   const wynik1 = concatArr([1, 2, 3], [4, 5], [8]);
   console.log(wynik1); // [1, 2, 3, 4, 5, 8]
-  
+
   const wynik2 = concatArr([1, 2, 3], [4, 5], 'text');
   console.log(wynik2); // "zły parametr"
-  
+
   const wagi1 = {
     janek: 20,
     zosia: 13,
   };
-  
-  const wynik3 = imionaWagi(["Janek", "Zosia"], wagi);
+
+  const wynik3 = imionaWagi(['Janek', 'Zosia'], wagi);
   console.log(wynik3); // [{name: "Janek", score: 20}, {name: "Zosia", score: 13}]
 
   return (
