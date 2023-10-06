@@ -18,7 +18,7 @@ export const HeaderMenu = () => {
   return (
     <div className="userpanel">
       <NotificationredIcon />
-      <SettingIcon className="setting-icon" />
+      <SettingIcon />
 
       <div className="userphoto"></div>
       <div className="userdata">

@@ -70,9 +70,8 @@
 
     .dashboard-aside { 
         grid-area: 1 / 2 / 4 / 3; 
-        min-height: 800px; /* sprawdz potem czy to nie wywala czegos */
+        min-height: 800px;
         background: white;
-
     }
 
     .dashboard-card:hover > h3 {
