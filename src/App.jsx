@@ -5,13 +5,14 @@ import { NotFound } from './App/Components/NotFound/NotFound';
 
 import { Blocks } from './App/Blocks';
 import { Layout } from './App/Layout';
-import { Dashboard } from './App/Dashboard';
+// import { Dashboard } from './App/Dashboard';
 import { Exercises } from './App/Exercises';
 import { CV } from './App/CV';
 import { Settings } from './App/Settings';
 import { Calendar } from './App/Calendar';
 import { Blog } from './App/Blog/Blog';
 import { Faq } from './App/Faq';
+import { Dashboard } from './App/Dashboard';
 export function App() {
   return (
     <BrowserRouter>

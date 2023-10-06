@@ -22,3 +22,25 @@ header .logo {
   height: 40vmin;
   pointer-events: none;
 }
+header .header_container {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+
+  justify-content: space-between;
+}
+.header_menu {
+  max-width: 20rem;
+  align-items: center;
+  display: flex;
+  gap: 1rem;
+}
+.header_name {
+  display: flex;
+  flex-direction: column;
+}
+
+.header_name_position {
+  font-size: 0.8125rem;
+  color: #999999;
+}

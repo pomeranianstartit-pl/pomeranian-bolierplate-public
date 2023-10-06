@@ -2,13 +2,13 @@
   font-family: Poppins;
 }
 
-.button-exercise5{
+.button-exercise5 {
   display: flex;
   justify-content: center;
   align-items: center;
   width: 326px;
   height: 56px;
-  padding:20px 36px 20px 36px;
+  padding: 20px 36px 20px 36px;
   text-transform: uppercase;
   margin-top: 28px;
   margin-bottom: 28px;
@@ -21,25 +21,22 @@
   line-height: 31px;
 }
 
-
-
 p {
   margin-top: 28px;
   margin-bottom: 0px;
-  font-size: 22px;
 }
 #start {
-  background-color: #FE3756;
+  background-color: #fe3756;
 }
 
 #reset {
-  background-color: #23213D;
+  background-color: #23213d;
 }
 
 #start:hover {
-  background-color: #DB1534;
+  background-color: #db1534;
 }
 
 #reset:hover {
-  background-color: #12112C;
+  background-color: #12112c;
 }
