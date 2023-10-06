@@ -1,0 +1,60 @@
+.main {
+    width: 1440px;
+    height: 905px;
+    border-radius: 10px;
+    background: #FFF;
+    padding-inline-start: 40px; 
+}
+
+.header {
+    font-family: Poppins;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 34px;
+    color: var(--text-text-primary, #222);
+    font-feature-settings: 'clig' off, 'liga' off; 
+    padding-bottom: 1rem;
+}
+
+.p1 {
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 27px;
+    padding-bottom: 1rem;
+}
+.p2-z-lorem {    
+    color: var(--text-text-primary, #222);
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 32px; /* 177.778% */ 
+    border: 8px;
+     
+}
+.akapit-lorem {
+    border-radius: 8px;
+    border-left: 5px solid var(--gray-300, #C8CBD1);
+    background: var(--background-bg-primary, #FFF); 
+    /* border: 8px; */
+    padding: 18 24 18 24;
+    max-width: 780px;
+    max-height: 266px;
+    padding-inline-start: 40px;
+
+}
+.button-text {
+    display: inline;
+    padding-left: 1rem;
+    font-size: 18px;
+    font-weight: 700;
+}
+
+.jak-moge-rozwijane {
+    display: inline;
+    padding-left: 1rem;
+    border-radius: 8px;
+    border-left: 5px solid var(--gray-300, #C8CBD1);
+    background: var(--background-bg-primary, #FFF); 
+}

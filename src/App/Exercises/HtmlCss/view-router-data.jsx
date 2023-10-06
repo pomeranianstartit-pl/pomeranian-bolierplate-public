@@ -1,6 +1,28 @@
 import { getParsedRouterDataList } from '../../router-data/parseRouterData';
 
-import { blockRouterMetaData as blockRouterMetaData121220231 } from './Exercise-example-12-12-2023-1/router-data';
+import { blockRouterMetaData as BlockRouterMetaData121220231 } from './Exercise-example-12-12-2023-1/router-data';
+// import { SelectorsAndCascadeMetaData } from './SelectorsAndCascade/router-data';
+import { TextFundamentsRouterMetaData } from './TextFundaments/router-data';
+import { GoogleFontsRouterMetaData } from './GoogleFonts/router-data';
+import { CssAnimationsRouterMetaData } from './CssAnimations/router-data';
+import { ColorsRouterMetaData } from './Colors/router-data';
+import { ImagesFilesRouterMetaData } from './ImagesFiles/router-data';
+import { CSSFilterRouterMetaData } from './CssFilter/router-data';
+import { MediaFilesRouterMetaData } from './MediaFiles/router-data';
+import { BoxModelRouterMetaData } from './BoxModel/router-data';
+import { HTMLTablesRouterMetaData } from './HTMLTables/router-data';
 
-export const blockRouterMetaData = [blockRouterMetaData121220231];
+export const blockRouterMetaData = [
+  BlockRouterMetaData121220231,
+  // SelectorsAndCascadeMetaData,
+  TextFundamentsRouterMetaData,
+  GoogleFontsRouterMetaData,
+  CssAnimationsRouterMetaData,
+  ColorsRouterMetaData,
+  ImagesFilesRouterMetaData,
+  CSSFilterRouterMetaData,
+  MediaFilesRouterMetaData,
+  BoxModelRouterMetaData,
+  HTMLTablesRouterMetaData,
+];
 export const blockRouterData = getParsedRouterDataList(blockRouterMetaData);

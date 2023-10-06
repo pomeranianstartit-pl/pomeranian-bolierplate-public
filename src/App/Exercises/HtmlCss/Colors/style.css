@@ -1,0 +1,23 @@
+.cssColors .color-1 {
+    color: red;
+}
+
+.cssColors .color-2 {
+    color: rgb(131, 40, 40);
+}
+.cssColors .color-3 {
+    color: #fff000;
+}
+/* 0123456789abcdef zapis szesnastkowy */
+
+.cssColors .color-4 {
+    color: rgba(255, 240, 0, 0.5)
+}
+/* osttania wartosc to przezroczystosc */
+
+.cssColors .color-5 {
+    color: hsl(71deg, 82%, 53%);
+}
+.cssColors .color-6 {
+    opacity: 0.5;
+}

@@ -1,0 +1,14 @@
+.imagesfiles {
+    /* background-color: red; */
+    /* background-image: url(https://www.svgrepo.com/show/85124/cat.svg);
+    background-position: center;
+    background-size: 50px; */
+    /* size moze byc w % */
+    /* background-repeat: no-repeat; */
+
+    background-repeat: repeat;
+}
+.imagesfiles img {
+    max-width: 200px;
+
+}

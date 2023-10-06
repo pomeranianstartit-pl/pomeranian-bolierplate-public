@@ -1,0 +1,11 @@
+.CssFilter img {
+    filter: blur(2px) opacity(70%) grayscale(92%) invert(100%);
+}
+
+.black {
+    background-color: black;
+    width: 100px;
+    height: 100px;
+
+    filter: grayscale(51%) sepia(48%) blur(4px) brightness(96%) hue-rotate(186deg) opacity(70%);;
+}

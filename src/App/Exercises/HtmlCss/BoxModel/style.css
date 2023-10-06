@@ -1,0 +1,105 @@
+.boxModel .div1 {
+
+    width: 100%;
+    padding: 10px;
+    /* margin: 10px; */
+
+    border: 5px solid black;
+    display: block;
+    box-sizing: border-box; 
+
+    /* height: 100vh; */
+
+    /* szerokość div = width => width zawiera w sobie padding i border */
+
+}
+
+.boxModel .div2 {
+    width: 100%;
+    padding: 10px;
+    /* margin: 10px; */
+
+    border: 5px solid black;
+    display: block;
+    box-sizing: content-box;
+
+    /* szerokość div = width + padding + border */
+
+}
+
+ 
+
+.boxModel > span {
+    background: linear-gradient(90deg, rgba(2, 0, 36, 1) 0%, rgba(0, 212, 255, 1) 100%);
+
+    /* display: block; */
+
+}
+ 
+.boxModel .p1 {
+
+    max-height: 300px;
+    overflow: hidden;
+    overflow: scroll;
+    overflow: auto;
+    /* overflow-x: hidden; */
+    /* margin: 1em 0; */
+
+}
+
+
+.boxModel .p1 > span {
+    display: block;
+    min-width: 500px;
+}
+
+/*
+
+display: block;
+div, h1 .. h6, article
+display: inline;
+span, a, img, input, button
+*/
+
+/*****************************************/
+
+/* jednostki css */
+
+html {
+    font-size: 16px;
+}
+
+ 
+
+@media screen and (max-width: 991px) {
+    html {
+
+        font-size: 20px;
+    }
+}
+
+.boxModel {
+    font-size: 30px;
+}
+
+.boxModel .p1 {
+
+    /* font-size: 10%; */
+    /* width: 50%; */
+    /* font-size: 2em; */
+    font-size: 2rem;
+    /* 2em = 2 * font-size rodzica => 2 * 10px */
+
+    /* font-size: 4ex; */
+    /* 2ex = 1em */
+    /* 2rem = 2 * font-size html-a => 2 * 16px */
+
+    /* width: 20rem; */
+
+
+    /* width: 100vw;
+    height: 100vh;
+    max-height: 100vh; */
+    /* vw to wartość procentowa szerokości ekrany */
+
+}

@@ -1,0 +1,123 @@
+.animation {
+    width: 30px;
+    height: 440px;
+    /* background-color: red; */
+
+    animation-name: example-animation;
+    animation-duration: 8s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes example-animation {
+    0% {
+        color: red;
+        width: 100px;
+    }
+    25% {
+        color: yellow;
+        width: 200px;
+    }
+    50% {
+        color: blue;
+        width: 300px;
+    }
+    75% {
+        color: green;
+        width: 400px;
+    }   
+}
+h2 {
+
+    font-size: 57px;
+    font-weight: 600;
+    font-style: normal;
+    line-height: 88px;
+    letter-spacing: 0.343px;
+    margin-block-start: 0;
+    margin-block-end: 0;
+  
+  }
+   
+  p {
+    margin-block-start: 0;
+    margin-block-end: 0;
+      
+  }
+    
+  address {
+    margin-top: 52px;
+    font-style: normal;
+    font-size: 35px;
+  
+  }
+    
+  .question-wrapper {  
+    padding-top: 88px;  
+    padding-bottom: 88px;  
+    padding-left: 105px;  
+  
+    /* forma skrócona */
+      /* padding: 88px 0 88px 105px; */
+  
+  }
+    .color-primary {
+      color: #FE3756;
+      animation-name: example-animation;
+      animation-duration: 2s;
+      animation-iteration-count: infinite;
+    }
+    
+  .font-weight-600 {
+      font-weight: 600;
+    }
+    
+  .margin-bottom-17 {
+      margin-bottom: 17px;
+  
+  }
+    .lorem-ipsum {
+      font-size: 18px;
+      font-style: normal;
+      line-height: 34px;
+  
+  }
+.bold-under {  
+    text-decoration: underline;  
+    font-weight: 700;  
+  }
+  
+  ul  {  
+    list-style-type:square;  
+  }
+  
+   
+  
+   
+  
+  .margin_top_48{
+  
+    margin-top: 48px;
+  
+  }
+  
+   
+  
+  .paragraph {
+  
+    height:780px;
+  
+    width: 571px;
+  
+    margin-left: 240px;
+  
+    margin-right: 173px;
+  
+    margin-top: 80px;
+  
+    margin-block-end: 0px;
+  
+   
+  
+   
+  
+  }
