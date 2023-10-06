@@ -1,0 +1,38 @@
+.dashboard {
+    display: flex;
+    justify-content: space-between;
+    gap: 1rem;
+
+}
+
+.dashboard-mydata {
+font-size: 0.875rem;
+
+}
+
+.mydata-section {
+    padding: 0.625rem 0.625rem 0rem;
+}
+
+.dashboard-mydata h3 {
+
+    margin: 0;
+  }
+  
+   
+  .dashboard-mydata p {
+    margin: 0; 
+    color: black;
+font-feature-settings: 'clig' off, 'liga' off;
+font-family: Poppins;
+font-size: 14px;
+font-style: normal;
+font-weight: 400;
+line-height: 20px;
+opacity: 0.4;
+
+  }
+  
+
+
+   
