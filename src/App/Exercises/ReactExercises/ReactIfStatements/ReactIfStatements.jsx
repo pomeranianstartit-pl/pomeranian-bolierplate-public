@@ -1,11 +1,10 @@
-import {useState} from 'react';
+import { useState } from 'react';
 import './style.css';
 
 export function ReactIfStatements() {
-
   const [text, setText] = useState('');
   const [clickedCount, setClickedCount] = useState(0);
-  
+
   function handleClick() {
     const newClickedCount = clickedCount + 1;
     // if (warunek) {
@@ -15,25 +14,20 @@ export function ReactIfStatements() {
     // }
 
     if (newClickedCount >= 5) {
-      setText('Kliknięto przycisk 5 lub więcej razy!')
+      setText('Kliknięto przycisk 5 lub więcej razy!');
     } else {
-      setText('Kliknięto przycisk mniej niż 5 razy')
+      setText('Kliknięto przycisk mniej niż 5 razy');
     }
-    
+
     setClickedCount(newClickedCount);
-    ;
   }
 
   return (
     <div>
       <h1>React If Statements</h1>
       <button onClick={handleClick}>Kliknij mnie!</button>
-      <p className="test">{text}</p> 
-      {
-        clickedCount > 15 && (
-        <p>Ilość kliknięć: {clickedCount}</p>
-      )}     
-      
+      <p className="test">{text}</p>
+      {clickedCount > 15 && <p>Ilość kliknięć: {clickedCount}</p>}
     </div>
   );
 }

@@ -11,13 +11,13 @@ export function SingleQuestion({ answer, question }) {
   }
 
   function changeText() {
-    if (isOpen) {
+    if (isOpen = true) {
       setAnswerText(answer);
     } else {
       setAnswerText('');
     }
   }
-
+  console.log(isOpen)
   return (
     <div>
       <div className="questionBlock" onClick={handleClick}>

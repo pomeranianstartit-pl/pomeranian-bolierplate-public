@@ -1,0 +1,33 @@
+.dashboard {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: space-around;
+}
+
+.mydata-dashboard div{
+  font-size: 0.875rem;
+  margin: 0rem 0rem 1.25rem 0rem;
+}
+
+.mydata-section {
+  padding: 0.625rem 0.625rem 0rem;
+}
+
+.mydata-dashboard h3 {
+  margin: 0;
+}
+
+.mydata-dashboard p {
+  margin: 0;
+}
+
+.mydata-dashboard p.student-name {
+    font-size: 1.25rem;
+    font-weight: 600;
+}
+
+.dashboard div p {
+    max-width: 800px;
+    text-align: justify;
+}
