@@ -10,13 +10,6 @@ height: 100%;
 }
 
 
-.setting-icon {
-  width: 26px;
-  height: 26px;
-  margin-left: 20px;
-  color: grey;
-}
-
 /* Uwaga! Zmien kolor strzalki na szaro */
 
 
@@ -56,6 +49,7 @@ div.userdata {
 div.loginPanelHidden {
   display: none;
 }
+
 
 div.loginPanel {
   position: absolute;
@@ -103,6 +97,9 @@ div.loginPanel p {
   letter-spacing: -0.45px;
   padding-top: 25px;
 }
+
+
+
 div.loginPanel p > a {
   display: inline-block;
   padding-left: 10px;
