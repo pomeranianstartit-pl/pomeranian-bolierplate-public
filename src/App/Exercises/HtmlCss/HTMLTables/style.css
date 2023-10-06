@@ -1,0 +1,51 @@
+.html-table {
+    width: 70%;
+    background-color: rgb(234, 216, 216);
+    border-collapse: collapse;
+    /* background: linear-gradient(90deg, rgba(2, 0, 36, 1) 0%, rgba(131, 1, 132, 1) 44%, rgba(0, 212, 255, 1) 100%); */
+}
+
+.html-table th,
+.html-table td {
+    padding: 0.5rem;
+    text-align: left;
+    border: 3px solid black;
+}
+
+.html-table tr:nth-child(2n) {
+    background-color: lightblue;
+}
+.html-table tr:hover {
+    background-color: lightgreen;
+}
+.html-table th:hover,
+.html-table td:hover {
+    background-color: lightsalmon;    
+}
+
+
+.html-table2 th,
+.html-table2 td {
+    padding: 50px;
+    text-align: left;
+
+}
+.html-table2 td {
+    overflow: hidden;
+    color: var(--text-text-primary, #222);
+    text-overflow: ellipsis;
+    whitespace: nowrap;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 200;
+    line-height: 16.879px; /* 149.33% */ 
+}
+
+.naglowek th {
+    background-color: lightgray;
+}
+
+.html-table2 tr:nth-child(2n) {
+    background-color: #FFD5DB;
+}

@@ -15,7 +15,7 @@ export function RoundedImage({ src, size }) {
   // size height
   return (
     <div
-      className="roundedImage"
+      className="RoundedImage"
       style={{
         // backgroundImage: 'url(${src})',
         backgroundImage: 'url(' + src + ')',

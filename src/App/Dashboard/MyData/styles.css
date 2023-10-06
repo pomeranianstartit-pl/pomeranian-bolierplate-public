@@ -1,0 +1,23 @@
+.mydata-dashboard {
+    font-size: 0.875rem;
+
+}
+
+.mydata-section {
+    padding: 0.675rem 0.675rem 0.675rem 0rem;
+}
+
+.mydata-dashboard h3 {
+    margin: 0;
+}
+.mydata-dashboard p {
+
+    margin: 0;
+  
+  }
+
+.dashboard {
+    display: flex;
+    justify-content: space-between;
+    gap: 1rem;
+}
