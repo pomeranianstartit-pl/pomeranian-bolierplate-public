@@ -38,3 +38,7 @@ aside a.active {
 aside svg:has(+a.active) path {
   stroke:var(--color-red);
 }
+.faqIcon {
+  width: 25px;
+
+}

@@ -15,6 +15,7 @@ import { Calendar } from './App/Calendar';
 
 import { CV } from './App/CV';
 import { Faq } from './App/Faq';
+import { MaterialUI } from './App/MaterialUI';
 
 export function App() {
   return (
@@ -29,6 +30,7 @@ export function App() {
           <Route path="blocks/*" element={<Blocks />} />
           <Route path="blog/" element={<Blog />} />
           <Route path="faq/*" element={<Faq />} />
+          <Route path="material-ui/*" element={<MaterialUI />} />
 
           <Route path="*" element={<NotFound />} />
         </Route>
