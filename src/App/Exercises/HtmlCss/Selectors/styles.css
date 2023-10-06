@@ -86,7 +86,6 @@ h1 {}
   border: 2px solid black;
 } */
 
-
 /* ---------------------------------------- */
 /* 4b. Attribute selector with value */
 /*
@@ -119,7 +118,7 @@ h1 {}
 
 */
 
-button[id$="ButtonId"] {
+button[id$='ButtonId'] {
   background-color: aqua;
   border: 2px solid black;
 }
@@ -132,11 +131,10 @@ button[id$="ButtonId"] {
 
 */
 
-button[id*="Button"] {
+button[id*='Button'] {
   background-color: green;
   border: 2px solid black;
 }
-
 
 /* ---------------------------------------- */
 /* 5. Combinators - Descend Combinator (space) */
@@ -153,7 +151,8 @@ button[id*="Button"] {
   border: 2px solid black;
 }
 
-.secondDiv [href="http://onet.pl"] {
+.secondDiv [href="http://onet.pl"]
+{
   background-color: red;
   border: 5px solid yellow;
 }
@@ -166,7 +165,6 @@ button[id*="Button"] {
 [] > [] {}
 
 */
-
 
 #usersList > li {
   background-color: aqua;
@@ -194,10 +192,10 @@ div + p {
   border: 2px solid black;
 }
 
-p + p {
+/* p + p {
   background-color: red;
   border: 2px solid yellow;
-}
+} */
 
 /* ---------------------------------------- */
 /* 8. Pseudo classes - first-child */
