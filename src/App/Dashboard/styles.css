@@ -60,3 +60,13 @@
 .dashboard-card:hover {
   box-shadow: 1px 3px 17px 4px rgba(223, 49, 49, 0.48);
 }
+.photo {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  background: aqua;
+}
+.dashboard-aside {
+  display: inline-flex;
+  flex-direction: column;
+}

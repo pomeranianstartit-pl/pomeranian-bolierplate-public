@@ -57,7 +57,15 @@ export const Dashboard = () => {
           </div>
         ))}
       </div>
-      <aside className="dashboard-aside"></aside>
+      <aside className="dashboard-aside">
+        <div className="photo"></div>
+        <h2>Anna Matyasek</h2>
+        <p>Gdańsk</p>
+        <p>telefon</p>
+        <number>222-222-222</number>
+        <p>e-mail</p>
+        <email>anna@wp.pl</email>
+      </aside>
     </div>
   );
 };
