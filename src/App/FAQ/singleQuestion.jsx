@@ -2,11 +2,22 @@ import { useState } from 'react';
 
 export function SingleQuestion({ answer, question }) {
   const [isOpen, setIsOpen] = useState(false);
+  const [answerText, setAnswerText] = useState('');
 
   function handleClick() {
     setIsOpen(!isOpen);
     console.log(isOpen);
+    changeText();
   }
+
+  function changeText() {
+    if (isOpen) {
+      setAnswerText(answer);
+    } else {
+      setAnswerText('');
+    }
+  }
+
   return (
     <div>
       <div className="questionBlock" onClick={handleClick}>
@@ -15,7 +26,7 @@ export function SingleQuestion({ answer, question }) {
           {question}
           <span className="blockTitle"></span>
         </h4>
-        <div className="solution">{answer}</div>
+        <div className="solution">{answerText}</div>
       </div>
     </div>
   );
