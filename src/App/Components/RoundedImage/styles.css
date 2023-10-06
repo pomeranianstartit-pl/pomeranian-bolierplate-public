@@ -1,9 +1,15 @@
 .roundedImage {
   width: 200px;
+
   height: 200px;
-  border-radius: 100%;
+
   background-position: center;
-  background-size: contain;
-  background-color: gray;
+
+  background-repeat: no-repeat;
+
+  background-size: cover;
+
+  border-radius: 50%;
+
   filter: grayscale(100%);
 }

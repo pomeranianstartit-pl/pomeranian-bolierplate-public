@@ -1,0 +1,10 @@
+.dashboardMyData {
+  font-size: 0.875rem;
+}
+.myDataSection {
+  padding: 0.625rem 0.625rem 0.625rem 0rem;
+}
+.dashboardMyData h3,
+.dashboardMyData p {
+  margin: 0;
+}
