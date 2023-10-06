@@ -1,16 +1,20 @@
 import { useState } from 'react';
 import React from 'react';
+import LoginPanel from '../Components/LoginPanel';
 
 import './styles/header.css';
 import { SettingIcon } from '../Components/Icons/SettingIcon';
 import { ArrowIcon } from '../Components/Icons/ArrowIcon';
 import { ElipseIcon } from '../Components/Icons/ElipseIcon';
-
-//utworz mi komponent react o nazie Logo ze sciezki do pliku ktora podalem
 import { ReactComponent as PomeranianLogo } from '../Images/start-it-logo.svg';
-// import { HeaderMenu } from '../Components/HeaderMenu';
 
-export function AppHeader() {
+export const AppHeader = ({ name, position }) => {
+  const [isMenuOpen, setIsMenuOpen] = useState(false);
+
+  const handleArrowClick = () => {
+    setIsMenuOpen(!isMenuOpen);
+  };
+
   return (
     //tag jsx -> html
     <header>
@@ -29,9 +33,10 @@ export function AppHeader() {
         <p>Katarzyna</p>
         <p>kursantka</p>
       </div>
-      <div>
-        <ArrowIcon />
-      </div>
+
+      <ArrowIcon onClick={handleArrowClick} />
+
+      {isMenuOpen && <LoginPanel onClick={handleArrowClick} />}
     </header>
   );
-}
+};

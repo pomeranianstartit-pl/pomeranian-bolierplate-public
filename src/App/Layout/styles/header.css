@@ -32,5 +32,6 @@ header.header-title {
   font-weight: 400;
   line-height: normal;
 }
-
-
+.arrowIcon  {
+  stroke:var(--color-red);
+}
