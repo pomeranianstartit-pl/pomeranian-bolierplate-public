@@ -6,7 +6,7 @@ export function SingleQuesion({ answer, quesion }) {
     <div className="faq-item">
       <div onClick={() => setIsOpen(!isOpen)} className="faq-item-header">
         <img src="/chevron.svg" alt="" />
-        <h2 className="faq-item-title">{quesion}</h2>
+        <h2 className="faq-item-title"> {quesion}</h2>
         <p className="faq-item-text">{answer}</p>
       </div>
       {isOpen && <p className="faq-item-text">{answer}</p>}

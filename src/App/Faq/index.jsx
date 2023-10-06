@@ -6,7 +6,7 @@ export function Faq() {
     <div className="faq">
       <img src="/_ FAQ.svg" alt="" />
       <p>Tutaj znajdź odpowiedzi na najczęściej zadawane pytania</p>
-      <div className="faq-item">
+      <div className="faq-padding">
         <SingleQuesion
           quesion="Jak mogę zapisać się na szkolenie?"
           answer="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Eleifend
@@ -16,14 +16,12 @@ export function Faq() {
         tincidunt nisl pellentesque ut adipiscing non.Lorem ipsum dolor sit
         amet, consectetur adipiscing elit."
         />
-        <div className="faq-item-header">
-          <img src="/Vector.svg" alt="" />
-          <SingleQuesion quesion="Jak mogę zapisać się na szkolenie?" />
-          <div className="faq-item-header">
-            <img src="/Vector.svg" alt="" />
-            <SingleQuesion quesion="Jak mogę zapisać się na szkolenie?" />
-          </div>
-        </div>
+      </div>
+      <div className="faq-padding">
+        <SingleQuesion quesion="Jak mogę zapisać się na szkolenie?" />
+      </div>
+      <div className="faq-padding">
+        <SingleQuesion quesion="Jak mogę zapisać się na szkolenie?" />
       </div>
     </div>
   );
