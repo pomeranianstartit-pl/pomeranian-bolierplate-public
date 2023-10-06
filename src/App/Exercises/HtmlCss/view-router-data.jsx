@@ -9,6 +9,8 @@ import { ColorsMetaData } from './Colors/router-data';
 import { ImageFilesMetaData } from './ImageFiles/router-data';
 import { CssFilterMetaData } from './CssFilter/router-data';
 import { MediaFilesMetaData } from './MediaFiles/router-data';
+import { BoxModelMetaData } from './BoxModel/router-data';
+import { HTMLTableMetaData } from './HTMLTables/router-data';
 import { ArrayRenderToTableMetaData } from './ArrayRenderToTable/router-data';
 
 export const blockRouterMetaData = [
@@ -21,6 +23,8 @@ export const blockRouterMetaData = [
   ImageFilesMetaData,
   CssFilterMetaData,
   MediaFilesMetaData,
+  BoxModelMetaData,
+  HTMLTableMetaData,
   ArrayRenderToTableMetaData,
 ];
 export const blockRouterData = getParsedRouterDataList(blockRouterMetaData);
