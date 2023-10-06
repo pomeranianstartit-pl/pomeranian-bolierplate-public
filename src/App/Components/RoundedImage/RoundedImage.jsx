@@ -10,7 +10,7 @@ export function RoundedImage({ src, size }) {
       style={{
         backgroundImage: `url(${src})`,
         width: size.width,
-        height: size.height + 'px',
+        height: size.height,
       }}
     ></div>
   );

@@ -22,3 +22,28 @@ header .logo {
   height: 40vmin;
   pointer-events: none;
 }
+
+
+header .headerGeneralContainer{
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  }
+
+
+header .headerLeftContainer{
+  /* width: 50%; */
+  display: flex;
+  justify-content: flex-start;
+}
+
+header .headerRightContainer{
+  width: 100%;
+  max-width: 13rem;
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+  justify-content: space-between;
+}
+

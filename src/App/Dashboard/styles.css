@@ -1,2 +1,15 @@
 .dashboard {
+    display: flex;
+    justify-content: space-between;
 }
+
+.dashboard .dashboardLeft{
+  width: 665px;
+}
+
+.dashboard .dashboardRight{
+    width: 20.875rem;
+    height: 22.5rem;
+    align-content: center;
+  }
+  

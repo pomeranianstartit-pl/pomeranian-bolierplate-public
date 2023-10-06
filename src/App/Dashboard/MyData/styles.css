@@ -1,0 +1,32 @@
+.generalMyData{
+    font-size: 0.875rem;
+}
+
+.myDataGeneral h3{
+    color:  #23213D;
+    font-size: 1.375rem;
+    font-weight: 500;
+    line-height: normal;
+    margin-bottom: 0;
+}
+
+.myDataGeneral div{
+    font-size: 0.875rem;
+    font-weight: 400;
+    line-height: 1.25rem; 
+}
+
+
+.generalMyData .myDataMail{
+    padding: 0.625rem 0.625rem 0.625rem 0rem;
+    font-size: 0.875rem;
+    font-weight: 400;
+    line-height: 1.25rem; 
+}
+
+.generalMyData .myDataPhone{
+    padding: 0.625rem 0.625rem 0.625rem 0rem;
+    font-size: 0.875rem;
+    font-weight: 400;
+    line-height: 1.25rem; 
+}
