@@ -26,7 +26,7 @@ export function RoundedImage({ src, size }) {
         // backgroundImage: `url(${src})`,
         backgroundImage: 'url(' + src + ')',
         width: size.width,
-        height: size.height + 'rem',
+        height: size.height,
       }}
     ></div>
   );
