@@ -5,10 +5,13 @@ export function RoundedImage({ src, size }) {
     <div
       className="roundedImage"
       style={{
-        //backgroundImage: `URL(${src})`,
-        backgroundImage: 'url(' + src + ')',
+        backgroundImage: `url(${src})`,
+
+        // backgroundImage: 'url(' + src + ')',
+
         width: size.width,
-        height: size.height + 'px',
+
+        height: size.height,
       }}
     ></div>
   );

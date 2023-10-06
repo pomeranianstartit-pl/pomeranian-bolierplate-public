@@ -22,3 +22,20 @@ header .logo {
   height: 40vmin;
   pointer-events: none;
 }
+.headerContainer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 100%;
+}
+.NameAndTitle {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.headerMenu {
+  display: flex;
+  max-width: 20rem;
+  gap: 2rem;
+  align-items: center;
+}
