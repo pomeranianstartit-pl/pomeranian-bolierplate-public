@@ -5,6 +5,7 @@ import { EditIcon } from '../Components/Icons/EditIcon';
 import { SettingIcon } from '../Components/Icons/SettingIcon';
 import { BookIcon } from '../Components/Icons/BookIcon';
 import { FAQIcon } from '../Components/Icons/FAQIcon';
+import MyImgae from './photo-AnnaM.jpeg';
 
 const CARDS = [
   {
@@ -58,13 +59,22 @@ export const Dashboard = () => {
         ))}
       </div>
       <aside className="dashboard-aside">
-        <div className="photo"></div>
-        <h2>Anna Matyasek</h2>
-        <p>Gdańsk</p>
-        <p>telefon</p>
-        <number>222-222-222</number>
-        <p>e-mail</p>
-        <email>anna@wp.pl</email>
+        <div className="photo">
+          <img src={MyImgae} alt="ania" className="photo" />
+        </div>
+        <div className="dashboard-aside">
+          <h2>Anna Matyasek</h2>
+          <p>Gdańsk</p>
+        </div>
+        <div className="dashboard-aside">
+          {' '}
+          <p>telefon</p>
+          <p>222-222-222</p>
+        </div>
+        <div className="dashboard-aside">
+          <p>e-mail:</p>
+          <p>anna@wp.pl</p>
+        </div>
       </aside>
     </div>
   );
