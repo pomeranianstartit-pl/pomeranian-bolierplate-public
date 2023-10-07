@@ -90,10 +90,10 @@ export const Dashboard = () => {
         <div className="contact-info">
           <div className="contact-item">
             <div className="contact-label">Phone:</div>
-            <div className="contact-value">506088756</div>
+            <div className="contact-value">{phone}</div>
           </div>
           <div className="contact-item">
-            <div className="contact-label">{phone}</div>
+            <div className="contact-label">Email:</div>
             <div className="contact-value">{email}</div>
           </div>
           <img
