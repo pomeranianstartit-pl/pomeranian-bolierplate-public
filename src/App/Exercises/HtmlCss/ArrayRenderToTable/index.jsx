@@ -14,11 +14,8 @@ export function ArrayRenderToTable() {
   const bands = [
     {
       band: 'The Clash',
-
       yearFormed: 1976,
-
       albums: 6,
-
       mostFamousSong: 'London Calling',
     },
 
