@@ -1,0 +1,78 @@
+.floatsAndPositioning{
+
+}
+
+.floatsAndPositioningRelative{
+    /* relative jest potrzebny zeby element ktory ma nadana pozycje absolutna */
+    /* wiedzial co bedzie jego zerem / wzgledem czego te pozycje */
+    position: relative;
+    padding: 27px 31px;
+    background: #EBEBEB;
+}
+
+.floatsAndPositioningRelative:hover .floatsAndPositioningAbsolute{
+    display: block;
+    top: 100px;
+    left: 100px;
+    transition: all 4s;
+}
+
+.floatsAndPositioningAbsolute{
+    /* display: none; */
+    display: block;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    padding: 12px 20px;
+    background: red;
+    border: 1px solid black;
+    border-radius: 5.5px;
+    
+}
+
+.square-wrapper{
+    height: 100px;
+    background: red;
+    margin-top: 80px;
+}
+
+.square{
+    width: 120px;
+    height: 120px;
+    border-radius: 8px;
+    border: 2px solid #c8cbd1;
+}
+
+.square1{
+    position: relative;
+    background: #c8cbd1;
+}
+
+.square2{
+    position: absolute;
+    background: #999;
+    left: 27px;
+    bottom: 21px;
+    z-index: 1;
+}
+
+.square3{
+    position: absolute;
+    background: #6B7280;
+    left: 54px;
+    bottom: 42px;
+}
+
+.float-wrapper {
+
+    margin-top: 100px;
+  
+  }
+  
+   
+  
+  .float-img {
+  
+    float: left;
+  
+  }

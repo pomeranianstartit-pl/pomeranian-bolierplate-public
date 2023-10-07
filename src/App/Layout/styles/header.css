@@ -47,3 +47,27 @@ header .headerRightContainer{
   justify-content: space-between;
 }
 
+.arrowWrapper{
+  position:relative;
+}
+
+.arrowWrapper:hover .arrowPopUp{
+  display: block;
+  top: 10px;
+  left: 20px;
+  z-index: 2;
+}
+
+
+.arrowPopUp{
+  display: none;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  padding: 12px 20px;
+  background: red;
+  border: 1px solid black;
+  border-radius: 5.5px;
+ 
+  
+}

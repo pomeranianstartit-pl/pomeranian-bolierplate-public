@@ -22,7 +22,16 @@ export function AppHeader() {
 
           <RoundedImage src={snowWolf} size={{ width: 49, height: 49 }} />
           <PersonInfo />
-          <img src={toggleArrow} width="20" height="20" alt="arrow" />
+          <div className="arrowWrapper">
+            <img
+              className="arrowImage"
+              src={toggleArrow}
+              width="20"
+              height="20"
+              alt="arrow"
+            />
+            <div className="arrowPopUp"></div>
+          </div>
         </div>
       </div>
     </header>
