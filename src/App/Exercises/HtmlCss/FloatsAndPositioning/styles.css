@@ -1,0 +1,95 @@
+.floats__positioning-relative {
+  position: relative;
+
+  padding: 27px 31px;
+
+  background: #ebebeb;
+}
+
+.floats__positioning-relative:hover .floats__positioning-absolute {
+  display: block;
+
+  transition: all 1s ease-in-out;
+
+  /* top: -100px; */
+
+  bottom: 100px;
+
+  left: -100px;
+}
+
+.floats__positioning-absolute {
+  display: none;
+
+  transition: all 1s ease-in-out;
+
+  position: absolute;
+
+  bottom: -100px;
+
+  left: 50px;
+
+  padding: 12px 20px;
+
+  border-radius: 5.5px;
+
+  border: 1px solid #999;
+
+  width: 100%;
+
+  background: #ffd5db;
+}
+
+.square-wrapper {
+  height: 100px;
+
+  background: #ebebeb;
+
+  margin-top: 50px;
+}
+
+.square {
+  width: 120px;
+
+  height: 120px;
+
+  border-radius: 8px;
+
+  border: 2px solid #c8cbd1;
+}
+
+.square-1 {
+  position: relative;
+
+  background: #c8cbd1;
+}
+
+.square-2 {
+  position: absolute;
+
+  background: #999;
+
+  left: 27px;
+
+  bottom: 21px;
+
+  z-index: 1;
+}
+
+.square-3 {
+  position: absolute;
+
+  background: #6b7280;
+
+  left: 54px;
+
+  bottom: 42px;
+}
+
+.float-wrapper {
+  margin-top: 100px;
+}
+
+.float-img {
+  float: left;
+}
