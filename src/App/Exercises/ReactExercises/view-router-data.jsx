@@ -12,6 +12,8 @@ import { ToDoWithServerMetaData } from './ToDoWithServer/router-data';
 
 import { FormsMetaData } from './Forms/router-data';
 
+import { FormsExerciseMetaData } from './FormsExercise/router-data';
+
 export const blockRouterMetaData = [
   SubRouteExampleMetaData,
   ReactEventsUseStateMetaData,
@@ -19,6 +21,7 @@ export const blockRouterMetaData = [
   ReactIfStatementsMoreOrLessMetaData,
   ToDoWithServerMetaData,
   FormsMetaData,
+  FormsExerciseMetaData,
 ];
 
 export const blockRouterData = getParsedRouterDataList(blockRouterMetaData);
