@@ -1,7 +1,7 @@
 import { useState } from 'react';
 
 export function ReactOnChange() {
-  const [name, setName] = useState(' ');
+  const [name, setName] = useState('');
 
   function handleChange(event) {
     setName(event.target.value);
@@ -15,7 +15,7 @@ export function ReactOnChange() {
           type="text"
           placeholder="Wpisz swoje imię"
           value={name}
-          OnChange={handleChange}
+          onChange={handleChange}
         />
       </div>
       <div>Moje imię to: {name}</div>
