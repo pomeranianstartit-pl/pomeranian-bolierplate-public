@@ -6,7 +6,6 @@ export const Dashboard = () => {
   return (
     <div className="dashboard">
       <div>
-        <h1>Dashboard</h1>
         <Blocks />
       </div>
       <MyData />
