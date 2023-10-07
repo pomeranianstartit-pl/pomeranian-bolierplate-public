@@ -7,7 +7,7 @@ export const MyData = () => {
     <div className="mydata-dashboard">
       <RoundedImage src={snowWolf} size={{ width: 100, height: 100 }} />
       <div>
-        <p className='student-name'>Arkadio Frel</p>
+        <p className="student-name">Arkadio Frel</p>
         <p>Starogard Gdański</p>
       </div>
       <div>
