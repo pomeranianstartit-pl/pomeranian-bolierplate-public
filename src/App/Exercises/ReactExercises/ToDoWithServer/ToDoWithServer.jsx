@@ -10,7 +10,7 @@ const testPost = {
   author: 'Szymon',
 };
 
-const itemToDelete = 5;
+const itemToDelete = 1;
 
 export function ToDoWithServer() {
   const [todos, setTodos] = useState([]);
