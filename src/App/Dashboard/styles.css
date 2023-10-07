@@ -58,6 +58,7 @@
   align-items: flex-start;
   justify-content: flex-start;
   margin: 10px;
+  border-radius: 10px;
 }
 .dashboard-aside h2 {
   font-size: 22px;
@@ -69,4 +70,5 @@
   font-size: 14px;
   font-weight: 400;
   opacity: 0.4;
+  padding-top: 3px;
 }
