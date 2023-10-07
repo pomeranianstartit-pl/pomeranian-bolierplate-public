@@ -4,13 +4,15 @@ import './styles.css';
 
 export const Dashboard = () => {
   return (
-    <div className="dashboard">
-      <div className="dashboardLeft">
-        <h1>Dashboard</h1>
-        <Blocks />
-      </div>
-      <div className="dashboardRight">
-        <MyData />
+    <div className="dashboardGeneral">
+      <div className="dashboard">
+        <div className="dashboardLeft">
+          <h1>Dashboard</h1>
+          <Blocks />
+        </div>
+        <div className="dashboardRight">
+          <MyData />
+        </div>
       </div>
     </div>
   );

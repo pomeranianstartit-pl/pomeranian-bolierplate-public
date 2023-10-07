@@ -12,6 +12,7 @@ import { Calendar } from './App/Calendar';
 import { Settings } from './App/Settings';
 import { Blog } from './App/Blog/blog';
 import { Faq } from './App/FAQ/';
+import { Techstack } from './App/Techstack';
 
 export function App() {
   return (
@@ -30,6 +31,7 @@ export function App() {
           <Route path="blocks/*" element={<Blocks />} />
           <Route path="blog/*" element={<Blog />} />
           <Route path="faq/*" element={<Faq />} />
+          <Route path="techstack/*" element={<Techstack />} />
           <Route path="*" element={<NotFound />} />
         </Route>
       </Routes>

@@ -1,3 +1,7 @@
+.dashboardGeneral{
+
+}
+
 .dashboard {
     display: flex;
     justify-content: space-between;
@@ -10,6 +14,8 @@
 .dashboard .dashboardRight{
     width: 20.875rem;
     height: 22.5rem;
-    align-content: center;
+    padding-top: 2.81rem;
+    padding-left: 1.44rem;
   }
   
+

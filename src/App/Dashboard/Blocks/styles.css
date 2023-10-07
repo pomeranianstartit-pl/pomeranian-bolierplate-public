@@ -5,3 +5,35 @@
     font-weight: 400;
     line-height: 1.6875rem; 
 }
+
+.blocksData .gridWrapper{
+    display: grid;
+    /* grid-template-columns: repeat(3 1fr); */
+    /* grid-template-columns: 1fr 1fr 1fr; */
+    /* grid-template-columns: 200px 200px 200px; */
+    grid-template-columns: repeat( 3, minmax(200px, 1fr) );
+    /* grid-template-columns: repeat(auto-fit, minmax(200px,3fr)); */
+    grid-auto-columns: 12.625rem;
+    row-gap: 40px;
+    column-gap: 2.2rem;
+  }
+  
+  /* .blocksData .gridWrapper .rightPanel{
+    grid-column: 4 / 5;
+    grid-row: 1 / 2;
+     
+} */
+
+/* class name z singlebox! */
+ .blocksData .singleBox{
+    padding: 1.25rem 1.75rem 1.25rem 1.75rem;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    gap: 0.62rem;
+    border: 1px solid #C8CBD1;
+    border-radius: 5%;
+    box-shadow: 0px 3px 9px 0px rgba(0, 0, 0, 0.15), 0px 2px 28px 0px rgba(0, 0, 0, 0.12);
+}
