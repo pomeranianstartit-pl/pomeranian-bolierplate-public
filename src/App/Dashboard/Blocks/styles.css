@@ -1,0 +1,53 @@
+.block-tiles {
+  display: flex;
+  gap: 2rem;
+  flex-wrap: wrap;
+}
+.block-tile-box {
+  border-radius: 8px;
+  border: 1px solid #fe3756;
+  background: #fff;
+  box-shadow: 0px 3px 9px 0px rgba(0, 0, 0, 0.15),
+    0px 2px 28px 0px rgba(0, 0, 0, 0.12);
+  padding: 20px 28px 20px 28px;
+  max-width: 202px;
+  text-align: center;
+  gap: 10px;
+}
+.block-tiles-icon {
+  height: 43px;
+  width: 43px;
+}
+.see-more-color {
+  color: #fe3756;
+  font-family: Poppins;
+  font-size: 1rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 24px;
+}
+
+.block-tile-box .block-tiles-title {
+  margin-block-start: 0;
+  margin-block-end: 0;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 34px;
+}
+.block-tile-box .block-tiles-description {
+  color: #000;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 20px;
+  margin: 10px 0;
+}
+.block-tile-box:hover {
+  box-shadow: 0px 2px 26px 0px rgba(254, 55, 86, 0.54);
+  transition: all 0.25s ease-in-out;
+}
+.block-tile-box:hover > .block-tiles-title {
+  color: #ff4d69;
+  transition: all 0.25s ease-in-out;
+}
