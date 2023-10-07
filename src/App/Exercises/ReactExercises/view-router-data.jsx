@@ -14,6 +14,8 @@ import { FormsMetaData } from './Forms/router-data';
 
 import { FormsExerciseMetaData } from './FormsExercise/router-data';
 
+import { AuthFirebaseMetaData } from './AuthFirebase/router-data';
+
 export const blockRouterMetaData = [
   SubRouteExampleMetaData,
   ReactEventsUseStateMetaData,
@@ -22,6 +24,7 @@ export const blockRouterMetaData = [
   ToDoWithServerMetaData,
   FormsMetaData,
   FormsExerciseMetaData,
+  AuthFirebaseMetaData,
 ];
 
 export const blockRouterData = getParsedRouterDataList(blockRouterMetaData);
