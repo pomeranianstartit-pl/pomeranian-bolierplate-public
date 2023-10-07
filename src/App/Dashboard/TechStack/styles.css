@@ -1,0 +1,21 @@
+.techstack {
+  display: grid;
+  grid-template-columns: 6fr 3fr;
+  grid-template-rows: 3;
+}
+
+.techstack-icons {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 35px;
+  border-radius: 100%;
+}
+
+.techstack-box {
+  display: flex;
+  flex-direction: column;
+  min-height: 121px;
+  justify-content: space-between;
+  align-items: center;
+}
+   
