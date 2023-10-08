@@ -1,4 +1,9 @@
 import React from 'react';
+import '@fontsource/roboto/300.css';
+import '@fontsource/roboto/400.css';
+import '@fontsource/roboto/500.css';
+import '@fontsource/roboto/700.css';
+
 import { Routes, Route, BrowserRouter, Navigate } from 'react-router-dom';
 
 import { NotFound } from './App/Components/NotFound/NotFound';
@@ -13,6 +18,7 @@ import { Settings } from './App/Settings';
 import { Blog } from './App/Blog/blog';
 import { Faq } from './App/FAQ/';
 import { Techstack } from './App/Techstack';
+import { MaterialUI } from './App/MaterialUI';
 
 export function App() {
   return (
@@ -31,6 +37,7 @@ export function App() {
           <Route path="blocks/*" element={<Blocks />} />
           <Route path="blog/*" element={<Blog />} />
           <Route path="faq/*" element={<Faq />} />
+          <Route path="material-ui/*" element={<MaterialUI />} />
           <Route path="techstack/*" element={<Techstack />} />
           <Route path="*" element={<NotFound />} />
         </Route>
