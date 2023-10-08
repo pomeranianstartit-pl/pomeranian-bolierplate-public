@@ -15,7 +15,8 @@
     /* grid-template-columns: repeat(auto-fit, minmax(200px,3fr)); */
     grid-auto-columns: 12.625rem;
     row-gap: 40px;
-    column-gap: 2.2rem;
+    column-gap: 2rem;
+    margin-top: 2rem;
   }
   
   /* .blocksData .gridWrapper .rightPanel{
