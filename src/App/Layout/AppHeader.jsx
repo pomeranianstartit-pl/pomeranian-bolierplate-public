@@ -1,13 +1,18 @@
 import React from 'react';
-
 import './styles/header.css';
 import PomeranianLogo from '../Images/start-it-logo.svg';
 import settingLogo from '../Images/setting.svg';
 import { RoundedImage } from '../Components/RoundedImage/RoundedImage';
 import snowWolf from '../Images/snow-wolf.png';
 import { Arrow } from '../Components/Icons/Arrow';
+import { LoginBox } from './LoginBox/LoginBox';
 
 export function AppHeader() {
+  const [isMenuOpen, setIsMenuOpen] = React.useState(false);
+  function toggleMenu() {
+    setIsMenuOpen(!isMenuOpen);
+  }
+
   return (
     <header>
       <div className="header-container">
@@ -19,7 +24,14 @@ export function AppHeader() {
             <span>Patrycja</span>
             <span>kursant</span>
           </div>
-          <Arrow />
+          <div className="box-relative">
+            <Arrow onClick={toggleMenu}></Arrow>
+          </div>
+          {isMenuOpen && (
+            <div className="box-absolute">
+              <LoginBox handleClick={toggleMenu} />
+            </div>
+          )}
         </div>
       </div>
     </header>
