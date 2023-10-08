@@ -1,0 +1,56 @@
+.appPopUp{
+    border: 0.5px solid #999;
+    border-radius: 0.5rem;
+    background: #FFF;
+    padding: 0.5rem 1.8rem 0.5rem 1.8rem;
+
+  
+    box-shadow: 0px 65px 30px 0px rgba(0, 0, 0, 0.01), 0px 8px 20px 0px rgba(0, 0, 0, 0.04), 0px 17px 35px 0px rgba(0, 0, 0, 0.05), 0px -4px 26px 0px rgba(0, 0, 0, 0.08);
+
+    display: flex;
+    width: 25rem;
+    height: 13.1875rem;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1.5rem;
+}
+
+.appPopUp img{
+    width: 1.25rem;
+    height: 1.25rem;
+    flex-shrink: 0;
+    /* position: absolute; */
+    display: flex;
+    align-self: flex-end;
+    z-index: 2;
+}
+
+.appPopUp .button{
+    /* position: relative; */
+    width: 20.375rem;
+    height: 3.5rem;
+    padding: 1.25rem 2.25rem;
+
+    border-radius: 0.5rem;
+    border: 1px solid #FE3756;
+    background:  #FE3756;
+    color: #FFF;
+
+    font-size: 1rem;
+    font-weight: 500;
+    }
+
+    .appPopUp .text{
+    color:  #222;
+    text-align: center;
+    font-size: 0.9375rem;
+    font-weight: 500;
+    line-height: 140%; /* 1.3125rem */
+    letter-spacing: -0.02813rem;
+    }
+
+    .appPopUp .text a{
+    color: #FE3756;
+    text-decoration: none;
+    }

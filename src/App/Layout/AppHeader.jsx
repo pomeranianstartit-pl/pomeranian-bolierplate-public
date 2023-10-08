@@ -1,5 +1,5 @@
 import React from 'react';
-
+import { useState } from 'react';
 import './styles/header.css';
 
 // dwie kropki poniewaz musimy wrocic do katalogu wyzej
@@ -9,8 +9,20 @@ import snowWolf from '../Images/snow-wolf.png';
 import toggleArrow from '../Images/toggle-arrow.svg';
 import { RoundedImage } from '../Components/RoundedImage/RoundedImage';
 import { PersonInfo } from '../Components/PersonInfo/PersonInfo';
+import { AppPopUp } from './AppPopUp';
+
+// export function TogglePopUp() {
+//   const [popUpOpen, setPopUpOpen] = useState(false);
+//   setPopUpOpen(!popUpOpen);
+// }
 
 export function AppHeader() {
+  const [popUpOpen, setPopUpOpen] = useState(false);
+
+  function togglePopUp() {
+    setPopUpOpen(!popUpOpen);
+  }
+
   return (
     <header>
       <div className="headerGeneralContainer">
@@ -25,12 +37,18 @@ export function AppHeader() {
           <div className="arrowWrapper">
             <img
               className="arrowImage"
+              onClick={togglePopUp}
               src={toggleArrow}
               width="20"
               height="20"
               alt="arrow"
             />
-            <div className="arrowPopUp"></div>
+            {popUpOpen && (
+              <div className="divPopUp">
+                <AppPopUp handleClickPop={togglePopUp} />
+              </div>
+            )}
+            {/* <div className="arrowPopUp"></div> */}
           </div>
         </div>
       </div>

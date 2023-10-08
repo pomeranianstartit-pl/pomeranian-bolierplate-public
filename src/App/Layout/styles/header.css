@@ -47,19 +47,21 @@ header .headerRightContainer{
   justify-content: space-between;
 }
 
-.arrowWrapper{
+.headerRightContainer .arrowWrapper{
   position:relative;
 }
 
-.arrowWrapper:hover .arrowPopUp{
+
+
+/* .arrowWrapper:hover .arrowPopUp{
   display: block;
   top: 10px;
   left: 20px;
   z-index: 2;
-}
+} */
 
 
-.arrowPopUp{
+/* .arrowPopUp{
   display: none;
   position: absolute;
   top: 0px;
@@ -68,6 +70,11 @@ header .headerRightContainer{
   background: red;
   border: 1px solid black;
   border-radius: 5.5px;
- 
-  
+} */
+
+.headerRightContainer .divPopUp{
+  position: absolute;
+  right: -1.9rem;
+  top: -2rem;
+
 }
