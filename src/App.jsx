@@ -13,6 +13,12 @@ import { Settings } from './App/Settings';
 import { Blog } from './App/Blog/Blog';
 import { Faq } from './App/Faq';
 import { TechStack } from './App/Dashboard/TechStack/TechStack';
+import { MaterialUi } from './App/MaterialUi';
+
+import '@fontsource/roboto/300.css';
+import '@fontsource/roboto/400.css';
+import '@fontsource/roboto/500.css';
+import '@fontsource/roboto/700.css';
 
 export function App() {
   return (
@@ -29,6 +35,7 @@ export function App() {
           <Route path="blog/*" element={<Blog />} />
           <Route path="faq/*" element={<Faq />} />
           <Route path="TechStack/*" element={<TechStack />} />
+          <Route path="material-ui/*" element={<MaterialUi />} />
           <Route path="*" element={<NotFound />} />
         </Route>
       </Routes>
