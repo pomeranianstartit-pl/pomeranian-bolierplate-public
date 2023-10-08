@@ -8,6 +8,7 @@ import { ToDoWithServerMetaData } from './ToDoWithServer/router-data';
 import { ToDoExerciseMetaData } from './ToDoExercise/router-data';
 import { FormsMetaData } from './Forms/router-data';
 import { AuthFirebaseMetaData } from './AuthFirebase/router-data';
+import { TestingMetaData } from './Testing/router-data';
 
 export const blockRouterMetaData = [
   SubRouteExampleMetaData,
@@ -18,5 +19,6 @@ export const blockRouterMetaData = [
   ToDoExerciseMetaData,
   FormsMetaData,
   AuthFirebaseMetaData,
+  TestingMetaData,
 ];
 export const blockRouterData = getParsedRouterDataList(blockRouterMetaData);
