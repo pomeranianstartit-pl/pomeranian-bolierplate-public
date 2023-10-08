@@ -32,6 +32,8 @@ import { blockRouterMetaData as blockRouterMetaDataFloats } from './FloatsAndPos
 
 import { blockRouterMetaData as blockRouterMetaDataSelfStudy } from './SelfStudy/router-data';
 
+import { blockRouterMetaData as blockRouterMetaDataTesting } from './Testing/router-data';
+
 export const blockRouterMetaData = [
   blockRouterMetaData121220231,
   blockRouterMetaTextFundamentals,
@@ -50,6 +52,7 @@ export const blockRouterMetaData = [
   blockRouterMetaDataArray,
   blockRouterMetaDataFloats,
   blockRouterMetaDataSelfStudy,
+  blockRouterMetaDataTesting,
 ];
 
 export const blockRouterData = getParsedRouterDataList(blockRouterMetaData);
