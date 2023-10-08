@@ -9,6 +9,7 @@ header {
   padding-left: 1.5rem;
   padding-right: 3rem;
   box-shadow: 0px 1px 9px 0px var(--color-grey);
+  
 }
 header > a:first-of-type {
   text-decoration: none;
@@ -61,4 +62,17 @@ font-size: 13px;
 font-style: normal;
 font-weight: 400;
 line-height: normal;
+}
+
+.arrow-LogBox {
+  position: relative;
+  top: 44;
+  right: 21;
+}
+
+.LogBox-wrapper {
+  position: absolute;
+  display: flex;
+  top: 100px;
+  right: 25px;
 }
