@@ -1,0 +1,15 @@
+.selectorsAndCascade div {
+    padding: 0 0 20px;
+}
+input{
+    background-color: red;
+}
+.unikalna-klasa1 {
+    color: blue;
+}
+#drugi-div {
+    color: hotpink;
+}
+[class*='unikalna-klasa']{
+color: green;
+}
