@@ -77,12 +77,11 @@ header .logo {
   align-items: center;
   width: 396px;
   height: 211px;
-  padding: 14px 0px 20px; /* tutaj*/
+  padding: 14px 0px 33px; /* tutaj*/
   flex-direction: column;
-  gap: 6px;
   border: 1px solid #999;
   border-radius: 4px;
-  background: #fff;  
+  background: #fff;
   font-size: 15px;
   font-style: normal;
   font-weight: 500;
@@ -93,15 +92,16 @@ header .logo {
   color: rgba(254, 55, 86, 1);
 }
 
-.arrow-line{
+.arrow-line {
   display: flex;
   width: 100%;
-  justify-content: flex-end; 
-  padding-right: 20px /* tutaj*/
+  justify-content: flex-end;
+  padding-right: 20px; /* tutaj*/
 }
 
 .arrow {
   position: relative;
+  transform: rotate(180deg);
 }
 
 .login-button {
@@ -121,3 +121,6 @@ header .logo {
   line-height: 31px; /* 172.222% */
 }
 
+.arrow-up {
+  
+}
