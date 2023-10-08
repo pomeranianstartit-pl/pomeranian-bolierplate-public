@@ -1,4 +1,4 @@
-import { AuthFirebase } from './AuthFirebase';
+import { AuthFirebase } from './index';
 
 export const AuthFirebaseMetaData = {
   path: 'auth-firebase',
