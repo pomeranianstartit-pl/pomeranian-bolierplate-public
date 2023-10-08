@@ -1,9 +1,10 @@
 .materialUi-buttons {
     display: flex;
-    flex-direction: row;
 
-    
-}
+  flex-direction: row;  
+}  
+
+
 
 .materialUi-section1{
 display: flex;
