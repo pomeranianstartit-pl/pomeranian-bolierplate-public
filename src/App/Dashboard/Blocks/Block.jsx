@@ -6,9 +6,7 @@ import { BookSavedIcon } from '../../Components/Icons/BookSavedIcon';
 import { MessageIcon } from '../../Components/Icons/MessageIcon';
 import { SettingIcon } from '../../Components/Icons/SettingIcon';
 
-
-
-export const Block = () => {
+export const Blocks = () => {
   return (
     <div className="blocks_grid">
       <SingleBlock
@@ -38,7 +36,7 @@ export const Block = () => {
       <SingleBlock
         title="FAQ"
         description="odpowiedzi na najczęstsze pytania"
-        icon={<SettingIcon />}
+        icon={<MessageIcon />}
         link="cv/*"
       />
     </div>

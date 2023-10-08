@@ -60,6 +60,64 @@ header .logo {
   line-height: normal;
 }
 
- .student-item .student-name {
+.student-item .student-name {
   font-weight: 700;
- }
+}
+
+.menu-relative {
+  position: relative;
+}
+
+.login-menu {
+  position: absolute;
+  top: -15px;
+  right: -21px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 396px;
+  height: 211px;
+  padding: 14px 0px 20px; /* tutaj*/
+  flex-direction: column;
+  gap: 6px;
+  border: 1px solid #999;
+  border-radius: 4px;
+  background: #fff;  
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 500;
+  letter-spacing: -0.45px;
+}
+
+.login-menu span {
+  color: rgba(254, 55, 86, 1);
+}
+
+.arrow-line{
+  display: flex;
+  width: 100%;
+  justify-content: flex-end; 
+  padding-right: 20px /* tutaj*/
+}
+
+.arrow {
+  position: relative;
+}
+
+.login-button {
+  display: flex;
+  height: 56px;
+  width: 326px;
+  justify-content: center;
+  align-items: center;
+  border-radius: 8px;
+  background-color: rgba(254, 55, 86, 1);
+  color: #fff;
+  text-align: center;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 500;
+  text-transform: uppercase;
+  line-height: 31px; /* 172.222% */
+}
+

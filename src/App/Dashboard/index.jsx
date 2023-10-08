@@ -1,4 +1,4 @@
-import { Block } from './Blocks/Block';
+import { Blocks } from './Blocks/Block';
 import { MyData } from './MyData/MyData';
 import './styles.css';
 
@@ -12,7 +12,7 @@ export const Dashboard = () => {
             Lorem ipsum dolor, sit amet consectetur adipisicing elit. Tempore
             explicabo!
           </p>
-          <Block />
+          <Blocks />
         </div>
         <MyData />
       </div>
