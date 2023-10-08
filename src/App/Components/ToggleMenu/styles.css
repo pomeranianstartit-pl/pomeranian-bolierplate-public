@@ -1,0 +1,59 @@
+.togglemenu {
+  width: 396px;
+  height: 211px;
+  border-radius: 4px;
+  background: #fff;
+}
+.togglemenu-relative {
+  position: relative;
+}
+.togglemenu-absolute {
+  position: absolute;
+  bottom: -170px;
+  left: -300px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  padding: 0px 35px 0px 35px;
+  box-shadow: 0px 65px 30px 0px rgba(0, 0, 0, 0.01),
+    0px 8px 20px 0px rgba(0, 0, 0, 0.04), 0px 17px 35px 0px rgba(0, 0, 0, 0.05),
+    0px -4px 26px 0px rgba(0, 0, 0, 0.08);
+}
+
+.register-button {
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 140%;
+  letter-spacing: -0.45px;
+  color: #fe3756;
+  background-color: #fff;
+  border: none;
+}
+.signIn-button {
+  padding: 20px 36px;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 31px;
+  text-align: center;
+  background-color: #fe3756;
+  border-radius: 8px;
+  color: #fff;
+}
+.vector-arrow {
+  width: 20px;
+  height: 20px;
+}
+.vector-wrapper {
+  text-align: right;
+}
+.noAccount-question {
+  text-align: center;
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 140%;
+  letter-spacing: -0.45px;
+  margin-top: 25px;
+}
