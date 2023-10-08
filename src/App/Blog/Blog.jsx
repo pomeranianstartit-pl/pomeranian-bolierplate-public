@@ -63,23 +63,15 @@ export function Blog() {
 
           <ul className="blog-list-li">
             <li>
-              <a
-                href="https://wiadomosci.wp.pl/to-zacieranie-sladow-chodzi-o-pakiety-wyborcze-sasina-6879848507329312a"
-                target="_blank"
-              >
+              <a href="https://wiadomosci.wp.pl/to-zacieranie-sladow-chodzi-o-pakiety-wyborcze-sasina-6879848507329312a">
                 WP.PL 1
               </a>
             </li>
             <li>
-              <a href="https://www.wp.pl/" target="_blank">
-                WP.PL 2
-              </a>
+              <a href="https://www.wp.pl/">WP.PL 2</a>
             </li>
             <li>
-              <a
-                href="https://www.onet.pl/film/onetfilm/tvn-wbil-szpile-tvp-pokazano-alternatywna-rzeczywistosc-telewizji-rzadowej/2ksezfp,681c1dfa"
-                target="_blank"
-              >
+              <a href="https://www.onet.pl/film/onetfilm/tvn-wbil-szpile-tvp-pokazano-alternatywna-rzeczywistosc-telewizji-rzadowej/2ksezfp,681c1dfa">
                 ONET.PL
               </a>
             </li>

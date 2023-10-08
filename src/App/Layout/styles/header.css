@@ -34,6 +34,7 @@ header .header_container {
   align-items: center;
   display: flex;
   gap: 1rem;
+  position: relative;
 }
 .header_name {
   display: flex;
@@ -43,4 +44,51 @@ header .header_container {
 .header_name_position {
   font-size: 0.8125rem;
   color: #999999;
+}
+
+.appear_square {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 24.8rem;
+  height: 12.2rem;
+  font-size: 0.9375rem;
+  font-style: normal;
+  font-weight: 500;
+
+  z-index: 5;
+  border-radius: 0.25rem;
+  background: #fff;
+
+  top: 0.19rem;
+  right: -0.2rem;
+
+  box-shadow: 0px 65px 30px 0px rgba(0, 0, 0, 0.01),
+    0px 8px 20px 0px rgba(0, 0, 0, 0.04), 0px 17px 35px 0px rgba(0, 0, 0, 0.05),
+    0px -4px 26px 0px rgba(0, 0, 0, 0.08);
+}
+.button_appheader {
+  display: flex;
+  justify-content: center;
+  width: 15.95rem;
+  padding: 1.25rem 2.25rem;
+  text-transform: uppercase;
+  left: 2.1875rem;
+  top: 4.1875rem;
+  background-color: #fe3756;
+  border: none;
+  border-radius: 0.5rem;
+  color: white;
+}
+
+.header_color_red {
+  color: #fe3756;
+}
+.header_arrow_click {
+  z-index: 10;
+}
+.header_arrow_click:hover {
+  cursor: pointer;
 }

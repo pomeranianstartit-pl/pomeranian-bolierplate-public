@@ -1,4 +1,4 @@
-export function Arrow({ onClick = () => {} }) {
+export function Arrow({ onClick = () => {}, className = '' }) {
   return (
     <svg
       xmlns="http://www.w3.org/2000/svg"
@@ -7,6 +7,7 @@ export function Arrow({ onClick = () => {} }) {
       viewBox="0 0 20 20"
       fill="none"
       onClick={onClick}
+      className={className}
     >
       <g clip-path="url(#clip0_5776_15686)">
         <path
