@@ -1,13 +1,22 @@
+import { Blocks } from './Blocks/Block';
+import { MyData } from './MyData/MyData';
 import './styles.css';
 
 export const Dashboard = () => {
   return (
-    <div className="dashboard">
-      <h1>Dashboard</h1>
-      <p>
-        Strona główna kursanta (o sobie, zdjęcie, opis narzędzi wykorzystywanych
-        na kursie oraz umejętności zdobytych na kursie)
-      </p>
+    <div>
+      <div className="dashboard">
+        <div>
+          <h1> {'>'} Dashboard</h1>
+          <p>
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Tempore
+            explicabo!
+          </p>
+          <Blocks />
+        </div>
+        <MyData />
+      </div>
+      <div className="dashboard-grid"></div>
     </div>
   );
 };

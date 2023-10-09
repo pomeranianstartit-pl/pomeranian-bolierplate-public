@@ -1,0 +1,39 @@
+.font-test-family {
+  font-family: Chilanka;
+}
+
+h2 {
+  color: rgba(34, 34, 34, 1);
+  font-size: 40px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 69px; 
+}
+
+#frame {
+  width: 939px;
+  align-items: center;
+  gap: 149px;
+}
+
+#startButton {
+  border-radius: 8px;
+  border: 1px solid var(--primary-primary, #FE3756);
+  background: var(--primary-primary, #FE3756);
+  display: flex;
+  height: 56px;
+  width: 326px;
+  padding: 20px 36px;
+  justify-content: center;
+  align-items: center;
+  gap: 16px;
+  flex: 1 0 0;
+  color: #FFF;
+  text-align: center;
+  /* button/button */
+  font-family: Poppins;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 31px; /* 172.222% */
+}
