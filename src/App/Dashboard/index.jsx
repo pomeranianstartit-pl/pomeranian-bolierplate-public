@@ -24,19 +24,19 @@ const CARDS = [
     title: 'Blog',
     img: <BookIcon />,
     description: 'wpisy blogowe o technologii front-end',
-    link: <NavLink to="blog">zobacz więcej {'>'}</NavLink>,
+    link: <NavLink to="/blog">zobacz więcej {'>'}</NavLink>,
   },
   {
     title: 'Tech stack',
     img: <SettingIcon />,
     description: 'stack technologiczny realizowany na kursie',
-    link: <NavLink to="exercise">zobacz więcej {'>'}</NavLink>,
+    link: <NavLink to="/tech-stack">zobacz więcej {'>'}</NavLink>,
   },
   {
     title: 'FAQ',
     img: <FAQIcon />,
     description: 'odpowiedzi na najczęstsze pytania',
-    link: <NavLink to="exercise">zobacz więcej {'>'}</NavLink>,
+    link: <NavLink to="/exercise">zobacz więcej {'>'}</NavLink>,
   },
 ];
 
