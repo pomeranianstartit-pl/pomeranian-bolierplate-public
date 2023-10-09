@@ -9,7 +9,6 @@ import { SettingIcon } from '../Components/Icons/SettingIcon';
 import { BookSavedIcon } from '../Components/Icons/BookSavedIcon';
 import { MessageIcon } from '../Components/Icons/MessageIcon';
 
-
 import './styles/aside.css';
 
 export function AppAside() {
@@ -19,7 +18,7 @@ export function AppAside() {
         <ul>
           <li className="aside-row ">
             <HouseIcon />
-            <NavLink to="dashboard">Dashboard</NavLink>
+            <NavLink to="dashboard">Dash</NavLink>
           </li>
           <li className="aside-row ">
             <ElementIcon />
@@ -52,7 +51,7 @@ export function AppAside() {
           </li>
         </ul>
       </nav>
-      <p style={{ padding: '1rem 0' }}>Sidebar items, widgets, etc</p>
+      {/* <p style={{ padding: '1rem 0' }}>Sidebar items, widgets, etc</p> */}
     </aside>
   );
 }
