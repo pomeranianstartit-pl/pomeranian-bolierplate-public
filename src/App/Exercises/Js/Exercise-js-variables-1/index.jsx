@@ -1,25 +1,31 @@
 import './styles.css';
 
 export function Exercise() {
-  let string1 = 'Jon Snow';
-
-  const string3 = 'Ulubiony bohater z serialu "Gra o tron" to ' + string1;
-
-  const string2 = `Ulubiony bohater z serialu "Gra o tron" to: ${string1}`;
+  const mathResult1 = 2 * 5;
 
   return (
     <div className="playing-with-variables">
       <section>
-        <h2>Operacje na stringach</h2>
-        <p>Ulubiony bohater z serialu "Gra o tron" to {string1}</p>
-        <p>
-          Ulubiony bohater z serialu "Gra o tron" to
-          <span className="variable-string-placeholder">{string1}</span>
-        </p>
-        <p>{string2}</p>
-        <p>{string3}</p>
-        {/* Uzupełnij zanie korzystając ze zmiennych oraz operacji na stringach */}
-        <p>Witaj ____! Jesteś ____ uzytkownikiem odwiedzającym tę stronę!</p>
+        <h2>Operacje matematyczne</h2>
+        <pre>
+          <code>2 * 5 = {mathResult1}</code>
+        </pre>
+        {/* Uzupełnij wykorzystując zmienne*/}
+        <pre>
+          <code>3 : 2 = ___</code>
+        </pre>
+        <pre>
+          {/* kwadrat liczby */}
+          <code>3&#178; = &#9998;</code>
+        </pre>
+        <pre>
+          {/* pierwiastek z liczby */}
+          <code>&#8730;3 = &#9998;</code>
+        </pre>
+        <pre>
+          {/* modulo */}
+          <code>3%2 = &#9998;</code>
+        </pre>
       </section>
     </div>
   );
