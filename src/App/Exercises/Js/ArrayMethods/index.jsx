@@ -1,6 +1,6 @@
 import React from 'react';
 
-/*
+/* 
 1. Napisz funkcje ktora przyjmuje dwie tablice i zwraca nowa tablice, ktora zawiera tylko elementy, ktore wystepuja w obu tablicach.
 Przykład: getCommonElements([1, 2, 3, 4, 5], [3, 5, 7, 9]) => [3, 5]
 2. Napisz funkcje `averageFromArray` która liczy średnią z liczb w tablicy nie używając pętli for i reduce. Przykład: getAverageNumber([1, 2, 3, 4, 5, 6]) => 3.5
@@ -9,6 +9,12 @@ odwróconej kolejności.
 Przykład: getReversedArray([1, 2, 3, 4, 5]) => [5, 4, 3, 2, 1]
 4. napisz funkcję, która przyjmuje tablicę obiektów, gdzie każdy obiekt reprezentuje osobę z imieniem i wiekiem, i zwraca tablicę z samymi imionami osób.
 Przykład: getNames(people) => ["John", "Emily", "Peter"]
+*/
+
+/* 
+1. Napisz funkcję zmieniającą podany string na CamelCase. 
+Przykład: getCamelCaseString("Jakiś długi text") => "jakiśDługiText"
+2. Napisz funkcję, która pobiera dwa napisy i sprawdza, czy są one anagramami.  Przykład: isAnagram("iceman", "cinema") => true
 */
 
 const ARRAY1 = [1, 2, 3, 4, 5, 6];
@@ -43,6 +49,26 @@ export const ArrayMethods = () => {
     return `Imiona to: ${result}`;
   }
 
+  function getCamelCaseString(str) {
+    const wordsArray = str.toLowerCase().split(' ');
+    const result = wordsArray
+      .map((word, index) => {
+        if (index === 0) return word;
+        return word.charAt(0).toUpperCase() + word.slice(1);
+      })
+      .join('');
+
+    return result;
+  }
+
+  function isAnagram(str1, str2) {
+    const sortedStr1 = str1.toLowerCase().split('').sort().join('');
+    const sortedStr2 = str2.toLowerCase().split('').sort().join('');
+    const result = sortedStr1 === sortedStr2;
+
+    return `${str1} ${result ? 'jest' : 'nie jest'}  anagramem ${str2}`;
+  }
+
   return (
     <div>
       <ol>
@@ -50,6 +76,8 @@ export const ArrayMethods = () => {
         <li>{getAverageNumber(ARRAY1)}</li>
         <li>{getReversedArray(ARRAY1)}</li>
         <li>{getNames(PEOPLE)}</li>
+        <li>{getCamelCaseString('iceman cinema')}</li>
+        <li>{isAnagram('iceman', 'cinema')}</li>
       </ol>
     </div>
   );
