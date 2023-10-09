@@ -1,6 +1,6 @@
 import { Exercise } from './index';
 
-export const blockRouterMetaData = {
+export const variables1MetaData = {
   path: 'js-variables-1',
   date: null,
   linkLabel: 'Zmienne w JS - string',
