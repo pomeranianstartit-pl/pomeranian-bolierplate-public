@@ -6,17 +6,18 @@
 
 .techstack {
     display: grid;
-    grid-template-columns: 6fr 3fr;
+    grid-template-columns: 3fr 2fr;
     direction: column;    
-    column-gap: 50px;
+    column-gap: 70px;
     row-gap: 50px;
 }
 
 .techstack-icons {
     display: flex;
-    /* flex-direction: column; */
+    flex-direction: row;
     flex-wrap: wrap;
-    gap: 35px;
+    row-gap: 40px;
+    column-gap: 70px;
 }
 
 .icon-box {
