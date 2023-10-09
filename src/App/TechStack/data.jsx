@@ -17,27 +17,27 @@ import vscode from './icons/vscode-alt 1.svg';
 export const TECH_STACK_DATA = [
   {
     icon: discord,
-    title: 'Discord',
+    title: 'discord',
   },
   {
     icon: firabase,
-    title: 'Firabase',
+    title: 'firabase',
   },
   {
     icon: react,
-    title: 'React',
+    title: 'react',
   },
   {
     icon: jira,
-    title: 'Jira',
+    title: 'jira',
   },
   {
     icon: typescript,
-    title: 'TypeScript',
+    title: 'typescript',
   },
   {
     icon: bitbucket,
-    title: 'Bitbucket',
+    title: 'bitbucket',
   },
   {
     icon: readmine,
@@ -57,11 +57,11 @@ export const TECH_STACK_DATA = [
   },
   {
     icon: github,
-    title: 'GitHub',
+    title: 'github',
   },
   {
     icon: git,
-    title: 'GIT',
+    title: 'git',
   },
   {
     icon: jest,
