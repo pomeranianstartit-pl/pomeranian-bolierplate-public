@@ -29,18 +29,7 @@ export function AppHeader() {
             </div>
             <div className="menu-relative">
               <ArrowDown onClick={toggleArrow} className="arrow" />
-              {isArrowOpen && (
-                <PopUpMenu func={toggleArrow} />
-                // <div onClick={toggleArrow} className="login-menu">
-                //   <div className="arrow-line">
-                //     <ArrowDown onClick={toggleArrow} className="arrow" />
-                //   </div>
-                //   <button className="login-button">zaloguj się</button>
-                //   <div>
-                //     Nie masz konta? <span> Zarejestruj się</span>
-                //   </div>
-                // </div>
-              )}
+              {isArrowOpen && <PopUpMenu func={toggleArrow} />}
             </div>
           </div>
         </div>
