@@ -98,3 +98,26 @@ const StringMethods = () => {
 };
 
 export { StringMethods };
+
+//funkcja zwroci nam boolean (prefix is[...])
+const isPalindrome = (str = '') => {
+  //normalizujemy stringa (toLowerCase - zamienaimy znaki na małe; usuwamy białe znaki replace())
+
+  if (str === '') {
+    return false;
+  }
+
+  const normalizedStr = str.toLowerCase().replace(' ', '');
+  // rozbijamy stringa (split); zamieniamy kolejnosc znakow i z powrotem kleimy wszystkie rozbite znaki;
+  const reversedStr = normalizedStr.split('').reverse().join('');
+
+  return normalizedStr === reversedStr;
+};
+
+const getIsPalindrome = isPalindrome('kajak');
+
+if (getIsPalindrome) {
+  console.log('jest palindromem');
+} else {
+  console.log('nie jest palindromem');
+}
