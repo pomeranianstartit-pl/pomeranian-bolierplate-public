@@ -6,6 +6,7 @@ import { blockRouterMetaData as blockRouterMetaDataJsFunction1 } from './Exercis
 import { emptyValuesAndStringsMetaData } from './EmptyValuesAndStrings/router-data';
 import { stringMethodsMetaData } from './StringMethods/router-data';
 import { arrayMethodsMetaData } from './ArrayMethods/router-data';
+import { objectsAndDateMetaData } from './ObjectsAndDate/router-data';
 
 export const blockRouterMetaData = [
   variables1MetaData,
@@ -14,5 +15,6 @@ export const blockRouterMetaData = [
   emptyValuesAndStringsMetaData,
   stringMethodsMetaData,
   arrayMethodsMetaData,
+  objectsAndDateMetaData,
 ];
 export const blockRouterData = getParsedRouterDataList(blockRouterMetaData);
