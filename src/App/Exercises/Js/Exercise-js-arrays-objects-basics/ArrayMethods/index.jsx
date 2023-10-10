@@ -28,11 +28,17 @@ export function ArrayMethods() {
     return `Imiona to: ${result} `;
   }
 
+  function getReversedArray(Arr1) {
+    const result = [...Arr1].reverse();
+    return `Rezultat to: ${result}`;
+  }
+
   return (
     <div className="ArrayMethods">
       <ol>
         <li>{CommonNumbers(Arr1, Arr2)}</li>
         <li>{averageFromArray(Arr1)}</li>
+        <li>{getReversedArray(Arr1)}</li>
         <li>{peepsNames(peepsData)}</li>
       </ol>
     </div>
