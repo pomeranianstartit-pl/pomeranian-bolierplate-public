@@ -1,5 +1,7 @@
 import './styles.css';
 import { LoopsExercise } from './Loops';
+import { ArrayBasics } from './ArrayBasics';
+import { ArrayMethods } from './ArrayMethods';
 
 export function ExerciseJsArrayBasics() {
   //arrays of objects
@@ -74,7 +76,7 @@ export function ExerciseJsArrayBasics() {
 
   return (
     <div className="container--array-objects-basics">
-      <p>Działania na tablicach: 2023-10-09</p>
+      <p>Działania na tablicach: 2023-10-09 i 2023-10-10</p>
       <ul>
         {
           // React require uniq id for listed items (iteration thrue array of objects)
@@ -121,6 +123,10 @@ export function ExerciseJsArrayBasics() {
       </div>
       Import of Loops component:
       <LoopsExercise />
+      Import of Array component:
+      <ArrayBasics />
+      Import of ArrayMethods component:
+      <ArrayMethods />
     </div>
   );
 }
