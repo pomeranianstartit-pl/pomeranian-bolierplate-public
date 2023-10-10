@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 .font-test-family {
   font-family: Chilanka;
 }
@@ -5,3 +6,12 @@
 .variable-string-placeholder {
   margin-left: 5px;
 }
+=======
+.container--people-from-gdansk .container--people-data {
+
+  margin-top: 3rem;
+
+  border: 2px solid gold;
+
+}
+>>>>>>> 39f5bd6ecc29bdb2d55a006d990d060591e66d77
