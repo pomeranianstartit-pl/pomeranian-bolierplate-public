@@ -57,9 +57,9 @@ color: green;
                 background-color: lightcyan;
             }
 
-            a:visited {
+            /* a:visited {
                 color: red;
-            }
+            } */
 
             div::first-line{
                 font-size: 32px;
