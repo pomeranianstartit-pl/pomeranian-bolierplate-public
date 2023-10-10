@@ -8,7 +8,7 @@ import { EditIcon } from '../Components/Icons/EditIcon';
 import { CalendarIcon } from '../Components/Icons/CalendarIcon';
 import { ElementIcon } from '../Components/Icons/ElementIcon';
 import { BookIcon } from '../Components/Icons/BookIcon';
-import { FaqIcon } from '../Components/Icons/FaqIcon';
+import { FAQIcon } from '../Components/Icons/FAQIcon';
 
 export function AppAside() {
   const location = useLocation();
@@ -46,7 +46,7 @@ export function AppAside() {
             <NavLink to="blog">Blog</NavLink>
           </li>
           <li className="aside-row">
-            <FaqIcon />
+            <FAQIcon />
             <NavLink to="faq">FAQ</NavLink>
           </li>
           <hr />
