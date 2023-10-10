@@ -6,6 +6,7 @@ import { SettingIcon } from '../Components/Icons/SettingIcon';
 import { BookIcon } from '../Components/Icons/BookIcon';
 import { FAQIcon } from '../Components/Icons/FAQIcon';
 import MyImgae from './photo-AnnaM.jpeg';
+import { DashboardCard } from './DashboardCard';
 
 const CARDS = [
   {
@@ -48,14 +49,18 @@ export const Dashboard = () => {
         Poniżej znajdziesz najważniejsze informacje na temat mojej działalności.
       </p>
       <div className="dashboard-cards">
-        {CARDS.map((card) => (
-          <div className="dashboard-card">
-            {' '}
-            <h3>{card.title}</h3>
+        {CARDS.map(({ title, img, description, link }) => (
+          <DashboardCard
+            title={title}
+            img={img}
+            description={description}
+            link={link}
+          />
+
+          /* <h3>{card.title}</h3>
             {card.img}
             {card.description}
-            {card.link}
-          </div>
+            {card.link} */
         ))}
       </div>
       <aside className="dashboard-aside">

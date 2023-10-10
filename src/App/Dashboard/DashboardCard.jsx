@@ -6,7 +6,7 @@ export const DashboardCard = ({ title, img, description, link }) => {
     <div className="dashboard-card">
       <h3>{title}</h3>
       {img}
-      <p>{description}</p>
+      {description}
       <Link to={link}>zobacz więcej {`>`} </Link>
     </div>
   );
