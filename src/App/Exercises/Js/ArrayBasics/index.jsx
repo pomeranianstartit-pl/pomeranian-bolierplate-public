@@ -1,4 +1,6 @@
 import React from 'react';
+import { ArrayMethods } from './ArrayMethods';
+// import + po return dodaje  <ArrayMethods />
 
 /*
 1. continue - pomija iteracje, ale pętla wykonuje się dalej
@@ -16,7 +18,7 @@ export const ArrayBasics = () => {
   // Continue
   //   for (let i = 5; i > 0; i--) {
   //     if (i > 3) {
-  //       continue;
+  //       continue;`ž
   //     }
   //     console.log(i);
   //   }
@@ -55,5 +57,10 @@ export const ArrayBasics = () => {
   //   }, []);
   //   console.log(sum);
 
-  return <div>ArrayBasics</div>;
+  return (
+    <div>
+      ArrayBasics
+      <ArrayMethods />
+    </div>
+  );
 };
