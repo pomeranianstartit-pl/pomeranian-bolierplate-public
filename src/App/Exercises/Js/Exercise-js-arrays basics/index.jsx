@@ -1,5 +1,7 @@
 import { LoopsExercise } from './Loops';
+import { ContinueBreake } from './ContinueBreake';
 import './styles.css';
+import { ArrayMethods } from './ArrayMethods';
 
 export function ExerciseJsArrayBasics() {
   //arrays of objects
@@ -121,6 +123,14 @@ export function ExerciseJsArrayBasics() {
       </div>
       import of loops component:
       <LoopsExercise />
+      <br />
+      <br />
+      <br />
+      <br />
+      <ContinueBreake />
+      <br />
+      <br />
+      <ArrayMethods />
     </div>
   );
 }
