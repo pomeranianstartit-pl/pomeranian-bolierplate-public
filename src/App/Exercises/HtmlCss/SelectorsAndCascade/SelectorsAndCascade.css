@@ -61,10 +61,10 @@ color: green;
                 color: red;
             }
 
-            div::first-line{
+            /* div::first-line{
                 font-size: 32px;
-            }
-
+            } */
+/* odnosi sie do całej aplikacji ?!? */
             span::before{
                 content: "<3";
             }

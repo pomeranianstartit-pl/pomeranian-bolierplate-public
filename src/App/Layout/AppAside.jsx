@@ -18,6 +18,10 @@ export function AppAside() {
             <NavLink to="dashboard">Dashboard</NavLink>
           </li>
           <li className="aside-row">
+            <EditIcon />
+            <NavLink to="blog">Blog</NavLink>
+          </li>
+          <li className="aside-row">
             <ElementIcon />
             <NavLink to="blocks">Bloki</NavLink>
           </li>
@@ -36,10 +40,6 @@ export function AppAside() {
           <li className="aside-row">
             <SettingIcon />
             <NavLink to="Settings">Ustawienia</NavLink>
-          </li>
-          <li className="aside-row">
-            <EditIcon />
-            <NavLink to="blog">Blog</NavLink>
           </li>
         </ul>
       </nav>
