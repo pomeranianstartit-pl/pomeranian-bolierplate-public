@@ -4,7 +4,7 @@ import { PersonalCardIcon } from '../../Components/Icons/PersonalCardIcon';
 import { EditIcon } from '../../Components/Icons/EditIcon';
 import { BookSavedIcon } from '../../Components/Icons/BookSavedIcon';
 import { MessageIcon } from '../../Components/Icons/MessageIcon';
-import { SettingIcon } from '../../Components/Icons/SettingIcon';
+import { TechstackIcon } from '../../Components/Icons/TechstackIcon';
 
 export const Blocks = () => {
   return (
@@ -28,9 +28,9 @@ export const Blocks = () => {
         link="cv/*"
       />
       <SingleBlock
-        title="Tech stack"
+        title="Techstack"
         description="Stack technologiczny realizowany na kursie"
-        icon={<PersonalCardIcon />}
+        icon={<TechstackIcon />}
         link="cv/*"
       />
       <SingleBlock

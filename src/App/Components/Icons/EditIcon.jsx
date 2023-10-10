@@ -1,6 +1,6 @@
-export function EditIcon({ className = '' }) {
+export function EditIcon({ className = 'picture' }) {
   return (
-    <svg
+    <svg      
       width="23"
       height="23"
       viewBox="0 0 23 23"
