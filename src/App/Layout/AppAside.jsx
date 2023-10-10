@@ -7,6 +7,8 @@ import { ElementIcon } from '../Components/Icons/ElementIcon';
 import { HouseIcon } from '../Components/Icons/HouseIcon';
 import { PersonalCardIcon } from '../Components/Icons/PersonalCardIcon';
 import { SettingIcon } from '../Components/Icons/SettingIcon';
+import { BlogAsideIcon } from '../Components/Icons/BlogAsideIcon';
+import { FaqAsideIcon } from '../Components/Icons/FaqAsideIcon';
 
 export function AppAside() {
   return (
@@ -38,11 +40,11 @@ export function AppAside() {
             <NavLink to="settings">Settings</NavLink>
           </li>
           <li className="aside-row">
-            <SettingIcon />
+            <BlogAsideIcon />
             <NavLink to="blog">Blog</NavLink>
           </li>
           <li className="aside-row">
-            <SettingIcon />
+            <FaqAsideIcon />
             <NavLink to="faq">Faq</NavLink>
           </li>
         </ul>

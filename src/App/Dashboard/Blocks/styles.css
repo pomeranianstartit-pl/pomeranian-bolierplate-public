@@ -19,7 +19,7 @@ gap: 10px;
 }
 
 .title {
-color: #FE3756;
+color: black;
 text-align: center;
 font-family: Poppins;
 font-size: 18px;
@@ -77,8 +77,24 @@ color: #FE3756
     transition: all 0.25s ease-in-out;
 }
 
-/* a:visited {
-    color: #FE3756;
-    
-  }
-   */
+.block-wraper-CV {
+    max-width: 202px;
+    /* max-height: 192px; */
+    border-radius: 8px;
+    display: inline-flex;
+    background: #FFF;
+    box-shadow: 0px 2px 26px 0px rgba(254, 55, 86, 0.54);
+    padding: 20px 28px;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px; }
+
+    .titleCV {
+        color: #FE3756;
+        text-align: center;
+        font-family: Poppins;
+        font-size: 18px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 34px;
+        }
