@@ -1,6 +1,7 @@
 import React from 'react';
 import './styles.css';
 import { LoopsExercise } from './Loops';
+import { ArrayMethods } from './ArrayMethods';
 export function ExerciseJsArraysObjectsBasics() {
   //arrays of objects
   const peopleData = [
@@ -17,6 +18,42 @@ export function ExerciseJsArraysObjectsBasics() {
     (personBlaBla) => personBlaBla.adress === 'Gdansk'
   );
   console.log('peopleFromGdansk', peopleFromGdansk); // [{ id: 11, name: "Maciej", age: 65, adress: "Gdansk" }, { id: 14, name: "Lilian", age: 3, adress: "Gdansk" }] --> flat array
+  /*
+1. continue - pomija iteracje, ale pętla wykonuje się dalej
+2. break - przerywa pętlę
+*/
+  // Continue
+  //   for (let i = 5; i > 0; i--) {
+  //     if (i > 3) {
+  //       continue;
+  //     }
+
+  // Break
+  //for (let i = 0; i <= 5; i++) {
+  //if (i === 3) {
+  //break;
+  //}
+  //console.log(i);
+  //}
+
+  //   for (let i = 0; i < NUMBERS.length; i++) {
+  //     const num = NUMBERS[i];
+  //     if (num % 2 === 0) {
+  //       console.log('Jestem parzystą liczbą:', num);
+  //       continue;
+  //     }
+  //     console.log('Jestem nieparzystą liczbą:', num);
+  //   }
+
+  // const firstEven = NUMBERS.find((num) => num % 2 === 0);
+  // console.log(firstEven);
+
+  // const sum = NUMBERS.reduce((accumulator, currentValue) => {
+  //   if (currentValue % 2 === 0) {
+  //    accumulator.push(currentValue);
+  //  }
+  //   return accumulator;
+  //}, []);
 
   return (
     <div className="container--array-objects-basics">
@@ -59,6 +96,11 @@ export function ExerciseJsArraysObjectsBasics() {
       </div>
       Import loops exercise:
       <LoopsExercise />
+      <br />
+      <br />
+      <div>
+        <ArrayMethods />
+      </div>
     </div>
   );
 }
