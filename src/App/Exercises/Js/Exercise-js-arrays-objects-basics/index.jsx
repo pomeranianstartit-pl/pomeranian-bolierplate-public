@@ -1,6 +1,7 @@
 import React from 'react';
 import './styles.css';
 import { LoopsExercise } from './Loops';
+import { ArrayMethods } from './ArrayMethods';
 export function ExerciseJsArraysObjectsBasics() {
   //arrays of objects
   const peopleData = [
@@ -95,6 +96,11 @@ export function ExerciseJsArraysObjectsBasics() {
       </div>
       Import loops exercise:
       <LoopsExercise />
+      <br />
+      <br />
+      <div>
+        <ArrayMethods />
+      </div>
     </div>
   );
 }
