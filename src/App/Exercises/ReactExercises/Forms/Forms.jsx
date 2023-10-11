@@ -2,6 +2,7 @@ import './styles.css';
 import { MainSection } from './MainSection/MainSection';
 import { FieldSection } from './FieldSection/FieldSection';
 import React, { useState } from 'react';
+import { BackLink } from '../../../Components/GoBack/GoBack';
 import { RadioButtons } from './RadioButtons/RadioButtons';
 import { Checkboxes } from './Checkboxes/Checkboxes';
 import { validatePhoneNumber } from './Validators/phoneValidator';
@@ -21,7 +22,6 @@ import { useEffect } from 'react';
 // https://firebase.google.com/docs/web/setup#available-libraries
 // Your web app's Firebase configuration
 // For Firebase JS SDK v7.20.0 and later, measurementId is optional
-console.log('env:', process.env);
 
 const firebaseConfig = {
   apiKey: process.env.REACT_APP_FIREBASE_API_KEY,
@@ -114,7 +114,6 @@ export const Forms = () => {
 
   const isFieldsValid =
     isEmailValid && isNameAndSurnameValid && isAllRequiredFieldsFilled;
-  console.log('Is fields valid:', isFieldsValid);
 
   function updateAdditionalOptions(optionName, newValue) {
     setFormData({
@@ -153,9 +152,8 @@ export const Forms = () => {
 
   return (
     <>
-      <a href="" className="back-link">
-        &lt; Formularz zamówienia
-      </a>
+      <BackLink label={'&lt; Formularz zamówienia'} />
+
       <form
         onSubmit={(event) => {
           event.preventDefault();

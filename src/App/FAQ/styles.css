@@ -1,2 +1,13 @@
-.faq-main-container {
+.faq-wrapper dl {
+  font-family: Poppins;
+  border: 1px solid var(--grey-300);
+  border-radius: 0.5rem;
+}
+.faq-question {
+  font-size: larger;
+  padding: 1rem;
+  background-color: var(--gray-80);
+}
+.faq-answer {
+  padding: 1rem;
 }

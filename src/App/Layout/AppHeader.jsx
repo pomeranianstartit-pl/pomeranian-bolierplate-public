@@ -11,7 +11,7 @@ import smallProfile from '../Images/prof2m.jpg';
 
 export function AppHeader({ toggleMenuVisibility }) {
   const [userIsVisible, setUserIsVisible] = useState(false);
-  console.log('userIsVisible:', userIsVisible);
+
   return (
     <header>
       <button className="menuButton" onClick={toggleMenuVisibility}>
