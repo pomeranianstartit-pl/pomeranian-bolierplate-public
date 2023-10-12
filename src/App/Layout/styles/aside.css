@@ -38,11 +38,8 @@ aside a.active {
 aside svg:has(+a.active) path {
   stroke:var(--color-red);
 }
-<<<<<<< HEAD
-.faqIcon svg {
-=======
 aside-row FaqIcon {
->>>>>>> 39f5bd6ecc29bdb2d55a006d990d060591e66d77
+
   width: 25px;
   height: 24px;
 
