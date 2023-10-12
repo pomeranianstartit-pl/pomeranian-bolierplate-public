@@ -57,6 +57,9 @@ line-height: 24px;
 color: #FE3756
 }
 
+a:active {
+color:#FE3756;
+}
 
 /* svg path {
     stroke: #FE3756;

@@ -1,4 +1,4 @@
-import { SingleQuestion } from './SingleQuestion';
+import { SingleQuestionFaq } from './SingleQuestionFaq';
 import './faq.css';
 
 export function Faq() {
@@ -9,7 +9,7 @@ export function Faq() {
         Tutaj znajdź odpowiedzi na najczęściej zadawane pytania
       </div>
       <div>
-        <SingleQuestion
+        <SingleQuestionFaq
           question="Jak mogę zapisać się na szkolenie?"
           answer="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Eleifend
     rutrum ipsum, leo et in. Mattis porttitor volutpat placerat
@@ -19,17 +19,17 @@ export function Faq() {
     sit amet, consectetur adipiscing elit"
         />
       </div>
-      <div className="button">
-        <img src="../chevron.right.svg" alt="" />
-        <div className="button-text ">Jak mogę zapisać się na szkolenie?</div>
+      <div className="question-1">
+        <img className="button-text-up" src="../chevron.right.svg" alt="" />
+        <h3 className="button-text">Jak mogę zapisać się na szkolenie?</h3>
       </div>
-      <div className="button">
-        <img src="../chevron.right.svg" alt="" />
-        <div className="button-text ">Jak mogę zapisać się na szkolenie?</div>
+      <div className="question-1">
+        <img className="button-text-up" src="../chevron.right.svg" alt="" />
+        <h3 className="button-text">Jak mogę zapisać się na szkolenie?</h3>
       </div>
-      <div className="button">
-        <img src="../chevron.right.svg" alt="" />
-        <div className="button-text ">Jak mogę zapisać się na szkolenie?</div>
+      <div className="question-1">
+        <img className="button-text-up" src="../chevron.right.svg" alt="" />
+        <h3 className="button-text">Jak mogę zapisać się na szkolenie?</h3>
       </div>
     </div>
   );

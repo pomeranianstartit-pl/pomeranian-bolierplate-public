@@ -2,6 +2,7 @@
     position: relative; 
     padding: 27px 31px;  
     background:  #EBEBEB;  
+    max-width: 984px;
   }
        
   .floats__positioning-relative:hover .floats__positioning-absolute {
@@ -9,26 +10,32 @@
     top: 217px;  
     left: -159px; 
     transition: all 1s ease-in-out;
+   
+  
   
   }
        
   .floats__positioning-absolute {  
     /* display: none; */ 
-    transition: all 1s ease-in-out;  
+    /* transition: all 2s ease-in-out;   */
     position: absolute;  
-    top: -17px;  
+    top: -34px;  
     right: 0px;  
     padding: 12px 20px;  
     border-radius: 5.5px;  
     border: 1px solid #999;  
-    background:  #FFD5DB;  
+    background:  #FFD5DB; 
+    text-wrap: wrap; 
+    width: 203px;
+    margin-left: 750px;
+
   }
 
   .square-wrapper {
 
     height: 100px;  
     background:  #EBEBEB;  
-    margin-top: 50px;  
+    margin-top: 350px;  
   }
    
   .square {  
@@ -66,5 +73,14 @@
   }
 
   .float-img {
-    float: left;  
+    float: left; 
+    width: 201px; 
+    height: 175px;
+  }
+
+  .float-text {
+  background-color: #FFD5DB;
+  padding: 32px 29px 0px 21px;
+  align-items: center;
+  max-width: 984px;
   }
