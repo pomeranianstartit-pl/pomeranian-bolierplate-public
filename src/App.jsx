@@ -13,6 +13,13 @@ import { Settings } from './App/Settings';
 import { Blog } from './App/Blog/Blog';
 import { Faq } from './App/Faq';
 import { TechStack } from './App/TechStack/TechStack';
+import { MaterialUI } from './App/MaterialUI/index';
+
+import '@fontsource/roboto/300.css';
+import '@fontsource/roboto/400.css';
+import '@fontsource/roboto/500.css';
+import '@fontsource/roboto/700.css';
+import ButtonBaseDemo from './App/MaterialUI/PhotoIcons';
 
 export function App() {
   return (
@@ -29,6 +36,11 @@ export function App() {
           <Route path="blog/*" element={<Blog />} />
           <Route path="faq/*" element={<Faq />} />
           <Route path="techstack/*" element={<TechStack />} />
+          <Route path="material-ui/*" element={<MaterialUI />} />
+          <Route
+            path="material-ui/button-base-demo*"
+            element={<ButtonBaseDemo />}
+          />
           <Route path="*" element={<NotFound />} />
         </Route>
       </Routes>

@@ -1,8 +1,9 @@
 .box-arrow {
   display: flex;
-  justify-content: right;
+  justify-content: left;
   margin-right: 23px;
   margin-bottom: 23px;
+  transform: rotate(180deg);
 }
 
 .box-button {
