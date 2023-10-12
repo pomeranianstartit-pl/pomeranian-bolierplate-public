@@ -1,0 +1,87 @@
+.selectorsAndCascade div {
+  margin: 0 0 20px;
+}
+
+.selectorsAndCascade > div {
+  padding: 5px;
+  border: 1px solid black;
+}
+
+/* span musi być poprzedzany spanem jak kolwiek */
+/* <span/> <cos /> <span /> */
+/*
+span ~ span {
+  color: red;
+}
+*/
+/*span musi byc przeprzedzany bespośrednio spanem */
+
+/*
+span + span {
+  background-color: blue;
+}
+*/
+/* type / tag selector */
+/* input {
+  background-color: red;
+}
+
+input:focus,
+a:focus {
+  background-color: green;
+}
+*/
+/* class selector */
+.unikalna-klasa1 {
+  color: blue;
+}
+
+/* id selector */
+#drugi-div {
+  color: darkorchid;
+}
+
+/* wartosc class zawiera "klasa" */
+[class*='unikalna-klasa3'] {
+  color: green;
+}
+
+/* wartosc class zaczyna sie od "unikalna" */
+[class^='unikalna'] {
+  background-color: yellow;
+}
+
+/* wartosc class kończy sie na "klasa3" */
+[class$='klasa3'] {
+  background-color: orange;
+}
+
+[class^='unikalna']:hover {
+  background-color: purple;
+}
+
+.selectorsAndCascade > div:first-child {
+  background-color: lightskyblue;
+}
+
+.selectorsAndCascade > div > div:last-child {
+  background-color: lightyellow;
+}
+
+/* div::first-line {
+  font-size: 32px;
+}
+*/
+/*
+a:visited {
+  color: rebeccapurple;
+}
+
+span::before {
+  content: '🌼';
+}
+
+span::after {
+  content: '🌷';
+}
+*/

@@ -1,0 +1,11 @@
+.roundedImage {
+  width: 500px;
+  height: 500px;
+
+  border-radius: 100%;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-color: pink;
+  filter: grayscale(100%);
+}

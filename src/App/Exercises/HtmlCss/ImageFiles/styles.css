@@ -1,0 +1,11 @@
+/* .images-files { 
+  background-image: url('https://images.unsplash.com/photo-1610641987870-d6d8998274a4?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8bGVhdmVzJTIwd2FsbHBhcGVyfGVufDB8fDB8fHww&w=1000&q=80');
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: top;
+}
+*/
+.images-files img {
+  max-width: 200px;
+}

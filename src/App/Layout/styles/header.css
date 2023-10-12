@@ -22,3 +22,56 @@ header .logo {
   height: 40vmin;
   pointer-events: none;
 }
+
+.header-container {
+  display: flex;
+  flex-direction: row;
+  gap: 16px;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.student-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.header-menu {
+  max-width: 20rem;
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+}
+
+.box-relative {
+  position: relative;
+}
+
+.box-relative:hover .box-absolute {
+  display: none;
+  transition: all 1s ease-in-out;
+  bottom: 100px;
+  left: 0px;
+}
+
+.box-absolute {
+  display: none;
+  transition: all 1s ease-in-out;
+  position: absolute;
+  top: 20%;
+  right: 1%;
+  display: flex;
+  width: 396px;
+  height: 211px;
+  padding: 8px 0px;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 6px;
+  border-radius: 4px;
+  background: #fff;
+  box-shadow: 0px 65px 30px 0px rgba(0, 0, 0, 0.01),
+    0px 8px 20px 0px rgba(0, 0, 0, 0.04), 0px 17px 35px 0px rgba(0, 0, 0, 0.05),
+    0px -4px 26px 0px rgba(0, 0, 0, 0.08);
+}

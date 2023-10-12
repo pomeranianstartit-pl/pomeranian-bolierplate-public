@@ -1,0 +1,176 @@
+.animation {
+  width: 100px;
+  height: 100px;
+  background-color: red;
+
+  animation-name: example-animation;
+  animation-duration: 5s;
+  animation-iteration-count: infinite;
+}
+
+/* @media screen and (max-width: 500px) {
+  .animation {
+    animation-play-state: paused;
+  }
+} */
+
+@keyframes example-animation {
+  0% {
+    background-color: red;
+    width: 1000px;
+  }
+
+  25% {
+    background-color: yellow;
+    width: 1000px;
+  }
+
+  50% {
+    background-color: green;
+    width: 1000px;
+  }
+
+  75% {
+    background-color: blue;
+    width: 1000px;
+  }
+
+  100% {
+    background-color: purple;
+    width: 1000px;
+  }
+}
+
+h2 {
+  font-size: 57px;
+  font-weight: 600;
+  font-style: normal;
+  line-height: 88px;
+  letter-spacing: 0.343px;
+  margin-block-start: 0;
+  margin-block-end: 0;
+  text-shadow: 4px 4px 7px white;
+}
+
+p {
+  margin-block-start: 0;
+  margin-block-end: 0;
+}
+
+address {
+  margin-top: 52px;
+  font-style: normal;
+  font-size: 35px;
+  animation-name: adress-animation;
+  animation-duration: 10s;
+  animation-iteration-count: infinite;
+}
+
+.question-wrapper {
+  padding-top: 88px;
+  padding-bottom: 88px;
+  padding-left: 105px;
+
+  /* forma skrócona */
+
+  /* padding: 88px 0 88px 105px; */
+}
+
+.color-primary {
+  color: #fe3756;
+  animation-name: color-primary-animation;
+  animation-duration: 5s;
+  animation-iteration-count: infinite;
+}
+
+.font-weight-600 {
+  font-weight: 600;
+}
+
+.margin-bottom-17 {
+  margin-bottom: 17px;
+}
+
+.lorem-ipsum {
+  font-size: 18px;
+  font-style: normal;
+  line-height: 34px;
+}
+
+.bold-under {
+  text-decoration: underline;
+  font-weight: 700;
+}
+
+ul {
+  list-style-type: square;
+}
+
+.margin_top_48 {
+  margin-top: 48px;
+}
+
+.paragraph {
+  height: 780px;
+  width: 571px;
+  margin-left: 240px;
+  margin-right: 173px;
+  margin-top: 80px;
+  margin-block-end: 0px;
+}
+
+.question-wrapper {
+  animation-name: example-animation;
+  animation-duration: 5s;
+  animation-iteration-count: infinite;
+}
+
+@keyframes adress-animation {
+  0% {
+    font-size: 35px;
+  }
+
+  25% {
+    font-size: 50px;
+  }
+  50% {
+    font-size: 75px;
+  }
+
+  75% {
+    font-size: 50px;
+  }
+  100% {
+    font-size: 35px;
+  }
+}
+
+@keyframes color-primary-animation {
+  0% {
+    color: white;
+    text-decoration: wavy underline;
+    text-shadow: 4px 4px 7px white;
+  }
+
+  25% {
+    color: black;
+
+    text-shadow: 4px 4px 7px white;
+  }
+  50% {
+    color: pink;
+    text-decoration: double underline;
+    text-shadow: 4px 4px 7px white;
+  }
+
+  75% {
+    color: black;
+
+    text-shadow: 4px 4px 7px white;
+  }
+  100% {
+    color: aqua;
+    text-decoration: dotted;
+    text-shadow: 4px 4px 7px white;
+  }
+}
