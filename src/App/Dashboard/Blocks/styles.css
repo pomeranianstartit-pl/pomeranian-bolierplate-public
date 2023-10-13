@@ -5,6 +5,7 @@
   gap: 35px;
   margin: 50px 15px 15px 15px;
   max-width: 700px;
+  /* color:#fff */
 }
 
 .blocks_grid .single-block {
@@ -24,7 +25,12 @@
   border: 0.66px solid #fe3756;
 }
 
-.blocks_grid .single-block .title {
+.single-block:hover .title + .picture {
+  color: #fe3756;
+}
+
+
+ section .title {
   color: #000;
   text-align: center;
   font-size: 18px;
@@ -48,4 +54,8 @@
   font-style: normal;
   font-weight: 700;
   line-height: 24px; /* 171.429% */
+}
+
+svg:hover {
+  fill: red;
 }

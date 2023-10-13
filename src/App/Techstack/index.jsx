@@ -11,6 +11,7 @@ import Discord from '../Images/tech-stack/discord.svg';
 import Python from '../Images/tech-stack/python.svg';
 import Django from '../Images/tech-stack/django.svg';
 import SQL from '../Images/tech-stack/sql.svg';
+import Bitbucket from '../Images/tech-stack/bitbucket.svg';
 
 
 import { MyIcon } from './SingleIcon';
@@ -40,6 +41,7 @@ export const TechStack = () => {
             <MyIcon ImgSrc={Django} name={'Django'} />
             <MyIcon ImgSrc={SQL} name={'SQL'} />
             <MyIcon ImgSrc={Js} name={'JS'} />
+            <MyIcon ImgSrc={Bitbucket} name={'bitbucket'} />
           </div>
           <div></div>
         </div>
