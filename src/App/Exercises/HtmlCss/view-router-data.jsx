@@ -11,6 +11,7 @@ import { blockRouterMetaData as blockRouterMateDateVideoAudioIframe } from './Vi
 import { blockRouterMetaData as blockRouterMateDateBoxModel } from './BoxModel/router-data';
 import { blockRouterMetaData as blockRouterMateDateTables } from './Tables/router-data';
 import { blockRouterMetaData as blockRouterMateDateTablesTennis } from './TablesTennis/router-data';
+import { blockRouterMetaData as blockRouterMateDatePositioningExercise } from './PositioningExercise/router-data';
 
 export const blockRouterMetaData = [
     blockRouterMetaData121220231, 
@@ -23,7 +24,8 @@ export const blockRouterMetaData = [
     blockRouterMateDateVideoAudioIframe,
     blockRouterMateDateBoxModel,
     blockRouterMateDateTables,
-    blockRouterMateDateTablesTennis
+    blockRouterMateDateTablesTennis,
+    blockRouterMateDatePositioningExercise,
 
 
 ];
