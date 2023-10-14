@@ -47,23 +47,22 @@ header .header_container {
 }
 
 .appear_square {
-  position: absolute;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  width: 24.8rem;
-  height: 12.2rem;
+  padding: 4rem;
   font-size: 0.9375rem;
   font-style: normal;
   font-weight: 500;
-
+  position: absolute;
+  cursor: pointer;
   z-index: 5;
   border-radius: 0.25rem;
   background: #fff;
 
-  top: 0.19rem;
-  right: -0.2rem;
+  top: 0.8rem;
+  right: 1.19rem;
 
   box-shadow: 0px 65px 30px 0px rgba(0, 0, 0, 0.01),
     0px 8px 20px 0px rgba(0, 0, 0, 0.04), 0px 17px 35px 0px rgba(0, 0, 0, 0.05),
@@ -75,8 +74,7 @@ header .header_container {
   width: 15.95rem;
   padding: 1.25rem 2.25rem;
   text-transform: uppercase;
-  left: 2.1875rem;
-  top: 4.1875rem;
+
   background-color: #fe3756;
   border: none;
   border-radius: 0.5rem;
@@ -86,8 +84,11 @@ header .header_container {
 .header_color_red {
   color: #fe3756;
 }
-.header_arrow_click {
-  z-index: 10;
+.appear_square .header_arrow_click {
+  position: absolute;
+  right: 34px;
+  top: 20px;
+  z-index: 20;
 }
 .header_arrow_click:hover {
   cursor: pointer;

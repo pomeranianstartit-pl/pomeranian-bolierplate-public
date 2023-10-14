@@ -74,7 +74,7 @@ export function ArrayRenderToTable() {
             <th>Most famous song</th>
           </tr>
         </thead>
-        <tbody>{bands.map(bandsToTable)}</tbody>
+        <tbody className="kot">{bands.map(bandsToTable)}</tbody>
       </table>
     </div>
   );
