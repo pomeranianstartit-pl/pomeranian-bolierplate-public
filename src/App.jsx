@@ -9,9 +9,10 @@ import { Dashboard } from './App/Dashboard';
 import { Exercises } from './App/Exercises';
 import { Calendar } from './App/Calendar';
 import { CV } from './App/CV';
-import {Blog} from './App/Blog';
-import {FAQ} from './App/FAQ';
-import { TechStack} from './App/TechStack';
+import {Blog } from './App/Blog';
+import {FAQ } from './App/FAQ';
+import { TechStack } from './App/TechStack';
+import { MaterialUI } from './App/MaterialUI';
 
 export function App() {
   return (
@@ -28,6 +29,7 @@ export function App() {
           <Route path="blocks/*" element={<Blocks />} />
           <Route path="faq/*" element={<FAQ />} />
           <Route path="techstack/*" element={<TechStack />} />
+          <Route path="material-ui/*" element={<MaterialUI />} />
           <Route path="*" element={<NotFound />} />
         </Route>
       </Routes>
