@@ -1,4 +1,5 @@
 import { Loops } from './Loops';
+import { StringMethods } from './StringMethods';
 import './styles.css';
 
 export function JsArraysBasics() {
@@ -128,6 +129,7 @@ export function JsArraysBasics() {
       </ul>
       Name: <b>{peopleData[0]['name']}</b>
       <Loops />
+      <StringMethods />
     </div>
   );
 }
