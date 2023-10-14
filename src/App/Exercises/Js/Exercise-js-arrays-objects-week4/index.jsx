@@ -1,4 +1,6 @@
 import { LoopsWeek4 } from './Loops';
+import { StringMethods } from './StringMethods';
+
 import './styles.css';
 
 export function ExerciseObjectsArraysWeek4() {
@@ -13,7 +15,7 @@ export function ExerciseObjectsArraysWeek4() {
     { id: 5, name: 'Tess2', age: 17, adress: 'Lodz' },
   ];
 
-  const arrowFunction = () => 'testset';
+  // const arrowFunction = () => 'testset';
 
   // map will create new array
   const names = peopleData.map((person) => person.name);
@@ -86,6 +88,23 @@ export function ExerciseObjectsArraysWeek4() {
 
   console.log('length of fruits', fruits.length); // 4
 
+  //Array methods
+  //find, filter, sort, join, reduce, includes, some
+
+  const sortedPeople = peopleData.sort(
+    (personA, personB) => personB.age - personA.age
+  );
+  console.log('sortedPeople', sortedPeople);
+
+  //reduce (mainly used for object transforamation; agregation)
+
+  const ages = peopleData.map((person) => person.age);
+  const totalAge = ages.reduce(
+    (perviousAge, currentAge) => perviousAge + currentAge,
+    0
+  );
+  console.log(totalAge);
+
   return (
     //BEM CSS methodology
     <div className="container--arrays-objects-week4">
@@ -103,6 +122,7 @@ export function ExerciseObjectsArraysWeek4() {
       <br />
       <br />
       <LoopsWeek4 />
+      <StringMethods />
     </div>
   );
 }
