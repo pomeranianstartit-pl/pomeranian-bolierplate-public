@@ -120,6 +120,8 @@ export const Loops = () => {
 
   console.log(getNames(peopleData));
 
+  console.log()
+
   return (
     //BEM CSS methodology
     <div className="container--loops">
