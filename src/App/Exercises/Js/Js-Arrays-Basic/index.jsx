@@ -1,4 +1,5 @@
 import { Loops } from './Loops';
+import { StringMethods } from './StringMethods';
 import './styles.css';
 
 export function ExerciseObjectsArrays() {
@@ -103,6 +104,7 @@ export function ExerciseObjectsArrays() {
       <br />
       <br />
       <Loops />
+      <StringMethods />
     </div>
   );
 }
