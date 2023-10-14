@@ -6,6 +6,11 @@
   --color-black: #000000;
   --color-grey: rgb(60, 64, 67);
   --color-white: rgb(255, 255, 255);
+  --color-red: #fe3756;
+  --color-primary-light: #f5f5f5;
+  --color-lightgrey: #c8cbd1;
+
+  
 }
 
 body {

@@ -1,0 +1,33 @@
+.avatar-wrapper {
+    display: flex;
+    flex-direction: row;
+    position: relative;
+}
+
+.avatar-content {
+    margin-left: 15px;
+    flex-direction: column;
+    justify-content: center;
+    display: flex;
+}
+
+.content-name {
+    color: #000;
+    font-size: 16px;
+    font-weight: 400;
+}
+
+.content-position {
+    color:  #999;
+    font-size: 13px;
+    font-weight: 400;
+}
+
+.avatar-img {
+    border-radius: 50%;
+    border: 1px solid #C8CBD1;
+}
+
+.avatar-wrapper > .more {
+    margin-left: 15px
+}
