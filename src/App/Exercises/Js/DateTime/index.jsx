@@ -15,7 +15,6 @@ export function DateTime() {
 
   console.log(
     currentDateObject.getFullYear(),
-
     'currentDateObject.getFullYear()'
   );
 
@@ -27,7 +26,6 @@ export function DateTime() {
 
   console.log(
     currentDateObject.toDateString(),
-
     'currentDateObject.toDateString()'
   );
 
@@ -35,7 +33,6 @@ export function DateTime() {
 
   console.log(
     currentDateObject.toISOString(),
-
     'currentDateObject.toISOString()'
   );
 
