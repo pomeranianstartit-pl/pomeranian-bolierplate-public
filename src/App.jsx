@@ -38,7 +38,7 @@ export function App() {
           <Route path="techstack/*" element={<TechStack />} />
           <Route path="material-ui/*" element={<MaterialUI />} />
           <Route
-            path="material-ui/button-base-demo*"
+            path="material-ui/button-base-demo/*"
             element={<ButtonBaseDemo />}
           />
           <Route path="*" element={<NotFound />} />
