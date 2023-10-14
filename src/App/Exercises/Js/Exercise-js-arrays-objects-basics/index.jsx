@@ -1,4 +1,5 @@
 import { Loops } from './Loops';
+import { StringMethods } from './StringMethods';
 import './styles.css';
 
 export function ExerciseObjectsArrays() {
@@ -125,6 +126,16 @@ export function ExerciseObjectsArrays() {
 
   sameNumbers(firstArray, secondArray);
 
+  const SameNumbersV2 = (arr1, arr2) => {
+    return arr1.filter((element) => arr2.includes(element));
+  };
+
+  console.log(
+    'Same numbers v2',
+
+    SameNumbersV2([1, 2, 5], [2, 3, 4, 5, 6, 7, 8, 9, 10])
+  );
+
   return (
     //BEM CSS methodology
     <div className="container--arrays-objects-week4">
@@ -142,6 +153,7 @@ export function ExerciseObjectsArrays() {
       <br />
       <br />
       <Loops />
+      <StringMethods />
     </div>
   );
 }
