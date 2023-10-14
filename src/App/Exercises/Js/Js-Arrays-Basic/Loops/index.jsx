@@ -1,13 +1,6 @@
 const numbers = [1, 2, 3, 4, 5];
 
 // arrays of objects
-const peopleData = [
-  { id: 1, name: 'John', age: 35, adress: 'Gdansk' },
-  { id: 2, name: 'Matt', age: 25, adress: 'Warszawa' },
-  { id: 3, name: 'Tim', age: 15, adress: 'Wroclaw' },
-  { id: 4, name: 'Tess', age: 15, adress: 'Wroclaw' },
-  { id: 5, name: 'Tess2', age: 17, adress: 'Lodz' },
-];
 
 //named export
 export const Loops = () => {
@@ -47,7 +40,7 @@ export const Loops = () => {
   for (const key in person) {
     console.log(`${key} dsdsad : ${person[key]}`);
   }
-  const arrA = [1, 2, 3, 4, 5, 13, 13,];
+  const arrA = [1, 2, 3, 4, 5, 13, 13];
   const arrB = [3, 5, 7, 9, 13, 16, 17];
 
   function SameNumbers(arr1, arr2) {
@@ -61,9 +54,73 @@ export const Loops = () => {
     return [...uniqueVal];
   }
 
+  const SameNumbersV2 = (arr1, arr2) => {
+    return arr1.filter((element) => arr2.includes(element));
+  };
+
+  const arrNumbersToCalculate = [15, 25, 35, 45, 65, 85];
+
+  const AverageValue = (arr) => {
+    const sum = arr.reduce((accumulator, element) => {
+      return accumulator + element;
+    }, 0);
+    return sum / arr.length;
+  };
+
+  const AverageValues2 = (arr) => {
+    return (
+      arr.reduce((accumulator, element) => accumulator + element) / arr.length
+    );
+  };
+
+  console.log('2Average Value below":');
+  console.log(AverageValues2(arrNumbersToCalculate));
   const commonArray = SameNumbers(arrA, arrB);
   console.log('commonArray below:');
   console.log(commonArray);
+
+  const reversedArray = (arr) => {
+    return arr.reverse();
+  };
+
+  // przerobić poniższe do działania:
+  const reversedArray2 = (arr) => {
+    const result = [];
+    while (arr.length > 0) {
+      result.push(arr.pop(0));
+    }
+    return result;
+  };
+
+  console.log(
+    'Reversed Array while push pop',
+    reversedArray2(['jeden', 'dwa'])
+  );
+
+  console.log('Reveresed Array simple:', reversedArray(['tak', 'nie']));
+
+  // napisz funkcję, która przyjmuje tablicę obiektów, gdzie każdy obiekt reprezentuje osobę z imieniem i
+  // wiekiem, i zwraca tablicę z samymi imionami osób
+
+  const peopleData = [
+    { id: 1, name: 'John', age: 35, adress: 'Gdansk' },
+    { id: 2, name: 'Matt', age: 25, adress: 'Warszawa' },
+    { id: 3, name: 'Tim', age: 15, adress: 'Wroclaw' },
+    { id: 4, name: 'Tess', age: 15, adress: 'Wroclaw' },
+    { id: 5, name: 'Tess2', age: 17, adress: 'Lodz' },
+  ];
+  const getNames = (people) => {
+    const names = [];
+    // const names = array.map((person) => person.name);
+    for (const person of people) {
+      names.push(person.name);
+    }
+    return names;
+  };
+
+  console.log(getNames(peopleData));
+
+  console.log()
 
   return (
     //BEM CSS methodology
