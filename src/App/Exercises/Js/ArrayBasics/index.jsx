@@ -1,5 +1,5 @@
 import React from 'react';
-
+import { ArrayMethods } from './ArrayMethods';
 /*
 1. continue - pomija iteracje, ale pętla wykonuje się dalej
 2. break - przerywa pętlę
@@ -9,11 +9,11 @@ import React from 'react';
 6. reduce - akumuluje wynik i zwraca go jezeli cala petla sie wykona
 */
 
-const NUMBERS = [1, 3, 66, 9, 155, 2];
-const STRINGS = ['Apple', 'Banana', 'Orange'];
+// const NUMBERS = [1, 3, 66, 9, 155, 2];
+// const STRINGS = ['Apple', 'Banana', 'Orange'];
 
 export const ArrayBasics = () => {
-  console.log('-----');
+  // console.log('-----');
   // Continue
   //   for (let i = 5; i > 0; i--) {
   //     if (i > 3) {
@@ -45,15 +45,20 @@ export const ArrayBasics = () => {
   //   console.log(sortedArray);
   //   console.log(NUMBERS);
 
-  const stringFromArray = STRINGS.join('-');
-  console.log(stringFromArray);
 
-  const sum = NUMBERS.reduce((accumulator, currentValue) => {
-    return accumulator + currentValue;
-  }, 0);
-  console.log(sum);
+  // const stringFromArray = STRINGS.join('-');
+  // console.log(stringFromArray);
+
+  // const sum = NUMBERS.reduce((accumulator, currentValue) => {
+  //   return accumulator + currentValue;
+  // }, 0);
+  // console.log(sum);
 
   
 
-  return <div>ArrayBasics</div>;
+  return (
+  <div>ArrayBasics 
+   <ArrayMethods/>
+  </div>
+  );
 };
