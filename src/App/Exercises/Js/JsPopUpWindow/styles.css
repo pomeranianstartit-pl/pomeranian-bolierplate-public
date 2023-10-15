@@ -1,0 +1,12 @@
+.popUp {
+  display:flex;
+  box-sizing: content-box;
+  width: 35%;
+  position: absolute;
+  bottom: 0;
+  border: solid grey 5px;
+  box-shadow: 10px 5px 5px grey;
+  padding: 5px;
+
+
+}

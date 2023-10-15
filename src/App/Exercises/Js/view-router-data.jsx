@@ -12,6 +12,7 @@ import { jsSetIntervalMetaData } from './JsSetInterval/router-data';
 import { vanishStringMetaData } from './VanishString/router-data';
 import { timerMetaData } from './Timer/router-data';
 import { jscountdownMetaData } from './Countdown/router-data';
+import { jsPopUpWindowMetaData } from './JsPopUpWindow/router-data';
 
 export const blockRouterMetaData = [
   blockRouterMetaDataJsVariables1,
@@ -26,5 +27,6 @@ export const blockRouterMetaData = [
   vanishStringMetaData,
   timerMetaData,
   jscountdownMetaData,
+  jsPopUpWindowMetaData,
 ];
 export const blockRouterData = getParsedRouterDataList(blockRouterMetaData);
