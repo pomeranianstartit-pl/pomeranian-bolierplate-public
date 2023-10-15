@@ -1,3 +1,4 @@
+import { LoopsExercise } from './Loops';
 import './styles.css';
 
 export function ExerciseJsArrayBasicsAndObjects () {
@@ -57,7 +58,7 @@ export function ExerciseJsArrayBasicsAndObjects () {
 
     //extract element by index 
     const arry6 = ["rayian", "wizz", "lot"].indexOf("lot"); // index 2 or 
-    arry6.indexOf("emirates"); // -1
+    // arry6.indexOf("emirates"); // -1
 
 
     //check length of array elements 
@@ -127,6 +128,9 @@ export function ExerciseJsArrayBasicsAndObjects () {
         peopleData[0].age
        }
      </div>
+
+     Import of Loops component:
+     <LoopsExercise/>
     </div>
   );
 }
