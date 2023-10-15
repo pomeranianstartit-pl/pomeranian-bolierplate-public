@@ -5,3 +5,8 @@
 .conteiner--array-objects-basics {
   margin-left: 5px;
 }
+
+.container--people-from-gdansk .container--people-data {
+  margin: 2rem;
+  border: 5px solid gold;
+}
