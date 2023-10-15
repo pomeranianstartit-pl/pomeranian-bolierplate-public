@@ -9,6 +9,7 @@ import { blockRouterMetaDataJsObjectBasics } from './Exercise-js-array-objects-b
 import { ArrayBasicMetaData } from './ArrayBasics/router-data';
 import { objectsAndDateMetaData} from './ObjectsBasics/router-data';
 import { dateTimeMetaData} from './JsDateTime/ruter-data';
+import { jsExtensionMetaData} from './JsExtension/ruter-data';
 
 
 
@@ -22,6 +23,7 @@ export const blockRouterMetaData = [
   ArrayBasicMetaData,
   objectsAndDateMetaData,
   dateTimeMetaData,
+  jsExtensionMetaData,
 
 ];
 export const blockRouterData = getParsedRouterDataList(blockRouterMetaData);
