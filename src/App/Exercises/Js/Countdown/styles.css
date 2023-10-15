@@ -1,0 +1,20 @@
+.container1 {
+  display: flex;
+  min-width: 100%;
+  margin:auto;
+  gap: 35px;;
+}
+.flex {
+  display:flex;
+  flex-direction: column;
+  align-items: center;
+}
+.font-big {
+  font-size: 4rem;
+  font-weight: 700;
+
+}
+.font-samll {
+  font-size: 1.85 rem;
+  font-weight: 600;
+}
