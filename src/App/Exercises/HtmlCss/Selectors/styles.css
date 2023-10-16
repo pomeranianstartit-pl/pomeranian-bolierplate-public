@@ -166,10 +166,10 @@ button[id*='Button'] {
 
 */
 
-#usersList > li {
+/* #usersList > li {
   background-color: aqua;
   border: 2px solid black;
-}
+} */
 
 /* TO NIE ZADZIAŁA */
 /* #usersList > a {

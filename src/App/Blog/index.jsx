@@ -4,8 +4,8 @@ export const Blog = () => {
   //<div className='container--blog'>Blog</div>;
   //BEM methodology
   return (
-    <div>
-      <section>
+    <div className="all">
+      <div className="one">
         <data>30-11-2022</data>
         <h1>Why are we so nostalgic for the 1990s?</h1>
 
@@ -22,9 +22,9 @@ export const Blog = () => {
         </article>
         <p>Radosława Majdan</p>
         <p>Senior Marketing Specialist</p>
-      </section>
+      </div>
 
-      <section>
+      <div className="two">
         <data>30-11-2022</data>
         <h1>I make mistakes!</h1>
 
@@ -36,9 +36,9 @@ export const Blog = () => {
         <article>Marilyn Monroe</article>
         <p>Radosława Majdan</p>
         <p>Senior Marketing Specialist</p>
-      </section>
+      </div>
 
-      <section>
+      <div className="three">
         <data>30-11-2022</data>
         <h1>18 Record-Breaking, Controversial, and Weird Facts </h1>
 
@@ -53,19 +53,19 @@ export const Blog = () => {
         </article>
 
         <ul id="usersList">
-        <li>
-          <a href="wp.pl">wp.pl</a>
+          <li>
+            <a href="wp.pl">wp.pl</a>
           </li>
           <li>
-          <a href="wp.pl 2">wp.pl 2</a> 
+            <a href="wp.pl 2">wp.pl 2</a>
           </li>
           <li>
-          <a href="onet.pl">onet.pl</a>
-        </li>
+            <a href="onet.pl">onet.pl</a>
+          </li>
         </ul>
         <p>Radosława Majdan</p>
         <p>Senior Marketing Specialist</p>
-      </section>
+      </div>
     </div>
   );
 };
