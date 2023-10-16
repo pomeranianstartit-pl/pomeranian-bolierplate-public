@@ -24,6 +24,7 @@ const game_time = 60;
 export const HitTheMole = () => {
   const [gameFields, setGameFields] = useState(fields);
   const [moleFieldId, setMoleFieldId] = useState(getRandomInt(10));
+
   const [previusMoleFieldId, setPreviusMoleFieldId] = useState(null);
   const [initialTime, setInitialTime] = useState(game_time);
   const [time, setTime] = useState(game_time);
@@ -33,6 +34,7 @@ export const HitTheMole = () => {
   const [intervalId, setIntervalId] = useState(null);
 
   const handleStartGame = () => {
+
     // 1. tutaj chcemy wyzerowac stan gry
     setIsGameEnded(false);
     setTime(game_time);
@@ -133,6 +135,7 @@ export const HitTheMole = () => {
         którym się pojawił.
       </h2>
 
+
       {isGameEnded && (
         <div className="congratulations">
           <h3>Gratulację! Twój wynik to: {score}</h3>
@@ -155,6 +158,7 @@ export const HitTheMole = () => {
             {/* WYNIK */}
 
             <div className="gameScore">
+     
               <div className="title">Wynik</div>
 
               <div className="content">
@@ -164,6 +168,7 @@ export const HitTheMole = () => {
 
             {/* PRZYCISKI STERUJĄCE */}
 
+
             <div className="gameStop">
               <div className="title">Przyciski sterujące</div>
 
@@ -171,11 +176,13 @@ export const HitTheMole = () => {
                 <button className="stop-button" onClick={handleStopGame}>
                   STOP
                 </button>
+              
               </div>
             </div>
           </div>
 
           {/* WIDOK ŁAPANIA KRETA */}
+
 
           <div className="gameFields">
             {gameFields.map((field) => {
@@ -200,6 +207,7 @@ export const HitTheMole = () => {
           </div>
         </div>
       ) : (
+
         <div className="startMenuPanel">
           {/* CZAS gry */}
 
@@ -221,12 +229,14 @@ export const HitTheMole = () => {
 
           {/* LICZBA KRETÓW */}
 
+
           <div className="moleNumber">
             <div className="title">Liczba kretów</div>
 
             <div className="content">
               <button>1 kret</button>
             </div>
+
 
             <div className="content">
               <button>2 krety</button>
@@ -239,6 +249,7 @@ export const HitTheMole = () => {
 
           {/* PRZYCISKI STERUJĄCE */}
 
+
           <div className="gameStart">
             <div className="title">Przyciski sterujące</div>
 
@@ -246,6 +257,7 @@ export const HitTheMole = () => {
               <button className="start-button" onClick={handleStartGame}>
                 START
               </button>
+
             </div>
           </div>
         </div>
