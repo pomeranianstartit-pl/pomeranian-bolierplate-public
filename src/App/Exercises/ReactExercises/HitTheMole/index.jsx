@@ -1,41 +1,33 @@
-import { React, useState } from 'react';
+import { React, useState, useEffect } from 'react';
 import './styles.css';
 
 import molesvg from '../../../Images/Mole.svg';
 
 const fields = [
   { id: 1, hasClicked: false },
-
   { id: 2, hasClicked: false },
-
   { id: 3, hasClicked: false },
-
   { id: 4, hasClicked: false },
-
   { id: 5, hasClicked: false },
-
   { id: 6, hasClicked: false },
-
   { id: 7, hasClicked: false },
-
   { id: 8, hasClicked: false },
-
   { id: 9, hasClicked: false },
-
   { id: 10, hasClicked: false },
 ];
 
 const getRandomInt = (max) => Math.floor(Math.random() * max) + 1;
 
 const interval_time = 1000;
+const game_time = 60;
 
 export const HitTheMole = () => {
   const [gameFields, setGameFields] = useState(fields);
-
   const [moleFieldId, setMoleFieldId] = useState(getRandomInt(10));
-
+  const [initialTime, setInitialTime] = useState(game_time);
+  const [time, setTime] = useState(game_time);
   const [isGameStarted, setIsGameStarted] = useState(false);
-
+  const [score, setScore] = useState(0);
   const [intervalId, setIntervalId] = useState(null);
 
   const handleStartGame = () => {
@@ -68,19 +60,47 @@ export const HitTheMole = () => {
     }, 300);
   };
 
+  const scoreUpdate = (isMolePresent) => {
+    if (isMolePresent) {
+      setScore(score + 1);
+    } else {
+      setScore(score - 1);
+    }
+  };
+
   const handleClickField = (clickedField, isMolePresent) => {
     setGameFields(
       gameFields.map((field) => {
         return {
           ...field,
-
           hasClicked: field.id === clickedField.id,
         };
       })
     );
 
     resetClickField();
+    scoreUpdate(isMolePresent);
   };
+
+  useEffect(() => {
+    if (isGameStarted) {
+      const intervalId = setInterval(() => {
+        time > 0 && setTime(time - 1);
+      }, 1000);
+
+      return () => clearInterval(intervalId);
+    }
+  }, [time, isGameStarted]);
+
+  useEffect(() => {
+    console.log(time, 'time na kadej zmianie');
+  });
+
+  useEffect(() => {
+    if (time === 0) {
+      handleStopGame();
+    }
+  }, [time]);
 
   return (
     <div>
@@ -98,7 +118,7 @@ export const HitTheMole = () => {
               <div className="title">Czas do końca</div>
 
               <div className="content">
-                <button disabled={true}>1:35</button>
+                <button disabled={true}>{time}</button>
               </div>
             </div>
 
@@ -108,7 +128,7 @@ export const HitTheMole = () => {
               <div className="title">Wynik</div>
 
               <div className="content">
-                <button disabled={true}>16</button>
+                <button disabled={true}>{score}</button>
               </div>
             </div>
 

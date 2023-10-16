@@ -3,3 +3,11 @@
     min-height: 50px;
     border: 1px solid black;
 }
+
+.green {
+    background-color: green;
+}
+
+.red {
+    background-color: red;
+}
