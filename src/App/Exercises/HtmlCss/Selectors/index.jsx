@@ -36,7 +36,7 @@ export function Exercise() {
         <li>Jola</li>
       </ul>
 
-      <div>
+      <div className='selectors'>
         <h2>To jest nagłówek</h2>
         <p>To jest paragraf za nagłówkiem</p>
         <p>To jest p</p>
