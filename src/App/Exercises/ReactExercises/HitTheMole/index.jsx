@@ -24,13 +24,23 @@ const game_time = 60;
 export const HitTheMole = () => {
   const [gameFields, setGameFields] = useState(fields);
   const [moleFieldId, setMoleFieldId] = useState(getRandomInt(10));
+  const [previusMoleFieldId, setPreviusMoleFieldId] = useState(null);
   const [initialTime, setInitialTime] = useState(game_time);
   const [time, setTime] = useState(game_time);
   const [isGameStarted, setIsGameStarted] = useState(false);
+  const [isGameEnded, setIsGameEnded] = useState(false);
   const [score, setScore] = useState(0);
   const [intervalId, setIntervalId] = useState(null);
 
   const handleStartGame = () => {
+    // 1. tutaj chcemy wyzerowac stan gry
+    setIsGameEnded(false);
+    setTime(game_time);
+    setScore(0);
+
+    // 3. na starcie gry te powinien pojawiac sie w nowym miejscu
+    setMoleFieldId(getRandomInt(10));
+
     setIsGameStarted(true);
 
     const intervalId = setInterval(() => {
@@ -42,7 +52,7 @@ export const HitTheMole = () => {
 
   const handleStopGame = () => {
     setIsGameStarted(false);
-
+    setIsGameEnded(true);
     clearInterval(intervalId);
   };
 
@@ -80,6 +90,20 @@ export const HitTheMole = () => {
 
     resetClickField();
     scoreUpdate(isMolePresent);
+
+    // 2. po kliknieciu w kreta kret pojawia sie w innym losowym miejscu
+    if (isMolePresent) {
+      //losujemy mu nową pozycję
+      setPreviusMoleFieldId(moleFieldId);
+      setMoleFieldId(getRandomInt(10));
+
+      // i resetujemy interwał
+      clearInterval(intervalId);
+      const newIntervalId = setInterval(() => {
+        setMoleFieldId(getRandomInt(10));
+      }, interval_time);
+      setIntervalId(newIntervalId);
+    }
   };
 
   useEffect(() => {
@@ -109,12 +133,18 @@ export const HitTheMole = () => {
         którym się pojawił.
       </h2>
 
+      {isGameEnded && (
+        <div className="congratulations">
+          <h3>Gratulację! Twój wynik to: {score}</h3>
+        </div>
+      )}
+
       {isGameStarted ? (
         <div>
-          <div>
+          <div className="menuPanel">
             {/* CZAS do końca  */}
 
-            <div>
+            <div className="gameTime">
               <div className="title">Czas do końca</div>
 
               <div className="content">
@@ -124,7 +154,7 @@ export const HitTheMole = () => {
 
             {/* WYNIK */}
 
-            <div>
+            <div className="gameScore">
               <div className="title">Wynik</div>
 
               <div className="content">
@@ -134,29 +164,32 @@ export const HitTheMole = () => {
 
             {/* PRZYCISKI STERUJĄCE */}
 
-            <div>
+            <div className="gameStop">
               <div className="title">Przyciski sterujące</div>
 
               <div className="content">
-                <button onClick={handleStopGame}>Stop</button>
+                <button className="stop-button" onClick={handleStopGame}>
+                  STOP
+                </button>
               </div>
             </div>
           </div>
 
           {/* WIDOK ŁAPANIA KRETA */}
 
-          <div>
+          <div className="gameFields">
             {gameFields.map((field) => {
               const isMolePresent = field.id === moleFieldId;
 
+              const isPreviusMolePresent = field.id === previusMoleFieldId;
               const isClickedWithMole =
                 isMolePresent && field.hasClicked ? 'green' : '';
-
               const isClickedWithoutMole =
                 !isMolePresent && field.hasClicked ? 'red' : '';
 
               return (
                 <div
+                  key={field.id}
                   onClick={() => handleClickField(field, isMolePresent)}
                   className={`field ${isClickedWithMole} ${isClickedWithoutMole}`}
                 >
@@ -167,34 +200,52 @@ export const HitTheMole = () => {
           </div>
         </div>
       ) : (
-        <div>
+        <div className="startMenuPanel">
           {/* CZAS gry */}
 
-          <div>
+          <div className="startTime">
             <div className="title">Czas gry</div>
 
             <div className="content">
               <button>1 minuta</button>
             </div>
+
+            <div className="content">
+              <button>2 minuta</button>
+            </div>
+
+            <div className="content">
+              <button>3 minuta</button>
+            </div>
           </div>
 
           {/* LICZBA KRETÓW */}
 
-          <div>
+          <div className="moleNumber">
             <div className="title">Liczba kretów</div>
 
             <div className="content">
               <button>1 kret</button>
             </div>
+
+            <div className="content">
+              <button>2 krety</button>
+            </div>
+
+            <div className="content">
+              <button>3 krety</button>
+            </div>
           </div>
 
           {/* PRZYCISKI STERUJĄCE */}
 
-          <div>
+          <div className="gameStart">
             <div className="title">Przyciski sterujące</div>
 
             <div className="content">
-              <button onClick={handleStartGame}>Start</button>
+              <button className="start-button" onClick={handleStartGame}>
+                START
+              </button>
             </div>
           </div>
         </div>

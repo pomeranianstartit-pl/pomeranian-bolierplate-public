@@ -16,8 +16,8 @@ export function MessagesIcon({ className = '' }) {
               stroke="#23213D"
               stroke-width="1.5"
               stroke-miterlimit="10"
-              stroke-linecap="round"
-              stroke-linejoin="round"
+              strokeLinecap="round"
+              strokeLinejoin="round"
             />
           </g>
           <path
@@ -26,32 +26,32 @@ export function MessagesIcon({ className = '' }) {
             stroke="#23213D"
             stroke-width="1.5"
             stroke-miterlimit="10"
-            stroke-linecap="round"
-            stroke-linejoin="round"
+            strokeLinecap="round"
+            strokeLinejoin="round"
           />
           <path
             id="Vector_3"
             d="M13.4955 13.75H13.5045"
             stroke="#23213D"
             stroke-width="2"
-            stroke-linecap="round"
-            stroke-linejoin="round"
+            strokeLinecap="round"
+            strokeLinejoin="round"
           />
           <path
             id="Vector_4"
             d="M9.9955 13.75H10.0045"
             stroke="#23213D"
             stroke-width="2"
-            stroke-linecap="round"
-            stroke-linejoin="round"
+            strokeLinecap="round"
+            strokeLinejoin="round"
           />
           <path
             id="Vector_5"
             d="M6.4955 13.75H6.5045"
             stroke="#23213D"
             stroke-width="2"
-            stroke-linecap="round"
-            stroke-linejoin="round"
+            strokeLinecap="round"
+            strokeLinejoin="round"
           />
         </g>
       </g>

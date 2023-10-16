@@ -11,6 +11,10 @@ export function AppCookies() {
     return localStorage.getItem('cookieState');
   }
 
+  function handleAcceptCookies() {
+    setCookieState();
+  }
+
   if (getCookieState()) {
     return null;
   }
@@ -34,7 +38,7 @@ export function AppCookies() {
       </div>
 
       <div className="cookies-right">
-        <button>W porządku</button>
+        <button onClick={handleAcceptCookies}>W porządku</button>
         <button>Dopasuj zgody</button>
       </div>
     </div>
