@@ -18,7 +18,7 @@ export function AppHeader() {
   return (
     <header>
       <PomeranianLogo />
-      <div class="container">
+      <div className="container">
         <SettingIcon />
         <img src={myphoto} />
 

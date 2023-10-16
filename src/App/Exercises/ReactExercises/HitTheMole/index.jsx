@@ -36,6 +36,7 @@ export const HitTheMole = () => {
   const [gameFields, setGameFields] = useState(fields);
 
   const [moleFieldId, setMoleFieldId] = useState(getRandomInt(10));
+  const [previusMoleFieldId, setPreviusMoleFieldId] = useState(null);
 
   const [initialTime, setInitialTime] = useState(game_time);
 
@@ -48,6 +49,12 @@ export const HitTheMole = () => {
   const [intervalId, setIntervalId] = useState(null);
 
   const handleStartGame = () => {
+    //Wyzerowanie stanu gry
+    setTime(game_time);
+    setScore(0);
+    //Losowanie nowej pozycji
+    setMoleFieldId(getRandomInt(10));
+
     setIsGameStarted(true);
 
     const intervalId = setInterval(() => {
@@ -69,8 +76,6 @@ export const HitTheMole = () => {
         gameFields.map((field) => {
           return {
             ...field,
-
-            hasClicked: false,
           };
         })
       );
@@ -99,6 +104,18 @@ export const HitTheMole = () => {
     resetClickField();
 
     scoreUpdate(isMolePresent);
+
+    if (isMolePresent) {
+      //Losujemy nową pozycję
+      setPreviusMoleFieldId(moleFieldId);
+      setMoleFieldId(getRandomInt(10));
+      //Resetujemy interwał
+      clearInterval(intervalId);
+      const newIntervalId = setInterval(() => {
+        setMoleFieldId(getRandomInt(10));
+      }, interval_time);
+      setIntervalId(newIntervalId);
+    }
   };
 
   useEffect(() => {
@@ -126,10 +143,10 @@ export const HitTheMole = () => {
 
       {isGameStarted ? (
         <div>
-          <div>
+          <div className="allgrid">
             {/* CZAS do końca  */}
 
-            <div>
+            <div className="allgrid1">
               <div className="title">Czas do końca</div>
 
               <div className="content">
@@ -139,7 +156,7 @@ export const HitTheMole = () => {
 
             {/* WYNIK */}
 
-            <div>
+            <div className="allgrid2">
               <div className="title">Wynik</div>
 
               <div className="content">
@@ -149,29 +166,34 @@ export const HitTheMole = () => {
 
             {/* PRZYCISKI STERUJĄCE */}
 
-            <div>
+            <div className="allgrid3">
               <div className="title">Przyciski sterujące</div>
 
-              <div className="content">
-                <button onClick={handleStopGame}>Stop</button>
+              <div className="content1">
+                <button onClick={handleStopGame}>
+                  <p>STOP</p>
+                </button>
               </div>
             </div>
           </div>
 
           {/* WIDOK ŁAPANIA KRETA */}
 
-          <div>
+          <div className="fieldgrid">
             {gameFields.map((field) => {
               const isMolePresent = field.id === moleFieldId;
 
+              const isPreviusMolePresent = field.id === previusMoleFieldId;
+
               const isClickedWithMole =
-                isMolePresent && field.hasClicked ? 'green' : '';
+                isPreviusMolePresent && field.hasClicked ? 'green' : '';
 
               const isClickedWithoutMole =
-                !isMolePresent && field.hasClicked ? 'red' : '';
+                !isPreviusMolePresent && field.hasClicked ? 'red' : '';
 
               return (
                 <div
+                  key={field.id}
                   onClick={() => handleClickField(field, isMolePresent)}
                   className={`field ${isClickedWithMole} ${isClickedWithoutMole}`}
                 >
@@ -182,10 +204,10 @@ export const HitTheMole = () => {
           </div>
         </div>
       ) : (
-        <div>
+        <div className="allgrid">
           {/* CZAS gry */}
 
-          <div>
+          <div className="allgrid1">
             <div className="title">Czas gry</div>
 
             <div className="content">
@@ -195,7 +217,7 @@ export const HitTheMole = () => {
 
           {/* LICZBA KRETÓW */}
 
-          <div>
+          <div className="allgrid2">
             <div className="title">Liczba kretów</div>
 
             <div className="content">
@@ -205,11 +227,13 @@ export const HitTheMole = () => {
 
           {/* PRZYCISKI STERUJĄCE */}
 
-          <div>
+          <div className="allgrid3">
             <div className="title">Przyciski sterujące</div>
 
-            <div className="content">
-              <button onClick={handleStartGame}>Start</button>
+            <div className="content1">
+              <button onClick={handleStartGame}>
+                <p>START</p>
+              </button>
             </div>
           </div>
         </div>
