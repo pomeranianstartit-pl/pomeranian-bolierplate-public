@@ -206,6 +206,10 @@ export const JsExtension = () => {
 
   };
 
+
+  // ZADANIA 
+  // 1.stwórz funkcję, która przyjmuje dowolną liczbę argumentów za pomocą "...args" i zwraca ich sumę 
+
   const sumOfParams_1 = (...args) => {
 
     let sum = 0;
@@ -266,21 +270,66 @@ export const JsExtension = () => {
 
     }
 
- 
-
     return sum;
 
   };
 
+
+// 2. Stwórz funkcję calculatorWithChar ma zwracać funkcję, która przyjmuje jako argument jeden operator matematyczny '+', '-', '*', '/',
+// *funkcja ma zwracać funkcję, która przyjmuje dwie liczby jako argumenty 
+
+const calculateWithChar = (operator) => {
+  return (arg1, arg2) => {
+    if (typeof arg1 !== 'number' || typeof arg2 !== 'number') {
+      return 'złe wejscie'; 
+    }
+    switch (operator) {
+      case '+' : 
+        return arg1 + arg2;
+      case '-' :
+        return arg1 - arg2;
+      case '/' :
+        return arg1 / arg2; 
+      case '*' :
+        return arg1 * arg2;
+        default:
+          return 'zły znak';
+
+    }
+  }
+}
+
+// 3. Funkcja zwraca podany w argumencie element ciągu Fibonacciego
+// *napisać rekurencyjnie
+function Fibonacci (n) {
+  if (n === 0) return 0; 
+  if (n === 1) return 1; 
+  if (n > 1) return Fibonacci(n - 1) + Fibonacci(n - 2);
+}
+
+// ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
  
+  console.log(xFunction()(1, 23)('aba')(), 'xFunction()()()()');
+
+  console.log ('---------');
 
   console.log(sumOfParams_1(1, 2, '3', 4, 5), 'sumOfParams_1');
 
-  console.log(sumOfParams_2(1, 2, '3', 4, 5), 'sumOfParams_2');
+  console.log(sumOfParams_2(1, 2, 3, 4, 5), 'sumOfParams_2');
 
   console.log(sumOfParams_3(1, 2, '3', 4, 5), 'sumOfParams_3');
 
-  console.log(xFunction()(1, 23)('aba')(), 'xFunction()()()()');
+  console.log ('---------');
+
+  console.log(calculateWithChar('+')(2,3));
+
+  console.log ('---------');
+
+  console.log(Fibonacci(3));
+  console.log(Fibonacci(12));
+
+
 
  
 
