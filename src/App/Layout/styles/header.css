@@ -52,6 +52,17 @@ header .logo {
   background-color: white;
   text-align: center;
 }
+.Loginn h2 {
+  background: #fe3756;
+  color: white;
+  height: 56px;
+  padding: 10px;
+  justify-content: center;
+  align-items: center;
+  margin: 50px 50px 25px 50px;
+  border-radius: 8px;
+  border: 1px solid #fe3756;
+}
 img {
   position: relative;
 }
