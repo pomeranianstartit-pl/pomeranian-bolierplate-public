@@ -1,0 +1,44 @@
+.first-t {
+  border-radius: 30px;
+  width: 700px;
+  box-shadow: 1px 1px 40px grey;
+  border-collapse: collapse;
+  padding:30px;
+  background: #FFF;
+}
+
+.background th {
+  background: #F5F5F5;
+}
+
+
+.first-t td {
+  padding: 25px;
+  margin-left: 10px;
+  margin-right: 20px;
+}
+
+.first-t th {
+  padding: 10px;
+}
+
+.first-t .border-radius {
+  padding: 10px;
+  border-radius: 50%;
+}
+
+.first-t .table-white {
+  border-bottom: 1.415px solid var(--primary-primary-light, #FFD5DB);
+  background: #FFF;
+}
+
+.first-t .table-pink {
+  border: 1.415px solid var(--primary-primary-light, #FFD5DB);
+background: var(--primary-primary-light, #FFD5DB);
+}
+
+.first-t .table-white-last {
+  border-radius: 20px;
+  background: #FFF;
+}
+

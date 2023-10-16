@@ -1,0 +1,88 @@
+.Monroe {
+    color: var(--text-text-primary, #222);
+text-align: right;
+font-family: MADE TOMMY;
+font-size: 14px;
+font-style: normal;
+font-weight: 700;
+line-height: 22px; /* 157.143% */
+    position: absolute;
+    left: 55%;
+}
+ 
+h1 {
+    color: var(--text-text-primary, #222);
+    font-family: MADE TOMMY;
+    font-size: 42px;
+    font-style: normal;
+    font-weight: 800;
+    line-height: 56px; 
+}
+
+.Ring { 
+    position: absolute;
+    left: 88%;
+    
+}
+
+.Ring:hover { 
+    position: absolute;
+    left: 88%;
+    fill: #F6F6F6;
+}
+
+.h1-top {
+    color:#F4F5F7;
+    margin: 0px;
+font-size: 42px;
+font-style: normal;
+font-weight: 800;
+line-height: 56px; 
+}
+
+.conteiner1 {
+    color:#F4F5F7;
+    border-radius: 8px;
+    background: var(--secondary-secondary, #23213D);
+    width: 1703px;
+    margin-bottom: 30px;
+    display: inline-flex;
+    padding: 45px 61px;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+}
+
+.conteiner {
+    display: flex;
+    justify-content: center;
+    text-align: left;
+    color: var(--secondary-secondary, #23213D);
+    width: 1703px;
+    margin-bottom: 30px;
+    border-radius: 8px;
+    display: inline-flex;
+    padding: 45px 61px;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+}
+
+.conteiner:hover {
+    border-radius: 8px;
+background: var(--gray-50, #F6F6F6);
+box-shadow: 0px 65px 30px 0px rgba(0, 0, 0, 0.01), 0px 8px 20px 0px rgba(0, 0, 0, 0.04), 0px 17px 35px 0px rgba(0, 0, 0, 0.05), 0px -4px 26px 0px rgba(0, 0, 0, 0.08);
+    width: 1703px;
+    margin-bottom: 30px;
+    border-radius: 8px;
+    background: var(--gray-80, #F4F5F7);
+    display: inline-flex;
+    padding: 45px 61px;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+}
+
+.Span-margin {
+    margin: 15px;
+}

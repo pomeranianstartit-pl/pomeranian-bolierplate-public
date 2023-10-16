@@ -1,0 +1,43 @@
+.Techstack {
+    font-family: 'Poppins', sans-serif;
+}
+
+.Techstack-greeting {
+color: var(--secondary-secondary, #23213D);
+
+/* body/bold-18 */
+font-family: 'Poppins';
+font-size: 25px;
+font-style: normal;
+font-weight: 700;
+line-height: 34px; /* 188.889% */
+}
+
+.Techstack-description {
+    color: var(--secondary-secondary, #23213D);
+font-feature-settings: 'clig' off, 'liga' off;
+
+/* header/H4 */
+font-family: 'Poppins';
+font-size: 22px;
+font-style: normal;
+font-weight: 400;
+line-height: 34px; /* 188.889% */
+}
+
+.Techstack-cards {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 30px;
+    width: 800px;
+}
+
+.Techstack-cards div {
+    margin: 20px;
+    text-align: center;
+}
+
+.Techstack-cards p {
+    font-family: 'Poppins';
+    font-weight: 900px;
+}
