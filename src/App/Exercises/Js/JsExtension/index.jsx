@@ -206,7 +206,79 @@ export const JsExtension = () => {
 
   };
 
+  const sumOfParams_1 = (...args) => {
+
+    let sum = 0;
+
+    for (const arg of args) {
+
+      if (typeof arg === 'string') {
+
+        sum = 'złe wejście';
+
+      }
+
+    }
+
  
+
+    if (sum === 'złe wejście') return sum;
+
+ 
+
+    return args.reduce((acc, curr) => acc + curr, 0);
+
+  };
+
+ 
+
+  const sumOfParams_2 = (...args) => {
+
+    return args.reduce((acc, curr) => {
+
+      if (typeof acc === 'string') return 'złe wejście';
+
+      return acc + curr;
+
+    }, 0);
+
+  };
+
+ 
+
+  const sumOfParams_3 = (...args) => {
+
+    let sum = 0;
+
+ 
+
+    for (const arg of args) {
+
+      if (typeof arg === 'number') {
+
+        sum += arg;
+
+      } else {
+
+        return 'złe wejście';
+
+      }
+
+    }
+
+ 
+
+    return sum;
+
+  };
+
+ 
+
+  console.log(sumOfParams_1(1, 2, '3', 4, 5), 'sumOfParams_1');
+
+  console.log(sumOfParams_2(1, 2, '3', 4, 5), 'sumOfParams_2');
+
+  console.log(sumOfParams_3(1, 2, '3', 4, 5), 'sumOfParams_3');
 
   console.log(xFunction()(1, 23)('aba')(), 'xFunction()()()()');
 
