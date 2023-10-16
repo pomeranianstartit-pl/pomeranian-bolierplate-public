@@ -12,8 +12,11 @@ import ts from '../Images/tech-stack/ts.svg';
 import vscode from '../Images/tech-stack/vscode.png';
 import css from '../Images/tech-stack/css.svg';
 import bitbucket from '../Images/tech-stack/bitbucket.svg';
+import jest from '../Images/tech-stack/jest.svg';
+import firebase from '../Images/tech-stack/firebase.svg';
+import git from '../Images/tech-stack/git.svg';
 
-const data = [
+const dataData = [
   {
     title: 'CSS',
     image: <img src={css} />,
@@ -44,11 +47,11 @@ const data = [
   },
   {
     title: 'jest',
-    image: '',
+    image: <img src={jest} />,
   },
   {
     title: 'firebase',
-    image: '',
+    image: <img src={firebase} />,
   },
   {
     title: 'redux',
@@ -56,7 +59,7 @@ const data = [
   },
   {
     title: 'git',
-    image: '',
+    image: <img src={git} />,
   },
   {
     title: 'vscode',
@@ -85,8 +88,8 @@ export const TechStack = () => {
         podczas kursu.
       </p>
       <div className="data">
-        {data.map(({ title, image }) => (
-          <data title={title} image={image} />
+        {dataData.map(({ title }, { image }) => (
+          <dataData title={title} image={image} />
         ))}
         ;
       </div>

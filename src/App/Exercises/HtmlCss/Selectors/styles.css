@@ -187,10 +187,10 @@ button[id*='Button'] {
 
 */
 
-div + p {
+/* div + p {
   background-color: aqua;
   border: 2px solid black;
-}
+} */
 
 /* p + p {
   background-color: red;
