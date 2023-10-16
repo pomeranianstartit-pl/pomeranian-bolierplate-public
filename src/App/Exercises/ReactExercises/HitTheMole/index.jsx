@@ -69,7 +69,6 @@ export const HitTheMole = () => {
         gameFields.map((field) => {
           return {
             ...field,
-
             hasClicked: false,
           };
         })
@@ -90,7 +89,6 @@ export const HitTheMole = () => {
       gameFields.map((field) => {
         return {
           ...field,
-
           hasClicked: field.id === clickedField.id,
         };
       })
@@ -119,29 +117,29 @@ export const HitTheMole = () => {
 
   return (
     <div>
-      <h2>
+      <h4 className="game-description">
         Gra polegająca na podążaniu za krecikiem i trafieniu na kwadrat, w
         którym się pojawił.
-      </h2>
+      </h4>
 
       {isGameStarted ? (
         <div>
           <div>
             {/* CZAS do końca  */}
 
-            <div>
-              <div className="title">Czas do końca</div>
-
+            <div className="game-counter">
+              <div className="title">CZAS DO KOŃCA</div>
               <div className="content">
-                <button disabled={true}>{time}</button>
+                <button className="btn1" disabled={true}>
+                  {time}
+                </button>
               </div>
             </div>
 
             {/* WYNIK */}
 
-            <div>
-              <div className="title">Wynik</div>
-
+            <div className="game-score">
+              <div className="title">WYNIK</div>
               <div className="content">
                 <button disabled={true}>{score}</button>
               </div>
@@ -149,9 +147,8 @@ export const HitTheMole = () => {
 
             {/* PRZYCISKI STERUJĄCE */}
 
-            <div>
-              <div className="title">Przyciski sterujące</div>
-
+            <div className="game-stop">
+              <div className="title">PRZYCISKI STERUJĄCE</div>
               <div className="content">
                 <button onClick={handleStopGame}>Stop</button>
               </div>
@@ -160,7 +157,7 @@ export const HitTheMole = () => {
 
           {/* WIDOK ŁAPANIA KRETA */}
 
-          <div>
+          <div className="game-board">
             {gameFields.map((field) => {
               const isMolePresent = field.id === moleFieldId;
 
@@ -187,7 +184,6 @@ export const HitTheMole = () => {
 
           <div>
             <div className="title">Czas gry</div>
-
             <div className="content">
               <button>1 minuta</button>
             </div>
@@ -197,7 +193,6 @@ export const HitTheMole = () => {
 
           <div>
             <div className="title">Liczba kretów</div>
-
             <div className="content">
               <button>1 kret</button>
             </div>
@@ -207,7 +202,6 @@ export const HitTheMole = () => {
 
           <div>
             <div className="title">Przyciski sterujące</div>
-
             <div className="content">
               <button onClick={handleStartGame}>Start</button>
             </div>
