@@ -18,32 +18,49 @@ const fields = [
 
 const getRandomInt = (max) => Math.floor(Math.random() * max) + 1;
 
+const getRandomMoleFields = (numMoles) => {
+  const moleFields = [];
+
+  while (moleFields.length < numMoles) {
+    const randomField = getRandomInt(10);
+
+    if (!moleFields.includes(randomField)) {
+      moleFields.push(randomField);
+    }
+  }
+
+  return moleFields;
+};
+
 const interval_time = 1000;
 const game_time = 60;
 
 export const HitTheMole = () => {
   const [gameFields, setGameFields] = useState(fields);
-  const [moleFieldId, setMoleFieldId] = useState(getRandomInt(10));
-  const [previusMoleFieldId, setPreviusMoleFieldId] = useState(null);
+  const [moleFieldIds, setMoleFieldIds] = useState(getRandomMoleFields(1));
+  const [previusMoleFieldIds, setPreviusMoleFieldIds] = useState([]);
   const [initialTime, setInitialTime] = useState(game_time);
   const [time, setTime] = useState(game_time);
   const [isGameStarted, setIsGameStarted] = useState(false);
   const [score, setScore] = useState(0);
   const [intervalId, setIntervalId] = useState(null);
   const [isGameEnded, setIsGameEnded] = useState(false);
+  const [numMoles, setNumMoles] = useState(1);
 
   const handleStartGame = () => {
     // 1. Tutaj zerujemy stan przed startem
     setIsGameEnded(false);
     setTime(initialTime);
     setScore(0);
+    //Losowanie nowej pozycji kreta
+    setMoleFieldIds(getRandomMoleFields(numMoles));
 
-    // 2. Zmiana widoku gry na pola z kretem
+    // 2. Zmiana widoku gry na pole z kretem
     setIsGameStarted(true);
 
     // 3. Zmiana miejsca kreta nawet jezeli uzytkownik nie kliknie
     const intervalId = setInterval(() => {
-      setMoleFieldId(getRandomInt(10));
+      setMoleFieldIds(getRandomMoleFields(numMoles));
     }, interval_time);
 
     setIntervalId(intervalId);
@@ -67,13 +84,17 @@ export const HitTheMole = () => {
     // Losowanie nowego miejsca kreta jezeli zostanie trafiony
     if (isMolePresent) {
       // Ustawiamy mu nową pozycje i trzymamy info o jego poprzedniej pozycji
-      setPreviusMoleFieldId(moleFieldId);
-      setMoleFieldId(getRandomInt(10));
+      setPreviusMoleFieldIds(moleFieldIds);
+
+      // Dodaj TimeOut tutaj dla zmiany koloru
+      setTimeout(() => {
+        setMoleFieldIds(getRandomMoleFields(numMoles));
+      }, 30);
 
       // Reset interwału
       clearInterval(intervalId);
       const newIntervalId = setInterval(() => {
-        setMoleFieldId(getRandomInt(10));
+        setMoleFieldIds(getRandomMoleFields(numMoles));
       }, interval_time);
       setIntervalId(newIntervalId);
     }
@@ -151,9 +172,12 @@ export const HitTheMole = () => {
           {/* WIDOK ŁAPANIA KRETA */}
           <div className="board">
             {gameFields.map((field) => {
-              const isMolePresent = field.id === moleFieldId;
+              const isMolePresent = moleFieldIds.includes(field.id);
 
-              const isPreviusMolePresent = field.id === previusMoleFieldId;
+              const isPreviusMolePresent = previusMoleFieldIds.includes(
+                field.id
+              );
+
               const isClickedWithMole =
                 isPreviusMolePresent && field.hasClicked ? 'green' : '';
               const isClickedWithoutMole =
@@ -207,9 +231,24 @@ export const HitTheMole = () => {
           <div className="option-wrapper">
             <div className="title">Liczba kretów</div>
             <div className="content">
-              <button className="current">1 kret</button>
-              <button>2 krety</button>
-              <button>3 krety</button>
+              <button
+                className={numMoles === 1 ? 'current' : ''}
+                onClick={() => setNumMoles(1)}
+              >
+                1 kret
+              </button>
+              <button
+                className={numMoles === 2 ? 'current' : ''}
+                onClick={() => setNumMoles(2)}
+              >
+                2 krety
+              </button>
+              <button
+                className={numMoles === 3 ? 'current' : ''}
+                onClick={() => setNumMoles(3)}
+              >
+                3 krety
+              </button>
             </div>
           </div>
 
