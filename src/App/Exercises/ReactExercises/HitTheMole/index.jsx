@@ -40,22 +40,21 @@ export const HitTheMole = () => {
     getRandomMolePositions(numMoles)
   );
   const [previusMoleFieldIds, setPreviusMoleFieldIds] = useState([]);
-  const [time, setTime] = useState(game_time);
+  const [initialTime, setInitialTime] = useState(game_time);
+  const [time, setTime] = useState(initialTime);
   const [isGameStarted, setIsGameStarted] = useState(false);
   const [score, setScore] = useState(0);
   const [intervalId, setIntervalId] = useState(null);
   const [isGameEnded, setIsGameEnded] = useState(false);
-  const [initialTime, setInitialTime] = useState(game_time);
 
   const handleStartGame = () => {
     // 1. tutaj pewnie chcecie "wyzerować" stan gry
     setIsGameEnded(false);
-    setTime(game_time);
+    setTime(initialTime);
     setScore(0);
-    setMoleFieldIds(getRandomMolePositions(numMoles));
 
     setIsGameStarted(true);
-
+    setMoleFieldIds(getRandomMolePositions(numMoles));
     const intervalId = setInterval(() => {
       setMoleFieldIds(getRandomMolePositions(numMoles));
     }, interval_time);
@@ -209,9 +208,24 @@ export const HitTheMole = () => {
           <div className="option-wrapper">
             <div className="title">Czas gry</div>
             <div className="content">
-              <button className="current">1 minuta</button>
-              <button>2 minuty</button>
-              <button>3 minuty</button>
+              <button
+                className={initialTime === 60 ? 'current' : ''}
+                onClick={() => setInitialTime(60)}
+              >
+                1 minuta
+              </button>
+              <button
+                className={initialTime === 120 ? 'current' : ''}
+                onClick={() => setInitialTime(120)}
+              >
+                2 minuty
+              </button>
+              <button
+                className={initialTime === 180 ? 'current' : ''}
+                onClick={() => setInitialTime(180)}
+              >
+                3 minuty
+              </button>
             </div>
           </div>
 
