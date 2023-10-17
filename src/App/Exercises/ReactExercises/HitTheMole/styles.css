@@ -96,9 +96,9 @@
 }
 
 .mole-game .field.green {
-  background-color: green;
+  background-color: #e2fbd7;
 }
 
 .mole-game .field.red {
-  background-color: red;
+  background-color: #f3aea8;
 }
