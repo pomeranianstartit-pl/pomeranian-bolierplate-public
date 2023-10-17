@@ -1,3 +1,4 @@
+/* eslint-disable react-hooks/exhaustive-deps */
 import { useEffect, useState } from 'react';
 
 import molesvg from '../../../Images/mole.svg';
@@ -19,32 +20,48 @@ const fields = [
 
 const getRandomInt = (max) => Math.floor(Math.random() * max) + 1;
 
+const getRandomMoleFields = (numMoles) => {
+  const moleFields = [];
+
+  while (moleFields.length < numMoles) {
+    const randomField = getRandomInt(10);
+
+    if (!moleFields.includes(randomField)) {
+      moleFields.push(randomField);
+    }
+  }
+
+  return moleFields;
+};
+
 const interval_time = 1000;
 const game_time = 60;
 
 export const HitTheMole = () => {
   const [gameFields, setGameFields] = useState(fields);
-  const [moleFieldId, setMoleFieldId] = useState(getRandomInt(10));
-  const [previusMoleFieldId, setPreviusMoleFieldId] = useState(null);
+  const [moleFieldId, setMoleFieldId] = useState(getRandomMoleFields(1));
+  const [previusMoleFieldId, setPreviusMoleFieldId] = useState([]);
   const [initialTime, setInitialTime] = useState(game_time);
   const [time, setTime] = useState(game_time);
   const [isGameStarted, setIsGameStarted] = useState(false);
   const [score, setScore] = useState(0);
   const [intervalId, setIntervalId] = useState(null);
   const [isGameEnded, setIsGameEnded] = useState(false);
+  const [numMoles, setNumMoles] = useState(1);
 
   const handleStartGame = () => {
     // 1. Tutaj zerujemy stan przed startem
     setIsGameEnded(false);
-    setTime(game_time);
+    setTime(initialTime);
     setScore(0);
+    setMoleFieldId(getRandomMoleFields(numMoles));
 
     // 2. Zmiana widoku gry na pola z kretem
     setIsGameStarted(true);
 
     // 3. Zmiana miejsca kreta nawet jezeli uzytkownik nie kliknie
     const intervalId = setInterval(() => {
-      setMoleFieldId(getRandomInt(10));
+      setMoleFieldId(getRandomMoleFields(numMoles));
     }, interval_time);
 
     setIntervalId(intervalId);
@@ -69,12 +86,12 @@ export const HitTheMole = () => {
     if (isMolePresent) {
       // Ustawiamy mu nową pozycje i trzymamy info o jego poprzedniej pozycji
       setPreviusMoleFieldId(moleFieldId);
-      setMoleFieldId(getRandomInt(10));
+      setMoleFieldId(getRandomMoleFields(numMoles));
 
       // Reset interwału
       clearInterval(intervalId);
       const newIntervalId = setInterval(() => {
-        setMoleFieldId(getRandomInt(10));
+        setMoleFieldId(getRandomMoleFields(numMoles));
       }, interval_time);
       setIntervalId(newIntervalId);
     }
@@ -152,9 +169,11 @@ export const HitTheMole = () => {
           {/* WIDOK ŁAPANIA KRETA */}
           <div className="board">
             {gameFields.map((field) => {
-              const isMolePresent = field.id === moleFieldId;
+              const isMolePresent = moleFieldId.includes(field.id);
 
-              const isPreviusMolePresent = field.id === previusMoleFieldId;
+              const isPreviusMolePresent = previusMoleFieldId.includes(
+                field.id
+              );
               const isClickedWithMole =
                 isPreviusMolePresent && field.hasClicked ? 'green' : '';
               const isClickedWithoutMole =
@@ -183,9 +202,24 @@ export const HitTheMole = () => {
           <div className="option-wrapper">
             <div className="title">Czas gry</div>
             <div className="content">
-              <button className="current">1 minuta</button>
-              <button>2 minuty</button>
-              <button>3 minuty</button>
+              <button
+                className={initialTime === 60 ? 'current' : ''}
+                onClick={() => setInitialTime(60)}
+              >
+                1 minuta
+              </button>
+              <button
+                className={initialTime === 120 ? 'current' : ''}
+                onClick={() => setInitialTime(120)}
+              >
+                2 minuty
+              </button>
+              <button
+                className={initialTime === 180 ? 'current' : ''}
+                onClick={() => setInitialTime(180)}
+              >
+                3 minuty
+              </button>
             </div>
           </div>
 
@@ -193,9 +227,24 @@ export const HitTheMole = () => {
           <div className="option-wrapper">
             <div className="title">Liczba kretów</div>
             <div className="content">
-              <button className="current">1 kret</button>
-              <button>2 krety</button>
-              <button>3 krety</button>
+              <button
+                className={numMoles === 1 ? 'current' : ''}
+                onClick={() => setNumMoles(1)}
+              >
+                1 kret
+              </button>
+              <button
+                className={numMoles === 2 ? 'current' : ''}
+                onClick={() => setNumMoles(2)}
+              >
+                2 krety
+              </button>
+              <button
+                className={numMoles === 3 ? 'current' : ''}
+                onClick={() => setNumMoles(3)}
+              >
+                3 krety
+              </button>
             </div>
           </div>
 
