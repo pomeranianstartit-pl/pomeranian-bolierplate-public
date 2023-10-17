@@ -1,6 +1,8 @@
 import { useEffect, useState } from 'react';
 
-import molesvg from '../../../Images/mole.svg';
+import { NavLink } from 'react-router-dom';
+
+import molepng from '../../../Images/mole.svg';
 
 import './styles.css';
 
@@ -43,6 +45,10 @@ export const HitTheMole = () => {
 
   const [isGameStarted, setIsGameStarted] = useState(false);
 
+  const [isGameEnded, setIsGameEnded] = useState(false);
+
+  const [previousMoleFieldId, setPreviousMoleFieldId] = useState(null);
+
   const [score, setScore] = useState(0);
 
   const [intervalId, setIntervalId] = useState(null);
@@ -50,11 +56,16 @@ export const HitTheMole = () => {
   const handleStartGame = () => {
     setIsGameStarted(true);
 
+    setMoleFieldId(getRandomInt(10));
+
     const intervalId = setInterval(() => {
       setMoleFieldId(getRandomInt(10));
     }, interval_time);
 
     setIntervalId(intervalId);
+
+    setScore(0);
+    setTime(game_time);
   };
 
   const handleStopGame = () => {
@@ -90,7 +101,6 @@ export const HitTheMole = () => {
       gameFields.map((field) => {
         return {
           ...field,
-
           hasClicked: field.id === clickedField.id,
         };
       })
@@ -99,6 +109,17 @@ export const HitTheMole = () => {
     resetClickField();
 
     scoreUpdate(isMolePresent);
+
+    if (isMolePresent) {
+      setPreviousMoleFieldId(moleFieldId);
+      setMoleFieldId(getRandomInt(10));
+
+      clearInterval(intervalId);
+      const newIntervalId = setInterval(() => {
+        setMoleFieldId(getRandomInt(10));
+      }, interval_time);
+      setIntervalId(newIntervalId);
+    }
   };
 
   useEffect(() => {
@@ -118,98 +139,110 @@ export const HitTheMole = () => {
   }, [time]);
 
   return (
-    <div>
-      <h2>
+    <div className="wrapper">
+      <NavLink to="/exercise" className="backBtn">
+        {'<'}Kret
+      </NavLink>
+      <h2 className="mole">
         Gra polegająca na podążaniu za krecikiem i trafieniu na kwadrat, w
         którym się pojawił.
       </h2>
 
       {isGameStarted ? (
         <div>
-          <div>
+          <div className="container_table">
             {/* CZAS do końca  */}
 
-            <div>
-              <div className="title">Czas do końca</div>
+            <div className="container_row">
+              <div className="title_mole">Czas do końca</div>
 
               <div className="content">
-                <button disabled={true}>{time}</button>
+                <button disabled={true} className="button_mole score">
+                  {time}
+                </button>
               </div>
             </div>
 
             {/* WYNIK */}
 
-            <div>
-              <div className="title">Wynik</div>
+            <div className="container_row">
+              <div className="title_mole">Wynik</div>
 
               <div className="content">
-                <button disabled={true}>{score}</button>
+                <button disabled={true} className="button_mole score">
+                  {score}
+                </button>
               </div>
             </div>
 
             {/* PRZYCISKI STERUJĄCE */}
 
-            <div>
-              <div className="title">Przyciski sterujące</div>
+            <div className="container_row">
+              <div className="title_mole">Przyciski sterujące</div>
 
               <div className="content">
-                <button onClick={handleStopGame}>Stop</button>
+                <button onClick={handleStopGame} className="button_mole stop">
+                  Stop
+                </button>
               </div>
             </div>
           </div>
 
           {/* WIDOK ŁAPANIA KRETA */}
 
-          <div>
+          <div className="game_field">
             {gameFields.map((field) => {
               const isMolePresent = field.id === moleFieldId;
 
+              const isPreviousMolePresent = field.id === previousMoleFieldId;
               const isClickedWithMole =
-                isMolePresent && field.hasClicked ? 'green' : '';
+                isPreviousMolePresent && field.hasClicked ? 'green' : '';
 
               const isClickedWithoutMole =
-                !isMolePresent && field.hasClicked ? 'red' : '';
+                !isPreviousMolePresent && field.hasClicked ? 'red' : '';
 
               return (
                 <div
                   onClick={() => handleClickField(field, isMolePresent)}
                   className={`field ${isClickedWithMole} ${isClickedWithoutMole}`}
                 >
-                  {isMolePresent && <img src={molesvg} alt="mole" />}
+                  {isMolePresent && <img src={molepng} alt="mole" />}
                 </div>
               );
             })}
           </div>
         </div>
       ) : (
-        <div>
+        <div className="container_table">
           {/* CZAS gry */}
 
-          <div>
-            <div className="title">Czas gry</div>
+          <div className="container_row">
+            <div className="title_mole">Czas gry</div>
 
             <div className="content">
-              <button>1 minuta</button>
+              <button className="button_mole">1 minuta</button>
             </div>
           </div>
 
           {/* LICZBA KRETÓW */}
 
-          <div>
-            <div className="title">Liczba kretów</div>
+          <div className="container_row">
+            <div className="title_mole">Liczba kretów</div>
 
             <div className="content">
-              <button>1 kret</button>
+              <button className="button_mole">1 kret</button>
             </div>
           </div>
 
           {/* PRZYCISKI STERUJĄCE */}
 
-          <div>
-            <div className="title">Przyciski sterujące</div>
+          <div className="container_row">
+            <div className="title_mole">Przyciski sterujące</div>
 
             <div className="content">
-              <button onClick={handleStartGame}>Start</button>
+              <button onClick={handleStartGame} className="button_mole start">
+                Start
+              </button>
             </div>
           </div>
         </div>
