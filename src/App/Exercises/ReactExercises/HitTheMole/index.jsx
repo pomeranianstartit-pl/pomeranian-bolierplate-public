@@ -1,7 +1,7 @@
 /* eslint-disable react-hooks/exhaustive-deps */
 import { useEffect, useState } from 'react';
 
-// import { NavLink } from 'react-router-dom';
+// import { NavLink } from 'react-router-dom'; // Irmina
 
 import molesvg from '../../../Images/mole.svg';
 
