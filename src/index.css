@@ -5,7 +5,9 @@
   --color-blue-gray: #525e70;
   --color-black: #000000;
   --color-grey: rgb(60, 64, 67);
+  --color-lightgrey: #c8cbd1;
   --color-white: rgb(255, 255, 255);
+  --color-red: #fe3756;
 }
 
 body {
@@ -15,6 +17,11 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
 }
 
 code {

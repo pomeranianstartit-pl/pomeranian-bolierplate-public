@@ -1,0 +1,109 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+.hit-the-mole {
+  font-family: Poppins;
+}
+
+.hit-the-mole .board {
+  width: 100%;
+  max-width: 1000px;
+  display: grid;
+  grid-template-columns: repeat(5, minmax(0, 1fr));
+  /* grid-template-rows: repeat(3, 1fr); */
+  gap: 1rem;
+
+  margin-top: 120px;
+}
+
+.hit-the-mole .field {
+  /* aspect-ratio: 1; */
+  width: 100%;
+  /* min-width: 50px; */
+  /* min-height: 50px; */
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  border-radius: 8px;
+  background: var(--gray-200, #ebebeb);
+
+  position: relative;
+}
+
+.hit-the-mole .field::before {
+  content: '';
+  display: block;
+  position: relative;
+  width: 100%;
+
+  padding-top: 100%;
+}
+
+.hit-the-mole .field > img {
+  position: absolute;
+
+  max-width: 80%;
+  object-fit: contain;
+}
+
+.hit-the-mole .option-wrapper {
+  display: flex;
+  align-items: center;
+  margin-bottom: 38px;
+}
+
+.hit-the-mole .option-wrapper .title {
+  min-width: 240px;
+  font-size: 1.2rem;
+  font-style: normal;
+  font-weight: 400;
+  text-transform: uppercase;
+  color: var(--text-text-primary, #222);
+}
+
+.hit-the-mole .option-wrapper .content {
+  display: flex;
+  gap: 1.5rem;
+}
+
+.hit-the-mole .option-wrapper .content > button {
+  min-width: 160px;
+  text-align: center;
+  padding: 0.85rem 0.5rem;
+  border-radius: 8px;
+  border: unset;
+
+  cursor: pointer;
+
+  background: var(--secondary-secondary, #23213d);
+  color: white;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 500;
+}
+.hit-the-mole .option-wrapper .content > button.current {
+  background: var(--primary-primary, #fe3756);
+  color: white;
+  box-shadow: 0px 3px 9px 0px rgba(0, 0, 0, 0.15),
+    0px 2px 28px 0px rgba(0, 0, 0, 0.12);
+}
+
+.hit-the-mole .option-wrapper .content > button.stop {
+  background: var(--colors-actions-danger, #e12b1b);
+}
+
+.hit-the-mole .option-wrapper .content > button:disabled {
+  background: var(--gray-200, #ebebeb);
+  cursor: auto;
+  opacity: 1;
+  color: #000;
+}
+
+.hit-the-mole .field.green {
+  background-color: green;
+}
+
+.hit-the-mole .field.red {
+  background-color: red;
+}
