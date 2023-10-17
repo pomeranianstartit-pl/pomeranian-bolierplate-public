@@ -19,33 +19,45 @@ const fields = [
 
 const getRandomInt = (max) => Math.floor(Math.random() * max) + 1;
 
+const getRandomMolePositions = (numMoles) => {
+  const positions = [];
+  while (positions.length < numMoles) {
+    const randomPosition = getRandomInt(10);
+    if (!positions.includes(randomPosition)) {
+      positions.push(randomPosition);
+    }
+  }
+  return positions;
+};
+
 const interval_time = 1000;
 const game_time = 60;
 
 export const HitTheMole = () => {
   const [gameFields, setGameFields] = useState(fields);
-  const [moleFieldId, setMoleFieldId] = useState(getRandomInt(10));
-  const [previusMoleFieldId, setPreviusMoleFieldId] = useState(null);
-  const [initialTime, setInitialTime] = useState(game_time);
+  const [numMoles, setNumMoles] = useState(1);
+  const [moleFieldIds, setMoleFieldIds] = useState(
+    getRandomMolePositions(numMoles)
+  );
+  const [previusMoleFieldIds, setPreviusMoleFieldIds] = useState([]);
   const [time, setTime] = useState(game_time);
   const [isGameStarted, setIsGameStarted] = useState(false);
   const [score, setScore] = useState(0);
   const [intervalId, setIntervalId] = useState(null);
   const [isGameEnded, setIsGameEnded] = useState(false);
+  const [initialTime, setInitialTime] = useState(game_time);
 
   const handleStartGame = () => {
     // 1. tutaj pewnie chcecie "wyzerować" stan gry
     setIsGameEnded(false);
     setTime(game_time);
     setScore(0);
-
-    // 3. na starcie gry też powinien pojawiać się w nowym miejscu
-    setMoleFieldId(getRandomInt(10));
+    setMoleFieldIds(getRandomMolePositions(numMoles));
 
     setIsGameStarted(true);
 
     const intervalId = setInterval(() => {
-      setMoleFieldId(getRandomInt(10));
+      setMoleFieldIds(getRandomMolePositions(numMoles));
     }, interval_time);
 
     setIntervalId(intervalId);
@@ -95,13 +107,13 @@ export const HitTheMole = () => {
     // 2.po kliknięciu w kreta kret pojawia sie w innym losowym miejscu
     if (isMolePresent) {
       // losujemy mu nową pozycję
-      setPreviusMoleFieldId(moleFieldId);
-      setMoleFieldId(getRandomInt(10));
+      setPreviusMoleFieldIds(moleFieldIds);
+      setMoleFieldIds(getRandomMolePositions(numMoles));
 
       // i resetujemy interwał
       clearInterval(intervalId);
       const newIntervalId = setInterval(() => {
-        setMoleFieldId(getRandomInt(10));
+        setMoleFieldIds(getRandomMolePositions(numMoles));
       }, interval_time);
       setIntervalId(newIntervalId);
     }
@@ -163,9 +175,11 @@ export const HitTheMole = () => {
           {/* WIDOK ŁAPANIA KRETA */}
           <div className="board">
             {gameFields.map((field) => {
-              const isMolePresent = field.id === moleFieldId;
+              const isMolePresent = moleFieldIds.includes(field.id);
 
-              const isPreviusMolePresent = field.id === previusMoleFieldId;
+              const isPreviusMolePresent = previusMoleFieldIds.includes(
+                field.id
+              );
               const isClickedWithMole =
                 isPreviusMolePresent && field.hasClicked ? 'green' : '';
               const isClickedWithoutMole =
@@ -205,9 +219,24 @@ export const HitTheMole = () => {
           <div className="option-wrapper">
             <div className="title">Liczba kretów</div>
             <div className="content">
-              <button className="current">1 kret</button>
-              <button>2 krety</button>
-              <button>3 krety</button>
+              <button
+                className={numMoles === 1 ? 'current' : ''}
+                onClick={() => setNumMoles(1)}
+              >
+                1 kret
+              </button>
+              <button
+                className={numMoles === 2 ? 'current' : ''}
+                onClick={() => setNumMoles(2)}
+              >
+                2 krety
+              </button>
+              <button
+                className={numMoles === 3 ? 'current' : ''}
+                onClick={() => setNumMoles(3)}
+              >
+                3 krety
+              </button>
             </div>
           </div>
 
