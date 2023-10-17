@@ -28,6 +28,7 @@ export const Dashboard = () => {
       <div className="dashboard-cards">
         {cards.map(({ title, icon, description, link }) => (
           <DashboardCard
+            key={link}
             title={title}
             icon={icon}
             description={description}
