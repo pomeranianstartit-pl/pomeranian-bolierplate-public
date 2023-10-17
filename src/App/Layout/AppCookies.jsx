@@ -1,10 +1,24 @@
 import { CookieIcon } from '../Components/Icons/CookieIcon';
 import './styles/cookies.css';
 
+import './styles/cookies.css';
+
 export function AppCookies() {
+  function setCookieState() {
+    localStorage.setItem('cookieState', 1);
+  }
+
+  function getCookieState() {
+    return localStorage.getItem('cookieState');
+  }
+
+  if (getCookieState()) {
+    return null;
+  }
+
   return (
     <div className="cookies">
-      <div>
+      <div className="cookies-left">
         <CookieIcon />
 
         <h4>Pozwól na pliki cookies</h4>
@@ -20,8 +34,8 @@ export function AppCookies() {
         </p>
       </div>
 
-      <div>
-        <button>W porządku</button>
+      <div className="cookies-right">
+        <button onClick={setCookieState}>W porządku</button>
 
         <button>Dopasuj zgody</button>
       </div>

@@ -1,4 +1,3 @@
-
 .game-field {
   display: grid;
   grid-template-columns: repeat(5, 102px);
@@ -50,21 +49,5 @@ background: var(--gray-200, #EBEBEB);
 height: 56px;
 width: 163px;
 padding: 20px 36px;
-
-}
-.title1, .title2., title3 {
-  margin-left: 0px;
-
-.field {
-  min-width: 50px;
-  min-height: 50px;
-  border: 1px solid black;
-}
-.green {
-  background-color: green;
-
-}
-.red {
-  background-color: red;
 
 }
