@@ -28,6 +28,20 @@ const fields = [
 
 const getRandomInt = (max) => Math.floor(Math.random() * max) + 1;
 
+const getRandomMoleFields = (numMoles) => {
+  const moleFields = [];
+
+  while (moleFields.length < numMoles) {
+    const randomField = getRandomInt(10);
+
+    if (!moleFields.includes(randomField)) {
+      moleFields.push(randomField);
+    }
+  }
+
+  return moleFields;
+};
+
 const interval_time = 1000;
 
 const game_time = 60;
@@ -35,8 +49,8 @@ const game_time = 60;
 export const HitTheMole = () => {
   const [gameFields, setGameFields] = useState(fields);
 
-  const [moleFieldId, setMoleFieldId] = useState(getRandomInt(10));
-  const [previusMoleFieldId, setPreviusMoleFieldId] = useState(null);
+  const [moleFieldId, setMoleFieldId] = useState(getRandomMoleFields(1));
+  const [previousMoleFieldId, setPreviousMoleFieldId] = useState([]);
 
   const [initialTime, setInitialTime] = useState(game_time);
 
@@ -48,17 +62,22 @@ export const HitTheMole = () => {
 
   const [intervalId, setIntervalId] = useState(null);
 
+  const [isGameEnded, setIsGameEnded] = useState(false);
+
+  const [numMoles, setNumMoles] = useState(1);
+
   const handleStartGame = () => {
     //Wyzerowanie stanu gry
-    setTime(game_time);
+    setIsGameEnded(false);
+    setTime(initialTime);
     setScore(0);
     //Losowanie nowej pozycji
-    setMoleFieldId(getRandomInt(10));
+    setMoleFieldId(getRandomMoleFields(numMoles));
 
     setIsGameStarted(true);
 
     const intervalId = setInterval(() => {
-      setMoleFieldId(getRandomInt(10));
+      setMoleFieldId(getRandomMoleFields(numMoles));
     }, interval_time);
 
     setIntervalId(intervalId);
@@ -66,7 +85,7 @@ export const HitTheMole = () => {
 
   const handleStopGame = () => {
     setIsGameStarted(false);
-
+    setIsGameEnded(true);
     clearInterval(intervalId);
   };
 
@@ -76,6 +95,7 @@ export const HitTheMole = () => {
         gameFields.map((field) => {
           return {
             ...field,
+            hasClicked: false,
           };
         })
       );
@@ -107,17 +127,17 @@ export const HitTheMole = () => {
 
     if (isMolePresent) {
       //Losujemy nową pozycję
-      setPreviusMoleFieldId(moleFieldId);
-      setMoleFieldId(getRandomInt(10));
+      setPreviousMoleFieldId(moleFieldId);
+      setMoleFieldId(getRandomMoleFields(numMoles));
       //Resetujemy interwał
       clearInterval(intervalId);
       const newIntervalId = setInterval(() => {
-        setMoleFieldId(getRandomInt(10));
+        setMoleFieldId(getRandomMoleFields(numMoles));
       }, interval_time);
       setIntervalId(newIntervalId);
     }
   };
-
+  //Do mierzenia czasu interwał
   useEffect(() => {
     if (isGameStarted) {
       const intervalId = setInterval(() => {
@@ -181,9 +201,11 @@ export const HitTheMole = () => {
 
           <div className="fieldgrid">
             {gameFields.map((field) => {
-              const isMolePresent = field.id === moleFieldId;
+              const isMolePresent = moleFieldId.includes(field.id);
 
-              const isPreviusMolePresent = field.id === previusMoleFieldId;
+              const isPreviusMolePresent = previousMoleFieldId.includes(
+                field.id
+              );
 
               const isClickedWithMole =
                 isPreviusMolePresent && field.hasClicked ? 'green' : '';
@@ -205,13 +227,35 @@ export const HitTheMole = () => {
         </div>
       ) : (
         <div className="allgrid">
+          {isGameEnded && (
+            <div className="game-over">
+              Gratulacje, zdobyłeś {score} punktów
+            </div>
+          )}
           {/* CZAS gry */}
 
           <div className="allgrid1">
             <div className="title">Czas gry</div>
 
             <div className="content">
-              <button>1 minuta</button>
+              <button
+                onClick={() => setInitialTime(60)}
+                className={initialTime === 60 ? 'current' : ''}
+              >
+                1 minuta
+              </button>
+              <button
+                onClick={() => setInitialTime(120)}
+                className={initialTime === 120 ? 'current' : ''}
+              >
+                2 minuty
+              </button>
+              <button
+                onClick={() => setInitialTime(180)}
+                className={initialTime === 180 ? 'current' : ''}
+              >
+                3 minuty
+              </button>
             </div>
           </div>
 
@@ -221,7 +265,24 @@ export const HitTheMole = () => {
             <div className="title">Liczba kretów</div>
 
             <div className="content">
-              <button>1 kret</button>
+              <button
+                onClick={() => setNumMoles(1)}
+                className={numMoles === 1 ? 'current' : ''}
+              >
+                1 kret
+              </button>
+              <button
+                onClick={() => setNumMoles(2)}
+                className={numMoles === 2 ? 'current' : ''}
+              >
+                2 krety
+              </button>
+              <button
+                onClick={() => setNumMoles(3)}
+                className={numMoles === 3 ? 'current' : ''}
+              >
+                3 krety
+              </button>
             </div>
           </div>
 
