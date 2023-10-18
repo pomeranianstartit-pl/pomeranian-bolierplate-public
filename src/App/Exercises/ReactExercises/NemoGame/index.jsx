@@ -5,7 +5,76 @@ import molesvg from '../../../Images/mole.svg';
 
 import './styles.css';
 
+const elements = [
+  { id: 1, name: 'a', hasClicked: false },
+  { id: 2, name: 'b', hasClicked: false },
+  { id: 3, name: 'c', hasClicked: false },
+  { id: 4, name: 'd', hasClicked: false },
+  { id: 1, name: 'a', hasClicked: false },
+  { id: 2, name: 'b', hasClicked: false },
+  { id: 3, name: 'c', hasClicked: false },
+  { id: 4, name: 'd', hasClicked: false },
+];
+
+const elements2 = [
+  { id: 2, hasClicked: false },
+  { id: 'k', hasClicked: false },
+  { id: 'l', hasClicked: false },
+  { id: 'd', hasClicked: false },
+  { id: 2, hasClicked: false },
+  { id: 'k', hasClicked: false },
+  { id: 'l', hasClicked: false },
+  { id: 'd', hasClicked: false },
+  { id: 3, hasClicked: false },
+  { id: 's', hasClicked: false },
+  { id: 'c', hasClicked: false },
+  { id: 'f', hasClicked: false },
+  { id: 3, hasClicked: false },
+  { id: 's', hasClicked: false },
+  { id: 'c', hasClicked: false },
+  { id: 'f', hasClicked: false },
+];
+
+const elements3 = [
+  { id: 2, hasClicked: false },
+  { id: 'k', hasClicked: false },
+  { id: 'l', hasClicked: false },
+  { id: 'd', hasClicked: false },
+  { id: 2, hasClicked: false },
+  { id: 'k', hasClicked: false },
+  { id: 'l', hasClicked: false },
+  { id: 'd', hasClicked: false },
+  { id: 3, hasClicked: false },
+  { id: 's', hasClicked: false },
+  { id: 'c', hasClicked: false },
+  { id: 'f', hasClicked: false },
+  { id: 3, hasClicked: false },
+  { id: 's', hasClicked: false },
+  { id: 'c', hasClicked: false },
+  { id: 'f', hasClicked: false },
+  { id: 4, hasClicked: false },
+  { id: 'g', hasClicked: false },
+  { id: 'u', hasClicked: false },
+  { id: 'o', hasClicked: false },
+  { id: 4, hasClicked: false },
+  { id: 'g', hasClicked: false },
+  { id: 'u', hasClicked: false },
+  { id: 'o', hasClicked: false },
+];
+
+/* tabelka 8 pól */
 const fields = [
+  { id: 1, hasClicked: false },
+  { id: 2, hasClicked: false },
+  { id: 3, hasClicked: false },
+  { id: 4, hasClicked: false },
+  { id: 5, hasClicked: false },
+  { id: 6, hasClicked: false },
+  { id: 7, hasClicked: false },
+  { id: 8, hasClicked: false },
+];
+
+const fields2 = [
   { id: 1, hasClicked: false },
   { id: 2, hasClicked: false },
   { id: 3, hasClicked: false },
@@ -16,7 +85,44 @@ const fields = [
   { id: 8, hasClicked: false },
   { id: 9, hasClicked: false },
   { id: 10, hasClicked: false },
+  { id: 11, hasClicked: false },
+  { id: 12, hasClicked: false },
+  { id: 13, hasClicked: false },
+  { id: 14, hasClicked: false },
+  { id: 15, hasClicked: false },
+  { id: 16, hasClicked: false },
 ];
+
+const fields3 = [
+  { id: 1, hasClicked: false },
+  { id: 2, hasClicked: false },
+  { id: 3, hasClicked: false },
+  { id: 4, hasClicked: false },
+  { id: 5, hasClicked: false },
+  { id: 6, hasClicked: false },
+  { id: 7, hasClicked: false },
+  { id: 8, hasClicked: false },
+  { id: 9, hasClicked: false },
+  { id: 10, hasClicked: false },
+  { id: 11, hasClicked: false },
+  { id: 12, hasClicked: false },
+  { id: 13, hasClicked: false },
+  { id: 14, hasClicked: false },
+  { id: 15, hasClicked: false },
+  { id: 16, hasClicked: false },
+  { id: 17, hasClicked: false },
+  { id: 18, hasClicked: false },
+  { id: 19, hasClicked: false },
+  { id: 20, hasClicked: false },
+];
+
+function shuffleArray(s) {
+  for (let i = s.length - 1; i > 0; i--) {
+    const j = Math.floor(Math.random() * (i + 1));
+    [s[i], s[j]] = [s[j], s[i]];
+  }
+  return s;
+}
 
 const getRandomInt = (max) => Math.floor(Math.random() * max) + 1;
 
@@ -24,7 +130,7 @@ const getRandomMoleFields = (numMoles) => {
   const moleFields = [];
 
   while (moleFields.length < numMoles) {
-    const randomField = getRandomInt(10);
+    const randomField = getRandomInt(20);
 
     if (!moleFields.includes(randomField)) {
       moleFields.push(randomField);
@@ -35,10 +141,11 @@ const getRandomMoleFields = (numMoles) => {
 };
 
 const interval_time = 1000;
-const game_time = 60;
+const game_time = 120;
 
-export const HitTheMole = () => {
-  const [gameFields, setGameFields] = useState(fields);
+export const NemoGame = () => {
+  const [j, shuffleArray] = useState(elements, elements2, elements3);
+  const [gameFields, setGameFields] = useState(fields, fields2, fields3);
   const [moleFieldId, setMoleFieldId] = useState(getRandomMoleFields(1));
   const [previusMoleFieldId, setPreviusMoleFieldId] = useState([]);
   const [initialTime, setInitialTime] = useState(game_time);
@@ -47,7 +154,7 @@ export const HitTheMole = () => {
   const [score, setScore] = useState(0);
   const [intervalId, setIntervalId] = useState(null);
   const [isGameEnded, setIsGameEnded] = useState(false);
-  const [numMoles, setNumMoles] = useState(1);
+  const [numMoles, setNumMoles] = useState(20);
 
   const handleStartGame = () => {
     // 1. Tutaj zerujemy stan przed startem
@@ -79,7 +186,6 @@ export const HitTheMole = () => {
     );
 
     // Reset ktore pole zostalo klikniete + aktualizacja wyniku
-    resetClickField();
     scoreUpdate(isMolePresent);
 
     // Losowanie nowego miejsca kreta jezeli zostanie trafiony
@@ -87,20 +193,7 @@ export const HitTheMole = () => {
       // Ustawiamy mu nową pozycje i trzymamy info o jego poprzedniej pozycji
       setPreviusMoleFieldId(moleFieldId);
       setMoleFieldId(getRandomMoleFields(numMoles));
-
-      // Reset interwału
-      clearInterval(intervalId);
-      const newIntervalId = setInterval(() => {
-        setMoleFieldId(getRandomMoleFields(numMoles));
-      }, interval_time);
-      setIntervalId(newIntervalId);
     }
-  };
-
-  const resetClickField = () => {
-    setTimeout(() => {
-      setGameFields(fields);
-    }, 300);
   };
 
   const scoreUpdate = (isMolePresent) => {
@@ -132,8 +225,7 @@ export const HitTheMole = () => {
   return (
     <div className="hit-the-mole">
       <h2>
-        Gra polegająca na podążaniu za krecikiem i trafieniu na kwadrat, w
-        którym się pojawił.
+        Gra polegająca na zapamiętywaniu odkrytych kafli i łączeniu ich w pary
       </h2>
 
       {isGameStarted ? (
@@ -141,7 +233,7 @@ export const HitTheMole = () => {
           <div>
             {/* CZAS do końca  */}
             <div className="option-wrapper">
-              <div className="title">Czas do końca</div>
+              <div className="title">CZAS GRY</div>
               <div className="content">
                 <button disabled={true}>{time}</button>
               </div>
@@ -149,7 +241,7 @@ export const HitTheMole = () => {
 
             {/* WYNIK */}
             <div className="option-wrapper">
-              <div className="title">Wynik</div>
+              <div className="title">LICZBA RUCHÓW</div>
               <div className="content">
                 <button disabled={true}>{score}</button>
               </div>
@@ -157,10 +249,10 @@ export const HitTheMole = () => {
 
             {/* PRZYCISKI STERUJĄCE */}
             <div className="option-wrapper">
-              <div className="title">Przyciski sterujące</div>
+              <div className="title">PRZYCISKI STERUJĄCE</div>
               <div className="content">
                 <button className="stop" onClick={handleStopGame}>
-                  Stop
+                  PASS
                 </button>
               </div>
             </div>
@@ -174,18 +266,14 @@ export const HitTheMole = () => {
               const isPreviusMolePresent = previusMoleFieldId.includes(
                 field.id
               );
-              const isClickedWithMole =
-                isPreviusMolePresent && field.hasClicked ? 'green' : '';
-              const isClickedWithoutMole =
-                !isPreviusMolePresent && field.hasClicked ? 'red' : '';
 
               return (
                 <div
                   key={field.id}
                   onClick={() => handleClickField(field, isMolePresent)}
-                  className={`field ${isClickedWithMole} ${isClickedWithoutMole}`}
+                  className={`field`}
                 >
-                  {isMolePresent && <img src={molesvg} alt="mole" />}
+                  {isMolePresent && 'a'}
                 </div>
               );
             })}
@@ -195,55 +283,21 @@ export const HitTheMole = () => {
         <div className="hit-the-mole">
           {isGameEnded && (
             <div className="game-over">
-              Gratulacje, zdobyłeś {score} punktów
+              Gratulację! Twój wynik to {score} w czasie {time}!
             </div>
           )}
           {/* CZAS gry */}
           <div className="option-wrapper">
-            <div className="title">Czas gry</div>
+            <div className="title">LICZBA ELEMENTÓW</div>
             <div className="content">
-              <button
-                className={initialTime === 60 ? 'current' : ''}
-                onClick={() => setInitialTime(60)}
-              >
-                1 minuta
+              <button className="current" onClick={() => setGameFields(fields)}>
+                8 elementów
               </button>
-              <button
-                className={initialTime === 120 ? 'current' : ''}
-                onClick={() => setInitialTime(120)}
-              >
-                2 minuty
+              <button className="x" onClick={() => setGameFields(fields2)}>
+                16 elementów
               </button>
-              <button
-                className={initialTime === 180 ? 'current' : ''}
-                onClick={() => setInitialTime(180)}
-              >
-                3 minuty
-              </button>
-            </div>
-          </div>
-
-          {/* LICZBA KRETÓW */}
-          <div className="option-wrapper">
-            <div className="title">Liczba kretów</div>
-            <div className="content">
-              <button
-                className={numMoles === 1 ? 'current' : ''}
-                onClick={() => setNumMoles(1)}
-              >
-                1 kret
-              </button>
-              <button
-                className={numMoles === 2 ? 'current' : ''}
-                onClick={() => setNumMoles(2)}
-              >
-                2 krety
-              </button>
-              <button
-                className={numMoles === 3 ? 'current' : ''}
-                onClick={() => setNumMoles(3)}
-              >
-                3 krety
+              <button className="x" onClick={() => setGameFields(fields3)}>
+                20 elementów
               </button>
             </div>
           </div>
