@@ -1,0 +1,47 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+.memo-game{
+    font-family: Poppins;
+}
+
+
+
+.memo-game .game-options {
+    display: flex;
+    align-items: center;
+    margin-bottom: 40px;
+
+}
+
+.memo-game .game-options .title {
+    min-width: 180px;
+    font-size: 18px;
+font-style: normal;
+font-weight: 400;
+line-height: 34px;
+margin-right: 42px;
+}
+
+.memo-game .game-options .content {
+    display: flex;
+    gap: 24px;
+}
+
+.memo-game .game-options .content > button {
+    width: 163px;
+    height: 56px;
+    border-radius: 8px;
+border: 1px solid var(--secondary-secondary, #23213D);
+background: var(--secondary-secondary, #23213D);
+color: #FFF;
+text-align: center;
+font-size: 18px;
+font-style: normal;
+font-weight: 500;
+line-height: 31px; 
+}
+
+.memo-game .game-options .content > button.pass {
+    background: var(--colors-actions-danger, #E12B1B);
+}
+
