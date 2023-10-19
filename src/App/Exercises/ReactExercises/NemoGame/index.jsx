@@ -1,66 +1,7 @@
 /* eslint-disable react-hooks/exhaustive-deps */
 import { useEffect, useState } from 'react';
 
-import molesvg from '../../../Images/mole.svg';
-
 import './styles.css';
-
-const elements = [
-  { id: 1, name: 'a', hasClicked: false },
-  { id: 2, name: 'b', hasClicked: false },
-  { id: 3, name: 'c', hasClicked: false },
-  { id: 4, name: 'd', hasClicked: false },
-  { id: 1, name: 'a', hasClicked: false },
-  { id: 2, name: 'b', hasClicked: false },
-  { id: 3, name: 'c', hasClicked: false },
-  { id: 4, name: 'd', hasClicked: false },
-];
-
-const elements2 = [
-  { id: 2, hasClicked: false },
-  { id: 'k', hasClicked: false },
-  { id: 'l', hasClicked: false },
-  { id: 'd', hasClicked: false },
-  { id: 2, hasClicked: false },
-  { id: 'k', hasClicked: false },
-  { id: 'l', hasClicked: false },
-  { id: 'd', hasClicked: false },
-  { id: 3, hasClicked: false },
-  { id: 's', hasClicked: false },
-  { id: 'c', hasClicked: false },
-  { id: 'f', hasClicked: false },
-  { id: 3, hasClicked: false },
-  { id: 's', hasClicked: false },
-  { id: 'c', hasClicked: false },
-  { id: 'f', hasClicked: false },
-];
-
-const elements3 = [
-  { id: 2, hasClicked: false },
-  { id: 'k', hasClicked: false },
-  { id: 'l', hasClicked: false },
-  { id: 'd', hasClicked: false },
-  { id: 2, hasClicked: false },
-  { id: 'k', hasClicked: false },
-  { id: 'l', hasClicked: false },
-  { id: 'd', hasClicked: false },
-  { id: 3, hasClicked: false },
-  { id: 's', hasClicked: false },
-  { id: 'c', hasClicked: false },
-  { id: 'f', hasClicked: false },
-  { id: 3, hasClicked: false },
-  { id: 's', hasClicked: false },
-  { id: 'c', hasClicked: false },
-  { id: 'f', hasClicked: false },
-  { id: 4, hasClicked: false },
-  { id: 'g', hasClicked: false },
-  { id: 'u', hasClicked: false },
-  { id: 'o', hasClicked: false },
-  { id: 4, hasClicked: false },
-  { id: 'g', hasClicked: false },
-  { id: 'u', hasClicked: false },
-  { id: 'o', hasClicked: false },
-];
 
 /* tabelka 8 pól */
 const fields = [
@@ -124,91 +65,36 @@ function shuffleArray(s) {
   return s;
 }
 
-const getRandomInt = (max) => Math.floor(Math.random() * max) + 1;
-
-const getRandomMoleFields = (numMoles) => {
-  const moleFields = [];
-
-  while (moleFields.length < numMoles) {
-    const randomField = getRandomInt(20);
-
-    if (!moleFields.includes(randomField)) {
-      moleFields.push(randomField);
-    }
-  }
-
-  return moleFields;
-};
-
 const interval_time = 1000;
 const game_time = 120;
 
 export const NemoGame = () => {
-  const [j, shuffleArray] = useState(elements, elements2, elements3);
-  const [gameFields, setGameFields] = useState(fields, fields2, fields3);
-  const [moleFieldId, setMoleFieldId] = useState(getRandomMoleFields(1));
-  const [previusMoleFieldId, setPreviusMoleFieldId] = useState([]);
+  // const [j, shuffleArray] = useState(elements, elements2, elements3);
+  const [gameFields, setGameFields] = useState(fields);
   const [initialTime, setInitialTime] = useState(game_time);
   const [time, setTime] = useState(game_time);
   const [isGameStarted, setIsGameStarted] = useState(false);
   const [score, setScore] = useState(0);
-  const [intervalId, setIntervalId] = useState(null);
   const [isGameEnded, setIsGameEnded] = useState(false);
-  const [numMoles, setNumMoles] = useState(20);
+  const [firstClick, setIsClicked] = useState(false);
+  const [firstSecond, setIsClickedSecond] = useState(false);
 
   const handleStartGame = () => {
     // 1. Tutaj zerujemy stan przed startem
+    setGameFields(shuffleArray(gameFields));
     setIsGameEnded(false);
     setTime(initialTime);
     setScore(0);
-    setMoleFieldId(getRandomMoleFields(numMoles));
-
     // 2. Zmiana widoku gry na pola z kretem
     setIsGameStarted(true);
-
-    // 3. Zmiana miejsca kreta nawet jezeli uzytkownik nie kliknie
-    const intervalId = setInterval(() => {
-      setMoleFieldId(getRandomMoleFields(numMoles));
-    }, interval_time);
-
-    setIntervalId(intervalId);
   };
 
-  const handleClickField = (clickedField, isMolePresent) => {
+  const handleClickField = (clickedField) => {
     // Ustawienie ktore pole zostalo klikniete
-    setGameFields(
-      gameFields.map((field) => {
-        return {
-          ...field,
-          hasClicked: field.id === clickedField.id,
-        };
-      })
-    );
-
-    // Reset ktore pole zostalo klikniete + aktualizacja wyniku
-    scoreUpdate(isMolePresent);
-
-    // Losowanie nowego miejsca kreta jezeli zostanie trafiony
-    if (isMolePresent) {
-      // Ustawiamy mu nową pozycje i trzymamy info o jego poprzedniej pozycji
-      setPreviusMoleFieldId(moleFieldId);
-      setMoleFieldId(getRandomMoleFields(numMoles));
-    }
   };
-
-  const scoreUpdate = (isMolePresent) => {
-    if (isMolePresent) {
-      setScore(score + 1);
-    } else {
-      setScore(score - 1);
-    }
-  };
-
   const handleStopGame = () => {
     setIsGameStarted(false);
     setIsGameEnded(true);
-
-    clearInterval(intervalId);
   };
 
   // Do mierzenia czasu interwał i stopowania gry
@@ -261,19 +147,13 @@ export const NemoGame = () => {
           {/* WIDOK ŁAPANIA KRETA */}
           <div className="board">
             {gameFields.map((field) => {
-              const isMolePresent = moleFieldId.includes(field.id);
-
-              const isPreviusMolePresent = previusMoleFieldId.includes(
-                field.id
-              );
-
               return (
                 <div
                   key={field.id}
-                  onClick={() => handleClickField(field, isMolePresent)}
+                  onClick={() => handleClickField(field)}
                   className={`field`}
                 >
-                  {isMolePresent && 'a'}
+                  {field.id}
                 </div>
               );
             })}

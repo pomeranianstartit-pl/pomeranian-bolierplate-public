@@ -15,37 +15,14 @@
   margin-top: 120px;
 }
 
-.hit-the-mole .field {
-  /* aspect-ratio: 1; */
+div.field {
   width: 100%;
-  /* min-width: 50px; */
-  /* min-height: 50px; */
-
-  display: flex;
-  justify-content: center;
-  align-items: center;
-
   border-radius: 8px;
   background: var(--gray-200, #ebebeb);
-
   position: relative;
 }
 
-.hit-the-mole .field::before {
-  content: '';
-  display: block;
-  position: relative;
-  width: 100%;
 
-  padding-top: 100%;
-}
-
-.hit-the-mole .field > img {
-  position: absolute;
-
-  max-width: 80%;
-  object-fit: contain;
-}
 
 .hit-the-mole .option-wrapper {
   display: flex;
