@@ -1,1 +1,38 @@
+.techstack-cards {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr );
+row-gap: 75px;
+max-width: 792px;
+   
+}
+.techstack-card {
+    align-items: center;
+    text-align: center;
+    
+}
 
+.techstack-card > p {
+    margin-top: 20px;
+    color: #000;
+
+
+/* body/regular-18 */
+font-family: Poppins;
+font-size: 18px;
+font-style: normal;
+font-weight: 400;
+line-height: 34px; /* 188.889% */
+}
+
+.techstack-header {
+    color: var(--secondary-secondary, #23213D);
+font-feature-settings: 'clig' off, 'liga' off;
+
+/* header/H4 */
+font-family: Poppins;
+font-size: 18px;
+font-style: normal;
+font-weight: 400;
+line-height: 34px; /* 188.889% */
+margin-bottom: 38px;
+}
