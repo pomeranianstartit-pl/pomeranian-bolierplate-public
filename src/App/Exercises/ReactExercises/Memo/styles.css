@@ -32,27 +32,35 @@
 }
 
 .field {
-  min-width: 92px;
-  min-height: 92px;
-  max-width: 122px;
-  max-height: 122px;
-  margin: 10px;
+  min-width: 160px;
+  min-height: 160px;
+  max-width: 170px;
+  max-height: 170px;
+  margin: 0px;
   border-radius: 8px;
-  background: #ebebeb;
+  background: #e2fbd7;
   align-items: center;
+  box-shadow: 0px 3px 9px 0px rgba(0, 0, 0, 0.15),
+    0px 2px 28px 0px rgba(0, 0, 0, 0.12);
+  color: #000;
+  text-align: center;
+  font-size: 100px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: normal;
 }
+
 .fieldgrid {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   grid-column-gap: 0px;
-  grid-template-columns: repeat(4, 102px);
-  grid-template-rows: repeat(2, 102px);
+  grid-template-columns: repeat(4, 160px);
+  grid-template-rows: repeat(2, 160px);
   grid-column-gap: 8px;
   grid-row-gap: 9px;
   justify-content: center;
   margin-top: 2%;
 }
-
 
 .title {
   font-size: 18px;

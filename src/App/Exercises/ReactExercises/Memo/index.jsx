@@ -1,74 +1,89 @@
 import { useEffect, useState } from 'react';
-// import { Cards } from './data';
-import molesvg from '../../../Images/Mole.svg';
+import { Card } from './cards';
+
 import './styles.css';
 
-const fields = [
-  { id: 1, hasClicked: false },
-  { id: 2, hasClicked: false },
-  { id: 3, hasClicked: false },
-  { id: 4, hasClicked: false },
-  { id: 5, hasClicked: false },
-  { id: 6, hasClicked: false },
-  { id: 7, hasClicked: false },
-  { id: 8, hasClicked: false },
-  { id: 9, hasClicked: false },
-  { id: 10, hasClicked: false },
-  { id: 11, hasClicked: false },
-  { id: 12, hasClicked: false },
-  { id: 13, hasClicked: false },
-  { id: 14, hasClicked: false },
-  { id: 15, hasClicked: false },
-  { id: 16, hasClicked: false },
-  { id: 17, hasClicked: false },
-  { id: 18, hasClicked: false },
-  { id: 19, hasClicked: false },
-  { id: 20, hasClicked: false },
+// const fields = [
+//   { id: 1, hasClicked: false },
+//   { id: 2, hasClicked: false },
+//   { id: 3, hasClicked: false },
+//   { id: 4, hasClicked: false },
+//   { id: 5, hasClicked: false },
+//   { id: 6, hasClicked: false },
+//   { id: 7, hasClicked: false },
+//   { id: 8, hasClicked: false },
+//   { id: 9, hasClicked: false },
+//   { id: 10, hasClicked: false },
+//   { id: 11, hasClicked: false },
+//   { id: 12, hasClicked: false },
+//   { id: 13, hasClicked: false },
+//   { id: 14, hasClicked: false },
+//   { id: 15, hasClicked: false },
+//   { id: 16, hasClicked: false },
+//   { id: 17, hasClicked: false },
+//   { id: 18, hasClicked: false },
+//   { id: 19, hasClicked: false },
+//   { id: 20, hasClicked: false },
+// ];
+const Cardss1 = [
+  { id: 1, card: '2', isDone: false },
+  { id: 2, card: '2', isDone: false },
+  { id: 3, card: 'K', isDone: false },
+  { id: 4, card: 'K', isDone: false },
+  { id: 5, card: 'A', isDone: false },
+  { id: 6, card: 'A', isDone: false },
+  { id: 7, card: 'U', isDone: false },
+  { id: 8, card: 'U', isDone: false },
+];
+const Cardss2 = [
+  { id: 1, card: '2', isDone: false },
+  { id: 2, card: '2', isDone: false },
+  { id: 3, card: 'K', isDone: false },
+  { id: 4, card: 'K', isDone: false },
+  { id: 5, card: 'A', isDone: false },
+  { id: 6, card: 'A', isDone: false },
+  { id: 7, card: 'U', isDone: false },
+  { id: 8, card: 'U', isDone: false },
+  { id: 9, card: 'R', isDone: false },
+  { id: 10, card: 'R', isDone: false },
+  { id: 11, card: '8', isDone: false },
+  { id: 12, card: '8', isDone: false },
+  { id: 13, card: '4', isDone: false },
+  { id: 14, card: '4', isDone: false },
+  { id: 15, card: 'Z', isDone: false },
+  { id: 16, card: 'Z', isDone: false },
+];
+const Cardss3 = [
+  { id: 1, card: '2', isDone: false },
+  { id: 2, card: '2', isDone: false },
+  { id: 3, card: 'K', isDone: false },
+  { id: 4, card: 'K', isDone: false },
+  { id: 5, card: 'A', isDone: false },
+  { id: 6, card: 'A', isDone: false },
+  { id: 7, card: 'U', isDone: false },
+  { id: 8, card: 'U', isDone: false },
+  { id: 9, card: 'R', isDone: false },
+  { id: 10, card: 'R', isDone: false },
+  { id: 11, card: '8', isDone: false },
+  { id: 12, card: '8', isDone: false },
+  { id: 13, card: '4', isDone: false },
+  { id: 14, card: '4', isDone: false },
+  { id: 15, card: 'Z', isDone: false },
+  { id: 16, card: 'Z', isDone: false },
+  { id: 17, card: 'F', isDone: false },
+  { id: 18, card: 'F', isDone: false },
+  { id: 19, card: '9', isDone: false },
+  { id: 20, card: '9', isDone: false },
 ];
 
-const Cards = [
-  { id: 1, card: '2' },
-  { id: 1, card: '2' },
-  { id: 2, card: 'K' },
-  { id: 2, card: 'K' },
-  { id: 3, card: 'A' },
-  { id: 3, card: 'A' },
-  { id: 4, card: 'U' },
-  { id: 4, card: 'U' },
-  { id: 5, card: 'R' },
-  { id: 5, card: 'R' },
-  { id: 6, card: '8' },
-  { id: 6, card: '8' },
-  { id: 7, card: '4' },
-  { id: 7, card: '4' },
-  { id: 8, card: 'Z' },
-  { id: 8, card: 'Z' },
-];
 const getRandomInt = (max) => Math.floor(Math.random() * max) + 1;
-
-const getRandomMoleFields = (numCards) => {
-  const moleFields = [];
-
-  while (moleFields.length < numCards) {
-    const randomField = getRandomInt(10);
-
-    if (!moleFields.includes(randomField)) {
-      moleFields.push(randomField);
-    }
-  }
-
-  return moleFields;
-};
 
 const interval_time = 1000;
 
 const game_time = 0;
 
 export const Memo = () => {
-  const [gameFields, setGameFields] = useState(fields);
-
-  const [moleFieldId, setMoleFieldId] = useState(getRandomMoleFields(1));
-  const [previousMoleFieldId, setPreviousMoleFieldId] = useState([]);
+  const [gameFields, setGameFields] = useState(Cardss1);
 
   const [initialTime, setInitialTime] = useState(game_time);
 
@@ -78,37 +93,81 @@ export const Memo = () => {
 
   const [score, setScore] = useState(0);
 
-  const [intervalId, setIntervalId] = useState(null);
-
   const [isGameEnded, setIsGameEnded] = useState(false);
 
-  const [numCards, setNumCards] = useState(1);
+ 
+  const descriptionHandleClick = (card) => {
 
-  const [numFields, setNumFields] = useState(8);
+    // ignorujemy ukończone elementy
+
+    // sprawdzamy czy to pierwsze kliknięcie i jeśli tak to zapisujemy 1 kliknięcie (i wychodzimy z funkcji)
+
+    // sprawdzamy czy klikamy w ten sam element (jeśli tak to wychodzimy z funkcji i nic nie robimy)
+
+    // zapisujemy drugie kliknięcie (bo wiemy że jest drugie i nie jest takie same skoro tutaj dotarliśmy)
+
+    // jak są te same key to ustawiamy isDone na true dla obu elementów i zwiększamy score o 1
+
+    // jak nie są te same to fajnie jakoś zapisać, że ruch był błędny (dodatkowy use state by wiedzieć kiedy wyświetlać czerwone tła ;D )
+
+    // ustawiamy czyszczenie kliknięć, najlepiej z opóźnieniem by ewentualne czerwone tła miały czas się pokazać (setTimeout)
+
+  };
+
+//Podpowiedź do renderingu:
+
+ 
+
+// {gameCards.map((el) => {
+
+//     waruner 1
+
+//     if (el.isDone)
+
+ 
+
+//     waruneki 2
+
+//     czy to 1 lub 2 kliknięta karta
+
+ 
+
+//     return (
+
+//       I tutaj mamy 3 możliwe opcje:
+
+//       karta zakryta
+
+//       karta na stałe odkryta
+
+//       karta własnie odkryta (może być czerwona)
+
+//     );
+
+//   })}
 
   const handleStartGame = () => {
     //Wyzerowanie stanu gry
     setIsGameEnded(false);
     setTime(initialTime);
     setScore(0);
-    //Losowanie nowej pozycji
-    setMoleFieldId(getRandomMoleFields(numCards));
 
     setIsGameStarted(true);
-
-    const intervalId = setInterval(() => {
-      setMoleFieldId(getRandomMoleFields(numCards));
-    }, interval_time);
-
-    setIntervalId(intervalId);
   };
+  function shuffleArray(s) {
+    for (let i = s.length - 1; i > 0; i--) {
+      const j = Math.floor(Math.random() * (i + 1));
 
+      [s[i], s[j]] = [s[j], s[i]];
+    }
+
+    return s;
+  }
   const handleStopGame = () => {
     setIsGameStarted(false);
     setIsGameEnded(true);
-    clearInterval(intervalId);
   };
-
+  //Może być przy drugim kliku
   const resetClickField = () => {
     setTimeout(() => {
       setGameFields(
@@ -122,39 +181,8 @@ export const Memo = () => {
     }, 300);
   };
 
-  const scoreUpdate = (isMolePresent) => {
-    if (isMolePresent) {
-      setScore(score + 1);
-    }
-  };
+  const handleClickField = (clickedField) => {};
 
-  const handleClickField = (clickedField, isMolePresent) => {
-    setGameFields(
-      gameFields.map((field) => {
-        return {
-          ...field,
-
-          hasClicked: field.id === clickedField.id,
-        };
-      })
-    );
-
-    resetClickField();
-
-    scoreUpdate(isMolePresent);
-
-    if (isMolePresent) {
-      //Losujemy nową pozycję
-      setPreviousMoleFieldId(moleFieldId);
-      setMoleFieldId(getRandomMoleFields(numCards));
-      //Resetujemy interwał
-      clearInterval(intervalId);
-      const newIntervalId = setInterval(() => {
-        setMoleFieldId(getRandomMoleFields(numCards));
-      }, interval_time);
-      setIntervalId(newIntervalId);
-    }
-  };
   //Do mierzenia czasu interwał
   useEffect(() => {
     if (isGameStarted) {
@@ -218,25 +246,13 @@ export const Memo = () => {
 
           <div className="fieldgrid">
             {gameFields.map((field) => {
-              const isMolePresent = moleFieldId.includes(field.id);
-
-              const isPreviusMolePresent = previousMoleFieldId.includes(
-                field.id
-              );
-
-              const isClickedWithMole =
-                isPreviusMolePresent && field.hasClicked ? 'green' : '';
-
-              const isClickedWithoutMole =
-                !isPreviusMolePresent && field.hasClicked ? 'red' : '';
-
               return (
                 <div
                   key={field.id}
-                  onClick={() => handleClickField(field, isMolePresent)}
-                  className={`field ${isClickedWithMole} ${isClickedWithoutMole}`}
+                  onClick={() => handleClickField(field)}
+                  className={`field `}
                 >
-                  {isMolePresent && <img src={molesvg} alt="mole" />}
+                  <Card card={field} />
                 </div>
               );
             })}
@@ -246,7 +262,7 @@ export const Memo = () => {
         <div className="allgrid">
           {isGameEnded && (
             <div className="game-over">
-              Gratulację! Twój wynik to {score} par w czasie ??????????!
+              Gratulację! Twój wynik to {score} par w czasie {time} sekund!
             </div>
           )}
 
@@ -257,20 +273,20 @@ export const Memo = () => {
 
             <div className="content">
               <button
-                onClick={() => setNumFields(8)}
-                className={numFields === 8 ? 'current' : ''}
+                onClick={() => setGameFields(Cardss1)}
+                className={gameFields.length === 8 ? 'current' : ''}
               >
                 8 elementów
               </button>
               <button
-                onClick={() => setNumFields(16)}
-                className={numFields === 16 ? 'current' : ''}
+                onClick={() => setGameFields(Cardss2)}
+                className={gameFields.length === 16 ? 'current' : ''}
               >
                 16 elementów
               </button>
               <button
-                onClick={() => setNumFields(20)}
-                className={numFields === 20 ? 'current' : ''}
+                onClick={() => setGameFields(Cardss3)}
+                className={gameFields.length === 20 ? 'current' : ''}
               >
                 20 elementów
               </button>
