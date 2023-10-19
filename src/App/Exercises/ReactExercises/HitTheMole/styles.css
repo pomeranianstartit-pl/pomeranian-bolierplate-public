@@ -48,10 +48,6 @@ text-transform: uppercase;
 
 }
 .content {
-  display: flex;
-  border-radius: 8px;
-border: 1px solid var(--gray-200, #EBEBEB);
-background: var(--gray-200, #EBEBEB);
 height: 56px;
 width: 163px;
 padding: 20px 36px;

@@ -1,0 +1,97 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+
+ .cards {
+
+font-family: Poppins;
+font-size: 100px;
+font-weight: 500;
+line-height: 150px;
+letter-spacing: 0em;
+text-align: center;
+
+}
+.board {
+  width: 100%;
+  max-width: 1000px;
+  display: grid;
+  grid-template-columns: repeat(4,1fr);
+  grid-template-rows: repeat(4, 1fr);
+  gap: 1rem;
+
+  margin-top: 120px;
+  width: 700px;
+height: 700px;
+border-radius: 8px;
+background-color: #EBEBEB;
+
+}
+.card {
+  font-family: Poppins;
+  background-color: #fff;
+  display:flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 5px;
+  transition: transform 0.5s;
+  transform: rotateY('180deg');
+  animation: 2s hideCard linear;
+
+}
+/* @keyframes hideCard{
+  0%, 70%{
+    transform: rotateY(0);
+  }
+  100%{
+    transform: rotateY('180deg');
+  } */
+
+/* .item {
+font-family: Poppins;
+font-size: 100px;
+font-weight: 500;
+line-height: 150px;
+letter-spacing: 0em;
+text-align: center;
+transition: transform 0.5s;
+transform: scale(0);
+animation: 2s hideItem linear;
+}
+@keyframes hideItem{
+  0%, 70%{
+    transfrom:scale(1);
+      }
+      100%{
+        transform: scale(0);
+      }
+} */ */
+.memory-game.field {
+ aspect-ratio: 1; 
+ min-width: 50px; 
+ min-height: 50px;
+ display: flex;
+ justify-content: center;
+ align-items: center;
+  border-radius: 8px;
+  background: var(--gray-200, #ebebeb);
+  position: relative;
+}
+.option-wrapper .content {
+  display: flex;
+  gap: 1.5rem;
+}
+.option-wrapper .content > button {
+  min-width: 160px;
+  text-align: center;
+  padding: 0.85rem 0.5rem;
+  border-radius: 8px;
+  border: unset;
+  cursor: pointer;
+  background: var(--secondary-secondary, #23213d);
+  color: white;
+  font-size: 18px;
+}
+.option-wrapper .content > button.stop {
+  background: var(--colors-actions-danger, #e12b1b)
+  ;
+}

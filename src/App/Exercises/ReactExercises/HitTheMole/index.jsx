@@ -191,6 +191,8 @@ export const HitTheMole = () => {
             <div className="title">Czas gry</div>
 
             <div className="content">
+              <button class>1 minuta</button>
+              <button>1 minuta</button>
               <button>1 minuta</button>
             </div>
           </div>
