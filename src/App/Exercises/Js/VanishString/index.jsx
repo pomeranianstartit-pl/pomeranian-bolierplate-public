@@ -1,23 +1,41 @@
-import React, { useState } from 'react';
-import './style.css'
+import React, { useEffect, useState } from 'react';
 
 export const VanishString = () => {
 
-  const [text, setText] = useState('Hello');
-  setTimeout(() => {
-    console.log('setTimeout');
+  const [text, setText] = useState('');
 
-  setText('zniknięcie tekstu');
-}, 3000);
 
+  const handleClick = () => {
+
+    setText('Hello World');
+
+  };
+
+ 
+
+  useEffect(() => {
+
+    setTimeout(() => {
+
+      setText('');
+
+    }, 3000);
+
+  }, [text]);
+ 
 
   return (
-  <div className='butt-znik'>
-    <button> {text} </button>
+
+    <div>
+
+      <button onClick={handleClick}>Wyświetl tekst</button>
+
  
-  </div>
+
+      {text && <div>{text}</div>}
+
+    </div>
+
   );
 
 };
-
- 
