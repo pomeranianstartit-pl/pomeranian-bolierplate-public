@@ -1,0 +1,287 @@
+/* 1. Universal selector */
+/* 
+
+* {
+} 
+
+*/
+
+/* ---------------------------------------- */
+
+/* * {
+  background-color: aqua;
+  font-size: 15px;
+} */
+
+/* ---------------------------------------- */
+
+/* 2. Type selector */
+/* 
+
+div {}
+input {}
+body {}
+p {}
+header {}
+h1 {} 
+
+*/
+/* p {
+  background-color: aqua;
+  border: 2px solid black;
+} */
+
+/* ---------------------------------------- */
+/* 3. Class selector */
+
+/* 
+
+.[className] {} 
+
+*/
+
+/* .secondParagraph {
+  border: 5px solid gold;
+} */
+/* ---------------------------------------- */
+
+/* ---------------------------------------- */
+/* 4. Id selector */
+
+/*
+
+#[idName] {}
+
+*/
+
+/* #sellOpelButtonId {
+  padding: 10px;
+  background: black;
+  color: white;
+  border: 2px solid gold;
+} */
+
+/* ---------------------------------------- */
+/* 4. Attribute selector */
+
+/* 4a. Attribute selector with attribute name */
+/*
+
+[attributeName] {}
+
+*/
+
+/* 1 przykład */
+
+/* [href] {
+  background-color: aqua;
+  border: 2px solid black;
+} */
+
+/* ---------------------------------------- */
+/* 2 przykład */
+
+/* [id] {
+  background-color: aqua;
+  border: 2px solid black;
+} */
+
+
+/* ---------------------------------------- */
+/* 4b. Attribute selector with value */
+/*
+
+[attributeName=value] {}
+
+*/
+/* [href="http://wp.pl"] {
+  background-color: aqua;
+  border: 2px solid black;
+} */
+
+/* ---------------------------------------- */
+/* 4c. Attribute selector with value beginning with */
+/*
+
+[attributeName^=value] {}
+
+*/
+/* button[id^="buy"] {
+  background-color: aqua;
+  border: 2px solid black;
+} */
+
+/* ---------------------------------------- */
+/* 4d. Attribute selector with value ending with */
+/*
+
+[attributeName$=value] {}
+
+*/
+
+button[id$="ButtonId"] {
+  background-color: aqua;
+  border: 2px solid black;
+}
+
+/* ---------------------------------------- */
+/* 4e. Attribute selector with value containing */
+/*
+
+[attributeName*=value] {}
+
+*/
+
+/*
+
+button[id*="Button"] {
+  background-color: green;
+  border: 2px solid black;
+}
+
+
+/* ---------------------------------------- */
+/* 5. Combinators - Descend Combinator (space) */
+/* Wybiera elementy potomne (dzieci) danego elementu */
+/*
+
+[] [] {}
+
+
+*/
+
+/*
+
+.firstDiv a {
+  background-color: aqua;
+  border: 2px solid black;
+}
+
+.secondDiv [href="http://onet.pl"] {
+  background-color: red;
+  border: 5px solid yellow;
+}
+
+/* ---------------------------------------- */
+/* 6. Combinators - Child Combinator (>) */
+/* Wybiera elementy bezpośrednio potomne (dzieci) danego elementu */
+/*
+
+[] > [] {}
+
+*/
+
+/*
+#usersList > li {
+  background-color: aqua;
+  border: 2px solid black;
+}
+
+/* TO NIE ZADZIAŁA */
+/* #usersList > a {
+  background-color: aqua;
+  border: 2px solid black;
+} */
+
+/* ---------------------------------------- */
+/* 7. Combinators - Adjacent Sibling Combinator (+) */
+/* Wybiera elementy bezpośrednio następujące po danym elemencie */
+
+/*
+
+[] + [] {}
+
+*/
+
+/* 
+div + p {
+  background-color: aqua;
+  border: 2px solid black;
+}
+
+p + p {
+  background-color: red;
+  border: 2px solid yellow;
+}
+
+/* ---------------------------------------- */
+/* 8. Pseudo classes - first-child */
+
+/*
+
+[]:first-child {}
+
+wybiera pierwszy element potomny (dziecko) wybranego elementu
+
+*/
+
+/* #usersList li:first-child {
+  background-color: black;
+  border: 2px solid yellow;
+  color: white;
+  padding: 50px
+} */
+
+/* ---------------------------------------- */
+/* 9. Pseudo classes - last-child */
+
+/*
+
+[]:last-child {}
+
+wybiera ostatni element potomny (dziecko) wybranego elementu
+
+*/
+
+/* #usersList li:last-child {
+  background-color: black;
+  border: 2px solid yellow;
+  color: white;
+  padding: 50px
+} */
+
+/* ---------------------------------------- */
+/* 10. Pseudo classes - nth-child */
+
+/*
+
+[]:nth-child(n) {}
+
+wybiera n-ty element potomny (dziecko) wybranego elementu
+
+*/
+
+/* #usersList li:nth-child(3) {
+  background-color: black;
+  border: 2px solid yellow;
+  color: white;
+  padding: 50px
+} */
+
+/* ---------------------------------------- */
+/* 11. Pseudo classes - nth-of-type(n) */
+
+/*
+
+[]:nth-of-type(odd | even) {} 
+
+wybiera parzysty | nieparzysty element potomny (dziecko) wybranego elementu, który jest typu wybranego elementu
+
+*/
+
+/* ODD - nieparzysty */
+/* #usersList li:nth-of-type(odd) {
+  background-color: black;
+  border: 2px solid yellow;
+  color: white;
+  padding: 50px
+} */
+
+/* EVEN - parzysty */
+/* #usersList li:nth-of-type(even) {
+  background-color: black;
+  border: 2px solid yellow;
+  color: white;
+  padding: 50px
+} */
+
