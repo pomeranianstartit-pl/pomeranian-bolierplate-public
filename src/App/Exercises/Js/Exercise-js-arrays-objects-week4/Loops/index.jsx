@@ -72,7 +72,16 @@ export function Loops() {
   const Values = sameNumbers(firstArray, secondArray);
   console.log('sameNumbersArray', Values);
   // ////////////////////////////////////////////////////////////////////////////////////////////////////////
+  //   Druga wersja
+  const SameNumbersV2 = (arr1, arr2) => {
+    return arr1.filter((element) => arr2.includes(element));
+  };
 
+  console.log(
+    'Same numbers v2',
+    SameNumbersV2([1, 2, 5], [2, 3, 4, 5, 6, 7, 8, 9, 10])
+  );
+  // /////////////////////////////////////////////////////////////////////////////////
   return (
     //BEM CSS methodology
     <div className="container--loops">
