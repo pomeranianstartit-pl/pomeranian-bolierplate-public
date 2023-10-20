@@ -1,0 +1,49 @@
+.floats__positioning-relative {
+
+    position: relative;
+  
+    padding: 27px 31px;
+  
+    background:  #EBEBEB;
+  
+  }
+  
+   
+  
+  .floats__positioning-relative:hover .floats__positioning-absolute {
+  
+    display: block;
+  
+    top: 217px;
+  
+    left: 159px;
+  
+    transition: all 1s ease-in-out;
+  
+  }
+  
+   
+  
+  .floats__positioning-absolute {
+  
+    /* display: none; */
+  
+    transition: all 1s ease-in-out;
+  
+    position: absolute;
+  
+    top: -17px;
+  
+    right: -159px;
+  
+    padding: 12px 20px;
+  
+    border-radius: 5.5px;
+  
+    border: 1px solid #999;
+  
+    width: 100%;
+  
+    background:  #FFD5DB;
+  
+  }
