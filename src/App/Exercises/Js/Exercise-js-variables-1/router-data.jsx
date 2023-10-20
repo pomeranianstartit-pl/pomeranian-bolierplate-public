@@ -1,10 +1,15 @@
 import { Exercise } from './index';
 
 export const blockRouterMetaData = {
-  path: 'js-variables-1',
-  date: null,
-  linkLabel: 'Zmienne w JS - string',
-  blockNo: 6,
+  path: 'numbers-exercise',
+
+  date: '08 - 10 - 2023',
+
+  linkLabel: 'Ćwiczenia związane z liczbami',
+
+  blockNo: 18,
+
   element: <Exercise />,
-  tags: ['array', 'map', 'filter', 'flex'],
+
+  tags: ['numbers', 'math', '+', '-', '*', '/', 'Math'],
 };
