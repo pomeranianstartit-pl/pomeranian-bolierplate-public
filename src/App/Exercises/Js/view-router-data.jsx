@@ -6,6 +6,9 @@ import { blockRouterMetaData as blockRouterMetaDataJsFunction1 } from './Exercis
 import { BooleanMetaData } from './Boolean/router-data';
 import { blockRouterMetaDataNumbers } from './Numbers/router-data';
 import { JsArraysBasicsMetaData } from './JsArraysBasics/router-data';
+import { JsFunctionBasicsMetaData } from './JsFunctionBasics/router-data';
+import { HoistingMetaData } from './Hoisting/router-data';
+import { ExerciseJsFunctionsMetaData } from './ExerciseJsFunctions/router-data';
 import { JsObjectBasicsMetaData } from './JsObjectBasics/router-data';
 import { DateTimeMetaData } from './DateTime/router-data';
 
@@ -16,6 +19,9 @@ export const blockRouterMetaData = [
   BooleanMetaData,
   blockRouterMetaDataNumbers,
   JsArraysBasicsMetaData,
+  JsFunctionBasicsMetaData,
+  HoistingMetaData,
+  ExerciseJsFunctionsMetaData,
   JsObjectBasicsMetaData,
   DateTimeMetaData,
 ];
