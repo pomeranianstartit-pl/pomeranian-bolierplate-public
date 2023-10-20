@@ -1,6 +1,40 @@
 .blok11_z1 .font-size {
     font-size: 40px;
 }
+
 .blok11_z1 .font-weight {
-    font-weight: 400px;
+    font-weight: 700;
+}
+
+.blok11_z1 .font-style {
+    font-style: italic;
+    font-style: oblique;
+}
+
+.blok11_z1 .text-decoration {
+    text-decoration: underline;
+    text-decoration: underline dashed;
+   text-decoration: underline dotted;
+    text-decoration: line-through underline;
+    text-decoration: wavy underline;
+    text-decoration: double underline;
+}
+
+.blok11_z1 .text-transform {
+    /* DUŻE LITERY */
+    text-transform: uppercase;
+    text-transform: lowercase;
+    text-transform: capitalize;
+}
+
+.blok11_z1 .text-shadow {
+    text-shadow: 4px 4px 7px blue;
+}
+
+.blok11_z1 .sup {
+    vertical-align: super;
+}
+
+.blok11_z1 .sub {
+    vertical-align: sub;
 }
