@@ -64,6 +64,7 @@ const keys = ['A', 'U', 'K', 'R', '5', 'S', 'P', 'W', 'Q', 'F'];
 export const MemoryGame = () => {
   const [isGameStarted, setIsGameStarted] = useState(false);
   const [gameCards, setCards] = useState(cards);
+  const [numCards, setNumCards] = useState(8);
   const [gameCards16, setgameCards16] = useState(cards16);
   const [gameCards24, setCards24] = useState(cards24);
   const [initialTime, setInitialTime] = useState(game_time);
@@ -103,6 +104,15 @@ export const MemoryGame = () => {
     return s;
   }
   function handleClick(id) {}
+  useEffect(() => {
+    if (isGameStarted) {
+      const intervalId = setInterval(() => {
+        time > 0 ? setTime(time - 1) : handleStopGame();
+      }, 1000);
+
+      return () => clearInterval(intervalId);
+    }
+  }, [time, isGameStarted]);
 
   return (
     <div className="memory-game">
@@ -157,12 +167,28 @@ export const MemoryGame = () => {
           <div className="option-wrapper">
             {/* LICZBA ELEMENTÓW */}
 
-            <div>
+            {/* LICZBA Kart */}
+            <div className="option-wrapper">
+              <div className="title">Liczba kart</div>
               <div className="content">
-                <div className="title">LICZBA ELEMENTÓW</div>
-                <button class>8 elementów</button>
-                <button class>16 elementów</button>
-                <button class>20 elementów</button>
+                <button
+                  className={numCards === 8 ? 'current' : ''}
+                  onClick={() => setNumCards(8)}
+                >
+                  8 kart
+                </button>
+                <button
+                  className={numCards === 16 ? 'current' : ''}
+                  onClick={() => setNumCards(16)}
+                >
+                  16 kart
+                </button>
+                <button
+                  className={numCards === 24 ? 'current' : ''}
+                  onClick={() => setNumCards(24)}
+                >
+                  24 karty
+                </button>
               </div>
             </div>
 
