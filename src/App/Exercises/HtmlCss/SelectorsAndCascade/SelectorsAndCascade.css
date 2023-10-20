@@ -1,8 +1,29 @@
-.selectorsAndCascade div {
-    padding: 0 0 20px;
+.selectorsAndCascade > div {
+    padding: 5px;
+    border: 1px solid black;
 }
-input{
+/* selektor ">" pierwszy div nastepujacy po tej klasie */
+.selectorsAndCascade div {
+    margin: 0 0 20px;
+}
+
+span ~ span {
+    color: brown;
+}
+/* span musi byc poprzedzony spanem jakkolwiek */
+
+span + span {
+    background-color: blue;
+}
+/* span musi byc poprzedzony bezpośrednio spanem  */
+
+input,
+.input{
     background-color: red;
+}
+input:focus,
+a:focus {
+    background-color: green;
 }
 .unikalna-klasa1 {
     color: blue;
@@ -10,6 +31,43 @@ input{
 #drugi-div {
     color: hotpink;
 }
-[class*='unikalna-klasa']{
+[class*='klasa']{
 color: green;
 }
+/* ,, *" oznacza ze musi byc przypisana taka klasa  */
+
+[class^='unikalna']{
+    background-color: aqua;
+    }
+    /* "^" wartosc class zaczyna sie od "unikalna" */
+
+    [class$='klasa3']{
+        color: orange ;
+        }
+        /* "$" wartosc class konczy sie na "klasa3" */
+        [class^='unikalna']:hover {
+            background-color: purple;
+            }
+
+            .selectorsAndCascade > div:first-child{
+                background-color: lightcoral;
+            }
+
+            .selectorsAndCascade > div > div:last-child{
+                background-color: lightcyan;
+            }
+
+            a:visited {
+                color: red;
+            }
+
+            /* div::first-line{
+                font-size: 32px;
+            } */
+/* odnosi sie do całej aplikacji ?!? */
+            span::before{
+                content: "<3";
+            }
+
+            /* pseudo klasy te które zaleza od uzytkownika
+            pseudo elementy z uzyciem :: */
