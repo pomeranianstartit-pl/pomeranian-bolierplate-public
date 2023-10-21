@@ -9,3 +9,7 @@
 transform:rotate(-98deg);
 transition: 0,5s;
 }
+.faqimg path {
+    stroke: red;
+    fill: red;
+}
