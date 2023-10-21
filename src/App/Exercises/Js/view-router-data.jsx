@@ -11,6 +11,12 @@ import { blockRouterMetaData as blockRouterMetaDataDateTime } from './DateTime/r
 import { blockRouterMetaData as blockRouterMetaDataFunctionBasics } from './JsFunctionBasics/router-data';
 import { blockRouterMetaData as blockRouterMetaDataHoisting } from './Hoisting/router-data';
 import { blockRouterMetaData as blockRouterMetaDataExerciseJsFunctions } from './ExerciseJsFunctions/router-data';
+import { blockRouterMetaData as blockRouterMetaDataSetTimeout } from './JsSetTimeout/router-data';
+import { blockRouterMetaData as blockRouterMetaDataJsSetInterval } from './JsSetInterval/router-data';
+import { blockRouterMetaData as blockRouterMetaDataUseEffect } from './UseEffect/router-data';
+import { blockRouterMetaData as blockRouterMetaDataVanishString } from './VanishString/router-data';
+import { blockRouterMetaData as blockRouterMetaDataTimer } from './Timer/router-data';
+import { blockRouterMetaData as blockRouterMetaDataJsSlidingBanner } from './JsSlidingBanner/router-data';
 
 export const blockRouterMetaData = [
   blockRouterMetaDataJsVariables1,
@@ -24,5 +30,11 @@ export const blockRouterMetaData = [
   blockRouterMetaDataFunctionBasics,
   blockRouterMetaDataHoisting,
   blockRouterMetaDataExerciseJsFunctions,
+  blockRouterMetaDataSetTimeout,
+  blockRouterMetaDataJsSetInterval,
+  blockRouterMetaDataUseEffect,
+  blockRouterMetaDataVanishString,
+  blockRouterMetaDataTimer,
+  blockRouterMetaDataJsSlidingBanner,
 ];
 export const blockRouterData = getParsedRouterDataList(blockRouterMetaData);
