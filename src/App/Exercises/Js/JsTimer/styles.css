@@ -1,0 +1,40 @@
+.container {
+  position: relative;
+  width: 200px;
+  height: 100px;
+  background-color: rgb(148, 143, 143);
+  border: 5px solid;
+  overflow: hidden;
+}
+
+.motion-string {
+  /* width: 444px; */
+  font-size: 20px;
+  display: flex;
+  color: brown;
+  text-wrap: nowrap;
+  align-items: center;
+  position: absolute;
+  top: 5px;
+  left: 50px;
+  bottom: 0;
+  background-repeat: repeat-x;
+  /* transform: rotate(300deg); 
+  -webkit-transform: rotate(300deg);  */
+}
+
+.motion-string1 {
+  /* width: 444px; */
+  font-size: 20px;
+  display: flex;
+  color: brown;
+  text-wrap: nowrap;
+  align-items: center;
+  position: absolute;
+  top: 5px;
+  left: 50px;
+  bottom: 0;
+  background-repeat: repeat-x;
+  /* transform: rotate(300deg); 
+  -webkit-transform: rotate(300deg);  */
+}

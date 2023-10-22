@@ -1,4 +1,5 @@
 import { useEffect, useState } from 'react';
+import { MotionString } from './motion-string';
 
 export const JsTimer = () => {
   const [time, setTime] = useState(0);
@@ -31,7 +32,10 @@ export const JsTimer = () => {
     <div>
       <div>{time}</div>
       <button onClick={clickHandle}>{running ? 'Stop' : 'Start'}</button>
+      <p></p>
+      <div>
+        <MotionString />
+      </div>
     </div>
   );
 };
-
