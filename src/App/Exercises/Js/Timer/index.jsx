@@ -1,7 +1,7 @@
 import { useState, useEffect } from 'react';
 
 // ćwiczenie
-//wyświetl timer na stronie, któego początkowym stanem będzie 0
+//wyświetl timer na stronie, którego początkowym stanem będzie 0
 // stwórz przycisk stop/start i restart (żeby timer wrócił do 0)
 
 export const Exercise = () => {
