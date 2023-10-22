@@ -5,23 +5,24 @@ export const MotionString = () => {
   function clickHandle() {
     setRunning(false);
   }
-  const maxValue = 210;
+  const MAX_VALUE = 160;
   const [running, setRunning] = useState(false);
+  const text = 'I like java Script.';
 
   const [value, setValue] = useState(0);
-  const [value1, setValue1] = useState(-maxValue);
+  const [value1, setValue1] = useState(-MAX_VALUE);
   useEffect(() => {
     if (!running) return;
     const interval = setInterval(() => {
-      setValue((prevValue) => prevValue + 1.5);
-      if (value > maxValue) {
-        setValue(-maxValue);
+      setValue((prevValue) => prevValue + 0.5);
+      if (value > MAX_VALUE) {
+        setValue(-MAX_VALUE);
       }
-      setValue1((prevValue1) => prevValue1 + 1.5);
-      if (value1 > maxValue) {
-        setValue1(-maxValue);
+      setValue1((prevValue1) => prevValue1 + 0.5);
+      if (value1 > MAX_VALUE) {
+        setValue1(-MAX_VALUE);
       }
-    }, 100);
+    }, 17);
     return () => {
       clearInterval(interval);
     };
@@ -33,15 +34,20 @@ export const MotionString = () => {
   }, []);
   return (
     <div>
-      <div className="container">
-        <div className="motion-string" style={{ left: value, width: maxValue }}>
-          I like JavaScript.
+      <div className="container" style={{ width: MAX_VALUE }}>
+        <div
+          className="motion-string"
+          id="first"
+          style={{ left: value, width: MAX_VALUE }}
+        >
+          {text}
         </div>
         <div
-          className="motion-string1"
-          style={{ left: value1, width: maxValue }}
+          className="motion-string"
+          id="second"
+          style={{ left: value1, width: MAX_VALUE }}
         >
-          I like JavaScript.
+          {text}
         </div>
       </div>
       <button onClick={clickHandle}>Kliknij tutej</button>
