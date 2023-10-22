@@ -5,6 +5,7 @@ import { ReactOnClickRouterData } from './ReactOnCLick/router-data';
 import { ReactOnChangeRouterData } from './ReactOnChange/router-data';
 import { ReactIfStatementMetaData } from './ReactIfStatement/router-data';
 import { ReactGuessNumberMetaData } from './ReactGuessNumber/router-data';
+import { blockRouterMetaData as blockRouterMetaDataHitTheMole } from './HitTheMole/router-data';
 
 export const blockRouterMetaData = [
   SubRouteExampleMetaData,
@@ -12,5 +13,6 @@ export const blockRouterMetaData = [
   ReactOnChangeRouterData,
   ReactIfStatementMetaData,
   ReactGuessNumberMetaData,
+  blockRouterMetaDataHitTheMole,
 ];
 export const blockRouterData = getParsedRouterDataList(blockRouterMetaData);
