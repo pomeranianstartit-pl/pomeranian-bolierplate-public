@@ -41,6 +41,7 @@ div.content {
   margin-bottom: 0;
   background-color: #23213d;
   border: none;
+  border-radius: 8px;
 }
 
 .score {
