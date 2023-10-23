@@ -9,17 +9,19 @@ import './style.css';
 //5. Ostylować
 
 export function Events() {
-  const [text, setText] = useState('Nie kliknięto we mnie');
+  const [text, setText] = useState('NIE KLIKNIĘTO WE MNIE');
   const [counter, setCounter] = useState(0);
   const [inputText, setInputText] = useState('');
+
   //let text2 = 'Nie kliknięto we mnie 2';
 
   function handleOnClick() {
-    setText('Kliknięto we mnie');
+    setText('KLIKNIĘTO WE MNIE ');
 
-    if (counter >= 3) {
-      return setCounter((counter) => counter + 2);
-    }
+    // dodatkowa funkcja która sprawia że jeśli kliknięć wiecej niż 3 to dodaje 2
+    //if (counter >= 3) {
+    // return setCounter((counter) => counter + 2);
+    //}
 
     setCounter((counter) => counter + 1);
   }
@@ -48,18 +50,19 @@ export function Events() {
   //name2();
 
   return (
-    <div>
-      <h2>Cześć i czołem!</h2>
+    <div className="events-container">
+      <h1>Cześć!</h1>
+      <p>Wpisz swoje imię</p>
       <input
         className="events-input"
         type="text"
         onChange={(event) => handleOnChange(event)}
       />
       <button className="events-button" onClick={handleGreeting}>
-        Kliknij
+        KLIKNIJ
       </button>
       <button className="events-button" onClick={handleOnClick}>
-        {counter > 0 ? `${text} ${counter} razy` : text}
+        {counter > 0 ? `${text} ${counter} RAZY` : text}
       </button>
     </div>
   );

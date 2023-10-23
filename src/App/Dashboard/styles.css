@@ -1,10 +1,11 @@
 
 .dashboard {
     display: grid;
-    grid-template-columns: 1fr 300px;
-    grid-template-rows: auto auto 1fr;
+    grid-template-columns: 1fr 428px;
+    /*grid-template-rows: auto auto 1fr;*/
     grid-column-gap: 15px;
-    grid-row-gap: 20px;
+    /*grid-row-gap: 20px;*/
+    font-family: Poppins;
     }
     
     .dashboard-greeting { 
@@ -35,8 +36,8 @@
     }
 
     .dashboard-card > svg {
-        height: 40px;
-        width: 40px;
+        height: 43px;
+        width: 43px;
     }
 
     .dashboard-card > p {
@@ -52,17 +53,20 @@
 
     .dashboard-aside { 
         grid-area: 1 / 2 / 4 / 3;
-        width: 334px;
+        width: 480px;
         height: 360px;
-        border-radius: 10px;
+      
         background: var(--colors-white-100, #FFF);
+        flex-shrink: 0;
         
     }
     
       .dashboard-cards {
         display:flex;
         flex-wrap: wrap;
+        max-width: 712px;
         gap: 35px;
+        margin-right: 140px;
       }
       
       .dashboard-card:hover h3 {
@@ -74,19 +78,22 @@
       }
 
       .dashboard-idcard {
+        margin-right: 116px;
+      }
         
 
-padding: 45px 116px 28px 23px;
-      }
+
 
       .dashboard-idcard > h3 {
         color: var(--secondary-secondary, #23213D);
+        font-family: Poppins;
 font-size: 22px;
 font-style: normal;
 font-weight: 500;
 line-height: normal;
 display: flex;
-margin-bottom: 0px;
+margin-bottom: 1px;
+
 
 
 
@@ -99,6 +106,8 @@ margin-bottom: 0px;
         font-style: normal;
         font-weight: 400;
         line-height: 20px;
+        margin-top: 1px;
+        margin-bottom: 24px;
 
       }
 

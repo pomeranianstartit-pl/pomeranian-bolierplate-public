@@ -62,8 +62,11 @@ export const Dashboard = () => {
         <div className="dashboard-idcard">
           <h3>Mateusz Tywczyński</h3>
           <p>Gdańsk</p>
-          <p>e-mail: mateusz.tywczynski@gmail.com</p>
-          <p>telefon: 000 000 000</p>
+          <p>
+            e-mail:
+            <br /> mateusz.tywczynski@gmail.com
+          </p>
+          <p>telefon: 502 934 795</p>
         </div>
       </aside>
     </div>
