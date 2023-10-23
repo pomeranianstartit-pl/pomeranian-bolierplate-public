@@ -1,5 +1,5 @@
-import { type } from '@testing-library/user-event/dist/type';
 import './styles.css';
+export { type } from '@testing-library/user-event/dist/type';
 
 export function Exercise() {
   const animal = {
