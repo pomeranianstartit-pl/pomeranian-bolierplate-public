@@ -1,0 +1,24 @@
+.btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-width: 163px;
+    color: #FFF;
+}
+
+.btn-primary {
+    background: #23213D;
+}
+
+.btn-secondary {
+    background: #E12B1B;
+}
+
+.btn--active {
+    background: #FE3756;
+}
+
+.btn--disabled {
+    background: #EBEBEB;
+    color: #000;
+}

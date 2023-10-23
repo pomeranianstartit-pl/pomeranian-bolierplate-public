@@ -14,7 +14,11 @@ export function FaqNote(props) {
       <div>
         {/* <div className='faq-note-wrapper-title> */}
         <h2>
-          <img src={toggleArrow} alt="Tu powinien być obrazek" />
+          <img
+            src={toggleArrow}
+            className="faqimg"
+            alt="Tu powinien być obrazek"
+          />
           {props.title}
         </h2>
       </div>
