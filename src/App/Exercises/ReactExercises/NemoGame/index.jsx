@@ -1,115 +1,108 @@
-/* eslint-disable react-hooks/exhaustive-deps */
-import { useEffect, useState } from 'react';
-
+import React, { useEffect, useState } from 'react';
 import './styles.css';
 
-/* tabelka 8 pól */
 const fields = [
-  { id: 1, hasClicked: false },
-  { id: 2, hasClicked: false },
-  { id: 3, hasClicked: false },
-  { id: 4, hasClicked: false },
-  { id: 5, hasClicked: false },
-  { id: 6, hasClicked: false },
-  { id: 7, hasClicked: false },
-  { id: 8, hasClicked: false },
+  { id: 1, card: 'A', isHidden: true },
+  { id: 2, card: 'B', isHidden: true },
+  { id: 3, card: 'C', isHidden: true },
+  { id: 4, card: 'D', isHidden: true },
+  { id: 5, card: 'C', isHidden: true },
+  { id: 6, card: 'A', isHidden: true },
+  { id: 7, card: 'B', isHidden: true },
+  { id: 8, card: 'D', isHidden: true },
 ];
 
-const fields2 = [
-  { id: 1, hasClicked: false },
-  { id: 2, hasClicked: false },
-  { id: 3, hasClicked: false },
-  { id: 4, hasClicked: false },
-  { id: 5, hasClicked: false },
-  { id: 6, hasClicked: false },
-  { id: 7, hasClicked: false },
-  { id: 8, hasClicked: false },
-  { id: 9, hasClicked: false },
-  { id: 10, hasClicked: false },
-  { id: 11, hasClicked: false },
-  { id: 12, hasClicked: false },
-  { id: 13, hasClicked: false },
-  { id: 14, hasClicked: false },
-  { id: 15, hasClicked: false },
-  { id: 16, hasClicked: false },
-];
-
-const fields3 = [
-  { id: 1, hasClicked: false },
-  { id: 2, hasClicked: false },
-  { id: 3, hasClicked: false },
-  { id: 4, hasClicked: false },
-  { id: 5, hasClicked: false },
-  { id: 6, hasClicked: false },
-  { id: 7, hasClicked: false },
-  { id: 8, hasClicked: false },
-  { id: 9, hasClicked: false },
-  { id: 10, hasClicked: false },
-  { id: 11, hasClicked: false },
-  { id: 12, hasClicked: false },
-  { id: 13, hasClicked: false },
-  { id: 14, hasClicked: false },
-  { id: 15, hasClicked: false },
-  { id: 16, hasClicked: false },
-  { id: 17, hasClicked: false },
-  { id: 18, hasClicked: false },
-  { id: 19, hasClicked: false },
-  { id: 20, hasClicked: false },
-];
-
-function shuffleArray(s) {
-  for (let i = s.length - 1; i > 0; i--) {
-    const j = Math.floor(Math.random() * (i + 1));
-    [s[i], s[j]] = [s[j], s[i]];
-  }
-  return s;
+function shuffleArray(arr) {
+  const shuffled = [...arr].sort(() => 0.5 - Math.random());
+  return shuffled;
 }
 
-const interval_time = 1000;
-const game_time = 120;
+//
+const initialTime = 120;
 
 export const NemoGame = () => {
-  // const [j, shuffleArray] = useState(elements, elements2, elements3);
   const [gameFields, setGameFields] = useState(fields);
-  const [initialTime, setInitialTime] = useState(game_time);
-  const [time, setTime] = useState(game_time);
+  const [time, setTime] = useState(initialTime);
   const [isGameStarted, setIsGameStarted] = useState(false);
   const [score, setScore] = useState(0);
   const [isGameEnded, setIsGameEnded] = useState(false);
-  const [firstClick, setIsClicked] = useState(false);
-  const [firstSecond, setIsClickedSecond] = useState(false);
+  const [selectedCards, setSelectedCards] = useState([]);
 
   const handleStartGame = () => {
-    // 1. Tutaj zerujemy stan przed startem
-    setGameFields(shuffleArray(gameFields));
+    setGameFields(shuffleArray([...fields, ...fields]));
     setIsGameEnded(false);
     setTime(initialTime);
-    setScore(0);
-    // 2. Zmiana widoku gry na pola z kretem
+    setScore(2);
     setIsGameStarted(true);
   };
 
   const handleClickField = (clickedField) => {
-    // Ustawienie ktore pole zostalo klikniete
+    if (selectedCards.length >= 2) {
+      // Jeśli są już dwie odkryte karty, zignoruj kliknięcie
+      return;
+    }
+
+    const updatedFields = gameFields.map((field) => {
+      if (field.id === clickedField.id) {
+        return {
+          ...field,
+          isHidden: false,
+        };
+      }
+      return field;
+    });
+
+    setGameFields(updatedFields);
+    setSelectedCards([...selectedCards, clickedField]);
+
+    if (selectedCards.length === 1) {
+      // Po kliknięciu w drugą kartę, sprawdź, czy pasują do siebie
+      if (selectedCards[0].card === clickedField.card) {
+        // Karty pasują, zwiększ wynik i zaktualizuj stan kafli
+        setScore(score + 1);
+        setSelectedCards([]);
+      } else {
+        // Karty nie pasują, zwróć kafle do stanu ukrytego po krótkim opóźnieniu
+        setTimeout(() => {
+          const resetFields = gameFields.map((field) => {
+            if (field.isHidden === false) {
+              return {
+                ...field,
+                isHidden: true,
+              };
+            }
+            return field;
+          });
+
+          setGameFields(resetFields);
+          setSelectedCards([]);
+        }, 1000);
+      }
+    }
   };
+
   const handleStopGame = () => {
     setIsGameStarted(false);
     setIsGameEnded(true);
   };
 
-  // Do mierzenia czasu interwał i stopowania gry
   useEffect(() => {
     if (isGameStarted) {
-      const intervalId = setInterval(() => {
-        time > 0 ? setTime(time - 1) : handleStopGame();
-      }, 1000);
+      if (time > 0) {
+        const intervalId = setInterval(() => {
+          setTime(time - 1);
+        }, 1000);
 
-      return () => clearInterval(intervalId);
+        return () => clearInterval(intervalId);
+      } else {
+        // Czas gry się skończył, zakończ grę
+        handleStopGame();
+      }
     }
   }, [time, isGameStarted]);
 
   return (
-    <div className="hit-the-mole">
+    <div className="nemo-game">
       <h2>
         Gra polegająca na zapamiętywaniu odkrytych kafli i łączeniu ich w pary
       </h2>
@@ -117,7 +110,6 @@ export const NemoGame = () => {
       {isGameStarted ? (
         <div>
           <div>
-            {/* CZAS do końca  */}
             <div className="option-wrapper">
               <div className="title">CZAS GRY</div>
               <div className="content">
@@ -125,7 +117,6 @@ export const NemoGame = () => {
               </div>
             </div>
 
-            {/* WYNIK */}
             <div className="option-wrapper">
               <div className="title">LICZBA RUCHÓW</div>
               <div className="content">
@@ -133,7 +124,6 @@ export const NemoGame = () => {
               </div>
             </div>
 
-            {/* PRZYCISKI STERUJĄCE */}
             <div className="option-wrapper">
               <div className="title">PRZYCISKI STERUJĄCE</div>
               <div className="content">
@@ -144,45 +134,48 @@ export const NemoGame = () => {
             </div>
           </div>
 
-          {/* WIDOK ŁAPANIA KRETA */}
           <div className="board">
             {gameFields.map((field) => {
               return (
                 <div
                   key={field.id}
                   onClick={() => handleClickField(field)}
-                  className={`field`}
+                  className={`field ${field.isHidden ? 'hidden' : ''}`}
                 >
-                  {field.id}
+                  {field.isHidden ? (
+                    <div className="field-hidden">{field.id}</div>
+                  ) : (
+                    field.card
+                  )}
                 </div>
               );
             })}
           </div>
         </div>
       ) : (
-        <div className="hit-the-mole">
+        <div className="nemo-game">
           {isGameEnded && (
             <div className="game-over">
-              Gratulację! Twój wynik to {score} w czasie {time}!
+              Gratulacje! Twój wynik to {score} w czasie {initialTime - time}{' '}
+              sekund!
             </div>
           )}
-          {/* CZAS gry */}
+
           <div className="option-wrapper">
             <div className="title">LICZBA ELEMENTÓW</div>
             <div className="content">
               <button className="current" onClick={() => setGameFields(fields)}>
                 8 elementów
               </button>
-              <button className="x" onClick={() => setGameFields(fields2)}>
+              <button className="x" onClick={() => setGameFields(fields)}>
                 16 elementów
               </button>
-              <button className="x" onClick={() => setGameFields(fields3)}>
+              <button className="x" onClick={() => setGameFields(fields)}>
                 20 elementów
               </button>
             </div>
           </div>
 
-          {/* PRZYCISKI STERUJĄCE */}
           <div className="option-wrapper">
             <div className="title">Przyciski sterujące</div>
             <div className="content">
