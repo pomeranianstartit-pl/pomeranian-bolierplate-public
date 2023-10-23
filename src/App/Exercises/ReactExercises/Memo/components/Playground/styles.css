@@ -1,0 +1,32 @@
+.memory-field {
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    width: 160px;
+    height: 160px;
+    background: #EBEBEB;
+    color: #000;
+text-align: center;
+font-family: Poppins;
+font-size: 50px;
+font-style: normal;
+font-weight: 500;
+line-height: normal;
+}
+.memory-field--clicked {
+    border-radius: 8px;
+    background:  #E2FBD7; 
+}
+
+
+.memory-fields {
+    display: flex;
+    gap: 20px;
+ flex-wrap: wrap;
+    max-width: 700px;
+    max-height: 700px;
+    margin-top: 119px;
+    margin-left: 203px;
+    margin-bottom: 155px;
+}

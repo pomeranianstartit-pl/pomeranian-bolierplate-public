@@ -1,0 +1,31 @@
+.btn {
+  
+  align-items: center;
+  justify-content: center;
+  min-width: 163px;
+  min-height: 56px;
+  color: #FFF;
+  font-family: Poppins;
+font-size: 18px;
+font-style: normal;
+font-weight: 500;
+line-height: 31px;
+margin-right: 24px;
+}
+
+.btn-primary {
+  background: #23213D;
+}
+
+.btn-secondary {
+  background: #E12B1B;
+}
+
+.btn--active {
+  background: #FE3756;
+}
+
+.btn--disabled {
+  background: #EBEBEB;
+  color: #000;
+}
