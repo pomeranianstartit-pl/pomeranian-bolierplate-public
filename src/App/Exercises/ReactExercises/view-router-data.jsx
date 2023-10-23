@@ -8,6 +8,7 @@ import { ReactIfStatementsMetaData } from './ReactIfStatements/router-data';
 import { ReactIfAisBiggerthanBMetaData } from './ReactIfAisBiggerthanB/router-data';
 import { ReactGuestNumberMetaData } from './ReactGuestNumber/router-data';
 import { ReactIfAisBiggerThan10MetaData } from './ReactIfAisBiggerThan10/router-data';
+import { HitTheMoleMetaData } from './HitTheMole/router-data';
 
 export const blockRouterMetaData = [
   SubRouteExampleMetaData,
@@ -17,5 +18,6 @@ export const blockRouterMetaData = [
   ReactGuestNumberMetaData,
   ReactIfAisBiggerthanBMetaData,
   ReactIfAisBiggerThan10MetaData,
+  HitTheMoleMetaData,
 ];
 export const blockRouterData = getParsedRouterDataList(blockRouterMetaData);

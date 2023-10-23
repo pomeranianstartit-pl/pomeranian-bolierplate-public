@@ -1,0 +1,12 @@
+.field {
+  width: 100px;
+  height: 100px;
+  border: 1px solid black;
+}
+.field-green {
+  background-color: green;
+}
+
+.field-red {
+  background-color: red;
+}
