@@ -1,240 +1,249 @@
-/* eslint-disable react-hooks/exhaustive-deps */
-import { useEffect, useState } from 'react';
-
-import molesvg from '../../../Images/mole.svg';
-
+import React, { useState, useEffect } from 'react';
+import { NavLink } from 'react-router-dom';
 import './styles.css';
 
-const fields = [
-  { id: 1, hasClicked: false },
-  { id: 2, hasClicked: false },
-  { id: 3, hasClicked: false },
-  { id: 4, hasClicked: false },
-  { id: 5, hasClicked: false },
-  { id: 6, hasClicked: false },
-  { id: 7, hasClicked: false },
-  { id: 8, hasClicked: false },
-  { id: 9, hasClicked: false },
-  { id: 10, hasClicked: false },
-  { id: 11, hasClicked: false },
-  { id: 12, hasClicked: false },
-  { id: 13, hasClicked: false },
-  { id: 14, hasClicked: false },
-  { id: 15, hasClicked: false },
-  { id: 16, hasClicked: false },
-];
-
-const getRandomInt = (max) => Math.floor(Math.random() * max) + 1;
-
-const getRandomMoleFields = (numMoles) => {
-  const moleFields = [];
-
-  while (moleFields.length < numMoles) {
-    const randomField = getRandomInt(16);
-
-    if (!moleFields.includes(randomField)) {
-      moleFields.push(randomField);
-    }
-  }
-
-  return moleFields;
-};
-
-const interval_time = 2000;
 const game_time = 120;
+const keys = ['A', 'U', 'K', 'R', '5', 'S', 'P', 'W', 'Q', 'F'];
+let counter = 0;
+let score = 0;
 
 export const MemoGame = () => {
-  const [gameFields, setGameFields] = useState(fields);
-  const [moleFieldId, setMoleFieldId] = useState(getRandomMoleFields(1));
-  const [previusMoleFieldId, setPreviusMoleFieldId] = useState([]);
-  const [initialTime, setInitialTime] = useState(game_time);
-  const [time, setTime] = useState(game_time);
   const [isGameStarted, setIsGameStarted] = useState(false);
-  const [score, setScore] = useState(0);
-  const [intervalId, setIntervalId] = useState(null);
-  const [isGameEnded, setIsGameEnded] = useState(false);
-  const [numMoles, setNumMoles] = useState(1);
+
+  const [time, setTime] = useState(game_time);
+  const [moves, setMoves] = useState(0);
+  const [gameCards, setGameCards] = useState([]);
+  const [firstCard, setFirstCard] = useState(null);
+  const [secondCard, setSecondCard] = useState(null);
+  const [showScore, setShowScore] = useState(false);
 
   const handleStartGame = () => {
-    // 1. Tutaj zerujemy stan przed startem
-    setIsGameEnded(false);
-    setTime(initialTime);
-    setScore(0);
-    setMoleFieldId(getRandomMoleFields(numMoles));
-
-    // 2. Zmiana widoku gry na pola z kretem
     setIsGameStarted(true);
+    // setIsGameEnded(false);
 
-    // 3. Zmiana miejsca kreta nawet jezeli uzytkownik nie kliknie
-    const intervalId = setInterval(() => {
-      setMoleFieldId(getRandomMoleFields(numMoles));
-    }, interval_time);
+    setTime(game_time);
+    setMoves(0);
 
-    setIntervalId(intervalId);
+    setFirstCard(null);
+    setSecondCard(null);
+    counter = 0;
+    score = 0;
   };
-
-  const handleClickField = (clickedField, isMolePresent) => {
-    // Ustawienie ktore pole zostalo klikniete
-    setGameFields(
-      gameFields.map((field) => {
-        return {
-          ...field,
-          hasClicked: field.id === clickedField.id,
-        };
-      })
-    );
-
-    // Reset ktore pole zostalo klikniete + aktualizacja wyniku
-    resetClickField();
-    scoreUpdate(isMolePresent);
-
-    // Losowanie nowego miejsca kreta jezeli zostanie trafiony
-    if (isMolePresent) {
-      // Ustawiamy mu nową pozycje i trzymamy info o jego poprzedniej pozycji
-      setPreviusMoleFieldId(moleFieldId);
-      setMoleFieldId(getRandomMoleFields(numMoles));
-
-      // Reset interwału
-      clearInterval(intervalId);
-      const newIntervalId = setInterval(() => {
-        setMoleFieldId(getRandomMoleFields(numMoles));
-      }, interval_time);
-      setIntervalId(newIntervalId);
-    }
-  };
-
-  const resetClickField = () => {
-    setTimeout(() => {
-      setGameFields(fields);
-    }, 300);
-  };
-
-  const scoreUpdate = (isMolePresent) => {
-    if (isMolePresent) {
-      setScore(score + 1);
-    } else {
-      setScore(score - 1);
-    }
-  };
-
   const handleStopGame = () => {
     setIsGameStarted(false);
-    setIsGameEnded(true);
 
-    clearInterval(intervalId);
+    setFirstCard(null);
+    setSecondCard(null);
   };
 
-  // Do mierzenia czasu interwał i stopowania gry
+  function shuffleArray(s) {
+    for (let i = s.length - 1; i > 0; i--) {
+      const j = Math.floor(Math.random() * (i + 1));
+      [s[i], s[j]] = [s[j], s[i]];
+    }
+    return s;
+  }
+
+  const cardsGenerator = (num) => {
+    const newArray = [];
+    for (let i = 0; i < num / 2; i++) {
+      newArray.push({
+        id: i,
+        key: keys[i],
+        keyID: i,
+        isDone: false,
+      });
+      newArray.push({
+        id: 10 + i,
+        key: keys[i],
+        keyID: i,
+        isDone: false,
+      });
+    }
+    const shuffleCards = shuffleArray(newArray);
+    setGameCards(shuffleCards);
+  };
+
+  const handleClick = (clickedCard) => {
+    firstCard ? setSecondCard(clickedCard) : setFirstCard(clickedCard);
+    counter++;
+    setMoves(counter);
+  };
+
+  useEffect(() => {
+    if (firstCard && secondCard) {
+      if (firstCard.keyID === secondCard.keyID) {
+        score++;
+        setGameCards(
+          gameCards.map((card) => {
+            const isDone =
+              (card.keyID === firstCard.keyID &&
+                firstCard.keyID === secondCard.keyID) ||
+              card.isDone;
+            return {
+              ...card,
+              isDone: isDone,
+            };
+          })
+        );
+        setFirstCard(null);
+        setSecondCard(null);
+      } else {
+        setTimeout(() => {
+          setFirstCard(null);
+          setSecondCard(null);
+        }, 300);
+      }
+    }
+  }, [firstCard, secondCard]);
+
   useEffect(() => {
     if (isGameStarted) {
       const intervalId = setInterval(() => {
-        time > 0 ? setTime(time - 1) : handleStopGame();
-      }, 2000);
+        time > 0 && setTime(time - 1);
+      }, 1000);
 
       return () => clearInterval(intervalId);
     }
   }, [time, isGameStarted]);
 
-  return (
-    <div className="memo-game">
-      <h2>
-        Gra polegająca na zapamiętywaniu odkrytych kafli i łączeniu ich w pary
-      </h2>
+  useEffect(() => {
+    if (time === 0) {
+      handleStopGame();
+      setShowScore(true);
+    }
+  }, [time]);
 
+  useEffect(() => {
+    if (gameCards.every((card) => card.isDone)) {
+      handleStopGame();
+      setShowScore(true);
+    }
+  }, [gameCards]);
+
+  let min = Math.floor(time / 60);
+  let sec = time % 60;
+  sec = sec < 10 ? '0' + sec : sec;
+
+  return (
+    <div className="wrapper">
+      <NavLink to="/exercise" className="backBtn">
+        {'<'}Memo
+      </NavLink>
+
+      {showScore ? (
+        <h2 className="memo">
+          Gratulacje! Twój wynik to: {score} par w czasie {game_time - time}{' '}
+          sekund!
+        </h2>
+      ) : (
+        <h2 className="memo">
+          Gra polegająca na zapamiętywaniu odkrytych kafli i łączeniu ich w pary
+        </h2>
+      )}
       {isGameStarted ? (
         <div>
-          <div>
-            {/* CZAS gry  */}
-            <div className="option-wrapper">
-              <div className="title">Czas gry</div>
+          <div className="container_table">
+            <div className="container_row">
+              <div className="title_memo">Czas gry</div>
               <div className="content">
-                <button disabled={true}>{time}</button>
+                <button className="button_memo score">
+                  {min}:{sec}
+                </button>
               </div>
             </div>
-
-            {/* LICZBA RUCHÓW */}
-            <div className="option-wrapper">
-              <div className="title">Liczba ruchów</div>
+            <div className="container_row">
+              <div className="title_memo">Liczba ruchów</div>
               <div className="content">
-                <button disabled={true}>{score}</button>
+                <button className="button_memo score">{moves}</button>
               </div>
             </div>
-
-            {/* PRZYCISKI STERUJĄCE */}
-            <div className="option-wrapper">
-              <div className="title">Przyciski sterujące</div>
+            <div className="container_row">
+              <div className="title_memo">Przyciski sterujące</div>
               <div className="content">
-                <button className="stop" onClick={handleStopGame}>
-                  PASS
+                <button onClick={handleStopGame} className="button_memo stop">
+                  Pass
                 </button>
               </div>
             </div>
           </div>
-
-          {/* WIDOK ŁAPANIA KRETA */}
-          <div className="board">
-            {gameFields.map((field) => {
-              const isMolePresent = moleFieldId.includes(field.id);
-
-              const isPreviusMolePresent = previusMoleFieldId.includes(
-                field.id
-              );
-              const isClickedWithMole =
-                isPreviusMolePresent && field.hasClicked ? 'green' : '';
-              const isClickedWithoutMole =
-                !isPreviusMolePresent && field.hasClicked ? 'red' : '';
-
+          <div className="cardsplace">
+            {gameCards.map((el) => {
               return (
                 <div
-                  key={field.id}
-                  onClick={() => handleClickField(field, isMolePresent)}
-                  className={`field ${isClickedWithMole} ${isClickedWithoutMole}`}
+                  onClick={() => handleClick(el)}
+                  key={el.id}
+                  // className="onecard"
+                  className={
+                    secondCard === el
+                      ? 'red onecard'
+                      : firstCard === el || el.isDone
+                      ? 'green onecard'
+                      : 'onecard'
+                  }
                 >
-                  {isMolePresent && <img src={molesvg} alt="mole" />}
+                  <span>
+                    {(firstCard === el ||
+                      secondCard === el ||
+                      el.isDone === true) &&
+                      el.key}
+                  </span>
                 </div>
               );
             })}
           </div>
         </div>
       ) : (
-        <div className="memo-game">
-          {isGameEnded && (
-            <div className="game-over">
-              Gratulacje! Twój wynik to {score} w czasie !
+        <div>
+          <div className="container_table">
+            <div className="container_row">
+              <div className="title_memo">Liczba elementów</div>
+              <div className="content">
+                <button
+                  onClick={() => cardsGenerator(8)}
+                  className={
+                    gameCards.length === 8
+                      ? 'current button_memo'
+                      : 'button_memo'
+                  }
+                >
+                  8 elementów
+                </button>
+                <button
+                  // onClick={() =>
+                  //   setGameCards(gameCards.map((card) => card * 3))
+                  // }
+                  onClick={() => cardsGenerator(16)}
+                  className={
+                    gameCards.length === 16
+                      ? 'current button_memo'
+                      : 'button_memo'
+                  }
+                >
+                  16 elementów
+                </button>
+                <button
+                  // onClick={() =>
+                  //   setGameCards(gameCards.map((card) => card * 5))
+                  // }
+                  onClick={() => cardsGenerator(20)}
+                  className={
+                    gameCards.length === 20
+                      ? 'current button_memo'
+                      : 'button_memo'
+                  }
+                >
+                  20 elementów
+                </button>
+              </div>
             </div>
-          )}
-
-          {/* LICZBA KRETÓW */}
-          <div className="option-wrapper">
-            <div className="title">Liczba elementów</div>
-            <div className="content">
-              <button
-                className={numMoles === 8 ? 'current' : ''}
-                onClick={() => setNumMoles(8)}
-                // onClick={() => setInitialTime(120)}
-              >
-                8 elementów
-              </button>
-              <button
-                className={numMoles === 16 ? 'current' : ''}
-                onClick={() => setNumMoles(16)}
-              >
-                16 elementów
-              </button>
-              <button
-                className={numMoles === 20 ? 'current' : ''}
-                onClick={() => setNumMoles(20)}
-              >
-                20 elementów
-              </button>
-            </div>
-          </div>
-
-          {/* PRZYCISKI STERUJĄCE */}
-          <div className="option-wrapper">
-            <div className="title">Przyciski sterujące</div>
-            <div className="content">
-              <button onClick={handleStartGame}>START</button>
+            <div className="container_row">
+              <div className="title_memo">Przyciski sterujące</div>
+              <div className="content">
+                <button onClick={handleStartGame} className="button_memo start">
+                  START
+                </button>
+              </div>
             </div>
           </div>
         </div>
