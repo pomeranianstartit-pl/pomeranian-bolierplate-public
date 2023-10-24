@@ -138,7 +138,6 @@ export const NemoGame = () => {
             {gameFields.map((field) => {
               return (
                 <div
-                  key={field.id}
                   onClick={() => handleClickField(field)}
                   className={`field ${field.isHidden ? 'hidden' : ''}`}
                 >
