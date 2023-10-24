@@ -2,6 +2,7 @@ import { useEffect, useState } from 'react';
 import { Card } from './cards';
 
 import './styles.css';
+import { SecurityUpdateRounded } from '@mui/icons-material';
 
 // const fields = [
 //   { id: 1, hasClicked: false },
@@ -95,57 +96,10 @@ export const Memo = () => {
 
   const [isGameEnded, setIsGameEnded] = useState(false);
 
- 
-  const descriptionHandleClick = (card) => {
-
-    // ignorujemy ukończone elementy
-
-    // sprawdzamy czy to pierwsze kliknięcie i jeśli tak to zapisujemy 1 kliknięcie (i wychodzimy z funkcji)
-
-    // sprawdzamy czy klikamy w ten sam element (jeśli tak to wychodzimy z funkcji i nic nie robimy)
-
-    // zapisujemy drugie kliknięcie (bo wiemy że jest drugie i nie jest takie same skoro tutaj dotarliśmy)
-
-    // jak są te same key to ustawiamy isDone na true dla obu elementów i zwiększamy score o 1
-
-    // jak nie są te same to fajnie jakoś zapisać, że ruch był błędny (dodatkowy use state by wiedzieć kiedy wyświetlać czerwone tła ;D )
-
-    // ustawiamy czyszczenie kliknięć, najlepiej z opóźnieniem by ewentualne czerwone tła miały czas się pokazać (setTimeout)
-
-  };
-
-//Podpowiedź do renderingu:
+  // const [firstId, setFirstId] = useState(first_card)
+  // const [secondId, setSecondId] = useState(second_card)
 
  
-
-// {gameCards.map((el) => {
-
-//     waruner 1
-
-//     if (el.isDone)
-
- 
-
-//     waruneki 2
-
-//     czy to 1 lub 2 kliknięta karta
-
- 
-
-//     return (
-
-//       I tutaj mamy 3 możliwe opcje:
-
-//       karta zakryta
-
-//       karta na stałe odkryta
-
-//       karta własnie odkryta (może być czerwona)
-
-//     );
-
-//   })}
-
   const handleStartGame = () => {
     //Wyzerowanie stanu gry
     setIsGameEnded(false);
@@ -167,6 +121,16 @@ export const Memo = () => {
     setIsGameStarted(false);
     setIsGameEnded(true);
   };
+
+  const handleClickField = (clickedField)=>{
+    setGameFields(
+      gameFields.map((field) => {
+        return {
+          ...field,
+
+          hasClicked: field.id === clickedField.id,
+        };
+}))};
   //Może być przy drugim kliku
   const resetClickField = () => {
     setTimeout(() => {
@@ -174,14 +138,13 @@ export const Memo = () => {
         gameFields.map((field) => {
           return {
             ...field,
-            hasClicked: false,
+            isDone: false,
           };
         })
       );
     }, 300);
   };
 
-  const handleClickField = (clickedField) => {};
 
   //Do mierzenia czasu interwał
   useEffect(() => {
@@ -208,7 +171,7 @@ export const Memo = () => {
 
       {isGameStarted ? (
         <div>
-          <div className="allgrid">
+          <div className="allgrid5">
             {/* CZAS */}
 
             <div className="allgrid1">
@@ -221,7 +184,7 @@ export const Memo = () => {
 
             {/* WYNIK */}
 
-            <div className="allgrid2">
+            <div className="allgrid6">
               <div className="title">Wynik</div>
 
               <div className="content">
@@ -231,7 +194,7 @@ export const Memo = () => {
 
             {/* PRZYCISKI STERUJĄCE */}
 
-            <div className="allgrid3">
+            <div className="allgrid7">
               <div className="title">Przyciski sterujące</div>
 
               <div className="content1">
@@ -244,13 +207,16 @@ export const Memo = () => {
 
           {/* WIDOK ODKRYWANIA KART */}
 
-          <div className="fieldgrid">
+          <div className="fieldgrid1">
             {gameFields.map((field) => {
+
+
+
               return (
                 <div
                   key={field.id}
                   onClick={() => handleClickField(field)}
-                  className={`field `}
+                  className={`field1 `}
                 >
                   <Card card={field} />
                 </div>
@@ -268,7 +234,7 @@ export const Memo = () => {
 
           {/* LICZBA ELEMENTÓW */}
 
-          <div className="allgrid2">
+          <div className="allgrid6">
             <div className="title">Liczba elementów</div>
 
             <div className="content">
@@ -295,7 +261,7 @@ export const Memo = () => {
 
           {/* PRZYCISKI STERUJĄCE */}
 
-          <div className="allgrid3">
+          <div className="allgrid7">
             <div className="title">Przyciski sterujące</div>
 
             <div className="content1">

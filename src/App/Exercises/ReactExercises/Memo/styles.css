@@ -1,37 +1,37 @@
-.allgrid {
+.allgrid5 {
   display: flex;
   flex-direction: column;
   gap: 38px;
 }
 
-.allgrid2,
-.allgrid3 {
+.allgrid6,
+.allgrid7 {
   display: flex;
   gap: 38px;
 }
 
-.allgrid2 current,
-.allgrid3 current {
+.allgrid6 current,
+.allgrid7 current {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   grid-column-gap: 0px;
   grid-row-gap: 0px;
 }
 
-.allgrid2 .content,
-.allgrid3 .content {
+.allgrid6 .content,
+.allgrid7 .content {
   display: flex;
   gap: 38px;
 }
 
-.allgrid2 current {
+.allgrid6 current {
   grid-area: 2 / 1 / 3 / 3;
 }
-.allgrid3 current {
+.allgrid7 current {
   grid-area: 3 / 1 / 4 / 3;
 }
 
-.field {
+.field1 {
   min-width: 160px;
   min-height: 160px;
   max-width: 170px;
@@ -50,7 +50,7 @@
   line-height: normal;
 }
 
-.fieldgrid {
+.fieldgrid1 {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   grid-column-gap: 0px;
