@@ -1,6 +1,7 @@
 import React from 'react';
 import { OOPClass } from './OOPClass';
 import { OOP4Pillars } from './OOP4Pillars';
+import { OOPExercises } from './OOPExercises';
 
 /*
 OOP - Object Oriented Programming (Programowanie zorientowane obiektowo)
@@ -56,8 +57,13 @@ export const OOP = () => {
         <li>{`FUNKCYJNIE | Pole powierzchni koła o promieniu ${radius} to ${area}`}</li>
         <li>{`OBIEKTOWE | Pole powierzchni koła o promieniu ${myCircle.radius} to ${area2}`}</li>
       </ol>
+      <br />
       <OOPClass />
+      <br />
       <OOP4Pillars />
+      <br />
+      <br />
+      <OOPExercises />
     </div>
   );
 };
