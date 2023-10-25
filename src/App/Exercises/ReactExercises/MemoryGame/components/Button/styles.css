@@ -1,0 +1,25 @@
+.btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-width: 163px;
+    min-height: 25px;
+    color: #FFF;
+}
+
+.btn-primary {
+    background: #232130;
+}
+
+.btn-secondary {
+    background: #E12B1B;
+}
+
+.btm--activ {
+    background: #FE3756;
+}
+
+.btm--disabled {
+    background: #EBEBEB;
+    color: #000;
+}

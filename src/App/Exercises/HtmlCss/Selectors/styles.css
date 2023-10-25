@@ -119,10 +119,10 @@ h1 {}
 
 */
 
-button[id$="ButtonId"] {
+/* button[id$="ButtonId"] {
   background-color: aqua;
   border: 2px solid black;
-}
+} */
 
 /* ---------------------------------------- */
 /* 4e. Attribute selector with value containing */
@@ -132,10 +132,10 @@ button[id$="ButtonId"] {
 
 */
 
-button[id*="Button"] {
+/* button[id*="Button"] {
   background-color: green;
   border: 2px solid black;
-}
+} */
 
 
 /* ---------------------------------------- */
@@ -152,11 +152,11 @@ button[id*="Button"] {
   background-color: aqua;
   border: 2px solid black;
 } */
-
+/* 
 .secondDiv [href="http://onet.pl"] {
   background-color: red;
   border: 5px solid yellow;
-}
+} */
 
 /* ---------------------------------------- */
 /* 6. Combinators - Child Combinator (>) */
