@@ -10,7 +10,7 @@ export const SelectButtons = ({ setValue, options = [] }) => {
         setNewOptions(
             newOptions.map((option) => ({
                 ...option,
-                isActiv: option.value ===value,
+                isActiv: option.value === value,
             }))
             );
     };
@@ -19,7 +19,8 @@ export const SelectButtons = ({ setValue, options = [] }) => {
     <>
     {newOptions.map(({isActiv, label, value}) => {
         return (
-        <Button onClick={() => handleClick(value)} isActiv={isActiv}>{label}
+        <Button onClick={() => handleClick(value)} isActiv={isActiv}>
+            {label}
         </Button>
         );
     })}

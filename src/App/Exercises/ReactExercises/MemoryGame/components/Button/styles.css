@@ -1,25 +1,30 @@
+
 .btn {
     display: flex;
     align-items: center;
     justify-content: center;
-    min-width: 163px;
-    min-height: 25px;
+    width: 163px;
     color: #FFF;
+    gap: 16px;
+    flex: 1 0 0; 
+    border-radius: 8px;
+    height: 56px;
+padding: 20px 36px;
 }
 
 .btn-primary {
-    background: #232130;
+    background: #23213D;
 }
 
 .btn-secondary {
     background: #E12B1B;
 }
 
-.btm--activ {
+.btn--active {
     background: #FE3756;
 }
 
-.btm--disabled {
+.btn--disabled {
     background: #EBEBEB;
     color: #000;
 }
