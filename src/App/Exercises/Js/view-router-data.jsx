@@ -13,6 +13,8 @@ import { vanishStringMetaData } from './VanishString/router-data';
 import { timerMetaData } from './Timer/router-data';
 import { jscountdownMetaData } from './Countdown/router-data';
 import { jsPopUpWindowMetaData } from './JsPopUpWindow/router-data';
+import { oopMetaData } from './OOP/router-data';
+import { jsTryCatchMetaData } from '../Js/TryCatch/router-data';
 
 export const blockRouterMetaData = [
   blockRouterMetaDataJsVariables1,
@@ -28,5 +30,7 @@ export const blockRouterMetaData = [
   timerMetaData,
   jscountdownMetaData,
   jsPopUpWindowMetaData,
+  oopMetaData,
+  jsTryCatchMetaData,
 ];
 export const blockRouterData = getParsedRouterDataList(blockRouterMetaData);

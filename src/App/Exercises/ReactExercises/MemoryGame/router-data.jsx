@@ -1,15 +1,10 @@
-import { MemoryGame } from './index';
+import { Exercise } from './index';
 
 export const memoryGameMetaData = {
   path: 'memory-game',
-
-  date: '18.10.2023',
-
-  linkLabel: 'Memory game',
-
-  blockNo: 23,
-
-  element: <MemoryGame />,
-
-  tags: ['javascript', 'memoryGame'],
+  date: '18-10-2023',
+  linkLabel: 'Gra Memo',
+  blockNo: 27 - 30,
+  element: <Exercise />,
+  tags: ['components', 'setInterval', 'map', 'useState'],
 };
