@@ -14,6 +14,8 @@ import { jsSetIntervalMetaData } from './JsSetInterval/router-data';
 import { VanishStringMetaData } from './VanishString/router-data';
 import { TimerMetaData } from './Timer/router-data';
 import { oopMetaData } from './OOP/router-data';
+import { TryCatchMetaData } from './TryCatch/router-data';
+import { TryCatchExerciseMetaData } from './TryCatchExercise/router-data';
 
 export const blockRouterMetaData = [
   blockRouterMetaDataJsVariables1,
@@ -30,5 +32,7 @@ export const blockRouterMetaData = [
   VanishStringMetaData,
   TimerMetaData,
   oopMetaData,
+  TryCatchMetaData,
+  TryCatchExerciseMetaData,
 ];
 export const blockRouterData = getParsedRouterDataList(blockRouterMetaData);
