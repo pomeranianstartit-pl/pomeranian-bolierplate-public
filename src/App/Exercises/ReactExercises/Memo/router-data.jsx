@@ -3,13 +3,13 @@ import { Memo } from './index';
 export const MemoMetaData = {
   path: 'Memo',
 
-  date: '13-10-2023',
+  date: '18-10-2023',
 
-  linkLabel: 'Memo',
+  linkLabel: ' Gra Memo',
 
-  blockNo: 23,
+  blockNo: 27-30,
 
   element: <Memo />,
 
-  tags: ['components', 'setInterval', 'filter', 'map', 'useState'],
+  tags: ['components', 'setInterval', 'map', 'useState'],
 };
