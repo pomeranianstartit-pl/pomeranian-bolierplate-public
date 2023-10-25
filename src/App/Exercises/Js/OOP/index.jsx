@@ -1,6 +1,7 @@
 import React from 'react';
 import { OOPClass } from './OOPClass';
 import { OOP4Pillars } from './OOP4Pillars';
+import { OOPExercise } from './OOPExercises';
 
 /*
 OOP - Object Oriented Programming (Programowanie zorientowane obiektowo)
@@ -54,6 +55,7 @@ export const OOP = () => {
       </ol>
       <OOPClass />
       <OOP4Pillars />
+      <OOPExercise />
     </div>
   );
 };
