@@ -1,0 +1,43 @@
+.panelInput {
+  width: 300px;
+  margin: 20px auto;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  text-align: center;
+}
+
+.nickText {
+  font-size: 16px;
+  color: black;
+}
+
+input {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.btnAdd {
+  border-radius: 8px;
+  border: 1px solid #fe3756;
+  background: #fe3756;
+  color: white;
+}
+
+div.panelTable {
+  margin-top: 20px;
+}
+
+div.nicksList {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+div.nickName {
+  font-size: 18px;
+  margin: 5px 0;
+}
