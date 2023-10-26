@@ -10,8 +10,8 @@ export function Tech() {
   }
   return (
     <div className="tech">
-      <h2 className="programstechstack">{'<'}TechStack</h2>
-      {dataData.map(renderNote)}
+      <div><h2 className="programstechstack">{'<'}TechStack</h2></div>
+      <div className='alltechstack'> {dataData.map(renderNote)} </div>
     </div>
   );
 }
