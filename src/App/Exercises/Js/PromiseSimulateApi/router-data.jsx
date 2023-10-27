@@ -1,11 +1,11 @@
-import { PromiseSS } from './index';
+import { PromiseApi } from './index';
 
-export const promisessMetaData = {
-  path: 'js-promise',
+export const promiseapiMetaData = {
+  path: 'js-promise-api',
   date: '27-10-2023',
-  linkLabel: 'JS - Promise',
+  linkLabel: 'JS - Promise Simulate Api',
   blockNo: 34,
-  element: <PromiseSS />,
+  element: <PromiseApi />,
   tags: [
     'js',
     'promise',
@@ -18,5 +18,7 @@ export const promisessMetaData = {
     'pending',
     'fullfiled',
     'rejected',
+    'api',
+    'simulate',
   ],
 };
