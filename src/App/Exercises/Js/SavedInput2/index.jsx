@@ -1,68 +1,89 @@
 import React, { useState, useEffect } from 'react';
+import './styles.css';
 
 export const SavedInput2 = () => {
-  const [nick, setNick] = useState('');
-  const [nickList, setNickList] = useState([]);
+  const [inputValue, setInputValue] = useState('');
+  const [users, setUsers] = useState([]);
   const [idCounter, setIdCounter] = useState(1);
+  const [error, setError] = useState('');
+
+  const handleAddNick = () => {
+    if (!inputValue) {
+      setError('Pole nie może być puste');
+      return;
+    }
+
+    if (users.find((user) => user.name === inputValue)) {
+      setError('Taki nick już istnieje');
+      return;
+    }
+
+    const newNick = {
+      name: inputValue,
+      id: idCounter,
+    };
+
+    setUsers([...users, newNick]);
+    setIdCounter(idCounter + 1);
+    setInputValue('');
+  };
+
+  const handleRemoveNick = (id) => {
+    const newUsers = users.filter((user) => user.id !== id);
+    setUsers(newUsers);
+  };
+
+  const handleInputUpdate = (e) => {
+    setError('');
+    setInputValue(e.target.value);
+  };
 
   useEffect(() => {
-    // Odczytaj dane z localStorage podczas załadowania komponentu
-    const storedNickList = JSON.parse(
-      localStorage.getItem('list-nicki') || '[]'
-    );
-    const storedIdCounter = parseInt(
-      localStorage.getItem('list-nicki-index') || '1'
-    );
+    const localUsers = JSON.parse(localStorage.getItem('list-nicki')) || [];
+    const localIdCounter =
+      parseInt(localStorage.getItem('list-nicki-index')) || 1;
 
-    setNickList(storedNickList);
-    setIdCounter(storedIdCounter);
+    setUsers([...localUsers]);
+    setIdCounter(localIdCounter);
   }, []);
 
-  const handleNickChange = (e) => {
-    setNick(e.target.value);
-  };
+  useEffect(() => {
+    if (!users.length) return;
 
-  const addNick = () => {
-    if (nick.trim() !== '') {
-      // Walidacja nicka na liście
-      if (nickList.some((item) => item.nick === nick)) {
-        alert('Ten nick już istnieje w liście.');
-        return;
-      }
-
-      const updatedNickList = [...nickList, { nick: nick, id: idCounter }];
-      setNickList(updatedNickList);
-      setIdCounter(idCounter + 1);
-
-      // Zapisywanie danych do localStorage
-      localStorage.setItem('list-nicki', JSON.stringify(updatedNickList));
-      localStorage.setItem('list-nicki-index', idCounter);
-
-      setNick('');
-    }
-  };
+    localStorage.setItem('list-nicki', JSON.stringify(users));
+    localStorage.setItem('list-nicki-index', idCounter);
+  }, [idCounter, users]);
 
   return (
-    <div className="panelInput">
-      <p className="nickText">NICK</p>
-      <input
-        type="text"
-        placeholder="Wprowadź nick"
-        value={nick}
-        onChange={handleNickChange}
-      />
-      <button className="btnAdd" onClick={addNick}>
-        DODAJ
-      </button>
-
-      <div className="panelTable">
-        <div className="nicksList">
-          {nickList.map((item) => (
-            <div className="nickName" key={item.id}>
-              {item.nick}
-            </div>
-          ))}
+    <div>
+      {/* Lewa sekcja */}
+      <div>
+        <div>
+          <label htmlFor="input">NICK</label>
+          <input value={inputValue} onChange={handleInputUpdate} />
         </div>
+
+        {error && <div>{error}</div>}
+
+        <div>
+          <button disabled={!inputValue} onClick={handleAddNick}>
+            Dodaj
+          </button>
+        </div>
+      </div>
+
+      {/* Prawa sekcja */}
+      <div>
+        {users.map((user) => {
+          return (
+            <div key={user.id}>
+              <div>
+                {user.name} {user.id}
+              </div>
+              <button onClick={() => handleRemoveNick(user.id)}>X</button>
+            </div>
+          );
+        })}
       </div>
     </div>
   );
