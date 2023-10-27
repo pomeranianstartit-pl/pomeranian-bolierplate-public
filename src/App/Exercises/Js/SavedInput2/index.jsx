@@ -1,7 +1,6 @@
 import React, { useState, useEffect } from 'react';
-import './styles.css';
 
-export const SavedInput = () => {
+export const SavedInput2 = () => {
   const [nick, setNick] = useState('');
   const [nickList, setNickList] = useState([]);
   const [idCounter, setIdCounter] = useState(1);
@@ -44,19 +43,17 @@ export const SavedInput = () => {
   };
 
   return (
-    <div className="inputNick">
-      <div className="panelInput">
-        <p className="nickText">NICK</p>
-        <input
-          type="text"
-          placeholder="Wprowadź nick"
-          value={nick}
-          onChange={handleNickChange}
-        />
-        <button className="btnAdd" onClick={addNick}>
-          DODAJ
-        </button>
-      </div>
+    <div className="panelInput">
+      <p className="nickText">NICK</p>
+      <input
+        type="text"
+        placeholder="Wprowadź nick"
+        value={nick}
+        onChange={handleNickChange}
+      />
+      <button className="btnAdd" onClick={addNick}>
+        DODAJ
+      </button>
 
       <div className="panelTable">
         <div className="nicksList">

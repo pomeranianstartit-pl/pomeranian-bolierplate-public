@@ -18,7 +18,7 @@ import { oopMetaData } from './OOP/router-data';
 import { jsonMetaData } from './JSON/router-data';
 import { storageMetaData } from './Storage/router-data';
 import { savedInputMetaData } from './SavedInput/router-data';
-
+import { savedInput2MetaData } from './SavedInput2/router-data';
 
 import { exerciseJsArrayBasicsMetaData } from './Exercise-js-arrays-basics/router-data';
 
@@ -36,12 +36,10 @@ export const blockRouterMetaData = [
   jsSetIntervalMetaData,
   vanishStringMetaData,
   timerMetaData,
-
   oopMetaData,
-
   jsonMetaData,
   storageMetaData,
   savedInputMetaData,
-
+  savedInput2MetaData,
 ];
 export const blockRouterData = getParsedRouterDataList(blockRouterMetaData);
