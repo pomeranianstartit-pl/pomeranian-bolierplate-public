@@ -1,0 +1,7 @@
+.images{
+    background-color: darkblue;
+}
+
+.images img{
+    max-width: 200px
+}
