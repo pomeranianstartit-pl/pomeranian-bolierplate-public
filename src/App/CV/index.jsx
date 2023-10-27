@@ -1,3 +1,3 @@
 export function CV() {
-  return <div>Tekst z CV</div>;
+  return <div>Tekst z CV </div>;
 }
