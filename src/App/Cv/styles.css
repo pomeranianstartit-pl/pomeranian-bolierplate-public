@@ -1,1 +1,25 @@
-.container--curriculum{}
+.parttwocv{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.cvinside{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
+    position:absolute
+    
+}
+.cvaside{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: flex-end;
+    position: relative;
+}
+.cvaside img {
+    border-radius: 50%;
+    height: 190px;
+    width: 180px;
+}
