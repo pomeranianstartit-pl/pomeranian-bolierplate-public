@@ -8,6 +8,9 @@ import { blockRouterMetaData as blockRouterMetaDataNumbers } from './Numbers/rou
 import { blockRouterMetaDataObjectsArrays } from './Exercise-js-arrays-objects/router-data';
 import { blockRouterMetaData as blockRouterMetaDataObjects } from './JsObjectBasic/router-data';
 import { blockRouterMetaData as blockRouterMetaDataDataTime } from './DateTime/router-data';
+import { blockRouterMetaDataJsFunctionBasics } from './JsFunctionBasics/router-data';
+import { blockRouterMetaDataHoisting } from './Hoisting/router-data';
+import { blockRouterMetaData as MemoGame } from './MemoGame/router-data';
 
 export const blockRouterMetaData = [
   blockRouterMetaDataJsVariables1,
@@ -18,5 +21,8 @@ export const blockRouterMetaData = [
   blockRouterMetaDataObjectsArrays,
   blockRouterMetaDataObjects,
   blockRouterMetaDataDataTime,
+  blockRouterMetaDataJsFunctionBasics,
+  blockRouterMetaDataHoisting,
+  MemoGame,
 ];
 export const blockRouterData = getParsedRouterDataList(blockRouterMetaData);
