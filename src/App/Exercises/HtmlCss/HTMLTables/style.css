@@ -1,0 +1,41 @@
+.html-table {
+  width: 100%;
+  border-collapse: collapse;
+  background-color: lightgrey;
+}
+
+.html-table th,
+.html-table td {
+  padding: 0.5rem;
+  text-align: left;
+  /* border: 3px solid black; */
+}
+
+/* co druga tabela ma kolor lightgreen */
+.html-table tr:nth-child(2n) {
+  background-color: lightgreen;
+}
+
+/* jak najezdzasz to zmienia kolor */
+.html-table tr:hover {
+  background-color: lightblue;
+}
+
+.html-table th:hover,
+.html-table td:hover {
+  background-color: lightsalmon;
+}
+
+.rating-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+.rating-table tr:nth-child(2n - 1) {
+  background-color: #ffd5db;
+}
+
+.rating-table th,
+.rating-table td {
+  padding: 20px 50px;
+  text-align: left;
+}

@@ -1,0 +1,50 @@
+.blog-post {
+  color: var(--text-text-primary, #222);
+  font-family: MADE TOMMY;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 27px; /* 168.75% */
+}
+
+.blog-post-title {
+  color: var(--text-text-primary, #222);
+  font-family: MADE TOMMY;
+  font-size: 42px;
+  font-style: normal;
+  font-weight: 800;
+  line-height: 56px; /* 133.333% */
+  padding-bottom: 28px;
+  margin: 0;
+}
+.blog-post-signature {
+  color: var(--text-text-secondary, rgba(34, 34, 34, 0.8));
+  font-family: MADE TOMMY;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 32px; /* 177.778% */
+  margin: 0;
+}
+.blog-post-signature + p {
+  margin: 0;
+}
+.blog-Marylin {
+  text-align: right;
+  font-weight: 700;
+}
+.blog-data {
+  color: var(--text-text-primary, #222);
+
+  /* OVERLINE/Overline */
+  font-family: MADE TOMMY;
+  font-size: 10.5px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px; /* 228.571% */
+  letter-spacing: 1.68px;
+  text-transform: uppercase;
+}
+.post {
+  padding: 45px 61px;
+}

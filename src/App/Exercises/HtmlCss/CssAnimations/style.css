@@ -1,0 +1,134 @@
+.animation {
+  width: 400px;
+  /* height: 100px; */
+  background-color: red;
+
+  animation-name: example-animation;
+  animation-duration: 4s;
+  animation-iteration-count: infinite;
+}
+
+.animation2 {
+  width: 500px;
+  background-color: blueviolet;
+  animation-name: example-animation2;
+  animation-duration: 6s;
+  animation-iteration-count: infinite;
+}
+@keyframes example-animation2 {
+  0% {
+    background-color: black;
+  }
+  33% {
+    background-color: aquamarine;
+  }
+  66% {
+    background-color: red;
+  }
+}
+@keyframes example-animation {
+  0% {
+    background-color: red;
+  }
+  25% {
+    background-color: yellow;
+    width: 400px;
+  }
+  50% {
+    background-color: blue;
+    width: 250px;
+  }
+  75% {
+    background-color: orange;
+    width: 400px;
+  }
+  100% {
+    background-color: green;
+    width: 250px;
+  }
+}
+
+h2 {
+  font-size: 57px;
+
+  font-weight: 600;
+
+  font-style: normal;
+
+  line-height: 88px;
+
+  letter-spacing: 0.343px;
+
+  margin-block-start: 0;
+
+  margin-block-end: 0;
+}
+
+p {
+  margin-block-start: 0;
+
+  margin-block-end: 0;
+}
+
+address {
+  margin-top: 52px;
+
+  font-style: normal;
+
+  font-size: 35px;
+}
+
+.question-wrapper {
+  padding-top: 88px;
+
+  padding-bottom: 88px;
+
+  padding-left: 105px;
+
+  /* forma skrócona */
+
+  /* padding: 88px 0 88px 105px; */
+}
+
+.color-primary {
+  color: #fe3756;
+}
+
+.font-weight-600 {
+  font-weight: 600;
+}
+
+.margin-bottom-17 {
+  margin-bottom: 17px;
+}
+
+.lorem-ipsum {
+  font-size: 18px;
+
+  font-style: normal;
+
+  line-height: 34px;
+}
+
+.bold-under {
+  text-decoration: underline;
+
+  font-weight: 700;
+}
+
+ul {
+  list-style-type: square;
+}
+
+.margin_top_48 {
+  margin-top: 48px;
+}
+
+.paragraph {
+  height: 780px;
+  width: 571px;
+  margin-left: 240px;
+  margin-right: 173px;
+  margin-top: 80px;
+  margin-block-end: 0px;
+}
