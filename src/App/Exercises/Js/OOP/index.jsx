@@ -1,4 +1,5 @@
 import React from 'react';
+import { OOPClass } from './OOPClass';
 
 /*
 OOP - Object Oriented Programming (Programowanie zorientowane obiektowo)
@@ -31,8 +32,7 @@ export const OOP = () => {
     return Math.PI * radius * radius;
   }
 
-  const area = calculateArea(radius);
-  console.log(`Pole powierzchni koła o promieniu ${radius} to ${area}`);
+  const area = Math.floor(calculateArea(radius));
 
   /* PROGRAMOWANIE OBIEKTOWE */
   const myCircle = {
@@ -42,10 +42,16 @@ export const OOP = () => {
     },
   };
 
-  const area2 = myCircle.calculateArea();
-  console.log(
-    `Pole powierzchni koła o promieniu ${myCircle.radius} to ${area2}`
-  );
+  const area2 = Math.floor(myCircle.calculateArea());
 
-  return <div>OOP</div>;
+  return (
+    <div>
+      OOP Intro
+      <ol>
+        <li>{`FUNKCYJNIE | Pole powierzchni koła o promieniu ${radius} to ${area}`}</li>
+        <li>{`OBIEKTOWO | Pole powierzchni koła o promieniu ${myCircle.radius} to ${area2}`}</li>
+      </ol>
+      <OOPClass />
+    </div>
+  );
 };
