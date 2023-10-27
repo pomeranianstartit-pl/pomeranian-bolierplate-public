@@ -15,6 +15,9 @@ import { VanishingStringMetaData } from './VanishingString/router-data';
 import { TimerExerciseMetaData } from './Timer/router-data';
 import { oopMetaData } from './OOP/router-data';
 import { blockRouterMetaData as TryCatchMetaData } from './TryCatch/router-data';
+import { blockRouterMetaData as JsonExercise } from './JSON/router-data';
+import { StorageMetaData } from './Storage/router-data';
+import { savedInputMetaData } from './SavedInput/router-data';
 export const blockRouterMetaData = [
   blockRouterMetaDataJsVariables1,
   blockRouterMetaDataJsVariables2,
@@ -31,5 +34,8 @@ export const blockRouterMetaData = [
   TimerExerciseMetaData,
   oopMetaData,
   TryCatchMetaData,
+  JsonExercise,
+  StorageMetaData,
+  savedInputMetaData,
 ];
 export const blockRouterData = getParsedRouterDataList(blockRouterMetaData);
