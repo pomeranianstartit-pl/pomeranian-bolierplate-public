@@ -1,0 +1,15 @@
+.container--jsSlidingBannerBackground {
+  position: relative;
+  border-radius: 1%;
+  background-color: lightgrey;
+  width: 240px;
+  height: 20px;
+  overflow: hidden;
+}
+
+.container--jsSlidingBanner {
+  position: absolute;
+  background-color: lightgrey;
+  width: 120px;
+  height: 20px;
+}

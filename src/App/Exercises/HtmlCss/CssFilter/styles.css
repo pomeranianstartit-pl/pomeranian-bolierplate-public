@@ -1,0 +1,15 @@
+.cssFilters img {
+  filter: grayscale(68%) sepia(33%) blur(4px) brightness(77%) saturate(587%)
+    contrast(120%);
+}
+
+.black {
+  background-color: black;
+  width: 100px;
+  height: 100px;
+  filter: grayscale(41%) sepia(50%) blur(5px) hue-rotate(125deg) invert(100%);
+  -webkit-filter: grayscale(41%) sepia(50%) blur(5px) hue-rotate(125deg)
+    invert(100%);
+  -moz-filter: grayscale(41%) sepia(50%) blur(5px) hue-rotate(125deg)
+    invert(100%);
+}

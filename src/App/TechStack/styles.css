@@ -1,0 +1,29 @@
+.techstack {
+  margin-top: 2.38rem;
+  display: grid;
+  grid-template-columns: 6fr 3fr;
+  grid-auto-rows: 10rem;
+}
+
+.techstack-box {
+  min-height: 121px;
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.techstack-icon {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1.375rem;
+}
+
+.techstack-wrapper {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 30px;
+}
