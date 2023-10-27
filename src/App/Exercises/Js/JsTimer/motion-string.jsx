@@ -3,7 +3,7 @@ import './styles.css';
 
 export const MotionString = () => {
   function clickHandle() {
-    setRunning(false);
+    setRunning(!running);
   }
   const MAX_VALUE = 160;
   const [running, setRunning] = useState(false);
@@ -26,7 +26,7 @@ export const MotionString = () => {
     return () => {
       clearInterval(interval);
     };
-  }, [running, value]);
+  }, [running, value, value1]);
   useEffect(() => {
     //... wykonaj ten kod
     setRunning(true);

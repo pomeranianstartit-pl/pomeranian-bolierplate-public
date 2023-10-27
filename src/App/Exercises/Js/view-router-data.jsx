@@ -17,6 +17,7 @@ import { UseEffectMetaData } from './UseEffect/router-data';
 import { VanishStringMetaData } from './JSVanishString/router-data';
 import { JsTimerMetaData } from './JsTimer/router-data';
 
+
 export const blockRouterMetaData = [
   blockRouterMetaDataJsVariables1,
   blockRouterMetaDataJsVariables2,

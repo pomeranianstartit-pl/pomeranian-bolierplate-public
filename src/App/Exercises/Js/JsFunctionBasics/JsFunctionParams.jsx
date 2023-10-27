@@ -22,6 +22,20 @@ export const JsFunctionParams = ({ name, surname }) => {
     pomnóżDodajWiele(2, 1, 1, 1, 5, 4, 4, 4, 4)
   );
 
+  const SetGender = (names) => {
+    const result = names.map((name) => {
+      if (name.endsWith('a')) {
+        return [name, 'kobieta'];
+      } else {
+        return [name, 'mężczyzna'];
+      }
+    });
+    console.log(result, 'SetGender Function');
+    return result;
+  };
+
+  SetGender(['Ania', 'Martyna', 'Jerzy']);
+
   const domylnaWartosc = (mnożnik, liczba = 4) => mnożnik * liczba;
   console.log('funkcja z domyślną wartością :', domylnaWartosc(8));
 
@@ -30,6 +44,38 @@ export const JsFunctionParams = ({ name, surname }) => {
   }
 
   funkcjaArguments(7, 2);
+
+  const people = [
+    {
+      firstName: 'John',
+      lastName: 'Doe',
+      age: 30,
+    },
+    {
+      firstName: 'Johnatan',
+      lastName: 'Alvi',
+      age: 60,
+    },
+  ];
+
+  const addOccupation = (array) => {
+    const result = array.map((person) => {
+      return {
+        firstName: person.firstName,
+        lastName: person.lastName,
+        age: person.age,
+        occupation: '',
+      };
+    });
+    return result;
+  };
+
+  console.log(people, '------ people');
+  const changedPeople = addOccupation(people);
+  changedPeople[0].occupation = 'welder';
+  changedPeople[1].occupation = 'saw operator';
+  console.log(changedPeople, '------ changed people');
+
 
   return (
     <div>
