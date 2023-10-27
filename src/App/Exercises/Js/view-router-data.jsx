@@ -17,6 +17,7 @@ import { UseEffectMetaData } from './UseEffect/router-data';
 import { VanishStringMetaData } from './VanishString/router-data';
 import { TimerMetaData } from './Timer/router-data';
 import { SliderBannerMetaData } from './SliderBanner/router-data';
+import { MemoGameMetaData } from './MemoGames/router-data';
 
 export const blockRouterMetaData = [
   blockRouterMetaDataJsVariables1,
@@ -36,5 +37,6 @@ export const blockRouterMetaData = [
   VanishStringMetaData,
   TimerMetaData,
   SliderBannerMetaData,
+  MemoGameMetaData,
 ];
 export const blockRouterData = getParsedRouterDataList(blockRouterMetaData);
