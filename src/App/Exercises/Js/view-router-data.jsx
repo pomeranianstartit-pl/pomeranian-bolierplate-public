@@ -12,9 +12,7 @@ import { jsSetTimeoutMetaData } from './JsSetTimeout/router-data';
 import { jsSetIntervalMetaData } from './JsSetInterval/router-data';
 import { vanishStringMetaData } from './VanishString/router-data';
 import { timerMetaData } from './Timer/router-data';
-
 import { oopMetaData } from './OOP/router-data';
-
 import { jsonMetaData } from './JSON/router-data';
 import { storageMetaData } from './Storage/router-data';
 import { savedInputMetaData } from './SavedInput/router-data';
@@ -45,5 +43,6 @@ export const blockRouterMetaData = [
   savedInput2MetaData,
   promisessMetaData,
   promiseapiMetaData,
+
 ];
 export const blockRouterData = getParsedRouterDataList(blockRouterMetaData);
