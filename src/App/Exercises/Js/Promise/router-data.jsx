@@ -1,0 +1,22 @@
+import { Promise } from './index';
+
+export const promiseMetaData = {
+  path: 'js-promise',
+  date: '27-10-2023',
+  linkLabel: 'JS - Promise',
+  blockNo: 34,
+  element: <Promise />,
+  tags: [
+    'js',
+    'promise',
+    'javascript',
+    'resolve',
+    'reject',
+    'then',
+    'catch',
+    'finally',
+    'pending',
+    'fullfiled',
+    'rejected',
+  ],
+};

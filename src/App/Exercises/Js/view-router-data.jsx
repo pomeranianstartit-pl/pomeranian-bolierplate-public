@@ -19,6 +19,7 @@ import { jsonMetaData } from './JSON/router-data';
 import { storageMetaData } from './Storage/router-data';
 import { savedInputMetaData } from './SavedInput/router-data';
 import { savedInput2MetaData } from './SavedInput2/router-data';
+import { promiseMetaData } from './Promise/router-data';
 
 import { exerciseJsArrayBasicsMetaData } from './Exercise-js-arrays-basics/router-data';
 
@@ -41,5 +42,6 @@ export const blockRouterMetaData = [
   storageMetaData,
   savedInputMetaData,
   savedInput2MetaData,
+  promiseMetaData,
 ];
 export const blockRouterData = getParsedRouterDataList(blockRouterMetaData);
