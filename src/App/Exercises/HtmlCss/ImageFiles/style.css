@@ -1,0 +1,7 @@
+.images-files{
+  background-color: rgba(255, 0, 149, 0.404);
+}
+
+.images-files img{
+max-width: 200px;
+}
