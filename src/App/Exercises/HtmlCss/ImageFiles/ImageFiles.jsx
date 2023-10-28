@@ -7,9 +7,9 @@ import third from './asus.svg';
 export const ImageFiles = () => {
   return (
     <div className="images">
-      <img src={first} />;
-      <img src={second} />;
-      <img src={third} />;
+      <img src={first} alt="logo asus" />
+      <img src={second} alt="logo asus" />
+      <img src={third} alt="logo asus" />
     </div>
   );
 };
