@@ -1,0 +1,26 @@
+.faq-title{
+display: inline;
+font-weight: 700;
+line-height: 34px;
+/* padding-left: 16px; */
+margin-left: 16px;
+
+padding-bottom: 1rem;
+}
+.faq-header{
+    padding-bottom: 1rem;
+    border-bottom: 1px solid grey;
+}
+.faq-item{
+    padding: 18px 24px;
+    font-size: 18px;
+    border-left: 5px solid rgba(128, 128, 128, 0.512);
+    border-radius: 8px;
+    max-width: 780px;
+    box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.38);
+margin-bottom: 18px;
+}
+p{
+    font-weight: 400;
+    line-height: 32px;
+}
