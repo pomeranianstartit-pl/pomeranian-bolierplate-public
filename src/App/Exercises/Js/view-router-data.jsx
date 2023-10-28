@@ -9,6 +9,11 @@ import { blockRouterMetaDataExerciseObjectsArrayWeek4 } from './Exercise-js-arra
 import { blockRouterMetaDataJSFunctionBasic } from './JsFunctionBasic/router-data';
 import { blockRouterMetaDataHoisting } from './Hosting/router-data';
 import { blockRouterMetaDataExercisesJsFunctions } from './ExercisesJsFunctions/router-data';
+import { blockRouterMetaDataJsSetTimeout } from './JsSetTimeout/router-data';
+import { blockRouterMetaDataJsSetInterval } from './JsSetInterval/router-data';
+import { blockRouterMetaDataUseEffect } from './UseEffect/router-data';
+import { blockRouterMetaDataVanishString } from './VanishString/router-data';
+import { blockRouterMetaDataTimer } from './Timer/router-data';
 
 export const blockRouterMetaData = [
   blockRouterMetaDataJsVariables1,
@@ -20,5 +25,10 @@ export const blockRouterMetaData = [
   blockRouterMetaDataJSFunctionBasic,
   blockRouterMetaDataHoisting,
   blockRouterMetaDataExercisesJsFunctions,
+  blockRouterMetaDataJsSetTimeout,
+  blockRouterMetaDataJsSetInterval,
+  blockRouterMetaDataUseEffect,
+  blockRouterMetaDataVanishString,
+  blockRouterMetaDataTimer,
 ];
 export const blockRouterData = getParsedRouterDataList(blockRouterMetaData);
