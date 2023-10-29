@@ -1,0 +1,44 @@
+.memo-Button {
+  border-radius: 8px;
+
+  color: #fff;
+  display: flex;
+  height: 56px;
+  width: 10rem;
+  align-items: center;
+  padding: 0;
+  justify-content: center;
+  gap: 16px;
+
+  font-size: 18px;
+  font-weight: 500;
+  cursor: pointer;
+}
+
+.memo-Button:hover {
+  opacity: 0.8;
+
+  /* background-color: red; */
+}
+
+.memo-Button--primary {
+  border: 1px solid #23213d;
+  background: #23213d;
+}
+
+.memo-Button--secondary {
+  border: 1px solid #fe3756;
+  background: #fe3756;
+}
+
+.memo-Button--tertiary {
+  border: 1px solid red;
+  background-color: red;
+}
+
+.memo-controls-panel {
+  display: flex;
+  flex-direction: row;
+  gap: 1rem;
+  padding-bottom: 1rem;
+}
