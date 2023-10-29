@@ -6,7 +6,7 @@ export const RoundedImage = ({ src, size }) => {
       className="roundedImage"
       style={{
         backgroundImage: 'url(' + src + ')',
-        width: size.width,
+        width: size.width + 'px',
         height: size.height + 'px',
       }}
     ></div>

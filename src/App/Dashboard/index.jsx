@@ -1,3 +1,5 @@
+import { Blocks } from './Blocks/Blocks';
+import { MyData } from './MyData/MyData.jsx';
 import './styles.css';
 
 export const Dashboard = () => {
@@ -8,6 +10,8 @@ export const Dashboard = () => {
         Strona główna kursanta (o sobie, zdjęcie, opis narzędzi wykorzystywanych
         na kursie oraz umejętności zdobytych na kursie)
       </p>
+      <Blocks />
+      <MyData />
     </div>
   );
 };
