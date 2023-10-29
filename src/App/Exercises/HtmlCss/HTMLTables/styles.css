@@ -1,0 +1,96 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+.font-roboto {
+  font-family: 'Roboto', sans-serif;
+}
+
+.font-roboto-italic {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 600;
+  font-style: italic;
+}
+
+.html-table {
+  font-family: arial, sans-serif;
+  border-collapse: collapse;
+  width: 100vw;
+  /* background-color: rgb(237, 237, 237); */
+  background: linear-gradient(
+    90deg,
+    rgba(2, 0, 36, 1) 0%,
+    rgba(131, 1, 132, 1) 44%,
+    rgba(0, 212, 255, 1) 100%
+  );
+}
+
+.html-table tr:hover {
+  background-color: lightblue;
+}
+
+.html-table th:hover,
+.html-table td:hover {
+  background-color: lightsalmon;
+}
+
+.html-table th,
+.html-table td {
+  padding: 0.5rem;
+}
+
+td,
+th {
+  border: 1px solid #dddddd;
+  text-align: left;
+  padding: 8px;
+}
+
+.html-table tr:nth-child(even) {
+  background-color: #b5ffb181;
+}
+
+/* --------------- */
+.gap {
+  height: 4vh;
+}
+
+.second-table {
+  color: var(--text-text-primary, #222);
+  border-collapse: collapse;
+  font-family: Roboto;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 300;
+  width: 80vw;
+}
+
+.second-table th {
+  background-color: rgba(245, 245, 245, 1);
+}
+
+.second-table tr:nth-child(even) {
+  background-color: #FFD5DB;
+}
+
+.second-table td,
+.second-table tr {
+  height: 84px;
+  border: 0px;
+}
+
+.second-table th,
+.second-table td {
+  padding: 20px 50px;
+  text-align: left;
+}
+
+.second-table .first-head {
+  text-align: left;
+}
+
+.second-table .second-head {
+  text-align: center;
+}
+
+.second-table .third-head {
+  text-align: right;
+}
