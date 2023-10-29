@@ -16,6 +16,7 @@ import { JsSetIntervalMetaData } from './JsSetInterval/router-data';
 import { UseEffectMetaData } from './UseEffect/router-data';
 import { VanishStringMetaData } from './JSVanishString/router-data';
 import { JsTimerMetaData } from './JsTimer/router-data';
+import { MemoGameMetaData } from './MemoGame/router-data';
 
 export const blockRouterMetaData = [
   blockRouterMetaDataJsVariables1,
@@ -34,5 +35,6 @@ export const blockRouterMetaData = [
   UseEffectMetaData,
   VanishStringMetaData,
   JsTimerMetaData,
+  MemoGameMetaData,
 ];
 export const blockRouterData = getParsedRouterDataList(blockRouterMetaData);

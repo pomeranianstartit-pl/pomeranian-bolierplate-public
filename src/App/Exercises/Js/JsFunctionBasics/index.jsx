@@ -43,7 +43,20 @@ export function JsFunctionBasics() {
   console.log(tablica4, 'wynik tablica4');
   console.log(zwracaObiekt, 'wynik obiekt');
 
-  const imie = 'Piotr';
+  const noVowels = (str) => {
+    const arr = [];
+    for (const letter of str) {
+      if (!['a', 'e', 'u', 'i', 'o'].includes(letter)) {
+        arr.push(letter);
+      }
+    }
+    return arr.join('');
+  };
+
+  console.log(
+    'statement without Vowels,',
+    noVowels('statement without Vowels')
+  );
 
   return (
     <div>
@@ -55,7 +68,7 @@ export function JsFunctionBasics() {
         <li>AnonymousFunction</li>
         <li>
           <button onClick={wew}>Kliknij</button>
-          <JsFunctionParams name={imie} surname="Kowalski" />
+          <JsFunctionParams name="Jan" surname="Kowalski" />
         </li>
       </ul>
     </div>
