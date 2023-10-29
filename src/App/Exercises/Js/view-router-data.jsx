@@ -15,6 +15,7 @@ import { jsSetIntervalMetaData } from './JsSetInterval/router-data';
 import { vanishStringMetaData } from './VanishString/router-data';
 import { timerMetaData } from './Timer/router-data';
 import { oop1MetaData } from './OOP/router-data';
+import { oopExerciseMetaData } from './OOPExercise/router-data.jsx';
 
 
 export const blockRouterMetaData = [
@@ -33,6 +34,7 @@ export const blockRouterMetaData = [
   vanishStringMetaData,
   timerMetaData, 
   oop1MetaData,
+  oopExerciseMetaData,
 
 
 ];
