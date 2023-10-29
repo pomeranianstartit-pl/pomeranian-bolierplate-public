@@ -9,6 +9,7 @@ header {
   padding-left: 1.5rem;
   padding-right: 3rem;
   box-shadow: 0px 1px 9px 0px var(--color-grey);
+  
 }
 header > a:first-of-type {
   text-decoration: none;
@@ -21,4 +22,57 @@ header.header-title {
 header .logo {
   height: 40vmin;
   pointer-events: none;
+}
+
+.header-container {
+display: flex;
+justify-content: space-between;
+align-items: flex-end;
+flex-direction: row;
+width: 100%;
+}
+
+.header-menu {
+  display: flex;
+max-width: 20rem;
+gap: 1rem;
+align-items: center;
+}
+
+.student-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+}
+
+.name {
+  color: #000;
+font-family: Poppins;
+font-size: 16px;
+font-style: normal;
+font-weight: 400;
+line-height: normal;
+}
+
+.kursant {
+  color: #999;
+font-family: Poppins;
+font-size: 13px;
+font-style: normal;
+font-weight: 400;
+line-height: normal;
+}
+
+.arrow-LogBox {
+  position: relative;
+  top: 44;
+  right: 21;
+}
+
+.LogBox-wrapper {
+  position: absolute;
+  display: flex;
+  top: 100px;
+  right: 25px;
 }

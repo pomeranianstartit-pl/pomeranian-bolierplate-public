@@ -1,0 +1,24 @@
+.cssColors .color-1 {
+    color: red;
+}
+
+.cssColors .color-2 {
+    color: rgb(21, 124, 172);
+}
+
+.cssColors .color-3 {
+    color: #00ff9d;
+}
+
+/*przeźroczystość*/
+.cssColors .color-4 {
+    color: rgba(21, 124, 172, 0.5);
+}
+
+.cssColors .color-5 {
+    color: hsl(71, 75%, 30%);
+}
+
+.cssColors .color-6 {
+    opacity: 0.5;
+}
