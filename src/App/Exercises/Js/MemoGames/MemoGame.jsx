@@ -124,7 +124,6 @@ export const MemoGame = () => {
   return (
     <div>
       <GoBackButton buttonTitle="< MEMO" />
-
       <p>
         Gra polegająca na zapamiętywaniu odkrytych kafli i łączeniu ich w pary
       </p>
