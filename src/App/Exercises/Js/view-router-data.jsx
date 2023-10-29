@@ -16,6 +16,7 @@ import { vanishStringMetaData } from './VanishString/router-data';
 import { timerMetaData } from './Timer/router-data';
 import { oop1MetaData } from './OOP/router-data';
 import { oopExerciseMetaData } from './OOPExercise/router-data.jsx';
+import { tryCatchMetaData } from './TryCatch/router-data';
 
 
 export const blockRouterMetaData = [
@@ -35,6 +36,7 @@ export const blockRouterMetaData = [
   timerMetaData, 
   oop1MetaData,
   oopExerciseMetaData,
+  tryCatchMetaData
 
 
 ];
