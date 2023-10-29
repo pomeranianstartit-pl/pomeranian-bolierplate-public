@@ -18,6 +18,7 @@ import { VanishStringMetaData } from './VanishString/router-data';
 import { TimerMetaData } from './Timer/router-data';
 import { SliderBannerMetaData } from './SliderBanner/router-data';
 import { MemoGameMetaData } from './MemoGames/router-data';
+import { OOPMetaData } from './OOP/router-data';
 
 export const blockRouterMetaData = [
   blockRouterMetaDataJsVariables1,
@@ -38,5 +39,6 @@ export const blockRouterMetaData = [
   TimerMetaData,
   SliderBannerMetaData,
   MemoGameMetaData,
+  OOPMetaData,
 ];
 export const blockRouterData = getParsedRouterDataList(blockRouterMetaData);
