@@ -1,0 +1,29 @@
+.container {
+  position: relative;
+  height: 88px;
+  background-color: rgb(148, 143, 143);
+  border: 5px solid;
+  overflow: hidden;
+}
+
+.motion-string {
+  position: absolute;
+  font-size: 20px;
+  display: flex;
+  color: rgb(42, 65, 165);
+  text-wrap: nowrap;
+  align-items: center;
+  top: 5px;
+  bottom: 0;
+  background-repeat: repeat-x;
+  /* transform: rotate(300deg); 
+  -webkit-transform: rotate(300deg);  */
+}
+#first {
+  left: 50px;
+}
+
+#second {
+  left: 50px;
+}
+
