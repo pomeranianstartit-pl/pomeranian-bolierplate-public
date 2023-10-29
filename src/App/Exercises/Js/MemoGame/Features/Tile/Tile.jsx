@@ -1,4 +1,4 @@
-import './styles.css';
+import './style.css';
 
 export const Tile = ({ isVisible, variant = 'neutral', onClick, value }) => {
   if (

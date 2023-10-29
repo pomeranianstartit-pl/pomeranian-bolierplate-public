@@ -1,40 +1,60 @@
-import { Button } from './Components/Button/Button';
-import './style.css';
-import { Label } from './Components/Label/Label';
-import { GoBackButton } from '../../../Components/GoBack/GoBack';
 import { useState, useEffect } from 'react';
-import { Tile } from './Components/Tile/Tile';
-import { getAlphabet } from './Utilities';
-import { shuffle } from './Utilities';
+import { Button, Label, Output, Result } from './Components';
+// import { MasterHeader } from '../../../Components/MasterHeader/MasterHeader';
+import { getAlphabet, getInitialTiles, formatTime } from './Utilities';
+import { Tile } from './Features/Tile/Tile';
+import { GoBackButton } from '../../../Components/GoBack/GoBack';
+import './style.css';
+import { HighScore } from './Components/HighScore';
+
+const STATUS = {
+  STARTED: 'started',
+  NOT_STARTED: 'notStarted',
+  FINISHED: 'finished',
+  PASSED: 'passed',
+};
 
 const ELEMENTS = [4, 16, 20];
-const characters = getAlphabet(10);
 
 export const MemoGame = () => {
+  const [status, setStatus] = useState(STATUS.NOT_STARTED);
+  const [time, setTime] = useState(0);
+  const [score, setScore] = useState(0);
   const [noOfElements, setNoOfElements] = useState(null);
+  const [prevNoOfElements, setPrevNoOfElements] = useState(null);
+
   const [tiles, setTiles] = useState([]);
   const [firstClick, setFirstClick] = useState();
   const [secondClick, setSecondClick] = useState();
 
-  function getInitialTiles(size) {
-    const charactersSubset = characters.slice(0, size / 2);
-    const allCharacters = [...charactersSubset, ...charactersSubset];
-
-    const shuffledCharacters = shuffle(allCharacters);
-
-    //transform flat alphabet arrat to array of objects with specyfic letters with pairs of object with this same data
-    const characterObject = shuffledCharacters.map((character, index) => {
-      return { index, value: character, isVisible: false, variant: 'neutral' };
-    });
-    console.log('characterObject', characterObject);
-    return characterObject;
-  }
+  const [highScore, setHighScore] = useState({
+    4: {
+      moves: 0,
+      time: 0,
+    },
+    16: {
+      moves: 0,
+      time: 0,
+    },
+    20: {
+      moves: 0,
+      time: 0,
+    },
+  });
 
   function handleStart() {
     if (noOfElements !== null) {
-      setTiles(getInitialTiles(noOfElements));
+      setTiles(getInitialTiles(noOfElements, getAlphabet(10)));
+      setStatus(STATUS.STARTED);
+      setScore(0);
+      setTime(0);
+      setPrevNoOfElements(noOfElements);
     } else {
     }
+  }
+
+  function handleStop() {
+    setStatus(STATUS.PASSED);
   }
 
   function handleTileClick(index) {
@@ -74,6 +94,33 @@ export const MemoGame = () => {
   }
 
   useEffect(() => {
+    if (status === STATUS.FINISHED) {
+      const currentTime = time;
+      const currentScore = score;
+
+      if (
+        currentScore < highScore[noOfElements].moves ||
+        highScore[noOfElements].moves === 0
+      ) {
+        setHighScore({
+          ...highScore,
+          [noOfElements]: {
+            moves: currentScore,
+            time: currentTime,
+          },
+        });
+      }
+    }
+  }, [status]);
+
+  useEffect(() => {
+    if (
+      prevNoOfElements ===
+      tiles.filter((tile) => tile.variant === 'correct').length
+    ) {
+      setStatus(STATUS.FINISHED);
+    }
+
     let timeoutIdArray = [];
 
     tiles
@@ -89,10 +136,11 @@ export const MemoGame = () => {
         clearTimeout(id);
       });
     };
-  }, [tiles]);
+  }, [prevNoOfElements, tiles]);
 
   useEffect(() => {
     if (firstClick !== undefined && secondClick !== undefined) {
+      setScore((prevScore) => prevScore + 1);
       setTiles((oldTiles) => {
         const newTiles = [...oldTiles];
         const first = newTiles[firstClick];
@@ -117,10 +165,18 @@ export const MemoGame = () => {
   }, [firstClick, secondClick]);
 
   useEffect(() => {
-    console.log('tiles', tiles);
-    console.log('firstClick', firstClick);
-    console.log('secondClick', secondClick);
-  });
+    let intervalId;
+
+    if (status === STATUS.STARTED) {
+      intervalId = setInterval(() => {
+        setTime((prevTime) => prevTime + 1000);
+      }, 1000);
+
+      return () => {
+        clearInterval(intervalId);
+      };
+    }
+  }, [status]);
 
   return (
     <div>
@@ -130,35 +186,83 @@ export const MemoGame = () => {
         Gra polegająca na zapamiętywaniu odkrytych kafli i łączeniu ich w pary
       </p>
 
-      <div className="memo-controls-panel">
-        <Label>LICZBA ELEMENTÓW</Label>
-        {ELEMENTS.map((element) => (
-          <Button
-            key={element}
-            value={element + ' Elementów'}
-            onClick={() => {
-              setNoOfElements(element);
-            }}
-            variant={element !== noOfElements ? 'primary' : 'secondary'}
-          />
-        ))}
-      </div>
-      <div className="memo-controls-panel">
-        <Label>PRZYCISKI STERUJĄCE</Label>
-        <Button value="START" onClick={handleStart} />
-      </div>
+      {status === STATUS.PASSED && (
+        <>
+          <Result>
+            HAHA! Twój wynik to {score} ruchy dla {noOfElements / 2} par w
+            czasie {formatTime(time)}
+            sekund. Powodzenia następnym razem, amatorze...
+          </Result>
+        </>
+      )}
 
-      <div className="memo-board">
-        {tiles.map(({ index, value, isVisible, variant }) => (
-          <Tile
-            key={index}
-            value={value}
-            onClick={() => handleTileClick(index)}
-            isVisible={isVisible}
-            variant={variant}
-          />
-        ))}
-      </div>
+      {status === STATUS.FINISHED && (
+        <>
+          <Result>
+            Gratulacje! Twój wynik to {score} ruchy dla {noOfElements / 2} par w
+            czasie {formatTime(time)}
+            sekund
+          </Result>
+
+          {/* TODO: add highscore */}
+          <HighScore highScore={highScore} noOfElements={noOfElements} />
+        </>
+      )}
+
+      {(status === STATUS.NOT_STARTED ||
+        status === STATUS.FINISHED ||
+        status === STATUS.PASSED) && (
+        <>
+          <div className="memo-controls-panel">
+            <Label>LICZBA ELEMENTÓW</Label>
+            {ELEMENTS.map((element) => (
+              <Button
+                key={element}
+                value={element + ' Elementów'}
+                onClick={() => {
+                  setNoOfElements(element);
+                }}
+                variant={element !== noOfElements ? 'primary' : 'secondary'}
+              />
+            ))}
+          </div>
+          <div className="memo-controls-panel">
+            <Label>PRZYCISKI STERUJĄCE</Label>
+            <Button value="START" onClick={handleStart} />
+          </div>
+        </>
+      )}
+
+      {status === STATUS.STARTED && (
+        <>
+          <div className="memo-controls-panel">
+            <Label>Czas gry</Label>
+            <Output>{formatTime(time)}</Output>
+          </div>
+          <div className="memo-controls-panel">
+            <Label>Liczba ruchów</Label>
+            <Output>{score}</Output>
+          </div>
+          <div className="memo-controls-panel">
+            <Label>PRZYCISKI STERUJĄCE</Label>
+            <Button value="PASS" onClick={handleStop} />
+          </div>
+        </>
+      )}
+
+      {status === STATUS.STARTED && (
+        <div className="memo-board">
+          {tiles.map(({ index, value, isVisible, variant }) => (
+            <Tile
+              key={index}
+              value={value}
+              onClick={() => handleTileClick(index)}
+              isVisible={isVisible}
+              variant={variant}
+            />
+          ))}
+        </div>
+      )}
     </div>
   );
 };

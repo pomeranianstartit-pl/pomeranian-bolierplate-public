@@ -30,13 +30,6 @@
 .memo-letter-is-visible {
   transform: scaleX(1);
   /* background-image: url("./memo.svg");
-  background-repeat: no-repeat;
-  background-position: center; */
-}
-
-.memo-board {
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  gap: 1rem;
-  width: min-content;
+    background-repeat: no-repeat;
+    background-position: center; */
 }
