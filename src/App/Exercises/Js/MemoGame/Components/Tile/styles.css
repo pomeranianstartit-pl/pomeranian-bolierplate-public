@@ -39,4 +39,5 @@
   grid-template-columns: repeat(4, 1fr);
   gap: 1rem;
   width: min-content;
+  margin: 50px;
 }
