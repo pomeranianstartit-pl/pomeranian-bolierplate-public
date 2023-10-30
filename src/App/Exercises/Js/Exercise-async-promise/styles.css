@@ -1,0 +1,7 @@
+.container--async-promise li {
+  padding: 3rem;
+  border: 0.1rem solid #c8cbd1;
+  margin-bottom: 1rem;
+  color: #004286;
+  border-radius: 8px;
+}
