@@ -1,0 +1,13 @@
+.memo-high-score {
+  margin: 2rem 0;
+  display: flex;
+  flex-direction: column;
+  row-gap: 1rem;
+  align-items: center;
+}
+
+.memo-congrats {
+  font-size: 1.5rem;
+  font-weight: bold;
+  text-align: center;
+}

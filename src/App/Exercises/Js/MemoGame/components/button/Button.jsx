@@ -1,6 +1,6 @@
 import './styles.css';
 
-export const Button = ({ value, variant = 'primary', onClick }) => {
+export const Button = ({ value, variant, onClick }) => {
   if (
     !(
       variant === 'primary' ||
