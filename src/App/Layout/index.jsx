@@ -4,9 +4,11 @@ import { Outlet } from 'react-router-dom';
 import { AppHeader } from './AppHeader';
 import { AppFooter } from './AppFooter';
 import { ErrorBoundary } from './ErrorBoundary';
+import { AppAside } from './AppAside';
+import { AppCookies } from './AppCookies';
 
 import './styles/layout.css';
-import { AppAside } from './AppAside';
+import './styles/cookies.css';
 
 function getLayoutClassName(withSidebar) {
   return withSidebar ? 'layout with-sidebar' : 'layout';
@@ -22,6 +24,7 @@ export const Layout = ({ withSidebar }) => {
           <Outlet />
         </main>
         <AppFooter />
+        <AppCookies />
       </div>
     </ErrorBoundary>
   );

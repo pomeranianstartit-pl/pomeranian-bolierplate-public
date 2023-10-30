@@ -1,0 +1,7 @@
+div.techcard {
+    text-align: center;
+    margin: none;
+  }
+  .techcard .image {
+    padding-bottom: 20px;
+  }

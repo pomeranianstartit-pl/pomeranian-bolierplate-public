@@ -1,0 +1,26 @@
+
+.evets-input {
+  display: block;
+  padding: 7px 10px;
+  border: 1px solid var(--color-black);
+  border-radius: 8px
+
+}
+
+
+.events-btn {
+  display: block;
+  text-align: center;
+  background-color: var(--color-red);
+  color: var(--color-white);
+  font-family: Poppins;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 31px;
+  border: none;
+  cursor: pointer;
+  margin: 20px 0;
+  border-radius: 8px;
+  padding: 12px 18px;
+}

@@ -1,0 +1,35 @@
+
+
+div.techStack {
+  margin: 40px 20% 20px 50px;
+}
+
+
+
+p.techstack-description {
+  font-size: 18px;
+  font-weight: 400;
+  font-family: Poppins, sans-serif;
+  font-style: normal;
+  color: #23213d;
+  margin-top: 20px;
+}
+
+div.techcards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  margin-top: 50px;
+  /* background-color: blue; */
+  gap: 80px;
+  row-gap: 50px;
+}
+
+a.backButton {
+  font-family: Poppins, sans-serif;
+  text-decoration: none;
+  font-weight: 800;
+  font-size: 18px;
+  text-transform: uppercase;
+  color: #23213d;
+}

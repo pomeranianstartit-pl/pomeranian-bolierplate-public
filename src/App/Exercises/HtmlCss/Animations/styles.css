@@ -1,0 +1,19 @@
+
+.colors-wrapper div {
+  padding: 15px;
+  border: 1px solid black;
+  margin-bottom: 15px;
+}
+
+
+.colors-wrapper .colorName {
+
+}
+
+.color-wrapper .shortenHex {
+  background-color: #000;
+}
+
+.color-wrapper .normalHex {
+  background-color: #5bc86b;
+}

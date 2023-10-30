@@ -1,0 +1,74 @@
+
+.colors-wrapper div {
+
+  padding: 15px;
+
+  border: 1px solid black;
+
+  margin-bottom: 15px;
+
+}
+
+ 
+
+.colors-wrapper .colorName {
+
+  color: red;
+
+}
+
+ 
+
+.colors-wrapper .shortenHex {
+
+  background-color: #000;
+
+}
+
+ 
+
+.colors-wrapper .normalHex {
+
+  background-color: #5bc86b;
+
+}
+
+ 
+
+.colors-wrapper .rgb {
+
+  background-color: rgb(200,150,95);
+
+}
+
+ 
+
+.colors-wrapper .rgba {
+
+  background-color: rgba(200,150,95, 0.8);
+
+}
+
+ 
+
+.colors-wrapper .hsl {
+
+  background-color: hsl(150deg, 50%, 25%);
+
+}
+
+ 
+
+.colors-wrapper .hsla {
+
+  background-color: hsl(150deg, 50%, 25%, 0.5);
+
+}
+
+ 
+
+/* .colors-wrapper .colorName {
+
+  
+
+} */

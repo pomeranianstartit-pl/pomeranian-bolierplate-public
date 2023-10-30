@@ -1,0 +1,78 @@
+div.inputNick {
+  width: 754px;
+  height: 280px;
+  border: 1px solid #ccc;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+}
+
+p.nickText {
+  color: #222;
+  /* body/bold-16 */
+  font-family: Poppins;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 27px; /* 168.75% */
+}
+
+div.panelInput {
+  display: flex;
+  flex-direction: column;
+}
+
+.input {
+  display: flex;
+  height: 48px;
+  padding: 13px 16px;
+  align-items: center;
+  gap: 10px;
+  align-self: stretch;
+  border-radius: 5px;
+  border: 1px solid #c8cbd1;
+  background: #fff;
+}
+
+input.text {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+}
+
+div.nicksList {
+  display: flex;
+  height: 280px;
+  padding: 38px 25px;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 10px;
+}
+
+.btnAdd {
+  width: 163px;
+  height: 56px;
+  border-radius: 8px;
+  border: 1px solid #fe3756;
+  background: #fe3756;
+  color: white;
+  padding: 10px 20px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+div.panelTable {
+  border: 1px solid grey;
+  border-radius: 5px;
+}
+
+div.nicksList {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+div.nickName {
+  font-size: 18px;
+  margin: 5px 0;
+}
