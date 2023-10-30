@@ -1,0 +1,6 @@
+.container--async-promise ul li {
+  padding: 3rem;
+  border: 0.1rem solid black;
+  margin-bottom: 1rem;
+  color: chocolate;
+}
