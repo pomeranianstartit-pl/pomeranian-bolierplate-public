@@ -16,6 +16,11 @@ import { jsPopUpWindowMetaData } from './JsPopUpWindow/router-data';
 import { oopMetaData } from './OOP/router-data';
 import { jsTryCatchMetaData } from '../Js/TryCatch/router-data';
 
+import { asyncPromiseExerciseMetaData } from '../Js/AsyncPromiseExercise/router-data';
+import { exercisePromiseMethodsMetaData } from '../Js/Exercise-promise-methods/router-data';
+
+
+
 export const blockRouterMetaData = [
   blockRouterMetaDataJsVariables1,
   blockRouterMetaDataJsVariables2,
@@ -32,5 +37,9 @@ export const blockRouterMetaData = [
   jsPopUpWindowMetaData,
   oopMetaData,
   jsTryCatchMetaData,
+
+  asyncPromiseExerciseMetaData,
+  exercisePromiseMethodsMetaData,
+
 ];
 export const blockRouterData = getParsedRouterDataList(blockRouterMetaData);
