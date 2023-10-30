@@ -18,6 +18,10 @@ import { blockRouterMetaData as TryCatchMetaData } from './TryCatch/router-data'
 import { blockRouterMetaData as JsonExercise } from './JSON/router-data';
 import { StorageMetaData } from './Storage/router-data';
 import { savedInputMetaData } from './SavedInput/router-data';
+import { PromiseMetaData } from './Promise/router-data';
+import { PromiseSimulateApiMetaData } from './PromiseSimulateApi/router-data';
+import { AsyncExerciseMetaData } from './Async/router-data';
+import { blockRouterMetaDataPromiseMethods } from './PromiseMethods/router-data';
 export const blockRouterMetaData = [
   blockRouterMetaDataJsVariables1,
   blockRouterMetaDataJsVariables2,
@@ -37,5 +41,9 @@ export const blockRouterMetaData = [
   JsonExercise,
   StorageMetaData,
   savedInputMetaData,
+  PromiseMetaData,
+  PromiseSimulateApiMetaData,
+  AsyncExerciseMetaData,
+  blockRouterMetaDataPromiseMethods,
 ];
 export const blockRouterData = getParsedRouterDataList(blockRouterMetaData);
