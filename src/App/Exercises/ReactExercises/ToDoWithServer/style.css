@@ -1,0 +1,53 @@
+.font-test-family {
+  font-family: Chilanka;
+
+}
+.todo title {
+  color: var(--secondary-secondary, #23213D);
+
+/* body/bold-18 */
+font-family: Poppins;
+font-size: 18px;
+font-style: normal;
+font-weight: 700;
+line-height: 34px; /* 188.889% */
+}
+.button {
+  color: #FFF;
+text-align: center;
+font-family: Poppins;
+font-size: 25.893px;
+font-style: normal;
+font-weight: 500;
+line-height: 16.054px; /* 62% */
+}
+.li {
+  display: flex;
+  width: 629px;
+  height: 166px;
+  padding: 18px 24px;
+  align-items: center;
+  gap: 16px;
+  }
+  .li {
+    border-radius: 8px;
+    border-left: 5px solid var(--gray-300, #C8CBD1);
+    background: var(--background-bg-primary, #FFF);
+
+/* l */
+box-shadow: 0px 3px 9px 0px rgba(0, 0, 0, 0.15), 0px 2px 28px 0px rgba(0, 0, 0, 0.12);
+  }
+.button onClick{
+  border-radius: 8px;
+border: 1px solid var(--primary-primary, #FE3756);
+background: var(--primary-primary, #FE3756);
+}
+.button onClick{
+  display: flex;
+height: 56px;
+padding: 20px 36px;
+justify-content: center;
+align-items: center;
+gap: 16px;
+flex: 1 0 0;
+}
