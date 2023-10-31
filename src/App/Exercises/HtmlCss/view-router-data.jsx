@@ -53,6 +53,7 @@ export const blockRouterMetaData = [
   blockRouterMetaDataFloatsAndPositioningExercises,
   blockRouterMetaDataFloatsAndPositioning,
   blockRouterMetaDataRWD,
+
 ];
 
 export const blockRouterData = getParsedRouterDataList(blockRouterMetaData);

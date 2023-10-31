@@ -1,0 +1,7 @@
+.main-header {
+    font-family: 'Poppins', sans-serif;
+    line-height: 2.125rem;
+    font-size: 1.125rem;
+    color: var(--secondary-secondary, #23213d);
+    font-feature-settings: 'clig' off, 'liga' off;
+}

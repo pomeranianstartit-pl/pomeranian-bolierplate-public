@@ -1,0 +1,27 @@
+.mole-tile {
+  width: 3rem;
+
+  height: 3rem;
+
+  flex-shrink: 0;
+
+  border-radius: 0.5rem;
+}
+
+.mole-tile img {
+  width: 100%;
+
+  height: 100%;
+}
+
+.mole-tile-neutral {
+  background-color: #ebebeb;
+}
+
+.mole-tile:active {
+  background-color: #f3aea8;
+}
+
+.mole-with-mole:active {
+  background-color: #e2fbd7;
+}

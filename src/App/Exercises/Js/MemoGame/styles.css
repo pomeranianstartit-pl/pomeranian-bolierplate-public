@@ -1,0 +1,42 @@
+.hit-the-mole-game {
+    font-family: 'Poppins', sans-serif;
+    letter-spacing: 0em;
+    font-size: 1.125rem;
+    line-height: 2.125rem;
+    color: #222;
+    font-feature-settings: 'clig' off, 'liga' off;
+  }
+  .mole-settings-container {
+    display: flex;
+    margin-bottom: 1.5em;
+    column-gap: 1.5rem;
+    align-items: center;
+  }
+  .mole-label {
+    text-transform: uppercase;
+    flex-basis: 12rem;
+  }
+  .mole-output {
+    min-width: 10.2rem;
+    display: flex;
+    height: 3.5rem;
+    padding: 1.25rem 2.25rem;
+    justify-content: center;
+    align-items: center;
+    background: #ebebeb;
+  }
+  .mole-result {
+    margin: 2em;
+    text-align: center;
+    font-size: 1.75rem;
+    font-weight: 500;
+    line-height: 3rem;
+  }
+  
+  .mole-tile-board {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1rem;
+    width: min-content;
+  }
+  
