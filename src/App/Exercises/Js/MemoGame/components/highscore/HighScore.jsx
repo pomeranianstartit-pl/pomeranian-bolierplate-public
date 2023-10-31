@@ -2,7 +2,7 @@ import { useState } from 'react';
 
 import { formatTime } from '../../Utilities';
 
-import { Button } from '../Button/Button';
+import { Button } from '../button/Button';
 
 import './styles.css';
 

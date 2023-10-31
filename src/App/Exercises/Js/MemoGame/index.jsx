@@ -1,85 +1,67 @@
 import { useState, useEffect } from 'react';
-import { GoBackButton } from '../../../Components/GoBack/GoBack';
+// import { Button, Label, Output, Result, Tile } from './Components';
+// import { MasterHeader } from '../../../Components/MasterHeader/MasterHeader';
+import { getAlphabet, getInitialTiles, formatTime } from './Utilities';
+import { Result } from './components/Result/Result';
+import { HighScore } from './components/highscore/HighScore';
 import { Label } from './components/Label/Label';
 import { Button } from './components/button/Button';
+import { Output } from './components/Output/Output';
 import { Tile } from './components/Tile/Tile';
+import { GoBackButton } from '../../../Components/GoBack/GoBack';
 
-import { shuffle } from './components/Tile/Tile';
-export function getAlphabet(limit) {
-  const startASCII = 65;
-  //Litera pierwsza alfabetu A
-  const endASCII = 90;
-  //Litera  ostatnia alfabetu Z
-  let maxSize = endASCII - startASCII + 1;
-  maxSize = limit > 0 && limit <= maxSize ? limit : maxSize;
+import './styles.css';
 
-  return Array(maxSize)
-    .fill(0)
-    .map((_, index) => index + startASCII)
-    .map((characterCode) => String.fromCharCode(characterCode));
-}
+const STATUS = {
+  STARTED: 'started',
+  NOT_STARTED: 'notStarted',
+  FINISHED: 'finished',
+  PASSED: 'passed',
+};
 
-function getInitialTiles(size) {
-  const charactersSubset = characters.slice(0, size / 2);
-  const allCharacters = [...charactersSubset, ...charactersSubset];
-  // const shuffledCharacters = allCharacters.sort(() => Math.random() - 0.5);
-  const shuffledCharacters = shuffle(allCharacters);
-
-  //transform flat alphabet arrat to array of objects with specyfic letters with pairs of object with this same data
-  const characterObject = shuffledCharacters.map((character, index) => {
-    return { index, value: character, isVisible: false, variant: 'neutral' };
-  });
-  console.log('characterObject', characterObject);
-  return characterObject;
-}
-let numberOfMovents;
 const ELEMENTS = [4, 16, 20];
-const characters = getAlphabet(10);
+
+// TODO: Add comments to this code
 export const Exercise = () => {
-  const [time, setTime] = useState(60);
+  const [status, setStatus] = useState(STATUS.NOT_STARTED);
+  const [time, setTime] = useState(0);
+  const [score, setScore] = useState(0);
   const [noOfElements, setNoOfElements] = useState(null);
+  const [prevNoOfElements, setPrevNoOfElements] = useState(null);
+
   const [tiles, setTiles] = useState([]);
   const [firstClick, setFirstClick] = useState();
   const [secondClick, setSecondClick] = useState();
-  const [isGameStarted, setGameStarted] = useState(false);
-  const [isGameEnded, setGameEnded] = useState(false);
-  const [score, setScore] = useState(0);
-  const [finishScore, setFinishScore] = useState(0);
 
-  const [intervalId, setIntervalId] = useState(null);
-
-  function getInitialTiles(size) {
-    const charactersSubset = characters.slice(0, size / 2);
-    const allCharacters = [...charactersSubset, ...charactersSubset];
-
-    const shuffledCharacters = shuffle(allCharacters);
-
-    //transform flat alphabet arrat to array of objects with specyfic letters with pairs of object with this same data
-    const characterObject = shuffledCharacters.map((character, index) => {
-      return { index, value: character, isVisible: false, variant: 'neutral' };
-    });
-    console.log('characterObject', characterObject);
-    return characterObject;
-  }
+  const [highScore, setHighScore] = useState({
+    4: {
+      moves: 0,
+      time: 0,
+    },
+    16: {
+      moves: 0,
+      time: 0,
+    },
+    20: {
+      moves: 0,
+      time: 0,
+    },
+  });
 
   function handleStart() {
     if (noOfElements !== null) {
-      setTiles(getInitialTiles(noOfElements));
-      setGameStarted(true);
-      setGameEnded(false);
-      setTime(60);
+      setTiles(getInitialTiles(noOfElements, getAlphabet(10)));
+      setStatus(STATUS.STARTED);
       setScore(0);
-      setFirstClick(undefined);
+      setTime(0);
+      setPrevNoOfElements(noOfElements);
     } else {
     }
   }
 
-  const handleStop = () => {
-    setGameStarted(false);
-    setGameEnded(true);
-    clearInterval(intervalId);
-    setIntervalId(null);
-  };
+  function handleStop() {
+    setStatus(STATUS.PASSED);
+  }
 
   function handleTileClick(index) {
     if (tiles.some((tile) => tile.index === index && tile.isVisible === true))
@@ -118,6 +100,33 @@ export const Exercise = () => {
   }
 
   useEffect(() => {
+    if (status === STATUS.FINISHED) {
+      const currentTime = time;
+      const currentScore = score;
+
+      if (
+        currentScore < highScore[noOfElements].moves ||
+        highScore[noOfElements].moves === 0
+      ) {
+        setHighScore({
+          ...highScore,
+          [noOfElements]: {
+            moves: currentScore,
+            time: currentTime,
+          },
+        });
+      }
+    }
+  }, [status]);
+
+  useEffect(() => {
+    if (
+      prevNoOfElements ===
+      tiles.filter((tile) => tile.variant === 'correct').length
+    ) {
+      setStatus(STATUS.FINISHED);
+    }
+
     let timeoutIdArray = [];
 
     tiles
@@ -133,10 +142,11 @@ export const Exercise = () => {
         clearTimeout(id);
       });
     };
-  }, [tiles]);
+  }, [prevNoOfElements, tiles]);
 
   useEffect(() => {
     if (firstClick !== undefined && secondClick !== undefined) {
+      setScore((prevScore) => prevScore + 1);
       setTiles((oldTiles) => {
         const newTiles = [...oldTiles];
         const first = newTiles[firstClick];
@@ -146,11 +156,8 @@ export const Exercise = () => {
 
         if (first.value === second.value) {
           variant = 'correct';
-          setScore((prevScore) => prevScore + 1);
-          setFinishScore((prevScore) => prevScore + 1);
         } else {
           variant = 'incorrect';
-          setScore((prevScore) => prevScore + 1);
         }
 
         newTiles[firstClick] = { ...first, variant };
@@ -164,33 +171,18 @@ export const Exercise = () => {
   }, [firstClick, secondClick]);
 
   useEffect(() => {
-    console.log('tiles', tiles);
-    console.log('firstClick', firstClick);
-    console.log('secondClick', secondClick);
-  });
+    let intervalId;
 
-  useEffect(() => {
-    if (isGameStarted) {
-      const intervalId = setInterval(() => {
-        time > 0 && setTime((prevState) => prevState - 1);
+    if (status === STATUS.STARTED) {
+      intervalId = setInterval(() => {
+        setTime((prevTime) => prevTime + 1000);
       }, 1000);
 
       return () => {
         clearInterval(intervalId);
       };
     }
-  }, [time, isGameStarted]);
-  // useEffect(() => {
-  //   if ((numberOfMovents = noOfElements - finishScore === 0)) {
-  //     handleStop();
-  //     setNoOfElements(4);
-  //   }
-  // });
-  useEffect(() => {
-    if (time === 0) {
-      handleStop();
-    }
-  }, [time]);
+  }, [status]);
 
   return (
     <div>
@@ -199,15 +191,32 @@ export const Exercise = () => {
       <p>
         Gra polegająca na zapamiętywaniu odkrytych kafli i łączeniu ich w pary
       </p>
-      {isGameEnded && (
-        <div>
-          <h2>
-            Gratulaje udało Ci się znaleźć par w {score} ruchach. {60 - time}{' '}
-            sekund.
-          </h2>
-        </div>
+
+      {status === STATUS.PASSED && (
+        <>
+          <Result>
+            HAHA! Twój wynik to {score} ruchy dla {noOfElements / 2} par w
+            czasie {formatTime(time)}
+            sekund. Powodzenia następnym razem, amatorze...
+          </Result>
+        </>
       )}
-      {!isGameStarted ? (
+
+      {status === STATUS.FINISHED && (
+        <>
+          <Result>
+            Gratulacje! Twój wynik to {score} ruchy dla {noOfElements / 2} par w
+            czasie {formatTime(time)}
+            sekund
+          </Result>
+
+          <HighScore highScore={highScore} noOfElements={noOfElements} />
+        </>
+      )}
+
+      {(status === STATUS.NOT_STARTED ||
+        status === STATUS.FINISHED ||
+        status === STATUS.PASSED) && (
         <>
           <div className="memo-controls-panel">
             <Label>LICZBA ELEMENTÓW</Label>
@@ -227,26 +236,37 @@ export const Exercise = () => {
             <Button value="START" onClick={handleStart} />
           </div>
         </>
-      ) : (
+      )}
+
+      {status === STATUS.STARTED && (
         <>
-          {' '}
-          <Label>Czas gry {time}</Label>
-          <Label>Liczba ruchów :{score} </Label>
-          <Label>
-            Przyciski sterujące <Button value="STOP" onClick={handleStop} />{' '}
-          </Label>
-          <div className="memo-board">
-            {tiles.map(({ index, value, isVisible, variant }) => (
-              <Tile
-                key={index}
-                value={value}
-                onClick={() => handleTileClick(index)}
-                isVisible={isVisible}
-                variant={variant}
-              />
-            ))}
+          <div className="memo-controls-panel">
+            <Label>Czas gry</Label>
+            <Output>{formatTime(time)}</Output>
+          </div>
+          <div className="memo-controls-panel">
+            <Label>Liczba ruchów</Label>
+            <Output>{score}</Output>
+          </div>
+          <div className="memo-controls-panel">
+            <Label>PRZYCISKI STERUJĄCE</Label>
+            <Button value="PASS" onClick={handleStop} />
           </div>
         </>
+      )}
+
+      {status === STATUS.STARTED && (
+        <div className="memo-board">
+          {tiles.map(({ index, value, isVisible, variant }) => (
+            <Tile
+              key={index}
+              value={value}
+              onClick={() => handleTileClick(index)}
+              isVisible={isVisible}
+              variant={variant}
+            />
+          ))}
+        </div>
       )}
     </div>
   );
