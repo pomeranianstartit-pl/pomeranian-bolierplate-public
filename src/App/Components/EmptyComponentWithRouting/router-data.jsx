@@ -1,4 +1,4 @@
-import { EmptyComponentWithRouting } from './index';
+import { EmptyComponentWithRouting } from './EmptyComponentWithRouting';
 
 export const blockRouterMetaData = {
   path: 'some-path-that-you-wants',
