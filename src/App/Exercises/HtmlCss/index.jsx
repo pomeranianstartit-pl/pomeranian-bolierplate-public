@@ -24,7 +24,7 @@ export function HtmlCssExercises() {
       <GoBackLink label="Zamknij" />
       <hr />
       <Routes>
-        <Route path="" element={<ExerciseLinks />} />
+        <Route path="html-css-exercises" element={<ExerciseLinks />} />
       </Routes>
       {element}
     </div>
