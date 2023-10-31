@@ -3,11 +3,13 @@ import { SubRouteExampleMetaData } from './SubRouteExample/router-data';
 import { EventsMetaData } from './Events/router-data';
 import { HitTheMoleMetaData } from './HitTheMole/router-data';
 import { MemoMetaData } from './Memo/router-data';
+import { ToDoServerMetaData } from './ToDoWithServer/router-data';
 
 export const blockRouterMetaData = [
   SubRouteExampleMetaData,
   EventsMetaData,
   HitTheMoleMetaData,
   MemoMetaData,
+  ToDoServerMetaData,
 ];
 export const blockRouterData = getParsedRouterDataList(blockRouterMetaData);
