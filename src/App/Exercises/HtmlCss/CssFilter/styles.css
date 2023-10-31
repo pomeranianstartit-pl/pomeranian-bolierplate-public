@@ -1,0 +1,46 @@
+.background1 {
+  height: 200px;
+  width: 200px;
+  background-image: url
+    ('https://cdn.pixabay.com/photo/2017/09/01/00/15/png-2702691_960_720.png');
+  background-size: cover;
+  background-color: rgb(0, 255, 106);
+  background-position: center;
+  background-repeat: no-repeat;
+  filter: sepia(62%) blur(3px) brightness(43%) saturate(218%) contrast(82%);
+  -webkit-filter: sepia(62%) blur(3px) brightness(43%) saturate(218%)
+    contrast(82%);
+  -moz-filter: sepia(62%) blur(3px) brightness(43%) saturate(218%) contrast(82%);
+}
+
+.filtr1 {
+  height: 200px;
+  width: 200px;
+  background-image: url
+    ('https://cdn.pixabay.com/photo/2017/09/01/00/15/png-2702691_960_720.png');
+  filter: sepia(25%) brightness(43%) saturate(353%) contrast(243%);
+  -webkit-filter: sepia(25%) brightness(43%) saturate(353%) contrast(243%);
+  -moz-filter: sepia(25%) brightness(43%) saturate(353%) contrast(243%);
+}
+
+.filtr2 {
+  height: 200px;
+  width: 200px;
+  background-image: url
+    ('https://cdn.pixabay.com/photo/2017/09/01/00/15/png-2702691_960_720.png');
+  filter: sepia(62%) brightness(43%) saturate(218%) contrast(82%);
+  -webkit-filter: sepia(62%) brightness(43%) saturate(218%) contrast(82%);
+  -moz-filter: sepia(62%) brightness(43%) saturate(218%) contrast(82%);
+}
+
+.filtr4 {
+  height: 200px;
+  width: 200px;
+  background-image: url
+    ('https://cdn.pixabay.com/photo/2017/09/01/00/15/png-2702691_960_720.png');
+  filter: grayscale(20%) sepia(25%) brightness(43%) saturate(0%) contrast(243%);
+  -webkit-filter: grayscale(20%) sepia(25%) brightness(43%) saturate(0%)
+    contrast(243%);
+  -moz-filter: grayscale(20%) sepia(25%) brightness(43%) saturate(0%)
+    contrast(243%);
+}

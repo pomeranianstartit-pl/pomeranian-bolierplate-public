@@ -13,10 +13,6 @@ header {
 header > a:first-of-type {
   text-decoration: none;
 }
-header.header-title {
-  color: var(--color-grey);
-  font-weight: normal;
-}
 
 header .logo {
   height: 40vmin;
