@@ -23,6 +23,7 @@ import { promiseSSMetaData } from './PromiseSS/router-data';
 import { promiseSimulateApiMetaData } from './PromiseSimulateApi/router-data';
 import { promiseAsyncMetaData } from './PromiseAsync/router-data';
 import { promiseMethodsMetaData } from './PromiseMethods/router-data';
+import { toDoWithServerMetaData } from './ToDoWithServer/router-data';
 
 export const blockRouterMetaData = [
   blockRouterMetaDataJsVariables1,
@@ -48,6 +49,7 @@ export const blockRouterMetaData = [
   promiseSimulateApiMetaData,
   promiseAsyncMetaData,
   promiseMethodsMetaData,
+  toDoWithServerMetaData,
 ];
 
 export const blockRouterData = getParsedRouterDataList(blockRouterMetaData);
