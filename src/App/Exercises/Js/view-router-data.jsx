@@ -17,6 +17,9 @@ import { timerMetaData } from './Timer/router-data';
 import { oop1MetaData } from './OOP/router-data';
 import { oopExerciseMetaData } from './OOPExercise/router-data.jsx';
 import { tryCatchMetaData } from './TryCatch/router-data';
+import { jsonMetaData } from './JSON/router-data';
+import { storageMetaData } from './Storage/router-data';
+import { savedInputMetaData } from './SavedInput/router-data';
 
 
 export const blockRouterMetaData = [
@@ -36,7 +39,10 @@ export const blockRouterMetaData = [
   timerMetaData, 
   oop1MetaData,
   oopExerciseMetaData,
-  tryCatchMetaData
+  tryCatchMetaData,
+  jsonMetaData,
+  storageMetaData,
+  savedInputMetaData, 
 
 
 ];
