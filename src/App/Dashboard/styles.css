@@ -1,2 +1,15 @@
 .dashboard {
+    display: flex;
+    /* flex-direction: row; */
+    justify-content: space-between;
+}
+.mydata{
+    /* width: 334px;
+    height: 360px; */
+    padding: 40px 23px 40px 23px;
+    border-left: solid rgba(0, 0, 0, 0.046);
+    border-top: solid rgba(0, 0, 0, 0.046);
+
+    border-radius: 10px ;
+
 }
