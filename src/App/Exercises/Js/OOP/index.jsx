@@ -50,6 +50,7 @@ Jakie mają cechy i gdzie mozna spotkac paradygmaty?
 */
 import { OOPClass } from './OOPClass';
 import { OOPPillars } from './OOPPillars';
+import { OOPExercises } from './OOPExercises';
 export const Exercise = () => {
   //   PROGRAMOWANIE FUNKCYJNE - LICZENIE POWIERCHNI KOŁA
 
@@ -75,6 +76,7 @@ export const Exercise = () => {
       OOP
       <OOPClass />
       <OOPPillars />
+      <OOPExercises />
     </div>
   );
 };
