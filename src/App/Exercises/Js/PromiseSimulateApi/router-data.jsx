@@ -1,10 +1,10 @@
 import { Exercise } from './index'; 
 
-export const promiseMetaData = {
+export const promiseSimulateApiMetaData = {
    
-  path: 'js-promise',
+  path: 'js-promise-exercise-api',
   date: '27-10-2023',
-  linkLabel: 'JS - Promise',
+  linkLabel: 'JS - Promise - Symulacja API',
   blockNo: 34,
   element: <Exercise />,
   tags: [

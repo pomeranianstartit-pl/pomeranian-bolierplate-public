@@ -21,6 +21,7 @@ import { jsonMetaData } from './JSON/router-data';
 import { storageMetaData } from './Storage/router-data';
 import { savedInputMetaData } from './SavedInput/router-data';
 import { promiseMetaData } from './Promise/router-data';
+import { promiseSimulateApiMetaData } from './PromiseSimulateApi/router-data';
 
 
 export const blockRouterMetaData = [
@@ -44,7 +45,8 @@ export const blockRouterMetaData = [
   jsonMetaData,
   storageMetaData,
   savedInputMetaData,
-  promiseMetaData, 
+  promiseMetaData,
+  promiseSimulateApiMetaData, 
 
 
 ];
