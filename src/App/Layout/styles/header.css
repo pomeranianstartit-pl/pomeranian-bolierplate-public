@@ -22,3 +22,26 @@ header .logo {
   height: 40vmin;
   pointer-events: none;
 }
+.header-container{
+  display: flex;
+  flex-direction: row;
+  gap: 16px;
+  justify-content: space-between;
+  width: 100%;
+}
+.items-container{
+  display: flex;
+  /* justify-content: space-around; */
+  align-items: center;
+  max-width: 20rem;
+  gap: 1rem;
+}
+.name-container{
+  display: flex;
+  flex-direction: column;
+}
+.student {
+  font-weight: 400;
+  font-size: 13px;
+  color: #999;
+}

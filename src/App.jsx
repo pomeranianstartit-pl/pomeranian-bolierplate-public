@@ -13,6 +13,7 @@ import { Calender } from './App/Calender';
 import { Settings } from './App/Settings';
 import { Techstack } from './App/Techstack';
 import { MaterialUI } from './App/MaterialUI';
+import { Faq } from './App/Faq';
 
 import '@fontsource/roboto/300.css';
 import '@fontsource/roboto/400.css';
@@ -34,6 +35,7 @@ export function App() {
           <Route path="blocks/*" element={<Blocks />} />
           <Route path="techstack/*" element={<Techstack />} />
           <Route path="material-ui/*" element={<MaterialUI />} />
+          <Route path="faq/*" element={<Faq />} />
           <Route path="*" element={<NotFound />} />
         </Route>
       </Routes>

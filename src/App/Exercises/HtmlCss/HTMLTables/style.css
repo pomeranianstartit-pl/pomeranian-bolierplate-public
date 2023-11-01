@@ -1,0 +1,29 @@
+.html-table{
+  width: 100%;
+  background-color: rgb(255, 255, 255);
+  border-collapse: collapse;
+  font-size: 18px;
+}
+.html-table th{
+  background-color: #F5F5F5;
+}
+.html-table th,
+.html-table td{
+  padding: 20px 50px;
+  text-align: left;
+}
+.html-table tr:nth-child(2n+1){
+  background-color: #FFD5DB;
+}
+.html-table tr:hover{
+  background-color: aquamarine;
+}
+.html-table th:hover,
+.html-table td:hover{
+  background-color: rgb(180, 120, 120);
+}
+.html-table tr th:nth-child(5),
+.html-table tr td:nth-child(5)
+{
+  text-align: right;
+}
