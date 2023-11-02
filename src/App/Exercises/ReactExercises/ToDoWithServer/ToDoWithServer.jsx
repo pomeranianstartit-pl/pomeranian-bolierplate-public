@@ -1,6 +1,7 @@
 import { useState } from 'react';
 import './style.css';
 import toggleArrow from '../../../Images/toggle-arrow.svg';
+import { ToDoFormularz } from '../ToDoWithServer/ToDoFormularz';
 
 import tickIcon from '../../../Images/tick.svg';
 import pencilIcon from '../../../Images/pencil.svg';
@@ -76,6 +77,7 @@ export const ToDoWithServer = () => {
       <button className="dodajButton" onClick={handleLoadData}>
         Dodaj
       </button>
+      <ToDoFormularz />
     </div>
   );
 };

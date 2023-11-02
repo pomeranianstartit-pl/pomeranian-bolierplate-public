@@ -12,7 +12,7 @@ font-style: normal;
 font-weight: 700;
 line-height: 34px; /* 188.889% */
 }
-.h3 {
+h3 {
   display: flex;
   flex-direction: row;
   justify-content: space-between ;
@@ -59,9 +59,10 @@ flex-shrink: 0;
   align-items: center;
   gap: 16px;
   cursor: pointer;
-  
   }
- 
+ .toDoList:hover{
+  background-color: #C8CBD1;
+ }
   .toDoList {
     border-radius: 8px;
     border-left: 5px solid var(--gray-300, #C8CBD1);
@@ -70,6 +71,7 @@ flex-shrink: 0;
 /* l */
 box-shadow: 0px 3px 9px 0px rgba(0, 0, 0, 0.15), 0px 2px 28px 0px rgba(0, 0, 0, 0.12);
   }
+ 
 .dodajButton {
   border-radius: 8px;
 border: 1px solid var(--primary-primary, #FE3756);

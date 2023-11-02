@@ -1,0 +1,52 @@
+/* toDoFormularz */
+.input title {
+    display: flex;
+height: 48px;
+padding: 13px 16px;
+align-items: center;
+gap: 10px;
+align-self: stretch;
+border-radius: 5px;
+border: 1px solid var(--grey-300, #C8CBD1);
+background: #FFF;
+}
+.input treść {
+    display: flex;
+height: 120px;
+padding: 13px 16px;
+align-items: center;
+gap: 10px;
+align-self: stretch;
+border-radius: 5px;
+border: 1px solid var(--grey-300, #C8CBD1);
+background: #FFF;
+}
+
+.saveButton {
+    display: flex;
+height: 56px;
+padding: 20px 36px;
+justify-content: center;
+align-items: center;
+gap: 16px;
+flex: 1 0 0;
+}
+.saveButton {
+    border-radius: 8px;
+border: 1px solid var(--primary-primary, #FE3756);
+background: var(--primary-primary, #FE3756);
+}
+.moveBackButton {
+    display: flex;
+    height: 56px;
+    padding: 20px 36px;
+    justify-content: center;
+    align-items: center;
+    gap: 16px;
+    flex: 1 0 0; 
+}
+.moveBackButton {
+    border-radius: 8px;
+    border: 1px solid var(--secondary-secondary, #23213D);
+    background: var(--secondary-secondary, #23213D);   
+}
