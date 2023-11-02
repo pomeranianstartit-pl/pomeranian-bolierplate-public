@@ -1,5 +1,6 @@
 import { useState } from 'react';
 import './style.css';
+// import { AddtoDo } from './AddToDo';
 
 import { CheckIcon } from './IconsToDo/CheckIcon';
 import { EditIcon } from './IconsToDo/EditIcon ';
@@ -20,6 +21,12 @@ export const ToDoServer = () => {
       });
   };
 
+  const [isClick, setIsClick] = useState(false);
+  const handleInsert = () => {
+    setIsClick(true);
+    return;
+  };
+
   //   console.log(
   //     obj && obj.noteDetails && obj.noteDetails.author && obj.noteDetails.author
   //   );
@@ -28,33 +35,72 @@ export const ToDoServer = () => {
 
   return (
     <div>
-      <h2>ToDoWithServer</h2>
-
-      <h3>Lista zadań</h3>
-      <ul>
-        {data?.map((todo) => {
-          return (
-            <li className="onetodo">
-              <div className="onetodo">
-                <div className="iconstodo">
-                  <CheckIcon />
-                  <EditIcon />
-                  <TrashIcon />
+      <div className="alltodo">
+        <h2 className="h2todo">{'<'}ToDo</h2>
+        <div className="h3buttonplus">
+          <h3 className="h3todo">Tutaj znajdziesz liste swoich zadań</h3>
+          <button className="buttonplus" onClick={handleLoadData}>
+            +
+          </button>
+        </div>
+        <ul>
+          {data?.map((todo) => {
+            return (
+              <li className="onetodo">
+                <div className="onetodo">
+                  <div className="maintodo">
+                    <div>{todo.title}</div>
+                    <div>{todo.author}</div>
+                    <div>{todo.note}</div>
+                  </div>
+                  <div className="iconstodo">
+                    <CheckIcon />
+                    <EditIcon />
+                    <TrashIcon />
+                  </div>
                 </div>
-                <div className="maintodo">
-                  <div>{todo.title}</div>
-                  <div>{todo.author}</div>
-                  <div>{todo.note}</div>
-                </div>
-              </div>
-            </li>
-          );
-        })}
-      </ul>
+              </li>
+            );
+          })}
+        </ul>
+        <button
+          className="buttondodaj"
+          onClick={() => {
+            console.log('click on me');
+          }}
+        >
+          DODAJ
+        </button>
+      </div>
+      <div>
+        <h4>Tytuł</h4>
+        <input />
+        <h4>Autor</h4>
+        <input />
+        <h4>Treść</h4>
+        <textarea />
+        <div>
+          <button
+            className="buttoncofnij"
+            type="submit"
+            onClick={() => {
+              console.log('click on me3');
+            }}
+          >
+            COFNIJ
+          </button>
 
-      <div>----------------------</div>
-
-      <button onClick={handleLoadData}>Pobierz listę zadań...</button>
+          <button
+            className="buttondodaj2"
+            type="submit"
+            onClick={() => {
+              console.log('click on me2');
+            }}
+          >
+            DODAJ
+          </button>
+        </div>
+      </div>
     </div>
   );
 };
