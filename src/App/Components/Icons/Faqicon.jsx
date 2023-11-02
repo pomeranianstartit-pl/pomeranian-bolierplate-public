@@ -1,49 +1,49 @@
 export function FaqIcon({ className = '' }) {
   return (
     <svg
-      xmlns="http://www.w3.org/2000/svg"
-      width="43"
-      height="43"
-      viewBox="0 0 43 43"
+      width="24"
+      height="25"
+      viewBox="0 0 24 25"
       fill="none"
+      xmlns="http://www.w3.org/2000/svg"
       className={className}
     >
       <path
-        d="M32.2142 19.3321V26.4988C32.2142 26.9646 32.1962 27.4125 32.1425 27.8425C31.7304 32.68 28.8816 35.0808 23.6321 35.0808H22.9154C22.4675 35.0808 22.0375 35.2958 21.7687 35.6542L19.6187 38.5208C18.6692 39.7929 17.1283 39.7929 16.1787 38.5208L14.0287 35.6542C13.7958 35.3496 13.2762 35.0808 12.8821 35.0808H12.1654C6.44998 35.0808 3.5833 33.6654 3.5833 26.4988V19.3321C3.5833 14.0825 6.00207 11.2338 10.8217 10.8217C11.2517 10.7679 11.6996 10.75 12.1654 10.75H23.6321C29.3475 10.75 32.2142 13.6167 32.2142 19.3321Z"
-        stroke="#292D32"
-        stroke-width="2.75"
-        stroke-miterlimit="10"
-        stroke-linecap="round"
-        stroke-linejoin="round"
+        d="M17.98 11.29V15.29C17.98 15.55 17.97 15.8 17.94 16.04C17.71 18.74 16.12 20.08 13.19 20.08H12.79C12.54 20.08 12.3 20.2 12.15 20.4L10.95 22C10.42 22.71 9.56 22.71 9.03 22L7.82999 20.4C7.69999 20.23 7.41 20.08 7.19 20.08H6.79001C3.60001 20.08 2 19.29 2 15.29V11.29C2 8.36001 3.35001 6.77001 6.04001 6.54001C6.28001 6.51001 6.53001 6.5 6.79001 6.5H13.19C16.38 6.5 17.98 8.10001 17.98 11.29Z"
+        stroke="#000"
+        strokeWidth="1.5"
+        strokeMiterlimit="10"
+        strokeLinecap="round"
+        strokeLinejoin="round"
       />
       <path
-        d="M39.3808 12.1655V19.3322C39.3808 24.5997 36.962 27.4305 32.1425 27.8426C32.1962 27.4126 32.2141 26.9647 32.2141 26.4989V19.3322C32.2141 13.6168 29.3475 10.7501 23.632 10.7501H12.1654C11.6996 10.7501 11.2516 10.768 10.8216 10.8218C11.2337 6.0022 14.0825 3.58344 19.3321 3.58344H30.7987C36.5141 3.58344 39.3808 6.45012 39.3808 12.1655Z"
-        stroke="#292D32"
-        stroke-width="2.75"
-        stroke-miterlimit="10"
-        stroke-linecap="round"
-        stroke-linejoin="round"
+        d="M21.98 7.29001V11.29C21.98 14.23 20.63 15.81 17.94 16.04C17.97 15.8 17.98 15.55 17.98 15.29V11.29C17.98 8.10001 16.38 6.5 13.19 6.5H6.79004C6.53004 6.5 6.28004 6.51001 6.04004 6.54001C6.27004 3.85001 7.86004 2.5 10.79 2.5H17.19C20.38 2.5 21.98 4.10001 21.98 7.29001Z"
+        stroke="#000"
+        strokeWidth="1.5"
+        strokeMiterlimit="10"
+        strokeLinecap="round"
+        strokeLinejoin="round"
       />
       <path
-        d="M24.1794 23.7396H24.1955"
-        stroke="#292D32"
-        stroke-width="3.66667"
-        stroke-linecap="round"
-        stroke-linejoin="round"
+        d="M13.4955 13.75H13.5045"
+        stroke="#000"
+        strokeWidth="2"
+        strokeLinecap="round"
+        strokeLinejoin="round"
       />
       <path
-        d="M17.9087 23.7396H17.9248"
-        stroke="#292D32"
-        stroke-width="3.66667"
-        stroke-linecap="round"
-        stroke-linejoin="round"
+        d="M9.9955 13.75H10.0045"
+        stroke="#000"
+        strokeWidth="2"
+        strokeLinecap="round"
+        strokeLinejoin="round"
       />
       <path
-        d="M11.6378 23.7396H11.6539"
-        stroke="#292D32"
-        stroke-width="3.66667"
-        stroke-linecap="round"
-        stroke-linejoin="round"
+        d="M6.4955 13.75H6.5045"
+        stroke="#000"
+        strokeWidth="2"
+        strokeLinecap="round"
+        strokeLinejoin="round"
       />
     </svg>
   );

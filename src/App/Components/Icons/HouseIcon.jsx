@@ -9,35 +9,35 @@ export function HouseIcon({ className = '' }) {
       className={className}
     >
       <path
-        d="M1.83325 20.6667H20.1666"
-        stroke="#000"
-        stroke-width="1.375"
-        stroke-miterlimit="10"
-        stroke-linecap="round"
-        stroke-linejoin="round"
+        d="M1.8335 20.6666H20.1668"
+        stroke="#23213D"
+        strokeWidth="1.375"
+        strokeMiterlimit="10"
+        strokeLinecap="round"
+        strokeLinejoin="round"
       />
       <path
-        d="M2.7041 20.6669L2.74994 9.63936C2.74994 9.08019 3.01577 8.54857 3.45577 8.20024L9.87243 3.2044C10.5324 2.69106 11.4583 2.69106 12.1274 3.2044L18.5441 8.19107C18.9933 8.5394 19.2499 9.07103 19.2499 9.63936V20.6669"
-        stroke="#000"
-        stroke-width="1.375"
-        stroke-miterlimit="10"
-        stroke-linejoin="round"
+        d="M2.7041 20.6669L2.74994 9.63942C2.74994 9.08025 3.01577 8.54864 3.45577 8.2003L9.87243 3.20446C10.5324 2.69112 11.4583 2.69112 12.1274 3.20446L18.5441 8.19113C18.9933 8.53946 19.2499 9.07109 19.2499 9.63942V20.6669"
+        stroke="#23213D"
+        strokeWidth="1.375"
+        strokeMiterlimit="10"
+        strokeLinejoin="round"
       />
       <path
-        d="M14.2084 10.5833H7.79175C7.03091 10.5833 6.41675 11.1975 6.41675 11.9583V20.6666H15.5834V11.9583C15.5834 11.1975 14.9692 10.5833 14.2084 10.5833Z"
-        stroke="#000"
-        stroke-width="1.375"
-        stroke-miterlimit="10"
-        stroke-linecap="round"
-        stroke-linejoin="round"
+        d="M14.2082 10.5834H7.7915C7.03067 10.5834 6.4165 11.1975 6.4165 11.9584V20.6667H15.5832V11.9584C15.5832 11.1975 14.969 10.5834 14.2082 10.5834Z"
+        stroke="#23213D"
+        strokeWidth="1.375"
+        strokeMiterlimit="10"
+        strokeLinecap="round"
+        strokeLinejoin="round"
       />
       <path
-        d="M9.16675 15.3958V16.7708"
-        stroke="#000"
-        stroke-width="1.375"
-        stroke-miterlimit="10"
-        stroke-linecap="round"
-        stroke-linejoin="round"
+        d="M9.1665 15.3959V16.7709"
+        stroke="#23213D"
+        strokeWidth="1.375"
+        strokeMiterlimit="10"
+        strokeLinecap="round"
+        strokeLinejoin="round"
       />
     </svg>
   );
