@@ -1,0 +1,130 @@
+.todo-w-serv--container {
+    
+}
+
+.todo-w-serv-header {
+    display: flex;
+    align-items: center;
+    gap: 309px
+
+}
+.todo-w-serv-header > h5 {
+    color:  #222;
+font-feature-settings: 'clig' off, 'liga' off;
+/* header/H5 */
+font-family: Poppins;
+font-size: 16px;
+font-style: normal;
+font-weight: 400;
+line-height: 27px;
+}
+
+.todo-w-serv-header > button {
+    width: 30px;
+height: 30px;
+color: #FFF;
+font-family: Poppins;
+font-size: 20px; 
+font-style: normal;
+font-weight: 500;
+line-height: 16.054px; /* 62% */
+border-radius: 4.143px;
+border: 0.518px solid var(--primary-primary, #FE3756);
+background: var(--primary-primary, #FE3756);
+}
+.todo-w-serv-element {
+   display: flex;
+   width: 629px;
+   height: auto;
+   margin-top: 26px;
+   padding: 18px 24px;
+   align-items: baseline;
+   gap: 16px;
+   border-radius: 8px;
+border-left: 5px solid var(--gray-300, #C8CBD1);
+background: var(--background-bg-primary, #FFF);
+
+/* l */
+box-shadow: 0px 3px 9px 0px rgba(0, 0, 0, 0.15), 0px 2px 28px 0px rgba(0, 0, 0, 0.12);
+}
+
+.element-note {
+    max-width: 437px;
+    
+}
+
+.element-note > h3 {
+    color:  #23213D;
+
+/* body/bold-18 */
+font-family: Poppins;
+font-size: 18px;
+font-style: normal;
+font-weight: 700;
+line-height: 34px; /* 188.889% */
+margin-bottom: 1px;
+}
+
+.element-note > p {
+    color: #6B7280;
+font-family: Poppins;
+font-size: 12px;
+font-style: normal;
+font-weight: 400;
+line-height: normal;
+margin-top: 1px;
+margin-bottom: 1px;
+}
+
+.element-note > div {
+    color: #999;
+font-family: Poppins;
+font-size: 14px;
+font-style: normal;
+font-weight: 400;
+line-height: normal;
+margin-top: 12px;
+}
+
+.element-edit {
+    display: flex;
+    gap: 11px;
+}
+
+.add-new-todo-btn {
+    width: 163px;
+    height: 56px;
+    border-radius: 8px;
+border: 1px solid var(--primary-primary, #FE3756);
+background: var(--primary-primary, #FE3756);
+color: #FFF;
+text-align: center;
+font-family: Poppins;
+font-size: 18px;
+font-style: normal;
+font-weight: 500;
+line-height: 31px;
+margin-top: 36px;
+}
+
+.new-todo-form > p {
+    color: var(--text-text-primary, #222);
+
+    /* body/bold-16 */
+    font-family: Poppins;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 27px; /* 168.75% */
+    margin-bottom: 1px;
+}
+
+.new-todo-form > input {
+    width: 488px;
+    height: auto;
+    padding: 13px 16px;
+    border-radius: 5px;
+border: 1px solid #C8CBD1;
+background: #FFF;
+
+}

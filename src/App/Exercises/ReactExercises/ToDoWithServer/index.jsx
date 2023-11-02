@@ -1,7 +1,19 @@
 import { useState } from 'react';
+import './styles.css';
+import { DoneIcon } from './TodoComponents/doneIcon';
+import { EditIcon } from './TodoComponents/editIcon';
+import { TrashIcon } from './TodoComponents/trashIcon';
 
 export const ToDoWithServer = () => {
   const [data, setData] = useState([]);
+  const [isAddingNewTodo, setIsAddingNewTodo] = useState(false);
+  const handleAddNewTodo = () => {
+    setIsAddingNewTodo(true);
+  };
+
+  const handleBack = () => {
+    setIsAddingNewTodo(false);
+  };
   const handleLoadData = () => {
     fetch('http://localhost:3333/api/todo')
       .then((response) => {
@@ -22,25 +34,72 @@ export const ToDoWithServer = () => {
   //   console.log(obj.noteDetails?.author?.length && obj.noteDetails.author);
 
   return (
-    <div>
-      <h2>ToDoWithServer</h2>
-
-      <h3>Lista zadań</h3>
-      <ul>
-        {data?.map((todo) => {
-          return (
-            <li>
-              <div>{todo.title}</div>
-              <div>{todo.author}</div>
-              <div>{todo.note}</div>
-            </li>
-          );
-        })}
-      </ul>
-
-      <div>----------------------</div>
-
-      <button onClick={handleLoadData}>Pobierz listę zadań...</button>
+    <div className="todo-w-serv--container">
+      {isAddingNewTodo ? (
+        <div className="add-new-todo--wrapper">
+          <h5>Dodawanie zadania</h5>
+          <div>
+            <div className="new-todo-form">
+              <p>Tytuł</p>
+              <input
+                title="tytul"
+                type="text"
+                placeholder="Kupić parasol na balkon"
+              ></input>
+            </div>
+            <div className="new-todo-form">
+              <p>Autor</p>
+              <input title="autor" type="text" placeholder="Wojtek"></input>
+            </div>
+            <div className="new-todo-form">
+              <p>Treść</p>
+              <input
+                title="tresc"
+                type="text"
+                placeholder="Zmierzyć ile mamy miejsca na balkonie od barierki do kanapy i ile musi mieć max średnicy - miarka!!"
+              ></input>
+            </div>
+          </div>
+          <div>
+            <button onClick={handleBack}>COFNIJ</button>
+          </div>
+        </div>
+      ) : (
+        <div>
+          <div className="todo-w-serv-header">
+            <h5>Tutaj znajdziesz listę swoich zadań.</h5>
+            <button onClick={handleLoadData}>+</button>
+          </div>
+          <div>
+            <div>
+              {data?.map((todo) => {
+                return (
+                  <div className="todo-element-wrapper">
+                    <div className="todo-w-serv-element">
+                      <div className="element-note">
+                        <h3>{todo.title}</h3>
+                        <p>{todo.author}</p>
+                        <p>{todo.createdAt}</p>
+                        <div>{todo.note}</div>
+                      </div>
+                      <div className="element-edit">
+                        <DoneIcon />
+                        <EditIcon />
+                        <TrashIcon />
+                      </div>
+                    </div>
+                  </div>
+                );
+              })}
+              <div>
+                <button className="add-new-todo-btn" onClick={handleAddNewTodo}>
+                  DODAJ
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      )}
     </div>
   );
 };
