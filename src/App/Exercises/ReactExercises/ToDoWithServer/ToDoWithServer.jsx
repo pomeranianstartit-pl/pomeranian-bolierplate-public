@@ -1,5 +1,10 @@
 import { useState } from 'react';
 import './style.css';
+import toggleArrow from '../../../Images/toggle-arrow.svg';
+
+import tickIcon from '../../../Images/tick.svg';
+import pencilIcon from '../../../Images/pencil.svg';
+import trashIcon from '../../../Images/trash.svg';
 
 export const ToDoWithServer = () => {
   const [data, setData] = useState([]);
@@ -24,12 +29,20 @@ export const ToDoWithServer = () => {
 
   return (
     <div>
-      <h2>TODO</h2>
+      <h2>
+        <img
+          src={toggleArrow}
+          className="faqimg"
+          alt="Tu powinien być obrazek"
+        />
+        TODO
+      </h2>
 
       <h3>
-        Tu znajdziesz listę swoich zadań <button>+</button>
+        Tu znajdziesz listę swoich zadań{' '}
+        <button className="plusButton">+</button>
       </h3>
-      <ul>
+      <ul className="toDoList">
         {data?.map((todo) => {
           return (
             <li>
@@ -37,9 +50,21 @@ export const ToDoWithServer = () => {
               <div>{todo.author}</div>
               <div>{todo.note}</div>
               <div className="Icons">
-                <tickIcon />
-                <pencilIcon />
-                <trashIcon />
+                <img
+                  src={tickIcon}
+                  className="tickimg"
+                  alt="Tu powinien być obrazek"
+                />
+                <img
+                  src={pencilIcon}
+                  className="pencilimg"
+                  alt="Tu powinien być obrazek"
+                />
+                <img
+                  src={trashIcon}
+                  className="trashimg"
+                  alt="Tu powinien być obrazek"
+                />
               </div>
             </li>
           );
@@ -48,7 +73,9 @@ export const ToDoWithServer = () => {
 
       <div>----------------------</div>
 
-      <button onClick={handleLoadData}>Pobierz listę zadań...</button>
+      <button className="dodajButton" onClick={handleLoadData}>
+        Dodaj
+      </button>
     </div>
   );
 };
