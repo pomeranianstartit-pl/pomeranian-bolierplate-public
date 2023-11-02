@@ -1,6 +1,9 @@
 .techstack {
     display: grid;
-    grid-template-columns: 6fr 3fr;
+    grid-template-columns: repeat(6, 60px);
+    grid-template-rows: repeat(3, 119px);
+    column-gap: 70px;
+row-gap: 40px;
 }
 
 .techstack-icons {
@@ -14,6 +17,26 @@
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    /* gap: 22px; */
     width: 56px;
-    height: 100px;
+    height: 120px;
+    font-size: 18px;
+font-weight: 400;
+line-height: 34px;
+text-align: center;
+color: black;
+}
+.techstack-header h1{
+    font-size: 18px;
+font-weight: 700;
+line-height: 34px;
+margin-bottom: 0px;
+
+}
+.techstack-header p{
+    font-size: 18px;
+font-weight: 400;
+line-height: 34px;
+margin-bottom: 38px;
+margin-top: 0px;
 }
