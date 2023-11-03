@@ -14,6 +14,8 @@ import { blockRouterMetaDataJsSetInterval } from './JsSetInterval/router-data';
 import { blockRouterMetaDataUseEffect } from './UseEffect/router-data';
 import { blockRouterMetaDataVanishString } from './VanishString/router-data';
 import { blockRouterMetaDataTimer } from './Timer/router-data';
+import { blockRouterMetaDataJsStorages } from './JsStorages/router-data';
+import { blockRouterMetaDataSavedInput } from './SavedInput/router-data';
 
 export const blockRouterMetaData = [
   blockRouterMetaDataJsVariables1,
@@ -30,5 +32,7 @@ export const blockRouterMetaData = [
   blockRouterMetaDataUseEffect,
   blockRouterMetaDataVanishString,
   blockRouterMetaDataTimer,
+  blockRouterMetaDataJsStorages,
+  blockRouterMetaDataSavedInput,
 ];
 export const blockRouterData = getParsedRouterDataList(blockRouterMetaData);
