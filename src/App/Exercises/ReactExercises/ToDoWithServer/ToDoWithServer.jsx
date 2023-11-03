@@ -1,7 +1,7 @@
 import { useState } from 'react';
 import './style.css';
 import toggleArrow from '../../../Images/toggle-arrow.svg';
-import { ToDoFormularz } from '../ToDoWithServer/ToDoFormularz';
+import { ToDoFormularz } from '../ToDoWithServer/ToDoFormularz/ToDoFormularz';
 
 import tickIcon from '../../../Images/tick.svg';
 import pencilIcon from '../../../Images/pencil.svg';

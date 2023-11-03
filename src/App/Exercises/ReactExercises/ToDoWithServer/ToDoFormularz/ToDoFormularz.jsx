@@ -1,6 +1,6 @@
 import { useState } from 'react';
-import './ToDoFormularzStyles.css';
-import toggleArrow from '../../../Images/toggle-arrow.svg';
+import './toDoFormularzStyles.css';
+import toggleArrow from '../../../../Images/toggle-arrow.svg';
 import { ToDoWithServer } from '../ToDoWithServer';
 
 export const ToDoFormularz = () => {
@@ -29,21 +29,17 @@ export const ToDoFormularz = () => {
         TODO
       </h2>
 
-      <h3>Edycja zadania </h3>
+      <h4>Edycja zadania </h4>
       <ul className="toDoList">
-        {data?.map((todo) => {
-          return (
-            <div>
-              <h3>Tytuł</h3>
-              <input className="title" title="Szczepienie kitku" />
-              <h3>Treść</h3>
-              <input
-                className="treść"
-                treść="Sprawdzić w książeczce zdrowia, kiedy Nala była ostatni raz szczepiona i umówić się z naszym weterynarzem. Dodatkowo pamiętać o ustaleniu drugiej wizyty za rok!!!"
-              />
-            </div>
-          );
-        })}
+        <div>
+          <h3>Tytuł</h3>
+          <input className="title" title="Szczepienie kitku" />
+          <h3>Treść</h3>
+          <input
+            className="tresc"
+            tresc="Sprawdzić w książeczce zdrowia, kiedy Nala była ostatni raz szczepiona i umówić się z naszym weterynarzem. Dodatkowo pamiętać o ustaleniu drugiej wizyty za rok!!!"
+          />
+        </div>
       </ul>
 
       <div>----------------------</div>
@@ -55,7 +51,7 @@ export const ToDoFormularz = () => {
       <button className="moveBackButton" onClick={handleMoveBack}>
         COFNIJ
       </button>
-      <ToDoWithServer />
+      {/* <ToDoWithServer /> */}
     </div>
   );
 };
