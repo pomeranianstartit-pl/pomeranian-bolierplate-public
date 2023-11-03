@@ -29,6 +29,9 @@ aside li a {
 }
 
 aside a.active {
-  background-color: var(--color-primary-blue);
-  color: var(--color-white);
+  color: var(--color-red);
+}
+aside a:hover {
+  background-color: rgba(0, 0, 0, 0.3);
+  border-radius: 0.2rem;
 }

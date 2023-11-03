@@ -16,7 +16,7 @@ export function TextFundaments() {
         laudantium?
       </div>
       <div className="">
-        Tekst do porwnania
+        Tekst do porównania
         <span className="sup">sup</span>
         <span className="sub">sub</span>
         <sup>sup</sup>

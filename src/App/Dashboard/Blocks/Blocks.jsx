@@ -16,37 +16,38 @@ export const Blocks = () => {
         Hej, tu Artur!
       </p>
       <p>
-        Poniżej znajdziesz najaważniejsze informacje na temat mojej działalności
+        Poniżej znajdziesz najaważniejsze informacje na temat mojej
+        działalności.
       </p>
 
       <div className="dashboard-left">
         <DashboardBlock
           title="Moje CV"
-          description="podgląd cv wraz z doświadczeniem"
+          description="Podgląd cv wraz z doświadczeniem."
           icon={<PersonalCardIcon className="block-icon" />}
           link="/cv"
         />
         <DashboardBlock
           title="Ćwiczenia"
-          description="wszystkie wykonane ćwiczenia"
+          description="Wszystkie wykonane ćwiczenia."
           icon={<EditIcon className="block-icon" />}
           link="/exercises"
         />
         <DashboardBlock
           title="Blog"
-          description="wpisy blogowe o technologii front-end"
+          description="Wpisy blogowe o technologii front-end."
           icon={<BlogIcon className="block-icon" />}
           link="/exercises"
         />
         <DashboardBlock
           title="Tech stack"
-          description="stack technologiczny realizowany na kursie"
+          description="Stack technologiczny realizowany na kursie."
           icon={<TechStackIcon className="block-icon" />}
           link="/techstack"
         />
         <DashboardBlock
           title="Faq"
-          description="odpowiedzi na najczęstsze pytania"
+          description="Odpowiedzi na najczęstsze pytania."
           icon={<FaqIcon className="block-icon" />}
           link="/faq"
         />

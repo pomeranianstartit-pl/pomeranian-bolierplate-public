@@ -1,3 +1,4 @@
 .exercises-categories > * {
   display: list-item;
+  margin-left: 0.5rem;
 }

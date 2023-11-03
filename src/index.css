@@ -23,8 +23,8 @@ code {
     monospace;
 }
 /* Za komentowane bo ikonki znikaly w pasku nawigacji */
-/* *,
+/* *, */
 *:before,
 *:after {
   box-sizing: border-box;
-} */
+}

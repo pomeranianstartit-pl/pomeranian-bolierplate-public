@@ -4,27 +4,26 @@ import './style.css';
 
 export function ReactIfAisBiggerThan10() {
   const [inputNumber, setInputNumber] = useState('');
-  const [text, setText] = useState('');
+  const [text, setText] = useState('Wprowadź liczbę');
   function handleChange(event) {
     setInputNumber(event.target.value);
-  }
-  function biggerthan10() {
-    if (inputNumber > 10) {
-      setText('Twoja liczba jest większa niż 10');
+    if (event.target.value > 10) {
+      setText(' jest większa niż 10');
     }
-    if (inputNumber < 10) {
-      setText('Twoja liczba jest mniejsza niż 10');
+    if (event.target.value < 10) {
+      setText(' jest mniejsza niż 10');
     }
-    if (inputNumber == 10) {
-      setText('Twoja liczba jest równa 10.');
+    if (event.target.value == 10) {
+      setText(' jest równa 10.');
     }
+    console.log(event.target.value);
   }
 
   return (
     <div>
-      <button className="button_AB" onClick={biggerthan10}>
+      {/* <button className="button_AB" onClick={biggerthan10}>
         Sprawdź
-      </button>
+      </button> */}
       <div>
         <h1>Czy A jest większe od 10?</h1>
         <input
@@ -33,7 +32,9 @@ export function ReactIfAisBiggerThan10() {
           type="number"
           placeholder="A"
         ></input>
-        <p>{text}</p>
+        <p>
+          Twoja liczba {inputNumber} {text}.
+        </p>
       </div>
     </div>
   );
