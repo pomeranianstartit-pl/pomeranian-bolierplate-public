@@ -14,6 +14,8 @@ export const ToDoWithServer = () => {
   const handleBack = () => {
     setIsAddingNewTodo(false);
   };
+
+  const handleSaveTodo = () => {};
   const handleLoadData = () => {
     fetch('http://localhost:3333/api/todo')
       .then((response) => {
@@ -60,8 +62,13 @@ export const ToDoWithServer = () => {
               ></input>
             </div>
           </div>
-          <div>
-            <button onClick={handleBack}>COFNIJ</button>
+          <div className="form-btn--wrapper">
+            <button className="handleBack-btn" onClick={handleBack}>
+              COFNIJ
+            </button>
+            <button className="add-new-todo-btn" onClick={handleSaveTodo}>
+              ZAPISZ
+            </button>
           </div>
         </div>
       ) : (
@@ -91,7 +98,7 @@ export const ToDoWithServer = () => {
                   </div>
                 );
               })}
-              <div>
+              <div className="add-new-todo-btn--wrapper">
                 <button className="add-new-todo-btn" onClick={handleAddNewTodo}>
                   DODAJ
                 </button>

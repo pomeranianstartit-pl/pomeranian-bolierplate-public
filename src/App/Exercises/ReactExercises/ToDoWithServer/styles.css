@@ -91,6 +91,17 @@ margin-top: 12px;
     gap: 11px;
 }
 
+.element-edit > svg:hover > path {
+    stroke: #E12B1B
+    
+}
+
+
+.add-new-todo-btn--wrapper {
+    width: 629px;
+    margin-left: 467px;
+}
+
 .add-new-todo-btn {
     width: 163px;
     height: 56px;
@@ -116,7 +127,7 @@ margin-top: 36px;
     font-style: normal;
     font-weight: 700;
     line-height: 27px; /* 168.75% */
-    margin-bottom: 1px;
+    margin-bottom: 6px;
 }
 
 .new-todo-form > input {
@@ -126,5 +137,32 @@ margin-top: 36px;
     border-radius: 5px;
 border: 1px solid #C8CBD1;
 background: #FFF;
+
+}
+
+.handleBack-btn {
+    height: 56px;
+width: 163px;
+justify-content: center;
+align-items: center;
+margin-top: 36px;
+border-radius: 8px;
+border: 1px solid var(--secondary-secondary, #23213D);
+background: var(--secondary-secondary, #23213D);
+color: #FFF;
+text-align: center;
+
+/* button/button */
+font-family: Poppins;
+font-size: 18px;
+font-style: normal;
+font-weight: 500;
+line-height: 31px; /* 172.222% */
+}
+
+.form-btn--wrapper {
+    display: flex;
+    gap: 29px;
+    margin-left: 133px;
 
 }
