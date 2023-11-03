@@ -1,13 +1,15 @@
 import { useState } from 'react';
 import './style.css';
-// import { AddtoDo } from './AddToDo';
+import { AddToDo } from './AddToDo';
 
 import { CheckIcon } from './IconsToDo/CheckIcon';
 import { EditIcon } from './IconsToDo/EditIcon ';
 import { TrashIcon } from './IconsToDo/TrashIcon';
 
 export const ToDoServer = () => {
+
   const [data, setData] = useState([]);
+  
   const handleLoadData = () => {
     fetch('http://localhost:3333/api/todo')
       .then((response) => {
@@ -22,9 +24,11 @@ export const ToDoServer = () => {
   };
 
   const [isClick, setIsClick] = useState(false);
-  const handleInsert = () => {
+  const handleonAdd = () => {
     setIsClick(true);
-    return;
+  };
+  const handleoffAdd = () => {
+    setIsClick(false);
   };
 
   //   console.log(
@@ -36,70 +40,46 @@ export const ToDoServer = () => {
   return (
     <div>
       <div className="alltodo">
-        <h2 className="h2todo">{'<'}ToDo</h2>
-        <div className="h3buttonplus">
-          <h3 className="h3todo">Tutaj znajdziesz liste swoich zadań</h3>
-          <button className="buttonplus" onClick={handleLoadData}>
-            +
-          </button>
-        </div>
-        <ul>
-          {data?.map((todo) => {
-            return (
-              <li className="onetodo">
-                <div className="onetodo">
-                  <div className="maintodo">
-                    <div>{todo.title}</div>
-                    <div>{todo.author}</div>
-                    <div>{todo.note}</div>
-                  </div>
-                  <div className="iconstodo">
-                    <CheckIcon />
-                    <EditIcon />
-                    <TrashIcon />
-                  </div>
-                </div>
-              </li>
-            );
-          })}
-        </ul>
-        <button
-          className="buttondodaj"
-          onClick={() => {
-            console.log('click on me');
-          }}
-        >
-          DODAJ
-        </button>
-      </div>
-      <div>
-        <h4>Tytuł</h4>
-        <input />
-        <h4>Autor</h4>
-        <input />
-        <h4>Treść</h4>
-        <textarea />
-        <div>
-          <button
-            className="buttoncofnij"
-            type="submit"
-            onClick={() => {
-              console.log('click on me3');
-            }}
-          >
-            COFNIJ
-          </button>
-
-          <button
-            className="buttondodaj2"
-            type="submit"
-            onClick={() => {
-              console.log('click on me2');
-            }}
-          >
-            DODAJ
-          </button>
-        </div>
+        {isClick ? (
+          <div>
+            <AddToDo />
+          </div>
+        ) : (
+          <div>
+            <h2 className="h2todo">{'<'}ToDo</h2>
+            <div className="h3buttonplus">
+              <h3 className="h3todo">Tutaj znajdziesz liste swoich zadań</h3>
+              <button className="buttonplus" onClick={handleLoadData}>
+                +
+              </button>
+            </div>
+            <ul>
+              {data?.map((todo) => {
+                return (
+                  <li className="onetodo">
+                    <div className="onetodo">
+                      <div className="maintodo">
+                        <div>{todo.title}</div>
+                        <div>{todo.author}</div>
+                        <div>{todo.note}</div>
+                      </div>
+                      <div className="iconstodo">
+                        <CheckIcon />
+                        <div>
+                          <EditIcon />
+                        </div>
+                        <TrashIcon />
+                      </div>
+                    </div>
+                  </li>
+                );
+              })}
+            </ul>
+            <button className="buttondodaj" onClick={handleonAdd}>
+              DODAJ
+            </button>
+          </div>
+        )}
       </div>
     </div>
   );

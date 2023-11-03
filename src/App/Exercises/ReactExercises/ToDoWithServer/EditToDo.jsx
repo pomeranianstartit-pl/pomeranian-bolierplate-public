@@ -1,7 +1,7 @@
 import { useState } from 'react';
 import { ToDoServer } from './index';
 
-export const AddToDo = () => {
+export const EdittoDo = () => {
   const [isClick, setIsClick] = useState(false);
   const handleonAdd = () => {
     setIsClick(true);
@@ -20,11 +20,9 @@ export const AddToDo = () => {
         </div>
       ) : (
         <div>
-          <h3 className="h3todo">Dodawanie zadania.</h3>
+          <h3 className="h3todo">Edycja zadania.</h3>
 
           <h4>Tytuł</h4>
-          <input />
-          <h4>Autor</h4>
           <input />
           <h4>Treść</h4>
           <textarea />
@@ -38,7 +36,7 @@ export const AddToDo = () => {
               type="submit"
               onClick={handleonAdd}
             >
-              DODAJ
+              ZAPISZ
             </button>
           </div>
         </div>
