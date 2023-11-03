@@ -19,6 +19,8 @@ import { TimerMetaData } from './Timer/router-data';
 import { SliderBannerMetaData } from './SliderBanner/router-data';
 import { MemoGameMetaData } from './MemoGames/router-data';
 import { OOPMetaData } from './OOP/router-data';
+import { JsStorageMetaData } from './JsStorage/router-data';
+import { SavedInputMetaData } from './SavedInput/router-data';
 
 export const blockRouterMetaData = [
   blockRouterMetaDataJsVariables1,
@@ -40,5 +42,7 @@ export const blockRouterMetaData = [
   SliderBannerMetaData,
   MemoGameMetaData,
   OOPMetaData,
+  JsStorageMetaData,
+  SavedInputMetaData,
 ];
 export const blockRouterData = getParsedRouterDataList(blockRouterMetaData);
