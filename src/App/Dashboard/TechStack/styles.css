@@ -1,0 +1,41 @@
+.techstack {
+  margin-top: 2.38rem;
+  display: grid;
+  grid-template-columns: 6fr 3fr;
+  grid-auto-rows: 10rem;
+}
+
+.techstack-icons {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 35px;
+  border-radius: 100%;
+}
+
+.techstack-box {
+  min-height: 121px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+
+  /* width: 56px;
+  height: 100px; */
+  /* background: red; */
+}
+
+/* .techstack {
+  display: grid;
+  grid-template-columns: repeat(9, 1fr);
+  grid-template-rows: repeat(3, 119px);
+
+   column-gap: 50px; 
+  row-gap: 50px;
+}
+
+.techstack-box {
+  border: 1px solid #eaeaea;
+  border-radius: 5px;
+  padding: 10px;
+  background: red;
+} */

@@ -1,2 +1,18 @@
+/* .dashboard {
+} */
+.mydata-dashboard {
+  font-size: 0.875rem;
+}
+
+.mydata-section {
+  padding: 0.625rem 0.625rem 0.625rem 0rem;
+}
+
+.mydata-dashboard h3,
+.mydata-dashboard p {
+  margin: 0;
+}
 .dashboard {
+  display: flex;
+  justify-content: space-between;
 }
