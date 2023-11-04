@@ -11,7 +11,7 @@ const DashboardBlock = ({ title, description, icon, link }) => {
         <h2 className="block-title">{title}</h2>
         {icon}
         <div className="block-description">{description}</div>
-        zobacz więcej >
+        zobacz więcej
       </div>
     </Link>
   );
