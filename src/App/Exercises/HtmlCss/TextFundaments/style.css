@@ -1,0 +1,66 @@
+.blok11_z1 .font-size {
+  font-size: 40px;
+}
+.blok11_z1 .font-weight {
+  font-weight: 700;
+}
+
+.blok11_z1 .font-style {
+  font-style: italic;
+  font-style: oblique;
+}
+
+.blok11_z1 .text-decoration {
+  text-decoration: underline;
+  text-decoration: underline dashed;
+  text-decoration: underline dotted;
+  text-decoration: line-through underline;
+  text-decoration: wavy underline;
+  text-decoration: double underline;
+}
+
+.blok11_z1 .text-transform {
+  /* DUZE LITERY */
+
+  text-transform: uppercase;
+  text-transform: lowercase;
+  text-transform: capitalize;
+}
+.blok11_z1 .text-shadow {
+  text-shadow: 4px 4px;
+}
+.blok11_z1 .box-shadow {
+  box-shadow: 4px 4px 7px 0px blue;
+}
+.special-text {
+  margin-top: 10px;
+  max-width: 400px;
+  font-size: 10px;
+  line-height: 1, 5;
+
+  letter-spacing: 5px;
+  word-spacing: 10px;
+
+  text-align: right;
+  text-align: center;
+  text-align: justify;
+}
+.blok11_z1 .sup {
+  vertical-align: super;
+}
+.blok11_z1 .sub {
+  vertical-align: sub;
+}
+
+/* liczby rzymskie w ol */
+.blok11_z1 .list-ol {
+  /* list-style-type: upper-roman; */
+  list-style-type: decimal-leading-zero;
+  /* list-style-image: url('https://www.w3schools.com/cssref/sqpurple.gif'); */
+}
+
+.blok11_z1 .list-u1 {
+  list-style-type: square;
+  list-style-position: outside;
+  list-style-position: inside;
+}
