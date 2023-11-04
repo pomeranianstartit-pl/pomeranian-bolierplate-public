@@ -75,9 +75,9 @@ export const JS_OOP = () => {
   return (
     <div>
       OOP
-      <OOPClass />
+      {/* <OOPClass />
       <OOPPillars />
-      <OOPExercises />
+      <OOPExercises /> */}
     </div>
   );
 };
