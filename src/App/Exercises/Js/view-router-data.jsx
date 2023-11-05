@@ -18,6 +18,12 @@ import { VanishStringMetaData } from './JSVanishString/router-data';
 import { JsTimerMetaData } from './JsTimer/router-data';
 import { MemoGameMetaData } from './MemoGame/router-data';
 import { OOPExerciseMetaData } from './OOP/router-data';
+import { JsStorageMetaData } from './JsStorage/router-data';
+import { SavedInputMetaData } from './SavedInput/router-date';
+import { PromisesAndMeMetaData } from './PromisesAndMe/router-data';
+import { PromiseExerciseMetaData } from './PromiseExercise/router-data';
+import { PromisesMethodsMetaData } from './PromisesMethods/router-data';
+import { PromisesMethodsTrainingMetaData } from './PromiseMethodsTraining/router-data';
 
 export const blockRouterMetaData = [
   blockRouterMetaDataJsVariables1,
@@ -37,6 +43,12 @@ export const blockRouterMetaData = [
   VanishStringMetaData,
   JsTimerMetaData,
   MemoGameMetaData,
-  OOPExerciseMetaData
+  OOPExerciseMetaData,
+  JsStorageMetaData,
+  SavedInputMetaData,
+  PromisesAndMeMetaData,
+  PromiseExerciseMetaData,
+  PromisesMethodsMetaData,
+  PromisesMethodsTrainingMetaData,
 ];
 export const blockRouterData = getParsedRouterDataList(blockRouterMetaData);

@@ -18,7 +18,7 @@ export function AppAside() {
         <ul>
           <li className="aside-row ">
             <HouseIcon />
-            <NavLink to="dashboard">Dash</NavLink>
+            <NavLink to="dashboard">Dashboard</NavLink>
           </li>
           <li className="aside-row ">
             <ElementIcon />
