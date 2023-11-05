@@ -1,0 +1,48 @@
+.single-task-block {
+  display: flex;
+  font-family: Roboto;
+  padding: 24px 18px 24px 18px;
+  border-radius: 12px;
+  border-left: 5px solid #c8cbd1;
+  box-shadow: 0px 3px 9px 0px rgba(0, 0, 0, 0.15),
+    0px 2px 28px 0px rgba(0, 0, 0, 0.12);
+  background: #fff;
+  margin: 3vh 0 0 0;
+  max-width: 50vw;
+  min-width: 630px;
+  min-height: 166px;
+}
+
+.task-block-container {
+  max-width: 486px;
+}
+
+.task-head {
+  /* font-family: Poppins; */
+  color: #23213d;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 34px;
+}
+
+.task-info p {
+  margin: 0px;
+  color: #6b7280;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.task-note {
+  margin-top: 12px;
+  color: #6b7280;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.task-buttons {
+}
