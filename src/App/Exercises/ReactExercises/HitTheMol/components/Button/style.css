@@ -1,0 +1,13 @@
+.mole-button {
+    color: #FFFFFF;
+    background-color: #23213D;
+}
+
+.button--active {
+    background-color: #FE3756;
+}
+
+.button--disabled {
+    color: #23213D;
+    background-color: #EBEBEB;
+}
