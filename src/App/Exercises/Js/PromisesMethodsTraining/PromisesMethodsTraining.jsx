@@ -19,5 +19,5 @@
 // Promise.race dla FetchDataFast, FetchDataLong oraz FetchDataError
 
 export const PromisesMethodsTraining = () => {
-  return <div>Metody w Promise</div>;
+  return <div>Metody w Promise - ćwiczenia</div>;
 };
