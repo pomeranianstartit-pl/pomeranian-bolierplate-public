@@ -18,25 +18,31 @@ import githuub from '../Images/tech-stack/githuub.svg';
 export function Techstack() {
   return (
     <>
-      <h1>Technologie</h1>
-      <div className="techstack">
-        <div className="techstack-icons">
-          <TechStackIcon img={discord} name="HTML5" />
-          <TechStackIcon img={html} name="HTML5" />
-          <TechStackIcon img={jira} name="HTML5" />
-          <TechStackIcon img={js} name="HTML5" />
-          <TechStackIcon img={react} name="HTML5" />
-          <TechStackIcon img={redmine} name="HTML5" />
-          <TechStackIcon img={redux} name="HTML5" />
-          <TechStackIcon img={ts} name="HTML5" />
-          <TechStackIcon img={vscode} name="HTML5" />
-          <TechStackIcon img={githuub} name="HTML5" />
-          <TechStackIcon img={html} name="HTML5" />
-          <TechStackIcon img={html} name="HTML5" />
-          <TechStackIcon img={html} name="HTML5" />
-          <TechStackIcon img={html} name="HTML5" />
-        </div>
+      <div className="techstack-header">
+        <h1>TECH STACK</h1>
+        <p>
+          Poniżej znjdziesz tech stack oraz narzędzia, jakich nauczyłem się
+          podczas kursu.
+        </p>
       </div>
+      <div className="techstack">
+        {/* <div className="techstack-icons"> */}
+        <TechStackIcon img={discord} name="HTML5" />
+        <TechStackIcon img={html} name="HTML5" />
+        <TechStackIcon img={jira} name="HTML5" />
+        <TechStackIcon img={js} name="HTML5" />
+        <TechStackIcon img={react} name="HTML5" />
+        <TechStackIcon img={redmine} name="HTML5" />
+        <TechStackIcon img={redux} name="HTML5" />
+        <TechStackIcon img={ts} name="HTML5" />
+        <TechStackIcon img={vscode} name="HTML5" />
+        <TechStackIcon img={githuub} name="HTML5" />
+        <TechStackIcon img={html} name="HTML5" />
+        <TechStackIcon img={html} name="HTML5" />
+        <TechStackIcon img={html} name="HTML5" />
+        <TechStackIcon img={html} name="HTML5" />
+      </div>
+      {/* </div> */}
     </>
   );
 }
