@@ -6,7 +6,7 @@ export function JsFunctionBasics() {
   }
 
   const arrowFunction = (parameter1, parameter2) => {
-    return Math.sqrt(parameter2 * parameter1);
+    Math.sqrt(parameter2 * parameter1);
   };
 
   function modify(liczba) {

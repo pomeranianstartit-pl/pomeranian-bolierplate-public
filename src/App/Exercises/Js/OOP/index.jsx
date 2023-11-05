@@ -4,8 +4,8 @@
 //     new Person('John', 'Smith', 30),
 // ]
 
-import { OOPClass } from './OOPClass';
-import { OOPPillars } from './OOPPillars';
+// import { OOPClass } from './OOPClass';
+// import { OOPPillars } from './OOPPillars';
 
 // const people = [
 //   {
@@ -56,8 +56,8 @@ export function OOPExercise() {
   return (
     <div>
       OOP
-      <OOPClass />
-      <OOPPillars />
+      {/* <OOPClass /> */}
+      {/* <OOPPillars /> */}
     </div>
   );
 }
