@@ -21,8 +21,8 @@ export const ToDoWithServer = () => {
 
   return (
     <div>
-      <h3>Lista zadań do wykonania</h3>
-      <p>tudududu......</p>
+      <h3 className="task-heading">Tu znajdziesz listę zadań do wykonania.</h3>
+      {/* <p>tudududu......</p> */}
       <div>
         {data.length > 0 &&
           data.map((todo) => {

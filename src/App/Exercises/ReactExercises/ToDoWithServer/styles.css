@@ -1,20 +1,40 @@
+.task-heading {
+  color:  #222;
+font-feature-settings: 'clig' off, 'liga' off;
+font-family: Roboto;
+font-size: 16px;
+font-style: normal;
+font-weight: 400;
+line-height: 27px; /* 168.75% */
+}
+
 .single-task-block {
   display: flex;
+  justify-content: space-between;
   font-family: Roboto;
   padding: 24px 18px 24px 18px;
   border-radius: 12px;
-  border-left: 5px solid #c8cbd1;
-  box-shadow: 0px 3px 9px 0px rgba(0, 0, 0, 0.15),
-    0px 2px 28px 0px rgba(0, 0, 0, 0.12);
-  background: #fff;
-  margin: 3vh 0 0 0;
+  margin: 0 0 26px 0;
   max-width: 50vw;
   min-width: 630px;
   min-height: 166px;
 }
+.single-task-block.undone {
+  background: #fff;
+  border-left: 5px solid #c8cbd1;
+  box-shadow: 0px 3px 9px 0px rgba(0, 0, 0, 0.15),
+    0px 2px 28px 0px rgba(0, 0, 0, 0.12);
+}
+
+.single-task-block.done {
+  background: #c8cbd1;
+  border-left: 5px solid #6b7280;
+  box-shadow: 0px 3px 9px 0px rgba(0, 0, 0, 0.15),
+    0px 2px 28px 0px rgba(0, 0, 0, 0.12);
+}
 
 .task-block-container {
-  max-width: 486px;
+  width: 437px;
 }
 
 .task-head {
@@ -44,5 +64,53 @@
   line-height: normal;
 }
 
-.task-buttons {
+.task-buttons-block {
+  margin: 13px 43.5px 0px 0px;
+  display: flex;
+  column-gap: 12px;
+  height: fit-content;
+}
+
+.task-buttons-block-done {
+  margin: 13px 43.5px 0px 0px;
+  display: flex;
+  flex-direction: column;
+  row-gap: 32px;
+  align-items: center;
+  height: fit-content;
+}
+
+.single-task-block.undone div.to-do-tick:hover svg.tick {
+  stroke: #03032e;
+  fill: #03032e;
+}
+
+div.to-do-tick:hover svg.bin {
+  stroke: #03032e;
+}
+
+.single-task-block.done svg.bin {
+  stroke: #03032e;
+}
+
+.single-task-block.done svg.tick {
+  stroke: rgba(7, 194, 59, 1);
+  fill: rgba(7, 194, 59, 1);
+  width: 43px;
+  height: 30px;
+}
+
+p.task-info {
+  color: #6b7280;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  margin-top: 7px;
+}
+
+div.to-do-tick {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
