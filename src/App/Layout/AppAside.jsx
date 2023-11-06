@@ -8,7 +8,7 @@ import { EditIcon } from '../Components/Icons/EditIcon';
 import { CalendarIcon } from '../Components/Icons/CalendarIcon';
 import { ElementIcon } from '../Components/Icons/ElementIcon';
 import { BookIcon } from '../Components/Icons/BookIcon';
-import { FAQIcon } from '../Components/Icons/FaqIcon1';
+import { FAQIcon } from '../Components/Icons/FaqIcon';
 
 export function AppAside() {
   const location = useLocation();
