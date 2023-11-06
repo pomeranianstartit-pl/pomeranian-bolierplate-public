@@ -4,7 +4,7 @@ import { NavLink } from 'react-router-dom';
 import { EditIcon } from '../Components/Icons/EditIcon';
 import { SettingIcon } from '../Components/Icons/SettingIcon';
 import { BookIcon } from '../Components/Icons/BookIcon';
-import { FAQIcon } from '../Components/Icons/FAQIcon';
+import { FAQIcon } from '../Components/Icons/FaqIcon1';
 import MyImgae from './photo-AnnaM.jpeg';
 import { DashboardCard } from './DashboardCard';
 
