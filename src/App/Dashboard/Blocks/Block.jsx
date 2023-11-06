@@ -18,13 +18,13 @@ export const Blocks = () => {
       <SingleBlock
         title="Ćwiczenia"
         description="wszystkie wykonane ćwiczenia"
-        icon={<EditIcon className="picture" />}
+        icon={<EditIcon />}
         link="exercise/*"
       />
       <SingleBlock
         title="Blog"
         description="wpisy blogowe o technologii front-end"
-        icon={<BookSavedIcon className="picture" />}
+        icon={<BookSavedIcon />}
         link="cv/*"
       />
       <SingleBlock
