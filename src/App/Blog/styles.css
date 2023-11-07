@@ -50,6 +50,9 @@ p {
   background-color: #f4f5f7;
   color: #222222;
 }
+svg.article-active > path {
+  stroke: red;
+}
 
 @keyframes shakes {
   0% {
