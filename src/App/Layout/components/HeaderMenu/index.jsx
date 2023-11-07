@@ -2,7 +2,7 @@ import './styles.css';
 import { SettingIcon } from '../../../Components/Icons/SettingIcon';
 import { ReactComponent as Ellipse } from '../../../Images/Ellipse 2.svg';
 import { ReactComponent as RightArrow } from '../../../Images/right-arrow 1.svg';
-import { ReactComponent as Notification } from '../../../Images/notification.svg';
+import { ReactComponent as Notification } from './../../../Images/notification-1.svg';
 import { useState } from 'react';
 import LoginPanel from '../LoginPanel';
 
@@ -23,7 +23,7 @@ export const HeaderMenu = () => {
         <p>kursant</p>
       </div>
       <RightArrow onClick={handleArrowClick} />
-      {isMenuOpen && <LoginPanel />}
+      {isMenuOpen && <LoginPanel onClick={handleArrowClick} />}
     </div>
   );
 };
