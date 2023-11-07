@@ -2,6 +2,7 @@
   display: flex;
   align-items: center;
   gap: 20px;
+  position: relative;
 }
 .header-menu-user p {
   margin: 0;
