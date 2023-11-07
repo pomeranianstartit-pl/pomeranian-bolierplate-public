@@ -4,13 +4,11 @@
 }
 .todo title {
   color: var(--secondary-secondary, #23213D);
-
-/* body/bold-18 */
 font-family: Poppins;
 font-size: 18px;
 font-style: normal;
 font-weight: 700;
-line-height: 34px; /* 188.889% */
+line-height: 34px; 
 }
 h3 {
   display: flex;
@@ -19,14 +17,11 @@ h3 {
   max-width: 629px;
   color: var(--text-text-primary, #222);
 font-feature-settings: 'clig' off, 'liga' off;
-
-
-/* header/H5 */
 font-family: Poppins;
 font-size: 16px;
 font-style: normal;
 font-weight: 400;
-line-height: 27px; /* 168.75% */
+line-height: 27px;
 }
 .plusButton {
   color: #FFF;
@@ -35,7 +30,7 @@ font-family: Poppins;
 font-size: 25.893px;
 font-style: normal;
 font-weight: 500;
-line-height: 16.054px; /* 62% */
+line-height: 16.054px;
 cursor: pointer;
 }
 .plusButton {
@@ -51,8 +46,9 @@ align-items: center;
 gap: 8.286px;
 flex-shrink: 0;
 }
-.toDoList {
+.toDoList-wrapper {
   display: flex;
+  flex-direction: column;
   width: 629px;
   height: 166px;
   padding: 18px 24px;
@@ -60,36 +56,32 @@ flex-shrink: 0;
   gap: 16px;
   cursor: pointer;
   }
- .toDoList:hover{
+ .toDoList-wrapper:hover{
   background-color: #C8CBD1;
  }
-  .toDoList {
+  .toDoList-wrapper {
     border-radius: 8px;
     border-left: 5px solid var(--gray-300, #C8CBD1);
     background: var(--background-bg-primary, #FFF);
-
-/* l */
 box-shadow: 0px 3px 9px 0px rgba(0, 0, 0, 0.15), 0px 2px 28px 0px rgba(0, 0, 0, 0.12);
   }
  
-.dodajButton {
+.button {
   border-radius: 8px;
 border: 1px solid var(--primary-primary, #FE3756);
 background: var(--primary-primary, #FE3756);
 }
-.dodajButton{
+.button {
   color: #FFF;
   text-align: center;
-  
-  /* button/button */
   font-family: Poppins;
   font-size: 18px;
   font-style: normal;
   font-weight: 500;
-  line-height: 31px; /* 172.222% */
+  line-height: 31px; 
 cursor: pointer;
 }
-.dodajButton {
+.button {
 display: flex;
 
 height: 56px;
@@ -101,4 +93,4 @@ flex: 1 0 0;
 }
 .faqimg {
   rotate: 90deg;
-}
+} 

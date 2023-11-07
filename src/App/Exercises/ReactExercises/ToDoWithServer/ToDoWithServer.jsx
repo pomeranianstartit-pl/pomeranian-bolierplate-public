@@ -1,19 +1,17 @@
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import './style.css';
 import toggleArrow from '../../../Images/toggle-arrow.svg';
 import { ToDoFormularz } from '../ToDoWithServer/ToDoFormularz/ToDoFormularz';
-
-import tickIcon from '../../../Images/tick.svg';
-import pencilIcon from '../../../Images/pencil.svg';
-import trashIcon from '../../../Images/trash.svg';
+import { ToDoItem } from './ToDoItem';
+import { requestHandler } from '../ToDoWithServer/helpers';
 
 export const ToDoWithServer = () => {
   const [data, setData] = useState([]);
+  const [editedItem, setEditedItem] = useState(null);
+  const [formVisible, setFormVisible] = useState(false);
+
   const handleLoadData = () => {
-    fetch('http://localhost:3333/api/todo')
-      .then((response) => {
-        return response.json();
-      })
+    requestHandler('GET')
       .then((data) => {
         setData(data);
       })
@@ -21,12 +19,13 @@ export const ToDoWithServer = () => {
         console.log(err, 'err');
       });
   };
+  const handleForm = () => {
+    setFormVisible(!formVisible);
+  };
 
-  //   console.log(
-  //     obj && obj.noteDetails && obj.noteDetails.author && obj.noteDetails.author
-  //   );
-
-  //   console.log(obj.noteDetails?.author?.length && obj.noteDetails.author);
+  useEffect(() => {
+    handleLoadData();
+  }, []);
 
   return (
     <div>
@@ -38,46 +37,41 @@ export const ToDoWithServer = () => {
         />
         TODO
       </h2>
+      {formVisible && (
+        <ToDoFormularz
+          editedItem={editedItem}
+          setEditedItem={setEditedItem}
+          getData={handleLoadData}
+          handleFormVisibilty={handleForm}
+        />
+      )}
+      {!formVisible && (
+        <>
+          <div>
+            Tu znajdziesz listę swoich zadań{' '}
+            <button onClick={handleForm}>+</button>
+          </div>
+          <ul className="toDoList-wrapper">
+            {data?.map(({ id, title, author, note, doneDate = '', isDone }) => (
+              <ToDoItem
+                id={id}
+                title={title}
+                author={author}
+                note={note}
+                doneDate={doneDate}
+                isDone={isDone}
+                getData={handleLoadData}
+                handleForm={handleForm}
+                setEditedItem={setEditedItem}
+              />
+            ))}
+          </ul>
 
-      <h3>
-        Tu znajdziesz listę swoich zadań{' '}
-        <button className="plusButton">+</button>
-      </h3>
-      <ul className="toDoList">
-        {data?.map((todo) => {
-          return (
-            <li>
-              <div>{todo.title}</div>
-              <div>{todo.author}</div>
-              <div>{todo.note}</div>
-              <div className="Icons">
-                <img
-                  src={tickIcon}
-                  className="tickimg"
-                  alt="Tu powinien być obrazek"
-                />
-                <img
-                  src={pencilIcon}
-                  className="pencilimg"
-                  alt="Tu powinien być obrazek"
-                />
-                <img
-                  src={trashIcon}
-                  className="trashimg"
-                  alt="Tu powinien być obrazek"
-                />
-              </div>
-            </li>
-          );
-        })}
-      </ul>
-
-      <div>----------------------</div>
-
-      <button className="dodajButton" onClick={handleLoadData}>
-        Dodaj
-      </button>
-      <ToDoFormularz />
+          <button onClick={handleForm}>Dodaj</button>
+        </>
+      )}
     </div>
   );
 };
+
+//  <button onClick={handleStopGame}>Stop</button>

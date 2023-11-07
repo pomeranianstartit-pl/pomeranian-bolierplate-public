@@ -1,21 +1,49 @@
 import { useState } from 'react';
+import { requestHandler } from '../../ToDoWithServer/helpers';
 import './toDoFormularzStyles.css';
 import toggleArrow from '../../../../Images/toggle-arrow.svg';
-import { ToDoWithServer } from '../ToDoWithServer';
 
-export const ToDoFormularz = () => {
-  const [data, setData] = useState([]);
+export const ToDoFormularz = ({
+  editedItem,
+  setEditedItem,
+  handleFormVisibility,
+  getData,
+}) => {
+  const isEditMode = Boolean(editedItem);
 
-  const [IsSaveDataClicked, setIsSaveDataClicked] = useState(false);
-  const [IsMovedBackClicked, setIsMovedBackClicked] = useState(false);
+  const [title, setTitle] = useState(isEditMode ? editedItem.title : '');
+  const [author, setAuthor] = useState(isEditMode ? editedItem.author : '');
+  const [note, setNote] = useState(isEditMode ? editedItem.note : '');
+  const [error, setError] = useState(null);
+
   const handleSaveData = () => {
-    setIsSaveDataClicked(true);
-    setIsMovedBackClicked(false);
+    setError(null);
+    requestHandler('POST', null, { title, author, note })
+      .then(() => {
+        getData();
+        handleFormVisibility();
+      })
+      .catch(() => {
+        setError('Błąd dodawania zadania!');
+      });
   };
 
   const handleMoveBack = () => {
-    setIsMovedBackClicked(true);
-    setIsSaveDataClicked(false);
+    handleFormVisibility();
+  };
+
+  const handleEdit = () => {
+    setError(null);
+    requestHandler('PUT, editedItem.id, { title, author, note }').then(() => {
+      getData();
+      handleFormVisibility();
+      setEditedItem(null);
+    });
+  };
+  const handleSubmit = (e) => {
+    e.preventDefault();
+
+    isEditMode ? handleEdit() : handleSaveData();
   };
 
   return (
@@ -29,29 +57,56 @@ export const ToDoFormularz = () => {
         TODO
       </h2>
 
-      <h4>Edycja zadania </h4>
-      <ul className="toDoList">
+      <div>{isEditMode ? 'Edycja zadania' : 'Dodawanie zadania'} </div>
+      <form onSubmit={handleSubmit}>
         <div>
-          <h3>Tytuł</h3>
-          <input className="title" title="Szczepienie kitku" />
-          <h3>Treść</h3>
+          <label htmlFor="title">Tytuł</label>
           <input
-            className="tresc"
-            tresc="Sprawdzić w książeczce zdrowia, kiedy Nala była ostatni raz szczepiona i umówić się z naszym weterynarzem. Dodatkowo pamiętać o ustaleniu drugiej wizyty za rok!!!"
+            className="title"
+            id="title"
+            placeholder="Szczepienie kitku"
+            type="text"
+            name="title"
+            value={title}
+            onChange={(e) => setTitle(e.target.value)}
           />
         </div>
-      </ul>
+        <div>
+          <label htmlFor="author">Autor</label>
 
-      <div>----------------------</div>
+          <input
+            className="autor"
+            id="author"
+            placeholder="Jan"
+            type="text"
+            name="author"
+            value={author}
+            onChange={(e) => setAuthor(e.target.value)}
+          />
+        </div>
+        <div>
+          <label htmlFor="note">Treść</label>
+          <textarea
+            id="note"
+            placeholder="Szczepienie psa"
+            type="text"
+            name="note"
+            value={note}
+            onChange={(e) => setNote(e.target.value)}
+          />
+        </div>
 
-      <button className="saveButton" onClick={handleSaveData}>
-        {' '}
-        ZAPISZ
-      </button>
-      <button className="moveBackButton" onClick={handleMoveBack}>
-        COFNIJ
-      </button>
-      {/* <ToDoWithServer /> */}
+        {/* <div>
+        <input type="checkbox" id="scales" name="scales" checked />
+        <label for="scales">Scales</label>
+      </div> */}
+        <div className="saveButton-wrapper">
+          <button>COFNIJ</button>
+
+          <button type="submit">{isEditMode ? 'Edytuj' : 'Dodaj'}</button>
+        </div>
+      </form>
+      {error && <div>{error}</div>}
     </div>
   );
 };
