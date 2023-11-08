@@ -1,4 +1,4 @@
-import { CalendarIcon } from '../Components/Icons/CalendarIcon';
+import { CookieIcon } from '../Components/Icons/CookieIcon';
 
 import './styles/cookies.css';
 
@@ -18,10 +18,8 @@ export function AppCookies() {
   return (
     <div className="cookies">
       <div className="cookies-left">
-        <CalendarIcon />
-
+        <CookieIcon />
         <h4>Pozwól na pliki cookies</h4>
-
         <p>
           Nasza strona korzysta z ciasteczek, które umożliwiają poprawne
           działanie strony i pomagają nam świadczyć usługi na najwyższym
@@ -34,9 +32,11 @@ export function AppCookies() {
       </div>
 
       <div className="cookies-right">
-        <button onClick={setCookieState}>W porządku</button>
+        <button className="btn-1" onClick={setCookieState}>
+          W porządku
+        </button>
 
-        <button>Dopasuj zgody</button>
+        <button className="btn-2">Dopasuj zgody</button>
       </div>
     </div>
   );
