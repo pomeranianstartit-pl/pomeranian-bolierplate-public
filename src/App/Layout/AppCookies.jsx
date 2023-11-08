@@ -17,7 +17,7 @@ export function AppCookies() {
 
   return (
     <div className="cookies">
-      <div>
+      <div className="cookies-left">
         <CookieIcon />
         <h4>Pozwól na pliki cookies</h4>
         <p>
