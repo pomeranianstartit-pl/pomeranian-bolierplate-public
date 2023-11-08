@@ -61,6 +61,12 @@ const StringMethods = () => {
     return `Is valid email: ${str}: ${result}`;
   }
 
+  function checkPalindrome(str){
+
+    const result = str=== str.split('').reverse().join('');
+    return `${str} is palindrome: ${result}`
+  }
+
   return (
     <div>
       <h2>String methods cardio</h2>
@@ -71,6 +77,7 @@ const StringMethods = () => {
         <li>{sliceFromIndex('Hello world!', 5)}</li>
 
         <li>{checkValidEmail('test@test.com')}</li>
+        <li>{checkPalindrome('anna')}</li>
       </ol>
     </div>
   );
