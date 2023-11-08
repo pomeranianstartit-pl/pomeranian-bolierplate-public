@@ -1,0 +1,91 @@
+/* toDoFormularz */
+/* h3 {
+color: var(--text-text-primary, #222);
+font-family: Poppins;
+font-size: 16px;
+font-style: normal;
+font-weight: 700;
+line-height: 27px; 
+}
+.input title {
+display: flex;
+height: 32px;
+width: 488px;
+padding: 13px 16px;
+align-items: center;
+gap: 10px;
+align-self: stretch;
+border-radius: 5px;
+border: 1px solid var(--grey-300, #C8CBD1);
+background: #FFF;
+}
+.input tresc {
+display: flex;
+height: 120px;
+padding: 13px 16px;
+align-items: center;
+gap: 10px;
+align-self: stretch;
+border-radius: 5px;
+border: 1px solid var(--grey-300, #C8CBD1);
+background: #FFF;
+}
+.title {
+    display: flex;
+    height: 48px;
+    padding: 13px 16px;
+    align-items: center;
+    gap: 10px;
+    align-self: stretch;   
+}
+.saveButton-wrapper {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+}
+.saveButton {
+height: 56px;
+width: 163px;
+padding: 20px 36px;
+justify-content: center;
+align-items: center;
+gap: 16px;
+flex: 1 0 0;
+}
+.saveButton {
+    color: #FFF;
+text-align: center;
+font-family: Poppins;
+font-size: 18px;
+font-style: normal;
+font-weight: 500;
+line-height: 31px;
+}
+.saveButton {
+    border-radius: 8px;
+border: 1px solid var(--primary-primary, #FE3756);
+background: var(--primary-primary, #FE3756);
+}
+.moveBackButton {
+    height: 56px;
+    padding: 20px 36px;
+    justify-content: center;
+    align-items: center;
+    gap: 16px;
+    flex: 1 0 0; 
+}
+.moveBackButton {
+    border-radius: 8px;
+    border: 1px solid var(--secondary-secondary, #23213D);
+    background: var(--secondary-secondary, #23213D);   
+}
+.moveBackButton {
+    color: #FFF;
+text-align: center;
+font-family: Poppins;
+font-size: 18px;
+font-style: normal;
+font-weight: 500;
+line-height: 31px; 
+} */

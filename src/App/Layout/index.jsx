@@ -4,7 +4,7 @@ import { Outlet } from 'react-router-dom';
 import { AppHeader } from './AppHeader';
 import { AppFooter } from './AppFooter';
 import { ErrorBoundary } from './ErrorBoundary';
-
+import { AppCookies } from './AppCookies';
 import './styles/layout.css';
 import { AppAside } from './AppAside';
 
@@ -22,6 +22,7 @@ export const Layout = ({ withSidebar }) => {
           <Outlet />
         </main>
         <AppFooter />
+        <AppCookies />
       </div>
     </ErrorBoundary>
   );
