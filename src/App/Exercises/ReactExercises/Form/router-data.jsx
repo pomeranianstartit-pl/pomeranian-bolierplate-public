@@ -1,10 +1,10 @@
 import { Form } from './index.jsx';
 
 export const FormMetaData = {
-  path: 'Form',
-  date: '19-12-2023',
-  linkLabel: 'Formularz',
-  blockNo: 2,
+  path: 'basic-forms',
+  date: '08-11-2023',
+  linkLabel: 'Elementy podstawowe formularzy',
+  blockNo: 42,
   element: <Form />,
-  tags: ['react', 'useState', 'useChange'],
+  tags: ['forms', 'form', 'formularz', 'input', 'checkbox', 'textarea'],
 };
