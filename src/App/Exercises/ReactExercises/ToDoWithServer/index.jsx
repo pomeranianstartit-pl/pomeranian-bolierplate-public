@@ -7,9 +7,8 @@ import { EditIcon } from './IconsToDo/EditIcon ';
 import { TrashIcon } from './IconsToDo/TrashIcon';
 
 export const ToDoServer = () => {
-
   const [data, setData] = useState([]);
-  
+
   const handleLoadData = () => {
     fetch('http://localhost:3333/api/todo')
       .then((response) => {
@@ -64,11 +63,15 @@ export const ToDoServer = () => {
                         <div>{todo.note}</div>
                       </div>
                       <div className="iconstodo">
-                        <CheckIcon />
-                        <div>
+                        <button>
+                          <CheckIcon />
+                        </button>
+                        <button>
                           <EditIcon />
-                        </div>
-                        <TrashIcon />
+                        </button>
+                        <button>
+                          <TrashIcon />
+                        </button>
                       </div>
                     </div>
                   </li>

@@ -22,11 +22,11 @@ export const requestHandler = (selectedMethod, id, body) => {
       resolve(jsonResponse);
     }
 
-    if (response.message === 'Server error') {
+    if (response && jsonResponse.message === 'Server error') {
       reject(jsonResponse);
     }
 
-    if (response.status !== 200 && response.message) {
+    if (response.status !== 200 && jsonResponse.message) {
       reject(jsonResponse);
     }
   });

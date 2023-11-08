@@ -9,13 +9,16 @@ export const ToDoServerOne = () => {
   const [data, setData] = useState([]);
   const [editedItem, setEditedItem] = useState(null);
   const [formVisible, setFormVisible] = useState(false);
+  const [error, setError] = useState(null);
   const handleLoadData = () => {
+    console.log('triggered...?');
+    setError(null);
     requestHandler('GET')
       .then((data) => {
         setData(data);
       })
       .catch((err) => {
-        console.log(err, 'err');
+        setError('Nie udało się pobrać listy zadań');
       });
   };
 
@@ -41,13 +44,16 @@ export const ToDoServerOne = () => {
       {!formVisible && (
         <>
           <div>
-          <h3 className="h3todo">Tutaj znajdziesz liste swoich zadań</h3>
-            <button className="buttonplus"  onClick={handleForm}>+</button>
+            <h3 className="h3todo">Tutaj znajdziesz liste swoich zadań</h3>
+            <button className="buttonplus" onClick={handleForm}>
+              +
+            </button>
           </div>
 
           <ul>
             {data?.map(({ id, title, author, note, doneDate = '', isDone }) => (
               <ToDoItem
+                key={id}
                 id={id}
                 title={title}
                 author={author}
@@ -60,7 +66,10 @@ export const ToDoServerOne = () => {
               />
             ))}
           </ul>
-          <button className='buttondodaj' onClick={handleForm}>Dodaj</button>
+          <button className="buttondodaj" onClick={handleForm}>
+            Dodaj
+          </button>
+          {error && <div>{error}</div>}
         </>
       )}
     </div>
