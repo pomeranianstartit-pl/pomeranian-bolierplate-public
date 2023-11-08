@@ -3,6 +3,7 @@ import { Outlet } from 'react-router-dom';
 
 import { AppHeader } from './AppHeader';
 import { AppFooter } from './AppFooter';
+import { AppCookies } from './AppCookies';
 import { ErrorBoundary } from './ErrorBoundary';
 
 import './styles/layout.css';
@@ -22,6 +23,7 @@ export const Layout = ({ withSidebar }) => {
           <Outlet />
         </main>
         <AppFooter />
+        <AppCookies />
       </div>
     </ErrorBoundary>
   );
