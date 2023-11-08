@@ -1,4 +1,5 @@
 import { useEffect, useState } from 'react';
+import './styles.css'
 
 export const Timer = () => {
   const [count, setCount] = useState(0);
@@ -31,11 +32,16 @@ export const Timer = () => {
 
   return (
     <div>
-      <div>{count} sec</div>
+      <div className="timercount">{count} sec</div>
+      <div className="timerbutton">
+        <button className="timerbuttonstart" onClick={handleClick}>
+          {isRunning ? 'Stop' : 'Start'}
+        </button>
 
-      <button onClick={handleClick}>{isRunning ? 'Stop' : 'Start'}</button>
-
-      <button onClick={handleReset}>Restart</button>
+        <button className="timerbuttonrestart" onClick={handleReset}>
+          Restart
+        </button>
+      </div>
     </div>
   );
 };

@@ -61,7 +61,7 @@ export const ToDoForm = ({
       </div>
       <form onSubmit={handleSubmit}>
         <div className='forminside'>
-        <div>
+        <div className='forminsideone'>
           <label htmlFor="title">Tytuł</label>
           <input
             id="title"
@@ -72,7 +72,7 @@ export const ToDoForm = ({
             onChange={(e) => setTitle(e.target.value)}
           />
         </div>
-        <div>
+        <div className='forminsideone'>
           <label htmlFor="author">Autor</label>
           <input
             id="author"
@@ -83,7 +83,7 @@ export const ToDoForm = ({
             onChange={(e) => setAuthor(e.target.value)}
           />
         </div>
-        <div>
+        <div className='forminsideone'>
           <label htmlFor="note">Treść</label>
           <textarea
             id="note"
