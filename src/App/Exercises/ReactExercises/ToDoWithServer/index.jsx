@@ -29,6 +29,8 @@ export const ToDoWithServer = () => {
       });
   };
 
+  const handleSubmitNewTodo = () => {};
+
   //   console.log(
   //     obj && obj.noteDetails && obj.noteDetails.author && obj.noteDetails.author
   //   );
@@ -51,7 +53,7 @@ export const ToDoWithServer = () => {
             </div>
             <div className="new-todo-form">
               <p>Autor</p>
-              <input title="autor" type="text" placeholder="Wojtek"></input>
+              <input type="text" placeholder="Wojtek" />
             </div>
             <div className="new-todo-form">
               <p>Treść</p>
