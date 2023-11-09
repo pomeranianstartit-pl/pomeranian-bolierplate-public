@@ -1,0 +1,6 @@
+input[aria-invalid='true'] {
+  border: 5px solid red;
+}
+select[aria-invalid='true'] {
+  border: 5px solid red;
+}

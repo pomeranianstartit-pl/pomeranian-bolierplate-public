@@ -6,6 +6,9 @@ import { MemoMetaData } from './Memo/router-data';
 import { ToDoServerMetaData } from './ToDoWithServer/router-data';
 import { ToDoServerOneMetaData } from './ToDoServerOne/router-data';
 import { FormMetaData } from './Form/router-data';
+import { FormHookMetaData } from './FormBasicHook/router-data';
+import { FormNewMetaData } from './FormNew/router-data';
+
 
 export const blockRouterMetaData = [
   SubRouteExampleMetaData,
@@ -15,5 +18,7 @@ export const blockRouterMetaData = [
   ToDoServerMetaData,
   ToDoServerOneMetaData,
   FormMetaData,
+  FormHookMetaData,
+  FormNewMetaData
 ];
 export const blockRouterData = getParsedRouterDataList(blockRouterMetaData);
