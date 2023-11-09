@@ -62,9 +62,8 @@ const StringMethods = () => {
   }
 
   function checkPalindrome(str){
-
-    const result = str=== str.split('').reverse().join('');
-    return `${str} is palindrome: ${result}`
+    const result = str === str.split('').reverse().join('');
+    return `${str} is palindrome: ${result}`;
   }
 
   return (
