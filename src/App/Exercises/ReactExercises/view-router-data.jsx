@@ -7,6 +7,7 @@ import { hitTheMoleMetaData } from './HitTheMole/router-data';
 import { MemoGameMetaData } from './Memo/router-data';
 import { ToDoWithServerMetaData } from './ToDoWithServer/router-data';
 import { BasicFormsMetaData } from './BasicForms/router-data';
+import { ReactHookFormsMetaData } from './BasicReactHookForms/router-data';
 
 export const blockRouterMetaData = [
   SubRouteExampleMetaData,
@@ -15,5 +16,6 @@ export const blockRouterMetaData = [
   MemoGameMetaData,
   ToDoWithServerMetaData,
   BasicFormsMetaData,
+  ReactHookFormsMetaData,
 ];
 export const blockRouterData = getParsedRouterDataList(blockRouterMetaData);
