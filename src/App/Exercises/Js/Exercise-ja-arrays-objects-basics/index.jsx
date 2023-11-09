@@ -1,4 +1,5 @@
 import { LoopsExercise } from './Loops';
+import { ObjectsBasics } from './ObjectsBasics';
 import './styles.css';
 
 
@@ -102,6 +103,7 @@ const arry8 = ["rayian", "wizz", "lot"].indexOf("lot"); // index 2 or
     </div>
     Import od Loops component:
     <LoopsExercise/>
+    <ObjectsBasics/>
     </div>
   );
 }

@@ -22,7 +22,7 @@ export function LoopsExercise() {
     
          return(
          <div className="container--loops-exercise">
-    
+    cos-loops
          </div>
          );
     }
