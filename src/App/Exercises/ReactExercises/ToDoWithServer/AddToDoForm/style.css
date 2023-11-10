@@ -1,0 +1,46 @@
+.title{
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 27px;
+}
+
+input{
+    font-size: 18px;
+    font-weight: 400;
+    /* line-height: 32px; */
+    color: #999;
+    border-radius: 5px;
+    border: 1px solid #999;
+    padding: 13px 16px;
+    /* max-width: 488px; */
+    /* align-self: stretch; */
+    width:fit-content;
+    text-wrap: wrap;
+/* text-wrap: wrap; */
+}
+.buttons{
+    display: flex;
+    gap: 29px;
+    align-items: flex-end;
+    padding-top: 37px;
+}
+.buttons button{
+    width: 163px;
+    height: 56px;
+    font-size: 18px;
+    font-weight: 500;
+    border-radius: 8px;
+}
+.button-cofnij{
+background-color:#23213D;
+color: #FFFFFF;
+}
+.button-dodaj{
+    background-color:#FE3756;
+   color: #FFFFFF
+    }
+.content-p{
+    font-size: 16px;
+    font-weight: 400;
+    padding-bottom: 47px;
+}

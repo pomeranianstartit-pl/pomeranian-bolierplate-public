@@ -1,6 +1,7 @@
 import { useEffect, useState } from 'react';
 
 import './style.css';
+import { AddNewToDoForm } from './AddToDoForm/AddToDoForm';
 
 export const ToDoWithServer = () => {
   const [data, setData] = useState([]);
@@ -19,21 +20,52 @@ export const ToDoWithServer = () => {
   useEffect(() => {
     getTodos();
   }, []);
+
+  const [dsiplayAddNewToDoForm, setDsiplayAddNewToDoForm] = useState(false);
+  const [newNoteData, setnewNoteData] = useState([]);
+
+  const handleAddNewToDoForm = () => {
+    setDsiplayAddNewToDoForm(!dsiplayAddNewToDoForm);
+  };
+
+  const changeProperty = (event) => {
+    setnewNoteData((prevObj) => [
+      ...prevObj,
+      { [event.target.name]: event.target.value },
+    ]);
+  };
   return (
     <div>
-      <h1>ToDo with server</h1>
+      <h1>ToDo</h1>
+
+      {dsiplayAddNewToDoForm && (
+        <AddNewToDoForm changeProperty={changeProperty} />
+      )}
+      <p>
+        Tutaj znajdziesz liste swoich zadań{' '}
+        <button onClick={handleAddNewToDoForm}>+</button>
+      </p>
       <div>
-        <div>Lista todos...</div>
-        {data.length > 0 &&
-          data.map((todo) => {
-            return (
-              <li key={todo.id}>
-                <div>{todo.title}</div>
-                <div>{todo.author}</div>
-                <div>{todo.note}</div>
-              </li>
-            );
-          })}
+        <div className="todo-gap">
+          {data.length > 0 &&
+            data.map((todo) => {
+              return (
+                <div className="singel-todo-boarder">
+                  <li key={todo.id} className="todo-items">
+                    <div className="todo-title">{todo.title}</div>
+                    <div className="todo-author">{todo.author}</div>
+                    <div className="todo-note">{todo.note}</div>
+                  </li>
+                  <div>ikonka</div>
+                </div>
+              );
+            })}
+          <div className="buttons">
+            <button onClick={handleAddNewToDoForm} className="button-dodaj">
+              DODAJ
+            </button>
+          </div>
+        </div>
       </div>
       {error && <div>{error}</div>}
     </div>
