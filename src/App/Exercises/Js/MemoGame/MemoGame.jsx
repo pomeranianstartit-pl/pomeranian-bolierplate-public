@@ -6,15 +6,15 @@ import { Tile } from './Components/Tile/Tile.jsx';
 import { getAlphabet, shuffle } from './Utilities/index.jsx';
 import './styles.css';
 
-const ELEMENTS = [8, 16, 20];
+const ELEMENTS = [4, 16, 20];
 const characters = getAlphabet(10);
 
 export const MemoGame = () => {
   const [noOfElements, setNoOfElements] = useState(null);
+  const [tiles, setTiles] = useState([]);
   const [pairResult, setPairResult] = useState(0);
   const [time, setTime] = useState(0);
   const [noOfShots, setNoOfShots] = useState(0);
-  const [tiles, setTiles] = useState([]);
   const [firstClick, setFirstClick] = useState();
   const [secondClick, setSecondClick] = useState();
   const [gameStarted, setGameStarted] = useState(false);
@@ -52,13 +52,9 @@ export const MemoGame = () => {
     setGameStarted(true);
     setGameFinished(false);
     setTilesGuessed(0);
-
-    if (noOfElements !== null) {
-      setTiles(getInitialTiles(noOfElements));
-      setNoOfShots(0);
-      setTime(0);
-    } else {
-    }
+    setTiles(getInitialTiles(noOfElements));
+    setNoOfShots(0);
+    setTime(0);
   }
 
   function handlePass() {
@@ -117,7 +113,9 @@ export const MemoGame = () => {
     tiles
       .filter((tile) => tile.variant === 'incorrect')
       .forEach((tile) => {
-        const timeoutId = setTimeout(handleResetIncorrect, 500, tile.index);
+        const timeoutId = setTimeout(() => {
+          handleResetIncorrect(tile.index);
+        }, 500);
 
         timeoutIdArray.push(timeoutId);
       });
@@ -168,7 +166,6 @@ export const MemoGame = () => {
       setTimeResult(time);
       setTime(0);
       setPairResult(noOfElements / 2);
-
       setNoOfElements(0);
     }
   }, [gameFinished]);
@@ -244,7 +241,7 @@ export const MemoGame = () => {
             {ELEMENTS.map((element) => (
               <Button
                 key={element}
-                value={element + ' Elementów'}
+                value={element}
                 onClick={() => {
                   setNoOfElements(element);
                 }}

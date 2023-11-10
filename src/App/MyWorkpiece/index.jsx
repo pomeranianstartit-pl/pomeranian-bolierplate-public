@@ -4,12 +4,18 @@ export const MyWorkplace = () => {
   const [text, setText] = useState('makarena');
   const [inputText, setInputText] = useState('');
   const [valInput, setValInput] = useState([]);
+  const [timeoutId, setTimeoutId] = useState();
 
   const clickHandler = () => {
     setText(inputText);
   };
 
-
+  const handleStart = () => {
+    const timeout = setTimeout(() => {
+      setText('Upłynęła sekunda');
+    }, 1000);
+    setTimeoutId(timeout);
+  };
 
   // const myTimer = () => {
   //   setTimeout(() => {
@@ -33,6 +39,7 @@ export const MyWorkplace = () => {
       <input
         type="text"
         placeholder="wpisz wartość"
+        autoFocus="True"
         onChange={(event) => setInputText(event.target.value)}
         value={inputText}
       />
