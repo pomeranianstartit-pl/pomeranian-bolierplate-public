@@ -1,5 +1,5 @@
 import './styles.css';
-export function Trash({ className = '' }) {
+export function Trash({ props }) {
   return (
     <svg
       width="27"
