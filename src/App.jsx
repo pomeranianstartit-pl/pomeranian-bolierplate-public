@@ -20,6 +20,7 @@ import { Blog } from './App/Blog/Blog';
 import { FAQ } from './App/FAQ/faq';
 import { TechStack } from './App/Techstack';
 import { MaterialUI } from './App/MaterialUI/index_1';
+import { MyWorkplace } from './App/MyWorkpiece';
 
 
 export function App() {
@@ -38,6 +39,7 @@ export function App() {
           <Route path="faq/*" element={<FAQ />} />
           <Route path="techstack/*" element={<TechStack />} />
           <Route path="material-ui/*" element={<MaterialUI />} />
+          <Route path="my-workplace/*" element={<MyWorkplace />} />
           <Route path="*" element={<NotFound />} />
         </Route>
       </Routes>

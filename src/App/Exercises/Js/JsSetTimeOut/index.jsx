@@ -2,7 +2,7 @@ import { useState } from 'react';
 
 export const JsSetTimeout = () => {
   const [text, setText] = useState('jakiś tekst');
-  const [timeoutId, setTimeoutId] = useState('jakiś tekst');
+  const [timeoutId, setTimeoutId] = useState();
 
   const handleStart = () => {
     const timeout = setTimeout(() => {
