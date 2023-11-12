@@ -1,12 +1,18 @@
 import { useEffect, useState } from 'react';
 import { SingleTask } from './SingleTask';
 import { NoTasks } from './NoTasks';
+import { NewTaskForm } from './NewTaskForm';
+import { PlusSymbol } from '../../../Components/ToDoComponents/Plus';
 
-const ADDRESS = 'http://localhost:3333/api/todo/';
+export const ADDRESS = 'http://localhost:3333/api/todo/';
 
 export const ToDoWithServer = () => {
   const [data, setData] = useState([]);
   const [error, setError] = useState(null);
+  const [deleteErrorId, setDeleteErrorid] = useState(null);
+  const [markAsDoneErrorId, markAsDoneErrorid] = useState(null);
+  const [isFormOn, setIsFormOn] = useState(false);
+
   const [loading, setLoading] = useState(false);
 
   const getTodos = async () => {
@@ -42,13 +48,49 @@ export const ToDoWithServer = () => {
       }
 
       setData((prevData) => prevData.filter((task) => task.id !== id));
-
       console.log(id, '    item deleted');
     } catch (error) {
-      setError('Error');
+      setDeleteErrorid(id);
       console.log(error, '    set error');
     }
   };
+
+  const markAsDone = async (id) => {
+    try {
+      const request = await fetch(`${ADDRESS}${id}/markAsDone`, {
+        method: 'PUT',
+      });
+      if (!request.ok) {
+        throw new Error('Something went wrong!');
+      }
+      const data = await request.json();
+
+      setData((prevData) => {
+        // to można sprytniej dużo prościej
+        return prevData.map((task) => {
+          if (task.id === id) {
+            return {
+              ...task,
+              isDone: task.id === id ? data.isDone : false,
+              doneDate: data.doneDate,
+            };
+          } else return task;
+        });
+      });
+      console.log(id, '    item deleted');
+    } catch (error) {
+      markAsDoneErrorid(id);
+      console.log(error, '    set error');
+    }
+  };
+
+  useEffect(() => {
+    console.log(data, 'data w useEffect');
+  });
+
+  useEffect(() => {
+    console.log(isFormOn, 'isFormOn');
+  }, [isFormOn]);
 
   useEffect(() => {
     getTodos();
@@ -69,29 +111,51 @@ export const ToDoWithServer = () => {
 
   return (
     <div>
-      <h3 className="task-heading">Tu znajdziesz listę zadań do wykonania.</h3>
-      <div>
-        {data.length > 0 &&
-          data.map((todo) => {
-            return (
-              <SingleTask
-                key={todo.id}
-                task={todo}
-                binFunc={() => {
-                  deleteTask(todo.id);
-                }}
+      {isFormOn ? (
+        <NewTaskForm />
+      ) : (
+        <div>
+          <div class="heading-plus">
+            <p className="task-heading">
+              Tu znajdziesz listę zadań do wykonania.{' '}
+            </p>
+            <button
+              className="button-no-style button-plus"
+              onClick={() => {
+                setIsFormOn((prevIsFromOn) => !prevIsFromOn);
+              }}
+            >
+              <PlusSymbol />
+            </button>
+          </div>
+          <div>
+            {data?.length > 0 &&
+              data.map((todo) => {
+                return (
+                  <SingleTask
+                    key={todo.id}
+                    del_error={deleteErrorId}
+                    task={todo}
+                    binFunc={() => {
+                      deleteTask(todo.id);
+                    }}
+                    tickFunc={() => {
+                      markAsDone(todo.id);
+                    }}
+                  />
+                );
+              })}
+          </div>
+          <div className="main-no-task">
+            {data?.length === 0 && error == null && (
+              <NoTasks
+                message="Brawo! Nie masz aktualnie żadnych zadań do zrealizowania."
+                func={getTodos}
               />
-            );
-          })}
-      </div>
-      <div className="main-no-task">
-        {data.length === 0 && error == null && (
-          <NoTasks
-            message="Brawo! Nie masz aktualnie żadnych zadań do zrealizowania."
-            func={getTodos}
-          />
-        )}
-      </div>
+            )}
+          </div>
+        </div>
+      )}
     </div>
   );
 };

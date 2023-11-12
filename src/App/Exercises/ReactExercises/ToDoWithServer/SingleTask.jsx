@@ -1,9 +1,9 @@
-import { PropaneSharp } from '@mui/icons-material';
+// import { PropaneSharp } from '@mui/icons-material';
 import { BinSymbol } from '../../../Components/ToDoComponents/Bin';
 import { TickSymbol } from '../../../Components/ToDoComponents/Tick';
 import './styles.css';
 
-export function SingleTask({ task, binFunc }) {
+export function SingleTask({ task, binFunc, tickFunc, del_error }) {
   const dataStyler = (created) => {
     let date = created.slice(0, 10);
     const dateArray = date.split('-').reverse();
@@ -11,7 +11,7 @@ export function SingleTask({ task, binFunc }) {
     const newData = `${date}, ${created.slice(14, 19)}`;
     return newData;
   };
-
+  console.log(task, 'task data styler');
   if (!task.isDone) {
     return (
       <div key={task.id} className="single-task-block undone">
@@ -23,15 +23,30 @@ export function SingleTask({ task, binFunc }) {
           </div>
           <div className="task-note">{task.note}</div>
         </div>
-        <div className="task-buttons-block">
-          <div className="to-do-tick">
-            <TickSymbol />
+        <div className="right-block">
+          <div className="task-buttons-block">
+            <div className="to-do-tick">
+              {del_error !== task.id && (
+                <button onClick={tickFunc} className="button-no-style">
+                  <TickSymbol />
+                </button>
+              )}
+            </div>
+            <div className="to-do-tick">
+              {del_error !== task.id ? (
+                <button onClick={binFunc} className="button-no-style">
+                  <BinSymbol />
+                </button>
+              ) : (
+                <button className="button-no-style failed">
+                  <BinSymbol />
+                </button>
+              )}
+            </div>
           </div>
-          <div className="to-do-tick">
-            <button onClick={binFunc} className="button-no-style">
-              <BinSymbol />
-            </button>
-          </div>
+          {del_error === task.id && (
+            <p className="del-failure">nie udało się usunąć</p>
+          )}
         </div>
       </div>
     );
@@ -48,10 +63,14 @@ export function SingleTask({ task, binFunc }) {
         </div>
         <div className="task-buttons-block-done">
           <div className="to-do-tick">
-            <BinSymbol />
+            <button onClick={binFunc} className="button-no-style">
+              <BinSymbol />
+            </button>
           </div>
           <div className="to-do-tick">
-            <TickSymbol />
+            <button onClick={tickFunc} className="button-no-style">
+              <TickSymbol />
+            </button>
             <p className="task-info">{dataStyler(task.doneDate)}</p>
           </div>
         </div>

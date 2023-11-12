@@ -1,3 +1,17 @@
+.heading-plus {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 35px;
+  max-width: 45vw;
+  min-width: 530px;
+}
+
+.button-plus {
+  margin-right: 12px;
+  cursor: pointer;
+}
+
+
 .task-heading {
   color: #222;
   font-feature-settings: 'clig' off, 'liga' off;
@@ -65,9 +79,9 @@
 }
 
 .task-buttons-block {
-  margin: 13px 43.5px 0px 0px;
+  margin: 13px 0px 0px 0px;
   display: flex;
-  column-gap: 12px;
+  justify-content: center;
   height: fit-content;
 }
 
@@ -86,6 +100,11 @@
 }
 
 div.to-do-tick:hover svg.bin {
+  stroke: #03032e;
+  cursor: pointer;
+}
+
+div.to-do-tick:hover svg.tick {
   stroke: #03032e;
   cursor: pointer;
 }
@@ -141,6 +160,11 @@ div.to-do-tick {
   margin-top: 32px;
 }
 
+.no-task-button:hover {
+  background-color: rgb(254, 55, 86, 0.75);
+  border-color: rgba(254, 55, 86, 1);
+}
+
 div .no-tasks {
   color: #000;
   display: flex;
@@ -160,4 +184,18 @@ div .no-tasks {
 .button-no-style {
   background: none;
   border: 0px;
+}
+
+.button-no-style.failed svg {
+  background: none;
+  border: 0px;
+  stroke: rgba(225, 43, 27, 1);
+}
+
+.del-failure {
+  color: #e12b1b;
+  text-align: center;
+}
+.right-block {
+  margin-right: 43.5px;
 }
