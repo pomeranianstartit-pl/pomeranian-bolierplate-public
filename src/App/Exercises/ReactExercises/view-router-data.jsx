@@ -8,7 +8,7 @@ import { ToDoServerOneMetaData } from './ToDoServerOne/router-data';
 import { FormMetaData } from './Form/router-data';
 import { FormHookMetaData } from './FormBasicHook/router-data';
 import { FormNewMetaData } from './FormNew/router-data';
-
+import { FirebaseMetaData } from './ReactFirebase/router-data';
 
 export const blockRouterMetaData = [
   SubRouteExampleMetaData,
@@ -19,6 +19,7 @@ export const blockRouterMetaData = [
   ToDoServerOneMetaData,
   FormMetaData,
   FormHookMetaData,
-  FormNewMetaData
+  FormNewMetaData,
+  FirebaseMetaData,
 ];
 export const blockRouterData = getParsedRouterDataList(blockRouterMetaData);
