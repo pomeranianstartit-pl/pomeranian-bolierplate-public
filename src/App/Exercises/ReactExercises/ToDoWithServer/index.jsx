@@ -1,16 +1,15 @@
 import { useEffect, useState } from 'react';
 import { SingleTask } from './SingleTask';
 import { NoTasks } from './NoTasks';
-import { NewTaskForm } from './NewTaskForm';
+import { TaskForm } from './TaskForm';
 import { PlusSymbol } from '../../../Components/ToDoComponents/Plus';
-
-export const ADDRESS = 'http://localhost:3333/api/todo/';
+import { ADDRESS } from './constants';
 
 export const ToDoWithServer = () => {
   const [data, setData] = useState([]);
   const [error, setError] = useState(null);
   const [deleteErrorId, setDeleteErrorid] = useState(null);
-  const [markAsDoneErrorId, markAsDoneErrorid] = useState(null);
+  const [markAsDoneErrorId, setMarkAsDoneErrorid] = useState(null);
   const [isFormOn, setIsFormOn] = useState(false);
 
   const [loading, setLoading] = useState(false);
@@ -40,7 +39,7 @@ export const ToDoWithServer = () => {
 
   const deleteTask = async (id) => {
     try {
-      const request = await fetch(`${ADDRESS}${id}`, {
+      const request = await fetch(`${ADDRESS}${id}a`, {
         method: 'DELETE',
       });
       if (!request.ok) {
@@ -57,7 +56,7 @@ export const ToDoWithServer = () => {
 
   const markAsDone = async (id) => {
     try {
-      const request = await fetch(`${ADDRESS}${id}/markAsDone`, {
+      const request = await fetch(`${ADDRESS}${id}/markAsDonek`, {
         method: 'PUT',
       });
       if (!request.ok) {
@@ -77,15 +76,15 @@ export const ToDoWithServer = () => {
           } else return task;
         });
       });
-      console.log(id, '    item deleted');
     } catch (error) {
-      markAsDoneErrorid(id);
-      console.log(error, '    set error');
+      setMarkAsDoneErrorid(id);
+      console.log(id, '    set error');
+      console.log(markAsDoneErrorId, 'markas done rror id')
     }
   };
 
   useEffect(() => {
-    console.log(data, 'data w useEffect');
+    console.log(markAsDoneErrorId, 'mark as Done erro id');
   });
 
   useEffect(() => {
@@ -112,7 +111,7 @@ export const ToDoWithServer = () => {
   return (
     <div>
       {isFormOn ? (
-        <NewTaskForm />
+        <TaskForm />
       ) : (
         <div>
           <div class="heading-plus">
@@ -135,6 +134,7 @@ export const ToDoWithServer = () => {
                   <SingleTask
                     key={todo.id}
                     del_error={deleteErrorId}
+                    done_error={markAsDoneErrorId}
                     task={todo}
                     binFunc={() => {
                       deleteTask(todo.id);
