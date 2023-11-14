@@ -5,12 +5,12 @@ import { initializeApp } from 'firebase/app';
 
 // Your web app's Firebase configuration
 const firebaseConfig = {
-  apiKey: 'AIzaSyBHt_JQuoShed5fEk-i46G9NtIwizmCiSw',
+  apiKey: process.env.REACT_APP_FIREBASE_API_KEY,
   authDomain: 'pomeranian-a8e8d.firebaseapp.com',
   projectId: 'pomeranian-a8e8d',
   storageBucket: 'pomeranian-a8e8d.appspot.com',
-  messagingSenderId: '48734068254',
-  appId: '1:48734068254:web:2d73cb14f0765dd0ca580f',
+  messagingSenderId: process.env.REACT_APP_FIREBASE_MESSAGING_SENDER_ID,
+  appId: process.env.REACT_APP_FIREBASE_APP_ID,
 };
 
 // Initialize Firebase
