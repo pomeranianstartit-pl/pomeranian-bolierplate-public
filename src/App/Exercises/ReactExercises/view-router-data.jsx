@@ -9,6 +9,7 @@ import { ToDoWithServerMetaData } from './ToDoWithServer/router-data';
 import { BasicFormsMetaData } from './BasicForms/router-data';
 import { ReactHookFormsMetaData } from './BasicReactHookForms/router-data';
 import { OrderFormMetaData } from './OrderForm/router-data';
+import { ReactFirebaseMetaData } from './ReactFirebase/router-data';
 
 export const blockRouterMetaData = [
   SubRouteExampleMetaData,
@@ -19,5 +20,6 @@ export const blockRouterMetaData = [
   BasicFormsMetaData,
   ReactHookFormsMetaData,
   OrderFormMetaData,
+  ReactFirebaseMetaData,
 ];
 export const blockRouterData = getParsedRouterDataList(blockRouterMetaData);
