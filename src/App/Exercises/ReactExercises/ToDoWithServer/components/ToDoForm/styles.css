@@ -1,0 +1,73 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+label {
+    color: var(--text-text-primary, #222);
+    font-family: Poppins;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 27px;
+}
+.todoform {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    width: 488px;
+    height: 371px;
+}
+
+.todoemptylist {
+    display: flex;
+    flex-direction: column;
+}
+
+input#title, 
+input#author, 
+textarea#note {
+    color: var(--gray-500, #999);
+    font-family: Poppins;
+    padding: 13px 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 32px;
+    border-radius: 5px;
+    border: 1px solid var(--grey-300, #C8CBD1);
+    background: #FFF;
+}
+
+textarea#note {
+    height: 120px;
+}
+
+input#title {
+    /* color: var(--gray-500, #999);
+    font-family: Poppins;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 32px; */
+}
+
+.todo5a {
+    display: flex;
+    align-items: flex-start;
+    gap: 29px;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: flex-end;
+}
+ .todo5a button {
+    border-radius: 8px;
+    color: #FFF;
+    height: 56px;
+    padding: 20px 36px;
+    display: flex;
+    align-items: flex-start;
+    margin-bottom: 5px;
+ }
+ .todo5a .todoprim {
+    border: 1px solid var(--primary-primary, #FE3756);
+    background: var(--primary-primary, #FE3756);
+ }
+.todo5a .todosec {
+    background: #23213D;
+ }
