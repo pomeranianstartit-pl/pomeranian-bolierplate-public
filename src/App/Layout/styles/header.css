@@ -66,3 +66,14 @@ header .logo {
 img {
   position: relative;
 }
+
+.buttonarrow {
+  background-color: #fe3756;
+  border-radius: 4.143px;
+  border: 0.518px solid var(--primary-primary, #fe3756);
+  height: 40px;
+  width: 40px;
+  align-items: center;
+  justify-content: center;
+  margin-left: auto;
+}
