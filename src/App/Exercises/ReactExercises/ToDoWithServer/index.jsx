@@ -1,46 +1,72 @@
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
+
+import { requestHandler } from './helpers';
+
+import { ToDoForm } from './components/ToDoForm';
+import { ToDoItem } from './components/ToDoItem';
 
 export const Exercise = () => {
   const [data, setData] = useState([]);
+  const [editedItem, setEditedItem] = useState(null);
+  const [formVisible, setFormVisible] = useState(false);
+  const [error, setError] = useState(null);
   const handleLoadData = () => {
-    fetch('http://localhost:3333/api/todo')
-      .then((response) => {
-        return response.json();
-      })
+    console.log('triggered...?');
+    setError(null);
+    requestHandler('GET')
       .then((data) => {
         setData(data);
       })
       .catch((err) => {
-        console.log(err, 'err');
+        setError('Nie udało się pobrać listy zadań');
       });
   };
 
-  //   console.log(
-  //     obj && obj.noteDetails && obj.noteDetails.author && obj.noteDetails.author
-  //   );
+  const handleForm = () => {
+    setFormVisible(!formVisible);
+  };
 
-  //   console.log(obj.noteDetails?.author?.length && obj.noteDetails.author);
+  useEffect(() => {
+    handleLoadData();
+  }, []);
 
   return (
     <div>
-      <h2>ToDoWithServer</h2>
-
-      <h3>Lista zadań</h3>
-      <ul>
-        {data?.map((todo) => {
-          return (
-            <li>
-              <div>{todo.title}</div>
-              <div>{todo.author}</div>
-              <div>{todo.note}</div>
-            </li>
-          );
-        })}
-      </ul>
-
-      <div>----------------------</div>
-
-      <button onClick={handleLoadData}>Pobierz listę zadań...</button>
+      <h2>ToDo</h2>
+      {formVisible && (
+        <ToDoForm
+          editedItem={editedItem}
+          setEditedItem={setEditedItem}
+          getData={handleLoadData}
+          handleFormVisibilty={handleForm}
+        />
+      )}
+      {!formVisible && (
+        <>
+          <div>
+            <div>Tutaj znajdziesz listę swoich zadań</div>
+            <button onClick={handleForm}>+</button>
+          </div>
+          <ul>
+            {data?.map(({ id, title, author, note, doneDate = '', isDone }) => (
+              <ToDoItem
+                key={id}
+                id={id}
+                title={title}
+                author={author}
+                note={note}
+                doneDate={doneDate}
+                isDone={isDone}
+                getData={handleLoadData}
+                handleForm={handleForm}
+                setEditedItem={setEditedItem}
+              />
+            ))}
+          </ul>
+          <button onClick={handleForm}>Dodaj</button>
+          {error && <div>{error}</div>}
+        </>
+      )}
     </div>
   );
 };
