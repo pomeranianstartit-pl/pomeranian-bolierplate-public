@@ -4,6 +4,7 @@ import { requestHandler } from './helpers';
 
 import { ToDoForm } from './components/ToDoForm';
 import { ToDoItem } from './components/ToDoItem';
+import './styles.css';
 
 export const Exercise = () => {
   const [data, setData] = useState([]);
@@ -32,7 +33,7 @@ export const Exercise = () => {
 
   return (
     <div>
-      <h2>ToDo</h2>
+      <h2>TODO</h2>
       {formVisible && (
         <ToDoForm
           editedItem={editedItem}
@@ -43,9 +44,9 @@ export const Exercise = () => {
       )}
       {!formVisible && (
         <>
-          <div>
-            <div>Tutaj znajdziesz listę swoich zadań</div>
-            <button onClick={handleForm}>+</button>
+          <div className='todocategory'>
+            <div className='todoheading'>Tutaj znajdziesz listę swoich zadań</div>
+            <button className='todoredplus' onClick={handleForm}>+</button>
           </div>
           <ul>
             {data?.map(({ id, title, author, note, doneDate = '', isDone }) => (
@@ -63,7 +64,7 @@ export const Exercise = () => {
               />
             ))}
           </ul>
-          <button onClick={handleForm}>Dodaj</button>
+          <button className='todoaddbutton' onClick={handleForm}>Dodaj</button>
           {error && <div>{error}</div>}
         </>
       )}

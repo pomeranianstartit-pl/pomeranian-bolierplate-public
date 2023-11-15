@@ -1,6 +1,7 @@
 import { useState } from 'react';
 
 import { requestHandler } from '../../helpers';
+import './styles.css';
 
 export const ToDoItem = ({
   id,
@@ -48,10 +49,10 @@ export const ToDoItem = ({
   };
 
   return (
-    <li>
-      <div>{title}</div>
-      <div>{author}</div>
-      <div>{note}</div>
+    <li className='todolist'>
+      <div className='todotitle'>{title}</div>
+      <div className='todoauthor'>{author}</div>
+      <div className='todonote'>{note}</div>
 
       <button onClick={handleEdit}>edytuj</button>
       <button onClick={handleDelete}>usuń</button>

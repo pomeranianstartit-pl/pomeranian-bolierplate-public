@@ -1,6 +1,7 @@
 import { useState } from 'react';
 
 import { requestHandler } from '../../helpers';
+import './styles.css';
 
 export const ToDoForm = ({
   editedItem,
@@ -53,9 +54,9 @@ export const ToDoForm = ({
   return (
     <div>
       <div>{isEditMode ? 'Edycja zadania' : 'Dodawanie zadanie'}</div>
-      <form onSubmit={handleSubmit}>
-        <div>
-          <label htmlFor="title">Tytuł</label>
+      <form className='todoform' onSubmit={handleSubmit}>
+        <div className='todoemptylist'>
+          <label  htmlFor="title">Tytuł</label>
           <input
             id="title"
             placeholder="Kupić parasol na balkon"
@@ -65,7 +66,7 @@ export const ToDoForm = ({
             onChange={(e) => setTitle(e.target.value)}
           />
         </div>
-        <div>
+        <div className='todoemptylist'>
           <label htmlFor="author">Autor</label>
           <input
             id="author"
@@ -76,7 +77,7 @@ export const ToDoForm = ({
             onChange={(e) => setAuthor(e.target.value)}
           />
         </div>
-        <div>
+        <div className='todoemptylist'>
           <label htmlFor="note">Treść</label>
           <textarea
             id="note"
@@ -87,9 +88,9 @@ export const ToDoForm = ({
             onChange={(e) => setNote(e.target.value)}
           />
         </div>
-        <div>
-          <button onClick={handleBack}>Cofnij</button>
-          <button type="submit">{isEditMode ? 'Edytuj' : 'Dodaj'}</button>
+        <div className='todo5a'>
+          <button className='todosec' onClick={handleBack}>Cofnij</button>
+          <button className='todoprim' type="submit">{isEditMode ? 'Edytuj' : 'Dodaj'}</button>
         </div>
       </form>
       {error && <div>{error}</div>}
