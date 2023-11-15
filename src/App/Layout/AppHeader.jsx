@@ -26,7 +26,7 @@ export function AppHeader() {
           <p>Katarzyna </p>
           <p>kursant </p>
         </div>
-        <button onClick={handleButton}>
+        <button className='buttonarrow' onClick={handleButton}>
           <RightArrow />
         </button>
         {display && <Login />}

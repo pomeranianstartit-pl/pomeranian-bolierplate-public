@@ -48,5 +48,6 @@ export const blockRouterMetaData = [
   PromiseExerciseMetaData,
   ExerciseAsyncPromiseMetaData,
   PromiseMethodsMetaData,
+
 ];
 export const blockRouterData = getParsedRouterDataList(blockRouterMetaData);

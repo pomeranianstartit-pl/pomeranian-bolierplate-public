@@ -9,6 +9,7 @@ import { FormMetaData } from './Form/router-data';
 import { FormHookMetaData } from './FormBasicHook/router-data';
 import { FormNewMetaData } from './FormNew/router-data';
 import { FirebaseMetaData } from './ReactFirebase/router-data';
+import { RTLTestingMetaData } from './RTLTesting /router-data';
 
 export const blockRouterMetaData = [
   SubRouteExampleMetaData,
@@ -21,5 +22,6 @@ export const blockRouterMetaData = [
   FormHookMetaData,
   FormNewMetaData,
   FirebaseMetaData,
+  RTLTestingMetaData,
 ];
 export const blockRouterData = getParsedRouterDataList(blockRouterMetaData);
