@@ -23,7 +23,7 @@ export const Layout = ({ withSidebar }) => {
           <Outlet />
         </main>
         <AppFooter />
-        {/* <AppCookies /> */}
+        <AppCookies />
       </div>
     </ErrorBoundary>
   );
