@@ -1,0 +1,40 @@
+.tech-note-wrapper {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  text-align: center;
+  align-items: center;
+  padding: 20px 28px;
+  margin: 0px;
+}
+
+.alltechstack{
+  margin: 40px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  row-gap: 10px;
+  column-gap: 10px;
+}
+.oneprogram {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  box-sizing: border-box;
+  padding: 10px; 
+  width: 90px;
+  height: 130px;
+  text-align: center;
+  align-items: center;
+  
+} 
+
+
+/* height: 120px;
+  width: 120px;
+  margin: 10px;
+  display: flex;
+  flex-wrap: wrap;
+  max-width: 130px;
+  box-sizing: border-box; */

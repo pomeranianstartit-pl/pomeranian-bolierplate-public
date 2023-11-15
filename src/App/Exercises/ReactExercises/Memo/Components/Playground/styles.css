@@ -1,0 +1,30 @@
+.memory-field {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-width: 50px;
+  max-width: 50px;
+  min-height: 50px;
+  border: 2px solid black;
+  border-radius: 8px;
+  gap: 0;
+  background-color: #EBEBEB;
+  
+}
+
+.memory-fields {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-columns: repeat(4, 50px);
+  grid-column-gap: 0px;
+  grid-column-gap: 8px;
+  grid-row-gap: 9px;
+  margin-top: 2%;
+  
+}
+.memory-field--clicked {
+  background-color: #E2FBD7;
+  text-align: center;
+  font-size: 30px;
+  font-weight: 500;
+}

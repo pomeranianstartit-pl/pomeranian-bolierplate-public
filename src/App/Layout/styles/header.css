@@ -22,3 +22,58 @@ header .logo {
   height: 40vmin;
   pointer-events: none;
 }
+
+.container {
+  display: flex;
+  align-items: center;
+  min-width: 200px;
+  gap: 20px;
+}
+
+.user > p:last-child {
+  color: gray;
+}
+.user p {
+  margin: 0px;
+}
+.container img {
+  border-radius: 50%;
+  height: 52px;
+  width: 49px;
+}
+.Login {
+  height: 211px;
+  width: 396px;
+  border: solid;
+  border-radius: 8px;
+  position: absolute;
+  right: 67px;
+  top: 77px;
+  background-color: white;
+  text-align: center;
+}
+.Loginn h2 {
+  background: #fe3756;
+  color: white;
+  height: 56px;
+  padding: 10px;
+  justify-content: center;
+  align-items: center;
+  margin: 50px 50px 25px 50px;
+  border-radius: 8px;
+  border: 1px solid #fe3756;
+}
+img {
+  position: relative;
+}
+
+.buttonarrow {
+  background-color: #fe3756;
+  border-radius: 4.143px;
+  border: 0.518px solid var(--primary-primary, #fe3756);
+  height: 40px;
+  width: 40px;
+  align-items: center;
+  justify-content: center;
+  margin-left: auto;
+}

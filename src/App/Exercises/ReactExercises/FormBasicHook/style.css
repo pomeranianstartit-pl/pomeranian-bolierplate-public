@@ -1,0 +1,3 @@
+input[aria-invalid='true'] {
+  border: 5px solid red;
+}
