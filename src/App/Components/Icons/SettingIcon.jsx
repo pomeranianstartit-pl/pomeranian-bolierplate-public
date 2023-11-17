@@ -2,8 +2,8 @@ export function SettingIcon({ className = '' }) {
   return (
     <svg
       id="svg-icon-setting"
-      width="22"
-      height="23"
+      width="26"
+      height="26"
       viewBox="0 0 22 23"
       fill="none"
       className={className}

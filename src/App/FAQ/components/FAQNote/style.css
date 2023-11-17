@@ -1,0 +1,27 @@
+.faq-note-wrapper {
+  margin-bottom: 18px;
+  padding: 18px 24px;
+  border-left: 5px solid #c8cbd1;
+  border-radius: 8px;
+  box-shadow: 0px 3px 46px 0px rgba(0, 0, 0, 0.06),
+    0px 4px 10px 0px rgba(0, 0, 0, 0.07);
+}
+
+.faq-note-wrapper h2 {
+  font-size: 18px;
+}
+
+.faq-note-wrapper p {
+  padding-top: 18px;
+  border-top: 1px solid #ebebeb;
+}
+
+.faq-note-wrapper img {
+  margin-right: 16px;
+  transition: 0.5s;
+}
+
+.faq-note-wrapper .rotate {
+  transform: rotate(-90deg);
+  transition: 0.5s;
+}

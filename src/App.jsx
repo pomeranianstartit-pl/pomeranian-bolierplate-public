@@ -7,6 +7,11 @@ import { Blocks } from './App/Blocks';
 import { Layout } from './App/Layout';
 import { Dashboard } from './App/Dashboard';
 import { Exercises } from './App/Exercises';
+import { Blog } from './App/Blog';
+import { Calendar } from './App/Calendar';
+import { FAQ } from './App/FAQ';
+import { Cv } from './App/Cv';
+import { TechStack } from './App/TechStack';
 
 export function App() {
   return (
@@ -15,8 +20,13 @@ export function App() {
         <Route path="" element={<Layout withSidebar />}>
           <Route index element={<Navigate to="dashboard" />} />
           <Route path="dashboard/*" element={<Dashboard />} />
+          <Route path="cv/*" element={<Cv />} />
+          <Route path="calendar/*" element={<Calendar />} />
+          <Route path="faq/*" element={<FAQ />} />
+          <Route path="blog/*" element={<Blog />} />
           <Route path="exercises/*" element={<Exercises />} />
           <Route path="blocks/*" element={<Blocks />} />
+          <Route path="tech-stack/*" element={<TechStack />} />
           <Route path="*" element={<NotFound />} />
         </Route>
       </Routes>
