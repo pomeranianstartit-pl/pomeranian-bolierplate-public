@@ -152,7 +152,7 @@ class Car {
   }
 }
 
-export const Exercise = () => {
+export const OOPExercise = () => {
   // Exercise 1.
   //   const computer = new Computer(5);
   const computer = new Computer();
