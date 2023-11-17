@@ -16,6 +16,20 @@ export function Loops() {
     console.log(newCounter);
   }
 
+  //for of loop
+  for (const number of numbers) {
+    console.log('for of loop numbers', number);
+  }
+
+  //for in loop
+  const person = {
+    firstName: 'John',
+    lastName: 'Doe',
+    age: 30,
+  };
+  for (const key in person) {
+    console.log(`${key}: ${person[key]}`);
+  }
   //   napisz funkcję, która przyjmuje dwie tablice i zwraca nową tablicę, która zawiera tylko elementy, które
   // występują w obu tablicach
   // sameNumbers([1, 2, 3, 4, 5], [3, 5, 7, 9]) => [3, 5]

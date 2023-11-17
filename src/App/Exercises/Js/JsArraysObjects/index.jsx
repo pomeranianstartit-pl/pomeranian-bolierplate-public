@@ -19,9 +19,7 @@ export function JsArraysObjects() {
   console.log('birthYears', birthYears);
 
   // filter specyfic data
-  const over30 = peopleData.filter(
-    (dataPerson) => dataPerson.age >= 30 && dataPerson.adress === 'Wroclaw'
-  );
+  const over30 = peopleData.filter((dataPerson) => dataPerson.age >= 30);
   console.log('over30', over30); //   []
 
   //pop()
@@ -78,7 +76,7 @@ export function JsArraysObjects() {
   const index = fruits.indexOf('Cherry');
   console.log('index', index); // 2 poniewaz "Cherry" fruits
 
-  console.log('length of fruits', fruits.length); // 4
+  // 4
 
   //Array methods
   //find, filter, sort, join, reduce, includes, some

@@ -10,6 +10,9 @@ import { ReactGuestNumberMetaData } from './ReactGuestNumber/router-data';
 import { ReactIfAisBiggerThan10MetaData } from './ReactIfAisBiggerThan10/router-data';
 import { HitTheMoleMetaData } from './HitTheMole/router-data';
 import { ToDoWithServerMetaData } from './ToDoWithServer/router-data';
+import { BasicFormsRouterData } from './BasicForms/router-data';
+import { ReactHookBasicFormsRouterData } from './ReactBasicForms/router-data';
+import { FormOrderingRouterData } from './FormOrdering/router-data';
 
 export const blockRouterMetaData = [
   SubRouteExampleMetaData,
@@ -21,5 +24,8 @@ export const blockRouterMetaData = [
   ReactIfAisBiggerThan10MetaData,
   HitTheMoleMetaData,
   ToDoWithServerMetaData,
+  BasicFormsRouterData,
+  ReactHookBasicFormsRouterData,
+  FormOrderingRouterData,
 ];
 export const blockRouterData = getParsedRouterDataList(blockRouterMetaData);

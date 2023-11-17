@@ -7,7 +7,7 @@ export const Categories = () => {
   return (
     <>
       <div className="exercises-categories">
-        <h2>Kategorie</h2>
+        <h2 className="special_class_h2">Kategorie</h2>
 
         <NavLink to="html-css">HTML & CSS - lista ćwiczeń</NavLink>
         <NavLink to="js">JS - lista ćwiczeń</NavLink>

@@ -30,6 +30,7 @@ export const ExerciseJsFunctions = () => {
   //Rozwiazanei Szymona(prowadzacy)
 
   const capitilize = (obj) => {
+    //nowa pomocnicza aby nie iterować po oryginalnym
     const newObj = {};
 
     for (const key in obj) {
@@ -39,6 +40,11 @@ export const ExerciseJsFunctions = () => {
     return newObj;
   };
   console.log(capitilize({ age: 20, name: 'artur' }), capitilize);
+  //druga wersja destrukturyzacja tablicy
+  //bez destruktyryzowac to było zamiast [key], [value]=(arr) w mapie
+  //odwrocenie procesu z tablicy na tablice fromEntries
+  //entries przerabia z obektu na tablice
+  //klucze zawsze traktowane jako string
 
   const capitalize = (obj) => {
     return Object.fromEntries(
@@ -137,13 +143,13 @@ export const ExerciseJsFunctions = () => {
   console.log(sumOfParam(1, 2, 3, 4, 5, 6));
 
   // Rozwiązanie Szymona(prowadzacy)
-  // const sumOfParams = (...args) => {
-  //   return args.reduce((acc, curr) => {
-  //     if (typeof acc !== 'number') return 'Złe wejście';
-  //     return acc + curr;
-  //   }, 0);
-  // };
-  // console.log(sumOfParams(10, 1, 1, '15', 23), 'sumOfParams(10)');
+  const sumOfParams = (...args) => {
+    return args.reduce((acc, curr) => {
+      if (typeof acc !== 'number') return 'Złe wejście';
+      return acc + curr;
+    }, 0);
+  };
+  console.log(sumOfParams(10, 1, 1, '15', 23), 'sumOfParams(10)');
   //-----------------------
   //Kolejne zadania
   //stwórz funkcje calculateWithChar, która przyjmije jako argument jeden operator matematyczne '+','-','*','/'
@@ -158,43 +164,24 @@ export const ExerciseJsFunctions = () => {
   };
   //rozwiazanie szymona
   // const calculateWithChar = (operator) => {
-
   //   return (val1, val2) => {
-
   //     if (typeof val1 !== 'number' || typeof val2 !== 'number')
-
   //       return 'Złe wejście';
-
   //     switch (operator) {
-
   //       case '+':
-
   //         return val1 + val2;
-
   //       case '-':
-
   //         return val1 - val2;
-
   //       case '/':
-
   //         return val1 / val2;
-
   //       case '*':
-
   //         return val1 * val2;
-
   //       case '%':
-
   //         return val1 % val2;
-
   //       default:
-
   //         return 'Zły znak';
-
   //     }
-
   //   };
-
   // };
   console.log('outerFunction', outerFunction('+', 5, 3));
   return (

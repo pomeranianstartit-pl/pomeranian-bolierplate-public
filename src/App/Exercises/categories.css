@@ -2,3 +2,6 @@
   display: list-item;
   margin-left: 0.5rem;
 }
+.special_class_h2 {
+  list-style: none;
+}

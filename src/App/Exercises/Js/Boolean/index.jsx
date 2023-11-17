@@ -2,45 +2,29 @@ import { useState } from 'react';
 
 export function Exercise() {
   //
-
   // BOOLEAN
-
   // true | false
-
   // const trueValue = true;
-
-  // const falseValue = false;
-
+  //const falseValue = false;
   // 1. Wykorzystanie - WALIDACJA DANYCH
 
   function isEmailValid(email) {
     const emailRegex = /^[a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,4}$/;
-
     return emailRegex.test(email);
   }
-
   // console.log(
-
   //   'PIERWSZY MAIL SPRAWDZAMY: test@wp.pl',
-
   //   isEmailValid('test@wp.pl')
-
   // );
-
   // console.log('PIERWSZY MAIL SPRAWDZAMY: testwp.pl', isEmailValid('testwp.pl'));
 
   const emailIsValid = isEmailValid('testwp.pl');
-
   //
-
   // 2. Wykorzystanie - FLAGI STANÓW
-
   //
 
   const [isLogged, setIsLogged] = useState(false);
-
   const [isPremiumUser, setIsPremiumUser] = useState(false);
-
   // const [isError, setIsError] = useState(false);
 
   const handleLog = () => {
@@ -48,41 +32,29 @@ export function Exercise() {
   };
 
   const handleSubscribe = () => {
-    setIsPremiumUser(true);
+    setIsPremiumUser(!isPremiumUser);
   };
 
   //
-
   // OPERATORS
-
   // && - AND
-
   // || - OR
-
   // ! - NOT
 
   const a = true;
-
   const b = false;
-
   // && - AND
 
   const resultAND_1 = a && b;
-
   console.log(resultAND_1, 'a && b');
-
   const resultAND_2 = a && true;
-
   console.log(resultAND_2, 'a && true');
 
-  // || - AND
+  // || - OR
 
   const resultOR_1 = a || b;
-
   console.log(resultOR_1, 'a || b');
-
   const resultOR_2 = b || false;
-
   console.log(resultOR_2, 'b || false');
 
   // ! - NOT
@@ -102,15 +74,11 @@ export function Exercise() {
   // ||= OR ASSIGN
 
   let resultOR_ASSIGN_1 = 5;
-
   resultOR_ASSIGN_1 ||= 10;
-
   console.log(resultOR_ASSIGN_1, 'resultOR_ASSIGN_1');
 
   let resultOR_ASSIGN_2 = 0;
-
   resultOR_ASSIGN_2 ||= 10;
-
   console.log(resultOR_ASSIGN_2, 'resultOR_ASSIGN_2');
 
   // &&= AND ASSIGN
@@ -134,31 +102,18 @@ export function Exercise() {
   // --------------------------------------------------------------------
 
   // 1. () Nawiasy (Najwyższy priorytet - wyrażenia w nawiasach są wykonywane jako pierwsze).
-
   // 2. ** Potęgowanie.
-
   // 3. *, /, % Mnożenie, dzielenie i reszta z dzielenia.
-
   // 4. +, - Dodawanie i odejmowanie.
-
   // 5. <<, >>, >>> Przesunięcie bitowe.
-
   // 6. <, <=, >, >= Porównania.
-
   // 7. ==, !=, ===, !== Porównania równości i nierówności.
-
   // 8. & Bitowe AND.
-
   // 9. ^ Bitowe XOR.
-
   // 10. | Bitowe OR.
-
   // 11. && Logiczne AND.
-
   // 12. || Logiczne OR.
-
   // 13. ? : Operator warunkowy (ternary).
-
   // 14. =, +=, -= i inne Operatory przypisania.
 
   return (

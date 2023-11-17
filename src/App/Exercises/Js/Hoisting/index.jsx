@@ -15,6 +15,7 @@ export function Hoisting() {
   const wynikfunkcjiadd = add(20);
   console.log('wynik funkcji add', wynikGlobal, wynikfunkcjiadd);
 
+  //currying
   const sum = (a, b) => a + b;
   const addMore = (a) => {
     const addEventMore = (b) => {

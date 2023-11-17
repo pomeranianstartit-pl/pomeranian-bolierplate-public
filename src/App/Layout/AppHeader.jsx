@@ -33,7 +33,7 @@ export function AppHeader() {
         </div>
 
         {isMenuOpen && (
-          <div onClick={toggleMenu} className="appear_square">
+          <div className="appear_square">
             <button className="button_appheader">Zaloguj się</button>
             <p>
               Nie masz konta.{' '}
