@@ -1,6 +1,6 @@
 import { useEffect, useState } from 'react';
 
-import molesvg from '../../../Images/Mole.svg';
+import molesvg from '../../../Images/mole.svg';
 
 import './styles.css';
 
