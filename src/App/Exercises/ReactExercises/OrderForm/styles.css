@@ -1,0 +1,100 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&display=swap');
+
+input:invalid {
+    border: 1px solid red;
+}
+
+fieldset .error {
+    color: red;
+}
+
+fieldset .input-wrapper {
+    display: flex;
+    flex-direction: column;
+    max-width: 488px;
+}
+
+.order-wrapper {
+    height: auto;
+    margin-left: 82px;
+    margin-right: 231px;
+    margin-top: 65px;
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: 700;
+    color: var(--text-text-primary, #222);
+}
+
+.order-fieldset {
+    border: none;;
+}
+.exercise-item-content {
+    max-width: 1114px;
+    max-height: 2539px;
+    padding: 65px;
+    border-radius: 16px;
+    background: var(--gray-80, #F4F5F7);
+    box-shadow: 0px 65px 30px 0px rgba(0, 0, 0, 0.01), 0px 8px 20px 0px rgba(0, 0, 0, 0.04), 0px 17px 35px 0px rgba(0, 0, 0, 0.05), 0px -4px 26px 0px rgba(0, 0, 0, 0.08);
+}
+
+label {
+    /* color: var(--text-text-primary, #222);
+    font-family: Poppins; */
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px;
+    margin-top: 22px;
+}
+section title {
+    font-size: 22px;
+    line-height: 27px
+}
+legend {
+    /* color: var(--text-text-primary, #222);
+    font-family: Poppins; */
+    font-size: 22px;
+    /* font-style: normal;
+    font-weight: 700; */
+    /* line-height: 27px; */
+}
+
+legend {
+    /* color: var(--text-text-primary, #222); */
+    /* font-family: Poppins; */
+    font-size: 16px;
+    /* font-style: normal;
+    font-weight: 700; */
+    line-height: 27px; 
+}
+
+.b {
+    font-size: 16px;
+}
+
+input, select {
+    border: none;
+    padding: 13px 16px;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 32px;
+
+}
+
+select {
+    width: 488px;
+}
+
+.of-button {
+    color: white;
+    width: 419px;
+    height: 56px;
+    border-radius: 8px;
+    border: 1px solid var(--primary-primary, #FE3756);
+    background: var(--primary-primary, #FE3756);
+    margin-top: 88px;
+    margin-left: 150px;
+    margin-bottom: 111px;
+
+}
