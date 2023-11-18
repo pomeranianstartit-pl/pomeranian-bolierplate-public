@@ -1,0 +1,30 @@
+
+.btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 163px;
+    color: #FFF;
+    gap: 16px;
+    flex: 1 0 0; 
+    border-radius: 8px;
+    height: 56px;
+padding: 20px 36px;
+}
+
+.btn-primary {
+    background: #23213D;
+}
+
+.btn-secondary {
+    background: #E12B1B;
+}
+
+.btn--active {
+    background: #FE3756;
+}
+
+.btn--disabled {
+    background: #EBEBEB;
+    color: #000;
+}

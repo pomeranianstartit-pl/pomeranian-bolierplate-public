@@ -1,0 +1,18 @@
+.opacity-wrapper {
+  padding: 70px;
+  color: blueviolet;
+  background-color: pink;
+}
+
+.opacity-wrapper {
+  padding: 30px;
+}
+
+.opacity-wrapper .div1 {
+  opacity: 0.3;
+  background: rgb(11, 462, 132);
+}
+
+.opacity-wrapper .div2 {
+  background: rgba(11, 462, 132, 0.3);
+}

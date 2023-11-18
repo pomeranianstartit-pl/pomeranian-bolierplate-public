@@ -1,0 +1,42 @@
+.todolist {
+    width: 629px;
+    height: 166px;
+    padding: 18px 24px;
+    border-radius: 8px;
+    margin-bottom: 26px;
+    border-left: 5px solid var(--gray-300, #C8CBD1);
+    background: var(--background-bg-primary, #FFF);
+    box-shadow: 0px 3px 9px 0px rgba(0, 0, 0, 0.15), 0px 2px 28px 0px rgba(0, 0, 0, 0.12);
+}
+
+.todotitle {
+    font-family: Poppins;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 34px;
+}
+
+.todoauthor {
+    color: var(--gray-700, #6B7280);
+    font-family: Poppins;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.todonote {
+    
+    color: var(--gray-700, #6B7280);
+    font-family: Poppins;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    max-width: 629px;
+}
+
+.todolist button {
+
+}

@@ -1,0 +1,33 @@
+.table-wrapper table {
+  margin-bottom: 50px;
+}
+
+.first-table {
+  border-collapse: collapse ;
+}
+
+.first-table td,
+.first-table th {
+  border: 5px solid #f0f0f0;
+  padding: 10px;
+}
+
+.first-table tr:nth-child(even) {
+  background-color: orange;
+}
+
+.second-table {
+  border-collapse: collapse ;
+}
+
+.second-table td,
+.second-table th {
+  border: 5px solid hwb(0 31% 67%);
+  padding: 10px;
+}
+.second-table tr:nth-child(even) {
+  background-color: orange;
+}
+
+.second-table caption {caption-side: bottom;
+}

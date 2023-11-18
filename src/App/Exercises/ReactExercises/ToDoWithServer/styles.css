@@ -1,0 +1,46 @@
+.todoheading {
+    font-family: Poppins;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 27px;
+    color: var(--text-text-primary, #222);
+}
+
+.todocategory {
+
+}
+
+.todoredplus {
+    color: #FFF;
+    font-family: Poppins;
+    font-size: 25.893px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 16.054px;
+    width: 30px;
+    height: 30px;
+    justify-content: center;
+    align-items: center;
+    border-radius: 4.143px;
+    border: 0.518px solid var(--primary-primary, #FE3756);
+    background: var(--primary-primary, #FE3756);
+}
+
+.todoaddbutton {
+    border-radius: 8px;
+    border: 1px solid var(--primary-primary, #FE3756);
+    background: var(--primary-primary, #FE3756);
+    color: #FFF;
+    height: 56px;
+    padding: 20px 36px;
+    align-items: center;
+    
+}
+/* .todoaddbutton {
+    display: flex;
+    align-items: flex-start;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: flex-end;
+} */
