@@ -11,6 +11,7 @@ import { ToDoWithServer_TrenerMetaData } from './ToDoWithServer_Trener/router-da
 import { BasicFormsMetaData } from './BasicForm/router-data';
 import { ReactHookBasicFromsMetaData } from './ReactHookBasicForms/router-data';
 import { FormOrderMetaData } from './FormOrder/router-data';
+import { FirebaseMetaData } from './Firebase/router-data';
 
 export const blockRouterMetaData = [
   SubRouteExampleMetaData,
@@ -24,5 +25,6 @@ export const blockRouterMetaData = [
   BasicFormsMetaData,
   ReactHookBasicFromsMetaData,
   FormOrderMetaData,
+  FirebaseMetaData,
 ];
 export const blockRouterData = getParsedRouterDataList(blockRouterMetaData);
