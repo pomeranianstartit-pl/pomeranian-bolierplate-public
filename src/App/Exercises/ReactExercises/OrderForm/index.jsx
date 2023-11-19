@@ -167,7 +167,7 @@ export const Exercise = () => {
             label={LABELS[KEYS.IS_NEWSLETTER]}
           />
         </Section>
-        <input className='of-button' type="submit" />
+        <input className='of-button' type="submit" value='SKŁADAM ZAMÓWIENIE' />
       </form>
     </div>
   );
