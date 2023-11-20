@@ -1,0 +1,12 @@
+.header--menu {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  position: relative;
+}
+.header-menu-user p {
+  margin: 0;
+}
+.header-menu-user p:nth-child(2) {
+  color: gray;
+}

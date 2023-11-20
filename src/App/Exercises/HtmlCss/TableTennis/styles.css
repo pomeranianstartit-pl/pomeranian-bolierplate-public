@@ -1,0 +1,55 @@
+.table-tennis table {
+  width: 716px;
+  border-radius: 14px;
+  background: #f5f5f5;
+  box-shadow: 0px 2.7852px 9.16022px 0px rgba(0, 0, 0, 0.02),
+    0px 12.73235px 25.74765px 0px rgba(0, 0, 0, 0.03),
+    0px 32.22877px 69.07301px 0px rgba(0, 0, 0, 0.04),
+    0px 63.66177px 158.44705px 0px rgba(0, 0, 0, 0.06);
+  border-collapse: collapse;
+}
+
+.table-tennis th {
+  text-align: left;
+}
+
+.table-tennis thead tr {
+  /* background: #F5F5F5; */
+}
+
+.table-tennis {
+  border-collapse: collapse;
+}
+
+.table-tennis td,
+.table-tennis th {
+  padding-top: 25px;
+  padding-bottom: 25px;
+}
+
+.table-tennis tbody tr:nth-child(even) {
+  background: #ffd5db;
+}
+
+.table-tennis tbody tr:nth-child(odd) {
+  background: #fff;
+}
+
+.table-tennis tbody tr:last-child {
+  background: inherit;
+}
+
+.table-tennis tbody tr:last-child td {
+  background: inherit;
+}
+
+.table-tennis tr td:first-child,
+.table-tennis tr th:first-child {
+  padding-left: 46px;
+}
+
+.table-tennis tr td:last-child,
+.table-tennis tr th:last-child {
+  padding-right: 46px;
+  text-align: right;
+}
