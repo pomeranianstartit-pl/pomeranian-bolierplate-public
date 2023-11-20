@@ -1,0 +1,25 @@
+.font-test-family {
+  font-family: Chilanka;
+}
+
+.events-input {
+  display: block;
+  padding: 7px 10px;
+  border-radius: 8px;
+  border: 1px solid var(--color-black);
+}
+
+.events-btn {
+  display: block;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 31px;
+  background-color: var(--color-red);
+  color: var(--color-white);
+  margin: 20px 0;
+  padding: 12px 16px;
+  border-radius: 8px;
+  border: none;
+  cursor: pointer;
+}
