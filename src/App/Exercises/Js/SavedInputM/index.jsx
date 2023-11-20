@@ -82,6 +82,7 @@ export const SavedInput = () => {
                 {user.name} {user.id}
               </div>
               <button onClick={() => handleRemoveNick(user.id)}>X</button>
+              <p>Wprowadź nick</p>
             </div>
           );
         })}
