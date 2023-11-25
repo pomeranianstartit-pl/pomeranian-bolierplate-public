@@ -5,6 +5,9 @@ import './App.css'
 import { AsyncTypeScriptCall } from './Components/TypeScript/AsyncTypeScriptCall'
 
 
+
+
+
 export type ExampleObjectType = {
   name:string;
   surname:string;
@@ -133,6 +136,8 @@ test();
   <br/>
   <br/>
   <AsyncTypeScriptCall/>
+  <Exercise/>
+
     </>
   )
   
