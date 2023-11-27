@@ -9,9 +9,17 @@
     'header header'
     'sidebar main'
     'footer footer';
-
   background: var(--color-white);
   color: var(--color-grey);
+}
+
+@media (min-width: 0px) and (max-width: 400px) {
+  .layout {
+    grid-template-areas:
+      'header header'
+      'main main'
+      'footer footer';
+  }
 }
 
 main {

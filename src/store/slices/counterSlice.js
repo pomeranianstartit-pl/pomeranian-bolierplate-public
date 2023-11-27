@@ -9,29 +9,29 @@ export const counterSlice = createSlice({
     increment: (state) => {
       state.count += 1;
       localStorage.setItem('countls', state.count);
-      printLocalStorageChange()
+      printLocalStorageChange();
     },
     decrement: (state) => {
       state.count -= 1;
       localStorage.setItem('countls', state.count);
-      printLocalStorageChange()
+      printLocalStorageChange();
     },
     reset: (state) => {
       state.count = 0;
       localStorage.setItem('countls', state.count);
-      printLocalStorageChange()
+      printLocalStorageChange();
     },
     incrementByValue: (state, action) => {
       console.log(action, 'action');
       state.count += Number(action.payload);
       localStorage.setItem('countls', state.count);
-      printLocalStorageChange()
+      printLocalStorageChange();
     },
     setSpecificValue: (state, action) => {
       console.log(action, 'action');
       state.count = Number(action.payload);
       localStorage.setItem('countls', state.count);
-      printLocalStorageChange()
+      printLocalStorageChange();
     },
   },
 });
@@ -47,4 +47,5 @@ export const {
 export default counterSlice.reducer;
 
 const printLocalStorageChange = () => {
-  console.log('count has change to: ', localStorage.getItem('countls'))}
+  console.log('count has change to: ', localStorage.getItem('countls'));
+};

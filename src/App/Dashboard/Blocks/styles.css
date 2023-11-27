@@ -8,6 +8,13 @@
   /* color:#fff */
 }
 
+@media (min-width: 0px) and (max-width: 400px){
+  .blocks_grid {
+    display: flex;
+    justify-content: center;
+  }
+}
+
 .blocks_grid .single-block {
   padding: 20px 28px 20px 28px;
   width: 202px;

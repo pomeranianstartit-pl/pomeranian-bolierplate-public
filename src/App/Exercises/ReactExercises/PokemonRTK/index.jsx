@@ -15,7 +15,7 @@ export const PokemonRTK = () => {
         onChange={(e) => setInputValue(e.target.value)}
       />
       <div className="App">
-        {(error && inputValue.length === 0)  ? (
+        {error || inputValue.length === 0 ? (
           <>Oh no, there was an error</>
         ) : isLoading ? (
           <>Loading...</>
