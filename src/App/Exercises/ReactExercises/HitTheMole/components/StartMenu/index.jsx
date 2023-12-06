@@ -2,7 +2,11 @@ import { Button } from '../Button';
 import { MenuField } from '../MenuField';
 import { SelectButtons } from '../SelectButtons';
 
-export const StartMenu = ({ setInitialTime, setMoleAmount, setGameStarted }) => {
+export const StartMenu = ({
+  setInitialTime,
+  setMoleAmount,
+  setGameStarted,
+}) => {
   const handleStart = () => {
     setGameStarted(true);
   };

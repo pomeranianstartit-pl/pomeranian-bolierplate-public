@@ -70,3 +70,9 @@
 li {
     padding-bottom: 15px;
 }
+
+
+.mf-checkbox-option & span & a {
+	color:white;    
+  font-weight: 700;
+}
