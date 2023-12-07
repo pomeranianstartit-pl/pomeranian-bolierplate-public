@@ -56,6 +56,14 @@ export const Exercise = () => {
     }
   }, [time]);
 
+  useEffect(() => {
+    console.log(initialTime, 'ustawiono czas');
+  }, [initialTime]);
+
+  useEffect(() => {
+    console.log(moleAmount, 'ustawiono liczbę kretów');
+  }, [moleAmount]);
+
   return (
     <div>
       <h3>

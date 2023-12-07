@@ -1,18 +1,11 @@
 import './styles.css';
 
-export const Button = ({
-  classNames = '',
-  isDisabled = false,
-  isActive = false,
-  children,
-  onClick = () => {},
-}) => {
-  const activeClassName = isActive ? 'button--active' : '';
-  const disabledClassName = isDisabled ? 'button--disabled' : '';
-  const className = `mole-button ${classNames} ${activeClassName} ${disabledClassName}`;
+export const Button = ({ isActive = false, children, onClick = () => {} }) => {
+  const active = isActive ? 'button--active' : 'button--disabled';
+  const className = `mole-button ${active}`;
 
   return (
-    <button disabled={isDisabled} className={className} onClick={onClick}>
+    <button className={className} onClick={onClick}>
       {children}
     </button>
   );

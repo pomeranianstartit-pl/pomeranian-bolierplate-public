@@ -14,6 +14,7 @@ import { FormOrderMetaData } from './FormOrder/router-data';
 import { FirebaseMetaData } from './Firebase/router-data';
 import { CounterReducerMetaData } from './CounterRedux/router-data';
 import { PokemonRTKMetaData } from './PokemonRTK/router-data';
+import { MyHitTheMoleMetaData } from './myHitTheMole/router-data';
 
 export const blockRouterMetaData = [
   SubRouteExampleMetaData,
@@ -29,6 +30,7 @@ export const blockRouterMetaData = [
   FormOrderMetaData,
   FirebaseMetaData,
   CounterReducerMetaData,
-  PokemonRTKMetaData
+  PokemonRTKMetaData,
+  MyHitTheMoleMetaData,
 ];
 export const blockRouterData = getParsedRouterDataList(blockRouterMetaData);
