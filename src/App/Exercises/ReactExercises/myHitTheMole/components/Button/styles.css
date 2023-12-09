@@ -9,6 +9,7 @@ button.my-mole--button {
   font-style: normal;
   font-weight: 500;
   line-height: 31px;
+  cursor: pointer;
 }
 
 .my-mole--button.active {

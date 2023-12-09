@@ -16,10 +16,11 @@ export const SelectButtons = ({ setValue, options }) => {
   };
   return (
     <div className="select--buttons">
-      {newOptions.map(({ isActive, content, value }) => (
+      {newOptions.map(({ isActive, isDisabled, content, value }) => (
         <Button
           key={value}
           isActive={isActive}
+          isDisabled={isDisabled}
           onClick={() => {
             handleClick(value);
           }}

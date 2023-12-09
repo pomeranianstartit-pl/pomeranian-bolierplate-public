@@ -15,16 +15,19 @@ export const StartMenu = ({
           setValue={setGameTime}
           options={[
             {
+              isDisable: false,
               isActive: true,
               value: 60,
               content: '1 minuta',
             },
             {
+              isDisable: false,
               isActive: false,
               value: 120,
               content: '2 minuty',
             },
             {
+              isDisable: false,
               isActive: false,
               value: 180,
               content: '3 minuty',

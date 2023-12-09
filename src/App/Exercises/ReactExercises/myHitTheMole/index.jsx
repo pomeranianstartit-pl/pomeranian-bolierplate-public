@@ -2,6 +2,7 @@ import { useEffect, useState } from 'react';
 import { generateRandomNumber } from './helper';
 import { StartMenu } from './components/StartMenu';
 import './styles.css';
+import { GameField } from './components/GameField';
 
 export const HitTheMole = () => {
   const [isGameStarted, setIsGameStarted] = useState(false);
@@ -17,12 +18,14 @@ export const HitTheMole = () => {
       </h3>
       <div></div>
       <div className="obce">
-        {!isGameStarted && (
+        {!isGameStarted ? (
           <StartMenu
             setGameTime={setGameTime}
             setNumberOfMoles={setNumberOfMoles}
             setIsGameStarted={setIsGameStarted}
           />
+        ) : (
+          <GameField time={gameTime} />
         )}
       </div>
     </div>
