@@ -1,0 +1,21 @@
+button.my-mole--button {
+  color: #ffffff;
+  border-radius: 8px;
+  border: 0px;
+  width: 163px;
+  height: 56px;
+  font-family: Roboto;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 31px;
+  cursor: pointer;
+}
+
+.my-mole--button.active {
+  background: #fe3756;
+}
+
+.my-mole--button.disabled {
+  background: #23213d;
+}

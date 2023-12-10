@@ -6,5 +6,14 @@ export const FirebaseMetaData = {
   linkLabel: 'EmptyComponentWithRouting',
   blockNo: 1,
   element: <Firebase />,
-  tags: ['components'],
+  tags: [
+    'react',
+    'redux',
+    'counter',
+    'redux-tooltkit',
+    'dispatch',
+    'useSelector',
+    'useDispatch',
+    'slices',
+  ],
 };

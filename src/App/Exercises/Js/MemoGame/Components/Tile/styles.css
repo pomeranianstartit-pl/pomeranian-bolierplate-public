@@ -20,7 +20,7 @@
 
 .memo-letter {
   user-select: none;
-  transform: scaleX(0);
+  transform: scaleY(0);
   font-size: 4rem;
   text-align: center;
   line-height: 6.5rem;
@@ -28,7 +28,7 @@
 }
 
 .memo-letter-is-visible {
-  transform: scaleX(1);
+  transform: scaleZ(1);
   /* background-image: url("./memo.svg");
     background-repeat: no-repeat;
     background-position: center; */

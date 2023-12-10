@@ -39,3 +39,12 @@
   align-items: flex-start;
   gap: 10px;
 }
+
+
+@media (min-width: 0px) and (max-width: 400px){
+  .mydata-dashboard {
+    display: none;
+    padding-left: 0px;
+    width: 0px;
+  }
+}

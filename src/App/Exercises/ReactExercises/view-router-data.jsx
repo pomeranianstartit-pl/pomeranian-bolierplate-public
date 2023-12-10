@@ -12,6 +12,9 @@ import { BasicFormsMetaData } from './BasicForm/router-data';
 import { ReactHookBasicFromsMetaData } from './ReactHookBasicForms/router-data';
 import { FormOrderMetaData } from './FormOrder/router-data';
 import { FirebaseMetaData } from './Firebase/router-data';
+import { CounterReducerMetaData } from './CounterRedux/router-data';
+import { PokemonRTKMetaData } from './PokemonRTK/router-data';
+import { MyHitTheMoleMetaData } from './myHitTheMole/router-data';
 
 export const blockRouterMetaData = [
   SubRouteExampleMetaData,
@@ -26,5 +29,8 @@ export const blockRouterMetaData = [
   ReactHookBasicFromsMetaData,
   FormOrderMetaData,
   FirebaseMetaData,
+  CounterReducerMetaData,
+  PokemonRTKMetaData,
+  MyHitTheMoleMetaData,
 ];
 export const blockRouterData = getParsedRouterDataList(blockRouterMetaData);
