@@ -1,6 +1,7 @@
 import { useState } from 'react';
 
 import { Button } from '../Button';
+import './styles.css';
 
 export const SelectButtons = ({ options, setValue }) => {
   const [newOptions, setNewOptions] = useState(options);
@@ -17,7 +18,7 @@ export const SelectButtons = ({ options, setValue }) => {
   };
 
   return (
-    <div>
+    <div className="button-inrow">
       {newOptions.map(({ value, content, isActive }) => {
         return (
           <Button

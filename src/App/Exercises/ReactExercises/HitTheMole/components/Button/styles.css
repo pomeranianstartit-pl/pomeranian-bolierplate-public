@@ -1,6 +1,26 @@
 .mole-button {
+  display: flex;
+
   color: #ffffff;
   background-color: #23213d;
+  box-sizing: content-box;
+  min-width: 5.69rem;
+  max-height: 1rem;
+  padding-top: 1.25rem;
+  padding-bottom: 1.25rem;
+  padding-left: 2.25rem;
+  padding-right: 2.25rem;
+  justify-content: center;
+  align-items: center;
+  border: none;
+  border-radius: 0.5rem;
+
+  margin: 1.5rem;
+  font-family: Poppins;
+  font-size: 1.125rem;
+
+  font-weight: 500;
+  line-height: 1.9375rem;
 }
 
 .button--active {
@@ -10,4 +30,13 @@
 .button--disabled {
   background-color: #ebebeb;
   color: #23213d;
+}
+.button--single {
+  display: flex;
+}
+.mole-button:hover {
+  cursor: pointer;
+}
+.button--disabled:hover {
+  cursor: default;
 }

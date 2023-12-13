@@ -1,4 +1,5 @@
 import { useState } from 'react';
+import { NewComponent } from './NewComponent';
 
 export const Exercices = () => {
   const [text, setText] = useState('Znikam po 3 sek');
@@ -14,6 +15,7 @@ export const Exercices = () => {
     <div>
       <div>{text}</div>
       <button onClick={handleStart}>Kliknij</button>
+      <NewComponent />
     </div>
   );
 };

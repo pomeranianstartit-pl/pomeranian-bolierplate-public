@@ -1,0 +1,20 @@
+.Menufield-title-children {
+  display: flex;
+}
+.Menufield-title {
+  display: flex;
+  justify-content: flex-start;
+  text-transform: uppercase;
+  align-items: center;
+  width: 12rem;
+  font-family: Poppins;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 34px;
+}
+.Menufield-children {
+  display: flex;
+  justify-content: space-between;
+  column-gap: 100px;
+}

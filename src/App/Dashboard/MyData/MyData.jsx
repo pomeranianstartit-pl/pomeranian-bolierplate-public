@@ -11,12 +11,12 @@ export const MyData = () => {
         <p>Gdańsk</p>
       </div>
       <div className="mydata_section">
-        <p>e-mail</p>
-        <p>dziubek@gmail.com</p>
+        <p>e-mail:</p>
+        <p>szweminskiartur@gmail.com</p>
       </div>
       <div className="mydata_section">
         <p>telefon</p>
-        <p>888 888 888</p>
+        <p>+48 511 867 387</p>
       </div>
     </div>
   );

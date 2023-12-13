@@ -9,11 +9,13 @@ export const Button = ({
 }) => {
   const activeClassName = isActive ? 'button--active' : '';
   const disabledClassName = isDisabled ? 'button--disabled' : '';
-  const className = `mole-button ${classNames} ${activeClassName} ${disabledClassName}`;
+  const className = `mole-button button--single ${classNames} ${activeClassName} ${disabledClassName}`;
 
   return (
-    <button disabled={isDisabled} className={className} onClick={onClick}>
-      {children}
-    </button>
+    <div className="button--single">
+      <button disabled={isDisabled} className={className} onClick={onClick}>
+        {children}
+      </button>
+    </div>
   );
 };

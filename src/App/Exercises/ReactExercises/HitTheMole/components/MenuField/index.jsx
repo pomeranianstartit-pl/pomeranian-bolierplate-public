@@ -1,8 +1,9 @@
+import './styles.css';
 export const MenuField = ({ title, children }) => {
   return (
-    <div>
-      <div>{title}</div>
-      <div>{children}</div>
+    <div className="Menufield-title-children">
+      <div className="Menufield-title">{title}</div>
+      <div className="Menufield-children">{children}</div>
     </div>
   );
 };

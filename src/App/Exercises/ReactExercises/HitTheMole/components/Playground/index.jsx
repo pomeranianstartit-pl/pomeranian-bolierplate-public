@@ -1,13 +1,19 @@
 import { useState } from 'react';
 
 import { generateArrayOfFields } from '../../helper';
-
+import mole from './mole.svg';
 import './styles.css';
 
-export const Playground = ({ molePositionId, score, setScore }) => {
+export const Playground = ({
+  molePositionId,
+  molePositionId1,
+  score,
+  setScore,
+}) => {
   const [gameFields, setGameFields] = useState(generateArrayOfFields(10));
 
-  const handleFieldClick = (id, isMolePresent) => {
+  const handleFieldClick = (id, isMolePresent, isMolePresent1) => {
+    // handleUpdateScore1(isMolePresent1);
     handleUpdateScore(isMolePresent);
     setGameFields((prevState) =>
       prevState.map((field) => {
@@ -26,7 +32,7 @@ export const Playground = ({ molePositionId, score, setScore }) => {
       setGameFields(
         gameFields.map((field) => ({ ...field, hasClicked: false }))
       );
-    }, 200);
+    }, 100);
   };
 
   const handleUpdateScore = (isMolePresent) => {
@@ -34,12 +40,17 @@ export const Playground = ({ molePositionId, score, setScore }) => {
       ? setScore((prevScore) => prevScore + 1)
       : setScore((prevScore) => prevScore - 1);
   };
-
+  // const handleUpdateScore1 = (isMolePresent1) => {
+  //   isMolePresent1
+  //     ? setScore((prevScore) => prevScore + 1)
+  //     : setScore((prevScore) => prevScore - 1);
+  // };
   return (
     <div>
-      <div style={{ display: 'flex' }}>
+      <div className="container-all-fields">
         {gameFields.map(({ id, hasClicked }) => {
           const isMolePresent = id === molePositionId;
+          const isMolePresent1 = id === molePositionId1;
           const isClickedWithMole = isMolePresent && hasClicked;
           const isClickedWithWithoutMole = !isMolePresent && hasClicked;
 
@@ -58,7 +69,12 @@ export const Playground = ({ molePositionId, score, setScore }) => {
               key={id}
               className={className}
             >
-              {isMolePresent && 'KRET'}
+              {isMolePresent && (
+                <img className="image-mole" src={mole} alt="mole" />
+              )}
+              {isMolePresent1 && (
+                <img className="image-mole" src={mole} alt="mole" />
+              )}
             </div>
           );
         })}

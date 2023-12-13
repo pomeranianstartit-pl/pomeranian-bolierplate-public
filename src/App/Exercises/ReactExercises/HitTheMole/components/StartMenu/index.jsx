@@ -20,7 +20,6 @@ export const StartMenu = ({
             {
               value: 60,
               content: '1 minuta',
-              isActive: true,
             },
             {
               value: 120,
@@ -41,7 +40,6 @@ export const StartMenu = ({
             {
               value: 1,
               content: '1 kret',
-              isActive: true,
             },
             {
               value: 2,
@@ -55,7 +53,7 @@ export const StartMenu = ({
         />
       </MenuField>
       <MenuField title="Przyciski sterujące">
-        <Button onClick={handleStart}>Start</Button>
+        <Button onClick={handleStart}>START</Button>
       </MenuField>
     </div>
   );
