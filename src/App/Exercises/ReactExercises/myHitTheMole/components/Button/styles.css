@@ -14,8 +14,21 @@ button.my-mole--button {
 
 .my-mole--button.active {
   background: #fe3756;
+  cursor: auto;
+}
+
+.my-mole--button.non-active {
+  background: #23213d;
+  cursor: pointer;
 }
 
 .my-mole--button.disabled {
-  background: #23213d;
+  background: rgba(235, 235, 235, 1);
+  color: #000;
+  cursor: auto;
+}
+
+.my-mole--button.stop {
+  background: rgba(225, 43, 27, 1);
+  cursor: pointer;
 }

@@ -23,6 +23,7 @@ export const SelectButtons = ({ setValue, options }) => {
           isDisabled={isDisabled}
           onClick={() => {
             handleClick(value);
+            console.log(value, 'new value has been set')
           }}
         >
           {content}

@@ -19,10 +19,12 @@ export const Exercise = () => {
   const [time, setTime] = useState(60);
 
   const handleStartGame = () => {
-    setTime(60);
+    setTime(580);
     setScore(0);
     setGameEnded(false);
     setGameStarted(true);
+
+    console.log('handle start game clicked');
 
     const interval = setInterval(() => {
       setMolePositionId(generateRandomNumber(10));
@@ -83,6 +85,7 @@ export const Exercise = () => {
           setInitialTime={setInitialTime}
           setMoleAmount={setMoleAmount}
           setGameStarted={handleStartGame}
+          
         />
       ) : (
         <>

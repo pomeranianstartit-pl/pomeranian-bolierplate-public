@@ -7,10 +7,7 @@ export const StartMenu = ({
   setMoleAmount,
   setGameStarted,
 }) => {
-  const handleStart = () => {
-    setGameStarted(true);
-  };
-  return (
+    return (
     <div>
       <MenuField title="Czas gry">
         <SelectButtons
@@ -54,7 +51,7 @@ export const StartMenu = ({
         />
       </MenuField>
       <MenuField title="Przyciski sterujące">
-        <Button onClick={() => handleStart()}>Start</Button>
+        <Button onClick={() => setGameStarted()}>Start</Button>
       </MenuField>
     </div>
   );

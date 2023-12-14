@@ -1,0 +1,19 @@
+.mole--square {
+  display: flex;
+  height: 102px;
+  width: 102px;
+  border-radius: 8px;
+  background-color: #ebebeb;
+  justify-content: center;
+  align-items: center;
+}
+
+.mole--map {
+  margin: 118px 0 0 272px;
+  width: 550px;
+  display: flex;
+  /* flex-direction: row; */
+  justify-content: space-between;
+  flex-wrap: wrap;
+  row-gap: 9px;
+}
