@@ -17,7 +17,7 @@ export const StartMenu = ({
             {
               isDisable: false,
               isActive: true,
-              value: 60,
+              value: 15,
               content: '1 minuta',
             },
             {

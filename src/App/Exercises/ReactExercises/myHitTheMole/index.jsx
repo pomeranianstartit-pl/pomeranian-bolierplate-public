@@ -6,7 +6,7 @@ import { GameField } from './components/GameField';
 import { Playground } from './components/PlayGround';
 import { generateRandomNumber } from '../HitTheMole/helper';
 import { NUMBER_OF_FIELDS, TIME_OF_MOLE } from './defaultSettings';
-import { clear } from '@testing-library/user-event/dist/clear';
+import { ResultOfTheGame } from './components/ResultOfTheGame';
 
 export const HitTheMole = () => {
   const [isGameStarted, setIsGameStarted] = useState(false);
@@ -17,7 +17,7 @@ export const HitTheMole = () => {
   const [score, setScore] = useState(0);
   const [intervalId, setIntervalId] = useState(null);
 
-  const [gameTime, setGameTime] = useState(60);
+  const [gameTime, setGameTime] = useState(15);
   const [leftTime, setLeftTime] = useState(gameTime);
   const [numberOfMoles, setNumberOfMoles] = useState(1);
 
@@ -41,11 +41,6 @@ export const HitTheMole = () => {
   };
 
   useEffect(() => {
-    console.log(gameTime, 'new game time');
-    console.log(typeof gameTime);
-  }, [gameTime]);
-
-  useEffect(() => {
     if (isGameStarted) {
       const countDown = setInterval(() => {
         leftTime > 0 && setLeftTime((prevState) => prevState - 1);
@@ -56,6 +51,12 @@ export const HitTheMole = () => {
     }
   }, [leftTime, isGameStarted]);
 
+  useEffect(() => {
+    if (leftTime === 0) {
+      handleStopGame();
+    }
+  }, [leftTime]);
+
   return (
     <div>
       <h3 className="game--description">
@@ -63,7 +64,10 @@ export const HitTheMole = () => {
         którym się pojawił.
       </h3>
       <div></div>
-      <div className="obce">
+      <div>
+        {isGameStopped && (
+          <ResultOfTheGame score={score} time={gameTime - leftTime} />
+        )}
         {!isGameStarted ? (
           <StartMenu
             setGameTime={setGameTime}
@@ -73,7 +77,7 @@ export const HitTheMole = () => {
         ) : (
           <>
             <GameField time={leftTime} score={score} func={handleStopGame} />
-            <Playground molePosition={molePosition} />
+            <Playground molePosition={molePosition} setScore={setScore} />
           </>
         )}
       </div>
