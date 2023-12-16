@@ -1,22 +1,25 @@
-import { useState } from 'react';
-import { Button } from '../Button/index.jsx';
 import './styles.css';
 
 export const ResultOfTheGame = ({ score, time }) => {
+  const gratulations = 'Gratulacje! Twój wynik to';
   const textScore = () => {
-    if (score === 0) {
+    if (score <= 0) {
+      return 'Nie udało Ci się złapać ani jednego kreta';
     }
     if (score === 1) {
       return `${score} złapany kret`;
     }
-    if (1 < score < 5) {
+    if ((1 < score) & (score < 5)) {
       return `${score} złapane krety`;
     }
-    if (5 < score < 21) {
+    if ((5 < score) & (score < 21)) {
       return `${score} złapanych kretów`;
     }
-    if (1 < toString(score)[-1] < 5) {
+    if ((1 < score % 10) & (score % 10 < 5)) {
       return `${score} złapane krety`;
+    }
+    if (5 < score % 10) {
+      return `${score} złapanych kretów`;
     }
   };
 
@@ -32,7 +35,7 @@ export const ResultOfTheGame = ({ score, time }) => {
 
   return (
     <div className="result--of--game">
-      Gratulacje! Twj wynik to {textScore()} w czasie {resultTime()}.
+      {score > 0 && gratulations} {textScore()} w czasie {resultTime()}.
     </div>
   );
 };

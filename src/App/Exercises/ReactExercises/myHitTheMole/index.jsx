@@ -15,11 +15,12 @@ export const HitTheMole = () => {
     generateRandomNumber(NUMBER_OF_FIELDS)
   );
   const [score, setScore] = useState(0);
-  const [intervalId, setIntervalId] = useState(null);
+  const [intervalId, setIntervalId] = useState([]);
 
   const [gameTime, setGameTime] = useState(15);
   const [leftTime, setLeftTime] = useState(gameTime);
   const [numberOfMoles, setNumberOfMoles] = useState(1);
+  const [gameScore, setGameScore] = useState({ score: null, time: null });
 
   const handleStartGame = () => {
     setIsGameStarted(true);
@@ -31,17 +32,24 @@ export const HitTheMole = () => {
       setMolePosition(generateRandomNumber(NUMBER_OF_FIELDS));
     }, TIME_OF_MOLE);
 
-    setIntervalId(interval);
+    setIntervalId((prevState) => [...prevState, interval]);
+    return () => {
+      clearInterval(interval);
+    };
   };
 
   const handleStopGame = () => {
     setIsGameStarted(false);
     setIsGameStopped(true);
-    console.log('game stopped');
+    intervalId.forEach((interval) => clearInterval(interval));
+    setIntervalId([]);
+    console.log(gameTime - leftTime, 'odejmowanie');
+    setGameScore({ score: score, time: gameTime - leftTime });
   };
 
   useEffect(() => {
     if (isGameStarted) {
+      console.log('odliczanie');
       const countDown = setInterval(() => {
         leftTime > 0 && setLeftTime((prevState) => prevState - 1);
       }, 1000);
@@ -66,7 +74,7 @@ export const HitTheMole = () => {
       <div></div>
       <div>
         {isGameStopped && (
-          <ResultOfTheGame score={score} time={gameTime - leftTime} />
+          <ResultOfTheGame score={gameScore.score} time={gameScore.time} />
         )}
         {!isGameStarted ? (
           <StartMenu
@@ -77,7 +85,11 @@ export const HitTheMole = () => {
         ) : (
           <>
             <GameField time={leftTime} score={score} func={handleStopGame} />
-            <Playground molePosition={molePosition} setScore={setScore} />
+            <Playground
+              molePosition={molePosition}
+              setScore={setScore}
+              setGameScore={setGameScore}
+            />
           </>
         )}
       </div>

@@ -71,7 +71,7 @@ export const Playground = ({ molePosition, setScore }) => {
             className={style()}
           >
             {molePosition === id && (
-              <img src={MolePicture} alt="mole is here" />
+              <img src={MolePicture} alt="mole is here" draggable="false" />
             )}
           </div>
         );
