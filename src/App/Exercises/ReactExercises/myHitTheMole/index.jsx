@@ -11,15 +11,15 @@ import { ResultOfTheGame } from './components/ResultOfTheGame';
 export const HitTheMole = () => {
   const [isGameStarted, setIsGameStarted] = useState(false);
   const [isGameStopped, setIsGameStopped] = useState(false);
-  const [molePosition, setMolePosition] = useState(
-    generateRandomNumber(NUMBER_OF_FIELDS)
+  const [numberOfMoles, setNumberOfMoles] = useState(1);
+  const [molePositions, setMolePositions] = useState(
+    generateRandomNumber(NUMBER_OF_FIELDS, numberOfMoles)
   );
   const [score, setScore] = useState(0);
   const [intervalId, setIntervalId] = useState([]);
 
   const [gameTime, setGameTime] = useState(15);
   const [leftTime, setLeftTime] = useState(gameTime);
-  const [numberOfMoles, setNumberOfMoles] = useState(1);
   const [gameScore, setGameScore] = useState({ score: null, time: null });
 
   const handleStartGame = () => {
@@ -29,7 +29,7 @@ export const HitTheMole = () => {
     setIsGameStopped(false);
 
     const interval = setInterval(() => {
-      setMolePosition(generateRandomNumber(NUMBER_OF_FIELDS));
+      setMolePositions(generateRandomNumber(NUMBER_OF_FIELDS, numberOfMoles));
     }, TIME_OF_MOLE);
 
     setIntervalId((prevState) => [...prevState, interval]);
@@ -43,7 +43,6 @@ export const HitTheMole = () => {
     setIsGameStopped(true);
     intervalId.forEach((interval) => clearInterval(interval));
     setIntervalId([]);
-    console.log(gameTime - leftTime, 'odejmowanie');
     setGameScore({ score: score, time: gameTime - leftTime });
   };
 
@@ -86,7 +85,7 @@ export const HitTheMole = () => {
           <>
             <GameField time={leftTime} score={score} func={handleStopGame} />
             <Playground
-              molePosition={molePosition}
+              molePositions={molePositions}
               setScore={setScore}
               setGameScore={setGameScore}
             />

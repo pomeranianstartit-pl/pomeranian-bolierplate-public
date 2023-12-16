@@ -5,11 +5,12 @@ import './styles.css';
 import { useState } from 'react';
 import { generatePlayFields } from '../../helper';
 
-export const Playground = ({ molePosition, setScore }) => {
+export const Playground = ({ molePositions, setScore }) => {
   const [instervalId, setIntervalId] = useState([]);
   const [playFields, setPlayFields] = useState(
     generatePlayFields(NUMBER_OF_FIELDS)
   );
+  console.log(molePositions, 'molePositions');
   const resetHasClicked = (id) => {
     const timeOutId = setTimeout(() => {
       setPlayFields((prevPlayFields) =>
@@ -37,7 +38,10 @@ export const Playground = ({ molePosition, setScore }) => {
   };
 
   const handleFieldClick = (id, isMolePresent) => {
-    updateScore(isMolePresent);
+    const field = playFields.find((field) => field.id === id);
+    if (!field.hasClicked) {
+      updateScore(isMolePresent);
+    }
     console.log(playFields, 'playfields here before');
 
     setPlayFields((prevPlayFields) =>
@@ -45,6 +49,7 @@ export const Playground = ({ molePosition, setScore }) => {
         return {
           ...field,
           hasClicked: field.id === id ? true : field.hasClicked,
+          hit: field.id === id ? true : field.hit,
         };
       })
     );
@@ -55,7 +60,7 @@ export const Playground = ({ molePosition, setScore }) => {
   return (
     <div className="mole--map">
       {playFields.map(({ id, hasClicked }) => {
-        const isMolePresent = id === molePosition;
+        const isMolePresent = molePositions.includes(id);
         const style = () => {
           if (isMolePresent && hasClicked) {
             return 'mole--square hit';
@@ -70,7 +75,7 @@ export const Playground = ({ molePosition, setScore }) => {
             onClick={() => handleFieldClick(id, isMolePresent)}
             className={style()}
           >
-            {molePosition === id && (
+            {molePositions.includes(id) && (
               <img src={MolePicture} alt="mole is here" draggable="false" />
             )}
           </div>
