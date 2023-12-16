@@ -1,0 +1,70 @@
+.floats__positioning-relative {
+  position: relative;
+  padding: 27px 31px;
+  background:  #EBEBEB;
+}
+
+
+.floats__positioning-relative:hover .floats__positioning-absolute {
+  display: block;
+  top: 0px;
+  left: 0px;
+  transition: all 1s ease-in-out;
+}
+
+ 
+.floats__positioning-absolute {
+  /* display: none; */
+  transition: all 1s ease-in-out;
+  position: absolute;
+  top: -20px;
+  left: 50px;
+  padding: 12px 20px;
+  border-radius: 5.5px;
+  border: 1px solid #999;
+  width: 250px;
+  background:  #FFD5DB;
+}
+
+
+.square-wrapper {
+  height: 100px;
+  background: rgb(255, 255, 255);
+  margin-top: 50px;
+}
+
+.square {
+  width: 120px;
+  height: 120px;
+  border-radius: 8px;
+  border: 2px solid rgb(203, 203, 245)
+}
+
+.square-1 {
+  position: relative;
+  background: #da4343;  
+}
+
+.square-2 {
+  position: absolute;
+  background: #999;
+  left: 27px;
+  bottom: 21px;
+  z-index: 0;  
+}
+
+.square-3 {
+  position: absolute;
+  background: #4d4d4d;
+  left: 54px;
+  bottom: 42px;
+}
+
+.float-wrapper {
+  margin-top: 50px;
+}
+
+.float-img {
+  float:left;
+  margin-right: 15px;
+}

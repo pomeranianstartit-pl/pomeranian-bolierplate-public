@@ -1,0 +1,59 @@
+.auth-form-container {
+    padding: 1.5rem;
+    border-radius: 0.5rem;
+    box-shadow: 0 0 0.5rem rgba(0, 0, 0, 0.1);
+    min-width: 20rem;
+    max-width: 30rem;
+}
+
+.auth-form-container h2 {
+    text-align: center;
+    margin: 0 0 1rem 0;
+}
+
+.auth-form-container form {
+    display: flex;
+    flex-direction: column;
+}
+
+.auth-form-container textarea,
+.auth-form-container input[type="text"],
+.auth-form-container input[type="password"] {
+    padding: 0.8rem;
+    margin-bottom: 0.8rem;
+    border: 1px solid #ccc;
+    border-radius: 0.25rem;
+    font-size: inherit;
+    font-family: inherit;
+}
+
+.auth-form-container textarea {
+    resize: none;
+    height: 10rem;
+}
+
+.auth-form-container input[type="submit"] {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    padding: 0.5rem;
+    border-radius: 0.25rem;
+    font-size: 1.25rem;
+    cursor: pointer;
+}
+
+.auth-form-container input[type="submit"]:hover {
+    background-color: #0056b3;
+}
+
+.auth-form-container button,
+.log-out-button {
+    all: unset;
+    text-decoration: underline;
+    cursor: pointer;
+    font-weight: 600;
+}
+
+.auth-form-error {
+    color: #ff5722;
+}

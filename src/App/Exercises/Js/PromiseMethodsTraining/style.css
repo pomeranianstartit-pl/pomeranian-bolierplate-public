@@ -1,0 +1,13 @@
+.button-promise {
+    width: 180px;
+    height: 35px;
+    font-size: 1.15rem;
+    margin-right: 25px;
+    background-color: rgb(159, 214, 214);
+    border-radius: 9px;
+    scrollbar-darkshadow-color: blueviolet;
+}
+
+.button-promise:hover{
+    background-color: rgb(214, 189, 159);
+}

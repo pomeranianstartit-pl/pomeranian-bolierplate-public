@@ -1,2 +1,8 @@
-.dashboard {
+#dashboard-header {
+    display: flex;
+    align-items: center;
+}
+
+#pic-in-dash {
+    margin-right:1rem;
 }

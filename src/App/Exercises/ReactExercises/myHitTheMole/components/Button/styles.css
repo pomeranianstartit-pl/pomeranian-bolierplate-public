@@ -1,0 +1,34 @@
+button.my-mole--button {
+  color: #ffffff;
+  border-radius: 8px;
+  border: 0px;
+  width: 163px;
+  height: 56px;
+  font-family: Roboto;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 31px;
+  cursor: pointer;
+}
+
+.my-mole--button.active {
+  background: #fe3756;
+  cursor: auto;
+}
+
+.my-mole--button.non-active {
+  background: #23213d;
+  cursor: pointer;
+}
+
+.my-mole--button.disabled {
+  background: rgba(235, 235, 235, 1);
+  color: #000;
+  cursor: auto;
+}
+
+.my-mole--button.stop {
+  background: rgba(225, 43, 27, 1);
+  cursor: pointer;
+}

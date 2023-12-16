@@ -1,19 +1,23 @@
 aside {
   border-right: 1px solid var(--color-grey);
-  padding: 1rem;
+  padding-top: 50px;
+  padding-left: 32px;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   overflow-y: auto;
 }
 
+
+
 aside ul {
   /* Nadpisanie domyślnych styli przeglądarki */
-  padding-inline-start: 1rem;
+  padding-inline-start: 0rem;
 }
 
 aside li {
-  line-height: 2rem;
+  line-height: 27px;
+  padding-bottom: 32px;  
 }
 
 .aside-row {
@@ -24,10 +28,18 @@ aside li {
 
 aside li a {
   display: block;
-  padding: 0.5rem;
+  margin-left: 1rem;
 }
 
 aside a.active {
   background-color: var(--color-primary-blue);
   color: var(--color-white);
+}
+
+@media (min-width: 0px) and (max-width: 400px){
+  aside {
+    display: none;
+    padding-left: 0px;
+    width: 0px;
+  }
 }

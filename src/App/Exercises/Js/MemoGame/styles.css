@@ -1,0 +1,37 @@
+div.game-area {
+  width: 1000px;
+  padding: 15px;
+}
+
+div.play-ground {
+  display: flex;
+  justify-content: center;
+}
+
+.memo-board {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1rem;
+  width: min-content;
+}
+
+div.game-results {
+  color: #222;
+  text-align: center;
+  margin-top: 66px;
+  margin-bottom: 66px;
+  font-size: 28px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 48px; /* 171.429% */
+}
+
+.game-area p {
+  margin: 25px 0px 25px 0px ;
+  color: #222;
+  font-feature-settings: 'clig' off, 'liga' off;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 34px; /* 188.889% */
+}

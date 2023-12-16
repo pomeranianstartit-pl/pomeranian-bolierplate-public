@@ -1,0 +1,65 @@
+.blok11_z1 .font-size {
+  font-size: 5rem;
+}
+
+.blok11_z1 .font-weight {
+  font-weight: 700;
+}
+
+.blok11_z1 .font-style {
+  font-style: italic;
+}
+
+.blok11_z1 .text-decoration {
+  text-decoration: underline;
+  text-decoration: underline dashed;
+  text-decoration: underline dotted;
+  text-decoration: line-through underline;
+}
+
+.blok11_z1 .text-transform {
+  text-transform: uppercase;
+  text-transform: lowercase;
+  text-transform: capitalize;
+}
+
+.blok11_z1 .text-shadow {
+  font-size: 45px;
+  text-shadow: 7px 7px 5px rgba(66, 68, 90, 1);
+}
+
+.blok11_z1 .special-text {
+  margin: 10px;
+  max-width: 400px;
+  font-size: 20px;
+  line-height: 1.5;
+  letter-spacing: 5px;
+  word-spacing: 15px;
+  text-align: justify;
+  text-align: right;
+  text-align: center;
+}
+
+.blok11_z1 .sup {
+    vertical-align: super;
+}
+
+.blok11_z1 .sub {
+    vertical-align: sub;
+}
+
+.blok11_z1 .list-ol {
+    list-style-type: decimal-leading-zero;
+
+}
+
+.blok11_z1 .list-ul {
+    /* vertical-align: middle;
+    list-style-type: upper-roman;
+    list-style-type: none; */
+    /* list-style-image: url("https://www.w3schools.com/cssref/sqpurple.gif"); */
+    /* list-style-type: square; */
+    /* list-style-position: inside; */
+    
+}
+
