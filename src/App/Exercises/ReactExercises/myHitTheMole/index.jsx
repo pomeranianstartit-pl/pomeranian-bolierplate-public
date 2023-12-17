@@ -39,6 +39,8 @@ export const HitTheMole = () => {
   const handleStopGame = () => {
     setIsGameStarted(false);
     setIsGameStopped(true);
+    setNumberOfMoles(1);
+    setGameTime(60);
     clearInterval(intervalId);
     setIntervalId([]);
     setGameScore({ score: score, time: gameTime - leftTime });

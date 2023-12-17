@@ -28,7 +28,13 @@ export const Playground = ({ molePositions, setScore }) => {
       setScore((prevState) => prevState + 1);
       setHit((prev) => [...prev, id]);
     } else if (!isMolePresent) {
-      setScore((prevState) => prevState - 1);
+      setScore((prevState) => {
+        if (prevState > 0) {
+          return prevState - 1;
+        } else {
+          return 0;
+        }
+      });
     }
   };
 
