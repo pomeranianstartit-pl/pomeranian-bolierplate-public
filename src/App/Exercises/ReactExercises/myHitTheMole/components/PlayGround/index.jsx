@@ -2,13 +2,14 @@ import { NUMBER_OF_FIELDS, TIME_OF_BACKLIGHT } from '../../defaultSettings';
 import MolePicture from '../pictures/mole_picture.svg';
 import './styles.css';
 
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 import { generatePlayFields } from '../../helper';
 
 export const Playground = ({ molePositions, setScore }) => {
   const [playFields, setPlayFields] = useState(
     generatePlayFields(NUMBER_OF_FIELDS)
   );
+  const [hit, setHit] = useState([]);
   const resetHasClicked = (id) => {
     setTimeout(() => {
       setPlayFields((prevPlayFields) =>
@@ -20,37 +21,34 @@ export const Playground = ({ molePositions, setScore }) => {
         })
       );
     }, TIME_OF_BACKLIGHT);
- 
   };
 
-  const updateScore = (isMolePresent) => {
-    setScore((prevState) => {
-      if (isMolePresent) {
-        return prevState + 1;
-      } else {
-        return prevState > 0 ? prevState - 1 : 0;
-      }
-    });
+  const updateScore = (id, isMolePresent) => {
+    if (isMolePresent & !hit.includes(id)) {
+      setScore((prevState) => prevState + 1);
+      setHit((prev) => [...prev, id]);
+    } else if (!isMolePresent) {
+      setScore((prevState) => prevState - 1);
+    }
   };
 
   const handleFieldClick = (id, isMolePresent) => {
-    const field = playFields.find((field) => field.id === id);
-    if (!field.hasClicked) {
-      updateScore(isMolePresent);
-    }
+    updateScore(id, isMolePresent);
 
     setPlayFields((prevPlayFields) =>
       prevPlayFields.map((field) => {
         return {
           ...field,
           hasClicked: field.id === id ? true : field.hasClicked,
-          hit: field.id === id ? true : field.hit,
         };
       })
     );
     resetHasClicked(id);
-    
   };
+
+  useEffect(() => {
+    setHit([]);
+  }, [molePositions]);
 
   return (
     <div className="mole--map">
