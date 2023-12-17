@@ -12,13 +12,14 @@ export const HitTheMole = () => {
   const [isGameStarted, setIsGameStarted] = useState(false);
   const [isGameStopped, setIsGameStopped] = useState(false);
   const [numberOfMoles, setNumberOfMoles] = useState(1);
+  const [gameTime, setGameTime] = useState(60);
+
   const [molePositions, setMolePositions] = useState(
     generateRandomNumber(NUMBER_OF_FIELDS, numberOfMoles)
   );
   const [score, setScore] = useState(0);
   const [intervalId, setIntervalId] = useState([]);
 
-  const [gameTime, setGameTime] = useState(15);
   const [leftTime, setLeftTime] = useState(gameTime);
   const [gameScore, setGameScore] = useState({ score: null, time: null });
 
@@ -32,23 +33,20 @@ export const HitTheMole = () => {
       setMolePositions(generateRandomNumber(NUMBER_OF_FIELDS, numberOfMoles));
     }, TIME_OF_MOLE);
 
-    setIntervalId((prevState) => [...prevState, interval]);
-    return () => {
-      clearInterval(interval);
-    };
+    setIntervalId(interval);
   };
 
   const handleStopGame = () => {
     setIsGameStarted(false);
     setIsGameStopped(true);
-    intervalId.forEach((interval) => clearInterval(interval));
+    console.log(intervalId, 'interval id');
+    clearInterval(intervalId);
     setIntervalId([]);
     setGameScore({ score: score, time: gameTime - leftTime });
   };
 
   useEffect(() => {
     if (isGameStarted) {
-      console.log('odliczanie');
       const countDown = setInterval(() => {
         leftTime > 0 && setLeftTime((prevState) => prevState - 1);
       }, 1000);
@@ -59,10 +57,15 @@ export const HitTheMole = () => {
   }, [leftTime, isGameStarted]);
 
   useEffect(() => {
-    if (leftTime === 0) {
+    if ((leftTime === 0) & isGameStarted) {
       handleStopGame();
     }
-  }, [leftTime]);
+  });
+
+  // Below useEffect provides proper number of Moles from the begining.
+  useEffect(() => {
+    setMolePositions(generateRandomNumber(NUMBER_OF_FIELDS, numberOfMoles));
+  }, [numberOfMoles]);
 
   return (
     <div>

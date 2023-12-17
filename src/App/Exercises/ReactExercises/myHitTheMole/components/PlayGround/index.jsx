@@ -6,13 +6,11 @@ import { useState } from 'react';
 import { generatePlayFields } from '../../helper';
 
 export const Playground = ({ molePositions, setScore }) => {
-  const [instervalId, setIntervalId] = useState([]);
   const [playFields, setPlayFields] = useState(
     generatePlayFields(NUMBER_OF_FIELDS)
   );
-  console.log(molePositions, 'molePositions');
   const resetHasClicked = (id) => {
-    const timeOutId = setTimeout(() => {
+    setTimeout(() => {
       setPlayFields((prevPlayFields) =>
         prevPlayFields.map((field) => {
           return {
@@ -22,16 +20,14 @@ export const Playground = ({ molePositions, setScore }) => {
         })
       );
     }, TIME_OF_BACKLIGHT);
-    setIntervalId((prevState) => [...prevState, timeOutId]);
+ 
   };
 
   const updateScore = (isMolePresent) => {
     setScore((prevState) => {
       if (isMolePresent) {
-        console.log('got him!');
         return prevState + 1;
       } else {
-        console.log('missed!');
         return prevState > 0 ? prevState - 1 : 0;
       }
     });
@@ -42,7 +38,6 @@ export const Playground = ({ molePositions, setScore }) => {
     if (!field.hasClicked) {
       updateScore(isMolePresent);
     }
-    console.log(playFields, 'playfields here before');
 
     setPlayFields((prevPlayFields) =>
       prevPlayFields.map((field) => {
@@ -53,8 +48,8 @@ export const Playground = ({ molePositions, setScore }) => {
         };
       })
     );
-    console.log(playFields, 'playfields here after');
     resetHasClicked(id);
+    
   };
 
   return (
