@@ -32,7 +32,7 @@ export const Playground = ({ molePositions, setScore }) => {
         return prevState + 1;
       } else {
         console.log('missed!');
-        return prevState - 1;
+        return prevState > 0 ? prevState - 1 : 0;
       }
     });
   };
