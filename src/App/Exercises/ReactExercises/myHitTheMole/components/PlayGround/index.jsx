@@ -9,7 +9,7 @@ export const Playground = ({ molePositions, setScore }) => {
   const [playFields, setPlayFields] = useState(
     generatePlayFields(NUMBER_OF_FIELDS)
   );
-  const [hit, setHit] = useState(null);
+  const [hit, setHit] = useState([]);
   const resetHasClicked = (id) => {
     setTimeout(() => {
       setPlayFields((prevPlayFields) =>
@@ -24,9 +24,9 @@ export const Playground = ({ molePositions, setScore }) => {
   };
 
   const updateScore = (id, isMolePresent) => {
-    if (isMolePresent & (hit !== id)) {
+    if (isMolePresent & !hit.includes(id)) {
       setScore((prevState) => prevState + 1);
-      setHit(id);
+      setHit((prev) => [...prev, id]);
     } else if (!isMolePresent) {
       setScore((prevState) => prevState - 1);
     }
@@ -47,7 +47,7 @@ export const Playground = ({ molePositions, setScore }) => {
   };
 
   useEffect(() => {
-    setHit(null);
+    setHit([]);
   }, [molePositions]);
 
   return (
