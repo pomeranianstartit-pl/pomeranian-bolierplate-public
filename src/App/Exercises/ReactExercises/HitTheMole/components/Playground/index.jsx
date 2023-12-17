@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 
 import { generateArrayOfFields } from '../../helper';
 
@@ -35,8 +35,13 @@ export const Playground = ({ molePositionId, score, setScore }) => {
       : setScore((prevScore) => prevScore - 1);
   };
 
+  useEffect(() => {
+    console.log('GameFields', gameFields);
+  });
+
   return (
     <div>
+      tu jest playground
       <div style={{ display: 'flex' }}>
         {gameFields.map(({ id, hasClicked }) => {
           const isMolePresent = id === molePositionId;

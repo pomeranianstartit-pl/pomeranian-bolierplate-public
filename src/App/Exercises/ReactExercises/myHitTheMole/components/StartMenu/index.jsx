@@ -6,7 +6,7 @@ import './styles.css';
 export const StartMenu = ({
   setGameTime,
   setNumberOfMoles,
-  setIsGameStarted,
+  handleStartGame,
 }) => {
   return (
     <div className="start--menu">
@@ -17,7 +17,7 @@ export const StartMenu = ({
             {
               isDisable: false,
               isActive: true,
-              value: 60,
+              value: 15,
               content: '1 minuta',
             },
             {
@@ -58,7 +58,7 @@ export const StartMenu = ({
         />
       </MenuField>
       <MenuField title="Przyciski sterujące">
-        <Button isActive={false} onClick={() => setIsGameStarted(true)}>
+        <Button isActive={false} onClick={() => handleStartGame()}>
           START
         </Button>
       </MenuField>

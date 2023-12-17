@@ -6,12 +6,25 @@ export const Button = ({
   onClick = () => {},
   children,
 }) => {
-  const ClassName = `${
-    isActive ? 'my-mole--button active' : 'my-mole--button disabled'
-  }`;
+  const buttonClassName = () => {
+    if (isActive) {
+      return 'my-mole--button active';
+    }
+    if (isDisabled) {
+      return 'my-mole--button disabled ';
+    }
+    if (children === 'STOP') {
+      return 'my-mole--button stop';
+    }
+    return 'my-mole--button non-active';
+  };
 
   return (
-    <button disabled={isDisabled} className={ClassName} onClick={onClick}>
+    <button
+      disabled={isDisabled}
+      className={buttonClassName()}
+      onClick={onClick}
+    >
       {children}
     </button>
   );
