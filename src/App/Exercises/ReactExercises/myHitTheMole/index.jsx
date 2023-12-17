@@ -39,7 +39,6 @@ export const HitTheMole = () => {
   const handleStopGame = () => {
     setIsGameStarted(false);
     setIsGameStopped(true);
-    console.log(intervalId, 'interval id');
     clearInterval(intervalId);
     setIntervalId([]);
     setGameScore({ score: score, time: gameTime - leftTime });
@@ -56,16 +55,16 @@ export const HitTheMole = () => {
     }
   }, [leftTime, isGameStarted]);
 
+  // Below useEffect provides proper number of Moles from the begining.
+  useEffect(() => {
+    setMolePositions(generateRandomNumber(NUMBER_OF_FIELDS, numberOfMoles));
+  }, [numberOfMoles]);
+
   useEffect(() => {
     if ((leftTime === 0) & isGameStarted) {
       handleStopGame();
     }
   });
-
-  // Below useEffect provides proper number of Moles from the begining.
-  useEffect(() => {
-    setMolePositions(generateRandomNumber(NUMBER_OF_FIELDS, numberOfMoles));
-  }, [numberOfMoles]);
 
   return (
     <div>

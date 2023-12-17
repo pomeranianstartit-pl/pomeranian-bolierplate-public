@@ -1,5 +1,8 @@
 export const generatePlayFields = (length) => {
-  return Array.from({ length }, (_, i) => ({ id: i + 1, hasClicked: false, hit: false }));
+  return Array.from({ length }, (_, i) => ({
+    id: i + 1,
+    hasClicked: false,
+  }));
 };
 
 export const generateRandomNumber = (max) => {
