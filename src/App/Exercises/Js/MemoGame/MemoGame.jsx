@@ -6,7 +6,7 @@ import { Tile } from './Components/Tile/Tile.jsx';
 import { getAlphabet, shuffle } from './Utilities/index.jsx';
 import './styles.css';
 
-const ELEMENTS = [4, 16, 20];
+const ELEMENTS = [8, 16, 20];
 const characters = getAlphabet(10);
 
 export const MemoGame = () => {
@@ -22,6 +22,8 @@ export const MemoGame = () => {
   const [tilesGuessed, setTilesGuessed] = useState(0);
   const [timeResult, setTimeResult] = useState(null);
   const [resultTable, setResultTable] = useState(SetInitialResults());
+
+  // console.log(Array(5).fill(0), 'jakiarray');
 
   function getInitialTiles(size) {
     const charactersSubset = characters.slice(0, size / 2);

@@ -6,10 +6,22 @@ export function getAlphabet(limit) {
   let maxSize = endASCII - startASCII + 1;
   maxSize = limit > 0 && limit <= maxSize ? limit : maxSize;
 
-  return Array(maxSize)
-    .fill(0)
-    .map((_, index) => index + startASCII)
-    .map((characterCode) => String.fromCharCode(characterCode));
+  let Array = [];
+  while (Array.length < limit) {
+    let random_num = Math.floor(Math.random() * (90 - 65)) + startASCII;
+    if (!Array.includes(random_num)) {
+      Array.push(random_num);
+    }
+
+    console.log(limit, 'limit');
+    console.log(Array.length, 'array');
+  }
+
+  // return Array(maxSize)
+  //   .fill(0)
+  //   .map((_, index) => index + startASCII)
+  //   .map((characterCode) => String.fromCharCode(characterCode));
+  return Array.map((characterCode) => String.fromCharCode(characterCode));
 }
 
 export function shuffle(array) {
