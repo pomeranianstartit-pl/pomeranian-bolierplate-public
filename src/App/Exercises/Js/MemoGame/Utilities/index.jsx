@@ -1,10 +1,6 @@
 export function getAlphabet(limit) {
   const startASCII = 65;
   //Litera pierwsza alfabetu A
-  const endASCII = 90;
-  //Litera  ostatnia alfabetu Z
-  let maxSize = endASCII - startASCII + 1;
-  maxSize = limit > 0 && limit <= maxSize ? limit : maxSize;
 
   let Array = [];
   while (Array.length < limit) {
