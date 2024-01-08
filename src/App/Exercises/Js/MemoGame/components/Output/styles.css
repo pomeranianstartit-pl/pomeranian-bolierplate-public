@@ -2,10 +2,12 @@
   border-radius: 0.5rem;
   border: 1px solid #ebebeb;
   background: #ebebeb;
-  width: 10.1875rem;
+
   display: flex;
-  height: 3.5rem;
-  padding: 1.25rem 2.25rem;
+
+  height: 56px;
+  width: 10rem;
+
   justify-content: center;
   align-items: center;
 

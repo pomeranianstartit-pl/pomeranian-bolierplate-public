@@ -188,7 +188,7 @@ export const Exercise = () => {
     <div>
       <GoBackButton buttonTitle="< MEMO" />
 
-      <p>
+      <p className="pargraph--description">
         Gra polegająca na zapamiętywaniu odkrytych kafli i łączeniu ich w pary
       </p>
 
@@ -233,7 +233,7 @@ export const Exercise = () => {
           </div>
           <div className="memo-controls-panel">
             <Label>PRZYCISKI STERUJĄCE</Label>
-            <Button value="START" onClick={handleStart} />
+            <Button value="START" onClick={handleStart} variant="primary" />
           </div>
         </>
       )}
@@ -250,7 +250,7 @@ export const Exercise = () => {
           </div>
           <div className="memo-controls-panel">
             <Label>PRZYCISKI STERUJĄCE</Label>
-            <Button value="PASS" onClick={handleStop} />
+            <Button value="PASS" onClick={handleStop} variant="stop" />
           </div>
         </>
       )}

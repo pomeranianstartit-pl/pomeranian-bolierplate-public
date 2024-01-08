@@ -30,6 +30,10 @@
   border: 1px solid #fe3756;
   background: #fe3756;
 }
+.memo-Button--stop {
+  background-color: #e12b1b;
+  border: none;
+}
 
 .memo-Button--tertiary {
   border: 1px solid red;

@@ -8,3 +8,13 @@
   gap: 1rem;
   width: min-content;
 }
+.pargraph--description {
+  color: var(--text-text-primary, #222);
+  font-feature-settings: 'clig' off, 'liga' off;
+  /* header/H4 */
+  font-family: Poppins;
+  font-size: 1.125rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 2.125rem; /* 188.889% */
+}
