@@ -14,6 +14,8 @@ import { BasicFormsRouterData } from './BasicForms/router-data';
 import { ReactHookBasicFormsRouterData } from './ReactBasicForms/router-data';
 import { FormOrderingRouterData } from './FormOrdering/router-data';
 import { FirebaseRouterData } from './Firebase/router-data';
+import { CounterReduxRouterData } from './CounterRedux/router-data';
+import { PokemonRtkRouterData } from './PokemonRTK/router-data';
 
 export const blockRouterMetaData = [
   SubRouteExampleMetaData,
@@ -29,5 +31,7 @@ export const blockRouterMetaData = [
   ReactHookBasicFormsRouterData,
   FormOrderingRouterData,
   FirebaseRouterData,
+  CounterReduxRouterData,
+  PokemonRtkRouterData,
 ];
 export const blockRouterData = getParsedRouterDataList(blockRouterMetaData);
