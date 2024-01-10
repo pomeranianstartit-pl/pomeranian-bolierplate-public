@@ -52,14 +52,14 @@
 }
 
 .blok11_z1 .list-ol {
-  /* list-style-type: upper-alpha; */
+  list-style-type: upper-alpha;
 
-  list-style-image: url('https://www.w3schools.com/cssref/sqpurple.gif');
+  /* list-style-image: url('https://www.w3schools.com/cssref/sqpurple.gif'); */
 }
 
 .blok11_z1 .list-ul {
   /* list-style-type: upper-alpha; */
 
-  list-style-image: url('https://www.w3schools.com/cssref/sqpurple.gif');
-  list-style-position: ouside;
+  /* list-style-image: url('https://www.w3schools.com/cssref/sqpurple.gif'); */
+  list-style-position: outside;
 }

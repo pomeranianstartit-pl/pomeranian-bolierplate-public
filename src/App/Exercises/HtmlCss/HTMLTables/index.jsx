@@ -4,7 +4,14 @@ export function HTMLTables() {
   const list = ['Saab', 'Volvo', 'BMW', 'Skoda', 'Mercedes'];
   return (
     <div className="html-table-all">
-      Ćwiczenia z tworzenia tabel
+      <h1>Ćwiczenia z tworzenia tabel</h1>
+      <p>
+        Tabele tworzy się za pomocą tagu 'table'. W tagu 'table' buduje się
+        tabele za pomocą kolejnych tagów jak 'tr','td','th'. Tag tr(table row)
+        odpowiada za wiersz w tabeli. Tag th(table heading) standardowo powinien
+        być pierwszym tagiem w tabeli. Tag(table data cell) tag odpowiadający za
+        komórkę w tabeli.{' '}
+      </p>
       <table className="html-table">
         <tr>
           <th>Plastic</th>

@@ -13,7 +13,7 @@ import { ImageFilesMetaData } from './ImageFiles/router-data';
 import { MediaFilesRouterMetaData } from './MediaFiles/router-data';
 
 import { TextFundamentsMetaData } from './TextFundaments/router-data';
-// import { SelectorAndCascadeRouterMetaData } from './SelectorsAndCascade/router-data';
+import { SelectorAndCascadeRouterMetaData } from './SelectorsAndCascade/router-data';
 
 export const blockRouterMetaData = [
   // SelectorAndCascadeRouterMetaData,
@@ -28,5 +28,6 @@ export const blockRouterMetaData = [
   HTMLTablesMetaData,
   ArrayRenderToTableMetaData,
   FloatsAndPositioningMetaData,
+  SelectorAndCascadeRouterMetaData,
 ];
 export const blockRouterData = getParsedRouterDataList(blockRouterMetaData);

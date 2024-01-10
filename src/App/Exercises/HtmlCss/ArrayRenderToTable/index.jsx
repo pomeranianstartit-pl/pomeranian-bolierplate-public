@@ -58,7 +58,10 @@ export function ArrayRenderToTable() {
   return (
     <div>
       <h2>Renderowanie listy</h2>
-
+      <p>
+        Do renderowanie listy wykorzystano metodę map dla obiektów(React).
+        Renderowane listy/tabele zostały zapisane w tablicy obiektów.
+      </p>
       <ul>
         {carData.map((car) => (
           <li key={car.id}>{car.make}</li>

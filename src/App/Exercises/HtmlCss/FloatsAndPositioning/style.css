@@ -1,8 +1,10 @@
+.list-description {
+  margin: 10px;
+}
+
 .floats__positioning-relative {
   position: relative;
-
   padding: 27px 31px;
-
   background: #ebebeb;
 }
 
@@ -16,24 +18,15 @@
 
 .floats__positioning-absolute {
   display: block;
-
   transition: all 1s ease-in-out;
-
   position: absolute;
-
   bottom: -100px;
   right: 200px;
-
   left: 50px;
-
   padding: 12px 20px;
-
   border-radius: 5.5px;
-
   border: 1px solid #999;
-
   width: 100px;
-
   background: #ffd5db;
 }
 

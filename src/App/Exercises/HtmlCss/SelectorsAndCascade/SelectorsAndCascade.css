@@ -14,14 +14,14 @@ span ~ span {
 span + span {
   background-color: blue;
 }
-input {
+/* input {
   background-color: red;
-}
+} */
 
-input:focus,
-a:focus {
+/* input:focus, */
+/* a:focus {
   background-color: green;
-}
+} */
 
 .unikalna-klasa1 {
   color: blue;
@@ -50,12 +50,12 @@ a:focus {
 .SelectorsAndCascade > div > div:last-child {
   background-color: black;
 }
-div::first-line {
+/* div::first-line {
   font-size: 32px;
-}
-a:visited {
+} */
+/* a:visited {
   color: red;
-}
+} */
 span::before {
   content: '😀';
 }
