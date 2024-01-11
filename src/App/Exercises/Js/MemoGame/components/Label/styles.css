@@ -1,0 +1,8 @@
+.memo-label {
+  color: #222;
+  font-size: 1.125rem;
+  font-weight: 400;
+  line-height: 2.125rem;
+  text-transform: uppercase;
+  flex-basis: 12rem;
+}

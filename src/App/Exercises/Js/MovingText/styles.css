@@ -1,0 +1,28 @@
+.font-test-family {
+  font-family: Chilanka;
+}
+
+.variable-string-placeholder {
+  margin-left: 5px;
+}
+
+.container {
+  background-color: gray;
+  padding: 0.2rem;
+  width: 12rem;
+  overflow: hidden;
+}
+
+.text {
+  text-align: right;
+  color: white;
+  animation: moving-text 7s linear infinite;
+}
+@keyframes moving-text {
+  from {
+    transform: translateX(-100%);
+  }
+  to {
+    transform: translateX(100%);
+  }
+}
