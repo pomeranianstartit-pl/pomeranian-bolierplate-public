@@ -2,9 +2,7 @@ import './styles.css';
 
 export function Exercise() {
   let string1 = 'Jon Snow';
-
   const string3 = 'Ulubiony bohater z serialu "Gra o tron" to ' + string1;
-
   const string2 = `Ulubiony bohater z serialu "Gra o tron" to: ${string1}`;
   let firstname = 'Artur';
   let liczba = 20;
@@ -12,6 +10,7 @@ export function Exercise() {
     <div className="playing-with-variables">
       <section>
         <h2>Operacje na stringach</h2>
+
         <p>Ulubiony bohater z serialu "Gra o tron" to {string1}</p>
         <p>
           Ulubiony bohater z serialu "Gra o tron" to
@@ -25,7 +24,6 @@ export function Exercise() {
           stronę!
         </p>
       </section>
-      event
     </div>
   );
 }

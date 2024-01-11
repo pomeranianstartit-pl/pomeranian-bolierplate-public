@@ -60,15 +60,10 @@ export function Exercise() {
   // ! - NOT
 
   const resultNOT_1 = !a;
-
   console.log(resultNOT_1, '!a');
-
   const resultNOT_2 = !b;
-
   console.log(resultNOT_2, '!b');
-
   const resultJoin = (a || b) && !b;
-
   console.log(resultJoin, '(a || b) && !b');
 
   // ||= OR ASSIGN

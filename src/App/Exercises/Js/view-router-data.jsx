@@ -8,7 +8,9 @@ import { NumbersrMetaData } from './Numbers/router-data';
 import { JsArraysObjectsMetaData } from './JsArraysObjects/router-data';
 import { StringMethodsMetaData } from './String Methods/router-data';
 import { JsObjectBasicsMetaData } from './JsObjectBasics/router-data';
+
 import { DateTimeMetaData } from './DataTime/router-data';
+import { LoopsMetaData } from './Loops/router-data';
 import { JsFunctionBasicsMetaData } from './JsFunctionBasics/router-data';
 import { HoistingMetaData } from './Hoisting/router-data';
 import { ExerciseJsFunctionsMetaData } from './ExerciseJsFunctions/router-data';
@@ -46,6 +48,7 @@ export const blockRouterMetaData = [
   JsSetTimeOutMetaData,
   JsSetTimeIntervalMetaData,
   UseEffectsMetaData,
+  LoopsMetaData,
   VanishStringMetaData,
   TimerMetaData,
   MovingTextMetaData,

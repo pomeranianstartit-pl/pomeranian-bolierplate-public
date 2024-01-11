@@ -3,7 +3,7 @@
 }
 
 .SelectorsAndCascade > div {
-  border: 1px solid black;
+  border: 1px solid #000000;
   padding: 5px;
 }
 /* span musi być poprzedany spanem jak kolwiek <span> <cos/> <span /> */
@@ -11,9 +11,9 @@ span ~ span {
   color: red;
 }
 /* span musi byc poprzedznay bezpośrednio spanem */
-span + span {
+/* span + span {
   background-color: blue;
-}
+} */
 /* input {
   background-color: red;
 } */
@@ -56,9 +56,9 @@ span + span {
 /* a:visited {
   color: red;
 } */
-span::before {
+/* span::before {
   content: '😀';
 }
 span::after {
   content: ❤️;
-}
+} */

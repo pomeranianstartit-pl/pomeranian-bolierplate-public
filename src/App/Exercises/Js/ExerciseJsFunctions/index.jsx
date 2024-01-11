@@ -189,7 +189,7 @@ export const ExerciseJsFunctions = () => {
       <h1>ExerciseJsFunctions</h1>
       <h2>Ćw sortImmute</h2>
       <p>
-        napisz funkcje sortImmute, ktora przyjmuje jako parametr tablice cyfr i
+        Napisz funkcje sortImmute, ktora przyjmuje jako parametr tablice cyfr i
         zwraca ją posortowana funkcja ma nie zmieniać pierwotnej tablicy
       </p>
       <p>

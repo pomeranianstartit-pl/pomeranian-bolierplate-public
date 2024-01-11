@@ -18,6 +18,9 @@ export const Exercise = () => {
 
     setIntervalId([]);
   };
+  const resetButton = () => {
+    setCount(0);
+  };
 
   return (
     <div>
@@ -26,6 +29,7 @@ export const Exercise = () => {
       <button onClick={handleStart}>Dodaj</button>
 
       <button onClick={handleStop}>Stop</button>
+      <button onClick={resetButton}>Reset</button>
     </div>
   );
 };

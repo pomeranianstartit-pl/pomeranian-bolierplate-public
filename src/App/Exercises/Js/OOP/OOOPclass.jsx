@@ -48,16 +48,16 @@ class Person {
   }
 
   sayHello() {
-    console.log(`Hello, my name is ${this.name}`);
+    //-1 console.log(`Hello, my name is ${this.name}`);
   }
 
   walk() {
-    console.log(`${this.name} is walking`);
+    //-1 console.log(`${this.name} is walking`);
   }
 
   changeName(newName) {
     this.name = newName;
-    console.log(`My new name is ${this.name}`);
+    //-1 console.log(`My new name is ${this.name}`);
 
     return 'OK jestem adam';
   }
@@ -65,20 +65,17 @@ class Person {
 
 const person1 = new Person('Jan', 65, { city: 'Warsaw' });
 const person2 = new Person('Zosia', 20);
-
-console.log(person1);
-console.log(person2);
-
-person1.sayHello();
-person2.sayHello();
+//Wyskakiwało z konsoli nieważne czy było się w danej podstronie czy nie
+//-1 console.log(person1);
+//-1 console.log(person2);
 
 person1.walk();
 person2.walk();
 
 const changedValue = person1.changeName('Adam');
-console.log(changedValue, 'changedValue');
+//-1 console.log(changedValue, 'changedValue');
 person1.sayHello();
-
+// changedValue();
 // console.log({}, '{}'); // {} === new Object()
 // console.log(new Object(), 'new Object()');
 
@@ -89,5 +86,10 @@ person1.sayHello();
 // const person4 = PersonConstructor('Zosia', 20);
 
 export const OOPClass = () => {
-  return <div>ćwiczenie z klasami</div>;
+  return (
+    <div>
+      ćwiczenie z klasami
+      {/* {(person1Hello, person2Hello)} */}
+    </div>
+  );
 };

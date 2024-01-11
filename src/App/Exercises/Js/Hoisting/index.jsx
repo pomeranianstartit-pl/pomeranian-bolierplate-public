@@ -51,7 +51,7 @@ export function Hoisting() {
 
   return (
     <div>
-      <h1>Hosting</h1>
+      <h1>Hoisting</h1>
       <h2>Zasięg zmiennych</h2>
     </div>
   );

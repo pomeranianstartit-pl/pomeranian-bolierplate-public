@@ -10,11 +10,11 @@ export function Loops() {
   for (let counter = 0; counter < 5; counter++) {
     console.log(counter); //0,1,2,3,4
   }
-
-  let newCounter = 0;
-  while (newCounter < 5) {
-    console.log(newCounter);
-  }
+  //zakomentowane bo jest to pętla nieskończoności
+  // let newCounter = 0;
+  // while (newCounter < 5) {
+  //   console.log(newCounter);
+  // }
 
   //for of loop
   for (const number of numbers) {

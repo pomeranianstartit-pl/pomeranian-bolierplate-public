@@ -1,5 +1,5 @@
 import { useState } from 'react';
-
+import './styles.css';
 export function Exercise() {
   //
   const DEFAULT_NICKS = [
@@ -16,6 +16,7 @@ export function Exercise() {
   };
   const [inputText, setInputText] = useState('');
   const [nickArray, setNickArray] = useState(getFromLocalStorage());
+  const [showError, setShowError] = useState(false);
 
   const saveToLocalStorage = (array) =>
     localStorage.setItem(NICKS_KEY, JSON.stringify(array));
@@ -32,6 +33,11 @@ export function Exercise() {
 
   const addNick = () => {
     // nickArray.push(inputText);
+    if (!inputText.trim()) {
+      setShowError(true); // Show error message
+      return;
+    }
+
     setNickArray((prevArray) => {
       const newArray = [
         ...prevArray,
@@ -42,6 +48,7 @@ export function Exercise() {
       return newArray;
     });
     setInputText('');
+    setShowError(false);
   };
   const deleteNick = (deleteId) => {
     const newArray = nickArray.filter(({ id }) => id !== deleteId);
@@ -50,22 +57,38 @@ export function Exercise() {
   };
 
   return (
-    <div>
-      <h1>SavedInput - ćwiczenia</h1>
-      <label>
-        <input
-          type="text"
-          placeholder="wpisz nick"
-          onChange={(event) => setInputText(event.target.value)}
-          value={inputText}
-        />
+    <div className="savedinput--div-button-input">
+      <label className="savedinput--label-mainfield">
+        <div className="savedinput--span--input-add">
+          <span className="savedinput-span-name">NICK</span>
+          <input
+            type="text"
+            placeholder="   Wpisz nick"
+            onChange={(event) => setInputText(event.target.value)}
+            value={inputText}
+            maxLength={20}
+          />
+        </div>
+        <button onClick={addNick} className="savedinput--button-add">
+          Dodaj
+        </button>
+        {showError && (
+          <p className="savedinput-p-announcement">
+            Aby wynik się zapisał musisz wpisać przynajmniej jeden znak.
+          </p>
+        )}
       </label>
-      <button onClick={addNick}>Dodaj nick</button>
-      <div>
+      <div className="savedinput--list--names">
         <ul>
           {nickArray.map(({ nick, id }) => (
-            <li key={id}>
-              {nick} <button onClick={() => deleteNick(id)}>X</button>
+            <li key={id} className="savedinput--list--name">
+              {nick}{' '}
+              <button
+                onClick={() => deleteNick(id)}
+                className="savedinput--button-delete"
+              >
+                X
+              </button>
             </li>
           ))}
         </ul>

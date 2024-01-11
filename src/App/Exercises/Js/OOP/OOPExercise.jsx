@@ -8,38 +8,39 @@
 //      następnie stwórz podklasę Doctor: Pediatrician - metoda ma wyświetlić jedynie :
 //      introduce() => "I'm a Pediatrician"
 
-class Person {
-  introduce() {
-    return 'I am a Person';
-  }
-}
+//od linii12-43 koment wyskakuje
+// class Person {
+//   introduce() {
+//     return 'I am a Person';
+//   }
+// }
 
-class Doctor extends Person {
-  introduce() {
-    return `${super.introduce()}, I am also a Doctor'`;
-  }
-}
+// class Doctor extends Person {
+//   introduce() {
+//     return `${super.introduce()}, I am also a Doctor'`;
+//   }
+// }
 
-class Builder extends Person {
-  introduce() {
-    return `${super.introduce()}, I am also a Builder'`;
-  }
-}
+// class Builder extends Person {
+//   introduce() {
+//     return `${super.introduce()}, I am also a Builder'`;
+//   }
+// }
 
-class Pediatrician extends Doctor {
-  introduce() {
-    return `I'm a Pediatrician`;
-  }
-}
+// class Pediatrician extends Doctor {
+//   introduce() {
+//     return `I'm a Pediatrician`;
+//   }
+// }
 
-const person = new Person();
-const doctor = new Doctor();
-const builder = new Builder();
-const pediatrician = new Pediatrician();
+// const person = new Person();
+// const doctor = new Doctor();
+// const builder = new Builder();
+// const pediatrician = new Pediatrician();
 
-[person, doctor, builder, pediatrician].forEach((item) =>
-  console.log(item.introduce())
-);
+// [person, doctor, builder, pediatrician].forEach((item) =>
+//   console.log(item.introduce())
+// );
 
 // Zadanie 2. Kompozycja
 //      Tworzymy samochód w podejściu kompozycyjnym!
