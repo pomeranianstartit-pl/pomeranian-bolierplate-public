@@ -1,3 +1,8 @@
+import './styles.css';
+import Star from '../../../Images/rating_star.svg';
+
+import { MyIcon } from './helper';
+
 export function FinalTable() {
   const headingsName = [
     { id: 1, name: 'Location' },
@@ -33,7 +38,17 @@ export function FinalTable() {
   ];
 
   function ratioStars(number) {
-    return <div>{number}*</div>;
+    const Arr = Array.from({ length: number }, (_, i) => ({
+      id: i + 1,
+    }));
+
+    return (
+      <div className="ratio-star-group">
+        {Arr.map((elemenent) => (
+          <MyIcon key={elemenent.id} ImgSrc={Star} name={'ratio-star-single'} />
+        ))}
+      </div>
+    );
   }
 
   function headings(props) {

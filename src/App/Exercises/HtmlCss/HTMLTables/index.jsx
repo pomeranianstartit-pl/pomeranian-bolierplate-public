@@ -87,7 +87,7 @@ export function HTMLTables() {
       </table>
       <ul>
         {list.map((value) => (
-          <li key={value.id}>{value}</li>
+          <li key={value}>{value}</li>
         ))}
       </ul>
     </div>

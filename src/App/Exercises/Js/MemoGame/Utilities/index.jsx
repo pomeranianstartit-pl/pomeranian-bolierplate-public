@@ -9,8 +9,6 @@ export function getAlphabet(limit) {
       Array.push(random_num);
     }
 
-    console.log(limit, 'limit');
-    console.log(Array.length, 'array');
   }
 
   // return Array(maxSize)
