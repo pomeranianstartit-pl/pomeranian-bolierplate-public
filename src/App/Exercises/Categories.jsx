@@ -14,7 +14,6 @@ export const Categories = () => {
         <NavLink to="react">React - lista ćwiczeń</NavLink>
         <NavLink to="web-api">Web API - lista ćwiczeń</NavLink>
         <NavLink to="async">Asynchroniczność - lista ćwiczeń</NavLink>
-        <NavLink to="alone">Exercises-Additional</NavLink>
       </div>
     </>
   );

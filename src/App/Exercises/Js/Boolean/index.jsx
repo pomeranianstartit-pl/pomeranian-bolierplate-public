@@ -79,21 +79,14 @@ export function Exercise() {
   // &&= AND ASSIGN
 
   let resultAND_ASSIGN_1 = 5;
-
   resultAND_ASSIGN_1 &&= 10;
-
   console.log(resultAND_ASSIGN_1, 'resultAND_ASSIGN_1');
-
   let resultAND_ASSIGN_2 = 0;
-
   resultAND_ASSIGN_2 &&= 10;
-
   console.log(resultAND_ASSIGN_2, 'resultAND_ASSIGN_2');
 
   // --------------------------------------------------------------------
-
   // OPERATORS PRESENDENCE
-
   // --------------------------------------------------------------------
 
   // 1. () Nawiasy (Najwyższy priorytet - wyrażenia w nawiasach są wykonywane jako pierwsze).
@@ -120,13 +113,9 @@ export function Exercise() {
       </div>
 
       {isLogged && <button onClick={handleSubscribe}>Wykup subskrypcje</button>}
-
       {isLogged && <button onClick={handleLog}>Wyloguj się</button>}
-
       {!isLogged && <button onClick={handleLog}>Zaloguj się</button>}
-
       {isLogged && <div>content dla osoby zalogowanej....</div>}
-
       {isLogged && isPremiumUser && (
         <div>Dzisiaj mecze wygrają drużyny grające u siebie</div>
       )}

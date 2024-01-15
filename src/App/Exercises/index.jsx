@@ -6,7 +6,6 @@ import { HtmlCssExercises, HtmlCssExerciseItem } from './HtmlCss';
 import { Categories } from './Categories';
 import { ReactExercises, ReactExercisesItem } from './ReactExercises';
 import { NotFound } from '../Components/NotFound/NotFound';
-import { AloneExercises, AloneExerciseItem } from './Exercises_Alone';
 
 import './styles.css';
 
@@ -18,13 +17,13 @@ export function Exercises() {
         <Route path="html-css" element={<HtmlCssExercises />} />
         <Route path="js" element={<JsExercises />} />
         <Route path="react" element={<ReactExercises />} />
-        <Route path="alone" element={<AloneExercises />} />
+
         <Route path="*" element={<NotFound />} />
       </Route>
       <Route path="html-css/*" element={<HtmlCssExerciseItem />} />
       <Route path="js/*" element={<JsExerciseItem />} />
       <Route path="react/*" element={<ReactExercisesItem />} />
-      <Route path="alone/*" element={<AloneExerciseItem />} />
+
       <Route path="*" element={<NotFound />} />
     </Routes>
   );

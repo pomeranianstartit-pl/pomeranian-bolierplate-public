@@ -5,14 +5,14 @@
 #container_biggerAandB {
   display: flex;
   flex-direction: column;
-  
+  max-width: 10rem;
 }
 .input_biggerAB {
   margin-bottom: 10px;
 }
 
 .button_AB {
-  padding:20px;
+  padding: 20px;
   background-color: lightgrey;
   border: none;
   border-radius: 6px;

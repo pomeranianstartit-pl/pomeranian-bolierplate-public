@@ -5,15 +5,19 @@ import './style.css';
 export function ReactIfAisBiggerThan10() {
   const [inputNumber, setInputNumber] = useState('');
   const [text, setText] = useState('Wprowadź liczbę');
+  function changeToNumber(string) {
+    const changeStringtoNumber = parseInt(string);
+    return changeStringtoNumber;
+  }
   function handleChange(event) {
     setInputNumber(event.target.value);
-    if (event.target.value > 10) {
+    if (changeToNumber(event.target.value) > 10) {
       setText(' jest większa niż 10');
     }
-    if (event.target.value < 10) {
+    if (changeToNumber(event.target.value) < 10) {
       setText(' jest mniejsza niż 10');
     }
-    if (event.target.value == 10) {
+    if (changeToNumber(event.target.value) === 10) {
       setText(' jest równa 10.');
     }
     console.log(event.target.value);

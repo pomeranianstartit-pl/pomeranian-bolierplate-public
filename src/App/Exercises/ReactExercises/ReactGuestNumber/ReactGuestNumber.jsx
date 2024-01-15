@@ -8,32 +8,34 @@ export function ReactGuestNumber() {
   const randomNumberChosen = generateRandomNumber();
   const [randomNumber, setRandomNumber] = useState(randomNumberChosen);
   const [inputNumber, setInputNumber] = useState('');
-  const [firstName, setFirstName] = useState(generateRandomNumber());
+
   const [text, setText] = useState('');
   const maximum = 10;
   const minimum = 1;
-  console.log(randomNumber, 'number');
 
-  // function handleChange(event) {
-  //   setInputNumber(event.target.value);
-  // }
+  function handleChange(event) {
+    setInputNumber(event.target.value);
+  }
   function handleReset() {
     setRandomNumber(generateRandomNumber());
   }
-
+  function changeToNumber(string) {
+    const changeStringtoNumber = parseInt(string);
+    return changeStringtoNumber;
+  }
   function handleStart() {
-    if (firstName === randomNumber) {
+    if (changeToNumber(inputNumber) === randomNumber) {
       setText('Gratulacje trafiłeś/trafiłaś.');
     }
-    if (firstName > randomNumber) {
+    if (changeToNumber(inputNumber) > randomNumber) {
       setText('Liczba wpisana jest większa od wylosowanej.');
     }
 
-    if (firstName < randomNumber) {
+    if (changeToNumber(inputNumber) < randomNumber) {
       setText('Liczba wpisana jest mniejsza od wylosowanej.');
     }
 
-    if (firstName === '')
+    if (inputNumber === '')
       setText('Wpisz dowolną liczbę od ' + minimum + ' do ' + maximum + '.');
   }
   return (
@@ -45,7 +47,7 @@ export function ReactGuestNumber() {
       <div>
         <input
           value={inputNumber}
-          onChange={(e) => setFirstName(e.target.value)}
+          onChange={handleChange}
           type="number"
           placeholder="A"
           max={maximum}

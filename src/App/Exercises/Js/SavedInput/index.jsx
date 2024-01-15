@@ -33,6 +33,7 @@ export function Exercise() {
 
   const addNick = () => {
     // nickArray.push(inputText);
+    //ten poniższy if wyłapuje aby nie było pustych graczy plus komunikat aby poinformować ile znaków minimalnei trzeba wprowadzić
     if (!inputText.trim()) {
       setShowError(true); // Show error message
       return;
@@ -63,7 +64,7 @@ export function Exercise() {
           <span className="savedinput-span-name">NICK</span>
           <input
             type="text"
-            placeholder="   Wpisz nick"
+            placeholder="  Wpisz nick"
             onChange={(event) => setInputText(event.target.value)}
             value={inputText}
             maxLength={20}

@@ -13,15 +13,19 @@ export function ReactIfAisBiggerthanB() {
   function handleChange1(event) {
     setInputNumber1(event.target.value);
   }
+  function changeToNumber(string) {
+    const changeStringtoNumber = parseInt(string);
+    return changeStringtoNumber;
+  }
   function handleStart() {
-    if (inputNumber > inputNumber1) {
+    if (changeToNumber(inputNumber) > changeToNumber(inputNumber1)) {
       setText('Liczba A jest większa.');
     }
 
-    if (inputNumber < inputNumber1) {
+    if (changeToNumber(inputNumber) < changeToNumber(inputNumber1)) {
       setText('Liczba B jest większa.');
     }
-    if (inputNumber == inputNumber1) {
+    if (changeToNumber(inputNumber) === changeToNumber(inputNumber1)) {
       setText('Liczby są równe.');
     }
   }

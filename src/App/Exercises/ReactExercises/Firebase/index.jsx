@@ -1,5 +1,5 @@
 import { AuthenticateUser } from './authenticateUser';
-import { app } from '../../../Firebase/firebaseConfig';
+// import { app } from '../../../Firebase/firebaseConfig';
 
 import './styles.css';
 import { useAuthStatus } from '../../../Firebase/useAuthStatus';
