@@ -7,21 +7,25 @@ import './styles.css';
 export const Playground = ({
   molePositionId,
   molePositionId1,
+  molePositionId2,
+  moleAmount,
   score,
   setScore,
 }) => {
   const [gameFields, setGameFields] = useState(generateArrayOfFields(10));
 
-  const handleFieldClick = (id, isMolePresent, isMolePresent1) => {
-    // handleUpdateScore1(isMolePresent1);
-    handleUpdateScore(isMolePresent);
+  const handleFieldClick = (id) => {
+    const isMolePresent = id === molePositionId;
+    const isMolePresent1 = id === molePositionId1;
+    const isMolePresent2 = id === molePositionId2;
+
+    handleUpdateScore(isMolePresent || isMolePresent1 || isMolePresent2);
+
     setGameFields((prevState) =>
-      prevState.map((field) => {
-        return {
-          ...field,
-          hasClicked: field.id === id ? true : false,
-        };
-      })
+      prevState.map((field) => ({
+        ...field,
+        hasClicked: field.id === id,
+      }))
     );
 
     handleResetClick();
@@ -35,44 +39,39 @@ export const Playground = ({
     }, 100);
   };
 
-  const handleUpdateScore = (isMolePresent) => {
-    isMolePresent
-      ? setScore((prevScore) => prevScore + 1)
-      : setScore((prevScore) => prevScore - 1);
+  const handleUpdateScore = (isMoleHit) => {
+    setScore((prevScore) => prevScore + (isMoleHit ? 1 : -1));
   };
-  // const handleUpdateScore1 = (isMolePresent1) => {
-  //   isMolePresent1
-  //     ? setScore((prevScore) => prevScore + 1)
-  //     : setScore((prevScore) => prevScore - 1);
-  // };
+
   return (
     <div>
       <div className="container-all-fields">
         {gameFields.map(({ id, hasClicked }) => {
           const isMolePresent = id === molePositionId;
           const isMolePresent1 = id === molePositionId1;
-          const isClickedWithMole = isMolePresent && hasClicked;
-          const isClickedWithWithoutMole = !isMolePresent && hasClicked;
+          const isMolePresent2 = id === molePositionId2;
 
-          const clickedWithMoleClassName = isClickedWithMole
-            ? 'field-green'
-            : '';
-          const clickedWithoutMoleClassName = isClickedWithWithoutMole
-            ? 'field-red'
-            : '';
-
-          const className = `field ${clickedWithMoleClassName} ${clickedWithoutMoleClassName}`;
+          const className = `field ${
+            hasClicked
+              ? isMolePresent || isMolePresent1 || isMolePresent2
+                ? 'field-green'
+                : 'field-red'
+              : ''
+          }`;
 
           return (
             <div
-              onClick={() => handleFieldClick(id, isMolePresent)}
+              onClick={() => handleFieldClick(id)}
               key={id}
               className={className}
             >
               {isMolePresent && (
                 <img className="image-mole" src={mole} alt="mole" />
               )}
-              {isMolePresent1 && (
+              {moleAmount > 1 && isMolePresent1 && (
+                <img className="image-mole" src={mole} alt="mole" />
+              )}
+              {moleAmount > 2 && isMolePresent2 && (
                 <img className="image-mole" src={mole} alt="mole" />
               )}
             </div>

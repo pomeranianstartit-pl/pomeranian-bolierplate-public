@@ -11,7 +11,8 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: #ebebeb;
+  /* figma ma background-color #ebebeb, ale słabo widać różnicę miedzy białym a tym kolorem więc zastosuje ciemniejszy kolor */
+  background-color: #dedcdc;
   border: none;
   cursor: pointer;
   margin: 0.6rem;
