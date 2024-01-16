@@ -1,13 +1,7 @@
 import './styles.css';
-import Star from '../../../Images/rating_star.svg'
+import Star from '../../../Images/rating_star.svg';
 
-
-export function StarsRatio(number) {
-  return <MyIcon ImgSrc={Star} name={'ratio-star'} />;
-}
-
-
-export function MyIcon({ ImgSrc, number, id }) {
+export function Icon({ ImgSrc, number, id }) {
   return (
     <span className="ratio-star">
       <img src={ImgSrc} alt="star" />

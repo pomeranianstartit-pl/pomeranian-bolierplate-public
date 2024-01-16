@@ -1,7 +1,7 @@
 import './styles.css';
 import Star from '../../../Images/rating_star.svg';
 
-import { MyIcon } from './helper';
+import { Icon } from './helper';
 
 export function FinalTable() {
   const headingsName = [
@@ -45,7 +45,11 @@ export function FinalTable() {
     return (
       <div className="ratio-star-group">
         {Arr.map((elemenent) => (
-          <MyIcon key={elemenent.id} ImgSrc={Star} name={'ratio-star-single'} />
+          <Icon
+            key={elemenent.id}
+            ImgSrc={Star}
+            classname={'ratio-star-single'}
+          />
         ))}
       </div>
     );
