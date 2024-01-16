@@ -1,0 +1,46 @@
+.atetnion {
+    color: rgb(255, 44, 44);
+    font-weight: 800;
+    font-size: larger;
+}
+
+.techstack {
+    display: grid;
+    grid-template-columns: 3fr 2fr;
+    direction: column;    
+    column-gap: 70px;
+    row-gap: 50px;
+}
+
+.techstack-icons {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    row-gap: 40px;
+    column-gap: 70px;
+}
+
+.icon-box {
+    width: 70px;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    text-align: center;  
+}
+
+.tech-stack-icons p {
+    text-align: center;
+}
+
+.techstack-box {
+    min-height: 121px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 56px;
+    height: 100px;
+    align-items: center;
+}
+

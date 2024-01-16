@@ -1,0 +1,5 @@
+.start--menu {
+    display: flex;
+    flex-direction: column;
+    row-gap: 38px;
+}

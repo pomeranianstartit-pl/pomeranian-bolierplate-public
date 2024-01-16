@@ -1,0 +1,11 @@
+.game--field {
+    display: flex;
+    flex-direction: column;
+    row-gap: 38px;
+}
+
+.select--buttons {
+    display: flex;
+    flex-direction: row;
+    column-gap: 24px;
+}

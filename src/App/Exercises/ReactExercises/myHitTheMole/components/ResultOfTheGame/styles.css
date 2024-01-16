@@ -1,0 +1,13 @@
+.result--of--game {
+  color: #222;
+  font-feature-settings: 'clig' off, 'liga' off;
+
+  /* header/H2 */
+  font-family: Roboto;
+  font-size: 28px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 48px; /* 171.429% */
+  padding-bottom: 57px;
+  padding-left: 133px;
+}
