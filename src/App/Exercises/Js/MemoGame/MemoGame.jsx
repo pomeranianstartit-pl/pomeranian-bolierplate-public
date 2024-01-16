@@ -6,8 +6,14 @@ import { Tile } from './Components/Tile/Tile.jsx';
 import { getAlphabet, shuffle } from './Utilities/index.jsx';
 import './styles.css';
 
-const ELEMENTS = [4, 16, 20];
-const characters = getAlphabet(10);
+const ELEMENTS = [8, 16, 20];
+const characters = getAlphabet(Math.max(...ELEMENTS) / 2);
+const STATUS = {
+  STARTED: 'started',
+  NOT_STARTED: 'not_started',
+  FINISHED: 'finished',
+  PASSED: 'passed',
+};
 
 export const MemoGame = () => {
   const [noOfElements, setNoOfElements] = useState(null);
@@ -17,16 +23,18 @@ export const MemoGame = () => {
   const [noOfShots, setNoOfShots] = useState(0);
   const [firstClick, setFirstClick] = useState();
   const [secondClick, setSecondClick] = useState();
+  const [gameStatus, setGameStatus] = useState(STATUS.NOT_STARTED);
   const [gameStarted, setGameStarted] = useState(false);
   const [gameFinished, setGameFinished] = useState(false);
   const [tilesGuessed, setTilesGuessed] = useState(0);
   const [timeResult, setTimeResult] = useState(null);
   const [resultTable, setResultTable] = useState(SetInitialResults());
 
+  // console.log(Array(5).fill(0), 'jakiarray');
+
   function getInitialTiles(size) {
     const charactersSubset = characters.slice(0, size / 2);
     const allCharacters = [...charactersSubset, ...charactersSubset];
-
     const shuffledCharacters = shuffle(allCharacters);
 
     //transform flat alphabet arrat to array of objects with specyfic letters with pairs of object with this same data
@@ -55,6 +63,7 @@ export const MemoGame = () => {
     setTiles(getInitialTiles(noOfElements));
     setNoOfShots(0);
     setTime(0);
+    setGameStatus(STATUS.STARTED);
   }
 
   function handlePass() {
@@ -67,6 +76,7 @@ export const MemoGame = () => {
     setNoOfElements(null);
     setTilesGuessed(0);
     setGameFinished(false);
+    setGameStatus(STATUS.PASSED);
   }
 
   function handleTileClick(index) {
@@ -157,6 +167,7 @@ export const MemoGame = () => {
   useEffect(() => {
     if (tilesGuessed === noOfElements) {
       setGameFinished(true);
+      setGameStatus(STATUS.FINISHED);
       setGameStarted(false);
     }
   }, [tilesGuessed]);
@@ -183,8 +194,8 @@ export const MemoGame = () => {
     setResultTable((oldResultTable) => {
       // console.log(oldResultTable, 'oldresulttable');
       const newResultTable = oldResultTable.map((result) => {
-        console.log(pairResult, 'nowy pairresult ');
-        console.log(timeResult, 'nowy timeResult ');
+        // console.log(pairResult, 'nowy pairresult ');
+        // console.log(timeResult, 'nowy timeResult ');
 
         if (result.index === pairResult) {
           return {
@@ -203,9 +214,11 @@ export const MemoGame = () => {
   useEffect(() => {
     // console.log('tiles', tiles);
     // console.log('firstClick', firstClick);
+
     console.log(tilesGuessed, 'trafione');
     console.log(gameFinished, 'game finished');
     console.log(resultTable, 'result table');
+    console.log(tiles, 'tiles');
   }, [noOfShots]);
 
   useEffect(() => {
@@ -231,6 +244,11 @@ export const MemoGame = () => {
           <div className="game-results">
             Gratulacje! Twój wynik to {pairResult} par w czsie {timeResult} s !
           </div>
+        </div>
+      )}
+      {gameStatus === STATUS.PASSED && (
+        <div>
+          <div className="game-results">Nie udało Ci się ukończyć gry :( !</div>
         </div>
       )}
 

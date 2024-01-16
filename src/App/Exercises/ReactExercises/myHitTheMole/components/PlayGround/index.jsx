@@ -28,7 +28,13 @@ export const Playground = ({ molePositions, setScore }) => {
       setScore((prevState) => prevState + 1);
       setHit((prev) => [...prev, id]);
     } else if (!isMolePresent) {
-      setScore((prevState) => prevState - 1);
+      setScore((prevState) => {
+        if (prevState > 0) {
+          return prevState - 1;
+        } else {
+          return 0;
+        }
+      });
     }
   };
 
@@ -39,7 +45,10 @@ export const Playground = ({ molePositions, setScore }) => {
       prevPlayFields.map((field) => {
         return {
           ...field,
-          hasClicked: field.id === id ? true : field.hasClicked,
+          hasClicked:
+            field.id === id && !hit.includes(field.id)
+              ? true
+              : field.hasClicked,
         };
       })
     );

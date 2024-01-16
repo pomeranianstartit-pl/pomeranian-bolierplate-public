@@ -11,6 +11,8 @@
 }
 
 .html-table {
+  visibility: hidden;
+
   font-family: arial, sans-serif;
   border-collapse: collapse;
   width: 100vw;
@@ -37,15 +39,16 @@
   padding: 0.5rem;
 }
 
-td,
+/* td,
 th {
   border: 1px solid #dddddd;
   text-align: left;
   padding: 8px;
-}
+} */
 
 .html-table tr:nth-child(even) {
   background-color: #b5ffb181;
+
 }
 
 /* --------------- */
@@ -55,6 +58,7 @@ th {
 
 .second-table {
   color: var(--text-text-primary, #222);
+  display: none;
   border-collapse: collapse;
   font-family: Roboto;
   font-size: 18px;
@@ -65,10 +69,11 @@ th {
 
 .second-table th {
   background-color: rgba(245, 245, 245, 1);
+  border-top-left-radius: 10px;
 }
 
 .second-table tr:nth-child(even) {
-  background-color: #FFD5DB;
+  background-color: #ffd5db;
 }
 
 .second-table td,
@@ -93,4 +98,72 @@ th {
 
 .second-table .third-head {
   text-align: right;
+}
+
+/*  =========== another table ============== */
+
+.player-table {
+  border-collapse: collapse;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  font-family: Roboto;
+  line-height: 26.879px;
+  margin: 50px 0 50px 50px;
+  box-shadow: 0px 5px 22px 0px rgba(201, 201, 201, 1);
+  border-radius: 10px; 
+
+}
+
+.player-table thead {
+  background-color: #f5f5f5;
+  border-radius: 10px;
+  height: 57px;  
+}
+
+.player-table thead th  {  
+  border-bottom: 2px solid;
+  border-color: #ffd5db;
+  text-align: left;
+
+}
+
+.player-table thead th:first-child{
+  border-top-left-radius: 10px;
+}
+
+.player-table thead th:last-child{
+  border-top-right-radius: 10px;
+}
+
+.player-table thead th:first-child,
+.player-table tr td:first-child  {  
+  padding-left: 46px;
+}
+
+.player-table thead th:nth-child(2),
+.player-table tr td:nth-child(2) {  
+  padding-left: 50px;
+  padding-right: 50px;
+}
+.player-table thead th:last-child,
+.player-table tr td:last-child {
+  text-align: right;
+  width: 207px;  
+  padding-right: 50px;
+}
+
+.player-table tr:nth-child(even) {
+  background-color: #ffd5db;
+}
+
+.player-table tbody,
+.player-table td {
+  height: 84px;
+}
+
+.ratio-star-group {
+  display: flex;
+  flex-direction: row;
+  justify-content: right;
 }

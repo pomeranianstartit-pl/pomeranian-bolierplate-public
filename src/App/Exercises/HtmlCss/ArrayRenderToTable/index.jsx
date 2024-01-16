@@ -58,6 +58,10 @@ export function ArrayRenderToTable() {
   }
   return (
     <div>
+      <div class="over-div">
+        <div className="display-div"> </div>
+        <div className="display-div"> </div>
+      </div>
       <h2>Renderowanie listy z tablicy obiektów</h2>
       <ul>
         {carData.map((car) => (
@@ -75,7 +79,7 @@ export function ArrayRenderToTable() {
           </tr>
         </thead>
         <tbody>{bands.map(bandsToTable)}</tbody>
-      </table>
+      </table>      
     </div>
   );
 }
