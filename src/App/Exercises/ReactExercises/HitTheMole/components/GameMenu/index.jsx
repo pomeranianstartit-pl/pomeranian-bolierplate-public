@@ -1,6 +1,7 @@
 import { MenuField } from '../MenuField';
 import { Button } from '../Button';
 import './styles.css';
+import { formatTime } from '../../helper';
 export const GameMenu = ({ stopGame, time, score }) => {
   const handleStop = () => {
     stopGame();
@@ -9,7 +10,7 @@ export const GameMenu = ({ stopGame, time, score }) => {
   return (
     <div>
       <MenuField title="Czas do końca gry">
-        <Button isDisabled>{time} s</Button>
+        <Button isDisabled>{formatTime(time * 1000)} </Button>
       </MenuField>
 
       <MenuField title="Wynik">

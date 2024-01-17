@@ -11,9 +11,12 @@ export const Playground = ({
   moleAmount,
   score,
   setScore,
+  areaTiles,
 }) => {
-  const [gameFields, setGameFields] = useState(generateArrayOfFields(10));
-
+  const [gameFields, setGameFields] = useState(
+    generateArrayOfFields(areaTiles)
+  );
+  console.log(areaTiles, 'areaTiles');
   const handleFieldClick = (id) => {
     const isMolePresent = id === molePositionId;
     const isMolePresent1 = id === molePositionId1;

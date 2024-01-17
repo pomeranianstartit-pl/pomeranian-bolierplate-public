@@ -6,6 +6,7 @@ export const StartMenu = ({
   setInitialTime,
   setMoleAmount,
   setGameStarted,
+  setAreaTiles,
 }) => {
   const handleStart = () => {
     setGameStarted(true);
@@ -48,6 +49,25 @@ export const StartMenu = ({
             {
               value: 3,
               content: '3 krety',
+            },
+          ]}
+        />
+      </MenuField>
+      <MenuField title="Liczba kafelków">
+        <SelectButtons
+          setValue={setAreaTiles}
+          options={[
+            {
+              value: 10,
+              content: '10 pól',
+            },
+            {
+              value: 15,
+              content: '15 pól',
+            },
+            {
+              value: 20,
+              content: '20 pól',
             },
           ]}
         />
