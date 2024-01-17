@@ -1,9 +1,5 @@
 import { useEffect, useState } from 'react';
-import {
-  formatTime,
-  generateRandomNumber,
-  generateUniqueNumbers,
-} from './helper';
+import { generateRandomNumber, generateUniqueNumbers } from './helper';
 import { StartMenu } from './components/StartMenu';
 import { GameMenu } from './components/GameMenu';
 import { Playground } from './components/Playground';
@@ -87,7 +83,6 @@ export const Exercise = () => {
       setGameFinished(true); // Ustawienie stanu, że gra się zakończyła
     }
   }, [time]);
-  console.log(formatTime(time * 1000));
   return (
     <div>
       <h3>

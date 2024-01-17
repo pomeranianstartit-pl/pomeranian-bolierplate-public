@@ -5,7 +5,8 @@ export const Button = ({ value, variant, onClick }) => {
     !(
       variant === 'primary' ||
       variant === 'secondary' ||
-      variant === 'tertiary'
+      variant === 'tertiary' ||
+      variant === 'stop'
     )
   )
     console.warn('błędny parametr variant', variant);

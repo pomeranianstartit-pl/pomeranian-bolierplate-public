@@ -22,7 +22,9 @@
   font-weight: 500;
   line-height: 1.9375rem;
 }
-
+.mole-button:hover {
+  opacity: 0.8;
+}
 .button--active {
   background-color: #fe3756;
 }

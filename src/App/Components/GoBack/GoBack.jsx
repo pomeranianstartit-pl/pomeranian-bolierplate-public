@@ -10,8 +10,12 @@ export const GoBackLink = ({ label }) => {
   );
 };
 
-export const GoBackButton = ({ buttonTitle = 'go back' }) => {
+export const GoBackButton = ({ buttonTitle = 'go back', className = '' }) => {
   const navigate = useNavigate();
 
-  return <button onClick={() => navigate(-1)}>{buttonTitle}</button>;
+  return (
+    <button className={className} onClick={() => navigate(-1)}>
+      {buttonTitle}
+    </button>
+  );
 };

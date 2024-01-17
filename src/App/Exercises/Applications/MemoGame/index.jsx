@@ -1,6 +1,5 @@
 import { useState, useEffect } from 'react';
-// import { Button, Label, Output, Result, Tile } from './Components';
-// import { MasterHeader } from '../../../Components/MasterHeader/MasterHeader';
+
 import { getAlphabet, getInitialTiles, formatTime } from './Utilities';
 import { Result } from './components/Result/Result';
 import { HighScore } from './components/highscore/HighScore';
@@ -19,7 +18,7 @@ const STATUS = {
   PASSED: 'passed',
 };
 
-const ELEMENTS = [4, 16, 20];
+const ELEMENTS = [4, 16, 20, 32];
 
 // TODO: Add comments to this code
 export const Exercise = () => {
@@ -27,12 +26,14 @@ export const Exercise = () => {
   const [time, setTime] = useState(0);
   const [score, setScore] = useState(0);
   const [noOfElements, setNoOfElements] = useState(null);
+  const [noOfElements1, setNoOfElements1] = useState(null);
   const [prevNoOfElements, setPrevNoOfElements] = useState(null);
 
   const [tiles, setTiles] = useState([]);
   const [firstClick, setFirstClick] = useState();
   const [secondClick, setSecondClick] = useState();
 
+  const [canFlip, setCanFlip] = useState(true);
   const [highScore, setHighScore] = useState({
     4: {
       moves: 0,
@@ -46,11 +47,15 @@ export const Exercise = () => {
       moves: 0,
       time: 0,
     },
+    32: {
+      moves: 0,
+      time: 0,
+    },
   });
 
   function handleStart() {
     if (noOfElements !== null) {
-      setTiles(getInitialTiles(noOfElements, getAlphabet(10)));
+      setTiles(getInitialTiles(noOfElements, getAlphabet(ELEMENTS / 2)));
       setStatus(STATUS.STARTED);
       setScore(0);
       setTime(0);
@@ -64,7 +69,10 @@ export const Exercise = () => {
   }
 
   function handleTileClick(index) {
-    if (tiles.some((tile) => tile.index === index && tile.isVisible === true))
+    if (
+      !canFlip ||
+      tiles.some((tile) => tile.index === index && tile.isVisible)
+    )
       return;
 
     setTiles(
@@ -78,6 +86,7 @@ export const Exercise = () => {
       setFirstClick(index);
     } else {
       setSecondClick(index);
+      setCanFlip(false); // Zablokuj odkrywanie kolejnych kafelków
     }
   }
 
@@ -117,6 +126,7 @@ export const Exercise = () => {
         });
       }
     }
+    setNoOfElements1(noOfElements / 2);
   }, [status]);
 
   useEffect(() => {
@@ -144,6 +154,13 @@ export const Exercise = () => {
     };
   }, [prevNoOfElements, tiles]);
 
+  // Odczyt i zapis do localStorage
+  useEffect(() => {
+    const savedHighScores = localStorage.getItem('highScore');
+    if (savedHighScores) {
+      setHighScore(JSON.parse(savedHighScores));
+    }
+  }, []);
   useEffect(() => {
     if (firstClick !== undefined && secondClick !== undefined) {
       setScore((prevScore) => prevScore + 1);
@@ -156,8 +173,12 @@ export const Exercise = () => {
 
         if (first.value === second.value) {
           variant = 'correct';
+          setCanFlip(true);
         } else {
           variant = 'incorrect';
+          setTimeout(() => {
+            setCanFlip(true);
+          }, 500);
         }
 
         newTiles[firstClick] = { ...first, variant };
@@ -165,6 +186,7 @@ export const Exercise = () => {
 
         return newTiles;
       });
+
       setFirstClick(undefined);
       setSecondClick(undefined);
     }
@@ -186,7 +208,7 @@ export const Exercise = () => {
 
   return (
     <div>
-      <GoBackButton buttonTitle="< MEMO" />
+      <GoBackButton buttonTitle="< MEMO" className="button--back" />
 
       <p className="pargraph--description">
         Gra polegająca na zapamiętywaniu odkrytych kafli i łączeniu ich w pary
@@ -195,17 +217,18 @@ export const Exercise = () => {
       {status === STATUS.PASSED && (
         <>
           <Result>
-            HAHA! Twój wynik to {score} ruchy dla {noOfElements / 2} par w
-            czasie {formatTime(time)}
-            sekund. Powodzenia następnym razem, amatorze...
+            HAHA! Twój wynik to {score} ruchy dla {noOfElements1} par w czasie{' '}
+            {formatTime(time)}
+            sekund. Powodzenia następnym razem.
           </Result>
+          <HighScore highScore={highScore} noOfElements={noOfElements} />
         </>
       )}
 
       {status === STATUS.FINISHED && (
         <>
           <Result>
-            Gratulacje! Twój wynik to {score} ruchy dla {noOfElements / 2} par w
+            Gratulacje! Twój wynik to {score} ruchy dla {noOfElements1} par w
             czasie {formatTime(time)}
             sekund
           </Result>

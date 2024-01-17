@@ -1,9 +1,6 @@
-import { useState } from 'react';
-
+import { useState, useEffect } from 'react';
 import { formatTime } from '../../Utilities';
-
 import { Button } from '../button/Button';
-
 import './styles.css';
 
 export const HighScore = ({ highScore, noOfElements }) => {
@@ -28,13 +25,12 @@ export const HighScore = ({ highScore, noOfElements }) => {
       />
 
       {isVisible && (
-        <div>
-          Lista najlepszych wyników:
+        <div className="highScore--main--container">
           <ul>
             {Object.entries(highScore).map(([key, data]) => {
               return (
-                <li>
-                  <div>Najlepszy wynika dla {key} elementów:</div>
+                <li key={key}>
+                  <div>Najlepszy wynik dla {key} elementów:</div>
                   <span>
                     {data.moves} ruchów w czasie {formatTime(data.time)}
                   </span>

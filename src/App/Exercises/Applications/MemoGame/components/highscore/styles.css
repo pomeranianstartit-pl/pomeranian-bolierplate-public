@@ -11,3 +11,10 @@
   font-weight: bold;
   text-align: center;
 }
+.highScore--main--container {
+  text-transform: uppercase;
+}
+.highScore--main--container li {
+  list-style-type: disc;
+  margin: 1rem;
+}
