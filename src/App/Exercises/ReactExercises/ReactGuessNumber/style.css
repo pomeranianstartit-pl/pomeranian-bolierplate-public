@@ -7,19 +7,38 @@ h2 {
   font-size: 40px;
   font-style: normal;
   font-weight: 500;
-  line-height: 69px; 
+  line-height: 69px;
 }
 
 #frame {
-  width: 939px;
-  align-items: center;
-  gap: 149px;
+  display: flex;
+  flex-direction: column;
+  height: 48px;
+  padding: 13px 16px;
+  gap: 28px;
+  width: 496px;
 }
 
-#startButton {
+#frame > h2 {
+  height: 77px;
+  margin: 0px;
+}
+
+#frame p {
+  color: var(--text-text-primary, #222);
+  /* body_desktop */
+  font-size: 22px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 36px; /* 163.636% */
+  margin: 0px;
+}
+
+#frame div.text-holder {
+  min-height: 36px;
+}
+#frame button {
   border-radius: 8px;
-  border: 1px solid var(--primary-primary, #FE3756);
-  background: var(--primary-primary, #FE3756);
   display: flex;
   height: 56px;
   width: 326px;
@@ -28,12 +47,38 @@ h2 {
   align-items: center;
   gap: 16px;
   flex: 1 0 0;
-  color: #FFF;
+  color: #fff;
   text-align: center;
-  /* button/button */
   font-family: Poppins;
   font-size: 18px;
   font-style: normal;
-  font-weight: 500;
+  font-weight: 100;
   line-height: 31px; /* 172.222% */
+}
+#startButton {
+  border: 1px solid var(--primary-primary, #fe3756);
+  background: var(--primary-primary, #fe3756);
+}
+#reset-button {
+  border: 1px solid var(--primary-primary, #23213d);
+  background: #23213d;
+}
+
+.guess-input {
+  height: 48px;
+  width: 144px;
+  padding: 13px 16px 13px 16px;
+  border-radius: 5px;
+  border: 1px solid var(--GREY-300, #c8cbd1);
+  background: #fff;
+  color: var(--gray-900, #4b5563);
+  /* font-family: Poppins; */
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 32px; /* 160% */
+}
+div#contener {
+  display: flex;
+  justify-content: center;
 }
