@@ -1,7 +1,7 @@
 export const API_URL = 'http://localhost:3333/api/todo';
 
 export const TEXTS = {
-  TITLE: 'Lista zadań',
+  TITLE: 'Tutaj znajdziesz listę swoich zadań.',
   LOADER: 'Ładowanie danych...',
 
   ERROR: 'Przepraszamy. Nie udało się pobrać listy zadań.',
@@ -18,7 +18,10 @@ export const TEXTS = {
       EDIT: 'Nie udało się edytować zadania!',
     },
   },
-
+  HEADER: {
+    EDIT: 'Edycja zadania.',
+    ADD: 'Dodawanie zadania.',
+  },
   FORM: {
     MARK: {
       LOADING: 'Kończenie zadania...',
@@ -34,6 +37,7 @@ export const TEXTS = {
 
     EDIT: {
       TEXT: 'Edytuj',
+      SAVE: 'Zapisz',
     },
   },
 };

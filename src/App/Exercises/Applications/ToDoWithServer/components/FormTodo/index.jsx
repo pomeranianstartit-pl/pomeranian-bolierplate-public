@@ -3,6 +3,8 @@ import { useState } from 'react';
 import { apiRequest } from '../helpers';
 
 import { API_URL, FORM_DATA, TEXTS } from '../constants';
+import { Button } from '../Button/Button';
+import './styles.css';
 
 export const FormTodo = ({
   editedItem,
@@ -20,6 +22,7 @@ export const FormTodo = ({
   const [note, setNote] = useState(isEditForm ? editedItem.note : '');
 
   const sendDisabled = !title || !author || !note;
+  const headerEditAdd = isEditForm ? TEXTS.HEADER.EDIT : TEXTS.HEADER.ADD;
 
   const addTodo = () => {
     apiRequest(API_URL, {
@@ -79,11 +82,16 @@ export const FormTodo = ({
 
   return (
     <form onSubmit={handleSubmit}>
-      <div>
-        <label htmlFor={FORM_DATA.TITLE.KEY_NAME}>
+      <h4>{headerEditAdd}</h4>
+      <div className="ToDoWihServer--container--input">
+        <label
+          className="ToDoWihServer--container--label"
+          htmlFor={FORM_DATA.TITLE.KEY_NAME}
+        >
           {FORM_DATA.TITLE.LABEL}
         </label>
         <input
+          className="ToDoWithServer--input"
           id={FORM_DATA.TITLE.KEY_NAME}
           name={FORM_DATA.TITLE.KEY_NAME}
           type={FORM_DATA.TITLE.TYPE}
@@ -91,11 +99,15 @@ export const FormTodo = ({
           onChange={(e) => setTitle(e.target.value)}
         />
       </div>
-      <div>
-        <label htmlFor={FORM_DATA.AUTHOR.KEY_NAME}>
+      <div className="ToDoWihServer--container--input">
+        <label
+          className="ToDoWihServer--container--label"
+          htmlFor={FORM_DATA.AUTHOR.KEY_NAME}
+        >
           {FORM_DATA.AUTHOR.LABEL}
         </label>
         <input
+          className="ToDoWithServer--input"
           id={FORM_DATA.AUTHOR.KEY_NAME}
           name={FORM_DATA.AUTHOR.KEY_NAME}
           type={FORM_DATA.AUTHOR.TYPE}
@@ -103,23 +115,49 @@ export const FormTodo = ({
           onChange={(e) => setAuthor(e.target.value)}
         />
       </div>
-      <div>
-        <label htmlFor={FORM_DATA.NOTE.KEY_NAME}>{FORM_DATA.NOTE.LABEL}</label>
+      <div className="ToDoWihServer--container--input">
+        <label
+          className="ToDoWihServer--container--label"
+          htmlFor={FORM_DATA.NOTE.KEY_NAME}
+        >
+          {FORM_DATA.NOTE.LABEL}
+        </label>
         <textarea
+          className="ToDoWithServer--input"
           id={FORM_DATA.NOTE.KEY_NAME}
           name={FORM_DATA.NOTE.KEY_NAME}
           type={FORM_DATA.NOTE.TYPE}
           value={note}
+          maxlength="150"
+          rows={'4'}
           onChange={(e) => setNote(e.target.value)}
         />
       </div>
-      <div>
-        <button onClick={handleBack}>COFNIJ</button>
-        <button disabled={formLoading || sendDisabled} type="submit">
+      <div className="container-buttonBack-buttonAdd">
+        <Button
+          classNames="back-button"
+          isActive={true}
+          onClick={handleBack}
+          children="COFNIJ"
+        />
+
+        <Button
+          isDisabled={formLoading || sendDisabled}
+          isActive={true}
+          type="submit"
+          children={
+            formLoading ? 'WYSYŁANIE...' : isEditForm ? 'EDYTUJ' : 'DODAJ'
+          }
+        />
+        {/* <button disabled={formLoading || sendDisabled} type="submit">
           {formLoading ? 'WYSYŁANIE...' : isEditForm ? 'EDYTUJ' : 'DODAJ'}
-        </button>
+        </button> */}
       </div>
-      {formErrorId && <div>Nie udało się dodać zadania</div>}
+      {formErrorId && (
+        <div className="ToDoWithServer--error-Message-edit">
+          Nie udało się dodać zadania
+        </div>
+      )}
     </form>
   );
 };

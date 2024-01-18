@@ -7,9 +7,9 @@
   padding: 5px;
 }
 /* span musi być poprzedany spanem jak kolwiek <span> <cos/> <span /> */
-span ~ span {
+/* span ~ span {
   color: red;
-}
+} */
 /* span musi byc poprzedznay bezpośrednio spanem */
 /* span + span {
   background-color: blue;

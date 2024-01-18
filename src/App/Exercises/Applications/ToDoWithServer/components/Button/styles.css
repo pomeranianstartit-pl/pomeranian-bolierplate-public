@@ -1,0 +1,46 @@
+:root {
+  --color-red-fe3756: #fe3756;
+  --color-darkviolet: #23213d;
+  --font-poppins: 'Poppins', sans-serif;
+}
+.ToDoServer-button {
+  display: flex;
+  color: #ffffff;
+  background-color: var(--color-red-fe3756);
+  max-height: 1rem;
+  min-width: 5.69rem;
+  box-sizing: content-box;
+  padding: 1.25rem 2.25rem;
+  justify-content: center;
+  align-items: center;
+  border: none;
+  border-radius: 0.5rem;
+  cursor: pointer;
+  margin: 1.5rem;
+  font-family: var(--font-poppins);
+  font-size: 1.125rem;
+  font-weight: 500;
+  line-height: 1.9375rem;
+}
+.ToDoServer-button:hover {
+  opacity: 0.8;
+}
+
+.button--active,
+.button--disabled {
+  background-color: var(--color-red-fe3756);
+  color: #ebebeb;
+}
+
+.button--disabled,
+.button--disabled:hover {
+  opacity: 0.5;
+  cursor: default;
+}
+
+.back-button {
+  background-color: var(--color-darkviolet);
+}
+.button-refresh-size {
+  min-width: 15.9rem;
+}
