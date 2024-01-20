@@ -8,11 +8,11 @@ function generateRandomNumber() {
 
 export function ReactGuessNumber() {
   const [randomNumber, setRandomNumber] = useState(generateRandomNumber());
-  const [inputNumber, setInputmNumber] = useState(0);
+  const [inputNumber, setInputNumber] = useState(0);
   const [text, setText] = useState('');
 
   function handleChange(event) {
-    setInputmNumber(event.target.value);
+    setInputNumber(event.target.value);
     console.log(typeof inputNumber);
   }
 
@@ -34,7 +34,8 @@ export function ReactGuessNumber() {
 
   function handleClickReset() {
     setRandomNumber(generateRandomNumber());
-    console.log(randomNumber);
+    setInputNumber('');
+    setText(' ')
   }
 
   return (
