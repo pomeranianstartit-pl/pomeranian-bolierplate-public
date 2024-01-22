@@ -98,7 +98,7 @@ export const Exercise = () => {
           <div>
             <label htmlFor="password">Hasło</label>
             <input
-              pattern="^(?=.*\d)(?=.*[A-Z])(?=.*[a-z])(?=.*[^\w\d\s:])([^\s]){8,16}$"
+              // pattern="^(?=.*\d)(?=.*[A-Z])(?=.*[a-z])(?=.*[^\w\d\s:])([^\s]){8,16}$"
               id="password"
               type="text"
               name="password"
