@@ -1,0 +1,63 @@
+.boxModel .div1 {
+  width: 100%;
+  padding: 10px;
+  /* margin: 10px; */
+  border: 5px solid black;
+  display: block;
+  box-sizing: border-box;
+  /* szerokość div=width=> width zaiwera w sobie padding i border */
+}
+.boxModel .div2 {
+  width: 100%;
+  padding: 10px;
+  /* margin: 10px; */
+  border: 5px solid black;
+  display: block;
+  box-sizing: content-box;
+  /* szerokość div=width +padding +border */
+
+  /* display:block;
+  div,h1,...,h6,article 
+  
+  display:inline;
+  span,a,img,input,button
+  */
+}
+
+.boxModel > span {
+  background: linear-gradient(
+    90deg,
+    rgba(2, 0, 36, 1) 0%,
+    rgba(0, 212, 255, 1) 100%
+  );
+}
+
+.boxModel .p1 {
+  max-height: 300px;
+  overflow: hidden;
+  /* ucina za dlugi tekst do 300px wysokosci */
+  overflow: scroll;
+  /* scroll do przewijania tekstu*/
+  overflow: auto;
+  /* dopasuje  sie do kontentu  */
+}
+
+/* ************************** */
+
+/* jednostki css */
+.boxModel {
+  font-size: 10px;
+}
+.boxmodel .p1 {
+  /* font-size: 10%; */
+  font-size: 2em;
+  /* 2em=2*font size rodzica => 2 * 10px */
+  font-size: 2rem;
+  /* 2rem=2*font size html-a => 2* 10px
+   */
+  width: 20rem;
+  /* width: 100vw;
+  height: 100vh; */
+  /* vw to wartość procentowa szerokości ekranu */
+  /* vh to wartość procentowa wysokości ekranu */
+}

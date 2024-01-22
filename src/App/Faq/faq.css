@@ -1,0 +1,48 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+.Faq {
+  font-family: 'Poppins', sans-serif;
+}
+
+.Faq-title {
+  font-size: 1rem;
+  margin: 0.62rem 0 2.31rem 0;
+}
+
+.Faq-content {
+  max-width: 45.8rem;
+  border-radius: 0.5rem;
+  border-left: 5px solid var(--gray-300, #c8cbd1);
+  background: var;
+  border-top: 1px solid #eee;
+  border-bottom: 1px solid #eee;
+  border-right: 1px solid #eee;
+  padding: 1.12rem 1rem;
+  margin-bottom: 1.12rem;
+}
+.Faq-conent-part {
+  max-width: 48.8rem;
+  height: 38.6rem;
+  margin-top: 16.9rem 23.4rem;
+}
+.Faq-line {
+  height: 1px;
+  background-color: #ebebeb;
+  border: none;
+}
+.Faq-imagetitle {
+  display: inline;
+  max-width: 45.8rem;
+  height: 14.4rem;
+  font-size: 1.125rem;
+  font-weight: 700;
+  line-height: 2.125rem;
+
+  margin: 1.12rem 1.12rem 1.12rem 0;
+  display: inline;
+}
+.Faq-imagetitle > img {
+  margin-right: 0.56rem;
+}
+.Faq-img-rotate {
+  rotate: 270deg;
+}

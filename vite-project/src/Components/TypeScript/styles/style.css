@@ -1,0 +1,8 @@
+.container--fetch-star-wars ul li span {
+  margin-right: 1rem;
+}
+.container--fetch-star-wars ul li {
+  display: flex;
+  align-items: start;
+  justify-content: flex-start;
+}

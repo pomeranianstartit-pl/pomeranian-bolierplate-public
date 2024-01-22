@@ -1,0 +1,41 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,600;0,700;0,800;1,400;1,600;1,700;1,800&display=swap');
+
+:root {
+  --color-primary: #fe3756;
+}
+
+.Business_card {
+  font-size: 2.2rem;
+  font-family: 'Poppins', sans-serif;
+  width: 80.4rem;
+  max-height: 30.3rem;
+  padding: 5.5rem 6.6rem;
+}
+.BC-b {
+  font-weight: 600;
+  line-height: 5.5rem;
+  letter-spacing: 0.02144rem;
+  font-size: 3.575rem;
+  margin: 0;
+}
+.BC-cr {
+  color: var(--color-primary);
+}
+.BC-lh385 {
+  line-height: 3.85rem;
+}
+.BC-lh3575 {
+  line-height: 3.575rem;
+}
+.BC-mt326 {
+  margin-top: 3.25rem;
+}
+.BC-mt11 {
+  margin-top: 1.1rem;
+}
+.Business_card p {
+  margin-bottom: 0rem;
+}
+.BC-mt0 {
+  margin-top: 0rem;
+}
