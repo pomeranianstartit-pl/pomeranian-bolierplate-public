@@ -23,17 +23,14 @@ export const Exercise = () => {
   });
 
   const onSubmit = (data) => {
-    console.log(data);
+    console.log(data, 'data');
   };
 
   return (
     <form onSubmit={handleSubmit(onSubmit)}>
       <div>
         <label>Imię</label>
-        <input
-          aria-invalid={errors.name ? 'true' : 'false'}
-          {...register('name')}
-        />
+        <input {...register('name')} />
         {errors.name && <p>{errors.name.message}</p>}
       </div>
 
