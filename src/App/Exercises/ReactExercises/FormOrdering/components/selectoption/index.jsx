@@ -7,12 +7,13 @@ export const SelectOption = ({
   headerText,
   labelText,
   register,
+  error,
 }) => {
   return (
     <>
       <div>
         <Header children={headerText} />
-        <Label children={labelText} />
+        <Label children={labelText} value={name} />
         <select id={name} name={name} {...register(name)}>
           {constants.map((product, index) => (
             <option key={index} value={product.value}>
@@ -20,6 +21,7 @@ export const SelectOption = ({
             </option>
           ))}
         </select>
+        {error && <p>{error.message}</p>}
       </div>
     </>
   );

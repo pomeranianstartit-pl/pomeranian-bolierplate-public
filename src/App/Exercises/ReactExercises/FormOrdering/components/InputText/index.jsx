@@ -1,26 +1,18 @@
-import { yupResolver } from '@hookform/resolvers/yup';
-import { useForm } from 'react-hook-form';
-import { Schema } from 'yup';
+import { Label } from '../label';
 
-export const InputText = ({ text, name, type = 'text' }) => {
-  const {
-    register,
+export const InputText = ({
+  text,
+  name,
+  type = 'text',
 
-    formState: { errors },
-  } = useForm({
-    resolver: yupResolver(Schema),
-  });
+  register,
+  error,
+}) => {
   return (
     <div>
-      <label>{text}</label>
-      <input
-        aria-invalid={errors[name] ? 'true' : 'false'}
-        {...register(name)}
-        type={type}
-      />
-      {errors.name && (
-        <p className="tooltiptext error-message">{errors.name.message}</p>
-      )}
+      <Label children={text} value={name} />
+      <input type={type} {...register(name)} name={name} />
+      {error && <p>{error.message}</p>}
     </div>
   );
 };

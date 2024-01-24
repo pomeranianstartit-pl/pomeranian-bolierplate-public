@@ -1,34 +1,26 @@
-import { useForm } from 'react-hook-form';
+import { Label } from '../label';
 
-import { yupResolver } from '@hookform/resolvers/yup';
-import { Schema } from 'yup';
-// export const Input = ({
-//   type = 'text',
-//   name,
-//   value,
-//   text,
-//   required,
-//   register,
-// }) => {
-//   const {
-//     formState: { errors },
-//   } = useForm({
-//     resolver: yupResolver(Schema),
-//   });
-//   return (
-//     <div>
-//       <input type={type} name={name} value={value} {...register(name)} />
-//       <label htmlFor={name}>{text}</label>
-//       {errors && errors[name] && <p>{errors[name].message}</p>}
-//     </div>
-//   );
-// };
-
-export const Input = ({ type, name, text, register, error }) => {
+export const Input = ({
+  type,
+  name,
+  value,
+  text,
+  register,
+  error,
+  classname,
+}) => {
   return (
     <div>
-      <label htmlFor={name}>{text}</label>
-      <input type={type} name={name} {...register(name)} />
+      <input
+        id={value} // Dodano id
+        type={type}
+        name={name}
+        value={value}
+        className={classname}
+        {...register(name)}
+      />
+      <span>{text}</span>
+
       {error && <p>{error.message}</p>}
     </div>
   );

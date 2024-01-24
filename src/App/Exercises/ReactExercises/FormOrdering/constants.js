@@ -52,11 +52,25 @@ export const TEXTSCHECKBOX2 = [
 
 export const TEXTSCHECKBOX3 = [
   {
-    value: 'regulations',
+    value: 'true',
     text: 'Akceptuję regulamin*',
   },
+];
+export const TEXTSCHECKBOX4 = [
   {
     value: 'newsletterAccepted',
     text: 'Zapisuję się na listę mailingową',
   },
+];
+
+export const TEXTSRADIO1 = [
+  {
+    value: 'blik',
+    text: 'Blik',
+  },
+  {
+    value: 'paypal',
+    text: 'Paypal',
+  },
+  { value: 'bank_transfer', text: 'Przelew Tradycyjny' },
 ];
