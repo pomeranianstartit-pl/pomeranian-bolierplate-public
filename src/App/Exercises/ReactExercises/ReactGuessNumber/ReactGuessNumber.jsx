@@ -35,7 +35,7 @@ export function ReactGuessNumber() {
   function handleClickReset() {
     setRandomNumber(generateRandomNumber());
     setInputNumber('');
-    setText(' ')
+    setText(' ');
   }
 
   return (

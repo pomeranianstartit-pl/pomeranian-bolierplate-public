@@ -1,19 +1,43 @@
 import { useState } from 'react';
 import { ADDRESS, FORM_DATA } from './constants';
 import './styles.css';
+import { PlusSymbol } from '../../../Components/ToDoComponents/Plus';
 
-export const TaskForm = (isEditForm, task) => {
+export const TaskForm = ({ isEditForm, handleFormVisibility }) => {
   const [addLoading, setAddLoading] = useState(null);
   const [addErrorId, setAddErrorId] = useState(null);
 
-  const [title, setTitle] = useState(isEditForm ? task.title : '');
-  const [note, setNote] = useState(isEditForm ? task.note : '');
-  const [author, setAuthor] = useState(isEditForm ? task.author : '');
+  const [title, setTitle] = useState('');
+  const [note, setNote] = useState('');
+  const [author, setAuthor] = useState('');
 
   const sendDisabled = !title || !note || !author;
 
-  const handleSubmit = (event) => {
+  const handleSubmit = async (event) => {
     event.preventDefault();
+    await addNewTask();
+    handleFormVisibility();
+  };
+
+  const addNewTask = async () => {
+    try {
+      const request = await fetch(ADDRESS, {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify({ title, author, note }),
+      });
+      if (!request.ok) {
+        throw new Error('Something went wrong!');
+      }
+    } catch (error) {
+      console.log(error, '    set error');
+    }
+
+    setTitle('');
+    setAuthor('');
+    setNote('');
   };
 
   // const addNewTask = async () => {
@@ -36,6 +60,14 @@ export const TaskForm = (isEditForm, task) => {
 
   return (
     <div>
+      <button
+        className="button-no-style button-plus"
+        onClick={() => {
+          handleFormVisibility();
+        }}
+      >
+        <PlusSymbol />
+      </button>
       <p className="task-heading">Dodawanie zadania. </p>
       <form onSubmit={handleSubmit} className="form-task">
         <div className="form-element">
@@ -82,6 +114,11 @@ export const TaskForm = (isEditForm, task) => {
               setAuthor(e.target.value);
             }}
           />
+        </div>
+        <div id="button-container-form">
+          <button type="submit" className="newTaskButton">
+            DODAJ
+          </button>
         </div>
       </form>
     </div>

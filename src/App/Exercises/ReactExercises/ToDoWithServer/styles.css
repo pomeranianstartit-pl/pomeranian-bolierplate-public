@@ -1,9 +1,16 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+:root {
+  --stbminw: 480px;
+  --stbmaxw: 629px;
+}
+
 .heading-plus {
   display: flex;
   justify-content: space-between;
   margin-bottom: 35px;
-  max-width: 45vw;
-  min-width: 530px;
+  width: var(--stbmaxw);
+  min-width: var(--stbminw);
 }
 
 .button-plus {
@@ -11,10 +18,22 @@
   cursor: pointer;
 }
 
+#button-container {
+  display: flex;
+  justify-content: end;
+  width: var(--stbmaxw);
+}
+
+#button-container-form{
+  display: flex;
+  justify-content: end;
+  width: var(--stbminw);
+}
+
 .task-heading {
   color: #222;
   font-feature-settings: 'clig' off, 'liga' off;
-  font-family: Roboto;
+  font-family: 'Poppins', sans-serif;
   font-size: 16px;
   font-style: normal;
   font-weight: 400;
@@ -24,12 +43,12 @@
 .single-task-block {
   display: flex;
   justify-content: space-between;
-  font-family: Roboto;
-  padding: 24px 18px 24px 18px;
+  font-family: 'Poppins', sans-serif;
+  padding: 18px 24px 18px 24px;
   border-radius: 12px;
   margin: 0 0 26px 0;
-  max-width: 45vw;
-  min-width: 530px;
+  width: var(--stbmaxw);
+  min-width: var(--stbminw);
   height: 166px;
   box-shadow: 0px 3px 9px 0px rgba(0, 0, 0, 0.15),
     0px 2px 28px 0px rgba(0, 0, 0, 0.12);
@@ -233,7 +252,7 @@ div .no-tasks {
 }
 
 .right-block {
-  margin-right: 43.5px;
+  margin-right: 6.5px;
   display: flex;
   flex-direction: column;
 }
@@ -255,7 +274,7 @@ div .no-tasks {
   display: flex;
   flex-direction: column;
   gap: 28px;
-  width: 488px;
+  width: var(--stbminw);
 }
 
 .form-element {
@@ -268,7 +287,7 @@ div .no-tasks {
 
 .form-element label {
   color: #222;
-  font-family: Roboto;
+  font-family: "Poppins", sans-serif;
   font-size: 16px;
   font-style: normal;
   font-weight: 700;
@@ -290,4 +309,25 @@ div .no-tasks {
   font-style: normal;
   font-weight: 400;
   line-height: 32px; /* 177.778% */
+}
+
+.newTaskButton {
+  border-radius: 8px;
+  display: flex;
+  height: 56px;
+  width: 163px;
+  cursor: pointer;
+  padding: 20px 36px;
+  justify-content: center;
+  align-items: center;
+  gap: 16px;
+  color: #fff;
+  text-align: center;
+  font-family: 'Poppins', sans-serif;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 31px; /* 172.222% */
+  border: 1px solid var(--primary-primary, #fe3756);
+  background: var(--primary-primary, #fe3756);
 }

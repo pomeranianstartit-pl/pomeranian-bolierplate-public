@@ -64,12 +64,14 @@ export const FormTodo = ({
   };
 
   const handleSubmit = (e) => {
+    console.log('aaaaaa nowe zadanie stworzone');
     e.preventDefault();
-    if (isEditForm) {
-      editTodo();
-    } else {
-      addTodo();
-    }
+    addTodo();
+    // if (isEditForm) {
+    //   editTodo();
+    // } else {
+    //   addTodo();
+    // }
   };
 
   const handleBack = () => {

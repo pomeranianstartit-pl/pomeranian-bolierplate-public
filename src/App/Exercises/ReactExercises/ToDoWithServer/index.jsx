@@ -11,8 +11,8 @@ export const ToDoWithServer = () => {
   const [deleteErrorId, setDeleteErrorid] = useState(null);
   const [markAsDoneErrorId, setMarkAsDoneErrorid] = useState(null);
   const [isFormOn, setIsFormOn] = useState(false);
-
-  const [loading, setLoading] = useState(false);
+  const [isEditFormOn, setIsEditFormOn] = useState(false);
+  const [loading, setLoading] = useState(true);
 
   const getTodos = async () => {
     console.log('Click1');
@@ -39,13 +39,12 @@ export const ToDoWithServer = () => {
 
   const deleteTask = async (id) => {
     try {
-      const request = await fetch(`${ADDRESS}${id}a`, {
+      const request = await fetch(`${ADDRESS}/${id}`, {
         method: 'DELETE',
       });
       if (!request.ok) {
         throw new Error('Something went wrong!');
       }
-
       setData((prevData) => prevData.filter((task) => task.id !== id));
       console.log(id, '    item deleted');
     } catch (error) {
@@ -56,7 +55,7 @@ export const ToDoWithServer = () => {
 
   const markAsDone = async (id) => {
     try {
-      const request = await fetch(`${ADDRESS}${id}/markAsDonek`, {
+      const request = await fetch(`${ADDRESS}${id}/markAsDone`, {
         method: 'PUT',
       });
       if (!request.ok) {
@@ -79,16 +78,22 @@ export const ToDoWithServer = () => {
     } catch (error) {
       setMarkAsDoneErrorid(id);
       console.log(id, '    set error');
-      console.log(markAsDoneErrorId, 'markas done rror id')
+      console.log(markAsDoneErrorId, 'markas done rror id');
     }
   };
 
-  useEffect(() => {
-    console.log(markAsDoneErrorId, 'mark as Done erro id');
-  });
+  const handleFormVisibility = () => {
+    console.log(':)');
+    setIsFormOn((prevState) => !prevState);
+    getTodos();
+  };
+
+  // useEffect(() => {
+  //   console.log(markAsDoneErrorId, 'mark as Done erro id');
+  // });
 
   useEffect(() => {
-    console.log(isFormOn, 'isFormOn');
+    console.log(isFormOn, 'isFormOn Changed');
   }, [isFormOn]);
 
   useEffect(() => {
@@ -111,18 +116,19 @@ export const ToDoWithServer = () => {
   return (
     <div>
       {isFormOn ? (
-        <TaskForm />
+        <TaskForm
+          isEditFrom={isEditFormOn}
+          handleFormVisibility={handleFormVisibility}
+        />
       ) : (
-        <div>
+        <div className="to-do-content">
           <div class="heading-plus">
             <p className="task-heading">
               Tu znajdziesz listę zadań do wykonania.{' '}
             </p>
             <button
               className="button-no-style button-plus"
-              onClick={() => {
-                setIsFormOn((prevIsFromOn) => !prevIsFromOn);
-              }}
+              onClick={handleFormVisibility}
             >
               <PlusSymbol />
             </button>
@@ -142,6 +148,7 @@ export const ToDoWithServer = () => {
                     tickFunc={() => {
                       markAsDone(todo.id);
                     }}
+                    penFunc={() => {}}
                   />
                 );
               })}
@@ -153,6 +160,11 @@ export const ToDoWithServer = () => {
                 func={getTodos}
               />
             )}
+          </div>
+          <div id="button-container">
+            <button className="newTaskButton" onClick={handleFormVisibility}>
+              DODAJ
+            </button>
           </div>
         </div>
       )}

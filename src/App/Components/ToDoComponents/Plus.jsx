@@ -22,7 +22,7 @@ export const PlusSymbol = () => {
         height="29.4821"
         rx="3.88393"
         stroke="#FE3756"
-        stroke-width="0.517857"
+        strokeWidth="0.517857"
       />
       <path
         d="M21.6044 15.3955H16.374V20.7554H13.6294V15.3955H8.39904V12.9098H13.6294V7.55H16.374V12.9098H21.6044V15.3955Z"
