@@ -1,36 +1,27 @@
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 import { ADDRESS, FORM_DATA } from './constants';
 import './styles.css';
-import { PlusSymbol } from '../../../Components/ToDoComponents/Plus';
 
-export const TaskForm = ({ isEditForm, handleFormVisibility }) => {
+export const EditTaskForm = ({ handleEditFormVisibility, taskData }) => {
   const [addLoading, setAddLoading] = useState(null);
   const [addErrorId, setAddErrorId] = useState(null);
 
-  const [title, setTitle] = useState('');
-  const [note, setNote] = useState('');
-  const [author, setAuthor] = useState('');
+  const [title, setTitle] = useState(taskData.title);
+  const [note, setNote] = useState(taskData.note);
+  const [author, setAuthor] = useState(taskData.author);
 
   const sendDisabled = !title || !note || !author;
 
-  const taskButtonStyle = () => {
-    if (sendDisabled) {
-      return 'taskButton disabled';
-    } else {
-      return 'taskButton';
-    }
-  };
-
   const handleSubmit = async (event) => {
     event.preventDefault();
-    await addNewTask();
-    handleFormVisibility();
+    await EditTask();
+    handleEditFormVisibility();
   };
 
-  const addNewTask = async () => {
+  const EditTask = async () => {
     try {
-      const request = await fetch(ADDRESS, {
-        method: 'POST',
+      const request = await fetch(`${ADDRESS}/${taskData.id}`, {
+        method: 'PUT',
         headers: {
           'Content-Type': 'application/json',
         },
@@ -42,11 +33,14 @@ export const TaskForm = ({ isEditForm, handleFormVisibility }) => {
     } catch (error) {
       console.log(error, '    set error');
     }
-
     setTitle('');
     setAuthor('');
     setNote('');
   };
+
+  useEffect(() => {
+    console.log(taskData.title, 'task data title here');
+  }, []);
 
   // const addNewTask = async () => {
   //   try {
@@ -68,15 +62,6 @@ export const TaskForm = ({ isEditForm, handleFormVisibility }) => {
 
   return (
     <div>
-      <button
-        className="button-no-style button-plus"
-        onClick={() => {
-          handleFormVisibility();
-        }}
-      >
-        <PlusSymbol />
-      </button>
-      <p className="task-heading">Dodawanie zadania. </p>
       <form onSubmit={handleSubmit} className="form-task">
         <div className="form-element">
           <label htmlFor={FORM_DATA.TITLE.THE_NAME}>
@@ -124,21 +109,8 @@ export const TaskForm = ({ isEditForm, handleFormVisibility }) => {
           />
         </div>
         <div id="button-container-form">
-          <button
-            disabled={false}
-            className="taskButton back"
-            onClick={() => {
-              handleFormVisibility();
-            }}
-          >
-            COFNIJ
-          </button>
-          <button
-            disabled={sendDisabled}
-            type="submit"
-            className={taskButtonStyle()}
-          >
-            DODAJ
+          <button type="submit" className="taskButton">
+            EDYTUJ
           </button>
         </div>
       </form>

@@ -27,6 +27,7 @@
 #button-container-form{
   display: flex;
   justify-content: end;
+  gap: 29px;
   width: var(--stbminw);
 }
 
@@ -104,6 +105,7 @@ div.task-done.task-info p {
 }
 
 .task-buttons-block {
+  position: relative;
   margin: 13px 0px 0px 0px;
   display: flex;
   justify-content: center;
@@ -254,6 +256,7 @@ div .no-tasks {
 .right-block {
   margin-right: 6.5px;
   display: flex;
+  width: max-content;
   flex-direction: column;
 }
 
@@ -265,7 +268,6 @@ div .no-tasks {
   display: flex;
   flex-direction: column;
   align-items: center;
-  position: relative;
 }
 
 /* TASK-FORM */
@@ -311,7 +313,7 @@ div .no-tasks {
   line-height: 32px; /* 177.778% */
 }
 
-.newTaskButton {
+.taskButton {
   border-radius: 8px;
   display: flex;
   height: 56px;
@@ -328,6 +330,18 @@ div .no-tasks {
   font-style: normal;
   font-weight: 500;
   line-height: 31px; /* 172.222% */
-  border: 1px solid var(--primary-primary, #fe3756);
-  background: var(--primary-primary, #fe3756);
+  border: 1px solid  #fe3756;
+  background:  #fe3756;
+}
+
+.taskButton.disabled{
+  border: 1px solid #fdbdc7;
+  color: #fff;
+  background: #fdbdc7;
+  cursor: initial;
+}
+
+.taskButton.back {
+  border: 1px solid rgba(35, 33, 61, 1);
+  background-color: rgba(35, 33, 61, 1);
 }

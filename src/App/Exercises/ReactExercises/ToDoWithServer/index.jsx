@@ -2,6 +2,7 @@ import { useEffect, useState } from 'react';
 import { SingleTask } from './SingleTask';
 import { NoTasks } from './NoTasks';
 import { TaskForm } from './TaskForm';
+import { EditTaskForm } from './EditTaskForm';
 import { PlusSymbol } from '../../../Components/ToDoComponents/Plus';
 import { ADDRESS } from './constants';
 
@@ -12,6 +13,7 @@ export const ToDoWithServer = () => {
   const [markAsDoneErrorId, setMarkAsDoneErrorid] = useState(null);
   const [isFormOn, setIsFormOn] = useState(false);
   const [isEditFormOn, setIsEditFormOn] = useState(false);
+  const [editingTaskData, setEditingTaskData] = useState(null);
   const [loading, setLoading] = useState(true);
 
   const getTodos = async () => {
@@ -49,6 +51,7 @@ export const ToDoWithServer = () => {
       console.log(id, '    item deleted');
     } catch (error) {
       setDeleteErrorid(id);
+      setMarkAsDoneErrorid(null);
       console.log(error, '    set error');
     }
   };
@@ -77,6 +80,7 @@ export const ToDoWithServer = () => {
       });
     } catch (error) {
       setMarkAsDoneErrorid(id);
+      setDeleteErrorid(null);
       console.log(id, '    set error');
       console.log(markAsDoneErrorId, 'markas done rror id');
     }
@@ -85,6 +89,15 @@ export const ToDoWithServer = () => {
   const handleFormVisibility = () => {
     console.log(':)');
     setIsFormOn((prevState) => !prevState);
+    getTodos();
+  };
+
+  const handleEditFormVisibility = (id) => {
+    console.log('edit turned off/on');
+    if (isEditFormOn) {
+      setEditingTaskData(null);
+    }
+    setIsEditFormOn((prevState) => !prevState);
     getTodos();
   };
 
@@ -120,6 +133,11 @@ export const ToDoWithServer = () => {
           isEditFrom={isEditFormOn}
           handleFormVisibility={handleFormVisibility}
         />
+      ) : isEditFormOn ? (
+        <EditTaskForm
+          handleEditFormVisibility={handleEditFormVisibility}
+          taskData={editingTaskData}
+        />
       ) : (
         <div className="to-do-content">
           <div class="heading-plus">
@@ -148,7 +166,10 @@ export const ToDoWithServer = () => {
                     tickFunc={() => {
                       markAsDone(todo.id);
                     }}
-                    penFunc={() => {}}
+                    penFunc={() => {
+                      setEditingTaskData(todo);
+                      setIsEditFormOn(true);
+                    }}
                   />
                 );
               })}
@@ -162,7 +183,7 @@ export const ToDoWithServer = () => {
             )}
           </div>
           <div id="button-container">
-            <button className="newTaskButton" onClick={handleFormVisibility}>
+            <button className="taskButton" onClick={handleFormVisibility}>
               DODAJ
             </button>
           </div>

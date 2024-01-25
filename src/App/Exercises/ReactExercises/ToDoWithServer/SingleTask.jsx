@@ -49,30 +49,27 @@ export function SingleTask({
       </div>
       <div className="right-block">
         <div className="task-buttons-block">
-          {del_error !== task.id && !task.isDone && (
+          {!task.isDone && (
             <button
               onClick={task.id === done_error ? () => {} : tickFunc}
               className={doneErrorClassName(done_error, task.id)}
             >
               <TickSymbol />
-              {done_error === task.id && (
-                <p className="req-failure done">nie udało się ukończyć</p>
-              )}
             </button>
           )}
-          <button
-            onClick={penFunc}
-            className={
-              del_error !== task.id
-                ? 'button-no-style bin'
-                : 'button-no-style error'
-            }
-          >
-            <PenSymbol />
-            {del_error === task.id && (
-              <p className="req-failure">nie udało się usunąć</p>
-            )}
-          </button>
+          {!task.isDone && (
+            <button
+              onClick={penFunc}
+              className={
+                del_error !== task.id
+                  ? 'button-no-style bin'
+                  : 'button-no-style error'
+              }
+            >
+              <PenSymbol />
+            </button>
+          )}
+
           <button
             onClick={binFunc}
             className={
@@ -82,11 +79,17 @@ export function SingleTask({
             }
           >
             <BinSymbol />
+          </button>
+          <div>
             {del_error === task.id && (
               <p className="req-failure">nie udało się usunąć</p>
             )}
-          </button>
+            {done_error === task.id && (
+              <p className="req-failure">nie udało się ukończyć</p>
+            )}
+          </div>
         </div>
+
         <div className="task-info-block">
           {task.isDone && (
             <div className="task-done">
@@ -94,7 +97,6 @@ export function SingleTask({
               <p className="task-info">{dataStyler(task.doneDate)}</p>
             </div>
           )}
-
         </div>
       </div>
     </div>
