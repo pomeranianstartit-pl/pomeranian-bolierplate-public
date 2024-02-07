@@ -5,10 +5,32 @@ import './styles.css';
 export const EditTaskForm = ({ handleEditFormVisibility, taskData }) => {
   const [addLoading, setAddLoading] = useState(null);
   const [addErrorId, setAddErrorId] = useState(null);
+  const editMode = !(Object.keys(taskData).length === 0);
 
-  const [title, setTitle] = useState(taskData.title);
-  const [note, setNote] = useState(taskData.note);
-  const [author, setAuthor] = useState(taskData.author);
+  // const [title, setTitle] = useState(taskData.title);
+  // const [note, setNote] = useState(taskData.note);
+  // const [author, setAuthor] = useState(taskData.author);
+  const [title, setTitle] = useState(() => {
+    if (editMode) {
+      return '';
+    } else {
+      return taskData.title;
+    }
+  });
+  const [note, setNote] = useState(() => {
+    if (editMode) {
+      return '';
+    } else {
+      return taskData.note;
+    }
+  });
+  const [author, setAuthor] = useState(() => {
+    if (editMode) {
+      return '';
+    } else {
+      return taskData.author;
+    }
+  });
 
   const sendDisabled = !title || !note || !author;
 
@@ -21,7 +43,14 @@ export const EditTaskForm = ({ handleEditFormVisibility, taskData }) => {
   const EditTask = async () => {
     try {
       const request = await fetch(`${ADDRESS}/${taskData.id}`, {
-        method: 'PUT',
+        // method: 'PUT',
+        method: () => {
+          if (editMode) {
+            return 'PUT';
+          } else {
+            return 'POST';
+          }
+        },
         headers: {
           'Content-Type': 'application/json',
         },
@@ -109,8 +138,17 @@ export const EditTaskForm = ({ handleEditFormVisibility, taskData }) => {
           />
         </div>
         <div id="button-container-form">
+          <button
+            disabled={false}
+            className="taskButton back"
+            onClick={() => {
+              handleEditFormVisibility();
+            }}
+          >
+            COFNIJ
+          </button>
           <button type="submit" className="taskButton">
-            EDYTUJ
+            {editMode === true ? 'EDYTUJ' : 'COFNIJ'}
           </button>
         </div>
       </form>

@@ -334,7 +334,7 @@ div .no-tasks {
   background:  #fe3756;
 }
 
-.taskButton.disabled{
+.taskButton:disabled{
   border: 1px solid #fdbdc7;
   color: #fff;
   background: #fdbdc7;
@@ -344,4 +344,15 @@ div .no-tasks {
 .taskButton.back {
   border: 1px solid rgba(35, 33, 61, 1);
   background-color: rgba(35, 33, 61, 1);
+}
+#err-mess-cont {
+  height: 27px;
+  width:auto;
+  color: rgba(225, 43, 27, 1);
+  font-family: "Poppins", sans-serif;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 27px; /* 168.75% */
+
 }

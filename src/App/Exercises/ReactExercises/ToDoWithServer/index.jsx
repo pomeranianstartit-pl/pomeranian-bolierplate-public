@@ -9,13 +9,20 @@ import { ADDRESS } from './constants';
 export const ToDoWithServer = () => {
   const [data, setData] = useState([]);
   const [error, setError] = useState(null);
+  const [getErrorId, setGetErrorid] = useState(null);
   const [deleteErrorId, setDeleteErrorid] = useState(null);
   const [markAsDoneErrorId, setMarkAsDoneErrorid] = useState(null);
   const [isFormOn, setIsFormOn] = useState(false);
   const [isEditFormOn, setIsEditFormOn] = useState(false);
-  const [editingTaskData, setEditingTaskData] = useState(null);
+  const [editingTaskData, setEditingTaskData] = useState({});
   const [loading, setLoading] = useState(true);
 
+  // const errorHandler = (func, id) => {
+  //   switch (func) {
+  //     case 'get':
+  //       setGetErrorid(id);
+  //   }
+  // };
   const getTodos = async () => {
     console.log('Click1');
     setLoading(true);
@@ -88,6 +95,9 @@ export const ToDoWithServer = () => {
 
   const handleFormVisibility = () => {
     console.log(':)');
+    if (isFormOn) {
+      setEditingTaskData({});
+    }
     setIsFormOn((prevState) => !prevState);
     getTodos();
   };
@@ -111,6 +121,7 @@ export const ToDoWithServer = () => {
 
   useEffect(() => {
     getTodos();
+    console.log(Boolean(null), 'boolean value of empty object');
   }, []);
 
   if (loading) {
@@ -130,12 +141,7 @@ export const ToDoWithServer = () => {
     <div>
       {isFormOn ? (
         <TaskForm
-          isEditFrom={isEditFormOn}
           handleFormVisibility={handleFormVisibility}
-        />
-      ) : isEditFormOn ? (
-        <EditTaskForm
-          handleEditFormVisibility={handleEditFormVisibility}
           taskData={editingTaskData}
         />
       ) : (
@@ -168,7 +174,8 @@ export const ToDoWithServer = () => {
                     }}
                     penFunc={() => {
                       setEditingTaskData(todo);
-                      setIsEditFormOn(true);
+                      setIsFormOn(true);
+                      console.log(todo, 'to do pen here');
                     }}
                   />
                 );
