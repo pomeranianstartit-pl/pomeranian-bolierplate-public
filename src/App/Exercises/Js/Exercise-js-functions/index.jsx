@@ -1,6 +1,17 @@
 import './styles.css';
+export { type } from '@testing-library/user-event/dist/type';
 
 export function Exercise() {
+  const animal = {
+    type: 'dog',
+    age: 5,
+    name: 'Lola',
+  };
+
+  animal.age = 53;
+
+  console.log(animal.age);
+
   function multiply(num1, num2) {
     return num1 * num2;
   }
@@ -16,9 +27,9 @@ export function Exercise() {
         <code>
           {`
             function multiply(num1, num2) {
-                return num1 * num2;
+               return num1 * num2;
             }
-            
+          
             const result = multiply(9, 9)  // wynik 81
             `}
         </code>

@@ -17,8 +17,3 @@ header.header-title {
   color: var(--color-grey);
   font-weight: normal;
 }
-
-header .logo {
-  height: 40vmin;
-  pointer-events: none;
-}

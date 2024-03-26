@@ -1,0 +1,56 @@
+.color {
+    color: red;
+}
+
+.size {
+    font-size: 20px;
+}
+
+.style {
+    font-style: italic;
+}
+
+.weight {
+    font-weight: 700;
+}
+
+.transform {
+    text-transform: uppercase;
+}
+
+.decoration {
+    text-decoration:line-through;
+}
+
+.shadow {
+    text-shadow: 10px 9px 4px rgb(101, 18, 255);
+}
+
+.height {
+    line-height: 30px;
+}
+
+.spacing {
+    letter-spacing: 15px;
+}
+
+.wordspacing {
+    word-spacing: 30px;
+}
+
+.align {
+    text-align: center;
+}
+
+.super {
+    vertical-align: super;
+}
+
+.sub {
+    vertical-align: sub;
+}
+
+.list-ol {
+    list-style-position: inside;
+    list-style-type:lower-roman;
+}
