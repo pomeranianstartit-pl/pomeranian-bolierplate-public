@@ -1,0 +1,6 @@
+.images {
+    background-color: rgb(0, 0, 62);
+}
+.images img {
+    max-width: 200px;
+}

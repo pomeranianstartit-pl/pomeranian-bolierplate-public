@@ -1,11 +1,15 @@
 import React from 'react';
 
 import './style.css';
+import { SeeOrNot } from '../SeeOrNot/SeeOrNot';
+import { MoreOrLess } from '../MoreOrLess/MoreOrLess';
 
 export function SubRouteExample() {
   return (
     <div>
-      <p>Jestem przykładowym routem</p>
+      <SeeOrNot />
+      <hr />
+      <MoreOrLess />
     </div>
   );
 }

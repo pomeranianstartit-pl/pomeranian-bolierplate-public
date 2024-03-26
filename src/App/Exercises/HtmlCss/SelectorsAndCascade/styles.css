@@ -1,0 +1,55 @@
+*{
+font-size: 16px
+}
+
+#pierwszy, #czwarty {
+background-color: yellow;
+}
+
+.unique {
+    background-color: red;
+}
+
+[type="text"]{
+    background-color: green;
+}
+
+div input {
+    background-color: aqua;
+}
+
+span ~ p {
+    background-color: rebeccapurple;
+}
+
+
+.test span:first-child{
+    color: red;
+}
+
+.test span:last-child{
+    color: yellow;
+}
+
+.test span:nth-child(2){
+    color: green;
+}
+
+.hover:hover {
+    background-color: red;
+}
+
+.firstname:focus{
+    background-color: blue;
+}
+
+.pseudo::before{
+    content: 'Before';
+}
+
+.pseudo::after{ 
+    content: 'After'
+    
+}
+
+ 
