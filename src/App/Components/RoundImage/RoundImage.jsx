@@ -9,8 +9,8 @@ export const RoundImage = ({ src, size }) => {
       className="round-image"
       style={{
         backgroundImage: `url(${src})`,
-        width: `${size}px`,
-        height: `${size}px`,
+        width: `${size}`,
+        height: `${size}`,
       }}
     />
   );
