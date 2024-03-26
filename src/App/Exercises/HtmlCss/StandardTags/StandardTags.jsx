@@ -1,10 +1,10 @@
 import './styles.css';
 
-export const StandardTags = () => {
+export const StandardTags = ({ title }) => {
   return (
     <>
       <div class="original-tags">
-        <h1>Tytuł</h1>
+        <h1>{title}</h1>
         <small>05.2023</small>
         <h3>
           H<sub>2</sub>O is good for you

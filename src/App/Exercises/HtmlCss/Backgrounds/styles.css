@@ -1,0 +1,12 @@
+.bgs {
+  height: 200px;
+  width: 200px;
+  /*background: url('./asus.jpg') no repeat center;*/
+  background-image: url('./asus.jpg');
+  background-size: cover;
+  background-position: center center;
+  background-repeat: repeat;
+  filter: blur(5px) brightness(141%) saturate(75%) contrast(101%);
+  -webkit-filter: blur(5px) brightness(141%) saturate(75%) contrast(101%);
+  -moz-filter: blur(5px) brightness(141%) saturate(75%) contrast(101%);
+}

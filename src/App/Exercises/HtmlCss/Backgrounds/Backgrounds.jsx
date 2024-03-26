@@ -1,5 +1,5 @@
 import './styles.css';
 
 export const Backgrounds = () => {
-  return <div className="Backgrounds"></div>;
+  return <div className="bgs"></div>;
 };
