@@ -1,0 +1,8 @@
+.round-image {
+  border-radius: 100%;
+
+  width: 150px;
+  height: 150px;
+
+  filter: grayscale(1);
+}

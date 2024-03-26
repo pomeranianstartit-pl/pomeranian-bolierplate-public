@@ -5,7 +5,7 @@ import logo from '../../Images/start-it-logo.svg';
 export const Logo = () => {
   return (
     <div>
-      <img className="logo" src={logo} />
+      <img className="logo" src={logo} alt="logo" />
     </div>
   );
 };
