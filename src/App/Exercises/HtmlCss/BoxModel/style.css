@@ -1,0 +1,68 @@
+.div_nr1 {
+  /*padding: góra-20px, prawo-20px, dół-20px, lewo-20px;*/
+  padding: 20px;
+  /* padding: góra-20px, prawo-0px, dół-20px, lewo-0px ; */
+  padding: 20px 0px;
+  /* padding: góra-20px, prawo-0px, dół-15px, lewo-30px; */
+  padding: 20px 20px 15px 30px;
+
+  margin: 20px 20px 15px 30px;
+
+  border: 2px solid green;
+
+  /* width(szerokość) zależna od innych prarametrów (padding, border) */
+
+  box-sizing: border-box;
+  width: 200px;
+  background: hotpink;
+}
+
+.div_nr2 {
+  /*padding: góra-20px, prawo-20px, dół-20px, lewo-20px;*/
+  padding: 20px;
+  /* padding: góra-20px, prawo-0px, dół-20px, lewo-0px ; */
+  padding: 20px 0px;
+  /* padding: góra-20px, prawo-0px, dół-15px, lewo-30px; */
+  padding: 20px 20px 15px 30px;
+
+  margin: 20px 20px 15px 30px;
+
+  border: 2px solid green;
+
+  /* width(szerokość) = border + content + padding
+   width(szerokość) niezależna od innych prarametrów (padding, border) */
+
+  box-sizing: content-box;
+  width: 200px;
+  background: hotpink;
+}
+
+.p_nr1 {
+  display: none;
+  background: red;
+}
+
+.p_nr2 {
+  background: blue;
+}
+
+/* .h1_nr1 {
+} */
+
+.span_nr1 {
+  display: block;
+  background: red;
+  height: 100px;
+}
+
+.span_nr2 {
+  display: inline;
+  background: blue;
+  height: 100px;
+}
+
+.span_nr3 {
+  display: none;
+  background: green;
+  height: 100px;
+}
