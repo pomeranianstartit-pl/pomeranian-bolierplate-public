@@ -1,14 +1,22 @@
 .media-video {
   height: 800px;
   width: 500px;
+  box-shadow: 5px 5px 10px;
+  margin: 50px;
+  padding: auto;
 }
 
 .media-audio {
   height: 800px;
   width: 500px;
+  margin: 50px;
+  padding: auto;
 }
 
 .edia-ifarme {
   height: 800px;
   width: 500px;
+  box-shadow: 5px 5px 10px;
+  margin: 50px;
+  padding: auto;
 }
