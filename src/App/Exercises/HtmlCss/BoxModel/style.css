@@ -66,3 +66,20 @@
   background: green;
   height: 100px;
 }
+
+/* ------------------------------------------------- */
+
+.div_nr3 {
+  background-color: aqua;
+  border: 2px gold;
+  max-width: 100px;
+  max-height: 250px;
+  /* Overflow - Scrollowanie */
+  overflow: scroll;
+  /* Tekst ukryty */
+  /* overflow: hidden; */
+  /* Overflow dla osi x */
+  /* overflow-x: scroll; */
+  /* Overflow dla osi y */
+  /* overflow-y: scroll; */
+}
